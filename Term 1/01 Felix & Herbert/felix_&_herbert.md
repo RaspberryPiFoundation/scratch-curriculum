@@ -14,7 +14,7 @@ __Introduction:__We are going to make a game of catch with __Felix the cat__ an
 		next costume
 		play drum 62 for 0.3 beats
 	(end forever)
-		
+```		
 ###Test Your Project__Click the green flag.__Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
 Save your project
 ##STEP 2: Felix chases Herbert
@@ -29,6 +29,7 @@ __Introduction:__We are going to make a game of catch with __Felix the cat__ an
 		go to mouse-pointer
 		point towards Felix
 	(end forever)
+```
 ###Test Your Project__Click the green flag.__
 Does Herbert move with the mouse pointer? Does Felix chase Herbert?
 Save your project.
@@ -48,6 +49,7 @@ __Introduction:__We are going to make a game of catch with __Felix the cat__ an
 			say Caught you! for 1 secs
 		(end if)
 	(end forever)
+```
 
 ###Test Your Project__Click the green flag.__
 Does Felix say when he’s caught Herbert?
@@ -73,13 +75,14 @@ __Instead of Felix saying something, we want Herbert to turn into a ghost when h
 			wait 1 sec
 		(end if)
 	(end forever)
-2. Import a new costume into Herbert from fantasy/ghost2-a.3. Edit the costume to make it smaller.Six clicks on the shrink button should do.4. Change the names of Herbert’scostumes so the mouse costume iscalled ‘alive’ and the ghost costume is called ‘dead’.5. Create a new script for Herbert to turn him into a ghost:
+```2. Import a new costume into Herbert from fantasy/ghost2-a.3. Edit the costume to make it smaller.Six clicks on the shrink button should do.4. Change the names of Herbert’scostumes so the mouse costume iscalled ‘alive’ and the ghost costume is called ‘dead’.5. Create a new script for Herbert to turn him into a ghost:
 ```scratch
 	
 	when I receive caught
 	switch to costume dead
 	wait 0.5 secs
 	switch to costume alive
+```
 	
 ###Test Your Project__Click the green flag.__
 Does Herbert turn into a ghost when he’s caught?Does Felix play the right sounds at the right time?Does Felix still stay still for long enough for Herbert to get away
@@ -98,6 +101,7 @@ __Instead of Felix saying something, we want Herbert to turn into a ghost when h
 	
 	when I receive caught
 	change score by -100
+```
 	
 ###Test Your Project__Click the green flag.__
 Does the score go up by one every second?Does the score go down by one hundred when Herbert is caught?What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?
