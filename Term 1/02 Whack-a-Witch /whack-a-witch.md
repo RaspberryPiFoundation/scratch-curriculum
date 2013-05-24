@@ -32,7 +32,7 @@ Does the witch move from side to side across the screen?
 
 Save your project
 
-###Things to try￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Try changing the value of the speed variable to make her fly faster or slower.____How would you make the witch get faster the longer she flies?__
+###Things to try￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Try changing the value of the speed variable to make her fly faster or slower.____How would you make the witch get faster the longer she flies?__
 (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)##STEP 2: Make the witch appear & vanish randomly
 To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that forever (or until the game finishes).
 Create this script for the witch:
@@ -83,12 +83,13 @@ Save your project
 ```
 ###Test Your Project__Click the green flag.__ 
 Save your project
-￼###Things to try__How might you make the witch speed up as the game goes on?__
+
+###Things to try__How might you make the witch speed up as the game goes on?__
 __Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
 ##Challenge: add more witches
-If one witch is good, more must be better! Let’s have three witches flying around.• Duplicate the witch by right-clicking it in the sprite list.• For each witch adjust the size of the sprite so the witches are different sizes.• For each witch change the speed variable so that they fly at different speeds.• Move the witches around the canvas so that they are not all together.
+If one witch is good, more must be better! Let’s have three witches flying around.1. Duplicate the witch by right-clicking it in the sprite list.2. For each witch adjust the size of the sprite so the witches are different sizes.3. For each witch change the speed variable so that they fly at different speeds.4. Move the witches around the canvas so that they are not all together.
 ###Test Your Project__Click the green flag.__ 
 Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
 Save your project
-###Things to try• How many witches is a good number for the game?Keep track of your progess by ticking off the boxes below:￼￼• Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.• Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
+###Things to try1. How many witches is a good number for the game?￼￼2. Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.3. Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
 __Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
