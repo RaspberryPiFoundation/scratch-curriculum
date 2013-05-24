@@ -20,7 +20,7 @@ __Introduction:__In this project, we’ll create a fireworks display over a cit
 	show
 	glide 1 secs to x: mouse x y: mouse y
 ```		
-###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.
+###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__
 Does the rocket appear and move to the mouse?What happens if you move the mouse and press space again?
 6. Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it tomove to below the bottom ofthe screen, but stay in the same place horizontally.
 ```scratch
