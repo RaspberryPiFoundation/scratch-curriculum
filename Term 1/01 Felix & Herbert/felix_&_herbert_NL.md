@@ -113,7 +113,7 @@ Verandert Herbert in een geest als hij gevangen is?
 Maakt Felix de goede geluiden op het goede moment?
 Blijft Felix nog lang genoeg stilstaan zodat Herbert kan vluchten?
 Sla je project op.
-##￼STEP 5: Score bijhouden
+##￼STAP 5: Score bijhouden
 __Laten we een score toevoegen zodat we weten hoe goed we zijn in het levend houden van Herbert.
 We laten de score bij nul beginnen en verhogen die iedere seconde. Als Felix Herbert pakt, verlagen we de score met honderd.__
 1. Maak voor alle sprites een variabele aan die Score heet. Klik op Variabelen in het menu bovenaan, maak een variabele aan en noem die score
