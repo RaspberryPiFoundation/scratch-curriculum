@@ -10,14 +10,14 @@ Neste projeto, vamos criar um show de fogos de artifício sobre uma cidade.
 __Vamos começar importando as imagens do jogo__
 
 1. Crie um novo projeto Scratch. Exclua o gato clicando nele com o botão direito e em Excluir
-2. Substitua a imagem de fundo com por outdoor/city-with-water
-3. Use o botão __ Escolha um sprite do arquivo__ para adicionar um sprite Foguete
-ao projeto (utilize o traje Recursos/Rocket.png).
+2. Importe o fundo de tela outdoor/city-with-water
+3. Use o botão __ Escolha um sprite do arquivo__ para adicionar um objeto Foguete
+ao projeto (utilize Recursos/Foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
 
 Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicado.
 
-5. Adicione um bloco chave quando o espaço do bloco de controle pressionado, e sob este fazer o foguete aparecer e deslizar em direção ao rato
+5. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
 
 ```scratch
 
@@ -35,9 +35,9 @@ Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicad
 __Clique na bandeira verde, posicione o mouse sobre o palco e pressione a barra de espaço.__
 
 O foguete aparece e vai em direção ao mouse?
-O que acontece se você mover o mouse e pressione espaço novamente?
+O que acontece se você mover o mouse e pressionar espaço novamente?
 
-6. Fogos de artifício não voam de um lado para outro, então vamos fazer com que ele sempre comece na parte inferior da tela. Antes de fazer o foguete aparecer, use o bloco va para e faça com que ele va para a parte debaixo da tela, mas que mantenha a sua posiçao orizontalmente.
+6. Fogos de artifício não andam de lado. Vamos fazer com que ele sempre comece na parte inferior da tela. Antes de fazer o foguete aparecer, use o bloco va para e faça com que ele va para a parte debaixo da tela, mas que mantenha a sua posiçao orizontal.
 
 ```scratch
 
