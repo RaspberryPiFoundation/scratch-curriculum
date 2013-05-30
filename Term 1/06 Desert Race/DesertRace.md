@@ -1,6 +1,6 @@
 Level 2
 
-#Fish Chomp
+#Desert Race
 
 __Introduction:__This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
 ##￼STEP 1: Create the scene and add the sprites
@@ -37,7 +37,7 @@ Do your lion and parrot move across the screen when you press the ‘A’ and �
 ```scratch
 	when a key pressed	if racing = 1		move 4 steps	(end if)
 ```9. Now do the same for the lion sprite.###Test Your Project__Click on the green flag.__Does the lion or the parrot move only after the countdown has finished?
-We want to know who wins the race and reset it when it has finished so you canrace again.##￼STEP 4: – Finishing the race
+We want to know who wins the race and reset it when it has finished so you canrace again.##￼STEP 4: Finishing the race
 1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
 ```scratch
 	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0		(end if)	(end if)
@@ -47,7 +47,7 @@ Do your lion and parrot move across the screen when you press the ‘A’ and �
 ```4. Now repeat these steps for the lion.
 ###Test Your Project__Click on the green flag.__Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
 Save your project
-##￼STEP 5: – Resetting the game
+##￼STEP 5: Resetting the game
 After the race is finished we need to tell the other sprites we have won and reset thegame so we can play again.__We need the winning sprite to broadcast that it has won.__
 1. Click on the Parrot sprite.Add a block that broadcasts “finished” after the sprite says it has won.
 ```scratch
