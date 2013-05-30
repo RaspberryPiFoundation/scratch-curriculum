@@ -22,11 +22,10 @@ Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicad
 ```scratch
 
     quando BANDEIRA clicada
-    
     desapareça
 
 
-    quando tecla espaço pressionada
+    quando a tecla [espaço] for pressionada
     apareça
     deslize em (1) segundos para x: (mouse x) y: (mouse y) 
 ``` 
@@ -41,12 +40,11 @@ O que acontece se você mover o mouse e pressionar espaço novamente?
 
 ```scratch
 
-    quando BANDEIRA clicado
-    
+    quando BANDEIRA clicada
     desapareça
 
 
-    quando tecla espaço pressionada
+    quando a tecla [espaço] for pressionada
     va para x: (mouse x) y: (-200)
     apareça
     deslize em (1) segundos para x: (mouse x) y: (mouse y)
@@ -120,16 +118,11 @@ Certifique-se de que o foguete faz barulho e se esconde quando atinge o mouse.
 
 ```scratch
 
-    quando eu receber [explodir]
-    
+    quando eu ouvir [explodir]
     desapareça
-    
     va para x: ( [posição x ] do [foguete] ) y: ( [posição y ] do [foguete] )
-    
     apareça
-    
     espere (1) segundos
-    
     desapareça
 ```
 ###Teste o projeto
@@ -145,7 +138,7 @@ Salve seu projeto
 
 ```scratch
 
-    quando eu receber [explodir] 
+    quando eu ouvir [explodir]
     desapareça 
     mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
     vá para x: ( [posição x ] do [foguete] ) y: ( [posição y ] do [foguete] ) 
@@ -171,7 +164,7 @@ Cada foguete tem um desenho de explosão diferente?
 
 ```scratch
 
-    quando eu receber [explodir] 
+    quando eu ouvir [explodir]
     desapareça 
     mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
     vá para x: ( [posição x ] do [foguete] ) y: ( [posição y ] do [foguete] ) 
@@ -202,16 +195,17 @@ Isso ocorre porque quando o foguete anuncia sua explosão, ele vai repetir imedi
 
 ```scratch
 
-quando BANDEIRA clicado 
-desapareça 
-sempre se <mouse pressionado?> 
-  vá para x: (mouse x) y: (-200) 
-  toque o som [bang] 
+
+    quando BANDEIRA clicado 
+    desapareça 
+    sempre se <mouse pressionado?> 
+    vá para x: (mouse x) y: (-200) 
+    toque o som [bang] 
 	apareça 
 	deslize em (1) segundos para x: (mouse x) y: (mouse y) 
 	desapareça 
 	anuncie [explodir] para todos e espere 
-fim
+    fim
 
 ```
 ### Teste o projeto
