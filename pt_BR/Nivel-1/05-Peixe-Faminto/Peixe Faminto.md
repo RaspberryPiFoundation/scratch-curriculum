@@ -13,7 +13,7 @@ __Let’s make the Hungry Fish swim around the sea!__
 background nature/underwater and remove background1.
 3. Change the name of Sprite 1 to Hungry Fish.
 4. Import Hungry Fish’s costume, resources/hungry-fish then remove its existing costume1 and costume2.
-5 Use the button above the Costumes tab to make sure the sprite can only flip left-right.
+5. Use the button above the Costumes tab to make sure the sprite can only flip left-right.
 6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
 
 ```scratch
