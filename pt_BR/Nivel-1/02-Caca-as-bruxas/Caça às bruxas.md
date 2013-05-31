@@ -2,25 +2,23 @@ Level 1
 
 #Caça às bruxas
 
-__Introduction:__
-This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
+__Introdução:__
+Você ganha pontos acertando as bruxas que aparece na tela. O objetivo é ganhar o máximo de pontos em 30 segundos!
 
-##￼STEP 1: Create a flying witch
+##PASSO 1: Crie uma bruxa voadora
 
-1. Start a new scratch project.
-2. Remove the cat sprite and replace the background with the nature/woods
-background.
-3. Use the new sprite from file button to add a new witch
-sprite to the project (use the fantasy/witch1 costume). 
+1. Crie um novo projeto scratch.
+2. Apague o sprite do gato e substitua a imagem de fundo com a imagem de natureza/bosque.
+3. Use o botão "Escolha um sprite do arquivo" para adicionar ao projeto um novo sprite de bruxa (selecione fantasy/witch1). 
 
-Now we want to make our witch move
+Agora queremos que a nossa bruxa se mexa
 
-4. Add a Variable for this sprite only called speed .
-On the Stage, the stage monitor for this variable should say “Sprite1 speed”.
-If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the
-Variables palette so it does not show on the Stage.
-The speed variable will control how fast the witch moves. We use a variable so that we can change how fast the witch moves as the game progresses.
-5. We want the witch to start moving when the game starts, so make a script like this:
+4. Adicione uma variável chamada velocidade somente para este objeto.
+No Palco, no monitor de palco para esta variável deve aparecer “objeto1 velocidade”.
+Se aparecer apenas “velocidade”, apague a variável e crie-a de novo selecionando "somente para este objeto".
+Desmarque a caixa ao lado do bloco velocidade no quadro de variáveis de modo que ela não apareça no Palco.
+A variável velocidade vai controlar a velocidade com que a bruxa se mexe. Nós usamos uma variável para que possamos mudar a velocidade a bruxa se mexe durante o jogo.
+5. Nós queremos que a bruxa comece a se mexer quando o jogo comece, entao faça un script como esse:
 
 ```scratch
 
@@ -35,11 +33,11 @@ The speed variable will control how fast the witch moves. We use a variable so t
 	(end forever)
 ```
 		
-###Test Your Project
-__Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
+###Teste seu projeto
+__Clique na bandeira verde__ e olhe o que a bruxa faz. Por que ela fica trancada no canto da tela ?
 
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below your
-move speed steps block add an if on edge, bounce block.
+6. Para evitar que a bruxe fique trancada nós precisamos fazê-la ir para o outro lado quando ela atinge o canto da tela. Abaixo do bloco de passos, adicione um if no canto, recocheteie.
+
 
 ```scratch
 
@@ -55,7 +53,7 @@ move speed steps block add an if on edge, bounce block.
 
 	(end forever)
 ```
-7. To stop the witch flipping upside down, click on the __only face left-right button__ in the Sprite Summary area.
+7. Para evitar que a bruxa fique de cabeça para baixo, clique  __only face left-right button__ in the Sprite Summary area.
 
 ###Test Your Project
 __Click the green flag.__ 
