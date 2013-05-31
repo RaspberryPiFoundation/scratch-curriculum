@@ -65,4 +65,4 @@ Do your lion and parrot move across the screen when you press the ‘A’ and �
 
 * __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__* __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.* __Create another sound__ that the sprite will make when the boost is pressed.￼###Test Your Project
 Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
+__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
