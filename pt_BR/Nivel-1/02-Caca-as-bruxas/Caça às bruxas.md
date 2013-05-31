@@ -1,6 +1,6 @@
 Level 1
 
-#Whack-a-Witch
+#Caça às bruxas
 
 __Introduction:__
 This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
