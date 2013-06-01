@@ -11,13 +11,10 @@ __Vamos começar importando as imagens do jogo__
 
 1. Crie um novo projeto Scratch. Exclua o gato clicando nele com o botão direito e em Excluir
 2. Importe o fundo de tela outdoor/city-with-water
-3. Use o botão __ Escolha um sprite do arquivo__ para adicionar um objeto Foguete
+3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete
 ao projeto (utilize Recursos/Foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
-
-Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicado.
-
-5. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
+5. Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicado. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
 	
 
 	    quando BANDEIRA clicada
