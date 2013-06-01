@@ -1,2 +1,24 @@
-#NOTES FOR CLUB LEADERS
-##(Felix & Herbert)####Introduction:We are going to make a game of catch with Felix the cat and Herbert the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down! This is a simple project to introduce the basics of Scratch.#### SkillsThis project covers:1. Changing costumes and appearance2. Keeping and setting the score3. Broadcast messages#### ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders#### Scratch Cards requiredFollow the mouse#### Basic exercisesStep 1: Felix follows the mouse pointerStep 2: Felix chases HerbertStep 3: Felix says when he’s caught HerbertStep 4: Herbert turns into a ghost when he’s caught Step 5: Keep score
+#ERLÄUTERUNGEN FÜR CLUB LEITER
+##(Felix & Herbert)
+
+####Einführung:
+Wir wollen ein Spiel bauen, in dem Felix der Kater und Herbert die Maus Fangen spielen. Man steuert Herbert mit der Maus und versucht zu verhindern, dass er von Felix dem Kater gefangen wird. Je länger man das verhindern kann desto mehr Punkte bekommt man. Lass Dich nicht fangen, denn dann werden Punkte abgezogen! Das ist ein einfaches Projekt um die  Grundlagen von Scratch einzuführen.
+
+#### Kenntnisse
+Bei diesem Projekt lernt man:
+1. Kostüme und Aussehen verändern
+2. Spielstand registrieren und Ausgangswert setzen
+3. Nachrichten ausgeben
+
+#### Hilfsmittel
+Dieses Projekt greift auf Dateien in Scratch Backgrounds und Costumes Verzeichnissen zurück
+
+#### erforderliche Scratch Karten
+Folge der Maus
+
+#### Wichtige Übungen
+Schritt 1: Felix folgt dem Mauszeiger
+Schritt 2: Felix verfolgt Herbert
+Schritt 3: Felix sagt, wenn er Herbert gefangen hat
+Schritt 4: Herbert verwandelt sich in ein Gespenst, wenn er gefangen wird
+Schritt 5: Spielstand registrieren
