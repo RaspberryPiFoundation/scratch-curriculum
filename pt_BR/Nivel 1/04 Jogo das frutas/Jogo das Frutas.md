@@ -1,5 +1,4 @@
-
-Nível 2 
+Nível 1 
 
 #Jogo das frutas (caça-níqueis)
 
@@ -30,14 +29,12 @@ acionado quando clicarmos na bandeira verde.
 6. Como fazer para diminuir a velocidade em que mudamos de image? Clique em Controle e arraste um bloco __espere 1 segundos__
 7. Ajuste o tempo de espera (um tempo de 0,1 s parece bom). O que aconteceria se não tivéssemos o bloco espere?
 
-```scratch
+		quando BANDEIRA clicada
+		sempre 
+			próximo traje
+			espere (0.1) segundos
+		fim
 
-  quando BANDEIRA clicada
-	sempre 
-		próximo traje
-		espere (0.1) segundos
-	fim
-```
 
 ###Teste o projeto
 __Clique na bandeira verde.____ 
@@ -71,7 +68,7 @@ Salve seu projeto
 ## Passo 4: Criando os outros objeto
 __Precisamos adicionar outros objetos para que possamos fazer o nosso jogo!__
 
-1. Duplique o objeto (sprite1) clicando com o botão direito sobre ele, no canto inferior direito.
+1. Duplique o objeto 1 (sprite1) clicando com o botão direito sobre ele, no canto inferior direito.
 2. Duplique-o novamente para termos três objetos na tela.
 3. Posicione os objetos para que eles fiquem em linha. Redimensione eles se necessário.
 
