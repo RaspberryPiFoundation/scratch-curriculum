@@ -42,7 +42,7 @@ As imagens mudam em uma velocidade aceitável?
 
 Salve o projeto
 
-### Coisas para tentar
+### Sugestões
 
 Ajuste o tempo do bloco __espere__.Quais valores fariam o jogo ficar muito fácil ou muito difícil?
 
@@ -65,7 +65,7 @@ __Clique novamente na bandeira verde__Ele para quando você posiciona o ponteiro
 
 Salve seu projeto
 
-## Passo 4: Criando os outros objeto
+## Passo 4: Criando os outros objetos
 __Precisamos adicionar outros objetos para que possamos fazer o nosso jogo!__
 
 1. Duplique o objeto 1 (sprite1) clicando com o botão direito sobre ele, no canto inferior direito.
@@ -77,7 +77,7 @@ __Clique na bandeira verde.__ Todos os objetos deve mudar de traje. Tente fazê-
 
 Salve seu projeto
 
-### Coisas para tentar
+### Sugestões
 
 No Início todos os objetos mostram o mesmo traje ao mesmo tempo. Que tal você fazer os objetos mudarem para um traje aleatório quando a bandeira verde for clicado?
 Dica: tente escolher um traje aleatório para cada objeto quando o jogo é iniciado.
@@ -99,13 +99,13 @@ __Divirta-se com as suas próprias idéias!__
 Toda vez que você faz uma alteração, pense se o o jogo ficou mais fácil ou mais difícil. O jogo é muito fácil ou muito difícil? Como você pode ajustar a dificuldade para que fique melhor?
 
 
-## Desafio 2: Faça o jogo fica mais difícil e mais fácil ao longo do tempo
+## Desafio 2: Faça o jogo fica mais difícil ou mais fácil ao longo do tempo
 
 Diferentes pessoas têm diferentes habilidades em jogar o jogo. __Como você poderia fazer o jogo ajustar sua dificuldade, dependendo do jogador?__
 
 Uma maneira que você pode fazê-lo é __ajustar a velocidade da mudança de trajes__. Você pode criar uma variável chamada __intervalo__, para dar a duração do bloco espere de cada objeto. Se o jogador ganha a rodada, a variável intervalo pode ser reduzido um pouco (para tornar o jogo mais difícil). Se o jogador perde a rodada, o atraso pode ser aumentado um pouco (para tornar o jogo mais fácil).
 
-## Desafio 3: Detectar quando todos os sprites pararem no mesmo traje
+## Desafio 3: Detectar quando todos os objetos pararem no mesmo traje
 
 __O Objetivo do jogo é clicar sobre os objetos para que eles pararem mostrando o mesmo traje. Seria bom se o palco detectasse quando você terminar de jogar e, em seguida, diga se você ganhou ou perdeu, verificando se cada objeto tem o mesmo traje.__
 
@@ -113,7 +113,7 @@ Em primeiro lugar, a palco precisa saber quando o jogador tiver acabado. Para fa
 
 O palco pode receber esta mensagem e verificar se o jogo acabou verificando se as variáveis __parado__ dos três objetos valem 1. Para isso, encaixe um bloco __posição x de__ e mude "posição x" para "parado". Se a variável __parado__ dos três tem valor de 1, sabemos que o jogo acabou e nós podemos verificar se o jogador ganhou.
 
-Para fazer isso, podemos usar a mesma tipo de bloco __posição x de__, mas em vez de olhar a variável __parado__, iremos olhar a variável traje# e assim podemos comparar se Sprite1 tem o mesmo traje que Sprite2, e se Sprite2 tem o mesmo traje que Sprite3.
+Para fazer isso, podemos usar a mesma tipo de bloco __posição x de__, mas em vez de olhar a variável __parado__, iremos olhar a variável traje# e assim podemos comparar se Objeto1 tem o mesmo traje que Objeto2, e se Objeto2 tem o mesmo traje que Objeto3.
 
 Para fazer isso, você precisa de um bloco __se__ para verificar cada variável, e dentro dele um bloco __se ... senão__ para ver se o jogador ganhou ou perdeu, comparando cada 
 traje

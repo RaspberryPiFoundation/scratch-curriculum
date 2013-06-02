@@ -1,271 +1,272 @@
-Level 2
+Nível 2
 
-#Fish Chomp
+#Peixe Faminto
 
-__Introduction:__
-We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
 
-##￼STEP 1: Create a sprite that changes costumes
-__Let’s make the Hungry Fish swim around the sea!__
+__Introdução:__
 
-1. Start a new Scratch project.
-2. Select the Stage, then select the Stage’s Background tab. Import the
-background nature/underwater and remove background1.
-3. Change the name of Sprite 1 to Hungry Fish.
-4. Import Hungry Fish’s costume, resources/hungry-fish then remove its existing costume1 and costume2.
-5. Use the button above the Costumes tab to make sure the sprite can only flip left-right.
-6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
+Neste jogo voce deve orientar o grande peixe faminto e tentar comer todas as presas que estão nadando ao redor.
 
-```scratch
+## PASSO 1: Crie um objeto que muda de traje
+__Vamos fazer este peixe faminto nadar no mar!__
 
-  when FLAG clicked
-	forever		
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
-```
+1. Crie um novo projecto Scratch.
+2. Clique no Palco, selecione a aba fundos de tela. Importe o
+Fundo nature/underwater e apague o fundo de tela1.
+3. Apague o gato.
+4. Importe o objeto a partir do arquivo Recursos/Peixe Faminto
+5. Use o botão acima da aba Trajes para certificar-se o objeto só pode virar de esquerda-direita.
+6. Agora crie os comandos para que o Peixe Faminto siga o mouse pelo mar:
 
-###Test Your Project
-__Click the green flag.__ 
-Move the mouse pointer around the sea. Does the fish follow the pointer?
-What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
 
 
-7. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
-(The _distance to_ block is in the
-Sensing palette).
+		quando BANDEIRA clicado
+		sempre	
+			aponte para [ponteiro do mouse v]
+			mova (3) passos
+		fim
 
 
-```scratch
+### Teste o projeto
+__Clique na bandeira verde.__
+Mova o ponteiro do mouse pelo mar. O peixe segue o ponteiro do mouse?
+O que acontece se você não mover o ponteiro do mouse e o peixe o alcança? O que esta acontecendo? Por que isso acontece?
 
-	when FLAG clicked
-	forever	if distance to mouse-pointer > 10
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
-```
 
+7. Você pode fazer o Peixe Faminto parar de virar feito louco como um louco se você fizer ele só se move quando não estiver muito próximo do ponteiro do mouse
+(O bloco __distância até__ está na aba sensores
+.
 
-###Test Your Project
 
-Save your project
 
-##Things to try
 
-￼If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
+		quando BANDEIRA clicado
+		sempre se < (distância até [ponteiro do mouse v])  > (10) >
+			aponte para [ponteiro do mouse v]
+			mova (3) passos
+		fim
 
 
-##STEP 2: Add some prey
 
-1. Create a new sprite from the file animals/lobster1. 
-2. Use the Shrink sprite tool (above the Stage)
-to make the sprite smaller.
-3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again
+### Teste o projeto
 
-```scratch
+Salve o projeto
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-	(end forever)
-```
+## Sugestões
 
-###Test Your Project
-__Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
+Se você quiser, você pode testar diferentes valores nos comandos. Como isso muda a maneira que o Peixe Faminto se move? Altere o limite de distância para um número grande (por exemplo 100), ou um número pequeno (por exemplo, 1). Altere a quantidade de passos que o peixe se move um grande número (por exemplo 20) ou um pequeno número (por exemplo, 1 ou mesmo 0).
 
-__At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
 
-Save your project
+## Passo 2: Adicione umas presas
 
-###Things to try
+1. Crie um novo objeto do arquivo animals/lobster1.
+2. Use a ferramenta Encolher Objeto (acima do palco)
+para fazer a camarão ficar menor.
+3. Criar os comandos para fazer a presa nadar. Queremos que eles se mocam aleatoriamente, então vamos fazê-lo avançar um pouco, em seguida, vire uma quantidade aleatória para a esquerda ou para a direita, repetindo isso novamente
 
-* Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
-* What does the __if on edge, bounce__ block do? Take it out and see what happens.
 
-##￼STEP 3: Hungry fish eats the prey
 
-__Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
-* The Hungry Fish needs to close its mouth and make a "chomp" sound.
-* The prey needs to disappear, then reappear a short while later.
+		quando BANDEIRA clicado
+		sempre	
+			mova (2) passos 
+			vire cw (sorteie número entre (-20) e (20) ) graus
+			se tocar na borda, volta
+		fim
 
-1. First, let’s make the prey disappear if it is touching the hungry fish, and then reappear 3 seconds later. Use the touching block to see if it is touching the fish.
 
-```scratch
+### Teste o projeto
+__Clique na bandeira verde e observe as presas nadando.__ Elas nadam como você esperava? Elas nadam de uma forma realista?
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching Hungry Fish?
-			hide
-			wait 3 secs
-			show
-		(end if)
-	(end forever)
-```
+__Até agora o Peixe Faminto e as presas não interagem uns com os outros__. Vamos resolver isso na próxima etapa.
 
-###Test Your Project
-__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
+Salve o projeto
 
-2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
-touching color block in your script, click on the color in the block and then click again on the fish’s teeth.
-3. Next we can make the prey move to a random point on the screen before reappearing using a go to
-block, and giving it a random
-value for x and y.
+### Sugestões
 
-```scratch
+* Tente alterar os valores nos blocos __sorteie__ e __mova__. Como isso muda a forma que as presas se movimentam?
+* O que o __se tocar na borda, volta__ faz? Retire-o e veja o que acontece.
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
-```
-###Test your project
+##PASSO 3: Peixe come as presas
 
-Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
+__Vamos fazer o Peixe Faminto comer as presas!__ Uma vez que o Peixe Faminto tem uma presa em sua boca, duas coisas precisam acontecer:
+* O Peixe Faminto precisa fechar a boca e fazer um som "chomp".
+* A presa tem de desaparecer, e reaparecer um pouco mais tarde.
 
-4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey broadcast the fact that it’s been eaten before vanishing.
+1. Primeiro, vamos fazer a presa desaparecer se ele está tocando o peixe com fome, e reaparecer 3 segundos depois. Use o bloco __tocando__ para ver se ele está tocando o peixe.
 
-```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			broadcast got me
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
-```
-__Now we want the fish to respond
-to this message by making a “chomp” sound and snapping its jaws.__
 
-5. Add the resources/mouth-closed costume and the resources/chomp sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message broadcast by the prey. This script should make the fish play the 'chomp' sound and switch to the mouth-closed costume, wait briefly and then switch back.
+		quando BANDEIRA clicado
+		sempre	
+			mova (2) passos 
+			vire cw (sorteie número entre (-20) e (20) ) graus
+			se tocar na borda, volta
+			se <tocando em [Peixe Faminto v]
+				desapareça
+				espere (3) segundos
+				apareça
+			fim
+		fim
 
-```scratch
 
-	when I receive got me
-	play sound chomp
-	repeat 2
-		switch to costume mouth-closed
-		wait 0.5 secs
-		switch to costume hungry-fish
-	(end repeat)
-```
+### Teste o projeto
+__Teste o jogo novamente - você pode detectar eventuais problemas?__ Observe que a presa desaparece, não importa onde ele toca o peixe. Além disso, o peixe poderia apenas aguarde 3 segundos e comer a presa no momento em que reaparece - isso não é muito justo!
 
-__Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
+2. Como podemos garantir que a presa só desaparece se ela está tocando a boca do peixe? Bem, nós poderíamos usar o bloco __tocando na cor__, e ver se ele está tocando os dentes azuis do peixe. Para fazer isso, substitua o bloco __tocando em__ por um
+bloco __tocando na cor__, clique na cor dentro do bloco e, em seguida, clique novamente nos dentes do peixe.
+3. Em seguida, podemos fazer a presa ir a um ponto aleatório na tela antes de reaparecer novamente, usando um bloco __vá para__ e dando valores aleatórios
+para x e y.
 
-###Test Your Project
-Click the green flag.
-Does the Hungry Fish eat the prey? Does it eat each of the different prey?
 
-Save your project
 
-###Things to think about
-Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+		quando BANDEIRA clicado
+		sempre	
+			mova (2)  passos
+			vire cw (sorteie número entre (-20) e (20) ) graus
+			se tocar na borda, volta
+			se <tocando na cor [#003]?>
+				desapareça
+				espere (3) segundos
+				vá para x: (sorteie número entre (-220) e (220)) y:(sorteie número entre (-170) e (170))
+				apareça
+			fim
+		fim
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
+### Teste o projeto
 
+Experimente o jogo mais uma vez - as presas só desaparecem quando tocam a boca do peixe? E elas voltam a aparecer em um ponto aleatório da tela ao invés de onde foi comido?
 
-##￼Challenge 1: Make the prey move differently
+4. O peixe precisa saber quando ele comeu alguma coisa para que ele toque um som e mude de traje. Para fazer isso, nós podemos fazer a presa anunciar o fato de que ela foi comida antes de desaparecer.
 
-At the moment, all the prey move in the same way. __Can you make one of them
-move differently?__
-__Hint:__ Don’t spend too long on this bit without looking at the other activities in this
-project.
 
-__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the __set color effect block__. That way, you can tell it apart from the rest of the prey.
 
-Make this prey move slower than the others. __Hint:__ Look at the move (2) steps block.
+		quando BANDEIRA clicado
+		sempre	
+			mova (2) passos
+			vire cw (sorteie número entre (-20) e (20) ) graus
+			se tocar na borda, volta
+			se <tocando na cor [#003]?>
+				anuncie [me pegou] para todos
+				desapareça
+				espere (3) segundos
+				vá para x: (sorteie número entre (-220) e (220)) y:(sorteie número entre (-170) e (170))
+				apareça
+			fim
+		fim
 
+__Agora vamos fazer o peixe ouvir esta mensagem
+fazendo um som de "morder" e fechando suas mandíbulas.__
 
-###Test Your Project
-Does the prey move slower? Does this make the game better?
-If you can do that, __try to making one of fish move quicker than the others.__
+5. Adicione o traje __Recursos/boca fechada__ e o som recursos/chomp para o objeto Peixe Faminto.
+6. Em seguida, adicione novos comandos para o Peixe Faminto para ouvir a mensagem transmitida pela presa. Este script deve fazer o peixe reproduzir o som 'chomp' e mudar para o traje boca fechada, esperar um pouco e depois voltar.
 
 
-Does the prey still move in a sensible way? Do these changes make the game better?
-__Hint:__ If your prey swims around in circles, check the values of the pick random block in the turn block.
 
-How about you make each of the prey behave differently, using different combinations of these changes?
+		quando eu ouvir [me pegou]
+		toque o som [chomp v]
+		repita (2)
+			mude para o traje [boca fechada v]
+			espere (0.5) segundos
+			mude para o traje [boca aberta v]
+		fim
 
-Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
 
-Save your project
+__Agora nosso peixe faminto está pronto para comer, vamos encher o oceano de presas. Clique com o botão direito do mouse sobre o objeto presa e clique em "duplicar" várias vezes.__
 
-##￼Challenge 2: Make the prey avoid the hungry fish
+### Teste o projeto
+Clique na bandeira verde.
+O Peixe Faminto come as presas? Ele consegue comer cada uma das presas?
 
-The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
+Salve o projeto
 
-There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the __Motion__ palette.
+### Sugestões
+Por que precisamos adicionar o bloco apareça no o início dos comandos da presa? Pense no que aconteceria se a presa fosse comida, e então o jogo fosse interrompido antes dela reaparecer. O que aconteceria se o jogo fosse reiniciado?
 
-Using that idea, __make one of the prey always point away from the Hungry Fish.__ You might want to make it wiggle as it swims away.
+__Parabéns você terminou o jogo básico. Há mais coisas que você pode fazer para o seu jogo. Você está pronto para o desafio?__
 
-###Test Your Project
-Does this make the fish harder to catch? Does it make the game better?
 
-Save your project
+## Desafio 1: Faça as presas se moverem de maneira diferente
 
-##￼￼Challenge 3: Add a score
-It’s not enough just to eat fish. How do you know you’re better at the game than your
-friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
+Neste momento, toda a presa se movem da mesma maneira. __Você é capaz de fazê-las mover
+de forma diferente?__
+__Dica:__ Não passe muito tempo nesta parte, sem olhar para os outros desafios deste projeto.
 
-Where should you put the block that changes the score?
 
-Make sure the score goes back to zero at the start of the game. Where should you put that block?
+__Escolha uma das presas para experimentar.__Como todas as presas são iguais, mude a cor da presa que você vai modificar, e aplique um efeito de cor usando o __bloco mude o efeito [cor] para__. Dessa forma, você pode distingui-la das demais.
 
-###Test Your Project
-￼￼￼Does the score go to zero at the start of the game? Does it go up every time you eat prey?
+Faça esta presa se mover mais devagar que as outras. __Dica:__ De uma olhada no bloco __mova (2) passos__.
 
-Save your project
 
-##￼Challenge 4: Add a countdown
+### Teste o projeto
+A presa se move mais devagar? O jogo ficou melhor?
+Se voce consegui fazer isso então, __tente fazer uma presa se mover mais rapido as outras.__
 
-__Give yourself a time limit in the game.__ How many fish can you eat in thirty
-seconds?
 
-Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
+As presas ainda se movem de uma maneira correta? Estas mudanças amelhoram o jogo?
+__Dica:__ Se a presa nada em círculos, verifique os valores do bloco __sorteie número__ dentro do bloco __vire__ .
 
-###Test Your Project
-Does the timer start at 30?
+Que tal você fazer cada um das presas se comportar de forma diferente, usando diferentes combinações dessas mudanças?
 
-Does it go down at the right speed?
+Fazer qualquer uma dessas alterações tornar o jogo melhor? Eles fazem o jogo mais interessante, mais divertido, mais difícil, ou mais fácil?
 
-Can you catch prey while the timer is going?
+Salve o projeto
 
-Does the game stop when the timer reaches zero?
+##Desafio 2: Faça a presa fugir do peixe
 
-Save your project
+As presas neste jogo são realmente burras! Elas simplesmente nadam ao redor aleatoriamente até que sejam comidas. Peixes de verdade fogem dos predadores. __Faça uma das presas fugir do Peixe Faminto.__
 
-##￼Challenge 5: Add a bonus score
-Award a large bonus score if you can eat all three fish at the same time. How can
-you tell how many fish have been eaten?
-__Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
+Não há nenhum bloco no Scratch que indica em que direção está um outro objeto. Mas você pode fazer um objeto apontar para outro, em seguida, ele pode dar meia volta e fugir. Os blocos que você precisa estão na aba __Movimento__.
 
-Save your project
+Usando essa idéia, __faça uma das presas sempre apontar para a oposição oposta do Peixe com fome.__ Você pode querer fazê-lo nadar para longe.
 
-##￼Challenge 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
+### Teste o projeto
+Ficou mais difícil de pegar a presa? O jogo ficou melhor?
 
-__Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten?
+Salve o projeto
 
-Save your project
+##Desafio 3: Adicionar um placar
+Não é suficiente apenas comer peixes. Como é que você faz para saber se joga melhor que o seus
+amigos? __Voce precisa encontrar uma maneira de manter a pontuação, então vamos adicionar um quadro de pontuação.__Dê uma olhada no cartão Scratch __Conta pontos__ para uma idéia de como fazê-lo.
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
+Onde você deve colocar o bloco que muda a pontuação?
+
+Certifique-se que a pontuação vai de volta para zero no início do jogo. Onde você deve colocar esse bloco?
+
+### Teste o projeto
+A pontuação volta para zero no início do jogo? Ela aumenta cada vez que você come presa?
+
+Salve o projeto
+
+##Desafio 4: Adicione uma contagem regressiva
+
+__Estabeleça um tempo limite para o jogo.__ Quantos peixes você pode comer em trinta
+segundos?
+
+Olhe o Cartão __cronômetro__ para saber como adicionar um cronômetro no jogo. Comece o jogo com uma duração de trinta segundos.
+
+### Teste o projeto
+O cronômetro começa em 30?
+
+Ele diminui na velocidade certa?
+
+Você pode capturar presas enquanto o cronômetro diminui?
+
+O jogo termina quando o cronômetro chega a zero?
+
+Salve o projeto
+
+## Desafio 5: Adicione um bônus
+Atribua um grande bônus se você comer todos os peixes ao mesmo tempo. Como é possível
+saber quantos peixes foram comidos?
+__Dica:__ Uma maneira de fazer isso é __usar uma variável para contar quantas presas estão nadando vivas.__
+
+Salve o projeto
+
+##Desafio 6: Mude o jogo: mantenha a presa viva! Às vezes, você pode ter novas idéias partindo de uma idéia existente e fazendo o oposto.
+
+__Modifique o jogo para que, ao invés de você controlar um peixe que tenta comer os outros, você controla uma presa em um mar com vários peixes famintos.__Quanto tempo você pode sobreviver antes de ser comido?
+
+Salve o projeto
+
+__Parabéns, você terminou, agora você pode desfrutar do jogo!__
+Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ na barra de menu!

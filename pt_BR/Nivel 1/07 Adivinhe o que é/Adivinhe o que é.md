@@ -79,13 +79,13 @@ Você ainda obtém uma imagem diferente a cada vez que clica na bandeira verde?
 
 Salve o projeto
 
-### Coisas para tentar
+### Sugestões
 
 __Modifique a pontuação inicial e também a quantidade em que ele diminui a cada passo.__Como isso muda a forma como a imagem aparece? Isso torna mais difícil ou mais fácil de detectar qual é a imagem?
 
 __Experimente outros efeitos gráficos da lista.__Eles mudam a dificuldade do jogo?
 
-## Passo 3: Permitir que o jogador adivinhar a imagem
+## Passo 3: Permitir que o jogador adivinhe a imagem
 
 Até agora, nós temos uma imagem aleatória aparecendo lentamente, e uma pontuação que diminui ao longo do tempo, mas como fazer para ganhar o jogo? Vamos adicionar algunas objetos na parte inferior da tela para que o jogador clicque. Se o jogador clicar na imagem certa, ele ganha o jogo. Se clicar na imagem errada a imagem desaparece e o jogo continua.
 

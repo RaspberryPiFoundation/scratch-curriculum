@@ -1,4 +1,4 @@
-#ANOTAÇOES PARA OS INSTRUTORES
+#Instruções aos monitores
 ##(Fogos de artifício)
 
 ###Introdução

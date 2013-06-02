@@ -12,7 +12,7 @@ __Vamos começar importando as imagens do jogo__
 1. Crie um novo projeto Scratch. Exclua o gato clicando nele com o botão direito e em Excluir
 2. Importe o fundo de tela outdoor/city-with-water
 3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete
-ao projeto (utilize Recursos/Foguete.png).
+ao projeto (utilize Recursos/foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
 5. Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicado. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
 	
@@ -65,7 +65,7 @@ Em seguida, substituir o bloco __quando tecla espaço pressionada__ por __quando
 ###Teste o projeto
 __Clique na bandeira verde e em seguida, pressione o botão do mouse sobre o palco. Clique novamente em outro ponto.__ 
 
-###Coisas para tentar
+###Sugestões
 1. Tente alterar onde o foguete se posiciona antes de ser lançado, para que ele se incline um pouco enquanto se movimenta.
 2. Tente fazer alguns foguetes mais lentos ou mais rápidos que os outros.
 
@@ -104,7 +104,7 @@ Salve o projeto.
 __Clique na bandeira verde.__ 
 Certifique-se de que o foguete faz barulho e se esconde quando atinge o mouse.
 
-3. Importar um novo Sprite usando Resources/firework1.png
+3. Importar um novo Objeto usando Resources/explosao.png
 04. Quando ele recebe a mensagem de explodir, ele deve esconder-se e, em seguida, mover para a posição do foguete usando o bloco vá para, aparecer, em seguida, desaparecer novamente um segundo depois.
 
 
@@ -141,7 +141,7 @@ __Clique na bandeira verde.__
 
 Cada explosão tem uma cor diferente?
 
-2. Vamos adicionar alguns desenhos diferentes para as explosões usando os trajes usando Resources/firework2.png e Resources/firework3.png, e alternar entre elas para cada foguete, antes de mostrá-lo.
+2. Vamos adicionar alguns desenhos diferentes para as explosões usando os trajes usando Resources/explosao2.png e Resources/explosao3.png, e alternar entre elas para cada foguete, antes de mostrá-lo.
 
 ###Teste o projeto
 __Clique na bandeira verde.__ 
@@ -167,7 +167,7 @@ __Clique na bandeira verde.__
 
 A a imagem da explosão se espalha a partir do centro e cresce lentamente?
 
-### Coisas para tentar
+### Sugestões
 Que tal tentar fazer cada explosão ainda mais original, alterando o tamanho e a velocidade de crescimento da explosão.
 
 Salve seu projeto

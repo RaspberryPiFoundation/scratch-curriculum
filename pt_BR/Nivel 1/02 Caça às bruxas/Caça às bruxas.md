@@ -45,7 +45,7 @@ A bruxa se mexe de um lado a outro atravessando a tela?
 
 Salve o projeto
 
-###Coisas para tentar
+###Sugestões
 __Tente mudar o valor da variável velocidade para fazê-la voar mais rápido ou mais lentamente.__
 
 __Como você faria a bruxa acelerar mais em função do tempo que ela voa?__
@@ -72,7 +72,7 @@ A bruxa se mexe de um lado a outro atravessando a tela, desaparecendo e aparecen
 
 Salve o seu projeto
 
-###Coisas para tentar
+###Sugestões
 __Tente mudar os valores aleatórios. O que acontece se você escolher números muito grandes ou muito pequenos ?__
 (Isto dá pistas sobre como fazer a bruxa acelerar mais de acordo com a duração do jogo?)
 
@@ -127,7 +127,7 @@ __Clique na bandeira verde.__
 Salve o seu projeto
 
 
-###Coisas para tentar
+###Sugestões
 __Como você faria para acelerar a bruxa durante o andamento da partida?__
 
 
@@ -150,7 +150,7 @@ Você tem três bruxas que se movem de um lado a outro da tela, que aparecem e d
 Salve o seu projeto
 
 
-###Coisas para tentar
+###Sugestões
 1. Qual a quantidade adequada de bruxas para o jogo ?
 2. Voce pode fazer as bruxas tenham aparências diferentes? Voce poderia editar suas fantasias, o usar alguns blocos da aba _Aparência_ para mudá-las.
 3. Você pode fazer com o número de pontos ganhos por cada bruxa seja diferente ? Que tal fazer com que a bruxa mais veloz (e menor) valha 10 pontos?

@@ -4,7 +4,7 @@ Nível 2
 # Corrida no deserto
 
 __Introdução:__
-Este jogo é para dois jogadores que você corre com um papagaio e um leão através do deserto. Cada jogador tem que pressionar uma tecla o mais rápido que puder para mover seu animal. Ganha quem chegar o primeiro à borda da tela .
+Este jogo é para dois jogadores. Você corre com um papagaio e um leão através do deserto. Cada jogador tem que pressionar uma tecla o mais rápido que puder para mover seu animal. Ganha quem chegar o primeiro à borda da tela	.
 
 
 ## PASSO 1: Criar a cena e adicionar os personagens
@@ -16,7 +16,7 @@ Este jogo é para dois jogadores que você corre com um papagaio e um leão atra
 
 
 
-## Passo 2: Faça o leão e o papagaio correr
+## Passo 2: Faça o leão e o papagaio correrem
 
 
 Queremos que o personagem se mova quando pressionarmos uma tecla.
