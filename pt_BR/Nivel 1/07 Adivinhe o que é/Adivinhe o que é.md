@@ -1,6 +1,6 @@
 Nível 3
 
-#O que é isso?
+#Adivinhe o que é!
 
 __Introdução:__
 Um objeto aleatório é mostrado na tela, completamente distorcido. Você tem que adivinhar o que e clicar na imagem correspondente. Quanto mais rápido você adivinhar, maior será sua pontuação!
@@ -39,7 +39,7 @@ Salve seu projeto
 
 __Agora é hora de fazer uma imagem ficar distorcida, e tornar-se cada ves mais nítida com o passar do tempo. mais clara durante alguns segundos.__
 
-Vamos usar uma variável de contagem para controlar a quantidade de distorção que existe. Se o valor é alto, haverá muita distorção. Na medida que o valor diminui, teremos cada vez menos distorção. A pontuação também atua como um contador de tempo, como no __ Raspadinha Timer.__
+Vamos usar uma variável de contagem para controlar a quantidade de distorção que existe. Se o valor é alto, haverá muita distorção. Na medida que o valor diminui, teremos cada vez menos distorção. A pontuação também atua como um contador de tempo.
 
 1. Na aba __variáveis__, crie uma variável chamada Pontos.
 
@@ -52,8 +52,8 @@ Vamos usar uma variável de contagem para controlar a quantidade de distorção 
 		repita (sorteie número entre (1) e (5))
 			próximo traje
 		fim
-		mude [ pontos v] para 110
-		repetir até <(score) = (0) >
+		mude [ pontos v] para (110)
+		repita até <(score) = (0) >
 			mude [pontos v] por (-10)
 			mude o efeito [pixelar v] para (pontos)
 			mude o efeito [cor v] para (pontos)
@@ -102,8 +102,8 @@ Primeiro, precisamos saber qual é a resposta certa.
 			próximo traje
 		fim
 		mude [resposta] para (traje #)
-		mude [ pontos v] para 110
-		repetir até <(score) = (0) >
+		mude [ pontos v] para (110)
+		repita até <(score) = (0) >
 			mude [pontos v] por (-10)
 			mude o efeito [pixelar v] para (pontos)
 			mude o efeito [cor v] para (pontos)
@@ -118,7 +118,7 @@ __Agora vamos criar os objetos para que o jogador possa clicar.__
 5. Apague todos os comandos de __resposta1__ e todos os seus trajes, exceto o primeiro.
 6. Repita estas três últimas etapas colocando a __resposta2__ ao lado da __resposta1__ e apague tudo, exceto o segundo traje.
 7. Repita isso mais três vezes para a __resposta3__, __resposta4__ e __resposta5__.
-Você deve acabar com uma fileira de cinco objetos resposta no balco, cada uma exibindo uma imagem correspondente a uma resposta possível. __Nenhum dos objetos __resposta__ pode ter comandos dentro dele!__
+Você deve acabar com uma fileira de cinco objetos resposta no balco, cada uma exibindo uma imagem correspondente a uma resposta possível. __Nenhum dos objetos resposta pode ter comandos dentro dele!__
 
 Agora, vamos fazer com que cada objeto reaja au clique dependendo se a resposta é correta ou não.
 
@@ -139,7 +139,7 @@ Agora, vamos fazer com que cada objeto reaja au clique dependendo se a resposta 
 
 
 
-		quando eu receber [ganhou v]
+		quando eu ouvir [ganhou v]
 		diga (junte [Parabéns! Sua pontuação é de ] [pontos])
 
 
@@ -152,7 +152,7 @@ O que acontece quando você clica na __resposta certa__?
 
 O que acontece quando você clica na resposta __errada__?
 
-O que acontece com a resposta errada quando você __começa um novo jogo__?__
+O que acontece com a resposta errada quando você __começa um novo jogo__?
 
 O teste revela dois problemas. Primeiro, respostas erradas não reaparecer quando o próximo jogo começar. Em segundo lugar, o placar não parar de diminuir quando encontramos a resposta certa.
 
@@ -164,7 +164,7 @@ O teste revela dois problemas. Primeiro, respostas erradas não reaparecer quand
 		apareça
 
 
-Para resolver o segundo problema, temos de parar o bloco repita do __objeto 1__ pare que ele pare quando o jogador clica na resposta certa. Vamos usar uma nova variável para fazer isso. Ela será inicializada a __ zero__ quando o jogo começa e será mudada para __um__ quando o jogador ganhar. Nós vamos fazer com que o laço de repetiça __repita até__ pare quando os __pontos__ atingem __ zero__ OU a variavel que sinaliza o fim do jogo valha __um__.
+Para resolver o segundo problema, temos de parar o bloco repita do __objeto 1__ pare que ele pare quando o jogador clica na resposta certa. Vamos usar uma nova variável para fazer isso. Ela será inicializada a __zero__ quando o jogo começa e será mudada para __um__ quando o jogador ganhar. Nós vamos fazer com que o laço de repetiça __repita até__ pare quando os __pontos__ atingem __zero__ OU a variavel que sinaliza o fim do jogo valha __um__.
 
 12. Crie uma nova variável chamada "ganhou?"
 13. Alterar os comandos para que eles fiquem assim:
@@ -177,8 +177,8 @@ Para resolver o segundo problema, temos de parar o bloco repita do __objeto 1__ 
 			próximo traje
 		fim
 		mude [resposta] para (traje #)
-		mude [ pontos v] para 110
-		definir venceu a 0
+		mude [ pontos v] para (110)
+		mude [ganhou?] para (0)
 		repita até < ( (score) = (0 ) ) ou ( (ganhou?)= (1) ) >
 			mude [pontos v] por (-10)
 			mude o efeito [pixelar v] para (pontos)
@@ -220,7 +220,7 @@ Encontre algumas distorções diferentes que funcionam bem.
 
 Mudar o jogo para que cada rodada usa uma distorção diferente dentro do bloco repita até.
 
-__Dica: __ Tente criar uma nova variável, chamada distorção. Faça com que ela tenha um valor aleatório no início do jogo. Use blocos __se__ dentro do laço repita até para aplicar a distorção desejada para a rodada.
+__Dica:__ Tente criar uma nova variável, chamada distorção. Faça com que ela tenha um valor aleatório no início do jogo. Use blocos __se__ dentro do laço repita até para aplicar a distorção desejada para a rodada.
 
 Salve o projeto
 
@@ -278,6 +278,6 @@ Isso faz com que o jogo fique melhor?
 Salve o projeto
 
 
-Parabéns você terminou, agora você pode desfrutar do jogo!__
+__Parabéns você terminou, agora você pode desfrutar do jogo!__
 
 Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ no menu!
