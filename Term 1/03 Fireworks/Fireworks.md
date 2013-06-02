@@ -1,132 +1,228 @@
 Level 1
 
-#Fireworks
+#Feuerwerk
 
-__Introduction:__In this project, we’ll create a fireworks display over a city.
-##￼STEP 1: Create a rocket that flies towards the mouse
-__Let’s import the different pictures for the game__
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Replace the background with outdoor/city-with-water
-3. Use the __new sprit from file__ button to add a Rocket spriteto the project (use the Resources/Rocket.png costume).
-4. Make the rocket hide when the greenflag is clicked.
-Now we want to make the rocket move towards the mouse when the mouse is clicked.
-5. Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
+__Einführung:__
+In diesem Projekt wollen wir ein Feuerwerk über einer Stadt darstellen.
 
-```scratch
-	when FLAG clicked
-	hide
-	
-	when space key pressed
-	show
-	glide 1 secs to x: mouse x y: mouse y
-```		
-###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__
-Does the rocket appear and move to the mouse?What happens if you move the mouse and press space again?
-6. Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it tomove to below the bottom ofthe screen, but stay in the same place horizontally.
-```scratch
-	when FLAG clicked
-	hide
-	
-	when space key pressed
-	go to x: mouse x y: -200
-	show
-	glide 1 secs to x: mouse x y: mouse y
-```###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__ 
-Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
+##￼SCHRITT 1: Erzeuge eine Rakete, die auf die Maus zufliegt
 
-7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
-Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least makesure the rocket is hidden when everything starts up.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		show
-		glide 1 secs to x: mouse x y: mouse y
-	(end forever)
-```
-###Test Your Project__Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
-###Things to try1. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.2. Try making some rockets a little slower or faster than others.
-Save your project.##STEP 2: Make the rocket explode
+__Lass' uns die verschiedenen Bilder für das Spiel importieren__
 
-￼1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound goto the Sounds tab and click import
+1. Beginne ein neues Scratch-Projekt. Lösche die Katze, indem Du sie mit der rechten Maustasta anklickst und "Löschen" auswählst. 
+2. Ersetze den Hintergrund mit "outdoor/city-with-water".
+3. Nutze den __Neues Objekt aus Datei laden__ Knopf um ein Raketen-Objekt hinzuzufügen("Rocket")(benutze das "Resources/Rocket.png" Kostüm).
+4. Bearbeite die Rakete so, dass sie versteckt wird, wenn die grüne Fahne angeklickt wurde.
+
+Jetzt möchten wir, dass die Rakete sich auf den Mauszeiger zubewegt, wenn man mit der Maus klickt.
+
+5. Ergänze einen "Wenn Taste Leertaste gedrückt"-Steuerungsblock. Lasse darunter die Rakete erscheinen und auf den Mauszeiger zugleiten.
 
 ```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-	(end forever)
-```2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode
-	(end forever)
-```
-###Test Your Project__Click the green flag.__ 
-Make sure the rocket plays a noise and hides when it reaches the mouse.
 
-3. Import a new sprite using Resources/firework1.png
-4. When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
+	wenn FAHNE angeklickt
 
-```scratch
-	when I receive explode
-	hide
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
-###Test Your Project__Send another rocket flying.__ 
-Does it get replaced with the explosion graphic when it explodes?What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).
-Save your project##￼STEP 3: Make each explosion unique
-1. Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
-```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
-
-###Test Your Project__Click the green flag.__ 
-Does each explosion have a different colour?
-2. Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.###Test Your Project__Click the green flag.__ 
-Does each rocket have a different explosion graphic?
-3. Finally, lets make the explosion grow over time as opposed to simply appearing. Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	set size to 5%
-	show
+	verstecke Dich
 	
-	repeat 50
-		change size by 2
-	(end repeat)
-	hide```
-###Test Your Project__Click the green flag.__ 
+	wenn Taste Leertaste gedrückt
+	zeige Dich
+	gleite 1 Sek zu x: Maus x y: Maus y
+```
+		
+###Teste Dein Projekt
+__Klicke die grüne Fahne an, platziere die Maus über der Bühne und drücke die Leertaste.__
 
-Does the explosion graphic spread out from the centre of the rocket and slowly grow?
+Erscheint die Rakete und bewegt sich auf den Mauszeiger zu?
+Was passiert, wenn Du die Maus bewegst und die Leertaste wieder drückst?
 
-###Things to tryWhy not try making each explosion more unique by altering the size and speed of growth for the explosion.
-Save your project
-##Step 4: Fixing the Broadcast Bug
-Remember earlier we had a bug involving holding down the mouse button?This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying.
-1. To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode and wait
-	(end forever)
-```###Test Your Project__Click the green flag, hold down the mouse button and move the mouse around the stage.__ Does the explosion graphic appear in the right place and at the right time?
-Save your project
+6. Feuerwerkskörper fliegen normalerweise nicht von rechts nach links oder von links nach rechts. Lass uns daher sicherstellen, dass die Rakete immer vom unteren Rand des Bildschirms aus auf die Maus zufliegt. Benutze den "gehe zu"-Block. Lege fest, dass er sich zum unteren Rand des Bildschirms bewegen soll. Horizontal soll er jedoch an derselben Position bleiben.
+
+```scratch
+
+	wenn FAHNE angeklickt
+
+	verstecke dich
+
+	
+	wenn Taste Leertaste gedrückt
+	gehe zu x: Maus x-Position y: -200
+	zeige dich
+	gleite 1 Sek zu x: Maus x-Position y: Maus y-Position
+```
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne, platziere den Mauszeiger über der Bühne und drücke die Leertaste.__ 
+Fliegt die Rakete vom unteren Bildschirmrand auf Deine Maus zu? Was passiert, wenn Du die Maus bewegst und die Leertaste noch einmal drückst?
+
+7. Zum Schluss möchten wir es so einrichten, dass es funktioniert, wenn wir statt der Leertaste die linke Maustaste drücken. Um das zu erreichen können wir unser Skript mit einem __wiederhole fortlaufend, falls Maustaste gedrückt__ -Block umhüllen.
+Tausche dann den __wenn Taste Leertaste gedrückt__ Steuerungsblock gegen einen __wenn FAHNE angeklickt__ -Block. Vergewissere Dich außerdem, dass die Rakete versteckt ist, wenn das Spiel startet.
+
+```scratch
+
+	wenn FAHNE angeklickt
+	verstecke dich
+	wiederhole fortlaufend, falls Maustaste gedrückt?
+		gehe zu x: Maus x-Position y: -200
+		zeige dich
+		gleite 1 Sek zu x: Maus x-Position y: Maus y-Position
+	(stoppe alles)
+```
+###Teste Dein Projekt
+__Klicke die grüne Fahne an. Drücke die linke Maustaste über der Bühne. Dann klicke noch einmal an einer anderen Stelle.__ 
+
+###Zum Ausprobieren
+1. Versuche zu verändern, wohin sich die Rakete bewegt ehe sie auf den Mauszeiger zu gleitet, so dass sie einen kleinen Bogen fliegt.
+2. Versuche, einige Raketen ein wenig schneller oder langsamer fliegen zu lassen als andere.
+
+Speichere Dein Projekt.
+
+##SCHRITT 2: Lass die Rakete explodieren
+
+￼1. Der erste Schritt zum Explodieren ist, die Rakete ein Knall-Geräusch machen zu lassen ("Resources\bang") bevor sie sich bewegt. Sobald sie die Maus erreicht hat soll sie sich verstecken. 
+Du kannst ein Geräusch importieren, indem Du in der Übersicht in der Mitte den Tab "Klänge" auswählst. Hier klickst Du "Importieren" an.
+
+```scratch
+
+	wenn FAHNE angeklickt
+	verstecke dich
+	wiederhole fortlaufend, falls Maustaste gedrückt?
+		gehe zu x: Maus x-Position y: -200
+		spiele Klang bang
+		zeige dich
+		gleite 1 Sek zu x: Maus x-Position y: Maus y-Position
+		verstecke dich
+	(stoppe alles)
+```
+2. Lasse die Rakete als nächstes ein anderes Signal geben wenn sie explodiert. Wir werden uns dieses Signal später anhören.
+
+```scratch
+
+	wenn FAHNE angeklickt
+	verstecke dich
+	wiederhole fortlaufend, falls Maustaste gedrückt?
+		gehe zu x: Maus x-Position y: -200
+		spiele Klang bang
+		zeige dich
+		gleite 1 Sek zu x: Maus x-Position y: Maus y-Position
+		verstecke dich
+		sende explode
+	(stoppe alles)
+```
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+Vergewissere Dich, dass die Rakete ein Geräusch macht und versteckt wird, sobald sie die Maus erreicht hat.
+
+3. Importiere ein neues Objekt: Resources/firework1.png
+4. Sobald es das Signal "explode" bekommt, soll es sich verstecken und sich zu der Stelle bewegen, an der sich die Rakete befindet. Dazu soll es den "gehe zu"-Block benutzen, sich zeigen und eine Sekunde später verschwinden.
+
+```scratch
+
+	wenn ich explode empfange
+
+	verstecke dich
+
+	gehe zu x: x-Position von Rocket y: y-Position von Rocket
+
+	zeige dich
+
+	warte 1 Sek
+
+	verstecke dich
+```
+###Teste Dein Projekt
+__Lasse noch eine Rakete fliegen.__ 
+Wird sie von dem Explosions-Bild ersetzt sobald sie explodiert?
+Was passiert, wenn Du die Maustaste gedrückt hältst während Du die Maus bewegst? (Mache Dir keine Gedanken, wir werden das später in Ordnung bringen).
+
+Speichere Dein Projekt
+
+##￼SCHRITT 3: Mache jede Explosion einzigartig
+
+1. Jetzt können wir jede Explosion einzigartig machen, indem wir den "setze Farbe-Effekt"-Block benutzen. Er wählt per Zufallsgenerator eine Farbe zwischen 1 und 200 bevor die Explosion gezeigt wird.
+
+```scratch
+
+	wenn ich explode empfange
+
+	verstecke dich
+
+	setze Farbe-Effekt auf Zufallszahl von 1 bis 200
+
+	gehe zu x: x-Position von Rocket y: y-Position von Rocket
+
+	zeige dich
+
+	warte 1 Sek.
+
+	verstecke dich
+```
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+
+Hat jede Explosion eine andere Farbe?
+
+2. Lass' uns ein paar unterschiedliche Explosions-Bilder als Kostüme hinzufügen. Wir benutzen dafür "Resources/firework2.png" und "Resources/firework3.png". Wir wechseln bei jeder Rakete zwischen den verschiedenen Bildern bevor die Explosion gezeigt wird.
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+
+Hat jede Rakete ein anderes Explosions-Bild?
+
+3. Zum Schluss wollen wir, dass die Explosionen mit der Zeit wachsen statt einfach nur zu erscheinen. Statt eine Sekunde zu warten setzen wir die Größe des Objekts auf 5% ehe wir es zeigen. Sobald es gezeigt wird vergrößern wir es in fünfzig Durchläufen mal 2, indem wir eine "wiederhole"-Schleife benutzen.
+
+```scratch
+
+	wenn ich explode empfange
+
+	verstecke dich
+
+	setze Farbe-Effekt auf Zufallszahl von 1 bis 200
+
+	gehe zu x: x-Position von Rocket y: y-Position von Rocket
+
+	setze Größe auf 5%
+
+	zeige dich
+	
+	wiederhole 50
+		ändere Größe um 2
+	(Ende wiederhole)
+
+	verstecke dich
+```
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+
+Breitet sich das Explosions-Bild von der Mitte der Rakete aus aus und wächst langsam?
+
+###Zum Ausprobieren
+Wir könnten die Explosionen noch unterschiedlicher gestalten, indem wir die Größe und das Wachstum der Explosion verändern? 
+
+Speichere Dein Projekt
+
+##SCHRITT 4: Wir reparieren den Sende-Fehler
+Erinnerst Du Dich, dass wir ein Problem haben, wenn wir die Maustaste gedrückt gehalten?
+Bisher ist es so: Sobald die Rakete die Explosion meldet, wiederholt sie sofort die "wiederhole"-Schleife und es wird ein neues Explosionssignal gesendet. Das geschieht noch bevor die erste Explosion bis zum Ende dargestellt wurde.
+
+1. Wir können das korrigieren, indem wir den "sende"-Block durch einen "sende und warte"-Block ersetzen. Auf diese Weise wird die Schleife nicht wiederholt bevor die Explosion nicht zu Ende ist. 
+
+```scratch
+
+	wenn FAHNE angeklickt
+	verstecke dich
+	wiederhole fortlaufend, falls Maustaste gedrückt?
+		gehe zu x: Maus x-Position y: -200
+		spiele Klang bang
+		zeige dich
+		gleite 1 Sek. zu x: Maus x-Position y: Maus y-Position
+		verstecke dich
+		sende explode an ale und warte
+	(stoppe alles)
+```
+###Teste Dein Projekt
+__Klicke die grüne Fahne an, halte die Maustaste gedrückt und bewege die Maus über die BÜhne.__ 
+
+Erscheint das Explosions-Bild am richtigen Platz und zur richtigen Zeit?
+
+Speichere Dein Projekt
