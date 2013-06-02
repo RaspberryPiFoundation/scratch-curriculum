@@ -37,7 +37,7 @@ acionado quando clicarmos na bandeira verde.
 
 
 ###Teste o projeto
-__Clique na bandeira verde.____ 
+__Clique na bandeira verde.__ 
 As imagens mudam em uma velocidade aceitável?
 
 Salve o projeto
@@ -73,7 +73,7 @@ __Precisamos adicionar outros objetos para que possamos fazer o nosso jogo!__
 3. Posicione os objetos para que eles fiquem em linha. Redimensione eles se necessário.
 
 ### Teste o projeto
-__Clique na bandeira verde.____ Todos os objetos deve mudar de traje. Tente fazê-los parar na mesma imagem!
+__Clique na bandeira verde.__ Todos os objetos deve mudar de traje. Tente fazê-los parar na mesma imagem!
 
 Salve seu projeto
 
@@ -115,11 +115,11 @@ O palco pode receber esta mensagem e verificar se o jogo acabou verificando se a
 
 Para fazer isso, podemos usar a mesma tipo de bloco __posição x de__, mas em vez de olhar a variável __parado__, iremos olhar a variável traje# e assim podemos comparar se Sprite1 tem o mesmo traje que Sprite2, e se Sprite2 tem o mesmo traje que Sprite3.
 
-Para fazer isso, você precisa de um bloco __se__ para verificar cada variável, e dentro dele um bloco __se ... senão __ para ver se o jogador ganhou ou perdeu, comparando cada 
+Para fazer isso, você precisa de um bloco __se__ para verificar cada variável, e dentro dele um bloco __se ... senão__ para ver se o jogador ganhou ou perdeu, comparando cada 
 traje
 
 Deste ponto em diante, você pode anunciar o resultado do jogo usando um bloco __anuncie__ e receber esta mensagem em um outro objeto. Que tal fazer o Felix aparecer para felicitar o jogador?
 
 
 __Parabéns você terminou, agora você pode desfrutar do jogo!__
-Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __ Share__ no menu!
+Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ no menu!
