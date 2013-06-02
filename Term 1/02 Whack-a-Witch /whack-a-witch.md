@@ -1,95 +1,200 @@
 Level 1
 
-#Whack-a-Witch
+#Schlag-die-Hexe
 
-__Introduction:__This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
-##￼STEP 1: Create a flying witch
-1. Start a new scratch project.2. Remove the cat sprite and replace the background with the nature/woodsbackground.3. Use the new sprite from file button to add a new witchsprite to the project (use the fantasy/witch1 costume). 
-Now we want to make our witch move
+__Einführung:__
+Dieses Projekt ist ähnlich wie das Spiel __Whack-a-Mole__. Du bekommst Punkte, wenn Du auf die Hexen klickst, die auf dem Bildschirm erscheinen. Das Ziel ist, in 30 Sekunden so viele Punkte wie möglich zu bekommen!
 
-4. Add a Variable for this sprite only called speed .On the Stage, the stage monitor for this variable should say “Sprite1 speed”.If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in theVariables palette so it does not show on the Stage.The speed variable will control how fast the witch moves. We use a variable so that we can change how fast the witch moves as the game progresses.5. We want the witch to start moving when the game starts, so make a script like this:
+##Schritt 1: Erzeuge eine fliegende Hexe
+
+1. Öffne ein neues Scratch-Projekt.
+2. Entferne den Katzen-Sprite und ersetze den Hintergrund durch den Hintergrund "nature/woods".
+3. Benutze den "neues Objekt aus Datei laden"-Knopf um eine neue Hexe zu laden (Wähle das "fantasy/witch1"-Kostüm). 
+
+Jetzt soll sich unsere Hexe bewegen
+
+4. Füge zu diesem Objekt eine Variable hinzu, die Du "speed" nennst.
+Auf der Bühne sollte die Anzeige für diese Variable lauten “Sprite1 speed”.
+Falls nur “speed” angezeigt wird, lösche die Variable und erzeuge eine neue Variable, nur für dieses Objekt (sprite1).
+Die Geschwindigkeits-Variable "speed" soll steuern, wie schnell die Hexe sich bewegt. Wir benutzen hier eine Variable, so dass wir im Laufe des Spiels die Geschwindigkeit der Hexe leicht verändern können.
+5. Wir möchten, dass die Hexe sich bewegt, sobald das Spiel beginnt. Erzeuge dafür dieses Skript:
 
 ```scratch
-	when FLAG clicked
-	set speed to 5
-	forever
-		move speed steps
-	(end forever)
-```		
-###Test Your Project__Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below yourmove speed steps block add an if on edge, bounce block.
-```scratch
-	when FLAG clicked
-	set speed to 5
-	forever
-		move speed steps
-		if on edge, bounce
-	(end forever)
-```7. To stop the witch flipping upside down, click on the __only face left-right button__ in the Sprite Summary area.
 
-###Test Your Project__Click the green flag.__ 
-Does the witch move from side to side across the screen?
+	wenn FAHNE angeklickt
 
-Save your project
+	setze speed auf 5
 
-###Things to try￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Try changing the value of the speed variable to make her fly faster or slower.____How would you make the witch get faster the longer she flies?__
-(This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)##STEP 2: Make the witch appear & vanish randomly
-To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that forever (or until the game finishes).
-Create this script for the witch:
-```scratch
-	when FLAG clicked
-	forever
-		hide
-		wait pick random 2 to 5 secs
-		show
-		wait pick random 3 to 5 secs
-	(end forever)
+	wiederhole fortlaufend
+
+		gehe speed-er Schritte
+
+	(stoppe alles)
 ```
-###Test Your Project__Click the green flag.__ 
-Does the witch move from side to side across the screen and vanish and appear again randomly?
+		
+###Teste Dein Peojekt
+__Klicke auf die grüne Fahne__ und schaue, was Deine Hexe tut. Warum bleibt sie am Rand des Bildschirms hängen?
 
-Save your project
+6. Um zu verhindern, dass die Hexe hängen bleibt, müssen wir dafür sorgen, dass sie sich in die entgegengesetzte Richtung bewegt, sobald sie den Rand des Bildschirms berührt. Ergänze unter Deinem "gehe speed-er Schritte" einen "pralle vom Rand ab"-Block.
 
-###Things to try__Try changing the range of the random numbers. What happens if you pick very big numbers or very small numbers?__(Does this give you any more clues for how to make the witch speed up the longer the game is played?)##￼STEP 3: Make the witch disappear when she’s clicked
-To turn this into a game, we need to give the player something to do. They need to click on the witch to make her disappear. When the witch is clicked, we want her to disappear and play a sound.
-1. In the Sounds tab, import the sound electronic/fairydust. 
-2. Add this script to the witch:
-```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
+```scratch
+
+	wenn FAHNE angeklickt
+
+	setze speed auf 5
+
+	wiederhole fortlaufend
+
+		gehe speed-er Schritte
+
+		pralle vom Rand ab
+
+	(stoppe alles)
 ```
-###Test Your Project__Click the green flag.__ 
-Does the witch disappear and play the sound when you click it?
-Save your project
-##Step 4: Add a score and timer
-We’ve got a witch, but now we want to make a game! We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
-1. Create a new Variable for all sprites called score, and alter the script for the witch to increase this variable by one when she is clicked.
-```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
-	change score by 1
-```2. Switch to the Stage and create a new variable (this time just for the stage) called timer. Add a new script that occurs when the green flag is clicked to set timer to 30 and reset the score to 0. Then use a repeat until block to wait a second and then reduce timer byone. This should repeat until timer is 0, at which point use stop all to stop the game.
-```scratch
-	when FLAG clicked
-	set timer to 30
-	set score to 0
-	repeat until timer = 0
-		wait 1 secs
-		change timer by -1
-	(end repeat)
-	stop all
-```
-###Test Your Project__Click the green flag.__ 
-Save your project
+7. Um zu verhindern, dass die Hexe sich auf den Kopf stellt, klicke in der Sprite-Übersicht oben auf den __kann sich nur nach rechts/links drehen__ -Knopf.
 
-###Things to try__How might you make the witch speed up as the game goes on?__
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
-##Challenge: add more witches
-If one witch is good, more must be better! Let’s have three witches flying around.1. Duplicate the witch by right-clicking it in the sprite list.2. For each witch adjust the size of the sprite so the witches are different sizes.3. For each witch change the speed variable so that they fly at different speeds.4. Move the witches around the canvas so that they are not all together.
-###Test Your Project__Click the green flag.__ 
-Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
-Save your project
-###Things to try1. How many witches is a good number for the game?￼￼2. Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.3. Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+Bewegt sich die Hexe auf dem Bildschirm von einer Seite zur anderen?
+
+Speichere Dein Projekt.
+
+###Zum Ausprobieren
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Versuche, den Wert der "speed" Variablen zu ändern, um sie schneller oder langsamer fliegen zu lassen.__
+
+__Wie würdest Du die Hexe immer schneller werden lassen, je länger sie fliegt?__
+(Das ist kniffelig; mache Dir also keine Gedanken, wenn Du nicht gleich verstehst, wie Du es lösen kannst. Du bekommst im Verlauf des Projekts noch mehr Hinweise dazu.)
+
+##SCHRITT 2: Lasse die Hexe zufällig erscheinen und verschwinden
+
+Damit das Spiel mehr Spaß macht, wollen wir, dass die Hexe zufällig erscheint und verschwindet. Wir erreichen das mit einem anderen Skript das zur gleichen Zeit abläuft wie das, das die Hexe bewegt. Dieses neue Skript soll die Hexe für einen zufällig erzeugten Zeitraum verstecken und sie dann wieder für einen zufällig erzeugten Zeitraum erscheinen lassen. Das wird dann immer wiederholt (oder bis das Spiel vorbei ist).
+
+Erzeuge dieses Skript für die Hexe:
+
+```scratch
+
+	wenn FAHNE angeklickt
+
+	wiederhole fortlaufend
+
+		verstecke Dich
+
+		warte Zufallszahl von 2 bis 5 Sek.
+
+		zeige Dich
+
+		warte Zufallszahl von 3 bis 5 Sek.
+
+	(stoppe alles)
+```
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+Bewegt sich die Hexe von einer Seite zur anderen über den Bildschirm und verschwindet und erscheint zufällig wieder?
+
+Speichere Dein Projekt
+
+###Zum Ausprobieren
+__Versuche, den Bereich der Zufallszahlen zu ändern. Was passiert, wenn Du sehr große oder sehr kleine Zahlen aussuchst?__
+(Gibt Dir das weitere Hinweise dazu, wie Du erreichen kannst, dass die Hexe schneller wird, je länger Du spielst?)
+
+##￼SCHRITT 3: Lass die Hexe verschwinden, sobald sie angeklickt wurde
+
+Um jetzt ein Spiel daraus zu machen, müssen wir den Spielern etwas zu tun geben. Sie müssen die Hexe anklicken, um sie verschwinden zu lassen. Wenn die Hexe angeklickt wurde soll sie verschwinden und ein Geräusch machen.
+
+1. Importiere im "Klang"-Bereich das Geräusch "electronic/fairydust". 
+
+2. Ergänze bei der Hexe dieses Skript:
+
+```scratch
+
+	wenn sprite1 angeklickt
+
+	verstecke Dich
+
+	spiele Klang Fairydust
+```
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+
+Verschwindet die Hexe und spielt das Geräusch, wenn Du sie anklickst?
+
+Speichere Dein Projekt
+
+##Schritt 4: Füge Spielstand und Zeit hinzu
+
+Wir haben eine Hexe, jetzt möchten wir ein Spiel daraus machen. Wir wollen jedes Mal Punkte bekommen, wenn wir auf die Hexe klicken, aber wir wollen auch ein bestimmte Spielzeit haben. Wir können eine Variable benutzen für den Spielstand (score) und die Zeit (timer).
+
+
+1. Erzeuge eine neue Variable für alle Sprites, die Du "score" nennst. Ändere das Skript für die Hexe so, dass der Spielstand um eins erhöht wird, wenn die Hexe angeklickt wird.
+
+```scratch
+
+	wenn sprite1 angeklickt
+
+	verstecke Dich
+
+	spiele Klang Fairydust
+
+	ändere score um 1
+```
+2. Wechsle zur Bühne und erzeuge eine neue Variable (dieses Mal nur für die Bühne), die Du "timer" nennst. Ergänze ein neues Skript, das läuft, sobald die grüne Fahne angeklickt wird. Es setzt die Zeit, "timer", auf 30 und die Punktzahl, "score", auf 0. 
+Benutze dann einen "wiederhole bis"-Block um eine Sekunde zu warten und "timer" um eins zu verringern. Das sollte sich wiederholen, bis "timer" gleich null ist. Jetzt setzt Du "stoppe alles" ein, um das Spiel zu beenden.
+
+```scratch
+
+	wenn FAHNE angeklickt
+
+	setze timer auf 30
+
+	setze score auf 0
+
+	wiederhole bis timer = 0
+
+		warte 1 Sek.
+
+		ändere timer um -1
+
+	(Ende wiederholen)
+
+	stoppe alles
+```
+
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+
+Speichere Dein Projekt
+
+###Zum Ausprobieren
+__Wie könntest Du erreichen, dass die Hexe schneller wird, je länger das Spiel dauert?__
+
+
+__Gut gemacht, das grundlegende Spiel ist jetzt fertig. Es gibt noch einige Dinge, die Du an Deinem Spiel verändern kannst. Probiere doch einmal diese Aufgabe!__
+
+##Aufgabe: baue mehr Hexen ein
+
+Wenn es mit einer Hexe Spaß macht, macht es mit mehr Hexen sicher noch mehr Spaß! Lass drei Hexen herumfliegen.
+
+1. Dupliziere die Hexe, in dem Du sie in der Liste mit der rechten Maustaste anklickst.
+
+2. Passe für jede Hexe die Größe an, so dass die Hexen unterschiedlich groß sind.
+
+3. Ändere bei jeder Hexe die Geschwindigkeit ("speed"), so dass jede Hexe mit einer anderen Geschwindigkeit fliegt.
+
+4. Verschiebe die Hexen auf dem Bild, so dass sie nicht alle an derselben Stelle sind.
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__ 
+
+Gibt es drei Hexen, die sich auf dem Bildschirm von einer Seite zur anderen bewegen? Erscheinen und verschwinden sie zufällig? Verschwinden sie, wenn Du sie anklickst?
+
+Speichere Dein Projekt
+
+###Zum Ausprobieren
+1. Mit wie vielen Hexen macht das Spiel am meisten Spaß?
+￼￼2. Kannst Du die Hexen unterschiedlich aussehen lassen? Du könntest ihre Kostüme bearbeiten oder Blöcke aus der "Aussehen"-Palette benutzen, um sie zu verändern.
+3. Kannst Du es so einrichten, dass man für verschiedene Hexen unterschiedlich viele Punkte bekommt? Man könnte für die schnellste (und kleinste) Hexe zum Beispiel 10 Punkte bekommen?
+
+
+__Gut gemacht! Du bist fertig. Viel Spaß mit Deinem Spiel!__
+Nicht vergessen: Du kannst Dein Spiel mit Deinen Freunden und Deiner Familie teilen, wenn Du im Menü auf __Teilen__ klickst!
