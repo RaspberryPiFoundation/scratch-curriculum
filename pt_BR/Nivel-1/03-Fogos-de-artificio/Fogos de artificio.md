@@ -111,7 +111,7 @@ Certifique-se de que o foguete faz barulho e se esconde quando atinge o mouse.
 
 	    quando eu ouvir [explodir]
 	    desapareça
-	    va para x: ( [posição x ] de [foguete] ) y: ( [posição y ] de [foguete] )
+	    va para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] )
 	    apareça
 	    espere (1) segundos
 	    desapareça
@@ -130,7 +130,7 @@ Salve seu projeto
 	    quando eu ouvir [explodir]
 	    desapareça 
 	    mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
-	    vá para x: ( [posição x ] de [foguete] ) y: ( [posição y ] de [foguete] ) 
+	    vá para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] ) 
 	    apareça 
 	    espere (1) segundos 
 	    desapareça
@@ -154,7 +154,7 @@ Cada foguete tem um desenho de explosão diferente?
 	    quando eu ouvir [explodir]
 	    desapareça 
 	    mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
-	    vá para x: ( [posição x ] de [foguete] ) y: ( [posição y ] de [foguete] ) 
+	    vá para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] ) 
 	    mude o tamanho para (5%) 
 	    apareça 
 	    repita (50) 
