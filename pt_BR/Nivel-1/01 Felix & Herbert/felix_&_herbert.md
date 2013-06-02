@@ -76,13 +76,14 @@ __Ao invés de dizer algo, nós vamos fazer com que Herbert vira um fantasmaquan
 		mude para o traje [vivp v]	
 	
 	
-###Teste o projeto__Clique na bandeira verde.__
+###Teste o projeto
+__Clique na bandeira verde.__
 O Herbert se transforma em fantasma quando pego?
 O Félix toca o som certo no momento certo?
 O Félix fica parado tempo suficiente para o Herbert fugir?
 Salve o projeto
 ##PASSO 5: Conte os pontos
-__Vamos criar um placar para saber se estamos indo bem.O placar começa do zero, e aumenta um ponto a cada segundo.Se o Félix pegar o Herbert o jogador perderá cem pontos.__
+__Vamos criar um placar para saber se estamos indo bem. O placar começa do zero, e aumenta um ponto a cada segundo.Se o Félix pegar o Herbert o jogador perderá cem pontos.__
 1. Clique em __Variáveis__ e Crie uma Variável chamada placar.  Mantenha selecionada a opção "para todos os projetos"2. Clique no cenário e crie estesdois blocos de comandos.
 		quando BANDEIRA clicado
 		mude [placar v] para (0)
