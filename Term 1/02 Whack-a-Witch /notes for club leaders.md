@@ -1,2 +1,26 @@
-#NOTES FOR CLUB LEADERS
-##(Whack-a-Witch)###IntroductionThis project is like the carnival game called whack-a-mole. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds.###SkillsThis project covers:• Setting a variable• Loops• Keeping and setting the score###ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes foldersScratch Cards requiredKeep score Timer Animate it###Basic exercisesStep 1: Create a flying witchStep 2: Make the witch appear and vanish randomly Step 3: Make the witch disappear when she’s clicked Step 4: Add a score and timer###Challenges1. Add more witches
+#ERLÄUTERUNGEN FÜR CLUB-LEITER
+##(Schlag-die-Hexe)
+
+###Einführung
+Dieses Projekt ist wie das Karneval-Spiel namens Whack-a-Mole. Man bekommt Punkte, wenn man die Hexen schlägt, die auf dem Bildschirm erscheinen. Das Ziel ist, innerhalb von 30 Sekunden so viele Punkte wie möglich zu bekommen.
+
+###Kenntnisse
+In diesem Projekt lernen wir:
+• Variablen setzen
+• Schleifen
+• Punktestand registrieren und zurücksetzen
+
+###Hilfsmittel
+Dieses Projekt greift auf Dateien im Scratch Background- und Kostüme-Verzeichnis zurück
+
+###Benötigte Scratch Cards
+Punktestand registrieren (Score) Timer Animate it
+
+###Übungen
+Schritt 1: Eine fliegende Hexe erzeugen
+Schritt 2: Die Hexe nach dem Zufallsprinzip erscheinen und verschwinden lassen
+Schritt 3: Die Hexe verschwinden lassen, wenn sie angeklickt wird
+Schritt 4: Punktestand und Spielzeit hinzufügen (score, timer)
+
+###Zusätzliche Aufgaben
+1. Mehr Hexen hinzufügen
