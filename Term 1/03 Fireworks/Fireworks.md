@@ -35,7 +35,7 @@ __Klicke die grüne Fahne an, platziere die Maus über der Bühne und drücke di
 Erscheint die Rakete und bewegt sich auf den Mauszeiger zu?
 Was passiert, wenn Du die Maus bewegst und die Leertaste wieder drückst?
 
-6. Feuerwerkskörper fliegen normalerweise nicht von rechts nach links oder von links nach rechts. Lass uns daher sicherstellen, dass die Rakete immer vom unteren Rand des Bildschirms aus auf die Maus zufliegt. Benutze den "gehe zu"-Block. Lege fest, dass er sich zum unteren Rand des Bildschirms bewegen soll. Horizontal soll er jedoch an derselben Position bleiben.
+Feuerwerkskörper fliegen normalerweise nicht von rechts nach links oder von links nach rechts. Lass uns daher sicherstellen, dass die Rakete immer vom unteren Rand des Bildschirms aus auf die Maus zufliegt. Benutze den "gehe zu"-Block. Lege fest, dass er sich zum unteren Rand des Bildschirms bewegen soll. Horizontal soll er jedoch an derselben Position bleiben.
 
 ```scratch
 
@@ -54,7 +54,7 @@ Was passiert, wenn Du die Maus bewegst und die Leertaste wieder drückst?
 __Klicke auf die grüne Fahne, platziere den Mauszeiger über der Bühne und drücke die Leertaste.__ 
 Fliegt die Rakete vom unteren Bildschirmrand auf Deine Maus zu? Was passiert, wenn Du die Maus bewegst und die Leertaste noch einmal drückst?
 
-7. Zum Schluss möchten wir es so einrichten, dass es funktioniert, wenn wir statt der Leertaste die linke Maustaste drücken. Um das zu erreichen können wir unser Skript mit einem __wiederhole fortlaufend, falls Maustaste gedrückt__ -Block umhüllen.
+7. Zum Schluss möchten wir es so einrichten, dass eine Rakete fliegt, wenn wir statt der Leertaste die linke Maustaste drücken. Um das zu erreichen können wir unser Skript mit einem __wiederhole fortlaufend, falls Maustaste gedrückt__-Schleife umhüllen.
 Tausche dann den __wenn Taste Leertaste gedrückt__ Steuerungsblock gegen einen __wenn FAHNE angeklickt__ -Block. Vergewissere Dich außerdem, dass die Rakete versteckt ist, wenn das Spiel startet.
 
 ```scratch
@@ -78,7 +78,7 @@ Speichere Dein Projekt.
 
 ##SCHRITT 2: Lass die Rakete explodieren
 
-￼1. Der erste Schritt zum Explodieren ist, die Rakete ein Knall-Geräusch machen zu lassen ("Resources\bang") bevor sie sich bewegt. Sobald sie die Maus erreicht hat soll sie sich verstecken. 
+Der erste Schritt zum Explodieren ist, die Rakete ein Knall-Geräusch machen zu lassen ("Resources\bang") bevor sie sich bewegt. Sobald sie die Maus erreicht hat soll sie sich verstecken. 
 Du kannst ein Geräusch importieren, indem Du in der Übersicht in der Mitte den Tab "Klänge" auswählst. Hier klickst Du "Importieren" an.
 
 ```scratch
@@ -93,7 +93,7 @@ Du kannst ein Geräusch importieren, indem Du in der Übersicht in der Mitte den
 		verstecke dich
 	(stoppe alles)
 ```
-2. Lasse die Rakete als nächstes ein anderes Signal geben wenn sie explodiert. Wir werden uns dieses Signal später anhören.
+Lasse die Rakete als nächstes ein anderes Signal geben wenn sie explodiert. Wir werden uns dieses Signal später anhören.
 
 ```scratch
 
@@ -138,7 +138,7 @@ Speichere Dein Projekt
 
 ##￼SCHRITT 3: Mache jede Explosion einzigartig
 
-1. Jetzt können wir jede Explosion einzigartig machen, indem wir den "setze Farbe-Effekt"-Block benutzen. Er wählt per Zufallsgenerator eine Farbe zwischen 1 und 200 bevor die Explosion gezeigt wird.
+Jetzt können wir jede Explosion einzigartig machen, indem wir den "setze Farbe-Effekt"-Block benutzen. Er wählt per Zufallsgenerator eine Farbe zwischen 1 und 200 bevor die Explosion gezeigt wird.
 
 ```scratch
 
@@ -162,14 +162,14 @@ __Klicke auf die grüne Fahne.__
 
 Hat jede Explosion eine andere Farbe?
 
-2. Lass' uns ein paar unterschiedliche Explosions-Bilder als Kostüme hinzufügen. Wir benutzen dafür "Resources/firework2.png" und "Resources/firework3.png". Wir wechseln bei jeder Rakete zwischen den verschiedenen Bildern bevor die Explosion gezeigt wird.
+Lass' uns ein paar unterschiedliche Explosions-Bilder als Kostüme hinzufügen. Wir benutzen dafür "Resources/firework2.png" und "Resources/firework3.png". Wir wechseln bei jeder Rakete zwischen den verschiedenen Bildern bevor die Explosion gezeigt wird.
 
 ###Teste Dein Projekt
 __Klicke auf die grüne Fahne.__ 
 
 Hat jede Rakete ein anderes Explosions-Bild?
 
-3. Zum Schluss wollen wir, dass die Explosionen mit der Zeit wachsen statt einfach nur zu erscheinen. Statt eine Sekunde zu warten setzen wir die Größe des Objekts auf 5% ehe wir es zeigen. Sobald es gezeigt wird vergrößern wir es in fünfzig Durchläufen mal 2, indem wir eine "wiederhole"-Schleife benutzen.
+Zum Schluss wollen wir, dass die Explosionen mit der Zeit wachsen statt einfach nur zu erscheinen. Statt eine Sekunde zu warten setzen wir die Größe des Objekts auf 5% ehe wir es zeigen. Sobald es gezeigt wird vergrößern wir es in fünfzig Durchläufen mal 2, indem wir eine "wiederhole"-Schleife benutzen.
 
 ```scratch
 
@@ -205,7 +205,7 @@ Speichere Dein Projekt
 Erinnerst Du Dich, dass wir ein Problem haben, wenn wir die Maustaste gedrückt gehalten?
 Bisher ist es so: Sobald die Rakete die Explosion meldet, wiederholt sie sofort die "wiederhole"-Schleife und es wird ein neues Explosionssignal gesendet. Das geschieht noch bevor die erste Explosion bis zum Ende dargestellt wurde.
 
-1. Wir können das korrigieren, indem wir den "sende"-Block durch einen "sende und warte"-Block ersetzen. Auf diese Weise wird die Schleife nicht wiederholt bevor die Explosion nicht zu Ende ist. 
+Wir können das korrigieren, indem wir den "sende"-Block durch einen "sende und warte"-Block ersetzen. Auf diese Weise wird die Schleife nicht wiederholt bevor die Explosion nicht zu Ende ist. 
 
 ```scratch
 
