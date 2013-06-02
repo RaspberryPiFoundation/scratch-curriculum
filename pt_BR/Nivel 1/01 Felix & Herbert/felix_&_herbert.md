@@ -17,8 +17,8 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 		
 ###Teste o projeto__Clique na bandeira verde.__O Felix esta seguindo o ponteiro do mouse? Ele parece andar enquanto se movimenta? A velocidade que ele se move é correta?
 Salve o projeto
-##PASSO 2: Félix caça Herbert
-__Agora vamos fazer com que o Félix cace o Herbert, ao invés de caçar o mouse.__
+##PASSO 2: Félix persegue o Herbert
+__Agora vamos fazer com que o Félix cace o Herbert, ao invés de perseguir o mouse.__
 1. Crie um novo personagem, clicando em "Escolha um sprite do arquivo" e escolha Animals/mouse12. Mude o nome do personagem para Herbert
 3. Certifique-se que o modo de rotação do Herbert é  somente esquerda-direita.
 4. Clique em __Trajes__ e __Editar__ e diminua o tamanho do Herbert clicando 6x no botão encolher5. Crie os comandos seguintes no Herbert(Certifique-se que os comandos são criados para o Herbert, clicando 2x sobre ele antes de começar a encaixar os blocos.): 
@@ -29,9 +29,9 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 			aponte para [Felix v]		
 		fim
 ###Teste o projeto__Clique na bandeira verde.__
-O Herbert se move com o ponteiro do mouse? O Félix está caçando o Herbert?
+O Herbert se move com o ponteiro do mouse? O Félix está perseguindo o Herbert?
 Salve o projeto
-##STEP 3: Félix fala quando pegar Herbert
+##STEP 3: Félix diz quando ele pegar o Herbert
 __Vamos fazer com que o Félix nos diga quando ele pegou o Herbert__
 1. Mude os comandos do Félix para que eles fiquem assim:
 
@@ -47,7 +47,7 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 		fim
 
 ###Teste o projeto__Clique na bandeira verde.__
-O Félix fala quando pega o Herbert?
+O Félix diz quando pega o Herbert?
 Salve o projeto.
 
 ##PASSO 4: Herbert vira fantasma quando pego

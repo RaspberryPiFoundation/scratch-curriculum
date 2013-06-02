@@ -95,9 +95,10 @@ A bruxa desaparece e toca um som quando é clicada ?
 
 Salve o projeto
 
-##Passo 4: Adicione um score e um cronometro
+##Passo 4: Adicione um placar e um cronometro
 
-Nós temos uma bruxa, mas agora nós queremos fazer um jogo! Nós queremos marcar pontos a cada vez que clicamos na bruxa mas também queremos ter um limite de tempo para a partida. Nós podemos usar uma variável para o score e para o cronometro.
+Nós temos uma bruxa, mas agora nós queremos fazer um jogo! Nós queremos marcar pontos a cada vez que clicamos na bruxa mas também queremos ter um limite de tempo para a partida. Nós podemos usar uma variável para o placar
+ e para o cronometro.
 
 
 1. Crie uma nova variável para todos os personagens chamada placar, e modifique os comandos da bruxa para incrementar esta variável de um quando ela é clicada.
@@ -151,7 +152,7 @@ Salve o seu projeto
 
 ###Coisas para tentar
 1. Qual a quantidade adequada de bruxas para o jogo ?
-2. Voce pode fazer as bruxas tenham aparências diferentes? Voce poderia editar suas fantasias, o usar alguns blocos da Looks palette para mudá-las.
+2. Voce pode fazer as bruxas tenham aparências diferentes? Voce poderia editar suas fantasias, o usar alguns blocos da aba _Aparência_ para mudá-las.
 3. Você pode fazer com o número de pontos ganhos por cada bruxa seja diferente ? Que tal fazer com que a bruxa mais veloz (e menor) valha 10 pontos?
 
 
