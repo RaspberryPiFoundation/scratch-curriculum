@@ -81,6 +81,7 @@ __Ao invés de dizer algo, nós vamos fazer com que Herbert vira um fantasmaquan
 O Herbert se transforma em fantasma quando pego?
 O Félix toca o som certo no momento certo?
 O Félix fica parado tempo suficiente para o Herbert fugir?
+
 Salve o projeto
 ##PASSO 5: Conte os pontos
 __Vamos criar um placar para saber se estamos indo bem. O placar começa do zero, e aumenta um ponto a cada segundo.Se o Félix pegar o Herbert o jogador perderá cem pontos.__
@@ -102,5 +103,6 @@ Os pontos aumentam um a um a cada segundo?
 Os pontos diminuem de 100 quando o Herbert é pego?
 O que acontece quando o Herbert é pego antes que o placar chegue a 100?
 O placar volta ao zero quando você começa um novo jogo?
+
 Salve o projeto
 __Parabéns, você acaba de criar o seu próprio jogo!__

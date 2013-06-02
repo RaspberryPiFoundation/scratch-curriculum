@@ -1,4 +1,4 @@
-Level 1
+Nível 1
 
 #Caça às bruxas
 
@@ -58,7 +58,7 @@ Para tornar o jogo mais divertido, nós queremos que a bruxa apareça e desapare
 Crie este script para a bruxa:
 
 
-		quand BANDEIRA clicado
+		quando BANDEIRA clicado
 		sempre
 			desapareça
 			espere (sorteie número entre (2) e (5)) segundos
@@ -112,13 +112,13 @@ Nós temos uma bruxa, mas agora nós queremos fazer um jogo! Nós queremos marca
 2. Vá para o Palco e crie uma nova variável (dessa vez somente para o palco) chamada cronometro. Adicione novos comandos que serão executado quando a bandeira verde é clicada para definir o cronometro para 30 e para reinicializar o placar a 0. Então use um bloco 'repita até" para esperar um segundo e então diminui o cronometro de um. Isto deve repetir até que o cronometro seja 0, momento em que se deve usar __pare tudo__ para interromper a partida.
 	
 		quando BANDEIRA clicado
-		mude cronometro para (30)
-		mude placar para (0)
+		mude [cronometro v] para (30)
+		mude [placar v] para (0)
 		repita até <[cronometro] = [0]>
 			espere (1) segundos
 			mude [cronometro] por (-1)
 		fim
-		pare tudos
+		pare tudo
 
 ###Teste o seu projeto
 __Clique na bandeira verde.__
