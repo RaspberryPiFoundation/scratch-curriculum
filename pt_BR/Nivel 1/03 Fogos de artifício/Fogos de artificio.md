@@ -17,7 +17,7 @@ ao projeto (utilize Recursos/Foguete.png).
 5. Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicado. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
 	
 
-	    quando BANDEIRA clicada
+	    quando BANDEIRA clicado
 	    desapareça
 
 	    quando a tecla [espaço] for pressionada
@@ -34,7 +34,7 @@ O que acontece se você mover o mouse e pressionar espaço novamente?
 
 
 
-	    quando BANDEIRA clicada
+	    quando BANDEIRA clicado
 	    desapareça
 
 
@@ -54,7 +54,7 @@ Em seguida, substituir o bloco __quando tecla espaço pressionada__ por __quando
 
 
 
-	    quando BANDEIRA clicada
+	    quando BANDEIRA clicado
 	    desapareça 
 	    sempre se <mouse pressionado?>
 	      va para x: (mouse x) y: (-200)
@@ -75,7 +75,7 @@ Salve o projeto.
 
 1. O primeiro passo para fazer o foguete explodir é fazê-lo tocar o som Resources\bang antes que ele começa a se mover , em seguida, esconder-se, uma vez que chegar ao mouse. Para importar um som vá até a aba Sons e clique em importar.
 
-		quando BANDEIRA clicada
+		quando BANDEIRA clicado
 		desapareça
 		sempre se <mouse pressionado?>
 		    va para x: (mouse x) y: (-200)
@@ -111,7 +111,7 @@ Certifique-se de que o foguete faz barulho e se esconde quando atinge o mouse.
 
 	    quando eu ouvir [explodir]
 	    desapareça
-	    va para x: ( [posição x ] do [foguete] ) y: ( [posição y ] do [foguete] )
+	    va para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] )
 	    apareça
 	    espere (1) segundos
 	    desapareça
@@ -130,7 +130,7 @@ Salve seu projeto
 	    quando eu ouvir [explodir]
 	    desapareça 
 	    mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
-	    vá para x: ( [posição x ] do [foguete] ) y: ( [posição y ] do [foguete] ) 
+	    vá para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] ) 
 	    apareça 
 	    espere (1) segundos 
 	    desapareça
@@ -154,7 +154,7 @@ Cada foguete tem um desenho de explosão diferente?
 	    quando eu ouvir [explodir]
 	    desapareça 
 	    mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
-	    vá para x: ( [posição x ] do [foguete] ) y: ( [posição y ] do [foguete] ) 
+	    vá para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] ) 
 	    mude o tamanho para (5%) 
 	    apareça 
 	    repita (50) 
