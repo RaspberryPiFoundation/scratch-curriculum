@@ -1,4 +1,29 @@
-#NOTES FOR CLUB LEADERS
-##(Fruit Machine)###Introduction:This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).###SkillsThis project covers- Changing costumes- Running a loop- Stopping a loop on click###ResourcesThis project uses only standard Scratch images found within Scratch.###Scratch Cards required:Broadcast###Basic exercisesStep 1: Create a sprite that changes costumes 
-Step 2: Making the picture changeStep 3: Making it stop when we click on it 
-Step 4: Creating the other sprites###Challenges1. Make the game harder2. Make the game get harder and easier over time3. Detect when all the sprites have stopped on the same costume
+#НОТАТКИ ДЛЯ ЛІДЕРІВ КЛУБУ
+##(Фруктова машина)
+
+###Передмова:
+Це проста гра, у якій 3 спрайти змінюють образи.  Гравцю потрібно зупинити їх у момент, коли вони всі у одному й тому ж образі (як у автоматі фруктова машина").
+
+###Навики
+За допомогою цього проекту можна навчитись:
+
+- Змінювати образи
+- Прописувати замкнуті цикли  
+- Зупиняти виконання циклу кліком
+
+###Ресурси інтерфейсу
+Цей проект використовує лише стандартні  картинки папок бібліотеки Скретчу.
+
+###Необхідні скретч картки:
+Повідомлення.
+
+###Основні кроки:
+Крок 1: Створення спрайту, який змінює образи.  
+Крок 2: Зміна картинок     
+Крок 3: Образи перестають змінюватись при кліканні на них.                          
+Крок 4: Створення іншого спрайта.
+
+###Бонусні завдання:
+Бонусне завдання 1: Гра стає складнішою.
+Бонусне завдання 2: Складність гри змінюється впродовж часу.
+Бонусне завдання 3: Чи всі спрайти мали однакові образи, коли їх зупинили.
