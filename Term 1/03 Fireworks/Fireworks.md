@@ -1,65 +1,104 @@
-Level 1
+Рівень 1
 
-#Fireworks
+#Феєрверк
 
-__Introduction:__In this project, we’ll create a fireworks display over a city.
-##￼STEP 1: Create a rocket that flies towards the mouse
-__Let’s import the different pictures for the game__
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Replace the background with outdoor/city-with-water
-3. Use the __new sprit from file__ button to add a Rocket spriteto the project (use the Resources/Rocket.png costume).
-4. Make the rocket hide when the greenflag is clicked.
-Now we want to make the rocket move towards the mouse when the mouse is clicked.
-5. Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
+__Передмова:__
+У цьому проекті ми створюємо феєрверки над містом.
+
+##Крок 1: Створення Ракети, що летить за рухом мишки. e
+
+__Імпортуйте для цієї гри інші картинки__
+
+1. Створіть новий проект у Скретч.  Видаліть кота, клікнувши правою кнопкою мишки і натиснувши "Видалити" (Delete).
+2. Змініть тло (фон) на вулиця/вода над містом (outdoor/city-with-water).
+3. За допомогою кнопки __новий спрайт з файлу__ додайте в проект спрайт Ракети (Resources/ Rocket.png costume).
+4. Подбайте про те, щоб при натисканні зеленого прапорця, ракети не було видно.
+
+Тепер потрібно зробити так, щоб ракета плавно рухалась (команда glide)  за мишкою, коли мишкою клікають .
+
+1. Додайте блок "при натисканні пробілу" (when space key pressed)  і під ним пропишіть команди для появи ракети та її руху  в напрямку рухів мишкою:
 
 ```scratch
-	when FLAG clicked
-	hide
-	
+
+	when FLAG clicked
+
+	hide
+
+	
 	when space key pressed
 	show
 	glide 1 secs to x: mouse x y: mouse y
-```		
-###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__
-Does the rocket appear and move to the mouse?What happens if you move the mouse and press space again?
-6. Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it tomove to below the bottom ofthe screen, but stay in the same place horizontally.
-```scratch
-	when FLAG clicked
-	hide
-	
+```
+		
+###Test Your Project
+__Натисніть на значок із зеленим прапорцем, помістіть мишку над сценою і натисніть пробіл.__
+
+Чи з'являється ракета, чи рухається відповідно до рухів мишкою? 
+Що відбувається, коли ви рухаєте мишкою і знову натискаєте пробіл?
+
+1. Феєрверк не повинен літати з боку в бік, тож треба переконатись, що він завжди слідує за рухом мишки із нижньої частини екрану.  Перед тим, як вивести ракету, скористайтесь блоком "іти до"(go to), задавши йому команду рухатись під низ екрану, але залишатись у тому ж місці в горизонтальному положенні.
+
+```scratch
+
+	when FLAG clicked
+
+	hide
+
+	
 	when space key pressed
 	go to x: mouse x y: -200
 	show
 	glide 1 secs to x: mouse x y: mouse y
-```###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__ 
-Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
+```
 
-7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
-Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least makesure the rocket is hidden when everything starts up.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем, помістіть мишку над сценою і натисніть пробіл.__ 
+Чи летить ракета за мишкою з нижньої частини екрану? Що відбувається, коли ви рухаєте мишкою і знову натискаєте пробіл?
+
+1. А тепер змініть проект так, щоб він стартував не при натисканні пробілу, а при натисканні кнопки мишки. Для цього слід прописати у скрипті forever if mouse down, замінити блок  __"при натисканні пробілу" (when space key pressed)__ на __when flag is clicked__ і переконатись, що ракети не видно, коли проект запускається.
+
+```scratch
+
+	when FLAG clicked
+	hide
+	forever if mouse down?
 		go to x: mouse x y: -200
 		show
 		glide 1 secs to x: mouse x y: mouse y
 	(end forever)
 ```
-###Test Your Project__Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
-###Things to try1. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.2. Try making some rockets a little slower or faster than others.
-Save your project.##STEP 2: Make the rocket explode
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем і натисніть кнопку мишки, помістивши її над сценою.  Знову натисніть у іншому місці.__ 
 
-￼1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound goto the Sounds tab and click import
+###Спробуйте зробити так, щоб:
+1. перед тим, як почати плавно рухатись за мишкою, ракета трохи вигиналась дугою.
+2. деякі ракети рухались трохи повільніше або швидше, ніж інші.
+
+Збережіть свій проект.
+
+## Крок 2: Поява ефекту вибуху для ракети.
+
+￼1.По-перше, для створення ефекту вибуху необхідний характерний звук ("бах!"). Імпортуйте звук вибуху із вкладки Звуки (Sounds)
 
 ```scratch
-	when FLAG clicked	hide	forever if mouse down?
+
+	when FLAG clicked
+	hide
+	forever if mouse down?
 		go to x: mouse x y: -200
 		play sound bang
 		show
 		glide 1 secs to x: mouse x y: mouse y
 		hide
 	(end forever)
-```2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
+```
+2. Потім подбайте про те, щоб ракета повідомляла, що вона вибухнула.  Пізніше ми прослухаємо це повідомлення.
+
+```scratch
+
+	when FLAG clicked
+	hide
+	forever if mouse down?
 		go to x: mouse x y: -200
 		play sound bang
 		show
@@ -68,59 +107,110 @@ Then swap the __when space key pressed__ control block for __when flag clicked__
 		broadcast explode
 	(end forever)
 ```
-###Test Your Project__Click the green flag.__ 
-Make sure the rocket plays a noise and hides when it reaches the mouse.
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем.__ 
+Переконайтесь, що ракета видає звук і зникає, коли досягає мишки.
 
-3. Import a new sprite using Resources/firework1.png
-4. When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
+3. Імпортуйте новий спрайт з вкладки Resources/firework1.png
+4. Після отримання повідомлення про вибух він повинен щезнути, а потім перемістившись на місце ракети за допомогою команди "іти до" (go to), знову з'явитись і через секунду зникнути.
 
 ```scratch
-	when I receive explode
-	hide
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
-###Test Your Project__Send another rocket flying.__ 
-Does it get replaced with the explosion graphic when it explodes?What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).
-Save your project##￼STEP 3: Make each explosion unique
-1. Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
-```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
 
-###Test Your Project__Click the green flag.__ 
-Does each explosion have a different colour?
-2. Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.###Test Your Project__Click the green flag.__ 
-Does each rocket have a different explosion graphic?
-3. Finally, lets make the explosion grow over time as opposed to simply appearing. Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	set size to 5%
-	show
+	when I receive explode
+
+	hide
+
+	go to x: x position of rocket y: y position of rocket
+
+	show
+
+	wait 1 sec
+
+	hide
+```
+###Протестуйте свій проект.
+__Запустіть іншу ракету.__ 
+Чи з'являється графіка вибуху, коли ракета вибухає?  
+Що відбувається, коли ви утримуєте натиснутою кнопку мишки, одночасно рухаючи її? (Не хвилюйтесь, зараз ми це виправимо).
+
+Збережіть свій проект.
+
+##Крок 3: Кожен вибух стає різним.e
+
+1. За допомогою команди set color effect та команди pick a random вибираємо випадковий колір від 1 до 200 перед появою кожного вибуху.
+
+```scratch
+
+	when I receive explode
+
+	hide
+
+	set colour effect to pick random 1 to 200
+
+	go to x: x position of rocket y: y position of rocket
+
+	show
+
+	wait 1 sec
+
+	hide
+```
+
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем__ 
+
+Чи має кожен з вибухів тепер інший колір?
+
+2. Тепер додамо деякі інші образи вибухів із вкладок Resources/firework2.png and Resources/firework3.png та переключатимемось між ними для кожної з ракет перед їх появою.
+
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем__ 
+
+Чи відрізняється графіка вибуху кожної ракети?
+
+3. Зрештою, створимо ефект наростання вибуху, а не просто його появи.  Замість команди wait 1 sec (чекати протягом секунди), пропишіть команду зміни розмірів спрайту до його появи set size to 5%, а потім, коли він знову з'являється, команду збільшення його розміру з допомогою change size by 2.
+
+```scratch
+
+	when I receive explode
+
+	hide
+
+	set colour effect to pick random 1 to 200
+
+	go to x: x position of rocket y: y position of rocket
+
+	set size to 5%
+
+	show
 	
 	repeat 50
 		change size by 2
 	(end repeat)
-	hide```
-###Test Your Project__Click the green flag.__ 
 
-Does the explosion graphic spread out from the centre of the rocket and slowly grow?
+	hide
+```
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем.__ 
 
-###Things to tryWhy not try making each explosion more unique by altering the size and speed of growth for the explosion.
-Save your project
-##Step 4: Fixing the Broadcast Bug
-Remember earlier we had a bug involving holding down the mouse button?This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying.
-1. To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
+Графіка вибуху розширюється від центру ракети і повільно наростає?
+
+###Спробуйте:
+Чому б не зробити вибухи ще різноманітнішими, змінивши їх розміри та швидкість наростання вибухів?
+
+Збережіть свій проект.
+
+##Крок 4: Вирішення проблеми/збою з повідомленнями.
+Пригадуєте раніше у нас виник збій при утриманні кнопки мишки та одночасному русі мишки?  Це відбувається через те, що після першого повідомлення про вибух ракети, команда негайно повторюється у циклі якщо (if) і надсилає повідомлення про інший вибух ще до того, як попередній закінчиться.
+
+
+1. Щоб виправити це, ми замінимо блок "повідомлення" на блок "повідомлення і очікування". Таким чином, цикл не повторюватиметься, поки вибух не закінчиться.
+
+```scratch
+
+	when FLAG clicked
+	hide
+	forever if mouse down?
 		go to x: mouse x y: -200
 		play sound bang
 		show
@@ -128,5 +218,10 @@ Remember earlier we had a bug involving holding down the mouse button?This occu
 		hide
 		broadcast explode and wait
 	(end forever)
-```###Test Your Project__Click the green flag, hold down the mouse button and move the mouse around the stage.__ Does the explosion graphic appear in the right place and at the right time?
-Save your project
+```
+###Протестуйте проект.
+__Натисніть на значок із зеленим прапорцем, натисніть кнопку мишки та водіть мишкою навколо сцени.__ 
+
+Чи з'являється графіка вибуху  у належний час і в належному місці?
+
+Збережіть свій проект.
