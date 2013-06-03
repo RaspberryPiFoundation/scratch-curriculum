@@ -1,6 +1,6 @@
 Nível 2 
 
-#Jogo das frutas (caça-níqueis)
+#Jogo das Frutas (caça-níqueis)
 
 __Introdução:__
 Este é um jogo que tem três objetos que mudam de traje. Você deve fazer eles pararem mostrando a mesma imagem (como uma máquina caça-níqueis!).
@@ -18,7 +18,7 @@ usar a imagem que quiser.
 
 __Agora que temos alguns trajes, queremos que o objeto mude entre eles.__
 
-## Passo 2: Fazendo a mudança de imagem
+## PASSO 2: Fazendo a mudança de imagem
 
 1. Clique na aba Comandos.
 2. Clique em Controle e arraste o bloco "quando bandeira clicada" para área de comandos. Este será
@@ -48,7 +48,7 @@ Ajuste o tempo do bloco __espere__.Quais valores fariam o jogo ficar muito fáci
 
 ## PASSO 3: Fazer parar quando clicado
 
-Excelente! Nós podemos fazer os trajes do objeto mudarem sem parar, mas como é que vamos fazê-lo parar quando clicar sobre ele?
+Excelente! Nós podemos fazer os trajes do objeto mudarem sem parar, mas como vamos fazer para que ele pare quando clicado?
 
 1. Crie uma nova variável clicando Variáveis ​​e criar uma variável. Dê o nome de __parado__ e deixe marcado a opção para todos os objetos, em seguida, desmarque a caixa ao lado dela para que ele não seja exibida no palco.
 2. Mude a variável __parado__ para 1 quando alguém clicar sobre a imagem. Para isso utilize o bloco
