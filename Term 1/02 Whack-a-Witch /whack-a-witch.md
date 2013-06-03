@@ -1,95 +1,194 @@
-Level 1
+Рівень 1
 
-#Whack-a-Witch
+#Полювання на відьом
 
-__Introduction:__This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
-##￼STEP 1: Create a flying witch
-1. Start a new scratch project.2. Remove the cat sprite and replace the background with the nature/woodsbackground.3. Use the new sprite from file button to add a new witchsprite to the project (use the fantasy/witch1 costume). 
-Now we want to make our witch move
+__Передмова: __
+Цей проект схожий на гру __Полювання на крота__. Очки нараховуються за те, що гравець влучає у відьом, які з'являються на екрані.  Ціль гри отримання якнайбільшої кількості очок за 30 секунд.
 
-4. Add a Variable for this sprite only called speed .On the Stage, the stage monitor for this variable should say “Sprite1 speed”.If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in theVariables palette so it does not show on the Stage.The speed variable will control how fast the witch moves. We use a variable so that we can change how fast the witch moves as the game progresses.5. We want the witch to start moving when the game starts, so make a script like this:
+##Крок 1:  Створення літаючої відьмиh
+
+1. Створіть новий проект у Скретч.
+2. Видаліть спрайт кота і змініть тло(фон) на природу/ліс.
+3. Додайте новий спрайт у проект за допомогою відповідної кнопки додавання нових спрайтів (використайте спрайт fantasy/witch1). 
+
+Тепер треба подбати про те, щоб відьма могла рухатись.
+
+1. Додайте лише для цього спрайта змінну  під назвою "speed" (швидкість). 
+На сцені інформація про цю змінну повинна мати вигляд "Sprite1 speed".  
+Зніміть позначку поряд з блоком швидкості у вкладці Величини (Variables), щоб він не відображався на сцені. 
+Змінна швидкості контролюватиме швидкість руху відьми.  Ми використовуємо змінну, щоб мати змогу змінювати швидкість руху відьми впродовж гри.
+2. Відьма повинна почати рухатись із початком гри, тож створимо такий скрипт
 
 ```scratch
-	when FLAG clicked
-	set speed to 5
-	forever
-		move speed steps
-	(end forever)
-```		
-###Test Your Project__Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below yourmove speed steps block add an if on edge, bounce block.
-```scratch
-	when FLAG clicked
-	set speed to 5
-	forever
-		move speed steps
-		if on edge, bounce
-	(end forever)
-```7. To stop the witch flipping upside down, click on the __only face left-right button__ in the Sprite Summary area.
 
-###Test Your Project__Click the green flag.__ 
-Does the witch move from side to side across the screen?
+	when FLAG clicked
 
-Save your project
+	set speed to 5
 
-###Things to try￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Try changing the value of the speed variable to make her fly faster or slower.____How would you make the witch get faster the longer she flies?__
-(This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)##STEP 2: Make the witch appear & vanish randomly
-To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that forever (or until the game finishes).
-Create this script for the witch:
-```scratch
-	when FLAG clicked
-	forever
-		hide
-		wait pick random 2 to 5 secs
-		show
-		wait pick random 3 to 5 secs
-	(end forever)
+	forever
+
+		move speed steps
+
+	(end forever)
 ```
-###Test Your Project__Click the green flag.__ 
-Does the witch move from side to side across the screen and vanish and appear again randomly?
+		
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем__ і перевірте, що робить відьма.  Чому вона застрягає/зупиняється біля краю екрану?
 
-Save your project
+1. Щоб відьма перестала застрягати/зупинятись нам необхідно прописати скрипт її руху по іншій траєкторії після того, як вона досягне краю екрану.  Це робиться за допомогою блоків з командами "move speed steps", "if on edge", "bounce".
 
-###Things to try__Try changing the range of the random numbers. What happens if you pick very big numbers or very small numbers?__(Does this give you any more clues for how to make the witch speed up the longer the game is played?)##￼STEP 3: Make the witch disappear when she’s clicked
-To turn this into a game, we need to give the player something to do. They need to click on the witch to make her disappear. When the witch is clicked, we want her to disappear and play a sound.
-1. In the Sounds tab, import the sound electronic/fairydust. 
-2. Add this script to the witch:
-```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
+```scratch
+
+	when FLAG clicked
+
+	set speed to 5
+
+	forever
+
+		move speed steps
+
+		if on edge, bounce
+
+	(end forever)
 ```
-###Test Your Project__Click the green flag.__ 
-Does the witch disappear and play the sound when you click it?
-Save your project
-##Step 4: Add a score and timer
-We’ve got a witch, but now we want to make a game! We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
-1. Create a new Variable for all sprites called score, and alter the script for the witch to increase this variable by one when she is clicked.
-```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
-	change score by 1
-```2. Switch to the Stage and create a new variable (this time just for the stage) called timer. Add a new script that occurs when the green flag is clicked to set timer to 30 and reset the score to 0. Then use a repeat until block to wait a second and then reduce timer byone. This should repeat until timer is 0, at which point use stop all to stop the game.
-```scratch
-	when FLAG clicked
-	set timer to 30
-	set score to 0
-	repeat until timer = 0
-		wait 1 secs
-		change timer by -1
-	(end repeat)
-	stop all
-```
-###Test Your Project__Click the green flag.__ 
-Save your project
+1. Щоб відьма перестала хаотично рухатись вверх-вниз, натисніть кнопку руху вліво-вправо __only face left-right button__ у полі інформації про спрайт.
 
-###Things to try__How might you make the witch speed up as the game goes on?__
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
-##Challenge: add more witches
-If one witch is good, more must be better! Let’s have three witches flying around.1. Duplicate the witch by right-clicking it in the sprite list.2. For each witch adjust the size of the sprite so the witches are different sizes.3. For each witch change the speed variable so that they fly at different speeds.4. Move the witches around the canvas so that they are not all together.
-###Test Your Project__Click the green flag.__ 
-Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
-Save your project
-###Things to try1. How many witches is a good number for the game?￼￼2. Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.3. Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем.__ 
+Чи рухається відьма з однієї сторони в іншу вздовж екрану?
+
+Збережіть свій проект.
+
+###Спробуйте:
+_￼￼Змінювати величину швидкості, щоб відьма рухалась повільніше або швидшеr.__
+
+__Як зробити так, щоб відьма набирала більшу швидкість впродовж польоту?__
+(Це непросто зробити, тож не хвилюйтесь, якщо цього не зможете.  Впродовж роботи над проектом усе стане зрозумілішим).
+
+##Крок 2: Створення ефекту раптової появи і раптового зникнення відьми.
+
+Щоб зробити гру веселішою, ми зробимо так, щоб відьма раптово з'являлась і щезала.  Зробимо ми це за допомогою скрипта, що виконується одночасно із скриптом, у якому прописано рух відьми.  Цей новий скрипт пропише зникнення відьми з екрану у випадковий момент час, появу її на екрані у випадковий момент часу і постійне повторення цих дій (або повторення їх до завершення гри).
+
+Створіть для відьми такий скрипт:
+
+```scratch
+
+	when FLAG clicked
+
+	forever
+
+		hide
+
+		wait pick random 2 to 5 secs
+
+		show
+
+		wait pick random 3 to 5 secs
+
+	(end forever)
+```
+###Протестуйте свій проект.
+__Натисніть значок із зеленим прапорцем.__ 
+Чи рухається відьма з однієї сторони екрану в іншу, час від часу зникаючи і з'являючись?
+
+Збережіть свій проект.
+
+###Спробуйте:
+__Змінювати діапазон випадкових чисел.  Що відбувається, коли ви вибираєте дуже великі чи дуже маленькі числа?__
+(Чи допомогло це вам зрозуміти, як змусити відьму набирати швидкість впродовж польоту?).
+
+##Крок 3: Створення ефекту зникнення відьми при кліканні на неї.
+
+Щоб зробити цей проект грою, ми повинні придумати, що робити гравцю.  Він повинен клікнути на спрайт відьми, щоб вона зникла. Після клікання на спрайт відьми вона повинна зникнути під звуковий супровід.
+
+1. Із вкладки Звуки (Sounds) імпортуйте звук electronic/fairydust (електронні/магічний пил).
+
+2. Додайте такий скрипт для відьми:
+
+```scratch
+
+	when sprite1 clicked
+
+	hide
+
+	play sound Fairydust
+```
+###Протестуйте свій проект.
+__Натисніть значок із зеленим прапорцем.__ 
+
+Чи зникає відьма після кліку на неї  супроводі відповідних звуків?
+
+Збережіть свій проект.
+
+##Крок 4: Створення рахунку і таймера для гри.
+
+У нас вже є відьма, а зараз нам треба створити гру! Ми хочемо, щоб при кожному кліку на відьму гравцю нараховувались очки, але при цьому існував ліміт часу для гри.  Скористаємось змінними "score" (рахунок) і "timer" (таймер). 
+
+
+1. Створіть нову змінну score (рахунок) для всіх спрайтів та змініть скрипт для відьми так, щоб ця змінна збільшувалась на 1 при кліку на відьму.
+
+```scratch
+
+	when sprite1 clicked
+
+	hide
+
+	play sound Fairydust
+
+	change score by 1
+```
+2. Перейдіть у поле Сцена і створіть нову змінну (лише для Сцени) "timer" (таймер).  Створіть новий скрипт, який виконується при натисканні значка із зеленим прапорцем, і передбачає установку таймера на 30 секунд і установку рахунку на 0.  Потім використайте команду repeat until (повтрювати доки), wait 1 sec (почекати 1 секунду), change timer by -1 (зменшувати число на таймері на 1). Ці команди повинні повторюватись, поки таймер не дійде до 0, тоді для завершення гри скористайтесь командою stop all.
+
+```scratch
+
+	when FLAG clicked
+
+	set timer to 30
+
+	set score to 0
+
+	repeat until timer = 0
+
+		wait 1 secs
+
+		change timer by -1
+
+	(end repeat)
+
+	stop all
+```
+
+
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем__ 
+
+Збережіть свій проект.
+
+###Спробуйте:
+__Як можна було б зробити так, щоб відьма впродовж гри набирала швидкість?__
+
+
+__Молодець, створення базової гри завершено, але ще деякі речі, які можна зробити у грі.  Спробуй виконати ці бонусні завдання!__
+
+##Бонусне завдання: додайте більше відьом у гру.
+
+Одна відьма це добре, але більше відьом ще краще! Давай спробуємо створити гру з трьома літаючими відьмами. 
+1. Створіть дублікат відьми, натиснувши праву кнопку мишки у полі спрайту. 
+2. Для кожної відьми відредагуйте розмір спрайту, щоб усі відьми були різними за величиною.
+3. Змініть для кожної відьми змінну швидкості, щоб вони літали на різних швидкостях.
+4. Подбайте про те, щоб відьми не рухались по екрану всі разом.
+
+###Протестуйте свій проект
+__Натисніть на значок із зеленим прапорцем.__ 
+
+Чи є у грі три відьми, що рухається з однієї сторони екрану в іншу, з'являючись і щезаючи випадковим чином і зникаючи при кліканні на них?
+
+Збережіть свій проект.
+
+###Спробуйте:
+1. Яка кількість відьом була б найкращою для гри?  
+2. 2Чи можете ви змінити вигляд відьом?  Ви можете змінювати їх образи або використовувати блоки команд із вкладки Вигляд.m.
+3. Чи можете ви зробити так, щоб за кожну з відьом нараховувалась різна кількість очок? Як щодо нараховування 10 очок за відьму з найбільшою (найменшою) швидкістю?
+
+__Молодець! Проект завершено, тепер можна насолоджуватись грою!__
+Не забудьте, що грою можна поділитись з друзями та рідними, натиснувши __"Поділитися" (Share)__ у рядку меню. 
