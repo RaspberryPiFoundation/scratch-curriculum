@@ -5,6 +5,7 @@ Nível 1
 __Introdução:__Vamos criar um jogo de pega-pega com o gato Félix e o rato Herbert. Você controla o Herbert com o mouse e tenta fugirdo gato Félix. Quanto mais tempo você ficar sem ser pego,mais pontos você ganha. Cuidado, se você for pego, você perderá pontos!
 ##PASSO 1: Félix segue o mouse
 Acompanhe o seu progresso marcando os quadros abaixo.
+
 1. Crie um projeto novo.2. Dê um duplo clique no fundo branco atraz do gato. Em seguida, na aba __Fundos de Tela__, clique em __Importar__ e escolha o fundo indoors/hall.3. Clique no  Félix e mude o nome de objeto1 para Félix. 4. Certifique-se que o modo de rotação do Felix é somente esquerda-direita.5. Crie estes comandos:
 
 		quando BANDEIRA clicado
@@ -68,6 +69,7 @@ __Ao invés de dizer algo, nós vamos fazer com que Herbert vira um fantasmaquan
 				espere (1) segundos
 			end
 		end
+
 2. Clique sobre o Herbert, vá até a aba trajes e clique em importare escolha o traje fantasy/ghost2-a.3. Edite o traje para ele ficar menor.4. Mude o nome dos trajes do Herbert, de maneira que o rato (mouse1) se chame 'vivo' e o fantasma (ghost2-a)  se chame'morto'.5. Crie novos comandos parao Herbert, para transformá-loem um fantasma.
 
 		quando eu ouvir [pego v]
@@ -79,7 +81,9 @@ __Ao invés de dizer algo, nós vamos fazer com que Herbert vira um fantasmaquan
 ###Teste o projeto
 __Clique na bandeira verde.__
 O Herbert se transforma em fantasma quando pego?
+
 O Félix toca o som certo no momento certo?
+
 O Félix fica parado tempo suficiente para o Herbert fugir?
 
 Salve o projeto
@@ -100,8 +104,11 @@ Salve o projeto
 ###Teste o projeto__Clique na bandeira verde.__
 
 Os pontos aumentam um a um a cada segundo?
+
 Os pontos diminuem de 100 quando o Herbert é pego?
+
 O que acontece quando o Herbert é pego antes que o placar chegue a 100?
+
 O placar volta ao zero quando você começa um novo jogo?
 
 Salve o projeto

@@ -52,7 +52,7 @@ O que acontece se você não mover o ponteiro do mouse e o peixe o alcança? O q
 
 Salve o projeto
 
-## Sugestões
+### Sugestões
 
 Se você quiser, você pode testar diferentes valores nos comandos. Como isso muda a maneira que o Peixe Faminto se move? Altere o limite de distância para um número grande (por exemplo 100), ou um número pequeno (por exemplo, 1). Altere a quantidade de passos que o peixe se move um grande número (por exemplo 20) ou um pequeno número (por exemplo, 1 ou mesmo 0).
 
