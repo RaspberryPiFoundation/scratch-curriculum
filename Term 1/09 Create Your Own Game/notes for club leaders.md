@@ -1,4 +1,29 @@
-#NOTES FOR CLUB LEADERS
-##(Make Your Own Game)##Introduction:In this project you will design and create a game for you and your friendsto play! You will need to think about its different parts and plan your ideas before you begin making it on Scratch. You can use ideas from past projects and Scratch cards to help you.##SkillsThis project covers 
-* Design* Planning* Bug fixing##ResourcesThe children will be designing their own resources for this project including characters, stage and sound design. Have extra paper ready for the children in case they need it. Make sure there are pens and pencils available to draw with. You will need to have a think about how many sessions the children will do this project over. The design and planning stage could take them a whole session or even two. Plan it before you start then inform the children how long they have.##Basic exercisesStep 1: Planning your gameStep 2: Design your charactersStep 3: Design your stageStep 4: How does your game work? 
-Step 5: Building your game
+#НОТАТКИ ДЛЯ ЛІДЕРІВ КЛУБУ
+##(Створи свою гру)
+
+##Передмова:
+
+У цьому проекті потрібно придумати і створити гру для себе та друзів. Слід подумати про різні її складові і систематизувати свої ідеї перед тим, як перейти до їх втілення у Скретч.  Можна скористатись ідеями з попередніх проектів у Скретч і скретч картками.
+
+##Навики
+За допомогою цього проекту можна навчитись:  
+
+* Створювати дизайн
+* Розробляти план  
+* Коригувати помилки
+
+##Ресурси інтерфейсу
+
+Діти будуть створювати свої власні ресурси для цього проекту, включаючи персонажів, сцену та звукові ефекти. Наготові повинен бути додатковий папір для дітей у разі, якщо він їм знадобиться. Переконайтеся, що є ручки і олівці, якими можна малювати. Ви повинні подумати про те, скільки сеансів/занять потрібно, щоб діти створили цей проект. Розробка дизайну і планування сцени може розтягнутись на одне чи навіть два заняття. Тож спершу сплануйте все, а потім повідомте дітям про те, скільки часу у них буде на цей проект.
+
+##Основні кроки
+
+Крок 1: Сплануйте свою гру. 
+
+Крок 2: Створіть персонажів своєї гри.   
+
+Крок 3: Розробіть дизайн сцени. 
+
+Крок 4: Як працюватиме гра? 
+
+Крок 5:  Створіть саму гру.
