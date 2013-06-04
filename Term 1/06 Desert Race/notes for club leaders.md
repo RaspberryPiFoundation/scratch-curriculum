@@ -1,6 +1,34 @@
-#NOTES FOR CLUB LEADERS
-##(Desert Race)##IntroductionThis game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.##SkillsThis project covers: 
-* Events* Variables* Animation* Playing Sounds* Conditional statements • Modifying resources##ResourcesThis project uses resources found in the scratch backgrounds and costumes folders as well as a user created resource based on a scratch resource.##Scratch CardsSay Something##Basic Exercises* Step 1: Create the scene and add sprites 
-* Step 2: Make the characters move* Step 3: Starting the race* Step 4: Finishing the race* Step 5: Resetting the game 
-##Challenge 
-Add a booster
+#НОТАТКИ ДЛЯ ЛІДЕРІВ КЛУБУ
+##(Перегони в пустелі)
+
+##Передмова
+
+Ця гра розрахована на двох гравців, які керують папугою та левом, що рухаються через пустелю. Кожен гравець повинен натискати клавішу якомога швидше, бо виграє той, чия тварина першою дісталась до краю екрану.
+
+##Навики
+За допомогою цього проекту можна навчитись працювати із блоками вкладок:  
+
+1. Події 
+2. Величини 
+3. Анімація 
+4. Програвання звуків 
+5. Умовні твердження 
+6. Трансформація ресурсів.
+
+##Ресурси інтерфейсу
+Цей проект використовує ресурси папок Тло (фон) і Образи, а також застосовує створення ресурсів на основі програмних.
+
+##Необхідні скретч картки
+Скажи щось
+
+##Основні кроки
+
+* Крок 1.  Створення сцени та спрайтів. 
+* Крок 2: Лев і папуга починають рухатись. 
+* Крок 3: Початок гонки. 
+* Крок 4: Завершення перегонів. 
+* Крок 5: Перезапуск гри.
+
+##Додаткове завдання  
+
+Додавання прискорювача.
