@@ -1,68 +1,209 @@
-Level 2
+Рівень 2
 
-#Desert Race
+#Перегони в пустелі
 
-__Introduction:__This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
-##￼STEP 1: Create the scene and add the sprites
+__Передмова:__
+Ця гра розрахована на двох гравців, які керують папугою та левом, що рухаються через пустелю. Кожен гравець повинен натискати клавішу якомога швидше, бо виграє той, чия тварина першою дісталась до краю екрану.
 
-1. Select the Stage, and add the desert background.ticking off the boxes below:￼￼￼2. Add a new sprite, select the lion sprite that you will find in the animals folder.3. Add another sprite, select the parrot sprite that you will find in the animals folder.
-##STEP 2: Make the lion and the parrot move
-We want the sprite to move when you press a key.
-1. First select the lion sprite and set it to move 4 steps when you press the ‘L’ key.
-```scratch
-	when l key pressed	move 4 steps
-```
-2. Next, select the parrot sprite and set it to move 4 steps when you press the ‘A’ key.
 
-```scratch
-	when a key pressed	move 4 steps
-```
+##Крок 1.  Створення сцени та спрайтів.
 
-###Test Your Project__Click the green flag__ 
-Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
-Save your project
-##￼STEP 3: Starting the race
-We need to have a way to start the race and to know who has won. __First we create a start button.__1. Add a new sprite from a file. Choose the button sprite which is inside “things”.2. Edit the costume of the button sprite, add the text ‘start’ to it and click OK. Move the sprite to the middle of the stage.3. Now add a script that shows the sprite when the project is run:
-```scratch
-	when FLAG clicked	show
-```4. Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
-```scratch
-	when StartRace clicked	say 3 for 1 secs	say 2 for 1 secs	say 1 for 1 secs	say GO! for 1 secs	hide
-```
-###Test Your Project__Click on the green flag.__When you press the start button does it countdown to the start of the race before disappearing?Save your project
-We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.5. Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.6. Now set racing to be 0 when the project is first started. Change your when flag clicked scriptfrom before to look like this:
-```scratch
-	when FLAG clicked	show	set racing to 0
-```7. Next, set the racing variable to be 1 when the starting countdown has finished.8. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows theparrot to move if __racing = 1__.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps	(end if)
-```9. Now do the same for the lion sprite.###Test Your Project__Click on the green flag.__Does the lion or the parrot move only after the countdown has finished?
-We want to know who wins the race and reset it when it has finished so you canrace again.##￼STEP 4: Finishing the race
-1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0		(end if)	(end if)
-```2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the a parrot winning the race!3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs		(end if)	(end if)
-```4. Now repeat these steps for the lion.
-###Test Your Project__Click on the green flag.__Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
-Save your project
-##￼STEP 5: Resetting the game
-After the race is finished we need to tell the other sprites we have won and reset thegame so we can play again.__We need the winning sprite to broadcast that it has won.__
-1. Click on the Parrot sprite.Add a block that broadcasts “finished” after the sprite says it has won.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs			broadcast finished		(end if)	(end if)
-```2. Now we need to add a new script that listens for the finished broadcast and moves the parrotback to the start. What happens if you change the value that x is set to?
+1.  У полі Сцена оберіть Нове тло і додайте фон пустелі.  
+2. У полі спрайтів створіть Новий спрайт за допомогою відповідної функції, додавши спрайт лева із папки Тварини.
+3. Додайте ще один спрайт, обравши спрайт папуги у папці Тварини.
+
+
+
+##Крок 2: Лев і папуга починають рухатись.
+
+
+Спрайти повинні рухатись при натисненні клавіші.
+
+
+1. Оберіть спрайт лева і пропишіть скрипт, за яким він переміщатиметься на 4 кроки при натисненні клавіші L.
 
 ```scratch
-	when I receive finished	set x to -175
-```3. Now add the same script for the lion. Test different x values to make sure the lion and the parrot line up at the start.4. We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the startwhen we click the flag.
-```scratch
-	when FLAG clicked	set x to -175
-```5. Now click on the button sprite and add a script that shows it when it receives the finished message.￼￼￼￼￼￼￼￼￼￼###Test Your Project__Click on the green flag.__
-Can you race against a friend, one of you moving the parrot by pressing ‘A’ and theother moving the Lion by pressing ‘L’?
-Save your project##￼Challenge: Add a booster
 
-* __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__* __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.* __Create another sound__ that the sprite will make when the boost is pressed.￼###Test Your Project
-Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+	when l key pressed
+	move 4 steps
+```
+
+2. Потім оберіть спрайт папуги і пропишіть скрипт, за яким він переміщатиметься на 4 кроки при натисненні клавіші А.
+
+```scratch
+
+	when a key pressed
+	move 4 steps
+```
+
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__ 
+Чи рухаються папуга та лев вздовж екрану при натисненні клавіш А та L?
+
+Збережіть свій проект.
+
+
+##Крок 3: Початок гонки.
+
+Потрібно якимось чином розпочати перегони, а потім дізнатись, хто виграв.  __Спершу створимо кнопку "Старт".__
+
+1. Додайте новий спрайт у проект. Оберіть спрайт "кнопка" у папці Речі.
+2. Відредагуйте образ спрайт кнопки та додайте текст "старт" на нього, натисніть ОК. Розташуйте спрайт  посередині сцени.
+3.  Тепер створіть скрипт, за яким цей спрайт з'являтиметься при запуску проекта:
+
+```scratch
+
+	when FLAG clicked
+	show
+```
+4. Тепер зробіть так, щоб кнопка, починала зворотний відлік з 3, потім давала команду почати рух і щезала при кліку на неї.  Створіть такий скрипт
+
+```scratch
+
+	when StartRace clicked
+	say 3 for 1 secs
+	say 2 for 1 secs
+	say 1 for 1 secs
+	say GO! for 1 secs
+	hide
+```
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи веде кнопка старт при натисканні зворотній відлік перед тим як щезнути?
+
+Збережіть свій проект.
+
+Нам треба, щоб лев та папуга починали рухатись після команди Вперед!, і ще нам треба знати, коли перегони закінчаться, тож створимо змінну для виведення цієї інформації.
+
+5. Додайте змінну під назвою "Перегони" для всіх спрайтів.  Зніміть галочку поруч з нею, щоб змінна не з'являлась на сцені.
+
+6. Тепер присвойте змінній значення 0 у момент початку проекту. Змініть свій скрипт коли натиснуто прапорець таким чином
+
+```scratch
+
+	when FLAG clicked
+	show
+	set racing to 0
+```
+7. Присвойте значення 1 змінній Перегони, коли завершиться зворотній відлік.
+ 
+8. Лев та папуга не повинні рухатись до того, як змінна Перегони набуде значення 1.  Натисніть на спрайт папуги.  Додайте у його скрипт контрольний блок, що дозволить папузі рухатись лише тоді, коли __Перегони =1.__
+
+```scratch
+
+	when a key pressed
+	if racing = 1
+		move 4 steps
+	(end if)
+```
+9. Тепер зробіть те саме для спрайту лева.
+
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Лев або папуга починають рухатись тільки після завершення зворотного відліку?
+
+Нам потрібно знати, хто виграв перегони і перезапустити їх після завершення, щоб можна було грати знову.
+
+##Крок 4: Завершення перегонів.
+
+1. Додайте у скрипт папуги блок, що присвоює змінній Перегони значення 0, коли спрайт торкається краю екрану.
+
+```scratch
+
+	when a key pressed
+	if racing = 1
+		move 4 steps
+		if touching edge?
+			set racing to 0
+		(end if)
+	(end if)
+```
+2. Також необхідно, щоб папуга повідомляв нам, чи виграв він перегони.  Запишіть новий звук для спрайту папуги, що програватиметься, коли папуга виграє.  Для цього оберіть вкладку Звуки і запишіть звук.
+3. Тепер додайте у скрипт блоки, що програватимуть записаний звук і змушуватимуть папугу говорити, що він виграв.
+
+```scratch
+
+	when a key pressed
+	if racing = 1
+		move 4 steps
+		if touching edge?
+			set racing to 0
+			play sound recording1
+			say The Parrot Wins! for 3 secs
+		(end if)
+	(end if)
+```
+4. Зробіть те саме для лева.
+
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи можна натиснути кнопку старт почати перегони натиснувши клавіші А та L? 
+Чи програються відповідні звуки і чи з'являються відповідні повідомлення, коли кожен один зі спрайтів перемагає?
+
+Збережіть свій проект.
+
+##Крок 5: Перезапуск гри.e
+
+Після завершення перегонів необхідно повідомити іншим спрайтам про перемогу та перезапустити гру, щоб можна було грати спочатку.
+
+__Потрібно щоб спрайт, який переміг оповістив про свою перемогу.__
+
+1. Клікніть на спрайт папуги.  
+Додайте блок оповістити "кінець" після того, як спрайту повідомляє про свою перемогу.
+
+```scratch
+
+	when a key pressed
+	if racing = 1
+		move 4 steps
+		if touching edge?
+			set racing to 0
+			play sound recording1
+			say The Parrot Wins! for 3 secs
+			broadcast finished
+		(end if)
+	(end if)
+```
+2. Тепер необхідно додати новий скрипт, що аналізував би оповіщення і переміщав папугу назад у стартову позицію.  Що відбудеться, якщо змінити значення присвоєне х?
+
+```scratch
+
+	when I receive finished
+	set x to -175
+```
+3. Тепер створіть такий же скрипт для спрайта лева.  Спробуйте задавати різні значення х, щоб переконатись, що лев та папуга стартують з одної лінії.
+4. Необхідно також, щоб лев та папуга стартували з однакових позицій при запуску гри, тому додайте у  скрипти, що прописують рух спрайтів, відповідний блок:
+
+
+```scratch
+
+	when FLAG clicked
+	set x to -175
+```
+5. Натисніть на спрайт кнопки старт і додайте скрипт, що виводить її на екран після отримання оповіщення Кінець.
+￼￼￼￼￼￼￼￼￼￼
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+
+Чи можна грати в гру з другом, коли один натискаючи А рухає папугу, а інший натискаючи L керує левом?
+
+Збережіть свій проект.
+
+##Додаткове завдання: Додавання прискорювача.
+
+* __Спробуйте додати прискорювач__, який за 1 натискання клавіші переміщує спрайт __на 30 кроків, скористатись ним можна один раз за гру__.
+* __Додайте новий образ__, який спалахує вогнем, для кожного спрайта, щоб він з'являвся, коли натиснуто кнопку прискорювача.
+* __Створіть інший звук__, який би видавав спрайт при натисканні на прискорювач.
+￼
+
+###Протестуйте свій проект.
+
+Збережіть свій проект.
+
+
+__Молодець! Створення проекту завершено, тепер можна насолоджуватись грою!__
+Не забудьте поділитись грою з друзями та рідними, натиснувши __Поділитись__ у рядку меню.
