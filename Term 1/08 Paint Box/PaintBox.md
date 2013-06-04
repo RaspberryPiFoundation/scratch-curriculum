@@ -1,16 +1,34 @@
-Level 3
+Рівень 3
 
-#Paint Box
+#Набір для малювання
 
-__Introduction:__The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!￼##STEP 1: Drag and drawWe’ll start with a pen that draws when you drag it around the Stage.1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete2. Click __Stage__ and then the __Backgrounds__ tab. Import the __indoors/chalkboard__ background.3. Create a new sprite called __pencil__, using __resources\green-pencil.__4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click __Set costume center__ and drag the lines until they are at the tip.5. Make the pencil followthe mouse around the stage using the __forever__ 
-and __go to__ mouse-pointer blocks.
+__Передмова:__
+Цей проект передбачає створення інструменту для малювання. Ви зможете змінювати колір ліній, очищувати екран, робити штампи та багато іншого.
+
+##Крок 1: Водіть мишкою і малюйте.
+
+Ми розпочнемо із ручки, яка малює, коли нею водять по сцені.
+
+1 - Створіть новий проект у Скретч.  Видаліть спрайт кота, клікнувши правою кнопкою мишки і натиснувши Видалити.
+2 - У полі __сцени__ оберіть __Нове тло__ та імпортуйте __зображення класної дошки__ з папки "У приміщенні".
+3 - Створіть новий спрайт і назвіть його __Олівець__, використайте папку __resources\green-pencil (ресурси/зелений олівець)__.
+4 - Перейдіть до вкладки __Образи__ та у __Редакторі малюнків__ розташуйте центр зображення на кінчику ручки/олівця.  Для цього оберіть кнопку "встановити центр образу" і розмістіть (обертаючи і перетягуючи) його так, щоб позначка центру зображення була на кінчику ручки/олівця.
+5 - Зробіть так, щоб олівець слідував за мишкою по сцені, використовуйте блоки команд __"завжди"__ (вкладка Керувати) та __"переміститись у вказівник миші"__ (вкладка Рух).
+
 
 ```scratch
 when FLAG clicked
 forever
 	go to mouse-pointer
 (end forever)
-```__Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are __pen down__ and __pen up__6. We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an if... else and mouse down? blocks.```scratch
+```
+
+__Тепер потрібно зробити так, щоб спрайт олівця повинен діяти як справжній олівець.__ 
+У вкладці Олівець є багато блоків, пов'язаних з малюванням, але ми спершу використаємо блоки "підняти олівець" та "опустити олівець".
+
+6 - Ми будемо використовувати кнопку мишки, щоб керувати олівцем – коли мишка рухається вниз, то й олівець рухається вниз, а коли вести мишкою вверх, то і олівець повинен рухатись вверх.  Це можна зробити за допомогою блоків "якщо то" та "мишку натисно?"
+
+```scratch
 when FLAG clicked
 forever
 	go to mouse-pointer
@@ -20,9 +38,15 @@ forever
 	pen up
 	(end if)
 (end forever)
-```##Test Your Project__Click on the green flag.__Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.
-7. Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.
-```scratch
+```
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+Чи рухається олівець за мишкою?  Що відбувається, якщо утримувати кнопку мишки натиснутою і рухати мишкою? Не турбуйтесь з приводу кольору олівця поки що.
+
+
+7 - З часом екран заповниться різною писаниною.  Для того, щоб його очистити, використайте відповідний блок під назвою "очистити":
+
+```scratch
 when FLAG clicked
 clear
 forever
@@ -34,30 +58,96 @@ forever
 	(end if)
 (end forever)
 ```
-##Test Your Project__Click on the green flag.__Does your drawing disappear when you click on the green flag?SAVE YOUR PROJECT##￼￼￼STEP 2: Clearing upRather than having to stop and start the whole project, let’s add a button thatclears the drawing. It will do that using the clear block.1. Create a new sprite from the __resources/cancel button__ costume. 
-2. Change the sprite’s name to __clear__.3. Position the sprite near the bottom-left corner of the stage.4. Give the clear sprite this simple script:
-```scratch
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи зникає намальоване, коли натиснути зелений прапорець?
+
+Збережіть свій проект.
+
+##Крок 2: Очищення екрану
+
+Замість того, щоб зупиняти і заново запускати проект, додайте кнопку очищення екрану.  Вона працюватиме за допомогою блоку "очистити".
+
+1. Створіть новий спрайт з відповідним образом __(resources/cancel button)__.
+2. Змініть ім'я спрайту на __Очистити__.
+3. Розмістіть спрайт у лівому нижньому кутку сцени.
+4. Створіть для нього наступний скрипт:
+
+```scratch
 when clear clicked
 clear
-```##Test Your Project__Click on the green flag.__Does the clear button clear all your drawing?SAVE YOUR PROJECT##STEP 3: Changing colourSo far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.1. Add a new sprite, called __red__, using the __resources/red-selector costume__. 
-2. Place it somewhere along the bottom of the frame, near the __clear button__.3. When the red sprite is clicked, it should broadcast the message __red__.
-```scratch
+```
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи очищає кнопка очищення сцену від усього написаного?
+
+Збережіть свій проект
+
+##Крок 3: Зміна кольору
+
+Отже, ми можемо малювати лише блакитні лінії.  Давайте спробуємо якісь інші кольори.  Додамо кілька спрайтів внизу сцени.  Спрайти виглядатимуть як кольорові кнопки.  Якщо ми натиснемо на таку кнопку, колір лінії зміниться на колір кнопки.  Так ми знатимемо, який колір використовуємо; кнопка також змінить колір спрайту олівця.
+
+1. Створіть новий спрайт, використавши образ __resources/red-pencil__
+2. Розмістіть його внизу сцени поряд з __кнопкою Очистити__.
+3. При натисканні спрайта Червоний, він повинен оповістити __червоний__.
+
+```scratch
 when Red clicked
 broadcast red
-```__Yes, that’s all it does. The hard work is done by the pencil.__￼￼￼￼In the pencil, import a new costume, __resources/red-pencil__. Set the costume centre to be the tip of the pencil as you did for the original costume.4. Add a new script to the pencil. When the pencil receives the message __red__, it should change to the red pencil costume and change the pen colour to red (using the set pen color to block).__Hint:__ if you click on the coloured squarein the __set pen color to__ block, you canclick the eyedropper on the red sprite to make sure it’s the same colour.
-```scratch
+```
+__Ось і все, що робить цей спрайт. Основна ж робота призначена для олівця.__
+
+Для спрайту олівця імпортуйте новий образ __resources/red-pencil__ Встановіть центр образу так, щоб позначка центру зображення була на кінчику ручки/олівця.ume.
+
+4. Додайте новий скрипт для олівця.  Коли олівець отримує сповіщення __червоний__, він повинен змінити образ на образ червоного олівця і змінити колір на червоний (для цього використайте блок "задати колір олівця").
+
+__Підказка:__ якщо клікнути на кольоровий квадратик у блоці "задати колір олівця", то можна __скористатись інструментом "піпетка"__ і клікнути на спрайт Червоний, щоб переконатись, що це  той самий колір.
+
+```scratch
 when I receive red
 switch to costume
 red-pencil
 set pen color to (red)
-```##Test Your Project__Click on the green flag.__Start by drawing a line. Then click on the red selector sprite and draw some more. Does the pencil change costume? Does it now draw red? Does it draw from the tip of the red pencil?SAVE YOUR PROJECT5. Repeat what you just did for the blue, yellow, and green selector sprites.##￼￼Test Your Project__Click on the green flag.__￼￼￼Do all the selector buttons work? Do they all change the pencil’s costume to the right colour? Do they all make the pencil draw in the right colour? Do all the costumes draw with the tip of the pencil?SAVE YOUR PROJECT##STEP 4: Only drawing inside the borderYou’ve probably noticed that you can draw all over the Stage, even in the border. We don’t want that to happen. We want to keep the drawing in the middle of the Stage. We can do this by making sure the pen isn’t allowed to leave the drawing area - the light grey part on the Stage.
-￼￼￼￼￼￼￼Remember that Scratch defines points using x and y axis. Our drawing area lies between 230 and -230 on the x-axis and 170 and -120 on the y-axis. We can use these values in an __if__ block, making sure the mouse is inside this area before we move the pencil to it.To do this, wrap a new if block around your existing __go to... if__ block, and inside this new if check for the following:
-mouse y is greater than -120 and mouse y is less than 170and mouse x is greater than -230 and mouse x is less than 230__Note__ to do this you’ll need to use multiple __and__ operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:
-```scratch
+```
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Намалюйте лінію.  Потім оберіть червоний колір і продовжте лінію.  Чи змінив спрайт олівця образ? Чи малює він тепер червоним? Чи малює він кінчиком червоного олівця?
+
+Збережіть свій проект.
+
+5. Повторіть описані вище операції для блакитного, жовтого, зеленого спрайтів вибору кольорів.
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи працюють усі кнопки вибору кольорів? Чи всі вони правильно змінюють образ  спрайта олівця?  Чи всі вони змінюють колір олівця на вірний?  Чи всі образи малюють кінчиком олівця?
+
+Збережіть свій проект.
+
+##Крок 4: Створення зони малювання.
+
+YВи напевно помітили, що можете малювати на усій сцені, навіть по краях.  Але це небажано.  Малювати треба посередині сцени.  Це можна забезпечити обмеживши можливість олівця виходити за межі зони малювання – світло сірої частини сцени.
+
+Пам'ятайте, що у Скретч задати точку можна координатами х та у.  Наша зона малювання знаходиться в межа 230 та -230 по осі х, 170 і -170 по осі у.  Можна використати ці значення та блок "якщо" для того, щоб переконатись, що курсор мишки знаходить в зоні малювання, перш ніж ми перемістимо туди олівець.
+
+Для цього введіть ще один блок __якщо__ у скрипт, перевіряючи координати точки, у кій міститься курсор мишки:
+
+mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
+
+__Зауважте__, що для цього потрібно кілька разів використати блок з оператором __і__, перший для двох умов щодо координати по осі х, другий для двох умов по координаті для осі у та третій для об'єднання двох попередніх умов.
+
+```scratch
 clear
 forever if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
 go to mouse-pointer
-```Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the __if__ with an __if else__ block. Keep the same condition for the __if__, and __show__ the pencil if it’s true, otherwise hide it.
+```
+Оскільки не можна малювати поза зоною малювання, можна ховати інструмент Олівець, коли його не використовують.  Для цього замініть блок __якщо__ на блок __якщо інакше__.  Залишіть ту ж умову __якщо__ і додайте блок __показати__, якщо вона істинна, інакше __сховати__.
 
 ```scratch
 when FLAG clicked
@@ -76,16 +166,122 @@ forever
 		hide
 	(end if)
 (end forever)
-```##Test Your Project__Click on the green flag.__Can you still draw inside the drawing area? Can you draw outside the drawing area? What happens to the pencil when you leave the drawing area and go back in?￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼SAVE YOUR PROJECT##STEP 5: Eraser__￼￼￼￼Drawing lines is great, but there are times when you’ve made a mistake and you want to rub it out.__ We can do that with a new pencil tool that draws in grey (the same colour as the background).Add a new button-sprite to the Stage to select the eraser. Use the __resources/eraser__ costume for it, making it smaller to fit at the bottom of the Stage. It should work the same as the other colour-selection buttons, sending an eraser message.The pencil sprite should respond to the eraser message by switching the pen colour to grey (remember you can use the __picker__ to select the colour of the background). It will also need a new costume to represent the eraser tools: use the same __resources/eraser__ costume. __Remember to reset the costume’s centre.__##Test Your Project__Click on the green flag.__Does the eraser rub out lines? Does it work right up to the edges? Can you switch between eraser and pencil tools?SAVE YOUR PROJECT##￼￼￼STEP 6: StampsThe next thing to add is a stamp tool, to stamp small pictures on the drawing.Activity Checklist1. Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should __broadcast stamp__2. Add a new costume for this pencil sprite, the same as the one you chose for the __stamp__ button.3. Select the pencil sprite and create a new variable __pencil mode__ for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.4. Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the __pencil mode__ variable to __false__.5. Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the __pencil mode__ to __true__.6. Finally, lets check this variable __when the mouse button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. ##￼￼￼￼￼￼￼￼￼￼￼Test Your Project__Click on the green flag.__￼￼Does the stamp tool work correctly?What happens when you switch back to one of the normal pencil tools?SAVE YOUR PROJECT
-￼__Well done, you have completed the basic steps for this project.Try these challenges!__￼￼￼
-##Challenge 1: Rainbow pencilLet’s add a special pencil that paints in rainbow colours. It’s something that you can’t do with ordinary pens and pencils, so it’s nice to show off how drawing on a computer allows you do to different things. The secret to making it work is the change pen colour by block.First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:1. Create a new tool selection sprite and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the resources/rainbow-selector costume and have it broadcast rainbow when clicked.2. Add the resources/rainbow-pencil costume to the pencil sprite.You need to build a script that will change the pen colour many times a second to give the rainbow effect (I found that changing it by 5 every 0.05 seconds works well, but you should try out different values). The timer Scratch card shows how you can make something change every so often. Use a change pen colour by 5 block instead of a change timer by -1 block inside the loop.You also need to control that loop so that it only changes the pen colour when you’ve selected the rainbow pencil, otherwise all the pencils will have a rainbow effect! You can do this in a very similar way to how the pencil sprite changes between pencil and stamp modes. You need to create a variable called rainbowChange that has the value true when you want the rainbow effect and false otherwise. Every time the pencil responds to a tool-selection message, it should set the value of rainbowChange accordingly.Use what you learnt from the stamp step above to control the rainbow effect. The scripts that respond to the tool-selection messages will set two variables each: pencilMode and rainbowChange.##Test Your Project__Click on the green flag.__Does the rainbow tool work correctly?What happens when you switch back to one of the normal pencil tools?SAVE YOUR PROJECT##￼￼￼￼￼￼￼￼￼Challenge 2: Keyboard shortcutsRather than using the tool-selection sprites at the bottom of the stage, you can use the keyboard to select the different tools.You can use the when [] key pressed blocks to respond to the keyboard. For each key you want to use, you’ll need another when [] key pressed block, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.I used these shortcuts:* Clear all - a* Eraser - e* Red pencil -r 
-* Blue pencil - b
-* Yellow pencil - y
-* Green pencil - g
-* Rainbow pencil - w￼￼￼* Stamp - s
-##Test Your Project__Click on the green flag.__￼￼Do all the tools get selected with the correct keyboard shortcuts? Does each of the tools work correctly when you select it with keyboard? Are the correct tools still selected with the tool-selection sprites on the stage?SAVE YOUR PROJECT
+```
 
-##Challenge 3: Big and SmallAnother feature that most drawing packages have is the ability to change thesize of the pencil. Let’s add that.There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.Create two new tool-selection sprites, called bigger and smaller. They should have the resources/bigger-selector and resources/smaller-selector costumes and should send the bigger and smaller messages.The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an if-else block, similar to how the sprite chooses between putting the pen down or stamping)Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.SAVE YOUR PROJECTWhat you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.To stop that, you need to set the size to 100% every time you change to a pencil tool. so that the tools look the right size.To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new variable called stampSize, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.￼￼￼￼￼￼￼￼￼##￼Test Your Project__Click on the green flag.__
-Do the size controls work for the pencils?What happens if you switch to the stamp, change the size and then switch back to a pencil?SAVE YOUR PROJECT
-￼￼￼￼￼￼￼__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи можете ви малювати у зоні малювання?Чи можна малювати поза нею? Що відбувається з олівцем, коли вийти за межі зони малювання, а потім повернутись у неї?
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
+Збережіть свій проект.
+
+##Крок 5: Резинка/стирання.
+
+__Малювання ліній - це чудово, але трапляються помилки, які хочеться виправити.__ Це можна зробити за допомогою олівця, який замалює все у колір фону.
+
+Додайте новий спрайт-кнопку на сцену, щоб з'явилась кнопка Резинка. Скористайтесь образом __resources/eraser__ для неї, зменшіть її таким чином, щоб розмістити внизу сцени.  Вона повинна працювати так само, як і кнопки вибору кольорів і давати оповіщення "Резинка".  
+
+Спрайт олівця повинен відповідати на це оповіщення зміною кольору на колір фону (для того, щоб обрати колір скористайтесь __піпеткою__ і виберіть колір фону).  Також необхідний новий образ для демонстрації інструменту Резинка: використайте __resources/eraser__. __Не забудьте встановити для нього центр, як у попередніх кроках.__
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи стирає резинка лінії? Чи діє вона у всій площині сцени до її країв ? Чи можна переключатись між інструментами олівець та резинка?
+
+Збережіть свій проект.
+
+##Крок 6: Штампи.
+
+Наступний крок це додавання інструменту Штампи для нанесення маленьких картинок на малюнок. 
+
+Перелік дій:
+
+1 - Додайте новий спрайт, використавши будь-який образ чи зображення.  Зменште його розмір і розмістіть спрайт внизу сцени поряд з іншими інструментами.  при кліканні на цей спрайт він повинен давати оповістити __штамп__(блок "оповістити").
+2 - Додайте новий образ для спрайту олівця, той же, який вибрано для спрайу __штамп__.
+3 - Виберіть спрайт олівця і створіть нову змінну під назвою __Вид олівця__ лише для цього спрайта.  Вона потрібна для того, щоб розрізняти дії малювання та створення штампів.
+4 - Додайте новий скрипт, що відповідав би на сповіщення "штамп".  Він повинен містити блок __змінити образ на штамп__ та присвоїти змінній __Вид олівця__ значення __хибно__.
+5 - Змініть інші скрипти, які відповідають на сповіщення про інструменти колір олівця (червоний, зелений блакитний) та резинка таким чином, щоб вони присвоювали змінній __Вид олівця__ значення  __істинно__.
+6 - І нарешті перевірте цю змінну у момент, __коли курсор мишки рухається вниз__, щоб з'ясувати, яка дія виконується – малювання чи штампування.  Якщо "Вид олівця"  = істинно, то повинен виконуватись блок __підняти олівець__, а якщо ні, то функція штампування.
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+￼￼
+Чи коректно працює інструмент штампування? 
+
+Що відбувається при поверненні до одного зі звичайних інструментів малювання?
+
+Збережіть свій проект.
+￼
+__Молодець! Створення основного проекту завершено.  Спробуйте виконати додаткові завдання.__
+￼￼￼
+##Додаткове завдання 1: Олівець-райдуга.
+
+Додамо особливий олівець, що малює всіма кольорами райдуги.  Такі олівці насправді є, тому було б добре і за допомогою комп'ютера створити такий же олівець.  Ключ до створення такого олівця – використання блоку зміни кольору.
+
+По-перше, додайте спрайт вибору олівця-райдуги та відповідний образ для спрайту олівця:
+
+1. Створіть новий спрайт вибору інструменту і розмістіть його внизу сцени поруч зі спрайтами вибору кольорів.  Використайте образ resources/rainbow-selector  і задайте при кліканні на нього сповіщення "райдуга" .
+2. Додайте образ resources/rainbow-selector для спрайта олівця.
+
+Необхідно створити скрипт, який змінюватиме колір олівця кілька разів за секунду для створення ефекту райдуги (зміна кольорів 5 разів кожні 0.5 секунди цілком підходить, але слід спробувати різні варіанти).  Скретч картка Таймер показує, як зробити так, щоб щось часто змінювалось.  Використайте блок "змінити колір олівця на 5" замість блоку в Таймері "змінити таймер на -1" всередині циклу.
+
+Також необхідно контролювати виконання цього циклу, щоб він змінював колір олівця лише при виборі інструменту Олівець-райдуга, інакше усі інструменти матимуть ефект райдуги!  Це можна зробити за схемою переходів спрайту олівця між функціями малювання та штампування.  Потрібно створити змінну під назвою "Перехід до райдуги" зі значенням істинно, коли обирається олівець-райдуги та значенням хибно у всіх інших випадках.  Кожного разу, коли олівець відповідає на оповіщення інструменту вибору, повинно присвоюватись відповідне значення змінній"Перехід до райдуги".
+
+Скористайтесь тим, що ви уже знаєте з кроку Штампи для контролю за ефектом райдуги. Скрипти. які відповідають на оповіщення про вибір інструменту малювання повинні присвоїти значення двом змінним: "Вид олівця" та "Перехід до райдуги".
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи коректно працює  інструмент райдуги? 
+
+Що відбувається при переході на звичайні інструменти малювання?
+
+Збережіть свій проект.
+
+##Додаткове завдання 2: Клавіші швидкого викликуcuts
+
+Замість вибору спрайтів інструментів малювання чи штампування внизу сцени шляхом клікання на них можна скористатись клавіатурою.  Слід використати блок "коли натиснуто клавішу []". Для кожного інструменту вибору необхідно пописати у скрипті окремий блок "коли натиснуто клавішу []", що має таку ж дію, що й клікання на відповідний спрайт. Додайте ці скрипти для сцени.
+
+Можна використати такі  " клавіші швидкого виклику ":
+* Clear all – a (очистити)
+* Er Eraser – e (резинка)
+* Red pencil –r (червоний олівець)
+* Blue pencil – b (блакитний олівець)
+* Yellow pencil – y (жовий олівець)
+* Green pencil – g (зелений олівець)
+* Rainbow pencil – w (олівець-райдуга)
+* Stamp – s (штамп)
+
+
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи можна обрати усі інструменти за допомогою  відповідних клавіш?Чи всі інструменти коректно працюють при виборі їх клавішами? Чи правильно обираються інструменти при кліканні на їх спрайти на сцені?
+
+Збережіть свій проект.
+
+##Додаткове завдання 3: Збільшення та зменшення олівця.
+Інша функція, яка часто зустрічається у програмах,що дозволяють малювати, - це зміна розміру олівця.  Давайте створимо її.  Складність може виникнути через те, що іноді зміна розміру потребує зміни розмірів олівця, а іноді зміни розмірів образу спрайту олівця.  Це залежить від того, яка функція (малювання чи штампування) використовується.
+
+Створіть 2 нових спрайти вибору інструментів під назвами "Більший" і "Менший". У них повинні бути образи resources/bigger-selector та resources/smaller-selector і вони повинні надсилати сповіщення "більший", "менший".
+
+Спрайт олівця повинен реагувати на ці сповіщення зміною або розміру олівця на 1 або образу олівця на 10, залежно від того, який вид олівця застосовується (використайте блоки "якщо ... інакше" таким же чином, як вони використані у скрипті, за яким спрайт обирає між штампуванням та "опустити олівець").  Не забудьте прописати клавіші швидкого вибору для інструментів "Більший" та "Менший".  Можна використати клавіші стрілок вгору та вниз.
+
+Збережіть свій проект.
+
+Ви помітили, що зміна розміру штампу також змінює розмір олівця на екрані, якщо знову обрати цей інструмент. Щоб цього не відбувалось необхідно встановити розмір 100% кожного разу, коли відбувається перехід до функції власне олівця. Так щоб інструмент мав належний розмір.
+
+Ще краще, щоб інструмент штампування пам'ятав, який розмір він мав до вибору олівця і повертався до цього розміру при повторному виборі штампування.  Найпростіше це зробити за допомогою змінної "Розмір штампу", яка оновлюється до поточного розміру щоразу, коли розмір інструменту штампування змінюється.  При виборі інструменту штампування, його розмір може обиратись із пам'яті цієї змінної.
+￼
+##Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи впливає розмір на роботу олівців? 
+
+Що відбувається при переході до інструменту штампування, зміні розміру, а потім поверненні до інструменти власне олівця?
+
+Збережіть свій проект.
+
+__￼￼Молодець! Проект завершено, тепер можна насолоджуватись грюe!__
+
+Не забудьте поділитись грою з друзями та рідними, клікнувши __Поділитись__ у рядку меню.
