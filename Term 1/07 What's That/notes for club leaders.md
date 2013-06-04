@@ -1,8 +1,40 @@
-#NOTES FOR CLUB LEADERS
-##(What's That)##IntroductionA random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!##SkillsThis project covers
-* Keeping and setting the score* Changing costumes and appearance* Setting a random answer* Detecting a click and checking if the right sprite was clicked 
-* Broadcast messages##ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders##Scratch Cards required:Timer##Basic exercisesStep 1: Make different things appear on the blackboard 
-Step 2: Make the pictures distorted
-Step 3: Allow the player to guess the picture￼
-##Challenges1. Make the game harder or easier2. Distort the picture differently in each game3. Make a game have a few rounds4. Make later rounds more difficult5. Keep playing until the player gets it wrong6. Make the game harder or easier depending on how well the player does. 
-7. Keep track of the highest score8. Make wrong guesses expensive
+#НОТАТКИ ДЛЯ ЛІДЕРІВ КЛУБУ
+##(Вгадай, що це)
+
+##Передмова
+
+На дошці з'являються випадкові об'єкти, усі вони спотворені.  Гравцю необхідно здогадатись, який об'єкт демонструється, натиснувши на правильне зображення нижче.  Що швидше він здогадається, то більше очок набирає.
+
+##Навики
+
+За допомогою цього проекту можна навчитись: 
+
+1. Створювати рахунок і набирати очки 
+2. Змінювати образи і вигляд спрайтів. 
+3. Задавати випадкову відповідь  
+4. Встановлювати факт клікання та перевіряти, чи на вірний спрайт клікнуто  
+5. Передавати повідомлення(через команду "оповістити"). 
+
+##Ресурси інтерфейсу
+
+Цей проект використовує ресурси папок Тло (фон) і Образи. 
+
+##Необхідні скретч картки:
+
+Таймер
+
+##Основні кроки
+
+Крок 1: На дошці з'являються різні об'єкти. 
+Крок 2: Зображення об'єктів спотворюються. 
+Крок 3: Гравець впізнає зображення.
+￼
+##Додаткові завдання:
+Додаткове завдання 1: Спрощенні або ускладнення гри.
+Додаткове завдання 2: Різне спотворення зображень у кожній грі.
+Додаткове завдання 3: Гра з кількох раундів.
+Додаткове завдання 4: Кожен наступний раунд складніший за попередній.
+Додаткове завдання 5: Гра триває, поки гравець не дасть неправильну відповідь.
+Додаткове завдання 6: Гра ускладнюється чи спрощується залежно від успішності гравця.
+Додаткове завдання 7: Фіксація рекордної суми очок.
+Додаткове завдання 8: Очки за невірні відповіді знімаються.
