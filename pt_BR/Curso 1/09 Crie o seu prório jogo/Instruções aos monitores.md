@@ -15,7 +15,7 @@ Este projeto abrange
 
 ### Recursos
 
-As crianças ião projetar seus próprios recursos para o projeto, incluindo personagens, palco e design de som. Tenha papel suplementar pronto para as crianças em caso de eles precisam. Certifique-se que existem canetas e lápis disponíveis para desenhar. Você precisa ter uma idéia de quantas sessões serão necessárias para as crianças acaberem o projeto. A fase de concepção e planejamento poderia levár uma sessão inteira ou até mesmo duas. Planejá isso antes de começar, em seguida, informe as crianças sobre quanto tempo elas têm.
+As crianças irão projetar seus próprios recursos para o projeto, incluindo personagens, palco e som. Tenha papel suplementar pronto se acaso eles precisarem. Certifique-se que existem canetas e lápis para desenhar. Você precisa ter uma idéia de quantas sessões serão necessárias para as crianças acaberem o projeto. A fase de concepção e planejamento podera levar uma sessão inteira ou até mesmo duas. Planeje isso antes de começar, em seguida, informe às crianças sobre quanto tempo elas têm.
 
 ### Exercícios básicos
 Passo 1: Planejando o seu jogo
