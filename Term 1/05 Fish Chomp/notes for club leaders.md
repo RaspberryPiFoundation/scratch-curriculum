@@ -1,4 +1,46 @@
-#NOTES FOR CLUB LEADERS
-##(Fish Chomp)###IntroductionWe’re going to make a Fish Chomp game! Guide the large Hungry Fish around and try to eat all the prey that are swimming around.###SkillsThis project covers• Moving sprites• Controlling sprites with the mouse • Changing costumes• Collision detection• Sprites reading other sprites’ state • Keeping and changing scores###ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders AND the hungry fish costumes can be found in the volunteers packs###Scratch Cards required:* Animate it* Keep score* Timer* Follow the mouse###Basic exercisesStep 1: Hungry Fish follows the mouse pointer 
-Step 2: Add some preyStep 3: Hungry fish eats the prey￼
-###Challenges1. Make the prey move differently2. Make the prey avoid the hungry fish 3. Add a score4. Add a countdown5. Add a bonus score6. Change the game: keep a prey alive!
+#НОТАТКИ ДЛЯ ЛІДЕРІВ КЛУБУ
+##(Рибожер)
+
+###Передмова
+Ми сторцюємо проект Рибожер. Гравець керує великою Голодною рибиною, яка намагається з'їсти усю здобич, що плаває поряд.
+
+###Навики
+За допомогою цього проекту можна навчитись: 
+
+1.Створювати рухомі спрайти  
+2. Керувати спрайтами за допомогою мишки 
+3. Змінювати образи        
+4. Виявляти факт зіткнення спрайтів 
+5.Створювати спрайти, що ідентифікують стан інших спрайтів 
+6. Створювати рахунок і набирати очки
+
+###Ресурси інтерфейсу
+Цей проект використовує ресурси папок Тло (фон) і Образи. Щодо образів для Голодної рибини, то їх можна знайти у додаткових пакетах.
+
+###Необхідні скретч картки:
+* Анімація
+* Рахунок
+* Таймер 
+* Слідування за мишкою
+
+###Основні кроки:
+
+Крок 1: Створення спрайта, який змінює образи. 
+
+Крок 2: Створення здобичі 
+
+Крок 3: Голодна рибина пожирає здобич.
+￼
+###Бонусні завдання:
+
+Бонусне завдання 1: Спрайти здобичі рухаються по-різному. 
+
+Бонусне завдання 2: Здобич вчиться втікати від  Голодної рибини.
+
+Бонусне завдання 3: Додаємо в гру рахунок. 
+
+Бонусне завдання 4: Додаємо в гру зворотній відлік. 
+
+Бонусне завдання 5: Додаванння бонусних очок. 
+
+Бонусне завдання 6: Змінюємо гру: здобич повинна вижити! Іноді чудова нова ідея полягає в тому, щоб зробити щось цілком протилежне попередній.

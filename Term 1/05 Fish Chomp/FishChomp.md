@@ -1,125 +1,255 @@
-Level 2
+Рівень 2
 
-#Fish Chomp
+#Риба-хижак (Рибожер)
 
-__Introduction:__We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
-##￼STEP 1: Create a sprite that changes costumes
-__Let’s make the Hungry Fish swim around the sea!__
-1. Start a new Scratch project.2. Select the Stage, then select the Stage’s Background tab. Import thebackground nature/underwater and remove background1.3. Change the name of Sprite 1 to Hungry Fish.4. Import Hungry Fish’s costume, resources/hungry-fish then remove its existing costume1 and costume2.5 Use the button above the Costumes tab to make sure the sprite can only flip left-right.6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
+__Передмова:__
+Ми створимо гру Рибожер. Керуйте великою хижою рибиною так, щоб вона спіймала усю здобич, яка плаває поруч.
 
-```scratch
-	when FLAG clicked	forever		
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
-```###Test Your Project__Click the green flag.__ 
-Move the mouse pointer around the sea. Does the fish follow the pointer?What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
-7. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer(The _distance to_ block is in theSensing palette).
-```scratch
-	when FLAG clicked	forever	if distance to mouse-pointer > 10
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
-```
-###Test Your Project
-Save your project
+##Крок 1: Створення спрайта, який змінює образи.
+__Давайте створимо голодну, ненажерливу рибину, що плаває в морі.__
 
-##Things to try￼If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
-##STEP 2: Add some prey
-
-1. Create a new sprite from the file animals/lobster1. 
-2. Use the Shrink sprite tool (above the Stage)to make the sprite smaller.3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again
+1. Створіть новий проект у Скертч.
+2. Оберіть Сцену, потім виберіть вкладку Нове тло (New background) та імпортуйте картинку "під водою" з папки Природа (nature/underwater). Видаліть порожній фон.
+3. Змініть назву Спрайту1 на Голодна риба або просто Рибожер.
+4. Імпортуйте для Спрайта1 образ голодної риби через вкладку Образи / Новий образ і видаліть попередні образи 1 і 2. Скористайтесь кнопкою тип обертання ліворуч-праворуч у вкладці Рух, щоб упевнитись, що риба рухається лише таким чином або натисніть у полі спрайта на верхній лівий куток значка спрайта та оберіть стиль обертання.
+5. Тепер створіть скрипт для Голодної риби, за яким вона рухатиметься у морі, слідуючи руху мишки.
 
 ```scratch
-	when FLAG clicked	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-	(end forever)
+
+	коли натиснуто зелений прапорець
+	завжди		
+		слідувати за вказіником миші
+		переміститись на 3 кроки
+	(кінець завжди)
 ```
 
-###Test Your Project__Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?__At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
-Save your project
-###Things to try
-* Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?* What does the __if on edge, bounce__ block do? Take it out and see what happens.##￼STEP 3: Hungry fish eats the prey
-__Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:* The Hungry Fish needs to close its mouth and make a "chomp" sound.* The prey needs to disappear, then reappear a short while later.1. First, let’s make the prey disappear if it is touching the hungry fish, and then reappear 3 seconds later. Use the touching block to see if it is touching the fish.```scratch
-	when FLAG clicked	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching Hungry Fish?
-			hide
-			wait 3 secs
-			show
-		(end if)
-	(end forever)
-```
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__ 
+MПереміщайте курсор по морю.  Чи слідує риба за курсором? 
+Що стається, коли ви перестаєте переміщати курсор і риба наздоганяє його? На що це схоже? Чому так відбувається?
 
-###Test Your Project__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
-
-2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with atouching color block in your script, click on the color in the block and then click again on the fish’s teeth.3. Next we can make the prey move to a random point on the screen before reappearing using a go toblock, and giving it a randomvalue for x and y.```scratch
-	when FLAG clicked	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
-```###Test your project
-Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
-
-4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey broadcast the fact that it’s been eaten before vanishing.
+7. Можна припинити хаотичне обертання рибини, якщо дозволити її рух на певній відстані від вказівника миші (блок __відстань до__ у вкладці Датчики).
 
 ```scratch
-	when FLAG clicked	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			broadcast got me
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
-```__Now we want the fish to respondto this message by making a “chomp” sound and snapping its jaws.__
-5. Add the resources/mouth-closed costume and the resources/chomp sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message broadcast by the prey. This script should make the fish play the 'chomp' sound and switch to the mouth-closed costume, wait briefly and then switch back.
 
-```scratch
-	when I receive got me	play sound chomp	repeat 2		switch to costume mouth-closed		wait 0.5 secs		switch to costume hungry-fish	(end repeat)
+	коли натиснуто зелений прапорець
+	завжди якщо відстань до вказівника миші > 10
+		слідувати за вказіником миші
+		переміститись на 3 кроки
+	(кінець завхжди)
 ```
 
-__Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
 
-###Test Your ProjectClick the green flag.Does the Hungry Fish eat the prey? Does it eat each of the different prey?
+###Протестуйте свій проект.
 
-Save your project
+Збережіть свій проект.
 
-###Things to think aboutWhy do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
-##￼Challenge 1: Make the prey move differentlyAt the moment, all the prey move in the same way. __Can you make one of themmove differently?____Hint:__ Don’t spend too long on this bit without looking at the other activities in thisproject.__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the __set color effect block__. That way, you can tell it apart from the rest of the prey.Make this prey move slower than the others. __Hint:__ Look at the move (2) steps block.
-###Test Your ProjectDoes the prey move slower? Does this make the game better?If you can do that, __try to making one of fish move quicker than the others.__
-Does the prey still move in a sensible way? Do these changes make the game better?__Hint:__ If your prey swims around in circles, check the values of the pick random block in the turn block.How about you make each of the prey behave differently, using different combinations of these changes?Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
-Save your project
-##￼Challenge 2: Make the prey avoid the hungry fishThe prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the __Motion__ palette.
-Using that idea, __make one of the prey always point away from the Hungry Fish.__ You might want to make it wiggle as it swims away.
-###Test Your ProjectDoes this make the fish harder to catch? Does it make the game better?
-Save your project
-##￼￼Challenge 3: Add a scoreIt’s not enough just to eat fish. How do you know you’re better at the game than yourfriends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
-Where should you put the block that changes the score?Make sure the score goes back to zero at the start of the game. Where should you put that block?
+##Спробуйте:
 
-###Test Your Project￼￼￼Does the score go to zero at the start of the game? Does it go up every time you eat prey?
-Save your project
-##￼Challenge 4: Add a countdown__Give yourself a time limit in the game.__ How many fish can you eat in thirtyseconds?Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
-###Test Your ProjectDoes the timer start at 30?Does it go down at the right speed?Can you catch prey while the timer is going?Does the game stop when the timer reaches zero?
-Save your project
-##￼Challenge 5: Add a bonus scoreAward a large bonus score if you can eat all three fish at the same time. How canyou tell how many fish have been eaten?__Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
-Save your project
-##￼Challenge 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.__Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten?
-Save your project__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
+Якщо захочете, ви можете спробувати прописувати різну відстань у скрипті. Як це впливає на рух рибини? Змініть "відстань до" на >100 або на >1.  Змініть кількість кроків переміщення на 20 або на 1 чи 0.
+
+
+##Крок 2: Створення здобичі
+
+1. Створіть новий спрайт, обравши у папці Тварини відповідне зображення (лобстер, наприклад).
+2. За допомогою кнопки зменшення розмірів спрайту, зменшіть його.
+3. Створіть скрипт, за яким здобич буде рухатись в морі.  Необхідно, щоб здобич рухалась випадковим чином, тож хай лоб стер спочатку рухається вперед, потім несподівано поверне вліво чи вправо, потім повторить це.
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	завжди		
+		переміститись на 2 кроки
+		повернутись на вибрати випадкове від -20 до 20 градусів
+		якщо границя, відбити
+	(кінець завжди)
+```
+
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець і подивіться, як рухається здобич.__ Чи рухається спрайт так, як ви очікували? Чи реалістично це виглядає?
+
+__Поки що Голодна рибина ніяк не взаємодіє зі здобиччю.  У наступному кроці ми це виправимо.__
+
+Збережіть свій проект.
+
+###Спробуйте:
+
+* Змінювати числа у блоці "випадкове від до". Як це впливає на рух здобичі?
+* Яка функція блоку __якщо границя, відбити?__ Видаліть цей блок і подивіться, що відбуватиметься.
+
+##Крок 3: Голодна рибина пожирає здобич.
+
+__Тепер ми зробимо так, щоб Голодна рибина з'їдала здобич!__ Коли Голодна рибина спіймала ротом здобич, повинні відбуватись дві речі:
+* Голодна рибина повинна закрити рота, видавши при цьому звук "чавкання".
+* Здобич повинна щезнути, а через кілька секунд з'явитись знову.
+
+1. Спершу зробимо так, щоб здобич щезала, коли її торкнеться Голодна рибина, а потім знову з'являлась через 3 секунди. У скрипті здобичі скористаємось блоком "доторкається" вкладки Датчики, щоб з'ясувати, чи торкнулась Голодна рибина здобичі.
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	завжди		
+		переміститись на 2 кроки
+		повернутись на вибрати випадкове від -20 до 20 градусів
+		якщо границя, відбити
+		якщо доторкається до Голодної риби?
+			сховати
+			чекати 3 сек
+			показати
+		(кінець якщо)
+	(кінець завжди)
+```
+
+###Протестуйте свій проект.
+__Запустіть гру знову і подумайте, чи все у ній в порядку.__ Зауважте, що здобич зникає незалежно від того, як вона торкнеться рибини. Рибина ж може почекати 3 секунди і з'їсти здобич в той же момент, коли та з'явиться – це нечесно!
+
+1. Як же зробити так, щоб здобич щезала тоді, коли риба торкнеться її ротом?  Можна використати блок "доторкається кольору" і з'ясувати, чи торкнулась здобич блакитних зубів Голодної риби.  Для цього замініть блок "доторкається" на блок "доторкається кольору" у скрипті здобичі, клікніть на блок колір, а потім клікніть на зуби рибини.
+2. Потім можна зробити так, щоб здобич допливала до якоїсь випадкової точки на екрані перед тим, як знову з'явитися, за допомогою блоку "переміститись в" і присвоєння випадкових значень х та у.
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	завжди		
+		переміститись на 2 кроки
+		повернутись на вибрати випадкове від -20 до 20 градусів
+		якщо границя, відбити
+		якщо доторкається кольору []?
+			сховати
+			чекати 3 сек
+			переміститись до x:випадкове від -220 до 220 y: вибрати випадкове від -170 до 170
+			показати
+		(кінець якщо)
+	(кінець завжди)
+```
+###Протестуйте свій проект.
+
+Знову запустіть гру. Здобич просто зникає, коли торкається рота Голодної риби? Чи з'являється потім здобич у випадковій точці екрану, а не втому ж місці, де її з'їли?
+
+3. Голодна рибина повинна знати, що вона когось з'їла для того, щоб видати звук "чавкання" та змінити колір. Для цього здобич повинна повідомити, що її з'їли перед тим, як щезнути, за допомогою блоку "оповістити" вкладки Керувати.
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	завжди		
+		переміститись на 2 кроки
+		повернутись на вибрати випадкове від -20 до 20 градусів
+		якщо границя, відбити
+		якщо доторкається кольору []?
+			оповістити мене спіймали
+			сховати
+			чекати 3 сек
+			переміститись до x:випадкове від -220 до 220 y: вибрати випадкове від -170 до 170
+			показати
+		(кінець якщо)
+	(кінець завжди)
+```
+__Тепер потрібно зробити так, щоб Голодна рибина відповідала на повідомлення "мене з'їли" звуком "чавкання" і клацанням щелеп.__
+
+1. Додайте образ клацання щелеп і звук "чавкання" до спрайту Голодної риби.
+2. Потім додайте новий скрипт, щоб Голодна риба могла відповідати на повідомлення здобичі.  Цей скрипт змусить рибину "почавкати", клацнути щелепами, трохи зачекати і повернутись до свого початкового вигляду.
+
+```scratch
+
+	коли одержую мене спіймали
+	грати звук чавкання
+	повторити 2
+		змінити образ на закритий рот
+		чекати 0.5 сек
+		змінити образ на голодну рибу
+	(кінець повторити)
+```
+
+__Тепер наша Голодна рибина готова їсти, тож наповнимо море здобиччю.  Натисніть правою кнопкою мишки на спрайт здобичі й продублюйте його кілька разів.__
+
+###Протестуйте свій проект
+Натисніть на зелени прапорець.  
+Чи їсть Голодна рибина здобич? Чи їсть вона усіх спрайтів, що належать до здобичі?
+
+Збережіть свій проект.
+
+###Над цим варто подумати
+WЧому нам потрібно додати блок "показати"  до скрипту спрайту здобичі?  Подумайте, що станеться, якщо здобич з'їдять.  Гра тоді припиниться до того, як здобич знову з'явиться.  Що тоді відбулося б, якби гру перезапустили?
+
+__Молодець! Створення основної гри завершено, але є ще деякі речі, які можна зробити у грі.  Спробуй виконати ці бонусні завдання!__
+
+
+##Бонусне завдання 1: Спрайти здобичі рухаються по-різному
+
+Поки що уся здобич рухається однаково.  __Чи можна зробити так, щоб хтось із них рухався інакше?__
+__Підказка:__ Не надто зациклюйтесь на цьому завданні, рухайтесь до інших.
+
+__Оберіть один зі спрайтів здобичі для експерименту.__ Якщо у них однакові образи, змініть колір цього спрайту за допомогою блоку "встановити ефект колір".  Таким чином можна відрізнити цей спрайт серед інших.
+
+Зробіть так, щоб цей спрайт рухався повільніше зі інші.  __Підказка:__ Зверніть увагу на блок "переміститись на (2) кроки".
+
+Протестуйте свій проект.
+
+Чи рухається здобич повільніше? Чи покращило це гру?  
+Якщо зможете, зробіть так, щоб __одна рибина рухалась швидше за інших.__
+
+
+Чи рухається здобич належним чином? Чи покращили зміни гру? 
+__Підказка:__ Якщо здобич рухається колоподібно, перевірте значення змінних у блоці "вибрати випадкове від  до ".
+
+Як щодо того, аби змінити рух кожного зі спрайтів здобичі, використовуючи різні комбінації змін?
+
+Чи якісь з цих змін покращили гру? Чи стала гра цікавішою, веселішою, складнішою/простішою? Чи на краще це?
+
+Збережіть свій проект.
+
+##Бонусне завдання 2: Здобич вчиться втікати від  Голодної риби
+
+Здобич у цій грі поводиться нерозумно.  Вона просто плаває, поки її не з'їдять.  У живій природі здобич втікає від хижака. Давайте зробимо так, щоб один із спрайтів здобичі втікав від Голодної риби.
+
+У програмі Скретч немає блоків, які б інформували про напрям руху якогось із спрайтів.  Але можна зробити так, щоб один спрайт вказував на інший, а потім зробити так, щоб він повертав в інший бік.  Для цього знадобляться блоки вкладки Рух.
+
+__Тож зробіть так, щоб один із спрайтів завжди вказував на Голодну рибу.__ Цей спрайт може погойдуватись, коли втікатиме.
+
+###Протестуйте свій проект.
+Чи стало тепер важче впіймати здобич? Чи стала гра кращою від цього?
+
+Збережіть свій проект.
+
+##Бонусне завдання 3: Додаємо в гру рахунок
+Нецікаво просто поїдати здобич.  Як же дізнатись, хто з друзів краще грає у цю гру?  __Треба створити рахунок. Для цього додамо змінну рахунок через вкладку Величини.__ Прогляньте __скретч картку Рахунок__, щоб побачити, як це робиться. 
+
+Де потрібно розмістити блок, який змінює кількість очок?
+
+Переконайтесь, що рахунок повертається до 0 на початку гри.  Де слід розмістити відповідний блок?
+
+###Протестуйте свій проект.
+￼Чи повертається рахунок повертається до 0 на початку гри? Чи збільшується кількісь очок кожного разу, коли Голодна рибина з'їдає здобич?
+
+Збережіть свій проект.
+
+##Бонусне завадання 4: Додаємо в гру зворотній відлік.n
+
+__Всановіть для себе часовий ліміт у грі.__ Скільки здобичі можна з'їси за 30 секунд? 
+
+Прогляньте __скетч картку Таймер__, щоб дізнатись, як додати таймер у гру.  Почніть з гри, яка триває 30 секунд.
+
+###Протестуйте свій проект.
+Чи починається відлік на таймері з 30?
+
+Чи з належною швидкістю йде зворотній відлік?
+
+Чи можна ловити здобич, поки працює таймер?
+
+Чи припиняється гра, коли на таймері 0?
+
+
+Збережіть свій проект.
+
+##Бонусне завдання 5: Додавання бонусних очок.e
+Додайте великий бонус за поїдання трьох риб здобичі одночасно.  Як з'ясувати скільки риб одночасно з'їли?  __Підказка:__ можна створити  змінну  __"підрахувати"__, щоб порахувати скільки риб плаває у морі.
+
+Збережіть свій проект.
+
+##Бонусне завдання 6: Змінюємо гру: здобич повинна вижити! Іноді чудова нова ідея полягає в тому, щоб зробити щось цілком протилежне попередній.
+
+__Змініть гру таким чином, щоб гравець замість того, щоб керувати Голодною рибиною і поїдати здобич, керував спрайтом здобичі, втікаючи від зграї Голодних риб.  Як довго вдається протриматись до того, як вас з'їли?__
+
+Збережіть свій проект.
+
+__Молодець! Проект завершено, тепер можна насолоджуватись грою!__
+Не забудьте, що грою можна поділитись з друзями та рідними, натиснувши __"Поділитися цим проектом з іншими"__  у рядку меню. 

@@ -1,47 +1,120 @@
-Level 2
+Рівень 2 
 
-#Fruit machine
+#Гральний автомат "фруктова машина"
 
-__Introduction:__This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
-##￼STEP 1: Create a sprite that changes costumes
-__Let’s import the different pictures for the game__1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete2. Import a new sprite.3. Choose an image from any folder. We used things/bananas1, but you canuse any image you want to.4. Click the Costumes tab and import two more things so there are three in total(we used animals/bee1 and things/lego, but you can use any images).__Now we’ve got some costumes, we want the sprite to change between them.__##STEP 2: Making the picture change
+__Передмова:__
+У цій грі є 3 спрайти, які змінюють вигляд.  Необхідно зупинити їх у момент, коли всі вони мають той самий вигляд (як у "фруктовій машині").
 
-1. Click the Scripts tab.2. Click Control and drag a when flag clicked into the scripts area. This will betriggered when we click the green flag.3. Add a forever and attach it so it snaps to the bottom.4. Click the green flag in the top right. Notice that a white outline is around our script. It’s running because we clicked the green flag, which triggers this.5. Now click Looks and drag in a next costume6. How do we slow it down so it isn’t changing so quickly? Click Control and drag in a wait 1 secs7. Adjust the time until it’s repeating at a faster pace (a time of 0.1s looks good). What would happen if we didn’t have the wait block?
+##Крок 1: Створення спрайту, який змінює образи.
+
+__Імпортуйте різні картинки для гри.__
+
+1. Почніть новий проект у Скретч. Видаліть спрайт кота, натиснувши праву кнопку мишки і вибравши Вилучити.
+2. Імпортуйте новий спрайт.
+3. Виберіть картинку з будь-якої папки бібліотеки спрайтів. Ми використали папку Things, обравши банани (bananas1), але можна обрати будь-яку картинку.
+4. Зайдіть у вкладку Образи та імпортуйте ще 2 картинки, щоб разом їх було 3 (ми вибрали Animals/bee1 та Things/lego, але можна обрати будь-які інші).
+
+__Тепер у нас є кілька образів, треба лише, щоб спрайт почергово їх змінював.__
+
+##Крок 2: Зміна картинок
+
+1. Зайдіть у вкладку Скрипти.
+2. Оберіть Події (Events) і перетягніть блок "коли натиснуто зелений прапорець" у поле скриптів. Команда почне виконуватись при натисканні на зелений прапорець.
+3. Додайте у поле скриптів блок "завжди" вкладки Керувати так, щоб він замкнувся в кінці скрипту.
+4. Натисніть на зелений прапорець праворуч вгорі.  Зверніть увагу на підсвічений контур навколо скрипта.  Він почав виконуватись, бо натиснули на зелений прапорець, що запускає проект.
+5. Зайдіть у вкладку Вигляд і перетягніть у поле скриптів блок "наступний образ".
+6. Як уповільнити його, щоб зміна не відбувалась так швидко? У вкладці Керувати виберіть блок "чекати 1 сек".
+7. Відредагуйте час так, щоб усе відбувалось швидше (0.1 секунда часу підійде, розділовий знак - крапка). Що сталось би, якби ми не додали блок очікування?
 
 ```scratch
-	when FLAG clicked	forever		
-		next costume
-		wait 0.1 secs
-	(end forever)
+
+	коли натиснуто зелений прапорець
+	завжди		
+		наступний образ
+		чекати 0.1 сек
+	(кінець завжди)
 ```
 
-###Test Your Project__Click the green flag.__ 
-Do the costumes change at a sensible rate?
-Save your project
-###Things to try
-Adjust the time in the wait block.What numbers do you think would make the game too easy, or too hard?##￼STEP 3: Making it stop when we click on it
-Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for all sprites, then uncheck the box next to it so it doesn’t display on the stage.2. Set stopped to 1 when someone clicks on the image usingwhen sprite1clicked and set stopped to 0 making sure to change the value from 0 to 1.
-3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
-4. Finally, add a set sprite1stopped to 0 underneath the when flag clicked
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__ 
+Чи змінюються образи з належною швидкістю?
 
-###Test Your Project__Click the green flag, wait for a moment, then click on the sprite.__ 
+Збережіть свій проект.
 
-Does it change costume before you click on it? 
-Does it stop when you do click on it?
-__Start the sprite again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
-Save your project
-##Step 4: Creating the other sprite
-__Now we need to make the other sprites so we can play our game!__1. Duplicate the sprite (Sprite1) by right clicking on it in the bottom right corner.2. Duplicate it again so there are 3 sprites on the screen.3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
-###Test Your Project__Click the green flag.__ All the sprites should change. Try to stop them all on the same picture!
-Save your project
-###Things to try
-When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. How about you make the sprites change to a random costume when the green flag is clicked?Hint: try picking a random costume for each sprite when the game is started.__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
-##Challenge 1: Make the game harder
-Change the difficulty of the game somehow. Just making the costumes change quicker is easy. Try and do something more imaginative. Some ideas you might like to try:1. Change the number of costumes each sprite has.2. Make some sprites have unique costumes.3. Have different times between costume changes.4. Have each sprite move to a random costume rather than the next one. 
-__Have fun coming up with your own things!__Every time you make a change, think about whether it make the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
-##Challenge 2: Make the game get harder and easier over timeDifferent people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called __delay__, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier).
-##￼Challenge 3: Detect when all the sprites have stopped on the same costume
-__The aim of the game is click on the sprites so they’re stopped while showing the same costume. It would be nice if the stage detected when you’d finished playing and then told you if you had won or lost by checking to see if each sprite had the same costume.__
-First, the stage needs to know when the player has finished. We can do this by having the stage check to see if all sprites have stopped moving when we click on one of them. Go back and modify each of the sprite# clicked blocks to broadcast a new message, checkForEndThe Stage can respond to this message and check if the game is over by seeing if all three sprites’ stopped variables are set to 1, by using the x position of Sprite block for each sprite, and changing “x position” to stopped If all three sprites have a stopped value of 1, we know the game is over and we can check to see if the player has won.To do this, we can use the same x position of Sprite block, but instead of looking at the stopped variable, we can look at the costume # and see if Sprite1 has the same costume as Sprite2, and if Sprite2 has the same costume as Sprite3.To do this, you’ll need an if block to check each stopped variable, and inside that an if... else block to see if the player has won or lost by comparing eachcostume #
-From this point on, you could announce the result of the game using a broadcast and respond to this with another sprite. Maybe get Felix back to congratulate or commiserate the player?
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+###Спробуйте:
+
+Змінювати час у блоці очікування. При яких значення часу значно простіше/складніше грати?
+
+##Крок 3: Образи перестають змінюватись при кліканні на них.
+
+Чудово! Ми змогли зробили так, щоб спрайти весь час змінювали образи, але що треба, щоб вони перестали мінятись після клікання на них?
+
+1. Створіть нову змінну, зайшовши у вкладку Змінні і обравши Створити змінну.  Назвіть її стоп (stopped) та створіть її для всіх спрайтів, зніміть галочку поряд поряд з блоком змінної stopped, щоб вона не відображалась на сцені. 
+2. Присвойте значення 1 змінній "стоп"(stopped), коли на картинку клікають, за допомогою команди "коли спрайт натиснуто" (when sprite1 clicked) і команди "встановити стоп в"(set stopped to).
+3. Тепер необхідно зробити так, щоб образи припинили змінюватись, коли змінна "стоп" (stopped) рівна 1. У вкладці Керувати (Сontrol)  змініть цикл forever (завжди) на forever if (завжди якщо то) і використайте в ньому оператор "=" із вкладки Оператори, щоб перевірити, чи змінна  "стоп" = 0.
+4. Розмістіть блок "встановити спрайт1 стоп в 0"( set sprite1 stopped to 0) під блоком "коли натиснуто прапорець" (when flag clicked).
+
+###Протестуйте свій проект
+__Натисніть на зелений прапорець, зачекайте хвилинку і потім клікніть на спрайт.__ 
+
+Чи змінює спрайт образ до того, як на нього клікнути? 
+Чи припиняє він змінювати образи, коли на нього клікнути? 
+__Запустіть спрайт знову.__ Чи припиняє спрайт змінювати образи, коли на нього наведено курсор без клікання мишкою? Чи припиняє спрайт змінювати образи, коли клікнути у будь-якому місці сцени, вікна програми чи за його межами?
+
+Збережіть проект.
+
+##Крок 4: Створення іншого спрайта.
+__Нам потрібно створити інші спрайти, щоб можна було грати в гру.__
+
+1. Продублюйте Спрайт1 клікнувши на нього правою кнопки мишки у правому нижньому куті вікна.
+2. Ще раз продублюйте спрайт, щоб усього їх стало 3.
+3. Розташуйте спрайти на одній лінії.  Зменшіть їх, якщо потрібно.
+
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__ Усі спрайти повинні змінюватись.  Спробуйте зупинити спрайти, коли у них однаковий образ.
+
+Збережіть свій проект.
+
+###Спробуйте:
+
+Коли запускається гра, усі спрайти в однакових образах і потім одночасно змінюють їх.  Як щодо випадкового вибору образу кожним спрайтом при натисканні зеленого прапорця? 
+Підказка: спробуйте команду "вибрати випадкове від" для кожного спрайта після запуску гри.
+
+__Молодець! Створення основної гри завершено, але є ще деякі речі, які можна зробити у грі.  Спробуй виконати ці бонусні завдання!__
+
+##Бонусне завдання 1: Гра стає складнішою.
+
+Якимось чином ускладніть гру.  Лише пришвидшення зміни образів – дуже просто.  Спробуйте щось цікавіше.  Ось деякі ідеї:
+
+1. Змініть кількість образів кожного спрайту.
+2. Створіть унікальні образи, які не повторюються у кожного із спрайтів.
+3. Зробіть різними часові інтервали між змінами образів.
+4. Пропишіть для кожного спрайту випадковий вибір образу, а не послідовну їх зміну.
+
+__Спробуйте придумати і свої варіанти ускладнення гри!__
+
+Кожного разу вносячи зміни, подумайе спрощують вони гру чи ускладнюють. Як скоригувати складність так, щоб вона була прийнятною?
+
+
+##Бонусне завдання 2: Складність гри змінюється впродовж часу.
+
+У різних людей різні навики у грі. __Як зробити так, щоб складність гри відповідала рівню гравця?__
+
+OОдин із можливих шляхів – __це коригування швидкості зміни образів.__ Можна використати змінну __затримка/пауза (delay)__, що задає тривалість блоку очікування для спрайтів.   Якщо гравець виграв раунд, то паузу можна трохи скоротити (щоб ускладнити гру). Якщо ж гравець програв раунд, то паузу можна трохи збільшити (для спрощення гри).
+
+##Бонусне завдання 3: Чи всі спрайти мали однакові образи, коли їх зупинили.e
+
+__Ціль гри - зупинити спрайти в той момент, коли вони в однакових образах. Було б добре, якби на сцені після того, як гравець закінчив гру, виводилась інформація про те, виграв він чи програв на основі перевірки ідентичності образів спрайтів у момент клікання.__
+
+По-перше, сцена повинна знати, коли гравець завершив гру.  Для цього сцена повинна перевірити, чи всі спрайти перестали рухатись, коли на один з них клікнули.  Поверніться і змініть у кожен з блоків "коли спрайт натиснуто" так, щоб вони виводили нове повідомлення, checkForEnd.
+
+Сцена може відповідати на це повідомлення і перевіряти, чи завершилась гра, а саме, чи усі три змінні стоп наших спрайтів мають значення 1. Використовуємо для цього команду вкладки Рух "х позиція" (x position) для кожного спрайту і змінюючи "х позицію" на змінну стоп.  Якщо усі три спрайти зупинились на значенні 1, то гра завершена і можна перевіряти, чи виграв гравець.
+
+Щоб з'ясувати це, можна використати ту ж х позицію спрайтів, але замість перевірки змінних "стоп", подивитись на образи, щоб знати, чи мав спрайт 1 той же образ, що й спрайт2, а спрайт2 той же, що спрайт 3.
+
+Для цього треба використати блок "якщо" для перевірки змінних "стоп" та всередині нього блок "якщо інакше" для з'ясування факту виграшу чи програшу гравця шляхом порівняння образів спрайтів.
+
+Відтепер можна повідомляти про результат гри, використовуючи інший спрайт для отримання та передачі повідомлень.  Може, повернути Фелікса, щоб він привітав гравця чи поспівчував йому? 
+
+
+__Молодець! Проект завершено, тепер можна насолоджуватись грою!__Не забудьте, що грою можна поділитись з друзями та рідними, натиснувши __"Поділитися цим проектом з іншими"__  у рядку меню.

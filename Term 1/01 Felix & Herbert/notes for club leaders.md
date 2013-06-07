@@ -1,2 +1,30 @@
-#NOTES FOR CLUB LEADERS
-##(Felix & Herbert)####Introduction:We are going to make a game of catch with Felix the cat and Herbert the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down! This is a simple project to introduce the basics of Scratch.#### SkillsThis project covers:1. Changing costumes and appearance2. Keeping and setting the score3. Broadcast messages#### ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders#### Scratch Cards requiredFollow the mouse#### Basic exercisesStep 1: Felix follows the mouse pointerStep 2: Felix chases HerbertStep 3: Felix says when he’s caught HerbertStep 4: Herbert turns into a ghost when he’s caught Step 5: Keep score
+#НОТАТКИ ДЛЯ ЛІДЕРІВ КЛУБУ
+##(Фелікс і Герберт)
+
+####Передмова:
+Ми збираємось створити гру, в якій кіт (Фелікс) переслідуватиме мишеня (Герберта).  Впродовж гри Ви контролюєте Герберта за допомогою мишки, намагаючись втекти від Фелікса.  Що довше Герберту вдається залишатись неспійманим, то більше очок Вам нараховується, тільки не дозволяйте коту впіймати мишеня, бо тоді очки зніматимуться.  Цей простий проект допоможе розпочати освоєння  мови програмування Скретч.
+
+#### Навики
+За допомогою цього проекту можна навчитись: 
+
+1. Змінювати образи та вигляд.  
+2. Створювати рахунок і набирати очки. 
+3. Передавати повідомлення
+
+#### Ресурси інтерфейсу
+Цей проект використовує ресурси папок Тло (фон) та Образи.
+
+#### Необхідна скретч картка
+Рух за курсором
+
+#### Основні кроки
+
+Крок 1: Фелікс рухається за курсором. 
+
+Крок 2: Фелікс переслідує Герберта. 
+
+Крок 3: Фелікс повідомляє про те, що він упіймав Герберта. 
+
+Крок 4: Герберт перетворюється на привида після того, як його упіймали.  
+
+Крок 5: Слідкуємо за рахунком. 

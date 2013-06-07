@@ -1,109 +1,170 @@
-Level 1
+Рівень 1
 
-#Felix & Herbert
+#Фелікс та Герберт
 
-__Introduction:__We are going to make a game of catch with __Felix the cat__ and __Herbert__ the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
-##￼STEP 1: Felix follows the mouse pointer
-1. Start a new project.Keep track of your progress by ticking off the boxes below:￼￼￼2. Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.3. Change the name of the sprite to Felix.4. Make sure Felix only points left-right by clicking this button:5. Create this script:
+__Передмова:__
+Ми збираємось створити гру, в якій __кіт (Фелікс)__ переслідуватиме __мишеня (Герберта)__. Впродовж гри Ви контролюєте Герберта за допомогою мишки, намагаючись втекти від Фелікса.  Що довше Герберту вдається залишатись неспійманим, то більше очок Вам нараховується, тільки не дозволяйте коту впіймати мишеня, бо тоді очки зніматимуться.
 
-```scratch
-	When FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-	(end forever)
-```		
-###Test Your Project__Click the green flag.__Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
-Save your project
-##STEP 2: Felix chases Herbert
-__Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.__
-1. Create another sprite using the choose new sprite from file button and selecting animals/mouse1.2. Change the name of the sprite to Herbert.3. Edit the costume and make it smaller than Felix.Try six clicks on the shrink button:4. Make sure Herbert only points left-right. 5. Give Herbert this script:
+##Крок 1: Фелікс рухається за курсором
 
+1. Створіть новий проект. Слідкуйте за своїм просуванням уперед, ставлячи позначки у квадратиках нижче ￼￼￼. 
+2. Клікніть на значок Сцена поруч зі списком Спрайтів, перейдіть у вкладці Нове тло (Backdrop) до категорії "У приміщенні"(Indoor) та імпортуйте фон "Зала" (hall). Видаліть оригінальний порожній фон.
+2. Переіменуйте спрайт на Фелікс.
+3. Переконайтесь, що Фелікс рухається вліво-вправо, натиснувши цю кнопку:
+4. Створіть наступний скрипт для Фелікса:
 
 ```scratch
-	
-	When FLAG clicked
-	forever
-		go to mouse-pointer
-		point towards Felix
-	(end forever)
+
+	Коли натиснуто зелений прапорець
+
+	завжди
+
+		слідувати за вказіник миші
+
+		переміститись на 10 кроків
+
+		наступний образ
+
+		програти на барабані 62 0.3 удари
+
+	(кінець завжди)
 ```
-###Test Your Project__Click the green flag.__
-Does Herbert move with the mouse pointer? Does Felix chase Herbert?
-Save your project.
-##STEP 3: Felix says when he's caught Herbert
-__We want Felix to know when he’s caught Herbert, and tell us.__
-1. Change Felix’s script to be this:
+		
+###Збережіть свій проект
 
-```scratch
-	
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			say Caught you! for 1 secs
-		(end if)
-	(end forever)
-```
+__Натисніть на значок із зеленим прапорцем і перевірте:__
+Чи рухається Фелікс за курсором? Чи схожа манера його руху на прогулянку? Чи рухається він з належною швидкістю? 
 
-###Test Your Project__Click the green flag.__
-Does Felix say when he’s caught Herbert?
-Save your project.
+Збережіть свій проект.
 
-##STEP 4:￼Herbert turns into a ghost when he’s caught
+##Крок 2: Фелікс переслідує Герберта
 
-__Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.__
+__Нам треба подбати про те, щоб Фелікс переслідував Герберта, а не курсор.__
 
-1. Change Felix’s script to send this message when he catches Herbert.
+1. Створіть ще один спрайт за допомогою кнопку вибору спрайтів та оберіть у папці Тварини вкладки Образи спрайт мишеняти.
+2. Переіменуйте мишеня на Герберта.
+3. Змініть його образ та зробіть його меншим за Фелікса, використовуючи кнопку зменшення спрайту (клікніть 6 разів).
+4. Переконайтесь, що Герберт рухається лише вліво-вправо
+5. Створіть скрипт, який рухатиме Герберта:
 
 ```scratch
 	
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			broadcast caught
-			play drum 58 for 0.2 beats
-			wait 1 sec
-		(end if)
-	(end forever)
-```2. Import a new costume into Herbert from fantasy/ghost2-a.3. Edit the costume to make it smaller.Six clicks on the shrink button should do.4. Change the names of Herbert’scostumes so the mouse costume iscalled ‘alive’ and the ghost costume is called ‘dead’.5. Create a new script for Herbert to turn him into a ghost:
-```scratch
+	Коли натиснуто зелений прапорець
+	завжди
+		слідувати за вказіник миші
+		слідувати за Феліксом
+	(кінець завжди)
+```
+
+###Збережіть свій проект.
+__Натисніть на значок із зеленим прапорцем.__
+
+Чи рухається Герберт разом із мишкою? Чи переслідує Фелікс Герберта?
+
+Збережіть свій проект.
+
+##Крок 3: Фелікс повідомляє про те, що він упіймав Герберта.
+
+__Ми хочемо, щоб Фелікс повідомив нам про те, що  упіймав Герберта.__
+
+
+1. Змініть скрипт Фелікса на такий:
+
+```scratch
 	
-	when I receive caught
-	switch to costume dead
-	wait 0.5 secs
-	switch to costume alive
+	Коли натиснуто зелений прапорець
+	завжди
+		слідувати за вказіник миші
+		переміститись на 10 кроків
+		наступний образ
+		програти на барабані 62 0.3 удари
+		якщо доторкається Герберта
+			говорити Спіймав! впродовж 1 сек
+		(кінець якщо)
+	(кінець завжди)
+```
+
+###Збережіть свій проект.
+
+__Натисніть на значок із зеленим прапорцем.__
+
+Чи повідомляє Фелікс про те, що він упіймав Герберта?
+
+Збережіть свій проект.
+
+##Крок 4: Герберт перетворюється на привида після того, як його упіймали. 
+
+__Фелікс не повідомлятиме про те, що спіймав Герберта, натомість Герберт перетворюватиметься на привида, коли його упіймають.__
+
+1. Змініть скрипт Фелікса, щоб він діяв наступним чином, коли кіт спіймає Герберта:
+
+```scratch
+	
+	Коли натиснуто зелений прапорець
+	завжди
+		слідувати за вказіник миші
+		переміститись на 10 кроків
+		наступний образ
+		програти на барабані 62 0.3 удари
+		якщо доторкається Герберта
+			оповістити спіймано
+			програти на барабані 58 0.2 удари
+		(кінець якщо)
+	(кінець завжди)
+```
+2. Імпортуйте новий образ для Герберта, обравши у вкладці Образи папку Фантазії (Fantasy) і образ "ghost 2-a".
+3. Змініть його розмір, натиснувши на кнопку зменшення спрайту (6 разів).
+4. Змініть назви образів Герберта таким чином, щоб образ мишеняти називався "живий", а образ привиди "мертвий".
+5. Створіть новий скрипт для перетворення Герберта на привида:
+
+```scratch
+	
+	коли одержую спіймано
+	змінити образ на мертвий
+	чекати 0.5 сек
+	змінити образ на живий
 ```
 	
-###Test Your Project__Click the green flag.__
-Does Herbert turn into a ghost when he’s caught?Does Felix play the right sounds at the right time?Does Felix still stay still for long enough for Herbert to get away
-Save your project
-##￼STEP 5: Keep Score
-__Let’s add a score so we know how well we do at keeping Herbert alive.We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.__
-1. Make a variable, for all sprites, called Score. Click on Variables in the top menu, make a variable and name it score2. On the stage, create these two scripts
-```scratch
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем.__
+
+Чи перетворюється Гереберт на привида, коли його спіймано?  
+Чи правильні звуки подає Фелікс у відповідний момент? 
+Чи дає Фелікс Герберту достатньо часу для втечі?
+
+Збережіть свій проект.
+
+##Крок 5: Набираємо очки
+
+
+__Введемо функцію накопичування очок, щоб знати наскільки успішно ми зберігаємо життя Герберту. 
+Рахунок починатиметься з нуля і збільшуватиметься на 1 за 1 секунду. Коли Фелікс спіймає Герберта, рахунок зменшується на 100.__
+
+1. Створіть змінну для всіх спрайтів під назвою Рахунок. Клікніть на Змінні у вкладці Скрипти і створіть змінну "рахунок".
+2. На сцені створіть два наступні скрипти:
+
+```scratch
 	
-	when FLAG clicked
-	set score to 0
-	forever
-		change score by 1
-		wait 1 secs
-	(end forever)
+	Коли натиснуто зелений прапорець
+	задати значення у 0
+	завжди
+		змінити значення у 1
+		чекати 1 сек
+	(кінець завжди)
 	
-	when I receive caught
-	change score by -100
+	коли одержую спіймано
+	змінити значення у -100
 ```
 	
-###Test Your Project__Click the green flag.__
-Does the score go up by one every second?Does the score go down by one hundred when Herbert is caught?What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?
-Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar
+###Протестуйте свій проект.
+__Натисніть на значок із зеленим прапорцем.__
+
+Чи збільшується рахунок на 1 через кожну секунду?  
+Чи зменшується рахунок на 100, коли Фелікс ловить Герберта? 
+Що відбувається, коли Герберта спіймано ще до того, як гравець набрав 100 очок?  
+Чи починається рахунок з нуля, коли стартує нова гра?
+
+Збережіть свій проект.
+
+__Молодець! Проект завершено, тепер можна насолоджуватись грою!__
+Не забудьте, що грою можна поділитись з друзями та рідними, натиснувши __"Поділитися цим проектом з іншими"__ у рядку меню.

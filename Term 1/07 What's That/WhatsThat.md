@@ -1,93 +1,281 @@
-Level 3
+Рівень 3
 
-#What's That
+#Вгадай, що це
 
-__Introduction__A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!##STEP 1: Make different things appear on the blackboardWe want a few different pictures to show up on the blackboard.1. Start a new Scratch project and delete the cat sprite.2. Click Stage and then the Backgrounds tab. Import the indoors/chalkboard background.3. Import a new sprite and give it any costume you like. You can picked some from the things folder.4. Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.5. Click the Costumes tab and import four more things. They can be anything you want, yay!Let’s now make a random picture appear. 
-6. Create this script:
+__Передмова__
+На дошці з'являються випадкові об'єкти, усі вони спотворені.  Гравцю необхідно здогадатись, який об'єкт демонструється, натиснувши на правильне зображення об'єкта нижче.  Що швидше він здогадається, то більше очок набирає.
 
-```scratch
-	when FLAG clicked	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-```
+##Крок 1: На дошці з'являються різні об'єкти.
 
-###Test Your Project__Click the green flag.__Does the sprite show a different costume?__Click on it a few more times.__
- Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼Save your project
-##STEP 2: Make the pictures distorted__Let’s now make a picture distorted when it appears, and become clearer over a few seconds.__
-We’ll use a score variable to control how much distortion there is. If the score is high, there will be lots of distortion. As the score goes down, there will be less and less distortion. The score also acts as a timer, like on the __Timer Scratch Card.__1. On the Variables palette, create a variable called Score. 
-2. Change the script to look like this:
-```scratch
-	when FLAG clicked	hide	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
-```You should add the hide block at the top and the set [score] to 110 block, and everything below it.###Test Your Project__Click the green flag.__Does a random and distorted picture appear?Does the distortion get less in stages?Does the score go down as the picture becomes less distorted?Do you get an undistorted image when the score reaches zero?Do you still get a different picture every time you click the green button?Save your project
-##Things to try__Try changing the starting score and how much it changes each time around the loop.__ How does this change how the picture looks? Does it make it harder or easier to spot what the picture is?
-__Try some different graphic effects from the pull-down lists.__ How do they change the difficulty?##STEP 3: Allow the player to guess the pictureSo far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.First, we need to know what the right answer is.1. Create a new variable called __answer__. Make sure it’s for all sprites.2. Change the script you’ve written to record the right answer. Add the set [answer] to costume # blocks just after the first repeat loop:
+Необхідно, щоб кілька різних зображень демонструвались на дошці.
+
+1. Створіть новий проект у Скретч та видаліть спрайт кота.
+2. У полі сцена оберіть Нове тло та імпортуйте зображення класної дошки з папки "У приміщенні".
+3. Імпортуйте новий спрайт та оберіть для нього будь-який образ.  Можна обрати образ із папки Things.
+4. Розташуйте новий спрайт посередині класної дошки.  Збільшіть або зменшіть його, якщо необхідно.
+5. Із вкладки Образи імпортуйте ще 4 образи для спрайта.  Вони можуть бути якими завгодно! Тепер потрібно, щоб на дошці з'являлось випадкове зображення.
+6. Створіть такий скрипт:
 
 ```scratch
-	when FLAG clicked	hide	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+
+	коли натиснуто зелений прапорець
+	повторити вібрати випадкове від 1 до 5		
+		наступний образ
+	(кінець повторити)
 ```
-__Now we need to add the sprites that the player can click on.__3. Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.
-￼￼4. Rename this sprite to __answer1.__ (This makes it easier to talk about.)5. Delete __answer1__'s script and all its costumes but its first one.6. Do these last three steps again, but put the __answer2__ sprite next to __answer1__ and delete all but its second costume.7. Do it three more times for __answer3__, __answer4__, and __answer5.__You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. __None of the answer sprites should have any scripts.__Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.8. Add this script to the answer1 sprite:
-```scratch
-	when answer1 clicked	if answer=1		broadcast won	else		hide
-	(end if)
+
+###Протестуйте свій проект. 
+__Натисніть на зелений прапорець.__
+
+Чи з'являється спрайт у новому образі?
+
+__Клікніть на нього ще кілька разів.__
+Чи кожного разу змінюються образи?  Іноді двічі підряд з'являється один і той же образ, але це нормально! Ви також помітите, що спрайт блимає, коли змінює образи. Ми виправимо це у наступному кроці.
+￼￼￼￼￼￼￼￼￼￼
+Збережіть свій проект.ect
+
+##Крок 2: Зображення об'єктів спотворюються.
+
+__Тепер потрібно, щоб зображення при появі було спотвореним, а через кілька секунд починало відображатись нормально.__
+
+Використаємо змінну Рахунок для контролю за ступенем спотворення зображення.  Якщо рахунок великий, то спотворення значне, а зі зменшенням рахунку ступінь спотворення зменшується.  Рахунок також діятиме в ролі таймера, як на скретч картці Таймер.
+
+1 - У вкладці Величини створіть змінну і назвіть її Рахунок. 
+
+2 - Змініть скрипт таким чином:
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	сховати
+	повторити вібрати випадкове від 1 до 5		
+		наступний образ
+	(кінець повторити)
+	встановити рахунок на 110
+	повторити поки рахунок = 0
+		змінити рахунок на -10
+		встановити ефект пікселями до в рахунок
+		встановити ефект колір в рахунок
+		показати
+		чекати 1 сек
+	(кінець повторити)
 ```
-9. Drag this script into each of the other answer sprites. __In each sprite, change the 1 to 2, 3, and so on.__10. We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:
-```scratch
-	when I receive won	say join Congratulations! You scored score
-```￼￼###Test Your Project__￼Click the green flag.__When you test the game, you can use the __answer monitor__ on the stage to tell what the right answer is. That’s good for testing.What happens when you click on the __right answer__?What happens when you click on the __wrong answer?__What happens to the wrong answer when you __start a new game?__The test shows up two problems. First, wrong guesses don’t reappear when the next game starts. Second, the score doesn’t stop going down when we get the right answer.11. To fix the first problem, add this script to each of the five answer sprites:
-```scratch
-	when FLAG clicked	show
-```To fix the second problem, we need to stop the __question sprite__’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to __zero__ when the game starts and set it to __one__ when the game is won. We’ll make the repeat until loop stop when either the score reaches __zero__ OR the __game-winning flag__ is set to __one.__12. Create a new variable called won?13. Change the scripts so they look like this:
-```scratch
-	when FLAG clicked	hide	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	set won to 0
-	repeat until score = 0 or won? =1
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+
+Необхідно додати блоки "сховати" на початку скрипту і "встановити рахунок в 110" та всі блоки команд, що розташовані нижче.
+
+###Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Чи з'являється випадковий спотворений об'єкт?
+
+Чи змінюються поступово ступінь спотворення?
+
+Чи зменшується рахунок, коли ступінь спотворення зменшується?
+
+Чи з'являється спотворений об'єкт, коли на рахунку 0?
+
+Чи продовжують зображення об'єктів змінюватися кожного разу, коли натиснуто зелену кнопку?
+
+Збережіть свій проект.
+
+##Спробуйте:
+
+__Змінювати стартовий рахунок і крок зміни рахунку впродовж виконання циклу.__ Як це змінює вигляд об'єктів? Це спрощує чи ускладнює розпізнання об'єктів?
+
+__Використати різні графічні ефекти із випадаючого переліку.__ Як це змінює складність проекту?
+
+##Крок 3: Гравець впізнає зображення.
+
+Отже, ми маємо випадкові зображення об'єктів, які повільно з'являються і рахунок, що з часом зменшується, але як виграти гру?  Додамо кілька спрайтів внизу екрану, щоб гравець клікав на них. Якщо він натиснув на правильний спрайт, то виграв. Якщо ж гравець натиснув на невірний спрайт, то цей спрайт щезає, а гра продовжується.
+
+Спершу ми повинні визначити, яка відповідь правильна.
+
+1 - Створіть нову змінну і назвіть її __Відповідь__.  Перевірте, чи її створено для всіх спрайтів.
+
+2 - Змініть написаний скрипт так, щоб фіксувались правильні відповіді.  Додайте блок "встановити відповідь для образу" (set [answer] to costume) одразу після першого циклу:
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	сховати
+	повторити вібрати випадкове від 1 до 5		
+		наступний образ
+	(кінець повторити)
+	встановити відповідь для образу
+	встановити рахунок в 110
+	повторити поки рахунок = 0
+		змінити рахунок на -10
+		встановити ефект пікселями на рахунок
+		встановити ефект колір на рахунок
+		показати
+		чекати 1 сек
+	(кінець повторити)
+```
+__Тепер необхідно додати в проект спрайти, на які клікає гравець при виборі відповіді.__
+
+3 - Продублюйте головний спрайт і перетягніть дублікат у нижній лівий кут сцени. 
+
+4 - Переіменуйте цей спрайт у __"Відповідь 1"__. (Так простіше буде виконувати подальші операції з ним).
+
+5 - Видаліть скрипт __"Відповіді 1"__ та всі його образи, окрім першого.
+
+6 - Повторіть ці 3 кроки знову, щоб створити спрайт " Відповідь 2" поруч зі спрайтом __"Відповідь 1"__, але для спрайту __"Відповідь 2"__ видаліть усі образи, окрім другого.
+
+7 - Таким же чином створіть спрайти __"Відповідь 3"__, __"Відповідь 4"__, __"Відповідь 5"__. 
+Внизу сцени повинен з'явитись ряд із 5 спрайтів, кожен з яких демонструє один із образів, які може змінювати головний спрайт.  __Жоден із спрайтів "Відповідь" не повинен мати скриптів.__
+
+Тепер необхідно, щоб кожен спрайт відповідав на клік по ньому і діяв по-різному залежно від того, чи правильна це відповідь.
+
+8 - Додайте цей скрипт для спрайту "Відповідь 1": 
+
+```scratch
+
+	коли натиснуто відповідь1
+	якщо відповідь=1
+		оповістити виграно
+	інакше
+		сховати
+	(кінець якщо)
+```
+
+9 - Перетягніть цей скрипт для кожного з інших спрайтів "Відповідь", __змінивши 1 на 2, 3 і т.д. відповідно до номера спрайту.__
+
+10 - Тепер необхідно додати команду, що відповідала б правильній відповіді.  Поверніться до спрайту 1 на дошці. Додайте до його скрипту наступне:
+
+```scratch
+
+	коли одержую виграно
+	говорити Вітання! Ти набрав очко!
+```
+
+￼￼#Протестуйте свій проект.
+__Натисніть на зелений прапорець.__
+
+Коли ви тестуєте гру, можна використати __ряд відповідей на сцені__, щоб вибрати, яка з них правильна.  Це добре для тестування.
+
+Що відбувається, коли клікнути на __правильну відповідь?__
+
+Що відбувається, коли клікнути на __неправильну відповідь?__
+
+Що відбувається з зображенням, яке __є неправильною відповіддю__, коли ви починаєте нову гру?
+
+Тестування виявило 2 проблеми.  По-перше, зображення із неправильною відповіддю не з'являються знову на сцені, коли гра перезапускається.  По-друге, рахунок не перестає зменшуватись, коли дається правильна відповідь.
+
+11 - Для вирішення першої з цих проблем додайте такі скрипти до кожного з 5-и спрайтів "Відповідь":
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	показати
+```
+
+Для вирішення другої проблеми необхідно зупинити __повторення циклу__ головного спрайту "repeat until", коли гравець обирає правильну відповідь.  Використайте для цього нову змінну. Присвойте їй __значення 0__ у момент початку гри і __значення 1__ у момент, коли гру виграно. Цикл "повторити поки" повинен припинити повторення, коли рахунок рівний __0__ або __коли змінна, що сигналізує про перемогу в грі дорівнює 1.__
+
+12 - Створіть нову змінну і назвіть її "Перемога?".
+
+13 - Змініть скрипти таким чином:
+
+```scratch
+
+	коли натиснуто зелений прапорець
+	сховати
+	повторити вибрати випадкове від 1 до 5		
+		наступний образ
+	(кінець повторити)
+	встановити відповідь на образ
+	встановити рахунок на 110
+	встановити перемога на 0
+	повторити поки рахунок = 0 або перемога? =1
+		змінити рахунок на -10
+		встановити ефект пікселя на рахунок
+		встановити ефект колів на рахунок
+		показати
+		чекати 1 сек
+	(кінець повторити)
 	
-	When I receive won
-	set won to 1
-	clear graphics effects
-	say join Congratulations! You scored score
-```Save your project__Well done you’ve finished the basic game!__There are more things you can do to your game though. Have a go at these challenges!##￼￼￼Challenge 1: Make the game harder or easierChange how difficult the game is.* Try changing how fast the picture is revealed and how fast the score goes down.* Try changing the distortions on the picture.* Try changing the pictures being guessed, to make them either more similar or more different. If you do this, don’t forget to change the answer sprite’s costume.￼￼￼￼￼￼￼
-Save your project￼￼￼
-##Challenge 2: Distort the picture differently in each gameAt the moment, each play of the game uses the same distortion. In Step 2, you might have tried some different distortions that work at least as well as the colour + pixelation we used.Find some different distortions that work well. 
-Change the game so that each game uses a different distortion in the repeat until loop.__Hint:__ Try creating a new variable, called distortion to use. Set it to a random value at the start of the game. Use if blocks in the body of the repeat until loop to apply the correct distortion for this game.￼￼￼￼￼Save your project##Challenge 3: Make a game have a few roundsAt the moment, each game is independent. Change it so that the game proceeds in several rounds. For instance, have one game take three rounds, so the player has to guess three pictures and can score up to 300 points.__Hint:__ You’ll need an extra variable to store the grand total across all the rounds. You’ll also need a loop to go through the different rounds.__Hint:__ You’ll also have to make the wrong guesses reappear at the start of each round. Perhaps you could use a broadcast message to do that?￼￼￼￼￼
-Save your project￼￼￼
-##Challenge 4: Make later rounds more difficultAs you go through different rounds, make the game harder each time.Does each round need to score the same? Should you get more points for guessing quickly in the later, more difficult rounds?__Hint:__ How will you know which round you’re in? How can you use that to change the difficulty and the score?Save your project￼￼
-##Challenge 5: Keep playing until the player gets it wrongInstead of using a fixed number of rounds, keep playing the game until the player doesn’t get a picture right. This probably only works if the game gets harder in later rounds.Save your project
-##Challenge 6: Make the game harder or easier depending on how well the player doesRather than always making the game harder, make the game adjust the difficulty depending on the skill of the player. If they get the right picture quickly, make the next game a bit harder. If they don’t get the right picture, or only get it late, make the next game a bit easier.This idea only really works if you don’t add up someone’s score over several rounds.Save your project
-##Challenge 7: Keep track of the highest scoreKeep track of the highest score. If someone manages to beat it, ask for their name and update the highest score. Make sure the highest score, and the name of the person who scored it, are displayed.￼￼￼￼￼
-Save your project
-##￼￼￼Challenge 8: Make wrong guesses expensiveAt the moment, there’s no penalty to just clicking on all the answer sprites as quickly as you can. Change the game so that the score goes down a bit every time you make an incorrect guess.Does this make the game better?￼￼￼￼￼
-Save your project
-__￼￼￼Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+	Коли одержую перемога
+	встановити перемога на 1
+	очистити графічні ефекти
+	говорити Вітання! Ти набрав очко!
+```
+
+Збережіть свій проект.
+
+__Молодець! Створення основної гри завершено.__
+
+Однак є ще деякі речі, які можна використати у грі.  Спробуй виконати ці додаткові завдання.
+
+
+##Додаткове завдання 1: Спрощенні або ускладнення гри.r
+
+Можна змінити рівень складності гри.
+
+* Спробуйте змінити швидкість появи зображень та швидкість зменшення рахунку. 
+* Спробуйте змінити ступінь спотворення зображень. 
+* Спробуйте змінити зображення об'єктів, які потрібно відгадати, щоб вони стали або більш подібними або різноманітнішими.  Якщо ви це зробите, не забудьте змінити спрайти-відповіді.
+
+Збережіть свій проект.￼￼￼
+
+##Додаткове завдання 2: Різне спотворення зображень у кожній грі.
+
+Поки що у кожній з ігор використовується одне й те ж спотворення.  У кроці 2 можна спробувати використати інші способи спотворення, що діють так, як і вибрані раніше колір + пікселями.
+
+Знайдіть різні способи спотворення, які можна використати.
+
+Змініть гру таким чином, щоб у кожній використовувався інший тип спотворення у циклі "повторити поки".
+
+__Підказка:__ спробуйте створити нову змінну під назвою "Спотворення".  Присвойте їй випадкове значення на початку гри.  Використайте блоки "якщо" у тілі циклу "повторити поки", щоб обирався відповідний тип спотворення для кожної гри.
+
+Збережіть свій проект.
+
+##Додаткове завдання 3: Гра з кількох раундів.
+
+Поки що кожна з ігор самостійна.  Змініть це таким чином, щоб гра тривала кілька раундів.  Наприклад, нехай одна гра триває три раунди, так щоб гравець повинен був відгадати три об'єкти і міг набрати 300 очок.
+
+__Підказка:__ потрібна нова змінна для сумування очок за всі раунди та новий цикл для проходження через різні раунди.
+
+__Підказка:__ потрібно, щоб невірні відповіді знову з'являлись на початку кожного раунду.  Можна скористатись блоком "оповістити" для цього.
+
+Збережіть свій проект.
+￼￼
+
+##Додаткове завдання 4: Кожен наступний раунд складніший за попередній.
+
+Впродовж гри складність подальших раундів зростає.
+
+Чи повинен бути однаковий рахунок у кожному раунді?  Чи потрібно нараховувати більше очок за швидку відповідь у складніших раундах?
+
+__Підказка:__ як дізнатись, який раунд триває у конкретний момент?  Як можна використати це для того, щоб змінювати рахунок і рівень складності?
+
+Збережіть свій проект.
+
+##Додаткове завдання 5: Гра триває, поки гравець не дасть неправильну відповідь.
+
+Замість використання фіксованої кількості раундів, зробіть так, щоб гра продовжувалась поки, гравець не обере невірну зображення.  Це доцільно лише, якщо гра ускладнюється з кожним новим раундом.
+
+Збережіть свій проект.
+
+##Додаткове завдання 6: Гра ускладнюється чи спрощується залежно від успішності гравця.
+
+Заміть того, щоб постійно ускладнювати гру, краще підігнати складність гри під майстерність гравця.  Якщо він швидко обирає вірне зображення, наступний раунд можна робити складнішим.  І навпаки.  Якщо він не знаходить правильне зображення об'єкта або знаходить його запізно, то наступний раунд стає простішим.
+
+Цю ідею можна втілити, якщо не сумувати очки гравця за кілька раундів.
+
+Збережіть свій проект.
+
+##Додаткове завдання 7: Фіксація рекордної суми очок.
+
+Можна фіксувати рекордну кількість очок, отриманих за гру. Якщо хтось набирає більше, запитувати його ім'я та оновлювати інформацію про рекордну суму очок.  Переконайтесь, що інформація про гравця, який встановив рекорд, та суму його очок відображається.
+
+Збережіть свій проект
+
+##Додаткове завдання 8: Очки за невірні відповіді знімаються.
+
+Поки що жодних штрафів за швидке послідовне клікання на всі спрайти відповідей немає.  Змініть гру так, щоб за кожен клік на невірну відповідь знімались очки.
+
+Чи покращило це гру?
+
+Збережіть свій проект.
+
+__Молодець! Проект завершено, тепер можна насолоджуватись грою!__
+Не забудьте поділитись грою з друзями та рідними, клікнувши __"Поділитись цим проектом"__ у рядку меню.
