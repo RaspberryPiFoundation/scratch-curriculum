@@ -13,7 +13,7 @@ Click the `Fork` button in the top-right.
     cd scratch-curriculum
 
 NB: Replace `YOUR_NAME` with your GitHub handle and `Documents` with
-whatever folder on your machine you’d like keep your work in.
+whatever folder on your machine you’d like to keep your work in.
 
 ## Step 3 - Create a folder for your translation
 
