@@ -44,11 +44,11 @@ Probeer zes keer te klikken op de verkleinknop:
     (einde herhaal)
 ```
 ###Test Je Project
-__Klik op het groene vlaggetje.__ 
-Volgt Herbert de muisaanwijzer? Achtervolgt Felix Herbert? 
-Sla je project op. 
+__Klik op het groene vlaggetje.__  
+Volgt Herbert de muisaanwijzer? Achtervolgt Felix Herbert?  
+Sla je project op.  
 ##STAP 3: Felix zegt wanneer hij Herbert heeft gevangen
-__We willen dat Felix weet wanneer hij Herbert heeft gevangen, en dat hij ons dat vertelt.__ 
+__We willen dat Felix weet wanneer hij Herbert heeft gevangen, en dat hij ons dat vertelt.__  
 
 1. Verander Felix’s script naar het volgende:
 
@@ -67,9 +67,9 @@ __We willen dat Felix weet wanneer hij Herbert heeft gevangen, en dat hij ons da
 ```
 
 ###Test Je Project
-__Klik op het groene vlaggetje.__ 
-Zegt Felix wanneer hij Herbert heeft gevangen? 
-Sla je project op. 
+__Klik op het groene vlaggetje.__  
+Zegt Felix wanneer hij Herbert heeft gevangen?  
+Sla je project op.  
 
 ##STAP 4:￼Herbert verandert in een geest als hij gevangen is
 
@@ -108,16 +108,16 @@ uiterlijken zodat het uiterlijk van de muis
 ```
     
 ###Test Je Project
-__Klik op het groene vlaggetje.__ 
-Verandert Herbert in een geest als hij gevangen is? 
-Maakt Felix de goede geluiden op het goede moment? 
-Blijft Felix nog lang genoeg stilstaan zodat Herbert kan vluchten? 
-Sla je project op. 
+__Klik op het groene vlaggetje.__  
+Verandert Herbert in een geest als hij gevangen is?  
+Maakt Felix de goede geluiden op het goede moment?  
+Blijft Felix nog lang genoeg stilstaan zodat Herbert kan vluchten?  
+Sla je project op.  
 ##￼STAP 5: Score bijhouden
-__Laten we een score toevoegen zodat we weten hoe goed we zijn in het levend houden van Herbert. 
-We laten de score bij nul beginnen en verhogen die iedere seconde. Als Felix Herbert pakt, verlagen we de score met honderd.__ 
-1. Maak voor alle sprites een variabele aan die Score heet. Klik op Variabelen in het menu bovenaan, maak een variabele aan en noem die score 
-2. Maak op het scherm de volgende twee scripts aan 
+__Laten we een score toevoegen zodat we weten hoe goed we zijn in het levend houden van Herbert.  
+We laten de score bij nul beginnen en verhogen die iedere seconde. Als Felix Herbert pakt, verlagen we de score met honderd.__  
+1. Maak voor alle sprites een variabele aan die Score heet. Klik op Variabelen in het menu bovenaan, maak een variabele aan en noem die score  
+2. Maak op het scherm de volgende twee scripts aan  
 ```scratch
     
     wanneer VLAG wordt aangeklikt
@@ -132,10 +132,10 @@ We laten de score bij nul beginnen en verhogen die iedere seconde. Als Felix Her
 ```
     
 ###Test Je Project
-__Klik op het groene vlaggetje.__ 
-Gaat de score iedere seconde met een omhoog? 
-Gaat de score met honderd naar beneden als Herbert wordt gevangen? 
-Wat gebeurt er met de score als Herbert wordt gevangen voordat de score honderd is? Gaat de score terug naar nul als je een nieuw spel start? 
-Sla je project op. 
-__Goed gedaan, je bent klaar, je kan nu genieten van het spel!__ 
-Vergeet niet op je spel met al je vrienden en familie te delen door te klikken op __Publiceren__ in de menubalk. 
+__Klik op het groene vlaggetje.__  
+Gaat de score iedere seconde met een omhoog?  
+Gaat de score met honderd naar beneden als Herbert wordt gevangen?  
+Wat gebeurt er met de score als Herbert wordt gevangen voordat de score honderd is? Gaat de score terug naar nul als je een nieuw spel start?  
+Sla je project op.  
+__Goed gedaan, je bent klaar, je kan nu genieten van het spel!__  
+Vergeet niet op je spel met al je vrienden en familie te delen door te klikken op __Publiceren__ in de menubalk.  
