@@ -11,7 +11,7 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 1. Crie um projeto novo.
 2. Dê um duplo clique no fundo branco atraz do gato. Em seguida, na aba __Fundos de Tela__, clique em __Importar__ e escolha o fundo indoors/hall.
 3. Clique no Félix e mude o nome de objeto1 para Félix. 
-4. Certifique-se que o modo de rotação do Felix é somente esquerda-direita.
+4. Certifique-se que o modo de rotação do Félix é somente esquerda-direita.
 5. Crie estes comandos:
 
 
@@ -26,7 +26,7 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 		
 ###Teste o projeto
 __Clique na bandeira verde.__
-O Felix esta seguindo o ponteiro do mouse? Ele parece andar enquanto se movimenta? A velocidade que ele se move é correta?
+O Félix esta seguindo o ponteiro do mouse? Ele parece andar enquanto se movimenta? A velocidade que ele se move é correta?
 
 Salve o projeto
 
