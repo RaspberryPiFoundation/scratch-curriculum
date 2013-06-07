@@ -1,4 +1,29 @@
-#NOTES FOR CLUB LEADERS
-##(Fruit Machine)###Introduction:This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).###SkillsThis project covers- Changing costumes- Running a loop- Stopping a loop on click###ResourcesThis project uses only standard Scratch images found within Scratch.###Scratch Cards required:Broadcast###Basic exercisesStep 1: Create a sprite that changes costumes 
-Step 2: Making the picture changeStep 3: Making it stop when we click on it 
-Step 4: Creating the other sprites###Challenges1. Make the game harder2. Make the game get harder and easier over time3. Detect when all the sprites have stopped on the same costume
+#HINWEISE FÜR CLUB LEITER
+##(Fruit Machine/Spielautomat)
+
+###Einführung:
+Spielautomat ist ein einfaches Spiel, das aus drei Sprites besteht, die ihr Kostüm ändern. Ziel des Spiels ist, sie anzuhelten wenn sie alle gleich aussehen.
+
+###Kenntnisse
+Bei diesem Projekt behandeln wir:
+
+- Kostüme austauschen
+- eine Schleife einbauen
+- eine Schleife mit einem Klick stoppen
+
+###Hilfsmittel
+Dieses Projekt benutzt nur Bilder, die im Scratch-Images-Verzeichnis zur Verfügung stehen..
+
+###Benötigte Scratch Cards:
+Senden
+
+###Grundübungen
+Schritt 1: Einen Sprite erzeugen, der Kostüme wechselt 
+Step 2: Bilder wechseln lassen
+Step 3: Anhalten lassen wenn geklickt wird 
+Step 4: Weitere Sprites erzeugen
+
+###Weitere Aufgaben
+1. Das Spiel schwieriger machen
+2. Das Spiel im Laufe der Zeit schwieriger oder leichter machen
+3. Feststellen, wenn alle Sprites beim Stop das gleiche Kostüm zeigen

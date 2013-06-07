@@ -1,4 +1,4 @@
-#Bemerkungen für Club-Leiter
+#HINWEISE FÜR CLUB-LEITER
 ##(Feuerwerk)
 
 ###Einführung
