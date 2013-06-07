@@ -2,7 +2,7 @@ Nível 1
 
 #Félix & Herbert
 
-__Introdução:__Vamos criar um jogo de pega-pega com o gato Félix e o rato Herbert. Você controla o Herbert com o mouse e tenta fugirdo gato Félix. Quanto mais tempo você ficar sem ser pego,mais pontos você ganha. Cuidado, se você for pego, você perderá pontos!
+__Introdução:__Vamos criar um jogo de pega-pega com o gato Félix e o rato Herbert. Você controla o Herbert com o mouse e tenta fugir do gato Félix. Quanto mais tempo você ficar sem ser pego,mais pontos você ganha. Cuidado, se você for pego, você perderá pontos!
 ##PASSO 1: Félix segue o mouse
 Acompanhe o seu progresso marcando os quadros abaixo.
 
@@ -19,10 +19,10 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 ###Teste o projeto__Clique na bandeira verde.__O Felix esta seguindo o ponteiro do mouse? Ele parece andar enquanto se movimenta? A velocidade que ele se move é correta?
 Salve o projeto
 ##PASSO 2: Félix persegue o Herbert
-__Agora vamos fazer com que o Félix cace o Herbert, ao invés de perseguir o mouse.__
+__Agora vamos fazer com que o Félix persiga o Herbert, ao invés de perseguir o mouse.__
 1. Crie um novo personagem, clicando em "Escolha um sprite do arquivo" e escolha Animals/mouse12. Mude o nome do personagem para Herbert
-3. Certifique-se que o modo de rotação do Herbert é  somente esquerda-direita.
-4. Clique em __Trajes__ e __Editar__ e diminua o tamanho do Herbert clicando 6x no botão encolher5. Crie os comandos seguintes no Herbert(Certifique-se que os comandos são criados para o Herbert, clicando 2x sobre ele antes de começar a encaixar os blocos.): 
+3. Certifique-se que o modo de rotação do Herbert é somente esquerda-direita.
+4. Clique em __Trajes__ e __Editar__ e diminua o tamanho do Herbert clicando 6x no botão encolher.5. Crie os comandos seguintes no Herbert (Certifique-se que os comandos são criados para o Herbert, clicando 2x sobre ele antes de começar a encaixar os blocos.): 
 
 		quando BANDEIRA clicado
 		sempre
@@ -53,7 +53,7 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 
 ##PASSO 4: Herbert vira fantasma quando pego
 
-__Ao invés de dizer algo, nós vamos fazer com que Herbert vira um fantasmaquando for pego.__
+__Ao invés de dizer algo, nós vamos fazer com que Herbert vire um fantasma quando for pego.__
 
 1. Modifique os comandos do Félix para enviar uma mensagem quando ele pegar o Herbert.
 
@@ -70,7 +70,7 @@ __Ao invés de dizer algo, nós vamos fazer com que Herbert vira um fantasmaquan
 			end
 		end
 
-2. Clique sobre o Herbert, vá até a aba trajes e clique em importare escolha o traje fantasy/ghost2-a.3. Edite o traje para ele ficar menor.4. Mude o nome dos trajes do Herbert, de maneira que o rato (mouse1) se chame 'vivo' e o fantasma (ghost2-a)  se chame'morto'.5. Crie novos comandos parao Herbert, para transformá-loem um fantasma.
+2. Clique sobre o Herbert, vá até a aba trajes, clique em importar e escolha o traje fantasy/ghost2-a.3. Edite o traje para ele ficar menor.4. Mude o nome dos trajes do Herbert, de maneira que o rato (mouse1) se chame 'vivo' e o fantasma (ghost2-a)  se chame 'morto'.5. Crie novos comandos para o Herbert, que irão transformá-lo em um fantasma.
 
 		quando eu ouvir [pego v]
 		mude para o traje [morto v]
@@ -88,8 +88,8 @@ O Félix fica parado tempo suficiente para o Herbert fugir?
 
 Salve o projeto
 ##PASSO 5: Conte os pontos
-__Vamos criar um placar para saber se estamos indo bem. O placar começa do zero, e aumenta um ponto a cada segundo.Se o Félix pegar o Herbert o jogador perderá cem pontos.__
-1. Clique em __Variáveis__ e Crie uma Variável chamada placar.  Mantenha selecionada a opção "para todos os projetos"2. Clique no cenário e crie estesdois blocos de comandos.
+__Vamos criar um placar para saber se estamos indo bem. O placar começa do zero, e aumenta um ponto a cada segundo. Quando o Félix pegar o Herbert, o jogador perderá cem pontos.__
+1. Clique em __Variáveis__ e Crie uma Variável chamada placar.  Mantenha selecionada a opção "para todos os projetos"2. Clique no placo e crie estes dois blocos de comandos.
 		quando BANDEIRA clicado
 		mude [placar v] para (0)
 		sempre
@@ -109,7 +109,7 @@ Os pontos diminuem de 100 quando o Herbert é pego?
 
 O que acontece quando o Herbert é pego antes que o placar chegue a 100?
 
-O placar volta ao zero quando você começa um novo jogo?
+O placar volta a zero quando você começa um novo jogo?
 
 Salve o projeto
-__Parabéns, você acaba de criar o seu próprio jogo!__
+__Parabéns, você acaba de criar o seu primeiro jogo!__

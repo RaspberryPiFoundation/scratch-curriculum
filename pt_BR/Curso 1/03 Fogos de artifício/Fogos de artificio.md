@@ -3,7 +3,7 @@ Nível 1
 #Fogos de artifício.
 
 __Introdução:__
-Neste projeto, vamos criar um show de fogos de artifício sobre uma cidade.
+Neste projeto, vamos criar um show de fogos de artifício em cidade.
 
 ##PASSO 1: Dispare um foguete na direção do mouse
 
@@ -14,7 +14,7 @@ __Vamos começar importando as imagens do jogo__
 3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete
 ao projeto (utilize Recursos/foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
-5. Agora vamos fazer o foguete voar em direção ao mouse quando o mouse for clicado. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
+5. Também vamos fazer o foguete voar em direção ao mouse quando a teclas espaço for pressionada. Adicione um bloco __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direçao do mouse:
 	
 
 	    quando BANDEIRA clicado
@@ -30,7 +30,7 @@ __Clique na bandeira verde, posicione o mouse sobre o palco e pressione a barra 
 O foguete aparece e vai em direção ao mouse?
 O que acontece se você mover o mouse e pressionar espaço novamente?
 
-6. Fogos de artifício não andam de lado. Vamos fazer com que ele sempre comece na parte inferior da tela. Antes de fazer o foguete aparecer, use o bloco va para e faça com que ele va para a parte debaixo da tela, mas que mantenha a sua posiçao orizontal.
+6. Fogos de artifício não andam de lado. Vamos fazer com que ele sempre comece embaixo da tela, mas alinhado com o mouse. Antes de fazer o foguete aparecer, use o bloco va para e faça com que ele va para a parte debaixo da tela, mas que mantenha a sua posiçao horizontal(x) do mouse.
 
 
 
@@ -46,7 +46,10 @@ O que acontece se você mover o mouse e pressionar espaço novamente?
 
 ###Teste o projeto
 __Clique na bandeira verde, posicione o mouse sobre o palco e pressione a barra de espaço.__ 
-O foguete voa em direçao ao mouse, saindo debaixo da tela? O que acontece se você mover o mouse e pressionar espaço novamente?
+
+O foguete voa em direçao ao mouse, saindo debaixo da tela? 
+
+O que acontece se você mover o mouse e pressionar espaço novamente?
 
 7. Finalmente, vamos usar o botão do mouse em vez da barra de espaço. Para fazer isso, nós podemos englobar nosso script com um __sempre se mouse pressionado__.
 Em seguida, substituir o bloco __quando tecla espaço pressionada__ por __quando bandeira verde clicado__ e por último fazer com que o foguete esteja escondido no início.
@@ -85,7 +88,7 @@ Salve o projeto.
 		    desapareça
 		fim
 
-2. Em seguida, faça o foguete anuncie para todos uma nova mensagem quando ele explodir. Vamos ouvir essa mensagem mais tarde.transmitir.
+2. Em seguida, faça o foguete anunciar para todos uma nova mensagem quando ele explodir. Esta mensagem será ouvida mais tarde.
 
 
 
@@ -125,7 +128,7 @@ Salve seu projeto
 
 ##PASSO 3: Faça com que cada explosão seja diferente
 
-1. Agora nós podemos fazer com que cada explosão seja diferente, usando o bloco mude o efeito cor, e sorteando uma cor aleatória entre 1 e 200 antes de mostrá-lo.
+1. Nós podemos fazer com que cada explosão seja diferente, usando o bloco mude o efeito cor, e sorteando uma cor aleatória entre 1 e 200 antes de mostrá-lo.
 
 	    quando eu ouvir [explodir]
 	    desapareça 
@@ -141,7 +144,7 @@ __Clique na bandeira verde.__
 
 Cada explosão tem uma cor diferente?
 
-2. Vamos adicionar alguns desenhos diferentes para as explosões usando os trajes usando Resources/explosao2.png e Resources/explosao3.png, e alternar entre elas para cada foguete, antes de mostrá-lo.
+2. Vamos adicionar alguns desenhos diferentes para as explosões usando os trajes usando Recursos/explosao2.png e Recursos/explosao3.png, e alternar entre elas para cada foguete, antes de mostrá-lo.
 
 ###Teste o projeto
 __Clique na bandeira verde.__ 
@@ -165,7 +168,7 @@ Cada foguete tem um desenho de explosão diferente?
 ###Teste o projeto
 __Clique na bandeira verde.__ 
 
-A a imagem da explosão se espalha a partir do centro e cresce lentamente?
+A imagem da explosão se espalha a partir do centro e cresce lentamente?
 
 ### Sugestões
 Que tal tentar fazer cada explosão ainda mais original, alterando o tamanho e a velocidade de crescimento da explosão.

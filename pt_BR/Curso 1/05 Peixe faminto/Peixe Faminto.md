@@ -7,8 +7,8 @@ __Introdução:__
 
 Neste jogo voce deve orientar o grande peixe faminto e tentar comer todas as presas que estão nadando ao redor.
 
-## PASSO 1: Crie um objeto que muda de traje
-__Vamos fazer este peixe faminto nadar no mar!__
+## PASSO 1: Criando um objeto que muda de traje
+__Vamos fazer o peixe faminto nadar no mar!__
 
 1. Crie um novo projecto Scratch.
 2. Clique no Palco, selecione a aba fundos de tela. Importe o
