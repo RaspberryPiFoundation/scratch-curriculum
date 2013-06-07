@@ -38,7 +38,7 @@ __Clique na bandeira verde__ e olhe o que a bruxa faz. Por que ela fica trancada
 			se tocar na borda, volta
 		fim
 		
-7. Para evitar que a bruxa fique de cabeça para baixo, clique  __somente esquerda-direita__ na á	rea de propriedades do personagem.
+7. Para evitar que a bruxa fique de cabeça para baixo, clique  __somente esquerda-direita__ na área de propriedades do personagem.
 
 ###Teste o projeto
 __Clique na bandeira verde.__ 
