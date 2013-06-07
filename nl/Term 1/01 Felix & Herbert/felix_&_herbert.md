@@ -24,16 +24,16 @@ Houd je voortgang in de gaten door de vakjes hieronder af te vinken:
 ```
         
 ###Test Je Project
-__Klik op het groene vlaggetje.__ 
-Volgt Felix de muisaanwijzer? Lijkt het alsof hij loopt wanneer hij beweegt? Beweegt hij op de goede snelheid? 
-Sla je project op 
+__Klik op het groene vlaggetje.__  
+Volgt Felix de muisaanwijzer? Lijkt het alsof hij loopt wanneer hij beweegt? Beweegt hij op de goede snelheid?  
+Sla je project op  
 ##STAP 2: Felix achtervolgt Herbert
-__Nu willen we dat Felix Herbert de muis achtervolgt, in plaats van de muisaanwijzer.__ 
-1. Maak nog een sprite aan door te klikken op de knop een sprite uit een bestand kiezen en animals/mouse1 te selecteren. 
-2. Verander de naam van de sprite naar Herbert. 
-3. Wijzig het kostuum en maak het kleiner dan Felix. 
-Probeer zes keer te klikken op de verkleinknop: 
-4. Zorg ervoor dat Herbert alleen naar links en rechts wijst. Geef Herbert dit script: 
+__Nu willen we dat Felix Herbert de muis achtervolgt, in plaats van de muisaanwijzer.__  
+1. Maak nog een sprite aan door te klikken op de knop een sprite uit een bestand kiezen en animals/mouse1 te selecteren.  
+2. Verander de naam van de sprite naar Herbert.  
+3. Wijzig het kostuum en maak het kleiner dan Felix.  
+Probeer zes keer te klikken op de verkleinknop:  
+4. Zorg ervoor dat Herbert alleen naar links en rechts wijst. Geef Herbert dit script:  
 
 ```scratch
     
