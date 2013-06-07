@@ -64,3 +64,5 @@ and we’ll say thank you and give you a massive hug.
 We’ll also give you commit access to this and the other repos, so from this
 point in you’ll be able to make changes directly without needing to submit
 a pull request.
+
+![Thank you](http://codeclub-assets.s3.amazonaws.com/public/contributing/thank-you.png)
