@@ -154,9 +154,9 @@ Salve o seu projeto
 
 ###Sugestões
 1. Qual a quantidade adequada de bruxas para o jogo ?
-2. Voce pode fazer as bruxas tenham aparências diferentes? Voce poderia editar suas fantasias, o usar alguns blocos da aba _Aparência_ para mudá-las.
-3. Você pode fazer com o número de pontos ganhos por cada bruxa seja diferente? Que tal fazer com que a bruxa mais veloz (e menor) valha 10 pontos?
+2. Voce pode fazer as bruxas terem aparências diferentes? Voce poderia editar suas fantasias, ou usar alguns blocos da aba _Aparência_ para mudá-las.
+3. Você pode fazer o número de pontos ganhos por cada bruxa ser diferente? Que tal fazer a bruxa mais veloz (e menor) valer 10 pontos?
 
 
-__Parabéns voce terminou, agora aproveite o jogo !__
-Não se esqueça que voce pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
+__Parabéns, você terminou, agora aproveite o jogo !__
+Não esqueça que voce pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
