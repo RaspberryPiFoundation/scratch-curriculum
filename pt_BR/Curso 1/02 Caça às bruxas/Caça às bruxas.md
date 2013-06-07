@@ -133,7 +133,7 @@ Salve o seu projeto
 __Como você faria para acelerar a bruxa durante o andamento da partida?__
 
 
-__Parabéns, você terminou o jogo básicoe. Porém existem mais coisas que você pode fazer com o seu jogo. Tente este desafio!__
+__Parabéns, você terminou o jogo básico. Porém existem mais coisas que você pode fazer com o seu jogo. Tente este desafio!__
 
 ##Desafio: Adicione mais bruxas
 
