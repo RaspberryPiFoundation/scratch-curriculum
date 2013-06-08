@@ -206,7 +206,7 @@ Alterar a dificuldade do jogo.
 
 * Tente mudar o quão rápido a imagem é revelada e quão rápido a pontuação diminui.
 * Altere o tipo de distorções na imagem.
-* Substitua as imagens a serem adivinhadas, para torná-los mais semelhantes ou mais diferentes. Se você fizer isso, não se esqueça de alterar o traje no objeto de resposta.
+* Substitua as imagens a serem adivinhadas, para torná-los mais semelhantes ou mais diferentes. Se você fizer isso, não esqueça de alterar o traje no objeto de resposta.
 
 
 Salve o projeto
