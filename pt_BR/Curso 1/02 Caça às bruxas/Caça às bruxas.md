@@ -19,9 +19,9 @@ Agora queremos que a nossa bruxa se mova
 __Importante:__ No Palco, deve aparecer “objeto1 velocidade”.
 Se aparecer apenas “velocidade”, apague a variável e crie de novo selecionando "para este objeto apenas".
 Desmarque a caixa ao lado do bloco velocidade no quadro de variáveis para que ela não apareça no Palco.
- Nós usaremos esta variável para poder mudar a velocidade da bruxa durante o jogo.
+Nós usaremos esta variável para poder mudar a velocidade da bruxa durante o jogo.
 
-Nós queremos que a bruxa comece a se mexer quando o jogo iniciar, então crie estes blocos:
+Nós queremos que a bruxa comece a se mexer quando o jogo iniciar, então crie estes comandos:
 
 		quando BANDEIRA clicado
 		mude [velocidade v] para (5)
@@ -35,7 +35,7 @@ __Clique na bandeira verde__ e olhe o que a bruxa faz.
 Por que ela fica trancada no canto da tela ?
 
 6. Para não ficar trancada a bruxa deve dar meia volta quando tocar na borda do palco. 
-Abaixo do bloco __mova__, adicione um  bloco __se tocar na borda, volta__.
+Abaixo do comando __mova__, adicione um  comando __se tocar na borda, volta__.
 
 		quando BANDEIRA clicado
 		mude [velocidade v] para (5)
@@ -64,11 +64,11 @@ __Como você faria a bruxa acelerar com o passar do tempo?__
 ##PASSO 2: Faça a bruxa aparecer e desaparecer de maneira aleatória
 
 Para tornar o jogo mais divertido, vamos fazer as bruxas aparecerem e desaparecerem aleatoriamente. 
-Faremos isso com um outro bloco de comandos que é executado ao mesmo tempo que os comandos que fazem a bruxa se mexer.
-Este novo bloco vai esconder a bruxa por um tempo aleatório e em seguida a bruxa vai aparecer por um tempo aleatório. 
+Faremos isso com um outro conjunto de comandos que é executado ao mesmo tempo que os comandos que fazem a bruxa se mexer.
+Estes novos comandos vão esconder a bruxa por um tempo aleatório e em seguida a bruxa vai aparecer, também por um tempo aleatório. 
 Esta operação é repetida para sempre (ou até que o jogo acabe).
 
-Crie este script para a bruxa:
+Crie estes comandos para a bruxa:
 
 		quando BANDEIRA clicado
 		sempre
@@ -78,7 +78,7 @@ Crie este script para a bruxa:
 			espere (sorteie número entre (3) e (5)) segundos
 		fim
 
-###Teste o seu projeto
+###Teste o projeto
 
 __Clique na bandeira verde.__ 
 
@@ -103,7 +103,7 @@ Para transformar isso em um jogo, precisamos que o jogador faça algo. Eles prec
 		desapareça
 		toque o som [Fairydust v]
 		
-###Teste o seu projeto
+###Teste o projeto
 
 __Clique na bandeira verde.__
 
@@ -129,9 +129,9 @@ Para fazer um placar e o um cronômetro nós podemos usar variáveis.
 	
 2. Vá para o Palco e crie uma nova variável (dessa vez somente para o palco, usando a opção __para	este objeto apenas__) e dê o nome de tempo. 
 Adicione novos comandos que serão executado quando a bandeira verde for clicada. Estes comandos servem para mudar o tempo para 30 e zerar o placar. 
-Em seguida use um bloco __repita até__ para esperar um segundo e diminuir o tempo de um. Isto deve ser repetido até que o tempo seja 0. 
+Em seguida use um comando __repita até__ para esperar um segundo e diminuir o tempo de um. Isto deve ser repetido até que o tempo seja 0. 
 
-Quando o tempo chegar a zero, devemos usar um bloco __pare tudo__ para interromper a partida.
+Quando o tempo chegar a zero, devemos usar um comando __pare tudo__ para interromper a partida.
 	
 		quando BANDEIRA clicado
 		mude [cronômetro v] para (30)
@@ -164,7 +164,7 @@ Se uma bruxa é bom, várias bruxas deve ser ainda mais legal! Então, vamos cri
 3. Para cada bruxa mude a variável velocidade para que cada uma voe com velocidade diferente das outras.
 4. Distribua as bruxas pelo palco para que elas não fiquem todas juntas.
 
-###Teste o seu projeto
+###Teste o projeto
 __Clique na bandeira verde.__
 
 Você vê três bruxas que se movem de um lado a outro da tela, 
@@ -176,7 +176,7 @@ Salve o seu projeto
 ###Sugestões
 1. Qual a quantidade adequada de bruxas para o jogo ?
 2. Voce pode fazer as bruxas terem aparências diferentes? 
-Voce poderia editar seus trajes, ou usar alguns blocos da aba _Aparência_ para mudá-las.
+Voce poderia editar seus trajes, ou usar alguns comandos da aba _Aparência_ para mudá-las.
 3. Você pode fazer o número de pontos ganhos para cada bruxa ser diferente? Que tal fazer a bruxa mais veloz (e menor) valer 10 pontos?
 
 __Parabéns, você terminou, agora aproveite!__

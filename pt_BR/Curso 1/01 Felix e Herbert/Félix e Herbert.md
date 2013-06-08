@@ -15,7 +15,7 @@ Acompanhe o seu progresso marcando os quadros abaixo.
 2. Clique em palco, na área em baixo à direita da tela. Em seguida, vá até a aba __Fundos de Tela__,  __Importar__ e escolha o fundo indoors/hall.
 3. Clique no Félix e mude o nome de objeto1 para Félix (no centro da tela, bem em cima). 
 4. Certifique-se que o modo de rotação do Félix é __somente esquerda-direita__.
-5. Crie estes comandos:
+5. Arraste e encaixe estes comandos para a área no centro da tela:
 
 
 		quando BANDEIRA clicado
@@ -47,7 +47,7 @@ __Agora vamos fazer com que o Félix persiga o Herbert ao invés de perseguir o 
 2. Mude o nome do personagem para Herbert
 3. Certifique-se de que o modo de rotação do Herbert é somente esquerda-direita.
 4. Clique em __Trajes__, __Editar__ e diminua o tamanho do Herbert clicando 6x no __botão encolher__.
-5. Crie os comandos seguintes no Herbert (Certifique-se de que os comandos são criados para o Herbert, clicando 2x sobre ele antes de começar a encaixar os blocos): 
+5. Arraste e encaixe os comandos seguintes para Herbert (Certifique-se de que os comandos são criados para o Herbert, clicando 2x sobre ele antes de começar a encaixar): 
 
 		quando BANDEIRA clicado
 		sempre
@@ -67,7 +67,7 @@ Salve o projeto
 __Vamos fazer com que o Félix nos diga quando ele pegou o Herbert__
 
 
-1. Mude os comandos do Félix para que eles fiquem assim:
+1. Modifique os comandos do Félix para que eles fiquem assim:
 
 		quando BANDEIRA clicado
 		sempre
@@ -110,9 +110,9 @@ __Ao invés de dizer algo, nós vamos fazer com que o Herbert vire um fantasma q
 2. Clique sobre o Herbert, vá até a aba trajes, clique em importar e escolha o traje fantasy/ghost2-a.
 3. Reduza o tamanho do traje.
 4. Mude o nome dos trajes do Herbert, de maneira que o rato (mouse1) se chame 'vivo' e o fantasma (ghost2-a)  se chame 'morto'.
-5. Crie um novo bloco de comandos para o Herbert, que irá fazer ele virar fantasma. Estes blocos ficarão ao lado dos blocos ja existentes para o Herbert.
+5. Crie um novo conjunto de comandos para o Herbert, que irá fazer ele virar fantasma. Estes comandos ficarão ao lado dos comandos ja existentes para o Herbert.
 
-__Não apague o conjunto de blocos que já existe para o Herbert, e que fazem ele ir para o ponteiro do mouse__
+__Não apague o conjunto de comandos que já existe para o Herbert, e que fazem ele ir para o ponteiro do mouse__
 
 		quando eu ouvir [pego v]
 		mude para o traje [morto v]
@@ -139,7 +139,7 @@ Quando o Félix pegar o Herbert, o jogador perderá cem pontos.__
 
 1. Clique em __Variáveis__ e Crie uma Variável chamada placar.  
 Mantenha selecionada a opção "para todos os projetos".
-2. Clique no placar e crie estes dois blocos de comandos.
+2. Clique no placar e crie estes dois conjuntos de comandos.
 
 		quando BANDEIRA clicado
 		mude [placar v] para (0)
