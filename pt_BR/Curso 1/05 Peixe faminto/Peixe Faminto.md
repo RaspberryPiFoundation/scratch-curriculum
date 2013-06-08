@@ -10,7 +10,7 @@ Neste jogo voce deve orientar o grande peixe faminto e tentar comer todas as pre
 ## PASSO 1: Criando um objeto que muda de traje
 __Vamos fazer o peixe faminto nadar no mar!__
 
-1. Crie um novo projecto Scratch.
+1. Crie um novo projeto Scratch.
 2. Clique no Palco, selecione a aba fundos de tela. Importe o
 Fundo nature/underwater e apague o fundo de tela1.
 3. Apague o gato.
