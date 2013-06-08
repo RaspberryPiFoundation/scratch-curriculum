@@ -5,9 +5,9 @@ Nível 2
 
 __Introdução:__
 
-Neste jogo voce deve orientar o grande peixe faminto e tentar comer todas as presas que estão nadando ao redor.
+Neste jogo você deve orientar o grande peixe faminto e tentar comer todas as presas que estão nadando pelo mar.
 
-## PASSO 1: Criando um objeto que muda de traje
+## PASSO 1: Criando o paixe faminto
 __Vamos fazer o peixe faminto nadar no mar!__
 
 1. Crie um novo projeto Scratch.
@@ -28,13 +28,17 @@ Fundo nature/underwater e apague o fundo de tela1.
 
 
 ### Teste o projeto
+
 __Clique na bandeira verde.__
+
 Mova o ponteiro do mouse pelo mar. O peixe segue o ponteiro do mouse?
+
 O que acontece se você não mover o ponteiro do mouse e o peixe o alcança? O que esta acontecendo? Por que isso acontece?
 
 
-7. Você pode fazer o Peixe Faminto parar de virar feito louco se você fizer com que ele só se mova quando não estiver muito próximo do ponteiro do mouse
-(O bloco __distância até__ está na aba sensores).
+7. Você pode fazer o Peixe Faminto parar de virar feito louco se você fizer com que ele 
+só se mova quando não estiver muito próximo do ponteiro do mouse
+(use o bloco __distância até__ está na aba sensores).
 
 
 
@@ -67,7 +71,9 @@ Altere a quantidade de passos que o peixe se move: um grande número (por exempl
 1. Crie um novo objeto do arquivo animals/lobster1.
 2. Use a ferramenta Encolher Objeto (acima do palco)
 para fazer ele ficar menor.
-3. Crie os comandos para fazer a presa nadar. Queremos que eles se movam aleatoriamente, então vamos fazê-lo avançar um pouco, em seguida, vire uma quantidade aleatória para a esquerda ou para a direita, repitindo isso novamente
+3. Crie os comandos para fazer a presa nadar.
+ Queremos que elas se movam aleatoriamente, então vamos fazê-lo avançar um pouco, em seguida, virar uma quantidade aleatória 
+ para a esquerda ou para a direita, repitindo isso novamente
 
 
 
@@ -80,6 +86,7 @@ para fazer ele ficar menor.
 
 
 ### Teste o projeto
+
 __Clique na bandeira verde e observe as presas nadando.__ 
 
 Elas nadam como você esperava? 
@@ -94,9 +101,9 @@ Salve o projeto
 
 ### Sugestões
 
-* Tente alterar os valores nos blocos __sorteie__ e __mova__. 
+* Tente alterar os valores nos comandos __sorteie__ e __mova__. 
 Como isso muda a forma que as presas se movimentam?
-* O que o __se tocar na borda, volta__ faz? 
+* O que o bloco __se tocar na borda, volta__ faz? 
 Retire-o e veja o que acontece.
 
 ##PASSO 3: Fazendo o peixe comer as presas
@@ -108,7 +115,8 @@ Uma vez que o Peixe Faminto tem uma presa em sua boca, duas coisas precisam acon
 * O Peixe Faminto precisa fechar a boca e fazer um som "chomp".
 * A presa tem que desaparecer, e reaparecer um pouco mais tarde.
 
-1. Primeiro, vamos fazer a presa desaparecer se ela estiver tocando o peixe com fome, e reaparecer 3 segundos depois. Use o bloco __tocando__ para ver se ela está tocando o peixe.
+1. Primeiro, vamos fazer a presa desaparecer se ela estiver tocando o peixe com fome, e reaparecer 3 segundos depois. 
+Use o bloco __tocando__ para ver se ela está tocando o peixe.
 
 
 
@@ -128,12 +136,15 @@ Uma vez que o Peixe Faminto tem uma presa em sua boca, duas coisas precisam acon
 ### Teste o projeto
 __Teste o jogo novamente - você pode detectar eventuais problemas?__ 
 
-Observe que a presa desaparece a partir do momento que ela toca em qualquer parte do peixe. Além disso, o peixe poderia apenas aguarde 3 segundos e comer a presa no momento em que ela reaparece - isso não é muito justo!
+Observe que a presa desaparece a partir do momento que ela toca em qualquer parte do peixe. 
+Além disso, o peixe poderia apenas aguarde 3 segundos e comer a presa no momento em que ela reaparece - isso não é muito justo!
 
-2. Como podemos garantir que a presa só desaparece se ela está tocando a boca do peixe? Bem, nós poderíamos usar o bloco __tocando na cor__, e ver se ele está tocando os dentes azuis do peixe. Para fazer isso, substitua o bloco __tocando em__ por um
-bloco __tocando na cor__, clique na cor dentro do bloco e, em seguida, clique novamente nos dentes do peixe.
-3. Em seguida, podemos fazer a presa ir a um ponto aleatório na tela antes de reaparecer novamente, usando um bloco __vá para__ e dando valores aleatórios
-para x e y.
+2. Como podemos garantir que a presa só desaparece se ela está tocando a boca do peixe? 
+Bem, nós poderíamos usar o bloco __tocando na cor__, e ver se ele está tocando os dentes azuis do peixe. 
+Para fazer isso, substitua o bloco __tocando em__ por um
+comando __tocando na cor__, clique na cor dentro do comando e em seguida, clique novamente nos dentes do peixe.
+3. Em seguida, podemos fazer a presa ir a um ponto aleatório na tela antes de reaparecer novamente, usando um comando __vá para__ e 
+dando valores aleatórios para x e y.
 
 
 
@@ -152,9 +163,11 @@ para x e y.
 
 ### Teste o projeto
 
-Experimente o jogo mais uma vez - as presas só desaparecem quando tocam a boca do peixe? E elas voltam a aparecer em um ponto aleatório da tela ao invés de onde foi comido?
+Experimente o jogo mais uma vez - as presas só desaparecem quando tocam a boca do peixe? 
+E elas voltam a aparecer em um ponto aleatório da tela ao invés de onde foi comido?
 
-4. O peixe precisa saber quando ele comeu alguma coisa para que ele toque um som e mude de traje. Para fazer isso, nós podemos fazer a presa anunciar o fato de que ela foi comida antes de desaparecer.
+4. O peixe precisa saber quando ele comeu alguma coisa para que ele toque um som e mude de traje. 
+Para fazer isso, nós podemos fazer a presa anunciar o fato de que ela foi comida antes de desaparecer.
 
 
 
@@ -175,7 +188,8 @@ Experimente o jogo mais uma vez - as presas só desaparecem quando tocam a boca 
 __Agora vamos fazer o peixe ouvir esta mensagem fazendo um som de "chomp" e fechando sua bouca.__
 
 5. Adicione o traje __recursos/boca fechada__ e o som recursos/chomp para o objeto Peixe Faminto.
-6. Em seguida, adicione novos comandos para o Peixe Faminto para ouvir a mensagem transmitida pela presa. Estes comandos devem fazer o peixe reproduzir o som 'chomp' e mudar para o traje __boca fechada__, esperar um pouco e depois voltar.
+6. Em seguida, adicione novos comandos para o Peixe Faminto para ouvir a mensagem transmitida pela presa. 
+Estes comandos devem fazer o peixe reproduzir o som 'chomp' e mudar para o traje __boca fechada__, esperar um pouco e depois voltar.
 
 
 
@@ -191,13 +205,17 @@ __Agora vamos fazer o peixe ouvir esta mensagem fazendo um som de "chomp" e fech
 __Agora nosso peixe faminto está pronto para comer, vamos encher o oceano de presas. Clique com o botão direito do mouse sobre o objeto presa e clique em "duplicar" várias vezes.__
 
 ### Teste o projeto
-Clique na bandeira verde.
+
+__Clique na bandeira verde.__
+
 O Peixe Faminto come as presas? Ele consegue comer cada uma das presas?
 
 Salve o projeto
 
 ### Sugestões
-Por que precisamos adicionar o bloco apareça no o início dos comandos da presa? Pense no que aconteceria se a presa fosse comida, e então o jogo fosse interrompido antes que ela reapareça. O que aconteceria se o jogo fosse reiniciado?
+
+Por que precisamos adicionar o bloco apareça no início dos comandos da presa? Pense no que aconteceria se a presa fosse comida, e então o jogo fosse interrompido antes que ela reapareça. 
+O que aconteceria se o jogo fosse reiniciado?
 
 __Parabéns você terminou o jogo básico. Há mais coisas que você pode fazer. Você está pronto para o desafio?__
 
@@ -208,18 +226,21 @@ Neste momento, toda a presa se movem da mesma maneira. __Você é capaz de fazê
 __Dica:__ Não passe muito tempo nesta parte, sem olhar para os outros desafios deste projeto.
 
 
-__Escolha uma das presas para experimentar.__ Como todas as presas são iguais, mude a cor da presa que você vai modificar, e aplique um efeito de cor usando o bloco __mude o efeito [cor] para__. Dessa forma, você pode distingui-la das demais.
+__Escolha uma das presas para experimentar.__ Como todas as presas são iguais, mude a cor da presa que você vai modificar, aplicando um efeito de cor usando o comando __mude o efeito [cor] para__. 
+Dessa forma, você pode distingui-la das demais.
 
-Faça esta presa se mover mais devagar que as outras. __Dica:__ De uma olhada no bloco __mova (2) passos__.
+Faça esta presa se mover mais devagar que as outras. __Dica:__ De uma olhada no comando __mova (2) passos__.
 
 
 ### Teste o projeto
 A presa se move mais devagar? O jogo ficou melhor?
-Se voce consegui fazer isso então, __tente fazer uma presa se mover mais rápido que as outras.__
+Se voce conseguiu fazer isso, __tente fazer uma presa se mover mais rápido que as outras.__
 
 
 As presas ainda se movem de maneira correta? Estas mudanças amelhoram o jogo?
-__Dica:__ Se a presa nada em círculos, verifique os valores do bloco __sorteie número__ dentro do bloco __vire__ .
+
+
+__Dica:__ Se a presa nada em círculos, verifique os valores do bloco __sorteie número__ dentro do comando __vire__ .
 
 Que tal você fazer cada um das presas se comportar de forma diferente, usando diferentes combinações dessas mudanças?
 
