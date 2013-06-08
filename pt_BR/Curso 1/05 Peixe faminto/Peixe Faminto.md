@@ -252,7 +252,8 @@ Salve o projeto
 
 As presas neste jogo são realmente burras! Elas simplesmente nadam ao redor aleatoriamente até que sejam comidas. Peixes de verdade fogem dos predadores. __Faça uma das presas fugir do Peixe Faminto.__
 
-Não há nenhum bloco no Scratch que indica em que direção está um outro objeto. Mas você pode fazer um objeto apontar para outro, em seguida, ele pode dar meia volta e fugir. Os blocos que você precisa estão na aba __Movimento__.
+Não há nenhum bloco no Scratch que indica em que direção está um outro objeto. Mas você pode fazer um objeto apontar para outro, em seguida, ele da meia volta. 
+Os blocos que você precisa estão na aba __Movimento__.
 
 Usando essa idéia, faça uma das presas sempre apontar para a __posição oposta do Peixe Faminto.__ 
 
@@ -262,9 +263,11 @@ Ficou mais difícil de pegar a presa? O jogo ficou melhor?
 Salve o projeto
 
 ##Desafio 3: Adicionando um placar
-Não é suficiente apenas comer peixes. Como vamos fazer para saber quem é o melhor jogador entre os seus amigos? __Você precisa encontrar uma maneira de manter a pontuação, então vamos adicionar um quadro de pontuação.__ Dê uma olhada no cartão Scratch __Contando pontos__ para  ter uma idéia de como fazê-lo.
+Não é suficiente apenas comer presas. 
+Como vamos fazer para saber quem é o melhor jogador entre os seus amigos? 
+__Você precisa encontrar uma maneira de manter a pontuação__, então vamos adicionar um placar. Dê uma olhada no cartão Scratch __Contando pontos__ para  ter uma idéia de como fazê-lo.
 
-Onde você deve colocar o bloco que muda a pontuação?
+Onde você deve colocar o comando que muda a pontuação?
 
 Certifique-se que a pontuação seja zerada no início do jogo. Onde você deve colocar esse bloco?
 
@@ -293,7 +296,7 @@ Salve o projeto
 ## Desafio 5: Adicionando um bônus
 Atribua um grande bônus ao jogador que comer todos os peixes de uma só vez. Como é possível
 saber quantos peixes foram comidos?
-__Dica:__ Uma maneira de fazer isso é __usar uma variável para contar quantas presas ainda estão vivas.__
+__Dica:__ Uma maneira de fazer isso é __usar uma variável__ para contar quantas presas ainda estão vivas.
 
 Salve o projeto
 
@@ -301,7 +304,7 @@ Salve o projeto
 
 Às vezes, você pode ter novas idéias partindo de uma idéia existente e fazendo o oposto.
 
-__Modifique o jogo para que, ao invés de você controlar um peixe que tenta comer as presas, você controla uma presa em um mar com vários peixes famintos. __Quanto tempo você pode sobreviver antes de ser comido?
+__Modifique o jogo para que, ao invés de você controlar um peixe que tenta comer as presas, você controla uma presa em um mar com vários peixes famintos.__ Quanto tempo você pode sobreviver antes de ser comido?
 
 Salve o projeto
 
