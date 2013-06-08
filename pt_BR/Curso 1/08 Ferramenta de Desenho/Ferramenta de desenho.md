@@ -1,18 +1,18 @@
 Nível 3
 
-# Pinte Box
+# Ferramenta de desenho
 
 __Introdução:__
-Este projeto cria uma ferramenta de pintura para que você possa fazer a seu próprio desenho. Você pode mudar a cor da linha, limpar a tela, fazer carimbos e muito mais!
+Neste projeto nós vamos criar um a ferramenta de pintura para que você possa desenhar. Será possível escolher a cor do lápis, limpar a tela, usar carimbos e muito mais!
 
 ## PASSO 1: Arrastando e desenhando
 
-Vamos começar com uma caneta que desenha quando você arrastá na tela.
+Vamos começar com um lápis que risca quando arrastado sobre a tela.
 
-1. Crie um novo projeto Scratch. Exclua o gato clicando com o botão direito e em Excluir
-2. Clique __Palco__ e, em seguida, na aba __Fundos de tela__ Importe o fundo __indoors/chalkboard__.
-3. Criar um novo objeto chamado __caneta__, utilizando __recursos/caneta-verde.__
-4. Alterne para a aba __trajes__ e clique em Editar e faça com que o centro da imagem fique na ponta da caneta. Para fazer isso, clique em __Selecionar centro do traje__, no canto inferior esquerdo arraste as linhas até que elas estejam na ponta.
+1. Crie um novo projeto Scratch. Exclua o gato clicando com o botão direito e em apagar
+2. Clique __Palco__ e, em seguida, na aba __Fundos de tela__ importe o fundo __indoors/chalkboard__.
+3. Criar um novo objeto chamado __lápis__, utilizando __recursos/lápis-verde.__
+4. Vá para a aba __trajes__, clique em Editar e faça com que o centro da imagem fique na ponta da caneta. Para fazer isso, clique em __selecionar centro do traje__, (no canto embaixo à esquerda) e arraste as linhas até que elas estejam na ponta do lápis.
 5. Faça a caneta seguir
 o mouse usando um bloco __sempre__
 e um bloco __vá para [ponteiro do mouse]__
@@ -24,9 +24,9 @@ e um bloco __vá para [ponteiro do mouse]__
 		fim
 
 
-__Agora nós vamos usar o objeto caneta como uma caneta de verdade.__ Se você der uma olhada na aba caneta você vai ver vários os tipos de blocos relacionados a pintura. Os blocos que nos interessam agora sao  __abaixe a caneta__ e __levante a caneta__
+__Vamos fazer com que o objeto lápis se comporte como um lápis de verdade.__ Dê uma olhada na aba caneta e você verá vários blocos relacionados à pintura. Os blocos que nos interessam agora são  __abaixe a caneta__ e __levante a caneta__
 
-6. Queremos usar o botão do mouse para controlar a caneta - sempre que o botão do mouse é pressionado a caneta deve ser abaixada, e quando não estiver clicado a caneta deve estar levantada. Podemos fazer isso usando o bloco __se ... senão__ e o bloco __mouse pressionado?__ .
+6. Vamos usar o botão do mouse para controlar a caneta - sempre que o mouse estiver pressionado a caneta será abaixada, e quando não estiver clicado a caneta deve estar levantada. Podemos fazer isso usando o bloco __se ... senão__ e o bloco __mouse pressionado?__ .
 
 
 		quando BANDEIRA clicado
@@ -40,6 +40,7 @@ __Agora nós vamos usar o objeto caneta como uma caneta de verdade.__ Se você d
 		fim
 
 ### Teste o projeto
+
 __Clique na bandeira verde.__
 A caneta segue o mouse? O que acontece se você segurar o botão do mouse pressionado e mover? Não se preocupe com a cor da caneta para enquanto.
 
@@ -68,41 +69,41 @@ Salve o projeto
 
 ##PASSO 2: Apagando
 
-Ao invés de ter que reiniciar o projeto para apagar os desnhos, vamos adicionar um botão que
-limpa o desenho. Ele vai fazer isso usando o bloco __limpe__.
+Ao invés de ter que reiniciar o projeto para apagar os desenhos, vamos adicionar um botão para cancelar o desenho. Para fazer isso use o bloco __limpe__.
 
-1. Crie um novo objeto usando __recursos/botao-limpar__.
-2. Altere o nome do objeto para __limpar__.
-3. Posicione o objeto perto do canto inferior esquerdo do palco.
-4. Crie estes comandos para o objeto __limpar__:
+1. Crie um novo objeto usando __recursos/botão-cancelar__.
+2. Altere o nome do objeto para __cancelar__.
+3. Posicione o objeto na parte de baixo palco próximo ao canto esquerdo.
+4. Crie estes comandos para o objeto __cancelar__:
 
 
-quando limpar clicado
+quando cancelar clicado
 limpe
 
 
 ### Teste o projeto
 __Clique na bandeira verde.__
 
-O botão limpar apaga o desenho?
+O botão cancelar apaga o desenho?
 
 Salve o projeto
 
 ## Passo 3: Mudando de cor
 
-Até agora, só desenhamos linhas azuis. Vamos desenhar com algumas cores diferentes! Vamos adicionar alguns objetos na parte inferior do quadro. Os objetos serão parecidos com botões coloridos. Se clicar em um botão, ele vai mudar a cor da caneta. Para sabermos a cor que estamos usando, o botão também irá mudar a cor do objeto caneta.
+Até agora, só desenhamos linhas azuis. Que tal usarmos cores diferentes! 
+Vamos adicionar alguns objetos na parte de baixo do quadro. Os objetos serão parecidos com botões coloridos. Quando você clicar em um dos botões, ele vai mudar a cor do lápis. O objeto lápis também mudará de cor para sabermos qual cor estamos usando.
 
-1. Adicionar um novo objeto, chamado __vermelho__, utilizando __recursos/botao-vermelho__.
-2. Coloque-o em algum lugar ao longo da parte inferior do quadro, perto do botão __limpar__.
+1. Adicione um novo objeto, chamado __vermelho__, utilizando __recursos/botão-vermelho__.
+2. Ele deve ser posto em algum lugar ao longo da parte de baixo do quadro, perto do botão __limpar__.
 3. Quando o botão vermelho é clicado, ele deve anunciar a mensagem __vermelho__.
 
 
 Quando vermelho clicado
 anuncie [vermelho v] para todos
 
-__Sim, somente este dois blocos. A parte complicada fica por conta da caneta.__
+__Isso mesmo, são somente dois blocos. A parte complicada fica por conta da lápis.__
 
-Na caneta, importe um novo traje, __recursos/caneta-vermelha__. Selecione o centro do traje para que coincida com a ponta da caneta, como você fez para o traje original.
+No lápis, importe um novo traje, __recursos/lápis-vermelho__. Selecione o centro do traje para que ele fique na ponta da caneta, da mesma maneira que você acabou de fazer parao traje original.
 
 4. Adicionar novos comandos para a caneta. Quando a caneta receber a mensagem __vermelho__, deve mudar para o traje caneta-vermelha e mudar a cor da caneta para vermelho (usando o bloco __mude a cor da caneta para__).
 
