@@ -1,10 +1,11 @@
 # Instruções aos monitores
-## (Faça Seu Próprio Jogo)
+## (Crie seu próprio jogo)
 
 ## Introdução
 
-Neste projeto você vai criar um jogo para você e seus amigos
-jogarem! Você terá que pensar em suas diferentes partes e planejar as suas ideias antes de começar a fazê-lo usando o Scratch. Você pode usar as idéias de projetos anteriores e os cartões scratch como inspiração.
+O objetivo deste projeto é planejar e criar um jogo para você jogar com seus amigos! 
+Mas antes de começar a programar, você deve definir as diferentes partes do jogo e organizar as idéias. 
+Você pode usar como inspiração os projetos anteriores e os cartões scratch.
 
 ### Competências
 Este projeto abrange
@@ -15,14 +16,16 @@ Este projeto abrange
 
 ### Recursos
 
-As crianças irão projetar seus próprios recursos para o projeto, incluindo personagens, palco e som. Tenha papel suplementar pronto se acaso eles precisarem. Certifique-se que existem canetas e lápis para desenhar. Você precisa ter uma idéia de quantas sessões serão necessárias para as crianças acaberem o projeto. A fase de concepção e planejamento podera levar uma sessão inteira ou até mesmo duas. Planeje isso antes de começar, em seguida, informe às crianças sobre quanto tempo elas têm.
+As crianças projetarão seu próprios recursos para o projeto, incluindo personagens, palco e som. Tenha em mãos folhas de papel suplementares, pois talvez eles precisem. Certifique-se que existem canetas e lápis para desenhar. Você precisa estipular quantas sessões serão usadas para fazer o projeto. 
+A fase de concepção e planejamento pode levar uma sessão inteira ou até mesmo duas. 
+Planeje isso antes de começar, em seguida, informe às crianças sobre quanto tempo elas têm.
 
 ### Exercícios básicos
-Passo 1: Planejando o seu jogo
+Passo 1: Planejando o jogo
 
-Passo 2: Crie seus personagens
+Passo 2: Criando personagens
 
-Passo 3: Desenhe o seu estágio
+Passo 3: Desenhando o o palco
 
 Passo 4: Como funciona o jogo?
 
