@@ -10,9 +10,9 @@ Você pode usar como inspiração os projetos anteriores e os cartões scratch.
 ### Competências
 Este projeto abrange
 
-* Modelização
-* Planejamento
-* Correção de problemas
+* Modelização;
+* Planejamento;
+* Correção de problemas;
 
 ### Recursos
 
