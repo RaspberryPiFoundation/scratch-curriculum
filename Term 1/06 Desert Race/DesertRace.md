@@ -1,68 +1,208 @@
 Level 2
 
-#Desert Race
+#Wüstenrennen
 
-__Introduction:__This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
-##￼STEP 1: Create the scene and add the sprites
+__Einführung:__
+Dieses Spiel ist ein Spiel für zwei Spieler, bei dem Ihr einen Papagei und einen Löwen ein Rennen durch die Wüste austragen lasst. Um das Tier zu bewegen, muss jeder Spieler eine Taste so schnell wie möglich drücken. Wer als Erster den Bildschirmrand erreicht hat gewonnen.
 
-1. Select the Stage, and add the desert background.ticking off the boxes below:￼￼￼2. Add a new sprite, select the lion sprite that you will find in the animals folder.3. Add another sprite, select the parrot sprite that you will find in the animals folder.
-##STEP 2: Make the lion and the parrot move
-We want the sprite to move when you press a key.
-1. First select the lion sprite and set it to move 4 steps when you press the ‘L’ key.
-```scratch
-	when l key pressed	move 4 steps
-```
-2. Next, select the parrot sprite and set it to move 4 steps when you press the ‘A’ key.
 
-```scratch
-	when a key pressed	move 4 steps
-```
+##￼Schritt 1: Erzeuge die Umgebung und ergänze die Sprites 
 
-###Test Your Project__Click the green flag__ 
-Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
-Save your project
-##￼STEP 3: Starting the race
-We need to have a way to start the race and to know who has won. __First we create a start button.__1. Add a new sprite from a file. Choose the button sprite which is inside “things”.2. Edit the costume of the button sprite, add the text ‘start’ to it and click OK. Move the sprite to the middle of the stage.3. Now add a script that shows the sprite when the project is run:
-```scratch
-	when FLAG clicked	show
-```4. Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
-```scratch
-	when StartRace clicked	say 3 for 1 secs	say 2 for 1 secs	say 1 for 1 secs	say GO! for 1 secs	hide
-```
-###Test Your Project__Click on the green flag.__When you press the start button does it countdown to the start of the race before disappearing?Save your project
-We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.5. Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.6. Now set racing to be 0 when the project is first started. Change your when flag clicked scriptfrom before to look like this:
-```scratch
-	when FLAG clicked	show	set racing to 0
-```7. Next, set the racing variable to be 1 when the starting countdown has finished.8. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows theparrot to move if __racing = 1__.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps	(end if)
-```9. Now do the same for the lion sprite.###Test Your Project__Click on the green flag.__Does the lion or the parrot move only after the countdown has finished?
-We want to know who wins the race and reset it when it has finished so you canrace again.##￼STEP 4: Finishing the race
-1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0		(end if)	(end if)
-```2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the a parrot winning the race!3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs		(end if)	(end if)
-```4. Now repeat these steps for the lion.
-###Test Your Project__Click on the green flag.__Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
-Save your project
-##￼STEP 5: Resetting the game
-After the race is finished we need to tell the other sprites we have won and reset thegame so we can play again.__We need the winning sprite to broadcast that it has won.__
-1. Click on the Parrot sprite.Add a block that broadcasts “finished” after the sprite says it has won.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs			broadcast finished		(end if)	(end if)
-```2. Now we need to add a new script that listens for the finished broadcast and moves the parrotback to the start. What happens if you change the value that x is set to?
+1. Wähle die Bühne aus und ergänze den Hintergrund "desert".
+Schaue, wie Du mit den Aufgaben voran kommst, indem Du die Kästchen abhakst, sobald Du die Aufgabe erledigt hast:
+￼￼2. Füge einen neuen Sprite hinzu. Wähle dafür den "lion"-Sprite im "animals"-Verzeichnis.
+3. Füge einen zweiten Sprite hinzu, indem Du den "parrot"-Sprite im  "animals"-Verzeichnis öffnest.
+
+
+
+##Schritt 2: Lasse den Löwen und den Papageien sich bewegen
+
+
+Wir wollen, dass die Tiere sich bewegen, wenn Du eine Taste drückst.
+
+
+1. Wähle zuerst den Löwen-Sprite und lasse ihn 4 Schritte gehen, wenn Du die "L"-Taste drückst.
 
 ```scratch
-	when I receive finished	set x to -175
-```3. Now add the same script for the lion. Test different x values to make sure the lion and the parrot line up at the start.4. We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the startwhen we click the flag.
-```scratch
-	when FLAG clicked	set x to -175
-```5. Now click on the button sprite and add a script that shows it when it receives the finished message.￼￼￼￼￼￼￼￼￼￼###Test Your Project__Click on the green flag.__
-Can you race against a friend, one of you moving the parrot by pressing ‘A’ and theother moving the Lion by pressing ‘L’?
-Save your project##￼Challenge: Add a booster
 
-* __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__* __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.* __Create another sound__ that the sprite will make when the boost is pressed.￼###Test Your Project
-Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+	wenn Taste l gedrückt
+	gehe 4-er Schritt
+```
+
+2. Wähle jetzt den Papagei aus und erzeuge das Skript so, dass er vier Schritte gehen soll, wenn Du die "A"-Taste drückst.
+
+```scratch
+
+	wenn Taste a gedrückt
+	gehe 4-er Schritt
+```
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne__ 
+Bewegen sich Dein Löwe und Dein Papagei über den Bildschirm, wenn Du die "A"- und die "L"-Taste drückst?
+
+Speichere Dein Projekt
+
+
+##￼Schritt 3: Das Rennen starten
+
+Wir müssen wissen, wie wir das Rennen starten und wie wir wissen, wer gewonnen hat. __Als Erstes erzeugen wir einen Start-Knopf.__
+
+1. Ergänze einen neuen Sprite aus einer Datei. Wähle dafür den "button"-Sprite im “things”-Verzeichnis.
+2. Bearbeite das Kostüm des "button"-Sprites, gib ihm den Text "Start" and klicke OK. Platziere den Sprite mitten auf der Bühne.
+3. Erzeuge jetzt ein Skript das den Sprite erscheinen lässt wenn das Projekt gestartet wird:
+
+```scratch
+
+	wenn FAHNE angeklickt
+	zeige dich
+```
+4. Wir wollen, dass der Knopf von drei rückwärts zählt, dann "Go" sagt und verschwindet, sobald er angeklickt wird.Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
+
+```scratch
+
+	wenn Start angeklickt
+	sage 3 für 1 Sek.
+	sage 2 für 1 Sek.
+	sage 1 für 1 Sek.
+	sage GO! für 1 Sek.
+	verstecke dich
+```
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__
+
+Zählt der Start-Knopf rückwärts bis zum Start, sobald er angeklickt wird? Verschwindet er danach?
+
+Speichere Dein Projekt
+
+Die Läufer sollen sich erst bewegen wenn das Rennen begonnen hat. Wir wollen außerdem wissen, wann das Rennen vorbei ist. Wir brauchen also eine Variable, um diese Informationen zu speichern.
+
+5. Erzeuge eine Variable für alle Sprites, die Du "racing" nennst.  Sie soll auf der BÜhne nicht gezeigt werden, entferne also das Häkchen neben der Variablen.
+6. Setze "racing" auf 0 wenn das Projekt gestartet wird. Ändere Dein "wenn FAHNE angeklickt"-Skript. Es soll so aussehen:
+
+```scratch
+
+	wenn FAHNE angeklickt
+	zeige dich
+	setze racing auf 0
+```
+7. Im nächsten Schritt müssen wir die Variable "racing" gleich 1 setzen, sobald der Start-Countdown vorbei ist.
+8. Jetzt müssen wir dafür sorgen, dass der Löwe und der Papagei sich nicht bewegen, solange "racing" nicht gleich 1 ist. Klicke auf den Papagei-Sprite. __Ergänze das Skript um einen Steuerungs-Block__ , der dem Papagei nur erlaubt, sich zu bewegen, falls __racing = 1__.
+
+```scratch
+
+	wenn Taste a gedrückt
+	fallsf racing = 1
+		gehe 4-er Schritte
+	(ende falls)
+```
+9. Mache jetzt dasselbe für den Löwen-Sprite.
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__
+
+Bewegen sich der Löwe oder der Papagei nur nachdem der Countdown vorbei ist?
+
+Wir wollen wissen, wann das Rennen vorbei ist und dann alles zurücksetzen, so dass Ihr dann wieder spielen könnt.
+
+##￼Schritt 4: Das Rennen beenden
+
+1. Ergänze im Skript für den Papagei einen Block, der die Variable "racing"  =0 setzt, sobald der Sprite den Rand des Bildschirms erreicht.
+
+```scratch
+
+	wenn Taste a gedrückt
+	falls racing = 1
+		gehe 4-er Schritte
+		falls wird Rand berührt?
+			setze racing auf 0
+		(ende falls)
+	(ende falls)
+```
+2. Jetzt soll der Papagei uns sagen, falls er das Rennen gewonnen hat. Nimm ein Geräusch für den Parrot-Sprite auf, das abgespielt wird wenn der Papagei gewinnt. Klicke auf __Klänge__ und nimm ein Geräusch auf wie der Papagei das Rennen gewinnt!
+3. Baue jetzt Blöcke in Dein Skript ein, die das Geräusch abspielen, das Du eben aufgenommen hast, und lasse den Papagei so sagen, dass er gewonnen hat:
+
+```scratch
+
+	wenn Taste a gedrückt
+	falls racing = 1
+		gehe 4-er Schritte
+		falls wird Rand berührt?
+			spiele Klang aufnahme1
+			sage Der Papagei gewinnt! für 3 Sek.
+		(ende falls)
+	(ende falls)
+	
+		
+```
+4. Wiederhole jetzt alle diese Schritte für den Löwen.
+
+###Teste Dein Projekt
+__Klicke auf die grüne Fahne.__
+
+Kannst Du den Start-Knopf drücken und rennen, indem Du die "A"- und die "L"-Taste drückst?
+Machen die Tiere die richtigen Geräusche, wenn sie gewonnen haben und sagen, dass sie gewonnen haben, wenn sie das Ende erreicht haben?
+
+Speichere das Projekt
+
+##￼Schritt 5: Das Spiel zurücksetzen
+
+Nachdem das Rennen beendet ist müssen wir den anderen Sprites mitteilen, dass wir gewonnen haben und das Spiel zurücksetzen, so dass wir wieder spielen können.
+
+__Der Sieger-Sprite muss mitteilen, dass er gewonnen hat.__
+
+1. Klicke auf den Papagei-Sprite.
+Baue einen Block ein, der "finished" sendet, nachdem der Sprite gesagt hat, dass er gewonnen hat.
+
+```scratch
+
+	wenn Taste a gedrückt
+	falls racing = 1
+		gehe 4-er Schritte
+		falls wird Rand berührt?
+			spiele Klang aufnahme1
+			sage Der Papagei gewinnt! für 3 Sek.
+			sende finished an alle
+		(ende falls)
+	(ende falls)
+
+```
+2. Jetzt müssen wir ein neues Skript einführen, das auf die "finished"-Meldung hört und den Papagei zurück zum Start bewegt. Was passiert, wenn Du den Wert von x veränderst?
+
+```scratch
+
+	wenn ich finished empfange
+	setze x auf -175
+```
+3. Erzeuge dieses Skript jetzt auch beim Löwen. Probiere verschiedene Werte für x aus um sicherzustellen, dass der Löwe und der Papagei sich nebeneinander am Start aufstellen.
+4. Wir wollen außerdem, dass der Löwe und der Papagei sich auf die gleiche Position begeben, wenn das Projekt gestartet wird. Erzeuge bei beiden ein neues Skript, das sie zum Start bewegt, sobald die Fahne angeklickt wird.
+
+```scratch
+
+	wenn FAHNE angeklickt
+	setze x auf -175
+```
+5. Klicke jetzt den Knopf-Sprite an und erzeuge ein Skript, das ihn zeigt sobald er "finished" empfangen hat.
+￼￼￼￼￼￼￼￼￼￼
+###Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+
+
+Kannst Du ein Rennen gegen eine Freundin oder einen Freund laufen, indem eine von Euch den Papagei bewegt, indem sie "A" drückt und die andere den Löwen, indem sie "L" drückt?
+
+Speichere Dein Projekt
+
+##￼Herausforderung: Baue einen Booster ein
+
+* __Versuche einen Turbo einzubauen__ den Du einmal in jedem Rennen benutzen kannst, um den Papagei oder den Löwen __30 Schritte auf einmal__ zu bewegen.
+* __Ergänze ein neues Kostüm,__ bei dem Feuer hinter jedem Sprite hervorkommt und es aussehen lässt, als ob der Turbo gezündet wurde.
+* __Erzeuge noch ein Geräusch,__ das der Sprite macht wenn der Turbo gedrückt wurde.
+￼
+
+###Teste Dein Projekt
+
+Speichere Dein Projekt
+
+
+__Toll gemacht! Du bist fertig. Jetzt kannst Du das Spiel genießen!__
+Denke daran: Du kannst das Spiel mit Deinen Freunden und Deiner Familie teilen, indem Du in der Menüleiste __Teilen__ anklickst!

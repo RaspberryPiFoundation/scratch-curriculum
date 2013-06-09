@@ -1,4 +1,38 @@
-#NOTES FOR CLUB LEADERS
-##(Fish Chomp)###IntroductionWe’re going to make a Fish Chomp game! Guide the large Hungry Fish around and try to eat all the prey that are swimming around.###SkillsThis project covers• Moving sprites• Controlling sprites with the mouse • Changing costumes• Collision detection• Sprites reading other sprites’ state • Keeping and changing scores###ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders AND the hungry fish costumes can be found in the volunteers packs###Scratch Cards required:* Animate it* Keep score* Timer* Follow the mouse###Basic exercisesStep 1: Hungry Fish follows the mouse pointer 
-Step 2: Add some preyStep 3: Hungry fish eats the prey￼
-###Challenges1. Make the prey move differently2. Make the prey avoid the hungry fish 3. Add a score4. Add a countdown5. Add a bonus score6. Change the game: keep a prey alive!
+#HINWEISE FÜR CLUB LEITER
+##(Fische füttern)
+
+###Einführung
+Wir wollen ein Fisch-Fütter-Spiel bauen! Steuere den großen Hungrigen Fisch und versuche, alle Beutetiere zu fressen, die herumschwimmen.
+
+###Kenntnisse
+In diesem Projekt behandeln wir:
+• Sprites bewegen
+• Sprites mit der Maus steuern
+• Kostüme wechseln
+• Erkennen von Zusammenstößen
+• Wie Sprites den Zustand anderer Sprites erkennen
+• Punktestand registrieren und ändern
+
+###Hilfsmittel
+Dieses Projekt greift auf Dateien aus den Scratch Backgrounds und Kostüme-Verzeichnissen zurück. Das "hungry fish"-Kostüm findet sich in den Voluntier-Paketen.
+
+###Benötigte Scratch Karten:
+* Bewege es
+* Punktestand registrieren
+* Timer
+* Folge der Maus
+
+###Grundübungen
+Schritt 1: Hungriger Fisch folgt dem Mauszeiger
+
+Schritt 2: Beutetiere hinzufügen
+
+Schritt 3: Hungriger Fisch frisst die Beutetiere
+￼
+###Herausforderungen
+1. Die Beutetiere sollen sich auf unterschiedliche Art bewegen
+2. Die Beutetiere sollen den Hungrigen Fisch vermeiden 
+3. Baue den Punktestand ein
+4. Ergänze einen Countdown
+5. Vergib Bonus-Punkte
+6. Ändere das Spiel: Lasse das Beutetier leben!

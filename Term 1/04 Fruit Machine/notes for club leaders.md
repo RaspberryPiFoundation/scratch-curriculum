@@ -19,9 +19,9 @@ Senden
 
 ###Grundübungen
 Schritt 1: Einen Sprite erzeugen, der Kostüme wechselt 
-Step 2: Bilder wechseln lassen
-Step 3: Anhalten lassen wenn geklickt wird 
-Step 4: Weitere Sprites erzeugen
+Schritt 2: Bilder wechseln lassen
+Schritt 3: Anhalten lassen wenn geklickt wird 
+Schritt 4: Weitere Sprites erzeugen
 
 ###Weitere Aufgaben
 1. Das Spiel schwieriger machen
