@@ -134,7 +134,7 @@ of any legal advice or structure secured by your or put in place by you in
 respect of the operation of a code club using the Materials in your 
 jurisdiction from time to time. 
 
-**6. ELECTRONIC COMMUNICATIONS **
+**6. ELECTRONIC COMMUNICATIONS**
 
 6.1 You consent to receiving electronic communications and notices from Code 
 Club World. You agree that any notice, agreement, disclosure or other 
