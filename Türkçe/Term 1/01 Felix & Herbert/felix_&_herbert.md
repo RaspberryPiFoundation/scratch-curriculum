@@ -1,109 +1,168 @@
-Level 1
+1.Düzey
 
 #Felix & Herbert
 
-__Introduction:__We are going to make a game of catch with __Felix the cat__ and __Herbert__ the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
-##￼STEP 1: Felix follows the mouse pointer
-1. Start a new project.Keep track of your progress by ticking off the boxes below:￼￼￼2. Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.3. Change the name of the sprite to Felix.4. Make sure Felix only points left-right by clicking this button:5. Create this script:
+__Tanıtım:__
+Felix adli kedinin, Herbert adli fareyi yakalayacağı bir oyun dizayn edeceğiz. Herbert'i bilgisayar faresi ile kontrol edip, Felix'in sizi yakalamasına izin vermeyin. Ne kadar uzun süre Felix'i engellerseniz, puanınız o kadar yükselir. Eger yakalanırsanız, puan kaybedersiniz
+
+##1.Adım: Felix bilgisayar faresini izler
+
+1. Yeni projeye başla. 
+   Doğru yapıp yapmadığınızı aşağıdaki onay kutularını kullanarak kontrol edebilirsiniz:
+￼￼￼Karakterin yanındaki sahne düğmesine bas ve arka plan dosyasını aç, indoors/hall isimli arka plani aç. Sahnedeki boş arka planı sil.
+3. Karakterin adını Felix olarak değiştir.
+4. Felix'in sadece sol-sağ ilerlemesi için bu düğmeyi tıkla:
+5. Bu kodu yaz:
 
 ```scratch
-	When FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-	(end forever)
-```		
-###Test Your Project__Click the green flag.__Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
-Save your project
-##STEP 2: Felix chases Herbert
-__Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.__
-1. Create another sprite using the choose new sprite from file button and selecting animals/mouse1.2. Change the name of the sprite to Herbert.3. Edit the costume and make it smaller than Felix.Try six clicks on the shrink button:4. Make sure Herbert only points left-right. 5. Give Herbert this script:
 
+	Bayrak tıklandığında
 
-```scratch
-	
-	When FLAG clicked
-	forever
-		go to mouse-pointer
-		point towards Felix
-	(end forever)
+	Durmaksızın
+
+		Bilgisayar faresine doğru bak
+
+		10 adım ilerle
+
+		Sonraki kostüm
+
+		Davul 62 çal 0.3 vuruş
+
+	(HEP DUR)
 ```
-###Test Your Project__Click the green flag.__
-Does Herbert move with the mouse pointer? Does Felix chase Herbert?
-Save your project.
-##STEP 3: Felix says when he's caught Herbert
-__We want Felix to know when he’s caught Herbert, and tell us.__
-1. Change Felix’s script to be this:
+		
+###Projeni dene.
+__Yeşil bayrağı tıkla.__
+Felix bilgisayar faresini takip ediyor mu? Hareket ettiği zaman yürüyor gibi görünüyor mu? Doğru hızda hareket ediyor mu?
 
-```scratch
-	
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			say Caught you! for 1 secs
-		(end if)
-	(end forever)
-```
+Projeni kaydet
 
-###Test Your Project__Click the green flag.__
-Does Felix say when he’s caught Herbert?
-Save your project.
+##2.Adım: Felix, Herbert'i kovalar
 
-##STEP 4:￼Herbert turns into a ghost when he’s caught
+__Şimdi, Felix'in bilgisayar faresi yerine Herbert'i kovalamasını istiyoruz.__
 
-__Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.__
+1. Dosyadan yeni karakter seçeneğini seçerek, animals/mouse1 isimli resmi aktar.
+2. Karakterin ismini Harbert olarak değiştir
+3. Kostümü Felix'den daha küçük yap. Küçültme düğmesine 6 kere bas.
+4. Herbert'in sadece sol-sağ ilerlemesine dikkat et.. 
+5. Herbert'e şu kodu ekle:
 
-1. Change Felix’s script to send this message when he catches Herbert.
 
 ```scratch
 	
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			broadcast caught
-			play drum 58 for 0.2 beats
-			wait 1 sec
-		(end if)
-	(end forever)
-```2. Import a new costume into Herbert from fantasy/ghost2-a.3. Edit the costume to make it smaller.Six clicks on the shrink button should do.4. Change the names of Herbert’scostumes so the mouse costume iscalled ‘alive’ and the ghost costume is called ‘dead’.5. Create a new script for Herbert to turn him into a ghost:
-```scratch
+        Bayrak tıklandığında
+
+	Durmaksızın
+
+		Bilgisayar faresine doğru bak
+		Felix'e doğru yönel
+	(Hep Dur)
+```
+
+###Projeni dene
+__Yeşil bayrağı tıkla..__
+
+Herbert bilgisayar faresini takip ediyor mu? Felix, Herbert'i kovalıyor mu?
+
+Projeni kaydet.
+
+##3.Adım: Felix diyor ki: Herbert'i yakaladığım an
+
+__Felix'in Herbert'i yakaladığı zaman bize haber vermesini istiyoruz.__
+
+
+1. Felix'in kodunu şu şekilde değiştir:
+
+```scratch
 	
-	when I receive caught
-	switch to costume dead
-	wait 0.5 secs
-	switch to costume alive
+	Bayrak tıklandığında
+	Durmaksızın
+		Bilgisayar faresine doğru bak
+	        10 adım ilerle
+		Sonraki kostüm
+		Davul 62 çal 0.3 vuruş
+		Eğer Herbert'e değerse
+			1 saniye seni yakaladım! de.
+		(Dur eğer)
+	(Hep Dur)
+```
+
+###Projeni dene
+__Yeşil bayrağı tıkla..__
+
+Felix, Herbert'i yakaladığını söyledi mi?
+
+Projeni kaydet.
+
+##4.Adım: Herbert yakalandığı zaman hayalete dönüşür.
+
+Herbert yakalandığı zaman, Felix'in konuşması yerine, hayalete dönüşmesini istiyoruz.
+
+1. Felix'in, Herbert'i yakaladığı zaman bu mesajı vermesi için Felix'e şu kodu ekle:
+
+```scratch
+	
+	Bayrak tıklandığında
+	Durmaksızın
+		Bilgisayar faresine doğru bak
+	        10 adım ilerle
+		Sonraki kostüm
+		Davul 62 çal 0.3 vuruş
+		Eğer Herbert'e değerse
+			Yakalandı mesajını yayınla
+			Davul 58 çal 0.3 vuruş
+			1 saniye bekle
+		(Dur eğer)
+	(Hep Dur)
+```
+2.Herbert için, fantasy/ghost2-a isimli kostümü aktar. 
+
+3.Kostümü küçült. Küçült düğmesine 6 kere bas.
+
+4.Herbert'in kostümlerinin ismini değiştir. Fare kostümüne ' hayatta', hayalet kostümünede ' öldü' adını ver. Herbert'in hayalete dönüşmesi için yeni bir kod ekle:
+```scratch
+	
+	Yakalandı mesajını alınca
+	Öldü kostümünü göster
+	0.5 saniye bekle
+	Hayatta kostümünü göster
 ```
 	
-###Test Your Project__Click the green flag.__
-Does Herbert turn into a ghost when he’s caught?Does Felix play the right sounds at the right time?Does Felix still stay still for long enough for Herbert to get away
-Save your project
-##￼STEP 5: Keep Score
-__Let’s add a score so we know how well we do at keeping Herbert alive.We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.__
-1. Make a variable, for all sprites, called Score. Click on Variables in the top menu, make a variable and name it score2. On the stage, create these two scripts
-```scratch
+###Projeni dene
+__Yeşil bayrağı tıkla..__
+
+Herbert yakalandığı zaman hayalete dönüşüyor mu? 
+Felix doğru anda doğru sesi oynuyor mu? 
+Felix, Herbert'in uzaklaşmasına yetecek süre kadar hareketsiz bekliyor mu?
+
+Projeni kaydet.
+
+##5.Adım:Puan tut
+
+Puan ekleyelim ki, Herbert'i hayatta tutma konusunda ne kadar başarılı olduğumuzu bilelim. 
+Puana sıfır ile başlayacağız ve her saniye 1 ekleyeceğiz. Eğer Felix, Herbert'i yakalarsa, 100 puan düşüreceğiz.
+
+1.Bütün karakterler için puan adlı değişken yap. Üst kısımdaki Değişkenler bölümüne tıkla ve puan 2 isimli değişken yap. 
+2.Sahne ekranında şu iki kodu ekle:
+
+```scratch
 	
-	when FLAG clicked
-	set score to 0
-	forever
-		change score by 1
-		wait 1 secs
-	(end forever)
+	Bayrak tıklandığında
+	Puanı 0'a kur
+	Durmaksızın
+		Puanı birer birer yükselt
+		1 saniye bekle
+	(Hep Dur)
 	
-	when I receive caught
-	change score by -100
+	Yakalandı mesajını alınca
+	Puanı 100 numara düşür (-100)
 ```
-	
-###Test Your Project__Click the green flag.__
-Does the score go up by one every second?Does the score go down by one hundred when Herbert is caught?What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?
-Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar
+###Projeni dene
+__Yeşil bayrağı tıkla..__
+
+Puan her saniye 1 numara artıyor mu? Puan Herbert yakalanınca, 100 numara azalıyor mu? Herbert puan 100 olmadan önce yakalanınca ne oluyor? Yeni oyuna başladığında, puan sıfır oluyor mu?
+
+Projeni kaydet.
+
+__Aferin, oyunu tamamladın, şimdi eğlenerek oynayabilirsin.__
+Oyununu arkadaşlarınla ve ailen ile paylaşmak için menü çubuğundaki 'paylaş' seçeneğine bas.
