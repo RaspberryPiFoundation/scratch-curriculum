@@ -1,132 +1,248 @@
-Level 1
+1.Düzey
 
-#Fireworks
+Havai Fisek
 
-__Introduction:__In this project, we’ll create a fireworks display over a city.
-##￼STEP 1: Create a rocket that flies towards the mouse
-__Let’s import the different pictures for the game__
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Replace the background with outdoor/city-with-water
-3. Use the __new sprit from file__ button to add a Rocket spriteto the project (use the Resources/Rocket.png costume).
-4. Make the rocket hide when the greenflag is clicked.
-Now we want to make the rocket move towards the mouse when the mouse is clicked.
-5. Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
+Tanıtım:
 
-```scratch
-	when FLAG clicked
-	hide
-	
-	when space key pressed
-	show
-	glide 1 secs to x: mouse x y: mouse y
-```		
-###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__
-Does the rocket appear and move to the mouse?What happens if you move the mouse and press space again?
-6. Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it tomove to below the bottom ofthe screen, but stay in the same place horizontally.
-```scratch
-	when FLAG clicked
-	hide
-	
-	when space key pressed
-	go to x: mouse x y: -200
-	show
-	glide 1 secs to x: mouse x y: mouse y
-```###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__ 
-Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
+Bu projede, gökyüzünde havai fişek gösterisi oluşturacağız. 
 
-7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
-Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least makesure the rocket is hidden when everything starts up.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		show
-		glide 1 secs to x: mouse x y: mouse y
-	(end forever)
-```
-###Test Your Project__Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
-###Things to try1. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.2. Try making some rockets a little slower or faster than others.
-Save your project.##STEP 2: Make the rocket explode
 
-￼1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound goto the Sounds tab and click import
+Adım 1: Bilgisayar faresine doğru uçan bir roket tasarla. 
+
+
+Proje için değişik resimler aktaralım
+
+1. Yeni bir Scratch projesine başla. Fareyi kedi karakterinin üstüne tutup sağ tıkla ve sil seçeneğine git.
+2. Arka plandaki resmi açık hava/ sulu şehir ile değiştir.
+3. Dosyadan yeni karakter seç ve Roket karakterini ekle (Kaynaklar/Rocket.png.costume).
+4.Yeşil bayrak tıklandığında, roketi görünmez yap.
+Bilgisayar faresi tıklandığında, roketi fareye dogru hareket ettir.
+5. Aralık tuşuna basıldığında, roket ekranda görünecek ve fareye doğru kayacak. 
+
 
 ```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-	(end forever)
-```2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode
-	(end forever)
-```
-###Test Your Project__Click the green flag.__ 
-Make sure the rocket plays a noise and hides when it reaches the mouse.
 
-3. Import a new sprite using Resources/firework1.png
-4. When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
+	Bayrak tıklanınca
 
-```scratch
-	when I receive explode
-	hide
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
-###Test Your Project__Send another rocket flying.__ 
-Does it get replaced with the explosion graphic when it explodes?What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).
-Save your project##￼STEP 3: Make each explosion unique
-1. Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
-```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
+	sakla
 
-###Test Your Project__Click the green flag.__ 
-Does each explosion have a different colour?
-2. Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.###Test Your Project__Click the green flag.__ 
-Does each rocket have a different explosion graphic?
-3. Finally, lets make the explosion grow over time as opposed to simply appearing. Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	set size to 5%
-	show
 	
-	repeat 50
-		change size by 2
-	(end repeat)
-	hide```
-###Test Your Project__Click the green flag.__ 
+	Ara tuş basılınca
+	goster
+	kaydır 1 saniye x: fare x y: fare y-
+```
+		
+Projeni dene. 
+Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve ara tuşuna bas. 
 
-Does the explosion graphic spread out from the centre of the rocket and slowly grow?
+Roket görünüp, bilgisayar faresine doğru hareket etti mi? 
+Bilgisayar faresini tekrar hereket ettirip, ara tuşa bastığında ne oldu? 
 
-###Things to tryWhy not try making each explosion more unique by altering the size and speed of growth for the explosion.
-Save your project
-##Step 4: Fixing the Broadcast Bug
-Remember earlier we had a bug involving holding down the mouse button?This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying.
-1. To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode and wait
-	(end forever)
-```###Test Your Project__Click the green flag, hold down the mouse button and move the mouse around the stage.__ Does the explosion graphic appear in the right place and at the right time?
-Save your project
+6. Havai fişekler kenardan kenara uçmazlar, ekranın altından bilgisayar faresine 
+doğru kaymaları gerekli. Roketi görünür yapmadan önce, 'go' codlamasını kullanarak, 
+ekranın altına doğru hareket ettir ve aynı yatay çizgide kalmasını sağla.
+
+```scratch
+
+	Bayrak tıklandığında
+
+	sakla
+
+	
+	Ara tuş tıklandığında
+	Ayarla  x: fare x y: -200
+	göster
+	Kaydır 1 saniye x: fare x y: fare y
+
+```
+
+Projeni dene. 
+Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve ara tuşuna bas. 
+
+Roket görünüp, bilgisayar faresine doğru hareket etti mi? 
+Bilgisayar faresini tekrar hereket ettirip, ara tuşa bastığında ne oldu? 
+
+7. Son olarak, bu kodu ara tuş yerine, fare düğmesini kullanarak yazalım.
+'when space key pressed' kodunu, 'when flag clicked' kodu ile değiştir ve  roketin program başladığında görünmez olmasına dikkat et.
+
+```scratch
+
+	
+	Bayrak tıklandığında
+	sakla
+	eğer fare tıklandıysa devamlı gizle
+		Git  x: fare x y: -200
+		göster
+	Kaydır 1 saniye x: fare x y: fare y
+	(Dur)
+
+```
+Projeni dene. 
+Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve ara tuşuna bas.
+
+Ekstra hedefler:
+1. Roketi kaydırmadan önce, konumunu değiştir.
+2. Roketlerin bazılarını diğerlerinden daha hızlı veya yavaş yap.
+
+Ekstra hedefler:
+
+Adım 2: Roketi patlatmak
+
+￼1.Roketi patlatmak için, ilk olarak hareket etmeden önce patlama sesi yap Kaynaklar/bang ve sonra fareye değene kadar görünmez yap. Ses eklemek  için SES düğmesine bas ve içeri aktar seçeneğini tıkla.
+
+```scratch
+
+	
+	Bayrak tıklandığında 
+	sakla 
+	eğer fare tıklandıysa devamlı gizle
+		Git x: fare x y: -200
+		Bang sesi oynat
+		göster
+		kaydır 1 saniye  x: fare x y: fare y
+		Sakla
+		(Dur)
+
+```
+2. Roket patladığı zaman, roketin mesaj yayınlamasını programla
+
+```scratch
+
+	Bayrak tıklandığında 
+	sakla 
+	eğer fare tıklandıysa devamlı gizle
+		Git x: fare x y: -200
+		Bang sesi oynat
+		göster
+		kaydır 1 saniye  x: fare x y: fare y
+		Sakla
+		Mesaj yayınla
+	(Dur)
+
+```
+Projeni dene. 
+Yeşil bayrağı tıkla.
+Roket fareye ulaştığı zaman ses yapıp görünmemesinden emin ol.
+
+3. Kaynaklar dosyasından firework1.png adlı karakter aktar.
+4. Patlama mesajını aldığında, karakter gizlenmeli ve rokete doğru hareket etmeli, sonra gorünmeli, ve bir saniye sonra tekrar görünmez olmali
+
+
+```scratch
+
+	Patlama mesajı gelince
+
+	sakla
+
+	Git  x: x konum of roket y: y konum of roket
+	
+	göster
+	
+	1 saniye bekle
+	
+	Gizle 
+
+```
+Projeni dene.
+Bir roket daha ekle.
+DPatladığı zaman, patlama resmi onun yerini aldı mı? 
+Fareyi kullanırken, aşağı basarsan ne olur? (Bunu daha sonra çözegeğiz).
+
+Projeni kaydet
+
+Adım 3: Her patlamayı farklı yap
+
+1. Renkleri kullanarak patlamaları farkli yapabiliriz. Bunun için, 1 ile 200 arası bir renk seç.
+
+```scratch
+
+	Patlama mesajı gelince
+
+	sakla
+
+	1 ile 200 arası bir renk seç.
+	
+	git x: x roketin konumu y: y roketin konumu
+	
+	göster
+	
+	1 saniye bekle
+	
+	Gizle 
+
+```
+
+Projeni dene.
+Yeşil bayrağı tıkla.
+
+Her patlama değişik renkte mi?
+
+2. Her roket için Kaynaklar/firework2.png ve Kaynaklar/firework3.png  kostümlerini kullan. 
+
+Projeni dene.
+Yeşil bayrağı tıkla.
+
+Her roketin farklı patlama grafiği var mı?
+
+3. Son olarak, patlamanın aniden olması yerine zamanla büyümesi için kod yazalim. 1 saniye bekle kodu yerine, karakterin büyüklüğünü göstermeden once 5% olarak yaz. Karakter göründükten sonra, tekrar et seçeneğini kullanarak 2 kere elli defa daha büyük yapın
+
+```scratch
+
+Patlama mesajı gelince
+
+	sakla
+
+	1 ile 200 arası bir renk seç.
+	
+	git x: x roketin konumu y: y roketin konumu
+	
+	Büyüklük 5%
+	
+	göster
+	
+	Tekrar et 50
+	
+	change size by 2
+	
+	(tekrar etme)
+	
+	Gizle
+
+```
+Projeni dene.
+Yeşil bayrağı tıkla.
+
+Patlama roketin merkezinden yayılıp, yavaşça büyüyor mu?
+
+Extra hedefler:
+Patlamaları, ses ve hızlarını değiştirerek benzersiz yapalım mı?
+
+Projeni kaydet.
+
+Adım 4: Mesaj yayınlama sorununu çözüm bulma
+
+Bilgisayar faresini tıklama konusunda yaşadığımız sorunu hatırlıyormusun?
+
+Bunun sebebi, roket patladığı an,  bir önceki patlama bitmeden, yeni patlama mesajı yollamasıdır.
+
+Bu sorunu çözmek için, mesaj kodunu, mesaj ve bekle kodu ile değiştirmemiz lazım. Böylece, ikinci patlama mesajı birincisi bitinceye kadar başlamıyacak.
+
+```scratch
+
+	wBayrak tıklandığında 
+	sakla 
+	eğer fare tıklandıysa devamlı gizle
+		Git x: fare x y: -200
+		Bang sesi oynat
+		göster
+		kaydır 1 saniye  x: fare x y: fare y
+		Sakla
+		Mesaj yayınla ve bekle
+	(Dur)
+	
+```
+Projeni test etmek için, yeşil bayrağin üzerine tıkla, bilgisayar faresini sahnenin üstünde kımıldatıp, ara tuşa bas.
+
+Roket ekranda görünüyor mu ve bilgisayar faresini izliyor mu? Bilgisayar faresini kımıldattığında ve ara tuşa bastığında ne oluyor?
+
+Projeni kaydet.
