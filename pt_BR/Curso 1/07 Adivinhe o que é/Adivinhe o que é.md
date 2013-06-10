@@ -82,13 +82,15 @@ Salve o projeto
 
 ### Sugestões
 
-__Modifique a pontuação inicial e também a quantidade com que ela diminui a cada passo. __Como isso muda a forma como a imagem aparece? Isso torna mais difícil ou mais fácil de detectar qual é a imagem?
+__Modifique a pontuação inicial e também a quantidade com que ela diminui a cada passo.__ Como isso muda a forma como a imagem aparece? Isso torna mais difícil ou mais fácil de detectar qual é a imagem?
 
-__Experimente outros efeitos gráficos da lista.__Eles mudam a dificuldade do jogo?
+__Experimente outros efeitos gráficos da lista.__ Eles mudam a dificuldade do jogo?
 
 ## Passo 3: Adivinhando a imagem
 
-Até agora, nós temos uma imagem aleatória sendo revelada lentamente, e uma pontuação que diminui ao longo do tempo, mas como fazer para jogar? Vamos adicionar algums objetos na parte de baixo da tela para que o jogador clique para adivinhar. Se o jogador clicar na imagem certa, ele ganha o jogo. Se clicar na imagem errada a imagem desaparece e o jogo continua.
+Até agora, nós temos uma imagem aleatória sendo revelada lentamente, e uma pontuação que diminui ao longo do tempo, mas como fazer para jogar? 
+
+Vamos adicionar algums objetos na parte de baixo da tela para que o jogador clique para adivinhar. Se o jogador clicar na imagem certa, ele ganha o jogo. Se clicar na imagem errada a imagem desaparece e o jogo continua.
 
 Primeiro, precisamos saber qual é a resposta certa.
 

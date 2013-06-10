@@ -1,7 +1,6 @@
 Nível 2
 
-#Peixe Faminto
-
+#Peixe faminto
 
 __Introdução:__
 
@@ -94,7 +93,6 @@ Elas nadam como você esperava?
 Elas nadam de uma forma realista?
 
 __Até agora o Peixe Faminto e as presas não interagem uns com os outros__. 
-
 Vamos resolver isso na próxima etapa.
 
 Salve o projeto
@@ -222,14 +220,16 @@ __Parabéns você terminou o jogo básico. Há mais coisas que você pode fazer.
 
 ## Desafio 1: Faça as presas se moverem de maneira diferente
 
-Neste momento, toda a presa se movem da mesma maneira. __Você é capaz de fazê-las mover de forma diferente?__
+Neste momento, todas as presas movem-se da mesma maneira. __Você é capaz de fazê-las mover de forma diferente?__
+
 __Dica:__ Não passe muito tempo nesta parte, sem olhar para os outros desafios deste projeto.
 
 
 __Escolha uma das presas para experimentar.__ Como todas as presas são iguais, mude a cor da presa que você vai modificar, aplicando um efeito de cor usando o comando __mude o efeito [cor] para__. 
 Dessa forma, você pode distingui-la das demais.
+Faça esta presa se mover mais devagar que as outras. 
 
-Faça esta presa se mover mais devagar que as outras. __Dica:__ De uma olhada no comando __mova (2) passos__.
+__Dica:__ De uma olhada no comando __mova (2) paos__.
 
 
 ### Teste o projeto
@@ -296,6 +296,7 @@ Salve o projeto
 ## Desafio 5: Adicionando um bônus
 Atribua um grande bônus ao jogador que comer todos os peixes de uma só vez. Como é possível
 saber quantos peixes foram comidos?
+
 __Dica:__ Uma maneira de fazer isso é __usar uma variável__ para contar quantas presas ainda estão vivas.
 
 Salve o projeto

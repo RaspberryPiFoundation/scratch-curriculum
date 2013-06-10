@@ -122,7 +122,7 @@ Como você pode ajustar a dificuldade para que fique melhor?
 Nem todas as pessoas tem a mesma habilidade para jogar. __Como você poderia fazer o jogo ajustar sua dificuldade, dependendo do jogador?__
 
 Uma maneira é __ajustar a velocidade da mudança de trajes__. 
-Você pode criar uma variável chamada __intervalo__, para representar a duração do bloco __espere__ de cada objeto. 
+Você pode criar uma variável chamada __intervalo__, para representar a duração do comando __espere__ de cada objeto. 
 Se o jogador ganha a rodada, a variável intervalo pode ser reduzida um pouco (para tornar o jogo mais difícil). 
 Se o jogador perde a rodada, o intervalo pode ser aumentado um pouco (para tornar o jogo mais fácil).
 
