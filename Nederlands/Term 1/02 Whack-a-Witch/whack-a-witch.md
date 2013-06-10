@@ -52,9 +52,9 @@ Level 1
 	wanneer VLAG wordt aangeklikt
 	herhaal
 		verbergen
-		wacht willekeurig getal tussen 2 en 5 sec.
+		wacht willekeurig getal tussen 2 en 5 tellen
 		toon
-		wacht willekeurig getal tussen 3 en 5 sec.
+		wacht willekeurig getal tussen 3 en 5 tellen
 	(einde herhaal)
 ```
 ### Test Je Project
@@ -97,7 +97,7 @@ Level 1
 	maak timer 30
 	maak score 0
 	herhaal tot timer = 0
-		wacht 1 sec.
+		wacht 1 tellen
 		verander timer met -1
 	(einde repeat)
 	stop alle
