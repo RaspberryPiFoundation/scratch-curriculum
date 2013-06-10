@@ -3,7 +3,7 @@ Level 2
 #Wüstenrennen
 
 __Einführung:__
-Dieses Spiel ist ein Spiel für zwei Spieler, bei dem Ihr einen Papagei und einen Löwen ein Rennen durch die Wüste austragen lasst. Um das Tier zu bewegen, muss jeder Spieler eine Taste so schnell wie möglich drücken. Wer als Erster den Bildschirmrand erreicht hat gewonnen.
+Dieses Spiel ist ein Spiel für zwei Spieler, bei dem Ihr einen Papagei und einen Löwen ein Rennen durch die Wüste austragen lasst. Um sein Tier zu bewegen, muss jeder Spieler eine Taste so häufig wie möglich drücken. Wer als Erster den Bildschirmrand erreicht hat gewonnen.
 
 
 ##￼Schritt 1: Erzeuge die Umgebung und ergänze die Sprites 
@@ -29,7 +29,7 @@ Wir wollen, dass die Tiere sich bewegen, wenn Du eine Taste drückst.
 	gehe 4-er Schritt
 ```
 
-2. Wähle jetzt den Papagei aus und erzeuge das Skript so, dass er vier Schritte gehen soll, wenn Du die "A"-Taste drückst.
+2. Wähle jetzt den Papagei aus und erzeuge das Skript so, dass er vier Schritte geht, wenn Du die "A"-Taste drückst.
 
 ```scratch
 
@@ -46,7 +46,7 @@ Speichere Dein Projekt
 
 ##￼Schritt 3: Das Rennen starten
 
-Wir müssen wissen, wie wir das Rennen starten und wie wir wissen, wer gewonnen hat. __Als Erstes erzeugen wir einen Start-Knopf.__
+Wir müssen wissen, wie wir das Rennen starten und woher wir wissen, wer gewonnen hat. __Als Erstes erzeugen wir einen Start-Knopf.__
 
 1. Ergänze einen neuen Sprite aus einer Datei. Wähle dafür den "button"-Sprite im “things”-Verzeichnis.
 2. Bearbeite das Kostüm des "button"-Sprites, gib ihm den Text "Start" and klicke OK. Platziere den Sprite mitten auf der Bühne.
@@ -57,7 +57,7 @@ Wir müssen wissen, wie wir das Rennen starten und wie wir wissen, wer gewonnen 
 	wenn FAHNE angeklickt
 	zeige dich
 ```
-4. Wir wollen, dass der Knopf von drei rückwärts zählt, dann "Go" sagt und verschwindet, sobald er angeklickt wird.Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
+4. Wir wollen, dass der Knopf von drei rückwärts zählt, dann "Los" sagt und verschwindet, sobald er angeklickt wird. Erzeuge noch ein Skript, das so aussieht:
 
 ```scratch
 
@@ -65,7 +65,7 @@ Wir müssen wissen, wie wir das Rennen starten und wie wir wissen, wer gewonnen 
 	sage 3 für 1 Sek.
 	sage 2 für 1 Sek.
 	sage 1 für 1 Sek.
-	sage GO! für 1 Sek.
+	sage LOS! für 1 Sek.
 	verstecke dich
 ```
 ###Teste Dein Projekt
@@ -77,7 +77,7 @@ Speichere Dein Projekt
 
 Die Läufer sollen sich erst bewegen wenn das Rennen begonnen hat. Wir wollen außerdem wissen, wann das Rennen vorbei ist. Wir brauchen also eine Variable, um diese Informationen zu speichern.
 
-5. Erzeuge eine Variable für alle Sprites, die Du "racing" nennst.  Sie soll auf der BÜhne nicht gezeigt werden, entferne also das Häkchen neben der Variablen.
+5. Erzeuge eine Variable für alle Sprites, die Du "racing" nennst.  Sie soll auf der Bühne nicht gezeigt werden, entferne also das Häkchen neben der Variablen.
 6. Setze "racing" auf 0 wenn das Projekt gestartet wird. Ändere Dein "wenn FAHNE angeklickt"-Skript. Es soll so aussehen:
 
 ```scratch
@@ -101,9 +101,9 @@ Die Läufer sollen sich erst bewegen wenn das Rennen begonnen hat. Wir wollen au
 ###Teste Dein Projekt
 __Klicke auf die grüne Fahne.__
 
-Bewegen sich der Löwe oder der Papagei nur nachdem der Countdown vorbei ist?
+Bewegen sich der Löwe oder der Papagei erst nachdem der Countdown vorbei ist?
 
-Wir wollen wissen, wann das Rennen vorbei ist und dann alles zurücksetzen, so dass Ihr dann wieder spielen könnt.
+Wir wollen wissen, wann das Rennen vorbei ist, und dann alles zurücksetzen, so dass Ihr danach wieder spielen könnt.
 
 ##￼Schritt 4: Das Rennen beenden
 
@@ -120,7 +120,7 @@ Wir wollen wissen, wann das Rennen vorbei ist und dann alles zurücksetzen, so d
 	(ende falls)
 ```
 2. Jetzt soll der Papagei uns sagen, falls er das Rennen gewonnen hat. Nimm ein Geräusch für den Parrot-Sprite auf, das abgespielt wird wenn der Papagei gewinnt. Klicke auf __Klänge__ und nimm ein Geräusch auf wie der Papagei das Rennen gewinnt!
-3. Baue jetzt Blöcke in Dein Skript ein, die das Geräusch abspielen, das Du eben aufgenommen hast, und lasse den Papagei so sagen, dass er gewonnen hat:
+3. Baue jetzt Blöcke in Dein Skript ein, die das Geräusch abspielen, das Du eben aufgenommen hast, und lasse den Papagei auf diese Weise sagen, dass er gewonnen hat:
 
 ```scratch
 
@@ -141,7 +141,7 @@ Wir wollen wissen, wann das Rennen vorbei ist und dann alles zurücksetzen, so d
 __Klicke auf die grüne Fahne.__
 
 Kannst Du den Start-Knopf drücken und rennen, indem Du die "A"- und die "L"-Taste drückst?
-Machen die Tiere die richtigen Geräusche, wenn sie gewonnen haben und sagen, dass sie gewonnen haben, wenn sie das Ende erreicht haben?
+Machen die Tiere die richtigen Geräusche, wenn sie gewonnen haben? Sagen sie, dass sie gewonnen haben, wenn sie das Ziel erreichen?
 
 Speichere das Projekt
 
@@ -152,7 +152,7 @@ Nachdem das Rennen beendet ist müssen wir den anderen Sprites mitteilen, dass w
 __Der Sieger-Sprite muss mitteilen, dass er gewonnen hat.__
 
 1. Klicke auf den Papagei-Sprite.
-Baue einen Block ein, der "finished" sendet, nachdem der Sprite gesagt hat, dass er gewonnen hat.
+Baue einen Block ein, der "beendet" sendet, nachdem der Sprite gesagt hat, dass er gewonnen hat.
 
 ```scratch
 
@@ -162,16 +162,16 @@ Baue einen Block ein, der "finished" sendet, nachdem der Sprite gesagt hat, dass
 		falls wird Rand berührt?
 			spiele Klang aufnahme1
 			sage Der Papagei gewinnt! für 3 Sek.
-			sende finished an alle
+			sende beendet an alle
 		(ende falls)
 	(ende falls)
 
 ```
-2. Jetzt müssen wir ein neues Skript einführen, das auf die "finished"-Meldung hört und den Papagei zurück zum Start bewegt. Was passiert, wenn Du den Wert von x veränderst?
+2. Jetzt müssen wir ein neues Skript einführen, das auf die "beendet"-Meldung hört und den Papagei zurück zum Start bewegt. Was passiert, wenn Du den Wert von x veränderst?
 
 ```scratch
 
-	wenn ich finished empfange
+	wenn ich beendet empfange
 	setze x auf -175
 ```
 3. Erzeuge dieses Skript jetzt auch beim Löwen. Probiere verschiedene Werte für x aus um sicherzustellen, dass der Löwe und der Papagei sich nebeneinander am Start aufstellen.
@@ -182,7 +182,7 @@ Baue einen Block ein, der "finished" sendet, nachdem der Sprite gesagt hat, dass
 	wenn FAHNE angeklickt
 	setze x auf -175
 ```
-5. Klicke jetzt den Knopf-Sprite an und erzeuge ein Skript, das ihn zeigt sobald er "finished" empfangen hat.
+5. Klicke jetzt den Knopf-Sprite an und erzeuge ein Skript, das ihn zeigt sobald er "beendet" empfangen hat.
 ￼￼￼￼￼￼￼￼￼￼
 ###Teste Dein Projekt
 __Klicke die grüne Fahne an.__
