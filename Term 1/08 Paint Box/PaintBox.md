@@ -79,7 +79,7 @@ wische Malspuren weg
 ```
 
 ##Teste Dein Projekt
-__Click on the green flag.__
+__Klicke die grüne Fahne an.__
 
 Wischt der "löschen"-Knopf Deine Zeichnung weg?
 
@@ -103,7 +103,7 @@ Importiere beim Malstift ein neues Kostüm , __resources/roter-stift__. Setze au
 
 4. Gib dem Malstift ein neues Skript. Wenn der Malstift die Botschaft __rot__ bekommt, soll er das Kostüm "roter Stift" anziehen und die Stiftfarbe rot wählen (benutze den "setze Stiftfarbe auf"-Block).
 
-__Hinweis:__ wenn Du auf das farbige Quadrat im __setze Stiftfarbe auf__ Block, kannst Du mit der Pipette den roten Sprite anklicken um die richtige Farbe auszuwählen.
+__Hinweis:__ wenn Du auf das farbige Quadrat im __setze Stiftfarbe auf__ Block klickst, kannst Du mit der Pipette den roten Sprite anklicken um die richtige Farbe auszuwählen.
 
 ```scratch
 wenn ich rot empfange
@@ -114,7 +114,7 @@ setze Stiftfarbe auf (rot)
 ##Teste Dein Projekt
 __Klicke auf die grüne Fahne.__
 
-Zeichne eine Linie. Klicke dann auf den roten Sprite und zeichne  noch ein bisschen. Ändert der Bleistift das Kostüm? Zeichnet er jetzt rot? Zeichnet er mit der Spitze des roten Malstifts?
+Zeichne eine Linie. Klicke dann auf den roten Sprite und zeichne noch ein bisschen. Ändert der Bleistift das Kostüm? Zeichnet er jetzt rot? Zeichnet er mit der Spitze des roten Malstifts?
 
 SPEICHERE DEIN PROJEKT
 
@@ -129,18 +129,18 @@ SPEICHERE DEIN PROJEKT
 
 ##SCHRITT 4: Zeichne nur innerhalb der Begrenzung
 
-Wahrscheinlich hast Du bemerkt, dass Du auf der ganzen Bühne zeichnen kannst, selbst in den Rand hinein. Das soll nicht passieren. Die Zeichnung soll in der Mitte der Bühne bleiben. Das können wir erreichen, indem wir sicherstellen, dass der Malstift die Zeichenfläche nicht verlassen darf. Das ist die hellgraue Fläche auf der Bühne.
+Wahrscheinlich hast Du bemerkt, dass Du auf der ganzen Bühne zeichnen kannst, selbst über den Rand hinaus. Das soll nicht passieren. Die Zeichnung soll in der Mitte der Bühne bleiben. Das können wir erreichen, indem wir sicherstellen, dass der Malstift die Zeichenfläche nicht verlassen kann. Das ist die hellgraue Fläche auf der Bühne.
 
 
-Erinnerst Du Dich daran, dass Scratch Punkte festlegen kann, indem es die x- und die y-Achse benutzt?￼￼￼￼￼￼￼ Unsere Zeichenfläche liegt zwischen 230 and -230 auf der x-Achse und 170 und -120 auf der y-Achse. Diese Werte können wir in einem __falls__ Block benutzen, um zu prüfen, ob sich der Mauszeiger innerhalb dieses Gebietes befindet, ehe wir den Malstift dorthin bewegen.
+Erinnerst Du Dich daran, dass Scratch Punkte festlegen kann, indem es die x- und die y-Achse benutzt?￼￼￼￼￼￼￼ Unsere Zeichenfläche liegt zwischen 230 and -230 auf der x-Achse und 170 und -120 auf der y-Achse. Diese Werte können wir in einem __falls__ Block benutzen um zu prüfen, ob sich der Mauszeiger innerhalb dieses Gebietes befindet, ehe wir den Malstift dorthin bewegen.
 
-Hierfür musst Du einen neuen "falls"-Block um Deinen __gehe zu... falls__ Block herum bauen. Innerhalb des neuen "if"-Blocks kannst Du das prüfen:
+Hierfür musst Du einen neuen "falls"-Block um Deinen __gehe zu... falls__ Block herum bauen. Innerhalb des neuen "if"-Blocks kannst Du das nun prüfen:
 
 Maus y-Position ist größer als -120 und Maus y-Position ist kleiner als 170
 und
 Maus x-Position ist größer als -230 und Maus x-Position ist kleiner als 230
 
-__Achtung!__ Um das zu bauen brauchst Du mehrere __und__ Operatoren-Blöcke,einen für die beiden Maus x-Position-Bedingungen, einen für die beiden Maus y-Position-Bedingungen und einen letzten um sie alle miteinander zu verbinden:
+__Achtung!__ Um das zu bauen brauchst Du mehrere __und__ Operatoren-Blöcke, einen für die beiden Maus x-Position-Bedingungen, einen für die beiden Maus y-Position-Bedingungen und einen letzten um sie alle miteinander zu verbinden:
 
 ```scratch
 wische Malspuren weg
@@ -199,18 +199,18 @@ Als nächstes möchten wir ein Stempel-Werkzeug bauen, mit dem Du kleine Bilder 
 Aufgaben-Checkliste
 
 1. Füge einen neuen Sprite hinzu. Benutze dafür ein Bild oder Kostüm, das Dir gefällt. Schrumpfe den Sprite und platziere ihn am unteren Rand des Bildschirms neben den anderen Werkzeugen. Wenn der Sprite angeklickt wird, sollte er __stempel senden__
-2. Gib dem Malstift-Sprite ein weiteres Kostüm, dasselbe, das FDu für den __stempel__ Knopf ausgesucht hast.
+2. Gib dem Malstift-Sprite ein weiteres Kostüm, dasselbe, das Du für den __stempel__ Knopf ausgesucht hast.
 3. Wähle den Malstift Sprite und erzeuge eine neue Variable __malstift-modus__ nur für diesen Sprite. Diese Variable werden wir benutzen um uns zu merken, ob wir grade stempeln oder zeichnen.
 4. Erzeuge ein neues Skript um auf die Stempel-Nachricht zu reagieren. Das Kostüm muss zu "Stempel" wechseln und die  __malstift-modus__ Variable muss auf __false__ gesetzt werden.
 5. Ändere die anderen Skripte, die auf Werkzeug-Auswahl-Nachrichten antworten (rot, grün, blau und radiergummi). Bei ihnen muss die  __malstift-modus__ Variable auf __true__ gesetzt werden.
-6. Zum Schluss wollen wir diese Variable überprüfen, __wenn die Maustaste gedrückt ist__ um zu sehen, ob wir grade zeichnen oder stempeln sollten. Falls malstift modus = true sollten wir das bisherige __senke Stift ab__ benutzen, Falls nicht, sollten wir stattdessen stempeln. 
+6. Zum Schluss wollen wir diese Variable überprüfen, __wenn die Maustaste gedrückt ist__ um zu sehen, ob wir grade zeichnen oder stempeln sollten. Falls malstift modus = true sollten wir das bisherige __senke Stift ab__ benutzen. Andernfalls sollten wir stattdessen stempeln. 
 
 ##￼￼￼￼￼￼￼￼￼￼￼Teste Dein Projekt
 __Klicke die grüne Fahne an.__
 ￼￼
 Funktioniert der Stempel richtig?
 
-Was passiert, wenn Du zu einem der normalen Malstifte-Werkzeug wechselst?
+Was passiert, wenn Du wieder zu einem der normalen Malstifte-Werkzeug wechselst?
 
 SPEICHERE DEIN PROJEKT
 ￼
@@ -231,7 +231,7 @@ Die Timer-Scratch-Karte zeigt Dir, wie Du dafür sorgen kannst, dass etwas in ei
 
 Du musst diese Schleife steuern, so dass sie die Stiftfarbe nur ändert, wenn der Regenbogenstift ausgewählt wurde, sonst haben alle Stifte den Regenbogen-Effekt. Das kannst auf ähnliche Weise lösen wie der Stift-Sprite zwischen Malstift und Stempel-Modus wechselt. Erzeuge eine neue Variable regenbogenWechsel, die den Wert "true" hat, wenn Du den Regenbogen-Effekt haben möchtest und sonst immer "false". Jedes Mal, wenn der Malstift auf eine Nachricht reagiert, sollte der Wert der regenbogenWechsel-Variable entsprechend gesetzt werden.
 
-Benutze, was Du beim Einbau des Stempels gelernt hast, um den Regenbogen-Effekt zu steuern. Die Skripte, die auf die Werkzeug-Auswahl-Nachrichten reagieren, müssen jeweils zwei Variablen setzen: malstift modus und regenbogenWechsel.
+Benutze, was Du beim Einbau des Stempels gelernt hast, um den Regenbogen-Effekt zu steuern. Die Skripte, die auf die Werkzeug-Auswahl-Nachrichten reagieren, müssen jeweils zwei Variablen setzen: malstift-modus und regenbogenWechsel.
 
 ##Teste Dein Projekt
 __Klicke auf die grüne Fahne.__
@@ -245,7 +245,7 @@ SPEICHERE DEIN PROJEKT
 ##￼￼￼￼￼￼￼￼￼Herausforderung 2: Tastaturkürzel
 
 Statt der Auswahl-Sprites am unteren Rand der Bühne kann man auch Tastatur-Kürzel benutzen, um die verschiedenen Werkzeuge auszuwählen.
-Um mit der Tastatur arbeiten zu können kannst Du den "Wenn Taste [] gedrückt"-Block benutzen. Dabei brauchst Du einen Block für jede Taste, die Du benutzen möchtest. Dann wird dieselbe Botschaft gesendet wie wenn der jeweilige Auswahl-Sprite angeklickt worden wäre. Erzeuge bei der Bühne dieses Skripte.
+Um mit der Tastatur arbeiten zu können kannst Du den "Wenn Taste [] gedrückt"-Block benutzen. Dabei brauchst Du einen Block für jede Taste, die Du benutzen möchtest. Dann wird dieselbe Botschaft gesendet wie wenn der jeweilige Auswahl-Sprite angeklickt worden wäre. Erzeuge bei der Bühne dieses Skripte:
 
 Ich habe diese Tastaturkürzel benutzt:
 * wische Malspuren weg - a
