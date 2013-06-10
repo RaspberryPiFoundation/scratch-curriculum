@@ -1,7 +1,8 @@
 Code Club World Limited Terms of Service
-PLEASE READ THIS DOCUMENT CAREFULLY. IT CONTAINS IMPORTANT 
+
+**PLEASE READ THIS DOCUMENT CAREFULLY. IT CONTAINS IMPORTANT 
 INFORMATION ABOUT YOUR RIGHTS AND OBLIGATIONS. IT ALSO CONTAINS A 
-DISCLAIMER OF WARRANTY AND A LIMITATION OF LIABILITY CLAUSE.
+DISCLAIMER OF WARRANTY AND A LIMITATION OF LIABILITY CLAUSE.**
 
 1. ABOUT CODE CLUB WORLD
 1.1 Code Club World is a not for proﬁt organisation providing educational 
@@ -26,6 +27,7 @@ educational session.
 1.4 By using or downloading the Materials and/or providing educational 
 sessions to children, you accept and agree to be bound by these Terms of 
 Service and by all applicable laws in your jurisdiction.
+
 1.5 Code Club World may at any time modify these Terms of Service. We will 
 notify you of any changes to these Terms of Service by posting a notice on 
 our website at [www.codeclub.org.uk] (the “Website”). By continuing to use 
@@ -34,7 +36,10 @@ on the Website, you agree to be bound by such changes. You can review the
 most current version of our Terms of Service at any time by clicking on the 
 "Terms of Service" link located at the bottom of the Code Club World 
 website at [www.codeclub.org.uk]. The most current version displayed on 
-that page will supersede all previous versions. 2. APPLICABLE LAWS
+that page will supersede all previous versions. 
+
+**2. APPLICABLE LAWS**
+
 2.1 You acknowledge and agree that there may be laws, regulations and 
 guidelines to the provision of educational sessions to children and/or any 
 activities where you interact with children.
