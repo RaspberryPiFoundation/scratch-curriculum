@@ -1,9 +1,10 @@
 Nível 2 
 
-#Jogo das Frutas (Máquina caça-níqueis)
+#Jogo das Frutas (Máquina caça-niqueis)
 
 __Introdução:__
-Este é um jogo que tem três objetos que mudam de imagem. Para ganhar o jogo você deve fazer eles pararem mostrando a mesma imagem (como uma máquina caça-níqueis!).
+Este é um jogo que tem três objetos que mudam de imagem. 
+Para ganhar o jogo você deve fazer eles pararem mostrando a mesma imagem (como uma máquina caça-niqueis!).
 
 ## PASSO 1: Criando um objeto que muda de traje
 
@@ -24,9 +25,10 @@ __Agora que temos alguns trajes, queremos que o objeto mude entre eles.__
 2. Clique em Controle e arraste o comando __quando bandeira clicado__ para área de comandos. Este será
 acionado quando clicarmos na bandeira verde.
 3. Encaixe um comando __sempre__ logo embaixo.
-4. Clique na bandeira verde no canto superior direito. Observe o contorno branco em nosso conjunto de comandos. Isso significa que nossos comandos estão sendo executados. Foi o clique na bandeira verde que desencadeia esta execução.
+4. Clique na bandeira verde no canto superior direito. Observe o contorno branco em nosso conjunto de comandos. 
+Isso significa que nossos comandos estão sendo executados. Foi o clique na bandeira verde que desencadeia esta execução.
 5. Agora clique em Aparência e encaixe um comando __próximo traje__ dentro do __sempre__.
-6. Como fazer para diminuir a velocidade em que mudamos de image? Clique em Controle e arraste um comando __espere 1 segundos__.
+6. Como fazer para diminuir a velocidade em que mudamos de imagem? Clique em Controle e arraste um comando __espere 1 segundos__.
 7. Ajuste o tempo de espera (um tempo de 0.1 s parece bom). O que aconteceria se não tivéssemos o comando __espere__?
 
 		quando BANDEIRA clicada
@@ -51,11 +53,14 @@ Ajuste o tempo do comando __espere__. Quais valores fariam o jogo ficar muito f�
 
 Excelente! Nós podemos fazer os trajes do objeto mudarem sem parar, mas como vamos fazer para que ele pare quando clicado?
 
-1. Crie uma nova variável clicando Variáveis ​​e __criar uma variável__. Dê o nome de __parado__ e deixe marcado a opção __para todos os objetos__, em seguida, desmarque a caixa ao lado de __parado__ na área de comandos para que ela não seja exibida no palco.
+1. Crie uma nova variável clicando Variáveis ​​e __criar uma variável__. 
+Dê o nome de __parado__ e deixe marcado a opção __para todos os objetos__, em seguida, desmarque a caixa ao lado de __parado__ 
+na área de comandos para que ela não seja exibida no palco.
 2. Mude a variável __parado__ para __1__ (um) quando alguém clicar sobre a imagem. Para isso utilize o comando
 __quando Sprite1 clicado__ e o comando __mude parado para__. 
 3. Agora precisamos fazer a imagem parar de mudar quando a variável __parado__ é igual a 1. 
-Clique controle e substitua o comando __sempre__ por um comando  __sempre se__ e use um novo operador igual (=) para testar se __parado__ é igual a 0
+Clique controle e substitua o comando __sempre__ por um comando  __sempre se__ 
+e use um novo operador igual (=) para testar se __parado__ é igual a 0
 4. Finalmente, encaixe um comando __mude parado para 1__ logo abaixo de __quando bandeira clicada__
 
 ### Teste o projeto
@@ -92,7 +97,8 @@ Salve seu projeto
 
 ### Sugestões
 
-No Início todos os objetos mostram o mesmo traje ao mesmo tempo. Que tal você fazer os objetos mudarem para um traje aleatório quando a bandeira verde for clicado?
+No Início todos os objetos mostram o mesmo traje ao mesmo tempo. 
+Que tal você fazer os objetos mudarem para um traje aleatório quando a bandeira verde for clicado?
 Dica: tente escolher um traje aleatório para cada objeto quando o jogo é iniciado.
 
 __Parabéns, você terminou o jogo básico. Há mais coisas que você pode fazer. Dê uma olhada nestes desafios!__
@@ -110,7 +116,7 @@ Algumas idéias que você pode experimentar:
 3. Faça com que o intervale entre as mudanças de traje seja diferente.
 4. Faça com que cada objeto mude para um traje aleatório e não para o próximo traje. 
 
-__Divirta-se com as suas próprias idéias!__
+__Divirta-se com as suas próprias idias!__
 
 Toda vez que você faz uma alteração, pense se o o jogo ficou mais fácil ou mais difícil. 
 O jogo é muito fácil ou muito difícil? 
@@ -132,18 +138,23 @@ __O objetivo do jogo é clicar sobre os objetos para que eles parem mostrando o 
 Seria bom se o palco detectasse quando você terminou de jogar e, em seguida, diga se você ganhou ou perdeu, 
 verificando se cada objeto tem o mesmo traje.__
 
-Em primeiro lugar, o palco precisa saber quando o jogo tiver acabado. Cada vez que alguém clica em um dos objetos, o palco deve verificar se todos os objetos já foram clicados. Modifique o comando __quando clicado__ de cada objeto para que ele anuncie uma nova mensagem, chamada por exemplo __verifica fim__.
+Em primeiro lugar, o palco precisa saber quando o jogo tiver acabado. 
+Cada vez que alguém clica em um dos objetos, o palco deve verificar se todos os objetos já foram clicados. 
+Modifique o comando __quando clicado__ de cada objeto para que ele anuncie uma nova mensagem, chamada por exemplo __verifica fim__.
 
-O palco pode ouvir esta mensagem e verificar se as variáveis __parado__ dos três objetos valem 1 para saber se o jogo acabou. Para isso, encaixe um bloco __posição x de__ e mude "posição x" para "parado". 
+O palco pode ouvir esta mensagem e verificar se as variáveis __parado__ dos três objetos valem 1 para saber se o jogo acabou. 
+Para isso, encaixe um bloco __posição x de__ e mude "posição x" para "parado". 
 Se a variável __parado__ dos três tem valor de 1, sabemos que o jogo acabou e nós podemos verificar se o jogador ganhou.
 
 Para fazer isso, podemos usar a mesma tipo de bloco __posição x de__, mas em vez de olhar a variável __parado__, 
 iremos olhar a variável traje # e assim podemos comparar se Objeto1 tem o mesmo traje que Objeto2, e se Objeto2 tem o mesmo traje que Objeto3.
 
-Para fazer isso, você precisa de um bloco __se__ para verificar cada variável, e dentro dele um bloco __se ... senão__ para ver se o jogador ganhou ou perdeu, comparando cada 
+Para fazer isso, você precisa de um bloco __se__ para verificar cada variável,
+ e dentro dele um bloco __se ... senão__ para ver se o jogador ganhou ou perdeu, comparando cada 
 traje.
 
-Deste ponto em diante, você pode anunciar o resultado do jogo usando um bloco __anuncie__ e receber esta mensagem em um outro objeto. Que tal fazer o Felix aparecer para felicitar o jogador?
+Deste ponto em diante, você pode anunciar o resultado do jogo usando um bloco __anuncie__ e receber esta mensagem em um outro objeto. 
+
 
 
 __Parabéns você terminou, agora você pode desfrutar do jogo!__

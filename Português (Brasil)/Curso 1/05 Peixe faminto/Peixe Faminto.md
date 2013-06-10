@@ -6,7 +6,7 @@ __Introdução:__
 
 Neste jogo você deve orientar o grande peixe faminto e tentar comer todas as presas que estão nadando pelo mar.
 
-## PASSO 1: Criando o paixe faminto
+## PASSO 1: Criando o peixe faminto
 __Vamos fazer o peixe faminto nadar no mar!__
 
 1. Crie um novo projeto Scratch.
@@ -72,7 +72,7 @@ Altere a quantidade de passos que o peixe se move: um grande número (por exempl
 para fazer ele ficar menor.
 3. Crie os comandos para fazer a presa nadar.
  Queremos que elas se movam aleatoriamente, então vamos fazê-lo avançar um pouco, em seguida, virar uma quantidade aleatória 
- para a esquerda ou para a direita, repitindo isso novamente
+ para a esquerda ou para a direita, repetindo isso novamente
 
 
 
@@ -183,7 +183,7 @@ Para fazer isso, nós podemos fazer a presa anunciar o fato de que ela foi comid
 			fim
 		fim
 
-__Agora vamos fazer o peixe ouvir esta mensagem fazendo um som de "chomp" e fechando sua bouca.__
+__Agora vamos fazer o peixe ouvir esta mensagem fazendo um som de "chomp" e fechando sua boca.__
 
 5. Adicione o traje __recursos/boca fechada__ e o som recursos/chomp para o objeto Peixe Faminto.
 6. Em seguida, adicione novos comandos para o Peixe Faminto para ouvir a mensagem transmitida pela presa. 
@@ -200,7 +200,8 @@ Estes comandos devem fazer o peixe reproduzir o som 'chomp' e mudar para o traje
 		fim
 
 
-__Agora nosso peixe faminto está pronto para comer, vamos encher o oceano de presas. Clique com o botão direito do mouse sobre o objeto presa e clique em "duplicar" várias vezes.__
+__Agora nosso peixe faminto está pronto para comer, vamos encher o oceano de presas. 
+Clique com o botão direito do mouse sobre o objeto presa e clique em "duplicar" várias vezes.__
 
 ### Teste o projeto
 
@@ -212,7 +213,8 @@ Salve o projeto
 
 ### Sugestões
 
-Por que precisamos adicionar o bloco apareça no início dos comandos da presa? Pense no que aconteceria se a presa fosse comida, e então o jogo fosse interrompido antes que ela reapareça. 
+Por que precisamos adicionar o bloco apareça no início dos comandos da presa? 
+Pense no que aconteceria se a presa fosse comida, e então o jogo fosse interrompido antes que ela reapareça. 
 O que aconteceria se o jogo fosse reiniciado?
 
 __Parabéns você terminou o jogo básico. Há mais coisas que você pode fazer. Você está pronto para o desafio?__
@@ -225,37 +227,41 @@ Neste momento, todas as presas movem-se da mesma maneira. __Você é capaz de fa
 __Dica:__ Não passe muito tempo nesta parte, sem olhar para os outros desafios deste projeto.
 
 
-__Escolha uma das presas para experimentar.__ Como todas as presas são iguais, mude a cor da presa que você vai modificar, aplicando um efeito de cor usando o comando __mude o efeito [cor] para__. 
+__Escolha uma das presas para experimentar.__ Como todas as presas são iguais, mude a cor da presa que você vai modificar, 
+aplicando um efeito de cor usando o comando __mude o efeito [cor] para__. 
 Dessa forma, você pode distingui-la das demais.
 Faça esta presa se mover mais devagar que as outras. 
 
-__Dica:__ De uma olhada no comando __mova (2) paos__.
+__Dica:__ De uma olhada no comando __mova (2) passos__.
 
 
 ### Teste o projeto
 A presa se move mais devagar? O jogo ficou melhor?
-Se voce conseguiu fazer isso, __tente fazer uma presa se mover mais rápido que as outras.__
+Se você conseguiu fazer isso, __tente fazer uma presa se mover mais rápido que as outras.__
 
 
-As presas ainda se movem de maneira correta? Estas mudanças amelhoram o jogo?
+As presas ainda se movem de maneira correta? Estas mudanças melhoram o jogo?
 
 
 __Dica:__ Se a presa nada em círculos, verifique os valores do bloco __sorteie número__ dentro do comando __vire__ .
 
 Que tal você fazer cada um das presas se comportar de forma diferente, usando diferentes combinações dessas mudanças?
 
-Fazer qualquer uma dessas alterações tornar o jogo melhor? Eles fazem o jogo mais interessante, mais divertido, mais difícil, ou mais fácil?
+Fazer qualquer uma dessas alterações tornar o jogo melhor? 
+Eles fazem o jogo mais interessante, mais divertido, mais difícil, ou mais fácil?
 
 Salve o projeto
 
 ##Desafio 2: Faça a presa fugir do peixe
 
-As presas neste jogo são realmente burras! Elas simplesmente nadam ao redor aleatoriamente até que sejam comidas. Peixes de verdade fogem dos predadores. __Faça uma das presas fugir do Peixe Faminto.__
+As presas neste jogo são realmente burras! Elas simplesmente nadam ao redor aleatoriamente até que sejam comidas. 
+Peixes de verdade fogem dos predadores. __Faça uma das presas fugir do Peixe Faminto.__
 
-Não há nenhum bloco no Scratch que indica em que direção está um outro objeto. Mas você pode fazer um objeto apontar para outro, em seguida, ele da meia volta. 
+Não há nenhum bloco no Scratch que indica em que direção está um outro objeto. 
+Mas você pode fazer um objeto apontar para outro, em seguida, ele da meia volta. 
 Os blocos que você precisa estão na aba __Movimento__.
 
-Usando essa idéia, faça uma das presas sempre apontar para a __posição oposta do Peixe Faminto.__ 
+Usando essa ideia, faça uma das presas sempre apontar para a __posição oposta do Peixe Faminto.__ 
 
 ### Teste o projeto
 Ficou mais difícil de pegar a presa? O jogo ficou melhor?
@@ -265,7 +271,8 @@ Salve o projeto
 ##Desafio 3: Adicionando um placar
 Não é suficiente apenas comer presas. 
 Como vamos fazer para saber quem é o melhor jogador entre os seus amigos? 
-__Você precisa encontrar uma maneira de manter a pontuação__, então vamos adicionar um placar. Dê uma olhada no cartão Scratch __Contando pontos__ para  ter uma idéia de como fazê-lo.
+__Você precisa encontrar uma maneira de manter a pontuação__, então vamos adicionar um placar. 
+Dê uma olhada no cartão Scratch __Contando pontos__ para  ter uma ideia de como fazê-lo.
 
 Onde você deve colocar o comando que muda a pontuação?
 
@@ -303,9 +310,10 @@ Salve o projeto
 
 ##Desafio 6: Mude o jogo: mantenha a presa viva! 
 
-Às vezes, você pode ter novas idéias partindo de uma idéia existente e fazendo o oposto.
+Às vezes, você pode ter novas ideias partindo de uma ideia existente e fazendo o oposto.
 
-__Modifique o jogo para que, ao invés de você controlar um peixe que tenta comer as presas, você controla uma presa em um mar com vários peixes famintos.__ Quanto tempo você pode sobreviver antes de ser comido?
+__Modifique o jogo para que, ao invés de você controlar um peixe que tenta comer as presas, 
+você controla uma presa em um mar com vários peixes famintos.__ Quanto tempo você pode sobreviver antes de ser comido?
 
 Salve o projeto
 

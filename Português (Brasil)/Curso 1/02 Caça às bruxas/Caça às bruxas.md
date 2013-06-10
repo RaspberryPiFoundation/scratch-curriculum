@@ -94,7 +94,8 @@ O que acontece se você escolher números muito grandes ou muito pequenos?__
 
 ##PASSO 3: Faça a bruxa desaparecer ao é clicada
 
-Para transformar isso em um jogo, precisamos que o jogador faça algo. Eles precisam clicar na bruxa para que ela desapareça. Ao ser clicada, a bruxa deve desaparecer e também vamos aproveitar para toca um som, assim o jogo ficará mais divertido!
+Para transformar isso em um jogo, precisamos que o jogador faça algo. Eles precisam clicar na bruxa para que ela desapareça. 
+Ao ser clicada, a bruxa deve desaparecer e também vamos aproveitar para toca um som, assim o jogo ficará mais divertido!
 
 1. Na aba de Sons, importe o som electronic/fairydust. 
 2. Adicione estes comandos para a bruxa:
@@ -113,12 +114,14 @@ Salve o projeto
 
 ##Passo 4: Adicione um placar e um cronômetro
 
-Tudo bem, nós temos uma bruxa que voa pela tel, mas o que nós queremos fazer é um jogo! 
-Além de fazer a bruxa desaparecer vamos também marcar pontos cada vez que clicamos na bruxa.  Mas não é so isso, também vamos inserir um limite de tempo para a partida. 
+Tudo bem, nós temos uma bruxa que voa pela tela, mas o que nós queremos fazer é um jogo! 
+Além de fazer a bruxa desaparecer vamos também marcar pontos cada vez que clicamos na bruxa.  
+Mas não é só isso, também vamos inserir um limite de tempo para a partida. 
 
 Para fazer um placar e o um cronômetro nós podemos usar variáveis.
 
-1. Crie uma nova variável __para todos os objetos__ chamada placar, e modifique os comandos da bruxa para somar um a esta variável cada vez que clicarmos em uma bruxa.
+1. Crie uma nova variável __para todos os objetos__ chamada placar, 
+e modifique os comandos da bruxa para somar um a esta variável cada vez que clicarmos em uma bruxa.
 
 
 		quando objeto1 clicado
@@ -128,7 +131,8 @@ Para fazer um placar e o um cronômetro nós podemos usar variáveis.
 
 	
 2. Vá para o Palco e crie uma nova variável (dessa vez somente para o palco, usando a opção __para	este objeto apenas__) e dê o nome de tempo. 
-Adicione novos comandos que serão executado quando a bandeira verde for clicada. Estes comandos servem para mudar o tempo para 30 e zerar o placar. 
+Adicione novos comandos que serão executado quando a bandeira verde for clicada. 
+Estes comandos servem para mudar o tempo para 30 e zerar o placar. 
 Em seguida use um comando __repita até__ para esperar um segundo e diminuir o tempo de um. Isto deve ser repetido até que o tempo seja 0. 
 
 Quando o tempo chegar a zero, devemos usar um comando __pare tudo__ para interromper a partida.
@@ -168,17 +172,17 @@ Se uma bruxa é bom, várias bruxas deve ser ainda mais legal! Então, vamos cri
 __Clique na bandeira verde.__
 
 Você vê três bruxas que se movem de um lado a outro da tela, 
-que aparecem e desaparecem aleatóriamente, e que desaparecem quando voce clica nelas?
+que aparecem e desaparecem aleatoriamente, e que desaparecem quando você clica nelas?
 
 Salve o seu projeto
 
 
 ###Sugestões
 1. Qual a quantidade adequada de bruxas para o jogo ?
-2. Voce pode fazer as bruxas terem aparências diferentes? 
-Voce poderia editar seus trajes, ou usar alguns comandos da aba _Aparência_ para mudá-las.
+2. Você pode fazer as bruxas terem aparências diferentes? 
+Você poderia editar seus trajes, ou usar alguns comandos da aba _Aparência_ para mudá-las.
 3. Você pode fazer o número de pontos ganhos para cada bruxa ser diferente? Que tal fazer a bruxa mais veloz (e menor) valer 10 pontos?
 
 __Parabéns, você terminou, agora aproveite!__
 
-Não esqueça que voce pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
+Não esqueça que você pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
