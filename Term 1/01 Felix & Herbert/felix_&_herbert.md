@@ -49,7 +49,7 @@ __Als nächstes soll Felix Herbert die Maus jagen statt des Maus-Zeigers.__
 	wiederhole fortlaufend
 		gehe zu Mauszeiger
 		zeige auf Felix
-	(stoppe alles)
+	(ende wiederhole)
 ```
 
 ###Teste Dein Projekt
@@ -75,9 +75,9 @@ __Wir wollen, dass Felix weiß, wenn er Herbert gefangen hat, und dass er es uns
 		nächstes Kostüm
 		spiele Schlagzeug 62 für 0.3 Schläge
 		Falls wird Herbert berührt?
-			sage Caught you! für 1 Sek.
+			sage Ich hab Dich! für 1 Sek.
 		(Ende Falls)
-	(stoppe alles)
+	(Ende wiederhole)
 ```
 
 ###Teste Dein Projekt
@@ -102,7 +102,7 @@ __Jetzt soll Herbert sich in ein Gespenst verwandeln, wenn er gefangen wird, ans
 		nächstes Kostüm
 		spiele Schlagzeug 62 für 0.3 Schläge
 		Falls wird Herbert berührt?
-			sende caught an alle
+			sende gefangen an alle
 			spiele Schlagzeug 58 für 0.2 Schläge
 			warte 1 Sek.
 		(Ende Falls)
@@ -110,15 +110,15 @@ __Jetzt soll Herbert sich in ein Gespenst verwandeln, wenn er gefangen wird, ans
 ```
 2. Importiere bei Herbert ein neues Kostüm aus fantasy/ghost2-a.
 3. Verkleinere das Kostüm. Sechs Klicks auf den "Schrumpfen"-Knopf sollten genügen.
-4. Ändere die Namen von Herberts Kostümen, so dass das "Maus"-Kostüm den Namen ‘alive’ und das "Gespenst"-Kostüm den Namen ‘dead’ hat.
+4. Ändere die Namen von Herberts Kostümen, so dass das "Maus"-Kostüm den Namen ‘lebendig’ und das "Gespenst"-Kostüm den Namen ‘tot’ hat.
 5. Erzeuge ein neues Skript für Herbert, das ihn in ein Gespenst verwandelt:
 
 ```scratch
 	
-	wenn ich caught empfange
-	ziehe Kostüm dead an
+	wenn ich gefangen empfange
+	ziehe Kostüm tot an
 	warte 0.5 Sek
-	ziehe Kostüm alive an
+	ziehe Kostüm lebendig an
 ```
 	
 ###Teste Dein Projekt
@@ -146,7 +146,7 @@ __Jetzt möchten wir sehen, wie gut es uns gelingt, Herbert zu schützen, indem 
 		warte 1 Sek
 	(stoppe alles)
 	
-	wenn ich caught empfange
+	wenn ich gefangen empfange
 	ändere score um -100
 ```
 	
