@@ -35,7 +35,7 @@ __Clique na bandeira verde__ e olhe o que a bruxa faz.
 Por que ela fica trancada no canto da tela ?
 
 6. Para não ficar trancada a bruxa deve dar meia volta quando tocar na borda do palco. 
-Abaixo do comando __mova__, adicione um  comando __se tocar na borda, volta__.
+Abaixo do comando __mova__, adicione um  comando `se tocar na borda, volta`.
 
 		quando BANDEIRA clicado
 		mude [velocidade v] para (5)
