@@ -12,7 +12,7 @@ __Lass' den Hungrigen Fisch im Meer herumschwimmen!__
 2. Klicke die Bühne an und wähle dann den "Hintergründe"-Tab. Importiere den Hintergrund "nature/underwater" und lösche background1.
 3. Ändere den Namen von Sprite 1 um in Hungrigen Fisch.
 4. Importiere das Kostüm für Hungrigen Fisch, "resources/hungry-fish" und lösche seine bisherigen Kostüme "costume1" und "costume2".
-5 Stelle ein, dass Hungriger Fisch nur nach rechts/links richten kann.
+5 Stelle ein, dass Hungriger Fisch sich nur nach rechts/links richten kann.
 6. Erstelle jetzt das Skript für Hungrigen Fisch, so dass er der Maus durch das Meer folgt:
 
 ```scratch
@@ -57,7 +57,7 @@ Wenn Du möchtest, kannst Du unterschiedlich große Zahlen in das Skript eingebe
 
 1. Erzeuge einen neuen Sprite aus der Datei "animals/lobster1". 
 2. Benutze das Werkzeug, um den Sprite schrumpfen zu lassen (über der Bühne).
-3. Erzeuge ein Skript, das das Beutetier herumschwimmen lässt. Wir wollen, dass sie sich zufällig bewegt. Dafür soll es sich ein Stückchen vorwärts bewegen, dann sich ein bisschen nach rechts oder links bewegen und das alles dann wiederholen.
+3. Erzeuge ein Skript, das das Beutetier herumschwimmen lässt. Wir wollen, dass sie sich zufällig bewegt. Dafür soll es sich ein Stückchen vorwärts bewegen, sich dann ein bisschen nach rechts oder links bewegen und das alles anschließend wiederholen.
 
 ```scratch
 
@@ -107,7 +107,8 @@ __Jetzt wollen wir dafür sorgen, dass Hungriger Fisch das Beutetier frisst!__ S
 ###Teste Dein Projekt
 __Probiere Dein Spiel noch einmal aus – kannst Du irgendwelche Probleme erkennen?__ Achte darauf, dass das Beutetier verschwindet, egal an welcher Stelle es den hungrigen Fisch berührt. Außerdem könnte der Fisch einfach drei Sekunden warten und das Beutetier fressen, sobald es wieder auftaucht. Das ist nicht besonders fair!
 
-2. Wie können wir dafür sorgen, dass das Beutetier nur verschwindet, wenn es das Maul des hungrigen Fisches berührt? Wir könnten den "wird Farbe berührt?"-Block benutzen und schauen was passiert, wenn das Beutetier die blauben Zähne des Fisches berührt. Tausche dafür in Deinem Skript den "Berühren"-Block gegen den "wird Farbe berührt?"-Block aus. Klicke auf die Farbe im Block und klicke dann auf die Zähne des Fisches.
+2. Wie können wir dafür sorgen, dass das Beutetier nur verschwindet, wenn es das Maul des hungrigen Fisches berührt? Wir könnten den "wird Farbe berührt?"-Block benutzen und schauen was passiert, wenn das Beutetier die blauben Zähne des Fisches berührt. 
+Tausche dafür in Deinem Skript den "Berühren"-Block gegen den "wird Farbe berührt?"-Block aus. Klicke auf die Farbe im Block und klicke dann auf die Zähne des Fisches.
 3. Als nächstes können wir das Beutetier sich mit einem "gehe"-Block zu einem zufälligen Punkt auf dem Bildschirm bewegen lassen bevor es wieder auftaucht. Wir geben ihm dafür einen zufällig erzeugten Wert für x und y.
 
 ```scratch
@@ -139,7 +140,7 @@ Probiere das Spiel noch einmal aus – verschwindet das Beutetier nur, wenn es d
 		drehe Zufallszahl von -20 bis 20 Grad
 		pralle vom Rand ab
 		falls wird Farbe [] berührt?
-			sende got me
+			sende erwischt
 			verstecke dich
 			warte 3 Sek.
 			gehe zu x:Zufallszahl von -220 bis 220 y: Zufallszahl von -170 bis 170
@@ -154,7 +155,7 @@ __Jetzt wollen wir, dass der Fisch auf diese Nachricht antwortet, indem er ein "
 
 ```scratch
 
-	wenn ich got me empfange
+	wenn ich erwischt empfange
 	spiele Klang chomp
 	wiederhole 2 mal
 		ziehe Kostüm mouth-closed an
