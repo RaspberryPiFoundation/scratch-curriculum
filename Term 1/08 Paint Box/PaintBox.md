@@ -1,91 +1,298 @@
 Level 3
 
-#Paint Box
+#Malkasten
 
-__Introduction:__The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!￼##STEP 1: Drag and drawWe’ll start with a pen that draws when you drag it around the Stage.1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete2. Click __Stage__ and then the __Backgrounds__ tab. Import the __indoors/chalkboard__ background.3. Create a new sprite called __pencil__, using __resources\green-pencil.__4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click __Set costume center__ and drag the lines until they are at the tip.5. Make the pencil followthe mouse around the stage using the __forever__ 
-and __go to__ mouse-pointer blocks.
+__Introduction:__
+In diesem Projekt bauen wir uns ein Zeichenwerkzeug, mit dessen Hilfe Du selbst ein Künstler sein kannst. Du kannst die Stiftfarbe ändern, den Bildschirm leeren, stempeln und vieles mehr!
+￼
+##Schritt 1: Ziehe und zeichne
+
+Wir fangen an mit einem Stift, der zeichnet wenn Du ihn über die Bühne ziehst.
+
+1. Öffne ein neues Scratch-Projekt. Lösche die Katze, indem Du sie mit der rechten Maustaste anklickst und "Löschen" wählst.
+2. Klicke auf die __Bühne__ und dann den __Hintergrund__ Tab. Importiere den __indoors/chalkboard__ Hintergrund.
+3. Erzeuge einen neuen Sprite, den Du __Malstift__ nennst. Benutze dafür __resources\gruener-stift.__
+4. Wechsle zum __Kostüme__ Tab und klicke "Bearbeiten" an. Im __Malprogramm__ soll die Mitte des Bildes immer an der Spitze des Bleistifts sein. Das erreichst Du, indem Du __Drehpunkt für das Kostüm setzen__ anklickst und die Linien herumschiebst, bis sie an der Spitze des Bleistifts sind.
+5. Lasse den Bleistift dem Mauszeiger über die Bühne folgen, indem Du den __wiederhole fortlaufend-__ Block und den __gehe zu__ Mauszeiger-Block benutzt.
 
 ```scratch
-when FLAG clicked
-forever
-	go to mouse-pointer
-(end forever)
-```__Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are __pen down__ and __pen up__6. We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an if... else and mouse down? blocks.```scratch
-when FLAG clicked
-forever
-	go to mouse-pointer
-	if mouse down?
-	pen down
-	else
-	pen up
-	(end if)
-(end forever)
-```##Test Your Project__Click on the green flag.__Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.
-7. Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.
-```scratch
-when FLAG clicked
-clear
-forever
-	go to mouse-pointer
-	if mouse down?
-	pen down
-	else
-	pen up
-	(end if)
-(end forever)
+wenn FAHNE angeklickt
+wiederhole fortlaufend
+	gehe zu Mauszeiger
+(ende wiederhole)
 ```
-##Test Your Project__Click on the green flag.__Does your drawing disappear when you click on the green flag?SAVE YOUR PROJECT##￼￼￼STEP 2: Clearing upRather than having to stop and start the whole project, let’s add a button thatclears the drawing. It will do that using the clear block.1. Create a new sprite from the __resources/cancel button__ costume. 
-2. Change the sprite’s name to __clear__.3. Position the sprite near the bottom-left corner of the stage.4. Give the clear sprite this simple script:
-```scratch
-when clear clicked
-clear
-```##Test Your Project__Click on the green flag.__Does the clear button clear all your drawing?SAVE YOUR PROJECT##STEP 3: Changing colourSo far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.1. Add a new sprite, called __red__, using the __resources/red-selector costume__. 
-2. Place it somewhere along the bottom of the frame, near the __clear button__.3. When the red sprite is clicked, it should broadcast the message __red__.
-```scratch
-when Red clicked
-broadcast red
-```__Yes, that’s all it does. The hard work is done by the pencil.__￼￼￼￼In the pencil, import a new costume, __resources/red-pencil__. Set the costume centre to be the tip of the pencil as you did for the original costume.4. Add a new script to the pencil. When the pencil receives the message __red__, it should change to the red pencil costume and change the pen colour to red (using the set pen color to block).__Hint:__ if you click on the coloured squarein the __set pen color to__ block, you canclick the eyedropper on the red sprite to make sure it’s the same colour.
-```scratch
-when I receive red
-switch to costume
-red-pencil
-set pen color to (red)
-```##Test Your Project__Click on the green flag.__Start by drawing a line. Then click on the red selector sprite and draw some more. Does the pencil change costume? Does it now draw red? Does it draw from the tip of the red pencil?SAVE YOUR PROJECT5. Repeat what you just did for the blue, yellow, and green selector sprites.##￼￼Test Your Project__Click on the green flag.__￼￼￼Do all the selector buttons work? Do they all change the pencil’s costume to the right colour? Do they all make the pencil draw in the right colour? Do all the costumes draw with the tip of the pencil?SAVE YOUR PROJECT##STEP 4: Only drawing inside the borderYou’ve probably noticed that you can draw all over the Stage, even in the border. We don’t want that to happen. We want to keep the drawing in the middle of the Stage. We can do this by making sure the pen isn’t allowed to leave the drawing area - the light grey part on the Stage.
-￼￼￼￼￼￼￼Remember that Scratch defines points using x and y axis. Our drawing area lies between 230 and -230 on the x-axis and 170 and -120 on the y-axis. We can use these values in an __if__ block, making sure the mouse is inside this area before we move the pencil to it.To do this, wrap a new if block around your existing __go to... if__ block, and inside this new if check for the following:
-mouse y is greater than -120 and mouse y is less than 170and mouse x is greater than -230 and mouse x is less than 230__Note__ to do this you’ll need to use multiple __and__ operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:
-```scratch
-clear
-forever if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
-go to mouse-pointer
-```Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the __if__ with an __if else__ block. Keep the same condition for the __if__, and __show__ the pencil if it’s true, otherwise hide it.
+
+__Jetzt möchten wir diesen Stifte-Sprite tatsächlich als Malstift benutzen.__ Wenn Du in die Malstift-Palette schaust, findest Du dort alle möglichen Blöcke, die etwas mit Zeichnen zu tun haben. Im Moment interessieren wir uns hauptsächlich für __senke Stift ab__ und __hebe Stift an__
+
+6. Wir möchten die Maustaste benutzen, um den Malstift zu steuern. Sobald die Maustaste gedrückt ist, sollte der Malstift unten sein, wenn nicht sollte der Malstift angehoben sein. Wir können das mit Hilfe eines "falls... sonst"-Blocks und eines "Maustaste gedrückt?"-Blocks umsetzen.
 
 ```scratch
-when FLAG clicked
-pen up
-clear
-forever
-	if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
-		go to mouse-pointer
-		show
-		if mouse down?
-			pen down
-		else
-			pen up
-		(end if)
-	else
-		hide
-	(end if)
-(end forever)
-```##Test Your Project__Click on the green flag.__Can you still draw inside the drawing area? Can you draw outside the drawing area? What happens to the pencil when you leave the drawing area and go back in?￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼SAVE YOUR PROJECT##STEP 5: Eraser__￼￼￼￼Drawing lines is great, but there are times when you’ve made a mistake and you want to rub it out.__ We can do that with a new pencil tool that draws in grey (the same colour as the background).Add a new button-sprite to the Stage to select the eraser. Use the __resources/eraser__ costume for it, making it smaller to fit at the bottom of the Stage. It should work the same as the other colour-selection buttons, sending an eraser message.The pencil sprite should respond to the eraser message by switching the pen colour to grey (remember you can use the __picker__ to select the colour of the background). It will also need a new costume to represent the eraser tools: use the same __resources/eraser__ costume. __Remember to reset the costume’s centre.__##Test Your Project__Click on the green flag.__Does the eraser rub out lines? Does it work right up to the edges? Can you switch between eraser and pencil tools?SAVE YOUR PROJECT##￼￼￼STEP 6: StampsThe next thing to add is a stamp tool, to stamp small pictures on the drawing.Activity Checklist1. Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should __broadcast stamp__2. Add a new costume for this pencil sprite, the same as the one you chose for the __stamp__ button.3. Select the pencil sprite and create a new variable __pencil mode__ for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.4. Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the __pencil mode__ variable to __false__.5. Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the __pencil mode__ to __true__.6. Finally, lets check this variable __when the mouse button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. ##￼￼￼￼￼￼￼￼￼￼￼Test Your Project__Click on the green flag.__￼￼Does the stamp tool work correctly?What happens when you switch back to one of the normal pencil tools?SAVE YOUR PROJECT
-￼__Well done, you have completed the basic steps for this project.Try these challenges!__￼￼￼
-##Challenge 1: Rainbow pencilLet’s add a special pencil that paints in rainbow colours. It’s something that you can’t do with ordinary pens and pencils, so it’s nice to show off how drawing on a computer allows you do to different things. The secret to making it work is the change pen colour by block.First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:1. Create a new tool selection sprite and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the resources/rainbow-selector costume and have it broadcast rainbow when clicked.2. Add the resources/rainbow-pencil costume to the pencil sprite.You need to build a script that will change the pen colour many times a second to give the rainbow effect (I found that changing it by 5 every 0.05 seconds works well, but you should try out different values). The timer Scratch card shows how you can make something change every so often. Use a change pen colour by 5 block instead of a change timer by -1 block inside the loop.You also need to control that loop so that it only changes the pen colour when you’ve selected the rainbow pencil, otherwise all the pencils will have a rainbow effect! You can do this in a very similar way to how the pencil sprite changes between pencil and stamp modes. You need to create a variable called rainbowChange that has the value true when you want the rainbow effect and false otherwise. Every time the pencil responds to a tool-selection message, it should set the value of rainbowChange accordingly.Use what you learnt from the stamp step above to control the rainbow effect. The scripts that respond to the tool-selection messages will set two variables each: pencilMode and rainbowChange.##Test Your Project__Click on the green flag.__Does the rainbow tool work correctly?What happens when you switch back to one of the normal pencil tools?SAVE YOUR PROJECT##￼￼￼￼￼￼￼￼￼Challenge 2: Keyboard shortcutsRather than using the tool-selection sprites at the bottom of the stage, you can use the keyboard to select the different tools.You can use the when [] key pressed blocks to respond to the keyboard. For each key you want to use, you’ll need another when [] key pressed block, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.I used these shortcuts:* Clear all - a* Eraser - e* Red pencil -r 
-* Blue pencil - b
-* Yellow pencil - y
-* Green pencil - g
-* Rainbow pencil - w￼￼￼* Stamp - s
-##Test Your Project__Click on the green flag.__￼￼Do all the tools get selected with the correct keyboard shortcuts? Does each of the tools work correctly when you select it with keyboard? Are the correct tools still selected with the tool-selection sprites on the stage?SAVE YOUR PROJECT
+wenn FAHNE angeklickt
+wiederhole fortlaufend
+	gehe zu Mauszeiger
+	falls Maustaste gedrückt?
+	senke Stift ab
+	sonst
+	hebe Stift an
+	(ende falls)
+(ende wiederhole)
+```
+##Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+Folgt der Stift dem Mauszeiger? Was passiert, wenn Du die Maustaste gedrückt hältst und die Maus bewegst? Mache Dir im Moment noch keine Gedanken über die Stiftfarbe.
 
-##Challenge 3: Big and SmallAnother feature that most drawing packages have is the ability to change thesize of the pencil. Let’s add that.There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.Create two new tool-selection sprites, called bigger and smaller. They should have the resources/bigger-selector and resources/smaller-selector costumes and should send the bigger and smaller messages.The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an if-else block, similar to how the sprite chooses between putting the pen down or stamping)Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.SAVE YOUR PROJECTWhat you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.To stop that, you need to set the size to 100% every time you change to a pencil tool. so that the tools look the right size.To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new variable called stampSize, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.￼￼￼￼￼￼￼￼￼##￼Test Your Project__Click on the green flag.__
-Do the size controls work for the pencils?What happens if you switch to the stamp, change the size and then switch back to a pencil?SAVE YOUR PROJECT
-￼￼￼￼￼￼￼__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+
+7. Irgendwann ist der Bildschirm ziemlich voll von dem ganzen Gekritzel. Wir können den "wische Malspuren weg"-Block benutzen, um den Bildschirm wieder sauber zu machen.
+
+```scratch
+wenn FAHNE angeklickt
+wische Malspuren weg
+wiederhole fortlaufend
+	gehe zu Mauszeiger
+	falls Maustaste gedrückt?
+	senke Stift ab
+	sonst
+	hebe Stift an
+	(ende falls)
+(ende wiederhole)
+```
+
+##Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+
+Verschwindet Deine Zeichnung, wenn Du auf die grüne Fahne klickst?
+
+Speichere Dein Projekt
+
+##￼￼￼Schritt 2: Aufräumen
+
+Statt das Spiel jedes Mal stoppen und neu starten zu müssen, bauen wir lieber einen Knopf ein, mit dem wir die Zeichnung verschwinden lassen können. Er wird das mit Hilfe des "wische Malspuren weg"-Knopfes tun.
+
+1. Erzeuge einen neuen Sprite mit dem __resources/loeschen-knopf__ Kostüm. 
+2. Ändere den Namen um in __loeschen__.
+3. Platziere den Sprite in der unteren linken Ecke der Bühne.
+4. Gib dem "loeschen"-Sprite dieses einfache Skript:
+
+```scratch
+wenn loeschen angeklickt
+wische Malspuren weg
+```
+
+##Teste Dein Projekt
+__Click on the green flag.__
+
+Wischt der "löschen"-Knopf Deine Zeichnung weg?
+
+Speichere Dein Projekt
+
+##SCHRITT 3: Die Farbe ändern
+
+Bisher können wir nur blaue Linien malen. Lass' uns auch ein paar andere Farben benutzen! Wir werden am unteren Rand des Rahmens noch ein paar Sprites hinzufügen. Die Sprites sollen aussehen wie farbige Knöpfe. Wenn wir auf einen der Knöpfe klicken, ändert das die Farbe der Linie, die wir zeichnen. Damit wir wissen, mit welcher Farbe wir grade malen, verändert der Knopf auch die Farbe des Malstift-Sprites.
+
+1. Füge einen neuen Sprite hinzu, den Du __rot__ nennst. Benutze dafür __resources/rot-auswahl Kostüm__. 
+2. Platziere ihn irgendwo in der unteren Reihe, in der Nähe des __Loeschen-Knopfes__.
+3. Wenn der rote Sprite angeklickt wird, sollte er die Botschaft __rot__ senden.
+
+```scratch
+wenn Rot angeklickt
+sende rot an alle
+```
+__Ja, das ist alles, was er tun muss. Die schwere Arbeit wird vom Malstift geleistet.__
+
+Importiere beim Malstift ein neues Kostüm , __resources/roter-stift__. Setze auch hier, wie beim Original, das Zentrum des Kostüms an die Spitze des Stiftes, indem Du "Drehpunkt für das Kostüm setzen" benutzt.
+
+4. Gib dem Malstift ein neues Skript. Wenn der Malstift die Botschaft __rot__ bekommt, soll er das Kostüm "roter Stift" anziehen und die Stiftfarbe rot wählen (benutze den "setze Stiftfarbe auf"-Block).
+
+__Hinweis:__ wenn Du auf das farbige Quadrat im __setze Stiftfarbe auf__ Block, kannst Du mit der Pipette den roten Sprite anklicken um die richtige Farbe auszuwählen.
+
+```scratch
+wenn ich rot empfange
+ziehe Kostüm roter-stift an
+setze Stiftfarbe auf (rot)
+```
+
+##Teste Dein Projekt
+__Klicke auf die grüne Fahne.__
+
+Zeichne eine Linie. Klicke dann auf den roten Sprite und zeichne  noch ein bisschen. Ändert der Bleistift das Kostüm? Zeichnet er jetzt rot? Zeichnet er mit der Spitze des roten Malstifts?
+
+SPEICHERE DEIN PROJEKT
+
+5. Wiederhole das alles für den blauen, gelben und grünen Auswahl-Sprite.
+
+##￼￼Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+
+￼￼￼Funktionieren alle Farb-Auswahl-Knöpfe? Ändern sie alle die Kostüme des Malstifts in die richtige Farbe? Zeichnet der Stift immer in der richtigen Farbe? Zeichnen alle Kostüme mit der Spitze des Malstifts?
+
+SPEICHERE DEIN PROJEKT
+
+##SCHRITT 4: Zeichne nur innerhalb der Begrenzung
+
+Wahrscheinlich hast Du bemerkt, dass Du auf der ganzen Bühne zeichnen kannst, selbst in den Rand hinein. Das soll nicht passieren. Die Zeichnung soll in der Mitte der Bühne bleiben. Das können wir erreichen, indem wir sicherstellen, dass der Malstift die Zeichenfläche nicht verlassen darf. Das ist die hellgraue Fläche auf der Bühne.
+
+
+Erinnerst Du Dich daran, dass Scratch Punkte festlegen kann, indem es die x- und die y-Achse benutzt?￼￼￼￼￼￼￼ Unsere Zeichenfläche liegt zwischen 230 and -230 auf der x-Achse und 170 und -120 auf der y-Achse. Diese Werte können wir in einem __falls__ Block benutzen, um zu prüfen, ob sich der Mauszeiger innerhalb dieses Gebietes befindet, ehe wir den Malstift dorthin bewegen.
+
+Hierfür musst Du einen neuen "falls"-Block um Deinen __gehe zu... falls__ Block herum bauen. Innerhalb des neuen "if"-Blocks kannst Du das prüfen:
+
+Maus y-Position ist größer als -120 und Maus y-Position ist kleiner als 170
+und
+Maus x-Position ist größer als -230 und Maus x-Position ist kleiner als 230
+
+__Achtung!__ Um das zu bauen brauchst Du mehrere __und__ Operatoren-Blöcke,einen für die beiden Maus x-Position-Bedingungen, einen für die beiden Maus y-Position-Bedingungen und einen letzten um sie alle miteinander zu verbinden:
+
+```scratch
+wische Malspuren weg
+wiederhole fortlaufend
+falls Maus y-Position > -120 und Maus y-Position < 170 und Maus x-Position > -230 und Maus x-Position < 230
+gehe zu Mauszeiger
+```
+
+Da wir außerhalb der Zeichenfläche nicht zeichnen dürfen, könnten wir den Malstift verstecken, sobald er die Zeichenfläche verlässt.  Um das zu erreichen, kannst Du den  __falls__ gegen einen __falls sonst__ Block austauschen. Behalte die gleichen Bedingungen für das __falls__, __zeige__ den Malstift wenn es wahr ist und verstecke ihn wenn nicht.
+
+```scratch
+Wenn FAHNE angeklickt
+hebe Stift an
+wische Malspuren weg
+wiederhole fortlaufend
+falls Maus y-Position > -120 und Maus y-Position < 170 und Maus x-Position > -230 und Maus x-Position < 230
+		gehe zu Mauszeiger
+		zeige dich
+		falls Maustaste gedrückt?
+			senke Stift ab
+		sonst
+			hebe Stift an
+		(ende falls)
+	sonst
+		verstecke dich
+	(ende falls)
+(ende wiederhole)
+```
+
+##Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+
+Kannst Du immer noch innerhalb der Zeichenfläche malen? Kannst Du außerhalb der Zeichenfläche malen? Was passiert mit dem Malstift, wenn Du die Zeichenfläche verlässt und wieder  zurückgehst?
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
+SPEICHERE DEIN PROJEKT
+
+##SCHRITT 5: Radiergummi
+
+__￼￼￼￼Linien zeichnen macht Spaß, aber manchmal macht man einen Fehler und würde ihn gern wegradieren.__ Wir können das mit einem neuen Malstift-Werkzeug machen, das in grau zeichnet (derselben Farbe wie der Hintergrund).
+
+Ergänze auf der Bühne einen neuen Knopf-Sprite um den Radiergummi auswählen zu können. Benutze das __resources/radiergummi__ dafür. Du musst es ein wenig verkleinern, damit es an den unteren Rand der Bühne passt. Es sollte genauso funktionieren wie die anderen Farb-Auswahl-Knöpfe und eine radiergummi-Nachricht schicken.
+
+Der Malstift-Sprite sollte auf die Radiergummi-Nachricht antworten, indem er die Stiftfarbe auf grau umstellt (Denke daran, dass Du die __Pipette__ benutzen kannst, um die Farbe des Hintergrunds auszuwählen). Der Malstift braucht außerdem ein neues Kostüm um den Radiergummi darzustellen: benutze dasselbe __resources/radiergummi__ Kostüm. __Denke daran, den Mittelpunkt des Kostüms zu setzen.__
+
+##Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+
+Radiert der Radiergummi die Linien weg? Funktioniert es gut bis an die Ränder? Kannst Du zwischen Radiergummi und Malstift wechseln?
+
+SPEICHERE DEIN PROJEKT
+
+##￼￼￼SCHRITT 6: Stempel
+
+Als nächstes möchten wir ein Stempel-Werkzeug bauen, mit dem Du kleine Bilder auf die Zeichnung stempeln kannst.
+
+Aufgaben-Checkliste
+
+1. Füge einen neuen Sprite hinzu. Benutze dafür ein Bild oder Kostüm, das Dir gefällt. Schrumpfe den Sprite und platziere ihn am unteren Rand des Bildschirms neben den anderen Werkzeugen. Wenn der Sprite angeklickt wird, sollte er __stempel senden__
+2. Gib dem Malstift-Sprite ein weiteres Kostüm, dasselbe, das FDu für den __stempel__ Knopf ausgesucht hast.
+3. Wähle den Malstift Sprite und erzeuge eine neue Variable __malstift-modus__ nur für diesen Sprite. Diese Variable werden wir benutzen um uns zu merken, ob wir grade stempeln oder zeichnen.
+4. Erzeuge ein neues Skript um auf die Stempel-Nachricht zu reagieren. Das Kostüm muss zu "Stempel" wechseln und die  __malstift-modus__ Variable muss auf __false__ gesetzt werden.
+5. Ändere die anderen Skripte, die auf Werkzeug-Auswahl-Nachrichten antworten (rot, grün, blau und radiergummi). Bei ihnen muss die  __malstift-modus__ Variable auf __true__ gesetzt werden.
+6. Zum Schluss wollen wir diese Variable überprüfen, __wenn die Maustaste gedrückt ist__ um zu sehen, ob wir grade zeichnen oder stempeln sollten. Falls malstift modus = true sollten wir das bisherige __senke Stift ab__ benutzen, Falls nicht, sollten wir stattdessen stempeln. 
+
+##￼￼￼￼￼￼￼￼￼￼￼Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+￼￼
+Funktioniert der Stempel richtig?
+
+Was passiert, wenn Du zu einem der normalen Malstifte-Werkzeug wechselst?
+
+SPEICHERE DEIN PROJEKT
+￼
+__Gut gemacht! Du hast die Grundlagen für den Malkasten gebaut.
+Probiere diese Herausforderungen!__
+￼￼￼
+##Herausforderung 1: Regenbogen-Malstift
+
+Lass' uns einen besonderen Malstift einbauen, der in Regenbogenfarben malt. Das ist etwas, das Du nicht mit normalen Buntstiften machen kannst. Dann kannst Du ein bisschen damit angeben, was man beim Zeichnen mit dem Computer so alles machen kann. Das Geheimnis dabei ist, die Malstift-Farbe mit Hilfe eines Block zu wechseln.
+
+Baue als Erstes den Sprite für die Auswahl des Regenbogen-Werkzeugs ein und gib dem Malstift-Sprite das Regenbogen-Werkzeug-Kostüm:
+
+1. Erzeuge einen neuen Werkzeug-Auswahl-Sprite und platziere es am Rand der Bühne, neben den anderen Farben-Sprites. Benutze das  resources/regenbogen-auswahl Kostüm und lass' es regenbogen senden, wenn es angeklickt wird.
+2. Gib dem Malstift-Sprite das regenbogen-stift-Kostüm. (resources/regenbogen-stift)
+
+Jetzt musst Du ein Skript bauen, das die Stiftfarbe viele Male pro Sekunde wechselt, um den Regenbogen-Effekt zu erzeugen. (Bei mir hat ändere Stiftfarbe um 5 alle 0.05 Sek. gut funktioniert, Du solltest aber unbedingt auch andere Werte ausprobieren). 
+Die Timer-Scratch-Karte zeigt Dir, wie Du dafür sorgen kannst, dass etwas in einem bestimmten Rhythmus wechselt. Benutze einen  "ändere Stiftfarbe um 5"-Block statt eines "ändere timer um -1"-Blocks innerhalb der Schleife.
+
+Du musst diese Schleife steuern, so dass sie die Stiftfarbe nur ändert, wenn der Regenbogenstift ausgewählt wurde, sonst haben alle Stifte den Regenbogen-Effekt. Das kannst auf ähnliche Weise lösen wie der Stift-Sprite zwischen Malstift und Stempel-Modus wechselt. Erzeuge eine neue Variable regenbogenWechsel, die den Wert "true" hat, wenn Du den Regenbogen-Effekt haben möchtest und sonst immer "false". Jedes Mal, wenn der Malstift auf eine Nachricht reagiert, sollte der Wert der regenbogenWechsel-Variable entsprechend gesetzt werden.
+
+Benutze, was Du beim Einbau des Stempels gelernt hast, um den Regenbogen-Effekt zu steuern. Die Skripte, die auf die Werkzeug-Auswahl-Nachrichten reagieren, müssen jeweils zwei Variablen setzen: malstift modus und regenbogenWechsel.
+
+##Teste Dein Projekt
+__Klicke auf die grüne Fahne.__
+
+Funktioniert das Regenbogen-Werkzeug richtig?
+
+Was passiert, wenn Du zu einem der normalen Malstifte wechseln möchtest?
+
+SPEICHERE DEIN PROJEKT
+
+##￼￼￼￼￼￼￼￼￼Herausforderung 2: Tastaturkürzel
+
+Statt der Auswahl-Sprites am unteren Rand der Bühne kann man auch Tastatur-Kürzel benutzen, um die verschiedenen Werkzeuge auszuwählen.
+Um mit der Tastatur arbeiten zu können kannst Du den "Wenn Taste [] gedrückt"-Block benutzen. Dabei brauchst Du einen Block für jede Taste, die Du benutzen möchtest. Dann wird dieselbe Botschaft gesendet wie wenn der jeweilige Auswahl-Sprite angeklickt worden wäre. Erzeuge bei der Bühne dieses Skripte.
+
+Ich habe diese Tastaturkürzel benutzt:
+* wische Malspuren weg - a
+* Radiergummi - e
+* Roter Stift -r 
+* Blauer Stift - b
+* Gelber Stift - y
+* Grüner Stift - g
+* Regenbogen-Stift - w
+￼￼￼* Stempel - s
+
+##Teste Dein Projekt
+__Klicke die grüne Fahne an.__
+
+￼￼Werden alle Werkzeuge richtig ausgewählt? Funktionieren alle Werkzeuge, wenn Du sie mit der Tastatur auswählst? Kann man die Werkzeuge auch noch über die Auswahl-Sprites auf der Bühne auswählen?
+
+SPEICHERE DEIN PROJEKT
+
+##Herausforderung 3: Groß und klein
+Die meisten Zeichen-Werkzeuge haben eine weitere Funktion, nämlich die Größe des Malstifts zu verändern. Lasst uns das noch einbauen.
+Dabei gibt es ein Problem: Wenn man die Größe verändert muss man manchmal die Größe des Stifts verändern und manchmal die Größe des Kostüms des Stifte-Sprites. Das hängt davon ab, ob wir einen Stift oder einen Stempel benutzen.
+
+Erzeuge zwei neue Werkzeug-Auswahl-Sprites, die wir "groesser" und "kleiner" nennen wollen. Sie sollten die Kostüme resources/groesser-auswahl und resources/kleiner-auswahl und sollten die "groesser" und "kleiner"-Botschaft schicken.
+
+Der Stifte-Sprite kann auf diese Botschaft reagieren, indem er die Stiftgröße um 1 bzw. die Kostüm-Größe um 10 verändert, abhängig vom Wert der Variable malstift-modus (benutze einen "falls... sonst"-Block, ähnlich wie der Sprite zwischen Stift absenken und Stempeln unterscheidet).
+Vergiss nicht, auch für "groesser" und "kleiner" Tastenkürzel einzuführen. Ich habe die hoch/runter-Pfeile benutzt.
+
+SPEICHERE DEIN PROJEKT
+
+Ist Dir aufgefallen, dass wenn Du die Größe des Stempels veränderst, auch die Größe des Malstifts auf dem Bildschirm verändert wurde, sobald Du ihn ausgewählt hast.
+Um das zu verhindern, musst Du die Größe wieder auf 100% setzen, sobald Du zu einem Stift wechselst. Auf diese Weise sehen die Werkzeuge von der Größe her immer richtig aus.
+
+Um es noch besser zu machen, kannst Du den Stempel sich daran erinnern lassen, welche Größe er hatte, bevor Du den Stift ausgewählt hast. Er soll dann wieder zu der alten Größe zurückkehren, sobald er wieder gewählt wird.
+Der einfachste Weg, um das zu erreichen ist, eine neue Variable namens "stempelGroesse" zu erzeugen. Sobald die Größe des Stempels verändert wird, wird ihr die neue Größe zugewiesen.
+Sobald der Stempel dann angeklickt wird kann er sich die alte Größe aus dieser Variablen auslesen. 
+￼￼￼￼￼￼￼￼
+￼
+##￼Teste Dein Projekt
+__Klicke auf die grüne Fahne.__
+
+Funktioniert bei den Malstiften die Steuerung der Größe?
+
+Was passiert, wenn Du zum Stempel wechselst, die Größe änderst und wieder zu einem Stift wechselst?
+
+SPEICHERE DEIN PROJEKT
+
+
+__Toll gemacht! Du bist fertig. Jetzt kannst Du das Spiel genießen!__
+
+Denke daran: Du kannst das Spiel mit Deinen Freunden und Deiner Familie teilen, indem Du in der Menüleiste __Teilen__ anklickst!

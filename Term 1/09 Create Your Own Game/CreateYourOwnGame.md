@@ -1,12 +1,39 @@
 Level 3
 
-#Create Your Own Game
+#Baue Dein eigenes Spiel
 
-__Introduction:__In this project you will design and create a game for you and your friendsto play! You will need to think about its different parts and plan your ideas before you begin making it on Scratch. You can use ideas from past projects and Scratch cards to help you.
-##￼STEP 1: Planning your game
+__Einführung:__
+In diesem Projekt baust Du ein Spiel, das Du mit Deinen Freunden spielen kannst! Du musst über die verschiedenen Bestandteile nachdenken und Deine Ideen gut planen, bevor Du anfängst, es in Scratch zu bauen. Als Unterstützung kannst Du Ideen aus den anderen Projekten und die Scratch-Karten benutzen.
 
-What is the aim of the game? (For example, the aim of Felix & Herbert was to avoid getting caught by the cat.) It might help for you to think of as many ideas as you can then choose the best. You could brainstorm with a friend or work on your own. Write your ideas below and choose the best one.
-##STEP 2: Design your charactersWhat characters will be in your game? Draw them in the box below. If they will need different costumes make sure you draw these too. Ask for more paper if you need it.
-##￼￼STEP 3: Design your stageWhat will the stage look like? Draw it below. Remember to think about howthe characters might interact with it.##￼STEP 4: How does your game work?How will points be scored? How do you win the game? How many players are there? Will there be a timer?How will the game be controlled? E.g. Will you click a mouse button or press a key? Do you need sound effects? If so, what are they?Answer these questions in the space below:
-##￼STEP 5: Building your gameNow it’s time to start writing the scripts that will make your game work.Things to remember:1. You can always refer back to the Scratch cards and the games you have already built.2. Remember to test your project and save your game regularly. 
-3. Be creative!
+
+##￼SCHRITT 1: Dein Spiel planen
+
+Was ist das Ziel Deines Spieles? (Bei Felix & Herbert war das Ziel beispielsweise, nicht von Felix gefangen zu werden.) Vielleicht hilft es Dir, wenn Du Dir so viele Ideen wie möglich ausdenkst und Dir dann daraus die beste aussuchst. Du könntest gemeinsam mit einem Freund Ideen entwickeln oder auch für Dich alleine. Schreibe Deine Ideen unten hin und wähle die beste aus. 
+
+
+
+##SCHRITT 2: Entwerfe Deine Spielfiguren
+
+Welche Spielfiguren wird es in Deinem Spiel geben? Zeichne sie in dem Feld unten. Falls sie verschiedene Kostüme brauchen zeichne diese Kostüme bitte auch. Falls Du mehr Papier brauchst kannst Du gern danach fragen.
+
+
+##￼￼SCHRITT 3: Gestalte Deine Bühne
+
+Wie soll Deine Bühne aussehen? Zeichne sie unten hin. Vergiss' nicht zu überlegen, wie Deine Spielfiguren mit ihr interagieren könnten.
+
+##￼SCHRITT 4: Wie geht Dein Spiel?
+
+Wie kann man Punkte bekommen? Wie kann man das Spiel gewinnen? Wie viele Spieler gibt es? Wird die Zeit gemessen?
+Wie wird das Spiel gesteuert? Klickst Du beispielsweise eine Maustaste oder drückst Du eine Taste? Brauchst Du Geräuscheffekte? Wenn ja, was für welche?
+Beantworte alle diese Fragen unten:
+
+
+##￼SCHRITT 5: Baue Dein Spiel
+
+Jetzt kannst Du anfangen die Skripte zu erzeugen, mit deren Hilfe Dein Spiel läuft.
+
+Denke daran:
+
+1. Du kannst Dich immer auf die Scratch-Karten beziehen und auf die Spiele, die Du schon gebaut hast.
+2. Vergiss' nicht, Dein Projekt regelmäßig zu testen und zu speichern.
+3. Sei kreativ!

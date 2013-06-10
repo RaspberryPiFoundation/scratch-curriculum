@@ -1,4 +1,29 @@
-#NOTES FOR CLUB LEADERS
-##(Make Your Own Game)##Introduction:In this project you will design and create a game for you and your friendsto play! You will need to think about its different parts and plan your ideas before you begin making it on Scratch. You can use ideas from past projects and Scratch cards to help you.##SkillsThis project covers 
-* Design* Planning* Bug fixing##ResourcesThe children will be designing their own resources for this project including characters, stage and sound design. Have extra paper ready for the children in case they need it. Make sure there are pens and pencils available to draw with. You will need to have a think about how many sessions the children will do this project over. The design and planning stage could take them a whole session or even two. Plan it before you start then inform the children how long they have.##Basic exercisesStep 1: Planning your gameStep 2: Design your charactersStep 3: Design your stageStep 4: How does your game work? 
-Step 5: Building your game
+#HINWEISE FÜR CLUB LEITER
+##(Entwickle Dein eigenes Spiel)
+
+##Einführung:
+
+Jetzt wirst Du ein Spiel entwerfen und bauen, das Du mit Deinen Freunden spielen kannst! Du musst über die verschiedenen Bestandteile nachdenken und Deine Ideen planen, bevor Du anfängst, das Spiel in Scratch zu bauen. Du kannst Ideen aus den anderen Projekten und die Scratch Karten als Unterstützung benutzen.
+
+##Kenntnisse
+Dieses Projekt beinhaltet
+
+* Entwerfen
+* Planen
+* Fehlersuche
+
+##Verfügbare Mittel
+
+Die Kinder werden ihre eigenen Mittel für dieses Projekt entwerfen. Das schließt Spielfiguren, die Bühne und Geräuscheffekte ein. Bitte halten Sie genügend Papier für die Kinder bereit, falls sie mehr davon benötigen. Vergewissern Sie sich, dass verschiedene Stifte und Bleistifte zum Zeichnen bereit liegen. Denken Sie darüber nach, in welchem Zeitraum die Kinder dieses Projekt bearbeiten sollen. 
+Die Entwurfs- und Planungsphase könnte bereits ein oder sogar zwei Termine in Anspruch nehmen. Machen Sie sich einen Plan bevor Sie mit diesem Projekt beginnen und informieren Sie die Kinder darüber, wie viel Zeit sie zur Verfügung haben.
+
+##Grundübungen
+Schritt 1: Dein Spiel planen
+
+Schritt 2: Entwerfe Deine Spielfiguren
+
+Schritt 3: Entwerfe Deine Bühne
+
+Schritt 4: Wie funktioniert das Spiel?
+
+Schritt 5: Baue Dein Spiel
