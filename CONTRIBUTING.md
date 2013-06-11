@@ -17,9 +17,9 @@ whatever folder on your machine you’d like to keep your work in.
 
 ## Step 3 - Create a folder for your translation
 
-Copy the 'English' folder and rename it appropriately e.g. 'Español'.
+Copy the 'en-GB' folder and rename it appropriately e.g. 'es'.
 
-    cp -r English Español
+    cp -r en-GB es
 
 ## Step 4 - Translate!
 
