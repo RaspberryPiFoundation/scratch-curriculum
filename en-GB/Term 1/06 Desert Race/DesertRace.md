@@ -30,7 +30,7 @@ Do your lion and parrot move across the screen when you press the ‘A’ and �
 	when StartRace clicked	say 3 for 1 secs	say 2 for 1 secs	say 1 for 1 secs	say GO! for 1 secs	hide
 ```
 ###Test Your Project__Click on the green flag.__When you press the start button does it countdown to the start of the race before disappearing?Save your project
-We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.5. Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.6. Now set racing to be 0 when the project is first started. Change your when flag clicked scriptfrom before to look like this:
+We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.5. Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.6. Now set racing to be 0 when the project is first started. Change your `when FLAG clicked` script from before to look like this:
 ```scratch
 	when FLAG clicked	show	set racing to 0
 ```7. Next, set the racing variable to be 1 when the starting countdown has finished.8. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows theparrot to move if __racing = 1__.
@@ -41,7 +41,7 @@ Do your lion and parrot move across the screen when you press the ‘A’ and �
 1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
 ```scratch
 	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0		(end if)	(end if)
-```2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the a parrot winning the race!3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
+```2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the parrot winning the race!3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
 ```scratch
 	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs		(end if)	(end if)
 ```4. Now repeat these steps for the lion.
