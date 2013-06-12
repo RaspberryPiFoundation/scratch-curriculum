@@ -1,6 +1,6 @@
 Level 1
 
-#Whack-a-Witch
+#Sla-een-heks
 
 __Introductie:__
 Dit project is gebaseerd op het spelletje __whack-a-mole__. Je krijgt punten als je de heksen die op het scherm verschijnen kan slaan. Bedoeling van het spelletje is om zoveel mogelijk punten te scoren in 30 seconden!
