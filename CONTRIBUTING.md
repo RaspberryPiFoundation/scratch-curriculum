@@ -57,12 +57,12 @@ If they’re happy, they should leave a comment on the pull request with a
 
 ## Step 8 - We merge the translation!
 
-At this point we’ll merge your pull request, your translation will become
+We’ll only merge in complete translations, but we encourage people to
+make pull requests from work-in-progress translations so that others can
+comment and contribute.
+
+When we do merge the pull request, your translation will become
 part of the repository, available for everyone to use and benefit from,
 and we’ll say thank you and give you a massive hug.
-
-We’ll also give you commit access to this and the other repos, so from this
-point in you’ll be able to make changes directly without needing to submit
-a pull request.
 
 ![Thank you](http://codeclub-assets.s3.amazonaws.com/public/contributing/thank-you.png)
