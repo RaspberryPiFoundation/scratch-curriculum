@@ -1,68 +1,263 @@
-Level 2
+Niveau 2
 
-#Desert Race
+ 
 
-__Introduction:__This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
-##￼STEP 1: Create the scene and add the sprites
+# La Course dans le désert
 
-1. Select the Stage, and add the desert background.ticking off the boxes below:￼￼￼2. Add a new sprite, select the lion sprite that you will find in the animals folder.3. Add another sprite, select the parrot sprite that you will find in the animals folder.
-##STEP 2: Make the lion and the parrot move
-We want the sprite to move when you press a key.
-1. First select the lion sprite and set it to move 4 steps when you press the ‘L’ key.
-```scratch
-	when l key pressed	move 4 steps
-```
-2. Next, select the parrot sprite and set it to move 4 steps when you press the ‘A’ key.
+__Introduction :__
+Ce jeu est un jeu qui se joue à 2 joueurs, où un perroquet et un lion font la course l’un contre l’autre dans le désert. Chaque joueur doit appuyer sur une touche du clavier aussi vite que possible pour faire avancer son personnage. Le premier qui atteint le bord de l’écran a gagné !
 
-```scratch
-	when a key pressed	move 4 steps
-```
+ 
 
-###Test Your Project__Click the green flag__ 
-Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
-Save your project
-##￼STEP 3: Starting the race
-We need to have a way to start the race and to know who has won. __First we create a start button.__1. Add a new sprite from a file. Choose the button sprite which is inside “things”.2. Edit the costume of the button sprite, add the text ‘start’ to it and click OK. Move the sprite to the middle of the stage.3. Now add a script that shows the sprite when the project is run:
-```scratch
-	when FLAG clicked	show
-```4. Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
-```scratch
-	when StartRace clicked	say 3 for 1 secs	say 2 for 1 secs	say 1 for 1 secs	say GO! for 1 secs	hide
-```
-###Test Your Project__Click on the green flag.__When you press the start button does it countdown to the start of the race before disappearing?Save your project
-We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.5. Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.6. Now set racing to be 0 when the project is first started. Change your when flag clicked scriptfrom before to look like this:
-```scratch
-	when FLAG clicked	show	set racing to 0
-```7. Next, set the racing variable to be 1 when the starting countdown has finished.8. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows theparrot to move if __racing = 1__.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps	(end if)
-```9. Now do the same for the lion sprite.###Test Your Project__Click on the green flag.__Does the lion or the parrot move only after the countdown has finished?
-We want to know who wins the race and reset it when it has finished so you canrace again.##￼STEP 4: Finishing the race
-1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0		(end if)	(end if)
-```2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the a parrot winning the race!3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs		(end if)	(end if)
-```4. Now repeat these steps for the lion.
-###Test Your Project__Click on the green flag.__Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
-Save your project
-##￼STEP 5: Resetting the game
-After the race is finished we need to tell the other sprites we have won and reset thegame so we can play again.__We need the winning sprite to broadcast that it has won.__
-1. Click on the Parrot sprite.Add a block that broadcasts “finished” after the sprite says it has won.
-```scratch
-	when a key pressed	if racing = 1		move 4 steps		if touching edge?			set racing to 0			play sound recording1			say The Parrot Wins! for 3 secs			broadcast finished		(end if)	(end if)
-```2. Now we need to add a new script that listens for the finished broadcast and moves the parrotback to the start. What happens if you change the value that x is set to?
+## ETAPE 1 : Créer le décor et ajouter les objets
+
+1. Sélectionne la scène et ajoute l’arrière-plan “desert” que tu peux importer depuis le dossier “Nature”. 
+
+2. Supprime le chat. 
+
+3. Ajoute un nouveau personnage : Choisis l’image du lion que tu trouveras dans le dossier “Animals” et change son nom en “Lion”. 
+
+4. Ajoute un autre personnage : Choisis l’image du perroquet que tu trouveras dans le dossier “Animals” et change son nom en “Perroquet”. 
+
+ 
+
+## ETAPE 2: Faire bouger le lion et le perroquet
+
+Nous voulons que le personnage se déplace lorsque tu appuie sur une touche.
+
+1. D’abord, selectionne le lion et fais-le avancer de 4 pas quand tu appuies sur la touche “L”. 
 
 ```scratch
-	when I receive finished	set x to -175
-```3. Now add the same script for the lion. Test different x values to make sure the lion and the parrot line up at the start.4. We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the startwhen we click the flag.
-```scratch
-	when FLAG clicked	set x to -175
-```5. Now click on the button sprite and add a script that shows it when it receives the finished message.￼￼￼￼￼￼￼￼￼￼###Test Your Project__Click on the green flag.__
-Can you race against a friend, one of you moving the parrot by pressing ‘A’ and theother moving the Lion by pressing ‘L’?
-Save your project##￼Challenge: Add a booster
 
-* __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__* __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.* __Create another sound__ that the sprite will make when the boost is pressed.￼###Test Your Project
-Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+    quand l est pressé  
+        avancer de 4 pas
+```
+
+2. Ensuite, sélectionne le perroquet et fais-le avancer de 4 pas quand tu appuies sur la touche “A”. 
+
+```scratch
+  
+    quand a est pressé  
+        avancer de 4 pas
+```
+  
+
+### Teste Ton Projet
+
+__Clique sur le drapeau vert.__
+Est-ce que ton lion se déplace quand tu appuies sur “L” ?
+Est-ce que ton perroquet se déplace quand tu appuies sur “A” ?
+
+__Enregistre ton projet__
+
+ 
+
+## ETAPE 3: Démarrer la course
+
+Nous avons besoin d’un moyen de démarrer la course et de savoir qui du lion ou du perroquet a gagné. D’abord, créons un bouton de démarrage.
+
+1. Ajoute un nouvel objet depuis un fichier. Choisis l’objet “button” qui se trouve dans le dossier “Things” et change son nom en “Bouton”.
+
+2. Modifie le costume du bouton : Ajoute-lui le texte “Démarrer” et clique sur OK. Place le bouton au milieu de la scène.
+
+3. Maintenant, ajoute un script qui affiche le bouton Démarrer quand le projet est lancé : 
+
+```scratch
+  
+    quand DRAPEAU pressé  
+        montrer  
+```
+4. Maintenant nous voulons que le bouton compte à rebours (c’est à dire à l’envers) à partir de 3, qu’il dise “Partez” puis qu’il disparaisse quand on clique dessus.  
+Ajoute un autre script comme celui-ci: 
+
+```scratch
+  
+    quand Bouton pressé  
+        dire 3 pendant 1 secondes  
+        dire 2 pendant 1 secondes  
+        dire 1 pendant 1 secondes  
+        dire Partez ! pendant 1 secondes  
+        cacher
+```
+ 
+
+### Teste Ton Projet
+
+__Clique sur le drapeau vert.__
+Quand tu cliques sur le bouton “Démarrer”, est-ce qu’il commence le compte à rebours avant de disparaitre ?
+
+__Enregistre ton projet__
+
+ 
+
+Nous souhaitons que les coureurs (le lion et le perroquet) ne puissent pas commencer à courir avant le début de la course. Nous devons donc savoir quand la course commence et quand elle est terminée. 
+
+Pour cela nous avons besoin d’une variable :
+
+1. Ajoute une variable pour tous les objets, appelée CourseDémarrée. Décoche la case qui se trouve à coté de son nom pour qu'elle ne soit pas affichée dans la scène. 
+
+2. Maintenant fais en sorte que la variable CourseDémarrée soit egale à 0 lorsque le projet est lancé pour la première fois. Change ton script "quand DRAPEAU est pressé" que tu as écris précédemment pour le bouton Démarrer comme ceci : 
+
+```scratch
+  
+    quand DRAPEAU pressé  
+        montrer
+        à CourseDémarrée attribuer 0
+```
+ 
+
+3. Ensuite, mets la variable CourseDémarrée à 1 quand le compte à rebours du bouton Démarrer est terminé. 
+
+4. Nous devons maintenant empêcher le lion et le perroquet de partir avant que la variable CourseDémarrée soit égale à 1.  
+Clique sur le perroquet et ajoute un bloc de contrôle au script existent qui n’autorise le perroquet à avancer que si CourseDémarrée = 1. 
+
+```scratch
+  
+    quand a est pressé
+        si CourseDémarrée = 1
+            avance de 4 pas
+        (fin si)
+```
+5. N’oublie pas de faire la même chose pour le lion. 
+
+ 
+
+### Teste Ton Projet
+
+__Clique sur le drapeau vert.__
+Est-ce que le lion et le perroquet ne peuvent avancer que lorsque le compte à rebours est terminé ?
+
+__Enregistre ton projet__.
+
+ 
+
+## ETAPE 4: Terminer la course
+
+Nous voulons savoir qui gagne une course et la réinitialiser pour que tu puisse rejouer.
+
+1. Ajoute un bloc au script du perroquet qui met a variable CourseDémarrée à 0 quand le perroquet touche le bord de l’écran. 
+
+```scratch
+  
+    quand a est pressé
+        si CourseDémarrée = 1  
+            avance de 4 pas
+            si bord touché ?  
+                à CourseDémarrée attribuer 0
+            (fin si)
+        (fin si)
+```
+ 
+
+2. Maintenant, nous voulons que le perroquet nous indique s’il a gagné la course. Enregistre un nouveau son pour le perroquet qui sera joué quand il gagnera. Clique sur sons et enregistre le bruit du perroquet qui gagne la course !
+
+3. Maintenant ajoute un bloc au script du perroquet pour qu’il joue ce son quand il a gagné: 
+
+```scratch
+  
+    quand a est pressé
+        si CourseDémarrée = 1  
+            avance de 4 pas
+            si bord touché ?  
+                à CourseDémarrée attribuer 0
+                jouer le son enregistrement1
+                dire Le perroquet a gagné ! pendant 3 secondes
+            (fin si)
+        (fin si)
+```
+  
+
+4. Maintenant, répète ces étapes pour le lion. 
+
+ 
+
+### Teste Ton Projet
+
+__Clique sur le drapeau vert.__
+Peux-tu cliquer sur le bouton Démarrer et faire avancer les coureurs en appuyant sur les touches “A” et “L” ?
+Est-ce que les coureurs jouent leur son de la victoire et disent qu’ils ont gagné lorsqu’ils atteingnent le bord en premier ?
+
+__Enregistre ton projet__.
+
+ 
+
+## ETAPE 5: Réinitialiser le jeu
+
+Une fois que la course est terminée, nous devons dire à tous les objets de la scène que nous avons gagné et réinitialiser le jeu pour qu’on puisse rejouer.
+
+Le coureur qui gagne la course doit prévenir qu’il a gagné.
+
+1. Clique sur le perroquet. Ajoute un bloc au script du perroquet qui diffuse “CourseTerminée” après qu’il ait dit qu’il avait gagné. 
+
+```scratch
+  
+    quand a est pressé
+        si CourseDémarrée = 1  
+            avance de 4 pas
+            si bord touché ?  
+                à CourseDémarrée attribuer 0
+                jouer le son enregistrement1
+                dire Le perroquet a gagné ! pendant 3 secondes
+                envoyer à tous CourseTerminée
+            (fin si)
+        (fin si)  
+```
+ 
+
+2. Maintenant nous devons ajouter un nouveau script qui écoute la diffusion du message “CourseTerminée” et replace le perroquet sur la ligne de départ. Que se passe-t-il si tu change la valeur de x? 
+
+```scratch
+  
+    quand je reçois CourseTerminée  
+        mettre x à -175
+```
+ 
+
+3. Maintenant ajoute le même script sur le lion. Teste différentes valeurs de x pour être sûr que le lion et le perroquet sont bien alignés sur la ligne de départ. 
+
+4. Nous voulons aussi mettre le lion et le perroquet à la même position sur la ligne départ lorsque le projet démarre. Pour cela, ajoute un autre script sur chaque coureur qui les déplace lorsqu’on clique sur le drapeau vert. 
+
+```scratch
+  
+    quand DRAPEAU pressé  
+        mettre x à -175
+```
+  
+
+ 
+
+5. Maintenant clique sur le bouton Démarrer et ajoute un script pour qu’il s’affiche quand il reçoit le message CourseTerminée. 
+  
+```scratch
+
+    quand je reçois CourseTerminée  
+    montrer
+```
+### Teste Ton Projet
+
+__Clique sur le drapeau vert.__
+Est-ce que tu peux faire une course avec un ami, l’un courant avec le lion en appuyant sur “L”, l’autre avec le perroquet en appuyant sur “A” ?
+
+__Enregistre ton projet__
+
+ 
+
+## Défi: Ajouter un accélérateur
+
+- Essaie d’ajouter un accélérateur que tu ne peux utiliser qu’une fois par course qui fait avancer le perroquet ou le lion de 30 pas en 1 seule fois. 
+- Ajoute un nouveau costume avec du feu derrière chaque coureur et fais en sorte qu’il s’affiche quand l’accélérateur est utilisé. 
+- Crée un nouveau son que le coureur jouera quand il utilisera l’accélérateur. ? 
+
+### Teste Ton Projet
+
+__Enregistre ton projet__
+
+  
+
+ 
+
+Félicitations ! 
+
+Tu as terminé ! Maintenant tu peux profiter de ton jeu !
+
+N’oublie pas que tu peux partager ce jeu avec tous tes amis et toute ta famille en cliquant sur Partager dans la barre de menu.
