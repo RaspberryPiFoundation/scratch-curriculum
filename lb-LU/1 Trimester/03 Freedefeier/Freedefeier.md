@@ -135,7 +135,7 @@ Wat geschitt wann s du d'Maustast gedréckt häls während s de d'Maus beweegs? 
 
 Späicher däi Projet
 
-##￼STEP 3: Maach all Explosioun eenzegaarteg
+##￼SCHRËTT 3: Maach all Explosioun eenzegaarteg
 
 1. Elo kënne mer all Explosioun nach méi eenzegaarteg maachen andeem s mer en "set color effect"-Block benotzen an e virum uweisen eng Zoufalls-Fuerf tëscht 1 an 200 wiele loossen.
 

@@ -18,7 +18,7 @@ Dëse Projet benotzt d'Ressourcen aus dem Dossier "Backgrounds" am Scratch an d'
 Change color Glide
 
 ###Basic exercises
-Schrëtt 1: Create a rocket that flies towards the mouse
+Schrëtt 1: Erstell eng Rakéit déi a Richtung vun der Maus flitt
 Schrëtt 2: Looss d'Rakéit explodéieren
 Schrëtt 3: Maach all Explosioun eenzegaarteg
 Schrëtt 4: De Broadcast-Problem korrigéieren
