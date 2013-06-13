@@ -17,11 +17,11 @@ Dës Variabel kontrolléiert, wéi séier dass d'Hex sech beweegt. Mir benotzen 
 5. Esoubal d'Spill ufänkt soll d'Hex och ufänken sech ze beweegen. Benotz dofir dëse Skript:
 
 ```scratch
-    when FLAG clicked
-    set speed to 5
-    forever
-        move speed steps
-    (end forever)
+    Wenn FLAG angeklickt
+    setze Geschwindigkeit auf 5
+    wiederhole fortlaufend
+        gehe Geschwindigkeit-Schritt
+    (Ende wiederhole fortlaufend)
 ```
 
 ###Test däi Projet
@@ -29,12 +29,12 @@ __Klick op de grénge Fändel__ a kuck wat d'Hex mëscht. Firwat bleift se um Bo
 6. Fir dass d'Hex net méi hänke bleift, musse mir se dozou bréngen d'Kéier ze man, esoubal se de Bord beréiert. Setz dofir en _pralle vom Rand ab_ Block ënnert de Block _gehe Geschwindigkeit er-Schritt_.
 
 ```scratch
-    when FLAG clicked
-    set speed to 5
-    forever
-        move speed steps
-        if on edge, bounce
-    (end forever)
+    Wenn FLAG angeklickt
+    setze Geschwindigkeit auf 5
+    wiederhole fortlaufend
+        gehe Geschwindigkeit-Schritt
+        pralle vom Rand ab
+    (Ende wiederhole fortlaufend)
 ```
 
 7. Fir dass d'Hex net d'ënnescht-iewescht flitt, klick op den entspriechenden __Drehmodus__ am Informatiouns-Beräich vun der Figur.
@@ -55,13 +55,13 @@ __Wat kéint ee maachen, fir dass d'Hex vum selwen ëmmer méi séier gëtt?__
 Fir d'Spill méi spannend ze maachen, soll d'Hex zoufälleg verschwannen an erëm optauchen. Dat maache mir mat engem zweete Skript dee parallel zum éischte leeft, deen d'Hex beweegt. Den neie Skript soll d'Hex fir eng zoufälleg laang Zäit verstoppen, se da fir eng zoufälleg laang Zäit erëm uweisen, an dat onendlech widderhuelen (op d'mannst bis dass d'Spill eriwwer ass).
 Erstell dëse Skript fir d'Hex:
 ```scratch
-    when FLAG clicked
-    forever
-        hide
-        wait pick random 2 to 5 secs
-        show
-        wait pick random 3 to 5 secs
-    (end forever)
+    Wenn FLAG angeklickt
+    wiederhole fortlaufend
+        verstecke dich
+        warte Zufallszahl von 2 bis 5 Sek.
+        zeige dich
+        warte Zufallszahl von 3 bis 5 Sek.
+    (Ende wiederhole fortlaufend)
 ```
 ###Test däi Projet
 __Klick op der grénge Fändel.__
@@ -78,9 +78,9 @@ Fir dass dëst wierklech e Spill gëtt, musse mir natierlech dem Spiller eppes z
 1. Importéier (Klang aus der Bibliothek wählen) am Tab _Klänge_ d'Geräisch _fairydust_ aus dem Beräich _Elektronik_.
 2. Setz dëse Script bäi d'Hex dobäi (niewt déi zwee aner):
 ```scratch
-    when sprite1 clicked
-    hide
-    play sound Fairydust
+    Wenn Sprite1 angeklickt
+    verstecke dich
+    spiele Klang Fairydust
 ```
 ###Test däi Projet
 __Klick op de grénge Fändel.__
@@ -91,23 +91,23 @@ Lo hu mir eng Hex, mä mir wollten dach e Spill maachen! All Kéiers wa mir op d
 
 1. Erstell en nei Variabel fir all Figuren an nenn se _Punkten_. Veränner de läschte Skript vun der Hex esou, dass d'Punkten, all Kéiers wou op si geklickt gëtt, ëm 1 an d'Lut ginn.
 ```scratch
-    when sprite1 clicked
-    hide
-    play sound Fairydust
-    change score by 1
+    Wenn Sprite1 angeklickt
+    verstecke dich
+    spiele Klang Fairydust
+    ändere Punkten um 1
 ```
 
-2. Wiel d'Bühn un an erstell eng nei Variabel déi s du _Zeit_ nenns.
-Setz en neie Skript dobäi, deen duerch d'Klicke vum grénge Fändel ausgeléist gëtt, d'Variabel _Zeit_ op 30 setzt a _Punkte_ op 0. Benotz e _wiederhole bis_ Block fir all Kéiers no enger Sekonn d'Variabel _Zeit_ ëm 1 erof ze setzen. Wann d'Zeit ofgelaf ass stoppe mir d'Spill mat _stoppe alles_.
+2. Wiel d'Bühn un an erstell eng nei Variabel déi s du _Stoppuhr_ nenns.
+Setz en neie Skript dobäi, deen duerch d'Klicke vum grénge Fändel ausgeléist gëtt, d'Variabel _Stoppuhr_ op 30 setzt a _Punkte_ op 0. Benotz e _wiederhole bis_ Block fir all Kéiers no enger Sekonn d'Variabel _Zeit_ ëm 1 erof ze setzen. Wann d'Stoppauer ofgelaf ass stoppe mir d'Spill mat _stoppe alles_.
 ```scratch
-    when FLAG clicked
-    set timer to 30
-    set score to 0
-    repeat until timer = 0
-        wait 1 secs
-        change timer by -1
-    (end repeat)
-    stop all
+    Wenn FLAG angeklickt
+    setze Stoppuhr auf 30
+    setze Punkten auf 0
+    wiederhole bis Stoppuhr = 0
+        warte 1 Sek.
+        ändere Stoppuhr um -1
+    (Ende wiederhole)
+    stoppe alles
 ```
 
 
