@@ -6,7 +6,7 @@ Click the `Fork` button in the top-right.
 
 ![Fork button](http://codeclub-assets.s3.amazonaws.com/public/contributing/fork.png)
 
-## Step 2 - Clone to the repository to your computer
+## Step 2 - Clone the repository to your computer
 
     cd ~/Documents
     git clone git@github.com:YOUR_NAME/scratch-curriculum.git
