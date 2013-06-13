@@ -50,7 +50,7 @@ Give your pull request an appropriate message.
 ## Step 7 - Ask another native speaker to review your pull request
 
 Give another native speaker a link to your pull request, which will be
-something like http://github.com/codeclub/scratch-curriculum/pulls/3
+something like http://github.com/codeclub/scratch-curriculum/pull/3
 
 If they’re happy, they should leave a comment on the pull request with a
 :+1: or similar message.
