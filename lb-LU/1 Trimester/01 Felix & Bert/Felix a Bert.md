@@ -13,13 +13,13 @@ Mir programméieren e Fänkches-Spill mat der Kaz Felix an der Maus Bert. Du ste
 5. Erstell dëse Skript (Oflaf):
 
 ```scratch
-	When FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-	(end forever)
+	Wenn FLAG angeklickt
+	wiederhole fortlaufend
+		zeige zu Mauszeiger
+		gehe 10er-Schritt
+		nächstes Kostüm
+		spiele Schlagzeug 62 für 0.3 Schläge
+	(Ende wiederhole fortlaufend)
 ```
 
 ###Test däi Projet
@@ -38,11 +38,11 @@ Probéier sechs mol op de Knäppchen _Schrumpfen_ ze klicken:
 
 ```scratch
 
-	When FLAG clicked
-	forever
-		go to mouse-pointer
-		point towards Felix
-	(end forever)
+	Wenn FLAG angeklickt
+	wiederhole fortlaufend
+		gehe zu Mauszeiger
+		zeige zu Felix
+	(Ende wiederhole fortlaufend)
 ```
 
 ###Test däi Projet
@@ -56,16 +56,16 @@ __De Felix soll mierke, wann hien de Bert gefaangen huet, an eis et soen.__
 
 ```scratch
 
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			say Caught you! for 1 secs
-		(end if)
-	(end forever)
+	Wenn FLAG angeklickt
+	wiederhole fortlaufend
+		zeige zu Mauszeiger
+		gehe 10er-Schritt
+		nächstes Kostüm
+		spiele Schlagzeug 62 für 0.3 Schläge
+		falls wird Bert berührt?
+			sage Gefangen! für 1 Sek.
+		(Ende falls)
+	(Ende wiederhole fortlaufend)
 ```
 
 ### Test däi Projet
@@ -81,18 +81,18 @@ __Amplaz dass de Felix riff, soll sech dës Kéier de Bert an ee Geescht verwand
 
 ```scratch
 
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			broadcast caught
-			play drum 58 for 0.2 beats
-			wait 1 sec
-		(end if)
-	(end forever)
+	Wenn FLAG angeklickt
+	wiederhole fortlaufend
+		zeige zu Mauszeiger
+		gehe 10er-Schritt
+		nächstes Kostüm
+		spiele Schlagzeug 62 für 0.3 Schläge
+		falls wird Bert berührt?
+			sende gefangen an alle
+			spiele Schlagzeug 58 für 0.2 Schläge
+			warte 1 Sek.
+		(Ende falls)
+	(Ende wiederhole fortlaufend)
 ```
 2. Lued en neie Kostüm fir de Bert aus dem Dossier _fantasy/ghost2-a_
 3. Änner de Kostüm, fir e méi kleng ze man.
@@ -101,10 +101,10 @@ Sechs mol op de _Schrumpfen_ Knäppchen drécke sollt duergoen.
 5. Erstell en neie Skript fir de Bert an e Geescht ze verwandelen:
 ```scratch
 
-	when I receive caught
-	switch to costume dead
-	wait 0.5 secs
-	switch to costume alive
+	Wenn ich gefangen empfange
+	ziehe Kostüm dout an
+	warte 0.5 Sek.
+	ziehe Kostüm lieweg an
 ```
 
 ### Test däi Projet
@@ -120,15 +120,15 @@ Mir fänke bei Null un an erhéijen d'Punkten all Sekonn ëm 1. Wann de Felix de
 2. Erstellt dës zwee nei Skripten op der Bühn:
 ```scratch
 
-	when FLAG clicked
-	set score to 0
-	forever
-		change score by 1
-		wait 1 secs
-	(end forever)
+	Wenn FLAG angeklickt
+	setze Punkten auf 0
+	wiederhole fortlaufend
+		ändere Punkten um 1
+		warte 1 Sek.
+	(Ende wiederhole fortlaufend)
 
-	when I receive caught
-	change score by -100
+	Wenn ich gefangen empfange
+	ändere score um -100
 ```
 
 ###Test däi Projet

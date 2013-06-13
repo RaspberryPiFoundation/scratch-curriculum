@@ -17,10 +17,10 @@ Mir wëlle verschidde Biller op der Tafel uweisen.
 6. Stell dëse Skript op:
 
 ```scratch
-    when FLAG clicked
-    repeat pick random 1 to 5       
-        next costume
-    (end repeat)
+    Wenn FLAG angeklickt
+    wiederhole Zufallszahl von 1 bis 5
+        nächstes Kostüm
+    (Ende wiederhole)
 ```
 
 ###Test däi Projet
@@ -41,19 +41,19 @@ Mir benotzen eng Punkte Variabel fir ze bestëmme wéi verzerrt d'Bild soll sinn
 1. Erstell eng Variabel mam Numm _Punkte_ an der Lëscht vun de Variablen.
 2. Veränner de Skript vun der Figur, esou dass en ausgesäit wéi dësen:
 ```scratch
-    when FLAG clicked
-    hide
-    repeat pick random 1 to 5       
-        next costume
-    (end repeat)
-    set score to 110
-    repeat until score = 0
-        change score by -10
-        set pixelate effect to score
-        set colour effect to score
-        show
-        wait 1 secs
-    (end repeat)
+    Wenn FLAG angeklickt
+    verstecke dich
+    wiederhole Zufallszahl von 1 bis 5       
+        nächstes Kostüm
+    (Ende wiederhole)
+    setze Punkte auf 110
+    wiederhole bis Punkte = 0
+        ändere Punkte um -10
+        setze Pixel-Effekt auf Punkte
+        setze Farbe-Effekt auf Punkte
+        zeige dich
+        warte 1 Sek.
+    (Ende wiederhole)
 ```
 
 Am beschten du setz de Block _verstecke dich_ ganz uewen, an de Block _setze [Punkte] auf 110_ an all déi aner dorënner.
@@ -88,20 +88,20 @@ Als éischt musse mir awer emol wësse wat déi richteg Äntwert ass.
 2. Änner de Skript vu virdrunn esou, dass déi richteg Äntwert gespäichert gëtt. Setz de Block _setze [Antwort] auf Kostümnummer_ direkt ënner déi éischt Schläif.
 
 ```scratch
-    when FLAG clicked
-    hide
-    repeat pick random 1 to 5       
-        next costume
-    (end repeat)
-    set answer to costume
-    set score to 110
-    repeat until score = 0
-        change score by -10
-        set pixelate effect to score
-        set colour effect to score
-        show
-        wait 1 secs
-    (end repeat)
+    Wenn FLAG angeklickt
+    verstecke dich
+    wiederhole Zufallszahl von 1 bis 5       
+        nächstes Kostüm
+    (Ende wiederhole)
+    setze Antwort auf Kostümnummer
+    setze Punkte auf 110
+    wiederhole bis Punkte = 0
+        ändere Punkte um -10
+        setze Pixel-Effekt auf Punkte
+        setze Farbe-Effekt auf Punkte
+        zeige dich
+        warte 1 Sek.
+    (Ende wiederhole)
 ```
 __Elo setze mir d'Figure bei op déi de Spiller klicke kann..__
 
@@ -116,20 +116,19 @@ Elo wëlle mir, dass d'Figuren réagéiere, wann een op se klickt an, jee nodeem
 
 8. Stell dëse Skript fir d'Figur mam Numm __Antwort1__ op:
 ```scratch
-    when answer1 clicked
-    if answer=1
-        broadcast won
-    else
-        hide
-    (end if)
+    Wenn Antwort1 angeklickt
+    falls Antwort=1
+        sende gewonnen an alle
+    sonst
+        verstecke dich
+    (Ende falls)
 ```
 9. Zéi dëse Skript op all déi aner Figuren (Dat kopéiert en dohinner). __Änner bei all Figur de Wäert 1 op 2, 3, an esou weider.__
 10. Elo musse mir eppes bei setzen, dat op d'Nooricht _gewonnen_ reagéiert. Klick op d'Haapt-Figur (déi op der Tafel). Setz hei dëse Skript nach dobei: 
 ```scratch
-    when I receive won
-    say join Congratulations! You scored score
+    Wenn ich gewonnen empfange
+    sage verbinde Glückwunsch! Dein Punktestand: Punkte
 ```
-(sage verbinde Glückwunsch! Dein Punktestand: Punkte)
 
 ###Test däi Projet
 __Klick op de grénge Fändel.__
@@ -144,8 +143,8 @@ Beim Test stelle mir zwéin Problemer fest. Éischtens, wann ee falsch réid kom
 
 11. Setz dëse Skript bei all fënnef Äntwert-Figure bei fir den éischte Problem ze léisen (Erënner dech wéi ee Skripter ka kopéiren):
 ```scratch
-    when FLAG clicked
-    show
+    Wenn FLAG angeklickt
+    zeige dich
 ```
 
 Fir den zweete Problem ze léisen, musse mir d'_wiederhole bis__ Schläif vun der Haapt-Figur ënnerbrieche wann de Spiller op déi richteg Äntwert klickt. Dofir benotze mir eng nei Variabel. Mir setzen se op __0__ wann d'Spill ufänkt an op __1__ wann d'Spill gewonne gouf. Elo ënnerbrieche mir d'__wiederhole bis__ Schläif, entweder wa _Punkte_ op __0__ ass, OR wann d'__ gewonnen__ Variabel op __1__ ass.
@@ -153,24 +152,24 @@ Fir den zweete Problem ze léisen, musse mir d'_wiederhole bis__ Schläif vun de
 12. Erstell en nei Variabel an nenn se _gewonnen_
 13. Änner d'Skripter vun der Haapt-Figur esou:
 ```scratch
-    when FLAG clicked
-    hide
-    repeat pick random 1 to 5       
-        next costume
-    (end repeat)
-    set answer to costume
-    set score to 110
-    set won to 0
-    repeat until score = 0 or won? =1
-        change score by -10
-        set pixelate effect to score
-        set colour effect to score
-        show
-        wait 1 secs
-    (end repeat)
+    Wenn FLAG angeklickt
+    verstecke dich
+    wiederhole Zufallszahl von 1 bis 5       
+        nächstes Kostüm
+    (Ende wiederhole)
+    setze Antwort auf costume
+    setze Punkte auf 110
+    setze gewonnen auf 0
+    wiederhole bis Punkte = 0 oder gewonnen = 1
+        ändere Punkte um -10
+        setze Pixel-Effekt auf Punkte
+        setze Farbe-Effekt auf Punkte
+        zeige dich
+        warte 1 Sek.
+    (Ende wiederhole bis)
     
-    When I receive won
-    set won to 1
+    Wenn ich won empfange
+    setze won auf 1
     clear graphics effects
     say join Congratulations! You scored score
 ```
