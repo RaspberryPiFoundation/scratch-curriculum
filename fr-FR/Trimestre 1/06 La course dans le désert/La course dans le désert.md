@@ -1,11 +1,14 @@
-Niveau 2
+Niveau 6
 
  
 
 # La Course dans le désert
 
 __Introduction :__
-Ce jeu est un jeu qui se joue à 2 joueurs, où un perroquet et un lion font la course l’un contre l’autre dans le désert. Chaque joueur doit appuyer sur une touche du clavier aussi vite que possible pour faire avancer son personnage. Le premier qui atteint le bord de l’écran a gagné !
+
+Ce jeu est un jeu qui se joue à 2 joueurs, où un perroquet et un lion font la course l’un contre l’autre dans le désert. Chaque joueur doit appuyer sur une touche du clavier aussi vite que possible pour faire avancer son personnage. 
+
+Le premier qui atteint le bord de l’écran a gagné !
 
  
 
@@ -26,17 +29,13 @@ Ce jeu est un jeu qui se joue à 2 joueurs, où un perroquet et un lion font la 
 Nous voulons que le personnage se déplace lorsque tu appuie sur une touche.
 
 1. D’abord, selectionne le lion et fais-le avancer de 4 pas quand tu appuies sur la touche “L”. 
-
 ```scratch
-
     quand l est pressé  
         avancer de 4 pas
 ```
 
 2. Ensuite, sélectionne le perroquet et fais-le avancer de 4 pas quand tu appuies sur la touche “A”. 
-
 ```scratch
-  
     quand a est pressé  
         avancer de 4 pas
 ```
@@ -45,6 +44,7 @@ Nous voulons que le personnage se déplace lorsque tu appuie sur une touche.
 ### Teste Ton Projet
 
 __Clique sur le drapeau vert.__
+
 Est-ce que ton lion se déplace quand tu appuies sur “L” ?
 Est-ce que ton perroquet se déplace quand tu appuies sur “A” ?
 
@@ -61,17 +61,13 @@ Nous avons besoin d’un moyen de démarrer la course et de savoir qui du lion o
 2. Modifie le costume du bouton : Ajoute-lui le texte “Démarrer” et clique sur OK. Place le bouton au milieu de la scène.
 
 3. Maintenant, ajoute un script qui affiche le bouton Démarrer quand le projet est lancé : 
-
 ```scratch
-  
     quand DRAPEAU pressé  
         montrer  
 ```
 4. Maintenant nous voulons que le bouton compte à rebours (c’est à dire à l’envers) à partir de 3, qu’il dise “Partez” puis qu’il disparaisse quand on clique dessus.  
 Ajoute un autre script comme celui-ci: 
-
 ```scratch
-  
     quand Bouton pressé  
         dire 3 pendant 1 secondes  
         dire 2 pendant 1 secondes  
@@ -84,6 +80,7 @@ Ajoute un autre script comme celui-ci:
 ### Teste Ton Projet
 
 __Clique sur le drapeau vert.__
+
 Quand tu cliques sur le bouton “Démarrer”, est-ce qu’il commence le compte à rebours avant de disparaitre ?
 
 __Enregistre ton projet__
@@ -97,9 +94,7 @@ Pour cela nous avons besoin d’une variable :
 1. Ajoute une variable pour tous les objets, appelée CourseDémarrée. Décoche la case qui se trouve à coté de son nom pour qu'elle ne soit pas affichée dans la scène. 
 
 2. Maintenant fais en sorte que la variable CourseDémarrée soit egale à 0 lorsque le projet est lancé pour la première fois. Change ton script "quand DRAPEAU est pressé" que tu as écris précédemment pour le bouton Démarrer comme ceci : 
-
 ```scratch
-  
     quand DRAPEAU pressé  
         montrer
         à CourseDémarrée attribuer 0
@@ -110,9 +105,7 @@ Pour cela nous avons besoin d’une variable :
 
 4. Nous devons maintenant empêcher le lion et le perroquet de partir avant que la variable CourseDémarrée soit égale à 1.  
 Clique sur le perroquet et ajoute un bloc de contrôle au script existent qui n’autorise le perroquet à avancer que si CourseDémarrée = 1. 
-
 ```scratch
-  
     quand a est pressé
         si CourseDémarrée = 1
             avance de 4 pas
@@ -125,6 +118,7 @@ Clique sur le perroquet et ajoute un bloc de contrôle au script existent qui n�
 ### Teste Ton Projet
 
 __Clique sur le drapeau vert.__
+
 Est-ce que le lion et le perroquet ne peuvent avancer que lorsque le compte à rebours est terminé ?
 
 __Enregistre ton projet__.
@@ -136,9 +130,7 @@ __Enregistre ton projet__.
 Nous voulons savoir qui gagne une course et la réinitialiser pour que tu puisse rejouer.
 
 1. Ajoute un bloc au script du perroquet qui met a variable CourseDémarrée à 0 quand le perroquet touche le bord de l’écran. 
-
 ```scratch
-  
     quand a est pressé
         si CourseDémarrée = 1  
             avance de 4 pas
@@ -152,9 +144,7 @@ Nous voulons savoir qui gagne une course et la réinitialiser pour que tu puisse
 2. Maintenant, nous voulons que le perroquet nous indique s’il a gagné la course. Enregistre un nouveau son pour le perroquet qui sera joué quand il gagnera. Clique sur sons et enregistre le bruit du perroquet qui gagne la course !
 
 3. Maintenant ajoute un bloc au script du perroquet pour qu’il joue ce son quand il a gagné: 
-
 ```scratch
-  
     quand a est pressé
         si CourseDémarrée = 1  
             avance de 4 pas
@@ -174,6 +164,7 @@ Nous voulons savoir qui gagne une course et la réinitialiser pour que tu puisse
 ### Teste Ton Projet
 
 __Clique sur le drapeau vert.__
+
 Peux-tu cliquer sur le bouton Démarrer et faire avancer les coureurs en appuyant sur les touches “A” et “L” ?
 Est-ce que les coureurs jouent leur son de la victoire et disent qu’ils ont gagné lorsqu’ils atteingnent le bord en premier ?
 
@@ -188,9 +179,7 @@ Une fois que la course est terminée, nous devons dire à tous les objets de la 
 Le coureur qui gagne la course doit prévenir qu’il a gagné.
 
 1. Clique sur le perroquet. Ajoute un bloc au script du perroquet qui diffuse “CourseTerminée” après qu’il ait dit qu’il avait gagné. 
-
 ```scratch
-  
     quand a est pressé
         si CourseDémarrée = 1  
             avance de 4 pas
@@ -205,37 +194,27 @@ Le coureur qui gagne la course doit prévenir qu’il a gagné.
  
 
 2. Maintenant nous devons ajouter un nouveau script qui écoute la diffusion du message “CourseTerminée” et replace le perroquet sur la ligne de départ. Que se passe-t-il si tu change la valeur de x? 
-
 ```scratch
-  
     quand je reçois CourseTerminée  
         mettre x à -175
 ```
- 
-
 3. Maintenant ajoute le même script sur le lion. Teste différentes valeurs de x pour être sûr que le lion et le perroquet sont bien alignés sur la ligne de départ. 
 
 4. Nous voulons aussi mettre le lion et le perroquet à la même position sur la ligne départ lorsque le projet démarre. Pour cela, ajoute un autre script sur chaque coureur qui les déplace lorsqu’on clique sur le drapeau vert. 
-
 ```scratch
-  
     quand DRAPEAU pressé  
         mettre x à -175
 ```
-  
-
- 
-
 5. Maintenant clique sur le bouton Démarrer et ajoute un script pour qu’il s’affiche quand il reçoit le message CourseTerminée. 
-  
 ```scratch
-
     quand je reçois CourseTerminée  
     montrer
 ```
+
 ### Teste Ton Projet
 
 __Clique sur le drapeau vert.__
+
 Est-ce que tu peux faire une course avec un ami, l’un courant avec le lion en appuyant sur “L”, l’autre avec le perroquet en appuyant sur “A” ?
 
 __Enregistre ton projet__
@@ -246,7 +225,7 @@ __Enregistre ton projet__
 
 - Essaie d’ajouter un accélérateur que tu ne peux utiliser qu’une fois par course qui fait avancer le perroquet ou le lion de 30 pas en 1 seule fois. 
 - Ajoute un nouveau costume avec du feu derrière chaque coureur et fais en sorte qu’il s’affiche quand l’accélérateur est utilisé. 
-- Crée un nouveau son que le coureur jouera quand il utilisera l’accélérateur. ? 
+- Crée un nouveau son que le coureur jouera quand il utilisera l’accélérateur.
 
 ### Teste Ton Projet
 
