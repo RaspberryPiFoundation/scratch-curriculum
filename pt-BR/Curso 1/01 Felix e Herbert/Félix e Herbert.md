@@ -4,7 +4,7 @@ layout: scratchProject
 
 Nível 1
 
-#Félix & Herbert
+#Félix e Herbert
 
 __Introdução:__
 Vamos criar um jogo de pega-pega com o gato Félix e o rato Herbert. 
