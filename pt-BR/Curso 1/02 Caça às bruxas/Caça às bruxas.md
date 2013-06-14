@@ -1,3 +1,6 @@
+---
+layout: scratchProject
+---
 Nível 1
 
 #Caça às bruxas
@@ -186,6 +189,3 @@ Você poderia editar seus trajes, ou usar alguns comandos da aba _Aparência_ pa
 __Parabéns, você terminou, agora aproveite!__
 
 Não esqueça que você pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
----
-layout: scratchProject
----
