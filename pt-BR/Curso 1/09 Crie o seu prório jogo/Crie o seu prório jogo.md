@@ -1,8 +1,8 @@
 Nível 3
 
-# Criar seu próprio jogo
+# Crie seu próprio jogo
 
-## Introdução
+__Introdução:__
 Neste projeto você vai planejar e criar um jogo para você e seus amigos jogarem! 
 Antes de começar a fazer, você deverá definir as diferentes partes do jogo e organizar as ideias. 
 Você pode usar como inspiração os projetos anteriores e os cartões Scratch.
