@@ -8,7 +8,7 @@ Para ganhar o jogo você deve fazer eles pararem mostrando a mesma imagem (como 
 
 ## PASSO 1: Criando um objeto que muda de traje
 
-__Vamos começar importando as imagens do jogo__
+__Vamos começar importando as imagens do jogo.__
 
 1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar.
 2. Importe um novo objeto.
@@ -29,9 +29,9 @@ acionado quando clicarmos na bandeira verde.
 Isso significa que nossos comandos estão sendo executados. Foi o clique na bandeira verde que desencadeia esta execução.
 5. Agora clique em Aparência e encaixe um comando __próximo traje__ dentro do __sempre__.
 6. Como fazer para diminuir a velocidade em que mudamos de imagem? Clique em Controle e arraste um comando __espere 1 segundos__.
-7. Ajuste o tempo de espera (um tempo de 0.1 s parece bom). O que aconteceria se não tivéssemos o comando __espere__?
+7. Ajuste o tempo de espera (um tempo de 0.1s parece bom). O que aconteceria se não tivéssemos o comando __espere__?
 
-		quando BANDEIRA clicada
+		quando BANDEIRA clicada 
 		sempre 
 			próximo traje
 			espere (0.1) segundos
@@ -60,8 +60,8 @@ na área de comandos para que ela não seja exibida no palco.
 __quando Sprite1 clicado__ e o comando __mude parado para__. 
 3. Agora precisamos fazer a imagem parar de mudar quando a variável __parado__ é igual a 1. 
 Clique controle e substitua o comando __sempre__ por um comando  __sempre se__ 
-e use um novo operador igual (=) para testar se __parado__ é igual a 0
-4. Finalmente, encaixe um comando __mude parado para 1__ logo abaixo de __quando bandeira clicada__
+e use um novo operador igual (=) para testar se __parado__ é igual a 0.
+4. Finalmente, encaixe um comando __mude parado para 1__ logo abaixo de __quando bandeira clicada__.
 
 ### Teste o projeto
 
@@ -78,7 +78,7 @@ Ele para quando você posiciona o ponteiro do mouse sobre ele sem clicar?
 
 Ele para quando você clica em outro lugar do palco? Em algum outro lugar da janela do Scratch? Em algum lugar fora da janela do Scratch?
 
-Salve seu projeto
+Salve o projeto
 
 ## Passo 4: Criando os outros objetos
 
@@ -93,7 +93,7 @@ __Clique na bandeira verde.__
 
 Todos os objetos devem mudar de traje. Tente fazê-los parar na mesma imagem!
 
-Salve seu projeto
+Salve o projeto
 
 ### Sugestões
 
@@ -158,4 +158,5 @@ Deste ponto em diante, você pode anunciar o resultado do jogo usando um bloco _
 
 
 __Parabéns você terminou, agora você pode desfrutar do jogo!__
+
 Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ no menu!

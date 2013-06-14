@@ -10,7 +10,7 @@ O objetivo é ganhar o máximo de pontos em 30 segundos!
 
 1. Crie um novo projeto Scratch.
 2. Apague o personagem do gato e substitua a imagem de fundo pela imagem nature/woods.
-3. Use o botão __escolha um sprite do arquivo__ para adicionar um novo personagem bruxa ao projeto (selecione fantasy/witch1). 
+3. Use o botão _escolha um sprite do arquivo_ para adicionar um novo personagem bruxa ao projeto (selecione fantasy/witch1). 
 
 Agora queremos que a nossa bruxa se mova
 

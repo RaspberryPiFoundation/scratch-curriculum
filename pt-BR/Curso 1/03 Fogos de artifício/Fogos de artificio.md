@@ -7,7 +7,7 @@ Neste projeto, vamos criar um show de fogos de artifício em uma cidade.
 
 ##PASSO 1: Dispare um foguete na direção do mouse
 
-__Vamos começar importando as imagens do jogo__
+__Vamos começar importando as imagens do jogo.__
 
 1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar.
 2. Importe o fundo de tela outdoor/city-with-water.
