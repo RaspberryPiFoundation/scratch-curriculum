@@ -1,3 +1,6 @@
+---
+layout: scratchProject
+---
 Nível 3
 
 # Crie seu próprio jogo

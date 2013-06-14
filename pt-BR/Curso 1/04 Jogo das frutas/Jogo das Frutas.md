@@ -1,3 +1,6 @@
+---
+layout: scratchProject
+---
 Nível 2 
 
 #Jogo das Frutas (Máquina caça-niqueis)

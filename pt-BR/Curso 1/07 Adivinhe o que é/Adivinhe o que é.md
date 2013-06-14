@@ -1,3 +1,6 @@
+---
+layout: scratchProject
+---
 Nível 3
 
 #Adivinhe o que é!

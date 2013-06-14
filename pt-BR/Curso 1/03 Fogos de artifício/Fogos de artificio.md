@@ -1,3 +1,6 @@
+---
+layout: scratchProject
+---
 Nível 1 
 
 #Fogos de artifício.
