@@ -1,109 +1,114 @@
-Level 1
+Nivel 1
 
 #Felix & Herbert
 
-__Introduction:__We are going to make a game of catch with __Felix the cat__ and __Herbert__ the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
-##￼STEP 1: Felix follows the mouse pointer
-1. Start a new project.Keep track of your progress by ticking off the boxes below:￼￼￼2. Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.3. Change the name of the sprite to Felix.4. Make sure Felix only points left-right by clicking this button:5. Create this script:
+__Introducción:__Vamos a crear un juego que se conoce en muchos paises como el juego de 'al gato y al ratón' con __Felix el gato__ y __Herbert__ el ratón como protagonistas. Tú controlaras a Herbert con el apuntador de tú ratón y debes evitar ser capturado por Felix.
+Entre más tiempo logres evadirlo mayor sera tú puntaje, pero ten cuidado con dejarte capturar porque perderas puntos!
+##￼PASO 1: Felix persigue el apuntador del ratón
+Marca con un chulito cada vez que completes una de las siguientes tareas:
+1. Comienza un nuevo proyecto.2. Oprime sobre el escenario donde se encuentra tú objeto y seleciona la etiqueta de fondos, luego debes importar el siguiente fondo: indoors/hall. Esta acción eliminara el fondo blanco original.3. Cambia el nombre del objeto a Felix.4. Asegurate que Felix solo pueda mirar de izquierda-derecha oprimir este botón:5. Crea el siguiente programa:
 
 ```scratch
-	When FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-	(end forever)
+	al presionar Bandera
+	por siempre
+		apuntar hacia apuntador del ratón
+		mover 10 pasos
+		siguiente disfraz
+		tocar tambor 62 durante 0.3 pulsos
+	(finalizar por siempre)
 ```		
-###Test Your Project__Click the green flag.__Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
-Save your project
-##STEP 2: Felix chases Herbert
-__Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.__
-1. Create another sprite using the choose new sprite from file button and selecting animals/mouse1.2. Change the name of the sprite to Herbert.3. Edit the costume and make it smaller than Felix.Try six clicks on the shrink button:4. Make sure Herbert only points left-right. 5. Give Herbert this script:
+###Prueba tú proyecto__Oprime en la bandera verde.__Felix persigue el cursor del mouse? Te da la impresión que camina cuando se mueve? Se mueve a una velocidad adecuada?
+Guarda tú proyecto
+##STEP 2: Felix persigue a Herbert
+__A continuación haremos que Felix persiga a Herbert y no al apuntador del ratón.__
+1. Crea un nuevo objeto utilizando el botón 'escoger un nuevo objeto desde archivo' y selecciona animals/mouse1.2. Cambia el nombre del objeto a Herbert.3. Edita el disfraz y haz que su tamaño sea menor que Felix. Intenta oprimir seis veces el botón de achicar objeto:4. Asegurate que Herbert unicamente pueda mirar de izquierda-derecha. 
+5. Dale a Herbert el siguiente programa:
 
 
 ```scratch
 	
-	When FLAG clicked
-	forever
-		go to mouse-pointer
-		point towards Felix
-	(end forever)
+	al presionar bandera
+	por siempre
+		ir a apuntador del ratón
+		apuntar hacia Felix
+	(finalizar para siempre)
 ```
-###Test Your Project__Click the green flag.__
-Does Herbert move with the mouse pointer? Does Felix chase Herbert?
-Save your project.
-##STEP 3: Felix says when he's caught Herbert
-__We want Felix to know when he’s caught Herbert, and tell us.__
-1. Change Felix’s script to be this:
+###Prueba tú proyecto__Oprime en la bandera verde.__
+Herbert se mueve con el apuntador del ratón? Felix persigue a Herbert?
+Guarda tú proyecto.
+##PASO 3: Felix avisa cuando capture a Herbert
+__Queremos que Felix sepa cuando atrapa a Herbert y nos avise.__
+1. Agrega lo sigueinte a tú programa de Felix:
 
 ```scratch
 	
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			say Caught you! for 1 secs
-		(end if)
-	(end forever)
+	al presionar bandera
+	por siempre
+		apuntar hacia apuntador del ratón
+		mover 10 pasos
+		siguiente disfraz
+		tocar tambor 62 durante 0.3 pulsos
+		si ¿tocando Herbert?
+			decir Te atrapé! por 1 segundos
+		(finalizar si)
+	(finalizar por siempre)
 ```
 
-###Test Your Project__Click the green flag.__
-Does Felix say when he’s caught Herbert?
-Save your project.
+###Prueba tú proyecto__Oprime en la bandera verde.__
+Felix nos avisa cuando captura a Herbert?
+Guarda tú proyecto.
 
-##STEP 4:￼Herbert turns into a ghost when he’s caught
+##PASO 4:￼Herbert se transforma en fantasma cuando es capturado
 
-__Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.__
+__Queremos que Herbert se transforme en fantasta cuando es atrapado y no que Feliz nos avise.__
 
-1. Change Felix’s script to send this message when he catches Herbert.
+1. Corrige el programa de Felix para que envie el siguiente mensaje cuando captura a Herbert.
 
 ```scratch
 	
-	when FLAG clicked
-	forever
-		point towards mouse-pointer
-		move 10 steps
-		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			broadcast caught
-			play drum 58 for 0.2 beats
-			wait 1 sec
-		(end if)
-	(end forever)
-```2. Import a new costume into Herbert from fantasy/ghost2-a.3. Edit the costume to make it smaller.Six clicks on the shrink button should do.4. Change the names of Herbert’scostumes so the mouse costume iscalled ‘alive’ and the ghost costume is called ‘dead’.5. Create a new script for Herbert to turn him into a ghost:
+	al presionar bandera
+	por siempre
+		apuntar hacia apuntador del ratón
+		mover 10 pasos
+		siguiente disfraz
+		tocar tambor 62 durante 0.3 pulsos
+		si ¿tocando Herbert?
+			enviar a todos capturado
+			tocar tambor 58 durante 0.2 pulsos
+			esperar 1 segundos
+		(finalizar si)
+	(finalizar por siempre)
+```2. Importemos un nuevo disfraz para Herbert del siguiente lugar fantasy/ghost2-a.3. Edita el disfraz y haz su tamaño más pequeño.Con oprimir seis veces el botón de achicar objeto sera suficiente.4. Cambia el nombre del disfraz de Herbert a ‘vivo’ en su estado normal y 'muerto' cuando se convierta en fantasma.5. Crea un nuevo programa para convertir a Herbert en un fantasma:
 ```scratch
 	
-	when I receive caught
-	switch to costume dead
-	wait 0.5 secs
-	switch to costume alive
+	al recibir capturado
+	cambiar el disfraz a muerto
+	esperar 0.5 segundos
+	cambiar el disfraz a vivo
 ```
 	
-###Test Your Project__Click the green flag.__
-Does Herbert turn into a ghost when he’s caught?Does Felix play the right sounds at the right time?Does Felix still stay still for long enough for Herbert to get away
-Save your project
-##￼STEP 5: Keep Score
-__Let’s add a score so we know how well we do at keeping Herbert alive.We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.__
-1. Make a variable, for all sprites, called Score. Click on Variables in the top menu, make a variable and name it score2. On the stage, create these two scripts
+###Prueba tú proyecto__Oprime en la bandera verde.__
+Herbert se convierte en fantasma cuando es capturado?Felix ejecuta los sonidos indicados en el momento preciso?Felix permanece quieto lo suficiente como para permitirle a Herbert escapar?
+Guarda tú proyecto
+##￼PASO 5: Puntaje
+__Agreguemos un puntaje para saber que tan bien lo estamos haciendo con Herbert.
+Comenzaremos con el puntaje en cero y lo incrementaremos cada segundo. Si Felix logra capturar a Herbert, descontaremos cien puntos del puntaje.__
+1. Crea una variable para todos los objetos y llámala Puntaje. Oprime sobre Variables en el menú principal y crea una variable llamada Puntaje2. Dentro del 'stage', crearemos dos scripts
 ```scratch
 	
-	when FLAG clicked
-	set score to 0
-	forever
-		change score by 1
-		wait 1 secs
-	(end forever)
+	al presionar bandera
+	fijar Puntaje a 0
+	por siempre
+		cabiar Puntaje por 1
+		esperar 1 segundos
+	(finalizar por siempre)
 	
-	when I receive caught
-	change score by -100
+	al recibir capturado
+	cambiar puntaje por -100
 ```
 	
-###Test Your Project__Click the green flag.__
-Does the score go up by one every second?Does the score go down by one hundred when Herbert is caught?What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?
-Save your project
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar
+###Prueba tú proyecto__Oprime en la bandera verde.__
+El puntaje incrementa un punto cada segundo?Se restan cien puntos del puntaje cuando capturan a Herbert?Que sucede cuando capturan a Herbert antes de alcanzar los cien puntos? 
+Perdemos nuestro puntaje cada vez que iniciamos un nuevo juego?
+Guarda tú proyecto
+__Felicitaciones, has terminado! Ahora a disfrutar tú juego!__No olvides compartir el juego con tú familia y amigos a través de __Compartir__ localizado en el menú superior.
