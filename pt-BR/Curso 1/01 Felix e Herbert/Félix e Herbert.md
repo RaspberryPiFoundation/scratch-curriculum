@@ -171,3 +171,6 @@ Salve o projeto
 
 __Parabéns, você acaba de criar o seu primeiro jogo!__
 Não esqueça que voce pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
+---
+layout: scratchProject
+---
