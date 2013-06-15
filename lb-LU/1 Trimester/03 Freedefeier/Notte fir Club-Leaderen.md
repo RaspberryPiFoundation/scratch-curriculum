@@ -2,7 +2,7 @@
 ##(Freedefeier)
 
 ###Aleedung
-Dës interaktiv Spillsaach weist e Freedefeier dat am Himmel explodéiert wann s du klicks, a spillt dobäi den Toun vum explodéierende Freedefeier of.
+Dës interaktiv Spillsaach weist e Freedefeier, dat am Himmel explodéiert wann s du klicks, a spillt dobäi den Toun vum Freedefeier of, wat explodéiert.
 
 ###Kenntnisser
 Dëse Projet couvréiert:
@@ -18,7 +18,7 @@ Dëse Projet benotzt d'Ressourcen aus dem Dossier "Backgrounds" am Scratch an d'
 Change color Glide
 
 ###Basic exercises
-Schrëtt 1: Erstell eng Rakéit déi a Richtung vun der Maus flitt
+Schrëtt 1: Stell eng Rakéit op, déi a Richtung vun der Maus flitt
 Schrëtt 2: Looss d'Rakéit explodéieren
 Schrëtt 3: Maach all Explosioun eenzegaarteg
 Schrëtt 4: De Broadcast-Problem korrigéieren
