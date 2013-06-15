@@ -1,4 +1,4 @@
-Level 1
+﻿Level 1
 
 #Fireworks
 
@@ -7,7 +7,7 @@ __Introduction:__In this project, we’ll create a fireworks display over a cit
 __Let’s import the different pictures for the game__
 1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
 2. Replace the background with outdoor/city-with-water
-3. Use the __new sprit from file__ button to add a Rocket spriteto the project (use the Resources/Rocket.png costume).
+3. Use the __new sprite from file__ button to add a Rocket spriteto the project (use the Resources/Rocket.png costume).
 4. Make the rocket hide when the greenflag is clicked.
 Now we want to make the rocket move towards the mouse when the mouse is clicked.
 5. Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
