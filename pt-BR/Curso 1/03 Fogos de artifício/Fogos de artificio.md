@@ -1,9 +1,12 @@
 ---
 layout: scratchProject
+title: Fogos de artifício
+term: 1
 ---
+
 Nível 1 
 
-#Fogos de artifício.
+#Fogos de artifício
 
 __Introdução:__
 Neste projeto, vamos criar um show de fogos de artifício em uma cidade.

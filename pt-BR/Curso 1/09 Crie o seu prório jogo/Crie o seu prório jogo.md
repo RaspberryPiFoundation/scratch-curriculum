@@ -1,5 +1,7 @@
 ---
 layout: scratchProject
+title: Crie seu próprio jogo
+term: 1
 ---
 Nível 3
 
