@@ -2,6 +2,7 @@
 layout: scratchProject
 title: Félix e Herbert
 term: 1
+
 ---
 
 Nível 1
@@ -164,7 +165,7 @@ Mantenha selecionada a opção "para todos os projetos".
 
 ###Teste o projeto
 __Clique na bandeira verde.__
-esqu
+
 Os pontos aumentam um a um a cada segundo?
 
 Os pontos diminuem de 100 quando o Herbert é pego?
