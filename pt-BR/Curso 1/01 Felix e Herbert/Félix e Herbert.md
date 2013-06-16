@@ -1,5 +1,7 @@
 ---
 layout: scratchProject
+title: Félix e Herbert
+term: 1
 ---
 
 Nível 1
