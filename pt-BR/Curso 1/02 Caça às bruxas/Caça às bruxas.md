@@ -1,5 +1,8 @@
 ---
 layout: scratchProject
+title: Caça às bruxas
+term: 1
+
 ---
 Nível 1
 
