@@ -4,7 +4,7 @@ Level 1
 
 __Introduction:__We are going to make a game of catch with __Felix the cat__ and __Herbert__ the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
 ##￼STEP 1: Felix follows the mouse pointer
-1. Start a new project.Keep track of your progress by ticking off the boxes below:￼￼￼2. Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.3. Change the name of the sprite to Felix.4. Make sure Felix only points left-right by clicking this button:5. Create this script:
+1. Start a new project.2. Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.3. Change the name of the sprite to Felix.4. Make sure Felix only points left-right by clicking this button:5. Create this script:
 
 ```scratch
 	When FLAG clicked
@@ -55,7 +55,7 @@ __Introduction:__We are going to make a game of catch with __Felix the cat__ an
 Does Felix say when he’s caught Herbert?
 Save your project.
 
-##STEP 4:￼Herbert turns into a ghost when he’s caught
+##STEP 4: Herbert turns into a ghost when he’s caught
 
 __Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.__
 
