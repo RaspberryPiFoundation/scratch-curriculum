@@ -2,7 +2,7 @@
 layout: scratchProject
 title: Fogos de artifício
 term: 1
-
+resources: 1
 ---
 
 Nível 1 
@@ -18,10 +18,9 @@ __Vamos começar importando as imagens do jogo.__
 
 1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar.
 2. Importe o fundo de tela outdoor/city-with-water.
-3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete.
-ao projeto (utilize Recursos/foguete.png).
+3. Use o botão _Escolha um sprite do arquivo_ para adicionar um objeto Foguete ao projeto (utilize Recursos/foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
-5. Também vamos fazer o foguete voar em direção ao mouse quando a teclas espaço for pressionada. 
+5. Também vamos fazer o foguete voar em direção ao mouse quando a tecla espaço for pressionada. 
 Adicione um comando __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direção do mouse:
 	
 

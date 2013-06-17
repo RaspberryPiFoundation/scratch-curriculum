@@ -3,8 +3,8 @@ layout: default
 title: Curso 1
 ---
 
-
-<ul>
+<div class="lessons_container">
+<ul class="lessons">
 {% assign count = '0' %}
 
 {% assign sorted_pages = site.pages  | sort: "url" %}
@@ -16,7 +16,11 @@ title: Curso 1
         <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
          {{ count }} - {{ p.title }}
         </a>
+	{% if p.resources == 1%}
+        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">Resources</a>
+	{%endif %}
       </li>
 	{%endif %}
   {% endfor %}
 </ul>
+</div>
