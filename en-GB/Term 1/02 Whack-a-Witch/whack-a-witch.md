@@ -64,7 +64,7 @@ Does the witch move from side to side across the screen?
 Save your project
 
 ###Things to try
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Try changing the value of the speed variable to make her fly faster or slower.__
+__Try changing the value of the speed variable to make her fly faster or slower.__
 
 __How would you make the witch get faster the longer she flies?__
 (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
