@@ -2,7 +2,7 @@ Nivel 1
 
 #Felix & Herbert
 
-__Introducción:__Vamos a crear un juego que se conoce en muchos paises como el juego de 'al gato y al ratón' con __Felix el gato__ y __Herbert__ el ratón como protagonistas. Tú controlaras a Herbert con el apuntador de tú ratón y debes evitar ser capturado por Felix.
+__Introducción:__Vamos a recrear un juego que se conoce en muchos paises como el juego de el gato y el ratón con __Felix el gato__ y __Herbert__ el ratón como protagonistas. Tú controlaras a Herbert con el apuntador de tú ratón y debes evitar ser capturado por Felix.
 Entre más tiempo logres evadirlo mayor sera tú puntaje, pero ten cuidado con dejarte capturar porque perderas puntos!
 ##￼PASO 1: Felix persigue el apuntador del ratón
 Marca con un chulito cada vez que completes una de las siguientes tareas:
@@ -19,7 +19,7 @@ Marca con un chulito cada vez que completes una de las siguientes tareas:
 ```		
 ###Prueba tú proyecto__Oprime en la bandera verde.__Felix persigue el cursor del mouse? Te da la impresión que camina cuando se mueve? Se mueve a una velocidad adecuada?
 Guarda tú proyecto
-##STEP 2: Felix persigue a Herbert
+##PASO 2: Felix persigue a Herbert
 __A continuación haremos que Felix persiga a Herbert y no al apuntador del ratón.__
 1. Crea un nuevo objeto utilizando el botón 'escoger un nuevo objeto desde archivo' y selecciona animals/mouse1.2. Cambia el nombre del objeto a Herbert.3. Edita el disfraz y haz que su tamaño sea menor que Felix. Intenta oprimir seis veces el botón de achicar objeto:4. Asegurate que Herbert unicamente pueda mirar de izquierda-derecha. 
 5. Dale a Herbert el siguiente programa:
@@ -91,7 +91,7 @@ __Queremos que Herbert se transforme en fantasta cuando es atrapado y no que Fel
 Herbert se convierte en fantasma cuando es capturado?Felix ejecuta los sonidos indicados en el momento preciso?Felix permanece quieto lo suficiente como para permitirle a Herbert escapar?
 Guarda tú proyecto
 ##￼PASO 5: Puntaje
-__Agreguemos un puntaje para saber que tan bien lo estamos haciendo con Herbert.
+__Agreguemos un marcador para saber que tan bien lo estamos haciendo con Herbert.
 Comenzaremos con el puntaje en cero y lo incrementaremos cada segundo. Si Felix logra capturar a Herbert, descontaremos cien puntos del puntaje.__
 1. Crea una variable para todos los objetos y llámala Puntaje. Oprime sobre Variables en el menú principal y crea una variable llamada Puntaje2. Dentro del 'stage', crearemos dos scripts
 ```scratch
