@@ -1,0 +1,4 @@
+#APUNTES PARA LIDERES
+##(Espanta-la-bruja)####IntroducciónEste es un proyecto para recrear un juego muy popular en las ferias Europeas. Obtendras puntos por las brujas que logres espantar de tú pantalla. La meta es lograr el mayor puntaje en un tiempo de 30 segundos.####HabilidadesEste proyecto abarca:• Configuración de una variable• Bucles• Mantener y actualizar un marcador####RecursosEste proyecto utiliza recursos de Scratch que podrás localizar dentro de las carpetas de: fondos y disfraces####Tarjetas de Scratch requeridas12_marcadores.pdf, 09_animalo y cronómetro####Ejercicios basicos1. Crea una bruja voladora2. Haz que tú bruja aparecer y desaparecer al azar 
+3. Haz que tú bruja desaparezca cuando oprimimos sobre ella
+4. Agrega un puntaje y cronómetro####Retos1. Agrega más brujas
