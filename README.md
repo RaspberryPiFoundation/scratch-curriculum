@@ -20,6 +20,9 @@ To contribute:
    if they like your work
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+## Share your experiences
+Ask questions and share your experiences with other Code Clube World local teams in our community:
+https://plus.google.com/communities/107429287353708601653
 
 ## Generating the language packs
 
