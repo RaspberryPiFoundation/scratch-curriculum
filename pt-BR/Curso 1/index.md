@@ -3,7 +3,8 @@ layout: default
 title: Curso 1
 ---
 
-<div class="lessons_container">
+<div class="row">
+<div class="one columns">
 <ul class="lessons">
 {% assign count = '0' %}
 
@@ -23,4 +24,5 @@ title: Curso 1
 	{%endif %}
   {% endfor %}
 </ul>
+</div>
 </div>
