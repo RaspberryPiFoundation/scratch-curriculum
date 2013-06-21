@@ -150,7 +150,7 @@ Quando o Félix pegar o Herbert, o jogador perderá cem pontos.__
 
 1. Clique em __Variáveis__ e Crie uma Variável chamada placar.  
 Mantenha selecionada a opção "para todos os projetos".
-2. Clique no placar e crie estes dois conjuntos de comandos.
+2. Clique no palco e crie estes dois conjuntos de comandos.
 
 		quando BANDEIRA clicado
 		mude [placar v] para (0)
