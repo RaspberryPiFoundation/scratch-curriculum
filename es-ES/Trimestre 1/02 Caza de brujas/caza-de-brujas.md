@@ -35,7 +35,7 @@ Esta variable controla la velocidad de la bruja. Usamos una variable para poder 
 
 Guarda tu proyecto
 
-###Cosas para brobar__Prueba cambiar el valor de la variable 'velocidad' para que vuele más rápido o más despacio.____¿Cómo harías que la bruja acelere según va volando?__
+###Cosas para probar__Prueba cambiar el valor de la variable 'velocidad' para que vuele más rápido o más despacio.____¿Cómo harías que la bruja acelere según va volando?__
 (Esto es más difícil, no te preocupes si no ves cómo hacerlo. Te daremos más pistas durante el resto del proyecto.)##PASO 2: Haz que la bruja aparezca y desaparezca al azar
 Para hacer el juego más divertido, queremos que la bruja parezca y desparezca al azar. Lo haremos con otro programa que se ejecuta a la vez que el que mueve a la bruja. Este nuevo programa esconde la bruja durante un tiempo, luego la muestra durante otro tiempo, y repite por siempre (o hasta que acabe el juego).
 Crea este programa para la bruja:
@@ -53,7 +53,7 @@ Guarda tu proyecto
 
 Guarda tu proyecto
 
-###Cosas para brobar__Prueba cambiar el rango de números. ¿Qué ocurre si escoges números muy grandes o muy pequeños?__(¿Te da esto alguna pista para hacer que la bruja acelere según avanza el juego?)##PASO 3: Haz que la bruja desaparezca cuando alguien pincha en ella
+###Cosas para probar__Prueba cambiar el rango de números. ¿Qué ocurre si escoges números muy grandes o muy pequeños?__(¿Te da esto alguna pista para hacer que la bruja acelere según avanza el juego?)##PASO 3: Haz que la bruja desaparezca cuando alguien pincha en ella
 Para convertirlo en un juego, tenemos que darles algo que hacer a los jugadores. Tienen que pinchar la bruja para hacerla desaparecer. Cuando se pincha la bruja, queremos que desaparezca y haga algún sonido.
 1. En la pestaña de Sonidos, importa el sonido 'electronic/fairydust'.
 2. Añade este programa a la bruja:
@@ -89,7 +89,7 @@ Guarda tu proyecto
 ###Prueba tu proyecto__Pincha la bandera verde.__ 
 Guarda tu proyecto
 
-###Cosas para brobar__¿Cómo harías que la bruja acelere según avanza la partida?__
+###Cosas para probar__¿Cómo harías que la bruja acelere según avanza la partida?__
 __Bien hecho, has completado el juego básico. Hay más cosas que puedes hacer con tu juego. ¿Te atreves con este desafío?__
 ##Desafío: Añade más brujas
 ¡Cuantas más brujas, mejor! Añadamos dos brujas.1. Duplica la bruja pinchando en el objeto con el botón derecho.2. Cambia el tamaño de cada bruja.3. Cambia la variable 'velocidad' de cada bruja para que vuelen a distintas velocidades.
@@ -98,5 +98,5 @@ Guarda tu proyecto
 
 ¿Tienes tres brujas que se mueven independientemente de lado a lado de la pantalla, aparecen y desaparecen al azar, y desaparecen cuando pinchas en ellas?
 Guarda tu proyecto
-###Cosas para brobar1. ¿Qué número de brujas es el ideal para este juego?2. ¿Puedes cambiar la apariencia de cada bruja? Puedes editar sus disfraces, o experimentar con lost bloques la paleta de Apariencia.3. ¿Puedes hacer las brujas valgan más o menos puntos? ¿Quizás la bruja más pequeña y rápida debería valer 10 puntos?
+###Cosas para probar1. ¿Qué número de brujas es el ideal para este juego?2. ¿Puedes cambiar la apariencia de cada bruja? Puedes editar sus disfraces, o experimentar con los bloques la paleta de Apariencia.3. ¿Puedes hacer las brujas valgan más o menos puntos? ¿Quizás la bruja más pequeña y rápida debería valer 10 puntos?
 __Bien hecho, has terminado, ahora puedes disfrutar de tu juego.__¡No olvides que puedes compartir tu juego con tus amigos y familia pinchando en __Compartir__ en el menú!
