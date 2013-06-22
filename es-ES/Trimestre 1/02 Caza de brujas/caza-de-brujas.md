@@ -53,46 +53,50 @@ Guarda tu proyecto
 
 Guarda tu proyecto
 
-###Cosas para brobar__Prueba cambiar el rango de números. ¿Qué ocurre si escoges números muy grandes o muy pequeños?__(¿Te da esto alguna pista para hacer que la bruja acelere según avanza el juego?)##PASO 3: Haz que la bruja desaparazce cuando alguien pincha en ella
-Para convertirlo en un juego, tenemos que darle algo que hacer al jugador. Tiene que 
-1. In the Sounds tab, import the sound electronic/fairydust. 
-2. Add this script to the witch:
+###Cosas para brobar__Prueba cambiar el rango de números. ¿Qué ocurre si escoges números muy grandes o muy pequeños?__(¿Te da esto alguna pista para hacer que la bruja acelere según avanza el juego?)##PASO 3: Haz que la bruja desaparezca cuando alguien pincha en ella
+Para convertirlo en un juego, tenemos que darles algo que hacer a los jugadores. Tienen que pinchar la bruja para hacerla desaparecer. Cuando se pincha la bruja, queremos que desaparezca y haga algún sonido.
+1. En la pestaña de Sonidos, importa el sonido 'electronic/fairydust'.
+2. Añade este programa a la bruja:
 ```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
+	al presionar sprite1
+	esconder
+	tocar sonido Fairydust
 ```
 ###Prueba tu proyecto__Pincha la bandera verde.__ 
-Does the witch disappear and play the sound when you click it?
+Cuando pinchas la bruja, ¿desaparece y se oye el sonido?
 Guarda tu proyecto
-##PASO 4: Add a score and timer
-We’ve got a witch, but now we want to make a game! We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
-1. Create a new Variable for all sprites called score, and alter the script for the witch to increase this variable by one when she is clicked.
+##PASO 4: Añade un marcador y cronómetro
+Tenemos una bruja, ¡hagamos un juego! Queremos que los jugadores reciban puntos cada vez que pinchan la bruja, pero también queremos que la partida tenga un límite de tiempo. Usamos variables para el marcador y el cronómetro.
+1. Crea una variable para todos los objetos llamada 'marcador', y cambia el programa de la bruja para incrementar esta variable cuando se pincha.
 ```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
-	change score by 1
-```2. Switch to the Stage and create a new variable (this time just for the stage) called timer. Add a new script that occurs when the green flag is clicked to set timer to 30 and reset the score to 0. Then use a repeat until block to wait a second and then reduce timer byone. This should repeat until timer is 0, at which point use stop all to stop the game.
+	al presionar sprite1
+
+	esconder
+
+	tocar sonido Fairydust
+	cambiar marcador por 1
+```2. Pincha en el escenario y crea una nueva variable (esta vez solo para el escenario) llamada 'tiempo'. Añade un nuevo programa que actúa cuando alguien pincha la bandera verde, para fijar el tiempo a 30 y poner el marcador a 0. Usa un bloque de repetición para restarle 1 al tiempo cada segundo. Esto se repite hasta que el tiempo llegue a 0, cuando detenemos el juego.
 ```scratch
 	al presionar BANDERA
-	set timer to 30
-	set score to 0
-	repeat until timer = 0
-		wait 1 secs
-		change timer by -1
-	(end repeat)
-	stop all
+	fijar tiempo a 30
+	fijar marcador a 0
+	repetir hasta que tiempo = 0
+		esperar 1 segundos
+		cambiar tiempo por -1
+	(acabar repetir)
+	detener todo
 ```
 ###Prueba tu proyecto__Pincha la bandera verde.__ 
 Guarda tu proyecto
 
-###Cosas para brobar__How might you make the witch speed up as the game goes on?__
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
-##Challenge: add more witches
-If one witch is good, more must be better! Let’s have three witches flying around.1. Duplicate the witch by right-clicking it in the sprite list.2. For each witch adjust the size of the sprite so the witches are different sizes.3. For each witch change the speed variable so that they fly at different speeds.4. Move the witches around the canvas so that they are not all together.
+###Cosas para brobar__¿Cómo harías que la bruja acelere según avanza la partida?__
+__Bien hecho, has completado el juego básico. Hay más cosas que puedes hacer con tu juego. ¿Te atreves con este desafío?__
+##Desafío: Añade más brujas
+¡Cuantas más brujas, mejor! Añadamos dos brujas.1. Duplica la bruja pinchando en el objeto con el botón derecho.2. Cambia el tamaño de cada bruja.3. Cambia la variable 'velocidad' de cada bruja para que vuelen a distintas velocidades.
+4. Cambia la posición de cada bruja en el escenario para que no vuelen juntas.
 ###Prueba tu proyecto__Pincha la bandera verde.__ 
-Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
+
+¿Tienes tres brujas que se mueven independientemente de lado a lado de la pantalla, aparecen y desaparecen al azar, y desaparecen cuando pinchas en ellas?
 Guarda tu proyecto
-###Cosas para brobar1. How many witches is a good number for the game?￼￼2. Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.3. Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+###Cosas para brobar1. ¿Qué número de brujas es el ideal para este juego?2. ¿Puedes cambiar la apariencia de cada bruja? Puedes editar sus disfraces, o experimentar con lost bloques la paleta de Apariencia.3. ¿Puedes hacer las brujas valgan más o menos puntos? ¿Quizás la bruja más pequeña y rápida debería valer 10 puntos?
+__Bien hecho, has terminado, ahora puedes disfrutar de tu juego.__¡No olvides que puedes compartir tu juego con tus amigos y familia pinchando en __Compartir__ en el menú!
