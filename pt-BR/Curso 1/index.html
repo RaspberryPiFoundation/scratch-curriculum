@@ -1,0 +1,33 @@
+---
+layout: default
+title: Curso 1
+---
+
+
+{% assign count = '0' %}
+
+{% assign sorted_pages = site.pages  | sort: "url" %}
+  {% for p in sorted_pages %}
+	{% if p.term == 1%}
+	{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+<div id="lessons">	
+<div class="row">
+<div class="twelve columns">
+<div class="lesson">
+	<img  src="{{p.url|replace: '.html','' }}.png" alt="" >
+<div class="description">   
+<h4>     {{ count }} - {{ p.title  }} </h4>    
+        <a class="project_link" href="{{ p.url }}">
+         Ver lição
+        </a>
+        <br>
+	{% if p.resources == 1%}
+        <a class="resources" href="{{p.url|replace: '.html','' }}.zip">Baixar Recursos</a>
+	{%endif %}
+	</div>
+	</div>
+</div>
+</div>
+	{%endif %}
+  {% endfor %}
+</div>
