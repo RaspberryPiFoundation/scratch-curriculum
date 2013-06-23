@@ -3,14 +3,14 @@ layout: default
 title: Curso 1
 ---
 
-
+<div id="lessons">	
 {% assign count = '0' %}
 
 {% assign sorted_pages = site.pages  | sort: "url" %}
   {% for p in sorted_pages %}
 	{% if p.term == 1%}
 	{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-<div id="lessons">	
+
 <div class="row">
 <div class="twelve columns">
 <div class="lesson">
@@ -24,6 +24,12 @@ title: Curso 1
 	{% if p.resources == 1%}
         <a class="resources" href="{{p.url|replace: '.html','' }}.zip">Baixar Recursos</a>
 	{%endif %}
+	<br>
+{% if p.no_sb ==1	%}
+{%else %}
+   <a class="resources" href="{{p.url|replace: '.html','' }}.sb">Baixar o jogo pronto</a>
+   
+{%endif %}
 	</div>
 	</div>
 </div>
