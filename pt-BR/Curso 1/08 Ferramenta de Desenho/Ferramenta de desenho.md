@@ -1,3 +1,9 @@
+---
+layout: scratchProject
+title: Ferramenta de desenho
+term: 1
+resources: 1
+---
 Nível 3
 
 # Ferramenta de desenho

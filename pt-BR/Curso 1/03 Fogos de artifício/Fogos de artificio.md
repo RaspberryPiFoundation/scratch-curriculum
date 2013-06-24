@@ -1,20 +1,26 @@
+---
+layout: scratchProject
+title: Fogos de artifício
+term: 1
+resources: 1
+---
+
 Nível 1 
 
-#Fogos de artifício.
+#Fogos de artifício
 
 __Introdução:__
 Neste projeto, vamos criar um show de fogos de artifício em uma cidade.
 
 ##PASSO 1: Dispare um foguete na direção do mouse
 
-__Vamos começar importando as imagens do jogo__
+__Vamos começar importando as imagens do jogo.__
 
-1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar
-2. Importe o fundo de tela outdoor/city-with-water
-3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete
-ao projeto (utilize Recursos/foguete.png).
+1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar.
+2. Importe o fundo de tela outdoor/city-with-water.
+3. Use o botão _Escolha um sprite do arquivo_ para adicionar um objeto Foguete ao projeto (utilize Recursos/foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
-5. Também vamos fazer o foguete voar em direção ao mouse quando a teclas espaço for pressionada. 
+5. Também vamos fazer o foguete voar em direção ao mouse quando a tecla espaço for pressionada. 
 Adicione um comando __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direção do mouse:
 	
 
@@ -113,7 +119,7 @@ Salve o projeto.
 __Clique na bandeira verde.__ 
 Certifique-se de que o foguete faz barulho e desaparece quando atinge o mouse.
 
-3. Importe um novo objeto usando Recursos/explosao.png
+3. Importe um novo objeto usando Recursos/explosao.png.
 4. Quando ele ouve a mensagem explodir, ele deve desaparecer e, em seguida, mover para a posição do foguete usando o comando __vá para__.
  A explosão deve aparecer, em seguida, desaparecer novamente um segundo depois.
 
@@ -186,7 +192,7 @@ A imagem da explosão se espalha a partir do centro e cresce lentamente?
 ### Sugestões
 Que tal tentar fazer cada explosão ainda mais original, alterando o tamanho e a velocidade de crescimento da explosão.
 
-Salve seu projeto
+Salve o projeto
 
 ## PASSO 4: Correção do problema no anuncio da explosão 
 Você lembra que tínhamos um problema quando mantínhamos pressionado o botão do mouse?
@@ -217,4 +223,4 @@ __Clique na bandeira verde e em seguida, pressione o botão do mouse sobre o pal
 
 A imagem da explosão aparece no lugar certo e na hora certa?
 
-Salve seu projeto
+Salve o projeto
