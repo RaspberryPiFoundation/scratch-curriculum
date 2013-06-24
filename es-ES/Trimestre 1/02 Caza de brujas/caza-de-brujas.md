@@ -58,7 +58,7 @@ Guarda tu proyecto
 1. En la pestaña de Sonidos, importa el sonido 'electronic/fairydust'.
 2. Añade este programa a la bruja:
 ```scratch
-	al presionar sprite1
+	al presionar Objeto1
 	esconder
 	tocar sonido Fairydust
 ```
@@ -69,7 +69,7 @@ Guarda tu proyecto
 Tenemos una bruja, ¡hagamos un juego! Queremos que los jugadores reciban puntos cada vez que pinchan la bruja, pero también queremos que la partida tenga un límite de tiempo. Usamos variables para el marcador y el cronómetro.
 1. Crea una variable para todos los objetos llamada 'marcador', y cambia el programa de la bruja para incrementar esta variable cuando se pincha.
 ```scratch
-	al presionar sprite1
+	al presionar Objeto1
 
 	esconder
 
