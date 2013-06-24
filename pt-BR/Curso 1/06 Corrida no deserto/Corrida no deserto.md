@@ -1,4 +1,9 @@
-﻿
+---
+layout: scratchProject
+title: Corrida no deserto
+term: 1
+---
+
 Nível 2 
 
 # Corrida no deserto
@@ -82,7 +87,7 @@ Para isso vamos usar variáveis.
 
 5. Adicione uma variável para todos os objetos chamada __correndo__. 
 Desmarque a caixa ao lado dela para que ela não apareça no palco.
-6. Agora mude _correndo_ para 0 (zero) quando o projeto for executado pela primeira vez. 
+6. Agora mude __correndo__ para 0 (zero) quando o projeto for executado pela primeira vez. 
 Mude o bloco de comandos __quando bandeira clicada__ criado anteriormente, e faça ele parecer com o seguinte:
 
 
@@ -115,7 +120,7 @@ O leão e o papagaio correm somente após o fim da contagem regressiva?
 Queremos saber quem ganhou a corrida e reiniciar o jogo quando acabar para que você possa
 jogar novamente.
 
-1. Adicione um bloco de comandos para o papagaio que mude a variável __correndo_ para 0 quando ele tocar a borda da tela.
+1. Adicione um bloco de comandos para o papagaio que mude a variável __correndo__ para 0 quando ele tocar a borda da tela.
 
 
 
