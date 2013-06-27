@@ -3,7 +3,7 @@ Nivel 3
 #Creá tu propio juego
 
 __Introducción:__
-En este proyecto vas a diseñar y crear un juego para vos y tus amigos. Necesitás pensar sobre las distintas partes y planificar tus ideas antes de comenzar a hacerlo en Scratch. Podés usar ideas de otros proyectos y las tarjetas de Scratch para ayudarte.
+En este proyecto vas a diseñar y crear un juego para vos y tus amigos. Necesitás pensar sobre las distintas partes y planificar tus ideas antes de comenzar a hacerlo en Scratch. Podés ayudarte con ideas de otros proyectos y las tarjetas de Scratch.
 
 ##PASO 1: Planificando tu juego
 
