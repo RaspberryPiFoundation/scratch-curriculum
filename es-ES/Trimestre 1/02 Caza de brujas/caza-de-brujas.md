@@ -37,7 +37,7 @@ Guarda tu proyecto
 
 ###Cosas para probar__Prueba cambiar el valor de la variable 'velocidad' para que vuele más rápido o más despacio.____¿Cómo harías que la bruja acelere según va volando?__
 (Esto es más difícil, no te preocupes si no ves cómo hacerlo. Te daremos más pistas durante el resto del proyecto.)##PASO 2: Haz que la bruja aparezca y desaparezca al azar
-Para hacer el juego más divertido, queremos que la bruja parezca y desparezca al azar. Lo haremos con otro programa que se ejecuta a la vez que el que mueve a la bruja. Este nuevo programa esconde la bruja durante un tiempo, luego la muestra durante otro tiempo, y repite por siempre (o hasta que acabe el juego).
+Para hacer el juego más divertido, queremos que la bruja aparezca y desaparezca al azar. Lo haremos con otro programa que se ejecuta a la vez que el que mueve a la bruja. Este nuevo programa esconde la bruja durante un tiempo, luego la muestra durante otro tiempo, y repite por siempre (o hasta que acabe el juego).
 Crea este programa para la bruja:
 ```scratch
 	al presionar BANDERA
@@ -58,7 +58,7 @@ Guarda tu proyecto
 1. En la pestaña de Sonidos, importa el sonido 'electronic/fairydust'.
 2. Añade este programa a la bruja:
 ```scratch
-	al presionar sprite1
+	al presionar Objeto1
 	esconder
 	tocar sonido Fairydust
 ```
@@ -69,7 +69,7 @@ Guarda tu proyecto
 Tenemos una bruja, ¡hagamos un juego! Queremos que los jugadores reciban puntos cada vez que pinchan la bruja, pero también queremos que la partida tenga un límite de tiempo. Usamos variables para el marcador y el cronómetro.
 1. Crea una variable para todos los objetos llamada 'marcador', y cambia el programa de la bruja para incrementar esta variable cuando se pincha.
 ```scratch
-	al presionar sprite1
+	al presionar Objeto1
 
 	esconder
 
