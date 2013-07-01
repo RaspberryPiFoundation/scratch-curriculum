@@ -221,55 +221,53 @@ __Pista:__ Probá creando una nueva variable llamada distorsion a usar. Fijala a
 
 Guardá tu proyecto.
 
-##Challenge 3: Make a game have a few rounds
+##Desafío 3: Hacé que el juego tenga varias rondas
 
-At the moment, each game is independent. Change it so that the game proceeds in several rounds. For instance, have one game take three rounds, so the player has to guess three pictures and can score up to 300 points.
+Por el momento, cada juego es independiente. Cambiá eso así el juego tiene varias rondas. Por ejemplo, que el juego tenga tres rondas, de modo que el jugador tenga que adivinar tres imagenes y sumar hasta 300 puntos.
 
-__Hint:__ You’ll need an extra variable to store the grand total across all the rounds. You’ll also need a loop to go through the different rounds.
+__Pista:__ Vas a necesitar una variable extra para guardar el gran total de todas las rondas. También vas a necesitar un ciclo para ir por cada ronda.
 
-__Hint:__ You’ll also have to make the wrong guesses reappear at the start of each round. Perhaps you could use a broadcast message to do that?
+__Pista:__ Podrías hacer que cada respuesta incorrecta reaparezca al comienzo de cada ronda. Quizás podrías enviar un mensaje para hacer eso.
 
-Save your project
+Guardá tu proyecto.
 
-##Challenge 4: Make later rounds more difficult
+##Desafío 4: Hacé que las rondas siguientes sean más difíciles
 
-As you go through different rounds, make the game harder each time.
+Mientras más vayan avanzando de rondas, hacé el juego más difícil.
 
-Does each round need to score the same? Should you get more points for guessing quickly in the later, more difficult rounds?
+¿Cada ronda tiene que valer los mismos puntos? ¿Deberían valer más puntos las rondas más difíciles?
 
-__Hint:__ How will you know which round you’re in? How can you use that to change the difficulty and the score?
+__Pista:__ ¿Cómo sabés en qué ronda estás? ¿Cómo podés usar eso para cambiar la dificultad y el puntaje?
 
-Save your project
+Guardá tu proyecto.
 
-##Challenge 5: Keep playing until the player gets it wrong
+##Desafío 5: Seguí jugando hasta que el jugador se equivoque
 
-Instead of using a fixed number of rounds, keep playing the game until the player doesn’t get a picture right. This probably only works if the game gets harder in later rounds.
+En lugar de usar un número fijo de rondas, seguí jugando hasta que el jugador no adivine una imagen. Esto probablemente sólo funcione si el juego se vuelve difícil a medida que se avanza de ronda.
 
-Save your project
+Guardá tu proyecto.
 
-##Challenge 6: Make the game harder or easier depending on how well the player does
+##Desafío 6: Hacé el juego más fácil o más difícil dependiendo de qué tan bien le va al jugador
 
-Rather than always making the game harder, make the game adjust the difficulty depending on the skill of the player. If they get the right picture quickly, make the next game a bit harder. If they don’t get the right picture, or only get it late, make the next game a bit easier.
+En lugar de siempre hacer el juego más difícil, hacé que el juego ajuste la dificultad dependiendo de la habilidad del jugador. Si adivina una imagen rápido, hacé que el próximo sea un poquito más difícil. Si no adivina la imagen, o sólo lo hace lento, hacé que la próxima ronda sea un poquito más difícil.
 
-This idea only really works if you don’t add up someone’s score over several rounds.
+La idea sólo funciona realmente si no sumás los puntos a medida que pasan las rondas.
 
-Save your project
+Guardá tu proyecto.
 
-##Challenge 7: Keep track of the highest score
+##Desafío 7: Mantené el puntaje más alto
 
-Keep track of the highest score. If someone manages to beat it, ask for their name and update the highest score. Make sure the highest score, and the name of the person who scored it, are displayed.
+Mantené el registro de cuál es el puntaje más alto. Si alguien lo supera, preguntale su nombre y actualizá el puntaje más alto. Asegurate que el puntaje y el nombre de la persona se muestren.
 
-Save your project
+Guardá tu proyecto.
 
+##Desafío 8: Hacé que las respuestas incorrectas sean caras
 
-##Challenge 8: Make wrong guesses expensive
+Por el momento, no se penaliza a los que cliquean en las imágenes lo más rápido que puedan. Cambiá el juego así el puntaje baja un poquito cada vez que el jugador elige una respuesta incorrecta.
 
-At the moment, there’s no penalty to just clicking on all the answer sprites as quickly as you can. Change the game so that the score goes down a bit every time you make an incorrect guess.
+¿Esto mejora el juego?
 
-Does this make the game better?
+Guardá tu proyecto.
 
-Save your project
-
-
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__Bien hecho, hemos terminado. ¡Ahora a disfrutar de tu juego!__
+No olvides que podés compartir tu juego con amigos y familiares haciendo clic en __Compartir__ en el menú.
