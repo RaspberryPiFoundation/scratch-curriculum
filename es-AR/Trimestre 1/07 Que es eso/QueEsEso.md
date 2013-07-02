@@ -13,7 +13,7 @@ Queremos que aparezcan algunas imágenes en el pizarrón.
 1. Creá un nuevo proyecto de Scratch y borrá el objeto gato.
 2. Hacé clic en Escenario y luego en la pestaña Fondos. Importá el fondo "chalkboard" (que quiere decir "pizarrón") que está en la categoría "Interiores".
 3. Importá un nuevo objeto y ponele el disfraz que quieras. Podés elegir cualquiera de la categoría "Cosas".
-4. Posicioná el nuevo objeto en el medio del pizarrón. Si lo necesitás, podés hacerlo más grande o más chico.
+4. Posicioná el nuevo objeto en el medio del pizarrón. Si lo necesitás, podés agrandarlo o achicarlo.
 5. Hacé clic en la pestaña Disfraces e importá cuatro cosas más. ¡Puede ser lo que vos quieras!
 Ahora hagamos que aparezca una imagen al azar.
 6. Creá este script:
@@ -33,15 +33,15 @@ __Hacé clic en la bandera verde.__
 
 __Clickealo varias veces más.__
 
-¿Ves distintos disfraces cada vez? A veces vas a ver el mismo difraz dos veces seguidas, pero esto es normal. También te vas a dar cuenta que el objeto parpadea cuando cambia el disfraz. Vamos a arreglar eso en el paso siguiente.
+¿Ves distintos disfraces cada vez? A veces vas a ver el mismo difraz dos veces seguidas, pero esto es normal. También te vas a dar cuenta de que el objeto parpadea cuando cambia el disfraz. Vamos a arreglar eso en el paso siguiente.
 
 ##PASO 2: Distorsionar las imágenes
 
 __Ahora hagamos que la imagen se distorsione cuando aparece, y que se aclare después de unos segundos.__
 
-Vamos a usar una variable numérica para controlar cuánta distorsión va a haber. Si el número es alto, habrá mucha distorsión. Si el número baja, habrá menos y menos distorsión. El número puede actuar como contador de tiempo, como en la __Tarjeta de Scratch Timer__.
+Vamos a usar una variable numérica para controlar cuánta distorsión va a haber. Si el número es alto, habrá mucha distorsión. Si el número baja, habrá menos distorsión. El número puede actuar como contador de tiempo, como en la __Tarjeta de Scratch Timer__.
 
-1. En la paleta Variables, crear una variable llamada Puntos.
+1. En la paleta Datos, crear una variable llamada puntos.
 
 2. Cambiá el script para que se vea así:
 
@@ -52,17 +52,17 @@ Vamos a usar una variable numérica para controlar cuánta distorsión va a habe
 	repetir número al azar entre 1 y 5		
 		siguiente disfraz
 	(fin repetir)
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+	fijar puntos a 110
+	repetir hasta que puntos = 0
+		cambiar puntos por -10
+		establecer efecto pixelizar a puntos
+		establecer efecto color a puntos
+		mostrar
+		esperar 1 segundos
+	(fin repetir)
 ```
 
-Tenés que agregar el bloque esconder arriba y luego poner el bloque puntaje a 110, y todo lo que viene después.
+Tenés que agregar la palabra esconder al principio, luego fijar la variable puntos en 110 y todo lo que viene después.
 
 ###Probá tu proyecto
 __Hacé clic en la bandera verde.__
@@ -92,34 +92,34 @@ Hasta acá, hicimos que una imagen al azar aparezca lentamente y que el puntaje 
 Primero, necesitamos saber cuál es la respuesta correcta.
 
 1. Creá una nueva variable llamada __respuesta__. Asegurate que sea para todos los objetos.
-2. Cambiá el script que escribiste para que guarde la respuesta correcta. Agregá los bloques set [answer] to costume # después del primer ciclo repetir:
+2. Cambiá el script que escribiste para que guarde la respuesta correcta. Agregá la sentencia fijar respuesta a # de disfraz después del primer ciclo repetir:
 
 ```scratch
 
 	al presionar BANDERA
 	esconder
-	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+	repetir número al azar entre 1 y 5			
+		siguiente disfraz
+	(fin repetir)
+	fijar respuesta a # de disfraz
+	fijar puntos a 110
+	repetir hasta que puntos = 0
+		cambiar puntos por -10
+		establecer efecto pixelizar a puntos
+		establecer efecto color a puntos
+		mostrar
+		esperar 1 segundos
+	(fin repetir)
 ```
 __Ahora necesitamos agregar los objetos en los que el jugador va a poder hacer clic.__
 
 3. Duplicá el objeto principal y arrastrá el duplicado a la esquina inferior izquierda del escenario.
 4. Renombrá este objeto a __respuesta1__ (esto hará más fácil hablar de él).
-5. Borrá el script de __answer1__ y todos sus disfraces excepto el primero.
+5. Borrá el script de __respuesta1__ y todos sus disfraces excepto el primero.
 6. Hacé otra vez los últimos tres pasos, pero poné el objeto __respuesta2__ al lado de __respuesta1__ y borrá todos los disfraces excepto el segundo.
 7. Hacé esto tres veces más para __respuesta3__, __respuesta4__ y __respuesta5__.
 
-Debes terminar con una fila de cinco objetos de respuesta a lo largo de la parte inferior del escenario, cada uno mostrando un disfraz distinto. __Ninguno de los objetos de respuesta debe tener scripts__.
+Tenés que terminar con una fila de cinco objetos de "respuesta" a lo largo de la parte inferior del escenario, cada uno mostrando un disfraz distinto. __Ninguno de los objetos de respuesta debe tener scripts__.
 
 Ahora queremos que cada objeto responda al ser cliqueado y haga algo dependiendo de si es o no la respuesta correcta.
 
@@ -127,26 +127,26 @@ Ahora queremos que cada objeto responda al ser cliqueado y haga algo dependiendo
 
 ```scratch
 
-	when answer1 clicked
-	if answer=1
-		broadcast won
-	else
-		hide
-	(end if)
+	al presionar respuesta1
+	si respuesta = 1
+		enviar a todos gano
+	si no
+		esconder
+	(fin si)
 ```
 9. Arrastrá este script dentro de cada uno de los objetos de respuesta. __En cada objeto, cambiá el 1 a 2, 3, y así sucesivamente__.
 10. Ahora tenemos que agregar algo que muestre el mensaje ganador. Volvé al objeto1, el que está en el pizarrón. Agregá este script extra:
 
 ```scratch
 
-	when I receive won
-	say join Congratulations! You scored score
+	al recibir gano
+	decir unir ¡Felicitaciones! Puntos: puntos
 ```
 
-###Prueba tu proyecto
+###Probá tu proyecto
 __Hacé click en la bandera verde.__
 
-Cuadno pruebes tu juego, podés usar el __answer monitor__ en el escenario para que te diga cuál es la respuesta correcta. Esto está bien para probar.
+Cuando pruebes tu juego, podés usar el monitor de la variable __respuesta__ en el escenario para que te diga cuál es la respuesta correcta. Esto está bien para probar.
 
 ¿Qué pasa cuando clickeás en la _respuesta correcta__?
 
@@ -154,50 +154,50 @@ Cuadno pruebes tu juego, podés usar el __answer monitor__ en el escenario para 
 
 ¿Qué pasa con la respuesta correcta cuando __comienza un nuevo juego__?
 
-Las pruebas van a mostrar dos problemas. Primero, las respuestas incorrectas no vuelven a aparecer cuando comienza el nuevo juego. Segundo, el puntaje no deja de bajar cuando adivinás la respuesta correcta.
+Las pruebas van a evidenciar dos problemas. Primero, las respuestas incorrectas no vuelven a aparecer cuando comienza el nuevo juego. Segundo, el puntaje no deja de bajar cuando adivinás la respuesta correcta.
 
 11. Para arreglar el primer problema, agregá este script a cada uno de los cinco objetos respuesta:
 
 ```scratch
 
-	when FLAG clicked
-	show
+	al presionar BANDERA
+	mostrar
 ```
 
-Para arreglar el segundo problema, necesitamos detener la repetición del ciclo del __objeto pregunta__ cuando el jugador hace clic en la respuesta correcta. Vamos a usar una nueva variable para hacerlo. Vamos a ponerla en __cero__ cuando el juego comienza y luego la pondremos en __uno__ cuando el jugador haya ganado. Vamos a hacer que el ciclo repetir hasta se detenga cuando el puntaje alcance __cero__ o la __bandera juego-ganado__ se ponga en __uno__.
+Para arreglar el segundo problema, necesitamos detener la repetición del ciclo del __objeto pregunta__ cuando el jugador hace clic en la respuesta correcta. Vamos a usar una nueva variable para hacerlo. Vamos a ponerla en __cero__ cuando el juego comienza y luego la pondremos en __uno__ cuando el jugador haya ganado. Vamos a hacer que el ciclo repetir hasta se detenga cuando el puntaje alcance __cero__ o la __bandera gano?__ se ponga en __uno__.
 
-12. Creá una nueva variable llamada gano?
-13. Cambiá los scripts para que queden así:is:
+12. Creá una nueva variable llamada __gano?__
+13. Modificá los scripts para que queden así:
 
 ```scratch
 
-	when FLAG clicked
-	hide
-	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	set won to 0
-	repeat until score = 0 or won? =1
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+	al presionar BANDERA
+	esconder
+	repetir número al azar entre 1 y 5			
+		siguiente disfraz
+	(fin repetir)
+	fijar respuesta a # de disfraz
+	fijar puntos a 110
+	fijar gano? a 0
+	repetir hasta que puntos = 0 o gano? = 1
+		cambiar puntos por -10
+		fijar efecto pixelizar a puntos
+		fijar efecto color a puntos
+		mostrar
+		esperar 1 segundos
+	(fin repetir)
 	
-	When I receive won
-	set won to 1
-	clear graphics effects
-	say join Congratulations! You scored score
+	al recibir gano
+	fijar gano? en 1
+	quitar efectos gráficos
+	decir unir ¡Felicitaciones! Puntos: puntos
 ```
 
 Guardá tu proyecto.
 
 __Cuando termines, ¡vas a haber hecho un juego básico!__
 
-Hay algunas cosas más que podés hacer con tu juego. ¡Tomá estos desafíos!
+Hay algunas cosas más que podés hacer con tu juego. ¡Aceptá estos desafíos!
 
 ##Desafío 1: Hacé el juego más fácil o más difícil
 
@@ -211,13 +211,13 @@ Guardá tu proyecto.
 
 ##Desafío 2: Distorsioná la imagen de forma diferente en cada juego
 
-Por el momento, cada fase del juego usa la misma distorsión. En el Paso 2, probaste varios tipos diferentes de distorsiones que anda bie ncon el color y la pixelación que usamos.
+Por el momento, cada fase del juego usa la misma distorsión. En el Paso 2 probaste varios tipos diferentes de distorsiones que andan bien con el color y la pixelación que usamos.
 
 Encontrá otras distorsiones que anden bien.
 
-Cambiá el juego de modo que cada jugada use una distorsión diferente en el ciclo repetir hasta.
+Cambiá el juego de modo que cada jugada use una distorsión diferente en el ciclo __repetir hasta__.
 
-__Pista:__ Probá creando una nueva variable llamada distorsion a usar. Fijala a un valor al azar al inicio del juego. Usá bloques si en el cuerpo del ciclo repetir hasta para aplicar la distorsión correcta al juego.
+__Pista:__ Probá creando una nueva variable llamada __distorsion_a_usar__. Fijala a un valor al azar al inicio del juego. Usá bloques __si__ en el cuerpo del ciclo __repetir hasta__ para aplicar la distorsión correcta al juego.
 
 Guardá tu proyecto.
 
@@ -233,9 +233,9 @@ Guardá tu proyecto.
 
 ##Desafío 4: Hacé que las rondas siguientes sean más difíciles
 
-Mientras más vayan avanzando de rondas, hacé el juego más difícil.
+A medida que el jugador vaya avanzando de ronda, el juego debe volverse más difícil.
 
-¿Cada ronda tiene que valer los mismos puntos? ¿Deberían valer más puntos las rondas más difíciles?
+¿En cada ronda se tienen que calcular igual los puntos? ¿Deberían valer más puntos las rondas más difíciles?
 
 __Pista:__ ¿Cómo sabés en qué ronda estás? ¿Cómo podés usar eso para cambiar la dificultad y el puntaje?
 
@@ -249,9 +249,9 @@ Guardá tu proyecto.
 
 ##Desafío 6: Hacé el juego más fácil o más difícil dependiendo de qué tan bien le va al jugador
 
-En lugar de siempre hacer el juego más difícil, hacé que el juego ajuste la dificultad dependiendo de la habilidad del jugador. Si adivina una imagen rápido, hacé que el próximo sea un poquito más difícil. Si no adivina la imagen, o sólo lo hace lento, hacé que la próxima ronda sea un poquito más difícil.
+En lugar de siempre hacer el juego más difícil, hacé que el juego ajuste la dificultad dependiendo de la habilidad del jugador. Si adivina una imagen rápido, hacé que el próximo sea un poquito más difícil. Si no adivina la imagen, o sólo lo hace lento, hacé que la próxima ronda sea un poquito más fácil.
 
-La idea sólo funciona realmente si no sumás los puntos a medida que pasan las rondas.
+La idea sólo funciona realmente si no sumás los puntos entre rondas.
 
 Guardá tu proyecto.
 
