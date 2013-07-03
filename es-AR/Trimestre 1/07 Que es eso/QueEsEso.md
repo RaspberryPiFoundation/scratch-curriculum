@@ -39,7 +39,7 @@ __Clickealo varias veces más.__
 
 __Ahora hagamos que la imagen se distorsione cuando aparece, y que se aclare después de unos segundos.__
 
-Vamos a usar una variable numérica para controlar cuánta distorsión va a haber. Si el número es alto, habrá mucha distorsión. Si el número baja, habrá menos distorsión. El número puede actuar como contador de tiempo, como en la __Tarjeta de Scratch Timer__.
+Vamos a usar una variable numérica para controlar cuánta distorsión va a haber. Si el número es alto, habrá mucha distorsión. Si el número baja, habrá menos distorsión. El número puede actuar como contador de tiempo, como en la __Tarjeta de Scratch Contador de Tiempo__.
 
 1. En la paleta Datos, crear una variable llamada puntos.
 
