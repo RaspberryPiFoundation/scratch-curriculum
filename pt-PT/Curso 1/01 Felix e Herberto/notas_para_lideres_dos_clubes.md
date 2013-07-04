@@ -1,24 +1,34 @@
-# Instruções aos monitores
-# # (Félix e Herbert)
+# NOTAS PARA OS LÍDERES DOS CLUBES
+## (Félix e Herberto)
 
-__Introdução:__
-Vamos fazer um jogo de pega-pega com Félix o gato e Herbert o rato. Você controla Herbert com o mouse e tenta fugir do Félix. Quanto mais tempo você conseguir fugir, mais pontos você marca. Mas não seja pego, porque assim você vai perder pontos! Este é um projeto simples para introduzir os conceitos básicos do Scratch.
+####Introdução:
 
-Competências
-Este projeto abrange:
-1. Mudar trajes e aparência;
-2. Contar pontos;
-3. Mensagens de difusão.
+Vamos criar um jogo da apanhada com o gato Félix e o rato Herberto. O jogador
+controla o Herberto com o rato do computador e tenta evitar ser apanhado pelo
+Félix. Quanto mais tempo conseguir evitar ser apanhado, mais pontos ganha. Se
+for apanhado, perderá pontos! Este é um projecto simples para apresentar os
+conceitos básicos do Scratch.
 
-### Recursos
-Este projeto utiliza recursos encontrados nos trajes e fundos de tela do Scratch.
+####Competências
+
+Este projecto inclui:
+1. Mudar trajes e aparência
+2. Manter e estabelecer a pontuação
+3. Difusão de mensagens
+
+###Recursos
+
+Este projeto utiliza recursos que se encontram nas pastas de Cenários e Trajes
+do Scratch.
 
 ### Cartões Scratch necessários
-Siga o mouse
+
+- Seguir o rato
 
 ### Exercícios básicos
-Passo 1: Félix segue o ponteiro do mouse
-Passo 2: Félix persegue o Herbert
-Passo 3: Félix diz quando ele pegar o Herbert
-Passo 4: Herbert vira fantasma quando pego 
-Passo 5: Conte os pontos
+
+- PASSO 1: O Félix persegue o ponteiro do rato do computador
+- PASSO 2: O Félix persegue o Herberto
+- PASSO 3: O Félix diz «Apanhei-te!»
+- PASSO 4: O Herberto transforma-se num fantasma
+- PASSO 5: Contam-se os pontos

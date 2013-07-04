@@ -1,25 +1,36 @@
-# Instruções aos monitores
+# NOTAS PARA OS LÍDERES DOS CLUBES
 ## (Caça às bruxas)
 
-__Introdução:__
-Você ganha pontos acertando nas bruxas que aparecem na tela. O objetivo é conseguir o máximo possível de pontos em 30 segundos.
+###Introdução:
+
+O jogador ganha pontos acertando (clicando) nas bruxas que aparecem no palco. O
+objetivo é conseguir o máximo possível de pontos em 30 segundos.
 
 ### Competências
-Este projeto abrange:
-• A definição de uma variável;
-• Laços de repetição;
-• Contagem de pontos.
+
+Este projecto inclui:
+1. Definir variáveis
+2. Usar ciclos não infinitos
+3. Inicializar e contabilizar pontos
 
 ### Recursos
-Este projeto utiliza recursos encontrados nos trajes e fundos de tela do Scratch.
-### Cartoes Scratch necessários
-Manter a contagem, temporizador, animação.
 
-Exercícios ### básicos
-Etapa 1: Crie uma bruxa voadora
-Etapa 2: Faça a bruxa aparecer e desaparecer de maneira aleatória 
-Etapa 3: Faça a bruxa desaparecer quando ela é clicada 
-Etapa 4: Adicione um placar e um cronômetro
+Este projeto utiliza recursos que se encontram nas pastas de Cenários e Trajes
+do Scratch.
 
-Desafios
-1. Adicione mais bruxas
+### Cartões Scratch necessários
+
+- Manter pontuação
+- Temporizador
+- Animação
+
+### Exercícios básicos
+
+- PASSO 1: Criar uma bruxa voadora
+- PASSO 2: Fazer a bruxa aparecer e desaparecer aleatoriamente
+- PASSO 3: Fazer a bruxa desaparecer ao ser clicada
+- PASSO 4: Adicionar pontuação e um cronómetro
+
+###Desafios
+
+- Adicionar mais bruxas

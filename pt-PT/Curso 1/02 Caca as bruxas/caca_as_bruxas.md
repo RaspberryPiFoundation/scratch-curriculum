@@ -3,186 +3,231 @@ Nível 1
 #Caça às bruxas
 
 __Introdução:__
-Neste jogo você deve caçar as bruxas que aparecem na tela. Você ganha pontos que acertar uma delas. 
-O objetivo é ganhar o máximo de pontos em 30 segundos!
+Neste jogo deves caçar as bruxas que aparecem no ecrã. Ganhas pontos sempre que
+acertares numa delas. O objetivo é obter o máximo de pontos possível em 30
+segundos!
 
-##PASSO 1: Crie uma bruxa voadora
+##PASSO 1: Criar uma bruxa voadora
 
-1. Crie um novo projeto Scratch.
-2. Apague o personagem do gato e substitua a imagem de fundo pela imagem nature/woods.
-3. Use o botão __escolha um sprite do arquivo__ para adicionar um novo personagem bruxa ao projeto (selecione fantasy/witch1). 
+1. Crie um novo projecto Scratch.
 
-Agora queremos que a nossa bruxa se mova
+2. Remove o actor gato e substitui o cenário existente pelo cenário
+«Natureza/woods», mudando-lhe o nome para «bosque».
 
-4. Adicione uma variável chamada "velocidade" e selecione a opção __para este objeto apenas__.
+3. Cria um novo actor, clicando no ícone «Escolher actor a partir da biblioteca»
+à direita de «Novo actor» e escolhendo o actor Fantasia/Witch», mudando-lhe o
+nome para «a bruxa». Agora, queremos que a nossa bruxa se mova.
 
-__Importante:__ No Palco, deve aparecer “objeto1 velocidade”.
-Se aparecer apenas “velocidade”, apague a variável e crie de novo selecionando "para este objeto apenas".
-Desmarque a caixa ao lado do bloco velocidade no quadro de variáveis para que ela não apareça no Palco.
-Nós usaremos esta variável para poder mudar a velocidade da bruxa durante o jogo.
+4. Cria uma variável chamada «a velocidade», seleccionando a opção «Apenas para
+este actor». No monitor desta variável que surge no palco deve estar escrito «a
+bruxa a velocidade». Se estiver escrito apenas «a velocidade», remova a variável
+e crie-a de novo, seleccionando «Apenas para este actor». Desmarca a caixa de
+selecção ao lado do bloco «a velocidade» na paleta «Dados» para que o seu
+monitor não apareça no palco. Usaremos esta variável para controlar a velocidade
+da bruxa à medida que o jogo decorre.
 
-Nós queremos que a bruxa comece a se mexer quando o jogo iniciar, então crie estes comandos:
+5. Queremos que a bruxa comece a mexer quando o jogo começar. Para isso, depois
+de seleccionar o actor «a bruxa», crie o seguinte guião:
 
-		quando BANDEIRA clicado
-		mude [velocidade v] para (5)
-		sempre
-			mova(velocidade) passos
-		fim
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	altera [a velocidade ▼] para [5]
+	repete para sempre,
+		anda (a velocidade) passos
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 		
-###Teste o projeto
-__Clique na bandeira verde__ e olhe o que a bruxa faz. 
+###Testa o teu projeto
 
-Por que ela fica trancada no canto da tela ?
+__Clica na bandeira verde__ e vê o que a bruxa faz. Por que razão fica encravada
+na borda do palco?
 
-6. Para não ficar trancada a bruxa deve dar meia volta quando tocar na borda do palco. 
-Abaixo do comando __mova__, adicione um  comando `se tocar na borda, volta`.
+6. Para a bruxa não ficar encravada, precisamos que ela dê meia volta quando
+bater na borda do palco. Melhor, precisamos que _ressalte_ na borda do palco.
+Sob o comando [anda (a velocidade) passos], adiciona um  comando [se estiveres a
+bater na borda, ressalta].
 
-		quando BANDEIRA clicado
-		mude [velocidade v] para (5)
-		sempre
-			mova(velocidade) passos
-			se tocar na borda, volta
-		fim
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	altera [a velocidade ▼] para [5]
+	repete para sempre,
+		anda (a velocidade) passos
+		se estiveres a bater na borda, ressalta
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 		
-7. Para evitar que a bruxa fique de cabeça para baixo, clique  __somente esquerda-direita__ na área de propriedades do personagem.
+7. Para evitar que a bruxa fique de cabeça para baixo, clica no botão azul com
+um «i» no canto superior esquerdo do ícone que representa «a bruxa» e escolhe o
+estilo de rotação «olha apenas para a esquerda e para a direita».
 
-###Teste o projeto
+###Testa o teu projeto
 
-__Clique na bandeira verde.__ 
+__Clica na bandeira verde.__ A bruxa move-se de um lado para o outro
+atravessando todo o palco?
 
-A bruxa se move de um lado par a outro atravessando a tela?
+__Para parar, carrega no sinal de _stop_.__
 
-Salve o projeto
+###Coisas a experimentar
 
-###Sugestões
+__Experimentar alterar o valor da variável «a velocidade» para fazer a bruxa
+voar mais depressa ou mais devagar.__
 
-__Tente mudar o valor da variável velocidade para a bruxa voar mais rápido ou mais devagar.__
+__Como farias para que a bruxa fosse acelerando ao longo do tempo?__ (Esta é um
+desafio difícil, por isso não te preocupes se não descobrires uma solução. Terás
+mais pistas à medida que trabalhas neste projecto.)
 
-__Como você faria a bruxa acelerar com o passar do tempo?__
-(Esta é uma pergunta difícil, mas não se preocupe se você não sabe como fazer. Você terá mais dicas enquanto você trabalha neste projeto.)
+##PASSO 2: Fazer a bruxa aparecer e desaparecer aleatoriamente
 
-##PASSO 2: Faça a bruxa aparecer e desaparecer de maneira aleatória
+Para tornar o jogo mais divertido, vamos fazer a bruxa aparecer e desaparecer
+aleatoriamente. Para isso, vamos criar um guião que é executado ao mesmo tempo
+que o guião que faz a bruxa mexer. Este novo guião precisa de esconder a bruxa
+durante um período de tempo aleatório e depois mostrá-la também durante um
+período de tempo aleatório, repetindo esta sequência para sempre (ou até que o
+jogo acabe). Cria o seguinte guião para a bruxa:
 
-Para tornar o jogo mais divertido, vamos fazer as bruxas aparecerem e desaparecerem aleatoriamente. 
-Faremos isso com um outro conjunto de comandos que é executado ao mesmo tempo que os comandos que fazem a bruxa se mexer.
-Estes novos comandos vão esconder a bruxa por um tempo aleatório e em seguida a bruxa vai aparecer, também por um tempo aleatório. 
-Esta operação é repetida para sempre (ou até que o jogo acabe).
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete para sempre,
+		esconde-te
+		espera (um valor ao acaso entre (2) e (5)) s
+		mostra-te
+		espera (um valor ao acaso entre (3) e (5)) s
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
-Crie estes comandos para a bruxa:
+###Testa o teu projeto
 
-		quando BANDEIRA clicado
-		sempre
-			desapareça
-			espere (sorteie número entre (2) e (5)) segundos
-			apareça
-			espere (sorteie número entre (3) e (5)) segundos
-		fim
+__Clica na bandeira verde.__ A bruxa move-se de um lado para o outro,
+atravessando todo o palco, e desaparecendo e aparecendo aleatoriamente?
 
-###Teste o projeto
+###Coisas a experimentar
 
-__Clique na bandeira verde.__ 
+__Tenta alterar as gamas dos números aleatórios. O que acontece se escolheres
+números muito grandes ou números muito pequenos?__ (Será que isto te dá pistas
+sobre como fazer a bruxa acelerar com o decorrer do jogo?)
 
-A bruxa se mexe de um lado para o outro atravessando a tela, desaparecendo e aparecendo aleatoriamente?
+##PASSO 3: Fazer a bruxa desaparecer ao ser clicada
 
-Salve o seu projeto
+Para transformar o projecto num jogo, precisamos de dar alguma coisa que fazer
+ao jogador. O jogador precisará de clicar na bruxa para a fazer desaparecer.
+Quando a bruxa for clicada, queremos que desapareça e que toque um som.
 
-###Sugestões
+1. No separador «Sons» da bruxa, remove o som «pop» e escolhe um novo som a
+partir da biblioteca, nomeadamente o som «Electrónicos/fairydust». Altera o nome
+desse novo som para «pó de fadas».
 
-__Tente mudar os valores entre os quais os números são sorteados. 
-O que acontece se você escolher números muito grandes ou muito pequenos?__
-(Isto dá pistas sobre como fazer a bruxa acelerar de acordo com a duração do jogo?)
+2. Adiciona este guião à bruxa:
 
-##PASSO 3: Faça a bruxa desaparecer ao é clicada
-
-Para transformar isso em um jogo, precisamos que o jogador faça algo. Eles precisam clicar na bruxa para que ela desapareça. 
-Ao ser clicada, a bruxa deve desaparecer e também vamos aproveitar para toca um som, assim o jogo ficará mais divertido!
-
-1. Na aba de Sons, importe o som electronic/fairydust. 
-2. Adicione estes comandos para a bruxa:
-
-		quando objeto1 clicado
-		desapareça
-		toque o som [Fairydust v]
+```scratch
+	Quando alguém clicar em ti
+	esconde-te
+	toca o som [pó de fadas ▼]
+	[fim do guião]
+```
 		
-###Teste o projeto
+###Testa o teu projeto
 
-__Clique na bandeira verde.__
+__Clica na bandeira verde.__ A bruxa desaparece e toca o som pretendido quando
+lhe clicas?
 
-A bruxa desaparece e toca um som quando clicada?
+##PASSO 4: Adicionar pontuação e um cronómetro
 
-Salve o projeto
+Temos uma bruxa, mas queremos é fazer um jogo! Queremos pontuar sempre que
+clicarmos na bruxa, mas também que o jogo tenha uma duração limitada. Podemos
+usar variáveis, tanto para a pontuação, como para o cronómetro.
 
-##Passo 4: Adicione um placar e um cronômetro
+1. Cria uma nova variável, para todos os actores, chamada «a pontuação». Altera
+o guião da bruxa para adicionar um a esta variável sempre que ela for clicada.
 
-Tudo bem, nós temos uma bruxa que voa pela tela, mas o que nós queremos fazer é um jogo! 
-Além de fazer a bruxa desaparecer vamos também marcar pontos cada vez que clicamos na bruxa.  
-Mas não é só isso, também vamos inserir um limite de tempo para a partida. 
-
-Para fazer um placar e o um cronômetro nós podemos usar variáveis.
-
-1. Crie uma nova variável __para todos os objetos__ chamada placar, 
-e modifique os comandos da bruxa para somar um a esta variável cada vez que clicarmos em uma bruxa.
-
-
-		quando objeto1 clicado
-		desapareça
-		toque o som [Fairydust v]
-		mude [placar v] por (1)
-
+```scratch
+	Quando alguém clicar em ti
+	esconde-te
+	toca o som [pó de fadas ▼]
+	adiciona a [a pontuação ▼] o valor (1)
+	[fim do guião]
+```
 	
-2. Vá para o Palco e crie uma nova variável (dessa vez somente para o palco, usando a opção __para	este objeto apenas__) e dê o nome de tempo. 
-Adicione novos comandos que serão executado quando a bandeira verde for clicada. 
-Estes comandos servem para mudar o tempo para 30 e zerar o placar. 
-Em seguida use um comando __repita até__ para esperar um segundo e diminuir o tempo de um. Isto deve ser repetido até que o tempo seja 0. 
-
-Quando o tempo chegar a zero, devemos usar um comando __pare tudo__ para interromper a partida.
+2. Cria uma nova variável, para todos os actores, chamada «o tempo disponível».
+Adiciona ao palco um guião que, quando a bandeira verde for clicada, inicializa
+as variáveis que criaste, i.e., atribui o valor 30 a «o tempo disponível» e o
+valor 0 à pontuação. Depois dessas inicializações, usamos um comando [até que
+<>, repete] ir esperando um segundo e reduzindo em uma unidade o valor da
+variável «o tempo disponível» até que o tempo disponível se esgote, ou seja, até
+que o valor da variável «o tempo disponível» se torne 0, altura em que usamos o
+comando [pára [tudo ▼]] para parar o jogo.
 	
-		quando BANDEIRA clicado
-		mude [cronômetro v] para (30)
-		mude [placar v] para (0)
-		repita até <[cronômetro] = [0]>
-			espere (1) segundos
-			mude [cronômetro] por (-1)
-		fim
-		pare tudo
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	altera [o tempo disponível ▼] para [30]
+	altera [a pontuação ▼] para [0]
+	até que <[o tempo disponível] = [0]>, repete
+		espera (1) s
+		adiciona a [o tempo disponível ▼] o valor (-1)
+	[fim do comando «até que repete»]
+	pára [tudo ▼]
+	[fim do guião]
+```
 
-###Teste o projeto
+3. Carrega no botão direito do rato sobre o monitor da variável «a pontuação» e
+escolhe «visor grande». Depois, arruma esse monitor no canto superior esquerdo
+do palco.
 
-__Clique na bandeira verde.__
+4. Faz o mesmo para o monitor da variável «o tempo disponível», arrumando-o no
+canto superior direito do palco.
 
-Salve o seu projeto
+###Testa o teu projeto
 
+__Clica na bandeira verde.__
 
-###Sugestões
-__Como você faria para acelerar a bruxa durante a partida?__
+###Coisas a experimentar
 
+__Como farias para acelerar a bruxa à medida que o tempo passa?__
 
-__Parabéns, você terminou o jogo básico. Existem mais coisas que você pode fazer. Tente este desafio!__
+__Parabéns, terminaste o jogo básico. No entanto, há mais coisas a fazer no teu
+jogo. Aceita este desafio!__
 
-##Desafio: Adicione mais bruxas
+##DESAFIO: Adicionar mais bruxas
 
-Se uma bruxa é bom, várias bruxas deve ser ainda mais legal! Então, vamos criar três bruxa voando pela tela.
+Se o jogo com uma bruxa é bom, com várias bruxas deve ser ainda melhor! Vamos
+criar pôr três bruxas a esvoaçar por aí.
 
-1. Duplique a bruxa fazendo clicando com o botão direito sobre ela, na lista de personagens em baixo à direita da tela.
-2. Para cada bruxa ajuste o tamanho do personagem para que cada uma delas tenha um tamanho diferente.
-3. Para cada bruxa mude a variável velocidade para que cada uma voe com velocidade diferente das outras.
-4. Distribua as bruxas pelo palco para que elas não fiquem todas juntas.
+1. Clica o botão direito do rato sobre a bruxa, na área «Actores», e escolhe
+«duplicar» para duplicares a bruxa. Repete o processo para criares a terceira
+bruxa. Podes dar nomes próprios a cada bruxa. Por exemplo, «a Josefina».
 
-###Teste o projeto
-__Clique na bandeira verde.__
+2. Selecciona cada uma das bruxas na área «Actores» e ajusta o tamanho de cada
+uma delas, de modo a que todas tenham tamanhos diferentes.
 
-Você vê três bruxas que se movem de um lado a outro da tela, 
-que aparecem e desaparecem aleatoriamente, e que desaparecem quando você clica nelas?
+3. Para cada bruxa, altera a variável «a velocidade» de modo a que cada bruxa
+voe a uma velocidade diferente da velocidade das restantes.
 
-Salve o seu projeto
+4. Altera a posição das bruxas no palco de modo a que não se sobreponham
+demasiado. Experimenta colocar as bruxas mais pequenas mais acima no palco e
+dar-lhes uma velocidade menor: quando mais pequena, mais acima e mais devagar.
+Deixa que elas se sobreponham parcialmente. Verás que parece haver profundidade
+no jogo.
 
+###Testa o projeto
 
-###Sugestões
-1. Qual a quantidade adequada de bruxas para o jogo ?
-2. Você pode fazer as bruxas terem aparências diferentes? 
-Você poderia editar seus trajes, ou usar alguns comandos da aba _Aparência_ para mudá-las.
-3. Você pode fazer o número de pontos ganhos para cada bruxa ser diferente? Que tal fazer a bruxa mais veloz (e menor) valer 10 pontos?
+__Clica na bandeira verde.__ Vês três bruxas que se movem de um lado para o
+outro, atravessando todo o palco, e desaparecendo e aparecendo aleatoriamente?
+As bruxas desaparecem e tocam o som pretendido quando lhes clicas? O jogo pára
+ao fim de 30 segundos? A pontuação é actualizada, quando apanhas uma bruxa?
 
-__Parabéns, você terminou, agora aproveite!__
+###Coisas a experimentar
 
-Não esqueça que você pode compartilhar seu jogo com todos os seus amigos e família clicando em __Compartilhar__ na barra de menu!
+1. Qual a quantidade adequada de bruxas para este jogo?
+
+2. Consegues dar aparências diferentes à bruxas? Tanto podes editar os seus
+trajes como podes usar comandos da paleta «Aparência».
+
+3. Consegues fazer as bruxas valerem pontos diferentes? Que tal atribuir mais
+pontos às bruxas mais pequenas ou mais velozes?
+
+__Parabéns, terminaste! Desfruta o teu novo jogo!__
+
+Não te esqueças que podes partilhar o teu jogo com todos os Scratchadores
+carregando no botão «Partilha»!
