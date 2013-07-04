@@ -1,220 +1,285 @@
 Nível 1 
 
-#Fogos de artifício.
+#Fogo de artifício
 
 __Introdução:__
-Neste projeto, vamos criar um show de fogos de artifício em uma cidade.
+Neste projeto vamos criar um espectáculo de fogo de artifício nos céus de uma
+cidade.
+
+##PASSO 1: Disparar um foguete que sobe na direcção do ponteiro do rato
+
+__Vamos importar as diferentes imagens para o jogo__
+
+1. Cria um novo projeto Scratch. Remove o actor gato clicando nele com o botão
+direito do rato e carregando em «»remover.
+
+2. Clica no palco, à esquerda da área «Actores» e depois clica no separador
+«Cenários». Importa o cenário «Exterior/city-with-water» e muda-lhe o nome para
+«cidade com água». Aproveita para remover o cenário em branco.
+
+3. Na área «Actores», usa o botão «Carregar actor a partir de arquivo» para
+adicionares ao projecto um novo actor chamado «o foguete». Usa a imagem
+«Recursos/foguete.png».
+
+4. Faz com que o foguete se esconda quando a bandeira verde for clicada.
+
+5. Queremos que o foguete suba em direção ao ponteiro do rato quando a tecla
+espaço for pressionada. Adiciona um comando [Quando alguém pressionar a tecla
+[espaço ▼]] e adiciona sob esse bloco comandos para fazer o foguete mostrar-se e
+deslizar na direcção do ponteiro do rato:
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	[fim do guião]
+
+	Quando alguém pressionar a tecla [espaço ▼]
+	mostra-te
+	desliza em (1) s para as coordenadas (x: (a coordenada x do rato), y: (a coordenada y do rato))
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Clica na bandeira verde, posiciona o ponteiro do rato sobre o palco e
+pressiona a barra de espaço.__ O foguete aparece e eleva-se em direção ao
+ponteiro do rato? O que acontece se moveres o rato e pressionares de novo a
+barra de espaço?
+
+6. Os foguetes não costumam andar de lado. Vamos fazer com que o foguete comece
+sempre na parte de baixo do palco, alinhado com o ponteiro do rato. Antes de
+fazer o foguete aparecer, usa o comando [vai para as coordenadas (x: (), y: ())]
+para fazer o foguete ir verticalmente para a parte de baixo do palco, mas
+horizontalmente para a coordenada x do rato.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	[fim do guião]
+
+	Quando alguém pressionar a tecla [espaço ▼]
+	vai para as coordenadas (x: (a coordenada x do rato), y: (-200))
+	mostra-te
+	desliza em (1) s para as coordenadas (x: (a coordenada x do rato), y: (a coordenada y do rato))
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Clica na bandeira verde, posiciona o ponteiro do rato sobre o palco e
+pressiona a barra de espaço.__ O foguete aparece na base do palco e eleva-se em
+direção ao ponteiro do rato? O que acontece se moveres o rato e pressionares de
+novo a barra de espaço?
+
+7. Finalmente, vamos usar o botão do rato em vez da barra de espaço. Para isso,
+envolvemos o nosso guião pelo comando [se <o botão do rato está pressionado>,
+[]], que por sua vez envolvemos pelo comando [repete para sempre, []]. Depois,
+trocamos o bloco [Quando alguém pressionar a tecla [espaço ▼]] pelo bloco
+[Quando alguém clicar em A BANDEIRA VERDE]. Finalmente, asseguramo-nos de que o
+foguete começa escondido acrescentando o comando [esconde-te] ao início do
+guião. Uma vez que o outro guião do foguete se tornou redundante, podemos
+removê-lo.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete para sempre,
+		se <o botão do rato está pressionado>, então
+			vai para as coordenadas (x: (a coordenada x do rato), y: (-200))
+			mostra-te
+			desliza em (1) s para as coordenadas (x: (a coordenada x do rato), y: (a coordenada y do rato)) 
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Clica na bandeira verde e, em seguida, clica sobre o palco. Clica novamente
+noutro ponto do palco.__
+
+###Coisas a experimentar
+
+1. Tenta alterar o local onde o foguete se posiciona antes de se lançar para que
+ele se eleve com alguma inclinação.
+
+2. Tenta fazer uns foguetes mais lentos ou mais rápidos que outros.
+
+__Para parar, carrega no sinal de _stop_.__
+
+##PASSO 2: Fazer o foguete explodir
+
+1. O primeiro passo para fazer o foguete explodir é fazê-lo tocar o som de
+explosão em «Recursos\lançamento e explosão.wav» antes de ele se começar a mover
+e fazê-lo desaparecer quando atingir a posição do ponteiro do rato quando foi
+clicado.Para importar o som, vai ao separador «Sons» do actor «o foguete» e
+clica no botão «Carregar som a partir de arquivo». Aproveita para remover o som
+«miau».
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete para sempre,
+		se <o botão do rato está pressionado>, então
+			vai para as coordenadas (x: (a coordenada x do rato), y: (-200))
+			toca o som [lançamento e explosão ▼]
+			mostra-te
+			desliza em (1) s para as coordenadas (x: (a coordenada x do rato), y: (a coordenada y do rato))
+			esconde-te
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+2. Em seguida, faz o foguete difundir uma nova mensagem quando explodir. Esta mensagem será recebida e tratada mais tarde.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete para sempre,
+		se <o botão do rato está pressionado>, então
+			vai para as coordenadas (x: (a coordenada x do rato), y: (-200))
+			toca o som [lançamento e explosão ▼]
+			mostra-te
+			desliza em (1) s para as coordenadas (x: (a coordenada x do rato), y: (a coordenada y do rato))
+			esconde-te
+			difunde a mensagem [Eu, foguete, explodi! ▼]
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+###Testa o teu projecto
+
+__Clica na bandeira verde.__  Certifica-te de que o foguete faz o barulho de
+lançamento e explosão e que desaparece quando atinge a posição do ponteiro do
+rato quando este foi clicado.
+
+3. Importa um novo actor a partir do arquivo «Recursos/a explosão 1.png». Altera o seu nome para «a explosão».
+
+4. Este novo actor deve começar por se esconder, logo que o jogo começar. Depois, sempre que receber a mensagem «Eu, foguete, explodi!», a explosão deve mover-se para a posição do foguete, pelo que usamos o comando [vai para a posição de [o foguete ▼]]. Depois, explosão deve aparecer e, um segundo depois, voltar a desaparecer.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	[fim do guião]
+
+	Quando receberes a mensagem [Eu, foguete, explodi! ▼]
+	vai para a posição de [o foguete ▼]
+	mostra-te
+	espera (1) s
+	esconde-te
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Lança um novo foguete.__ Quando explode, o foguete é substituído pela
+representação da explosão? O que acontece se mantiveres o botão do rato
+pressionado enquanto o moves? (Não se preocupe, corrigiremos o problema mais
+tarde).
+
+##PASSO 3: Fazer com que cada explosão seja única
+
+1. Podemos fazer com que cada explosão seja diferente usando o comando [altera o
+teu efeito [cor ▼] para ()], indicando um valor aleatório entre 1 e 200 para
+esse efeito. Devemos alterar o efeito de cor antes de mostrar a explosão.
+
+```scratch
+	Quando receberes a mensagem [Eu, foguete, explodi! ▼]
+	altera o teu efeito [cor ▼] para (um valor ao acaso entre (1) e (200))
+	vai para a posição de [o foguete ▼]
+	mostra-te
+	espera (1) s
+	esconde-te
+	[fim do guião]
+```
+
+### Testa o teu projeto
+
+__Clica na bandeira verde.__ Lança vários foguetes. Cada explosão tem uma cor
+diferente?
+
+2. Adiciona algumas representações diferentes da explosão usando as imagens que
+estão nos arquivos «Recursos/a explosão 2.png» e «Recursos/a explosão 3.png».
+Muda os nomes dos três trajes para «explosão 1», «explosão 2» e «explosão 3».
+Altera o guião para, antes de mostrar a explosão, passar para o traje seguinte.
+
+```scratch
+	Quando receberes a mensagem [Eu, foguete, explodi! ▼]
+	passa para o próximo traje
+	altera o teu efeito [cor ▼] para (um valor ao acaso entre (1) e (200))
+	vai para a posição de [o foguete ▼]
+	mostra-te
+	espera (1) s
+	esconde-te
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Clica na bandeira verde.__ Lança vários foguetes. Cada foguete tem uma
+representação diferente para a sua explosão?
+
+3. Finalmente, vamos fazer a explosão crescer ao longo do tempo em vez de a
+fazer simplesmente aparecer. Em vez de esperar um segundo, faz reduz o tamanho
+do actor para 5% antes de o mostrares e, em seguida, depois de ser mostrado,
+adiciona cinquenta vezes 2% ao tamanho do actor usando um bloco de repetição.
+
+```scratch
+	Quando receberes a mensagem [Eu, foguete, explodi! ▼]
+	passa para o próximo traje
+	altera o teu efeito [cor ▼] para (um valor ao acaso entre (1) e (200))
+	vai para a posição de [o foguete ▼]
+	altera o teu tamanho para (5) %
+	mostra-te
+	repete (50) vezes
+		adiciona (2) % ao teu tamanho
+	[fim do comando «repete vezes»]
+	esconde-te
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Clica na bandeira verde.__ Lança um foguete. A representação da explosão vai
+crescendo lentamente a partir do centro do foguete?
+
+###Coisas a experimentar
+
+Que tal tentares fazer cada explosão ainda mais original, alterando o tamanho e
+a velocidade de crescimento da explosão?
+
+##PASSO 4: Correcção do problema na difusão da mensagem anunciando a explosão 
+
+Lembras-te que tínhamos um erro quando mantínhamos pressionado o botão do rato?
+Isso ocorre porque, mal o foguete difunde a mensagem anunciando a sua explosão,
+o ciclo repete-se e uma nova mensagem é difundida, antes de se ter terminado de
+processar a mensagem anterior.
+
+1. Para corrigir este erro, podemos substituir o comando [difunde a mensagem
+[Eu, foguete, explodi! ▼]] pelo comando [difunde a mensagem [Eu, foguete,
+explodi! ▼] e espera]. Desta forma, o ciclo não se repetirá até que a explosão
+termine de se mostrar.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete para sempre,
+		se <o botão do rato está pressionado>, então
+			vai para as coordenadas (x: (a coordenada x do rato), y: (-200))
+			toca o som [lançamento e explosão ▼]
+			mostra-te
+			desliza em (1) s para as coordenadas (x: (a coordenada x do rato), y: (a coordenada y do rato))
+			esconde-te
+			difunde a mensagem [Eu, foguete, explodi! ▼] e espera
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+###Testa o teu projeto
+
+__Clica na bandeira verde e em seguida, pressiona o botão do rato sobre o palco
+sem o largares.__ A explosão aparece no lugar certo e na altura certa?
 
-##PASSO 1: Dispare um foguete na direção do mouse
-
-__Vamos começar importando as imagens do jogo__
-
-1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar
-2. Importe o fundo de tela outdoor/city-with-water
-3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete
-ao projeto (utilize Recursos/foguete.png).
-4. Faça o foguete desaparecer quando a bandeira verde for clicada.
-5. Também vamos fazer o foguete voar em direção ao mouse quando a teclas espaço for pressionada. 
-Adicione um comando __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direção do mouse:
-	
-
-	    quando BANDEIRA clicado
-	    desapareça
-
-	    quando a tecla [espaço] for pressionada
-	    apareça
-	    deslize em (1) segundos para x: (mouse x) y: (mouse y) 
-
-###Teste o projeto
-__Clique na bandeira verde, posicione o mouse sobre o palco e pressione a barra de espaço.__
-
-O foguete aparece e vai em direção ao mouse?
-O que acontece se você mover o mouse e pressionar espaço novamente?
-
-6. Fogos de artifício não andam de lado. Vamos fazer com que ele sempre comece embaixo da tela alinhado com o mouse. 
-Antes de fazer o foguete aparecer, use o comando __vá para__ e faça com que ele vá para a parte de baixo da tela, m
-as que mantenha a sua posição horizontal (x) do mouse.
-
-
-
-	    quando BANDEIRA clicado
-	    desapareça
-
-
-	    quando a tecla [espaço] for pressionada
-	    vá para x: (mouse x) y: (-200)
-	    apareça
-	    deslize em (1) segundos para x: (mouse x) y: (mouse y)
-
-
-###Teste o projeto
-__Clique na bandeira verde, posicione o mouse sobre o palco e pressione a barra de espaço.__ 
-
-O foguete voa na direção do mouse, saindo debaixo da tela? 
-
-O que acontece se você mover o mouse e pressionar espaço novamente?
-
-7. Por último, vamos usar o botão do mouse em vez da barra de espaço. Para fazer isso, 
-nós podemos colocar nossos comandos dentro de um bloco __sempre se mouse pressionado__.
-Em seguida, substituir o comando __quando tecla espaço pressionada__ por __quando bandeira verde clicado__ 
-e por último fazer com que o foguete não esteja aparecendo no início.
-
-
-
-
-	    quando BANDEIRA clicado
-	    desapareça 
-	    sempre se <mouse pressionado?>
-	      vá para x: (mouse x) y: (-200)
-	      apareça
-	      deslize em (1) segundos para x: (mouse x) y: (mouse y) 
-	    fim
-
-###Teste o projeto
-__Clique na bandeira verde e em seguida, clique sobre o palco. Clique novamente em outro ponto.__ 
-
-###Sugestões
-1. Tente alterar onde o foguete se posiciona antes de ser lançado, para que ele se incline um pouco enquanto se movimenta.
-2. Tente fazer alguns foguetes mais lentos ou mais rápidos que os outros.
-
-Salve o projeto.
-
-## Passo 2: Faça o foguete explodir
-
-1. O primeiro passo para fazer o foguete explodir é fazê-lo tocar o som Recursos\bang antes que ele comece a se mover, em seguida, desaparecer,
- uma vez que chegar ao mouse. Para importar um som vá até a aba Sons e clique em importar.
-
-		quando BANDEIRA clicado
-		desapareça
-		sempre se <mouse pressionado?>
-		    va para x: (mouse x) y: (-200)
-		    toque o som [bang]
-		    apareça
-		    deslize em (1) segundos para x: (mouse x) y: (mouse y)
-		    desapareça
-		fim
-
-2. Em seguida, faça o foguete anunciar para todos uma nova mensagem quando ele explodir. Esta mensagem será ouvida mais tarde.
-
-
-
-	    quando BANDEIRA clicado
-	    desapareça
-	    sempre se <mouse pressionado?>
-	      va para x: (mouse x) y: (-200)
-	      toque o som [bang]
-	      apareça
-	      deslize em (1) segundos para x: (mouse x) y: (mouse y)
-	      desapareça
-	      anuncie [explodir] para todos
-	    fim
-
-###Teste o projeto
-__Clique na bandeira verde.__ 
-Certifique-se de que o foguete faz barulho e desaparece quando atinge o mouse.
-
-3. Importe um novo objeto usando Recursos/explosao.png
-4. Quando ele ouve a mensagem explodir, ele deve desaparecer e, em seguida, mover para a posição do foguete usando o comando __vá para__.
- A explosão deve aparecer, em seguida, desaparecer novamente um segundo depois.
-
-
-
-	    quando eu ouvir [explodir]
-	    desapareça
-	    va para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] )
-	    apareça
-	    espere (1) segundos
-	    desapareça
-
-###Teste o projeto
-
-__Lance um outro foguete.__ 
-
-O foguete é substituído pelo desenho de explosão quando ele explode?
-O que acontece se você mantiver o botão pressionado enquanto move o mouse? (Não se preocupe, nós vamos corrigir isso mais tarde).
-
-Salve o projeto
-
-##PASSO 3: Faça com que cada explosão seja diferente
-
-1. Nós podemos fazer com que cada explosão seja diferente, usando o comando __mude o efeito cor__, 
-e sorteando uma cor aleatória entre 1 e 200 antes de mostrá-lo.
-
-	    quando eu ouvir [explodir]
-	    desapareça 
-	    mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
-	    vá para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] ) 
-	    apareça 
-	    espere (1) segundos 
-	    desapareça
-
-
-### Teste o projeto
-__Clique na bandeira verde.__ 
-
-Cada explosão tem uma cor diferente?
-
-2. Vamos inserir alguns desenhos diferentes para as explosões usando os trajes  Recursos/explosao2.png e Recursos/explosao3.png, 
-e alternar entre elas para cada foguete, antes de mostrá-lo.
-
-###Teste o projeto
-__Clique na bandeira verde.__ 
-
-Cada foguete tem um desenho de explosão diferente?
-
-3. Finalmente, vamos fazer a explosão crescer ao longo do tempo ao invés de simplesmente aparecer. 
-No lugar de esperar um segundo, defina o tamanho do objeto para 5% antes de mostrá-lo, e, em seguida, uma vez que é mostrado, 
-some 2 ao tamanho cinqüenta vezes, usando um bloco de repetição.
-
-
-	    quando eu ouvir [explodir]
-	    desapareça 
-	    mude o efeito [cor] para (sorteie número entre (1) e (200) ) 
-	    vá para x: ( [posição x v] de [foguete v] ) y: ( [posição y v] de [foguete v] ) 
-	    mude o tamanho para (5%) 
-	    apareça 
-	    repita (50) 
-	      mude o tamanho por (2) 
-	    fim 
-	    desapareça
-
-###Teste o projeto
-__Clique na bandeira verde.__ 
-
-A imagem da explosão se espalha a partir do centro e cresce lentamente?
-
-### Sugestões
-Que tal tentar fazer cada explosão ainda mais original, alterando o tamanho e a velocidade de crescimento da explosão.
-
-Salve seu projeto
-
-## PASSO 4: Correção do problema no anuncio da explosão 
-Você lembra que tínhamos um problema quando mantínhamos pressionado o botão do mouse?
-Isso ocorre porque quando o foguete anuncia sua explosão, ele vai repetir imediatamente e anunciar outra mensagem de explosão, 
-antes que a última tenha terminado a exibição.
-
-
-1. Para corrigir isso, podemos substituir o comando anuncie, por um comando anuncie e espere. 
-Desta forma, o ciclo não se repetirá até que a foguete termine de explodir.
-
-
-
-
-	    quando BANDEIRA clicado 
-	    desapareça 
-	    sempre se <mouse pressionado?> 
-	    vá para x: (mouse x) y: (-200) 
-	    toque o som [bang] 
-		apareça 
-		deslize em (1) segundos para x: (mouse x) y: (mouse y) 
-		desapareça 
-		anuncie [explodir] para todos e espere 
-	    fim
-
-
-### Teste o projeto
-__Clique na bandeira verde e em seguida, pressione o botão do mouse sobre o palco.__ 
-
-A imagem da explosão aparece no lugar certo e na hora certa?
-
-Salve seu projeto

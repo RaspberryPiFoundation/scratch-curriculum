@@ -1,25 +1,37 @@
-#Instruções aos monitores
-##(Fogos de artifício)
+# NOTAS PARA OS LÍDERES DOS CLUBES
+##(Fogo de artifício)
 
 ###Introdução
-Este jogo interativo mostra fogos de artifício explodindo no céu onde você clicar e reproduz o som dos fogos de artifício explodindo.
+
+Este brinquedo interativo mostra fogo de artifício explodindo no céu onde quer
+que o utilizador clicar, reproduzindo o som do lançamento e explosão dos
+foguetes.
 
 ###Competências
-Este projeto abrange:
-• Resposta a cliques
-• Alteração da aparência de objetos  
-• Tocar sons 
-• Transmissão e recepção de eventos
+
+Este projecto inclui:
+- Responder a cliques
+- Alterar a aparência dos actores
+- Tocar sons 
+- Difundir e receber mensagens
+
+Nota: A utilização de difusão e recepção de mensagens é um tanto artificial,
+pois a explosão poderia (e deveria!) ser representada por trajes do foguete.
 
 ###Recursos
-Este projeto utiliza recursos encontrados nas pastas de fundos de tela do Scratch, bem como os arquivos encontrados na pasta de recursos incluídos neste pacote.
+
+Este projeto utiliza recursos que se encontram na pasta de Cenários do Scratch
+bem como trajes e sons relativos a fogo de artifício que se encontram na pasta
+de recursos deste pacote.
 
 ###Cartões Scratch necessários
-Alterar a cor 
-Deslizar
+
+- Alterar a cor 
+- Deslizar
 
 ###Exercícios básicos
-Passo 1: Criar um foguete que voa na direção do mouse  
-Passo 2: Faça o foguete explodir
-Passo 3: Fazendo cada explosão ser diferente
-Passo 4: Correção do problema no anuncio da explosão
+
+- PASSO 1: Disparar um foguete que sobe na direcção do ponteiro do rato
+- PASSO 2: Fazer o foguete explodir
+- PASSO 3: Fazer com que cada explosão seja única
+- PASSO 4: Correcção do problema na difusão da mensagem anunciando a explosão 
