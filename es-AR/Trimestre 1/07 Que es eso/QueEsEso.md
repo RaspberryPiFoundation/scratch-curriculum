@@ -4,7 +4,7 @@ Nivel 3
 
 __Introducción__
 
-Un objecto al azar es mostrado en el pizarrón, todo distorsionado. Tenés que adivinar qué es cliqueando en la imagen de la derecha, a continuación. Mientras más rápido lo adivines, ¡más alto será tu puntaje!
+Un objecto al azar es mostrado en el pizarrón, todo distorsionado. Tenés que adivinar qué es cliqueando en la imagen correcta de abajo. Mientras más rápido lo adivines, ¡más alto será tu puntaje!
 
 ##PASO 1: Hacé que aparezcan cosas en el pizarrón
 
@@ -33,7 +33,7 @@ __Hacé clic en la bandera verde.__
 
 __Clickealo varias veces más.__
 
-¿Ves distintos disfraces cada vez? A veces vas a ver el mismo difraz dos veces seguidas, pero esto es normal. También te vas a dar cuenta de que el objeto parpadea cuando cambia el disfraz. Vamos a arreglar eso en el paso siguiente.
+¿Ves distintos disfraces cada vez? A veces vas a ver el mismo disfraz dos veces seguidas, pero esto es normal. También te vas a dar cuenta de que el objeto parpadea cuando cambia el disfraz. Vamos a arreglar eso en el paso siguiente.
 
 ##PASO 2: Distorsionar las imágenes
 
@@ -41,7 +41,7 @@ __Ahora hagamos que la imagen se distorsione cuando aparece, y que se aclare des
 
 Vamos a usar una variable numérica para controlar cuánta distorsión va a haber. Si el número es alto, habrá mucha distorsión. Si el número baja, habrá menos distorsión. El número puede actuar como contador de tiempo, como en la __Tarjeta de Scratch Contador de Tiempo__.
 
-1. En la paleta Datos, crear una variable llamada puntos.
+1. En la paleta de Variables, creá una variable llamada puntos.
 
 2. Cambiá el script para que se vea así:
 
@@ -55,8 +55,8 @@ Vamos a usar una variable numérica para controlar cuánta distorsión va a habe
 	fijar puntos a 110
 	repetir hasta que puntos = 0
 		cambiar puntos por -10
-		establecer efecto pixelizar a puntos
-		establecer efecto color a puntos
+		fijar efecto pixelizar a puntos
+		fijar efecto color a puntos
 		mostrar
 		esperar 1 segundos
 	(fin repetir)
@@ -105,8 +105,8 @@ Primero, necesitamos saber cuál es la respuesta correcta.
 	fijar puntos a 110
 	repetir hasta que puntos = 0
 		cambiar puntos por -10
-		establecer efecto pixelizar a puntos
-		establecer efecto color a puntos
+		fijar efecto pixelizar a puntos
+		fijar efecto color a puntos
 		mostrar
 		esperar 1 segundos
 	(fin repetir)
@@ -205,7 +205,7 @@ Cambiá la dificultad es el juego.
 
 * Intentá cambiar qué tan rápido la imagen es revelada y qué tan rápido el puntaje baja.
 * Intentá cambiar las distorsiones de la imagen.
-* Intentá cambiar las imagenes a adivinar, para hacerlas más similares o más diferentes. Si lo hacés, no olvides cambiar el disfraz del objeto respuesta.
+* Intentá cambiar las imágenes a adivinar, para hacerlas más similares o más diferentes. Si lo hacés, no olvides cambiar el disfraz del objeto respuesta.
 
 Guardá tu proyecto.
 
@@ -223,7 +223,7 @@ Guardá tu proyecto.
 
 ##Desafío 3: Hacé que el juego tenga varias rondas
 
-Por el momento, cada juego es independiente. Cambiá eso así el juego tiene varias rondas. Por ejemplo, que el juego tenga tres rondas, de modo que el jugador tenga que adivinar tres imagenes y sumar hasta 300 puntos.
+Por el momento, cada juego es independiente. Cambiá eso así el juego tiene varias rondas. Por ejemplo, que el juego tenga tres rondas, de modo que el jugador tenga que adivinar tres imágenes y sumar hasta 300 puntos.
 
 __Pista:__ Vas a necesitar una variable extra para guardar el gran total de todas las rondas. También vas a necesitar un ciclo para ir por cada ronda.
 
