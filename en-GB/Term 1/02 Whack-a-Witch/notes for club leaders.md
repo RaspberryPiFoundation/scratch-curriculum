@@ -6,9 +6,9 @@ This project is like the carnival game called whack-a-mole. You get points for h
 
 ###Skills
 This project covers:
-• Setting a variable
-• Loops
-• Keeping and setting the score
+* Setting a variable
+* Loops
+* Keeping and setting the score
 
 ###Resources
 This project uses resources found in the Scratch Backgrounds and Costumes folders
@@ -19,8 +19,10 @@ This project uses resources found in the Scratch Backgrounds and Costumes folder
 * Animate it
 
 ###Basic exercises
-Step 1: Create a flying witch
-Step 2: Make the witch appear and vanish randomly Step 3: Make the witch disappear when she’s clicked Step 4: Add a score and timer
+* Step 1: Create a flying witch
+* Step 2: Make the witch appear and vanish randomly 
+* Step 3: Make the witch disappear when she’s clicked 
+* Step 4: Add a score and timer
 
 ###Challenges
 1. Add more witches
