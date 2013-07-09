@@ -43,7 +43,7 @@ Guarda tu proyecto
 1. Crea otro objeto usando el botón 'Escoger un nuevo objeto desde archivo' y selecciona animals/mouse1.
 2. Cambia el nombre del objeto a Herbert.
 3. Edita el disfraz y hazlo más pequeño que Félix. Prueba pinchando el botón 'Achicar' seis veces.
-4. Asegurate de que Herbert solo mire a la izquierda y derecha.
+4. Asegúrate de que Herbert solo mire a la izquierda y derecha.
 5. Dale este programa a Herbert:
 
 ```scratch
@@ -81,7 +81,7 @@ Guarda tu proyecto
 
 ##PASO 4: Herbert se convierte en un fantasma cuando lo pillan
 
-__En vez de hacer que Félix diga algo, queremos que herbert se convierta en un fantasma cuando lo pillan.__
+__En vez de hacer que Félix diga algo, queremos que Herbert se convierta en un fantasma cuando lo pillan.__
 
 1. Cambia el programa de Félix para que envíe este mensaje cuando pilla a Herbert.
 
