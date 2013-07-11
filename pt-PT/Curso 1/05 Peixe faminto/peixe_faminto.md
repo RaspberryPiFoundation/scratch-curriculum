@@ -36,14 +36,14 @@ para «debaixo de água».
 
 __Clica na bandeira verde.__ Move o ponteiro do rato pelo mar. O peixe segue o ponteiro do rato? O que acontece quando deixas de mover o ponteiro do rato e o peixe o alcança? O que parece estar a acontecer? Por que é que isto acontece?
 
-7. Podes fazer com que o peixe faminto páre de se virar de um lado para o outro como um louco se fizeres com que ele 
+7. Podes fazer com que o peixe faminto pare de se virar de um lado para o outro como um louco se fizeres com que ele 
 só se mova quando não estiver demasiado próximo do ponteiro do rato
 (o bloco (a distância até [... ▼]) está na paleta «Sensores»).
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	repete para sempre,
-		se <(a distância até [o ponteiro do rato  ▼]) > (10)>, então
+		se &lt;(a distância até [o ponteiro do rato  ▼]) > (10)>, então
 			aponta em direcção a [o ponteiro do rato ▼]
 			anda (3) passos
 		[fim do comando «se, então»]
@@ -73,16 +73,16 @@ nome para «a presa 1» e altera o nome do seu único traje para «normal».
 2. Usa a ferramenta «Reduzir» (acima do palco) para reduzir o novo actor.
 
 3. Cria um guião para fazer a presa nadar.  Queremos que a presa se mova
-aleatoriamente, por isso vamos fazê-la avançar um pouco, girar um ângulo
-aleatório em qualquer dos sentidos e ressaltar quando bater na borda do
-palco, repetindo estes passos indefinidamente:
+aleatoriamente, por isso vamos fazê-la girar um ângulo aleatório em qualquer
+dos sentidos, avançar um pouco e ressaltar quando bater na borda do palco,
+repetindo estes passos indefinidamente:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	mostra-te
 	repete para sempre,
-		anda (2) passos
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		anda (2) passos
 		se estiveres a bater na borda, ressalta
 	[fim do comando «repete para sempre»]
 	[fim do guião]
@@ -99,8 +99,8 @@ __Para parar, carrega no sinal de _stop_.__
 ###Coisas a experimentar
 
 * Tenta alterar os valores nos blocos (um valor ao acaso entre () e ()) e
-* [anda () passos]. De que forma essas alterações afectam o movimento da
-* presa?
+[anda () passos]. De que forma essas alterações afectam o movimento da
+presa?
 
 * O que faz o comando [se estiveres a bater na borda, ressalta]?  Retira-o e
 vê o que acontece.
@@ -115,16 +115,16 @@ abocanhar a presa, duas coisas têm de acontecer:
 * A presa tem que desaparecer e, algum tempo depois, tem de reaparecer, como se fosse um novo peixe.
 
 1. Vamos começar por fazer a presa desaparecer se estiver a tocar no peixe faminto, fazendo-a reaparecer três segundos depois. 
-Usa o bloco <estás a tocar em [o peixe faminto ▼]> para verificar se a presa está a tocar no peixe faminto:
+Usa o bloco &lt;estás a tocar em [o peixe faminto ▼]> para verificar se a presa está a tocar no peixe faminto:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	mostra-te
 	repete para sempre,
-		anda (2) passos
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		anda (2) passos
 		se estiveres a bater na borda, ressalta
-		se <estás a tocar em [o peixe faminto ▼]>, então
+		se &lt;estás a tocar em [o peixe faminto ▼]>, então
 			esconde-te
 			espera (3) s
 			mostra-te
@@ -142,12 +142,12 @@ abocanhará imediatamente a (nova) presa logo que ela aparecer – não é assim
 muito justo!
 
 2. Como poderemos garantir que a presa só desaparece se estiver a tocar na
-boca do peixe?  Podemos usar o bloco <estás a tocar na cor []> para, verificar
+boca do peixe?  Podemos usar o bloco &lt;estás a tocar na cor []> para, verificar
 se a presa, para além de estar a tocar no peixe faminto, está também a tocar
-nos seus dentes azuis. Para fazer isto, transfere o bloco <estás a tocar em [o
-peixe faminto ▼]> para a primeira entrada de um novo bloco <<> e <>> e coloca esse novo
-bloco no comando [se <>, então]. Na segunda entrada do bloco <<> e <>> coloca
-o bloco <estás a tocar na cor []>. Clica no quadrado colorido dentro desse
+nos seus dentes azuis. Para fazer isto, transfere o bloco &lt;estás a tocar em [o
+peixe faminto ▼]> para a primeira entrada de um novo bloco &lt;&lt;> e &lt;>> e coloca esse novo
+bloco no comando [se &lt;>, então]. Na segunda entrada do bloco &lt;&lt;> e &lt;>> coloca
+o bloco &lt;estás a tocar na cor []>. Clica no quadrado colorido dentro desse
 bloco e, em seguida, clica nos dentes do peixe. A cor dos dentes preencherá o
 quadrado colorido.
 
@@ -158,10 +158,10 @@ dando valores aleatórios às coordenadas x e y.
 	Quando alguém clicar em A BANDEIRA VERDE
 	mostra-te
 	repete para sempre,
-		anda (2) passos
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		anda (2) passos
 		se estiveres a bater na borda, ressalta
-		se <<estás a tocar em [o peixe faminto ▼]> e <estás a tocar na cor [#003]>>, então
+		se &lt;&lt;estás a tocar em [o peixe faminto ▼]> e &lt;estás a tocar na cor [#003]>>, então
 			esconde-te
 			espera (3) s
 			vai para as coordenadas (x: (um valor ao acaso entre (-220) e (220)), y: (um valor ao acaso entre (-170) e (170)))
@@ -184,10 +184,10 @@ Para isso, podemos fazer a presa, antes de desaparecer, difundir uma mensagem an
 	Quando alguém clicar em A BANDEIRA VERDE
 	mostra-te
 	repete para sempre,
-		anda (2) passos
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		anda (2) passos
 		se estiveres a bater na borda, ressalta
-		se <<estás a tocar em [o peixe faminto ▼]> e <estás a tocar na cor [#003]>>, então
+		se &lt;&lt;estás a tocar em [o peixe faminto ▼]> e &lt;estás a tocar na cor [#003]>>, então
 			difunde a mensagem [Eu, presa, fui comida! ▼]
 			esconde-te
 			espera (3) s
