@@ -3,319 +3,339 @@ Nível 2
 #Peixe faminto
 
 __Introdução:__
+Vamos fazer o jogo do peixe faminto! Guia o grande peixe faminto tentando comer todas as presas que nadam à sua volta.
 
-Neste jogo você deve orientar o grande peixe faminto e tentar comer todas as presas que estão nadando pelo mar.
+##PASSO 1: Criar o peixe grande e fazê-lo seguir o ponteiro do rato
 
-## PASSO 1: Criando o peixe faminto
-__Vamos fazer o peixe faminto nadar no mar!__
+__Vamos fazer o peixe faminto nadar pelo mar fora!__
 
-1. Crie um novo projeto Scratch.
-2. Clique no Palco, selecione a aba fundos de tela. Importe o
-Fundo nature/underwater e apague o fundo de tela1.
-3. Apague o gato.
-4. Importe o objeto a partir do arquivo Recursos/Peixe Faminto
-5. Use o botão acima da aba Trajes para certificar-se que o objeto só pode virar no sentido esquerda-direita.
-6. Agora crie os comandos para que o Peixe Faminto siga o mouse pelo mar:
+1. Cria um novo projeto Scratch.
 
+2. Clica em «o palco» e selecciona o separador «Cenários». Importa o cenário
+«Natureza/underwater3» e remove o cenário «backdrop1». Muda o nome do cenário
+para «debaixo de água».
 
+3. Altera o nome do actor gato para «o peixe faminto».
 
-		quando BANDEIRA clicado
-		sempre	
-			aponte para [ponteiro do mouse v]
-			mova (3) passos
-		fim
+4. Clica sobre o actor «o peixe grande» e depois sobre o separador «Trajes». Importa um novo traje a partir do ficheiro «Recursos/de boca aberta.png». Remove os dois primeiros trajes, ainda com o gato.
 
+5. Altera o estilo de rotação do peixe grande para que olhe apenas para a esquerda ou para a direita.
 
-### Teste o projeto
+6. Cria um guião como o que se segue para que o peixe faminto siga o ponteiro do rato pelo mar fora:
 
-__Clique na bandeira verde.__
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete para sempre,
+		aponta em direcção a [o ponteiro do rato ▼]
+		anda (3) passos
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
-Mova o ponteiro do mouse pelo mar. O peixe segue o ponteiro do mouse?
+###Testa o teu projecto
 
-O que acontece se você não mover o ponteiro do mouse e o peixe o alcança? O que esta acontecendo? Por que isso acontece?
+__Clica na bandeira verde.__ Move o ponteiro do rato pelo mar. O peixe segue o ponteiro do rato? O que acontece quando deixas de mover o ponteiro do rato e o peixe o alcança? O que parece estar a acontecer? Por que é que isto acontece?
 
+7. Podes fazer com que o peixe faminto páre de se virar de um lado para o outro como um louco se fizeres com que ele 
+só se mova quando não estiver demasiado próximo do ponteiro do rato
+(o bloco (a distância até [... ▼]) está na paleta «Sensores»).
 
-7. Você pode fazer o Peixe Faminto parar de virar feito louco se você fizer com que ele 
-só se mova quando não estiver muito próximo do ponteiro do mouse
-(use o bloco __distância até__ está na aba sensores).
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete para sempre,
+		se <(a distância até [o ponteiro do rato  ▼]) > (10)>, então
+			aponta em direcção a [o ponteiro do rato ▼]
+			anda (3) passos
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
+###Testa o teu projecto
 
+__Clica na bandeira verde.__ Move o ponteiro do rato pelo mar. O peixe segue o ponteiro do rato? O que acontece quando deixas de mover o ponteiro do rato e o peixe o alcança?
 
+__Para parar, carrega no sinal de _stop_.__
 
-		quando BANDEIRA clicado
-		sempre se < (distância até [ponteiro do mouse v])  > (10) >
-			aponte para [ponteiro do mouse v]
-			mova (3) passos
-		fim
+###Coisas a experimentar
 
+Se quiseres, podes tentar colocar diferentes valores no guião. De que forma
+isso afecta o movimento do peixe faminto? Altera o limiar de distância para um
+valor grande (por exemplo, 100) ou para um valor pequeno (por exemplo, 1).
+Altere o número de passos que o peixe anda para um valor grande (por exemplo,
+20) ou para um valor pequeno (por exemplo, 1 ou mesmo 0).
 
+##PASSO 2: Adicionar uma presa
 
-### Teste o projeto
+1. Cria um novo actor a partir da biblioteca: «Animais/Fish2». Altera o seu
+nome para «a presa 1» e altera o nome do seu único traje para «normal».
+
+2. Usa a ferramenta «Reduzir» (acima do palco) para reduzir o novo actor.
 
-Salve o projeto
+3. Cria um guião para fazer a presa nadar.  Queremos que a presa se mova
+aleatoriamente, por isso vamos fazê-la avançar um pouco, girar um ângulo
+aleatório em qualquer dos sentidos e ressaltar quando bater na borda do
+palco, repetindo estes passos indefinidamente:
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	mostra-te
+	repete para sempre,
+		anda (2) passos
+		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		se estiveres a bater na borda, ressalta
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+###Testa o teu projecto
+
+__Clica na bandeira verde e observa a presa a nadar.__ Nada como esperavas? Nada de forma realista?
+
+__Neste momento, o peixe faminto e a presa não interagem um com o outro. Resolveremos o problema no próximo passo.__
+
+__Para parar, carrega no sinal de _stop_.__
+
+###Coisas a experimentar
+
+* Tenta alterar os valores nos blocos (um valor ao acaso entre () e ()) e
+* [anda () passos]. De que forma essas alterações afectam o movimento da
+* presa?
+
+* O que faz o comando [se estiveres a bater na borda, ressalta]?  Retira-o e
+vê o que acontece.
+
+##PASSO 3: O peixe faminto come a presa
+
+__Agora queremos que o peixe faminto coma a presa!__ Assim que o peixe faminto
+abocanhar a presa, duas coisas têm de acontecer:
+
+- O peixe faminto precisa de fechar a boca e de fazer um som como se estivesse a engolir.
+
+* A presa tem que desaparecer e, algum tempo depois, tem de reaparecer, como se fosse um novo peixe.
+
+1. Vamos começar por fazer a presa desaparecer se estiver a tocar no peixe faminto, fazendo-a reaparecer três segundos depois. 
+Usa o bloco <estás a tocar em [o peixe faminto ▼]> para verificar se a presa está a tocar no peixe faminto:
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	mostra-te
+	repete para sempre,
+		anda (2) passos
+		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		se estiveres a bater na borda, ressalta
+		se <estás a tocar em [o peixe faminto ▼]>, então
+			esconde-te
+			espera (3) s
+			mostra-te
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+### Testa o teu projecto
+
+__Testa de novo o teu jogo__ Detectas algum problema? Nota que a presa
+desaparece assim que toca em qualquer ponto do peixe faminto. Além disso, o
+peixe faminto pode limitar-se a esperar três segundos no mesmo local que
+abocanhará imediatamente a (nova) presa logo que ela aparecer – não é assim
+muito justo!
+
+2. Como poderemos garantir que a presa só desaparece se estiver a tocar na
+boca do peixe?  Podemos usar o bloco <estás a tocar na cor []> para, verificar
+se a presa, para além de estar a tocar no peixe faminto, está também a tocar
+nos seus dentes azuis. Para fazer isto, transfere o bloco <estás a tocar em [o
+peixe faminto ▼]> para a primeira entrada de um novo bloco <<> e <>> e coloca esse novo
+bloco no comando [se <>, então]. Na segunda entrada do bloco <<> e <>> coloca
+o bloco <estás a tocar na cor []>. Clica no quadrado colorido dentro desse
+bloco e, em seguida, clica nos dentes do peixe. A cor dos dentes preencherá o
+quadrado colorido.
+
+3. Agora podemos fazer a nova presa ir para um ponto aleatório do palco, antes de reaparecer, usando um comando [vai para as coordenadas (x: (), y: ())] e 
+dando valores aleatórios às coordenadas x e y.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	mostra-te
+	repete para sempre,
+		anda (2) passos
+		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		se estiveres a bater na borda, ressalta
+		se <<estás a tocar em [o peixe faminto ▼]> e <estás a tocar na cor [#003]>>, então
+			esconde-te
+			espera (3) s
+			vai para as coordenadas (x: (um valor ao acaso entre (-220) e (220)), y: (um valor ao acaso entre (-170) e (170)))
+			mostra-te
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+###Testa o teu projecto
+
+__Experimenta o jogo mais uma vez.__ A presa só desaparece quando toca na boca
+do peixe? A presa volta a aparecer num ponto aleatório do palco, e não no
+mesmo local em qu foi comido?
+
+4. O peixe faminto precisa de saber quando comeu alguma coisa para que possa tocar um som apropriado e mudar de traje. 
+Para isso, podemos fazer a presa, antes de desaparecer, difundir uma mensagem anunciando o facto de que foi comida.
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	mostra-te
+	repete para sempre,
+		anda (2) passos
+		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
+		se estiveres a bater na borda, ressalta
+		se <<estás a tocar em [o peixe faminto ▼]> e <estás a tocar na cor [#003]>>, então
+			difunde a mensagem [Eu, presa, fui comida! ▼]
+			esconde-te
+			espera (3) s
+			vai para as coordenadas (x: (um valor ao acaso entre (-220) e (220)), y: (um valor ao acaso entre (-170) e (170)))
+			mostra-te
+		[fim do comando «se, então»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
+
+__Agora queremos que o peixe faminto esteja atento a esta mensagem e, quando a
+receber, faça o som de engolir e feche a sua boca.__
+
+5. Adiciona o traje «Recursos/de boca fechada.png__ e o som
+«Recursos/engolindo.wav» ao actor «o peixe faminto». Aproveita para remover o
+som «pop».
+
+6. Agora, adiciona um novo guião ao peixe faminto para ouvir a mensagem
+difundida pela presa e fazer o que é suposto quando a receber. Este guião deve
+fazer o peixe faminto tocar o som «engolindo» e, por duas vezes, mudar
+brevemente para o traje «de boca fechada»:
+
+```scratch
+	Quando receberes a mensagem [Eu, presa, fui comida! ▼]
+	toca o som [engolindo ▼]
+	repete (2) vezes
+		muda o traje para [de boca fechada ▼]
+		espera (0.2) s
+		muda o traje para [de boca aberta ▼]
+		espera (0.2) s
+	[fim do comando «repete vezes»]
+	[fim do guião]
+```
+
+__Agora que o nosso peixe faminto está preparado para comer, vamos encher o
+oceano de presas.  Clica com o botão direito do rato sobre o actor «a presa 1»
+e escolhe «duplicar». Faz isto várias vezes.__
+
+###Testa o teu projecto
+
+__Clica na bandeira verde.__ O peixe faminto come as presas? Consegue comer cada uma delas?
+
+###Coisas a ponderar
 
-### Sugestões
+Precisámos de colocar o comando [mostra-te] no início do guião da presa.
+Porquê? Pensa no que aconteceria se a presa fosse comida e o jogo fosse
+interrompido antes de a presa reaparecer. O que aconteceria se o jogo fosse
+reiniciado?
 
-Se você quiser, você pode testar diferentes valores nos comandos. 
+__Parabéns! Terminaste o jogo básico. Mas há mais coisas a fazer. Estás pronto para o desafio?__
 
-Como isso muda a maneira que o Peixe Faminto se move? 
+##DESAFIO 1: Dar um movimento diferente às presas
 
-Altere o limite de distância para um número grande (por exemplo 100), ou um número pequeno (por exemplo, 1). 
+Neste momento, todas as presas se movem da mesma maneira. __És capaz de fazê-las moverem-se de forma diferente umas das outras?__
 
-Altere a quantidade de passos que o peixe se move: um grande número (por exemplo 20) ou um pequeno número (por exemplo, 1 ou mesmo 0).
+__Dica:__ Não passes muito tempo nesta parte sem antes olhares para as outras actividades deste projeto.
 
+__Escolhe uma das presas para fazeres as tuas experiências.__ Como todas as presas são iguais, muda a cor desta presa usando o comando [altera o teu efeito de cor para (50)]. Coloca esse comando no início do guião dessa presa, para que o efeito seja aplicado sempre que o jogo é iniciado.
+Dessa forma distinguirás a presa das experiências das outras presas.
 
-## Passo 2: Adicionando umas presas
+Faz esta presa mover-se mais devagar que as outras. 
 
-1. Crie um novo objeto do arquivo animals/lobster1.
-2. Use a ferramenta Encolher Objeto (acima do palco)
-para fazer ele ficar menor.
-3. Crie os comandos para fazer a presa nadar.
- Queremos que elas se movam aleatoriamente, então vamos fazê-lo avançar um pouco, em seguida, virar uma quantidade aleatória 
- para a esquerda ou para a direita, repetindo isso novamente
+__Dica:__ Dá uma olhadela ao comando [anda (2) passos].
 
+###Testa o teu projecto
 
+A presa das experiências move-se mais devagar? O jogo melhorou com isso? Se
+conseguiste reduzir a velocidade desta presa, __experimenta fazer uma das
+outras presas mover-se mais depressa que todas as outras__. Dá-lhe também um
+efeito de cor que a distinga das demais presas. Coloca esse comando no início
+do guião dessa presa, para que o efeito seja aplicado sempre que o jogo é
+iniciado.
 
-		quando BANDEIRA clicado
-		sempre	
-			mova (2) passos 
-			vire cw (sorteie número entre (-20) e (20) ) graus
-			se tocar na borda, volta
-		fim
+As presas ainda se movem de forma correcta? O jogo melhorou?
 
+__Dica:__ Se a presa nadar aos círculos, verifica os valores do bloco (um valor ao acaso entre () e ()) que está dentro do comando [gira ⟳ () °].
 
-### Teste o projeto
+Que tal fazeres cada um das presas comportar-se de forma diferente das outras
+usando diferentes combinações das mudanças que propusemos?
 
-__Clique na bandeira verde e observe as presas nadando.__ 
+Alguma dessas alterações melhorou o jogo? As alterações fizeram o jogo mais
+interessante, mais divertido, mais difícil ou mais fácil?
 
-Elas nadam como você esperava? 
+##DESAFIO 2: Fazer as presas fugir do peixe faminto
 
-Elas nadam de uma forma realista?
+As presas neste jogo são realmente estúpidas! Limitam-se a nadar ao acaso até
+serem comidas. Peixes reais fogem dos seus predadores. __Faz uma das presas
+fugir do peixe faminto.__
 
-__Até agora o Peixe Faminto e as presas não interagem uns com os outros__. 
-Vamos resolver isso na próxima etapa.
+Não há nenhum bloco no Scratch que reporte em que direcção se encontra um
+outro actor. Mas podemos fazer um actor apontar para outro e, de seguida,
+fazê-lo dar meia volta, ficando a apontar para o sentido oposto.  Os blocos de
+que precisas estão na paleta «Movimento». Usando esta ideia, __faz uma das
+presas apontar sempre para a direcçºao oposta à do peixe faminto__. Talvez
+queiras fazer a presa serpentear um pouco enquanto foge, bem como fazê-la nadar mais depressa. Pode ser boa ideia
+fazer a presa fugir apenas se estiver suficientemente perto do peixe faminto. Altera o efeito de cor da presa que foge para que a possas melhor identificar.
 
-Salve o projeto
+###Testa o teu projecto
 
-### Sugestões
+Tornou-se mais difícil apanhar a presa que foge? O jogo melhorou?
 
-* Tente alterar os valores nos comandos __sorteie__ e __mova__. 
-Como isso muda a forma que as presas se movimentam?
-* O que o bloco __se tocar na borda, volta__ faz? 
-Retire-o e veja o que acontece.
+##DESAFIO 3: Adicionar um painel de pontuação
 
-##PASSO 3: Fazendo o peixe comer as presas
+Não é suficiente ter o peixe faminto a comer presas. Como podes saber se és
+melhor jogador que os teus amigos? __Precisas de uma forma de manter uma
+pontuação, por isso vamos adicionar um painel de pontuação.__ Dá uma olhada à
+carta do Scratch __Manter Pontuação__ para ficares com uma ideia de como isso
+se consegue. Onde deves colocar o comando que muda a pontuação? __Dica:__ É usualmente boa ideia que seja o palco a preocupar-se com a pontuação. 
 
-__Vamos fazer o Peixe Faminto comer as presas!__ 
+Assegura-te de que a pontuação é colocada a zero no início do jogo. Onde deves
+colocar o comando de inicialização da pontuação?
 
-Uma vez que o Peixe Faminto tem uma presa em sua boca, duas coisas precisam acontecer:
+###Testa o teu projecto
 
-* O Peixe Faminto precisa fechar a boca e fazer um som "chomp".
-* A presa tem que desaparecer, e reaparecer um pouco mais tarde.
+A pontuação inicia a zero quando o jogo começa? Aumenta de cada vez que o
+peixe faminto come uma presa?
 
-1. Primeiro, vamos fazer a presa desaparecer se ela estiver tocando o peixe com fome, e reaparecer 3 segundos depois. 
-Use o bloco __tocando__ para ver se ela está tocando o peixe.
+##DESAFIO 4: Adicionar uma contagem decrescente
 
+__Estabelece um tempo limite para o jogo.__ Quantos peixes consegues comer em
+trinta segundos?
 
+Dá uma olhadela na carta Scratch __Cronómetro__ para veres como adicionar um
+cronómetro ao jogo. Começa o jogo com uma duração de trinta segundos. Quando a
+contagem decrescente terminar, pára o jogo.
 
-		quando BANDEIRA clicado
-		sempre	
-			mova (2) passos 
-			vire cw (sorteie número entre (-20) e (20) ) graus
-			se tocar na borda, volta
-			se <tocando em [Peixe Faminto v]
-				desapareça
-				espere (3) segundos
-				apareça
-			fim
-		fim
+### Testa o teu projecto
 
+A contagem decrescente começa em 30 segundos? A contagem decrescente diminui à
+velocidade certa? Consegues comer presas enquanto a contagem decrescente
+diminui? O jogo termina quando a contagem descrescente atinge zero?
 
-### Teste o projeto
-__Teste o jogo novamente - você pode detectar eventuais problemas?__ 
+##DESAFIO 5: Adicionar um bónus
 
-Observe que a presa desaparece a partir do momento que ela toca em qualquer parte do peixe. 
-Além disso, o peixe poderia apenas aguarde 3 segundos e comer a presa no momento em que ela reaparece - isso não é muito justo!
+Atribui um bónus de tempo ao jogador se ele conseguir em algum momento comer
+todos os peixes. Como é possível saber quantos peixes estão comidos em cada
+instante?
 
-2. Como podemos garantir que a presa só desaparece se ela está tocando a boca do peixe? 
-Bem, nós poderíamos usar o bloco __tocando na cor__, e ver se ele está tocando os dentes azuis do peixe. 
-Para fazer isso, substitua o bloco __tocando em__ por um
-comando __tocando na cor__, clique na cor dentro do comando e em seguida, clique novamente nos dentes do peixe.
-3. Em seguida, podemos fazer a presa ir a um ponto aleatório na tela antes de reaparecer novamente, usando um comando __vá para__ e 
-dando valores aleatórios para x e y.
+__Dica:__ Uma solução é __usar uma variável para contar o número de presas vivas em cada momento__. Atenção! O bónus deve ser atribuído apenas uma vez de cada vez que as presas são todas comidas!
 
+##DESAFIO 6: Inverte o jogo: mantém a presa viva!
 
+Por vezes podes ter ideias excelentes invertendo uma ideia existente.
 
-		quando BANDEIRA clicado
-		sempre	
-			mova (2)  passos
-			vire cw (sorteie número entre (-20) e (20) ) graus
-			se tocar na borda, volta
-			se <tocando na cor [#003]?>
-				desapareça
-				espere (3) segundos
-				vá para x: (sorteie número entre (-220) e (220)) y:(sorteie número entre (-170) e (170))
-				apareça
-			fim
-		fim
+__Modifica o jogo para que, em vez de controlares um peixe faminto que tenta
+comer as várias presas, passes a controlar uma presa isolada num mar com
+vários peixes famintos.__ Quanto tempo aguentas sem seres comido?
 
-### Teste o projeto
-
-Experimente o jogo mais uma vez - as presas só desaparecem quando tocam a boca do peixe? 
-E elas voltam a aparecer em um ponto aleatório da tela ao invés de onde foi comido?
-
-4. O peixe precisa saber quando ele comeu alguma coisa para que ele toque um som e mude de traje. 
-Para fazer isso, nós podemos fazer a presa anunciar o fato de que ela foi comida antes de desaparecer.
-
-
-
-		quando BANDEIRA clicado
-		sempre	
-			mova (2) passos
-			vire cw (sorteie número entre (-20) e (20) ) graus
-			se tocar na borda, volta
-			se <tocando na cor [#003]?>
-				anuncie [me pegou] para todos
-				desapareça
-				espere (3) segundos
-				vá para x: (sorteie número entre (-220) e (220)) y:(sorteie número entre (-170) e (170))
-				apareça
-			fim
-		fim
-
-__Agora vamos fazer o peixe ouvir esta mensagem fazendo um som de "chomp" e fechando sua boca.__
-
-5. Adicione o traje __recursos/boca fechada__ e o som recursos/chomp para o objeto Peixe Faminto.
-6. Em seguida, adicione novos comandos para o Peixe Faminto para ouvir a mensagem transmitida pela presa. 
-Estes comandos devem fazer o peixe reproduzir o som 'chomp' e mudar para o traje __boca fechada__, esperar um pouco e depois voltar.
-
-
-
-		quando eu ouvir [me pegou]
-		toque o som [chomp v]
-		repita (2)
-			mude para o traje [boca fechada v]
-			espere (0.5) segundos
-			mude para o traje [boca aberta v]
-		fim
-
-
-__Agora nosso peixe faminto está pronto para comer, vamos encher o oceano de presas. 
-Clique com o botão direito do mouse sobre o objeto presa e clique em "duplicar" várias vezes.__
-
-### Teste o projeto
-
-__Clique na bandeira verde.__
-
-O Peixe Faminto come as presas? Ele consegue comer cada uma das presas?
-
-Salve o projeto
-
-### Sugestões
-
-Por que precisamos adicionar o bloco apareça no início dos comandos da presa? 
-Pense no que aconteceria se a presa fosse comida, e então o jogo fosse interrompido antes que ela reapareça. 
-O que aconteceria se o jogo fosse reiniciado?
-
-__Parabéns você terminou o jogo básico. Há mais coisas que você pode fazer. Você está pronto para o desafio?__
-
-
-## Desafio 1: Faça as presas se moverem de maneira diferente
-
-Neste momento, todas as presas movem-se da mesma maneira. __Você é capaz de fazê-las mover de forma diferente?__
-
-__Dica:__ Não passe muito tempo nesta parte, sem olhar para os outros desafios deste projeto.
-
-
-__Escolha uma das presas para experimentar.__ Como todas as presas são iguais, mude a cor da presa que você vai modificar, 
-aplicando um efeito de cor usando o comando __mude o efeito [cor] para__. 
-Dessa forma, você pode distingui-la das demais.
-Faça esta presa se mover mais devagar que as outras. 
-
-__Dica:__ De uma olhada no comando __mova (2) passos__.
-
-
-### Teste o projeto
-A presa se move mais devagar? O jogo ficou melhor?
-Se você conseguiu fazer isso, __tente fazer uma presa se mover mais rápido que as outras.__
-
-
-As presas ainda se movem de maneira correta? Estas mudanças melhoram o jogo?
-
-
-__Dica:__ Se a presa nada em círculos, verifique os valores do bloco __sorteie número__ dentro do comando __vire__ .
-
-Que tal você fazer cada um das presas se comportar de forma diferente, usando diferentes combinações dessas mudanças?
-
-Fazer qualquer uma dessas alterações tornar o jogo melhor? 
-Eles fazem o jogo mais interessante, mais divertido, mais difícil, ou mais fácil?
-
-Salve o projeto
-
-##Desafio 2: Faça a presa fugir do peixe
-
-As presas neste jogo são realmente burras! Elas simplesmente nadam ao redor aleatoriamente até que sejam comidas. 
-Peixes de verdade fogem dos predadores. __Faça uma das presas fugir do Peixe Faminto.__
-
-Não há nenhum bloco no Scratch que indica em que direção está um outro objeto. 
-Mas você pode fazer um objeto apontar para outro, em seguida, ele da meia volta. 
-Os blocos que você precisa estão na aba __Movimento__.
-
-Usando essa ideia, faça uma das presas sempre apontar para a __posição oposta do Peixe Faminto.__ 
-
-### Teste o projeto
-Ficou mais difícil de pegar a presa? O jogo ficou melhor?
-
-Salve o projeto
-
-##Desafio 3: Adicionando um placar
-Não é suficiente apenas comer presas. 
-Como vamos fazer para saber quem é o melhor jogador entre os seus amigos? 
-__Você precisa encontrar uma maneira de manter a pontuação__, então vamos adicionar um placar. 
-Dê uma olhada no cartão Scratch __Contando pontos__ para  ter uma ideia de como fazê-lo.
-
-Onde você deve colocar o comando que muda a pontuação?
-
-Certifique-se que a pontuação seja zerada no início do jogo. Onde você deve colocar esse bloco?
-
-### Teste o projeto
-A pontuação é zerada no início do jogo? Ela aumenta cada vez que você come uma presa?
-
-Salve o projeto
-
-##Desafio 4: Adicionando uma contagem regressiva
-
-__Estabeleça um tempo limite para o jogo.__ Quantos peixes você pode comer em trinta segundos?
-
-Olhe o Cartão __cronômetro__ para saber como adicionar um cronômetro no jogo. Comece o jogo com uma duração de trinta segundos.
-
-### Teste o projeto
-O cronômetro começa em 30?
-
-Ele diminui na velocidade certa?
-
-Você pode capturar presas enquanto o cronômetro diminui?
-
-O jogo termina quando o cronômetro chega a zero?
-
-Salve o projeto
-
-## Desafio 5: Adicionando um bônus
-Atribua um grande bônus ao jogador que comer todos os peixes de uma só vez. Como é possível
-saber quantos peixes foram comidos?
-
-__Dica:__ Uma maneira de fazer isso é __usar uma variável__ para contar quantas presas ainda estão vivas.
-
-Salve o projeto
-
-##Desafio 6: Mude o jogo: mantenha a presa viva! 
-
-Às vezes, você pode ter novas ideias partindo de uma ideia existente e fazendo o oposto.
-
-__Modifique o jogo para que, ao invés de você controlar um peixe que tenta comer as presas, 
-você controla uma presa em um mar com vários peixes famintos.__ Quanto tempo você pode sobreviver antes de ser comido?
-
-Salve o projeto
-
-__Parabéns, você terminou, agora você pode desfrutar do jogo!__
-Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ na barra de menu!
+__Parabéns! Terminaste! Agora pode desfrutar do jogo!__ Não te esqueças de que
+podes partilhar o teu jogo com todos os Scratchadores, incluindo os teus
+amigos e os teus familiares, clicando em «Partilhar»!
