@@ -135,7 +135,7 @@ Usa o bloco &lt;estás a tocar em [o peixe faminto ▼]> para verificar se a pre
 
 ### Testa o teu projecto
 
-__Testa de novo o teu jogo__ Detectas algum problema? Nota que a presa
+__Testa de novo o teu jogo.__ Detectas algum problema? Nota que a presa
 desaparece assim que toca em qualquer ponto do peixe faminto. Além disso, o
 peixe faminto pode limitar-se a esperar três segundos no mesmo local que
 abocanhará imediatamente a (nova) presa logo que ela aparecer – não é assim
@@ -175,7 +175,7 @@ dando valores aleatórios às coordenadas x e y.
 
 __Experimenta o jogo mais uma vez.__ A presa só desaparece quando toca na boca
 do peixe? A presa volta a aparecer num ponto aleatório do palco, e não no
-mesmo local em qu foi comido?
+mesmo local em que foi comido?
 
 4. O peixe faminto precisa de saber quando comeu alguma coisa para que possa tocar um som apropriado e mudar de traje. 
 Para isso, podemos fazer a presa, antes de desaparecer, difundir uma mensagem anunciando o facto de que foi comida.
@@ -201,7 +201,7 @@ Para isso, podemos fazer a presa, antes de desaparecer, difundir uma mensagem an
 __Agora queremos que o peixe faminto esteja atento a esta mensagem e, quando a
 receber, faça o som de engolir e feche a sua boca.__
 
-5. Adiciona o traje «Recursos/de boca fechada.png__ e o som
+5. Adiciona o traje «Recursos/de boca fechada.png» e o som
 «Recursos/engolindo.wav» ao actor «o peixe faminto». Aproveita para remover o
 som «pop».
 
@@ -281,7 +281,7 @@ Não há nenhum bloco no Scratch que reporte em que direcção se encontra um
 outro actor. Mas podemos fazer um actor apontar para outro e, de seguida,
 fazê-lo dar meia volta, ficando a apontar para o sentido oposto.  Os blocos de
 que precisas estão na paleta «Movimento». Usando esta ideia, __faz uma das
-presas apontar sempre para a direcçºao oposta à do peixe faminto__. Talvez
+presas apontar sempre para a direcção oposta à do peixe faminto__. Talvez
 queiras fazer a presa serpentear um pouco enquanto foge, bem como fazê-la nadar mais depressa. Pode ser boa ideia
 fazer a presa fugir apenas se estiver suficientemente perto do peixe faminto. Altera o efeito de cor da presa que foge para que a possas melhor identificar.
 
@@ -295,7 +295,10 @@ Não é suficiente ter o peixe faminto a comer presas. Como podes saber se és
 melhor jogador que os teus amigos? __Precisas de uma forma de manter uma
 pontuação, por isso vamos adicionar um painel de pontuação.__ Dá uma olhada à
 carta do Scratch __Manter Pontuação__ para ficares com uma ideia de como isso
-se consegue. Onde deves colocar o comando que muda a pontuação? __Dica:__ É usualmente boa ideia que seja o palco a preocupar-se com a pontuação. 
+se consegue. Onde deves colocar o comando que muda a pontuação?
+
+__Dica:__ É usualmente boa ideia que seja o palco a preocupar-se com a
+pontuação.
 
 Assegura-te de que a pontuação é colocada a zero no início do jogo. Onde deves
 colocar o comando de inicialização da pontuação?
