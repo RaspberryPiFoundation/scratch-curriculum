@@ -23,7 +23,7 @@ do Scratch.
 
 ### Cartões Scratch necessários
 
-- Seguir o rato
+- Seguir o Rato
 
 ### Exercícios básicos
 

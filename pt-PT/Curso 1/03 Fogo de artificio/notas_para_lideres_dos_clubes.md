@@ -26,7 +26,7 @@ de recursos deste pacote.
 
 ###Cartões Scratch necessários
 
-- Alterar a cor 
+- Alterar Cor 
 - Deslizar
 
 ###Exercícios básicos

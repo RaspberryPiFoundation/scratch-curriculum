@@ -20,8 +20,8 @@ do Scratch.
 
 ### Cartões Scratch necessários
 
-- Manter pontuação
-- Temporizador
+- Manter Pontuação
+- Cronómetro
 - Animação
 
 ### Exercícios básicos
