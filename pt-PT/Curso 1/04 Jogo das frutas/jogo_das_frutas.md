@@ -1,19 +1,24 @@
 Nível 2 
 
-#Jogo das Frutas (Máquina caça-niqueis)
+#Jogo das frutas (máquina caça-níqueis)
 
 __Introdução:__
-Este é um jogo que tem três objetos que mudam de imagem. 
-Para ganhar o jogo você deve fazer eles pararem mostrando a mesma imagem (como uma máquina caça-niqueis!).
 
-## PASSO 1: Criando um objeto que muda de traje
+Este jogo que tem três actores que mudam de traje.  Para ganhar o jogo, o
+jogador tem de os fazer parar quando estiverem a mostrar a mesma imagem (tal
+como numa máquina caça-níqueis!).
 
-__Vamos começar importando as imagens do jogo__
+##PASSO 1: Criar um objeto que muda de traje
 
-1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar.
+__Vamos começar por importar as diferentes imagens do jogo__
+
+1. Crie um novo projecto Scratch. Remova o actor gato clicando nele com o botão direito do rato e escolhendo «!!!!!!!!!».
+
 2. Importe um novo objeto.
+
 3. Escolha uma imagem de qualquer pasta. No nosso caso usamos things/bananas1, mas você pode
 usar a imagem que quiser.
+
 4. Clique na aba Trajes e importe mais dois trajes, assim teremos três no total
 (Usamos animals/bee1 e things/lego, mas você pode usar qualquer imagens mesmo).
 
