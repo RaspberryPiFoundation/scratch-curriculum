@@ -9,7 +9,7 @@ Vamos fazer o jogo do peixe faminto! Guia o grande peixe faminto tentando comer 
 
 __Vamos fazer o peixe faminto nadar pelo mar fora!__
 
-1. Cria um novo projeto Scratch.
+1. Cria um novo projecto Scratch.
 
 2. Clica em «o palco» e selecciona o separador «Cenários». Importa o cenário
 «Natureza/underwater3» e remove o cenário «backdrop1». Muda o nome do cenário
@@ -321,7 +321,7 @@ contagem decrescente terminar, pára o jogo.
 
 A contagem decrescente começa em 30 segundos? A contagem decrescente diminui à
 velocidade certa? Consegues comer presas enquanto a contagem decrescente
-diminui? O jogo termina quando a contagem descrescente atinge zero?
+diminui? O jogo termina quando a contagem decrescente atinge zero?
 
 ##DESAFIO 5: Adicionar um bónus
 
