@@ -1,33 +1,41 @@
-# Instruções aos monitores
-# # (Corrida no deserto)
+#NOTAS PARA OS LÍDERES DOS CLUBES
+##(Corrida no deserto)
 
-# # Introdução
+###Introdução
 
-Este jogo é para dois jogadores. Você corre com um papagaio e um leão através do deserto. Cada jogador tem que pressionar uma tecla o mais rápido que puder para mover seu animal. Ganha quem chegar o primeiro à borda da tela.
+Trata-se de um jogo para dois jogadores em que um jogador joga com um papagaio
+e o outro com um elefante. Os dois animais fazem uma corrida no deserto. Cada
+jogador tem de pressionar uma tecla tão depressa quanto conseguir para fazer o
+seu animal correr. Ganha quem chegar primeiro ao lado oposto do palco.
 
-### Competências
-Este projeto abrange
+###Competências
 
+Este projeto inclui:
 * Eventos
 * Variáveis
 * Animação
 * Tocar sons
-* Condições * Modificar recursos
+* Comandos de controlo de fluxo condicionais
+* Modificar trajes
 
-### Recursos
-Este projeto utiliza recursos encontrados nos Scratch, bem como recursos criados pelo usuário tendo como base os recursos do Scratch.
+###Recursos
 
-## Cartões Scratch
-Diga algo
+Este projeto utiliza recursos que se encontram nas pastas de Cenários e de
+Trajes do Scratch, bem como trajes criados pelo programador com base nos
+recursos originais do Scratch.
 
-### Exercícios básicos
+###Cartões Scratch necessários
 
-* Passo 1: Criar a cena e adicionar os personagens
-* Passo 2: Faça o leão e o papagaio correrem
-* Passo 3: Começando a corrida
-* Passo 4: Finalizando a corrida
-* Passo 5: Reiniciar o jogo
+Nada a assinalar.
 
-# # Desafios
+###Exercícios básicos
 
-Adicionar um turbo
+- PASSO 1: Criar a cena e adicionar os actores
+- PASSO 2: Fazer o elefante e o papagaio correrem
+- PASSO 3: Começando a corrida
+- PASSO 4: Finalizando a corrida
+- PASSO 5: Reiniciando o jogo
+
+## Desafios
+
+- Adicionando uma tecla de turbo
