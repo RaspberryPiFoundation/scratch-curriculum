@@ -1,8 +1,9 @@
 Nível 3
 
-#Adivinhe o que é!
+#Adivinha o que é!
 
 __Introdução:__
+
 Um objeto aleatório é mostrado na tela, completamente distorcido. Você tem que adivinhar qual é o objeto e  clicar na imagem correspondente. 
 Quanto mais rápido você adivinhar, maior será a sua pontuação!
 
