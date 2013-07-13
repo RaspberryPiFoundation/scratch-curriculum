@@ -1,56 +1,80 @@
 Nível 2 
 
-#Jogo das frutas (máquina caça-níqueis)
+#Jogo das frutas (máquina caça-níquel)
 
 __Introdução:__
 
-Este jogo que tem três actores que mudam de traje.  Para ganhar o jogo, o
-jogador tem de os fazer parar quando estiverem a mostrar a mesma imagem (tal
-como numa máquina caça-níqueis!).
+Este jogo simula uma máquina caça-níquel (ou _slot machine_) com três rodas de
+figuras. Essas rodas vão rodando, variando a figura de cada uma dessas rodas que
+é visível no mostrador da máquina. Para ganhar o jogo, o jogador tem de
+interromper a rotação das rodas quando as figuras visíveis forem todas iguais.
 
-##PASSO 1: Criar um objeto que muda de traje
+Vamos usar três actores para representar as três rodas da máquina e diferentes
+trajes dos actores para representar as figuras impressas em torno das rodas.
 
-__Vamos começar por importar as diferentes imagens do jogo__
+##PASSO 1: Criar um actor que muda de traje
 
-1. Crie um novo projecto Scratch. Remova o actor gato clicando nele com o botão direito do rato e escolhendo «!!!!!!!!!».
+__Vamos começar por importar as diferentes imagens do jogo.__
 
-2. Importe um novo objeto.
+1. Cria um novo projecto Scratch. Remove o actor gato clicando nele com o botão direito do rato e escolhendo «remover».
 
-3. Escolha uma imagem de qualquer pasta. No nosso caso usamos things/bananas1, mas você pode
-usar a imagem que quiser.
+2. Cria um novo actor importando-o da biblioteca. Podes escolher
+«Coisas/Bananas», por exemplo, ou outra imagem de que gostes. Muda o nome desse
+actor para «a roda 1». Clica no separador «Trajes» do novo actor. Se escolheste
+importar um actor com mais do que um traje, remove todos os trajes com excepção
+do que mais te agradar. Dá ao traje que seleccionaste um nome apropriado. Por
+exemplo, «bananas».
 
-4. Clique na aba Trajes e importe mais dois trajes, assim teremos três no total
-(Usamos animals/bee1 e things/lego, mas você pode usar qualquer imagens mesmo).
+3. Ainda no separador «Trajes», importa mais dois trajes que te agradem, de modo
+a ficarmos com um total de três trajes. Podes escolher, por exemplo,
+«Animais/butterfly2» e «Coisas/soccer ball». Dá nomes apropriados a esses
+trajes.
 
-__Agora que temos alguns trajes, queremos que o objeto mude entre eles.__
+__Agora que já temos uma roda com três figuras (que é como quem diz, um actor
+com três trajes), queremos que a roda gire, mostrando uma figura de cada vez
+(que é como quem diz, queremos que o actor vá mudando sucessivamente de
+traje).__
 
-## PASSO 2: Fazendo a mudança de imagem
+##PASSO 2: Fazer a roda rodar
 
-1. Clique na aba Comandos.
-2. Clique em Controle e arraste o comando __quando bandeira clicado__ para área de comandos. Este será
-acionado quando clicarmos na bandeira verde.
-3. Encaixe um comando __sempre__ logo embaixo.
-4. Clique na bandeira verde no canto superior direito. Observe o contorno branco em nosso conjunto de comandos. 
-Isso significa que nossos comandos estão sendo executados. Foi o clique na bandeira verde que desencadeia esta execução.
-5. Agora clique em Aparência e encaixe um comando __próximo traje__ dentro do __sempre__.
-6. Como fazer para diminuir a velocidade em que mudamos de imagem? Clique em Controle e arraste um comando __espere 1 segundos__.
-7. Ajuste o tempo de espera (um tempo de 0.1 s parece bom). O que aconteceria se não tivéssemos o comando __espere__?
+1. Clica no separador «Guiões».
 
-		quando BANDEIRA clicada
-		sempre 
-			próximo traje
-			espere (0.1) segundos
-		fim
+2. Clica na paleta «Eventos» e arrasta o bloco [Quando alguém clicar em A
+BANDEIRA VERDE] para área dos guiões. Este bloco, quando carregarmos na bandeira
+verde, dará início à execução do seu guião, ou seja, dos comandos que nele
+encaixarmos.
 
+3. Clica na paleta «Controlo». Arrasta um comando [repete para sempre,] e encaixa-o sob o bloco existente.
 
-###Teste o projeto
-__Clique na bandeira verde.__
- 
-As imagens mudam em uma velocidade aceitável?
+4. Clica na bandeira verde no canto superior direito do palco. Observa o alo
+amarelo em torno do nosso novo guião. Isso significa que há comandos nesse guião
+que estão a ser executado. Foi o clique na bandeira verde que desencadeou essa
+execução.
 
-Salve o projeto
+5. Agora clica na paleta «Aparência» e arrasta o comando [passa para o próximo
+traje], encaixando-o dentro do comando [repete para sempre,].
 
-### Sugestões
+6. Como fazer para diminuir a velocidade a que vamos mudando de traje? Clica na
+paleta «Controlo» e arrasta um comando [espera (1) s], encaixando-o dentro do
+bloco [repete para sempre,], acima do comando [passa para o próximo traje].
+
+7. Ajusta o tempo de espera (um tempo de 0,1 segundos parece adequado). __Atenção!__ O Scratch 2.0 não aceita vírgulas como separador decimal. Tens de usar um ponto! Ou seja, tens de escrever «0.1» em vez de «0,1».
+
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete para sempre,
+		espera (0.1) s
+		passa para o próximo traje
+	[fim do guião]
+```
+
+###Testa o teu projecto
+
+__Clica na bandeira verde.__ As figuras mudam a uma velocidade aceitável?
+
+__Para parar, carrega no sinal de _stop_.__
+
+###Coisas a experimentar
 
 Ajuste o tempo do comando __espere__. Quais valores fariam o jogo ficar muito fácil ou muito difícil?
 
