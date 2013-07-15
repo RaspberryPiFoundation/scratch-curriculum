@@ -9,7 +9,7 @@ Este juego muestra tres objetos que cambian de disfraz. Debes intentar detenerlo
 
 __Vamos a importar las distintas imágenes del juego__
 
-1. Comienza un proyecto de Scratch nuevo. Borra el objeto gato pinchándolo con el botón derecho y pinchando 'borrar'.
+1. Comienza un proyecto de Scratch nuevo. Borra el objeto gato pinchando en él con el botón derecho y pinchando en 'borrar'.
 2. Importa un nuevo objeto.
 3. Elige cualquier imagen. Aquí hemos usado 'things/bananas1', pero puedes usar cualquier imagen que quieras.
 4. Pincha en la pestaña 'Disfraces' e importa dos imágenes más, para tener un total de tres (hemos usado 'animals/bee1' y 'things/lego', pero elige las que prefieras).
@@ -21,7 +21,7 @@ __Ahora que tenemos disfraces, queremos que el objeto intercambie entre ellas.__
 1. Pincha en la pestaña 'Programas'.
 2. Abre la paleta de bloques de control y arrastra el bloque 'al presionar BANDERA' al área de programas.
 3. Añade un bloque 'por siempre' y encájalo debajo del anterior.
-4. Pincha la bandera verde de la esquina superior derecha.  Notarás que aparece un borde blanco alrededor del programa: eso indica que la bandera verde ejecuta el programa.
+4. Pincha en la bandera verde de la esquina superior derecha.  Notarás que aparece un borde blanco alrededor del programa: eso indica que la bandera verde ejecuta el programa.
 5. Ahora abre la paleta de apariencia y arrastra un bloque 'siguiente disfraz'.
 6. ¿Cómo hacemos que cambie un poco más despacio? Añade un bloque 'esperar 1 segundos' de la paleta de control.
 7. Ajusta el número de segundos para que se repita a la velocidad que quieras (0.1 segundos parece ideal). ¿Qué ocurriría sin ese bloque de espera?
@@ -36,7 +36,7 @@ __Ahora que tenemos disfraces, queremos que el objeto intercambie entre ellas.__
 ```
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ 
+__Pincha en la bandera verde.__ 
 ¿Cambia el objeto de disfraz a una velocidad adecuada?
 
 Guarda tu proyecto
@@ -55,7 +55,7 @@ Muy bien, hemos hecho que el objeto cambie de disfraz para siempre, ¿ahora cóm
 4. Finalmente, añade un 'fijar detenido a 0' debajo de 'al presionar BANDERA'.
 
 ###Prueba tu proyecto
-__Pincha la bandera verde, espera unos momentos y pincha en el objeto.__ 
+__Pincha en la bandera verde, espera unos momentos y pincha en el objeto.__ 
 
 ¿Cambia continuamente de disfraz antes de pinchar en él?
 ¿Se detiene cuando pinchas en él?
@@ -71,13 +71,13 @@ __¡Añadamos otros objetos para completar el juego!__
 3. Muévelos para que queden alineados. Disminuye su tamaño si hace falta.
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ Todos los objetos deben empezar a cambiar. ¡Intenta detenerlos todos en la misma imagen!
+__Pincha en la bandera verde.__ Todos los objetos deben empezar a cambiar. ¡Intenta detenerlos todos en la misma imagen!
 
 Guarda tu proyecto
 
 ###Cosas para probar
 
-Cuando el juego empieza por primera vez todos los objectos muestran el mismo disfraz y cambian a la vez. ¿Sabes hacer que cada objeto elija un disfraz al azar cuando pinchas la bandera verde?
+Cuando el juego empieza por primera vez todos los objectos muestran el mismo disfraz y cambian a la vez. ¿Sabes hacer que cada objeto elija un disfraz al azar cuando pinchas en la bandera verde?
 __Muy bien, has completado el juego básico. Hay más elementos que añadir: ¡atrévete con estos desafíos!__
 
 

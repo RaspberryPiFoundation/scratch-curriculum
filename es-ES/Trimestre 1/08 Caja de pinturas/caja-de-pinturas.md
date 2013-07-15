@@ -9,7 +9,7 @@ Este proyecto crea una aplicación de dibujo que te permitirá crear tus propias
 
 Empecemos con un lápiz que dibuja cuando lo mueves sobre el escenario.
 
-1. Comienza un nuevo proyecto de Scratch. Borra el objeto gato pinchándolo con el botón derecho y pinchando 'borrar'.
+1. Comienza un nuevo proyecto de Scratch. Borra el objeto gato pinchando en él con el botón derecho y pinchando en 'borrar'.
 2. Pincha en el escenario y luego en la pestaña de Fondos. Importa el fondo __indoors/chalkboard__.
 3. Crea un nuevo objeto llamado __lápiz__, usando la imagen __resources\green-pencil.__
 4. Cambia a la pestaña __Disfraces__ y pincha en __Editar__. Una vez en el __Editor de Pinturas__, mueve el centro de la imagen a la punta del lápiz. Para ello, pincha el botón __Seleccionar dentro de disfraz__ y mueve las líneas que aparecen hasta que queden justo pasado el final de la punta del lápiz.
@@ -38,7 +38,7 @@ por siempre
 (fin por siempre)
 ```
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 ¿Sigue el lápiz al ratón por el escenario? ¿Qué pasa cuando mantienes apretado el botón del ratón y lo mueves? No te preocupes del color del lápiz por ahora.
 
 
@@ -58,9 +58,9 @@ por siempre
 ```
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
-¿Desaparece tu dibujo cuando pinchas la bandera verde?
+¿Desaparece tu dibujo cuando pinchas en la bandera verde?
 
 Guarda tu proyecto.
 
@@ -79,7 +79,7 @@ borrar
 ```
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funciona el botón para borrar el dibujo?
 
@@ -111,7 +111,7 @@ fijar color de lápiz a (rojo)
 ```
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 Empieza dibujando una línea. Después pincha el objeto rojo y dibuja algo más. ¿Ha cambiado de disfraz el lápiz? ¿Las líneas son ahora rojas? ¿Aparecen desde la punta del lápiz?
 
@@ -120,7 +120,7 @@ Guarda tu proyecto.
 5. Repite esos pasos para crear lápices de color azul, amarillo y verde.
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funcionan todos los botones para seleccionar colores? ¿Cambia el color del lápiz y de las líneas que dibuja? ¿Aparecen todas las líneas desde la punta del lápiz?
 
@@ -169,7 +169,7 @@ por siempre
 ```
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Todavía puedes dibujar dentro del recuadro? ¿Puedes dibujar fuera de él? ¿Qué le pasa al lápiz cuando entre y sale del recuadro?
 
@@ -184,7 +184,7 @@ Añade un nuevo objeto botón con el que seleccionar la goma de borrar. Usa el d
 El objeto lápiz debe responder al mensaje __borrar__ cambiando el color del lápiz al gris (recuerda cómo puedes usar el cuentagotas para seleccionar el color del fondo). También necesitará un disfraz que represente la goma: usa el mismo disfraz __resources/eraser__. __No olvides cambiar el centro del disfraz.__
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funciona la goma para borrar líneas? ¿Funciona hasta los bordes del recuadro? ¿Es posible intercambiar entre goma de borrar y lápices?
 
@@ -202,7 +202,7 @@ Lo siguiente es añadir un sello con el que estampar pequeñas imágenes en el d
 6. Finalmente, comprobamos esta variable cuando el botón del ratón esté presionado para saber si debemos dibujar o estampar. Si __modo lápiz = verdadero__ dejamos el bloque __bajar lápiz__, y si no usamos un bloque __sellar__.
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funciona correctamente el sello para estampar?
 
@@ -229,7 +229,7 @@ También tienes que diseñar el programa para que solo cambie el color del lápi
 Controla el efecto arco iris usando lo aprendido cuando creaste el sello de estampar. Es decir, los programas que responden a los mensajes de los botones fijan los valores de dos variables cada vez: __modo lápiz__ y __modo arco iris__.
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funciona el modo arco iris como querías?
 
@@ -252,7 +252,7 @@ Yo usé estos atajos:
 * Sello para estampar - e
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funciona cada tecla para seleccionar el tipo de lápiz correcto? ¿Funciona correctamente cada lápiz una vez seleccionado? ¿Siguen funcionando los botones en pantalla?
 
@@ -276,7 +276,7 @@ Para evitarlo. Fija el tamaño al 100% cada vez que cambies al modo lápiz, para
 Para hacerlo aún mejor, haz que el sello recuerde su tamaño antes de seleccionar el lápiz y vuelva a ese tamaño cuando vuelvas a seleccionar el sello. La manera más fácil de lograrlo es creando una nueva variable __tamaño sello__, que actualizas con el tamaño del sello cada vez que cambias su tamaño. Cuando se selecciona el sello, cambia su tamaño según el valor de la variable.
 
 ##Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Funcionan los botones para cambiar el tamaño del lápiz?
 

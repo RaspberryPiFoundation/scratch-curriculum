@@ -121,7 +121,7 @@ __Ahora necesitamos añadir los objetos en los que el jugador va a poder pinchar
 
 Acabarás con una fila de cinco objetos de "respuesta" a lo largo de la parte inferior del escenario, cada uno mostrando un disfraz distinto. __Ninguno de los objetos de respuesta debe tener programas__.
 
-Ahora queremos que cada objeto responda al ser pinchado y haga algo dependiendo de si es o no la respuesta correcta.
+Ahora queremos que cada objeto responda al pinchar en él y haga algo dependiendo de si es o no la respuesta correcta.
 
 8. Añade este programa al objeto respuesta1:
 

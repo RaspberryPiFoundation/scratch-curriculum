@@ -25,7 +25,7 @@ __¡Hagamos que el Pez Gordo nade por el mar!__
 ```
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ 
+__Pincha en la bandera verde.__ 
 Mueve el ratón por el mar. ¿Sigue el pez al puntero?
 ¿Qué ocurre si dejas de mover el ratón y el pez lo alcanza? ¿Qué aspecto tiene? ¿Por qué crees que hace eso?
 
@@ -68,7 +68,7 @@ Si quieres puedes jugar con los números del programa. ¿Cómo cambia la forma d
 ```
 
 ###Prueba tu proyecto
-__Pincha la bandera verde__ y observa si la presa nada por el escenario. ¿Se mueve como esperabas? ¿Es un movimiento realista?
+__Pincha en la bandera verde__ y observa si la presa nada por el escenario. ¿Se mueve como esperabas? ¿Es un movimiento realista?
 
 __Por ahora el Pez Gordo y la presa no interactúan. En el siguiente paso añadiremos eso.__
 
@@ -164,7 +164,7 @@ __Ahora queremos que el pez responda a este mensaje tocando el sonido 'chomp' y 
 __Ahora que el Pez Gordo está listo, ¡llenemos el mar de comida! Pincha en el objecto presa con el botón derecho y duplícalo varias veces.__
 
 ###Prueba tu proyecto
-Pincha la bandera verde.
+Pincha en la bandera verde.
 ¿Se come el Pez Gordo la presa? ¿Se come las distintas presas?
 
 Guarda tu proyecto

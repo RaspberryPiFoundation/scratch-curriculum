@@ -36,7 +36,7 @@ Queremos que el objeto se mueva cuando pulsamos una tecla.
 ```
 
 ###Prueba tu proyecto
-__Pincha la bandera verde__ 
+__Pincha en la bandera verde__ 
 ¿Se mueven el león y el loro cuando pulsas las teclas 'A' y 'L'?
 
 Guarda tu proyecto
@@ -47,7 +47,7 @@ Guarda tu proyecto
 Necesitamos alguna forma de comenzar la carrera y saber quién ha ganado. __Primero vamos a crear un botón de inicio.__
 
 1. Añade un nuevo objeto desde archivo. Elige la imagen 'things/button'.
-2. Edita el disfraz de ese nuevo objeto, añade el texto 'inicio' y pincha 'Aceptar'. Coloca el botón en el centro del escenario.
+2. Edita el disfraz de ese nuevo objeto, añade el texto 'inicio' y pincha en 'Aceptar'. Coloca el botón en el centro del escenario.
 3. Ahora añade el programa que muestra el botón cuando empieza el juego.
 
 ```scratch
@@ -67,7 +67,7 @@ Necesitamos alguna forma de comenzar la carrera y saber quién ha ganado. __Prim
 	esconder
 ```
 ###Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 Cuando pinchas el botón de inicio, ¿hace la cuenta atrás antes de desaparecer?
 
@@ -97,7 +97,7 @@ Queremos que los competidores solo se muevan una vez que haya empezado la carrer
 9. Haz lo mismo con el león.
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Se mueven los animales solo después de acabar la cuenta atrás?
 
@@ -117,7 +117,7 @@ Queremos saber quién ha ganado cada carrera y volver al inicio para poder compe
 		(acabar si)
 	(acabar si)
 ```
-2. Ahora queremos que el loro nos avise si gana la carrera. Graba un nuevo sonido que sonará si el loro gana. ¡Pincha la pestaña 'Sonidos' y graba el sonido que hará el loro al ganar la carrera!
+2. Ahora queremos que el loro nos avise si gana la carrera. Graba un nuevo sonido que sonará si el loro gana. ¡Pincha en la pestaña 'Sonidos' y graba el sonido que hará el loro al ganar la carrera!
 3. Añade los bloques que tocan el sonido y hacen que el loro diga que ha ganado:
 
 ```scratch
@@ -135,7 +135,7 @@ Queremos saber quién ha ganado cada carrera y volver al inicio para poder compe
 4. Ahora repite estos pasos para el león.
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 ¿Puedes presionar el botón de inicio y comenzar a correr presionando las teclas 'A' y 'L'?
 ¿Al acabar la carrera, el ganador anuncia que ha ganado y se oye su sonido?
@@ -172,7 +172,7 @@ Añade un bloque que envía el mensaje 'fin' para avisar de que ha ganado.
 	fijar x a -175
 ```
 3. Ahora añade el mismo programa al león. Intenta con distintos valores de x para asegurarte de que el león y el loro estén alineados en la salida.
-4. También queremos que el león y el loro estén alineados al principio del programa, así que añade otro programa que los mueva a esa posición cuando pinchamos la bandera verde.
+4. También queremos que el león y el loro estén alineados al principio del programa, así que añade otro programa que los mueva a esa posición cuando pinchamos en la bandera verde.
 
 ```scratch
 
@@ -182,7 +182,7 @@ Añade un bloque que envía el mensaje 'fin' para avisar de que ha ganado.
 5. Pincha en el botón de inicio y añade un programa que lo muestra cuando recibe el mensaje 'fin'.
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__
+__Pincha en la bandera verde.__
 
 
 ¿Puedes competir con tus amigos y amigas, con uno de vosotros moviendo el loro pulsando la tecla 'A' y el otro moviendo el león pulsando la tecla 'L'?

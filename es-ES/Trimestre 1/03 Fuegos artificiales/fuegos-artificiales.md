@@ -9,10 +9,10 @@ En este proyecto vamos a crear una exhibición de fuegos artificiales sobre la c
 
 __Primero, importemos las imágenes que vamos a necesitar__
 
-1. Crea un proyecto de Scratch nuevo. Borra el objeto gato pinchándolo con el botón derecho y pinchando 'borrar'.
+1. Crea un proyecto de Scratch nuevo. Borra el objeto gato pinchando en él con el botón derecho y pinchando en 'borrar'.
 2. Cambia el fondo del escenario a 'outdoor/city-with-water'.
 3. Pincha el botón __Escoger un nuevo objeto desde archivo__ para añadir un cohete al proyecto (usa el disfraz 'rocket.png').
-4. Haz que el cohete se esconda cuando se pincha la bandera verde.
+4. Haz que el cohete se esconda cuando se pincha en la bandera verde.
 
 Ahora queremos que el cohete se mueva hacia el ratón cuando pulses el botón del ratón.
 
@@ -31,7 +31,7 @@ Ahora queremos que el cohete se mueva hacia el ratón cuando pulses el botón de
 ```
 		
 ###Prueba tu proyecto
-__Pincha la bandera verde, pon el puntero del ratón sobre el escenario y pulsa la barra espaciadora.__
+__Pincha en la bandera verde, pon el puntero del ratón sobre el escenario y pulsa la barra espaciadora.__
 
 ¿Aparece el cohete y se mueve hacia el puntero del ratón?
 ¿Qué pasa si mueves el ratón y vuelves a pulsar la barra espaciadora?
@@ -52,7 +52,7 @@ __Pincha la bandera verde, pon el puntero del ratón sobre el escenario y pulsa 
 ```
 
 ###Prueba tu proyecto
-__Pincha la bandera verde, pon el puntero del ratón sobre el escenario y pulsa la barra espaciadora.__ 
+__Pincha en la bandera verde, pon el puntero del ratón sobre el escenario y pulsa la barra espaciadora.__ 
 ¿Vuela el cohete hacia el ratón desde la parte inferior de la pantalla? ¿Qué pasa si mueves el ratón y vuelves a pulsar la barra espaciadora?
 
 7. Finalmente, vamos a hacer que el cohete se lance al pulsar el botón del ratón en vez de la barra espaciadora. Para lograrlo, vamos a envolver nuestro programa en un bloque 'por siempre si ¿ratón presionado?'.
@@ -69,7 +69,7 @@ Después reemplaza el bloque __al presionar tecla espacio__ por un __al presiona
 	(acabar por siempre)
 ```
 ###Prueba tu proyecto
-__Pincha la bandera verde, y luego pincha con el ratón sobre el escenario. Pincha en diferentes partes del escenario.__ 
+__Pincha en la bandera verde, y luego pincha con el ratón en el escenario. Pincha en diferentes partes del escenario.__ 
 
 ###Cosas para probar
 1. Prueba a cambiar dónde se posiciona el cohete antes de deslizarse hacia el ratón, para que se mueva trazando un arco.
@@ -110,7 +110,7 @@ Guarda tu proyecto.
 
 ```
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ 
+__Pincha en la bandera verde.__ 
 Confirma que el cohete toca el sonido y se esconde al alcanzar el puntero del ratón.
 
 3. Importa un nuevo objecto usando el disfraz 'Resources/firework1.png'.
@@ -159,14 +159,14 @@ Guarda tu proyecto
 ```
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ 
+__Pincha en la bandera verde.__ 
 
 ¿Es cada explosión de un color distinto?
 
 2. Vamos a añadir varios tipos de explosión distintos, usando los disfraces 'Resources/firework2.png' y 'Resources/firework3.png', intercambiando entre ellos en cada cohete, de nuevo antes de mostrar cada explosión.
 
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ 
+__Pincha en la bandera verde.__ 
 
 ¿Muestra cada cohete una explosión distinta?
 
@@ -193,7 +193,7 @@ __Pincha la bandera verde.__
 	esconder
 ```
 ###Prueba tu proyecto
-__Pincha la bandera verde.__ 
+__Pincha en la bandera verde.__ 
 
 ¿Comienza la explosión pequeña en el centro del cohete y se expande lentamente?
 
@@ -223,7 +223,7 @@ La causa es que después de enviar el mensaje 'explota', el cohete vuelve a repe
 	(acabar por siempre)
 ```
 ###Prueba tu proyecto
-__Pincha la bandera verde, mantén presionado el botón del ratón y mueve el ratón por el escenario.__ 
+__Pincha en la bandera verde, mantén presionado el botón del ratón y mueve el ratón por el escenario.__ 
 
 ¿Aparece cada explosión en el lugar y momento correcto?
 

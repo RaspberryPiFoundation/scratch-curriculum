@@ -99,7 +99,7 @@ __En vez de hacer que Félix diga algo, queremos que Herbert se convierta en un 
 			esperar 1 segundos
 		(acabar si)
 	(acabar por siempre)
-```2. Importa un nuevo disfraz para Herbert desde fantasy/ghost2-a.3. Edita el disfraz haciéndolo más pequeño. Pinchando seis veces el botón 'Achicar' debería bastar.4. Cambia los nombres de los disfraces de Herbert para que el de ratón se llame 'vivo' y el de fantasma se llame 'muerto'.5. Crea un programa nuevo para Herbert que lo convierta en fantasma:
+```2. Importa un nuevo disfraz para Herbert desde fantasy/ghost2-a.3. Edita el disfraz haciéndolo más pequeño. Pinchando seis veces en el botón 'Achicar' debería bastar.4. Cambia los nombres de los disfraces de Herbert para que el de ratón se llame 'vivo' y el de fantasma se llame 'muerto'.5. Crea un programa nuevo para Herbert que lo convierta en fantasma:
 ```scratch
 	
 	al recibir pillado

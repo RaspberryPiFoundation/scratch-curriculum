@@ -19,7 +19,7 @@ Esta variable controla la velocidad de la bruja. Usamos una variable para poder 
 		mover velocidad pasos
 	(acabar por siempre)
 ```		
-###Prueba tu proyecto__Pincha la bandera verde__ y observa lo que hace la bruja. ¿Por qué se queda atascada en el borde de la pantalla?
+###Prueba tu proyecto__Pincha en la bandera verde__ y observa lo que hace la bruja. ¿Por qué se queda atascada en el borde de la pantalla?
 6. Para evitar que la bruja se atasque tenemos que hacer que de la vuelta al llegar al borde del escenario. Después del bloque 'mover velocidad pasos' añade un 'rebotar si está tocando el borde'.
 ```scratch
 	al presionar BANDERA
@@ -30,7 +30,7 @@ Esta variable controla la velocidad de la bruja. Usamos una variable para poder 
 	(acabar por siempre)
 ```7. Para que la bruja no se ponga del revés, pincha el botón __solo mirar izquierda-derecha__ en la zona de sumario del objeto.
 
-###Prueba tu proyecto__Pincha la bandera verde.__ 
+###Prueba tu proyecto__Pincha en la bandera verde.__ 
 ¿Se mueve la bruja de lado a lado del escenario?
 
 Guarda tu proyecto
@@ -48,13 +48,13 @@ Guarda tu proyecto
 		esperar número al azar entre 3 y 5 segundos
 	(acabar por siempre)
 ```
-###Prueba tu proyecto__Pincha la bandera verde.__ 
+###Prueba tu proyecto__Pincha en la bandera verde.__ 
 ¿Se mueve la bruja de lado a lado del escenario, apareciendo y despareciendo al azar?
 
 Guarda tu proyecto
 
 ###Cosas para probar__Prueba cambiar el rango de números. ¿Qué ocurre si escoges números muy grandes o muy pequeños?__(¿Te da esto alguna pista para hacer que la bruja acelere según avanza el juego?)##PASO 3: Haz que la bruja desaparezca cuando alguien pincha en ella
-Para convertirlo en un juego, tenemos que darles algo que hacer a los jugadores. Tienen que pinchar la bruja para hacerla desaparecer. Cuando se pincha la bruja, queremos que desaparezca y haga algún sonido.
+Para convertirlo en un juego, tenemos que darles algo que hacer a los jugadores. Tienen que pinchar en la bruja para hacerla desaparecer. Cuando se Pincha en la bruja, queremos que desaparezca y haga algún sonido.
 1. En la pestaña de Sonidos, importa el sonido 'electronic/fairydust'.
 2. Añade este programa a la bruja:
 ```scratch
@@ -62,12 +62,12 @@ Guarda tu proyecto
 	esconder
 	tocar sonido Fairydust
 ```
-###Prueba tu proyecto__Pincha la bandera verde.__ 
-Cuando pinchas la bruja, ¿desaparece y se oye el sonido?
+###Prueba tu proyecto__Pincha en la bandera verde.__ 
+Cuando pinchas en la bruja, ¿desaparece y se oye el sonido?
 Guarda tu proyecto
 ##PASO 4: Añade un marcador y cronómetro
-Tenemos una bruja, ¡hagamos un juego! Queremos que los jugadores reciban puntos cada vez que pinchan la bruja, pero también queremos que la partida tenga un límite de tiempo. Usamos variables para el marcador y el cronómetro.
-1. Crea una variable para todos los objetos llamada 'marcador', y cambia el programa de la bruja para incrementar esta variable cuando se pincha.
+Tenemos una bruja, ¡hagamos un juego! Queremos que los jugadores reciban puntos cada vez que pinchan en la bruja, pero también queremos que la partida tenga un límite de tiempo. Usamos variables para el marcador y el cronómetro.
+1. Crea una variable para todos los objetos llamada 'marcador', y cambia el programa de la bruja para incrementar esta variable cuando se pincha en ella.
 ```scratch
 	al presionar Objeto1
 
@@ -75,7 +75,7 @@ Guarda tu proyecto
 
 	tocar sonido Fairydust
 	cambiar marcador por 1
-```2. Pincha en el escenario y crea una nueva variable (esta vez solo para el escenario) llamada 'tiempo'. Añade un nuevo programa que actúa cuando alguien pincha la bandera verde, para fijar el tiempo a 30 y poner el marcador a 0. Usa un bloque de repetición para restarle 1 al tiempo cada segundo. Esto se repite hasta que el tiempo llegue a 0, cuando detenemos el juego.
+```2. Pincha en el escenario y crea una nueva variable (esta vez solo para el escenario) llamada 'tiempo'. Añade un nuevo programa que actúa cuando alguien pincha en la bandera verde, para fijar el tiempo a 30 y poner el marcador a 0. Usa un bloque de repetición para restarle 1 al tiempo cada segundo. Esto se repite hasta que el tiempo llegue a 0, cuando detenemos el juego.
 ```scratch
 	al presionar BANDERA
 	fijar tiempo a 30
@@ -86,7 +86,7 @@ Guarda tu proyecto
 	(acabar repetir)
 	detener todo
 ```
-###Prueba tu proyecto__Pincha la bandera verde.__ 
+###Prueba tu proyecto__Pincha en la bandera verde.__ 
 Guarda tu proyecto
 
 ###Cosas para probar__¿Cómo harías que la bruja acelere según avanza la partida?__
@@ -94,7 +94,7 @@ Guarda tu proyecto
 ##Desafío: Añade más brujas
 ¡Cuantas más brujas, mejor! Añadamos dos brujas.1. Duplica la bruja pinchando en el objeto con el botón derecho.2. Cambia el tamaño de cada bruja.3. Cambia la variable 'velocidad' de cada bruja para que vuelen a distintas velocidades.
 4. Cambia la posición de cada bruja en el escenario para que no vuelen juntas.
-###Prueba tu proyecto__Pincha la bandera verde.__ 
+###Prueba tu proyecto__Pincha en la bandera verde.__ 
 
 ¿Tienes tres brujas que se mueven independientemente de lado a lado de la pantalla, aparecen y desaparecen al azar, y desaparecen cuando pinchas en ellas?
 Guarda tu proyecto
