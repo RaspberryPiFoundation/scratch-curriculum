@@ -2,282 +2,313 @@ Nível 3
 
 #Adivinha o que é!
 
-__Introdução:__
+__Introdução:__ Um objecto aleatório é mostrado, todo distorcido, sobre um
+quadro preto. Tens de adivinhar que objecto é e clicar na imagem
+correspondente. Quanto mais depressa adivinhares, maior será a tua pontuação!
 
-Um objeto aleatório é mostrado na tela, completamente distorcido. Você tem que adivinhar qual é o objeto e  clicar na imagem correspondente. 
-Quanto mais rápido você adivinhar, maior será a sua pontuação!
+##Passo 1: Fazer objectos diferentes surgirem no quadro preto
 
-##Passo 1: Crie objetos diferentes na tela
+Queremos que umas quantas imagens diferentes apareçam sobre o quadro preto.
 
-Vamos fazer algumas imagens diferentes aparecerem na tela.
+1. Cria um novo projeto Scratch e remove o actor gato.
 
-1. Inicie um novo projeto Scratch e apague o gato.
-2. Clique Palco e, em seguida, na aba Fundos de Tela. Importe o fundo de tela __indoors/chalkboard__.
-3. Importe um novo objeto e escolha o traje que você quiser. Você pode escolher alguns da pasta __things__ (coisas).
-4. Posicione o novo objeto no meio da tela. Se necessário mude o seu tamanho.
-5. Clique na aba Trajes e importe mais quatro imagens. Escolha o que você quiser!
-6. Vamos agora fazer uma imagem aleatória aparecer.
- 
- Crie estes códigos:
+2. Clica sobre «o palco» e, em seguida, clica no separador «Cenários». Importa
+o cenário «Interior/chalkboard». Altera o nome do novo cenário para «sala com
+quadro preto».
 
+3. Importa um novo actor a teu gosto, por exemplo da pasta «Coisas». Altera o
+nome desse actor para «a imagem». Vai para o separador «Trajes». Se o actor
+que importaste tiver mais do que um traje, remove todos os trajes com excepção
+do que mais te agradar. Altera o nome desse traje para descrever bem a imagem.
 
+4. Posiciona o novo actor no meio do quadro preto. Se necessária, ajusta o seu tamanho.
 
-		quando BANDEIRA clicado
-		repita (sorteie número entre (1) e (5))
-			próximo traje
-		fim
+5. Clique de novo no separador «Trajes». Cria quatro novos trajes, importando
+imagens à tua escolha. Dá nomes apropriados aos trajes criados. Usa o editor
+de pintura para alterar os tamanhos relativas das imagens para que fiquem
+todas com um tamanho semelhante sobre o quadro preto.
 
+6. Vamos agora fazer surgir uma imagem aleatória. Cria o seguinte guião para o actor «a imagem»:
 
-###Teste o projeto
-__Clique na bandeira verde.__
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete (um valor ao acaso entre (1) e (5)) vezes
+		passa para o próximo traje
+	[fim do comando «repete vezes»]
+	[fim do guião]
+```
 
-O objeto mostrar um traje diferente?
+###Testa o teu projecto
 
-__Clique sobre ele mais algumas vezes.__
-Você vê trajes diferentes a cada vez? Em alguns casos pode aparecer o mesmo traje duas vezes seguidas, mas isso não é um problema. 
-Você também pode ter percebido que a imagem treme ao mudar de traje. Nós vamos corrigir isso na próxima etapa.
+__Clica na bandeira verde.__ A imagem mudou? Se não, porquê?
 
-Salve seu projeto
+__Clia sobre a bandeira verde mais algumas vezes.__ Surgem imagens diferentes?
+Por vezes aparece a mesma imagem várias vezes seguidas, mas isso não é um
+problema. Também reparou que a imagem «treme» até chegar à imagem final.
+Corrigiremos isso na próxima etapa.
 
 ##Passo 2: Distorcendo as imagens
 
-__Agora é hora de fazer uma imagem ficar distorcida, e  com o passar do tempo fazer com que ela fique mais nítida. __
+__Vamos agora distorcer a imagem que aparece e ir reduzindo essa distorção
+durante alguns segundos até surgir a imagem original, sem distorções.__ Vamos
+usar uma variável para controlar o grau de distorção existente. Se o valor da
+variável for alto, haverá muita distorção.  À medida que o valor da variável
+diminui a distorção torna-se cada vez menor. O grau de distorção guardado na
+variável funcionará também como um cronómetro e servirá para atribuir pontos
+ao jogador.
 
-Vamos usar uma variável de contagem para controlar a quantidade de distorção a ser usada. Se o valor for alto, haverá muita distorção.
- Na medida que o valor diminui, teremos cada vez menos distorção. A pontuação também atua como um contador de tempo.
+1. No separador «Dados», cria uma variável chamada «a distorção» apenas para o
+actor corrente.
 
-1. Na aba __variáveis__, crie uma variável chamada Pontos.
+2. Altera o guião de modo a ficar assim:
 
-2. Altere os comandos para que eles fiquem assim:
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete (um valor ao acaso entre (1) e (5)) vezes
+		passa para o próximo traje
+	[fim do comando «repete vezes»]
+	altera [a distorção ▼] para [101]
+	até que &lt;(a distorção) = [0]>, repete
+		adiciona a [a distorção ▼] o valor (-1)
+		altera o teu efeito [pixelização ▼] para (a distorção)
+		altera o teu efeito [cor ▼] para (a distorção)
+		mostra-te
+		espera (0.1) s
+	[fim do comando «até que, repete»]
+	[fim do guião]
+```
 
+Os novos blocos a inserir são o [esconde-te], no topo, bem como todos os
+blocos com início em [altera [a distorção ▼] para [101]].
 
+###Testa o teu projecto
 
-		quando BANDEIRA clicado
-		desapareça
-		repita (sorteie número entre (1) e (5))
-			próximo traje
-		fim
-		mude [ pontos v] para (110)
-		repita até <(score) = (0) >
-			mude [pontos v] por (-10)
-			mude o efeito [pixelar v] para (pontos)
-			mude o efeito [cor v] para (pontos)
-			apareça
-			espere (1) segundos
-		fim
+__Clica na bandeira verde.__ Aparece uma imagem aleatória e distorcida? A
+distorção diminui aos poucos? O valor da variável «a distorção» diminui à
+medida que a imagem fica menos distorcida? Quando esse valor atinge zero a
+imagem fica sem distorções? Obténs uma imagem aleatória cada vez que clica na
+bandeira verde?
 
+###Coisas a experimentar
 
-Os novos blocos a inserir são o __desapareça__ bem encima e também todos os blocos abaixo de __mude [pontos] para 110__.
+__Modifica a distorção inicial bem como a quantidade de distorção reduzida a
+cada passo.__ De que modo isso afecta a forma como a imagem é mostrada? Essas
+modificações tornam mais difícil ou mais fácil perceber de que imagem se
+trata?
 
-### Teste o projeto
-__Clique na bandeira verde.__
+__Experimenta outros efeitos gráficos.__ Afectam a dificuldade do jogo?
 
-Uma imagem aleatória e distorcida aparece?
+##Passo 3: Permitir ao jogador adivinhar a imagem
 
-A distorção diminui aos poucos?
+Neste momento temos uma imagem aleatória que vai sendo revelada lentamente, à
+medida que diminui o valor numa variável que controla a distorção. Mas como é
+que se joga? Adicionaremos alguns actores na parte de baixo do palco para que
+o jogador possa clicar neles. Se clicar no correcto, ganha. Se carrega no
+errado, esse actor desaparece e o jogo continua.
 
-Os pontos diminuem à medida que a imagem torna-se menos distorcida?
+Primeiro, no entanto, precisamos de saber qual é a resposta certa.
 
-Você obtém uma imagem sem distorções quando os pontos chegam a zero?
+1. Cria uma nova variável chamada «a resposta correcta». Certifica-te que a
+opção «Para todos os actores» está seleccionada.
 
-Você ainda obtém uma imagem diferente cada vez que clica na bandeira verde?
+2. Altera o guião que criaste de modo a guardar a resposta correcta na variável. Adiciona o comando [altera [a resposta correcta ▼] para (o número do traje)] logo após o primeiro comando de repetição:
 
-Salve o projeto
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete (um valor ao acaso entre (1) e (5)) vezes
+		passa para o próximo traje
+	[fim do comando «repete vezes»]
+	altera [a resposta correcta ▼] para (o número do traje)
+	altera [a distorção ▼] para [101]
+	até que &lt;(a distorção) = [0]>, repete
+		adiciona a [a distorção ▼] o valor (-1)
+		altera o teu efeito [pixelização ▼] para (a distorção)
+		altera o teu efeito [cor ▼] para (a distorção)
+		mostra-te
+		espera (0.1) s
+	[fim do comando «até que, repete»]
+	[fim do guião]
+```
 
-### Sugestões
+__Agora vamos criar os objetos nos quais o jogador poderá clicar.__
 
-__Modifique a pontuação inicial e também a quantidade com que ela diminui a cada passo.__ Como isso muda a forma como a imagem aparece? 
-Isso torna mais difícil ou mais fácil de detectar qual é a imagem?
+3. Duplica o actor «a imagem» e move-a para o canto inferior esquerdo do
+palco.
 
-__Experimente outros efeitos gráficos da lista.__ Eles mudam a dificuldade do jogo?
+4. Renomeia esse actor para «a resposta 1». Isto faz com que seja mais fácil
+reconhecê-lo.
 
-## Passo 3: Adivinhando a imagem
+5. Remove todos todos os guiões de «a resposta 1» e todos os seus trajes, com
+excepção do primeiro.
 
-Até agora, nós temos uma imagem aleatória sendo revelada lentamente, e uma pontuação que diminui ao longo do tempo, mas como fazer para jogar? 
+6. Repete estes três últimos itens colocando «a resposta 2» ao lado de «a
+resposta 1» e removendo tudo, excepto o segundo traje.
 
-Vamos adicionar algums objetos na parte de baixo da tela para que o jogador clique para adivinhar.
-Se o jogador clicar na imagem certa, ele ganha o jogo. Se clicar na imagem errada a imagem desaparece e o jogo continua.
+7. Repete isto mais três vezes para obteres «a resposta 3», «a resposta 4» e
+«a resposta 5».
 
-Primeiro, precisamos saber qual é a resposta certa.
+Deves terminar com uma fila de cinco actores de resposta no palco, cada uma
+mostrando uma imagem correspondente a uma resposta possível. __Nenhum dos
+actores de resposta pode ter guiões dentro dele!__
 
-1. Crie uma nova variável chamada __resposta__. Certifique-se que a opção __para todos os objetos__ está clicada.
-2. Mude os comandos que você criou para gravar a resposta certa. 
-Adicione o bloco __mude [resposta] para [traje #]__ logo após o primeiro repita:
+Agora, vamos fazer cada um dos actores de resposta reagir ao clique de acordo
+com a correcção da resposta.
 
+8. Adiciona este guião ao actor «a resposta 1»:
 
+```scratch
+	Quando alguém clicar em ti
+	se &lt; (a resposta correcta) = [1]>, então
+		difunde a mensagem [O jogador acertou! ▼]
+	senão
+		esconde-te
+	[fim do comando «se então senão»]
+	[fim do guião]
+```
 
-		quando BANDEIRA clicado
-		desapareça
-		repita (sorteie número entre (1) e (5))
-			próximo traje
-		fim
-		mude [resposta] para (traje #)
-		mude [ pontos v] para (110)
-		repita até <(score) = (0) >
-			mude [pontos v] por (-10)
-			mude o efeito [pixelar v] para (pontos)
-			mude o efeito [cor v] para (pontos)
-			apareça
-			espere (1) segundos
-		fim
+9. Arrasta este guião para cima de cada um dos outros actores de resposta na
+área dos actores. __Em cada um desses actores, substitui o valor 1 no guião
+que copiaste pelos valores 2, 3, e assim sucessivamente.__
 
-__Agora vamos criar os objetos para que o jogador possa clicar.__
+10. Agora temos de acrescentar algo que ouça a mensagem «O jogador acertou!» e
+lhe dê a resposta apropriada. Volte para o actor «a imagem», o actor que é
+mostrado no quadro preto. Adiciona este outro guião:
 
-3. Duplique o objeto principal e arraste a cópia para o canto esquerdo em baixo do palco.
-4. Renomeie esse objeto para __resposta1__. (Isso faz com que seja mais fácil reconhecê-lo.)
-5. Apague todos os comandos de __resposta1__ e todos os seus trajes, exceto o primeiro.
-6. Repita estas três últimas etapas colocando a __resposta2__ ao lado da __resposta1__ e apagando tudo, exceto o segundo traje.
-7. Repita isso mais três vezes para a __resposta3__, __resposta4__ e __resposta5__.
-Você deve acabar com uma fileira de cinco objetos de resposta no palco, 
-cada uma exibindo uma imagem correspondente a uma resposta possível. __Nenhum dos objetos resposta pode ter comandos dentro dele!__
+```scratch
+	Quando receberes a mensagem [O jogador acertou! ▼]
+	diz (a junção de [Parabéns! Acertaste! A tua pontuação é: ] com [a distorção])
+	[fim do guião]
+```
 
-Agora, vamos fazer cada objeto reagir ao clique dependendo se a resposta é correta ou não.
+###Testa o teu projeto
 
-8. Adicionar estes comandos para o objeto resposta1:
+__Clica na bandeira verde.__ O que acontece quando clicas na __resposta certa__? O que acontece quando clicas na resposta __errada__? O que acontece ao actor da resposta errada quando __começas um novo jogo__?
 
+O teste revela dois problemas. Primeiro, respostas erradas não reaparecem
+quando recomeças o jogo.  Segundo, a distorção não pára de diminuir quando o
+jogador clica na resposta certa.
 
+11. Para resolver o primeiro problema, adiciona o seguinte guião a cada um dos cinco actores de resposta:
 
-		quando resposta1 clicado
-		se <(resposta) = (1)>
-			anuncie [ganhou v] para todos
-		senão
-			desapareça
-		fim
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	mostra-te
+	[fim do guião]
+```
 
+Para resolver o segundo problema, temos de parar a repetição do actor «a
+imagem» assim que o jogador clicar na resposta certa. Vamos usar uma nova
+variável chamada «o jogador acertou» para o conseguir.  Vamos inicializar essa
+variável com o valor «falso» quando o jogo começar e alterar o seu valor para
+«verdadeiro» quando o jogador acertar.  Vamos também fazer com que o ciclo de
+repetição [até que &lt;>, repete] pare não apenas quando a distorção chega a
+zero, mas também quando a variável «o jogador acertou» tiver o valor
+«verdadeiro».
 
-9 Arraste estes comandos para cada um dos outros objetos resposta. __Em cada objeto, substitua o 1 por 2, 3, e assim por diante.__
-10. Agora temos de acrescentar algo que ouça a mensagem ganhou. Volte para objeto1, o que aparece na tela. E adicione estes comandos:
+12. Cria uma nova variável chamada «o jogador acertou» _apenas para o actor «a imagem»_.
 
+13. Alterar os guiões desse mesmo actor para ficarem como se segue:
 
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	esconde-te
+	repete (um valor ao acaso entre (1) e (5)) vezes
+		passa para o próximo traje
+	[fim do comando «repete vezes»]
+	altera [a resposta correcta ▼] para (o número do traje)
+	altera [o jogador acertou ▼] para [falso]
+	altera [a distorção ▼] para [101]
+	até que &lt;&lt;(a distorção) = [0]> ou &lt;(o jogador acertou) = [verdadeiro]>>, repete
+		adiciona a [a distorção ▼] o valor (-1)
+		altera o teu efeito [pixelização ▼] para (a distorção)
+		altera o teu efeito [cor ▼] para (a distorção)
+		mostra-te
+		espera (0.1) s
+	[fim do comando «até que, repete»]
+	[fim do guião]
 
-		quando eu ouvir [ganhou v]
-		diga (junte [Parabéns! Sua pontuação é de ] [pontos])
+	Quando receberes a mensagem [O jogador acertou! ▼]
+	altera [o jogador acertou ▼] para [verdadeiro]
+	cancela os teus efeitos gráficos
+	diz (a junção de [Parabéns! Acertaste! A tua pontuação é: ] com [a distorção])
+	[fim do guião]
+```
 
+14. Aproveita para deixar de mostrar no palco os monitores das variáveis «a
+resposta correcta» e «o jogador acertou». Para isso basta desmarcares as
+caixas de selecção junto aos blocos dessas variáveis na paleta de dados.
+Quanto ao monitor da variável «a distorção», clica sobre ele com o botão
+direito do rato e escolhe «large readout». Verás que a distorção decrescente,
+que é também a quantidade de pontos que o jogador pode obter, ficará com muito
+melhor aspecto!
 
-###Teste o projeto
-__Clique na bandeira verde.__
+__Parabéns! Terminaste o jogo básico!__
 
+No entanto, há mais coisas que podes fazer neste jogo. Dá uma olhada nos desafios!
 
-
-O que acontece quando você clica na __resposta certa__?
-
-O que acontece quando você clica na resposta __errada__?
-
-O que acontece com a resposta errada quando você __começa um novo jogo__?
-
-O teste revela dois problemas. Primeiro, respostas erradas não reaparecer quando o próximo jogo começar. 
-Em segundo lugar, o placar não para de diminuir quando encontramos a resposta certa.
-
-11. Para resolver o primeiro problema, adicione estes comandos para cada um dos cinco objetos de resposta:
-
-
-
-		quando BANDEIRA clicado
-		apareça
-
-
-Para resolver o segundo problema, temos de parar o bloco repita do __objeto 1__ pare que ele pare quando o jogador clica na resposta certa.
-Vamos usar uma nova variável para fazer isso. 
-Ela será inicializada a __zero__ quando o jogo começa e será mudada para __um__ quando o jogador ganhar. 
-Nós vamos fazer com que o laço de repetição __repita até__ pare quando os __pontos__ chegarem a __0 (zero)__ ou 
-a variável que sinaliza o fim do jogo tenha o valor de  __1 (um)__.
-
-12. Crie uma nova variável chamada "ganhou?"
-13. Alterar os comandos para que eles fiquem assim:
-
-
-
-		quando BANDEIRA clicado
-		desapareça
-		repita (sorteie número entre (1) e (5))
-			próximo traje
-		fim
-		mude [resposta] para (traje #)
-		mude [ pontos v] para (110)
-		mude [ganhou?] para (0)
-		repita até < ( (score) = (0 ) ) ou ( (ganhou?)= (1) ) >
-			mude [pontos v] por (-10)
-			mude o efeito [pixelar v] para (pontos)
-			mude o efeito [cor v] para (pontos)
-			apareça
-			espere (1) segundos
-		fim
-
-		Quando eu ouvir [ganhou v]
-		mude [ganhou?] para (1)
-		limpe os efeitos gráficos
-		diga (junte [Parabéns! Sua pontuação é de ] [pontos])
-
-
-Salve o projeto
-
-__Parabéns você terminou o jogo básico.__
-
-Há mais coisas que você pode fazer neste jogo. Dê uma olhada nestes desafios!
-
-
-##Desafio 1: Faça o jogo mais difícil ou mais fácil
+##DESAFIO 1: Fazer o jogo mais difícil ou mais fácil
 
 Alterar a dificuldade do jogo.
 
-* Tente mudar o quão rápido a imagem é revelada e o quão rápido a pontuação diminui.
-* Altere o tipo de distorções na imagem.
-* Substitua as imagens a serem adivinhadas, para torná-los mais semelhantes ou mais diferentes. 
-Se você fizer isso, não esqueça de alterar o traje no objeto de resposta.
+- Tenta alterar a velocidade a que a imagem é revelada, ou seja, a velocidade
+a que diminui a pontuação que o jogador pode ganhar.
 
+- Altera o tipo de distorções da imagem. Por exemplo, podes também rodá-la.
 
-Salve o projeto
+- Substitui as imagens a adivinhar de modo a que sejam mais semelhantes ou
+- mais diferentes entre si. Se fizeres isto, não te esqueças de alterar o
+- traje nos actores de resposta afectados!
 
+##Desafio 2: Distorcer a imagem de forma diferente em cada jogada
 
-##Desafio 2: Distorcendo a imagem de forma diferente em cada rodada
+Neste momento, cada jogada usa a mesma distorção.  No passo 2, podes ter
+tentado alguns efeitos diferentes que funcionam tão bem quanto os efeitos de
+cor e de pixelização.
 
-Neste momento, cada rodada do jogo usa a mesma distorção. 
-Na Etapa 2, você pode ter tentado algumas distorções diferentes que funcionam tão bem quanto cor e pixelização.
+Procura algumas distorções diferentes e que funcionem bem.
 
-Encontre algumas distorções diferentes que funcionam bem.
+Altera o jogo para que, em cada jogada, use uma distorção diferente no ciclo de distorções decrescentes.
 
-Mude o jogo para que cada rodada use uma distorção diferente dentro do bloco __repita até__.
+__Dica:__ Cria uma nova variável chamada «o tipo de distorção». Faz com que
+ela tenha um valor aleatório no início de cada jogada. Usa comandos [se &lt<>,
+então senão,] dentro do ciclo de distorção para aplicar o tipo de distorção
+que foi escolhida aleatoriamente para a jogada em curso.
 
-__Dica:__ Tente criar uma nova variável, chamada distorção. 
-Faça com que ela tenha um valor aleatório no início do jogo. 
-Use blocos __se__ dentro do bloco __repita até__ para aplicar a distorção desejada para a rodada.
+##DESAFIO 3: Fazer um jogo com várias jogadas
 
-Salve o projeto
+Até aqui, cada jogada é independente. Modifica o jogo para que possamos ter
+várias jogadas. Por exemplo, num jogo de três jogadas o jogador tem que
+adivinhar três imagens e pode obter até 300 pontos.
 
-## Desafio 3: Faça um jogo com várias rodadas
+__Dica:__ Precisas de uma variável extra para armazenar o total geral de todas
+as jogadas.  Também precisas de um bloco de repetição para repetires as
+diferentes jogadas.
 
-Até então, cada rodada é independente. Modifique o jogo para que possamos ter várias rodadas. 
-Por exemplo, um jogo de três rodadas, então o jogador tem que adivinhar três imagens e pode marcar até 300 pontos.
+__Dica:__ Também deverás fazer os actores de resposta correspondentes a
+respostas erradas reaparecerem no início de cada jogada.  Talvez possas
+difundir uma mensagem para isso.
 
-__Dica:__ Você vai precisar de uma variável extra para armazenar o total geral em todos os rodadas. 
-Você também vai precisar de um bloco __repita__ para as diferentes rodadas.
+##DESAFIO 4: Fazer as jogadas cada vez mais difíceis
 
-__Dica:__ Você também deverá fazer as respostas erradas reaparecerem no início de cada rodada. 
-Talvez você possa usar uma mensagem __anuncie para todos__ para fazer isso?
+Torna o jogo cada vez mais difícil a cada jogada.
 
-Salve o projeto
+Cada jogada deve valer a mesma quantidade de pontos?  Deves ganhar mais pontos
+se responderes rapidamente nas jogadas finais, se estas forem mais difíceis.
 
+__Dica:__ Como podes saber qual é a jogada actual? Como podes usar essa
+informaçºao para alterar a dificuldade e a relação entre o grau de distorção e
+a pontuação?
 
-## Desafio 4: Fazendo as rodadas finais mais difíceis
-
-Torne o jogo cada vez mais difícil à cada rodada.
-
-Cada rodada deve valer a mesma quantidade de pontos? 
-Você deve ganhar mais pontos se você responder rápido nas rodadas finais que são mais difíceis?
-
-__Dica:__ Como saber qual é a rodada atual? Como você pode usar isso para mudar a dificuldade e a pontuação?
-
-Salve o projeto
-
-
-##Desafio 5: Continuando o jogo até que o jogador erre
+##DESAFIO 5: Continuar até o jogador errar
 
 Em vez de usar um número fixo de rodadas, faça com que o jogo continue até que o jogador erre uma imagem. 
 Isso provavelmente só funciona se o jogo fica mais difícil em rodadas posteriores.
 
 Salve o projeto
 
-## Desafio 6: Fazendo o jogo mais difícil ou mais fácil dependendo da habilidade do jogador
+##DESAFIO 6: Fazendo o jogo mais difícil ou mais fácil dependendo da habilidade do jogador
 
 Ao invés de sempre fazer o jogo mais difícil, faça o jogo ajustar a dificuldade dependendo da habilidade do jogador. 
 Se ele acerta a imagem rapidamente, faça com que a próxima rodada seja um pouco mais difícil. 
