@@ -3,12 +3,12 @@ Nivel 2
 #Carrera en el desierto
 
 __Introducción:__
-Este es un juego a dos jugadores en el que compiten un loro y un león a través del desierto. Cada jugador pulsa una tecla lo más rápido posible para mover a su animal; el primero en llegar al borde de la pantalla gana.
+Este es un juego para dos jugadores en el que compiten un loro y un león a través del desierto. Cada jugador pulsa una tecla lo más rápido posible para mover a su animal; el primero en llegar al borde de la pantalla gana.
 
 ##PASO 1: Crea la escena y añade los objetos
 
 1. Pincha en el escenario y añade el escenario 'nature/desert'.
-2. Añade un nuevo objeto, seleccionando la imagen del león en fichero 'animals'.
+2. Añade un nuevo objeto, seleccionando la imagen del león en el fichero 'animals'.
 3. Añade otro objeto con la imagen del loro.
 
 
@@ -16,7 +16,7 @@ Este es un juego a dos jugadores en el que compiten un loro y un león a través
 ##PASO 2: Haz que el león y el loro se muevan
 
 
-Queremos que el objeto se muevan cuando pulsamos una tecla.
+Queremos que el objeto se mueva cuando pulsamos una tecla.
 
 
 1. Selecciona el león y haz que se mueva 4 pasos cuando se pulsa la tecla 'L'.
@@ -47,7 +47,7 @@ Guarda tu proyecto
 Necesitamos alguna forma de comenzar la carrera y saber quién ha ganado. __Primero vamos a crear un botón de inicio.__
 
 1. Añade un nuevo objeto desde archivo. Elige la imagen 'things/button'.
-2. Edita el disfraz de ese nuevo objeto, añade el texto 'inicio' y pincha 'Aceptar'. Mueve el botón al medio del escenario.
+2. Edita el disfraz de ese nuevo objeto, añade el texto 'inicio' y pincha 'Aceptar'. Coloca el botón en el centro del escenario.
 3. Ahora añade el programa que muestra el botón cuando empieza el juego.
 
 ```scratch
@@ -117,7 +117,7 @@ Queremos saber quién ha ganado cada carrera y volver al inicio para poder compe
 		(acabar si)
 	(acabar si)
 ```
-2. Ahora queremos que el loro nos avise si gana la carrera. Graba un nuevo sonido para el loro que tocaremos si el loro gana. ¡Pincha la pestaña 'Sonidos' y graba el sonido que hará el loro al ganar la carrera!
+2. Ahora queremos que el loro nos avise si gana la carrera. Graba un nuevo sonido que sonará si el loro gana. ¡Pincha la pestaña 'Sonidos' y graba el sonido que hará el loro al ganar la carrera!
 3. Añade los bloques que tocan el sonido y hacen que el loro diga que ha ganado:
 
 ```scratch
@@ -164,7 +164,7 @@ Añade un bloque que envía el mensaje 'fin' para avisar de que ha ganado.
 		(acabar si)
 	(acabar si)
 ```
-2. Tenemos que añadir un programa que espera recibir el mensaje 'fin' y retorna al loro a la salida. ¿Qué pasa si cambias el valor que le das a x?
+2. Tenemos que añadir un programa que espera recibir el mensaje 'fin' y devuelve al loro a la salida. ¿Qué pasa si cambias el valor que le das a x?
 
 ```scratch
 
@@ -172,7 +172,7 @@ Añade un bloque que envía el mensaje 'fin' para avisar de que ha ganado.
 	fijar x a -175
 ```
 3. Ahora añade el mismo programa al león. Intenta con distintos valores de x para asegurarte de que el león y el loro estén alineados en la salida.
-4. También queremos que el león y el loro estén alineados al principio del programa, así que añade otro programa que los mueve a esa posición cuando pinchamos la bandera verde.
+4. También queremos que el león y el loro estén alineados al principio del programa, así que añade otro programa que los mueva a esa posición cuando pinchamos la bandera verde.
 
 ```scratch
 
@@ -180,6 +180,7 @@ Añade un bloque que envía el mensaje 'fin' para avisar de que ha ganado.
 	fijar x a -175
 ```
 5. Pincha en el botón de inicio y añade un programa que lo muestra cuando recibe el mensaje 'fin'.
+
 ###Prueba tu proyecto
 __Pincha la bandera verde.__
 
@@ -190,9 +191,9 @@ Guarda tu proyecto
 
 ##Desafío: Añade un turbo
 
-* __Intenta añadir un turbo__ que se puede disparar una vez por carrera y hace saltar al animal __30 pasos de un tirón.__
+* __Intenta añadir un turbo__ que se puede disparar una vez por carrera y que haga saltar al animal __30 pasos de un tirón.__
 * __Añade un nuevo disfraz__ con fuego saliendo por detrás del animal, y haz que aparezca cuando se pulsa el turbo.
-* __Crea otro sonido__ que sonará cuando es dispara el turbo.
+* __Crea otro sonido__ que sonará cuando se dispara el turbo.
 
 ###Prueba tu proyecto
 

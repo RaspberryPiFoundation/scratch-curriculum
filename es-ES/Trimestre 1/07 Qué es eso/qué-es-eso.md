@@ -4,7 +4,7 @@ Nivel 3
 
 __Introducción__
 
-Un objecto al azar aparece en la pizarra, todo distorsionado. Tienes que adivinar qué es pinchando en la imagen correcta de abajo. Cuanto más rápido lo adivines, ¡más alta será tu puntuación!
+Un objecto al azar aparece en la pizarra, completamente distorsionado. Tienes que adivinar qué es pinchando en la imagen correcta. Cuanto más rápido lo adivines, ¡más alta será tu puntuación!
 
 ##PASO 1: Haz que aparezcan cosas en la pizarra
 
@@ -33,7 +33,7 @@ __Pincha en la bandera verde.__
 
 __Pínchala varias veces más.__
 
-¿Ves distintos disfraces cada vez? A veces vas a ver el mismo disfraz dos veces seguidas, pero esto es normal. También te vas a dar cuenta de que el objeto parpadea cuando cambia el disfraz. Vamos a arreglar eso en el paso siguiente.
+¿Ves distintos disfraces cada vez? A veces verás el mismo disfraz dos veces seguidas, pero esto es normal. También te vas a dar cuenta de que el objeto parpadea cuando cambia el disfraz. Vamos a arreglar eso en el paso siguiente.
 
 ##PASO 2: Distorsiona las imágenes
 
@@ -148,7 +148,7 @@ __Pincha en la bandera verde.__
 
 Cuando pruebes tu juego, puedes usar el monitor de la variable __respuesta__ en el escenario para que te diga cuál es la respuesta correcta. Esto está bien para probar.
 
-¿Qué pasa cuando pinchas en la _respuesta correcta__?
+¿Qué pasa cuando pinchas en la __respuesta correcta__?
 
 ¿Qué pasa cuando pinchas en la __respuesta incorrecta__?
 
@@ -164,7 +164,7 @@ Las pruebas van a demostrar dos problemas. Primero, las respuestas incorrectas n
 	mostrar
 ```
 
-Para arreglar el segundo problema, necesitamos detener la repetición del ciclo del __objeto pregunta__ cuando el jugador pincha en la respuesta correcta. Vamos a usar una nueva variable para hacerlo. Vamos a ponerla en __cero__ cuando el juego comienza y luego la pondremos en __uno__ cuando el jugador haya ganado. Vamos a hacer que el ciclo repetir hasta se detenga cuando la puntuación alcance __cero__ o la variable __gano?__ se ponga en __uno__.
+Para arreglar el segundo problema, necesitamos detener la repetición del ciclo del __objeto pregunta__ cuando el jugador pincha en la respuesta correcta. Vamos a usar una nueva variable para hacerlo. Vamos a ponerla a __cero__ cuando el juego comienza y luego la pondremos a __uno__ cuando el jugador haya ganado. Vamos a hacer que el ciclo __repetir hasta__ se detenga cuando la puntuación alcance __cero__ o la variable __gano?__ se ponga a __uno__.
 
 12. Crea una nueva variable llamada __gano?__
 13. Modifica los programas para que queden así:
@@ -201,7 +201,7 @@ Hay algunas cosas más que puedes hacer con tu juego. ¡Acepta estos desafíos!
 
 ##Desafío 1: Haz el juego más fácil o más difícil
 
-Cambia la dificultad es el juego.
+Cambia la dificultad del juego.
 
 * Intenta cambiar la velocidad a la que la imagen es revelada y la puntuación baja.
 * Intenta cambiar las distorsiones de la imagen.
@@ -225,7 +225,7 @@ Guarda tu proyecto.
 
 Por el momento, cada juego es independiente. Cámbialo para que tenga varias rondas. Por ejemplo, que tenga tres rondas, de modo que el jugador tenga que adivinar tres imágenes y sumar hasta 300 puntos.
 
-__Pista:__ Vas a necesitar una variable extra para guardar el gran total de todas las rondas. También vas a necesitar un ciclo para ir de ronda a ronda.
+__Pista:__ Vas a necesitar una variable extra para guardar el total de todas las rondas. También vas a necesitar un ciclo para pasar de ronda a ronda.
 
 __Pista:__ Podrías hacer que cada respuesta incorrecta reaparezca al comienzo de cada ronda. ¿Quizás mandando un mensaje?
 
@@ -235,7 +235,7 @@ Guarda tu proyecto.
 
 A medida que el jugador vaya avanzando de ronda, el juego debe volverse más difícil.
 
-¿En cada ronda se tienen que calcular igual la puntuación? ¿Deberían valer más puntos las rondas más difíciles?
+¿Tiene que calcularse igual la puntuación en todas las rondas? ¿Deberían valer más puntos las rondas más difíciles?
 
 __Pista:__ ¿Cómo sabes en qué ronda estás? ¿Cómo puedes usar eso para cambiar la dificultad y la puntuación?
 
@@ -251,7 +251,7 @@ Guarda tu proyecto.
 
 En lugar de siempre hacer el juego más difícil, haz que el juego ajuste la dificultad dependiendo de la habilidad del jugador. Si adivina una imagen rápido, haz que la próxima sea un poquito más difícil. Si no adivina la imagen, o tarda mucho en adivinar, haz que la próxima ronda sea un poquito más fácil.
 
-Esta idea sólo funciona realmente si no sumas los puntuación entre rondas.
+Esta idea sólo funciona bien si no sumas la puntuación entre rondas.
 
 Guarda tu proyecto.
 
@@ -261,9 +261,9 @@ Mantén un registro de cuál es la puntuación más alta. Si alguien la supera, 
 
 Guarda tu proyecto.
 
-##Desafío 8: Haz que las respuestas incorrectas sean caras
+##Desafío 8: Haz que las respuestas incorrectas salgan caras
 
-Por el momento, no se penaliza a los que pinchan en las imágenes lo más rápido que pueden. Cambia el juego para que la puntuación baje un poquito cada vez que el jugador elige una respuesta incorrecta.
+Hasta ahora no se penaliza a los que pinchan en las imágenes lo más rápido que pueden. Cambia el juego para que la puntuación baje un poquito cada vez que el jugador elige una respuesta incorrecta.
 
 ¿Esto mejora el juego?
 
