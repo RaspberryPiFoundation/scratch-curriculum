@@ -6,7 +6,7 @@ __Introdução:__ Um objecto aleatório é mostrado, todo distorcido, sobre um
 quadro preto. Tens de adivinhar que objecto é e clicar na imagem
 correspondente. Quanto mais depressa adivinhares, maior será a tua pontuação!
 
-##Passo 1: Fazer objectos diferentes surgirem no quadro preto
+##PASSO 1: Fazer objectos diferentes surgirem no quadro preto
 
 Queremos que umas quantas imagens diferentes apareçam sobre o quadro preto.
 
@@ -21,14 +21,16 @@ nome desse actor para «a imagem». Vai para o separador «Trajes». Se o actor
 que importaste tiver mais do que um traje, remove todos os trajes com excepção
 do que mais te agradar. Altera o nome desse traje para descrever bem a imagem.
 
-4. Posiciona o novo actor no meio do quadro preto. Se necessária, ajusta o seu tamanho.
+4. Posiciona o novo actor no meio do quadro preto. Se necessária, ajusta o seu
+tamanho.
 
 5. Clique de novo no separador «Trajes». Cria quatro novos trajes, importando
 imagens à tua escolha. Dá nomes apropriados aos trajes criados. Usa o editor
 de pintura para alterar os tamanhos relativas das imagens para que fiquem
 todas com um tamanho semelhante sobre o quadro preto.
 
-6. Vamos agora fazer surgir uma imagem aleatória. Cria o seguinte guião para o actor «a imagem»:
+6. Vamos agora fazer surgir uma imagem aleatória. Cria o seguinte guião para o
+actor «a imagem»:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
@@ -47,7 +49,7 @@ Por vezes aparece a mesma imagem várias vezes seguidas, mas isso não é um
 problema. Também reparou que a imagem «treme» até chegar à imagem final.
 Corrigiremos isso na próxima etapa.
 
-##Passo 2: Distorcendo as imagens
+##PASSO 2: Distorcer as imagens
 
 __Vamos agora distorcer a imagem que aparece e ir reduzindo essa distorção
 durante alguns segundos até surgir a imagem original, sem distorções.__ Vamos
@@ -99,7 +101,7 @@ trata?
 
 __Experimenta outros efeitos gráficos.__ Afectam a dificuldade do jogo?
 
-##Passo 3: Permitir ao jogador adivinhar a imagem
+##PASSO 3: Permitir ao jogador adivinhar a imagem
 
 Neste momento temos uma imagem aleatória que vai sendo revelada lentamente, à
 medida que diminui o valor numa variável que controla a distorção. Mas como é
@@ -112,7 +114,9 @@ Primeiro, no entanto, precisamos de saber qual é a resposta certa.
 1. Cria uma nova variável chamada «a resposta correcta». Certifica-te que a
 opção «Para todos os actores» está seleccionada.
 
-2. Altera o guião que criaste de modo a guardar a resposta correcta na variável. Adiciona o comando [altera [a resposta correcta ▼] para (o número do traje)] logo após o primeiro comando de repetição:
+2. Altera o guião que criaste de modo a guardar a resposta correcta na variável.
+Adiciona o comando [altera [a resposta correcta ▼] para (o número do traje)]
+logo após o primeiro comando de repetição:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
@@ -184,13 +188,16 @@ mostrado no quadro preto. Adiciona este outro guião:
 
 ###Testa o teu projeto
 
-__Clica na bandeira verde.__ O que acontece quando clicas na __resposta certa__? O que acontece quando clicas na resposta __errada__? O que acontece ao actor da resposta errada quando __começas um novo jogo__?
+__Clica na bandeira verde.__ O que acontece quando clicas na __resposta certa__?
+O que acontece quando clicas na resposta __errada__? O que acontece ao actor da
+resposta errada quando __começas um novo jogo__?
 
 O teste revela dois problemas. Primeiro, respostas erradas não reaparecem
 quando recomeças o jogo.  Segundo, a distorção não pára de diminuir quando o
 jogador clica na resposta certa.
 
-11. Para resolver o primeiro problema, adiciona o seguinte guião a cada um dos cinco actores de resposta:
+11. Para resolver o primeiro problema, adiciona o seguinte guião a cada um dos
+cinco actores de resposta:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
@@ -207,7 +214,8 @@ repetição [até que &lt;>, repete] pare não apenas quando a distorção chega
 zero, mas também quando a variável «o jogador acertou» tiver o valor
 «verdadeiro».
 
-12. Cria uma nova variável chamada «o jogador acertou» _apenas para o actor «a imagem»_.
+12. Cria uma nova variável chamada «o jogador acertou» _apenas para o actor «a
+imagem»_.
 
 13. Alterar os guiões desse mesmo actor para ficarem como se segue:
 
@@ -246,9 +254,10 @@ melhor aspecto!
 
 __Parabéns! Terminaste o jogo básico!__
 
-No entanto, há mais coisas que podes fazer neste jogo. Dá uma olhada nos desafios!
+No entanto, há mais coisas que podes fazer neste jogo. Dá uma olhada nos
+desafios!
 
-##DESAFIO 1: Fazer o jogo mais difícil ou mais fácil
+##DESAFIO 1: Faz o jogo mais difícil ou mais fácil
 
 Alterar a dificuldade do jogo.
 
@@ -261,7 +270,7 @@ a que diminui a pontuação que o jogador pode ganhar.
 - mais diferentes entre si. Se fizeres isto, não te esqueças de alterar o
 - traje nos actores de resposta afectados!
 
-##Desafio 2: Distorcer a imagem de forma diferente em cada jogada
+##DESAFIO 2: Distorce a imagem de forma diferente em cada jogada
 
 Neste momento, cada jogada usa a mesma distorção.  No passo 2, podes ter
 tentado alguns efeitos diferentes que funcionam tão bem quanto os efeitos de
@@ -269,14 +278,15 @@ cor e de pixelização.
 
 Procura algumas distorções diferentes e que funcionem bem.
 
-Altera o jogo para que, em cada jogada, use uma distorção diferente no ciclo de distorções decrescentes.
+Altera o jogo para que, em cada jogada, use uma distorção diferente no ciclo de
+distorções decrescentes.
 
 __Dica:__ Cria uma nova variável chamada «o tipo de distorção». Faz com que
 ela tenha um valor aleatório no início de cada jogada. Usa comandos [se &lt<>,
 então senão,] dentro do ciclo de distorção para aplicar o tipo de distorção
 que foi escolhida aleatoriamente para a jogada em curso.
 
-##DESAFIO 3: Fazer um jogo com várias jogadas
+##DESAFIO 3: Faz um jogo com várias jogadas
 
 Até aqui, cada jogada é independente. Modifica o jogo para que possamos ter
 várias jogadas. Por exemplo, num jogo de três jogadas o jogador tem que
@@ -290,7 +300,7 @@ __Dica:__ Também deverás fazer os actores de resposta correspondentes a
 respostas erradas reaparecerem no início de cada jogada.  Talvez possas
 difundir uma mensagem para isso.
 
-##DESAFIO 4: Fazer as jogadas cada vez mais difíceis
+##DESAFIO 4: Faz as jogadas cada vez mais difíceis
 
 Torna o jogo cada vez mais difícil a cada jogada.
 
@@ -298,46 +308,40 @@ Cada jogada deve valer a mesma quantidade de pontos?  Deves ganhar mais pontos
 se responderes rapidamente nas jogadas finais, se estas forem mais difíceis.
 
 __Dica:__ Como podes saber qual é a jogada actual? Como podes usar essa
-informaçºao para alterar a dificuldade e a relação entre o grau de distorção e
+informação para alterar a dificuldade e a relação entre o grau de distorção e
 a pontuação?
 
-##DESAFIO 5: Continuar até o jogador errar
+##DESAFIO 5: Faz o jogo continuar até o jogador errar
 
-Em vez de usar um número fixo de rodadas, faça com que o jogo continue até que o jogador erre uma imagem. 
-Isso provavelmente só funciona se o jogo fica mais difícil em rodadas posteriores.
+Em vez de usar um número fixo de jogadas, faz com que o jogo continue até que o
+jogador erre uma imagem. Isto provavelmente só funciona bem se o jogo for
+ficando cada vez mais difícil.
 
-Salve o projeto
+##DESAFIO 6: Aumenta ou diminui a dificuldade consoante os resultados
 
-##DESAFIO 6: Fazendo o jogo mais difícil ou mais fácil dependendo da habilidade do jogador
+Em vez de ir tornando o jogo mais difícil, faz com que o jogo ajuste a sua
+dificuldade de acordo com os resultados do jogador.  Se o jogador acertar
+rapidamente na imagem, torna a próxima jogada um pouco mais difícil.  Se ele
+errar a imagem ou se demorar muito tempo até acertar, faz a próxima jogada um
+pouco mais fácil.
 
-Ao invés de sempre fazer o jogo mais difícil, faça o jogo ajustar a dificuldade dependendo da habilidade do jogador. 
-Se ele acerta a imagem rapidamente, faça com que a próxima rodada seja um pouco mais difícil. 
-Se ele errar a imagem, ou demorar para encontrar a resposta faça a próxima próxima um pouco mais fácil.
+Esta ideia só funciona se não acumulares a pontuação ao longo de várias jogadas.
 
-Essa ideia só tem sentido se você não somar a pontuação de alguém ao longo de várias rodadas.
+##DESAFIO 7: Guarda a maior pontuação
 
-Salve o projeto
+Guarda a maior pontuação obtida no jogo. Se o jogador acertar e conseguir
+ultrapassar a pontuação máxima, pergunta o seu nome e actualiza a maior
+pontuação. Encontra uma forma de mostrares a maior pontuação e o nome da pessoa
+que a obteve.
 
-## Desafio 7: Salvando a maior pontuação
+##DESAFIO 8: Faz com que errar custe pontos
 
-Acompanhe a maior pontuação. Se alguém consegue vencê-lo, pergunte o seu nome e atualize a pontuação mais alta. 
-Certifique-se que a maior pontuação, e o nome da pessoa  sejam exibidos.
+De momento não há qualquer penalidade quando o jogador erra. Altera o jogo de
+modo a que a pontuação total diminua sempre que o jogador erre.
 
+Esta alteração torna o jogo mais interessante?
 
-Salve o projeto
+__Parabéns! Terminou! Agora podes desfrutar do jogo!__
 
-
-##Desafio 8: Fazendo erros custar pontos
-
-No momento, não há nenhuma penalidade quando você erra, e para ganhar basta clicar em todas as respostas o mais rápido possível. 
-Mude o jogo para que a pontuação total diminua cada vez que uma resposta errada seja dada.
-
-Isso faz com que o jogo fique melhor?
-
-
-Salve o projeto
-
-
-__Parabéns você terminou, agora você pode desfrutar do jogo!__
-
-Não esqueça que você pode compartilhar o seu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ no menu!
+Não te esqueças que podes partilhar o teu jogo com outros Scratchadores,
+incluindo os teus amigos e os teus familiares, clicando em «Partilhar»!
