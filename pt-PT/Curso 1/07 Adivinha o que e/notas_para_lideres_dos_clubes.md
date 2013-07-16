@@ -1,43 +1,44 @@
-# Instruções aos monitores
-## (Adivinhe o que é)
+# NOTAS PARA OS LÍDERES DOS CLUBES
+## (Adivinha o que é)
 
-## Introdução
+### Introdução
 
-Um objeto aleatório é mostrado na tela, completamente distorcido. Você tem que adivinhar o que e clicar na imagem correspondente. Quanto mais rápido você adivinhar, maior será sua pontuação!
+Uma imagem aleatória é mostrada num quadro preto, completamente distorcida. A
+distorção vai diminuindo com o passar do tempo. O jogador tem de adivinhar que
+imagem é clicando na imagem correspondente numa lista de imagens na base do
+palco. Quanto menos tempo demorar a adivinhar a imagem, menor será pontuação.
 
 ### Competências
 
-Este projeto abrange
-
-* Manter e definir o placar
-* Mudar trajes e aparência
-* Definir uma resposta aleatória
-* Detectar um clique e verificar se o objeto foi clicado
-* Transmissão de mensagens
+Este projecto inclui:
+- Manter e definir um painel de pontuação
+- Mudar de trajes e aplicar efeitos gráficos
+- Estabelecer uma resposta aleatória
+- Detectar um clique e verificar se o actor correcto foi clicado
+- Difusão de mensagens
 
 ### Recursos
 
-Este projeto utiliza recursos encontrados no Scratch
+Este projeto utiliza recursos que se encontram nas pastas de Cenários e Trajes
+do Scratch.
 
-### Cartoes Scratch necessários
+### Cartões Scratch necessários
 
-Cronômetro
+- Cronómetro
 
 ### Exercícios básicos
 
-Passo 1: Faça coisas diferentes aparecem na tela
-
-Etapa 2: Faça com que as imagens fiquem distorcidas
-
-
-Passo 3: Permitir que o jogador adivinhe a imagem
+- PASSO 1: Fazer objectos diferentes surgirem no quadro preto
+- PASSO 2: Distorcer as imagens
+- PASSO 3: Permitir ao jogador adivinhar a imagem
 
 ### Desafios
-1. Faça o jogo mais difícil ou mais fácil
-2. Distorcer a imagem de forma diferente em cada rodada
-3. Faça um jogo com várias rodadas
-4. Faça as rodadas finais mais difíceis
-5. Continuar o jogo até que o jogador erre
-6. Faça o jogo mais difícil ou mais fácil dependendo de quão bom o jogador é
-7. Acompanhe a maior pontuação
-8. Fazer com que erros custem pontos
+
+- DESAFIO 1: Faz o jogo mais difícil ou mais fácil
+- DESAFIO 2: Distorce a imagem de forma diferente em cada jogada
+- DESAFIO 3: Faz um jogo com várias jogadas
+- DESAFIO 4: Faz as jogadas cada vez mais difíceis
+- DESAFIO 5: Faz o jogo continuar até o jogador errar
+- DESAFIO 6: Aumenta ou diminui a dificuldade consoante os resultados
+- DESAFIO 7: Guarda a maior pontuação
+- DESAFIO 8: Faz com que errar custe pontos

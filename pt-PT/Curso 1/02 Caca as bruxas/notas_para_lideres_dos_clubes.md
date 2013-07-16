@@ -1,7 +1,7 @@
 # NOTAS PARA OS LÍDERES DOS CLUBES
 ## (Caça às bruxas)
 
-###Introdução:
+### Introdução
 
 O jogador ganha pontos acertando (clicando) nas bruxas que aparecem no palco. O
 objetivo é conseguir o máximo possível de pontos em 30 segundos.
@@ -9,6 +9,7 @@ objetivo é conseguir o máximo possível de pontos em 30 segundos.
 ### Competências
 
 Este projecto inclui:
+
 1. Definir variáveis
 2. Usar ciclos não infinitos
 3. Inicializar e contabilizar pontos
@@ -31,6 +32,6 @@ do Scratch.
 - PASSO 3: Fazer a bruxa desaparecer ao ser clicada
 - PASSO 4: Adicionar pontuação e um cronómetro
 
-###Desafios
+### Desafios
 
 - Adicionar mais bruxas
