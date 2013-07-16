@@ -80,7 +80,7 @@ __Para parar, carrega no sinal de _stop_.__
 
 Ajuste o tempo do comando [espera () s]. Que valores fariam o jogo ficar muito fácil ou muito difícil?
 
-###PASSO 3: Parando a rotação da roda
+##PASSO 3: Parando a rotação da roda
 
 Podemos ir mudando os trajes do actor para sempre. Excelente! Mas como parar essas mudanças quando se clicar no actor?
 
@@ -185,7 +185,7 @@ Sempre que fizeres uma alteração, pensa se o jogo ficou mais fácil ou se fico
 mais difícil.  Será que jogo ficou demasiado fácil ou demasiado difícil?  Como
 podes ajustar a dificuldade para que o jogo fique perfeito?
 
-##DESAFIO 2: Tornar o jogo ficar mais difícil ou mais fácil ao longo do tempo
+##DESAFIO 2: Torna o jogo mais difícil ou mais fácil ao longo do tempo
 
 Nem todas as pessoas têm a mesma habilidade para jogar. __Como poderias fazer o jogo ajustar a sua dificuldade, dependendo do jogador?__
 
