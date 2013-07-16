@@ -239,7 +239,7 @@ reiniciado?
 
 __Parabéns! Terminaste o jogo básico. Mas há mais coisas a fazer. Estás pronto para o desafio?__
 
-##DESAFIO 1: Dar um movimento diferente às presas
+##DESAFIO 1: Dá um movimento diferente às presas
 
 Neste momento, todas as presas se movem da mesma maneira. __És capaz de fazê-las moverem-se de forma diferente umas das outras?__
 
@@ -271,7 +271,7 @@ usando diferentes combinações das mudanças que propusemos?
 Alguma dessas alterações melhorou o jogo? As alterações fizeram o jogo mais
 interessante, mais divertido, mais difícil ou mais fácil?
 
-##DESAFIO 2: Fazer as presas fugir do peixe faminto
+##DESAFIO 2: Faz as presas fugirem do peixe faminto
 
 As presas neste jogo são realmente estúpidas! Limitam-se a nadar ao acaso até
 serem comidas. Peixes reais fogem dos seus predadores. __Faz uma das presas
@@ -289,7 +289,7 @@ fazer a presa fugir apenas se estiver suficientemente perto do peixe faminto. Al
 
 Tornou-se mais difícil apanhar a presa que foge? O jogo melhorou?
 
-##DESAFIO 3: Adicionar um painel de pontuação
+##DESAFIO 3: Adiciona um painel de pontuação
 
 Não é suficiente ter o peixe faminto a comer presas. Como podes saber se és
 melhor jogador que os teus amigos? __Precisas de uma forma de manter uma
@@ -308,7 +308,7 @@ colocar o comando de inicialização da pontuação?
 A pontuação inicia a zero quando o jogo começa? Aumenta de cada vez que o
 peixe faminto come uma presa?
 
-##DESAFIO 4: Adicionar uma contagem decrescente
+##DESAFIO 4: Adiciona uma contagem decrescente
 
 __Estabelece um tempo limite para o jogo.__ Quantos peixes consegues comer em
 trinta segundos?
@@ -323,7 +323,7 @@ A contagem decrescente começa em 30 segundos? A contagem decrescente diminui à
 velocidade certa? Consegues comer presas enquanto a contagem decrescente
 diminui? O jogo termina quando a contagem decrescente atinge zero?
 
-##DESAFIO 5: Adicionar um bónus
+##DESAFIO 5: Adiciona um bónus
 
 Atribui um bónus de tempo ao jogador se ele conseguir em algum momento comer
 todos os peixes. Como é possível saber quantos peixes estão comidos em cada
