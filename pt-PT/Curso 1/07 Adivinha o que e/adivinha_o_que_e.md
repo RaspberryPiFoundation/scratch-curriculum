@@ -259,7 +259,7 @@ desafios!
 
 ##DESAFIO 1: Faz o jogo mais difícil ou mais fácil
 
-Alterar a dificuldade do jogo.
+Altera a dificuldade do jogo:
 
 - Tenta alterar a velocidade a que a imagem é revelada, ou seja, a velocidade
 a que diminui a pontuação que o jogador pode ganhar.
@@ -267,8 +267,8 @@ a que diminui a pontuação que o jogador pode ganhar.
 - Altera o tipo de distorções da imagem. Por exemplo, podes também rodá-la.
 
 - Substitui as imagens a adivinhar de modo a que sejam mais semelhantes ou
-- mais diferentes entre si. Se fizeres isto, não te esqueças de alterar o
-- traje nos actores de resposta afectados!
+mais diferentes entre si. Se fizeres isto, não te esqueças de alterar o
+traje nos actores de resposta afectados!
 
 ##DESAFIO 2: Distorce a imagem de forma diferente em cada jogada
 
@@ -289,7 +289,7 @@ que foi escolhida aleatoriamente para a jogada em curso.
 ##DESAFIO 3: Faz um jogo com várias jogadas
 
 Até aqui, cada jogada é independente. Modifica o jogo para que possamos ter
-várias jogadas. Por exemplo, num jogo de três jogadas o jogador tem que
+várias jogadas. Por exemplo, num jogo de três jogadas o jogador tem de
 adivinhar três imagens e pode obter até 300 pontos.
 
 __Dica:__ Precisas de uma variável extra para armazenar o total geral de todas
