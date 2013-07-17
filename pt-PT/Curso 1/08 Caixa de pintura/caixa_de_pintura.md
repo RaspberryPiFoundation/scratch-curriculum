@@ -290,16 +290,32 @@ botão do rato:
 
 ### Testa o teu projecto
 
-__Clique na bandeira verde.__
+__Clica na bandeira verde.__ Consegues desenhar dentro do quadro, i.e., dentro
+da área de desenho? Consegues desenhar fora dessa área? O que acontece com o
+lápis quando o ponteiro sai da área de desenho e volta a entrar noutro local? Consegues desenhar junto das bordas superior e direita do quadro? Porquê?
 
-Você ainda pode desenhar dentro da área de desenho? 
-Você pode desenhar fora da área de desenho? O que acontece com o lápis quando você sai da área de desenho e volta?
+## DESAFIO 1: Faz o lápis chegar a todas as bordas e cantos do quadro
 
-Salve o projeto
+Neste momento o lápis não atinge duas regiões do quadro: a que está junto à
+borda superior do quadro e a que está junto à borda direita do quadro. Isso
+acontece porque o nosso lápiz tem a «cauda» orienta para cima e para a direita
+e porque o Scratch não deixa os actores sairem demasiado da zona visível do
+palco. A solução para este problema passa por alterar a orientação do lápis
+sempre que este se aproximar de uma das bordas, como se segue:
 
-## PASSO 5: Chegando a todas as bordas e cantos do quadro
+- Perto da borda esquerda: abaixo do meio, dar a orientação normal, i.e., 90°,
+acima do meio, dar a orientação 180°.
 
-Orientação.
+- Perto da borda direita: abaixo do meio, dar a orientação 0°, acima do
+meio, dar a orientação -90°.
+
+- Perto da borda inferior: à esquerda do meio, dar a orientação normal, i.e.,
+90°, à direita do meio, dar a orientação 0°.
+
+- Perto da borda superior: à esquerda do meio, dar a orientação normal, i.e.,
+180°, à direita do meio, dar a orientação -90°.
+
+Podes, por exemplo, considerar que por «perto» se entende um
 
 ## PASSO 5: Borracha
 
