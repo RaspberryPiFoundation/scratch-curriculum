@@ -1,200 +1,295 @@
 Nível 3
 
-# Ferramenta de desenho
+# Caixa de pintura
 
-__Introdução:__
-Neste projeto, vamos criar uma ferramenta de pintura para criar desenhos.
-Esta ferramenta permitirá escolher a cor do lápis, limpar a tela, usar carimbos e muito mais!
+__Introdução:__ Vamos criar uma ferramenta de pintura para fazermos desenhos
+sobre um quadro. Esta ferramenta permitirá escolher a cor do lápis, limpar o
+quadro, usar carimbos e muito mais!
 
 ## PASSO 1: Arrastando e desenhando
 
-Vamos começar com um lápis que risca quando arrastado sobre a tela.
+Vamos começar com um lápis que risca quando é arrastado sobre a tela.
 
-1. Crie um novo projeto Scratch. Apague o gato clicando com o botão direito e em __apagar__.
-2. Clique em __Palco__ e, em seguida, na aba __Fundos de tela__ importe o fundo __indoors/chalkboard__.
-3. Criar um novo objeto chamado __lápis__, utilizando __recursos/lápis-verde.__
-4. Vá para a aba __Trajes__, clique em Editar e faça com que o centro da imagem fique na ponta da caneta. 
-Para isso, clique em __selecionar centro do traje__ (no canto em baixo à esquerda), 
-e arraste as linhas até que elas estejam na ponta do lápis.
-5. Faça a caneta seguir o mouse usando um bloco __sempre__ e um bloco __vá para [ponteiro do mouse]__
+1. Cria um novo projecto no Scratch. Remove o actor gato clicando sobre ele, na
+área dos actores, com o botão direito do rato e escolhendo «remover».
 
+2. Clica sobre «o palco» e, em seguida, clica sobre o separador «Cenários» e
+carrega um novo cenário a partir do arquivo «Recursos/quadro.png». Remove o
+cenário antigo, todo branco.
 
-		quando BANDEIRA clicado
-		sempre
-			vá para [ponteiro do mouse v]
-		fim
+3. Carrega um novo actor chamado «o lápis» a partir do arquivo «Recursos/o lápis
+verde.png».
 
+4. Vai para o separador «Trajes» do novo actor. Muda o nome do único traje
+existente para «verde». Usa a ferramenta de especificação do centro do traje, no
+canto superior direito do editor de pintura, para o colocar na ponta da caneta.
+Podes usar o _zoom_ para o fazeres com maior precisão.
 
-__Vamos fazer com que o objeto lápis se comporte como um lápis de verdade.__ 
-Dê uma olhada na aba caneta e você encontrará vários blocos relacionados à pintura. 
-Por enquanto os blocos que nos interessam são __abaixe a caneta__ e __levante a caneta__
+5. Faz a caneta seguir o ponteiro do rato usando um bloco [repete para sempre,]
+e um bloco [vai para a posição de [o ponteiro do rato ▼]], ambos sob o bloco de
+início de guião quando a bandeira verde for clicada:
 
-6. Vamos usar o botão do mouse para controlar o lápis - sempre que o mouse estiver pressionado 
-nós vamos __abaixar a caneta__, e quando o botão do mouse estiver solto nós vamos __levantar a caneta__. 
-Para isso, utilize o bloco __se ... senão__ e o bloco __mouse pressionado?__ .
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete para sempre,
+		[vai para a posição de [o ponteiro do rato ▼]]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
+__Vamos fazer com que o actor lápis se comporte como um lápis verdadeiro.__  Dá
+uma olhadela na paleta «Caneta». Encontras nela vários blocos relacionados com a
+pintura. Por enquanto os blocos que nos interessam são [baixa a tua caneta] e
+[levanta a tua caneta].
 
-		quando BANDEIRA clicado
-		sempre
-			vá para [ponteiro do mouse v]
-			se <mouse pressionado?>
-				abaixe a caneta
-				senão
-				levante a caneta
-			fim
-		fim
+6. Vamos usar o botão do rato para controlar o lápis – sempre que o botão do
+rato estiver pressionado, o actor lápis __baixará a caneta__. Sempre que o botão
+do rato não estiver pressionado, o actor lápiz __levantará a caneta__.  Para
+isso, utiliza o comando [se &lt;>, então senão,] e o predicado &lt;o botão do
+rato está pressionado>:
 
-### Teste o projeto
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	repete para sempre,
+		[vai para a posição de [o ponteiro do rato ▼]]
+		se &lt;o botão do rato está pressionado>, então
+			baixa a tua caneta
+		senão,
+			levanta a tua caneta
+		[fim do comando «se então senão»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
-__Clique na bandeira verde.__
-O lápis segue o mouse? O que acontece se você segurar o botão do mouse pressionado e mover? 
-Não se preocupe com a cor do lápis para enquanto.
+### Testa o teu projecto
 
+__Clica na bandeira verde.__ O lápis segue o ponteiro do rato? O que acontece se
+mantiver o botão do rato pressionado enquanto o desloca? Se o lápis não deixar
+um risco no palco quando o desloca mantendo o botão pressionado, experimenta
+aumentar o palco de modo a ocupar o ecrã inteiro. Para isso, carrega no botão
+que se encontra sobre o canto superior esquerdo do palco. O problema é que,
+quando estás no editor de projectos, pressionar o botão do rato sobre um actor
+resulta no arrastamento desse actor, que nunca deixa traço, mesmo que a caneta
+esteja para baixo.
 
-7. Vai chegar uma hora que a tela vai ficar cheia de rabiscos. Você pode usar o bloco __limpe__ para limpar a tela.
+Não te preocupes com a cor do lápis, por enquanto.
 
+__Para parar, carrega no sinal de _stop_.__
 
-		quando BANDEIRA clicado
-		limpe
-		sempre
-			vá para [ponteiro do mouse v]
-			se <mouse pressionado?>
-				abaixe a caneta
-				senão
-				levante a caneta
-			fim
-		fim
+7. Com tantos testes, é inevitável que o quadro fique todo rabiscado. Podes usar
+o comando [apaga tudo do palco] para apagar todos os rabiscos do quadro, que é
+como quem diz, do palco.
 
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	apaga tudo do palco
+	repete para sempre,
+		[vai para a posição de [o ponteiro do rato ▼]]
+		se &lt;o botão do rato está pressionado>, então
+			baixa a tua caneta
+		senão,
+			levanta a tua caneta
+		[fim do comando «se então senão»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
-### Teste o projeto
-__Clique na bandeira verde.__
+### Testa o teu projecto
 
-Os riscos desaparecem quando você clica na bandeira verde?
+__Clica na bandeira verde.__ Os riscos desaparecem quando clicas na bandeira
+verde?
 
-Salve o projeto
+__Para parar, carrega no sinal de _stop_.__
 
-##PASSO 2: Apagando
+## PASSO 2: Apagando
 
-Ao invés de ter que reiniciar o projeto para apagar os desenhos, vamos adicionar um botão que cancele o desenho. 
-Para fazer isso use o bloco __limpe__.
+Para não termos de reiniciar o projecto para apagar todos desenhos, vamos
+adicionar um botão que apaga todo o quadro. Para fazer isso usamos também o
+comando [apaga tudo do palco].
 
-1. Crie um novo objeto usando __recursos/botão-cancelar__.
-2. Altere o nome do objeto para __cancelar__.
-3. Posicione o objeto na parte de baixo palco próximo ao canto esquerdo.
-4. Crie estes comandos para o objeto __cancelar__:
+1. Carrega um novo actor a partir do arquivo «Recursos/o botão «cancelar».
 
+2. Confirma que o nome do novo actor é "o botão «cancelar»". Muda o nome do seu único traje para «normal».
 
-quando cancelar clicado
-limpe
+3. Posiciona o novo botão na parte de baixo do palco, sob o quadro, próximo do
+lado esquerdo.
 
+4. Cria o seguinte guião para este novo actor:
 
-### Teste o projeto
-__Clique na bandeira verde.__
+```scratch
+	Quando alguém clicar em ti
+	apaga tudo do palco
+	[fim do guião]
+```
 
-O botão cancelar apaga o desenho?
+### Testa o teu projecto
 
-Salve o projeto
+__Clica na bandeira verde.__ O botão de cancelar apaga todos os rabiscos do
+quadro? O lápis surge à frente ou por trás do botão?
 
-## Passo 3: Mudando de cor
+__Para parar, carrega no sinal de _stop_.__
 
-Até agora, só desenhamos linhas azuis. Que tal usarmos cores diferentes? 
-Vamos adicionar alguns objetos na parte de baixo do quadro. Os objetos serão parecidos com botões coloridos. 
-Quando você clicar em um dos botões, ele vai mudar a cor do lápis. O objeto lápis também mudará de cor para sabermos qual cor estamos usando.
+5. Para garantires que o botão fica à frente do lápis, e que por isso
+conseguimos clicar nele, usa o comando [vem para a frente] acrescentando um
+outro guião ao novo actor:
 
-1. Adicione um novo objeto, chamado __vermelho__, utilizando __recursos/botão-vermelho__.
-2. Ele deve ser posto em algum lugar na parte de baixo do quadro, perto do botão __limpar__.
-3. Quando o botão vermelho é clicado, ele deve anunciar a mensagem __vermelho__.
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	vem para a frente
+	[fim do guião]
+```
 
+## PASSO 3: Mudando de cor
 
-Quando vermelho clicado
-anuncie [vermelho v] para todos
+Até agora só desenhámos linhas azuis. Que tal usarmos cores diferentes?  Vamos
+adicionar alguns botões coloridos por baixo do quadro, junto ao botão de
+cancelar.  Quando clicares num desses botões, a cor do lápis mudará para a cor
+do botão. O actor lápis também mudará de cor para podermos saber com que cor
+estamos a desenhar.
 
-__Isso mesmo, são somente dois blocos. A parte complicada fica por conta da lápis.__
+1. Carrega um novo actor a partir do arquivo «Recursos/o botão vermelho.gif».
+Altera o nome do seu único traje para «normal».
 
-No lápis, importe um novo traje, __recursos/lápis-vermelho__. 
-Selecione o centro do traje para que ele fique na ponta da caneta, da mesma maneira que você acabou de fazer para traje original.
+2. Posiciona o novo actor na base do palco, sob o quadro, ao lado do botão de
+cancelar.
 
-4. Adicione novos comandos para o lápis. Quando o lápis ouvir a mensagem __vermelho__, 
-ele deve mudar para o traje lápis-vermelho e mudar a cor da caneta para vermelho (usando o bloco __mude a cor da caneta para__).
+3. Quando o botão vermelho for clicado, ele deve difundir a mensagem «Eu, botão
+vermelho, fui clicado!». Além disso, deve surgir à frente do lápis, para que o
+possamos clicar. Cria os seguintes guiões para o novo actor:
 
-__Dica:__ No bloco __mude a cor da caneta para__ existe um quadrinho colorido, você pode clicar nele e 
-usar o conta-gotas para clicar sobre o botão vermelho para garantir que a lápis e o botão tenham a mesma cor.
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	vem para a frente
+	[fim do guião]
 
+	Quando alguém clicar em ti
+	difunde a mensagem [«Eu, botão vermelho, fui clicado!» ▼]
+	[fim do guião]
+```
 
-quando eu ouvir [vermelho v]
-mude para o traje
+__Isso mesmo: são apenas dois blocos em cada guião! A parte complicada fica a
+cargo do lápis.__
 
-mude a cor da caneta para [#f00]
+No actor lápis, carrega um novo traje a partir do arquivo «Recursos/o lápis
+vermelho.png». Altera o seu nome para «vermelho». Tal como fizeste para o traje
+original, usa a ferramenta de especificação do centro do traje, no canto
+superior direito do editor de pintura, para o colocar na ponta da caneta. Podes
+usar o _zoom_ para o fazeres com maior precisão.
 
+4. Adiciona um novo guião ao lápis. Quando o lápis receber a mensagem «Eu, botão
+vermelho, fui clicado!», deve mudar para o traje «vermelho» e alterar a cor da
+sua caneta para vermelho, usando o comando [altera a cor da tua caneta para []].
 
-### Teste o projeto
-__Clique na bandeira verde.__
+__Dica:__ No comando [altera a cor da tua caneta para []] existe um quadradinho
+colorido, no qual podes clicar para,  usando a pipeta, clicar sobre o botão
+vermelho, «sugando» a sua cor, de modo a garantir que a caneta do lápis e o
+botão tenham exactamente a mesma cor.
 
-Desenhe uma linha. Em seguida, clique sobre o botão para selecionar a cor vermelha e continue desenhando. 
-A lápis muda de traje? Ela desenha em vermelho? O risco sai da ponta da caneta?
+```scratch
+	Quando receberes a mensagem [«Eu, botão vermelho, fui clicado!» ▼]
+	muda o traje para [vermelho ▼]
+	altera a cor da tua caneta para [#f00]
+	[fim do guião]
+```
 
-Salve o projeto
+### Testa o teu projecto
 
-5. Repita o que você acabou de fazer mas agora usando os botões azul, amarelo e verde.
+__Clica na bandeira verde.__ Desenha uma linha. Depois, clica sobre o botão
+vermelho, para seleccionar a cor vermelha. Desenha de novo. O O lápis muda para
+o traje vermelho? Passa a desenhar a vermelho? Os riscos são feitos pela ponta
+do lápis?
 
-##Testar o projeto
-__Clique na bandeira verde.__
+__Para parar, carrega no sinal de _stop_.__
 
-Todos os botões de cor funcionam? Eles mudam o traje do lápis para a cor certa? 
-Eles fazem a caneta escrever na cor certa? O desenho sempre sai da ponta do lápis?
+5. Repete o que acabaste de fazer, mas agora usando os botões azul, amarelo e
+verde e os respectivos trajes para o lápis (reordena-os de modo a que o traje
+verde seja o último, para ficares com as cores pela mesma ordem em todo o lado).
 
-Salve o projeto
+##Testa o teu projecto
 
-## Passo 4: Desenhando dentro da margem
+__Clica na bandeira verde.__ Todos os botões de cor funcionam? Todos levam à
+mudança do traje do lápis para a cor certa?  Todos fazem o lápis escrever na cor
+certa? O desenho é sempre feito pela ponta do lápis?
 
-Você já deve ter notado que você pode riscar em qualquer lugar do palco, mesmo na margem. 
-Nós não queremos que isso aconteça. Queremos manter o desenho no meio do palco. 
-Devemos então restringir a posição do lápis para a área de desenho - a parte cinza claro no Palco.
+__Para parar, carrega no sinal de _stop_.__
 
+## PASSO 4: Desenhando apenas dentro do quadro
 
-Lembre-se que o Scratch define pontos usando as coordenadas X e Y. 
-A área de desenho encontra-se entre 230 e -230 no eixo x e 170 e -120 no eixo y. 
-Podemos usar esses valores em um bloco __se__, garantido que o mouse esteja dentro desta área antes de mover o lápis para o mouse.
+Já deves ter notado que podes desenhar em qualquer lugar do palco, mesmo que
+seja fora do quadro  de desenho.  Não queremos que isso aconteça. Queremos que
+os desenhos se realizem apenas sobre o quadro. Temos por isso de restringir a
+posição do lápis à área de desenho - a parte em cinzento menos escuro do palco,
+acima da zona reservada para os botões.
 
-Para isso, ponha um bloco __se__ ao redor de seu bloco existente __vá para.. se__ e dentro deste novo __se__ teste o seguinte:
+Lembra-te que o Scratch define a localização de pontos no palco usando
+coordenadas x e y.  A área de desenho encontra-se entre as coordenadas -229 e
+229 no eixo x e as coordenadas -119 e 168 no eixo y, em ambos os casos
+inclusive. Podemos indicar as coordenadas válidas usando desigualdades. Para o
+eixo x, as coordenadas válidas no eixo x são aquelas para as quais -229 ≤ x e x
+≤ 229 ou, o que é o mesmo, visto que as coordenadas dos píxeis no Scratch tomam
+apenas valores inteiros, -230 < x e x < 230. Da mesma forma, as coordenadas
+válidas no eixo y são aquelas para as quais -119 ≤ y e y ≤ 168 ou, o que é o
+mesmo, pelas razões que vimos atrás, -120 < y e y < 169.
 
-mouse y é maior do que -120 e mouse y é inferior a 170
-mouse x é superior a -230 e mouse x é inferior a 230
+Podemos usar estes valores na condição de um comando [se &lt;>, então], de modo
+a garantir que só deslocamos o rato se o ponteiro do rato estiver dentro da área
+pretendida. Põe um comando condicional [se &lt;>, então] em torno do comando
+[vai para a posição de [o ponteiro do rato ▼]] já existente e, como condição do
+comando condicional, usa &lt;&lt;&lt;[-230] &lt; (a coordenada x do rato)> e
+&lt;(a coordenada x do rato) &lt; [230]>> e &lt;&lt;[-120] &lt; (a coordenada y
+do rato)> e &lt;(a coordenada y do rato) &lt; [169]>>>.
 
-__Informação__ Para isso você vai precisar usar vários blocos do operador __e__, 
-um para testar a posição x, outro para testar a posição y e outro para juntar os dois testes:
+__Nota:__ Precisas de usar três predicados &lt;&lt;> e &lt;>>, um para verificar a coordenada x, outro para a coordenada y, e ainda outro para juntar as duas verificações, bem como quatro predicados &lt;[] &lt; []> para verificar os valores extremos em x e em y.
 
+Altera o guião principal do actor lápis de modo a ficar como se segue:
 
-		limpe
-		sempre 
-		se < < <(mouse y) > (-120) > e <(mouse y) < (170)> >  e <  <(mouse  x) >  (-230)> e < (mouse x) < (230) > > >
-		vá para [ponteiro do mouse v]
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	apaga tudo do palco
+	repete para sempre,
+		se &lt;&lt;&lt;[-230] &lt; (a coordenada x do rato)> e &lt;(a coordenada x do rato) &lt; [230]>> e &lt;&lt;[-120] &lt; (a coordenada y do rato)> e &lt;(a coordenada y do rato) &lt; [169]>>>, então
+			[vai para a posição de [o ponteiro do rato ▼]]
+		[fim do comando «se então»]
+		se &lt;o botão do rato está pressionado>, então
+			baixa a tua caneta
+		senão,
+			levanta a tua caneta
+		[fim do comando «se então senão»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
+Como não é possível desenhar fora da área de desenho, podemos esconder o lápis
+sempre que ele estiver fora dessa área. Para o fazer, substitui o comando [se
+&lt;>, então] por um comando [se &lt;>, então senão,]. Mantem a mesma condição
+que antes e faz com que o lápis se mostre quando a condição for verdadeira e se
+esconda quando ela for falsa. Aproveita para levantar a caneta quando o ponteiro
+do rato ficar fora da área de desenho e para passar para baixo do comando
+[mostra-te] os blocos já existentes de controlo da caneta segundo o estado do
+botão do rato:
 
-Como não é possível desenhar fora da área de desenho, podemos esconder o lápis sempre que ela estiver fora da área de trabalho. 
-Para fazer isso, substitua o bloco __se__ por um bloco __ se .. senão__. 
-Mantenha a mesma condição para o __se__ e faça com que o lápis __apareça__ se o teste for verdadeiro, e __desapareça__, caso contrário.
+```scratch
+	Quando alguém clicar em A BANDEIRA VERDE
+	apaga tudo do palco
+	repete para sempre,
+		se &lt;&lt;&lt;[-230] &lt; (a coordenada x do rato)> e &lt;(a coordenada x do rato) &lt; [230]>> e &lt;&lt;[-120] &lt; (a coordenada y do rato)> e &lt;(a coordenada y do rato) &lt; [169]>>>, então
+			[vai para a posição de [o ponteiro do rato ▼]]
+			mostra-te
+			se &lt;o botão do rato está pressionado>, então
+				baixa a tua caneta
+			senão,
+				levanta a tua caneta
+			[fim do comando «se então senão»]
+		senão
+			esconde-te
+			levanta a tua caneta
+		[fim do comando «se então senão»]
+	[fim do comando «repete para sempre»]
+	[fim do guião]
+```
 
+### Testa o teu projecto
 
-			quando BANDEIRA clicado
-			levante a caneta
-			limpe
-			sempre
-			se < < <(mouse y) > (-120) > e <(mouse y) < (170)> >  e <  <(mouse  x) >  (-230)> e < (mouse x) < (230) > > >
-				vá para [ponteiro do mouse v]
-				apareça
-				se <mouse pressionado?>
-					abaixe a caneta
-				senão
-					levante a caneta
-				fim
-			senão
-				desapareça
-			fim
-		fim
-
-
-### Teste o projeto
 __Clique na bandeira verde.__
 
 Você ainda pode desenhar dentro da área de desenho? 
@@ -202,7 +297,11 @@ Você pode desenhar fora da área de desenho? O que acontece com o lápis quando
 
 Salve o projeto
 
-## Passo 5: Borracha
+## PASSO 5: Chegando a todas as bordas e cantos do quadro
+
+Orientação.
+
+## PASSO 5: Borracha
 
 __Desenhar linhas é legal, mas às vezes também é preciso apagar linhas para corrigir erros.__ 
 Nós podemos fazer isso com uma nova ferramenta do lápis que desenha na cor cinza (a mesma cor que o fundo).
@@ -223,7 +322,7 @@ A borracha apaga as linhas? Funciona até as bordas? Você pode alternar entre b
 
 Salve o projeto
 
-##Passo 6: Carimbando
+##PASSO 6: Carimbando
 
 A próxima coisa a acrescentar é uma ferramenta de carimbo, para carimbar imagens no desenho.
 
