@@ -20,8 +20,9 @@ Este projecto inclui:
 ### Recursos
 
 Este projeto utiliza recursos que se encontram nas pastas de Cenários e de
-Trajes do Scratch, bem como trajes e sons que se encontram na pasta
-de recursos deste pacote.
+Trajes do Scratch, bem como trajes e sons que se encontram na pasta de recursos
+deste pacote. Assegure-se de que essa pasta existe nos computadores dos jovens.
+Alternativamente, diga-lhes onde a podem obter.
 
 ### Cartões Scratch necessários
 
