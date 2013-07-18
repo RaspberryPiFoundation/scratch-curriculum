@@ -1,6 +1,6 @@
 Nível 1
 
-#Félix & Herbert
+# Félix e Herberto
 
 __Introdução:__
 Vamos fazer um jogo da apanhada com o gato Félix e o rato Herberto. 
@@ -8,7 +8,7 @@ Tu controlas o Herberto com o rato do computador e tentas fugir do gato Félix.
 Quanto mais tempo ficares sem ser apanhado, mais pontos ganharás. 
 Atenção! Se fores apanhado, perderás pontos!
 
-##PASSO 1: O Félix persegue o ponteiro do rato do computador
+## PASSO 1: O Félix persegue o ponteiro do rato do computador
 Marca o teu progresso nos quadrados abaixo.
 
 1. Cria um novo projecto. 
@@ -47,14 +47,14 @@ esquerda, os comandos que se seguem, encaixando-os:
 	[fim do guião]
 ```
 		
-###Testa o teu projeto
+### Testa o teu projeto
 
 __Clica na bandeira verde.__ O Félix está a perseguir o ponteiro do rato? Parece
 andar enquanto se movimenta? A velocidade com que anda é correcta?
 
 __Para parar, carrega no sinal de _stop_.__
 
-##PASSO 2: O Félix persegue o Herberto
+## PASSO 2: O Félix persegue o Herberto
 
 __Agora vamos fazer com que o Félix persiga o Herberto em vez de perseguir o
 rato do computador.__
@@ -91,14 +91,14 @@ esquerda, os comandos que se seguem, encaixando-os:
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+### Testa o teu projeto
 
 __Clica na bandeira verde.__ O Herberto move-se com o ponteiro do rato? O Félix
 persegue o Herberto?
 
 __Para parar, carrega no sinal de _stop_.__
 
-##PASSO 3: O Félix diz «Apanhei-te!»
+## PASSO 3: O Félix diz «Apanhei-te!»
 
 __Vamos fazer com que o Félix nos avise quando apanhar o Herberto__
 
@@ -118,11 +118,11 @@ __Vamos fazer com que o Félix nos avise quando apanhar o Herberto__
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+### Testa o teu projeto
 
 __Clica na bandeira verde.__ O Félix avisa quando apanha o Herberto?
 
-##PASSO 4: O Herberto transforma-se num fantasma
+## PASSO 4: O Herberto transforma-se num fantasma
 
 __Em vez de dizer alguma coisa, queremos que o Herberto se transforme num
 fantasma quando for apanhado.__
@@ -171,13 +171,13 @@ persiga o ponteiro do rato!__
 	muda o teu traje para [vivo, de cima ▼]	
 ```	
 	
-###Testa o teu projeto
+### Testa o teu projeto
 
 __Clica na bandeira verde.__ O Herberto transforma-se brevemente num fantasma
 quando é apanhado? O Félix toca o som certo no altura certo? O Félix fica quieto
 o tempo suficiente para o Herberto fugir?
 
-##PASSO 5: Contam-se os pontos
+## PASSO 5: Contam-se os pontos
 
 __Vamos criar um painel de pontuação para sabermos com nos corre o jogo. A
 pontuação começa em zero e aumenta um ponto a cada segundo que passa.  Quando o
@@ -206,7 +206,7 @@ palco:
 	[fim do guião]
 ```	
 
-###Testa o teu projeto
+### Testa o teu projeto
 
 __Clica na bandeira verde.__ A pontuação aumenta um ponto a cada segundo? A pontuação diminui 100 pontos quando o Herberto é apanhado? O que acontece quando o Herberto é apanhado antes que de a pontuação chegar a
 100? A pontuação volta a zero quando começa um novo jogo?
