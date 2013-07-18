@@ -556,4 +556,4 @@ __Para parar, carrega no sinal de _stop_.__
 __Parabéns! Terminaste! Agora podes desfrutar do jogo!__
 
 Não te esqueças de que podes partilhar o teu jogo com os outros Scratchadores,
-incluindo os teus amigos e os teus familiares, clicando em «Partilhar»!ß
+incluindo os teus amigos e os teus familiares, clicando em «Partilhar»!
