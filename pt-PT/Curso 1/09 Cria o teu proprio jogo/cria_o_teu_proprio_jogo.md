@@ -4,9 +4,9 @@ Nível 3
 
 ## Introdução
 
-Neste projecto vais planear e criar um jogo jogares com os teus amigos!  Antes
+Neste projecto vais planear e criar um jogo jogares com os teus amigos! Antes de
 começares a fazer o teu jogo no Scratch precisas de pensar acerca das diferentes
-partes do jogo e de planear as tuas ideias.  Podes usar ideias dos projetos
+partes do jogo e de estruturar as tuas ideias.  Podes usar ideias dos projetos
 anteriores e das cartas Scratch como ajuda.
 
 ## PASSO 1: Planear o jogo
