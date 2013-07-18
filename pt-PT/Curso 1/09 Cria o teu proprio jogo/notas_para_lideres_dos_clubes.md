@@ -1,32 +1,35 @@
-# Instruções aos monitores
+# NOTAS PARA OS LÍDERES DOS CLUBES
 ## (Crie seu próprio jogo)
 
-## Introdução
+### Introdução
 
-O objetivo deste projeto é planejar e criar um jogo para você jogar com seus amigos! 
-Mas antes de começar a programar, você deve definir as diferentes partes do jogo e organizar as idéias. 
-Você pode usar como inspiração os projetos anteriores e os cartões scratch.
+O objectivo deste projecto é planear e criar um novo jogo! Antes de começar é
+necessário pensar acerca das diferentes partes do jogo e de estruturar as
+ideias. Pode-se usar ideias dos projetos anteriores e das cartas Scratch como
+ajuda.
 
 ### Competências
-Este projeto abrange
 
-* Modelização;
-* Planejamento;
-* Correção de problemas;
+Este projecto inclui:
+- Modelação
+- Planeamento
+- Depuração (correcção de erros)
 
 ### Recursos
 
-As crianças projetarão seu próprios recursos para o projeto, incluindo personagens, palco e som. Tenha em mãos folhas de papel suplementares, pois talvez eles precisem. Certifique-se que existem canetas e lápis para desenhar. Você precisa estipular quantas sessões serão usadas para fazer o projeto. 
-A fase de concepção e planejamento pode levar uma sessão inteira ou até mesmo duas. 
-Planeje isso antes de começar, em seguida, informe às crianças sobre quanto tempo elas têm.
+Os jovens criarão os seus próprios recursos para utilização neste projecto,
+incluindo trajes dos actores, cenários e sons. Tenha folhas de papel
+suplementares de reserva, pois os jovens podem precisar. Certifique-se de que
+estão disponíveis canetas e lápis com os quais desenhar. Precisa de pensar no
+número de sessões necessárias para os jovens realizarem este projecto.  A fase
+de concepção e planeamento pode durar uma sessão inteira ou mesmo duas sessões.
+Planeie o número de sessões antes de começar e informe os jovens acerca do tempo
+que terão para fazer o jogo.
 
 ### Exercícios básicos
-Passo 1: Planejando o jogo
 
-Passo 2: Criando personagens
-
-Passo 3: Desenhando o o palco
-
-Passo 4: Como funciona o jogo?
-
-Passo 5: Criando o jogo
+- PASSO 1: Planear o jogo
+- PASSO 2: Criar personagens
+- PASSO 3: Desenhar o cenário
+- PASSO 4: Como funciona o jogo?
+- PASSO 5: Criar o jogo
