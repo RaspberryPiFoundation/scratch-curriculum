@@ -71,7 +71,7 @@ actor corrente.
 		passa para o próximo traje
 	[fim do comando «repete vezes»]
 	altera [a distorção ▼] para [101]
-	até que &lt;(a distorção) = [0]>, repete
+	até que <(a distorção) = [0]>, repete
 		adiciona a [a distorção ▼] o valor (-1)
 		altera o teu efeito [pixelização ▼] para (a distorção)
 		altera o teu efeito [cor ▼] para (a distorção)
@@ -126,7 +126,7 @@ logo após o primeiro comando de repetição:
 	[fim do comando «repete vezes»]
 	altera [a resposta correcta ▼] para (o número do traje)
 	altera [a distorção ▼] para [101]
-	até que &lt;(a distorção) = [0]>, repete
+	até que <(a distorção) = [0]>, repete
 		adiciona a [a distorção ▼] o valor (-1)
 		altera o teu efeito [pixelização ▼] para (a distorção)
 		altera o teu efeito [cor ▼] para (a distorção)
@@ -164,7 +164,7 @@ com a correcção da resposta.
 
 ```scratch
 	Quando alguém clicar em ti
-	se &lt; (a resposta correcta) = [1]>, então
+	se <(a resposta correcta) = [1]>, então
 		difunde a mensagem [O jogador acertou! ▼]
 	senão
 		esconde-te
@@ -210,7 +210,7 @@ imagem» assim que o jogador clicar na resposta certa. Vamos usar uma nova
 variável chamada «o jogador acertou» para o conseguir.  Vamos inicializar essa
 variável com o valor «falso» quando o jogo começar e alterar o seu valor para
 «verdadeiro» quando o jogador acertar.  Vamos também fazer com que o ciclo de
-repetição [até que &lt;>, repete] pare não apenas quando a distorção chega a
+repetição [até que &lt;>, repete []] pare não apenas quando a distorção chega a
 zero, mas também quando a variável «o jogador acertou» tiver o valor
 «verdadeiro».
 
@@ -228,7 +228,7 @@ imagem»_.
 	altera [a resposta correcta ▼] para (o número do traje)
 	altera [o jogador acertou ▼] para [falso]
 	altera [a distorção ▼] para [101]
-	até que &lt;&lt;(a distorção) = [0]> ou &lt;(o jogador acertou) = [verdadeiro]>>, repete
+	até que <<(a distorção) = [0]> ou <(o jogador acertou) = [verdadeiro]>>, repete
 		adiciona a [a distorção ▼] o valor (-1)
 		altera o teu efeito [pixelização ▼] para (a distorção)
 		altera o teu efeito [cor ▼] para (a distorção)
@@ -281,10 +281,10 @@ Procura algumas distorções diferentes e que funcionem bem.
 Altera o jogo para que, em cada jogada, use uma distorção diferente no ciclo de
 distorções decrescentes.
 
-__Dica:__ Cria uma nova variável chamada «o tipo de distorção». Faz com que
-ela tenha um valor aleatório no início de cada jogada. Usa comandos [se &lt<>,
-então senão,] dentro do ciclo de distorção para aplicar o tipo de distorção
-que foi escolhida aleatoriamente para a jogada em curso.
+__Dica:__ Cria uma nova variável chamada «o tipo de distorção». Faz com que ela
+tenha um valor aleatório no início de cada jogada. Usa comandos [se &lt;>, então
+[] senão, []] dentro do ciclo de distorção para aplicar o tipo de distorção que
+foi escolhida aleatoriamente para a jogada em curso.
 
 ##DESAFIO 3: Faz um jogo com várias jogadas
 

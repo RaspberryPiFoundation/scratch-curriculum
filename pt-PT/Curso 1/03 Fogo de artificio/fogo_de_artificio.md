@@ -72,7 +72,7 @@ direção ao ponteiro do rato? O que acontece se moveres o rato e pressionares d
 novo a barra de espaço?
 
 7. Finalmente, vamos usar o botão do rato em vez da barra de espaço. Para isso,
-envolvemos o nosso guião pelo comando [se <o botão do rato está pressionado>,
+envolvemos o nosso guião pelo comando [se &lt;o botão do rato está pressionado>,
 []], que por sua vez envolvemos pelo comando [repete para sempre, []]. Depois,
 trocamos o bloco [Quando alguém pressionar a tecla [espaço ▼]] pelo bloco
 [Quando alguém clicar em A BANDEIRA VERDE]. Finalmente, asseguramo-nos de que o

@@ -119,7 +119,7 @@ Clica no actor papagaio e __adiciona ao guião um comando de controlo__ que só 
 
 ```scratch
 	Quando alguém pressionar a tecla [p ▼]
-	se &lt;(o estado do jogo) = [correndo]>, então
+	se <(o estado do jogo) = [correndo]>, então
 		anda (4) passos
 	[fim do comando «se, então»]
 	[fim do guião]
@@ -141,9 +141,9 @@ para que possamos jogar novamente.
 
 ```scratch
 	Quando alguém pressionar a tecla [p ▼]
-	se &lt;(o estado do jogo) = [correndo]>, então
+	se <(o estado do jogo) = [correndo]>, então
 		anda (4) passos
-		se &lt;estás a tocar em [a borda ▼]>, então
+		se <estás a tocar em [a borda ▼]>, então
 			altera [o estado do jogo ▼] para [esperando]
 		[fim do comando «se, então»]
 	[fim do comando «se, então»]
@@ -163,9 +163,9 @@ que o façam dizer que ganhou a corrida:
 
 ```scratch
 	Quando alguém pressionar a tecla [p ▼]
-	se &lt;(o estado do jogo) = [correndo]>, então
+	se <(o estado do jogo) = [correndo]>, então
 		anda (4) passos
-		se &lt;estás a tocar em [a borda ▼]>, então
+		se <estás a tocar em [a borda ▼]>, então
 			altera [o estado do jogo ▼] para [esperando]
 			toca o som [Vitória! ▼]
 			diz [Vitória!] durante (3) s
@@ -196,9 +196,9 @@ corrida acabou!» depois desse actor cantar vitória.
 
 ```scratch
 	Quando alguém pressionar a tecla [p ▼]
-	se &lt;(o estado do jogo) = [correndo]>, então
+	se <(o estado do jogo) = [correndo]>, então
 		anda (4) passos
-		se &lt;estás a tocar em [a borda ▼]>, então
+		se <estás a tocar em [a borda ▼]>, então
 			altera [o estado do jogo ▼] para [esperando]
 			toca o som [Vitória! ▼]
 			diz [Vitória!] durante (3) s

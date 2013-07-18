@@ -46,14 +46,14 @@ caneta].
 6. Vamos usar o botão do rato para controlar a ferramenta – sempre que o botão
 do rato estiver pressionado, o actor ferramenta __baixará a caneta__. Sempre que
 o botão do rato não estiver pressionado, o actor ferramenta __levantará a
-caneta__. Para isso, utiliza o comando [se &lt;>, então senão,] e o predicado
-&lt;o botão do rato está pressionado>:
+caneta__. Para isso, utiliza o comando [se &lt;>, então [] senão, []] e o
+predicado &lt;o botão do rato está pressionado>:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	repete para sempre,
 		[vai para a posição de [o ponteiro do rato ▼]]
-		se &lt;o botão do rato está pressionado>, então
+		se <o botão do rato está pressionado>, então
 			baixa a tua caneta
 		senão,
 			levanta a tua caneta
@@ -86,7 +86,7 @@ como quem diz, do palco.
 	apaga tudo do palco
 	repete para sempre,
 		[vai para a posição de [o ponteiro do rato ▼]]
-		se &lt;o botão do rato está pressionado>, então
+		se <o botão do rato está pressionado>, então
 			baixa a tua caneta
 		senão,
 			levanta a tua caneta
@@ -235,9 +235,9 @@ apenas valores inteiros, -230 < x e x < 230. Da mesma forma, as coordenadas
 válidas no eixo y são aquelas para as quais -119 ≤ y e y ≤ 168 ou, o que é o
 mesmo, pelas razões que vimos atrás, -120 < y e y < 169.
 
-Podemos usar estes valores na condição de um comando [se &lt;>, então], de modo
-a garantir que só movemos a ferramenta se o ponteiro do rato estiver dentro da
-área pretendida. Põe um comando condicional [se &lt;>, então] em torno do
+Podemos usar estes valores na condição de um comando [se &lt;>, então []], de
+modo a garantir que só movemos a ferramenta se o ponteiro do rato estiver dentro
+da área pretendida. Põe um comando condicional [se &lt;>, então []] em torno do
 comando [vai para a posição de [o ponteiro do rato ▼]] já existente e, como
 condição do comando condicional, usa &lt;&lt;&lt;[-230] &lt; (a coordenada x do
 rato)> e &lt;(a coordenada x do rato) &lt; [230]>> e &lt;&lt;[-120] &lt; (a
@@ -254,10 +254,10 @@ Altera o guião principal da ferramenta de modo a ficar como se segue:
 	Quando alguém clicar em A BANDEIRA VERDE
 	apaga tudo do palco
 	repete para sempre,
-		se &lt;&lt;&lt;[-230] &lt; (a coordenada x do rato)> e &lt;(a coordenada x do rato) &lt; [230]>> e &lt;&lt;[-120] &lt; (a coordenada y do rato)> e &lt;(a coordenada y do rato) &lt; [169]>>>, então
+		se <<<[-230] < (a coordenada x do rato)> e <(a coordenada x do rato) < [230]>> e <<[-120] < (a coordenada y do rato)> e <(a coordenada y do rato) < [169]>>>, então
 			[vai para a posição de [o ponteiro do rato ▼]]
 		[fim do comando «se então»]
-		se &lt;o botão do rato está pressionado>, então
+		se <o botão do rato está pressionado>, então
 			baixa a tua caneta
 		senão,
 			levanta a tua caneta
@@ -268,21 +268,21 @@ Altera o guião principal da ferramenta de modo a ficar como se segue:
 
 Como não é possível desenhar fora da área de desenho, podemos esconder a
 ferramenta sempre que o ponteiro do rato estiver fora dessa área. Para o fazer,
-substitui o comando [se &lt;>, então] por um comando [se &lt;>, então senão,].
-Mantém a mesma condição que antes e faz com que a ferramenta se mostre quando a
-condição for verdadeira e se esconda quando ela for falsa. Aproveita para
-levantar a caneta quando o ponteiro do rato ficar fora da área de desenho e para
-passar para debaixo do comando [mostra-te] os blocos já existentes de controlo
-da caneta segundo o estado do botão do rato:
+substitui o comando [se &lt;>, então []] por um comando [se &lt;>, então []
+senão, []]. Mantém a mesma condição que antes e faz com que a ferramenta se
+mostre quando a condição for verdadeira e se esconda quando ela for falsa.
+Aproveita para levantar a caneta quando o ponteiro do rato ficar fora da área de
+desenho e para passar para debaixo do comando [mostra-te] os blocos já
+existentes de controlo da caneta segundo o estado do botão do rato:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	apaga tudo do palco
 	repete para sempre,
-		se &lt;&lt;&lt;[-230] &lt; (a coordenada x do rato)> e &lt;(a coordenada x do rato) &lt; [230]>> e &lt;&lt;[-120] &lt; (a coordenada y do rato)> e &lt;(a coordenada y do rato) &lt; [169]>>>, então
+		se <<<[-230] < (a coordenada x do rato)> e <(a coordenada x do rato) < [230]>> e <<[-120] < (a coordenada y do rato)> e <(a coordenada y do rato) < [169]>>>, então
 			[vai para a posição de [o ponteiro do rato ▼]]
 			mostra-te
-			se &lt;o botão do rato está pressionado>, então
+			se <o botão do rato está pressionado>, então
 				baixa a tua caneta
 			senão,
 				levanta a tua caneta
@@ -463,7 +463,7 @@ valores). Podes resolver o problema da seguinte forma (admitimos que o traje
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	repete para sempre,
-		espera até que &lt;(o número do traje) = [5]>
+		espera até que <(o número do traje) = [5]>
 		adiciona (5) à cor da tua caneta
 		espera (0.05) s
 	[fim do comando «repete para sempre»]

@@ -43,7 +43,7 @@ só se mova quando não estiver demasiado próximo do ponteiro do rato
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
 	repete para sempre,
-		se &lt;(a distância até [o ponteiro do rato  ▼]) > (10)>, então
+		se <(a distância até [o ponteiro do rato  ▼]) > (10)>, então
 			aponta em direcção a [o ponteiro do rato ▼]
 			anda (3) passos
 		[fim do comando «se, então»]
@@ -90,9 +90,11 @@ repetindo estes passos indefinidamente:
 
 ###Testa o teu projecto
 
-__Clica na bandeira verde e observa a presa a nadar.__ Nada como esperavas? Nada de forma realista?
+__Clica na bandeira verde e observa a presa a nadar.__ Nada como esperavas? Nada
+de forma realista?
 
-__Neste momento, o peixe faminto e a presa não interagem um com o outro. Resolveremos o problema no próximo passo.__
+__Neste momento, o peixe faminto e a presa não interagem um com o outro.
+Resolveremos o problema no próximo passo.__
 
 __Para parar, carrega no sinal de _stop_.__
 
@@ -110,12 +112,16 @@ vê o que acontece.
 __Agora queremos que o peixe faminto coma a presa!__ Assim que o peixe faminto
 abocanhar a presa, duas coisas têm de acontecer:
 
-- O peixe faminto precisa de fechar a boca e de fazer um som como se estivesse a engolir.
+- O peixe faminto precisa de fechar a boca e de fazer um som como se estivesse
+a engolir.
 
-* A presa tem que desaparecer e, algum tempo depois, tem de reaparecer, como se fosse um novo peixe.
+- A presa tem que desaparecer e, algum tempo depois, tem de reaparecer, como se
+fosse um novo peixe.
 
-1. Vamos começar por fazer a presa desaparecer se estiver a tocar no peixe faminto, fazendo-a reaparecer três segundos depois. 
-Usa o bloco &lt;estás a tocar em [o peixe faminto ▼]> para verificar se a presa está a tocar no peixe faminto:
+1. Vamos começar por fazer a presa desaparecer se estiver a tocar no peixe
+faminto, fazendo-a reaparecer três segundos depois.  Usa o bloco &lt;estás a
+tocar em [o peixe faminto ▼]> para verificar se a presa está a tocar no peixe
+faminto:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
@@ -124,7 +130,7 @@ Usa o bloco &lt;estás a tocar em [o peixe faminto ▼]> para verificar se a pre
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
 		anda (2) passos
 		se estiveres a bater na borda, ressalta
-		se &lt;estás a tocar em [o peixe faminto ▼]>, então
+		se <estás a tocar em [o peixe faminto ▼]>, então
 			esconde-te
 			espera (3) s
 			mostra-te
@@ -141,15 +147,15 @@ peixe faminto pode limitar-se a esperar três segundos no mesmo local que
 abocanhará imediatamente a (nova) presa logo que ela aparecer – não é assim
 muito justo!
 
-2. Como poderemos garantir que a presa só desaparece se estiver a tocar na
-boca do peixe?  Podemos usar o bloco &lt;estás a tocar na cor []> para, verificar
-se a presa, para além de estar a tocar no peixe faminto, está também a tocar
-nos seus dentes azuis. Para fazer isto, transfere o bloco &lt;estás a tocar em [o
-peixe faminto ▼]> para a primeira entrada de um novo bloco &lt;&lt;> e &lt;>> e coloca esse novo
-bloco no comando [se &lt;>, então]. Na segunda entrada do bloco &lt;&lt;> e &lt;>> coloca
-o bloco &lt;estás a tocar na cor []>. Clica no quadrado colorido dentro desse
-bloco e, em seguida, clica nos dentes do peixe. A cor dos dentes preencherá o
-quadrado colorido.
+2. Como poderemos garantir que a presa só desaparece se estiver a tocar na boca
+do peixe?  Podemos usar o bloco &lt;estás a tocar na cor []> para, verificar se
+a presa, para além de estar a tocar no peixe faminto, está também a tocar nos
+seus dentes azuis. Para fazer isto, transfere o bloco &lt;estás a tocar em [o
+peixe faminto ▼]> para a primeira entrada de um novo bloco &lt;&lt;> e &lt;>> e
+coloca esse novo bloco no comando [se &lt;>, então]. Na segunda entrada do bloco
+&lt;&lt;> e &lt;>> coloca o bloco &lt;estás a tocar na cor []>. Clica no
+quadrado colorido dentro desse bloco e, em seguida, clica nos dentes do peixe. A
+cor dos dentes preencherá o quadrado colorido.
 
 3. Agora podemos fazer a nova presa ir para um ponto aleatório do palco, antes de reaparecer, usando um comando [vai para as coordenadas (x: (), y: ())] e 
 dando valores aleatórios às coordenadas x e y.
@@ -161,7 +167,7 @@ dando valores aleatórios às coordenadas x e y.
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
 		anda (2) passos
 		se estiveres a bater na borda, ressalta
-		se &lt;&lt;estás a tocar em [o peixe faminto ▼]> e &lt;estás a tocar na cor [#003]>>, então
+		se <<estás a tocar em [o peixe faminto ▼]> e <estás a tocar na cor [#003]>>, então
 			esconde-te
 			espera (3) s
 			vai para as coordenadas (x: (um valor ao acaso entre (-220) e (220)), y: (um valor ao acaso entre (-170) e (170)))
@@ -187,7 +193,7 @@ Para isso, podemos fazer a presa, antes de desaparecer, difundir uma mensagem an
 		gira ⟳ (um valor ao acaso entre (-10) e (10)) °
 		anda (2) passos
 		se estiveres a bater na borda, ressalta
-		se &lt;&lt;estás a tocar em [o peixe faminto ▼]> e &lt;estás a tocar na cor [#003]>>, então
+		se <<estás a tocar em [o peixe faminto ▼]> e <estás a tocar na cor [#003]>>, então
 			difunde a mensagem [Eu, presa, fui comida! ▼]
 			esconde-te
 			espera (3) s
