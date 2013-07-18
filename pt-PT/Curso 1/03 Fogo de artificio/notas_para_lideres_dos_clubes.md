@@ -25,7 +25,7 @@ bem como trajes e sons relativos a fogo de artifício que se encontram na pasta
 de recursos deste pacote. Assegure-se de que essa pasta existe nos computadores
 dos jovens. Alternativamente, diga-lhes onde a podem obter.
 
-### Cartões Scratch necessários
+### Cartas Scratch necessárias
 
 - Alterar Cor 
 - Deslizar

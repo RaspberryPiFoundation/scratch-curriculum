@@ -24,7 +24,7 @@ Trajes do Scratch, bem como trajes e sons que se encontram na pasta de recursos
 deste pacote. Assegure-se de que essa pasta existe nos computadores dos jovens.
 Alternativamente, diga-lhes onde a podem obter.
 
-### Cartões Scratch necessários
+### Cartas Scratch necessárias
 
 - Animação
 - Manter Pontuação

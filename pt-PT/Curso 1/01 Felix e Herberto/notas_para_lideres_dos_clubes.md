@@ -22,7 +22,7 @@ Este projecto inclui:
 Este projeto utiliza recursos que se encontram nas pastas de Cenários e Trajes
 do Scratch.
 
-### Cartões Scratch necessários
+### Cartas Scratch necessárias
 
 - Seguir o Rato
 

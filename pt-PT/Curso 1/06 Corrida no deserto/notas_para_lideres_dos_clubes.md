@@ -24,7 +24,7 @@ Este projeto utiliza recursos que se encontram nas pastas de Cenários e de
 Trajes do Scratch, bem como trajes criados pelo programador com base nos
 recursos originais do Scratch.
 
-### Cartões Scratch necessários
+### Cartas Scratch necessárias
 
 Nada a assinalar.
 

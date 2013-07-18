@@ -23,7 +23,7 @@ desafios!
 
 Este projeto utiliza recursos que se encontram na pasta de Trajes do Scratch.
 
-### Cartões Scratch necessários
+### Cartas Scratch necessárias
 
 - Difundir
 
