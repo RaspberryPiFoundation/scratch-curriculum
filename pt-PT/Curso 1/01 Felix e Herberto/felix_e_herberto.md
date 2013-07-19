@@ -140,7 +140,8 @@ comando de difusão):
 		toca a percussão (10 ▼) durante (0.3) tempos
 		se <estás a tocar em [o Herberto ▼]>, então
 			difunde a mensagem [Eu, Félix, apanhei o Herberto! ▼]
-			toca a percussão (5 ▼) durante (0.2) tempos
+			toca a percussão (5 ▼) durante (0.3) tempos
+			espera (1) s
 		[fim do comando «se, então»]
 	[fim do comando «repete para sempre»]
 	[fim do guião]
@@ -208,8 +209,10 @@ palco:
 
 ###Testa o teu projeto
 
-__Clica na bandeira verde.__ A pontuação aumenta um ponto a cada segundo? A pontuação diminui 100 pontos quando o Herberto é apanhado? O que acontece quando o Herberto é apanhado antes que de a pontuação chegar a
-100? A pontuação volta a zero quando começa um novo jogo?
+__Clica na bandeira verde.__ A pontuação aumenta um ponto a cada segundo? A
+pontuação diminui 100 pontos quando o Herberto é apanhado? O que acontece quando
+o Herberto é apanhado antes que de a pontuação chegar a 100? A pontuação volta a
+zero quando começa um novo jogo?
 
 __Carrega no botão «Ver a página do projecto».__
 
