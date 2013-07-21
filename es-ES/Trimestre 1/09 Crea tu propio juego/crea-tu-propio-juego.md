@@ -3,15 +3,15 @@ Nivel 3
 #Crea tu propio juego
 
 __Introducción:__
-En este proyecto vas a diseñar y crear un juego para ti y tus amigos. Necesitas pensar sobre las distintas partes y planificar tus ideas antes de comenzar a construirlo en Scratch. Puedes ayudarte con ideas de otros proyectos y las tarjetas de Scratch.
+En este proyecto vas a diseñar y crear un juego para ti y tus amigos. Necesitas pensar sobre las distintas partes y planificar tus ideas antes de comenzar a construirlo en Scratch. Puedes ayudarte con ideas de otros proyectos y con las tarjetas de Scratch.
 
 ##PASO 1: Planifica tu juego
 
-¿Cuál es el objetivo del juego? (Por ejemplo, el objetivo del juego Félix y Herbert era evitar ser atrapado por el gato). Puede ayudarte que pienses todas las ideas que puedas para después elegir la mejor. Puedes intercambiar ideas con amigos y amigas, o trabajar en tu propia idea. Escribe tus ideas debajo y elige la mejor.
+¿Cuál es el objetivo del juego? (Por ejemplo, el objetivo del juego Félix y Herbert era evitar ser atrapado por el gato). Puede ayudarte pensar en tantas ideas como puedas y elegir después la mejor. Puedes intercambiar ideas con amigos y amigas, o trabajar en tu propia idea. Escribe tus ideas debajo y elige la mejor.
 
 ##PASO 2: Diseña tus personajes
 
-¿Qué personajes habrá en tu juego? Dibújalos en el recuadro de abajo. Si van a necesitar distintos disfraces, dibújalos también. Pide más hojas si necesitas.
+¿Qué personajes habrá en tu juego? Dibújalos en el recuadro de abajo. Si van a necesitar distintos disfraces, dibújalos también. Pide más hojas si las necesitas.
 
 ##PASO 3: Diseña tu escenario
 

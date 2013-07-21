@@ -11,7 +11,7 @@ Empecemos con un lápiz que dibuja cuando lo mueves sobre el escenario.
 
 1. Comienza un nuevo proyecto de Scratch. Borra el objeto gato pinchando en él con el botón derecho y pinchando en 'borrar'.
 2. Pincha en el escenario y luego en la pestaña de Fondos. Importa el fondo __indoors/chalkboard__.
-3. Crea un nuevo objeto llamado __lápiz__, usando la imagen __resources\green-pencil.__
+3. Crea un nuevo objeto llamado __lápiz__, usando la imagen __resources/green-pencil.__
 4. Cambia a la pestaña __Disfraces__ y pincha en __Editar__. Una vez en el __Editor de Pinturas__, mueve el centro de la imagen a la punta del lápiz. Para ello, pincha el botón __Seleccionar dentro de disfraz__ y mueve las líneas que aparecen hasta que queden justo pasado el final de la punta del lápiz.
 5. Haz que el lápiz siga al puntero del ratón usando bloques __por siempre__ e __ir a apuntador del ratón__.
 
@@ -24,7 +24,7 @@ por siempre
 
 __Ahora queremos que este objeto lápiz se comporte como un lápiz de verdad.__ En la paleta llamada Lápiz verás varios bloques para dibujar. Para empezar nos interesan __bajar lápiz__ y __subir lápiz__.
 
-6. Queremos controlar el lápiz con el botón del ratón: con el botón presionado el lápiz está en contacto con el escenario, y al soltar el botón se levanta el lápiz. Lo conseguimos usando bloques __si / si no__ y __¿ratón presionado?__.
+6. Queremos controlar el lápiz con el botón del ratón: con el botón presionado. el lápiz está en contacto con el escenario, y al soltar el botón se levanta el lápiz. Lo conseguimos usando bloques __si / si no__ y __¿ratón presionado?__.
 
 ```scratch
 al presionar BANDERA
@@ -39,7 +39,7 @@ por siempre
 ```
 ##Prueba tu proyecto
 __Pincha en la bandera verde.__
-¿Sigue el lápiz al ratón por el escenario? ¿Qué pasa cuando mantienes apretado el botón del ratón y lo mueves? No te preocupes del color del lápiz por ahora.
+¿Sigue el lápiz al ratón por el escenario? ¿Qué pasa cuando mantienes apretado el botón del ratón y lo mueves? No te preocupes por ahora del color del lápiz.
 
 
 7. Muy pronto se te llenará la pantalla de garabatos. Puedes usar un bloque __borrar__ para borrar el escenario.
@@ -87,11 +87,11 @@ Guarda tu proyecto.
 
 ##PASO 3: Cambia de color
 
-Hasta ahora solo podemos dibujar líneas azules. ¡Dibujemos en colores! Vamos a añadir unos objetos en la parte inferior del recuadro. Los objetos parecerán botones de colores. Si pinchamos uno de ellos, cambiará el color de las líneas que dibujemos. Para saber qué color estamos usando, el botón también cambiará el color del lápiz.
+Por ahora solo podemos dibujar líneas azules. ¡Dibujemos en colores! Vamos a añadir unos objetos en la parte inferior del recuadro. Los objetos parecerán botones de colores. Si pinchamos uno de ellos, cambiará el color de las líneas que dibujemos. Para saber qué color estamos usando, el botón también cambiará el color del lápiz.
 
 1. Añade un nuevo objeto llamado __rojo__, usando la imagen __resources/red-selector__. 
 2. Colócalo bajo el recuadro, cerca del botón __borrar__.
-3. Cuando se pincha el objeto rojo, haz que mande el mensaje __rojo__.
+3. Cuando se pinche el objeto rojo, haz que mande el mensaje __rojo__.
 
 ```scratch
 al presionar rojo
@@ -128,7 +128,7 @@ Guarda tu proyecto.
 
 ##PASO 4: Dibuja solo dentro del recuadro
 
-Habrás notado que puedes dibujar por todo el escenario, incluso fuera del recuadro de fondo. Queremos mejorar las cosas, haciendo que solo se pueda dibujar en la zona central del escenario. Para ello hacemos que el lápiz no pueda salir de la zona gris más clara del escenario.
+Habrás notado que puedes dibujar por todo el escenario, incluso fuera del recuadro de fondo. Queremos mejorar las cosas, haciendo que solo se pueda dibujar en la zona central del escenario. Para ello haremos que el lápiz no pueda salir de la zona gris más clara del escenario.
 
 
 Recuerda que en Scratch cada punto del escenario se describe por sus coordenadas __x__ e __y__. El recuadro gris contiene puntos con valores de x entre -230 y 230, y valores de y entre -120 y 170. Usando estos valores en un bloque __si__, podemos asegurarnos de que el ratón se encuentre en esa zona antes de mover el lápiz.
@@ -138,7 +138,7 @@ Para ello rodea el bloque __ir a__ con un bloque __si__, en el que verificas que
 'y' del ratón es mayor que -120 y 'y' del ratón es menor que 170
 y 'x' del ratón es mayor que -230 y 'x' del ratón es menor que 230
 
-__Nota__ para crear esta expresión tendrás que usar varios bloques __y__ de la paleta de Operadores: uno para las parte de la coordenada x, otro para la parte de la coordenada y, y otro para combinar las dos partes.
+__Nota:__ para crear esta expresión tendrás que usar varios bloques __y__ de la paleta de Operadores: uno para la parte de la coordenada x, otro para la parte de la coordenada y, y otro para combinar las dos partes.
 
 ```scratch
 borrar
@@ -171,7 +171,7 @@ por siempre
 ##Prueba tu proyecto
 __Pincha en la bandera verde.__
 
-¿Todavía puedes dibujar dentro del recuadro? ¿Puedes dibujar fuera de él? ¿Qué le pasa al lápiz cuando entre y sale del recuadro?
+¿Todavía puedes dibujar dentro del recuadro? ¿Puedes dibujar fuera de él? ¿Qué le pasa al lápiz cuando entra y sale del recuadro?
 
 Guarda tu proyecto.
 
@@ -197,9 +197,9 @@ Lo siguiente es añadir un sello con el que estampar pequeñas imágenes en el d
 1. Añade un nuevo objeto, usando cualquier imagen que te guste. Reduce su tamaño y ponlo en la parte inferior del escenario junto a los otros botones. Al pinchar en este objeto, hazlo __enviar a todos estampar__.
 2. Añade un nuevo disfraz al objeto lápiz, con la misma imagen que has elegido para la estampa.
 3. Selecciona el objeto lápiz y crea una nueva variable llamada __modo lápiz__ solo para este objeto. Usaremos esta variable para registrar si estamos dibujando o estampando.
-4. Añade un nuevo programa que responda al mensaje __estampar__, que cambia el disfraz al de la estampa y fija el valor de __modo lápiz__ a __falso__.
+4. Añade un nuevo programa que responda al mensaje __estampar__, que cambie el disfraz al de la estampa y fije el valor de __modo lápiz__ a __falso__.
 5. Cambia los otros programas que responden a los otros mensajes (rojo, verde, azul, borrar) para que fijen el valor de __modo lápiz__ a __verdadero__.
-6. Finalmente, comprobamos esta variable cuando el botón del ratón esté presionado para saber si debemos dibujar o estampar. Si __modo lápiz = verdadero__ dejamos el bloque __bajar lápiz__, y si no usamos un bloque __sellar__.
+6. Finalmente, comprobamos esta variable cuando el botón del ratón esté presionado para saber si debemos dibujar o estampar. Si __modo lápiz = verdadero__ dejamos el bloque __bajar lápiz__, y si no, usamos un bloque __sellar__.
 
 ##Prueba tu proyecto
 __Pincha en la bandera verde.__
@@ -210,7 +210,7 @@ __Pincha en la bandera verde.__
 
 Guarda tu proyecto.
 
-__Bien hecho, has completado el proyecto básico. ¡Intenta estos desafíos!
+__Bien hecho, has completado el proyecto básico. ¡Intenta estos desafíos!__
 
 ##Desafío 1: Lápiz arco iris 
 
@@ -224,7 +224,7 @@ Primero añade el objeto que representa el color arco iris y añade otro disfraz
 
 Tienes que construir un programa que cambia el color del lápiz varias veces por segundo para crear el efecto arco iris (parece que cambiando el color por 5 cada 0.05 segundos funciona bien, pero prueba tus propios valores). La tarjeta de Scratch __cronómetro__ te recuerda cómo hacer que algo ocurra repetidamente. Usa un bloque __cambiar color del lápiz por__ en vez de un __cambiar cronómetro por -1__ dentro del ciclo.
 
-También tienes que diseñar el programa para que solo cambie el color del lápiz cuando tienes el lápiz arco iris seleccionado, ¡si no todos los lápices tendrían el mismo efecto! Puedes conseguirlo de manera parecida a cómo el lápiz cambia entre sus modo de lápiz y de estampa. Tienes que crear una variable llamada __modo arco iris__ con el valor __verdadero__ cuando quieras el efecto arco iris, y __falso__ cuando no. Cada vez que el lápiz responda a un mensaje de uno de los botones, deberá fijar el valor de __modo arco iris__ que corresponda.
+También tienes que diseñar el programa para que solo cambie el color del lápiz cuando tienes el lápiz arco iris seleccionado, ¡si no todos los lápices tendrían el mismo efecto! Puedes conseguirlo de manera parecida a cómo el lápiz cambia entre sus modos de lápiz y de estampa. Tienes que crear una variable llamada __modo arco iris__ con el valor __verdadero__ cuando quieras el efecto arco iris, y __falso__ cuando no. Cada vez que el lápiz responda a un mensaje de uno de los botones, deberá fijar el valor de __modo arco iris__ que corresponda.
 
 Controla el efecto arco iris usando lo aprendido cuando creaste el sello de estampar. Es decir, los programas que responden a los mensajes de los botones fijan los valores de dos variables cada vez: __modo lápiz__ y __modo arco iris__.
 
@@ -271,7 +271,7 @@ No olvides las teclas de atajo correspondientes. Yo elegí la flecha arriba y fl
 Guarda tu proyecto.
 
 Quizás hayas notado que al cambiar el tamaño del sello también cambia el tamaño del lápiz cuando vuelves al modo lápiz.
-Para evitarlo. Fija el tamaño al 100% cada vez que cambies al modo lápiz, para que la imagen del lápiz siempre tenga el tamaño correcto.
+Para evitarlo, fija el tamaño al 100% cada vez que cambies al modo lápiz, para que la imagen del lápiz siempre tenga el tamaño correcto.
 
 Para hacerlo aún mejor, haz que el sello recuerde su tamaño antes de seleccionar el lápiz y vuelva a ese tamaño cuando vuelvas a seleccionar el sello. La manera más fácil de lograrlo es creando una nueva variable __tamaño sello__, que actualizas con el tamaño del sello cada vez que cambias su tamaño. Cuando se selecciona el sello, cambia su tamaño según el valor de la variable.
 
