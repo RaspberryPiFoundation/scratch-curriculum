@@ -92,7 +92,7 @@ Queremos que los competidores solo se muevan una vez que haya empezado la carrer
 	al presionar tecla a
 	si corriendo = 1
 		mover 4 pasos
-	(acabar si)
+	(fin si)
 ```
 9. Haz lo mismo con el león.
 
@@ -114,8 +114,8 @@ Queremos saber quién ha ganado cada carrera y volver al inicio para poder compe
 		mover 4 pasos
 		si ¿tocando borde?
 			fijar corriendo a 0
-		(acabar si)
-	(acabar si)
+		(fin si)
+	(fin si)
 ```
 2. Ahora queremos que el loro nos avise si gana la carrera. Graba un nuevo sonido que sonará si el loro gana. ¡Pincha en la pestaña 'Sonidos' y graba el sonido que hará el loro al ganar la carrera!
 3. Añade los bloques que tocan el sonido y hacen que el loro diga que ha ganado:
@@ -129,8 +129,8 @@ Queremos saber quién ha ganado cada carrera y volver al inicio para poder compe
 			fijar corriendo a 0
 			tocar sonido grabación1
 			decir ¡el loro gana! por 3 segundos
-		(acabar si)
-	(acabar si)
+		(fin si)
+	(fin si)
 ```
 4. Ahora repite estos pasos para el león.
 
@@ -161,8 +161,8 @@ Añade un bloque que envía el mensaje 'fin' para avisar de que ha ganado.
 			tocar sonido grabación1
 			decir ¡el loro gana! por 3 segundos
 			enviar a todos fin
-		(acabar si)
-	(acabar si)
+		(fin si)
+	(fin si)
 ```
 2. Tenemos que añadir un programa que espera recibir el mensaje 'fin' y devuelve al loro a la salida. ¿Qué pasa si cambias el valor que le das a x?
 

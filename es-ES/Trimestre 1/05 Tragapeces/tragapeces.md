@@ -21,7 +21,7 @@ __¡Hagamos que el Pez Gordo nade por el mar!__
 	por siempre		
 		apuntar hacia apuntador del ratón
 		mover 3 pasos
-	(acabar por siempre)
+	(fin por siempre)
 ```
 
 ###Prueba tu proyecto
@@ -39,7 +39,7 @@ Mueve el ratón por el mar. ¿Sigue el pez al puntero?
 	por siempre	si distancia a apuntador del ratón > 10
 		apuntar hacia apuntador del ratón
 		mover 3 pasos
-	(acabar por siempre)
+	(fin por siempre)
 ```
 
 
@@ -64,7 +64,7 @@ Si quieres puedes jugar con los números del programa. ¿Cómo cambia la forma d
 		mover 2 pasos
 		girar número al azar entre -20 y 20 grados
 		rebotar si está tocando un borde
-	(acabar por siempre)
+	(fin por siempre)
 ```
 
 ###Prueba tu proyecto
@@ -98,8 +98,8 @@ __¡Queremos que el Pez Gordo se coma a la presa!__ Una vez que el Pez Gordo ten
 			esconder
 			esperar 3 segundos
 			mostrar
-		(acabar si)
-	(acabar por siempre)
+		(fin si)
+	(fin por siempre)
 ```
 
 ###Prueba tu proyecto
@@ -120,8 +120,8 @@ __Vuelve a probar tu juego. ¿Notas algún problema?__ Fíjate que la presa desa
 			esperar 3 segundos
 			ir a x:número al azar entre -220 y 220 y: número al azar entre -170 y 170
 			mostrar
-		(acabar si)
-	(acabar por siempre)
+		(fin si)
+	(fin por siempre)
 ```
 ###Prueba tu proyecto
 
@@ -142,8 +142,8 @@ Prueba tu juego de nuevo: confirma que la presa solo desaparece cuando toca la b
 			esperar 3 segundos
 			ir a x:número al azar entre -220 y 220 y: número al azar entre -170 y 170
 			mostrar
-		(acabar si)
-	(acabar por siempre)
+		(fin si)
+	(fin por siempre)
 ```
 __Ahora queremos que el pez responda a este mensaje tocando el sonido 'chomp' y cerrando la boca.__
 
@@ -158,7 +158,7 @@ __Ahora queremos que el pez responda a este mensaje tocando el sonido 'chomp' y 
 		cambiar el disfraz a mouth-closed
 		esperar 0.5 segundos
 		cambiar el disfraz a hungry-fish
-	(acabar repetir)
+	(fin repetir)
 ```
 
 __Ahora que el Pez Gordo está listo, ¡llenemos el mar de comida! Pincha en el objecto presa con el botón derecho y duplícalo varias veces.__

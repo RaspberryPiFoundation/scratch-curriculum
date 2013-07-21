@@ -66,7 +66,7 @@ Después reemplaza el bloque __al presionar tecla espacio__ por un __al presiona
 		ir a x: x del ratón y: -200
 		mostrar
 		deslizar en 1 segs a x: x del ratón y: y del ratón
-	(acabar por siempre)
+	(fin por siempre)
 ```
 ###Prueba tu proyecto
 __Pincha en la bandera verde, y luego pincha con el ratón en el escenario. Pincha en diferentes partes del escenario.__ 
@@ -91,7 +91,7 @@ Guarda tu proyecto.
 		mostrar
 		deslizar en 1 segs a x: x del ratón y: y del ratón
 		esconder
-	(acabar por siempre)
+	(fin por siempre)
 ```
 2. Después haz que el cohete envíe un nuevo mensaje al explotar. Más tarde usaremos este mensaje.
 
@@ -106,7 +106,7 @@ Guarda tu proyecto.
 		deslizar en 1 segs a x: x del ratón y: y del ratón
 		esconder
 		enviar a todos explota
-	(acabar por siempre)
+	(fin por siempre)
 
 ```
 ###Prueba tu proyecto
@@ -188,7 +188,7 @@ __Pincha en la bandera verde.__
 
 	repetir 50
 		cambiar tamaño por 2
-	(acabar repetir)
+	(fin repetir)
 
 	esconder
 ```
@@ -220,7 +220,7 @@ La causa es que después de enviar el mensaje 'explota', el cohete vuelve a repe
 		deslizar en 1 segs a x: x del ratón y: y del ratón
 		esconder
 		enviar a todos explota y esperar
-	(acabar por siempre)
+	(fin por siempre)
 ```
 ###Prueba tu proyecto
 __Pincha en la bandera verde, mantén presionado el botón del ratón y mueve el ratón por el escenario.__ 

@@ -32,7 +32,7 @@ __Ahora que tenemos disfraces, queremos que el objeto intercambie entre ellas.__
 	por siempre		
 		siguiente disfraz
 		esperar 0.1 segundos
-	(acabar por siempre)
+	(fin por siempre)
 ```
 
 ###Prueba tu proyecto

@@ -29,7 +29,7 @@ Marca cada casilla para indicar tu progreso.
 
 		tocar tambor 62 durante 0.3 pulsos
 
-	(acabar por siempre)
+	(fin por siempre)
 ```		
 ###Prueba Tu Proyecto
 __Pincha en la bandera verde.__
@@ -52,7 +52,7 @@ Guarda tu proyecto
 	por siempre
 		ir a apuntador del ratón
 		apuntar hacia Félix
-	(acabar por siempre)
+	(fin por siempre)
 ```
 ###Prueba Tu Proyecto__Pincha en la bandera verde.__
 ¿Se mueve Herbert bajo el puntero del ratón? ¿Persigue Félix a Herbert?
@@ -71,8 +71,8 @@ Guarda tu proyecto
 		tocar tambor 62 durante 0.3 pulsos
 		si ¿tocando Herbert?
 			decir ¡Te pillé! por 1 segundos
-		(acabar si)
-	(acabar por siempre)
+		(fin si)
+	(fin por siempre)
 ```
 
 ###Prueba Tu Proyecto__Pincha en la bandera verde.__
@@ -97,8 +97,8 @@ __En vez de hacer que Félix diga algo, queremos que Herbert se convierta en un 
 			enviar a todos pillado
 			tocar tambor 58 durante 0.2 pulsos
 			esperar 1 segundos
-		(acabar si)
-	(acabar por siempre)
+		(fin si)
+	(fin por siempre)
 ```2. Importa un nuevo disfraz para Herbert desde fantasy/ghost2-a.3. Edita el disfraz haciéndolo más pequeño. Pinchando seis veces en el botón 'Achicar' debería bastar.4. Cambia los nombres de los disfraces de Herbert para que el de ratón se llame 'vivo' y el de fantasma se llame 'muerto'.5. Crea un programa nuevo para Herbert que lo convierta en fantasma:
 ```scratch
 	
@@ -122,7 +122,7 @@ __En vez de hacer que Félix diga algo, queremos que Herbert se convierta en un 
 	por siempre
 		cambiar Marcador por 1
 		esperar 1 segundos
-	(acabar por siempre)
+	(fin por siempre)
 	
 	al recibir pillado
 	cambiar Marcador por -100

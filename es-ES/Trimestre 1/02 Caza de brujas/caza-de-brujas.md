@@ -17,7 +17,7 @@ Esta variable controla la velocidad de la bruja. Usamos una variable para poder 
 	fijar velocidad a 5
 	por siempre
 		mover velocidad pasos
-	(acabar por siempre)
+	(fin por siempre)
 ```		
 ###Prueba tu proyecto__Pincha en la bandera verde__ y observa lo que hace la bruja. ¿Por qué se queda atascada en el borde de la pantalla?
 6. Para evitar que la bruja se atasque tenemos que hacer que de la vuelta al llegar al borde del escenario. Después del bloque 'mover velocidad pasos' añade un 'rebotar si está tocando el borde'.
@@ -27,7 +27,7 @@ Esta variable controla la velocidad de la bruja. Usamos una variable para poder 
 	por siempre
 		mover velocidad pasos
 		rebotar si está tocando el borde
-	(acabar por siempre)
+	(fin por siempre)
 ```7. Para que la bruja no se ponga del revés, pincha el botón __solo mirar izquierda-derecha__ en la zona de sumario del objeto.
 
 ###Prueba tu proyecto__Pincha en la bandera verde.__ 
@@ -46,7 +46,7 @@ Guarda tu proyecto
 		esperar número al azar entre 2 y 5 segundos
 		show
 		esperar número al azar entre 3 y 5 segundos
-	(acabar por siempre)
+	(fin por siempre)
 ```
 ###Prueba tu proyecto__Pincha en la bandera verde.__ 
 ¿Se mueve la bruja de lado a lado del escenario, apareciendo y despareciendo al azar?
@@ -83,7 +83,7 @@ Guarda tu proyecto
 	repetir hasta que tiempo = 0
 		esperar 1 segundos
 		cambiar tiempo por -1
-	(acabar repetir)
+	(fin repetir)
 	detener todo
 ```
 ###Prueba tu proyecto__Pincha en la bandera verde.__ 
