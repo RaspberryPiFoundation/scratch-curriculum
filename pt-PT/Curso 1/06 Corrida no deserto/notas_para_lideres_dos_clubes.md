@@ -38,4 +38,4 @@ Nada a assinalar.
 
 ### Desafios
 
-- Adicionando uma tecla de turbo
+- Adiciona uma tecla de turbo

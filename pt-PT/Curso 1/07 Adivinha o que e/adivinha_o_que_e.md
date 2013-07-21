@@ -44,9 +44,9 @@ actor «a imagem»:
 
 __Clica na bandeira verde.__ A imagem mudou? Se não, porquê?
 
-__Clia sobre a bandeira verde mais algumas vezes.__ Surgem imagens diferentes?
+__Clica sobre a bandeira verde mais algumas vezes.__ Surgem imagens diferentes?
 Por vezes aparece a mesma imagem várias vezes seguidas, mas isso não é um
-problema. Também reparou que a imagem «treme» até chegar à imagem final.
+problema. Também reparaste que a imagem «treme» até chegar à imagem final.
 Corrigiremos isso na próxima etapa.
 
 ##PASSO 2: Distorcer as imagens
@@ -138,7 +138,7 @@ logo após o primeiro comando de repetição:
 
 __Agora vamos criar os objetos nos quais o jogador poderá clicar.__
 
-3. Duplica o actor «a imagem» e move-a para o canto inferior esquerdo do
+3. Duplica o actor «a imagem» e move-o para o canto inferior esquerdo do
 palco.
 
 4. Renomeia esse actor para «a resposta 1». Isto faz com que seja mais fácil
@@ -182,7 +182,7 @@ mostrado no quadro preto. Adiciona este outro guião:
 
 ```scratch
 	Quando receberes a mensagem [O jogador acertou! ▼]
-	diz (a junção de [Parabéns! Acertaste! A tua pontuação é: ] com [a distorção])
+	diz (a junção de [Parabéns! Acertaste! A tua pontuação é: ] com (a distorção))
 	[fim do guião]
 ```
 
@@ -217,7 +217,7 @@ zero, mas também quando a variável «o jogador acertou» tiver o valor
 12. Cria uma nova variável chamada «o jogador acertou» _apenas para o actor «a
 imagem»_.
 
-13. Alterar os guiões desse mesmo actor para ficarem como se segue:
+13. Altera os guiões desse mesmo actor para ficarem como se segue:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
@@ -240,7 +240,7 @@ imagem»_.
 	Quando receberes a mensagem [O jogador acertou! ▼]
 	altera [o jogador acertou ▼] para [verdadeiro]
 	cancela os teus efeitos gráficos
-	diz (a junção de [Parabéns! Acertaste! A tua pontuação é: ] com [a distorção])
+	diz (a junção de [Parabéns! Acertaste! A tua pontuação é: ] com (a distorção))
 	[fim do guião]
 ```
 
@@ -341,7 +341,7 @@ modo a que a pontuação total diminua sempre que o jogador erre.
 
 Esta alteração torna o jogo mais interessante?
 
-__Parabéns! Terminou! Agora podes desfrutar do jogo!__
+__Parabéns! Terminaste! Agora podes desfrutar do jogo!__
 
 Não te esqueças que podes partilhar o teu jogo com outros Scratchadores,
 incluindo os teus amigos e os teus familiares, clicando em «Partilhar»!

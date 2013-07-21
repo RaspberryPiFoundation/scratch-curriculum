@@ -33,7 +33,7 @@ abaixo do nome que acabaste de alterar.
 7. Mantém «o Félix» seleccionado na área «Actores» e clica no separador
 «Guiões».
 
-8. Arrasta para a área dos guiões, a partir das paletes de blocos à sua
+8. Arrasta para a área dos guiões, a partir das paletas de blocos à sua
 esquerda, os comandos que se seguem, encaixando-os:
 
 ```scratch
@@ -47,7 +47,7 @@ esquerda, os comandos que se seguem, encaixando-os:
 	[fim do guião]
 ```
 		
-### Testa o teu projeto
+### Testa o teu projecto
 
 __Clica na bandeira verde.__ O Félix está a perseguir o ponteiro do rato? Parece
 andar enquanto se movimenta? A velocidade com que anda é correcta?
@@ -79,7 +79,7 @@ relativamente ao Félix.
 6. Mantém «o Herberto» seleccionado na área «Actores» e clica no separador
 «Guiões».
 
-7. Arrasta para a área dos guiões, a partir das paletes de blocos à sua
+7. Arrasta para a área dos guiões, a partir das paletas de blocos à sua
 esquerda, os comandos que se seguem, encaixando-os:
 
 ```scratch
@@ -91,7 +91,7 @@ esquerda, os comandos que se seguem, encaixando-os:
 	[fim do guião]
 ```
 
-### Testa o teu projeto
+### Testa o teu projecto
 
 __Clica na bandeira verde.__ O Herberto move-se com o ponteiro do rato? O Félix
 persegue o Herberto?
@@ -118,7 +118,7 @@ __Vamos fazer com que o Félix nos avise quando apanhar o Herberto__
 	[fim do guião]
 ```
 
-### Testa o teu projeto
+### Testa o teu projecto
 
 __Clica na bandeira verde.__ O Félix avisa quando apanha o Herberto?
 
@@ -162,7 +162,7 @@ lado».
 6. Cria um novo guião para o Herberto, que fará com que se transforme num
 fantasma. Este guião ficará junto ao guião já existente para o Herberto.
 
-__Não removas o guião que já existe para o Herberto e que fazem com que ele
+__Não removas o guião que já existe para o Herberto e que faz com que ele
 persiga o ponteiro do rato!__
 
 ```scratch
@@ -172,7 +172,7 @@ persiga o ponteiro do rato!__
 	muda o teu traje para [vivo, de cima ▼]	
 ```	
 	
-### Testa o teu projeto
+### Testa o teu projecto
 
 __Clica na bandeira verde.__ O Herberto transforma-se brevemente num fantasma
 quando é apanhado? O Félix toca o som certo no altura certo? O Félix fica quieto
@@ -207,7 +207,7 @@ palco:
 	[fim do guião]
 ```	
 
-### Testa o teu projeto
+### Testa o teu projecto
 
 __Clica na bandeira verde.__ A pontuação aumenta um ponto a cada segundo? A
 pontuação diminui 100 pontos quando o Herberto é apanhado? O que acontece quando

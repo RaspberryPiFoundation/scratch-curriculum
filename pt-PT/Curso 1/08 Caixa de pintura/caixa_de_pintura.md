@@ -2,9 +2,9 @@ Nível 3
 
 # Caixa de pintura
 
-__Introdução:__ Vamos criar uma ferramenta de pintura para fazermos desenhos
-sobre um quadro. Esta ferramenta permitirá escolher a cor do lápis, limpar o
-quadro, usar carimbos e muito mais!
+__Introdução:__ Vamos criar uma caixa de pintura para fazermos desenhos sobre um
+quadro. Esta caixa de pintura permitirá desenhar com um lápis, escolher a cor do
+lápis, limpar o quadro, usar carimbos e muito mais!
 
 ## PASSO 1: Arrastando e desenhando
 
@@ -235,7 +235,7 @@ apenas valores inteiros, -230 < x e x < 230. Da mesma forma, as coordenadas
 válidas no eixo y são aquelas para as quais -119 ≤ y e y ≤ 168 ou, o que é o
 mesmo, pelas razões que vimos atrás, -120 < y e y < 169.
 
-Podemos usar estes valores na condição de um comando [se &lt;>, então []], de
+Podemos usar estes valores na condição de um comando [se &lt;>, então []] de
 modo a garantir que só movemos a ferramenta se o ponteiro do rato estiver dentro
 da área pretendida. Põe um comando condicional [se &lt;>, então []] em torno do
 comando [vai para a posição de [o ponteiro do rato ▼]] já existente e, como
@@ -374,7 +374,7 @@ borracha que parece assentar na superfície quadro.
 
 __Clica na bandeira verde.__ Clica sobre o botão «borracha». A ferramenta muda
 para o aspecto de uma borracha e apaga os desenhos? É eficaz? Funciona até às
-bordas do quadro? Consegues alternar entre a borracha e os lápiz das outras
+bordas do quadro? Consegues alternar entre a borracha e os lápis das outras
 cores?
 
 __Para parar, carrega no sinal de _stop_.__

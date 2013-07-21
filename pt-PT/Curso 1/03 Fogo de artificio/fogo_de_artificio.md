@@ -3,14 +3,14 @@ Nível 1
 #Fogo de artifício
 
 __Introdução:__
-Neste projeto vamos criar um espectáculo de fogo de artifício nos céus de uma
+Neste projecto vamos criar um espectáculo de fogo de artifício nos céus de uma
 cidade.
 
 ##PASSO 1: Disparar um foguete que sobe na direcção do ponteiro do rato
 
-__Vamos importar as diferentes imagens para o jogo__
+__Vamos importar as diferentes imagens para o jogo.__
 
-1. Cria um novo projeto Scratch. Remove o actor gato clicando nele com o botão
+1. Cria um novo projecto Scratch. Remove o actor gato clicando nele com o botão
 direito do rato e carregando em «»remover.
 
 2. Clica no palco, à esquerda da área «Actores» e depois clica no separador
@@ -39,7 +39,7 @@ deslizar na direcção do ponteiro do rato:
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
 __Clica na bandeira verde, posiciona o ponteiro do rato sobre o palco e
 pressiona a barra de espaço.__ O foguete aparece e eleva-se em direção ao
@@ -64,7 +64,7 @@ horizontalmente para a coordenada x do rato.
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
 __Clica na bandeira verde, posiciona o ponteiro do rato sobre o palco e
 pressiona a barra de espaço.__ O foguete aparece na base do palco e eleva-se em
@@ -93,7 +93,7 @@ removê-lo.
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
 __Clica na bandeira verde e, em seguida, clica sobre o palco. Clica novamente
 noutro ponto do palco.__
@@ -112,7 +112,7 @@ __Para parar, carrega no sinal de _stop_.__
 1. O primeiro passo para fazer o foguete explodir é fazê-lo tocar o som de
 explosão em «Recursos\lançamento e explosão.wav» antes de ele se começar a mover
 e fazê-lo desaparecer quando atingir a posição do ponteiro do rato quando foi
-clicado.Para importar o som, vai ao separador «Sons» do actor «o foguete» e
+clicado. Para importar o som, vai ao separador «Sons» do actor «o foguete» e
 clica no botão «Carregar som a partir de arquivo». Aproveita para remover o som
 «miau».
 
@@ -172,7 +172,7 @@ rato quando este foi clicado.
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
 __Lança um novo foguete.__ Quando explode, o foguete é substituído pela
 representação da explosão? O que acontece se mantiveres o botão do rato
@@ -195,9 +195,9 @@ esse efeito. Devemos alterar o efeito de cor antes de mostrar a explosão.
 	[fim do guião]
 ```
 
-### Testa o teu projeto
+### Testa o teu projecto
 
-__Clica na bandeira verde.__ Lança vários foguetes. Cada explosão tem uma cor
+__Clica na bandeira verde. Lança vários foguetes.__ Cada explosão tem uma cor
 diferente?
 
 2. Adiciona algumas representações diferentes da explosão usando as imagens que
@@ -216,9 +216,9 @@ Altera o guião para, antes de mostrar a explosão, passar para o traje seguinte
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
-__Clica na bandeira verde.__ Lança vários foguetes. Cada foguete tem uma
+__Clica na bandeira verde. Lança vários foguetes.__ Cada foguete tem uma
 representação diferente para a sua explosão?
 
 3. Finalmente, vamos fazer a explosão crescer ao longo do tempo em vez de a
@@ -240,9 +240,9 @@ adiciona cinquenta vezes 2% ao tamanho do actor usando um bloco de repetição.
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
-__Clica na bandeira verde.__ Lança um foguete. A representação da explosão vai
+__Clica na bandeira verde. Lança um foguete.__ A representação da explosão vai
 crescendo lentamente a partir do centro do foguete?
 
 ###Coisas a experimentar
@@ -278,7 +278,7 @@ termine de se mostrar.
 	[fim do guião]
 ```
 
-###Testa o teu projeto
+###Testa o teu projecto
 
 __Clica na bandeira verde e em seguida, pressiona o botão do rato sobre o palco
 sem o largares.__ A explosão aparece no lugar certo e na altura certa?

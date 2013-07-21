@@ -240,7 +240,7 @@ __Clica na bandeira verde.__ Consegues jogar com um amigo, um correndo com o
 papagaio pressionando «P» e o outro com o elefante pressionando «E»? O jogo
 recomeça quando algum dos corredores chega à meta?
 
-##DESAFIO: Adicionando uma tecla de turbo
+##DESAFIO: Adiciona uma tecla de turbo
 
 * __Adiciona uma tecla de turbo__ que cada corredor pode usar apenas uma vez
 em cada corrida. Esta tecla move o corredor __30 passos de uma só vez.__ (Usa

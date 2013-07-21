@@ -2,12 +2,11 @@ Nível 2
 
 #Jogo das frutas (máquina caça-níquel)
 
-__Introdução:__
-
-Este jogo simula uma máquina caça-níquel (ou _slot machine_) com três rodas de
-figuras. Essas rodas vão rodando, variando a figura de cada uma dessas rodas que
-é visível no mostrador da máquina. Para ganhar o jogo, o jogador tem de
-interromper a rotação das rodas quando as figuras visíveis forem todas iguais.
+__Introdução:__ Este jogo simula uma máquina caça-níquel (ou _slot machine_) com
+três rodas de figuras. Essas rodas vão rodando, variando a figura de cada uma
+dessas rodas que é visível no mostrador da máquina. Para ganhar o jogo, o
+jogador tem de interromper a rotação das rodas quando as figuras visíveis forem
+todas iguais.
 
 Vamos usar três actores para representar as três rodas da máquina e diferentes
 trajes dos actores para representar as figuras impressas em torno das rodas.
@@ -78,7 +77,7 @@ __Para parar, carrega no sinal de _stop_.__
 
 ###Coisas a experimentar
 
-Ajuste o tempo do comando [espera () s]. Que valores fariam o jogo ficar muito fácil ou muito difícil?
+Ajusta o tempo do comando [espera () s]. Que valores fariam o jogo ficar muito fácil ou muito difícil?
 
 ##PASSO 3: Parando a rotação da roda
 
@@ -104,7 +103,7 @@ clicar em ti], encaixando-lhe por baixo o comando [altera [o estado da máquina
 
 3. Agora precisamos de fazer a roda parar de rodar quando a variável tiver o
 valor «parada». Clica na paleta «Controlo» adiciona um comando [se &lt;>, então]
-dentro do comando [repete para sempre,] contendo os blocos de espera de de
+dentro do comando [repete para sempre,] contendo os blocos de espera e de
 mudança de traje. Usa o operador de igualdade para verificar se a variável «o
 estado da máquina» tem o valor «rodando». O resultado terá o seguinte aspecto:
 
@@ -118,7 +117,8 @@ estado da máquina» tem o valor «rodando». O resultado terá o seguinte aspec
 	[fim do guião]
 ```
 
-4. Finalmente, encaixa um comando altera [o estado da máquina ▼] para [rodando] logo abaixo do bloco [Quando alguém clicar em A BANDEIRA VERDE]:
+4. Finalmente, encaixa um comando altera [[o estado da máquina ▼] para
+[rodando]] logo abaixo do bloco [Quando alguém clicar em A BANDEIRA VERDE]:
 
 ```scratch
 	Quando alguém clicar em A BANDEIRA VERDE
@@ -161,7 +161,7 @@ Neste momento o jogo está muito fácil, pois todas as rodas rodam à mesma
 velocidade e mostram sempre as mesmas figuras, em uníssono. Que tal fazeres as
 rodas rodarem para uma figura aleatória quando a bandeira verde for clicada?
 
-_Dica:_ Tenta escolher uma figura aleatória para cada roda quando o jogo é iniciado.
+__Dica:__ Tenta escolher uma figura aleatória para cada roda quando o jogo é iniciado.
 
 __Parabéns! Terminou o jogo básico! Mas há mais coisas que podes fazer. Dá uma olhadela aos desafios!__
 
@@ -177,7 +177,7 @@ modo a que o número de figuras seja diferente em cada roda.
 3. Faz com que a velocidade de rotação das rodas seja diferente. Por exemplo, a
 velocidade de rotação pode ir aumentando da esquerda para a direita.
 
-4. Faz com que cada roda mude para uma figura aleatório e não para a próxima figura. Será que a máquina caça-níqueis que resulta é realista? Porquê? 
+4. Faz com que cada roda mude para uma figura aleatório e não para a próxima figura. Será que a máquina caça-níquel que resulta é realista? Porquê? 
 
 __Diverte-te inventando outras alterações!__
 
@@ -214,13 +214,13 @@ uma das rodas faz essa inicialização, o que não faz assim muito sentido...
 Depois de inicializar essa variável, o palco pode ficar à espera que o valor
 dela passe a ser «parada».
 
-(Aproveite o facto de estar a alterar o palco para remover o seu único som
-(«pop», de que não precisamos, e para alterar o nome do seu único cenário para
-(«em branco». Também pode procurar uma imagem de um mostrador de máquina caça-
-(níquel e usá-la como cenário!)
+(Aproveita o facto de estares a alterar o palco para removeres o seu único som
+(«pop»), de que não precisas, e para alterar o nome do seu único cenário para
+«em branco». Também pode procurar uma imagem de um mostrador de máquina caça-
+níquel e usá-la como cenário!
 
-Para saber se o jogador ganhou, o palco pode recorrer ao bloco [[o nome do traje
-▼] de [a roda 1 ▼]], bem como ao mesmo bloco com «a roda 2» e «a roda 3»
+Para saber se o jogador ganhou, o palco pode recorrer ao bloco ([o nome do traje
+▼] de [a roda 1 ▼]), bem como ao mesmo bloco com «a roda 2» e «a roda 3»
 seleccionados no segundo menu, para verificar se todos os nomes dos trajes das
 três rodas são iguais. Claro que isto implica que não podes dar nomes iguais da
 trajes diferentes, mas isso é coisa fácil de garantir. Para fazer a verificação,
@@ -234,5 +234,6 @@ tornar o anúncio visível (ou audível!) ao jogador. Alternativamente, podes us
 cenários diferentes para vitórias e derrotas e mudar de cenário de forma
 apropriada ao caso.
 
-__Parabéns! Terminaste! Agora podes desfrutar do jogo!__
-Não te esqueças que podes partilhar o teu jogo com todos os seus amigos e familiares clicando em __Compartilhar__ no menu!
+__Parabéns! Terminaste! Agora podes desfrutar do jogo!__ Não te esqueças de que
+podes partilhar o teu jogo com outros Scratchadores, incluindo os teus amigos e
+familiares, clicando em «Partilhar»!
