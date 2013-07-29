@@ -75,17 +75,16 @@ __Felix'in Herbert'i yakaladığı zaman bize haber vermesini istiyoruz.__
 
 ```scratch
 	
-	
-			1 saniye seni yakaladım! haberini sal
-		(Dur eğer)
-	(Hepsini Durdur)
-```Bayrak tıklanınca
+Bayrak tıklanınca
 	Sürekli tekrarla
 		Fare oku'na doğru dön
 	        10 adım git
 	        Sonraki kılık
 		62 davulunu 0.3 vuruş çal
 	        Eğer Herbert'e değerse
+	        1 saniye seni yakaladım! haberini sal
+		(Dur eğer)
+	(Hepsini Durdur)
 
 ###Projeni dene
 __Yeşil bayrağı tıkla..__
@@ -101,19 +100,18 @@ Herbert yakalandığı zaman, Felix'in konuşması yerine, hayalete dönüşmesi
 1. Felix'in, Herbert'i yakaladığı zaman bu mesajı vermesi için Felix'e şu kodu ekle:
 
 ```scratch
-	
-	Bayrak tıklandığında
-	Durmaksızın
-		Bilgisayar faresine doğru bak
-	        10 adım ilerle
-		Sonraki kostüm
-		Davul 62 çal 0.3 vuruş
-		Eğer Herbert'e değerse
-			Yakalandı mesajını yayınla
-			Davul 58 çal 0.3 vuruş
-			1 saniye bekle
+	Bayrak tıklanınca
+	Sürekli tekrarla
+		Fare oku'na doğru dön
+	        10 adım git
+	        Sonraki kılık
+		62 davulunu 0.3 vuruş çal
+	        Eğer Herbert'e değerse
+	       		 1 saniye seni yakaladım! haberini sal
+	       		 58 davulunu 0.3 vuruş ça
+		       	 1 saniye bekle
 		(Dur eğer)
-	(Hep Dur)
+	(Hepsini Durdur)
 ```
 2.Herbert için, fantasy/ghost2-a isimli kostümü aktar. 
 
@@ -122,10 +120,10 @@ Herbert yakalandığı zaman, Felix'in konuşması yerine, hayalete dönüşmesi
 4.Herbert'in kostümlerinin ismini değiştir. Fare kostümüne ' hayatta', hayalet kostümünede ' öldü' adını ver. Herbert'in hayalete dönüşmesi için yeni bir kod ekle:
 ```scratch
 	
-	Yakalandı mesajını alınca
-	Öldü kostümünü göster
+	Yakalandı haberi gelince
+	Ölü kılığına geç
 	0.5 saniye bekle
-	Hayatta kostümünü göster
+	Hayatta kılığına geç
 ```
 	
 ###Projeni dene
@@ -147,15 +145,15 @@ Puana sıfır ile başlayacağız ve her saniye 1 ekleyeceğiz. Eğer Felix, Her
 
 ```scratch
 	
-	Bayrak tıklandığında
-	Puanı 0'a kur
-	Durmaksızın
-		Puanı birer birer yükselt
+	Bayrak tıklanınca
+	Puanı 0 olsun
+	Sürekli tekrarla
+		Puanı 1 arttır
 		1 saniye bekle
-	(Hep Dur)
+	(Hepsini Durdur)
 	
-	Yakalandı mesajını alınca
-	Puanı 100 numara düşür (-100)
+	Yakalandı haberi gelince
+	Puanı 100 numara indir (-100)
 ```
 ###Projeni dene
 __Yeşil bayrağı tıkla..__
