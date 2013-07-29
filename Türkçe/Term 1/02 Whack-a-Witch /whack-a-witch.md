@@ -4,7 +4,7 @@
 
 __Tanıtım:__
 Bu proje köstebek yakalama oyununa benzer. Ekranda beliren her cadıya vurduğunuzda puan alırsınız. Amacınız 30 saniye içerisinde alabildiğiniz kadar puan almaya calismaktır!
-##Adım 1: Uçan cadi dizayn etmek
+##Adım 1: Uçan cadı dizayn etmek
 
 1. Yeni bir Scratch projesine başla. 
 2. Kedi kuklasını sil ve doga/orman dekorunu sec. 
