@@ -1,2 +1,23 @@
-#NOTES FOR CLUB LEADERS
-##(Felix & Herbert)####Introduction:We are going to make a game of catch with Felix the cat and Herbert the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down! This is a simple project to introduce the basics of Scratch.#### SkillsThis project covers:1. Changing costumes and appearance2. Keeping and setting the score3. Broadcast messages#### ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders#### Scratch Cards requiredFollow the mouse#### Basic exercisesStep 1: Felix follows the mouse pointerStep 2: Felix chases HerbertStep 3: Felix says when he’s caught HerbertStep 4: Herbert turns into a ghost when he’s caught Step 5: Keep score
+#Kulüp yöneticileri için bilgiler
+##(Felix & Herbert)
+
+####Tanıtım:
+Felix adlı kedinin, Herbert adlı fareyi yakalayacağı bir oyun dizayn edeceğiz. Herbert'i bilgisayar faresi ile kontrol edip, Felix'in sizi yakalamasına izin vermeyin. Ne kadar uzun süre Felix'i engellerseniz, puanınız o kadar yükselir. Eger yakalanırsanız, puan kaybedersiniz. Bu basit proje Scratch programının temel yapısını tanıtmayı hedeflemektedir. 
+
+#### Yetenekler
+Projenin içerdiği yetenekler:
+1. Kılık ve görünüm değiştirmek
+2. Puan değişkeni oluşturmak
+3. Haber salmak
+
+#### Kaynaklar
+Bu proje için kullanılan kaynaklar Scratch dekor ve kılıf dosyalarında bulunmaktadır.
+
+#### Gerekli olan Scratch Kartı
+Bilgisayar faresini izle
+
+#### Temel alıştırmalar
+Step 1: Felix Herbert'i kovalar
+Step 3: Felix Herbert'i yakaladığında der ki
+Step 4: Herbert yakalandığında, hayalet kılığına geçer
+Step 5: Puan değişkeni oluştur
