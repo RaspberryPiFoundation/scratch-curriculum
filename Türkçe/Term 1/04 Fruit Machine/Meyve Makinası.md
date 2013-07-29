@@ -7,14 +7,11 @@ Bu basit oyunda kılık değişteren 3 kukla vardır. Hepsi aynı anda aynı res
 
 ##1.Adım: Kılık değiştiren kukla yapmak
 
-__Let’s import the different pictures for the game__
+__Oyun için farklı resimler aktaralım__
 
-1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete
-2. Import a new sprite.
-3. Choose an image from any folder. We used things/bananas1, but you can
-use any image you want to.
-4. Click the Costumes tab and import two more things so there are three in total
-(we used animals/bee1 and things/lego, but you can use any images).
+1. Yeni bir Scratch projesine başla. Fareyi kedi karakterinin üstüne tutup sağ tıkla ve sil seçeneğine git
+3. Kılıklar dosyasını açıp, oyuna 3 tane daha kukla ekleyin
+(Biz animals/bee1 ve things/lego kullandık, ancak siz istediğiniz resmi kullanabilirsiniz.).
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
 
