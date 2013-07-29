@@ -19,15 +19,13 @@ __Now we’ve got some costumes, we want the sprite to change between them.__
 
 ##STEP 2: Resim değiştirmek
 
-1. Click the Scripts tab.
-2. Click Control and drag a when flag clicked into the scripts area. This will be
-triggered when we click the green flag.
-3. Add a forever and attach it so it snaps to the bottom.
-4. Click the green flag in the top right. Notice that a white outline is around our script. It’s running because we clicked the green flag, which triggers this.
-5. Now click Looks and drag in a next costume
-6. How do we slow it down so it isn’t changing so quickly? Click Control and drag in a wait 1 secs
-7. Adjust the time until it’s repeating at a faster pace (a time of 0.1s looks good). What would happen if we didn’t have the wait block?
-
+1. Kukla tabını tıkla.
+2. Kontrol kodunu tıkla ve bayrak tıklanınca kodunu ekle. Yeşil bayrak tıklanınca bu kod aktif olacak.
+3. Alta sürekli tekrarla kodunu ekle
+4. Sağ köşedeki yeşil bayrağı tıkla. Kodun etrafında beyaz bir çizgi oluştuğuna dikkat et. Bunun s
+5. Kılıklar tabını tıkla ve diğer kılığı aktar
+6. Kılık değişimini yavaşlatmak için Kontrol kodunu tıkla ve 1 sn bekle kodunu ekle
+7. Zamanı ayarla ( 0.1sn uygun olabilir). Eğer bekle kodu olmasaydı, sonuç ne olacakdı?
 ```scratch
 
 	when FLAG clicked
