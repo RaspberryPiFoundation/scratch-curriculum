@@ -51,9 +51,7 @@ __Şimdi, Felix'in bilgisayar faresi yerine Herbert'i kovalamasını istiyoruz._
 ```scratch
 	
         Bayrak tıklanınca
-
 	Sürekli tekrarla
-
 		Fare oku'na doğru dön
 		Felix'e doğru dön
 	(Hepsini Durdur)
