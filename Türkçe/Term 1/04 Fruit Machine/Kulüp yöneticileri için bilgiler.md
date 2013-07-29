@@ -1,29 +1,30 @@
-#Kulüp yöneticileri için bilgiler
+#Kulüp yöneticileri için 
+
 ##(Fruit Machine)
 
-###Introduction:
-This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
+###Tanıtım:
+Bu basit oyunda kılık değişteren 3 kukla vardır. Hepsi aynı anda aynı resmi gösterdiğinde makinayı durdurmanız lazım (meyve makinası gibi).
 
-###Skills
-This project covers
+###Yetenekler
+Projenin içerdiği yetenekler: 
 
-- Changing costumes
-- Running a loop
-- Stopping a loop on click
+- Kılık değiştirmek
+- Döngü oluşturmak
+- Döngüyü tıklandığında durdurmak
 
-###Resources
-This project uses only standard Scratch images found within Scratch.
+###Kaynaklar
+Bu projede kullanılan resimler Scratch dosyasındadır.
 
-###Scratch Cards required:
-Broadcast
+###Gerekli olan Scratch Kartı:
+Haber al/sal
 
-###Basic exercises
-Step 1: Create a sprite that changes costumes 
-Step 2: Making the picture change
-Step 3: Making it stop when we click on it 
-Step 4: Creating the other sprites
+###Temel alıştırmalar
+Adım 1: Kılık değiştiren kukla yapmak
+Adım 2: Resim değiştirmek
+Adım 3: Üzerine basıldığında durdurmak
+Adım 4: Diğer kuklaları oluşturmak
 
-###Challenges
-1. Make the game harder
-2. Make the game get harder and easier over time
-3. Detect when all the sprites have stopped on the same costume
+###Ekstra hedefler
+1. Oyunu zorlaştırmak
+2. Oyunu zamanla zorlaştırıp/kolaylaştırmak
+3. Aynı kılıktaki kuklalar durduğunda bunu algılamak
