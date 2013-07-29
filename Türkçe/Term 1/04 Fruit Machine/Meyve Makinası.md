@@ -10,7 +10,9 @@ Bu basit oyunda kılık değişteren 3 kukla vardır. Hepsi aynı anda aynı res
 __Oyun için farklı resimler aktaralım__
 
 1. Yeni bir Scratch projesine başla. Fareyi kedi karakterinin üstüne tutup sağ tıkla ve sil seçeneğine git
-3. Kılıklar dosyasını açıp, oyuna 3 tane daha kukla ekleyin
+2. Yeni kukla ekle
+3. Dosyadan resim seç. Biz hings/bananas1 kullandık, ancak siz istediğiniz resmi kullanabilirsiniz.
+4. Kılıklar dosyasını açıp, oyuna 3 tane daha kukla ekleyin
 (Biz animals/bee1 ve things/lego kullandık, ancak siz istediğiniz resmi kullanabilirsiniz.).
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
