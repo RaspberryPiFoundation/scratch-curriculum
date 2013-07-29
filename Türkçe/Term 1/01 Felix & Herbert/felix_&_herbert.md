@@ -3,7 +3,7 @@
 #Felix & Herbert
 
 __Tanıtım:__
-Felix adli kedinin, Herbert adli fareyi yakalayacağı bir oyun dizayn edeceğiz. Herbert'i bilgisayar faresi ile kontrol edip, Felix'in sizi yakalamasına izin vermeyin. Ne kadar uzun süre Felix'i engellerseniz, puanınız o kadar yükselir. Eger yakalanırsanız, puan kaybedersiniz
+Felix adlı kedinin, Herbert adlı fareyi yakalayacağı bir oyun dizayn edeceğiz. Herbert'i bilgisayar faresi ile kontrol edip, Felix'in sizi yakalamasına izin vermeyin. Ne kadar uzun süre Felix'i engellerseniz, puanınız o kadar yükselir. Eger yakalanırsanız, puan kaybedersiniz
 
 ##1.Adım: Felix bilgisayar faresini izler
 
@@ -16,19 +16,19 @@ Felix adli kedinin, Herbert adli fareyi yakalayacağı bir oyun dizayn edeceğiz
 
 ```scratch
 
-	Bayrak tıklandığında
+	Bayrak tıklanınca
 
-	Durmaksızın
+	Sürekli tekrarla
 
-		Bilgisayar faresine doğru bak
+		Fare oku'na doğru dön
 
-		10 adım ilerle
+		10 adım git
 
-		Sonraki kostüm
+		Sonraki kılık
 
-		Davul 62 çal 0.3 vuruş
+		62 davulunu 0.3 vuruş çal
 
-	(HEP DUR)
+	(Hepsini Durdur)
 ```
 		
 ###Projeni dene.
@@ -41,22 +41,22 @@ Projeni kaydet
 
 __Şimdi, Felix'in bilgisayar faresi yerine Herbert'i kovalamasını istiyoruz.__
 
-1. Dosyadan yeni karakter seçeneğini seçerek, animals/mouse1 isimli resmi aktar.
+1. Dosyadan yeni kukla seçeneğini seçerek, animals/mouse1 isimli resmi aktar.
 2. Karakterin ismini Harbert olarak değiştir
-3. Kostümü Felix'den daha küçük yap. Küçültme düğmesine 6 kere bas.
+3. Kılığı Felix'den daha küçük yap. Ufaltma düğmesine 6 kere bas.
 4. Herbert'in sadece sol-sağ ilerlemesine dikkat et.. 
 5. Herbert'e şu kodu ekle:
 
 
 ```scratch
 	
-        Bayrak tıklandığında
+        Bayrak tıklanınca
 
-	Durmaksızın
+	Sürekli tekrarla
 
-		Bilgisayar faresine doğru bak
-		Felix'e doğru yönel
-	(Hep Dur)
+		Fare oku'na doğru dön
+		Felix'e doğru dön
+	(Hepsini Durdur)
 ```
 
 ###Projeni dene
@@ -75,17 +75,17 @@ __Felix'in Herbert'i yakaladığı zaman bize haber vermesini istiyoruz.__
 
 ```scratch
 	
-	Bayrak tıklandığında
-	Durmaksızın
-		Bilgisayar faresine doğru bak
-	        10 adım ilerle
-		Sonraki kostüm
-		Davul 62 çal 0.3 vuruş
-		Eğer Herbert'e değerse
-			1 saniye seni yakaladım! de.
+	
+			1 saniye seni yakaladım! haberini sal
 		(Dur eğer)
-	(Hep Dur)
-```
+	(Hepsini Durdur)
+```Bayrak tıklanınca
+	Sürekli tekrarla
+		Fare oku'na doğru dön
+	        10 adım git
+	        Sonraki kılık
+		62 davulunu 0.3 vuruş çal
+	        Eğer Herbert'e değerse
 
 ###Projeni dene
 __Yeşil bayrağı tıkla..__
