@@ -9,8 +9,8 @@ Felix adlı kedinin, Herbert adlı fareyi yakalayacağı bir oyun dizayn edeceğ
 
 1. Yeni projeye başla. 
    Doğru yapıp yapmadığınızı aşağıdaki onay kutularını kullanarak kontrol edebilirsiniz:
-￼￼￼Karakterin yanındaki sahne düğmesine bas ve arka plan dosyasını aç, indoors/hall isimli arka plani aç. Sahnedeki boş arka planı sil.
-3. Karakterin adını Felix olarak değiştir.
+Kuklanın yanındaki sahne düğmesine bas ve arka plan dosyasını aç, indoors/hall isimli dekoru aç. Sahnedeki boş dekoru sil.
+3. Kuklanın adını Felix olarak değiştir.
 4. Felix'in sadece sol-sağ ilerlemesi için bu düğmeyi tıkla:
 5. Bu kodu yaz:
 
@@ -33,7 +33,7 @@ Felix adlı kedinin, Herbert adlı fareyi yakalayacağı bir oyun dizayn edeceğ
 		
 ###Projeni dene.
 __Yeşil bayrağı tıkla.__
-Felix bilgisayar faresini takip ediyor mu? Hareket ettiği zaman yürüyor gibi görünüyor mu? Doğru hızda hareket ediyor mu?
+Felix bilgisayar okunu takip ediyor mu? Hareket ettiği zaman yürüyor gibi görünüyor mu? Doğru hızda hareket ediyor mu?
 
 Projeni kaydet
 
