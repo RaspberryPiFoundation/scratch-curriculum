@@ -185,5 +185,5 @@ Projeni dene
 3.Cadıların farklı puan vermesini kodlarmısınız? Mesela, en hızlı cadı 10 puana eşit.
 __Aferin, oyunu tamamladın. Daha değişik kodlar ekleyebilirsin. Mesela:__
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__Aferin, oyunu tamamladın, şimdi eğlenerek oynayabilirsin!__
+Oyununu arkadaşlarınla ve ailen ile paylaşmak için menü çubuğundaki __paylaş__ seçeneğine bas.
