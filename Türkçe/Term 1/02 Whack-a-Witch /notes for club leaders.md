@@ -19,5 +19,5 @@ Puan Zaman Canlandırmak
 Adım 1: Uçan cadi dizayn etmek
 Adım 2: Cadının gelişi güzel görünüp, kaybolmasını sağlamak. Adım 3: Cadıyı tıklandığında görünmez yap Adım 4: Puan ve zaman değişkeni ekle 
 
-###Challenges
-1. Add more witches
+###Ekstra hedefler 
+1. Daha çok cadı ekle
