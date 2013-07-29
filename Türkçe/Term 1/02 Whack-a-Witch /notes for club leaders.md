@@ -1,2 +1,23 @@
-#NOTES FOR CLUB LEADERS
-##(Whack-a-Witch)###IntroductionThis project is like the carnival game called whack-a-mole. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds.###SkillsThis project covers:• Setting a variable• Loops• Keeping and setting the score###ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes foldersScratch Cards requiredKeep score Timer Animate it###Basic exercisesStep 1: Create a flying witchStep 2: Make the witch appear and vanish randomly Step 3: Make the witch disappear when she’s clicked Step 4: Add a score and timer###Challenges1. Add more witches
+#Kulüp yöneticileri için bilgiler
+##(Cadı Yakalama)
+
+###Tanıtım
+Bu proje köstebek yakalama oyununa benzer. Ekranda beliren her cadıya vurduğunuzda puan alırsınız. Amacınız 30 saniye içerisinde alabildiğiniz kadar puan almaya calismaktır!
+
+###Yetenekler
+Projenin içerdiği yetenekler:
+• Değişken oluşturmak 
+• Loops
+• Puan değişkeni oluşturmak
+
+###Kaynaklar
+Bu proje için kullanılan kaynaklar Scratch dekor ve kılıf dosyalarında bulunmaktadır.
+Gerekli olan Scratch Kartı
+Puan Zaman Canlandırmak
+
+###Temel alıştırmalar
+Adım 1: Uçan cadi dizayn etmek
+Adım 2: Cadının gelişi güzel görünüp, kaybolmasını sağlamak. Adım 3: Cadıyı tıklandığında görünmez yap Adım 4: Puan ve zaman değişkeni ekle 
+
+###Challenges
+1. Add more witches
