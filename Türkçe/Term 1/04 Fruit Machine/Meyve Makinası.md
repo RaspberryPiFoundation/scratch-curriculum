@@ -5,7 +5,7 @@
 __Tanıtım:__
 Bu basit oyunda kılık değişteren 3 kukla vardır. Hepsi aynı anda aynı resmi gösterdiğinde makinayı durdurmanız lazım (meyve makinası gibi).
 
-##￼STEP 1: Create a sprite that changes costumes
+##1.Adım: Kılık değiştiren kukla yapmak
 
 __Let’s import the different pictures for the game__
 
@@ -18,7 +18,7 @@ use any image you want to.
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
 
-##STEP 2: Making the picture change
+##STEP 2: Resim değiştirmek
 
 1. Click the Scripts tab.
 2. Click Control and drag a when flag clicked into the scripts area. This will be
@@ -48,7 +48,7 @@ Save your project
 
 Adjust the time in the wait block.What numbers do you think would make the game too easy, or too hard?
 
-##￼STEP 3: Making it stop when we click on it
+##￼STEP 3:Üzerine basıldığında durdurmak
 
 Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?
 
@@ -67,7 +67,7 @@ __Start the sprite again.__ Does it stop when you put the mouse pointer on it, w
 
 Save your project
 
-##Step 4: Creating the other sprite
+##Step 4: Diğer kuklaları oluşturmak
 __Now we need to make the other sprites so we can play our game!__
 
 1. Duplicate the sprite (Sprite1) by right clicking on it in the bottom right corner.
