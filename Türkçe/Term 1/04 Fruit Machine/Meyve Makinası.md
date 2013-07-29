@@ -15,7 +15,7 @@ __Oyun için farklı resimler aktaralım__
 4. Kılıklar dosyasını açıp, oyuna 3 tane daha kukla ekleyin
 (Biz animals/bee1 ve things/lego kullandık, ancak siz istediğiniz resmi kullanabilirsiniz.).
 
-__Now we’ve got some costumes, we want the sprite to change between them.__
+__Kuklaların kılık değiştirmeleri için.__
 
 ##STEP 2: Resim değiştirmek
 
@@ -28,11 +28,11 @@ __Now we’ve got some costumes, we want the sprite to change between them.__
 7. Zamanı ayarla ( 0.1sn uygun olabilir). Eğer bekle kodu olmasaydı, sonuç ne olacakdı?
 ```scratch
 
-	when FLAG clicked
-	forever		
-		next costume
-		wait 0.1 secs
-	(end forever)
+	Bayrak tıklanınca
+	sürekli tekrarla	
+		sonraki kılık
+		0.1 saniye bekle
+	(hepsini durdur)
 ```
 
 ###Test Your Project
