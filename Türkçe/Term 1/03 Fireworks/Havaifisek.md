@@ -136,60 +136,60 @@ Patladığı zaman, patlama resmi onun yerini aldı mı? Fareyi kullanırken, a�
 
 Projeni kaydet
 
-##3.Adım: Make each explosion unique
+##3.Adım: Her patlamayı benzersiz yapmak
 
-1. Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
+1. Renkleri kullanarak patlamaları farkli yapabiliriz. Bunun için, 1 ile 200 arası bir renk seç. 
 
 ```scratch
 
-	when I receive explode
+	patlama haberi gelince
 
-	hide
+	gizle
 
-	set colour effect to pick random 1 to 200
+	1 ile 200  arası bir renk seç.
 
-	go to x: x position of rocket y: y position of rocket
+	x: x konum of roket y: y konum of roket noktasına git
 
-	show
+	göster
 
-	wait 1 sec
+	1 saniye bekle
 
-	hide
+	gizle
 ```
 
-###Test Your Project
-__Click the green flag.__ 
+###Projeni dene
+__Yeşil bayrağı tıkla.__ 
 
-Does each explosion have a different colour?
+Her patlama değişik renkte mi?
 
-2. Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.
+Her roket için Kaynaklar/firework2.png ve Kaynaklar/firework3.png kılıkları kullan. 
 
-###Test Your Project
-__Click the green flag.__ 
+###Projeni dene
+__Yeşil bayrağı tıkla.__ 
 
-Does each rocket have a different explosion graphic?
+Her roketin farklı patlama grafiği var mı?
 
-3. Finally, lets make the explosion grow over time as opposed to simply appearing. Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.
-
+3. FSon olarak, patlamanın aniden olması yerine zamanla büyümesi için kod yazalim. 1 saniye bekle kodu yerine, karakterin büyüklüğünü göstermeden once 5% olarak yaz. 
+Karakter göründükten sonra, tekrar et seçeneğini kullanarak 2 kere elli defa daha büyük yapın
 ```scratch
 
-	when I receive explode
+	patlama haberi gelince
 
-	hide
+	gizle
 
-	set colour effect to pick random 1 to 200
+	1 ile 200  arası bir renk seç.
 
-	go to x: x position of rocket y: y position of rocket
+	x: x konum of roket y: y konum of roket noktasına git
 
-	set size to 5%
-
-	show
+	büyüklüğü %5 yap
 	
-	repeat 50
-		change size by 2
-	(end repeat)
+	göster
 
-	hide
+	50 defa tekrarla 
+		2 birim büyüt
+	(tekrarlama)
+
+	gizle
 ```
 ###Test Your Project
 __Click the green flag.__ 
