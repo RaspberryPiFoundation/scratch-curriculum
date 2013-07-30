@@ -1,60 +1,57 @@
-Level 1
+1.Düzey
 
 #Havai Fisek
-__Introduction:__
-In this project, we’ll create a fireworks display over a city.
+__Tanıtım:__
+Bu projede, gökyüzünde havai fişek gösterisi oluşturacağız.
 
-##￼STEP 1: Create a rocket that flies towards the mouse
+##Adım 1: Bilgisayar faresine doğru uçan bir roket tasarla
 
-__Let’s import the different pictures for the game__
+__Proje için gerekli resimleri aktaralım.__
 
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Replace the background with outdoor/city-with-water
-3. Use the __new sprit from file__ button to add a Rocket sprite
-to the project (use the Resources/Rocket.png costume).
-4. Make the rocket hide when the green
-flag is clicked.
+1. Yeni bir Scratch projesine başla. Fareyi kedi karakterinin üstüne tutup sağ tıkla ve sil seçeneğine git.
+2. Sahne resmini bina dışı/ sulu şehir ile değiştir.
+3. Dosyadan yeni karakter seç ve Roket karakterini ekle (Kaynaklar/Rocket.png.costume).
+4. Yeşil bayrak tıklandığında, roketi görünmez yap.
 
-Now we want to make the rocket move towards the mouse when the mouse is clicked.
+Bilgisayar faresi tıklandığında, roketi fareye dogru hareket ettir.
 
-5. Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
+5. Aralık tuşuna basıldığında, roket ekranda görünecek ve fareye doğru kayacak. 
 
 ```scratch
 
-	when FLAG clicked
+	Bayrak tıklanınca
 
-	hide
+	gizle
 
 	
-	when space key pressed
-	show
-	glide 1 secs to x: mouse x y: mouse y
+	boşluk tuşu basılınca
+	göster
+	1 sn.de x: mouse x y: mouse y süzül
 ```
 		
-###Test Your Project
-__Click the green flag, place your mouse over the stage and press the space bar.__
+###Projeni dene
+__Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve ara tuşuna bas.__
 
-Does the rocket appear and move to the mouse?
-What happens if you move the mouse and press space again?
+Roket görünüp, bilgisayar faresine doğru hareket etti mi? 
+Bilgisayar faresini tekrar hereket ettirip, ara tuşa bastığında ne oldu?
 
-6. Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it to
-move to below the bottom of
-the screen, but stay in the same place horizontally.
+6. Havai fişekler kenardan kenara uçmazlar, ekranın altından bilgisayar faresine doğru kaymaları gerekli. 
+Roketi görünür yapmadan önce, 'go' codlamasını kullanarak, ekranın altına doğru hareket ettir ve aynı yatay çizgide kalmasını sağla.
 
 ```scratch
 
-	when FLAG clicked
+	Bayrak tıklanınca
 
-	hide
+	gizle
 
 	
-	when space key pressed
-	go to x: mouse x y: -200
-	show
-	glide 1 secs to x: mouse x y: mouse y
+	boşluk tuşu basılınca
+	x: mouse x y: -200 noktasına git
+	göster
+	1 sn.de x: mouse x y: mouse y süzül
 ```
 
-###Test Your Project
+###Projeni dene
 __Click the green flag, place your mouse over the stage and press the space bar.__ 
 Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
 
