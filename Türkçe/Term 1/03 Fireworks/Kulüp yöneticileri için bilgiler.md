@@ -20,4 +20,5 @@ Renkleri yavaşca değiştir
 ###Temel alıştırmalar
 Adım 1: Bilgisayar faresine doğru uçan bir roket tasarla
 Adım 2: Roketi patlatmak
-Adım 3: Haber alma/salma hatasını çözmek
+Adım 3: Her patlamayı benzersiz yapmak
+Adım 4: Haber alma/salma hatasını çözmek
