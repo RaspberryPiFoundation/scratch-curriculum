@@ -30,7 +30,7 @@ Bilgisayar faresi tıklandığında, roketi fareye dogru hareket ettir.
 ```
 		
 ###Projeni dene
-__Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve ara tuşuna bas.__
+__Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve 	boşluk tuşuna bas.__
 
 Roket görünüp, bilgisayar faresine doğru hareket etti mi? 
 Bilgisayar faresini tekrar hereket ettirip, ara tuşa bastığında ne oldu?
@@ -52,24 +52,26 @@ Roketi görünür yapmadan önce, 'go' codlamasını kullanarak, ekranın altın
 ```
 
 ###Projeni dene
-__Click the green flag, place your mouse over the stage and press the space bar.__ 
-Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
+__Yeşil bayrağı tıkla, Biligsayar faresini sahne kelimesinin üzerine kaydır ve boşluk tuşuna bas.__ .__ 
+Roket görünüp, bilgisayar faresine doğru hareket etti mi? Bilgisayar faresini tekrar hereket ettirip, ara tuşa bastığında ne oldu? 
 
-7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
-Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least make
-sure the rocket is hidden when everything starts up.
+7. Son olarak, bu kodu boşluk tuşu yerine, fare düğmesini kullanarak yazalım.__sürekli tekrarla eğer fare tıklandıysa __.
+__Boşluk tuşu tıklanınca__ kodunu __Bayrak tıklanınca__ akodu ile değiştir ve  
+roketin program başladığında görünmez olmasına dikkat et.
 
 ```scratch
 
-	when FLAG clicked
-	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		show
-		glide 1 secs to x: mouse x y: mouse y
-	(end forever)
+	Bayrak tıklanınca
+
+	gizle
+	sürekli tekrarla eğer fare tıklandıysa
+	x: mouse x y: -200 noktasına git
+	göster
+	1 sn.de x: mouse x y: mouse y süzül
 ```
-###Test Your Project
+	(hepsini durdur)
+```
+###Projeni dene
 __Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
 
 ###Things to try
