@@ -169,7 +169,7 @@ __Yeşil bayrağı tıkla.__
 
 Her roketin farklı patlama grafiği var mı?
 
-3. FSon olarak, patlamanın aniden olması yerine zamanla büyümesi için kod yazalim. 1 saniye bekle kodu yerine, karakterin büyüklüğünü göstermeden once 5% olarak yaz. 
+3. Son olarak, patlamanın aniden olması yerine zamanla büyümesi için kod yazalim. 1 saniye bekle kodu yerine, karakterin büyüklüğünü göstermeden once 5% olarak yaz. 
 Karakter göründükten sonra, tekrar et seçeneğini kullanarak 2 kere elli defa daha büyük yapın
 ```scratch
 
@@ -201,27 +201,30 @@ Patlamanın büyüklüğünü ve hızını değiştirerek her patlamayı benzers
 
 Projeni kaydet
 
-##Step 4: Fixing the Broadcast Bug
-Remember earlier we had a bug involving holding down the mouse button?
-This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying.
+##4.Adım: Haber alma/salma hatasını çözmek
+Daha önce bilgisayar faresini aşağı tuttuğumuzda sorunlar olmuştu. 
+Bunun sebebi, roketin patlama haberini yayınladığı an, 'eğer' kodunu  harekete geçirip, diğer haber bitmeden, yeni bir haber yayınlamasıdır.
 
 
-1. To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
+1. Daha önce bilgisayar faresini aşağı tuttuğumuzda sorunlar olmuştu. Bunun sebebi, roketin patlama haberini yayınladığı an, 'eğer' kodunu  harekete geçirip, diğer haber bitmeden, yeni bir haber yayınlamasıdır.
+
+Bu sorunu çözmek için, haber sal kodunu, haber al ve bekle ile değiştirmemiz gerekli. Böylece, kod, patlama bitinceye dek tekrarlanmayacak.
 
 ```scratch
-
-	when FLAG clicked
-	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
+	bayrak tıklanınca
+	gizle
+	sürekli tekrarla eğer fare tıklandıysa
+		x: mouse x y: -200 noktasına git
+		bang sesini çal
+		göster
+		1 sn.de x: mouse x y: mouse y süzül
+		gizle
 		hide
-		broadcast explode and wait
-	(end forever)
+		Patlama haberini sal ve bekle
+		
+	(hepsini durdur)
 ```
-###Test Your Project
+###projeni dene
 __Click the green flag, hold down the mouse button and move the mouse around the stage.__ 
 
 Does the explosion graphic appear in the right place and at the right time?
