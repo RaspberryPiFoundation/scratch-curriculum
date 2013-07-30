@@ -225,8 +225,8 @@ Bu sorunu çözmek için, haber sal kodunu, haber al ve bekle ile değiştirmemi
 	(hepsini durdur)
 ```
 ###projeni dene
-__Click the green flag, hold down the mouse button and move the mouse around the stage.__ 
+__Yeşil bayrağı tıkla. Bilgisayar faresinin üzerine bas ve sahnede hareket ettir.__ 
 
-Does the explosion graphic appear in the right place and at the right time?
+Patlama, uygun zamanda uygun yerde oluyor mu?
 
-Save your project
+Projeni kaydet
