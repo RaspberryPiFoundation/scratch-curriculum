@@ -4,7 +4,7 @@
 __Tanıtım:__
 Bu projede, gökyüzünde havai fişek gösterisi oluşturacağız.
 
-##Adım 1: Bilgisayar faresine doğru uçan bir roket tasarla
+##1. Adım: Bilgisayar faresine doğru uçan bir roket tasarla
 
 __Proje için gerekli resimleri aktaralım.__
 
@@ -23,7 +23,6 @@ Bilgisayar faresi tıklandığında, roketi fareye dogru hareket ettir.
 
 	gizle
 
-	
 	boşluk tuşu basılınca
 	göster
 	1 sn.de x: mouse x y: mouse y süzül
@@ -44,7 +43,6 @@ Roketi görünür yapmadan önce, 'go' codlamasını kullanarak, ekranın altın
 
 	gizle
 
-	
 	boşluk tuşu basılınca
 	x: mouse x y: -200 noktasına git
 	göster
@@ -72,32 +70,31 @@ roketin program başladığında görünmez olmasına dikkat et.
 	(hepsini durdur)
 ```
 ###Projeni dene
-__Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
+Yeşil bayrağı tıkla, Biligsayar faresini sahne üzerine kaydır. Rastgele farklı bir noktaya tıkla.
 
-###Things to try
-1. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.
-2. Try making some rockets a little slower or faster than others.
+###Extra Hedefler
+1. Roketi kaydırmadan önce, konumunu değiştir.
+2. Roketlerin bazılarını diğerlerinden daha hızlı veya yavaş yap.
 
-Save your project.
+Projeni kaydet.
 
-##STEP 2: Make the rocket explode
-
-￼1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound go
-to the Sounds tab and click import
+##2. Adım: Roketi patlatmak
+Roketi patlatmak için, ilk olarak hareket etmeden önce patlama sesi yap. Ses eklemek için SES düğmesine bas ve içeri aktar seçeneğini tıkla.
 
 ```scratch
 
-	when FLAG clicked
-	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
+	bayrak tıklanınca
+	gizle
+	sürekli tekrarla eğer fare tıklandıysa
+		x: mouse x y: -200 noktasına git
+		bang sesini çal
+		göster
+		1 sn.de x: mouse x y: mouse y süzül
+		gizle
 		hide
-	(end forever)
+	(hepsini durdur)
 ```
-2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
+2. Roket patladığı zaman, roketin mesaj yayınlamasını programla
 
 ```scratch
 
