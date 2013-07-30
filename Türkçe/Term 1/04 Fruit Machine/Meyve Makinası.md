@@ -17,7 +17,7 @@ __Oyun için farklı resimler aktaralım__
 
 __Kuklaların kılık değiştirmeleri için.__
 
-##STEP 2: Resim değiştirmek
+##2.Adım: Resim değiştirmek
 
 1. Kukla tabını tıkla.
 2. Kontrol kodunu tıkla ve bayrak tıklanınca kodunu ekle. Yeşil bayrak tıklanınca bu kod aktif olacak.
@@ -65,39 +65,39 @@ Scratch penceresinin iç veya dış kısmındaki bir alanı tıklayınca ne oldu
 
 Projeni kaydet
 
-##Step 4: Diğer kuklaları oluşturmak
-__Now we need to make the other sprites so we can play our game!__
+##4.Adım: Diğer kuklaları oluşturmak
+__Oyunu oynayabilmemiz için diğer kuklaları yapmamız lazım!__
 
-1. Duplicate the sprite (Sprite1) by right clicking on it in the bottom right corner.
-2. Duplicate it again so there are 3 sprites on the screen.
-3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
+1.Kukla 1'in üstüne sağ tıkla ve ikizini yap.
+2.Tekrar ikizini yap ki, toplam 3 kukla olsun.
+3.Kuklaları bir cizgide sırala. Gerekliyse küçült.
 
-###Test Your Project
-__Click the green flag.__ All the sprites should change. Try to stop them all on the same picture!
+###Projeni dene
+__Yeşil bayrağı tıkla. Bütün kuklalar değişmeli. Hepsini aynı sahnede durdurmaya çalış.
 
-Save your project
+Projeni kaydet
 
-###Things to try
+###Extra hedefler
 
-When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. How about you make the sprites change to a random costume when the green flag is clicked?
-Hint: try picking a random costume for each sprite when the game is started.
-
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
+Yeşil bayrak tıklanınca, kuklaların gelişi güzel kılık değiştirmesini sağla.
+ipucu: Oyun başladığı an her kukla için rastgele bir kılık seçin.
 
 
-##Challenge 1: Make the game harder
+__Aferin, oyunu tamamladın ama oyununu daha iyi geliştirebilirsin!__
 
-Change the difficulty of the game somehow. Just making the costumes change quicker is easy. Try and do something more imaginative. Some ideas you might like to try:
 
-1. Change the number of costumes each sprite has.
-2. Make some sprites have unique costumes.
-3. Have different times between costume changes.
-4. Have each sprite move to a random costume rather than the next one. 
+##Hedef 1: Oyunu zorlaştır 
 
-__Have fun coming up with your own things!__
+Oyunun zorluk oranını değiştir. Yaratıcılığını kullan. Öneriler:
 
-Every time you make a change, think about whether it make the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
+1.Kuklaların kılık sayısını değiştir.
+2.Bazı kuklalar için benzersiz kılık yap.
+3.Kılık değiştirme sürelerini değiştir.
+4.Kuklaların bir sonraki yerine ratsgele kılığa geçmelerini sağla.
 
+__Eğlenerek kendi düşüncelerini hayata geçir!__
+
+Oyun dizayn ettiğin zaman, oyunun çok zor veya kolay olmamasına dikkat et. Bunu nasıl kontrol edebilirsin?
 
 ##Challenge 2: Make the game get harder and easier over time
 
