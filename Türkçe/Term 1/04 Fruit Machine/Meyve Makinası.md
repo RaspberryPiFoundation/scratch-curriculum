@@ -45,24 +45,25 @@ Projeni kaydet
 
 Bekle kodundaki zaman süresini seç. Oyunu hızlı veya yavaş yapmak için kaç saniye kullanmalı?
 
-##￼STEP 3:Üzerine basıldığında durdurmak
+##3. Adım: Üzerine basıldığında durdurmak
 
-Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?
+Harika! Kuklaların sürekli kılık değiştirmesini becerdik. Ancak üzerlerine tıklandığında durmalarını nasıl sağlarız? 
 
-1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for all sprites, then uncheck the box next to it so it doesn’t display on the stage.
-2. Set stopped to 1 when someone clicks on the image using
-when sprite1clicked and set stopped to 0 making sure to change the value from 0 to 1.
-3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
-4. Finally, add a set sprite1stopped to 0 underneath the when flag clicked
+1.Veri tabına bas ve bütün kuklalar için durdu adında bir değişken ekle. Değişkenin sahnede görünmemesi için yanındaki kutuda işaret olmaması lazım.
 
-###Test Your Project
-__Click the green flag, wait for a moment, then click on the sprite.__ 
+2.Durdu değişkeni 1 olsun ve birinci kukla tıklanınca, değişken 0 olsun.
 
-Does it change costume before you click on it? 
-Does it stop when you do click on it?
-__Start the sprite again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
+3.Durdu değişkeni 1 olunca resimlerin değişmemesi için, kontrol düğmesini tıkla ve 'sürekli tekrarla' kodu yerine 'eğer ise' kodunu kullan. İşlemler tabından 'eşit' işlemini ekle.
 
-Save your project
+4.Son olarak, 'bayrak tıklanınca' kodunun altına 'Kukla 1 durdu 0 olsun' ekle.
+
+###Prejeni dene
+__Yeşil bayrağı tıkla, biraz bekle, sonra kuklayı tıkla.__ 
+
+DKukla, tıklanmadan kılık değiştirdi mi? Tıklanınca durdu mu? Fare oku kuklaya değince, tıklanmadan durdu mu? Sahnenin herhangi bir yerine tıklayınca, kukla durdu mu? 
+Scratch penceresinin iç veya dış kısmındaki bir alanı tıklayınca ne oldu?
+
+Projeni kaydet
 
 ##Step 4: Diğer kuklaları oluşturmak
 __Now we need to make the other sprites so we can play our game!__
