@@ -57,7 +57,7 @@ Harika! Kuklaların sürekli kılık değiştirmesini becerdik. Ancak üzerlerin
 
 4.Son olarak, 'bayrak tıklanınca' kodunun altına 'Kukla 1 durdu 0 olsun' ekle.
 
-###Prejeni dene
+###Projeni dene
 __Yeşil bayrağı tıkla, biraz bekle, sonra kuklayı tıkla.__ 
 
 DKukla, tıklanmadan kılık değiştirdi mi? Tıklanınca durdu mu? Fare oku kuklaya değince, tıklanmadan durdu mu? Sahnenin herhangi bir yerine tıklayınca, kukla durdu mu? 
