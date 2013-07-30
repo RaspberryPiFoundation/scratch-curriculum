@@ -35,15 +35,15 @@ __Kuklaların kılık değiştirmeleri için.__
 	(hepsini durdur)
 ```
 
-###Test Your Project
-__Click the green flag.__ 
-Do the costumes change at a sensible rate?
+###Projeni dene
+__Yeşil bayrağı tıkla. .__ 
+Kuklaların kılıkları uygun bir hızla değişiyor mu? 
 
-Save your project
+Projeni kaydet
 
-###Things to try
+###Extra Hedefler
 
-Adjust the time in the wait block.What numbers do you think would make the game too easy, or too hard?
+Bekle kodundaki zaman süresini seç. Oyunu hızlı veya yavaş yapmak için kaç saniye kullanmalı?
 
 ##￼STEP 3:Üzerine basıldığında durdurmak
 
