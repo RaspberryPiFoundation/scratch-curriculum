@@ -78,7 +78,7 @@ Yeşil bayrağı tıkla, Biligsayar faresini sahne üzerine kaydır. Rastgele fa
 
 Projeni kaydet.
 
-##2. Adım: Roketi patlatmak
+##2.Adım: Roketi patlatmak
 Roketi patlatmak için, ilk olarak hareket etmeden önce patlama sesi yap. Ses eklemek için SES düğmesine bas ve içeri aktar seçeneğini tıkla.
 
 ```scratch
@@ -118,26 +118,25 @@ Roket fareye ulaştığı zaman ses yapıp görünmemesinden emin ol.
 
 ```scratch
 
-	when I receive explode
+	Patlama haberi gelince
 
-	hide
+	gizle
 
-	go to x: x position of rocket y: y position of rocket
+	x: x konum of roket y: y konum of roket noktasına git
 
-	show
+	göster
 
-	wait 1 sec
+	1 saniye bekle
 
-	hide
+	gizle
 ```
-###Test Your Project
-__Send another rocket flying.__ 
-Does it get replaced with the explosion graphic when it explodes?
-What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).
+###Projeni dene
+__Bir roket daha ekle .__ 
+Patladığı zaman, patlama resmi onun yerini aldı mı? Fareyi kullanırken, aşağı basarsan ne olur? (Bunu daha sonra çözegeğiz).
 
-Save your project
+Projeni kaydet
 
-##￼STEP 3: Make each explosion unique
+##3.Adım: Make each explosion unique
 
 1. Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
 
