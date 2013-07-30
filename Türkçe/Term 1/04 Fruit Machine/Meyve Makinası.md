@@ -99,27 +99,26 @@ __Eğlenerek kendi düşüncelerini hayata geçir!__
 
 Oyun dizayn ettiğin zaman, oyunun çok zor veya kolay olmamasına dikkat et. Bunu nasıl kontrol edebilirsin?
 
-##Challenge 2: Make the game get harder and easier over time
+##Hedef 2: Oyunu zamanla zorlaştır 
 
-Different people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__
+Her insanın oyun oynama yeteneği farklı olacaktır. Dolayısıyla oyununun herkesin düzeyiıne uygun olması için ne yapman gerekir?
 
-One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called __delay__, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier).
-
-##￼Challenge 3: Detect when all the sprites have stopped on the same costume
-
-__The aim of the game is click on the sprites so they’re stopped while showing the same costume. It would be nice if the stage detected when you’d finished playing and then told you if you had won or lost by checking to see if each sprite had the same costume.__
-
-First, the stage needs to know when the player has finished. We can do this by having the stage check to see if all sprites have stopped moving when we click on one of them. Go back and modify each of the sprite# clicked blocks to broadcast a new message, checkForEnd
-
-The Stage canrespond to this message and check if the game is over by seeing if all three sprites’ stopped variables are set to 1, by using the x position of Sprite block for each sprite, and changing “x position” to stopped If all three sprites have a stopped value of 1, we know the game is over and we can check to see if the player has won.
-
-To do this, we can use the same x position of Sprite block, but instead of looking at the stopped variable, we can look at the costume # and see if Sprite1 has the same costume as Sprite2, and if Sprite2 has the same costume as Sprite3.
-
-To do this, you’ll need an if block to check each stopped variable, and inside that an if... else block to see if the player has won or lost by comparing each
-costume #
-
-From this point on, you could announce the result of the game using a broadcast and respond to this with another sprite. Maybe get Felix back to congratulate or commiserate the player?
+Bunu kılık değiştirmenin hızını ayarlayarak yapabilirsin. 'Gecikme' değişkeni kullanarak her kuklanın bekleme zamanını farklı ayarlayabilirsin. Eğer oyuncu oyunu kazanırsa gecikme süresi azaltilabilir ( oyunu zorlaştırma), kaybederse arttırılabilir (oyunu kolaylaştırma).
 
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+##Hedef 3: Bütün kuklaların aynı kılıkta olduklarında durduğunu algıla
+
+__Oyunun hedefi, kuklalar tıklandığında, hepsi durur ve aynı kılığı gösterirler. __
+
+Sahnenin oyun bittiği an bunu algılayıp oyuncuya kazanıp kazanamadığını söylemesi oyunu daha zevkli yapacaktır. 
+
+Bunun için, sahnenin oyuncunun oyunu bitirdiğini algılaması lazım. Sahne, kuklaların tıklandıklarında  hareket edip etmediklerine bakarak bunu algılar. Kuklalara, 'checkForEnd' haberini sal kodunu ekle.
+Kuklaların x noktası  ' eğer durdu değişkeni 1 ise oyun sona ermiştir' şeklinde kodlanır.
+
+X noktasını kullanarak, bu sefer 'durdu' yerine, 'kılık' tabına bakalım. Eğer Kukla 1, kukla 2 ile aynı kılıkta ise, kukla 2 kukla 3 ile aynı kılıkta ise oyuncu oyunu kazanmıştır.
+
+Haber yayınlama kullanarak, oyunun sonucunu bildirebilirsiniz. Felix oyunculara 'aferin' diyebilir.
+
+
+__Aferin, oyunu tamamladınız!__
+Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.!
