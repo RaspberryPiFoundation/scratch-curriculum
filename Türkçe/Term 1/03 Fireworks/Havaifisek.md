@@ -191,15 +191,15 @@ Karakter göründükten sonra, tekrar et seçeneğini kullanarak 2 kere elli def
 
 	gizle
 ```
-###Test Your Project
-__Click the green flag.__ 
+###Projeni dene
+__Yeşil bayrağı tıkla.__ 
 
-Does the explosion graphic spread out from the centre of the rocket and slowly grow?
+Patlama roketin ortasından başlayıp, yavaşca büyüyor mu?
 
-###Things to try
-Why not try making each explosion more unique by altering the size and speed of growth for the explosion.
+###Extra Hedefler
+Patlamanın büyüklüğünü ve hızını değiştirerek her patlamayı benzersiz yapmayı deneyin.
 
-Save your project
+Projeni kaydet
 
 ##Step 4: Fixing the Broadcast Bug
 Remember earlier we had a bug involving holding down the mouse button?
