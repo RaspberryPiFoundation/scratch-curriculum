@@ -98,23 +98,23 @@ Roketi patlatmak için, ilk olarak hareket etmeden önce patlama sesi yap. Ses e
 
 ```scratch
 
-	when FLAG clicked
-	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode
-	(end forever)
+	bayrak tıklanınca
+	gizle
+	sürekli tekrarla eğer fare tıklandıysa
+		x: mouse x y: -200 noktasına git
+		bang sesini çal
+		göster
+		1 sn.de x: mouse x y: mouse y süzül
+		gizle
+		Patla haberini sal
+	(hepsini durdur)
 ```
-###Test Your Project
-__Click the green flag.__ 
-Make sure the rocket plays a noise and hides when it reaches the mouse.
+###Projeni dene
+__Yeşil bayrağı tıkla.__ 
+Roket fareye ulaştığı zaman ses yapıp görünmemesinden emin ol.
 
-3. Import a new sprite using Resources/firework1.png
-4. When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
+3.Kaynaklar dosyasından firework1.png adlı kuklayı aktar
+4.Patlama mesajını aldığında, karakter gizlenmeli ve rokete doğru hareket etmeli, sonra gorünmeli, ve bir saniye sonra tekrar görünmez olmali
 
 ```scratch
 
