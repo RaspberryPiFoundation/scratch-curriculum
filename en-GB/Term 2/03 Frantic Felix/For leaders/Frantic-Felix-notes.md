@@ -19,7 +19,7 @@ Platform games, like Manic Miner and Mario Bros, are all about the central figur
 
 
 That means that knowing when you’ve bumped into something
-(called ‘collision detection’ - you might need to explain this to your students) is important. Scratch gives you a few blocks for collision detection: `<touching? [sprite]>`, `<touching color []?>`, `<color [] is touching []?>`, and `<distance to [sprite]>`. However, to make the game, you need to know more than just whether you’re touching something: you need to know which side is touching it. If you walk up to a wall on the left, you can’t go left any more.
+(called ‘collision detection’ - you might need to explain this to your students) is important. Scratch gives you a few blocks for collision detection: `<touching? [sprite]>`, `<touching color []?>`, `<color [] is touching []?>`, and `(distance to [sprite])`. However, to make the game, you need to know more than just whether you’re touching something: you need to know which side is touching it. If you walk up to a wall on the left, you can’t go left any more.
 
 But you can still go right, or jump, or fall if there’s no floor. Touching a
 baddie may hurt you; but if you touch it with your feet, you may hurt the baddie. None of the built-in Scratch blocks tell you about direction of contact. So we’ve got to build our own collision detectors.
