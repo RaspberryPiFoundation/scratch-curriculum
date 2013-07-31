@@ -1,6 +1,6 @@
 #NOTES FOR CLUB LEADERS
 ##Design & animate your own monster (level 4)
-￼
+
 __Introduction:__
 In this project your students will design and animate their very own monster! They’ll need to plan what their monster looks like, how they move, where they live and if they make any sounds.
 
@@ -23,4 +23,3 @@ The children will be designing their own monster parts and can use sounds from t
 * Wheels 
 * Movement 
 * Tentacles
-￼
