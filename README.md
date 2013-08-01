@@ -1,6 +1,6 @@
 # Code Club Scratch Curriculum
 
-This repository contains all the material for Term 1 of [Code Club][codeclub].
+This repository contains all the material for Term 1 and 2 of [Code Club][codeclub].
 It consists of lesson notes and plans in [Markdown][markdown] format,
 [Scratch][scratch] project files, and a few PDFS.
 
