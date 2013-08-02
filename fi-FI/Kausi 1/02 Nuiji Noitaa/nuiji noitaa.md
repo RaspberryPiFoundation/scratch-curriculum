@@ -1,67 +1,54 @@
-Level 1
+Taso 1
 
-#Whack-a-Witch
+#Nuiji Noitaa
 
-__Introduction:__
-This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
+__Johdanto:__
+Tämä projekti on kuin peli __Mätki myyrää__. Saat pisteitä kun lyöt ruudulla ilmestyviä noitia. Tavoite on saada mahdollisimman monta pistettä 30 sekunnissa!
 
-##STEP 1: Create a flying witch
+##VAIHE 1: Luo lentävä noita
 
-1. Start a new scratch project.
-2. Remove the cat sprite and replace the background with the nature/woods
-background.
-3. Use the new sprite from file button to add a new witch
-sprite to the project (use the fantasy/witch1 costume). 
+1. Aloita uusi projekti.
+2. Poista kissa hahmo ja korvaa tausta Luonto/woods-taustalla.
+3. Käytä "uusi tausta kirjastosta"-ikoni ja lisää uusi noita hahmo projektille (käytä Fantasia/Witch-hahmo). 
 
-Now we want to make our witch move
+Nyt halutaan saada noita liikkumaan
 
-4. Add a Variable for this sprite only called speed .
-On the Stage, the stage monitor for this variable should say “Sprite1 speed”.
-If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the
-Variables palette so it does not show on the Stage.
-The speed variable will control how fast the witch moves. We use a variable so that we can change how fast the witch moves as the game progresses.
-5. We want the witch to start moving when the game starts, so make a script like this:
+4. Lisää muuttuja vain tälle hahmolle ja nimeä se nopeudeksi.
+Esiintymislavalla, tämän muuttujan tilaindikaattorissa pitää lukea "Witch: nopeus".
+Jos siinä lukee pelkkä "nopeus", poista muuttuja ja luo se uudestaan, vain tälle hahmolle.  Muutuja-paletissa ota puumerkki pois "nopeus" muuttujan edestä, jotta sitä ei näytetä esiintymislavalla.
+Nopeus-muuttuja määrää kuinka nopeasti noita liikkuu. Käytetään muuttujaa, jotta voidaan muuttaa noidan nopeuden sitä mukaan kun peli jatkuu.
+5. Halutaan noidan alkavan liikkumista kun peli käynnistii, joten tee tällainen skripti:
 
 ```scratch
 
-	when FLAG clicked
-
-	set speed to 5
-
-	forever
-
-		move speed steps
-
-	(end forever)
+	kun klikataan LIPPU
+	aseta nopeus arvoon 5
+	ikuisesti
+		liiku nopeus askelta
+	(loppu ikuisesti)
 ```
 		
-###Test Your Project
-__Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
+###Testaa projektisi
+__Napsauta vihreä lippu__ ja katso miten noitasi käyttäytyy. Miksi hän jää jumiin ruudun reunaan?
 
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below your
-move speed steps block add an if on edge, bounce block.
+6. Jotta noita ei jäisi jumiin, meidän pitää saada hänet liikkumaan toiseen suuntaan kun hän koskettaa ruudun reunaa.  "liiku nopeus askelta"-lohkon alle lisää "pomppaa reunasta"-lohko
 
 ```scratch
 
-	when FLAG clicked
-
-	set speed to 5
-
-	forever
-
-		move speed steps
-
-		if on edge, bounce
-
-	(end forever)
+	kun klikataan LIPPU
+	aseta nopeus arvoon 5
+	ikuisesti
+		liiku nopeus askelta
+		pomppaa reunasta
+	(end ikuisesti)
 ```
-7. To stop the witch flipping upside down, click on the __only face left-right button__ in the Sprite Summary area.
+7. Jotta noita ei lentäisi ylösalaisin, napsauta  __suunta vain vasemmalle-oikealle -näppäintä__ hahmo yleisasetukset -alueella
 
-###Test Your Project
-__Click the green flag.__ 
-Does the witch move from side to side across the screen?
+###Testaa projektisi
+__Napsauta vihreä lippu.__ 
+Liikkuuko noita ruudulla reunasta toiseen?
 
-Save your project
+Tallenna projektisi
 
 ###Things to try
 __Try changing the value of the speed variable to make her fly faster or slower.__
@@ -69,17 +56,17 @@ __Try changing the value of the speed variable to make her fly faster or slower.
 __How would you make the witch get faster the longer she flies?__
 (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
 
-##STEP 2: Make the witch appear & vanish randomly
+##VAIHE 2: Make the witch appear & vanish randomly
 
-To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that forever (or until the game finishes).
+To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that ikuisesti (or until the game finishes).
 
 Create this script for the witch:
 
 ```scratch
 
-	when FLAG clicked
+	kun klikataan LIPPU
 
-	forever
+	ikuisesti
 
 		hide
 
@@ -89,19 +76,19 @@ Create this script for the witch:
 
 		wait pick random 3 to 5 secs
 
-	(end forever)
+	(end ikuisesti)
 ```
-###Test Your Project
-__Click the green flag.__ 
+###Testaa projektisi
+__Napsauta vihreä lippu.__ 
 Does the witch move from side to side across the screen and vanish and appear again randomly?
 
-Save your project
+Tallenna projektisi
 
 ###Things to try
 __Try changing the range of the random numbers. What happens if you pick very big numbers or very small numbers?__
 (Does this give you any more clues for how to make the witch speed up the longer the game is played?)
 
-##STEP 3: Make the witch disappear when she’s clicked
+##VAIHE 3: Make the witch disappear when she’s clicked
 
 To turn this into a game, we need to give the player something to do. They need to click on the witch to make her disappear. When the witch is clicked, we want her to disappear and play a sound.
 
@@ -117,12 +104,12 @@ To turn this into a game, we need to give the player something to do. They need 
 
 	play sound Fairydust
 ```
-###Test Your Project
-__Click the green flag.__ 
+###Testaa projektisi
+__Napsauta vihreä lippu.__ 
 
 Does the witch disappear and play the sound when you click it?
 
-Save your project
+Tallenna projektisi
 
 ##Step 4: Add a score and timer
 
@@ -146,7 +133,7 @@ one. This should repeat until timer is 0, at which point use stop all to stop th
 
 ```scratch
 
-	when FLAG clicked
+	kun klikataan LIPPU
 
 	set timer to 30
 
@@ -164,10 +151,10 @@ one. This should repeat until timer is 0, at which point use stop all to stop th
 ```
 
 
-###Test Your Project
-__Click the green flag.__ 
+###Testaa projektisi
+__Napsauta vihreä lippu.__ 
 
-Save your project
+Tallenna projektisi
 
 ###Things to try
 __How might you make the witch speed up as the game goes on?__
@@ -183,12 +170,12 @@ If one witch is good, more must be better! Let’s have three witches flying aro
 3. For each witch change the speed variable so that they fly at different speeds.
 4. Move the witches around the canvas so that they are not all together.
 
-###Test Your Project
-__Click the green flag.__ 
+###Testaa projektisi
+__Napsauta vihreä lippu.__ 
 
 Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
 
-Save your project
+Tallenna projektisi
 
 ###Things to try
 1. How many witches is a good number for the game?
