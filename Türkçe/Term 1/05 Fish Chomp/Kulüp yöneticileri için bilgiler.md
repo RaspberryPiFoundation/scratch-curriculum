@@ -1,11 +1,11 @@
 #Kulüp yöneticileri için bilgiler
 ##(Balı avı)
 
-###Introduction
-We’re going to make a Fish Chomp game! Guide the large Hungry Fish around and try to eat all the prey that are swimming around.
+###Tanıtım
+Balık avı oyunu dizayn edeceğiz.  Büyük açgözlü balığa etrafındaki küçük hayvanları avlamasına yardım edin.
 
-###Skills
-This project covers
+###Yetenekler
+Projenin içerdiği yetenekler: 
 • Moving sprites
 • Controlling sprites with the mouse • Changing costumes
 • Collision detection
