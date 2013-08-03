@@ -27,9 +27,10 @@ Adım 1: Açgözlü balık fare okunu takip eder
 Adım 2: Daha çok av ekle
 Adım 3: Açgözlü balık avlarını yer
 
-###Challenges
-1. Make the prey move differently
-2. Make the prey avoid the hungry fish 3. Add a score
-4. Add a countdown
-5. Add a bonus score
-6. Change the game: keep a prey alive!
+###Extra Hedefler
+1.Avları farklı şekilde hareket ettir
+2.Avın açgözlü balıktan sakınmasını sağla
+3.Puan ekle
+4.Geriye doğru sayma ekle
+5.Ödül puanı ekle
+6.Oyunu değiştir; av canlı kalsın
