@@ -2,11 +2,11 @@
 
 #Balık avı
 
-__Introduction:__
-We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
+__Tanıtım:__
+Balık avı oyunu dizayn edeceğiz. Büyük açgözlü balığa etrafındaki küçük hayvanları avlamasına yardım edin.
 
-##￼STEP 1: Create a sprite that changes costumes
-__Let’s make the Hungry Fish swim around the sea!__
+##￼STEP 1:Kılık değiştiren kukla yap
+__Açgözlü balığın denizde yüzmesini sağlıyalım!__
 
 1. Start a new Scratch project.
 2. Select the Stage, then select the Stage’s Background tab. Import the
