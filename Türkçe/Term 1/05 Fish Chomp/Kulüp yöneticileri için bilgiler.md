@@ -6,19 +6,21 @@ Balık avı oyunu dizayn edeceğiz.  Büyük açgözlü balığa etrafındaki k�
 
 ###Yetenekler
 Projenin içerdiği yetenekler: 
-• Moving sprites
-• Controlling sprites with the mouse • Changing costumes
-• Collision detection
-• Sprites reading other sprites’ state • Keeping and changing scores
+•Kuklaları haraket ettirmek
+•Kuklaları bilgisayar faresi ile kontrol etmek
+•Kılık değiştirmek
+•Çarpışmayı algılama
+•Kuklaların diğer kuklaların durumunu bilmesi
+•Puan değişkeni ekleme
 
-###Resources
-This project uses resources found in the Scratch Backgrounds and Costumes folders AND the hungry fish costumes can be found in the volunteers packs
+###Kaynaklar
+Bu projede kullanılan resimler Scratch dekor ve kılıklar dosyasındadır.Açgözlü balık kılığı gönüllüler için hazırlanan kaynaklar dosyasındadır.
 
-###Scratch Cards required:
-* Animate it
-* Keep score
-* Timer
-* Follow the mouse
+###Gerekli olan Scratch Kartı:
+* Animasyon yap
+* Puan ekle
+* Zaman değişkeni
+* Biligsayar okunu takip et
 
 ###Basic exercises
 Step 1: Hungry Fish follows the mouse pointer 
