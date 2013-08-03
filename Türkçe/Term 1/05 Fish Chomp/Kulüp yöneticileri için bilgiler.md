@@ -22,13 +22,11 @@ Bu projede kullanılan resimler Scratch dekor ve kılıklar dosyasındadır.Açg
 * Zaman değişkeni
 * Biligsayar okunu takip et
 
-###Basic exercises
-Step 1: Hungry Fish follows the mouse pointer 
+###Temel alıştırmalar
+Adım 1: Açgözlü balık fare okunu takip eder
+Adım 2: Daha çok av ekle
+Adım 3: Açgözlü balık avlarını yer
 
-Step 2: Add some prey
-
-Step 3: Hungry fish eats the prey
-￼
 ###Challenges
 1. Make the prey move differently
 2. Make the prey avoid the hungry fish 3. Add a score
