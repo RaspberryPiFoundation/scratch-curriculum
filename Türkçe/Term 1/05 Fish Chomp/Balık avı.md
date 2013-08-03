@@ -17,11 +17,11 @@ __Açgözlü balığın denizde yüzmesini sağlıyalım!__
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
+	Bayrak tıklanınca
+	Sürekli tekrar et	
+		Fare okuna doğru dön
+		3 adım git
+	(Hepsini durdur)
 ```
 
 ###Test Your Project
