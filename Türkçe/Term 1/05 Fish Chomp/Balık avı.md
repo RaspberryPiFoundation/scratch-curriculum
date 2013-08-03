@@ -8,13 +8,12 @@ Balık avı oyunu dizayn edeceğiz. Büyük açgözlü balığa etrafındaki kü
 ##￼STEP 1:Kılık değiştiren kukla yap
 __Açgözlü balığın denizde yüzmesini sağlıyalım!__
 
-1. Start a new Scratch project.
-2. Select the Stage, then select the Stage’s Background tab. Import the
-background nature/underwater and remove background1.
-3. Change the name of Sprite 1 to Hungry Fish.
-4. Import Hungry Fish’s costume, resources/hungry-fish then remove its existing costume1 and costume2.
-5 Use the button above the Costumes tab to make sure the sprite can only flip left-right.
-6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
+1.Yeni Scratch perojesine başla
+2.Sahne tabını tıkla ve sahne dekoru dosyasından nature/underwater adlı dekoru aktar. Background1'i sil.
+3.Birinci kuklanın adını Açgözlü balık olarak değiştir
+4.Açgözlü balık kuklasının 1. ve 2. kılıklarını sil ve kılıklar dosyasından hungry-fish kılığını aktar
+5.Kılıklar tabının üzerindeki sadece sağ-sola hareket et düğmesine bas
+6.Açgözlü balığın bilgisayar faresini takip etmesi için şu kodlamayı yaz:
 
 ```scratch
 
