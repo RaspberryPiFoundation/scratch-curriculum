@@ -1,5 +1,5 @@
 #Kulüp yöneticileri için bilgiler
-##(Balı avı)
+##(Balık avı)
 
 ###Tanıtım
 Balık avı oyunu dizayn edeceğiz.  Büyük açgözlü balığa etrafındaki küçük hayvanları avlamasına yardım edin.
