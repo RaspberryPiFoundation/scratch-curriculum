@@ -177,18 +177,18 @@ __Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazı
 Bütün avlar aynı şekilde hareket ediyor? Birini farkli hareket ettire bilir misin?__
 __ipucu:__ Bu projedeki diğer aktivetelere bakmadan bu soru için çok zaman harcama
 
-__PAvlardan birini seç.__ Eğer kılıkları aynı ise, farklı renk yap. Böylece onu diğerlerinden ayıra bilirsin.
+__Avlardan birini seç.__ Eğer kılıkları aynı ise, farklı renk yap. Böylece onu diğerlerinden ayıra bilirsin.
 
-Make this prey move slower than the others. __Hint:__ Look at the move (2) steps block.
+Bu avın diğerlerinden daha yavaş hareket etmesini sağla. __ipucu:__ (2) adım git koduna bak.
 
 
 ###Projeni dene
-Does the prey move slower? Does this make the game better?
-If you can do that, __try to making one of fish move quicker than the others.__
+Av daha yavaş hareket ediyor mu? Bu oyunu daha iyi yaptı mı?
+--Bir balığı, diğerinden daha hızlı hareket ettire bilirmisin?.__
 
 
-Does the prey still move in a sensible way? Do these changes make the game better?
-__Hint:__ If your prey swims around in circles, check the values of the pick random block in the turn block.
+Does the prey still move in a sensible way? Do these changes make the game better? 
+__ipucu:__ If your prey swims around in circles, check the values of the pick random block in the turn block.
 
 How about you make each of the prey behave differently, using different combinations of these changes?
 
