@@ -1,4 +1,4 @@
-  2. Düzey
+  Düzey 2
 
 #Balık avı
 
