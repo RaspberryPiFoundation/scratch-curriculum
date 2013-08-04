@@ -77,7 +77,7 @@ Projeni kaydet
 
 ##3.Adım: Açgözlü balık avlarını yer
 
-__Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ OAçğözlü balık avını ağzına aldığı an 2 şeyin olmasi gerekli:
+__Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ Açğözlü balık avını ağzına aldığı an 2 şeyin olmasi gerekli:
 * Açgözlü balık ağzını kapatıp, "chomp" sesi yapmalı.
 * Av bir süre görünmez olup, sonra tekrar goörünmeli.
 
@@ -99,8 +99,8 @@ __Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ OAçğözlü ba
 	
 ```
 
-###Test Your Project
-__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
+###Projeni dene
+__Projeni tekrar dene – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
 
 2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
 touching color block in your script, click on the color in the block and then click again on the fish’s teeth.
