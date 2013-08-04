@@ -174,12 +174,10 @@ __Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazı
 
 ##Extra Hedef 1: Avları farklı şekilde hareket ettir 
 
-At the moment, all the prey move in the same way. __Can you make one of them
-move differently?__
-__Hint:__ Don’t spend too long on this bit without looking at the other activities in this
-project.
+Bütün avlar aynı şekilde hareket ediyor? Birini farkli hareket ettire bilir misin?__
+__ipucu:__ Bu projedeki diğer aktivetelere bakmadan bu soru için çok zaman harcama
 
-__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the __set color effect block__. That way, you can tell it apart from the rest of the prey.
+__PAvlardan birini seç.__ Eğer kılıkları aynı ise, farklı renk yap. Böylece onu diğerlerinden ayıra bilirsin.
 
 Make this prey move slower than the others. __Hint:__ Look at the move (2) steps block.
 
