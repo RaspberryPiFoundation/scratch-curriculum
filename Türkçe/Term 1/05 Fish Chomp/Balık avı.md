@@ -100,13 +100,10 @@ __Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ Açğözlü bal
 ```
 
 ###Projeni dene
-__Projeni tekrar dene – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
+__Projeni tekrar dene – Herhangi bir sorun var mı?__ Avın, açgözlü balığın neresine dokunursa dokunsun kaybolduğunu farket. Onun 3 saniye bekleyip, av görünür görünmez yemesi iyi değil.
 
-2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
-touching color block in your script, click on the color in the block and then click again on the fish’s teeth.
-3. Next we can make the prey move to a random point on the screen before reappearing using a go to
-block, and giving it a random
-value for x and y.
+2. Avın sadece acgözlü balığın ağızına dokunduğu an görünmez olmasını nasıl sağlarız? Renk kodunu kullanabiliriz. Değme kodunu, renk kodu ile değiştirmek için, önce renge dokun, sonra açgözlü balığın dişine dokun.
+3. Avın tekrar görunmeden önce, farklı noktalara gitmesi için x ve y için 'rastgele rakam seç ve noktasına git' kodu kullan.
 
 ```scratch
 
