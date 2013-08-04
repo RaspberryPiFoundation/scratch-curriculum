@@ -166,13 +166,13 @@ Balık avını yedi mi? Balık bütün avlarını yedi mi?
 
 Projeni kaydet
 
-###Things to think about
-Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+###Düşünülmesi gereken konular
+Av yazılımına neden 'göster' kodu ile başladık? Eğer av, yakalandıktan sonra, tekrar görünmeden önce oyun dursaydı ne olurdu? Oyun bundan sonra tekrar başlarsa ne olurdu?
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
+__Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazır mısın?
 
 
-##￼Challenge 1: Make the prey move differently
+##Extra Hedef 1: Avları farklı şekilde hareket ettir 
 
 At the moment, all the prey move in the same way. __Can you make one of them
 move differently?__
@@ -184,7 +184,7 @@ __Pick one of the prey to experiment on.__ If they have the same costumes, make 
 Make this prey move slower than the others. __Hint:__ Look at the move (2) steps block.
 
 
-###Test Your Project
+###Projeni dene
 Does the prey move slower? Does this make the game better?
 If you can do that, __try to making one of fish move quicker than the others.__
 
@@ -196,9 +196,9 @@ How about you make each of the prey behave differently, using different combinat
 
 Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
 
-Save your project
+Projeni kaydet
 
-##￼Challenge 2: Make the prey avoid the hungry fish
+##Extra Hedef 2: .Avın açgözlü balıktan sakınmasını sağla 
 
 The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
 
@@ -206,12 +206,12 @@ There’s no block in Scratch that tells you the direction that another sprite i
 
 Using that idea, __make one of the prey always point away from the Hungry Fish.__ You might want to make it wiggle as it swims away.
 
-###Test Your Project
+###Projeni dene
 Does this make the fish harder to catch? Does it make the game better?
 
-Save your project
+Projeni kaydet
 
-##￼￼Challenge 3: Add a score
+##Extra Hedef 3: Puan ekle
 It’s not enough just to eat fish. How do you know you’re better at the game than your
 friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
 
@@ -219,19 +219,19 @@ Where should you put the block that changes the score?
 
 Make sure the score goes back to zero at the start of the game. Where should you put that block?
 
-###Test Your Project
+###Projeni dene
 ￼￼￼Does the score go to zero at the start of the game? Does it go up every time you eat prey?
 
-Save your project
+Projeni kaydet
 
-##￼Challenge 4: Add a countdown
+##Extra Hedef 4:Geriye doğru sayma ekle
 
 __Give yourself a time limit in the game.__ How many fish can you eat in thirty
 seconds?
 
 Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
 
-###Test Your Project
+###Projeni dene
 Does the timer start at 30?
 
 Does it go down at the right speed?
@@ -240,20 +240,20 @@ Can you catch prey while the timer is going?
 
 Does the game stop when the timer reaches zero?
 
-Save your project
+Projeni kaydet
 
-##￼Challenge 5: Add a bonus score
+##Extra Hedef 5: :Ödül puanı ekle
 Award a large bonus score if you can eat all three fish at the same time. How can
 you tell how many fish have been eaten?
 __Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
 
-Save your project
+Projeni kaydet
 
-##￼Challenge 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
+##Extra Hedef 6: Oyunu değiştir; av canlı kalsın
 
 __Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten?
 
-Save your project
+Projeni kaydet
 
 __Well done you’ve finished, now you can enjoy the game!__
 Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
