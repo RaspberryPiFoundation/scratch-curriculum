@@ -77,25 +77,26 @@ Projeni kaydet
 
 ##3.Adım: Açgözlü balık avlarını yer
 
-__Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
-* The Hungry Fish needs to close its mouth and make a "chomp" sound.
-* The prey needs to disappear, then reappear a short while later.
+__Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ OAçğözlü balık avını ağzına aldığı an 2 şeyin olmasi gerekli:
+* Açgözlü balık ağzını kapatıp, "chomp" sesi yapmalı.
+* Av bir süre görünmez olup, sonra tekrar goörünmeli.
 
-1. First, let’s make the prey disappear if it is touching the hungry fish, and then reappear 3 seconds later. Use the touching block to see if it is touching the fish.
+1. Eaçgözlü balığa değerseğer av, açgözlü balığa değerse 3 saniye görünmez olmalı. 
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching Hungry Fish?
-			hide
-			wait 3 secs
-			show
-		(end if)
-	(end forever)
+	Bayrak tıklanınca
+	sürekli tekrarla	
+		2 adım git
+		dön 20 ile -20 arasında rastgele rakam seç
+		kenara değdimi geri dön
+		Eğer açgözlü balığa değerse
+			gizle
+			3 saniye bekle
+			göster
+			(eğer ise)
+	(hepsini durdur)
+	
 ```
 
 ###Test Your Project
@@ -109,20 +110,21 @@ value for x and y.
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
+	Bayrak tıklanınca
+	sürekli tekrarla	
+		2 adım git
+		dön 20 ile -20 arasında rastgele rakam seç
+		kenara değdimi geri dön
+		Eğer [] rengine değerse
+			gizle
+			3 saniye bekle
+			x:rastgele -220 to 220 y: random -170 to 170 noktasına git
+			göster
+			(eğer ise)
+	(hepsini durdur)
+
 ```
-###Test your project
+###Projeni dene
 
 Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
 
@@ -130,19 +132,19 @@ Try the game again – does the prey only vanish when it touches the fish’s mo
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			broadcast got me
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
+		Bayrak tıklanınca
+	sürekli tekrarla	
+		2 adım git
+		dön 20 ile -20 arasında rastgele rakam seç
+		kenara değdimi geri dön
+		Eğer [] rengine değerse
+			Yakalandım haberini sal
+			gizle
+			3 saniye bekle
+			x:rastgele -220 to 220 y: random -170 to 170 noktasına git
+			göster
+		(eğer ise)
+	(hepsini durdur)
 ```
 __Now we want the fish to respond
 to this message by making a “chomp” sound and snapping its jaws.__
@@ -152,13 +154,13 @@ to this message by making a “chomp” sound and snapping its jaws.__
 
 ```scratch
 
-	when I receive got me
-	play sound chomp
-	repeat 2
-		switch to costume mouth-closed
-		wait 0.5 secs
-		switch to costume hungry-fish
-	(end repeat)
+	Yakalandım haberi gelince
+	chomp sesi çal
+	2 defa tekrarla
+		mouth-closed kılığına geç
+		0.5 saniye bekle
+		açgözlü balık kılığına geç
+	(hepsini durdur)
 ```
 
 __Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
