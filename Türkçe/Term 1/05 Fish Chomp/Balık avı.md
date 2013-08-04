@@ -142,11 +142,10 @@ Oyunu tekrar dene- Av sadece balığın ağızına dokununcamı kayboluyor? Tekr
 		(eğer ise)
 	(hepsini durdur)
 ```
-__Now we want the fish to respond
-to this message by making a “chomp” sound and snapping its jaws.__
+__Şimdi, balığın cevap vermesi için 'chomp' sesi yap ve çenesini kapat.__
 
-5. Add the resources/mouth-closed costume and the resources/chomp sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message broadcast by the prey. This script should make the fish play the 'chomp' sound and switch to the mouth-closed costume, wait briefly and then switch back.
+5. Açgözlü balık kuklasına kaynaklar dosyasından, motuh-closed kılığını ve chomp sesini ekle.
+6. Balığın avına cevap vermesi için yeni kod yaz. Bu kod balığın chomp sesi yapmasını ve mouth-closed kılığına girmesini, biraz bekleyip, geri kılık değiştirmesini sağlamalı.
 
 ```scratch
 
