@@ -123,10 +123,9 @@ __Projeni tekrar dene – Herhangi bir sorun var mı?__ Avın, açgözlü balı�
 ```
 ###Projeni dene
 
-Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
+Oyunu tekrar dene- Av sadece balığın ağızına dokununcamı kayboluyor? Tekrar göründüğünde, avlandığı noktadan farkl bir noktada mı görünüyor?
 
-4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey broadcast the fact that it’s been eaten before vanishing.
-
+4. Balık avını yediği zaman, bunu algılayıp, ses çalıp kılık değiştirmesi lazım. Bunun için, avın görünmez olmadan once haber salması gerekli.
 ```scratch
 
 		Bayrak tıklanınca
