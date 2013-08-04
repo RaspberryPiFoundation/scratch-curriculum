@@ -169,7 +169,7 @@ Projeni kaydet
 ###Düşünülmesi gereken konular
 Av yazılımına neden 'göster' kodu ile başladık? Eğer av, yakalandıktan sonra, tekrar görünmeden önce oyun dursaydı ne olurdu? Oyun bundan sonra tekrar başlarsa ne olurdu?
 
-__Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazır mısın?
+Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazır mısın?
 
 
 ##Extra Hedef 1: Avları farklı şekilde hareket ettir 
@@ -241,7 +241,7 @@ Projeni kaydet
 
 ##Extra Hedef 5: :Ödül puanı ekle
 Eğer bütün avlar aynı zamanda yenilirse bonus puanı ver. Kaç tane av yenildiğini nasıl bilebilirsin?
-__ipucu:__ Bunun için denizde yüzen avları sayacak değişken ekle.__
+__ipucu:__ Bunun için denizde yüzen avları sayacak değişken ekle.
 
 Projeni kaydet
 
