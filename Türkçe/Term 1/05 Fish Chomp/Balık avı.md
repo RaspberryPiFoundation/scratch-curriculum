@@ -46,8 +46,7 @@ Projeni kaydet
 
 ##Extra hedefler
 
-￼If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
-
+İstersen, kodlamaya farklı numaralar ekleyebilirsin. Bu açgözlü balığın hareketlerini ne şekilde etkiler? Mesafeyi büyük bir rakam ile değiştir (mesela 100), veya küçük bir rakam (mesela 1). Balığın daha fazla (mesela 20) veya daha az hareket etmesini (mesela 1 veya 0) için yazılımı değiştir.
 
 ##STEP 2: Add some prey
 
