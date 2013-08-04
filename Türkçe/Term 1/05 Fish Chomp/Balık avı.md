@@ -48,24 +48,22 @@ Projeni kaydet
 
 İstersen, kodlamaya farklı numaralar ekleyebilirsin. Bu açgözlü balığın hareketlerini ne şekilde etkiler? Mesafeyi büyük bir rakam ile değiştir (mesela 100), veya küçük bir rakam (mesela 1). Balığın daha fazla (mesela 20) veya daha az hareket etmesini (mesela 1 veya 0) için yazılımı değiştir.
 
-##STEP 2: Add some prey
+##2. Adım: Daha çok av ekle
 
-1. Create a new sprite from the file animals/lobster1. 
-2. Use the Shrink sprite tool (above the Stage)
-to make the sprite smaller.
-3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again
-
+1.Animals/lobster1 adlı kuklayı aktar.
+2.Sahnenin uzerindeki küçültme dügmesini kullanarak kuklayı küçült
+3.Avların yüzmesi için kod yaz. Avların rastgele hareket etmesini istiyoruz, önce ileriye doğru hareket etsinler, sonra rastgele sağa ve sola dönsünler, bunu tekrar et.
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-	(end forever)
+	Bayrak tıklanınca
+	sürekli tekrarla	
+		2 adım git
+		dön 20 ile -20 arasında rastgele rakam seç
+		kenara değdimi geri dön
+	(hepsini durdur)
 ```
 
-###Test Your Project
+###Projeni dene
 __Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
 
 __At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
