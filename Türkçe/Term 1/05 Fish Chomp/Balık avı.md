@@ -158,13 +158,13 @@ __Şimdi, balığın cevap vermesi için 'chomp' sesi yap ve çenesini kapat.__
 	(hepsini durdur)
 ```
 
-__Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
+__Şimdi, balık avlanmaya hazır, okyanusu av ile dolduralım. Av kuklasına sağ tıkla ve 'ikizle' seçeneğine bir çok defa bas.__
 
-###Test Your Project
-Click the green flag.
-Does the Hungry Fish eat the prey? Does it eat each of the different prey?
+###Projeni dene
+Yeşil bayrağı tıkla
+Balık avını yedi mi? Balık bütün avlarını yedi mi?
 
-Save your project
+Projeni kaydet
 
 ###Things to think about
 Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
