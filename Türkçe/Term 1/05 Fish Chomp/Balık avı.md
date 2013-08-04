@@ -209,48 +209,49 @@ Bu avın yakalanmasını zorlaştırdı mı? Oyunu daha iyi yaptı mı?
 Projeni kaydet
 
 ##Extra Hedef 3: Puan ekle
-It’s not enough just to eat fish. How do you know you’re better at the game than your
-friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
+Sadece avı yemek yeterli değil. Bu oyunu arkadaşlarından daha iyi oynadığını nasil bileceksin? __Puan değişkeni ekleyip, puanı kayıt etmen gerekli. Puan değişkeni kartına bak ve nasıl yapıldığını öğren. 
 
-Where should you put the block that changes the score?
+WPuanı değiştirmek için, kodu nereye eklemen lazım?
 
-Make sure the score goes back to zero at the start of the game. Where should you put that block?
+Oyun başladığı zaman, puanın sıfır olmasına dikkat et. Kodu nereye ekleyeceksin?
 
 ###Projeni dene
-￼￼￼Does the score go to zero at the start of the game? Does it go up every time you eat prey?
+
+Puan oyun başladığı zaman sıfır mı? Her avı yakaladığın zaman puan yükseldi mi?
 
 Projeni kaydet
 
 ##Extra Hedef 4:Geriye doğru sayma ekle
 
-__Give yourself a time limit in the game.__ How many fish can you eat in thirty
-seconds?
+__Oyuna zaman sınırı ekle. 30 saniyede kaç tane av yakalaya bilirisin?
 
-Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
+Zaman Scratch kartına bak ve nasıl yapıldığını öğren. Oyunu 30 saniyede bitecek şekilde programla.
 
 ###Projeni dene
-Does the timer start at 30?
+Zaman değişkeni 30 saniyede başlıyor mu?
 
-Does it go down at the right speed?
+Doğru hızda aşağıya iniyor mu?
 
-Can you catch prey while the timer is going?
+Zaman çalışırken avlana bilirmisin?
 
-Does the game stop when the timer reaches zero?
+Zaman sıfır olunca, oyun durdumu?
+
 
 Projeni kaydet
 
 ##Extra Hedef 5: :Ödül puanı ekle
-Award a large bonus score if you can eat all three fish at the same time. How can
-you tell how many fish have been eaten?
-__Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
+Eğer bütün avlar aynı zamanda yenilirse bonus puanı ver. Kaç tane av yenildiğini nasıl bilebilirsin?
+__ipucu:__ Bunun için denizde yüzen avları sayacak değişken ekle.__
 
 Projeni kaydet
 
 ##Extra Hedef 6: Oyunu değiştir; av canlı kalsın
 
-__Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten?
+__Bazen bir fikrin karşıtını yaparak, yeni fikirler oluştura bilirsin.
+
+Oyunu değiştir ki, avlayan balık yerine, avlanan balıklardan birini kontrol edesin. Ne kadar süre  yakalanmadan dayana bilirsin?
 
 Projeni kaydet
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
+__Aferin oyunun tamamladın, şimdi eğlenerek oyna!__
+Oyununu arkadaş ve ailenle 'paylaş' düğmesine basarak paylaşa bilirsin
