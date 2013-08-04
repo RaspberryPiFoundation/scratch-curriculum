@@ -174,7 +174,7 @@ __Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazı
 
 ##Extra Hedef 1: Avları farklı şekilde hareket ettir 
 
-Bütün avlar aynı şekilde hareket ediyor? Birini farkli hareket ettire bilir misin?__
+Bütün avlar aynı şekilde hareket ediyor? Birini farkli hareket ettire bilir misin?
 __ipucu:__ Bu projedeki diğer aktivetelere bakmadan bu soru için çok zaman harcama
 
 __Avlardan birini seç.__ Eğer kılıkları aynı ise, farklı renk yap. Böylece onu diğerlerinden ayıra bilirsin.
@@ -223,7 +223,7 @@ Projeni kaydet
 
 ##Extra Hedef 4:Geriye doğru sayma ekle
 
-__Oyuna zaman sınırı ekle. 30 saniyede kaç tane av yakalaya bilirisin?
+Oyuna zaman sınırı ekle. 30 saniyede kaç tane av yakalaya bilirisin?
 
 Zaman Scratch kartına bak ve nasıl yapıldığını öğren. Oyunu 30 saniyede bitecek şekilde programla.
 
@@ -247,7 +247,7 @@ Projeni kaydet
 
 ##Extra Hedef 6: Oyunu değiştir; av canlı kalsın
 
-__Bazen bir fikrin karşıtını yaparak, yeni fikirler oluştura bilirsin.
+Bazen bir fikrin karşıtını yaparak, yeni fikirler oluştura bilirsin.
 
 Oyunu değiştir ki, avlayan balık yerine, avlanan balıklardan birini kontrol edesin. Ne kadar süre  yakalanmadan dayana bilirsin?
 
