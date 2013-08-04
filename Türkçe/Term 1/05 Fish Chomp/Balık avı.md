@@ -72,8 +72,8 @@ Projeni kaydet
 
 ###Extra hedefler
 
-* Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
-* What does the __if on edge, bounce__ block do? Take it out and see what happens.
+* Rastgele ve hareket yazılımlarındaki rakamları değiştir. Avlar şimdi farklı hareket ediyorlar mı? 
+* Eğer kenara değerse geri dön kodu ne yapar? Kodu sil ve etkisini gör.
 
 ##3.Adım: Açgözlü balık avlarını yer
 
