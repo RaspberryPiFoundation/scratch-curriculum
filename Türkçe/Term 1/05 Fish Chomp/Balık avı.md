@@ -24,32 +24,27 @@ __Açgözlü balığın denizde yüzmesini sağlıyalım!__
 	(Hepsini durdur)
 ```
 
-###Test Your Project
-__Click the green flag.__ 
-Move the mouse pointer around the sea. Does the fish follow the pointer?
-What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
+###Projeni dene
+__Yeşil bayrağı tıkla.__ 
+Bilgisayar okunu deniz etrafında hareket ettir. Balık biligsayar okunu takip ediyor mu? Eğer biligsayar okunu hareket ettirmezsen ve balık yetişirse ne oldu? 
+Neye benzer? Niçin bu şekilde sonuçlandı?
 
-
-7. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
-(The _distance to_ block is in the
-Sensing palette).
-
+7. Açgözlü balığın deli gibi ters donüp yüzmesini, biligsayar okuna yakın olamdığı zaman yüzmesini kodlayarak durdurabilirisniz ( mesafe kodu algılama tabındadır).
 
 ```scratch
 
-	when FLAG clicked
-	forever	if distance to mouse-pointer > 10
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
+Bayrak tıklanınca
+sürekli tekrarla eğer biligsayar okuna mesafe > 10
+	fare okuna doğru dön
+	3 adım git
+(Hepsini durdur)
 ```
 
+###Projeni dene
 
-###Test Your Project
+Projeni kaydet
 
-Save your project
-
-##Things to try
+##Extra hedefler
 
 ￼If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
 
