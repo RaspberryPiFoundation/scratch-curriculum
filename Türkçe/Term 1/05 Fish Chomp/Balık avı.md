@@ -187,25 +187,24 @@ Av daha yavaş hareket ediyor mu? Bu oyunu daha iyi yaptı mı?
 --Bir balığı, diğerinden daha hızlı hareket ettire bilirmisin?.__
 
 
-Does the prey still move in a sensible way? Do these changes make the game better? 
-__ipucu:__ If your prey swims around in circles, check the values of the pick random block in the turn block.
+Bu değişiklikler oyunu daha iyi yaptımı?
+__ipucu:__ Eğer av daireler çizerek yüzüyorsa, rastgele rakam seç kodundaki değerleri kontrol et.
 
-How about you make each of the prey behave differently, using different combinations of these changes?
+Bu değişiklikleri kullanarak, her avın farkli davranmasını saglaya bilir misin?
 
-Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
+Bu değişiklikler oyunu daha iyi yaptımı?  Oyun daha ilginç, daha eğlenceli, daha kolay veya zor oldu mu? Bunlar daha mi iyi?
 
 Projeni kaydet
 
 ##Extra Hedef 2: .Avın açgözlü balıktan sakınmasını sağla 
 
-The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
+Bu oyundaki avlar aptal. Avlanana kadar rastgele yüzüyorlar. Gerçek av, avcısından uzaklaşır. __Avlardan birini, balıktan uzağa yüzdürelim.__
 
-There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the __Motion__ palette.
-
-Using that idea, __make one of the prey always point away from the Hungry Fish.__ You might want to make it wiggle as it swims away.
+Scratch programında, kuklaların yönünü belirten kod yoktur. Ancak bir avın diğer ava bakıp, diğer yöne dönmesini sağlayabilirsin. Bunun için gerekli kod 'Hareket' paletindedir.
+Bu bilgiyi kullanarak, avlardan birinin hep balıkdan uzağa dönmesini sağla. Yüzerken kıpırdatata bilirsin.
 
 ###Projeni dene
-Does this make the fish harder to catch? Does it make the game better?
+Bu avın yakalanmasını zorlaştırdı mı? Oyunu daha iyi yaptı mı?
 
 Projeni kaydet
 
