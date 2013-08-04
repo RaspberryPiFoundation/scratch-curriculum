@@ -64,18 +64,18 @@ Projeni kaydet
 ```
 
 ###Projeni dene
-__Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
+__Yeşil bayrağı tıkla__ avların yüzmelerini izle. Beklediğin şekilde yüzüorlar mı? Yüzmeleri gerçek yüzmeye benziyor mu?
 
-__At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
+__Şu an açgözlü balık ve avları arasında bir iletişim yoktur. Sonraki adımda bunu yazacağız.__
 
-Save your project
+Projeni kaydet
 
-###Things to try
+###Extra hedefler
 
 * Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
 * What does the __if on edge, bounce__ block do? Take it out and see what happens.
 
-##￼STEP 3: Hungry fish eats the prey
+##3.Adım: Açgözlü balık avlarını yer
 
 __Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
 * The Hungry Fish needs to close its mouth and make a "chomp" sound.
