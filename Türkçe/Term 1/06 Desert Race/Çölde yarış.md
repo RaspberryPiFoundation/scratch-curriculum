@@ -8,20 +8,18 @@ Bu oyun iki kişi tarafından oynanır. Oyunda papağan ve aslan çölde yarış
 
 ##Adım 1: Sahneyi oluştur ve kuklaları ekle
 
-1. Select the Stage, and add the desert background.
-ticking off the boxes below:
-￼￼￼2. Add a new sprite, select the lion sprite that you will find in the animals folder.
-3. Add another sprite, select the parrot sprite that you will find in the animals folder.
+1.Sahneyi seç ve çöl dekorunu ekle. 
+2.Hayvanlar dosyasından aslan ve papağan kuklalarını ekle.
 
 
 
 ##Adım 2: Kuklaları haraket ettir
 
 
-We want the sprite to move when you press a key.
+Kuklanın bir tuşa basınca hareket etmesini istiyoruz.
 
 
-1. First select the lion sprite and set it to move 4 steps when you press the ‘L’ key.
+1.Aslan kuklasını seç ve 'L' tuşu basılınca 4 adım git olarak programla
 
 ```scratch
 
@@ -29,7 +27,7 @@ We want the sprite to move when you press a key.
 	4 adım git
 ```
 
-2. Next, select the parrot sprite and set it to move 4 steps when you press the ‘A’ key.
+2. Papağan kuklasını seç ve 'A' tuşu basılınca 4 adım git olarak programla
 
 ```scratch
 
