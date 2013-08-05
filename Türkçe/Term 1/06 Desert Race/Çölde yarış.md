@@ -108,7 +108,8 @@ Yarışı kimin kazandığını bilmek istiyoruz. Yarış bitince, tekrar başla
 
 ##Adım 4: Yarışı bitir
 
-1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
+1. Papağan kuklasına yeni bir yazılım ekle ki, ekranın kenarına değince, yarışma verisi 0 olsun.
+
 
 ```scratch
 
@@ -120,8 +121,9 @@ Yarışı kimin kazandığını bilmek istiyoruz. Yarış bitince, tekrar başla
 		(Dur eğer ise)
 	(Dur eğer ise)
 ```
-2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the a parrot winning the race!
-3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
+2. Papağanın eğer yerışı kazanırsa bize söylemesini istiyoruz. Bunun için ses düğmesine bas ve yeni bir ses kayıt et. 
+
+3. Şimdi, kayıt ettiğin sesi çalıp, papağanın ben kazandım demesini sağlayacak bir yazılım ekle:
 
 ```scratch
 
@@ -135,25 +137,23 @@ Yarışı kimin kazandığını bilmek istiyoruz. Yarış bitince, tekrar başla
 		(Dur eğer ise)
 	(Dur eğer ise)
 ```
-4. Now repeat these steps for the lion.
+4. Aynı yazılımı aslan kuklasına ekle.
 
 ###Projeni dene
 __Yeşil bayrağı tıkla.__
 
-Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?
-Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
+Başlangıç düğmesine basa biliyor musun? 'A' ve 'L' tuşlarına basarak yarışa biliyor musun? 
+Kuklalar yarış sonunda, yarışı kazanınca ses yapıp, kazandıklarını söylüyorlar mı?
 
 Projeni kaydet
 
 ##Adım 5: Oyunu yeniden konumla
 
-After the race is finished we need to tell the other sprites we have won and reset the
-game so we can play again.
+Yarışma bitince, bunu diğer kuklalara söyleyip, yeniden başlangıç noktasına dönmemiz lazım.
 
-__We need the winning sprite to broadcast that it has won.__
+__Kazanan kuklanın kazandım haberini salması gerekl.__
 
-1. Click on the Parrot sprite.
-Add a block that broadcasts “finished” after the sprite says it has won.
+1. Papağan kuklasına tıkla. Kuklanın kazandığını söyledikten sonra, bitirdim haberini salan bir yazılım ekle.
 
 ```scratch
 
@@ -168,40 +168,36 @@ Add a block that broadcasts “finished” after the sprite says it has won.
 		(Dur eğer ise)
 	(Dur eğer ise)
 ```
-2. Now we need to add a new script that listens for the finished broadcast and moves the parrot
-back to the start. What happens if you change the value that x is set to?
+2. Şimdi, bitirdim haberinden sonra, papağanı başlangıç noktasına götürecek bir kod yazalım. X değerini değiştirirsen ne olur?
 
 ```scratch
 
 	Bitti haberi gelince
 	x, -175 olsun
 ```
-3. Now add the same script for the lion. Test different x values to make sure the lion and the parrot line up at the start.
-4. We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start
-when we click the flag.
+3. Aynı yazılımı aslan kuklasına ekle. Farklı x değerlerini dene ki, aslan ve papağan başlangıc noktasında hazır olsunlar.
+4. Proje başladığında, aslan ve papağanın aynı noktada olmaları için, bayrak tıklanınca onları hareket ettiren bir yazılım ekle.
 
 ```scratch
 
 	bayrak tıklanınca
 	x, -175 olsun
 ```
-5. Now click on the button sprite and add a script that shows it when it receives the finished message.
+5. Düğme kuklasını tıkla ve bitirdim haberini aldığını gösteren bir kod ekle.
 ￼￼￼￼￼￼￼￼￼￼
 ###Projeni dene
 __Yeşil bayrağı tıkla.__
 
-
-Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the
-other moving the Lion by pressing ‘L’?
+Arkadaşınla yarışa bilir misin? Biriniz aslan olsun ve 'A' düğmesine bassın, biriniz papağan olsun ve 'L' düğmesine bassın.
 
 Projeni kaydet
 
-##Ekstra hedefler: Destek ekle
+##Ekstra hedefler: Destek / Hızlandırıcı ekle
 
 
-* __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__
-* __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.
-* __Create another sound__ that the sprite will make when the boost is pressed.
+* Kuklaları bir gidişte, 30 adım ilerletecek bir yazılım ekle.
+* Kuklalara arkasından ateş çıkacak bir kılık ekle.
+* Kuklalara, hızlandırıcı tıklanınca çalınacak yeni bir ses ekle.
 ￼
 
 ###Projeni dene
