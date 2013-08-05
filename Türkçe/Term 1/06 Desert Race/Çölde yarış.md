@@ -55,7 +55,7 @@ Yarışı başlatmak ve kimin kazandığını algılamamız için bir yol bulmam
 	bayrak tıklanınca
 	göster
 ```
-4. NBaşlangıç düğmesinin 3'den geriye sayıp, tıklanınca görünmez olamsını istiyoruz. Bunun için bu yazılımı ekle:
+4. Başlangıç düğmesinin 3'den geriye sayıp, tıklanınca görünmez olamsını istiyoruz. Bunun için bu yazılımı ekle:
 
 ```scratch
 
@@ -205,5 +205,5 @@ Projeni kaydet
 Projeni kaydet
 
 
-__ferin, oyunu tamamladınız!__
+__Aferin, oyunu tamamladınız!__
 A Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.
