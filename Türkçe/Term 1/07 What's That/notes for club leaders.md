@@ -1,19 +1,18 @@
 #Kulüp yöneticileri için bilgiler
-##(Thamin et)
+##(Tahmin et)
 
 ##Tanıtım
 
-A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
-
+Karat tahtada rastgele bir nesne, biçimi bozulmuş şekilde gösterilir. Doğru resmi tıklayarak ne olduunu tahmin etmen gerekli. Ne kadar çabuk tahmine dersen, puanın o kadar yüksek olur.
 ##Yetenekler
 
 Projenin içerdiği yetenekler: 
 
-* Keeping and setting the score
-* Changing costumes and appearance
-* Setting a random answer
-* Detecting a click and checking if the right sprite was clicked 
-* Broadcast messages
+* Puan verisi ekleme
+* Kılık ve görünüm değiştirme
+* Rastgele cevap kodlama
+* Tıklanmayı algılamak ve doğru kuklanın tahmin edilip edilmediğini bilmek
+* Haber salmak
 
 ##Kaynaklar
 
