@@ -36,8 +36,8 @@ Kuklanın bir tuşa basınca hareket etmesini istiyoruz.
 ```
 
 ###Projeni dene
-__Click the green flag__ 
-Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
+__Yeşil bayrağı tıkla__ 
+'A' ve 'L' tuşlarına bastığında aslan ve papağan hareket ediyor mu?
 
 Projeni kaydet
 
@@ -70,15 +70,14 @@ We need to have a way to start the race and to know who has won. __First we crea
 ###Projeni dene
 __Click on the green flag.__
 
-When you press the start button does it countdown to the start of the race before disappearing?
+Başlangıç dügmesine bastığında, görünmez olmadan önce, geri geri 0'a sayıyor mu
 
 Projeni kaydet
 
-We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.
+Yarışmacıların yarış başladıktan sonra haraket etmesini  sağlamak ve yarış bitince bunu algılamamız için veri eklememiz lazım.
 
-5. Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.
-6. Now set racing to be 0 when the project is first started. Change your when flag clicked script
-from before to look like this:
+5. Bütün kuklalar için yarışma adında veri ekle. Yanındaki kutuda işaret olmasınki, sahnede görünmesin.
+6. Proje başladığında, yarışma verisi 0 olsun. Bayrak tıklanınca yazılımını şu şekilde değiştir:
 
 ```scratch
 
