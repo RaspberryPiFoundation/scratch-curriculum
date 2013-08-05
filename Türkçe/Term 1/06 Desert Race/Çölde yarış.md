@@ -85,9 +85,9 @@ Yarışmacıların yarış başladıktan sonra haraket etmesini  sağlamak ve ya
 	göster
 	Yarışma verisi 0 olsun
 ```
-7. Next, set the racing variable to be 1 when the starting countdown has finished.
-8. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows the
-parrot to move if __racing = 1__.
+7. Geri sayım bitince yarışma verisi 1 olsun..
+8. Eğer veri 1 değilse aslan ve papağanın hareket etmemesi lazım. Papağan kuklasını tıkla.
+Papağan kuklasına sadece veri 1 olduğunda hareket etmesine izin verecek bir yazılım ekle:
 
 ```scratch
 
@@ -96,15 +96,15 @@ parrot to move if __racing = 1__.
 		4 adım git
 	(Hepsini durdur)
 ```
-9. Now do the same for the lion sprite.
+9. Bunu aslan kuklası için tekrar et
 
 ###Projeni dene
 __Yeşil bayrağı tıkla.__
 
-Does the lion or the parrot move only after the countdown has finished?
+Aslan ve papağan geri sayım bittikden sonra hareket etmeye basliyor mu?
 
-We want to know who wins the race and reset it when it has finished so you can
-race again.
+Yarışı kimin kazandığını bilmek istiyoruz. Yarış bitince, tekrar başlaması için başlangıca dönmesini istiyoruz.
+
 
 ##Adım 4: Yarışı bitir
 
