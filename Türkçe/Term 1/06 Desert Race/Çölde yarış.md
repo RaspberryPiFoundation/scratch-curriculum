@@ -205,5 +205,5 @@ Projeni kaydet
 Projeni kaydet
 
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__ferin, oyunu tamamladınız!__
+A Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.
