@@ -16,24 +16,24 @@ Kodlamaya, kalemi sahnede hareket ettirdiğimizde çizmesini yazarak başlayaca�
 
 
 ```scratch
-when FLAG clicked
-forever
-	go to mouse-pointer
-(end forever)
+Bayrak tıklanınca
+sürekli tekrarla
+	fare okuna doğru dön
+(hepsini durdur)
 ```
 __Şimdi, bu kalem kuklasını gerçek bir kalem olarak kullanmak istiyoruz. Kalem aşağı ve kalem yukarı kodlarina bak..__ 
 6. Bilgisayar faresini aşağı bastığımız zaman kalemin de aşağıya inmesini, serbest bırakınca yukarıya çıkmasını istiyoruz. Bunu eğer... Bunu eğer... ise ve fare basılınca kodları ile yapabiliriz.
 
 ```scratch
-when FLAG clicked
-forever
-	go to mouse-pointer
-	if mouse down?
-	pen down
-	else
-	pen up
-	(end if)
-(end forever)
+Bayrak tıklanınca
+sürekli tekrarla
+	fare okuna doğru dön
+	eğer fareye basılı(mı)
+	kalemi bastır
+	değilse
+	kalemi kaldır
+	(dur eğer)
+(hepsini durdur)
 ```
 ##Projeni dene
 __Yeşil bayrağı tıkla.__
@@ -42,16 +42,14 @@ Kalem, fareyi ekranda takip ediyor mu?Fareye basıp, hareket ettirince ne oldu?
 7. Ekran karalamalarla dolunca, sil kodlamsını kullanarak sil.
 
 ```scratch
-when FLAG clicked
-clear
-forever
-	go to mouse-pointer
-	if mouse down?
-	pen down
-	else
-	pen up
-	(end if)
-(end forever)
+
+Bayrak tıklanınca
+sürekli tekrarla
+	fare okuna doğru dön
+	eğer fareye basılı(mı)
+	kalemi bastır
+	(dur eğer)
+(hepsini durdur)
 ```
 
 ##Projeni dene
@@ -63,89 +61,89 @@ PROJENI KAYDET
 
 ##Adım 2: silmek
 
-Rather than having to stop and start the whole project, let’s add a button that
-clears the drawing. It will do that using the clear block.
+Projeyi kapatıp yeniden başlamak yerine, ekrandaki karalamayı silecek bir düğme ekleyelim.
 
-1. Create a new sprite from the __resources/cancel button__ costume. 
-2. Change the sprite’s name to __clear__.
-3. Position the sprite near the bottom-left corner of the stage.
-4. Give the clear sprite this simple script:
+1. Resources/cancel button kuklasını aktar
+2. Kuklanın adını sil olarak değiştir.
+3. Kuklayı sahnenin alt kısmında sola yerleştir.
+4. Sil kuklasına bu kodlamayı ekle:
 
 ```scratch
-when clear clicked
-clear
+Temizle tıklanınca
+temizle
 ```
 
-##Test Your Project
-__Click on the green flag.__
+##Projeni dene
+__Yeşil bayarağı tıkla.__
 
-Does the clear button clear all your drawing?
+Sil düğmesi bütün karalamayı sildi mi?
 
-SAVE YOUR PROJECT
+Projeni dene
 
 ##Adım 3: renk değiştirmek
 
-So far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.
+Şu ana kadar sadece mavi çizgi çizdik. Şimdi diğer renkleri kullanalım. Değişik renkde kuklalar ekleyelim. Renli düğmelere-kuklalara tıklayınca çizginin rengi değişecek.
 
-1. Add a new sprite, called __red__, using the __resources/red-selector costume__. 
-2. Place it somewhere along the bottom of the frame, near the __clear button__.
-3. When the red sprite is clicked, it should broadcast the message __red__.
+1. Resources/red-selector kılığını kullanarak kırmızı adında kukla oluştur.
+2. Bunu ekranın alt kısmına, sil düğmesinin yakınına koy
+3. Kırmızı kuklası tıklanınca, kırmızı haberini salsın
 
-```scratch
-when Red clicked
-broadcast red
-```
-__Yes, that’s all it does. The hard work is done by the pencil.__
-
-￼￼￼￼In the pencil, import a new costume, __resources/red-pencil__. Set the costume centre to be the tip of the pencil as you did for the original costume.
-
-4. Add a new script to the pencil. When the pencil receives the message __red__, it should change to the red pencil costume and change the pen colour to red (using the set pen color to block).
-
-__Hint:__ if you click on the coloured square
-in the __set pen color to__ block, you can
-click the eyedropper on the red sprite to make sure it’s the same colour.
 
 ```scratch
-when I receive red
-switch to costume
-red-pencil
-set pen color to (red)
+Kırmızı tıklanınca
+kırmızı haberini sal
+```
+__Evet, yaptığı budur. Kalemin zor işi budur.__
+
+Resources/red-pencil dosyasından yeni kılık aktar. Kılığın  merkezini kalemin ucu olarak ayarla
+
+4.Kaleme yeni kod ekle. Kalem kırmızı haberini alınca, kırmızı kalem kılığına girsin.
+
+
+```scratch
+kırmızı haberini alınca
+kırmızı kalem kılığına gir
+kalem rengi kırmızı olsun
+
 ```
 
-##Test Your Project
-__Click on the green flag.__
+##Projeni dene
+__Yeşil bayrağı tıkla.__
 
-Start by drawing a line. Then click on the red selector sprite and draw some more. Does the pencil change costume? Does it now draw red? Does it draw from the tip of the red pencil?
+Çizgi çiz. Kırmızı kuklayı seç ve çizmeye devam et. Kalem kılık değiştirdi mi? Kırmızı çizmedi mi? Kalemin ucu ile çizebiliyor musun?
 
-SAVE YOUR PROJECT
+Projeni kaydet
 
-5. Repeat what you just did for the blue, yellow, and green selector sprites.
+5. Aynı yazılımı mavi, sarı ve yeşil kuklalar için tekrarla.
 
-##￼￼Test Your Project
-__Click on the green flag.__
+##Projeni dene
+__Yeşil bayrağı tıkla.__
 
-￼￼￼Do all the selector buttons work? Do they all change the pencil’s costume to the right colour? Do they all make the pencil draw in the right colour? Do all the costumes draw with the tip of the pencil?
+Bütün renk düğmeleri çalıştımı? Kalemler doğru renklerde çizdiler mi? Kalemler uç kısımlarını kullanarakmı çizdiler?
 
-SAVE YOUR PROJECT
+Projeni kaydet
 
 ##Adım 4: Sınırların içerisinde çizmek 
 
-You’ve probably noticed that you can draw all over the Stage, even in the border. We don’t want that to happen. We want to keep the drawing in the middle of the Stage. We can do this by making sure the pen isn’t allowed to leave the drawing area - the light grey part on the Stage.
+Çerçeveye çizilmesini istemiyoruz. Sadece ekranın ortasına çizilebilmesi için, kalemin açık gri olan bölge dışına çıkmasını engellememiz lazım.
 
+Çizim bölgesi 230 ve -230 x noktasında ve 170 ile -170 y noktasındadır.Bu değerleri eğer kodunu kullanarak ayarlayabiliriz.
 
-￼￼￼￼￼￼￼Remember that Scratch defines points using x and y axis. Our drawing area lies between 230 and -230 on the x-axis and 170 and -120 on the y-axis. We can use these values in an __if__ block, making sure the mouse is inside this area before we move the pencil to it.
+Bunun için, git kodunun etrafına, eğer kodu ekle. Eğer kodunun içerisine su kodu yaz:
+Fare y> -120 ve fare y< 170
+Fare x >-230 ve fare x <230
 
-To do this, wrap a new if block around your existing __go to... if__ block, and inside this new if check for the following:
+Bu yazılım için  bir kaç tane İşlemler kodlarını kullanmamız lazım.
 
-mouse y is greater than -120 and mouse y is less than 170
-and mouse x is greater than -230 and mouse x is less than 230
+Çizim bölgesi dışına çizemiyeğimiz için, kalemi her bıraktığmızda görünmez yapalim.
+Bunun için, eğer kodunu eğer ise ile değiştir. 
 
-__Note__ to do this you’ll need to use multiple __and__ operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:
 
 ```scratch
-clear
+Temizle
 forever if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
 go to mouse-pointer
+
 ```
 
 Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the __if__ with an __if else__ block. Keep the same condition for the __if__, and __show__ the pencil if it’s true, otherwise hide it.
@@ -169,12 +167,14 @@ forever
 (end forever)
 ```
 
-##Test Your Project
-__Click on the green flag.__
+##Projeni dene
 
-Can you still draw inside the drawing area? Can you draw outside the drawing area? What happens to the pencil when you leave the drawing area and go back in?
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
-SAVE YOUR PROJECT
+__Yeşil bayrağı tıkla.__
+
+
+Çizim alanının içerisine ve dışına çizebiliyor musun?
+
+Projeni kaydet
 
 ##Adım 5: silgi
 
