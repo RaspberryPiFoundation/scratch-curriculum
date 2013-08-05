@@ -3,38 +3,34 @@
 
 ###Tanıtım
 
-The project creates a basic drawing tool. It draws a line as you move your mouse over the screen. You can change the colour of the line and clear the screen.
+Bu proje, basit bir boyama aleti oluşturur. Bilgisayar faresini hareket ettirirdiğin zaman çizgi çizer. Çizginin rengini değiştirip, ekranı temizliyebilirsin.
 
 ###Yetenekler
 
 Projenin içerdiği yetenekler: 
 
-* Moving sprites
-* Drawing with the pen
-* Broadcasting and listening for events
-* Changing costumes
-* Setting constraints
-* Constructing and using Boolean expressions
+* Kuklaları hareket ettirmek
+* Kalemle çizmek
+* Haber salmak beklemek
+* Kılık değiştirmek
+* Sınırlamaları ayarlamak
+* Booelean değişkeni kullanmak
 
 ###Kaynaklar
 
-This project uses resources found in this project folder. Make sure this folder is on the desktop of each computer your children are using so they can access it.
+Bu projede kullanılan resimler Scratch dekor ve kılıklar dosyasındadır.
 
 ##Temel alıştırmalar
 
-
-Step 1: Drag and draw
-
-Step 2: Clearing up
-
-Step 3: Changing colour
-
-Step 4: Only drawing inside the border Step 5: Eraser
-
-Step 6: Stamps
+Adım 1: çek ve çiz
+Adım 2: silmek
+Adım 3: renk değiştirmek
+Adım 4: Sınırların içerisinde çizmek
+Adım 5: silgi
+Adım 6: damga
 ￼
 ##Extra Hedefler
 
-1. Rainbow pencil
-2. Keyboard shortcuts
-3. Big and small
+1. Gökkuşağı renginde kalem
+2. Klavye kisayolları
+3. Büyük ve küçük 
