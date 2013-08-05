@@ -7,15 +7,13 @@ Bu proje, basit bir boyama aleti oluşturur. Bilgisayar faresini hareket ettirir
 
 ##Adım 1: çek ve çiz 
 
-We’ll start with a pen that draws when you drag it around the Stage.
+Kodlamaya, kalemi sahnede hareket ettirdiğimizde çizmesini yazarak başlayacağız
+1. Yeni Scratch projesine başla. Kedi kuklasına sağ tıkla ve sil
+2. Sahneyi tıkla ve dekor dosyasından indoors/chalkboard dekorunu aktar.
+3. Kaynaklar/greenpencil kullanarak kalem adlı kuklayı ekle.
+4. Kılıklar tabını seç ve resim editör  kullanarak, resimin merkezini değiştir.
+5. Hep sürekli ve 'ye doğru dön kodlarını kullanarak kalemin, bilgisayar faresini ekranda izlemesini ayarla
 
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Click __Stage__ and then the __Backgrounds__ tab. Import the __indoors/chalkboard__ background.
-3. Create a new sprite called __pencil__, using __resources\green-pencil.__
-4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click __Set costume center__ and drag the lines until they are at the tip.
-5. Make the pencil follow
-the mouse around the stage using the __forever__ 
-and __go to__ mouse-pointer blocks.
 
 ```scratch
 when FLAG clicked
@@ -23,10 +21,8 @@ forever
 	go to mouse-pointer
 (end forever)
 ```
-
-__Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are __pen down__ and __pen up__
-
-6. We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an if... else and mouse down? blocks.
+__Şimdi, bu kalem kuklasını gerçek bir kalem olarak kullanmak istiyoruz. Kalem aşağı ve kalem yukarı kodlarina bak..__ 
+6. Bilgisayar faresini aşağı bastığımız zaman kalemin de aşağıya inmesini, serbest bırakınca yukarıya çıkmasını istiyoruz. Bunu eğer... Bunu eğer... ise ve fare basılınca kodları ile yapabiliriz.
 
 ```scratch
 when FLAG clicked
@@ -39,12 +35,11 @@ forever
 	(end if)
 (end forever)
 ```
-##Test Your Project
-__Click on the green flag.__
-Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.
+##Projeni dene
+__Yeşil bayrağı tıkla.__
+Kalem, fareyi ekranda takip ediyor mu?Fareye basıp, hareket ettirince ne oldu?
 
-
-7. Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.
+7. Ekran karalamalarla dolunca, sil kodlamsını kullanarak sil.
 
 ```scratch
 when FLAG clicked
@@ -59,12 +54,12 @@ forever
 (end forever)
 ```
 
-##Test Your Project
-__Click on the green flag.__
+##Projeni dene
+__Yeşil bayrağı tıkla.__
 
-Does your drawing disappear when you click on the green flag?
+Çizimin, yeşil bayrağı tıklayınca kayboldu mu?
 
-SAVE YOUR PROJECT
+PROJENI KAYDET
 
 ##Adım 2: silmek
 
