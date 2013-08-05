@@ -206,4 +206,4 @@ Projeni kaydet
 
 
 __Aferin, oyunu tamamladınız!__
-A Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.
+Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.
