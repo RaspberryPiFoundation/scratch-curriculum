@@ -3,7 +3,7 @@ Düzey 2
 #Çölde yarış
 
 __Tanıtım:__
-TBu oyun iki kişi tarafından oynanır. Oyunda papağan ve aslan çölde yarışırlar. Oyuncular, hayvanları kontrol etmek için klavyede bir düğmeye en hızlı şekilde basarlar. Ekranın sonuna ilk ulaşan oyuncu oyunu kazanır.
+Bu oyun iki kişi tarafından oynanır. Oyunda papağan ve aslan çölde yarışırlar. Oyuncular, hayvanları kontrol etmek için klavyede bir düğmeye en hızlı şekilde basarlar. Ekranın sonuna ilk ulaşan oyuncu oyunu kazanır.
 
 
 ##Adım 1: Sahneyi oluştur ve kuklaları ekle
@@ -25,16 +25,16 @@ We want the sprite to move when you press a key.
 
 ```scratch
 
-	when l key pressed
-	move 4 steps
+	l tuşu basılınca
+	4 adım git
 ```
 
 2. Next, select the parrot sprite and set it to move 4 steps when you press the ‘A’ key.
 
 ```scratch
 
-	when a key pressed
-	move 4 steps
+	l tuşu basılınca
+	4 adım git
 ```
 
 ###Projeni dene
@@ -54,19 +54,20 @@ We need to have a way to start the race and to know who has won. __First we crea
 
 ```scratch
 
-	when FLAG clicked
-	show
+	bayrak tıklanınca
+	göster
 ```
 4. Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
 
 ```scratch
 
-	when StartRace clicked
-	say 3 for 1 secs
-	say 2 for 1 secs
-	say 1 for 1 secs
-	say GO! for 1 secs
-	hide
+	Yarışa başla tıklanınca
+	3 de 1 saniye
+	2 de 1 saniye
+	1 de 1 saniye
+	Git! de 1 saniye
+	gizle
+	
 ```
 ###Projeni dene
 __Click on the green flag.__
@@ -83,9 +84,9 @@ from before to look like this:
 
 ```scratch
 
-	when FLAG clicked
-	show
-	set racing to 0
+	bayrak tıklanınca
+	göster
+	Yarışma verisi 0 olsun
 ```
 7. Next, set the racing variable to be 1 when the starting countdown has finished.
 8. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows the
@@ -93,10 +94,10 @@ parrot to move if __racing = 1__.
 
 ```scratch
 
-	when a key pressed
-	if racing = 1
-		move 4 steps
-	(end if)
+	bir tuş basılınca
+	eğer yarışma verisi = 1
+		4 adım git
+	(Hepsini durdur)
 ```
 9. Now do the same for the lion sprite.
 
@@ -114,28 +115,28 @@ race again.
 
 ```scratch
 
-	when a key pressed
-	if racing = 1
-		move 4 steps
-		if touching edge?
-			set racing to 0
-		(end if)
-	(end if)
+	bir tuş basılınca
+	eğer yarışma verisi = 1
+		4 adım git
+		kenara değdi mi
+			yarışma verisi = 1
+		(Dur eğer ise)
+	(Dur eğer ise)
 ```
 2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click __sounds__ and then record the sound of the a parrot winning the race!
 3. Now add blocks that play the sound you recorded and makes the parrot say it has won:
 
 ```scratch
 
-	when a key pressed
-	if racing = 1
-		move 4 steps
-		if touching edge?
-			set racing to 0
-			play sound recording1
-			say The Parrot Wins! for 3 secs
-		(end if)
-	(end if)
+	bir tuş basılınca
+	eğer yarışma verisi = 1
+		4 adım git
+		kenara değdi mi?
+			yarışma verisi 0 olsun
+			recordin 1 ses çal
+			papağan kazandı de 3 saniye
+		(Dur eğer ise)
+	(Dur eğer ise)
 ```
 4. Now repeat these steps for the lion.
 
@@ -159,24 +160,24 @@ Add a block that broadcasts “finished” after the sprite says it has won.
 
 ```scratch
 
-	when a key pressed
-	if racing = 1
-		move 4 steps
-		if touching edge?
-			set racing to 0
-			play sound recording1
-			say The Parrot Wins! for 3 secs
-			broadcast finished
-		(end if)
-	(end if)
+	bir tuş basılınca
+	eğer yarışma verisi = 1
+		4 adım git
+		kenara değdi mi?
+			yarışma verisi 0 olsun
+			recordin 1 ses çal
+			papağan kazandı de 3 saniye
+			Haber gelince
+		(Dur eğer ise)
+	(Dur eğer ise)
 ```
 2. Now we need to add a new script that listens for the finished broadcast and moves the parrot
 back to the start. What happens if you change the value that x is set to?
 
 ```scratch
 
-	when I receive finished
-	set x to -175
+	Bitti haberi gelince
+	x, -175 olsun
 ```
 3. Now add the same script for the lion. Test different x values to make sure the lion and the parrot line up at the start.
 4. We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start
@@ -184,8 +185,8 @@ when we click the flag.
 
 ```scratch
 
-	when FLAG clicked
-	set x to -175
+	bayrak tıklanınca
+	x, -175 olsun
 ```
 5. Now click on the button sprite and add a script that shows it when it receives the finished message.
 ￼￼￼￼￼￼￼￼￼￼
