@@ -20,23 +20,22 @@ Bu projede kullanılan resimler Scratch dekor ve kılıklar dosyasındadır.
 
 ##Gerekli olan Scratch Kartı:
 
-Timer
+Zaman ayarı
 
 ##Temel alıştırmalar
 
-Adım 1:  Make different things appear on the blackboard 
+Adım 1: Tahtada farklı nesnelerin görünmesini sağla
 
-Adım 2:  Make the pictures distorted
+Adım 2: Resimlerin biçimini değiştir
 
-
-Adım 3:  Allow the player to guess the picture
+Adım 3: Oyuncuların resmi tahmin etmesine izin ver
 ￼
 ##Extra Hedefler
-1. Make the game harder or easier
-2. Distort the picture differently in each game
-3. Make a game have a few rounds
-4. Make later rounds more difficult
-5. Keep playing until the player gets it wrong
-6. Make the game harder or easier depending on how well the player does. 
-7. Keep track of the highest score
-8. Make wrong guesses expensive
+1. Oyunu daha kolay veya zor yap
+2. Resmin biçimini her oyunda değiştir
+3. Bir kaç seviyeli oyun oluştur
+4. Sonraki seviyeleri daha zor yap
+5. Oyuncu yanlış yapana dek oyun devam etsin
+6. Oyuncunun oynama yeteneğine göre oyunu daha zor veya kolay yap
+7. En yüksek puanları kayıt et
+8. Yanlış tahminleri pahalı yap
