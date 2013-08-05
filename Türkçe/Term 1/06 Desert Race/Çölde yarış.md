@@ -55,7 +55,7 @@ Yarışı başlatmak ve kimin kazandığını algılamamız için bir yol bulmam
 	bayrak tıklanınca
 	göster
 ```
-4. Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:
+4. NBaşlangıç düğmesinin 3'den geriye sayıp, tıklanınca görünmez olamsını istiyoruz. Bunun için bu yazılımı ekle:
 
 ```scratch
 
@@ -68,7 +68,7 @@ Yarışı başlatmak ve kimin kazandığını algılamamız için bir yol bulmam
 	
 ```
 ###Projeni dene
-__Click on the green flag.__
+__Yeşil bayrağı tıkla.__
 
 Başlangıç dügmesine bastığında, görünmez olmadan önce, geri geri 0'a sayıyor mu
 
@@ -99,7 +99,7 @@ parrot to move if __racing = 1__.
 9. Now do the same for the lion sprite.
 
 ###Projeni dene
-__Click on the green flag.__
+__Yeşil bayrağı tıkla.__
 
 Does the lion or the parrot move only after the countdown has finished?
 
@@ -138,7 +138,7 @@ race again.
 4. Now repeat these steps for the lion.
 
 ###Projeni dene
-__Click on the green flag.__
+__Yeşil bayrağı tıkla.__
 
 Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?
 Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
@@ -188,7 +188,7 @@ when we click the flag.
 5. Now click on the button sprite and add a script that shows it when it receives the finished message.
 ￼￼￼￼￼￼￼￼￼￼
 ###Projeni dene
-__Click on the green flag.__
+__Yeşil bayrağı tıkla.__
 
 
 Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the
