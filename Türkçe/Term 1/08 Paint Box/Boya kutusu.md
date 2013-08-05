@@ -140,31 +140,31 @@ Bunun için, eğer kodunu eğer ise ile değiştir.
 
 
 ```scratch
-Temizle
-forever if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
-go to mouse-pointer
+Sürekli tekrarla 
+eğer fare y>-120 ve fare y <170 ve fare x>-230 ve fare x<230
+Fare okuna doğru dön
 
 ```
 
 Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the __if__ with an __if else__ block. Keep the same condition for the __if__, and __show__ the pencil if it’s true, otherwise hide it.
 
 ```scratch
-when FLAG clicked
-pen up
-clear
-forever
-	if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
-		go to mouse-pointer
-		show
-		if mouse down?
-			pen down
-		else
-			pen up
-		(end if)
-	else
-		hide
-	(end if)
-(end forever)
+Bayrak tıklanınca
+kalemi kaldır
+temizle
+sürekli tekrarla
+	eğer fare y>-120 ve fare y <170 ve fare x>-230 ve fare x<230
+		Fare okuna doğru dön
+		göster
+		fareye basılı mı
+			kalemi bastır
+		değilse
+			kalemi kaldır
+		(dur eğer)
+	değilse
+		gizle
+	(dur eğer)
+(sürekli durdur)
 ```
 
 ##Projeni dene
