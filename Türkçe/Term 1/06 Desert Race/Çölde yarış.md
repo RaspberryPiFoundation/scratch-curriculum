@@ -44,11 +44,11 @@ Projeni kaydet
 
 ##Adım 3: Yarışı başlat
 
-We need to have a way to start the race and to know who has won. __First we create a start button.__
+Yarışı başlatmak ve kimin kazandığını algılamamız için bir yol bulmamız lazım. __Önce başlangıç düğmesi oluşturalım.__
 
-1. Add a new sprite from a file. Choose the button sprite which is inside “things”.
-2. Edit the costume of the button sprite, add the text ‘start’ to it and click OK. Move the sprite to the middle of the stage.
-3. Now add a script that shows the sprite when the project is run:
+1. Dosyadan yeni kukla ekle. 'Things' dosyasından düğme kuklasını seç.
+2. Düğme kuklasının kılığını düzenle ve üzerine 'başlangıç' yaz. Kuklayı sahnenin ortasına koy.
+3. Proje başladığında kuklanın görünmesi için bu yazılımı ekle:
 
 ```scratch
 
