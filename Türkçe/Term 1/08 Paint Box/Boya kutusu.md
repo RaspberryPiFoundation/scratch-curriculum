@@ -271,7 +271,7 @@ Create two new tool-selection sprites, called bigger and smaller. They should ha
 The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an if-else block, similar to how the sprite chooses between putting the pen down or stamping)
 Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.
 
-SAVE YOUR PROJECT
+Projeni kaydet
 
 What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.
 To stop that, you need to set the size to 100% every time you change to a pencil tool. so that the tools look the right size.
@@ -279,17 +279,17 @@ To stop that, you need to set the size to 100% every time you change to a pencil
 To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new variable called stampSize, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.
 ￼￼￼￼￼￼￼￼
 ￼
-##￼Test Your Project
+##Projeni dene
 __Click on the green flag.__
 
 Do the size controls work for the pencils?
 
 What happens if you switch to the stamp, change the size and then switch back to a pencil?
 
-SAVE YOUR PROJECT
+Projeni kaydet
 
 
-￼￼￼￼￼￼￼__Well done you’ve finished, now you can enjoy the game!__
+__￼￼Aferin, oyunu tamamladınız!he game!__
 
 
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.
