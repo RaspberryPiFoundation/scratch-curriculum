@@ -1,12 +1,12 @@
-Level 2
+Düzey 2
 
-#Desert Race
+#Çölde yarış
 
-__Introduction:__
-This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
+__Tanıtım:__
+TBu oyun iki kişi tarafından oynanır. Oyunda papağan ve aslan çölde yarışırlar. Oyuncular, hayvanları kontrol etmek için klavyede bir düğmeye en hızlı şekilde basarlar. Ekranın sonuna ilk ulaşan oyuncu oyunu kazanır.
 
 
-##￼STEP 1: Create the scene and add the sprites
+##Adım 1: Sahneyi oluştur ve kuklaları ekle
 
 1. Select the Stage, and add the desert background.
 ticking off the boxes below:
@@ -15,7 +15,7 @@ ticking off the boxes below:
 
 
 
-##STEP 2: Make the lion and the parrot move
+##Adım 2: Kuklaları haraket ettir
 
 
 We want the sprite to move when you press a key.
@@ -37,14 +37,14 @@ We want the sprite to move when you press a key.
 	move 4 steps
 ```
 
-###Test Your Project
+###Projeni dene
 __Click the green flag__ 
 Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
 
-Save your project
+Projeni kaydet
 
 
-##￼STEP 3: Starting the race
+##Adım 3: Yarışı başlat
 
 We need to have a way to start the race and to know who has won. __First we create a start button.__
 
@@ -68,12 +68,12 @@ We need to have a way to start the race and to know who has won. __First we crea
 	say GO! for 1 secs
 	hide
 ```
-###Test Your Project
+###Projeni dene
 __Click on the green flag.__
 
 When you press the start button does it countdown to the start of the race before disappearing?
 
-Save your project
+Projeni kaydet
 
 We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.
 
@@ -100,7 +100,7 @@ parrot to move if __racing = 1__.
 ```
 9. Now do the same for the lion sprite.
 
-###Test Your Project
+###Projeni dene
 __Click on the green flag.__
 
 Does the lion or the parrot move only after the countdown has finished?
@@ -108,7 +108,7 @@ Does the lion or the parrot move only after the countdown has finished?
 We want to know who wins the race and reset it when it has finished so you can
 race again.
 
-##￼STEP 4: Finishing the race
+##Adım 4: Yarışı bitir
 
 1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
 
@@ -139,15 +139,15 @@ race again.
 ```
 4. Now repeat these steps for the lion.
 
-###Test Your Project
+###Projeni dene
 __Click on the green flag.__
 
 Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?
 Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
 
-Save your project
+Projeni kaydet
 
-##￼STEP 5: Resetting the game
+##Adım 5: Oyunu yeniden konumla
 
 After the race is finished we need to tell the other sprites we have won and reset the
 game so we can play again.
@@ -189,25 +189,26 @@ when we click the flag.
 ```
 5. Now click on the button sprite and add a script that shows it when it receives the finished message.
 ￼￼￼￼￼￼￼￼￼￼
-###Test Your Project
+###Projeni dene
 __Click on the green flag.__
 
 
 Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the
 other moving the Lion by pressing ‘L’?
 
-Save your project
+Projeni kaydet
 
-##￼Challenge: Add a booster
+##Ekstra hedefler: Destek ekle
+
 
 * __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__
 * __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.
 * __Create another sound__ that the sprite will make when the boost is pressed.
 ￼
 
-###Test Your Project
+###Projeni dene
 
-Save your project
+Projeni kaydet
 
 
 __Well done you’ve finished, now you can enjoy the game!__
