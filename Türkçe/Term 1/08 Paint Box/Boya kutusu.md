@@ -176,115 +176,114 @@ __Yeşil bayrağı tıkla.__
 
 Projeni kaydet
 
-##Adım 5: silgi
+##Adım 5: Temizleme
 
-__￼￼￼￼Drawing lines is great, but there are times when you’ve made a mistake and you want to rub it out.__ We can do that with a new pencil tool that draws in grey (the same colour as the background).
+__Çizgi çizmek çok iyi, ama bazen hata yaptığın zaman onu silebilmen lazım. Bunu yeni bir kalem aleti ile yapabilirizi. Bu alet dekor ile aynı renkde, gri renginde çizer.
 
-Add a new button-sprite to the Stage to select the eraser. Use the __resources/eraser__ costume for it, making it smaller to fit at the bottom of the Stage. It should work the same as the other colour-selection buttons, sending an eraser message.
 
-The pencil sprite should respond to the eraser message by switching the pen colour to grey (remember you can use the __picker__ to select the colour of the background). It will also need a new costume to represent the eraser tools: use the same __resources/eraser__ costume. __Remember to reset the costume’s centre.__
+1. İstediğin bir resimi yeni kukla olarak ekle. Küçült ve ekranin alt noktasına kaydır. Bu kukla tıklanınca, damga haberi salması lazım.
+2. Bu kalem kuklası için damga düğmesi gibi yeni bir kılık ekle.
+3. Kalem kuklasını seç ve bu sadece bu kukla için kalem kodu denilen bir değişken ekle. Bunu çizgi çizdiğimizi ya da damgalama yaptığımızı algılamak için kullanacağız.
+4.Damga haberine karşılık vermek için yeni bir yazılım ekle. Bunun kılığı damga olarak  ve kaem modu değişkeninide yanlış olarak ayarlaması gerekli.
+5. Diğer alet haberlerini ( kırmızı, yeşil, mavi ve temizleme) için de yazılımı değiştir ki kalem modu verisi doğru'ya ayarlansın.
 
-##Test Your Project
-__Click on the green flag.__
 
-Does the eraser rub out lines? Does it work right up to the edges? Can you switch between eraser and pencil tools?
+Resources/eraser dosyasından sahneye yeni düğme-kukla aktar. Küçültki, sahneye uygun ebatda olsun. Diğer dügmelerle aynı şekilde çalışsın, tek farkı temizleme haberi salması.
 
-SAVE YOUR PROJECT
+Kalem kuklası, temizleme haberine, renk değiştirip gri olarak karşılık vermeli. Ayrıca, temizleme aletlerini temsil eden yeni bir kılığa ihtiyacı olacak. Bunun için resources/eraser kılığını kullanın. Kılığı sahnenin merkezine yerleştirmeyi unutmayın.
+##Projeni dene
+__Yeşil bayrağı tıkla.__
+
+Temizleme aleti çizgileri sildi mi? Kenarlara kadar çalıştı mı? Temizleme aletinden kalem aletlerine değiştirebiliyor musun?
+
+Projeni kaydet
 
 ##Adım 6: damga 
 
-The next thing to add is a stamp tool, to stamp small pictures on the drawing.
+Bu adımda, resime küçük resimler damgalayacak bir damga aleti eklemen gerekli.
+
 Activity Checklist
+se button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. 
 
-1. Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should __broadcast stamp__
-2. Add a new costume for this pencil sprite, the same as the one you chose for the __stamp__ button.
-3. Select the pencil sprite and create a new variable __pencil mode__ for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.
-4. Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the __pencil mode__ variable to __false__.
-5. Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the __pencil mode__ to __true__.
-6. Finally, lets check this variable __when the mouse button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. 
-
-##￼￼￼￼￼￼￼￼￼￼￼Test Your Project
-__Click on the green flag.__
+##Projeni dene 
+__Yeşil bayrağı tıkla.__
 ￼￼
-Does the stamp tool work correctly?
+Temizleme aleti doğru calıştımı?
 
-What happens when you switch back to one of the normal pencil tools?
+Bundan diğer kalem aletine değiştirdiğin zaman ne oldu?
 
-SAVE YOUR PROJECT
+Projeni kaydet
 ￼
-__Well done, you have completed the basic steps for this project.
+__Aferin, bu oyun için gerekli olan temel adımları tamamladın.
+
 Extra Hedefler!__
 ￼￼￼
 ##Hedef 1: Gökkuşağı renginde kalem
 
-Let’s add a special pencil that paints in rainbow colours. It’s something that you can’t do with ordinary pens and pencils, so it’s nice to show off how drawing on a computer allows you do to different things. The secret to making it work is the change pen colour by block.
+Gökkuşağı renklerinde çizen bir kalem ekleyelim. Bunu normalde kalemlerle yapabilirisin, bilgisayarda nasıl yapılacağını öğrenmek zevkli olur. Bunun için kalemin rengini blok kodlama ile değiştirmen lazım.
 
-First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:
+İlk olarak, gökkuşağı aleti kuklasını ve kılığını kalem kuklasına ekle.
 
-1. Create a new tool selection sprite and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the resources/rainbow-selector costume and have it broadcast rainbow when clicked.
-2. Add the resources/rainbow-pencil costume to the pencil sprite.
+1. Yeni alet kuklası yap ve sahnenin alt noktasına diğer kalem aletlerinin yanına yerleştir. Resources/rainbow-selector kılığını kullanarak gökkuşağı haberini sal.
+2. Resources/rainbow-pencil kılığını kalem kuklasına ekle. Kalemin rengini 1 saniyede bir çok kere değiştirecek bir kodlama yazmalısın( ben her 0.05 saniyede 5 defa değiştirmenin uygun olduğunu düşünüyorum ama siz farklı değerleri deneyebilirsiniz.  Zaman ayarı kartı bunun nasıl yapıldığını gösterir. Kalemin rengini  zamanla -1 ile değiştir yerine 5 ile değiştir blokunu kullan.
 
-You need to build a script that will change the pen colour many times a second to give the rainbow effect (I found that changing it by 5 every 0.05 seconds works well, but you should try out different values). The timer Scratch card shows how you can make something change every so often. Use a change pen colour by 5 block instead of a change timer by -1 block inside the loop.
+Kalemin renginin sadece seçtiğin zaman değişmesi için bunu kontrol etmen lazim, yoksa bütün kalemler gökkuşağı gibi yazar! Bunun için gökkuşağı-değiş adlı bir veri oluştur ve gökkuşağı etkisi oluşturmak istediğinde doğru değerini ver, yoksa yanlış değerini ver. Kalem her aletin verdiği habere, bu değişkene göre cevap versin.
+Damga adımında öğrendiklerini gökkuşağı etkisi oluşturmak için kullan. Aletlerin haberine iki değişken kullanarak cevap verebilirsin: kalem mode ve gökkuşağı-değiş.
 
-You also need to control that loop so that it only changes the pen colour when you’ve selected the rainbow pencil, otherwise all the pencils will have a rainbow effect! You can do this in a very similar way to how the pencil sprite changes between pencil and stamp modes. You need to create a variable called rainbowChange that has the value true when you want the rainbow effect and false otherwise. Every time the pencil responds to a tool-selection message, it should set the value of rainbowChange accordingly.
+##Projeni dene
+__Yeşil bayrağı tıkla.__
 
-Use what you learnt from the stamp step above to control the rainbow effect. The scripts that respond to the tool-selection messages will set two variables each: pencilMode and rainbowChange.
+Gökkuşağı aleti doğru çalışıyormu?
+Normal kalem aletine geri döndüğünde ne oldu?
 
-##Test Your Project
-__Click on the green flag.__
-
-Does the rainbow tool work correctly?
-
-What happens when you switch back to one of the normal pencil tools?
-
-SAVE YOUR PROJECT
-
-##￼Hedef 2: Klavye kısayollarıı
-
-Rather than using the tool-selection sprites at the bottom of the stage, you can use the keyboard to select the different tools.
-You can use the when [] key pressed blocks to respond to the keyboard. For each key you want to use, you’ll need another when [] key pressed block, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.
-
-I used these shortcuts:
-* Clear all - a
-* Eraser - e
-* Red pencil -r 
-* Blue pencil - b
-* Yellow pencil - y
-* Green pencil - g
-* Rainbow pencil - w
-￼￼￼* Stamp - s
-
-##Test Your Project
-__Click on the green flag.__
-
-￼￼Do all the tools get selected with the correct keyboard shortcuts? Does each of the tools work correctly when you select it with keyboard? Are the correct tools still selected with the tool-selection sprites on the stage?
-
-SAVE YOUR PROJECT
-
-##Hedef 3: Büyük ve küçük
-Another feature that most drawing packages have is the ability to change the
-size of the pencil. Let’s add that.
-There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.
-
-Create two new tool-selection sprites, called bigger and smaller. They should have the resources/bigger-selector and resources/smaller-selector costumes and should send the bigger and smaller messages.
-
-The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an if-else block, similar to how the sprite chooses between putting the pen down or stamping)
-Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.
 
 Projeni kaydet
 
-What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.
-To stop that, you need to set the size to 100% every time you change to a pencil tool. so that the tools look the right size.
+##￼Hedef 2: Klavye kısayollarıı
 
-To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new variable called stampSize, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.
-￼￼￼￼￼￼￼￼
-￼
+Alet kuklaları yerine, klavye kısayollarını kullanabiliriz. Mesela, boşluk tuşu basılınca, klavyeye cevap vermeyi durdurur. Her kullanmak istediğin tuş için yeni bir .. tuşu basılınca kodu kullanman lazım. Bu kodları shaneye ekle.
+
+Ben bu klavye kısayollarını kullandım:
+
+Hepsini temizle- a
+Temizleyici- e
+Kırmızı kalem-r
+Mavi kalem-b
+Sarı kalem-y
+Yeşil kalem-g
+Gökkuşağı kalem-w 
+Damga-s
+
+
 ##Projeni dene
-__Click on the green flag.__
+__Yeşil bayrağı tıkla.__
 
-Do the size controls work for the pencils?
+￼Klavye kısayolları doğru çalıştımı?
+Seçtiğin aletler bastığın klavye kısayollarına göre çalıştımı?
 
-What happens if you switch to the stamp, change the size and then switch back to a pencil?
+Projeni kaydet
+
+##Hedef 3: Büyük ve küçük
+ABir cok resim çizme programlarında büyütme ve küçültme işlemi vardır. Bunu bizim programa ekleyelim. Sorun şu ki bazen kuklanın bazen de kuklanın kılığının ebatını değiştirmemiz gerekli.
+
+Iki tane yeni alet kuklası oluştur, birine büyük diğerine küçük adını ver. Resources/bigger-selector ve resources/smaller-selector adlı kılıklarını ekle, bunlar büyük ve küçük haberlerini salsınlar.
+
+Kalem kuklası bu habere ya ebatını 1 olarak değiştirerek veya kılığının ölçütünü 10 ile değiştirerek cevap verebilir. Büyük ve küçük işlemleri için klavye kısayollarını kullanamayı unutma. Ben aşağı ve yukarı tuşlarını kullandım.
+
+
+Projeni kaydet
+
+Damganın ölçütünü değiştirdiğin zaman, kalemin ekrandaki ölçütününde değiştiğini fark ettinmi?
+Bunun olmaması için, ölçütü her kalem kuklasını seçtiğinde %100 'e ayarla.
+
+Daha da iyi sonuç alabilmek için, damganın tıklanınca, kalemi seçmeden once ne büyüklükde olduğunu hatırlayıp, o ebata dönmesini ayarla.  Bunun için damga-ölçütü denilen bir değişken oluştur. Bu veri damganın ölçütü her değiştiğinde, değişsin. Böylece damga aleti seçilince, ölçutünü bu değişkene göre ayarlayabilir.
+
+##Projeni dene
+__Yeşil bayrağı tıkla.__
+
+Ölçüt kontrolları kalem kuklaları için çalışıyor mu?
+
+Damga aletini seçip, ebatını değiştirip, geri kalem aletine dönünce ne oldu?
 
 Projeni kaydet
 
