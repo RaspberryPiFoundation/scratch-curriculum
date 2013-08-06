@@ -289,7 +289,6 @@ Damga aletini seçip, ebatını değiştirip, geri kalem aletine dönünce ne ol
 Projeni kaydet
 
 
-__￼￼Aferin, oyunu tamamladınız!he game!__
-
+__Aferin, oyunu tamamladın. Eğlenerek oyna!__
 
 Oyununuzu aile ve arkadaşlarınızla, menu çubuğundaki__paylaş__ düğmesine basarak paylaşabilrisiniz.
