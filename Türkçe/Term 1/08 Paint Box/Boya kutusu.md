@@ -146,7 +146,7 @@ Fare okuna doğru dön
 
 ```
 
-Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the __if__ with an __if else__ block. Keep the same condition for the __if__, and __show__ the pencil if it’s true, otherwise hide it.
+Çizim alanı dışına çizemediğimiz için, kalemi kullanmadığımız zaman gizleyebiliriz. Bunun için, eğer kodunu, eğer ise ile değiştirin.  Eğer için koşulları aynı bırak, eğer doğru ise kalemi göster, değilse gizle.
 
 ```scratch
 Bayrak tıklanınca
@@ -202,8 +202,9 @@ Projeni kaydet
 
 Bu adımda, resime küçük resimler damgalayacak bir damga aleti eklemen gerekli.
 
-Activity Checklist
-se button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. 
+Etkinlik kontrol listesi
+eğer düğme basıldığında biz çizim veya damga yapmamız gerektiğini algılıyormuyuz?
+Eğer kalem modu =doğru, biz tıklanan kalemi , değilse damgayı kullanmalıyız.
 
 ##Projeni dene 
 __Yeşil bayrağı tıkla.__
