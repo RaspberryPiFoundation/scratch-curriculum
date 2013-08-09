@@ -11,7 +11,7 @@ Tahtada bir kaç farklı reimin görünmesini istiyoruz.
 2. Sahneyi tıkla ve dekorlar dosyasından binaiçi/chalkboard dekorunu seç.
 3. Yeni bir kukla ekle ve istediğin kılığı seç.
 4. Yeni kuklayı ekranın orta noktasına yerleştir. Gerekli ise büyüt veya küçült.
-5.Kuklalar grubuna git ve dört tane daha nesne aktar. Ne olacaklarına sen karar ver. Şimdi rastgele bir resimin görünmesini sağlıyalım.
+5.Kuklalar gurubuna git ve dört tane daha nesne aktar. Ne olacaklarına sen karar ver. Şimdi rastgele bir resimin görünmesini sağlıyalım.
 6. Bu kodlamayı yaz:
 
 
