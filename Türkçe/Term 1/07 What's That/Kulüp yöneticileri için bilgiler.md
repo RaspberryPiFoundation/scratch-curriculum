@@ -3,7 +3,7 @@
 
 ##Tanıtım
 
-Kara tahtada rastgele bir nesne, biçimi bozulmuş şekilde gösterilir. Doğru resmi tıklayarak ne olduunu tahmin etmen gerekli. Ne kadar çabuk tahmin edersen, puanın o kadar yüksek olur.
+Kara tahtada rastgele bir nesne, biçimi bozulmuş şekilde gösterilir. Doğru resmi tıklayarak ne olduğunu tahmin etmen gerekli. Ne kadar çabuk tahmin edersen, puanın o kadar yüksek olur.
 ##Yetenekler
 
 Projenin içerdiği yetenekler: 
