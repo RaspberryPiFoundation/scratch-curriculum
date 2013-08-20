@@ -149,8 +149,11 @@ __Note__ to do this you’ll need to use multiple __and__ operator blocks, one f
 
 ```scratch
 clear
-forever if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
-go to mouse-pointer
+forever 
+	if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
+		go to mouse-pointer
+	(end if)
+(end forever)
 ```
 
 Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the __if__ with an __if else__ block. Keep the same condition for the __if__, and __show__ the pencil if it’s true, otherwise hide it.

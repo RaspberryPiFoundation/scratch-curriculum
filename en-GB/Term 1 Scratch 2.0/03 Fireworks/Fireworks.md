@@ -59,7 +59,7 @@ the screen, but stay in the same place horizontally.
 __Click the green flag, place your mouse over the stage and press the space bar.__ 
 Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
 
-7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
+7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever__ block and then check if the mouse button is pressed with a __if mouse down__.
 Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least make
 sure the rocket is hidden when everything starts up.
 
@@ -67,10 +67,12 @@ sure the rocket is hidden when everything starts up.
 
 	when FLAG clicked
 	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		show
-		glide 1 secs to x: mouse x y: mouse y
+	forever 
+		if mouse down?
+			go to x: mouse x y: -200
+			show
+			glide 1 secs to x: mouse x y: mouse y
+		(end if)
 	(end forever)
 ```
 ###Test Your Project
@@ -91,12 +93,14 @@ to the Sounds tab and click import
 
 	when FLAG clicked
 	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
+	forever 
+		if mouse down?
+			go to x: mouse x y: -200
+			play sound bang
+			show
+			glide 1 secs to x: mouse x y: mouse y
+			hide
+		(end if)
 	(end forever)
 ```
 2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
@@ -105,13 +109,15 @@ to the Sounds tab and click import
 
 	when FLAG clicked
 	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode
+	forever 
+		if mouse down?
+			go to x: mouse x y: -200
+			play sound bang
+			show
+			glide 1 secs to x: mouse x y: mouse y
+			hide
+			broadcast explode
+		(end if)
 	(end forever)
 ```
 ###Test Your Project
@@ -218,13 +224,15 @@ This occurs because when the rocket broadcasts its explosion, it will immediatel
 
 	when FLAG clicked
 	hide
-	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode and wait
+	forever 
+		if mouse down?
+			go to x: mouse x y: -200
+			play sound bang
+			show
+			glide 1 secs to x: mouse x y: mouse y
+			hide
+			broadcast explode and wait
+		(end if)
 	(end forever)
 ```
 ###Test Your Project

@@ -55,7 +55,7 @@ Great! We can make the sprite change costumes forever, but how do we make it sto
 1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for all sprites, then uncheck the box next to it so it doesn’t display on the stage.
 2. Set stopped to 1 when someone clicks on the image using
 when sprite1clicked and set stopped to 0 making sure to change the value from 0 to 1.
-3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
+3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to be a forever with an if block inside it. Use a new equals operator to check if stopped equals 0
 4. Finally, add a set sprite1stopped to 0 underneath the when flag clicked
 
 ###Test Your Project
