@@ -1,20 +1,27 @@
+---
+layout: scratchProject
+title: Caça às bruxas
+term: 1
+
+---
+
 Nível 1
 
 #Caça às bruxas
 
 __Introdução:__
-Neste jogo você deve caçar as bruxas que aparecem na tela. Você ganha pontos que acertar uma delas. 
+Neste jogo você deve caçar as bruxas que aparecem na tela, cada vez que acertar uma delas você ganha pontos. 
 O objetivo é ganhar o máximo de pontos em 30 segundos!
 
 ##PASSO 1: Crie uma bruxa voadora
 
 1. Crie um novo projeto Scratch.
 2. Apague o personagem do gato e substitua a imagem de fundo pela imagem nature/woods.
-3. Use o botão __escolha um sprite do arquivo__ para adicionar um novo personagem bruxa ao projeto (selecione fantasy/witch1). 
+3. Use o botão _escolha um sprite do arquivo_ para adicionar um novo personagem bruxa ao projeto (selecione fantasy/witch1). 
 
 Agora queremos que a nossa bruxa se mova
 
-4. Adicione uma variável chamada "velocidade" e selecione a opção __para este objeto apenas__.
+4. Adicione uma variável chamada "velocidade" e selecione a opção _para este objeto apenas_.
 
 __Importante:__ No Palco, deve aparecer “objeto1 velocidade”.
 Se aparecer apenas “velocidade”, apague a variável e crie de novo selecionando "para este objeto apenas".
@@ -44,7 +51,7 @@ Abaixo do comando __mova__, adicione um  comando `se tocar na borda, volta`.
 			se tocar na borda, volta
 		fim
 		
-7. Para evitar que a bruxa fique de cabeça para baixo, clique  __somente esquerda-direita__ na área de propriedades do personagem.
+7. Para evitar que a bruxa fique de cabeça para baixo, clique  _somente esquerda-direita_ na área de propriedades do personagem.
 
 ###Teste o projeto
 
@@ -95,7 +102,7 @@ O que acontece se você escolher números muito grandes ou muito pequenos?__
 ##PASSO 3: Faça a bruxa desaparecer ao é clicada
 
 Para transformar isso em um jogo, precisamos que o jogador faça algo. Eles precisam clicar na bruxa para que ela desapareça. 
-Ao ser clicada, a bruxa deve desaparecer e também vamos aproveitar para toca um som, assim o jogo ficará mais divertido!
+Além de fazer a bruxa desaparecer, vamos aproveitar para toca um som, assim o jogo ficará mais divertido!
 
 1. Na aba de Sons, importe o som electronic/fairydust. 
 2. Adicione estes comandos para a bruxa:

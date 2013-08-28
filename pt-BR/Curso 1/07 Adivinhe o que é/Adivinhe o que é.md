@@ -1,3 +1,8 @@
+---
+layout: scratchProject
+title: Adivinhe o que é
+term: 1
+---
 Nível 3
 
 #Adivinhe o que é!
