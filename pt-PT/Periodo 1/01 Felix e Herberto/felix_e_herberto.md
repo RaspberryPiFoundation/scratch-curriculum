@@ -180,7 +180,7 @@ o tempo suficiente para o Herberto fugir?
 
 ## PASSO 5: Contam-se os pontos
 
-__Vamos criar um painel de pontuação para sabermos com nos corre o jogo. A
+__Vamos criar um painel de pontuação para sabermos como nos corre o jogo. A
 pontuação começa em zero e aumenta um ponto a cada segundo que passa.  Quando o
 Félix apanha o Herberto o jogador perde cem pontos.__
 
