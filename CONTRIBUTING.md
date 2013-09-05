@@ -19,7 +19,7 @@ whatever folder on your machine you’d like to keep your work in.
 
 Copy the 'en-GB' folder and rename it appropriately e.g. 'es-ES'.
 
-    cp -r en-GB es
+    cp -r en-GB es-ES
 
 ## Step 4 - Translate!
 
