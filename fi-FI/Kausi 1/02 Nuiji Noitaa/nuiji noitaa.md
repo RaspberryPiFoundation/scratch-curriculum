@@ -15,9 +15,9 @@ Nyt halutaan saada noita liikkumaan
 
 4. Lisää muuttuja vain tälle hahmolle ja nimeä se nopeudeksi.
 Esiintymislavalla, tämän muuttujan tilaindikaattorissa pitää lukea "Witch: nopeus".
-Jos siinä lukee pelkkä "nopeus", poista muuttuja ja luo se uudestaan, vain tälle hahmolle.  Muutuja-paletissa ota puumerkki pois "nopeus" muuttujan edestä, jotta sitä ei näytetä esiintymislavalla.
+Jos siinä lukee pelkkä "nopeus", poista muuttuja ja luo se uudestaan, vain tälle hahmolle.  Muuttuja-paletissa ota puumerkki pois "nopeus" muuttujan edestä, jotta sitä ei näytetä esiintymislavalla.
 Nopeus-muuttuja määrää kuinka nopeasti noita liikkuu. Käytetään muuttujaa, jotta voidaan muuttaa noidan nopeuden sitä mukaan kun peli jatkuu.
-5. Halutaan noidan alkavan liikkumista kun peli käynnistii, joten tee tällainen skripti:
+5. Halutaan noidan alkavan liikkumista kun peli käynnistyy, joten tee tällainen skripti:
 
 ```scratch
 
@@ -42,7 +42,7 @@ __Napsauta vihreä lippu__ ja katso miten noitasi käyttäytyy. Miksi hän jää
 		pomppaa reunasta
 	(end ikuisesti)
 ```
-7. Jotta noita ei lentäisi ylösalaisin, napsauta  __suunta vain vasemmalle-oikealle -näppäintä__ hahmo yleisasetukset -alueella
+7. Jotta noita ei lentäisi ylösalaisin, napsauta  __suunta vain vasemmalle-oikealle -näppäintä__ hahmon yleisasetukset -alueella
 
 ###Testaa projektisi
 __Napsauta vihreä lippu.__ 
@@ -50,70 +50,64 @@ Liikkuuko noita ruudulla reunasta toiseen?
 
 Tallenna projektisi
 
-###Things to try
-__Try changing the value of the speed variable to make her fly faster or slower.__
+###Kokeiltavaa
+__Kokeile vaihtaa nopeus muuttujan arvoa niin, että noita lentää nopeammin tai hitaamin.__
 
-__How would you make the witch get faster the longer she flies?__
-(This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
+__Miten saisit noita lentämään nopeammin, sitä kauemmin hän lentää?__
+(Tämä on melko kinkkinen, joten älä murehdi jos et keksi miten se voisi tehdä.  Saat lisää vinkkejä edetessäsi projektin kanssa.)
 
-##VAIHE 2: Make the witch appear & vanish randomly
+##VAIHE 2: Pistä noita ilmestymään ja hävimään satunnaisesti
 
-To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that ikuisesti (or until the game finishes).
+Jotta peli olisi hauskempi, halutaan noidan ilmestyvän ja häviävän satunnaisesti.  Tämä tehdään toisella skriptillä joka pyöriin samaan aikaisesti sen kanssa, joka liikuttaa noitaa.  Tämä uusi skripti piilottaa noidan satunnaisen ajan, näyttää satunnaisen ajan, ja toistaa tämän ikuisesti (tai kunnes peli loppuu).
 
-Create this script for the witch:
+Luo tällainen skripti noidalle:
 
 ```scratch
 
 	kun klikataan LIPPU
-
 	ikuisesti
-
-		hide
-
-		wait pick random 2 to 5 secs
-
-		show
-
-		wait pick random 3 to 5 secs
-
+		piilota
+		odota valitse satunnaisluku väliltä 2 - 5 sekuntia
+		näytä
+		odota valitse satunnaisluku väliltä 3 - 5 sekuntia
 	(end ikuisesti)
 ```
 ###Testaa projektisi
 __Napsauta vihreä lippu.__ 
-Does the witch move from side to side across the screen and vanish and appear again randomly?
+Liikkuuko noita ruudun reunasta toiseen ilmestyen ja häipyen satunnaisesti?
 
 Tallenna projektisi
 
-###Things to try
-__Try changing the range of the random numbers. What happens if you pick very big numbers or very small numbers?__
-(Does this give you any more clues for how to make the witch speed up the longer the game is played?)
+###Kokeiltavaa
+__Kokeile vaihtaa satunnaislukujen skaala. Mitä tapahtuu jos valitset hyvin isoja numeroita tai hyvin pieniä numeroita?__
+(Saitko tästä lisää vinkkiä kuinka saisit noita lentämään nopeammin, sitä kauemmin peli pelataan?)
 
-##VAIHE 3: Make the witch disappear when she’s clicked
+##VAIHE 3: Noita häipyy näkyvästä kun se napsautetaan
 
-To turn this into a game, we need to give the player something to do. They need to click on the witch to make her disappear. When the witch is clicked, we want her to disappear and play a sound.
+Jotta tästä tulisi peli, meidän pitää antaa pelaajalle jotain tekemistä.  Pelaajan pitää napsauttaa noitaa ja saada tämä häipymään näkyvästä.  Kun noita napsautetaan, haluamme hänen häipyvän näkyvästä ja soittavan äänen.
 
-1. In the Sounds tab, import the sound electronic/fairydust. 
+1. Äänet välilehdessä Valitse uusi ääni kirjastosta: Sähköinen/fairydust. 
 
-2. Add this script to the witch:
+2. Lisää tämä skripti noidalle:
 
 ```scratch
 
-	when sprite1 clicked
+	kun tämä hahmo napsautetaan
 
-	hide
+	piilota
 
-	play sound Fairydust
+	soita ääni fairydust
 ```
 ###Testaa projektisi
 __Napsauta vihreä lippu.__ 
 
-Does the witch disappear and play the sound when you click it?
+Häipyykö noita näkymästä ja soittaako äänen kun se napsautetaan?
 
 Tallenna projektisi
 
-##Step 4: Add a score and timer
+##VAIHE 4: Lisää pisteet ja ajastin
 
-We’ve got a witch, but now we want to make a game! We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
+Meillä on noita, mutta nyt haluamme tehdä pelin! Haluamme We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
 
 
 1. Create a new Variable for all sprites called score, and alter the script for the witch to increase this variable by one when she is clicked.
