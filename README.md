@@ -42,6 +42,12 @@ $ rake build
 
 See [LICENSE.md](LICENSE.md)
 
+## Warning
+
+This repository uses Unicode filenames, which can break under OSX. You will need a version of Git above 1.8.2 and run `git config --global core.precomposeunicode true` before checking out the repository.
+
 [codeclub]: http://codeclubworld.org/
 [markdown]: http://daringfireball.net/projects/markdown/
 [scratch]: http://scratch.mit.edu/
+
+
