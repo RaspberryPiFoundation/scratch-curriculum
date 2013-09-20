@@ -19,7 +19,7 @@ Ce projet couvre :
 
 Ce projet nécessite l’utilisation des éléments “arrière-plans” et “Costumes”
 
-##Cartes Scratch utilisées:
+##Cartes Scratch utilisées
 
 Chronomètre
 
