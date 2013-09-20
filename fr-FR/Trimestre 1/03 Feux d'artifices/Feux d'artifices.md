@@ -1,132 +1,236 @@
-Level 1
+Niveau 1
 
-#Fireworks
+#Feux d'artifices
 
-__Introduction:__In this project, we’ll create a fireworks display over a city.
-##￼STEP 1: Create a rocket that flies towards the mouse
-__Let’s import the different pictures for the game__
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Replace the background with outdoor/city-with-water
-3. Use the __new sprit from file__ button to add a Rocket spriteto the project (use the Resources/Rocket.png costume).
-4. Make the rocket hide when the greenflag is clicked.
-Now we want to make the rocket move towards the mouse when the mouse is clicked.
-5. Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
+__Introduction:__
+Dans ce projet, on va faire un feu d’artifice dans le ciel d’une ville.
 
-```scratch
-	when FLAG clicked
-	hide
-	
-	when space key pressed
-	show
-	glide 1 secs to x: mouse x y: mouse y
-```		
-###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__
-Does the rocket appear and move to the mouse?What happens if you move the mouse and press space again?
-6. Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it tomove to below the bottom ofthe screen, but stay in the same place horizontally.
-```scratch
-	when FLAG clicked
-	hide
-	
-	when space key pressed
-	go to x: mouse x y: -200
-	show
-	glide 1 secs to x: mouse x y: mouse y
-```###Test Your Project__Click the green flag, place your mouse over the stage and press the space bar.__ 
-Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?
+##Étape 1 : Crée une fusée qui vole dans la direction de la souris
 
-7. Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
-Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least makesure the rocket is hidden when everything starts up.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		show
-		glide 1 secs to x: mouse x y: mouse y
-	(end forever)
-```
-###Test Your Project__Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
-###Things to try1. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.2. Try making some rockets a little slower or faster than others.
-Save your project.##STEP 2: Make the rocket explode
+__Importons les différentes images pour le jeu__
 
-￼1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound goto the Sounds tab and click import
+1. Commence un nouveau projet Scratch. Supprime le chat en cliquant dessus avec le bouton droit de la souris et choisis la commande “Supprimer”.
+2. Remplace la scène et choisis l’arrière plan ‘city-with-water’ qui se trouve dans le dossier “Outdoors”.
+3. Clique sur le bouton __Choisir un nouvel objet dans un dossier__ et ajoute l’objet “Fusée” au projet (utilise le costume “Rocket.png” qui se trouve dans le dossier “Resources”).
+to the project (use the Resources/Rocket.png costume).
+4. Fais disparaître la fusée quand le drapeau vert est pressé.
+
+Maintenant, nous voulons que la fusée s’envole vers le pointeur de la souris quand la barre espace est appuyée. 
+
+5. Sélectionne la fusée et ajoute le bloc de contrôle “quand espace est pressé” au dessous duquel tu vas faire appraître la fusée et la faire voler jusqu’à la souris.
 
 ```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-	(end forever)
-```2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode
-	(end forever)
-```
-###Test Your Project__Click the green flag.__ 
-Make sure the rocket plays a noise and hides when it reaches the mouse.
 
-3. Import a new sprite using Resources/firework1.png
-4. When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
+	quand DRAPEAU pressé
 
-```scratch
-	when I receive explode
-	hide
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
-###Test Your Project__Send another rocket flying.__ 
-Does it get replaced with the explosion graphic when it explodes?What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).
-Save your project##￼STEP 3: Make each explosion unique
-1. Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
-```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	show
-	wait 1 sec
-	hide```
+	cacher
 
-###Test Your Project__Click the green flag.__ 
-Does each explosion have a different colour?
-2. Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.###Test Your Project__Click the green flag.__ 
-Does each rocket have a different explosion graphic?
-3. Finally, lets make the explosion grow over time as opposed to simply appearing. Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.```scratch
-	when I receive explode
-	hide
-	set colour effect to pick random 1 to 200
-	go to x: x position of rocket y: y position of rocket
-	set size to 5%
-	show
 	
-	repeat 50
-		change size by 2
-	(end repeat)
-	hide```
-###Test Your Project__Click the green flag.__ 
+	quand espace est pressé
+	montrer
+	glisser en 1 secondes à x: souris x y: souris y
+```
+		
+###Teste ton projet
+__Clique sur le drapeau vert, place la souris sur la scène et appuie sur la touche espace.__
 
-Does the explosion graphic spread out from the centre of the rocket and slowly grow?
+Est-ce que la fusée apparaît et se déplace vers la souris ? 
+Que se passe-t-il si tu déplaces la souris et que tu appuies de nouveau sur la touche espace ?
 
-###Things to tryWhy not try making each explosion more unique by altering the size and speed of growth for the explosion.
-Save your project
-##Step 4: Fixing the Broadcast Bug
-Remember earlier we had a bug involving holding down the mouse button?This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying.
-1. To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
-```scratch
-	when FLAG clicked	hide	forever if mouse down?
-		go to x: mouse x y: -200
-		play sound bang
-		show
-		glide 1 secs to x: mouse x y: mouse y
-		hide
-		broadcast explode and wait
-	(end forever)
-```###Test Your Project__Click the green flag, hold down the mouse button and move the mouse around the stage.__ Does the explosion graphic appear in the right place and at the right time?
-Save your project
+6. Normalement, les feux d’artifices ne volent pas à l’horizontale ! 
+Assurons-nous que les fusées glissent depuis le coté inférieur de la scène pour atteindre la souris. Avant de faire apparaître la fusée, utilise le bloc "aller à x y" de sorte que la fusée se lance toujours du dessous de la scène mais à la verticale de la souris
+
+```scratch
+
+	quand DRAPEAU pressé
+
+	cacher
+
+	
+	quand espace est pressé
+	aller à x: souris x y: -200
+	montrer
+	glisser en 1 secondes à x: souris x y: souris y
+```
+
+###Teste ton projet
+__Clique sur le drapeau vert, place la souris sur la scène et appuie sur la touche espace.__ 
+Est-ce que la fusée vole en direction de la souris à partir du bas de la scène ? Que se passe-t-il si tu changes l’emplacement de la souris et que tu appuies de nouveau sur la barre espace ? 
+
+
+7. Finalement, modifions cette tâche pour utiliser le clic de la souris au lieu de la barre espace.
+Pour cela, nous pouvons envelopper notre script par le bloc __répéter indéfiniment si souris pressé__. Puis, change le bloc __Quand touche espace préssé__ par __Quand drapeau préssé__
+Assure-toi que la fusée soit cachée quand le programme commence.
+
+```scratch
+
+	quand DRAPEAU pressé
+	cacher 
+	répéter indéfiniment si souris pressée
+		aller à x: souris x y: -200
+		montrer
+		glisser en 1 secondes à x: souris x y: souris y
+	(fin répéter indéfiniment)
+```
+###Teste ton projet
+__Clique sur le drapeau vert, puis clique n’importe où sur la scène. Répète cette action plusieurs fois dans différents endroits.__ 
+
+###Essaie d’aller plus loin :
+1. Essaie de modifier la trajectoire de la fusée en un arc de cercle avant d’atteindre la souris.
+2. Essaie de rendre quelques fusées plus lentes ou plus rapides que d’autres.
+
+Enregistre ton travail.
+
+##Étape 2 : Fais exploser la fusée
+
+1. 1.	La première étape pour faire exploser la fusée consiste à jouer le son “bang” avant son lancement (le son se trouve dans le dossier “Resources”). Ensuite, la fusée sera masquée une fois qu’elle touchera la souris. Pour importer un son, clique sur l’onglet “sons” puis sur le bouton “Importer”
+
+
+```scratch
+
+	quand DRAPEAU pressé
+	cacher
+	répéter indéfiniment si souris préssée
+		aller à x: souris x y: -200
+		jouer le son bang
+		montrer
+		glisser en 1 secondes à x: souris x y: souris y
+		cacher
+	(fin répéter indéfiniment)
+```
+2. Ensuite, programme la fusée pour qu’elle diffuse un nouveau message quand elle explose :
+
+```scratch
+
+	quand DRAPEAU pressé
+	cacher
+	répéter indéfiniment si souris préssée
+		aller à x: souris x y: -200
+		jouer le son bang
+		montrer
+		glisser en 1 secondes à x: souris x y: souris y
+		cacher
+		envoyer à tous explosion
+	(fin répéter indéfiniment)
+```
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+Assure-toi que la fusée joue un son et disparaît quand elle atteint la souris.
+
+3. Importe l’objet “firework1.png” qui se trouve dans le dossier “Ressources”.
+4. Avant que le message “explosion” soit reçu, l’objet doit être caché, puis quand le message est reçu, il se met à la position de la fusée en utilisant le bloc “aller à x: y:”. Il apparaît pour une seconde puis disparaît à nouveau. Sélectionne ce nouvel objet et ajoute-lui ce script :
+
+
+```scratch
+
+	quand je reçois explosion
+
+	cacher
+
+	aller à x: position x de Fusée y: position y de Fusée
+
+	montrer
+
+	attendre 1 secondes
+
+	cacher
+```
+###Teste ton projet
+__Lance une fusée.__ 
+Est-ce qu’elle est bien remplacée avec l’image de l’explosion quand elle explose ? 
+Que se passe-t-il si tu maintiens le bouton de la souris enfoncé et que tu la bouges en même temps ? (Ne t’en fais pas, nous allons arranger ça)
+
+Enregistre ton travail.
+
+##Étape 3 : Rends chaque explosion unique
+
+1. Maintenant, nous pouvons rendre chaque explosion unique en effectuant des modifications sur le bloc couleur. Ce bloc va prendre une couleur aléatoire entre 1 et 200 avant d’apparaître
+
+```scratch
+
+	quand je reçois explosion
+
+	cacher
+
+	mettre l’effet couleur à nombre aléatoire entre 1 et 200
+
+	aller à x: position x de Fusée y: position y de Fusée
+
+	montrer
+
+	attendre 1 secondes
+
+	cacher
+```
+
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+
+Est-ce que chaque explosion est d’une couleur différente ?
+
+2. Ajoutons d’autres possibilités d’explosions. 
+Nous allons importer les costumes “firework2.png” et “firework3.png” du dossier “Ressources”. Bascule entre les différents costumes de chaque fusées avant de les faire apparaître.
+
+###Teste ton projet
+__Clique sur le drapeau vert__ 
+
+Est ce que chaque fusée a une image d’explosion différente? 
+
+3. Au final, on va agrandir l’explosion doucement à la place de la faire apparaître d’un coup. Au lieu d’attendre une seconde, nous allons fixer la taille de l’objet “Explosion” à 5% avant de le faire apparaître. Après son apparition, on va augmenter la taille de 2% 50 fois en utilisant le bloc répéter.
+
+
+```scratch
+
+	quand je reçois explosion
+
+	cacher
+
+	mettre l’effet couleur à nombre aléatoire entre 1 et 200
+
+	aller à x: position x de Fusée y: position y de Fusée
+
+	mettre la taille à 5%
+
+	montrer
+	
+	répéter 50 fois
+		modifier la taille par 2
+	(fin répéter)
+
+	cacher
+```
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+
+Est-ce que l’explosion commence à partir du centre de la fusée puis s'agrandit doucement?
+
+###Essaie d’aller plus loin :
+Pourquoi ne pas rendre chaque explosion plus unique en changeant la taille et la vitesse de l’explosion ?
+
+Enregistre ton travail
+
+##Étape 4 : Corrige bug de la diffusion du message
+Rappelle-toi qu’on a un bug quand on maintient le bouton de la souris enfoncé ?Ceci arrive parce que quand la fusée diffuse le message d’explosion elle va immédiatement recommencer boucle “si” et diffuser un autre message d’explosion avant même que la dernière fusée finisse l’explosion.
+
+
+1. Pour corriger cela, Nous pouvons remplacer le bloc “envoyer à tous” par le bloc “envoyer à tous et attendre”. De cette manière, la boucle “répéter” ne va pas recommencer avant que l’explosion ne soit terminée.
+
+```scratch
+
+	quand DRAPEAU pressé
+	cacher
+	répéter indéfiniment si souris préssée?
+		aller à x: souris x y: -200
+		jouer le son bang
+		montrer
+		glisser en 1 secondes à x: souris x y: souris y
+		cacher
+		envoyer à tous explosion et attendre
+	(fin répéter indéfiniment)
+```
+###Teste ton projet
+__Clique sur le drapeau vert. Garde le bouton de la souris enfoncé et déplace la souris autour de la scène.__ 
+
+Est ce que l’explosion apparaît dans le bon endroit et au bon moment ?
+
+Enregistre ton travail.
