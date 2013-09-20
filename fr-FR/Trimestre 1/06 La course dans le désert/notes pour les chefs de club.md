@@ -1,6 +1,34 @@
-#NOTES FOR CLUB LEADERS
-##(Desert Race)##IntroductionThis game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.##SkillsThis project covers: 
-* Events* Variables* Animation* Playing Sounds* Conditional statements • Modifying resources##ResourcesThis project uses resources found in the scratch backgrounds and costumes folders as well as a user created resource based on a scratch resource.##Scratch CardsSay Something##Basic Exercises* Step 1: Create the scene and add sprites 
-* Step 2: Make the characters move* Step 3: Starting the race* Step 4: Finishing the race* Step 5: Resetting the game 
-##Challenge 
-Add a booster
+#NOTES POUR LES CHEFS DE CLUB
+##(La Course dans le Désert)
+
+##Introduction
+
+Ce projet est un jeu qui se joue à 2. C’est une course dans le désert entre un perroquet et un lion. Chaque joueur doit appuyer sur une touche le plus vite possible pour faire avancer son personnage. Le premier qui atteint le bord de l’écran a gagné !
+
+##Compétences
+Ce projet traite : 
+
+* Des événements
+* Des variables
+* De l’animation
+* Du son
+* Des instructions conditionnelles 
+* De la modification des ressources
+
+##Ressources
+Ce projet utilise des ressources qui se trouvent dans les dossiers de fond d’écran et de costumes. Il utilise également des ressources créées par l’utilisateur basée sur des capacités de Scratch.
+
+##Cartes Scratch
+Dis quelque chose
+
+##Basic Exercises
+
+* Étape 1 : Crée le décor et ajoute les objets 
+* Étape 2 : Fais bouger le lion et le perroquet
+* Étape 3 : Démarre la course
+* Étape 4 : Termine la course
+* Étape 5 : Réinitialise le jeu 
+
+##Défi 
+
+Ajouter un accélérateur
