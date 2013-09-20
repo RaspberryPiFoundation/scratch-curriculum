@@ -1,95 +1,196 @@
-Level 1
+Niveau 1
 
-#Whack-a-Witch
+#La chasse aux Sorcières
 
-__Introduction:__This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
-##￼STEP 1: Create a flying witch
-1. Start a new scratch project.2. Remove the cat sprite and replace the background with the nature/woodsbackground.3. Use the new sprite from file button to add a new witchsprite to the project (use the fantasy/witch1 costume). 
-Now we want to make our witch move
+__Introduction:__
+Ce projet est comme le jeu du __Tir aux Pigeons__. Tu gagnes des points en touchant les sorcières qui apparaissent à l’écran. Le but du jeu est de gagner le plus de points possibles en 30 secondes.
 
-4. Add a Variable for this sprite only called speed .On the Stage, the stage monitor for this variable should say “Sprite1 speed”.If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in theVariables palette so it does not show on the Stage.The speed variable will control how fast the witch moves. We use a variable so that we can change how fast the witch moves as the game progresses.5. We want the witch to start moving when the game starts, so make a script like this:
+##Étape 1 : Crée une sorcière volante
+
+1. __1.	Démarre un nouveau projet Scratch__
+2. __2.	Enlève l’objet chat__ et remplace l’arrière plan par l’arrière plan __nature/woods__.
+3. Clique sur le bouton `Choisir un nouvel objet dans un dossier` pour ajouter un nouvel objet au projet (utilise le costume __fantasy/witch1__). 
+
+__Maintenant, nous voulons faire bouger notre sorcière.__
+
+4. 1.	Ajoute une `variable` pour l’objet sorcière. Appelle la variable `vitesse ` et coche “Seulement pour cet objet” Sur la __scène__, tu dois voir écrit “Objet 1 vitesse”. Si il est écrit seulement “vitesse”, supprime la variable et recommence. Lors de la création, il faut s’assurer de cliquer sur le bouton ‘Seulement pour cet objet”. On ne veut pas afficher la vitesse. Clique sur la zone à gauche de la variable ‘vitesse' dans __la palette des variables__. La variable ‘vitesse’ va contrôler la vitesse de déplacement de la sorcière. Nous allons utiliser une variable pour pouvoir changer la vitesse au cours du jeu.
+5. 2.	Nous voulons que la sorcière commence à bouger quand le jeu démarre. __Écris donc un script comme ceci__ :
 
 ```scratch
-	when FLAG clicked
-	set speed to 5
-	forever
-		move speed steps
-	(end forever)
-```		
-###Test Your Project__Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below yourmove speed steps block add an if on edge, bounce block.
-```scratch
-	when FLAG clicked
-	set speed to 5
-	forever
-		move speed steps
-		if on edge, bounce
-	(end forever)
-```7. To stop the witch flipping upside down, click on the __only face left-right button__ in the Sprite Summary area.
 
-###Test Your Project__Click the green flag.__ 
-Does the witch move from side to side across the screen?
+	Quand drapeau préssé
 
-Save your project
+	à vitesse attriber 5
 
-###Things to try￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼__Try changing the value of the speed variable to make her fly faster or slower.____How would you make the witch get faster the longer she flies?__
-(This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)##STEP 2: Make the witch appear & vanish randomly
-To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that forever (or until the game finishes).
-Create this script for the witch:
-```scratch
-	when FLAG clicked
-	forever
-		hide
-		wait pick random 2 to 5 secs
-		show
-		wait pick random 3 to 5 secs
-	(end forever)
+	répéter indéfiniment
+
+		avancer de vitesse pas
+
+	(fin répéter indéfiniment)
 ```
-###Test Your Project__Click the green flag.__ 
-Does the witch move from side to side across the screen and vanish and appear again randomly?
+		
+###Teste ton projet
+__Clique sur le drapeau vert __ et regarde ce que fait ta sorcière. Pourquoi reste-t-elle collée dans le coin de l’écran ?
 
-Save your project
+6. Pour décoller la sorcière nous devons la faire partir dans l’autre sens quand elle touche le bord de l’écran. Au niveau de ton script, au dessous du bloc `avancer de vitesse pas ` ajoute le bloc `rebondir si le bord est atteint` 
 
-###Things to try__Try changing the range of the random numbers. What happens if you pick very big numbers or very small numbers?__(Does this give you any more clues for how to make the witch speed up the longer the game is played?)##￼STEP 3: Make the witch disappear when she’s clicked
-To turn this into a game, we need to give the player something to do. They need to click on the witch to make her disappear. When the witch is clicked, we want her to disappear and play a sound.
-1. In the Sounds tab, import the sound electronic/fairydust. 
-2. Add this script to the witch:
-```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
+```scratch
+
+	Quand drapeau préssé
+
+	à vitesse attriber 5
+
+	répéter indéfiniment
+
+		avancer de vitesse pas
+
+		rebondir si le bord est atteint
+
+	(fin répéter indéfiniment)
 ```
-###Test Your Project__Click the green flag.__ 
-Does the witch disappear and play the sound when you click it?
-Save your project
-##Step 4: Add a score and timer
-We’ve got a witch, but now we want to make a game! We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
-1. Create a new Variable for all sprites called score, and alter the script for the witch to increase this variable by one when she is clicked.
-```scratch
-	when sprite1 clicked
-	hide
-	play sound Fairydust
-	change score by 1
-```2. Switch to the Stage and create a new variable (this time just for the stage) called timer. Add a new script that occurs when the green flag is clicked to set timer to 30 and reset the score to 0. Then use a repeat until block to wait a second and then reduce timer byone. This should repeat until timer is 0, at which point use stop all to stop the game.
-```scratch
-	when FLAG clicked
-	set timer to 30
-	set score to 0
-	repeat until timer = 0
-		wait 1 secs
-		change timer by -1
-	(end repeat)
-	stop all
-```
-###Test Your Project__Click the green flag.__ 
-Save your project
+7. Pour que la sorcière n'ait pas la tête en bas quand elle touche le bord, clique sur le bouton `retournement gauche-droite uniquement`. 
 
-###Things to try__How might you make the witch speed up as the game goes on?__
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
-##Challenge: add more witches
-If one witch is good, more must be better! Let’s have three witches flying around.1. Duplicate the witch by right-clicking it in the sprite list.2. For each witch adjust the size of the sprite so the witches are different sizes.3. For each witch change the speed variable so that they fly at different speeds.4. Move the witches around the canvas so that they are not all together.
-###Test Your Project__Click the green flag.__ 
-Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
-Save your project
-###Things to try1. How many witches is a good number for the game?￼￼2. Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.3. Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+Est ce que la sorcière se déplace d’un bord à l’autre de l’écran ?
+
+Enregistre ton travail.
+
+###A essayer
+__Essaie de changer la valeur de la variable “vitesse” pour faire voler la sorcière plus rapidement ou plus lentement.__
+
+__Comment ferais-tu pour que la sorcière bouge de plus en plus vite ? __
+(C’est une tâche délicate. Ne t’inquiète pas si tu n’arrives pas à le faire. Tu vas avoir plus d’indices en continuant le projet.)
+
+##Étape 2 : Fais apparaître et disparaître la sorcière de manière aléatoire
+
+Pour rendre le jeu plus amusant, nous voulons faire apparaître et disparaître la sorcière de manière aléatoire. Nous ferons ça avec un autre script qui va tourner en même temps que celui du mouvement de la sorcière. Ce script doit faire disparaître la sorcière pendant un temps aléatoire, puis la faire apparaître de nouveau pour un temps alétoire. Et recommencer indéfiniment (ou jusqu’à la fin du jeu) 
+
+__Crée ce script pour la sorcière :__
+
+```scratch
+
+	quand drapeau préssé 
+
+	répéter indéfiniment
+
+		cacher
+
+		attendre nombre aléatoire entre 2 et 5 secondes
+
+		montrer
+
+		attendre nombre aléatoire entre 3 et 5 secondes
+
+	(fin répéter indéfiniment)
+```
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+Est-ce que la sorcière se déplace d’un bord à l’autre de l’acran, apparaît et disparaît d’une manière aléatoire ?
+
+Enregistre ton projet.
+
+###A essayer
+__Essaie de changer les limites des nombres aléatoires. Qu’est ce qui se passe si tu choisis de grands nombres ou de petits nombres ?__
+(Est-ce que ça te donne plus d’indices sur la manière d’accélerer la vitesse de la sorcière au fur et à mesure du jeu ?)
+
+##Étape 3 : Fais disparaître la sorcière quand on clique dessus
+
+Pour transformer notre projet en jeu, il faut donner aux joueurs quelque chose à faire. Ils ont besoin de cliquer sur la sorcière pour la faire disparaître. Quand ils la touchent, nous voulons qu’elle disparaisse tout en jouant un son.
+
+1. 1.	Dans l’onglet __son__, importe le son __electronic/fairydust__. 
+
+2. __2.	Ajoute ce script à la sorcière__:
+
+```scratch
+
+	quand objet 1 pressé
+
+	cacher
+
+	jouer le son Fairydust
+```
+###Teste ton projet
+__Clique sur le drapeau vert__ 
+
+Est ce que la sorcière disparaît et joue un son quand tu cliques sur elle ?
+
+Enregistre ton projet
+
+###A essayer
+__Demande si tu peux enregistrer toi même ta voix__
+
+##Étape 4 : Ajoute un score et un chronomètre
+
+Nous avons notre sorcière , mais nous voulons réaliser un vrai jeu ! Nous voulons marquer des points à chaque fois que nous cliquons sur la sorcière, ainsi qu’un temps de jeu limité. On va utiliser une variable pour le score et une pour le chronomètre.
+
+
+1. Crée une nouvelle `variable`. Appelle la __Score__ et coche “Pour tous les objets”. Et change le script de la sorcière pour que le score augmente d’un point chaque fois qu’elle est pressée. 
+
+```scratch
+
+	quand objet 1 pressé
+
+	cacher
+
+	jouer le son Fairydust
+
+	changer score par 1
+```
+
+2. Clique sur la __scène__ et crée une __ nouvelle variable__ (cette fois juste pour la scène). Appelle la __chronomètre__. Ajoute un nouveau script qui s’exécute quand on appuie sur le drapeau vert. Le script met le chronomètre à __30__ et remet le score à __0__. Ensuite, utilise le bloc “répéter jusqu’à” pour attendre une seconde puis diminuer le “chronomètre” par 1. Il faut répéter tout ça jusqu’à ce que le chronomètre soit à 0. A ce moment là, utilise le bloc “arrêter tout” pour arrêter le jeu. 
+
+```scratch
+
+	quand drapeau pressé
+
+	à chronomètre attribuer 30
+
+	à score attribuer 0
+
+	répéter jusqu’à chronomètre = 0
+
+		attendre 1 seconde
+
+		changer score par -1
+
+	(fin répéter)
+
+	arrêter tout
+```
+
+
+###Teste ton projet
+__Clique sur le drapeau vert__ 
+
+Enregistre ton travail
+
+###A essayer
+__Comment tu peux faire bouger la sorcière de plus en plus vite ?__
+
+
+__Très bien. Tu as terminé le jeu de base. Mais tu peux encore améliorer le jeu. Relève ces défis !__
+
+##Défi : ajoute d’autres sorcières
+
+Une sorcière, c'est bien. Plus de sorcières, c’est encore mieux ! __Ajoutons deux autres sorcières volantes__
+1. Duplique la sorcière en __cliquant dessus avec le bouton droit__ de la souris dans la zone des objets (la zone inférieure droite de l’écran) 
+2. Change la taille de chaque objet pour avoir des sorcières de differentes tailles.
+3. Pour chaque sorcière, change __la variable vitesse__ pour avoir des sorcières qui volent à des vitesses différentes.
+4. Déplace les sorcières dans differents endroits de la scène.
+
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+
+Est ce que tu as trois sorcières qui se déplacent d’un côté à l’autre de la scène ? Est ce qu’elles apparaissent et disparaissent d’une manière aléatoire ? Est ce qu’elles disparaissent quand tu cliques dessus ? 
+
+Enregistre ton travail
+
+###A essayer
+1. __1.	Quel est le bon nombre de sorcières pour le jeu ?__
+2. __2.	Est ce que tu peux changer l’apparence des sorcières ? Tu pourrais éditer leurs costumes, ou bien utiliser des blocs de la palette “Apparence” pour les changer.__
+3. __3.	Est ce que tu peux faire marquer un nombre de points différent pour chaque sorcière ? Que penses-tu de faire que la plus rapide (et la plus petite) sorcière soit celle qui donne le plus de points ?__
+
+
+__Bravo ! Tu as terminé. Maintenant, tu peux t’amuser avec le jeu. __
+N’oublie pas que tu peux partager ton jeu avec tous tes amis et ta famille en cliquant sur le bouton __Partage__ dans la barre des menus.
