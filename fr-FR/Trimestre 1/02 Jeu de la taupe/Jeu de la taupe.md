@@ -30,7 +30,7 @@ __Maintenant, nous voulons faire bouger notre sorcière.__
 ```
 		
 ###Teste ton projet
-__Clique sur le drapeau vert __ et regarde ce que fait ta sorcière. Pourquoi reste-t-elle collée dans le coin de l’écran ?
+__Clique sur le drapeau vert__ et regarde ce que fait ta sorcière. Pourquoi reste-t-elle collée dans le coin de l’écran ?
 
 6. Pour décoller la sorcière nous devons la faire partir dans l’autre sens quand elle touche le bord de l’écran. Au niveau de ton script, au dessous du bloc `avancer de vitesse pas ` ajoute le bloc `rebondir si le bord est atteint` 
 
@@ -59,7 +59,7 @@ Enregistre ton travail.
 ###A essayer
 __Essaie de changer la valeur de la variable “vitesse” pour faire voler la sorcière plus rapidement ou plus lentement.__
 
-__Comment ferais-tu pour que la sorcière bouge de plus en plus vite ? __
+__Comment ferais-tu pour que la sorcière bouge de plus en plus vite ?__
 (C’est une tâche délicate. Ne t’inquiète pas si tu n’arrives pas à le faire. Tu vas avoir plus d’indices en continuant le projet.)
 
 ##Étape 2 : Fais apparaître et disparaître la sorcière de manière aléatoire
@@ -138,7 +138,7 @@ Nous avons notre sorcière , mais nous voulons réaliser un vrai jeu ! Nous voul
 	changer score par 1
 ```
 
-2. Clique sur la __scène__ et crée une __ nouvelle variable__ (cette fois juste pour la scène). Appelle la __chronomètre__. Ajoute un nouveau script qui s’exécute quand on appuie sur le drapeau vert. Le script met le chronomètre à __30__ et remet le score à __0__. Ensuite, utilise le bloc “répéter jusqu’à” pour attendre une seconde puis diminuer le “chronomètre” par 1. Il faut répéter tout ça jusqu’à ce que le chronomètre soit à 0. A ce moment là, utilise le bloc “arrêter tout” pour arrêter le jeu. 
+2. Clique sur la __scène__ et crée une __nouvelle variable__ (cette fois juste pour la scène). Appelle la __chronomètre__. Ajoute un nouveau script qui s’exécute quand on appuie sur le drapeau vert. Le script met le chronomètre à __30__ et remet le score à __0__. Ensuite, utilise le bloc “répéter jusqu’à” pour attendre une seconde puis diminuer le “chronomètre” par 1. Il faut répéter tout ça jusqu’à ce que le chronomètre soit à 0. A ce moment là, utilise le bloc “arrêter tout” pour arrêter le jeu. 
 
 ```scratch
 
@@ -192,5 +192,5 @@ Enregistre ton travail
 3. __3.	Est ce que tu peux faire marquer un nombre de points différent pour chaque sorcière ? Que penses-tu de faire que la plus rapide (et la plus petite) sorcière soit celle qui donne le plus de points ?__
 
 
-__Bravo ! Tu as terminé. Maintenant, tu peux t’amuser avec le jeu. __
+__Bravo ! Tu as terminé. Maintenant, tu peux t’amuser avec le jeu.__
 N’oublie pas que tu peux partager ton jeu avec tous tes amis et ta famille en cliquant sur le bouton __Partage__ dans la barre des menus.
