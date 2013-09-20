@@ -210,7 +210,7 @@ Pourquoi ne pas rendre chaque explosion plus unique en changeant la taille et la
 Enregistre ton travail
 
 ##Étape 4 : Corrige bug de la diffusion du message
-Rappelle-toi qu’on a un bug quand on maintient le bouton de la souris enfoncé ?Ceci arrive parce que quand la fusée diffuse le message d’explosion elle va immédiatement recommencer boucle “si” et diffuser un autre message d’explosion avant même que la dernière fusée finisse l’explosion.
+Rappelle-toi qu’on a un bug quand on maintient le bouton de la souris enfoncé ? Ceci arrive parce que quand la fusée diffuse le message d’explosion elle va immédiatement recommencer boucle “si” et diffuser un autre message d’explosion avant même que la dernière fusée finisse l’explosion.
 
 
 1. Pour corriger cela, Nous pouvons remplacer le bloc “envoyer à tous” par le bloc “envoyer à tous et attendre”. De cette manière, la boucle “répéter” ne va pas recommencer avant que l’explosion ne soit terminée.
