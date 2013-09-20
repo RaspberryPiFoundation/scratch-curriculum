@@ -101,7 +101,7 @@ __Amuse-toi à trouver de nouvelles idées !__
 
 Tout le monde ne sera pas aussi doué que toi pour gagner le jeu. __Comment pourrais-tu ajuster le niveau de difficulté du jeu pour chaque joueur ?__
 
-Une possibilité serait d'__adapter la vitesse de changement des costumes à la fin de chaque partie__. Tu peux utiliser une variable __délai__ et la mettre à la place de la durée du bloc "attente". Si le joueur gagne, tu peux réduire ce délai pour rendre le jeu un peu plus difficile. Et si le joueur perd, il faudra augmenter le délai pour rendre la prochaine partie plus facile.
+Une possibilité serait d' __adapter la vitesse de changement des costumes à la fin de chaque partie__. Tu peux utiliser une variable __délai__ et la mettre à la place de la durée du bloc "attente". Si le joueur gagne, tu peux réduire ce délai pour rendre le jeu un peu plus difficile. Et si le joueur perd, il faudra augmenter le délai pour rendre la prochaine partie plus facile.
 
 ##Défi 3 : Détecte si on a gagné ou perdu
 
