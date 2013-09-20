@@ -1,7 +1,7 @@
 #NOTES POUR LES CHEFS DE CLUB
 ##(Machine à sous)
 
-###Introduction:
+###Introduction
 Dans ce jeu, il y a trois objets qui changent de costume. Pour gagner, il faut arrêter les 3 sur la même image. C'est comme une machine à sous !
 ###Compétences
 Ce projet couvre :
