@@ -1,5 +1,5 @@
 #NOTES POUR LES CHEFS DE CLUB
-##(La Course dans le Désert)
+##(La course dans le Désert)
 
 ##Introduction
 
