@@ -27,9 +27,9 @@ Nous voulons qu’une variété de photos apparaisse sur le tableau noir.
 ###Teste ton projet
 __Clique sur le drapeau vert.__
 
-DEst-ce que l’objet change de costume ?
+Est-ce que l’objet change de costume ?
 
-__Clique à nouveau plusieurs fois. __
+__Clique à nouveau plusieurs fois.__
 Est-ce que le costume change à chaque fois ?
 Le même costume peut apparaître deux fois de suite, mais c’est normal. Tu remarqueras aussi que l’objet clignote à chaque changement de costume. On réglera la chose dans l'étape suivante.
 
@@ -231,7 +231,7 @@ Pour le moment chaque partie est indépendante. Fais que la partie soit sur plus
 
 __Astuce :__ tu auras besoin d’une nouvelle variable pour sauvegarder le score total. Il te faudra aussi une nouvelle “boucle” pour passer d’une manche à l’autre.
 
-__Astuce : __Il faudra aussi faire réapparaître tous les mauvais choix précédents au début de chaque manche. Tu pourrais peut-être utiliser un “envoi a tous” ?
+__Astuce :__ Il faudra aussi faire réapparaître tous les mauvais choix précédents au début de chaque manche. Tu pourrais peut-être utiliser un “envoi a tous” ?
  
 Enregistre ton travail.
 
@@ -278,5 +278,5 @@ Est-ce que ça rend le jeu plus amusant ?
 Enregistre ton travail.
 
 
-__Bravo, tu as fini, maintenant tu peux t’amuser ! __
-! Et souviens-toi que tu peux partager ton jeu avec tes amis et ta famille, en pressant le bouton __Partager__ dans le menu du haut.
+__Bravo, tu as fini, maintenant tu peux t’amuser !__
+Et souviens-toi que tu peux partager ton jeu avec tes amis et ta famille, en pressant le bouton __Partager__ dans le menu du haut.
