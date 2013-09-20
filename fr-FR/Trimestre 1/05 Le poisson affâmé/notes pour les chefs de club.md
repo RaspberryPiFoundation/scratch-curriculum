@@ -24,7 +24,9 @@ Ce projet utilise des ressources du dossier “Backgrounds” de scratch et du d
 
 ###Exercice de base
 Étape 1 : Crée un objet qui change de costume
+
 Étape 2 : Ajoute une proie
+
 Étape 3 : Le poisson affamé mange la proie
 
 ###Défis
