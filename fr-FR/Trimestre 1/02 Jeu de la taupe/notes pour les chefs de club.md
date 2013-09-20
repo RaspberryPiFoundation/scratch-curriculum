@@ -1,5 +1,5 @@
 #NOTES POUR LES CHEFS DE CLUB
-##(La chasse aux Sorcières)
+##(La chasse aux sorcières)
 
 ###Introduction
 Ce jeu est comme le jeu de “Tir aux pigeons”. On marque des points chaque fois qu’on touche les sorcières qui apparaissent à l’écran. Il faut marquer un maximum de points en 30 secondes.
