@@ -13,7 +13,7 @@ Nous allons commencer par un crayon qui dessine quand tu le déplaces autour de 
 2. Clique sur ‘Scène’ puis __Arrière-plans’__. Importe __l’arrière plan__ : __indoors/chalkboard__.
 3. Créé un nouvel objet appelé : __Crayon__. Importe le fichier __resources\crayon-vert__.
 4. Bascule vers l’onglet __costumes__ et clique sur le bouton ‘Edit’. Dans __l’éditeur graphique__, change le centre de l’image pour qu’il soit à la pointe du crayon. Pour cela, clique sur le bouton _Définir le centre du costume_ et déplace les lignes jusqu’à ce qu’elles soient à la pointe.
-5. 5.	Nous allons programmer le crayon pour suivre la souris lors de son mouvement dans la scène. On va utiliser les blocs __Répeter indéfiniement__ et __aller à pointeur de souris__.
+5. 5.	Nous allons programmer le crayon pour suivre la souris lors de son mouvement dans la scène. On va utiliser les blocs __Répeter indéfiniment__ et __aller à pointeur de souris__.
 
 ```scratch
 Quand DRAPEAU pressé
@@ -134,7 +134,7 @@ Tu sans probablement remarqué qu’il est possible de dessiner partout sur la s
 
 Rappelle toi que Scratch définit un point en utilisant les axes X et Y. Notre zone de dessin se trouve entre -230 et 230 sur l’axe X, et entre -170 et 170 sur l’axe Y. On peut utiliser ces valeurs dans un bloc __si__ pour être sûr que la souris est à l’intérieur de cette zone . 
 
-Pour réaliser ça, enveloppe les blocs que tu as déjà fait (__aller à__ et __Si souris préssé__) dans un nouveau bloc ‘Si’. A l’intérieur de ce nouveau bloc, tu dois vérifier que : 
+Pour réaliser ça, enveloppe ce que tu as déjà fait (blocs __aller à__ et __Si souris préssé__) dans un nouveau bloc ‘Si’. A l’intérieur de ce nouveau bloc, tu dois vérifier que : 
 
 Souris Y est supérieur à -120 et souris Y est inférieur à 170 et souris X est supérieur à -230 et souris X est inférieur à 230
 
