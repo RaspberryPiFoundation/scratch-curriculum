@@ -1,93 +1,282 @@
-Level 3
+Niveau 3
 
-#What's That
+#Qu’est-ce que c’est ?!
 
-__Introduction__A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!##STEP 1: Make different things appear on the blackboardWe want a few different pictures to show up on the blackboard.1. Start a new Scratch project and delete the cat sprite.2. Click Stage and then the Backgrounds tab. Import the indoors/chalkboard background.3. Import a new sprite and give it any costume you like. You can picked some from the things folder.4. Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.5. Click the Costumes tab and import four more things. They can be anything you want, yay!Let’s now make a random picture appear. 
-6. Create this script:
+__Introduction__
+Un objet apparaît sur le tableau noir. A toi de deviner ce que c’est en cliquant sur l’image qui y correspond. Plus tu es rapide, plus tu marques de points !
 
-```scratch
-	when FLAG clicked	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-```
+##Étape 1 : Fais apparaître différents objets sur le tableau noir
 
-###Test Your Project__Click the green flag.__Does the sprite show a different costume?__Click on it a few more times.__
- Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼Save your project
-##STEP 2: Make the pictures distorted__Let’s now make a picture distorted when it appears, and become clearer over a few seconds.__
-We’ll use a score variable to control how much distortion there is. If the score is high, there will be lots of distortion. As the score goes down, there will be less and less distortion. The score also acts as a timer, like on the __Timer Scratch Card.__1. On the Variables palette, create a variable called Score. 
-2. Change the script to look like this:
-```scratch
-	when FLAG clicked	hide	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
-```You should add the hide block at the top and the set [score] to 110 block, and everything below it.###Test Your Project__Click the green flag.__Does a random and distorted picture appear?Does the distortion get less in stages?Does the score go down as the picture becomes less distorted?Do you get an undistorted image when the score reaches zero?Do you still get a different picture every time you click the green button?Save your project
-##Things to try__Try changing the starting score and how much it changes each time around the loop.__ How does this change how the picture looks? Does it make it harder or easier to spot what the picture is?
-__Try some different graphic effects from the pull-down lists.__ How do they change the difficulty?##STEP 3: Allow the player to guess the pictureSo far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.First, we need to know what the right answer is.1. Create a new variable called __answer__. Make sure it’s for all sprites.2. Change the script you’ve written to record the right answer. Add the set [answer] to costume # blocks just after the first repeat loop:
+Nous voulons qu’une variété de photos apparaisse sur le tableau noir.
+
+1. Commence un nouveau projet et supprime le chat.
+2. Sélectionne la scène puis l’onglet “Arrière-plans”. Importe l'arrière-plan “chalkboard” dans la catégorie “Indoors”.
+3. Importe un nouvel objet et donne-lui le costume de ton choix, en puisant dans la catégorie “Things” par exemple.
+4. Place l’objet au milieu du tableau noir, puis augmente ou réduis sa taille si nécessaire.
+5. Sélectionne l’onglet “Costumes” et importe 4 costumes supplémentaires. (choisis ce que tu veux). Maintenant tu n’as plus qu'à les faire apparaître de manière aléatoire ! 
+6. Crée le script suivant :
 
 ```scratch
-	when FLAG clicked	hide	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+
+	quand DRAPEAU VERT pressé
+	répéter nombre aléatoire entre 1 et 5 fois		
+		costume suivant
+	(fin répéter)
 ```
-__Now we need to add the sprites that the player can click on.__3. Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.
-￼￼4. Rename this sprite to __answer1.__ (This makes it easier to talk about.)5. Delete __answer1__'s script and all its costumes but its first one.6. Do these last three steps again, but put the __answer2__ sprite next to __answer1__ and delete all but its second costume.7. Do it three more times for __answer3__, __answer4__, and __answer5.__You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. __None of the answer sprites should have any scripts.__Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.8. Add this script to the answer1 sprite:
-```scratch
-	when answer1 clicked	if answer=1		broadcast won	else		hide
-	(end if)
+
+###Teste ton projet
+__Clique sur le drapeau vert.__
+
+DEst-ce que l’objet change de costume ?
+
+__Clique à nouveau plusieurs fois. __
+Est-ce que le costume change à chaque fois ?
+Le même costume peut apparaître deux fois de suite, mais c’est normal. Tu remarqueras aussi que l’objet clignote à chaque changement de costume. On réglera la chose dans l'étape suivante.
+
+Enregistre ton travail.
+
+##Étape 2 : Déforme l’image
+
+__Faisons apparaître les images de manière déformée, pour ensuite les rendre plus claires après quelques secondes.__
+
+Utilisons une variable “score” pour contrôler le niveau de déformation. Si le score est élevé, il y aura beaucoup de déformation. Au fur et à mesure que le score diminuera, l’image s'éclaircira. Le score jouera aussi le rôle de compte a rebours, comme pour la __carte Scratch “Chronomètre”__.
+
+1. Vas dans le l’onglet “Variables” pour créer une variable appelée “score 
+
+2. Change ton script de la manière suivante :
+
+```scratch
+
+	quand DRAPEAU pressé
+	cacher
+	répéter nombre aléatoire entre 1 et 5 fois		
+		costume suivant
+	(fin répéter)
+	à score attribuer 110
+	répéter jusqu'à score = 0
+		changer score par -10
+		mettre l’effet pixeliser à score
+		mettre l’effet couleur à score
+		montrer
+		attendre 1 secondes
+	(fin répéter)
 ```
-9. Drag this script into each of the other answer sprites. __In each sprite, change the 1 to 2, 3, and so on.__10. We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:
-```scratch
-	when I receive won	say join Congratulations! You scored score
-```￼￼###Test Your Project__￼Click the green flag.__When you test the game, you can use the __answer monitor__ on the stage to tell what the right answer is. That’s good for testing.What happens when you click on the __right answer__?What happens when you click on the __wrong answer?__What happens to the wrong answer when you __start a new game?__The test shows up two problems. First, wrong guesses don’t reappear when the next game starts. Second, the score doesn’t stop going down when we get the right answer.11. To fix the first problem, add this script to each of the five answer sprites:
-```scratch
-	when FLAG clicked	show
-```To fix the second problem, we need to stop the __question sprite__’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to __zero__ when the game starts and set it to __one__ when the game is won. We’ll make the repeat until loop stop when either the score reaches __zero__ OR the __game-winning flag__ is set to __one.__12. Create a new variable called won?13. Change the scripts so they look like this:
-```scratch
-	when FLAG clicked	hide	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	set won to 0
-	repeat until score = 0 or won? =1
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+
+Ajoute le bloc “cacher” au-dessus de la “boucle de répétition” et tout le reste en-dessous.
+
+###Teste ton projet
+__Presse sur le drapeau vert.__
+
+Est-ce qu’une image déformée apparaît de manière aléatoire ?
+
+Est-ce que l’image s'éclaircit petit a petit ?
+
+Est-ce que le score diminue au fur et à mesure que l’image devient moins déformée ?
+
+Est-ce que l’image est parfaitement claire quand le score arrive à zéro ?
+
+Est-ce que tu obtiens une image différente chaque fois que tu cliques sur le drapeau vert ?
+
+
+Enregistre ton travail.
+
+##Les choses à essayer
+
+__Essaie de changer le score initial et remarque la manière dont il change à chaque boucle.__ Quelle est son influence sur la manière dont l’image apparaît ? Est-ce que c’est plus difficile ou plus facile de reconnaître l’image ?
+
+__Expérimente avec les différents effets visuels listés dans le menu déroulant.__ Est-ce que ça rend le jeu plus facile ou plus difficile ?
+
+
+##Étape 3 : Permets au joueur de deviner l’image
+
+Pour le moment on a une image aléatoire qui apparaît lentement et un score qui diminue avec le temps, mais comment gagner la partie ?
+Nous allons ajouter quelques objets en bas de l'écran pour permettre au joueur de cliquer dessus. Si le joueur clique sur la bonne image il aura gagné. S’il clique sur la mauvaise alors elle disparaîtra et la partie continuera.
+
+D’abord il nous faut savoir quelle réponse est la bonne :
+
+1. 1.	Crée une nouvelle variable __appelée  réponse__, applicable pour tous les objets.
+2. 2.	Change le script que tu as écrit pour capturer la bonne réponse : ajoute le bloc “À réponse attribuer costume n°” juste après la première boucle :
+
+```scratch
+
+	quand DRAPEAU pressé
+	cacher
+	répéter nombre aléatoire entre 1 et 5 fois		
+		costume suivant
+	(fin répéter)
+	à réponse attribuer costume n°
+	à score attribuer 110 
+	répéter jusqu'à score = 0
+		changer score par -10
+		mettre l’effet pixeliser à score
+		mettre l’effet couleur à score
+		montrer
+		attendre 1 secondes
+	(fin répéter)
+```
+__Maintenant il faut ajouter les objets sur lesquels le joueur pourra cliquer.__
+
+3. Copie l’objet principal et glisse la copie en bas à gauche de la scène.
+4. Renomme l’objet __réponse1__ pour rendre la lecture de ces instructions plus facile.
+5. Supprime le script de __réponse1__ ainsi que tous ses costumes, à l’exception du premier.
+6. Répète ces 3 étapes, mais place __réponse2__ à cote de __réponse1__ et supprime tous ses costumes, à l’exception du second
+7. Répète l'opération pour __réponse3__, __réponse4__ et __réponse5__. Tu devrais alors obtenir une rangée de 5 objets possibles en bas de la scène, chacun avec leur propre costume qui pourrait correspondre à l’objet principal à identifier. __Aucun des objets du bas ne doit avoir un script.__
+
+Maintenant on veut faire en sorte que chacun des objets du bas puissent être cliqués et qu’ils réagissent différemment, suivant qu’ils soient la bonne ou la mauvaise réponse.
+
+8. 1.	Crée ce script pour réponse1 :
+
+```scratch
+
+	quand réponse1 est pressé
+	si réponse = 1
+		envoyer à tous Gagné !
+	sinon
+		cacher
+	(fin si)
+```
+
+9.2.	Glisse ce script avec la souris sur chacun des autres objets du bas et, __pour chacun, renomme le nom avec le chiffre correspondant (2,3,4,5).__
+10. 3.	Maintenant il faut créer une réaction qui corresponde a la “bonne réponse”. Ajoute le script suivant :
+
+```scratch
+
+	quand je reçois Gagné !
+	dire regroupe Félicitations, ton score est score
+```
+
+###Teste ton projet
+__Clique sur le drapeau vert.__
+
+Quand tu testes le jeu, tu peux utiliser le __moniteur de réponses__ pour vérifier la bonne réponse. Ça peut aider.
+
+Que se passe-t-il quand tu cliques sur __la bonne réponse__ ?
+
+Que se passe-t-il quand tu cliques sur __la mauvaise réponse__ ?
+
+Qu’arrive-t-il à la mauvaise réponse __quand tu commences une nouvelle partie__?
+
+Le teste révèle 2 problèmes : d’une part, les mauvaises réponses ne réapparaissent pas quand une nouvelle partie commence. D’autre part, le compteur ne s'arrête pas une fois que la bonne réponse est trouvée. 
+
+11. Pour résoudre le premier problème, ajoutez le script suivant pour chacun des 5 objets du bas :
+
+```scratch
+
+	quand DRAPEAU pressé
+	montrer
+```
+
+Pour résoudre le second problème, il faut arrêter la “boucle de répétition” de l’objet principal une fois que la bonne réponse est cliquée. 
+Pour cela on va créer une nouvelle variable qui démarre à __0__ quand la partie commence, puis passe à __1__ quand la bonne réponse est trouvée. On fera alors arrêter la “boucle infinie”, __soit lorsque le score atteindra 0, soit lorsque la nouvelle variable “gagné” passera à 1__ :
+
+12. Crée la nouvelle variable “gagné ?”
+13. Change les scripts de la manière suivante :
+
+```scratch
+
+	Quand DRAPEAU VERT pressé
+	Cacher
+	Répéter nombre aléatoire entre 1 et 5 fois		
+		Costume suivant
+	(fin répéter)
+	À réponse attribuer costume n°
+	À score attribuer 110 
+	À gagné attribuer 0
+	Répéter jusqu'à score = 0 ou gagné = 1
+		Changer score par -10
+		Mettre l’effet pixeliser à score
+		Mettre l’effet couleur à score
+		Montrer
+		Attendre 1 secondes
+	(fin répéter)
 	
-	When I receive won
-	set won to 1
-	clear graphics effects
-	say join Congratulations! You scored score
-```Save your project__Well done you’ve finished the basic game!__There are more things you can do to your game though. Have a go at these challenges!##￼￼￼Challenge 1: Make the game harder or easierChange how difficult the game is.* Try changing how fast the picture is revealed and how fast the score goes down.* Try changing the distortions on the picture.* Try changing the pictures being guessed, to make them either more similar or more different. If you do this, don’t forget to change the answer sprite’s costume.￼￼￼￼￼￼￼
-Save your project￼￼￼
-##Challenge 2: Distort the picture differently in each gameAt the moment, each play of the game uses the same distortion. In Step 2, you might have tried some different distortions that work at least as well as the colour + pixelation we used.Find some different distortions that work well. 
-Change the game so that each game uses a different distortion in the repeat until loop.__Hint:__ Try creating a new variable, called distortion to use. Set it to a random value at the start of the game. Use if blocks in the body of the repeat until loop to apply the correct distortion for this game.￼￼￼￼￼Save your project##Challenge 3: Make a game have a few roundsAt the moment, each game is independent. Change it so that the game proceeds in several rounds. For instance, have one game take three rounds, so the player has to guess three pictures and can score up to 300 points.__Hint:__ You’ll need an extra variable to store the grand total across all the rounds. You’ll also need a loop to go through the different rounds.__Hint:__ You’ll also have to make the wrong guesses reappear at the start of each round. Perhaps you could use a broadcast message to do that?￼￼￼￼￼
-Save your project￼￼￼
-##Challenge 4: Make later rounds more difficultAs you go through different rounds, make the game harder each time.Does each round need to score the same? Should you get more points for guessing quickly in the later, more difficult rounds?__Hint:__ How will you know which round you’re in? How can you use that to change the difficulty and the score?Save your project￼￼
-##Challenge 5: Keep playing until the player gets it wrongInstead of using a fixed number of rounds, keep playing the game until the player doesn’t get a picture right. This probably only works if the game gets harder in later rounds.Save your project
-##Challenge 6: Make the game harder or easier depending on how well the player doesRather than always making the game harder, make the game adjust the difficulty depending on the skill of the player. If they get the right picture quickly, make the next game a bit harder. If they don’t get the right picture, or only get it late, make the next game a bit easier.This idea only really works if you don’t add up someone’s score over several rounds.Save your project
-##Challenge 7: Keep track of the highest scoreKeep track of the highest score. If someone manages to beat it, ask for their name and update the highest score. Make sure the highest score, and the name of the person who scored it, are displayed.￼￼￼￼￼
-Save your project
-##￼￼￼Challenge 8: Make wrong guesses expensiveAt the moment, there’s no penalty to just clicking on all the answer sprites as quickly as you can. Change the game so that the score goes down a bit every time you make an incorrect guess.Does this make the game better?￼￼￼￼￼
-Save your project
-__￼￼￼Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+	Quand je reçois Gagné !
+	À gagné ? attribuer 1 
+	Annuler les effets graphiques
+	Dire regroupe Félicitations, ton score est score
+```
+
+Enregistre ton travail
+
+__Bravo, tu as complété la création du jeu de base !__
+
+Mais il pourrait être amélioré de plusieurs façons. Alors pourquoi n’essaies-tu pas les défis suivants ?
+
+
+##Défi 1 : Change la difficulté du jeu
+
+Change la difficulté du jeu
+
+* Essaie de changer la vitesse a laquelle l’image s'éclaircit et le score diminue.
+* Essaie de changer la manière dont l’image se déforme
+* Essaie de changer les images à deviner pour les rendre plus similaires ou plus différentes. Mais n’oublie pas de modifier les costumes de manière correspondante.
+
+Enregistre ton travail
+
+##Défi 2 : Déforme l’image de manière différente à chaque partie
+
+Pour le moment toutes les parties utilisent le même effet de déformation. A l’étape 2 tu as essayé d’autres effets qui fonctionnent aussi bien que couleur + pixelisation.
+
+Trouves-en plusieurs autres.
+
+Change le jeu pour qu’il utilise une déformation différente dans la _boucle de répétition_.
+
+__Astuce :__ Crée une nouvelle variable appelée “distorsion”. Donne-lui une valeur aléatoire au début de chaque partie. Utilise un bloc “Si” a l'intérieur de la “boucle de répétition” de manière a donner la valeur nécessaire à “distorsion”.
+
+Enregistre ton travail.
+
+##Défi 3 : Fais une partie en plusieurs manches
+
+Pour le moment chaque partie est indépendante. Fais que la partie soit sur plusieurs manches. Pour commencer mets 3 manches dans une partie, pour que le joueur puisse identifier 3 images et que son score puisse atteindre 3000 points.
+
+__Astuce :__ tu auras besoin d’une nouvelle variable pour sauvegarder le score total. Il te faudra aussi une nouvelle “boucle” pour passer d’une manche à l’autre.
+
+__Astuce : __Il faudra aussi faire réapparaître tous les mauvais choix précédents au début de chaque manche. Tu pourrais peut-être utiliser un “envoi a tous” ?
+ 
+Enregistre ton travail.
+
+
+##Défi 4 : Rends les manches plus difficiles au fur et a mesure
+
+Rends chaque manche plus difficile que la précédente ?
+
+Est-ce que les points obtenus doivent rester les mêmes ? 
+
+Le joueur devrait-il gagner plus de points dans les manches plus difficiles ?
+
+__Astuce :__ Comment est-ce que le jeu compte les manches ? Comment peux-tu utiliser ce compteur pour augmenter la difficulté et le score de chaque manche ?
+
+Enregistre ton travail.
+
+
+##Défi 5 : Termine quand le joueur fait un mauvais choix
+
+Au lieu de limiter la partie à un nombre de manches précis, fais-la continuer jusqu’au moment ou le joueur ne devine pas la bonne image. Ça n’est probablement possible que si tu augmentes la difficulté du jeu d’un manche à l’autre.
+
+Enregistre ton travail.
+
+##Défi 6 : Fais correspondre la difficulté du jeu au niveau du joueur
+
+Si le joueur devine les images rapidement, alors rends le jeu plus difficile et vice-versa. Mais attention : ce défi ne marche que si les parties ne sont composées que d’une manche !
+
+Enregistre ton travail.
+
+
+##Défi 7 : Garde le meilleur score en mémoire
+
+Si un joueur bat le meilleur score demande lui d’entrer son nom. Le meilleur score et le nom du joueur doivent être affichés à l'écran. 
+
+Enregistre ton travail.
+
+
+##Défi 8 : Enlève des points si on se trompe
+
+Jusque là on peut marquer des points en cliquant le plus vite possible sur toutes les réponses. Change le jeu pour que le score du joueur diminue s’il choisi une des mauvaises réponses.
+
+Est-ce que ça rend le jeu plus amusant ?
+
+Enregistre ton travail.
+
+
+__Bravo, tu as fini, maintenant tu peux t’amuser ! __
+! Et souviens-toi que tu peux partager ton jeu avec tes amis et ta famille, en pressant le bouton __Partager__ dans le menu du haut.
