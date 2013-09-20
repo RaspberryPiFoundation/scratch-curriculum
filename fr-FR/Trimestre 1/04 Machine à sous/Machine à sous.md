@@ -1,47 +1,121 @@
-Level 2
+Niveau 2
 
-#Fruit machine
+#Machine à sous
 
-__Introduction:__This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
-##￼STEP 1: Create a sprite that changes costumes
-__Let’s import the different pictures for the game__1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete2. Import a new sprite.3. Choose an image from any folder. We used things/bananas1, but you canuse any image you want to.4. Click the Costumes tab and import two more things so there are three in total(we used animals/bee1 and things/lego, but you can use any images).__Now we’ve got some costumes, we want the sprite to change between them.__##STEP 2: Making the picture change
+__Introduction:__
+Dans ce jeu, il y a trois objets qui changent de costume. Pour gagner, il faut que les 3 s’arrêtent sur le même costume. C'est comme une machine à sous !
 
-1. Click the Scripts tab.2. Click Control and drag a when flag clicked into the scripts area. This will betriggered when we click the green flag.3. Add a forever and attach it so it snaps to the bottom.4. Click the green flag in the top right. Notice that a white outline is around our script. It’s running because we clicked the green flag, which triggers this.5. Now click Looks and drag in a next costume6. How do we slow it down so it isn’t changing so quickly? Click Control and drag in a wait 1 secs7. Adjust the time until it’s repeating at a faster pace (a time of 0.1s looks good). What would happen if we didn’t have the wait block?
+##Étape 1 : Crée un objet avec plusieurs costumes
+
+__Importons les images dont nous aurons besoin__
+
+1. Crée un nouveau projet. Efface le chat.
+2. Importe un nouvel objet.
+3. Choisi une image de n’importe quel dossier. Notre exemple utilise things/bananas1, mais tu peux prendre celle que tu veux.
+4. Clique sur l’onglet “Costumes” et importe deux autres images et qu’il y en ait trois au total (nous avons pris animals/bee1 et things/lego, mais tu peux prendre n’importe quelle image).
+
+__Maintenant qu'on a les images , nous voulons que l'objet change tout le temps de costume.__
+
+##Étape 2 : Fais défiler les images
+
+1. Clique sur l’onglet Scripts.
+2. 2.	Clique sur Contrôle et fais glisser “quand *drapeau* est pressé” dans la zone des scripts. Cela mettra le jeu en marche quand tu appuieras sur le drapeau.
+3. Ajouter le bloc “répéter indéfiniment” en le collant juste en dessous.
+4. Clique sur le drapeau vert, en haut à droite. Tu vois la ligne blanche autour du script ? C’est parce qu’il est en marche.
+5. Maintenant clique sur “Apparence” et fais glisser “costume suivant” dans le script. 
+6. Commence faire pour qu’il change moins vite ? Clique sur Contrôle et fais glisser “attendre 1 secondes” dans le script
+7. Règle la durée d’attente pour que cela soit plus rapide : clique sur le 1 et écris 0.1. Que se passe-t-il s’il manque le “attendre … secondes” ?
 
 ```scratch
-	when FLAG clicked	forever		
-		next costume
-		wait 0.1 secs
-	(end forever)
+
+	quand DRAPEAU pressé
+	répéter indéfiniment		
+		costume suivant
+		attendre 0.1 secondes
+	(fin de répéter)
 ```
 
-###Test Your Project__Click the green flag.__ 
-Do the costumes change at a sensible rate?
-Save your project
-###Things to try
-Adjust the time in the wait block.What numbers do you think would make the game too easy, or too hard?##￼STEP 3: Making it stop when we click on it
-Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for all sprites, then uncheck the box next to it so it doesn’t display on the stage.2. Set stopped to 1 when someone clicks on the image usingwhen sprite1clicked and set stopped to 0 making sure to change the value from 0 to 1.
-3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
-4. Finally, add a set sprite1stopped to 0 underneath the when flag clicked
+###Teste ton projet
+__Clique sur le drapeau vert.__ 
+Est-ce que les costumes changent à une vitesse raisonnable ?
 
-###Test Your Project__Click the green flag, wait for a moment, then click on the sprite.__ 
+Enregistre ton travail
 
-Does it change costume before you click on it? 
-Does it stop when you do click on it?
-__Start the sprite again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
-Save your project
-##Step 4: Creating the other sprite
-__Now we need to make the other sprites so we can play our game!__1. Duplicate the sprite (Sprite1) by right clicking on it in the bottom right corner.2. Duplicate it again so there are 3 sprites on the screen.3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
-###Test Your Project__Click the green flag.__ All the sprites should change. Try to stop them all on the same picture!
-Save your project
-###Things to try
-When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. How about you make the sprites change to a random costume when the green flag is clicked?Hint: try picking a random costume for each sprite when the game is started.__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
-##Challenge 1: Make the game harder
-Change the difficulty of the game somehow. Just making the costumes change quicker is easy. Try and do something more imaginative. Some ideas you might like to try:1. Change the number of costumes each sprite has.2. Make some sprites have unique costumes.3. Have different times between costume changes.4. Have each sprite move to a random costume rather than the next one. 
-__Have fun coming up with your own things!__Every time you make a change, think about whether it make the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
-##Challenge 2: Make the game get harder and easier over timeDifferent people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called __delay__, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier).
-##￼Challenge 3: Detect when all the sprites have stopped on the same costume
-__The aim of the game is click on the sprites so they’re stopped while showing the same costume. It would be nice if the stage detected when you’d finished playing and then told you if you had won or lost by checking to see if each sprite had the same costume.__
-First, the stage needs to know when the player has finished. We can do this by having the stage check to see if all sprites have stopped moving when we click on one of them. Go back and modify each of the sprite# clicked blocks to broadcast a new message, checkForEndThe Stage can respond to this message and check if the game is over by seeing if all three sprites’ stopped variables are set to 1, by using the x position of Sprite block for each sprite, and changing “x position” to stopped If all three sprites have a stopped value of 1, we know the game is over and we can check to see if the player has won.To do this, we can use the same x position of Sprite block, but instead of looking at the stopped variable, we can look at the costume # and see if Sprite1 has the same costume as Sprite2, and if Sprite2 has the same costume as Sprite3.To do this, you’ll need an if block to check each stopped variable, and inside that an if... else block to see if the player has won or lost by comparing eachcostume #
-From this point on, you could announce the result of the game using a broadcast and respond to this with another sprite. Maybe get Felix back to congratulate or commiserate the player?
-__Well done you’ve finished, now you can enjoy the game!__Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+###À essayer
+
+Change la durée du bloc "Attente". À ton avis, quelle durée d'attente rendrait le jeu trop facile ? Quel réglage serait trop dur ?
+
+##Étape 3 : Arrêt sur image
+
+Nous avons fait défiler les images. Mais comment faire pour que ça s'arrête quand on clique dessus ?
+
+1. Clique sur “Variables” puis sur “Nouvelle variable”. Appelle-la “arrêt” et coche “Pour tous les objets”. Finalement, décoche la case pour que la variable ne s’affiche pas sur la scène.
+2. Met “arrêt” à 1 quand on clique sur l’image, en utilisant les blocs “quand Object1 pressé” et “à arrêt attribuer 1”.
+3. Ensuite il faut que l’image arrête de changer quand la variable “arrêt” vaut 1. Clique sur “Contrôle” et remplace le bloc “répéter indéfiniment” par le bloc “répéter indéfiniment si”. Clique sur “Opérateurs” et glisse le bloc avec un signe ” = “ à droite du “si”. A gauche du “=”, glisse la variable “arrêt”. Clique dans la case à droite du “=” et écrit “1”
+4. Enfin, sous “quand DRAPEAU pressé”, glisse un bloc “à arrêt attribuer 0”.
+
+###Teste ton projet
+__Clique sur le drapeau vert, attends un petit instant, puis clique sur l'objet.__ 
+
+Est-ce que les costumes changent comme il faut ? 
+Est-ce que ça s'arrête sur une des images quand tu cliques ? 
+__Fais les défiler de nouveau__ Est-ce que ça s'arrête quand tu mets simplement le curseur de souris dessus mais sans cliquer ? Est-ce que ça s'arrête quand tu cliques ailleurs sur la scène ? Ou autre part dans la fenêtre de Scratch ? Ou en dehors de Scratch ?
+
+Enregistre ton travail
+
+##Étape 4 : Crée les autres objets
+__Avant de pouvoir jouer à notre jeu, nous devons encore créer les deux autres objets !__
+
+1. Fais un clique-droit sur Objet1 et utilise Dupliquer.
+2. Duplique le encore une fois. On a maintenant 3 Objets à l’écran.
+3. Déplace les objets : mets les en ligne. Réduis-les si ils se chevauchent un peu.
+
+###Teste ton projet
+__Clique sur le drapeau vert.__ Tous les objets devraient changer de costume. Essaie de les arrêter tous sur la même image !
+
+Enregistre ton travail
+
+###À essayer
+
+Quand on lance le jeu juste après l'avoir ouvert, tous les objets commencent par le même costume. Ils montrent aussi la même image quand ils défilent. Et si tu prenais un costume au hasard pour chacun des 3 objets quand on clique sur le drapeau vert ?
+
+__Bravo, tu as fini les bases du jeu. Mais tu peux sûrement faire encore mieux. Essaye les défis suivants !__
+
+
+##Défi 1 : Rends le jeu plus difficile
+
+Essaie de changer la difficulté du jeu. C'est facile de faire défiler les images plus rapidement, alors utilise ton imagination pour trouver autre chose !
+Tu pourrais essayer de 
+
+1. Changer le nombre de costumes de chaque objet.
+2. Donne des costumes uniques à certains objets.
+3. Fais des pauses différentes entre les changements de costume.
+4. Choisis le prochain costume au hasard au lieu de garder toujours le même ordre. 
+
+__Amuse-toi à trouver de nouvelles idées !__
+
+À chaque changement, demande-toi si ça rend le jeu plus dur ou plus facile. Est-ce trop facile ou trop difficile maintenant ? Essaie de trouver le juste milieu : le bon niveau de difficulté.
+
+
+##Défi 2 : Adapte la difficulté
+
+Tout le monde ne sera pas aussi doué que toi pour gagner le jeu. __Comment pourrais-tu ajuster le niveau de difficulté du jeu pour chaque joueur ?__
+
+Une possibilité serait d'__adapter la vitesse de changement des costumes à la fin de chaque partie__. Tu peux utiliser une variable __délai__ et la mettre à la place de la durée du bloc "attente". Si le joueur gagne, tu peux réduire ce délai pour rendre le jeu un peu plus difficile. Et si le joueur perd, il faudra augmenter le délai pour rendre la prochaine partie plus facile.
+
+##Défi 3 : Détecte si on a gagné ou perdu
+
+__Le but du jeu est d’avoir 3 fois la même image. On a donc gagné quand les trois objets sont arrêtés sur le même costume. Comment annoncer au joueur s'il a gagné ou perdu ? Tu pourrais faire en sorte que la scène détecte si les 3 costumes sont les mêmes.__
+
+D'abord, la scène doit savoir quand le jeu est terminé. Pour cela, à chaque fois que l'on clique l'un des objets, la scène peut vérifier si les 3 objets sont arrêtés. Va donc modifier le bloc "quand objet# pressé" des 3 objets et ajoute l'envoi d'un message "vérifierFin".
+
+Quand la scène reçoit ce message, elle peut vérifier si la variable "arrêté" des 3 objets est égal à 1. Utilise pour cela des blocs "position x de felix", puis remplace "position x" par "arrêté" et "felix" par les objet#. Si les trois ont la valeur 1, alors la partie est terminée, et nous pouvons ensuite regarder si le joueur a gagné.
+
+Pour savoir si on a gagné ou perdu, nous allons vérifier le costume des 3 objets : Si objet1 a le même costume que objet2, et si objet2 a le même costume que objet3 alors c'est gagné ! Tu peux réutiliser des blocs "position x de felix".
+
+Pour comparer les 3 objets, tu auras besoin d'un bloc "si" pour vérifier les variables "arrêté" et à l'intérieur tu mettras un bloc "si... sinon" pour vérifier si le joueur a gagné ou perdu en comparant les costumes des objets..
+
+À partir de là, tu pourrais envoyer un message "gagné" ou "perdu" et y répondre avec un nouvel objet : Peut-être pourrais-tu faire apparaître Félix pour féliciter ou plaindre le joueur ?
+
+__Bravo, tu as fini ! Tu peux maintenant t’amuser !__
+N’oublie pas que tu peux partager ton jeu avec tes amis et ta famille en cliquant sur le bouton __Partager ce projet__ en haut à droite. à côté du globe et de la disquette
