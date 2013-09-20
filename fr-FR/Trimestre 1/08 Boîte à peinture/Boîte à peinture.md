@@ -12,7 +12,7 @@ Nous allons commencer par un crayon qui dessine quand tu le déplaces autour de 
 1. Commence un nouveau projet Scratch. Supprime le chat en cliquant dessus avec le bouton droit de la souris puis en cliquant sur ‘supprimer’.
 2. Clique sur ‘Scène’ puis __Arrière-plans’__. Importe __l’arrière plan__ : __indoors/chalkboard__.
 3. Créé un nouvel objet appelé : __Crayon__. Importe le fichier __resources\crayon-vert__.
-4. Bascule vers l’onglet __costumes__ et clique sur le bouton ‘Edit’. Dans l’__éditeur graphique__, change le centre de l’image pour qu’il soit à la pointe du crayon. Pour cela, clique sur le bouton _Définir le centre du costume_ et déplace les lignes jusqu’à ce qu’elles soient à la pointe.
+4. Bascule vers l’onglet __costumes__ et clique sur le bouton ‘Edit’. Dans __l’éditeur graphique__, change le centre de l’image pour qu’il soit à la pointe du crayon. Pour cela, clique sur le bouton _Définir le centre du costume_ et déplace les lignes jusqu’à ce qu’elles soient à la pointe.
 5. 5.	Nous allons programmer le crayon pour suivre la souris lors de son mouvement dans la scène. On va utiliser les blocs __Répeter indéfiniement__ et __aller à pointeur de souris__.
 
 ```scratch
@@ -22,7 +22,7 @@ Répéter indéfiniment
 (fin répéter indéfiniment)
 ```
 
-__Maintenant, nous voulons utiliser l’objet ‘Crayon’ comme un vrai stylo. __Dans la section "Stylo", tu trouveras toute sorte de blocs pour dessiner. Commencons par les blocs  __abaisser le stylo__ et __relever le stylo__.
+__Maintenant, nous voulons utiliser l’objet ‘Crayon’ comme un vrai stylo.__ Dans la section "Stylo", tu trouveras toute sorte de blocs pour dessiner. Commencons par les blocs  __abaisser le stylo__ et __relever le stylo__.
 
 6. Nous voulons utiliser le bouton de la souris pour contrôler le crayon. Quand ce bouton est préssé, le crayon doit être abaisé. Et quand il est relaché, le crayon doit être relevé. On peut réaliser ça en utilisant les blocs ‘si … sinon’ et ‘souris préssée’
 
@@ -98,13 +98,13 @@ Pour le moment, on ne peut dessiner que des lignes bleues. Ajoutons plein d’au
 Quand ‘rouge’ préssé
 envoyer à tous ‘rouge’.
 ```
-__Oui, ’est tout ! Le gros du travail sera fait par le crayon__
+__Oui, c’est tout ! Le gros du travail sera fait par le crayon__
 
 Séléctionne l’objet Crayon. Puis importe un nouveau costume __resources/red-pencil__. Modifie le centre du crayon pour qu’il soit à la pointe du crayon comme tu l’as déjà fait pour le costume original.
 
 4. Ajoute un nouveau script pour le crayon. Quand le crayon reçoit le message __Rouge__, il doit changer la couleurs du costume vers le costume rouge et change la couleur du crayon à la couleur rouge. (en utilisant le bloc ‘mettre la du stylo à ‘)
 
-__Astuce : __ Si tu clique sur le carré coloré au niveau du bloc __mettre la couleur du stylo à__ tu peux cliquer avec la pipette sur l’objet rouge pour s’assurer que c’est la même couleur. 
+__Astuce :__ Si tu clique sur le carré coloré au niveau du bloc __mettre la couleur du stylo à__ tu peux cliquer avec la pipette sur l’objet rouge pour s’assurer que c’est la même couleur. 
 
 ```scratch
 Quand je reçoit rouge
@@ -134,11 +134,11 @@ Tu sans probablement remarqué qu’il est possible de dessiner partout sur la s
 
 Rappelle toi que Scratch définit un point en utilisant les axes X et Y. Notre zone de dessin se trouve entre -230 et 230 sur l’axe X, et entre -170 et 170 sur l’axe Y. On peut utiliser ces valeurs dans un bloc __si__ pour être sûr que la souris est à l’intérieur de cette zone . 
 
-Pour réaliser ça, enveloppe les blocs que tu as déjà fait (__aller à et Si souris préssé__) dans un nouveau bloc ‘Si’. A l’intérieur de ce nouveau bloc, tu dois vérifier que : 
+Pour réaliser ça, enveloppe les blocs que tu as déjà fait (__aller à__ et __Si souris préssé__) dans un nouveau bloc ‘Si’. A l’intérieur de ce nouveau bloc, tu dois vérifier que : 
 
 Souris Y est supérieur à -120 et souris Y est inférieur à 170 et souris X est supérieur à -230 et souris X est inférieur à 230
 
-__Note __: Pour le faire, tu as besoin d'utiliser à plusieurs reprises le bloc __ET__ (dans la section Opérateurs) : 1 bloc pour les deux conditions de la position souris X, un autre pour les deux conditions de la position souris Y, et au final un autre bloc pour joindre tous ensemble. 
+__Note__: Pour le faire, tu as besoin d'utiliser à plusieurs reprises le bloc __ET__ (dans la section Opérateurs) : 1 bloc pour les deux conditions de la position souris X, un autre pour les deux conditions de la position souris Y, et au final un autre bloc pour joindre tous ensemble. 
 
 ```scratch
 effacer tout
@@ -278,7 +278,7 @@ Qu’est-ce qui se passe quand tu bascules à l’estampille, tu changes la tail
 
 Enregistre ton travail
 
-_Très bien ! Tu as terminé ! Maintenant, tu peux t’amuser avec le jeu. __
+_Très bien ! Tu as terminé ! Maintenant, tu peux t’amuser avec le jeu._
 
 
 Rappelle toi que tu peux partager ton jeu avec tous tes amis et famille en cliquant sur le bouton __Partager__ dans la barre des menus.
