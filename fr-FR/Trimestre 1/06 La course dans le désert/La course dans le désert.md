@@ -80,7 +80,7 @@ Nous souhaitons que les coureurs (le lion et le perroquet) ne puissent pas comme
 Pour cela nous avons besoin d’une variable :
 
 5. Ajoute une variable pour tous les objets, appelée CourseDémarrée. Décoche la case qui se trouve à coté de son nom pour qu'elle ne soit pas affichée dans la scène.
-6. 2.	Maintenant fais en sorte que la variable CourseDémarrée soit egale à 0 lorsque le projet est lancé pour la première fois. Change ton script `quand DRAPEAU est pressé` que tu as écris précédemment pour le bouton Démarrer comme ceci :
+6. Maintenant fais en sorte que la variable CourseDémarrée soit egale à 0 lorsque le projet est lancé pour la première fois. Change ton script `quand DRAPEAU est pressé` que tu as écris précédemment pour le bouton Démarrer comme ceci :
 
 ```scratch
 
@@ -110,7 +110,7 @@ Nous voulons savoir qui a gagné la course et initialiser son score de nouveau. 
 
 ##Étape 4 : Termine la course
 
-1. 2.	Ajoute un bloc au script du perroquet qui met a variable CourseDémarrée à 0 quand le perroquet touche le bord de l’écran.
+1. Ajoute un bloc au script du perroquet qui met a variable CourseDémarrée à 0 quand le perroquet touche le bord de l’écran.
 
 ```scratch
 
@@ -198,11 +198,8 @@ Enregistre ton travail.
 * __Ajoute un nouveau costume__ avec du feu derrière chaque coureur et fais en sorte qu’il s’affiche quand l’accélérateur est utilisé.
 * __Crée un nouveau son__ que le coureur jouera quand il utilisera l’accélérateur.
 
-###v
-
+###Teste ton projet
 Enregistre ton travail
 
-
-__Félicitations ! 
-Tu as terminé ! Maintenant tu peux profiter de ton jeu ! __
-N’oublie pas que tu peux partager ce jeu avec tous tes amis et toute ta famille en cliquant sur __Partager __dans la barre de menu.
+__Félicitations ! Tu as terminé ! Maintenant tu peux profiter de ton jeu !__
+N’oublie pas que tu peux partager ce jeu avec tous tes amis et toute ta famille en cliquant sur __Partager__ dans la barre de menu.
