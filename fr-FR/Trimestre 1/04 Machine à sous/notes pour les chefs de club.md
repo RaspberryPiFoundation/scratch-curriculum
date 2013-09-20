@@ -1,4 +1,31 @@
-#NOTES FOR CLUB LEADERS
-##(Fruit Machine)###Introduction:This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).###SkillsThis project covers- Changing costumes- Running a loop- Stopping a loop on click###ResourcesThis project uses only standard Scratch images found within Scratch.###Scratch Cards required:Broadcast###Basic exercisesStep 1: Create a sprite that changes costumes 
-Step 2: Making the picture changeStep 3: Making it stop when we click on it 
-Step 4: Creating the other sprites###Challenges1. Make the game harder2. Make the game get harder and easier over time3. Detect when all the sprites have stopped on the same costume
+#NOTES POUR LES CHEFS DE CLUB
+##(Machine à sous)
+
+###Introduction:
+Dans ce jeu, il y a trois objets qui changent de costume. Pour gagner, il faut arrêter les 3 sur la même image. C'est comme une machine à sous !
+###Compétences
+Ce projet couvre :
+
+- les changements de costume
+- les boucles
+- la sortie d'une boucle au clic
+
+###Ressources
+Ce projet n'utilise que des images standards qui font partie de Scratch.
+
+###Cartes Scratch utilisées
+Diffusion de message
+
+###Basic exercises
+Étape 1 : Crée un objet avec plusieurs costumes 
+
+Étape 2 : Fais défiler les images
+
+Étape 3 : Arrêt sur image 
+
+Étape 4 : Crée les autres objets
+
+###Défis
+1. Rends le jeu plus difficile
+2. Adapte la difficulté
+3. Détecte si on a gagné ou perdu
