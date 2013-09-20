@@ -83,7 +83,7 @@ Enregistre ton travail.
 
 ##Étape 2 : Fais exploser la fusée
 
-1. 1.	La première étape pour faire exploser la fusée consiste à jouer le son “bang” avant son lancement (le son se trouve dans le dossier “Resources”). Ensuite, la fusée sera masquée une fois qu’elle touchera la souris. Pour importer un son, clique sur l’onglet “sons” puis sur le bouton “Importer”
+1. La première étape pour faire exploser la fusée consiste à jouer le son “bang” avant son lancement (le son se trouve dans le dossier “Resources”). Ensuite, la fusée sera masquée une fois qu’elle touchera la souris. Pour importer un son, clique sur l’onglet “sons” puis sur le bouton “Importer”
 
 
 ```scratch
