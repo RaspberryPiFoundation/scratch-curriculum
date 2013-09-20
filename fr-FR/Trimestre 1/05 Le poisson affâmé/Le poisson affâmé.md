@@ -85,7 +85,7 @@ Enregistre ton travail.
 
 ##Étape 3 : Le poisson affamé mange la proie
 
-__Maintenant, nous allons programmer le poisson affamé pour qu’il mange la proie ! __ Une fois que le poisson a pris la proie dans sa bouche, deux choses doivent se passer :
+__Maintenant, nous allons programmer le poisson affamé pour qu’il mange la proie !__ Une fois que le poisson a pris la proie dans sa bouche, deux choses doivent se passer :
 * Le poisson affamé doit fermer sa bouche et faire un bruit de mâchage.
 * La proie doit disparaître, et réapparaît après quelques instants.
 
@@ -112,7 +112,7 @@ Pour effectuer cette tâche, utilise le bloc “touché” :
 __Essaye de nouveau ton programme. Est-ce que tu as détecté un problème ?__ Remarque que la proie disparaît indépendamment de l’endroit où elle touche le poisson. En plus, le poisson peut juste attendre 3 secondes au même endroit et manger la proie une fois réapparue. Ce n’est pas juste !
 
 2. Comment on peut faire pour  	que la proie ne disparaît que si elle touche la bouche du poisson ? Dans ce cas, il est possible d’utiliser le bloc “couleur touchée” et vérifier si elle touche les dents bleues. Pour cela, remplace le bloc “touché” par le bloc “couleur touchée” dans le script. Clique sur la couleur (dans le bloc) puis clique sur les dents du poisson. 
-3. 2.	Ensuite, nous pouvons déplacer la proie à un point aléatoire de la scène avant de le faire réapparaître. Nous allons utiliser le bloc “aller à x: y:” et donner des valeurs aléatoires à x et y.
+3. Ensuite, nous pouvons déplacer la proie à un point aléatoire de la scène avant de le faire réapparaître. Nous allons utiliser le bloc “aller à x: y:” et donner des valeurs aléatoires à x et y.
 
 ```scratch
 
@@ -151,7 +151,7 @@ Est-ce que la proie disparaît quand elle touche uniquement les dents du poisson
 		(fin si)
 	(fin répéter indéfiniment)
 ```
-__Maintenant, nous voulons que le poisson réponde à ce message en faisant le bruit du mâchage et en claquant ses mâchoires..__
+__Maintenant, nous voulons que le poisson réponde à ce message en faisant le bruit du mâchage et en claquant ses mâchoires.__
 
 5. Ajoute le costume “resources/mouth-closed” et le son “resources/chomp” au poisson affamé.
 6. Ensuite, ajoute-lui un nouveau script en réponse au message diffiusé par la proie. Ce script doit jouer le son “chomp”, puis effectuer un changement vers le costume “mouth-closed”. Après, il y un cours moment d’attente suivi par un changement vers le costume original.
@@ -184,7 +184,7 @@ __Très bien ! Tu as terminé la base du jeu. Il y a d’autres choses que l’o
 
 ##Défi 1 : La proie se déplace autrement
 
-Pour le moment, toutes les proies avancent de la même façon. __Pouvez-vous faire qu’une d’elles se déplace d’une manière différente des autres __? 
+Pour le moment, toutes les proies avancent de la même façon. __Peux-tu faire en sorte qu’une d’elles se déplace d’une manière différente des autres?__ 
 __Astuce__ Ne perds pas trop de temps dans cette partie sans jeter un oeil sur les autres acitvités du projet.
 
 __Prends une des proies pour y faire des expériences.__ S’ils ont le même costume, tu peux modifier la couleur avec le boc __mettre l’effet couleur à__. Ainsi, tu pourras différencier ta proie de test du reste des proies.
@@ -254,7 +254,7 @@ Enregistre ton travail.
 ##Défit 5 : Ajoute un score de bonus
 Fais gagner un super bonus si tu arrives à manger 3 proies en même temps. Comment peux-tu dire combien de proies ont été mangées ? 
 
-__Astuce __: Une façon de le faire est d’__utiliser une variable qui compte le nombre de proies qui nagent ensemble__
+__Astuce__: Une façon de le faire est __d’utiliser une variable qui compte le nombre de proies qui nagent ensemble__
 
 Enregistre ton travail.
 
