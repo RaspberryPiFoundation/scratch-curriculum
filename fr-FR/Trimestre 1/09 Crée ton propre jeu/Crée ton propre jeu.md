@@ -28,5 +28,5 @@ Maintenant tu vas écrire les scripts qui vont faire fonctionner ton jeu.
 Garde en tête :
 
 1. Tu peux toujours te référer aux cartes Scratch et aux jeux que tu as déjà construit.
-2. Il faut tester ton projet et sauvegarder ton jeu régulièrement..
+2. Il faut tester ton projet et sauvegarder ton jeu régulièrement.
 3. Sois créatif !
