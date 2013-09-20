@@ -1,8 +1,42 @@
-#NOTES FOR CLUB LEADERS
-##(What's That)##IntroductionA random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!##SkillsThis project covers
-* Keeping and setting the score* Changing costumes and appearance* Setting a random answer* Detecting a click and checking if the right sprite was clicked 
-* Broadcast messages##ResourcesThis project uses resources found in the Scratch Backgrounds and Costumes folders##Scratch Cards required:Timer##Basic exercisesStep 1: Make different things appear on the blackboard 
-Step 2: Make the pictures distorted
-Step 3: Allow the player to guess the picture￼
-##Challenges1. Make the game harder or easier2. Distort the picture differently in each game3. Make a game have a few rounds4. Make later rounds more difficult5. Keep playing until the player gets it wrong6. Make the game harder or easier depending on how well the player does. 
-7. Keep track of the highest score8. Make wrong guesses expensive
+#NOTES POUR LES CHEFS DE CLUB
+##(Qu’est-ce que c’est)
+
+##Introduction
+
+Un objet est affiche a l'écran de manière aléatoire sur le tableau noir, tout déformé. le joueur doit presser sur l’image correspondant dans la liste affichée sous le tableau noir. Plus il est rapide plus son score augmente !
+
+##Compétences
+
+Ce projet couvre :
+
+* La capacité a compter les points
+* Changer les costumes et apparences
+* Définir une action aléatoire
+* Détecter un “clic” et vérifier que le bon objet est “pressée” 
+* Envoyer un message à tous
+
+##Ressources
+
+Ce projet nécessite l’utilisation des éléments “arrière-plans” et “Costumes”
+
+##Cartes Scratch utilisées:
+
+Chronomètre
+
+##Exercices de base
+
+Étape 1 : Fais apparaître différents objets sur le tableau noir
+
+Étape 2 : Déforme des images
+
+Étape 3 : Permets au joueur de deviner une image
+
+##Defis
+1.	Change la difficulté du jeu
+2.	Déforme l’image de manière différente à chaque partie
+3.	Fais une partie en plusieurs manches
+4.	Rends les manches plus difficiles au fur et a mesure
+5.	Termine la partie quand le joueur fait un mauvais choix
+6.	Fais correspondre la difficulté du jeu au niveau du joueur
+7.	Garde le meilleur score en mémoire
+8.	Enlève des points si on se trompe
