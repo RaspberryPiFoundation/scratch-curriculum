@@ -1,7 +1,7 @@
 #NOTES POUR LES CHEFS DE CLUB
 ##(Crée ton propre jeu)
 
-##Introduction:
+##Introduction
 
 Dans ce projet, tu vas toi-même dessiner et créer un jeu pour jouer avec tes amis ! Il te faudra réfléchir aux différentes parties de ton jeu et planifier tes idées avant de le faire avec Scratch. Tu peux utiliser les idées des projets précédents et les cartes Scratch pour t’aider.
 
