@@ -1,4 +1,28 @@
-#NOTES FOR CLUB LEADERS
-##(Make Your Own Game)##Introduction:In this project you will design and create a game for you and your friendsto play! You will need to think about its different parts and plan your ideas before you begin making it on Scratch. You can use ideas from past projects and Scratch cards to help you.##SkillsThis project covers 
-* Design* Planning* Bug fixing##ResourcesThe children will be designing their own resources for this project including characters, stage and sound design. Have extra paper ready for the children in case they need it. Make sure there are pens and pencils available to draw with. You will need to have a think about how many sessions the children will do this project over. The design and planning stage could take them a whole session or even two. Plan it before you start then inform the children how long they have.##Basic exercisesStep 1: Planning your gameStep 2: Design your charactersStep 3: Design your stageStep 4: How does your game work? 
-Step 5: Building your game
+#NOTES POUR LES CHEFS DE CLUB
+##(Crée ton propre jeu)
+
+##Introduction:
+
+Dans ce projet, tu vas toi-même dessiner et créer un jeu pour jouer avec tes amis ! Il te faudra réfléchir aux différentes parties de ton jeu et planifier tes idées avant de le faire avec Scratch. Tu peux utiliser les idées des projets précédents et les cartes Scratch pour t’aider.
+
+##Compétences
+Ce projet met en jeu
+
+* le dessin
+* la planification
+* la correction de bugs
+
+##Ressources
+
+Dans ce projet, les enfants vont dessiner leurs propres ressources, comme les personnages, les décors et créer les effets sonores. Assurez-vous d’avoir du papier supplémentaire ainsi que des crayons et des feutres pour faire dessiner les enfants. Il faudra planifier combien de séances il faudra pour ce projet. Les étape de dessin et de planification pourront prendre une séance entière, voire deux. Planifiez cela à l’avance et informez/prévenez les enfants du temps qu’ils ont pour mener à bien le projet.
+
+##Exercices de base
+Étape 1 : Planifie ton jeu
+
+Étape 2 : Dessine tes personnages
+
+Étape 3 : Dessine le décor
+
+Étape 4 : Comment fonctionne ton jeu ?
+
+Étape 5 : Construis ton jeu
