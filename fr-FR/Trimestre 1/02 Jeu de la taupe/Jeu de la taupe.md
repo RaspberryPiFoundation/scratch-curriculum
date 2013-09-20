@@ -7,14 +7,14 @@ Ce projet est comme le jeu du __Tir aux Pigeons__. Tu gagnes des points en touch
 
 ##Étape 1 : Crée une sorcière volante
 
-1. __1.	Démarre un nouveau projet Scratch__
-2. __2.	Enlève l’objet chat__ et remplace l’arrière plan par l’arrière plan __nature/woods__.
+1. Démarre un nouveau projet Scratch
+2. Enlève l’objet chat et remplace l’arrière plan par l’arrière plan __nature/woods__.
 3. Clique sur le bouton `Choisir un nouvel objet dans un dossier` pour ajouter un nouvel objet au projet (utilise le costume __fantasy/witch1__). 
 
 __Maintenant, nous voulons faire bouger notre sorcière.__
 
-4. 1.	Ajoute une `variable` pour l’objet sorcière. Appelle la variable `vitesse ` et coche “Seulement pour cet objet” Sur la __scène__, tu dois voir écrit “Objet 1 vitesse”. Si il est écrit seulement “vitesse”, supprime la variable et recommence. Lors de la création, il faut s’assurer de cliquer sur le bouton ‘Seulement pour cet objet”. On ne veut pas afficher la vitesse. Clique sur la zone à gauche de la variable ‘vitesse' dans __la palette des variables__. La variable ‘vitesse’ va contrôler la vitesse de déplacement de la sorcière. Nous allons utiliser une variable pour pouvoir changer la vitesse au cours du jeu.
-5. 2.	Nous voulons que la sorcière commence à bouger quand le jeu démarre. __Écris donc un script comme ceci__ :
+4. Ajoute une `variable` pour l’objet sorcière. Appelle la variable `vitesse ` et coche “Seulement pour cet objet” Sur la __scène__, tu dois voir écrit “Objet 1 vitesse”. Si il est écrit seulement “vitesse”, supprime la variable et recommence. Lors de la création, il faut s’assurer de cliquer sur le bouton ‘Seulement pour cet objet”. On ne veut pas afficher la vitesse. Clique sur la zone à gauche de la variable ‘vitesse' dans __la palette des variables__. La variable ‘vitesse’ va contrôler la vitesse de déplacement de la sorcière. Nous allons utiliser une variable pour pouvoir changer la vitesse au cours du jeu.
+5. Nous voulons que la sorcière commence à bouger quand le jeu démarre. __Écris donc un script comme ceci__ :
 
 ```scratch
 
@@ -98,9 +98,9 @@ __Essaie de changer les limites des nombres aléatoires. Qu’est ce qui se pass
 
 Pour transformer notre projet en jeu, il faut donner aux joueurs quelque chose à faire. Ils ont besoin de cliquer sur la sorcière pour la faire disparaître. Quand ils la touchent, nous voulons qu’elle disparaisse tout en jouant un son.
 
-1. 1.	Dans l’onglet __son__, importe le son __electronic/fairydust__. 
+1. Dans l’onglet __son__, importe le son __electronic/fairydust__. 
 
-2. __2.	Ajoute ce script à la sorcière__:
+2. Ajoute ce script à la sorcière:
 
 ```scratch
 
@@ -187,9 +187,9 @@ Est ce que tu as trois sorcières qui se déplacent d’un côté à l’autre d
 Enregistre ton travail
 
 ###A essayer
-1. __1.	Quel est le bon nombre de sorcières pour le jeu ?__
-2. __2.	Est ce que tu peux changer l’apparence des sorcières ? Tu pourrais éditer leurs costumes, ou bien utiliser des blocs de la palette “Apparence” pour les changer.__
-3. __3.	Est ce que tu peux faire marquer un nombre de points différent pour chaque sorcière ? Que penses-tu de faire que la plus rapide (et la plus petite) sorcière soit celle qui donne le plus de points ?__
+1. Quel est le bon nombre de sorcières pour le jeu ?
+2. Est ce que tu peux changer l’apparence des sorcières ? Tu pourrais éditer leurs costumes, ou bien utiliser des blocs de la palette “Apparence” pour les changer.
+3. Est ce que tu peux faire marquer un nombre de points différent pour chaque sorcière ? Que penses-tu de faire que la plus rapide (et la plus petite) sorcière soit celle qui donne le plus de points ?
 
 
 __Bravo ! Tu as terminé. Maintenant, tu peux t’amuser avec le jeu.__
