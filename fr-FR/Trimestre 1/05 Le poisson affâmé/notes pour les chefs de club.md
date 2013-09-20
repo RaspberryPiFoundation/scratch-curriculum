@@ -6,12 +6,12 @@ On va faire un jeu de chasse aux poissons. Guide le gros poisson affâmé et ess
 
 ###Compétences
 Ce projet couvre : 
-• Le mouvement d’objets
-• Le contrôle des objets avec la souris 
-• Le changement de costume
-• La détection de collision
-• Les objets qui peuvent lire l’état d’autres objets 
-•Le comptage des points
+* Le mouvement d’objets
+* Le contrôle des objets avec la souris 
+* Le changement de costume
+* La détection de collision
+* Les objets qui peuvent lire l’état d’autres objets 
+* Le comptage des points
 
 ###Ressources
 Ce projet utilise des ressources du dossier “Backgrounds” de scratch et du dossier “Costumes”. Le costume du poisson affâmé se trouve dans le dossier volunteers packs. 
@@ -24,9 +24,7 @@ Ce projet utilise des ressources du dossier “Backgrounds” de scratch et du d
 
 ###Exercice de base
 Étape 1 : Crée un objet qui change de costume
-
 Étape 2 : Ajoute une proie
-
 Étape 3 : Le poisson affamé mange la proie
 
 ￼
