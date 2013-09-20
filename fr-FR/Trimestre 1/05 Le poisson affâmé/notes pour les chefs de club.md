@@ -27,7 +27,6 @@ Ce projet utilise des ressources du dossier “Backgrounds” de scratch et du d
 Étape 2 : Ajoute une proie
 Étape 3 : Le poisson affamé mange la proie
 
-￼
 ###Défis
 1. La proie se déplace autrement
 2. La proie doit éviter le poisson affamé 
