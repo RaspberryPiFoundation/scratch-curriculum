@@ -138,7 +138,7 @@ Enregistre ton projet.
 
 ##Étape 5 : Compte les Points
 
-__Le score commencera à zéro et il sera augmenté d’un point par seconde. Si Félix attrape Herbert, le score devra diminuer de 100 points. __
+__Le score commencera à zéro et il sera augmenté d’un point par seconde. Si Félix attrape Herbert, le score devra diminuer de 100 points.__
 
 1. Crée une variable pour tous les objets, appelée “Score” : choisis l’option “Variables” dans l’onglet “Scripts”, puis clique sur “Nouvelle variable”. 
 2. Sélectionne la scène et crée les deux scripts suivants :
