@@ -11,7 +11,7 @@ On va jouer au chat et à la souris avec __Félix le chat__ et __Herbert__ la so
 2. Clique sur la scène près du chat et sélectionne l’onglet “Arrière-plan”. Importe l’arrière-plan “hall” dans la catégorie ”Indoors” et supprime l'arrière-plan vide d’origine. 
 3. Change le nom du chat et appelle-le “Félix”.
 4. Fais en sorte que Félix puisse seulement se retourner horizontalement, de gauche à droite, en cliquant sur ce bouton : Flèche horizontale à 2 pointes.
-5. 5.	Crée le script suivant :
+5. Crée le script suivant :
 
 ```scratch
 
