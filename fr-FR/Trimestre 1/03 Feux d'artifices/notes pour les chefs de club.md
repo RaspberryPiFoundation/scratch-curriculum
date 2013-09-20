@@ -1,2 +1,23 @@
-#NOTES FOR CLUB LEADERS
-##(Fireworks)###IntroductionThis interactive toy shows fireworks exploding in the sky wherever you click and plays the sound of the fireworks exploding.###SkillsThis project covers:• Responding to clicks• Changing the appearance of sprites • Playing sounds• Broadcasting and receiving events###ResourcesThis project uses resources found in the Scratch Backgrounds folders as well as the files found in the Fireworks resources folder included in this pack.###Scratch Cards requiredChange color Glide###Basic exercisesStep 1: Create a rocket that flies towards the mouse Step 2: Make the rocket explodeStep 3: Making each explosion uniqueStep 4: Fixing the Broadcast Bug
+#NOTES POUR LES CHEFS DE CLUB
+##(Feux d'artifices)
+
+###Introduction
+Ce jeu intéractif montre l’explosion de feux d’artifices dans le ciel à chaque fois que le joueur clique dans la scène. L’explosion sera accompagnée d’un son. 
+
+###Compétences
+Le projet couvre :
+* La réponse au clic
+* Le changement d’apparence d’un objet
+* Le son
+* La diffusion et réception de messages
+
+###Resources
+Ce projet utilise les ressources que l’on peut trouver dans le dossier des arrières plans ainsi que les fichiers du dossier “Fireworks”.
+###Cartes Scratch utilisées
+Changer la couleur glisser
+
+###Exercice de base
+* Étape 1 : Crée une fusée qui vole dans la direction de la souris 
+* Étape 2 : Fais exploser la fusée
+* Étape 3 : Rends chaque explosion unique
+* Étape 4 : Corrige le bug de la diffusion du message
