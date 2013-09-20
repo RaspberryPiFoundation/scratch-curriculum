@@ -1,6 +1,6 @@
 Niveau 1
 
-#La chasse aux Sorcières
+#La chasse aux sorcières
 
 __Introduction:__
 Ce projet est comme le jeu du __Tir aux Pigeons__. Tu gagnes des points en touchant les sorcières qui apparaissent à l’écran. Le but du jeu est de gagner le plus de points possibles en 30 secondes.
