@@ -1,6 +1,6 @@
 Niveau 2
 
-#La Course dans le désert
+#La course dans le désert
 
 __Introduction:__
 Ce projet est un jeu qui se joue à 2 joueurs, où un perroquet et un lion font la course l’un contre l’autre dans le désert. Chaque joueur doit appuyer sur une touche du clavier aussi vite que possible pour faire avancer son personnage. Le premier qui atteint le bord de l’écran a gagné !
