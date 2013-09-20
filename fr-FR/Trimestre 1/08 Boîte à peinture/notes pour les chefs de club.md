@@ -1,3 +1,41 @@
-#NOTES FOR CLUB LEADERS
-##(Paint Box)###IntroductionThe project creates a basic drawing tool. It draws a line as you move your mouse over the screen. You can change the colour of the line and clear the screen.###SkillsThis project covers* Moving sprites* Drawing with the pen* Broadcasting and listening for events* Changing costumes* Setting constraints* Constructing and using Boolean expressions###ResourcesThis project uses resources found in this project folder. Make sure this folder is on the desktop of each computer your children are using so they can access it.##Basic exercisesStep 1: Drag and drawStep 2: Clearing upStep 3: Changing colourStep 4: Only drawing inside the border Step 5: EraserStep 6: Stamps￼
-##Challenges1. Rainbow pencil2. Keyboard shortcuts 3. Big and small
+#NOTES POUR LES CHEFS DE CLUB
+##(Boîte à peinture)
+
+###Introduction
+
+Ce projet créé un outil de dessin basique. ça dessine une ligne quand tu déplaces la souris autour de la scène. Tu peux changer la couleur de la ligne et effacer l’écran. 
+
+###Compétences
+
+Ce projet couvre
+
+* Déplacement d’objet
+* Dessin avec le stylo
+* Envoi de messages et écoute d’évènements
+* Changement de costume
+* Définition de contrainte
+* Construction et utilisation des expressions bouléénnes
+
+###Ressources
+
+Ce projet utilise des ressources trouvé dans le dossier du projet. Assure toi que le dossier se trouve sur le bureau de chaque ordinateur utilisé.
+
+##Exercices de base
+
+Étape 1 : Clique et dessine
+
+Étape 2 : Effacement
+
+Étape 3 : Changement de couleur
+
+Étape 4 : Dessiner uniquement dans la bordure
+
+Étape 5 : Gomme
+
+Étape 6 : Estampille
+
+##Challenges
+
+1. Le crayon en arc-en-ciel
+2. Raccourcis clavier
+3. Grand et petit
