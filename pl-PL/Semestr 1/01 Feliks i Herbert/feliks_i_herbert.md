@@ -3,7 +3,7 @@ Poziom 1
 #Feliks i Herbert
 
 __Wstęp:__
-Zrobimy grę w berka z kotem __Feliksem__ i myszą __Herbertem__. Herbertem kieruje się przy pomocy myszki i należy trzymać się z daleka od Feliksa. Im dłużej się ucieka, tym więcej punktów się dostaje. Nie daj się złapać, bo stracisz punkty!
+Zrobimy grę w berka, w której kot __Feliks__ goni mysz __Herberta__. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie unikać Feliksa. Im dłużej będziesz przed nim uciekać, tym więcej punktów dostaniesz. Nie daj się złapać, bo stracisz punkty!
 
 ##KROK 1: Feliks podąża za kursorem myszy
 
