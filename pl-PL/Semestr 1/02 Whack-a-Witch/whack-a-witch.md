@@ -1,149 +1,148 @@
-Level 1
+Poziom 1
 
 #Whack-a-Witch
 
-__Introduction:__
-This project is like the game __Whack-a-Mole__. You get points for hitting the witches that appear on the screen. The aim is to get as many points as possible in 30 seconds!
+__Wstęp:__
+Ten projekt jest jak popularna gra zwana Whack-A-Mole: zdobywasz punkty uderzając wiedźmy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej ilości punktów w ciągu 30 sekund.
 
-##STEP 1: Create a flying witch
+##KROK 1: Stwórz latającą wiedźmę
 
-1. __Start a new scratch project.__
-2. __Remove the cat sprite__ and replace the background with the __nature/woods__
-background.
-3. Use the `new sprite from file` button to add a new witch
-sprite to the project (use the __fantasy/witch1__ costume). 
+1. __Zacznij nowy projekt w Scratchu.__
+2. __Usuń duszka kota__ i zastąp tło lasem (__woods__) z katalogu __Nature__.
+3. Użyj przycisku "wybierz nowego duszka z pliku", aby dodać wiedźmę do projektu (znajdź kostium __witch1__ w katalogu __Fantasy__).
 
-__Now we want to make our witch move__
+__Teraz chcemy sprawić, aby wiedźma zaczęła się ruszać__
 
-4. Add a `Variable` for this sprite only called `speed`.
-On the __Stage__, the stage monitor for this variable should say “__Sprite1 speed__”.
-If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the
-__Variables palette__ so it does not show on the Stage.
-The speed variable will control how fast the witch moves. We use a variable so that we can change how fast the witch moves as the game progresses.
-5. We want the witch to start moving when the game starts, __so make a script like this__:
+4. Dodaj Zmienną tylko dla tego duszka i nazwij ją "prędkość".
+Nowa zmienna powinna pojawić się na __Scenie__ jako "__Duszek1 prędkość".
+Jeżeli widzisz tam tylko "prędkość", skasuj zmienną i stwórz nową jeszcze raz tylko dla tego jednego duszka. 
+Odznacz "prędkość" w __panelu Zmiennych__, aby nie było widać tej zmiennej na Scenie.
+Zmienna od prędkości będzie kontrolować jak szybko wiedźma się rusza. Korzystamy ze zmiennej, aby móc zmieniać prędkość wiedźmy wraz z postępami w grze.
+5. Chcemy, aby wiedźma zaczęła się ruszać po rozpoczęciu gry. __Stwórz dla niej poniższy skrypt__:
 
 ```scratch
 
-	when FLAG clicked
+	kiedy kliknięto FLAGĘ
 
-	set speed to 5
+	ustaw prędkość na 5
 
-	forever
+	zawsze
 
-		move speed steps
+		przesuń o prędkość kroków
 
-	(end forever)
+	(koniec zawsze)
 ```
 		
-###Test Your Project
-__Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
+###Przetestuj swój projekt
+__Kliknij zieloną flagę__ i zobacz, co robi wiedźma. Dlaczego utyka na brzegu ekranu?
 
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below your
-`move speed steps` block add an `if on edge, bounce` block.
+6. Aby wiedźma nie utykała, musimy sprawić, że będzie zawracać za każdym razem, gdy doleci do brzegu ekranu. Poniżej bloku "przesuń o prędkość kroków" dodaj blok "jeżeli na brzegu, odbij się".
+
 
 ```scratch
 
-	when FLAG clicked
+	kiedy kliknięto FLAGĘ
+	
+	ustaw prędkość na 5
 
-	set speed to 5
+	zawsze
 
-	forever
+		przesuń o prędkość kroków
 
-		move speed steps
+		jeżeli na brzegu, odbij się
 
-		if on edge, bounce
-
-	(end forever)
+	(koniec zawsze)
 ```
-7. To stop the witch flipping upside down, click on the `only face left-right` button in the Sprite Summary area.
 
-###Test Your Project
-__Click the green flag.__ 
-Does the witch move from side to side across the screen?
+7. Aby wiedźma nie obracała się do góry nogami, wybierz ruszanie tylko w prawo i lewo w ustawieniach tego duszka. 
 
-Save your project
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
+Czy wiedźma lata od brzegu do brzegu ekranu?
 
-###Things to try
-__Try changing the value of the speed variable to make her fly faster or slower.__
+Zapisz swój projekt
 
-__How would you make the witch get faster the longer she flies?__
-(This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
+###Rzeczy do spróbowania
+__Spróbuj zmieniać wartość zmiennej prędkości, aby sprawić, żeby wiedźma latała szybciej i wolniej.__
 
-##STEP 2: Make the witch appear & vanish randomly
+__Co zrobić, aby wiedźma była coraz szybsza im dłużej lata?__
+(To jest trochę tricky, więc nie martw się, jeżeli nie widisz jeszcze rozwiązania. Dostaniesz więcej wskazówek podczas dalszej pracy nad projektem.)
 
-To make the game more fun, we want the witch to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the witch. This new script needs to hide the witch for a random time, then show her for a random time, and repeat that forever (or until the game finishes).
+##KROK 2: Spraw, aby wiedźma pojawiała się i znikała losowo
 
-__Create this script for the witch:__
+Aby gra była ciekawsza, chcemy aby wiedźma pojawiała się i znikała losow. Będzie nam do tego potrzebny kolejny skrypt, który działa w tym samym czasie co ten odpowiedzialny za poruszanie wiedźmą. Nowy skrypt powinien chować wiedźmę w losowych momentach, pokazywać ją znowu po jakimś czasie i powtarzać te dwie akcje w nieskończoność (albo do końca gry).
+
+__Stwórz poniższy skrypt dla wiedźmy:__
 
 ```scratch
 
-	when FLAG clicked
+	kiedy kliknięto FLAGĘ
 
-	forever
+	zawsze
 
-		hide
+		ukryj
 
-		wait pick random 2 to 5 secs
+		czekaj losuj liczbę pomiędzy 2 a 5 s
 
-		show
+		pokaż
 
-		wait pick random 3 to 5 secs
+		czekaj losuj liczbę pomiędzy 3 a 5 s
 
-	(end forever)
+	(koniec zawsze)
 ```
-###Test Your Project
-__Click the green flag.__ 
-Does the witch move from side to side across the screen and vanish and appear again randomly?
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
+Czy wiedźma lata od brzegu do brzegu ekranu oraz pojawia się i nizka w losowych momentach?
 
-Save your project
+Zapisz swój projekt
 
-###Things to try
-__Try changing the range of the random numbers. What happens if you pick very big numbers or very small numbers?__
-(Does this give you any more clues for how to make the witch speed up the longer the game is played?)
+###Rzeczy do spróbowania
+__Spróbuj zmieniać przedział liczb losowych. Co się dzieje, jeżeli wybierzesz bardzo duże albo bardzo małe liczby?__
+Czy podpowiada ci to już jak sprawić, aby wiedźma latała szybciej im dłużej się gra?)
 
-##STEP 3: Make the witch disappear when she’s clicked
+##KROK 3: Spraw, aby wiedźma znikała, gdy się na nią kliknie
 
-To turn this into a game, we need to give the player something to do. They need to click on the witch to make her disappear. When the witch is clicked, we want her to disappear and play a sound.
+Aby zamienić ten projekt w grę, musimy dać graczom coś do robienia: muszą klikać wiedźmę, aby zniknęła. Chemy, aby po kliknięciu było słuchać dźwięk i aby wiedźma znikała z ekranu.
 
-1. In the __Sounds__ tab, import the sound __electronic/fairydust__. 
+1. W karcie __Dźwięki__ zaimportuj __Fairydust__ z katalogu __Electronic__. 
 
-2. __Add this script to the witch__:
+2. __Dodaj poniższy skrypt do wiedźmy__:
 
 ```scratch
 
-	when sprite1 clicked
+	kiedy kliknięto duszek1
 
-	hide
+	ukryj
 
-	play sound Fairydust
+	zagraj dźwięk Fairydust
 ```
-###Test Your Project
-__Click the green flag.__ 
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-Does the witch disappear and play the sound when you click it?
+Czy wiedźma znika i gra muzykę, kiedy się na nią kliknie?
 
-Save your project
+Zapisz swój projekt
 
-###Things to try
-__Ask your volunteer if you can record your own sound to play.__
+###Rzeczy do spróbowania
+__Zapytaj osoby prowadzącej zajęcia, czy można nagrywać własne dźwięki do odegrania.__
 
-##Step 4: Add a score and timer
+##KROK 4: Dodaj punkty i licznik czasu
 
-We’ve got a witch, but now we want to make a game! We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
+Mamy wiedźmę, ale teraz chcemy zrobić grę! Chcemy liczyć punkty za każde kliknięcie wiedźmy oraz chcemy dodać limit czasu do gry. Możemy użyć zmiennych na wynik i licznik czasu.
 
-
-1. Create a new `Variable` for all sprites called __score__, and alter the script for the witch to increase this variable by one when she is clicked.
+1. Stwórz nową zmienną dla wszystkich duszków i nazwij ją __Wynik__ i zmodyfikuj skrypt wiedźmy, aby wartość tej zmiennej zwiększała się o jeden przy każdym kliknięciu.
 
 ```scratch
 
-	when sprite1 clicked
+	kiedy kliknięto duszek1
 
-	hide
+	ukryj
 
-	play sound Fairydust
+	zagraj dźwięk Fairydust
 
-	change score by 1
+	zmień Wynik o 1
 ```
+
 2. Switch to the __Stage__ and create a __new variable__ (this time just for the stage) called __timer__. Add a new script that occurs when the green flag is clicked to set `timer` to __30__ and reset the score to __0__. Then use a `repeat until` block to wait a second and then reduce `timer` by
 one. This should repeat until timer is 0, at which point use `stop all` to stop the game.
 
