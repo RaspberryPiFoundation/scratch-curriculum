@@ -13,11 +13,6 @@ Ten projekt uczy:
 ####Zasoby
 Ten projekt korzysta z zasobów dostępnych w scratchowych katalogach Backgrounds i Costumes
 
-####Wymagane komendy Scratch
-* Liczenie punktów
-* Licznik czasu 
-* Animacje
-
 ####Podstawowe ćwiczenia
 * Krok 1: Stwórz latającą wiedźmę
 * Krok 2: Spraw, aby wiedźma pojawiała się i znikała losowo

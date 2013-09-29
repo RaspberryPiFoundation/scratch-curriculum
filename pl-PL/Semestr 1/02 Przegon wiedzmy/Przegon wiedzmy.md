@@ -198,4 +198,4 @@ Zapisz swój projekt
 
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
-Nie zapomniej, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
+Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
