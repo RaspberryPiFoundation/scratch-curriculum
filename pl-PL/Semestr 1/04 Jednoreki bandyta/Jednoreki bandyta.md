@@ -9,7 +9,7 @@ Prosta gra z trzema duszkami, które zmieniają swój kostium. Trzeba je zatrzym
 
 __Zaimportujmy potrzebne obrazki do gry__
 
-1. Zacznij nowy projekt w Scratchu. Skasuj kota klikając na nim prawym przyciskiem myszy i wybierając Usuń.
+1. Zacznij nowy projekt w Scratchu. Skasuj kota, klikając na nim prawym przyciskiem myszy i wybierając Usuń.
 2. Zaimportuj nowego duszka.
 3. Wybierz obrazek z dowolnego katalogu. My użyliśmy "bananas1" z katalogu Things, ale możesz wybrać dowolny obrazek, który ci się podoba.
 4. Kliknij na kartę Kostiumy i wybierz dwie inne rzeczy, bo w sumie potrzebujemy trzy kostiumy (my wybraliśmy "bee1" z katalogu Animals i "lego" z katalogu Things, ale możesz wybrać co chcesz). 
@@ -54,7 +54,7 @@ Zmień czas oczekiwania. Jak myślisz, jaki czas robi grę zbyt łatwą? A jaki 
 2. Kliknij na Zmienne i stwórz nową. Nazwij ją "zatrzymano" i zaznacz, że ma być dostępna dla wszystkich duszków. Następnie odznacz haczyk koło niej, aby nie była widoczna na Scenie.
 2. Ustaw wartość "zatrzymano" na 1, gdy ktoś kliknie na obrazek. Użyj do tego bloku "Kiedy kliknięto duszek1".
 3. Teraz musimy sprawić, aby obrazek przestał się zmieniać, kiedyś zmienna "zatrzymano" będzie miała wartość 1. Kliknij na Kontrolę i zamień pętlę "zawsze" na pętlę "zawsze, jeżeli" w bloku "kiedy kliknięto FLAGĘ". Użyj wyrażenia ze znakiem równości, aby sprawdzić, czy "zatrzymano" jest równe 0.
-4. Na koniec, dodaj "ustaw zatrzymano na 0" zaraz pod kliknięciem we flagę.
+4. Na koniec dodaj "ustaw zatrzymano na 0" zaraz pod kliknięciem we flagę.
 
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę, poczekaj chwilę i kliknij na duszka.__
@@ -70,7 +70,7 @@ __Teraz potrzebujemy stworzyć dwa inne duszki, aby można było grać w naszą 
 
 1. Zduplikuj duszka (Duszek1), klikając na nim prawym przyciskiem myszki.
 2. Zduplikuj go jeszcze raz, tak aby były w sumie trzy duszki na obszarze w prawym dolnym rogu ekranu.
-3. Poprzesuwaj duszki na Scenie, tak aby były w linii. Możesz je trochę zmniejszyć, jak chcesz.
+3. Poprzesuwaj duszki na Scenie, tak aby były obok siebie. Możesz je trochę zmniejszyć, jeśli chcesz.
 
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę.__ Wszystkie duszki powinny się zmieniać. Spróbuj zatrzymać je na tym samym obrazku!
@@ -92,9 +92,9 @@ Zwiększ jakoś poziom trudności gry. Zwiększenie prędkości, z jaką zmienia
 3. Ustaw, aby kostiumy zmieniały się z różną prędkością.
 4. Ustaw, aby każdy duszek losował nowy kostium zamiast po prostu przechodzić do następnego.
 
-__Baw się dobrze wymyślając swoje własne modyfikacje!__
+__Baw się dobrze, wymyślając swoje własne modyfikacje!__
 
-Za każdym razem, jak coś zmieniasz, zastanów się, jaki to ma wpływ na poziom trudności gry. Robi się łatwiejsza czy za trudna? Jak możesz zmienić poziom trudności tak, aby był w sam raz?
+Za każdym razem, jak coś zmieniasz, zastanów się, jaki ma to wpływ na poziom trudności gry. Robi się łatwiejsza czy za trudna? Jak możesz zmienić poziom trudności tak, aby był w sam raz?
 
 ##Wyzwanie 2: Dodaj zmienny poziom trudności: coraz trudniej/coraz łatwiej wraz z czasem gry
 
@@ -112,9 +112,9 @@ Scena może odpowiedzieć na ten komunikat i sprawdzić, czy gra się skończył
 
 Możemy też do tego użyć tego samego bloku "współrzędna x z Duszek", ale zamiast sprawdzać wartość zmiennej "zatrzymano", możemy sprawdzić numer kostiumu i upewnić się, że kostium Duszka1 jest taki sam jak Duszka2, i że kostium Duszka2 jest taki sam jak Duszka3.
 
-Żeby to zrobić, potrzebujemy blok "jeżeli", który będzie sprawdzał każdą zmienną "zatrzymano", a wewnątrz niego blok "jeżeli… w przeciwnym przypadku", który będzie porównywał numery kostiumów aby upewnić się, czy gracz wygrał.
+Żeby to zrobić, potrzebujemy blok "jeżeli", który będzie sprawdzał każdą zmienną "zatrzymano", a wewnątrz niego blok "jeżeli… w przeciwnym przypadku", który będzie porównywał numery kostiumów, aby upewnić się, czy gracz wygrał.
 
-Możesz teraz ogłosić wynik gry, korzystając z nadawania komunikatów, które mogą zostać odebrane przez innego duszka. Na przykład, może Feliks mógłby pojawić się i pogratulować graczowi?
+Możesz teraz ogłosić wynik gry, korzystając z nadawania komunikatów, które mogą zostać odebrane przez innego duszka. Na przykład, Feliks mógłby pojawić się i pogratulować graczowi.
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
 Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
