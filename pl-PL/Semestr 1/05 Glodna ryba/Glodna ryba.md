@@ -1,114 +1,131 @@
-Level 2
+Poziom 2
 
-#Fish Chomp
+#Głodna ryba
 
-__Introduction:__
-We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
+__Wstęp:__
+Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu, aby udało jej się zjeść wszystkie przynęty.
 
-##STEP 1: Create a sprite that changes costumes
-__Let’s make the Hungry Fish swim around the sea!__
+##KROK 1: Stwórz duszka, który zmienia kostiumy
+__Dodajmy rybę, która pływa po morzu!__
 
-1. Start a new Scratch project.
-2. Select the Stage, then select the Stage’s Background tab. Import the
-background nature/underwater and remove background1.
-3. Change the name of Sprite 1 to Hungry Fish.
-4. Import Hungry Fish’s costume, resources/hungry-fish then remove its existing costume1 and costume2.
-5 Use the button above the Costumes tab to make sure the sprite can only flip left-right.
-6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
-
-```scratch
-
-	when FLAG clicked
-	forever		
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
-```
-
-###Test Your Project
-__Click the green flag.__ 
-Move the mouse pointer around the sea. Does the fish follow the pointer?
-What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
-
-
-7. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
-(The _distance to_ block is in the
-Sensing palette).
-
+1. Zacznij nowy projekt w Scratchu.
+2. Zaznacz Scenę, a następnie przejdź do karty z ustawieniami tła. Zaimportuj tło "underwater" z katalogu Nature. Usuń tło1.
+3. Zmień nazwę duszka z Duszek1 na Głodna Ryba.
+4. Zaimportuj oba kostiumy Głodnej Ryby z katalogu Zasoby i skasuj istniejący kostium1 i kostium2.
+5. Wciśnij przycisk nad list kostiumów, aby upewnić się, że duszek może obracać się tylko w prawo i lewo.
+6. Dodaj skrypt, który każe rybie podążąć za kursorem myszy:
 
 ```scratch
 
-	when FLAG clicked
-	forever	if distance to mouse-pointer > 10
-		point towards mouse-pointer
-		move 3 steps
-	(end forever)
+	kiedy kliknięto FLAGĘ
+	
+	zawsze
+			
+		ustaw w stronę wskaźnik myszy
+		
+		przesuń o 3 kroków
+		
+	(koniec zawsze)
 ```
 
+###Przetestuj swój projekt
+__Wciśnij zieloną flagę.__
+Poruszaj kursorem myszy po morzu. Czy ryba pływa za nim?
+Co się dzieje, jeżeli nie ruszasz kursorem i ryba go łapie? Jak to wygląda? Dlaczego tak się dzieje?
 
-###Test Your Project
-
-Save your project
-
-##Things to try
-
-If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
-
-
-##STEP 2: Add some prey
-
-1. Create a new sprite from the file animals/lobster1. 
-2. Use the Shrink sprite tool (above the Stage)
-to make the sprite smaller.
-3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again
+7. Możesz zapobiec takiemu motaniu się ryby, jeżeli każesz jej ruszać się tylko wtedy, kiedy nie jest za blisko kursora (w sekcji Czujniki znajdziesz blok _odległość do_).
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-	(end forever)
+	kiedy kliknięto FLAGĘ
+	
+	zawsze, jeżeli odległość do wskaźnik myszy > 10
+	
+		ustaw w stronę wskaźnik myszy
+		
+		przesuń o 3 kroków
+		
+	(koniec zawsze)
 ```
 
-###Test Your Project
-__Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
 
-__At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
+###Przetestuj swój projekt
 
-Save your project
+Zapisz swój projekt.
 
-###Things to try
+###Rzeczy do spróbowania
+Jeżeli chcesz, możesz zmienić liczby w skrypcie. W jaki sposób zmienia to sposób poruszania się Głodnej Ryby? Zmień odległość na jakiąś dużą liczbę (np. 100) albo jakąś bardzo małą (np. 1). Zmień ilość kroków na coś dużego (np. 20) lub małego (np. 1 lub nawet 0). Co się dzieje?
 
-* Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
-* What does the __if on edge, bounce__ block do? Take it out and see what happens.
 
-##STEP 3: Hungry fish eats the prey
+##KROK 2: Dodaj krewetkę
 
-__Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
-* The Hungry Fish needs to close its mouth and make a "chomp" sound.
-* The prey needs to disappear, then reappear a short while later.
-
-1. First, let’s make the prey disappear if it is touching the hungry fish, and then reappear 3 seconds later. Use the touching block to see if it is touching the fish.
+1. Stwórz nowego duszka korzystając z kostiumu lobster1 z katalogu Animals.
+2. Zmiejsz nowego duszka (narzędzie do zmniejszania znajduje się nad Sceną).
+3. Dodaj skrypt, który kieruje pływającą krewetką. Chcemy, aby ruszała się losowo, więc byłoby dobrze, aby najpierw ruszała się trochę do przodu, a potem skręciła albo w lewo, albo w prawo, a potem zaczęła się ruszać od nowa. 
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching Hungry Fish?
-			hide
-			wait 3 secs
-			show
-		(end if)
-	(end forever)
+	kiedy kliknięto FLAGĘ
+	
+	zawsze
+	
+		przesuń o 2 kroków
+		
+		obróć o losuj liczbę pomiędzy -20 a 20 stopni
+		
+		jeżeli na brzegu, odbij się
+		
+	(koniec zawsze)
 ```
 
-###Test Your Project
-__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
+###Przetestuj swój projekt
+__Wciśnij zieloną flagę__ i popatrz, jak krewetka porusza się po ekranie. Czy pływa tak jak trzeba? Czy wygląda to realistycznie?
+
+__Obecnie ryba i krewetka nie interesują się sobą. Zajmiemy się tym w następnym kroku.__
+
+Zapisz swój projekt
+
+###Rzeczy do spróbowania
+
+* Zmień liczby w bloku __losuj liczbę pomiędzy__ oraz odległość, o jaką porusza się krewetka. W jaki sposób te zmiany wpływają na sposób poruszania się?
+* Co robi blok __jeżeli na brzegu, odbij się__? Co się stanie, jak go nie będzie? Usuń go i sprawdź.
+
+##KROK 3: Głodna ryba łapie krewetkę
+
+__Chcemy, aby ryba zjadła swoją ofiarę!__ Jak tylko ryba złapie żyjątko, dwie rzeczy muszą mieć miejsce:
+* Ryba musi zamknąć paszczę z głośnym "mlask!"
+* Krewetka musi zniknąć i pojawić się chwilę później gdzie indziej
+
+1. Na początek sprawmy, aby krewetka znikała, jak tyko dotknie ryby i po 3 sekudnach pojawiała się gdzie indziej. Użyjemy bloku __dotyka__, aby sprawdzić, czy krewetka jest w kontakcie z rybą.
+
+```scratch
+
+
+	kiedy kliknięto FLAGĘ
+
+	zawsze
+
+		przesuń o 2 kroków
+	
+		obróć o losuj liczbę pomiędzy -20 a 20 stopni
+	
+		jeżeli na brzegu, odbij się
+		
+		jeżeli dotyka Głodna Ryba
+			
+			ukryj
+			
+			czekaj 3 s
+			
+			pokaż
+		
+		(koniec jeżeli)
+		
+	(koniec zawsze)
+```
+
+###Przetestuj swój projekt
+__Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że krewetka znika bez względu na to, z której strony dotknie ryę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekudnach może od razu zjeść krewetkę – to jest trochę niefajne!
 
 2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
 touching color block in your script, click on the color in the block and then click again on the fish’s teeth.
