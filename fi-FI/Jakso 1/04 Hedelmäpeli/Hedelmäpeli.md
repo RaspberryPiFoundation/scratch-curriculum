@@ -1,93 +1,101 @@
-Level 2
+Taso 2
 
-#Fruit machine
+#Hedelmäpeli
 
-__Introduction:__
-This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
+__Johdanto:__
+Tässä pelissä on kolme hahmoa, joiden asusteet vaihtuvat. Pelaajan pitää pysäyttää ne silloin, kun niillä on sama kuva näkyvissä (aivan kuten hedelmäpelissä!).
 
-##STEP 1: Create a sprite that changes costumes
+##VAIHE 1: Luo hahmo jonka asusteet vaihtuu
 
-__Let’s import the different pictures for the game__
+__Tuodaan pelin eri kuvat__
 
-1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete
-2. Import a new sprite.
-3. Choose an image from any folder. We used things/bananas1, but you can
-use any image you want to.
-4. Click the Costumes tab and import two more things so there are three in total
-(we used animals/bee1 and things/lego, but you can use any images).
+1. Aloita uusi projekti. Poista kissa hahmo oikeanapsauttamalla sitä ja valitsemalla poista.
+2. Tuo uusi hahmo.
+3. Valitse kuva mistä tahansa. Me valitsimme Asiat/Bananas, mutta voit käyttää mitä tahansa kuvaa.
+4. Napsauta Asusteet-välilehteä ja tuo 2 lisää kuvaa niin, että niitä on yhteensä kolme (me valitsimme Eläimet/beetle and Asiat/donut, mutta voit käyttää mitä tahansa kuvia).
 
-__Now we’ve got some costumes, we want the sprite to change between them.__
+__Nyt meillä on asusteita ja halutaan, että hahmo vaihtaa niiden välillä.__
 
-##STEP 2: Making the picture change
+##VAIHE 2: Pistetään kuva muuttumaan
 
-1. Click the Scripts tab.
-2. Click Control and drag a when flag clicked into the scripts area. This will be
-triggered when we click the green flag.
-3. Add a forever and attach it so it snaps to the bottom.
-4. Click the green flag in the top right. Notice that a white outline is around our script. It’s running because we clicked the green flag, which triggers this.
-5. Now click Looks and drag in a next costume
-6. How do we slow it down so it isn’t changing so quickly? Click Control and drag in a wait 1 secs
-7. Adjust the time until it’s repeating at a faster pace (a time of 0.1s looks good). What would happen if we didn’t have the wait block?
+1. Napsauta Skriptit-välilehteä.
+2. Napsauta Tapahtumat ja raahaa kun klikataan lippu -lohko skriptien alueelle. Tämä laukaistaan kun napsautetaan vihreätä lippua.
+3. Lisää ikuisesti niin, että liittyy edellisen lohkon pohjaan.
+4. Napsauta vihreätä lippua oikealla ylhäällä. Huomaa, että skriptimme ympärille ilmestyy vaalea reunus.  Se ajetaan, koska napsautettiin vihreätä lippua, joka laukaisee tämän.
+5. Nyt napsauta Ulkonäköä ja raahaa seuraava asuste
+6. Kuinka hidastetaan se niin, ettei se vaihda kuvaa noin nopeasti? Napsauta Ohjausta ja raahaa odota 1 sekuntia.
+7. Säädä aika kunnes se vaihtuu nopeammin (0.1s näyttää hyvältä). Mitä tapahtuisi jos odota-lohkoa ei olisi olemassa?
 
 ```scratch
-
-	when FLAG clicked
-	forever		
-		next costume
-		wait 0.1 secs
-	(end forever)
+	kun klikataan LIPPUA
+	ikuisesti		
+		seuraava asuste
+		odota 0.1 sekuntia
+	(loppu ikuisesti)
 ```
 
-###Test Your Project
-__Click the green flag.__ 
-Do the costumes change at a sensible rate?
+###Testaa projektisi
+__Napsauta vihreätä lippua.__ 
+Vaihtuuko asuste järkevällä nopeudella?
 
-Save your project
+Tallena projektisi
 
-###Things to try
+###Kokeiltavaa
 
-Adjust the time in the wait block.What numbers do you think would make the game too easy, or too hard?
+Säädä odota-lohkon aikaa. Millä numeroilla peli olisi liian helppo, tai liian vaikea?
 
-##STEP 3: Making it stop when we click on it
+##VAIHE 3: Pysäytä se kun sitä napsautetaan
 
-Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?
+Hienoa! Saadaan hahmo vaihtamaan asusteita ikuisesti, mutta miten saadaan se pysähtymään kun sitä napsautetaan?
 
-1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for all sprites, then uncheck the box next to it so it doesn’t display on the stage.
-2. Set stopped to 1 when someone clicks on the image using
-when sprite1clicked and set stopped to 0 making sure to change the value from 0 to 1.
+1. Tee uusi muuttuja napsauttamalla tieto ja tee muuttuja. Nimeä se pysäytetyksi ja tee se kaikille hahmoille, sitten ota rasti pois sen viereisestä laatikosta, niin se ei näy esiintymislavalla.
+2. Aseta pysäytetty arvoon 1 kun joku napsauttaa kuvaa käyttäen "kun tätä hahmoa klikataan".
+3. Nyt pitää saada kuvan vaihtamisen pysähtymään kun muuttuja pysäytetty on yhtä kuin 1. Napsauta Ohjaus ja lisää ikuisesti silmukan sisälle jos, sitten -silmukan.  Laita jos:n ehdoksi yhtäsuuruus-vertailu, toiselle puolelle pysäytetty ja toiselle puolelle 0
+4. Lopuksi lisää aseta pysäytetty arvoon 0 -lohko kun klikataan LIPPU -lohkon alle.
+
+
+
+
+
+
+
+
+
+
 3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
-4. Finally, add a set sprite1stopped to 0 underneath the when flag clicked
 
-###Test Your Project
-__Click the green flag, wait for a moment, then click on the sprite.__ 
 
-Does it change costume before you click on it? 
-Does it stop when you do click on it?
-__Start the sprite again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
 
-Save your project
+###Testaa projektisi
+__Napsauta vihreätä lippua, odota hetken, sitten napsauta hahmoa.__ 
 
-##Step 4: Creating the other sprite
+Vaihtuuko asuste ennen kuin napsautat sitä?
+Pysähtyykö kun napsautat sitä?
+__Käynnistä hahmo uudelleen.__ Pysähtyykö se kun Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
+
+Tallena projektisi
+
+##VAIHE 4: Creating the other sprite
 __Now we need to make the other sprites so we can play our game!__
 
-1. Duplicate the sprite (Sprite1) by right clicking on it in the bottom right corner.
-2. Duplicate it again so there are 3 sprites on the screen.
-3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
+1. Kopioi hahmo oikeanapsautamalla sitä ja valitsemalla kopioi.
+2. Kopioi se vielä kerran niin, että on 3 hahmoa ruudulla.
+3. Liikuta jokainen hahmo niin, että ne ovat suorassa rivissä. Pienennä ne hieman jos on tarvetta.
 
-###Test Your Project
-__Click the green flag.__ All the sprites should change. Try to stop them all on the same picture!
+###Testaa projektisi
+__Napsauta vihreätä lippua.__ All the sprites should change. Try to stop them all on the same picture!
 
-Save your project
+Tallena projektisi
 
-###Things to try
+###Kokeiltavaa
 
 When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. How about you make the sprites change to a random costume when the green flag is clicked?
 Hint: try picking a random costume for each sprite when the game is started.
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
+__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these Haastes!__
 
 
-##Challenge 1: Make the game harder
+##Haaste 1: Make the game harder
 
 Change the difficulty of the game somehow. Just making the costumes change quicker is easy. Try and do something more imaginative. Some ideas you might like to try:
 
@@ -101,13 +109,13 @@ __Have fun coming up with your own things!__
 Every time you make a change, think about whether it make the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
 
 
-##Challenge 2: Make the game get harder and easier over time
+##Haaste 2: Make the game get harder and easier over time
 
 Different people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__
 
 One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called __delay__, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier).
 
-##Challenge 3: Detect when all the sprites have stopped on the same costume
+##Haaste 3: Detect when all the sprites have stopped on the same costume
 
 __The aim of the game is click on the sprites so they’re stopped while showing the same costume. It would be nice if the stage detected when you’d finished playing and then told you if you had won or lost by checking to see if each sprite had the same costume.__
 
