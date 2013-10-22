@@ -1,5 +1,5 @@
-#NOTES FOR CLUB LEADERS
-##(Fireworks)
+#OHJEITA KERHON VETÄJILLE
+##(Ilotulitukset)
 
 ###Johdanto
 Tämä interaktiivinen lelu näyttää ilotulitusten räjähdykset taivaalla mihin ikinä napsautat, ja soittaa rähjähdyksen äänen.
