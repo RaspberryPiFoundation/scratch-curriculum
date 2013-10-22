@@ -82,9 +82,9 @@ Tallenna projektisi
 __Kokeile vaihtaa satunnaislukujen skaala. Mitä tapahtuu jos valitset hyvin isoja numeroita tai hyvin pieniä numeroita?__
 (Saitko tästä lisää vinkkiä kuinka saisit noita lentämään nopeammin, sitä kauemmin peli pelataan?)
 
-##VAIHE 3: Noita häipyy näkyvästä kun se napsautetaan
+##VAIHE 3: Noita häipyy näkyvästä kun sitä napsautetaan
 
-Jotta tästä tulisi peli, meidän pitää antaa pelaajalle jotain tekemistä.  Pelaajan pitää napsauttaa noitaa ja saada tämä häipymään näkyvästä.  Kun noita napsautetaan, haluamme hänen häipyvän näkyvästä ja soittavan äänen.
+Jotta tästä tulisi peli, meidän pitää antaa pelaajalle jotain tekemistä.  Pelaajan pitää napsauttaa noitaa ja saada tämä häipymään näkyvästä.  Kun noitaa napsautetaan, haluamme hänen häipyvän näkyvästä ja soittavan äänen.
 
 1. Äänet välilehdessä tuo uusi ääni kirjastosta: Sähköinen/fairydust. 
 
@@ -98,7 +98,7 @@ Jotta tästä tulisi peli, meidän pitää antaa pelaajalle jotain tekemistä.  
 ###Testaa projektisi
 __Napsauta vihreä lippu.__ 
 
-Häipyykö noita näkymästä ja soittaako äänen kun se napsautetaan?
+Häipyykö noita näkymästä ja soittaako äänen kun sitä napsautetaan?
 
 Tallenna projektisi
 
@@ -106,7 +106,7 @@ Tallenna projektisi
 
 Meillä on noita, mutta nyt haluamme tehdä pelin! Haluamme saada pisteitä joka kerta kun napsautetaan noitaa, mutta haluamme myös pelille aikarajan. Voimme käyttää muuttujia tulokselle ja ajastimelle.
 
-1. Tee uusi muuttuja kaikille hahmoille ja nimeä se tulokseksi. Muuta noidan skripti niin, että tämä muuttuja kasvaa yhdellä kun häntä napsautetaan.
+1. Tee uusi muuttuja kaikille hahmoille ja nimeä se tulokseksi. Muuta noidan skripti niin, että tämä muuttuja kasvaa yhdellä kun sitä napsautetaan.
 
 ```scratch
 	kun tätä hahmoa klikataan
