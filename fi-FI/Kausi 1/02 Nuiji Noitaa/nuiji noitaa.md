@@ -9,14 +9,14 @@ Tämä projekti on kuin peli __Mätki myyrää__. Saat pisteitä kun lyöt ruudu
 
 1. Aloita uusi projekti.
 2. Poista kissa hahmo ja korvaa tausta Luonto/woods-taustalla.
-3. Käytä "uusi tausta kirjastosta"-ikoni ja lisää uusi noita hahmo projektille (käytä Fantasia/Witch-hahmo). 
+3. Käytä "Valitse hahmo kirjastosta"-ikoni ja lisää uusi noita hahmo projektille (käytä Fantasia/Witch-hahmo). 
 
 Nyt halutaan saada noita liikkumaan
 
 4. Lisää muuttuja vain tälle hahmolle ja nimeä se nopeudeksi.
 Esiintymislavalla, tämän muuttujan tilaindikaattorissa pitää lukea "Witch: nopeus".
 Jos siinä lukee pelkkä "nopeus", poista muuttuja ja luo se uudestaan, vain tälle hahmolle.  Muuttuja-paletissa ota puumerkki pois "nopeus" muuttujan edestä, jotta sitä ei näytetä esiintymislavalla.
-Nopeus-muuttuja määrää kuinka nopeasti noita liikkuu. Käytetään muuttujaa, jotta voidaan muuttaa noidan nopeuden sitä mukaan kun peli jatkuu.
+Nopeus-muuttuja määrää kuinka nopeasti noita liikkuu. Käytetään muuttujaa, jotta voidaan muuttaa noidan nopeuden sitä mukaan kun peli etenee.
 5. Halutaan noidan alkavan liikkumista kun peli käynnistyy, joten tee tällainen skripti:
 
 ```scratch
@@ -70,7 +70,7 @@ Luo tällainen skripti noidalle:
 		odota valitse satunnaisluku väliltä 2 - 5 sekuntia
 		näytä
 		odota valitse satunnaisluku väliltä 3 - 5 sekuntia
-	(end ikuisesti)
+	(loppu ikuisesti)
 ```
 ###Testaa projektisi
 __Napsauta vihreä lippu.__ 
@@ -86,16 +86,13 @@ __Kokeile vaihtaa satunnaislukujen skaala. Mitä tapahtuu jos valitset hyvin iso
 
 Jotta tästä tulisi peli, meidän pitää antaa pelaajalle jotain tekemistä.  Pelaajan pitää napsauttaa noitaa ja saada tämä häipymään näkyvästä.  Kun noita napsautetaan, haluamme hänen häipyvän näkyvästä ja soittavan äänen.
 
-1. Äänet välilehdessä Valitse uusi ääni kirjastosta: Sähköinen/fairydust. 
+1. Äänet välilehdessä tuo uusi ääni kirjastosta: Sähköinen/fairydust. 
 
 2. Lisää tämä skripti noidalle:
 
 ```scratch
-
-	kun tämä hahmo napsautetaan
-
+	kun tätä hahmoa klikataan
 	piilota
-
 	soita ääni fairydust
 ```
 ###Testaa projektisi
@@ -107,41 +104,27 @@ Tallenna projektisi
 
 ##VAIHE 4: Lisää pisteet ja ajastin
 
-Meillä on noita, mutta nyt haluamme tehdä pelin! Haluamme We want to score points every time we click on the witch but we also want to have a time limit on the game. We can use a variable for the score and the timer.
+Meillä on noita, mutta nyt haluamme tehdä pelin! Haluamme saada pisteitä joka kerta kun napsautetaan noitaa, mutta haluamme myös pelille aikarajan. Voimme käyttää muuttujia tulokselle ja ajastimelle.
 
-
-1. Create a new Variable for all sprites called score, and alter the script for the witch to increase this variable by one when she is clicked.
+1. Tee uusi muuttuja kaikille hahmoille ja nimeä se tulokseksi. Muuta noidan skripti niin, että tämä muuttuja kasvaa yhdellä kun häntä napsautetaan.
 
 ```scratch
-
-	when sprite1 clicked
-
-	hide
-
-	play sound Fairydust
-
-	change score by 1
+	kun tätä hahmoa klikataan
+	piilota
+	soita ääni fairydust
+	muuta muuttujan tulos arvoa 1
 ```
-2. Switch to the Stage and create a new variable (this time just for the stage) called timer. Add a new script that occurs when the green flag is clicked to set timer to 30 and reset the score to 0. Then use a repeat until block to wait a second and then reduce timer by
-one. This should repeat until timer is 0, at which point use stop all to stop the game.
+2. Valitse esiintymislava, ja tee uusi muuttuja ja nimeä se ajastimeksi. Lisää uusi skripti joka tapahtuu kun vihreätä lippua napsautetaan.  Skripti asettaa ajastimen arvoon 30 ja nollaa tuloksen arvon.  Käytä sitten toista kunnes -lohkoa odottaakseen sekunnin ja sitten vähentääkseen ajastimen yhdellä. Tämän kuuluu toistua kunnes ajastin on nollassa. Tässä vaiheessa käytetään pysäytä kaikki pysäyttääkseen pelin.
 
 ```scratch
-
 	kun klikataan LIPPU
-
-	set timer to 30
-
-	set score to 0
-
-	repeat until timer = 0
-
-		wait 1 secs
-
-		change timer by -1
-
-	(end repeat)
-
-	stop all
+	aseta ajastin arvoon 30
+	aseta tulos arvoon 0
+	toista kunnes ajastin = 0
+		odota 1 sekuntia
+		muuta muuttujan timer arvoa -1
+	(loppu toista)
+	pysäytä kaikki
 ```
 
 
@@ -150,32 +133,33 @@ __Napsauta vihreä lippu.__
 
 Tallenna projektisi
 
-###Things to try
-__How might you make the witch speed up as the game goes on?__
+###Kokeiltavaa
+__Miten saisit noita lentämään nopeammin, sitä kauemmin peli kestää?__
 
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
+__Hienoa! Olet tehnyt peruspelin loppuun. Mutta vielä on muutoksia, mitä voit tehdä. Kokeile tätä haastetta!__
 
-##Challenge: add more witches
+##Haaste: lisää noitia
 
-If one witch is good, more must be better! Let’s have three witches flying around.
-1. Duplicate the witch by right-clicking it in the sprite list.
-2. For each witch adjust the size of the sprite so the witches are different sizes.
-3. For each witch change the speed variable so that they fly at different speeds.
-4. Move the witches around the canvas so that they are not all together.
+Jos yksi noita on hyvä, enemmän on varmasti vielä parempi! Pistetään kolme noitaa lentelemään ympäriinsä.
+1. Kopioi noita oikea-napsauttamalla sitä hahmolistassa.
+2. Muuta jokaisen noitahahmon kokoa niin, että ne ovat kaikki erikokoisia.
+3. Muuta jokaisen noidan nopeus-muuttujaa niin, että ne kaikki lentävät eri nopeudella.
+4. Siirrä noidat ympäri taustaa niin, etteivät ole kaikki yhdessä.
 
 ###Testaa projektisi
 __Napsauta vihreä lippu.__ 
 
-Do you have three witches that move from side to side across the screen, randomly appear and disappear, and disappear when you click on them?
+Liikkuuko kolme noitaa ruudun reunasta toiseen ilmestyen ja häipyen satunnaisesti, ja jotka häipyvät kun napsautat niitä?
+
 
 Tallenna projektisi
 
-###Things to try
-1. How many witches is a good number for the game?
-2. Can you make the witches look different? You could either edit their costumes, or use some blocks from the Looks palette to change them.
-3. Can you make the witches be worth different points? How about making the fastest (and smallest) witch worth 10 points?
+###Kokeiltavaa
+1. Montako noitaa on hyvä määrä tälle pelille?
+2. Saatko noidat näyttämään erilaisilta? Voit joko muokata heidän asusteita tai käyttää Ulkonäkö-paletin lohkoja muuttaaksesi niitä.
+3. Saatko noidat eriarvoisiksi? Mitä jos nopeimmasta (ja pienimmästä) noidasta saisi 10 pistettä?
 
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__Hienoa, olet tehnyt harjoituksen, nyt voit nauttia pelistä!__
+Muista, että voit jakaa pelisi kavereitesi ja perheesi kanssa valitsemalla  __Jaa__ valikkopalkista!
