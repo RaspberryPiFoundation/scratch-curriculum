@@ -51,19 +51,12 @@ Hienoa! Saadaan hahmo vaihtamaan asusteita ikuisesti, mutta miten saadaan se pys
 1. Tee uusi muuttuja napsauttamalla tieto ja tee muuttuja. Nimeä se pysäytetyksi ja tee se kaikille hahmoille, sitten ota rasti pois sen viereisestä laatikosta, niin se ei näy esiintymislavalla.
 2. Aseta pysäytetty arvoon 1 kun joku napsauttaa kuvaa käyttäen "kun tätä hahmoa klikataan".
 3. Nyt pitää saada kuvan vaihtamisen pysähtymään kun muuttuja pysäytetty on yhtä kuin 1. Napsauta Ohjaus ja lisää ikuisesti silmukan sisälle jos, sitten -silmukan.  Laita jos:n ehdoksi yhtäsuuruus-vertailu, toiselle puolelle pysäytetty ja toiselle puolelle 0
-4. Lopuksi lisää aseta pysäytetty arvoon 0 -lohko kun klikataan LIPPU -lohkon alle.
 
-
-
-
-
-
-
-
-
-
+###orig###
 3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
 
+
+4. Lopuksi lisää aseta pysäytetty arvoon 0 -lohko kun klikataan LIPPU -lohkon alle.
 
 
 ###Testaa projektisi
@@ -71,19 +64,21 @@ __Napsauta vihreätä lippua, odota hetken, sitten napsauta hahmoa.__
 
 Vaihtuuko asuste ennen kuin napsautat sitä?
 Pysähtyykö kun napsautat sitä?
-__Käynnistä hahmo uudelleen.__ Pysähtyykö se kun Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
+
+__Käynnistä hahmo uudelleen.__ Pysähtyykö se kun siirrät hiiriosoittimen sen päälle, napsauttamatta? 
+Pysähtyykö hahmo kun napsautat jossain muualla esiintymislavalla? Jossain muualla Scratch-ikkunassa? Jossain muualla Scratch-ikkunan ulkopuolella?
 
 Tallena projektisi
 
-##VAIHE 4: Creating the other sprite
-__Now we need to make the other sprites so we can play our game!__
+##VAIHE 4: Toisten hahmojen luonti
+__Nyt meidän pitää luoda muut hahmot, jotta voimme pelata pelimme!__
 
 1. Kopioi hahmo oikeanapsautamalla sitä ja valitsemalla kopioi.
-2. Kopioi se vielä kerran niin, että on 3 hahmoa ruudulla.
+2. Kopioi se vielä kerran niin, että ruudulla on yhteensä kolme hahmoa.
 3. Liikuta jokainen hahmo niin, että ne ovat suorassa rivissä. Pienennä ne hieman jos on tarvetta.
 
 ###Testaa projektisi
-__Napsauta vihreätä lippua.__ All the sprites should change. Try to stop them all on the same picture!
+__Napsauta vihreätä lippua.__ Kaikkien hahmojen kuuluisi vaihtaa asusteensaAll the sprites should change. Try to stop them all on the same picture!
 
 Tallena projektisi
 
