@@ -52,7 +52,7 @@ Adjust the time in the wait block.What numbers do you think would make the game 
 
 Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?
 
-1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for all sprites, then uncheck the box next to it so it doesn’t display on the stage.
+1. Create a new variable by clicking Variables and Make a variable. Call it stopped and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.
 2. Set stopped to 1 when someone clicks on the image using
 when sprite1clicked and set stopped to 0 making sure to change the value from 0 to 1.
 3. Now we need to make the image stop changing when the variable stopped equals 1. Click Control and change the forever loop to a forever if and use a new equals operator to check if stopped equals 0
