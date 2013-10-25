@@ -1,4 +1,30 @@
-#NOTES FOR CLUB LEADERS
-##(Fruit Machine)###Introduction:This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).###SkillsThis project covers- Changing costumes- Running a loop- Stopping a loop on click###ResourcesThis project uses only standard Scratch images found within Scratch.###Scratch Cards required:Broadcast###Basic exercisesStep 1: Create a sprite that changes costumes 
-Step 2: Making the picture changeStep 3: Making it stop when we click on it 
-Step 4: Creating the other sprites###Challenges1. Make the game harder2. Make the game get harder and easier over time3. Detect when all the sprites have stopped on the same costume
+#OHJEITA KERHON VETÄJILLE
+##(Hedelmäpeli)
+
+###Johdanto:
+Tässä pelissä on kolme hahmoa, joiden asusteet vaihtuvat. Pelaajan pitää pysäyttää ne silloin, kun niillä on sama kuva näkyvissä (aivan kuten hedelmäpelissä!).
+
+###Taidot
+Tässä projektissä käsitellään:
+
+- Asusteiden vaihtaminen
+- Silmukan pyöritys
+- Silmukan pysäyttäminen napsautuksella
+
+###Resurssit
+Tämä projekti käyttää vain Scratchin kirjastoista löytyviä kuvia.
+
+###Vaaditut Scratch-kortit
+Broadcast
+
+###Perustehtävät
+
+Step 1: Luo hahmo jonka asusteet vaihtuu
+Step 2: Pistetään kuva muuttumaan
+Step 3: Pysäytä se kun sitä napsautetaan
+Step 4: Toisten hahmojen luonti
+
+###Haasteet
+1. Tee pelistä vaikeampi
+2. Tee pelistä vaikeampi ja helpompi ajan myötä
+3. Havaitse kun kaikilla kolmella hahmolla on pysäytettynä sama asuste
