@@ -7,9 +7,11 @@ We’re going to make a Fish Chomp game! Guide the large Hungry Fish around and 
 ###Skills
 This project covers:
 * Moving sprites
-* Controlling sprites with the mouse • Changing costumes
+* Controlling sprites with the mouse
+* Changing costumes
 * Collision detection
-* Sprites reading other sprites’ state • Keeping and changing scores
+* Sprites reading other sprites’ state
+* Keeping and changing scores
 
 ###Resources
 This project uses resources found in the Scratch Backgrounds and Costumes folders AND the hungry fish costumes can be found in the volunteers packs.
@@ -25,7 +27,7 @@ Step 1: Hungry Fish follows the mouse pointer
 
 Step 2: Add some prey
 
-Step 3: Hungry fish eats the prey
+Step 3: Hungry Fish eats the prey
 
 ###Challenges
 1. Make the prey move differently
