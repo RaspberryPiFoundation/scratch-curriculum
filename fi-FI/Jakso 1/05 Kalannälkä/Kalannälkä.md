@@ -183,12 +183,12 @@ Syökö Nälkäinen Kala saaliit? Syökö se yksittäisiä saaliita?
 Tallenna projektisi
 
 ###Ajateltavaa
-Miksi Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+Miksi meidän pitää lisätä 'näytä'-lohko saaliin skriptin alkuun? Ajattele mitä tapahtuisi jos saalis syödään ja peli pysäytetään ennen kuin se taas tulee näkyviin. Mitä tapahtuisi sitten kun peli käynnistetään uudelleen?
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
+__Hienoa, olet tehnyt peruspelin. On kuitenkin vielä muutoksia, mitä voit pelillesi tehdä. Oletko valmis haasteeseen?__
 
 
-##Challenge 1: Make the prey liiku differently
+##Haaste 1: Pistä saaliit liikkumaan eri tavalla
 
 At the moment, all the prey liiku in the same way. __Can you make one of them
 liiku differently?__
@@ -214,7 +214,7 @@ Do any of these changes make the game better? Do they make the game more interes
 
 Tallenna projektisi
 
-##Challenge 2: Make the prey avoid the Nälkäinen Kala
+##Haaste 2: Make the prey avoid the Nälkäinen Kala
 
 The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Nälkäinen Kala.__
 
@@ -227,7 +227,7 @@ Does this make the fish harder to catch? Does it make the game better?
 
 Tallenna projektisi
 
-##Challenge 3: Add a score
+##Haaste 3: Add a score
 It’s not enough just to eat fish. How do you know you’re better at the game than your
 friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
 
@@ -240,7 +240,7 @@ Does the score go to zero at the start of the game? Does it go up every time you
 
 Tallenna projektisi
 
-##Challenge 4: Add a countdown
+##Haaste 4: Add a countdown
 
 __Give yourself a time limit in the game.__ How many fish can you eat in thirty
 seconds?
@@ -258,14 +258,14 @@ Does the game stop when the timer reaches zero?
 
 Tallenna projektisi
 
-##Challenge 5: Add a bonus score
+##Haaste 5: Add a bonus score
 Award a large bonus score if you can eat all three fish at the same time. How can
 you tell how many fish have been eaten?
 __Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
 
 Tallenna projektisi
 
-##Challenge 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
+##Haaste 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
 
 __Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Nälkäinen Kala.__ How long can you last before you’re eaten?
 
