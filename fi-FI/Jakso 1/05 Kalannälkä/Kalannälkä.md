@@ -171,19 +171,19 @@ __Nyt haluamme kalan vastaanottavan tämän viestin ja reagoivan siihen pitämä
 		vaihda asusteeksi SuuKiinni
 		odota 0.5 sekuntia
 		vaihda asusteeksi NälkäinenKala
-	(loppu repeat)
+	(loppu toista)
 ```
 
-__Now our Nälkäinen Kala is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
+__Nyt Nälkäinen Kalamme on valmis syömään, täytetään meri saaliilla. Oikeanapsauta saaliin hahmoa ja valitse 'kopioi' useamman kerran.__
 
 ###Testaa projektisi
 Napsauta vihreätä lippua.
-Does the Nälkäinen Kala eat the prey? Does it eat each of the different prey?
+Syökö Nälkäinen Kala saaliit? Syökö se yksittäisiä saaliita?
 
 Tallenna projektisi
 
-###Things to think about
-Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+###Ajateltavaa
+Miksi Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
 
 __Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
 
