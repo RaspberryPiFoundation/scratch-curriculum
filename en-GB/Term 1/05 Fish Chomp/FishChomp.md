@@ -60,7 +60,7 @@ If you want, you can put different numbers in the script. How does that change h
 1. Create a new sprite from the file animals/lobster1. 
 2. Use the Shrink sprite tool (above the Stage)
 to make the sprite smaller.
-3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again
+3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.
 
 ```scratch
 
@@ -84,13 +84,13 @@ Save your project
 * Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
 * What does the __if on edge, bounce__ block do? Take it out and see what happens.
 
-##STEP 3: Hungry fish eats the prey
+##STEP 3: Hungry Fish eats the prey
 
 __Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
 * The Hungry Fish needs to close its mouth and make a "chomp" sound.
 * The prey needs to disappear, then reappear a short while later.
 
-1. First, let’s make the prey disappear if it is touching the hungry fish, and then reappear 3 seconds later. Use the touching block to see if it is touching the fish.
+1. First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the touching block to see if it is touching the fish.
 
 ```scratch
 
@@ -108,13 +108,11 @@ __Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has c
 ```
 
 ###Test Your Project
-__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the hungry fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
+__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
 
-2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
+2. How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
 touching color block in your script, click on the color in the block and then click again on the fish’s teeth.
-3. Next we can make the prey move to a random point on the screen before reappearing using a go to
-block, and giving it a random
-value for x and y.
+3. Next we can make the prey move to a random point on the screen before reappearing using a go to block, and giving it a random value for x and y.
 
 ```scratch
 
@@ -198,7 +196,7 @@ Make this prey move slower than the others. __Hint:__ Look at the move (2) steps
 
 ###Test Your Project
 Does the prey move slower? Does this make the game better?
-If you can do that, __try to making one of fish move quicker than the others.__
+If you can do that, __try making one of fish move quicker than the others.__
 
 
 Does the prey still move in a sensible way? Do these changes make the game better?
@@ -210,7 +208,7 @@ Do any of these changes make the game better? Do they make the game more interes
 
 Save your project
 
-##Challenge 2: Make the prey avoid the hungry fish
+##Challenge 2: Make the prey avoid the Hungry Fish
 
 The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
 
@@ -261,11 +259,12 @@ __Hint:__ One way to do this __uses a variable to count how many prey are swimmi
 
 Save your project
 
-##Challenge 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
+##Challenge 6: Change the game: keep a prey alive!
+Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
 
 __Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten?
 
 Save your project
 
 __Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
+Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
