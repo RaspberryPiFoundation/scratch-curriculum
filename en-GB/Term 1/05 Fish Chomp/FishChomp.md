@@ -177,7 +177,7 @@ Does the Hungry Fish eat the prey? Does it eat each of the different prey?
 Save your project
 
 ###Things to think about
-Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+Why do we need to add a show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
 
 __Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
 
@@ -196,7 +196,7 @@ Make this prey move slower than the others. __Hint:__ Look at the move (2) steps
 
 ###Test Your Project
 Does the prey move slower? Does this make the game better?
-If you can do that, __try making one of fish move quicker than the others.__
+If you can do that, __try making one of the prey move quicker than the others.__
 
 
 Does the prey still move in a sensible way? Do these changes make the game better?
