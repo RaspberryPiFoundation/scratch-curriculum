@@ -151,8 +151,7 @@ Try the game again – does the prey only vanish when it touches the fish’s mo
 		(end if)
 	(end forever)
 ```
-__Now we want the fish to respond
-to this message by making a “chomp” sound and snapping its jaws.__
+__Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.__
 
 5. Add the resources/mouth-closed costume and the resources/chomp sound to the Hungry Fish sprite.
 6. Then, add a new script to the Hungry Fish to respond to the message broadcast by the prey. This script should make the fish play the 'chomp' sound and switch to the mouth-closed costume, wait briefly and then switch back.
@@ -210,20 +209,19 @@ Save your project
 
 ##Challenge 2: Make the prey avoid the Hungry Fish
 
-The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
+The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real prey swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
 
 There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the __Motion__ palette.
 
 Using that idea, __make one of the prey always point away from the Hungry Fish.__ You might want to make it wiggle as it swims away.
 
 ###Test Your Project
-Does this make the fish harder to catch? Does it make the game better?
+Does this make the prey harder to catch? Does it make the game better?
 
 Save your project
 
 ##Challenge 3: Add a score
-It’s not enough just to eat fish. How do you know you’re better at the game than your
-friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
+It’s not enough just to eat lobsters. How do you know you’re better at the game than your friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
 
 Where should you put the block that changes the score?
 
@@ -236,7 +234,7 @@ Save your project
 
 ##Challenge 4: Add a countdown
 
-__Give yourself a time limit in the game.__ How many fish can you eat in thirty
+__Give yourself a time limit in the game.__ How many prey can you eat in thirty
 seconds?
 
 Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
@@ -253,8 +251,8 @@ Does the game stop when the timer reaches zero?
 Save your project
 
 ##Challenge 5: Add a bonus score
-Award a large bonus score if you can eat all three fish at the same time. How can
-you tell how many fish have been eaten?
+Award a large bonus score if you can eat all three lobsters at the same time. How can
+you tell how many prey have been eaten?
 __Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
 
 Save your project
