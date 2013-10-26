@@ -5,7 +5,7 @@ Level 2
 __Introduction:__
 We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
 
-##STEP 1: Create a sprite that changes costumes
+##STEP 1: Create a sprite that follows the mouse
 __Let’s make the Hungry Fish swim around the sea!__
 
 1. Start a new Scratch project.
