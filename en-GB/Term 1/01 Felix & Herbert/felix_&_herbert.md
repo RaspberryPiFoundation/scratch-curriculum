@@ -137,12 +137,12 @@ Does Felix still stay still for long enough for Herbert to get away
 
 Save your project
 
-##STEP 5: Keep Score
+##STEP 5: Keep score
 
 __Let’s add a score so we know how well we do at keeping Herbert alive.
 We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.__
 
-1. Make a variable, for all sprites, called Score. Click on Variables in the top menu, make a variable and name it score
+1. Make a variable, for all sprites, called score. Click on Variables in the top menu, make a variable and name it score
 2. On the stage, create these two scripts
 
 ```scratch
