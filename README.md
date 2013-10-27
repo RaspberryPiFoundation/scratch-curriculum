@@ -2,7 +2,7 @@
 
 This repository contains all the material for Term 1 and 2 of [Code Club][codeclub].
 It consists of lesson notes and plans in [Markdown][markdown] format,
-[Scratch][scratch] project files, and a few PDFS.
+[Scratch][scratch] project files, and a few PDFs.
 
 This material is openly available for everyone to use and contribute to.
 Right now, we’re receiving translations from all over the world.
