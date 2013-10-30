@@ -215,18 +215,18 @@ __Teraz chcemy, aby ryba odpowiedziała na to głośnym zamknięciem paszczy.__
 	
 ```
 
-__Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
+__Skoro nasz Głodna Ryba jest gotowa jeść, wypełnijmy ocean jedzeniem. Kliknij na krewetce prawym przyciskiem myszy i duplikuj ją kilka razy.__
 
-###Test Your Project
-Click the green flag.
-Does the Hungry Fish eat the prey? Does it eat each of the different prey?
+###Przetestuj swój projekt
+Kliknij zieolną flagę.
+Czy Głodna Ryba zjada swoje ofiary? Czy potrafi zjeść każdą krewetkę?
 
-Save your project
+Zapisz swój projekt
 
-###Things to think about
-Why do we need to add the show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+###Rzeczy do przemyślenia
+Dlaczego musimy dodać blok 'pokaż' na początku skryptu każdej krewetki? Pomyśl, co by się stało, gdyby gra została zatrzymana zanim zjedzona krewetka ponownie pojawi się na ekranie. Co by się stało po uruchomieniu gry?
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
+__Brawo! Udało Ci się skończyć podstawową wersję gry. Jest jeszcze kilka rzeczy, które możesz zmienić w grze. Pora na wyzwanie?__
 
 
 ##Challenge 1: Make the prey move differently
