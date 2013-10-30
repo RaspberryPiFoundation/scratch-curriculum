@@ -125,66 +125,94 @@ __Chcemy, aby ryba zjadła swoją ofiarę!__ Jak tylko ryba złapie żyjątko, d
 ```
 
 ###Przetestuj swój projekt
-__Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że krewetka znika bez względu na to, z której strony dotknie ryę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekudnach może od razu zjeść krewetkę – to jest trochę niefajne!
+__Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że krewetka znika bez względu na to, z której strony dotknie rybę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekudnach może od razu zjeść krewetkę – to jest trochę niefajne!
 
-2. How could we make sure the prey only disappears if it is touching the hungry fish’s mouth? Well, we could use the touching color block, and see if it is touching the fish’s blue teeth. To do this, replace the touching block with a
-touching color block in your script, click on the color in the block and then click again on the fish’s teeth.
-3. Next we can make the prey move to a random point on the screen before reappearing using a go to
-block, and giving it a random
-value for x and y.
+2. Co możemy zrobić, aby upewnić się, że krewetka znika tylko wtedy, gdy ryba dotknie jej paszczą? Możemy skorzystać z czujnika koloru i sprawdzać, czy krewetka dotyka niebieskich zębów ryby! Aby to zrobić, zamień blok 'dotyka Głodna Ryba' na 'dotyka koloru', kliknij kwadracik z kolorem, a gdy kursor myszy się zmieni, kliknij na zębach ryby.
+3. Następnie możemy sprawić, aby krewetka przesuwała się w losowe miejsce na ekranie przed ponownym pojawieniem. Możemy użyć do tego bloku 'idź do' i użyć losowych wartości dla x i y. 
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
+	kiedy kliknięto FLAGĘ
+
+	zawsze
+
+		przesuń o 2 kroków
+
+		obróć o losuj liczbę pomiędzy -20 a 20 stopni
+
+		jeżeli na brzegu, odbij się
+		
+		jeżeli dotyka koloru []
+			
+			ukryj
+			
+			czekaj 3 s
+			
+			idź do x: losuj liczbę pomiędzy -220 a 220 y: losuj liczbę pomiędzy -170 a 170
+			
+			pokaż
+		
+		(koniec jeżeli)
+		
+	(koniec zawsze)
+	
 ```
-###Test your project
+###Przetestuj swój projekt
+Spróbuj złapać krewetkę jeszcze raz - czy znika ona tylko wtedy, kiedy dotknie zębów ryby? I czy pojawia się w losowym miejscu na ekranie zamiast od razu tam, gdzie została zjedzona?
 
-Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
-
-4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey broadcast the fact that it’s been eaten before vanishing.
+4. Ryba musi wiedzieć, kiedy zjadła krewetkę, aby mogła wydać dźwięk i zmienić skórę. Aby to zrobić, wpierw musimy nadać sygnał, że krewetka została zjedzona.
 
 ```scratch
 
-	when FLAG clicked
-	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
-		if on edge, bounce
-		if touching colour []?
-			broadcast got me
-			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
-			show
-		(end if)
-	(end forever)
+	kiedy kliknięto FLAGĘ
+
+	zawsze
+
+		przesuń o 2 kroków
+
+		obróć o losuj liczbę pomiędzy -20 a 20 stopni
+
+		jeżeli na brzegu, odbij się
+		
+		jeżeli dotyka koloru []
+		
+			nadaj masz mnie
+			
+			ukryj
+			
+			czekaj 3 s
+			
+			idź do x: losuj liczbę pomiędzy -220 a 220 y: losuj liczbę pomiędzy -170 a 170
+			
+			pokaż
+		
+		(koniec jeżeli)
+		
+	(koniec zawsze)
+	
 ```
-__Now we want the fish to respond
-to this message by making a “chomp” sound and snapping its jaws.__
 
-5. Add the resources/mouth-closed costume and the resources/chomp sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message broadcast by the prey. This script should make the fish play the 'chomp' sound and switch to the mouth-closed costume, wait briefly and then switch back.
+__Teraz chcemy, aby ryba odpowiedziała na to głośnym zamknięciem paszczy.__
+
+5. Upewnij się, że Głodna Ryba ma dodane oba kostiumy i dodaj plik z dźwiękiem z katalogu Zasoby (ewentualnie możesz nagrać swój własny dźwięk lub użyć Slurp z katalogu Human).
+6. Następnie dodaj skrypt do Głodnej Ryby, który odpowiada na wiadomość nadaną przez jej ofiarę. Skrypt powinien zagrać odgłos jedzenia i zamienić kostium ryby na ten z zamkniętą paszczą, a następnie poczekać chwilę i wrócić do pierwszego kostiumu.
 
 ```scratch
 
-	when I receive got me
-	play sound chomp
-	repeat 2
-		switch to costume mouth-closed
-		wait 0.5 secs
-		switch to costume hungry-fish
-	(end repeat)
+	kiedy otrzymam masz mnie
+	
+	zagraj dźwięk Slurp
+	
+	powtórz 2 razy
+	
+		zamień kostium na ryba-paszcza-zamknieta
+		
+		czekaj 0.5 s
+		
+		zamień kostium na ryba-paszcza-otwarta
+
+	(koniec powtórz)
+	
 ```
 
 __Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
