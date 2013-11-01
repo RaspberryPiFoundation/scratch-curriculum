@@ -38,7 +38,7 @@ Est-ce qu’il avance à la bonne vitesse ?
 
 Enregistre ton projet
 
-##STEP 2: Félix poursuit Herbert
+##Étape 2: Félix poursuit Herbert
 
 __Maintenant nous voulons que Félix poursuive Herbert plutôt que le pointeur de souris.__
 
