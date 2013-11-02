@@ -38,8 +38,8 @@ The speed variable will control how fast the witch moves. We use a variable so t
 ###Test Your Project
 __Click the green flag__ and see what your witch does. Why does she get stuck on the edge of the screen?
 
-6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Below your
-`move speed steps` block add an `if on edge, bounce` block.
+6. To stop the witch getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding a  an `if on edge, bounce` block below your
+`move speed steps` block.
 
 ```scratch
 
