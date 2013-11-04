@@ -174,7 +174,7 @@ __Click the green flag.__
 
 Does each rocket have a different explosion graphic?
 
-3. Finally, lets make the explosion grow over time as opposed to simply appearing. Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.
+3. Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.
 
 ```scratch
 
