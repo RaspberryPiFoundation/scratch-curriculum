@@ -207,8 +207,8 @@ Why not try making each explosion more unique by altering the size and speed of 
 Save your project
 
 ##Step 4: Fixing the Broadcast Bug
-Remember earlier we had a bug involving holding down the mouse button?
-This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying.
+Remember earlier we had a problem involving holding down the mouse button?
+This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying. In computing we often call such problems "bugs".
 
 
 1. To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
