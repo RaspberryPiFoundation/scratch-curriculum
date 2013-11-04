@@ -77,15 +77,14 @@ sure the rocket is hidden when everything starts up.
 __Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
 
 ###Things to try
-1. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.
-2. Try making some rockets a little slower or faster than others.
+1. Try making some rockets a little slower or faster than others.
+2. Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.
 
 Save your project.
 
 ##STEP 2: Make the rocket explode
 
-1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound go
-to the Sounds tab and click import
+1. The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click import
 
 ```scratch
 
@@ -118,7 +117,7 @@ to the Sounds tab and click import
 __Click the green flag.__ 
 Make sure the rocket plays a noise and hides when it reaches the mouse.
 
-3. Import a new sprite using Resources/firework1.png
+3. Create new sprite from File,  Resources/firework1.png
 4. When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
 
 ```scratch
@@ -233,3 +232,7 @@ __Click the green flag, hold down the mouse button and move the mouse around the
 Does the explosion graphic appear in the right place and at the right time?
 
 Save your project
+
+__Well done you’ve finished, now you can enjoy the game!__
+
+Don’t forget you can share your game with all your friends and family by clicking on Share on the menu bar!
