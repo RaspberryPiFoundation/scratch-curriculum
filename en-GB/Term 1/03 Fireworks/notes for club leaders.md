@@ -9,6 +9,7 @@ This project covers:
 * Responding to clicks
 * Changing the appearance of sprites • Playing sounds
 * Broadcasting and receiving events
+* Coordinates
 
 ###Resources
 This project uses resources found in the Scratch Backgrounds folders as well as the files found in the Fireworks resources folder included in this pack.
