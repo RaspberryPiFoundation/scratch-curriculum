@@ -10,7 +10,7 @@ The project creates a drawing tool for you to make your own art. You can change 
 We’ll start with a pen that draws when you drag it around the Stage.
 
 1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Click __Stage__ and then the __Backgrounds__ tab. Import the __indoors/chalkboard__ background.
+2. Click __Stage__ and then the __Backgrounds__ tab. Upload the  the frame.bmp background.
 3. Create a new sprite called __pencil__, using __resources\green-pencil.__
 4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click __Set costume center__ and drag the lines until they are at the tip.
 5. Make the pencil follow
