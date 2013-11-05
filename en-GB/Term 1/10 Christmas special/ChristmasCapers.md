@@ -69,12 +69,12 @@ __Save your project__
 
 ##STEP 2: Falling Presents
 
-1 We now need to add in the presents for Rudolph to collect. Use the __new sprite from file__ button to add the Present sprite to the project (use the Present.png file).
-2 Rename the sprite to __Present__.
-3 __Create a new variable__ by clicking __variables__ . Call it `Stop` and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control when the present should be removed from the game.
-4 __Create another variable__ and call it `Speed` and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control the speed that the present falls down the screen.
-5 Add the following script to the __Present__ sprite to allow it to fall from the sky. Note that we will use `pick random` to make the present appear in a different place each time.
-6 By using the `touching [ Rudolph ]` command we can make the present disappear when touched, we can use this later to keep a score.
+1. We now need to add in the presents for Rudolph to collect. Use the __new sprite from file__ button to add the Present sprite to the project (use the Present.png file).
+2. Rename the sprite to __Present__.
+3. __Create a new variable__ by clicking __variables__ . Call it `Stop` and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control when the present should be removed from the game.
+4. __Create another variable__ and call it `Speed` and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control the speed that the present falls down the screen.
+5. Add the following script to the __Present__ sprite to allow it to fall from the sky. Note that we will use `pick random` to make the present appear in a different place each time.
+6. By using the `touching [ Rudolph ]` command we can make the present disappear when touched, we can use this later to keep a score.
 
 
 ```scratch
