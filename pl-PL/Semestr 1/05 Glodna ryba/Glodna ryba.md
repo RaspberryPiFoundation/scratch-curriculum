@@ -18,13 +18,13 @@ __Dodajmy rybę, która pływa po morzu!__
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-	
+
 	zawsze
-			
+
 		ustaw w stronę wskaźnik myszy
-		
+
 		przesuń o 3 kroków
-		
+
 	(koniec zawsze)
 ```
 
@@ -38,13 +38,13 @@ Co się dzieje, jeżeli nie ruszasz kursorem i ryba go łapie? Jak to wygląda? 
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-	
+
 	zawsze, jeżeli odległość do wskaźnik myszy > 10
-	
+
 		ustaw w stronę wskaźnik myszy
-		
+
 		przesuń o 3 kroków
-		
+
 	(koniec zawsze)
 ```
 
@@ -61,20 +61,20 @@ Jeżeli chcesz, możesz zmienić liczby w skrypcie. W jaki sposób zmienia to sp
 
 1. Stwórz nowego duszka korzystając z kostiumu lobster1 z katalogu Animals.
 2. Zmiejsz nowego duszka (narzędzie do zmniejszania znajduje się nad Sceną).
-3. Dodaj skrypt, który kieruje pływającą krewetką. Chcemy, aby ruszała się losowo, więc byłoby dobrze, aby najpierw ruszała się trochę do przodu, a potem skręciła albo w lewo, albo w prawo, a potem zaczęła się ruszać od nowa. 
+3. Dodaj skrypt, który kieruje pływającą krewetką. Chcemy, aby ruszała się losowo, więc byłoby dobrze, aby najpierw ruszała się trochę do przodu, a potem skręciła albo w lewo, albo w prawo, a potem zaczęła się ruszać od nowa.
 
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-	
+
 	zawsze
-	
+
 		przesuń o 2 kroków
-		
+
 		obróć o losuj liczbę pomiędzy -20 a 20 stopni
-		
+
 		jeżeli na brzegu, odbij się
-		
+
 	(koniec zawsze)
 ```
 
@@ -106,21 +106,21 @@ __Chcemy, aby ryba zjadła swoją ofiarę!__ Jak tylko ryba złapie żyjątko, d
 	zawsze
 
 		przesuń o 2 kroków
-	
+
 		obróć o losuj liczbę pomiędzy -20 a 20 stopni
-	
+
 		jeżeli na brzegu, odbij się
-		
+
 		jeżeli dotyka Głodna Ryba
-			
+
 			ukryj
-			
+
 			czekaj 3 s
-			
+
 			pokaż
-		
+
 		(koniec jeżeli)
-		
+
 	(koniec zawsze)
 ```
 
@@ -128,7 +128,7 @@ __Chcemy, aby ryba zjadła swoją ofiarę!__ Jak tylko ryba złapie żyjątko, d
 __Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że krewetka znika bez względu na to, z której strony dotknie rybę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekudnach może od razu zjeść krewetkę – to jest trochę niefajne!
 
 2. Co możemy zrobić, aby upewnić się, że krewetka znika tylko wtedy, gdy ryba dotknie jej paszczą? Możemy skorzystać z czujnika koloru i sprawdzać, czy krewetka dotyka niebieskich zębów ryby! Aby to zrobić, zamień blok 'dotyka Głodna Ryba' na 'dotyka koloru', kliknij kwadracik z kolorem, a gdy kursor myszy się zmieni, kliknij na zębach ryby.
-3. Następnie możemy sprawić, aby krewetka przesuwała się w losowe miejsce na ekranie przed ponownym pojawieniem. Możemy użyć do tego bloku 'idź do' i użyć losowych wartości dla x i y. 
+3. Następnie możemy sprawić, aby krewetka przesuwała się w losowe miejsce na ekranie przed ponownym pojawieniem. Możemy użyć do tego bloku 'idź do' i użyć losowych wartości dla x i y.
 
 ```scratch
 
@@ -141,21 +141,21 @@ __Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że k
 		obróć o losuj liczbę pomiędzy -20 a 20 stopni
 
 		jeżeli na brzegu, odbij się
-		
+
 		jeżeli dotyka koloru []
-			
+
 			ukryj
-			
+
 			czekaj 3 s
-			
+
 			idź do x: losuj liczbę pomiędzy -220 a 220 y: losuj liczbę pomiędzy -170 a 170
-			
+
 			pokaż
-		
+
 		(koniec jeżeli)
-		
+
 	(koniec zawsze)
-	
+
 ```
 ###Przetestuj swój projekt
 Spróbuj złapać krewetkę jeszcze raz - czy znika ona tylko wtedy, kiedy dotknie zębów ryby? I czy pojawia się w losowym miejscu na ekranie zamiast od razu tam, gdzie została zjedzona?
@@ -173,23 +173,23 @@ Spróbuj złapać krewetkę jeszcze raz - czy znika ona tylko wtedy, kiedy dotkn
 		obróć o losuj liczbę pomiędzy -20 a 20 stopni
 
 		jeżeli na brzegu, odbij się
-		
+
 		jeżeli dotyka koloru []
-		
+
 			nadaj masz mnie
-			
+
 			ukryj
-			
+
 			czekaj 3 s
-			
+
 			idź do x: losuj liczbę pomiędzy -220 a 220 y: losuj liczbę pomiędzy -170 a 170
-			
+
 			pokaż
-		
+
 		(koniec jeżeli)
-		
+
 	(koniec zawsze)
-	
+
 ```
 
 __Teraz chcemy, aby ryba odpowiedziała na to głośnym zamknięciem paszczy.__
@@ -200,19 +200,19 @@ __Teraz chcemy, aby ryba odpowiedziała na to głośnym zamknięciem paszczy.__
 ```scratch
 
 	kiedy otrzymam masz mnie
-	
+
 	zagraj dźwięk Slurp
-	
+
 	powtórz 2 razy
-	
+
 		zamień kostium na ryba-paszcza-zamknieta
-		
+
 		czekaj 0.5 s
-		
+
 		zamień kostium na ryba-paszcza-otwarta
 
 	(koniec powtórz)
-	
+
 ```
 
 __Skoro nasz Głodna Ryba jest gotowa jeść, wypełnijmy ocean jedzeniem. Kliknij na krewetce prawym przyciskiem myszy i duplikuj ją kilka razy.__
@@ -228,55 +228,59 @@ Dlaczego musimy dodać blok 'pokaż' na początku skryptu każdej krewetki? Pomy
 
 __Brawo! Udało Ci się skończyć podstawową wersję gry. Jest jeszcze kilka rzeczy, które możesz zmienić w grze. Pora na wyzwanie?__
 
+##Wyzwanie 1: Spraw, aby krewetki poruszały się inaczej
 
-##Challenge 1: Make the prey move differently
+Póki co wszystkie krewetki poruszają się tak samo.
 
-At the moment, all the prey move in the same way. __Can you make one of them
-move differently?__
-__Hint:__ Don’t spend too long on this bit without looking at the other activities in this
-project.
+__Spróbuj zmienić sposób w jaki porusza się jedna z krewetek.__
 
-__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the __set color effect block__. That way, you can tell it apart from the rest of the prey.
+__Podpowiedź:__ Postaraj się nie spędzić na tym zadaniu zbyt dużo czasu. Warto również spojrzeć na inne wyzwania!
 
-Make this prey move slower than the others. __Hint:__ Look at the move (2) steps block.
+__Wybierz jedną krewetkę nad którą bedziesz pracował(a).__
+Jeżeli ma ona ten sam kostium jak inne, zmień kolor kostiumu tej krewetki używając bloku __ustaw efekt kolor na__. W ten sposób szybko zauważysz nad którą krewetką pracujesz.
 
+Spraw aby ta krewetka poruszała się wolniej od innych.
 
-###Test Your Project
-Does the prey move slower? Does this make the game better?
-If you can do that, __try to making one of fish move quicker than the others.__
+__Podpowiedź:__ Spójrz na blok przesuń o 2 kroków.
 
+###Przetestuj swój projekt
+Czy krewetka porusza się wolniej? Czy gra jest teraz lepsza?
+Jeżeli udało ci się to zrobić, __wybierz inną krewetkę i spraw aby poruszała się ona szybciej od innych.__
 
-Does the prey still move in a sensible way? Do these changes make the game better?
-__Hint:__ If your prey swims around in circles, check the values of the pick random block in the turn block.
+Czy krewetki poruszają się naturalnie? Czy gra jest jescze lepsza po tych zmianach?
 
-How about you make each of the prey behave differently, using different combinations of these changes?
+__Podpowiedź__ Jeżeli krewetki pływają w kółko, sprawdź i jeżeli potrzeba zmień wartości jakie użyłeś/użyłaś w bloku losuj liczbę pomiędzy.
 
-Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
+A może spróbujesz zmienić zachowanie krewetek, tak aby każda poruszała się inaczej? Wykorzystaj zmiany, które wprowadziłeś/wprowadziłaś poprzednio.
 
-Save your project
+Czy te zmiany sprawiły, że gra jest jeszcze lepsza? Czy gra podoba ci się bardziej, jest trudniejsza czy łatwiejsza? Może któraś konkretna zmiana podoba ci się najbardziej?
 
-##Challenge 2: Make the prey avoid the hungry fish
+Zapisz swój projekt
 
-The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real fish swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
+##Wyzwanie 2: Spraw, aby krewetki unikały głodnej ryby.
 
-There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the __Motion__ palette.
+Krewetki w tej grze nie zachowują się zbyt mądrze. Po prostu pływają w kółko i dają się zjeść naszej rybie. Prawdziwa krewetka na pewno próbowała by uciec od drapieżnika.
 
-Using that idea, __make one of the prey always point away from the Hungry Fish.__ You might want to make it wiggle as it swims away.
+__Spróbujmy sprawić, aby jedna z krewetek uciekała przed Głodną Rybą__
 
-###Test Your Project
-Does this make the fish harder to catch? Does it make the game better?
+W Scratchu nie ma takiego bloku, który powiedziałby ci w którym kierunku porusza się inny duszek. Ale możesz sprawić, aby duszek zwrócił się w kierunku innego duszka, a potem odwrócił się od niego plecami. Bloki, których będziesz potrzebować znajdują się w palecie __Ruch__.
+
+Wykorzystując ten pomysł, __spraw aby jedna z krewetek zawsze była odwrócona do Głodnej Ryby plecami__. Może spróbujesz aby się trzęsła jak będzie uciekać?
+
+###Przetestuj swój projekt
+Czy teraz trudniej jest złapać krewetkę? Czy gra jest teraz lepsza?
 
 Save your project
 
 ##Challenge 3: Add a score
 It’s not enough just to eat fish. How do you know you’re better at the game than your
-friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
+friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it.
 
 Where should you put the block that changes the score?
 
 Make sure the score goes back to zero at the start of the game. Where should you put that block?
 
-###Test Your Project
+###Przetestuj swój projekt
 Does the score go to zero at the start of the game? Does it go up every time you eat prey?
 
 Save your project
@@ -288,7 +292,7 @@ seconds?
 
 Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
 
-###Test Your Project
+###Przetestuj swój projekt
 Does the timer start at 30?
 
 Does it go down at the right speed?
