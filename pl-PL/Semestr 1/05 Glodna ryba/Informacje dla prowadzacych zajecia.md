@@ -26,6 +26,6 @@ Krok 3: Głodna ryba zjada żyjątka
 1. Spraw, aby krewetki poruszały się inaczej
 2. Spraw, aby krewetki unikały głodnej ryby.
 3. Dodaj punkty.
-4. Dodaj odliczanie czasu
-5. Dodaj bonusowe punkty
-6. Zmień cel gry: żyjątko musi przeżyć!
+4. Dodaj zegar.
+5. Zdobądź dodatkowe punkty.
+6. Zmień cel gry: krewetka musi przeżyć!

@@ -270,51 +270,52 @@ Wykorzystując ten pomysł, __spraw aby jedna z krewetek zawsze była odwrócona
 ###Przetestuj swój projekt
 Czy teraz trudniej jest złapać krewetkę? Czy gra jest teraz lepsza?
 
-Save your project
+Zapisz swój projekt
 
-##Challenge 3: Add a score
-It’s not enough just to eat fish. How do you know you’re better at the game than your
-friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it.
+##Wyzwanie 3: Dodaj punkty
 
-Where should you put the block that changes the score?
+Ale zjadanie krewetek to nie wszystko. Skąd będziesz wiedzieć, czy umiesz grać w tą grę lepiej niż twoi koledzy?
+__Potrzebujesz w jakiś sposób policzyć jak dużo krewetek udało Ci się zjeść__. Spójrz na kartę __Jak liczyć punkty__ (Keeps score) aby dowiedzieć się, jak to można zrobić.
 
-Make sure the score goes back to zero at the start of the game. Where should you put that block?
+Gdzie powinieneś/powinnaś dodać blok, który będzie zmieniał ilość punktów?
 
-###Przetestuj swój projekt
-Does the score go to zero at the start of the game? Does it go up every time you eat prey?
-
-Save your project
-
-##Challenge 4: Add a countdown
-
-__Give yourself a time limit in the game.__ How many fish can you eat in thirty
-seconds?
-
-Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
+Upewnij się, że za każdym razem jak zaczynasz nową grę, masz zero punktów. Gdzie powinieneś/powinnaś dodać ten blok?
 
 ###Przetestuj swój projekt
-Does the timer start at 30?
+Czy jak zaczynasz nową grę, to ilość punktów jest równa zero? Czy dostajesz punkt za każdym razem jak zjesz krewetkę?
 
-Does it go down at the right speed?
+Zapisz swój projekt
 
-Can you catch prey while the timer is going?
+##Wyzwanie 4: Dodaj zegar
 
-Does the game stop when the timer reaches zero?
+__Ograniczmy czas w którym możesz zjadać krewetki.__ Jak wiele krewetek uda ci się zjeść w ciągu 30 sekund?
 
-Save your project
+Spójrz na kartę __Zegar__ (Timer), aby dowiedzieć się jak dodać zegar do naszej gry. Na początek niech gra trwa 30 sekund.
 
-##Challenge 5: Add a bonus score
-Award a large bonus score if you can eat all three fish at the same time. How can
-you tell how many fish have been eaten?
-__Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
+###Przetestuj swój projekt
+Czy jak zaczynasz grę, zegar wskazuje 30?
 
-Save your project
+Czy zegar poprawnie odlicza czas?
 
-##Challenge 6: Change the game: keep a prey alive! Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
+Czy udaje Ci się zjeść jakieś krewetki w tym czasie?
 
-__Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten?
+Czy gra się zatrzyma jak skończy się czas?
 
-Save your project
+Zapisz swój projekt
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!T
+##Wyzwanie 5: Zdobądź dodatkowe punkty
+Zdobądź dodatkowe punkty, jeżeli uda Ci się zjeść 3 krewetki na raz. W jaki sposób możesz sprawdzić ile krewetek udało Ci się zjeść?
+
+__Podpowiedź:__ Jeden ze sposobów, w jaki możesz to zrobić, to __użyć zmiennej, która policzy jak wiele krewetek pływa wokoło ryby__.
+
+Zapisz swój projekt
+
+##Wyzwanie 6: Zmień cel gry: krewetka musi przeżyć!
+Czasami, super pomysły przychodzą do głowy, jeżeli spróbujesz zrobić coś na odwrót.
+
+__Zmień grę w ten sposób, że zamiast sterować Głodną Rybą, która próbuje zjeść krewetki, ty sterujesz jedną z krewetek, która jest w morzu otoczona wieloma Głodnymi Rybami__. Jak długo uda Ci się przetrwać, zanim zje Cię jakaś ryba?
+
+Zapisz swój projekt
+
+__Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
+Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
