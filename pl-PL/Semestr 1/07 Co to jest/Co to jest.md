@@ -1,88 +1,93 @@
-Level 3
+Poziom 3
 
-#What's That
+#Co to jest
 
-__Introduction__
-A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
+__Wstęp:__
+Na tablicy jest pokazany jakiś obrazek, ale zniekształcony. Musisz zgadnąć co to jest klikając na odpowiednią odpowiedź poniżej. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
-##STEP 1: Make different things appear on the blackboard
+##KROK 1: Wyświetl różne obrazki na tablicy
 
-We want a few different pictures to show up on the blackboard.
+Chcemy pokazać na tablicy kilka różnych obrazków.
 
-1. Start a new Scratch project and delete the cat sprite.
-2. Click Stage and then the Backgrounds tab. Import the indoors/chalkboard background.
-3. Import a new sprite and give it any costume you like. You can picked some from the things folder.
-4. Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.
-5. Click the Costumes tab and import four more things. They can be anything you want, yay!
-Let’s now make a random picture appear. 
-6. Create this script:
+1. Stwórz nowy projekt Scratch i usuń duszka kota.
+2. Kliknij na Scenę, a następnie na zakładkę Tła. Zaimportuj tło 'indoors/chalkboard'.
+3. Zaimportuj nowego duszka i dodaj do niego kostium. Wybierz taki kostium, który Ci się podoba. Może znajdziesz coś ciekawego w katalogu 'things'.
+4. Umieść tego duszka na środku tablicy. Jeżeli trzeba, odpowiednio zwiększ lub zmniejsz jego rozmiar.
+5. Kliknij na zakładkę Kostiumy i zaimportuj 4 dodatkowe kostiumy. Wybierz cokolwiek Ci się podoba!
 
-```scratch
+Wyświetlmy teraz jakiś przypadkowy obrazek.
 
-	when FLAG clicked
-	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-```
-
-###Test Your Project
-__Click the green flag.__
-
-Does the sprite show a different costume?
-
-__Click on it a few more times.__
- Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.
- Save your project
-
-##STEP 2: Make the pictures distorted
-
-__Let’s now make a picture distorted when it appears, and become clearer over a few seconds.__
-
-We’ll use a score variable to control how much distortion there is. If the score is high, there will be lots of distortion. As the score goes down, there will be less and less distortion. The score also acts as a timer, like on the __Timer Scratch Card.__
-
-1. On the Variables palette, create a variable called Score. 
-
-2. Change the script to look like this:
+6. Stwórz poniższy skrypt:
 
 ```scratch
 
-	when FLAG clicked
-	hide
-	repeat pick random 1 to 5		
-		next costume
-	(end repeat)
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
+	kiedy kliknięto FLAGĘ
+	powtórz losuj liczbę pomiędzy 1 a 5 razy
+	    następny kostium
+	(koniec powtórz)
 ```
 
-You should add the hide block at the top and the set [score] to 110 block, and everything below it.
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-###Test Your Project
-__Click the green flag.__
+Czy duszek ma inny kostium?
 
-Does a random and distorted picture appear?
+__Kliknij flagę jeszcze kilka razy__
+Czy duszek ma inny kostium za każdym razem? Czasem, ten sam kostium może pojawić się 2 razy z rzędu. Ale nie przejmuj się, to nie jest problem. Prawdopodobnie zauważyliście, że duszek miga za każdym razem jak zmienia kostium. Zaraz naprawimy ten problem.
 
-Does the distortion get less in stages?
+Zapisz swój projekt.
 
-Does the score go down as the picture becomes less distorted?
+##KROK 2: Zniekształć obrazki
 
-Do you get an undistorted image when the score reaches zero?
+__Zniekształćmy teraz obrazek, kiedy pojawi się na tablicy po raz pierwszy, a w miarę upływu czasu niech staje się on coraz bardziej wyraźny__.
 
-Do you still get a different picture every time you click the green button?
+Użyjemy zmiennej z ilością punktów, aby kontrolować jak bardzo obrazek jest zniekształcony. Jeżeli ilośc punktów jest duża, obrazek będzie bardzo zniekształcony.
+W miarę upływu czasu, jak ilośc punktów będzie się zmniejszać, obrazek będzie coraz wyraźniejszy. Ilość punktów będzie również działać jak zegar. Całkiem jak na karcie __Timer__ (Zegar).
 
-Save your project
+1. Kliknij paletę Zmienne, i stwórz zmienną o nazwie 'Punkty'
 
-##Things to try
+2. Zmień skrypt aby wyglądał tak jak ten poniżej:
 
-__Try changing the starting score and how much it changes each time around the loop.__ How does this change how the picture looks? Does it make it harder or easier to spot what the picture is?
+```scratch
 
-__Try some different graphic effects from the pull-down lists.__ How do they change the difficulty?
+	kiedy kliknięto FLAGĘ
+	ukryj
+	powtórz losuj liczbę pomiędzy 1 a 5 razy
+	    następny kostium
+	(koniec powtórz)
+	ustaw Punkty na 110
+	powtarzaj aż Punkty = 0
+		zmień Punkty o -10
+		ustaw efekt pikselizacja na Punkty
+		ustaw efekt kolor na Punkty
+		pokaż
+		czekaj 1 s
+	(koniec powtórz)
+```
+
+Nie zapomnij dodać bloku ukryj na początku skryptu, ustawić Punkty na 110 oraz wszystkiego poniżej.
+
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
+
+Czy na tablicy pojawia się przypadkowy, zniekształcony obrazek?
+
+Czy obrazek staje się coraz bardziej wyraźny w miarę upływu czasu?
+
+Czy ilość punktów zmniejsza się jak obrazek staje się coraz bardziej wyraźny?
+
+Czy zniekształcenie znika całkowicie kiedy ilość punktów osiąga 0?
+
+Czy ciągle na tablicy pojawia się inny obrazek za każdym razem jak klikniesz zieloną flagę?
+
+
+Zapisz swój projekt.
+
+##Rzeczy do spróbowania
+
+__Spróbuj zmienić ilość punktów na początku gry i wartość o jaką ilość punktów się zmniejsza w pętli__. W jaki sposób wpływa to na wygląd obrazka? Czy teraz jest trudniej czy łatwiej odgadnąć jaki to jest obrazek?
+
+__Wypróbuj inne efekty graficzne z rozwijanej listy__. W jaki sposób wpływają one na poziom trudności gry?
 
 ##STEP 3: Allow the player to guess the picture
 
@@ -97,7 +102,7 @@ First, we need to know what the right answer is.
 
 	when FLAG clicked
 	hide
-	repeat pick random 1 to 5		
+	repeat pick random 1 to 5
 		next costume
 	(end repeat)
 	set answer to costume
@@ -172,7 +177,7 @@ To fix the second problem, we need to stop the __question sprite__’s repeat un
 
 	when FLAG clicked
 	hide
-	repeat pick random 1 to 5		
+	repeat pick random 1 to 5
 		next costume
 	(end repeat)
 	set answer to costume
@@ -185,7 +190,7 @@ To fix the second problem, we need to stop the __question sprite__’s repeat un
 		show
 		wait 1 secs
 	(end repeat)
-	
+
 	When I receive won
 	set won to 1
 	clear graphics effects
@@ -213,7 +218,7 @@ Save your project
 
 At the moment, each play of the game uses the same distortion. In Step 2, you might have tried some different distortions that work at least as well as the colour + pixelation we used.
 
-Find some different distortions that work well. 
+Find some different distortions that work well.
 
 Change the game so that each game uses a different distortion in the repeat until loop.
 
