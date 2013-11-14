@@ -89,120 +89,123 @@ __Spróbuj zmienić ilość punktów na początku gry i wartość o jaką iloś�
 
 __Wypróbuj inne efekty graficzne z rozwijanej listy__. W jaki sposób wpływają one na poziom trudności gry?
 
-##STEP 3: Allow the player to guess the picture
+##KROK 3: Pozwól graczowi zgadnąć jaki to jest obrazek
 
-So far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.
+Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a ilość punktów maleje w miarę upływu czasu. Ale jak mamy tę grę wygrać? Najpierw dodamy kilka dodatkowych duszków pod tablicą, które możesz kliknąć. Jeżeli klikniesz poprawny obrazek, wygrasz grę. Jeżeli klikniesz na nieodpowiedni obrazek, ten duszek zniknie i musisz spróbować zgadnąć jeszcze raz.
 
-First, we need to know what the right answer is.
+Najpierw, musimy wiedzieć, która odpowiedź jest poprawna.
 
-1. Create a new variable called __answer__. Make sure it’s for all sprites.
-2. Change the script you’ve written to record the right answer. Add the set [answer] to costume # blocks just after the first repeat loop:
-
-```scratch
-
-	when FLAG clicked
-	hide
-	repeat pick random 1 to 5
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	repeat until score = 0
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
-```
-__Now we need to add the sprites that the player can click on.__
-
-3. Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.
-4. Rename this sprite to __answer1.__ (This makes it easier to talk about.)
-5. Delete __answer1__'s script and all its costumes but its first one.
-6. Do these last three steps again, but put the __answer2__ sprite next to __answer1__ and delete all but its second costume.
-7. Do it three more times for __answer3__, __answer4__, and __answer5.__
-You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. __None of the answer sprites should have any scripts.__
-
-Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.
-
-8. Add this script to the answer1 sprite:
+1. Stwórz nową zmienna 'dla każdego duszka' i nazwij ją __odpowiedź__.
+2. Zmień poprzedni skrypt i ustaw poprawną odpowedź. Dodaj blok 'ustaw odpowiedź na kostium #' zaraz za pierwszą pętlą 'powtórz':
 
 ```scratch
 
-	when answer1 clicked
-	if answer=1
-		broadcast won
-	else
-		hide
-	(end if)
+	kiedy kliknięto FLAGĘ
+	ukryj
+	powtórz losuj liczbę pomiędzy 1 a 5 razy
+	    następny kostium
+	(koniec powtórz)
+    ustaw odpowiedź na kostium #
+    ustaw Punkty na 110
+	powtarzaj aż Punkty = 0
+		zmień Punkty o -10
+		ustaw efekt pikselizacja na Punkty
+		ustaw efekt kolor na Punkty
+		pokaż
+		czekaj 1 s
+	(koniec powtórz)
 ```
 
-9. Drag this script into each of the other answer sprites. __In each sprite, change the 1 to 2, 3, and so on.__
-10. We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:
+__Teraz musimy dodać duszki, które gracz będzie mógł kliknąć.__
+
+3. Skopiuj głównego duszka (użyj opcji duplikuj) i umieść go pod tablicą po lewej stronie.
+4. Zmień nazwę tego duszka na __odpowiedź1__. (Będzie nam prościej odwoływać się do konkretnych duszków w następnych krokach)
+5. Usuń skrypt z duszka __odpowiedź1__ oeraz wszystkie jego kostiumy oprócz pierwszego.
+6. Powtórz trzy ostatnie polecenia, tylko tym razem nazwij duszka __odpowiedź2__ i usuń wszystkie kostiumy oprócz drugiego.
+7. W podobny sposób stwórz duszki __odpowiedź3__, __odpowiedź4__ i __odpowiedź5__.
+
+Powinniśmy teraz mieć 5 duszków w rzędzie pod tablicą, każdy z innym kostiumem, który może być wyświetlony na głównym duszku na tablicy. __Upewnij się, że żaden z duszków 'odpowiedzi' nie posiada żadnego skryptu__.
+
+Teraz zmienimy sposób w jaki duszki będą reagować na kliknięcia myszką. W zależności od tego czy odpowiedź jest poprawna czy nie, wykonamy inną akcję.
+
+8. Dodaj poniższy skrypt do duszka 'odpowiedź1':
 
 ```scratch
 
-	when I receive won
-	say join Congratulations! You scored score
+	kiedy kliknięto odpowiedź1
+	jeżeli odpowiedź=1
+		nadaj wygrana
+	w przeciwnym przypadku
+		ukryj
+	(koniec jeżeli)
 ```
 
-###Test Your Project
-__Click the green flag.__
-
-When you test the game, you can use the __answer monitor__ on the stage to tell what the right answer is. That’s good for testing.
-
-What happens when you click on the __right answer__?
-
-What happens when you click on the __wrong answer?__
-
-What happens to the wrong answer when you __start a new game?__
-
-The test shows up two problems. First, wrong guesses don’t reappear when the next game starts. Second, the score doesn’t stop going down when we get the right answer.
-
-11. To fix the first problem, add this script to each of the five answer sprites:
+9. Przeciągnij ten skrypt na pozostały duszki odpowiedzi. __Na każdym z tych duszków, zmień 1 na 2, 3, itd.__
+10. Teraz musimy dodać coś, co będzie reagować na naszą wiadomość 'wygrana'. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:
 
 ```scratch
 
-	when FLAG clicked
-	show
+	kiedy otrzymam wygrana
+	powiedz połącz Gratulacje! Zdobyłeś Punkty
 ```
 
-To fix the second problem, we need to stop the __question sprite__’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to __zero__ when the game starts and set it to __one__ when the game is won. We’ll make the repeat until loop stop when either the score reaches __zero__ OR the __game-winning flag__ is set to __one.__
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-12. Create a new variable called won?
-13. Change the scripts so they look like this:
+Kiedy będziecie testować grę, warto włączyć podgląd na zmienną __odpowiedź__, żeby zobaczyć, która odpowiedź jest poprawna. Na palecie Zmienne kliknijcie pole obok zmiennej __odpowiedź__, a pojawi się ona na scenie, w lewym górnym rogu.
+
+Co się dzieje, kiedy klikniecie na __poprawną__ odpowiedź?
+
+Co się dzieje, kiedy klikniecie na __niepoprawną__ odpowiedź?
+
+Co się dzieje z niepoprawną odpowiedzią, kiedy __zaczynacie nową grę?__
+
+Podczas naszych testów powinniście znaleźć 2 problemy. Po pierwsze, duszki z niepoprawnymi odpowiedziami nie pojawiają się z powrotem na ekranie, kiedy zaczynamy nową grę. Po drugie, ilość punktów nie zatrzymuje się w momencie gdy klikniemy poprawną odpowiedź.
+
+11. Aby naprawić pierwszy problem, dodaj poniższy skrypt do wszystkich duszków odpowiedzi:
+
 
 ```scratch
 
-	when FLAG clicked
-	hide
-	repeat pick random 1 to 5
-		next costume
-	(end repeat)
-	set answer to costume
-	set score to 110
-	set won to 0
-	repeat until score = 0 or won? =1
-		change score by -10
-		set pixelate effect to score
-		set colour effect to score
-		show
-		wait 1 secs
-	(end repeat)
-
-	When I receive won
-	set won to 1
-	clear graphics effects
-	say join Congratulations! You scored score
+	kiedy kliknięto FLAGĘ
+	pokaż
 ```
 
-Save your project
+Aby naprawić drugi problem, musimy zatrzymać pętlę 'powtórz' na duszku odpowiedzi, jak gracz kliknie poprawną odpowiedź. Stworzymy do tego celu nową zmienną. Ustawimy ją na __0__ kiedy rozpocznie się nowa gra, a potem ustawimy ją na __1__, kiedy grę wygramy.
+To fix the second problem, we need to stop the __question sprite__’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to __zero__ when the game starts and set it to __one__ when the game is won. Pętla 'powtórz' musi się zatrzymać kiedy ilość Punktów osiągnie __0__ albo kiedy __flaga wygrana__ jest ustawiona na __1__.
 
-__Well done you’ve finished the basic game!__
+12. Stwórz nową zmienną i nazwij ją wygrano?
+13. Zmień istnięjące skrypty, aby wyglądały tak jak poniżej:
 
-There are more things you can do to your game though. Have a go at these challenges!
+```scratch
 
+	kiedy kliknięto FLAGĘ
+	ukryj
+	powtórz losuj liczbę pomiędzy 1 a 5 razy
+	    następny kostium
+	(koniec powtórz)
+    ustaw odpowiedź na kostium #
+    ustaw Punkty na 110
+    ustaw wygrano? na 0
+	powtarzaj aż Punkty = 0 lub wygrano? = 1
+		zmień Punkty o -10
+		ustaw efekt pikselizacja na Punkty
+		ustaw efekt kolor na Punkty
+		pokaż
+		czekaj 1 s
+	(koniec powtórz)
+
+	kiedy otrzymam wygrana
+	ustaw wygrano? na 1
+	wyczyść efekty graficzne
+	powiedz połącz Gratulacje! Zdobyłeś Punkty
+```
+
+Zapisz swój projekt.
+
+__Brawo! Podstawowa wersja gry jest już gotowa!__
+
+Ale jest kilka rzeczy, które możesz zmienić, aby twoja gra była jeszcze lepsza. Zobacz czy uda się zrobić poniższe wyzwania!
 
 ##Challenge 1: Make the game harder or easier
 
