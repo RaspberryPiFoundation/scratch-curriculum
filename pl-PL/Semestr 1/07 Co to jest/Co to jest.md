@@ -207,37 +207,38 @@ __Brawo! Podstawowa wersja gry jest już gotowa!__
 
 Ale jest kilka rzeczy, które możesz zmienić, aby twoja gra była jeszcze lepsza. Zobacz czy uda się zrobić poniższe wyzwania!
 
-##Challenge 1: Make the game harder or easier
+##Wyzwanie 1: Spraw aby gra była trudniejsza albo łatwiejsza
 
-Change how difficult the game is.
+Zmień poziom trudności gry.
 
-* Try changing how fast the picture is revealed and how fast the score goes down.
-* Try changing the distortions on the picture.
-* Try changing the pictures being guessed, to make them either more similar or more different. If you do this, don’t forget to change the answer sprite’s costume.
+* Zobacz co się stanie, gdy zmienisz szybkość z jaką obrazek staje się wyraźniejszy oraz gdy zmienisz szybkość z jaką zmniejsza się ilość punktów.
+* Spróbuj zmienić rodzaj zniekształceń obrazka.
+* Użyj innych obrazków. Sprawdź czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się bedzię grało, gdy obrazki znacząco się od siebie różnią? Nie zapomij zmienić kostiumów na duszkach odpowiedzi.
 
-Save your project
+Zapisz swój projekt.
 
-##Challenge 2: Distort the picture differently in each game
+##Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze
 
-At the moment, each play of the game uses the same distortion. In Step 2, you might have tried some different distortions that work at least as well as the colour + pixelation we used.
+Teraz, za każdym razem jak zaczynasz grę obrazki są zniekształcone w ten sam sposób. W drugim kroku, próbowaliśmy kombinacji różnych znieszkształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.
+At the moment, each play of the game uses the same distortion.
 
-Find some different distortions that work well.
+Spróbuj użyć innych kombinacji zniekształceń, które działałyby równie dobrze.
 
-Change the game so that each game uses a different distortion in the repeat until loop.
+Zmień grę w taki sposób, że za każdym razem jak rozpoczniesz nową grę, obrazki zniekształacane są w inny sposób.
 
-__Hint:__ Try creating a new variable, called distortion to use. Set it to a random value at the start of the game. Use if blocks in the body of the repeat until loop to apply the correct distortion for this game.
+__Podpowiedź:__ Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku if w pętli 'powtarzaj aż', aby użyć odpowiedniego zniekształcenia.
 
-Save your project
+Zapisz swój projekt.
 
-##Challenge 3: Make a game have a few rounds
+##Wyzwanie 3: Spraw aby w grze było kilka rund
 
-At the moment, each game is independent. Change it so that the game proceeds in several rounds. For instance, have one game take three rounds, so the player has to guess three pictures and can score up to 300 points.
+W tym momencie, każda gra jest niezależna. Zmień grę tak, żeby można było zagrać w nią kilka razy. Na przykład, niech gracz w ciągu jednej gry ma 3 rundy - niech spróbuje odgadnąć 3 obrazki i zdobyć maksymalnie 300 punktów.
 
-__Hint:__ You’ll need an extra variable to store the grand total across all the rounds. You’ll also need a loop to go through the different rounds.
+__Podpowiedź:__ Będziesz potrzebować dodatkowej zmiennej, aby wiedzieć ile rund ma mieć każda gra. Będziesz również potrzebować odpowiedniej pętli, aby gra odbywała się w rundach.
 
-__Hint:__ You’ll also have to make the wrong guesses reappear at the start of each round. Perhaps you could use a broadcast message to do that?
+__Podpowiedź:__ Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, pojawiły się z powrotem na ekranie na początku każdej rundy. Aby to zrobić, spróbuj nadać jakąś wiadomość.
 
-Save your project
+Zapisz swój projekt.
 
 ##Challenge 4: Make later rounds more difficult
 
