@@ -240,45 +240,42 @@ __Podpowiedź:__ Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, p
 
 Zapisz swój projekt.
 
-##Challenge 4: Make later rounds more difficult
+##Wyzwanie 4: Spraw aby każda nastepna runda była trudniejsza
 
-As you go through different rounds, make the game harder each time.
+Z rundy na rundę spraw, aby gra była coraz trudniejsza.
 
-Does each round need to score the same? Should you get more points for guessing quickly in the later, more difficult rounds?
+Czy w każdej rundzie punkty powinny być przyznawane w ten sam sposób? Może gracz powinien zdobywać więcej punktów w póżniejszych rundach, jeżeli szybciej odgadnie obrazek?
 
-__Hint:__ How will you know which round you’re in? How can you use that to change the difficulty and the score?
+__Podpowiedź:__ Skąd będziemy wiedzieć w której jesteśmy rundzie gry? W jaki sposób pomoże to nam zwiększyć trudność gry i przyznawać więcej punktów?
 
-Save your project
+Zapisz swój projekt.
 
-##Challenge 5: Keep playing until the player gets it wrong
+##Wyzwanie 5: Graj tak długo aż się pomylisz
 
-Instead of using a fixed number of rounds, keep playing the game until the player doesn’t get a picture right. This probably only works if the game gets harder in later rounds.
+Zamiast grać w określoną ilość rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz tudniejsza z każdą następną rundą.
 
-Save your project
+Zapisz swój projekt.
 
-##Challenge 6: Make the game harder or easier depending on how well the player does
+##Wyzwanie 6: Spraw aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje
 
-Rather than always making the game harder, make the game adjust the difficulty depending on the skill of the player. If they get the right picture quickly, make the next game a bit harder. If they don’t get the right picture, or only get it late, make the next game a bit easier.
+Spróbujmy dostosować trudność gry do umiejętności gracza, zamiast zwiększać trudność gry z każdą rundą. Jeżeli gracz odgadnie obrazek szybko, spraw aby gra była trudniejsza w następnej rundzie. Ale, jeżeli gracz się pomyli, albo potrzebuje więcej czasu aby odgadnąć obrazek, niech następna runda będzie troszkę łatwiejsza.
+Ten pomysł będzie miał sens tylko wtedy, kiedy nie będziemy sumować ilości punktów w ciągu całej gry.
 
-This idea only really works if you don’t add up someone’s score over several rounds.
+Zapisz swój projekt.
 
-Save your project
+##Wyzwanie 7: Zapamiętaj najlepszy wynik
 
-##Challenge 7: Keep track of the highest score
+Zapamiętaj najlepszy wynik. Jeżeli ktoś będzie lepszy w kolejnej grze, zapytaj gracza o jego imię i zapisz nowy najlepszy wynik. Upewnij się, że zarówno najlepszy wynik, jak i imię najlepszego gracza jest wyświetlone na ekranie.
 
-Keep track of the highest score. If someone manages to beat it, ask for their name and update the highest score. Make sure the highest score, and the name of the person who scored it, are displayed.
+Zapisz swój projekt.
 
-Save your project
+##Wyzwanie 8: Za niepoprawną odpowiedź odejmij punkty
 
+Póki co, gracz nie jest karany za niepoprawne odpowiedzi, więc teoretycznie może spróbować kliknąć na wszystkie odpowiedzi tak szybko jak się da, aż w końcu uda mu się zgadnąć dobrą odpowiedź. Zmieńmy grę, aby za każdą niepoprawną odpowiedź gracz tracił punkty.
 
-##Challenge 8: Make wrong guesses expensive
+Jak myślisz, czy gra teraz jest lepsza?
 
-At the moment, there’s no penalty to just clicking on all the answer sprites as quickly as you can. Change the game so that the score goes down a bit every time you make an incorrect guess.
+Zapisz swój projekt.
 
-Does this make the game better?
-
-Save your project
-
-
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
+Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
