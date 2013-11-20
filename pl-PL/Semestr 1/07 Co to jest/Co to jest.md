@@ -3,7 +3,7 @@ Poziom 3
 #Co to jest
 
 __Wstęp:__
-Na tablicy jest pokazany jakiś obrazek, ale zniekształcony. Musisz zgadnąć co to jest klikając na odpowiednią odpowiedź poniżej. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
+Na tablicy jest pokazany jakiś obrazek, ale zniekształcony. Musisz zgadnąć, co to jest, klikając na odpowiednią odpowiedź poniżej. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
 ##KROK 1: Wyświetl różne obrazki na tablicy
 
@@ -33,7 +33,7 @@ __Kliknij zieloną flagę.__
 Czy duszek ma inny kostium?
 
 __Kliknij flagę jeszcze kilka razy__
-Czy duszek ma inny kostium za każdym razem? Czasem, ten sam kostium może pojawić się 2 razy z rzędu. Ale nie przejmuj się, to nie jest problem. Prawdopodobnie zauważyliście, że duszek miga za każdym razem jak zmienia kostium. Zaraz naprawimy ten problem.
+Czy duszek ma inny kostium za każdym razem? Czasem ten sam kostium może pojawić się 2 razy z rzędu. Ale nie przejmuj się, to nie jest problem. Prawdopodobnie zauważyliście, że duszek miga za każdym razem jak zmienia kostium. Zaraz naprawimy ten problem.
 
 Zapisz swój projekt.
 
@@ -41,12 +41,12 @@ Zapisz swój projekt.
 
 __Zniekształćmy teraz obrazek, kiedy pojawi się na tablicy po raz pierwszy, a w miarę upływu czasu niech staje się on coraz bardziej wyraźny__.
 
-Użyjemy zmiennej z ilością punktów, aby kontrolować jak bardzo obrazek jest zniekształcony. Jeżeli ilośc punktów jest duża, obrazek będzie bardzo zniekształcony.
-W miarę upływu czasu, jak ilośc punktów będzie się zmniejszać, obrazek będzie coraz wyraźniejszy. Ilość punktów będzie również działać jak zegar. Całkiem jak na karcie __Timer__ (Zegar).
+Użyjemy zmiennej z ilością punktów, aby kontrolować jak bardzo obrazek jest zniekształcony. Jeżeli ilość punktów jest duża, obrazek będzie bardzo zniekształcony.
+W miarę upływu czasu, jak ilośc punktów będzie się zmniejszać, obrazek będzie coraz wyraźniejszy. Ilość punktów będzie również działać jak zegar. 
 
-1. Kliknij paletę Zmienne, i stwórz zmienną o nazwie 'Punkty'
+1. Kliknij paletę Zmienne i stwórz zmienną o nazwie 'Punkty'
 
-2. Zmień skrypt aby wyglądał tak jak ten poniżej:
+2. Zmień skrypt, aby wyglądał tak jak ten poniżej:
 
 ```scratch
 
@@ -76,20 +76,20 @@ Czy obrazek staje się coraz bardziej wyraźny w miarę upływu czasu?
 
 Czy ilość punktów zmniejsza się jak obrazek staje się coraz bardziej wyraźny?
 
-Czy zniekształcenie znika całkowicie kiedy ilość punktów osiąga 0?
+Czy zniekształcenie znika całkowicie, kiedy ilość punktów spadnie do 0?
 
-Czy ciągle na tablicy pojawia się inny obrazek za każdym razem jak klikniesz zieloną flagę?
+Czy na tablicy pojawia się inny obrazek za każdym razem jak klikniesz zieloną flagę?
 
 
 Zapisz swój projekt.
 
 ##Rzeczy do spróbowania
 
-__Spróbuj zmienić ilość punktów na początku gry i wartość o jaką ilość punktów się zmniejsza w pętli__. W jaki sposób wpływa to na wygląd obrazka? Czy teraz jest trudniej czy łatwiej odgadnąć jaki to jest obrazek?
+__Spróbuj zmienić ilość punktów na początku gry i wartość o jaką ilość punktów się zmniejsza w pętli__. W jaki sposób wpływa to na wygląd obrazka? Czy teraz jest trudniej czy łatwiej odgadnąć co to jest?
 
 __Wypróbuj inne efekty graficzne z rozwijanej listy__. W jaki sposób wpływają one na poziom trudności gry?
 
-##KROK 3: Pozwól graczowi zgadnąć jaki to jest obrazek
+##KROK 3: Pozwól graczowi zgadnąć co to za obrazek
 
 Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a ilość punktów maleje w miarę upływu czasu. Ale jak mamy tę grę wygrać? Najpierw dodamy kilka dodatkowych duszków pod tablicą, które możesz kliknąć. Jeżeli klikniesz poprawny obrazek, wygrasz grę. Jeżeli klikniesz na nieodpowiedni obrazek, ten duszek zniknie i musisz spróbować zgadnąć jeszcze raz.
 
@@ -126,7 +126,7 @@ __Teraz musimy dodać duszki, które gracz będzie mógł kliknąć.__
 
 Powinniśmy teraz mieć 5 duszków w rzędzie pod tablicą, każdy z innym kostiumem, który może być wyświetlony na głównym duszku na tablicy. __Upewnij się, że żaden z duszków 'odpowiedzi' nie posiada żadnego skryptu__.
 
-Teraz zmienimy sposób w jaki duszki będą reagować na kliknięcia myszką. W zależności od tego czy odpowiedź jest poprawna czy nie, wykonamy inną akcję.
+Teraz zmienimy sposób w jaki duszki będą reagować na kliknięcia myszką. W zależności od tego, czy odpowiedź jest poprawna, czy nie, wykonamy inną akcję.
 
 8. Dodaj poniższy skrypt do duszka 'odpowiedź1':
 
@@ -160,7 +160,7 @@ Co się dzieje, kiedy klikniecie na __niepoprawną__ odpowiedź?
 
 Co się dzieje z niepoprawną odpowiedzią, kiedy __zaczynacie nową grę?__
 
-Podczas naszych testów powinniście znaleźć 2 problemy. Po pierwsze, duszki z niepoprawnymi odpowiedziami nie pojawiają się z powrotem na ekranie, kiedy zaczynamy nową grę. Po drugie, ilość punktów nie zatrzymuje się w momencie gdy klikniemy poprawną odpowiedź.
+Podczas naszych testów powinniście znaleźć 2 problemy. Po pierwsze, duszki z niepoprawnymi odpowiedziami nie wracają na ekran po rozpoczęciu nowej gry. Po drugie, ilość punktów nie zatrzymuje się w momencie, gdy klikniemy poprawną odpowiedź.
 
 11. Aby naprawić pierwszy problem, dodaj poniższy skrypt do wszystkich duszków odpowiedzi:
 
@@ -171,8 +171,7 @@ Podczas naszych testów powinniście znaleźć 2 problemy. Po pierwsze, duszki z
 	pokaż
 ```
 
-Aby naprawić drugi problem, musimy zatrzymać pętlę 'powtórz' na duszku odpowiedzi, jak gracz kliknie poprawną odpowiedź. Stworzymy do tego celu nową zmienną. Ustawimy ją na __0__ kiedy rozpocznie się nowa gra, a potem ustawimy ją na __1__, kiedy grę wygramy.
-To fix the second problem, we need to stop the __question sprite__’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to __zero__ when the game starts and set it to __one__ when the game is won. Pętla 'powtórz' musi się zatrzymać kiedy ilość Punktów osiągnie __0__ albo kiedy __flaga wygrana__ jest ustawiona na __1__.
+Aby naprawić drugi problem, musimy zatrzymać pętlę 'powtórz' na duszku odpowiedzi po tym jak gracz kliknie poprawną odpowiedź. Stworzymy do tego celu nową zmienną. Ustawimy ją na __0__ kiedy rozpocznie się nowa gra, a potem ustawimy ją na __1__ po wygraniu gry.
 
 12. Stwórz nową zmienną i nazwij ją wygrano?
 13. Zmień istnięjące skrypty, aby wyglądały tak jak poniżej:
@@ -205,22 +204,21 @@ Zapisz swój projekt.
 
 __Brawo! Podstawowa wersja gry jest już gotowa!__
 
-Ale jest kilka rzeczy, które możesz zmienić, aby twoja gra była jeszcze lepsza. Zobacz czy uda się zrobić poniższe wyzwania!
+Ale jest kilka rzeczy, które możesz zmienić, aby gra była jeszcze lepsza. Zobacz, czy uda się zrobić poniższe wyzwania!
 
-##Wyzwanie 1: Spraw aby gra była trudniejsza albo łatwiejsza
+##Wyzwanie 1: Spraw, aby gra była trudniejsza albo łatwiejsza
 
 Zmień poziom trudności gry.
 
 * Zobacz co się stanie, gdy zmienisz szybkość z jaką obrazek staje się wyraźniejszy oraz gdy zmienisz szybkość z jaką zmniejsza się ilość punktów.
 * Spróbuj zmienić rodzaj zniekształceń obrazka.
-* Użyj innych obrazków. Sprawdź czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się bedzię grało, gdy obrazki znacząco się od siebie różnią? Nie zapomij zmienić kostiumów na duszkach odpowiedzi.
+* Użyj innych obrazków. Sprawdź, czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się bedzię grało, gdy obrazki znacząco się od siebie różnią? Nie zapomij zmienić kostiumów na duszkach odpowiedzi.
 
 Zapisz swój projekt.
 
 ##Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze
 
-Teraz, za każdym razem jak zaczynasz grę obrazki są zniekształcone w ten sam sposób. W drugim kroku, próbowaliśmy kombinacji różnych znieszkształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.
-At the moment, each play of the game uses the same distortion.
+Teraz, za każdym razem jak zaczynasz grę, obrazki są zniekształcone w ten sam sposób. W drugim kroku próbowaliśmy kombinacji różnych znieszkształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.
 
 Spróbuj użyć innych kombinacji zniekształceń, które działałyby równie dobrze.
 
@@ -240,25 +238,25 @@ __Podpowiedź:__ Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, p
 
 Zapisz swój projekt.
 
-##Wyzwanie 4: Spraw aby każda nastepna runda była trudniejsza
+##Wyzwanie 4: Spraw, aby każda nastepna runda była trudniejsza
 
 Z rundy na rundę spraw, aby gra była coraz trudniejsza.
 
 Czy w każdej rundzie punkty powinny być przyznawane w ten sam sposób? Może gracz powinien zdobywać więcej punktów w póżniejszych rundach, jeżeli szybciej odgadnie obrazek?
 
-__Podpowiedź:__ Skąd będziemy wiedzieć w której jesteśmy rundzie gry? W jaki sposób pomoże to nam zwiększyć trudność gry i przyznawać więcej punktów?
+__Podpowiedź:__ Skąd będziemy wiedzieć, w której jesteśmy rundzie gry? W jaki sposób pomoże nam to zwiększyć trudność gry i przyznawać więcej punktów?
 
 Zapisz swój projekt.
 
-##Wyzwanie 5: Graj tak długo aż się pomylisz
+##Wyzwanie 5: Graj tak długo, aż się pomylisz
 
 Zamiast grać w określoną ilość rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz tudniejsza z każdą następną rundą.
 
 Zapisz swój projekt.
 
-##Wyzwanie 6: Spraw aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje
+##Wyzwanie 6: Spraw, aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje
 
-Spróbujmy dostosować trudność gry do umiejętności gracza, zamiast zwiększać trudność gry z każdą rundą. Jeżeli gracz odgadnie obrazek szybko, spraw aby gra była trudniejsza w następnej rundzie. Ale, jeżeli gracz się pomyli, albo potrzebuje więcej czasu aby odgadnąć obrazek, niech następna runda będzie troszkę łatwiejsza.
+Spróbujmy dostosować trudność gry do umiejętności gracza, zamiast zwiększać trudność gry z każdą rundą. Jeżeli gracz odgadnie obrazek szybko, spraw aby gra była trudniejsza w następnej rundzie. Ale jeżeli gracz się pomyli, albo potrzebuje więcej czasu, aby odgadnąć obrazek, niech następna runda będzie troszkę łatwiejsza.
 Ten pomysł będzie miał sens tylko wtedy, kiedy nie będziemy sumować ilości punktów w ciągu całej gry.
 
 Zapisz swój projekt.

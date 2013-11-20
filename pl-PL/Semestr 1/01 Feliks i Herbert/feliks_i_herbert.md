@@ -35,7 +35,7 @@ Zapisz swój projekt.
 
 __Teraz sprawimy, aby Feliks zaczął gonić Herberta zamiast podążać za kursorem myszy.__
 
-1. Stwórz następnego duszka. Kliknij "wybierz nowego duszka z pliku", i wybierz "Mouse1" z katalogu "Animals".
+1. Stwórz następnego duszka. Kliknij "wybierz nowego duszka z pliku" i wybierz "Mouse1" z katalogu "Animals".
 2. Zmień nazwę duszka na Herbert.
 3. Kliknij przycisk edycji kostiumu i zmniejsz Herberta.
 Kliknij sześć razy na przycisku do zmniejszania:
