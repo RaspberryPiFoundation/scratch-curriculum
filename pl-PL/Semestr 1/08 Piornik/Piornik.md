@@ -1,72 +1,73 @@
-Level 3
+Poziom 3
 
-#Paint Box
+#Piórnik
 
-__Introduction:__
-The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!
+__Wstęp:__
+Podczas tego projektu stworzymy podstawowe narzędzia do rysowania. Będzie można rysować po ekranie kursorem myszy, zmieniać kolor linii, czyścić ekran czy robić pieczątki!
 
-##STEP 1: Drag and draw
+##KROK 1: Rysowanie kursorem myszy
 
-We’ll start with a pen that draws when you drag it around the Stage.
+Zaczniemy od stworzenia ołówka, który rysuje, gdy przeciąga się go po scenie.
 
-1. Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-2. Click __Stage__ and then the __Backgrounds__ tab. Import the __indoors/chalkboard__ background.
-3. Create a new sprite called __pencil__, using __resources\green-pencil.__
-4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click __Set costume center__ and drag the lines until they are at the tip.
-5. Make the pencil follow
-the mouse around the stage using the __forever__ 
-and __go to__ mouse-pointer blocks.
+1. Rozpocznij nowy projekt w Scratchu. Skasuj duszka kota klikając na nim prawym przyciskiem myszy i wybierając Usuń.
+2. Kliknij na Scenę i przejdź do karty Tła. Wybierz "chalkboard" z katalogu "Indoors".
+3. Stwórz nowego duszka o nazwie __ołówek__, wybierając __zielony-ołówek__ z katalogu Zasoby.
+4. Przejdź na kartę z kostiumami i kliknij na edycję kostiumu. W edytorze obrazów zmień centrum kostiumu na rysik ołówka. Aby to zrobić, kliknij __Ustaw środek kostiumu__ i przesuń punkt przecięcia linii na ekranie, aby był na końcu rysika.
+5. Spraw, aby ołówek podążał za kursorem myszy korzystając z bloków __zawsze__ oraz __idź do__. 
 
 ```scratch
-when FLAG clicked
-forever
-	go to mouse-pointer
-(end forever)
+
+	kiedy kliknięto FLAGĘ
+	zawsze
+		idź do wskaźnik myszy
+	(koniec zawsze)
 ```
 
-__Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are __pen down__ and __pen up__
+__Teraz chcemy używać tego duszka jak prawdziwego ołówka.__ Jeżeli zajrzysz do panelu Pisak, znajdziesz tam bloki związane z rysowaniem. Na chwilę obecną interesują nas bloki __przyłóż pisak__ i __podnieś pisak__.
 
-6. We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an if... else and mouse down? blocks.
+6. Chcemy kontrolować ołówek przyciskiem myszy: jeżeli przycisk jest wciśnięty, ołówek dotyka tablicy, a kiedy nie jest wciśnięty, ołówek nie dotyka tablicy. Możemy to kontrolować korzystając z bloku __jeżeli... w przeciwnym przypadku__.
 
 ```scratch
-when FLAG clicked
-forever
-	go to mouse-pointer
-	if mouse down?
-	pen down
-	else
-	pen up
-	(end if)
-(end forever)
+
+	kiedy kliknięto FLAGĘ
+	zawsze
+		idź do wskaźnik myszy
+		jeżeli wciśnięty klawisz myszy?
+			przyłóż pisak
+		w przeciwnym przypadku
+			podnieś pisak
+		(koniec jeżeli)
+	(koniec zawsze)
 ```
-##Test Your Project
-__Click on the green flag.__
-Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.
 
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
+Czy ołówek podąża za kursorem myszy? Co się dzieje, kiedy wciśniesz przycisk myszy i ją przesuniesz? Nie przejmuj się na razie kolorem myszy.
 
-7. Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.
+7. Prędzej czy później ekran zapełni się rysunkami. Użyj bloku __wyczyść__ do czyszczenia ekranu.
 
 ```scratch
-when FLAG clicked
-clear
-forever
-	go to mouse-pointer
-	if mouse down?
-	pen down
-	else
-	pen up
-	(end if)
-(end forever)
+
+	kiedy kliknięto Flagę
+	wyczyść
+	zawsze
+		idź do wskaźnik myszy
+		jeżeli wciśnięty klawisz myszy?
+			przyłóż pisak
+		w przeciwnym przypadku
+			podnieś pisak
+		(koniec jeżeli)
+	(koniec zawsze)
 ```
 
-##Test Your Project
-__Click on the green flag.__
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-Does your drawing disappear when you click on the green flag?
+Czy rysunek znika po wciśnięciu flagi?
 
-SAVE YOUR PROJECT
+Zapisz swój projekt.
 
-##STEP 2: Clearing up
+##KROK 2: Czyszczenie ekranu
 
 Rather than having to stop and start the whole project, let’s add a button that
 clears the drawing. It will do that using the clear block.

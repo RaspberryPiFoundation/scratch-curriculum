@@ -9,7 +9,7 @@ Na tablicy jest pokazany jakiś obrazek, ale zniekształcony. Musisz zgadnąć c
 
 W tym projekcie będziemy:
 
-* Liczyć i zapamietywać ilość zdobytch punktów
+* Liczyć i zapamietywać ilość zdobytych punktów
 * Zmieniać wygląd obiektów i kostiumów
 * Ustawiać przypadkową odpowiedź
 * Wykrywać zdarzenie kliknięcia przycisku myszy oraz sprawdzać, czy odpowiedni duszek został kliknięty
@@ -35,7 +35,7 @@ Krok 3: Pozwól graczowi zgadnąć, co to za obrazek
 
 3. Spraw, aby w grze było kilka rund
 
-4. Spraw, aby każda nastepna runda była trudniejsza
+4. Spraw, aby każda następna runda była trudniejsza
 
 5. Graj tak długo, aż się pomylisz
 
