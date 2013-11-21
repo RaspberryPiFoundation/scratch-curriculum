@@ -38,6 +38,13 @@ Build the packs to pkg/
 $ rake build
 ```
 
+Or if you want to use bundler
+
+```shell
+$ bundle install
+$ bundle exec rake build
+```
+
 ## License
 
 See [LICENSE.md](LICENSE.md)
