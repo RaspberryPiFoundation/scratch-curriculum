@@ -1,7 +1,7 @@
 desc "Create language packs in pkg/"
 task :build do
   require 'rubygems'
-  require 'zip/zip'
+  require 'zip'
   require 'fileutils'
 
   STDOUT.sync = true
@@ -24,7 +24,7 @@ task :build do
       FileUtils.rm_rf(pkg_path)
     end
 
-    Zip::ZipFile.open(pkg_path, Zip::ZipFile::CREATE) do |zipfile|
+    Zip::File.open(pkg_path, Zip::File::CREATE) do |zipfile|
       puts "Creating #{lang_name}..."
 
       files.each_with_index do |file, index|
