@@ -1,5 +1,5 @@
 #INFORMACJE DLA PROWADZĄCYCH ZAJĘCIA
-##(Piórnik)
+##(Kolorowe ołówki)
 
 ###Wstęp
 
