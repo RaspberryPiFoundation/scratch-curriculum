@@ -1,5 +1,5 @@
 #INFORMACJE DLA PROWADZĄCYCH ZAJĘCIA
-##(Kolorowe ołówki)
+##(Kolorowe kredki)
 
 ###Wstęp
 
@@ -35,6 +35,6 @@ Krok 6: Pieczątki
 
 ##Wyzwania
 
-1. Tęczowy ołówek
+1. Tęczowa kredka
 2. Skróty klawiszowe
 3. Różne rozmiary linii
