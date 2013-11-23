@@ -21,14 +21,10 @@ Teraz chcemy, aby rakieta leciała w kierunku kursora myszki po kliknięciu.
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ukryj
 
-
-	kiedy klawisz spacja naciśnięty
-	
-	pokaż
-	
+	kiedy klawisz spacja naciśnięty	
+	pokaż	
 	leć przez 1 s to x: x myszy y: y myszy
 ```
 		
@@ -43,16 +39,11 @@ Co się dzieje, jak ruszysz myszą i wciśniesz spację ponownie?
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ukryj
-
 	
-	kiedy klawisz spacja naciśnięty
-	
-	idź do x: x myszy y: -200
-	
-	pokaż
-	
+	kiedy klawisz spacja naciśnięty	
+	idź do x: x myszy y: -200	
+	pokaż	
 	leć przez 1 s to x: x myszy y: y myszy
 ```
 
@@ -65,17 +56,11 @@ Czy rakieta leci w kierunku kursora z samego dołu ekranu? Co się dzieje, jeśl
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ukryj
-
-	zawsze, jeżeli wciśnięty klawisz myszy?
-	
-		idź do x: x myszy y: -200
-	
-		pokaż
-	
-		leć przez 1 s to x: x myszy y: y myszy
-	
+	zawsze, jeżeli wciśnięty klawisz myszy?	
+		idź do x: x myszy y: -200	
+		pokaż	
+		leć przez 1 s to x: x myszy y: y myszy	
 	(koniec zawsze)
 ```
 
@@ -95,46 +80,29 @@ Zapisz swój projekt.
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ukryj
-
-	zawsze, jeżeli wciśnięty klawisz myszy?
-	
-		idź do x: x myszy y: -200
-		
-		zagraj dźwięk bum
-	
-		pokaż
-	
-		leć przez 1 s to x: x myszy y: y myszy
-		
-		ukryj
-	
+	zawsze, jeżeli wciśnięty klawisz myszy?	
+		idź do x: x myszy y: -200		
+		zagraj dźwięk bum	
+		pokaż	
+		leć przez 1 s to x: x myszy y: y myszy		
+		ukryj	
 	(koniec zawsze)
-
 ```
+
 2. Następnie, dodaj nadawanie komunikatu przez rakietę, kiedy eksploduje. Będziemy słuchać tego komunikatu trochę później.
 
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ukryj
-
-	zawsze, jeżeli wciśnięty klawisz myszy?
-	
-		idź do x: x myszy y: -200
-		
-		zagraj dźwięk bum
-	
-		pokaż
-	
-		leć przez 1 s to x: x myszy y: y myszy
-		
-		ukryj
-		
-		nadaj wybuch
-	
+	zawsze, jeżeli wciśnięty klawisz myszy?	
+		idź do x: x myszy y: -200		
+		zagraj dźwięk bum	
+		pokaż	
+		leć przez 1 s to x: x myszy y: y myszy		
+		ukryj		
+		nadaj wybuch	
 	(koniec zawsze)
 	
 ```
@@ -147,16 +115,11 @@ Upewnij się, że rakieta odtwarza dźwięk i ukrywa się, gdy dolatuje do kurso
 
 ```scratch
 
-	kiedy otrzymam wybuch
-	
-	ukryj
-	
-	idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta
-	
+	kiedy otrzymam wybuch	
+	ukryj	
+	idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta	
 	pokaż
-
 	czekaj 1 s
-
 	ukryj
 ```
 
@@ -173,18 +136,12 @@ Zapisz swój projekt.
 
 ```scratch
 
-	kiedy otrzymam wybuch
-	
-	ukryj
-	
-	zmień efekt kolor na losuj liczbę pomiędzy 1 a 200
-	
-	idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta
-	
+	kiedy otrzymam wybuch	
+	ukryj	
+	zmień efekt kolor na losuj liczbę pomiędzy 1 a 200	
+	idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta	
 	pokaż
-
 	czekaj 1 s
-
 	ukryj
 ```
 
@@ -204,24 +161,15 @@ Czy każda rakieta wybucha w inny sposób i ma inny kolor?
 
 ```scratch
 
-	kiedy otrzymam wybuch
-	
-	ukryj
-	
-	zmień efekt kolor na losuj liczbę pomiędzy 1 a 200
-	
-	idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta
-	
-	ustaw rozmiar na 5%
-	
+	kiedy otrzymam wybuch	
+	ukryj	
+	zmień efekt kolor na losuj liczbę pomiędzy 1 a 200	
+	idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta	
+	ustaw rozmiar na 5%	
 	pokaż
-
-	powtórz 50 razy
-	
-		zmień rozmiar o 2
-	
+	powtórz 50 razy	
+		zmień rozmiar o 2	
 	(koniec powtórz)
-
 	ukryj
 ```
 
@@ -244,23 +192,14 @@ Dzieje się tak, ponieważ kiedy rakieta nadaje komunikat o wybuchu, powtarza on
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ukryj
-
-	zawsze, jeżeli wciśnięty klawisz myszy?
-	
-		idź do x: x myszy y: -200
-		
-		zagraj dźwięk bum
-	
-		pokaż
-	
-		leć przez 1 s to x: x myszy y: y myszy
-		
-		ukryj
-		
-		nadaj wybuch i czekaj
-	
+	zawsze, jeżeli wciśnięty klawisz myszy?	
+		idź do x: x myszy y: -200		
+		zagraj dźwięk bum	
+		pokaż	
+		leć przez 1 s to x: x myszy y: y myszy		
+		ukryj		
+		nadaj wybuch i czekaj	
 	(koniec zawsze)
 	
 ```

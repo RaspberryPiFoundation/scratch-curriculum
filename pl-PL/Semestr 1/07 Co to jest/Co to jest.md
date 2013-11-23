@@ -42,7 +42,7 @@ Zapisz swój projekt.
 __Zniekształćmy teraz obrazek, kiedy pojawi się na tablicy po raz pierwszy, a w miarę upływu czasu niech staje się on coraz bardziej wyraźny__.
 
 Użyjemy zmiennej z ilością punktów, aby kontrolować jak bardzo obrazek jest zniekształcony. Jeżeli ilość punktów jest duża, obrazek będzie bardzo zniekształcony.
-W miarę upływu czasu, jak ilośc punktów będzie się zmniejszać, obrazek będzie coraz wyraźniejszy. Ilość punktów będzie również działać jak zegar. 
+W miarę upływu czasu, jak ilość punktów będzie się zmniejszać, obrazek będzie coraz wyraźniejszy. Ilość punktów będzie również działać jak zegar. 
 
 1. Kliknij paletę Zmienne i stwórz zmienną o nazwie 'Punkty'
 
@@ -96,7 +96,7 @@ Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a ilość pun
 Najpierw, musimy wiedzieć, która odpowiedź jest poprawna.
 
 1. Stwórz nową zmienna 'dla każdego duszka' i nazwij ją __odpowiedź__.
-2. Zmień poprzedni skrypt i ustaw poprawną odpowedź. Dodaj blok 'ustaw odpowiedź na kostium #' zaraz za pierwszą pętlą 'powtórz':
+2. Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok 'ustaw odpowiedź na kostium #' zaraz za pierwszą pętlą 'powtórz':
 
 ```scratch
 
@@ -174,7 +174,7 @@ Podczas naszych testów powinniście znaleźć 2 problemy. Po pierwsze, duszki z
 Aby naprawić drugi problem, musimy zatrzymać pętlę 'powtórz' na duszku odpowiedzi po tym jak gracz kliknie poprawną odpowiedź. Stworzymy do tego celu nową zmienną. Ustawimy ją na __0__ kiedy rozpocznie się nowa gra, a potem ustawimy ją na __1__ po wygraniu gry.
 
 12. Stwórz nową zmienną i nazwij ją wygrano?
-13. Zmień istnięjące skrypty, aby wyglądały tak jak poniżej:
+13. Zmień istniejące skrypty, aby wyglądały tak jak poniżej:
 
 ```scratch
 
@@ -212,19 +212,19 @@ Zmień poziom trudności gry.
 
 * Zobacz co się stanie, gdy zmienisz szybkość z jaką obrazek staje się wyraźniejszy oraz gdy zmienisz szybkość z jaką zmniejsza się ilość punktów.
 * Spróbuj zmienić rodzaj zniekształceń obrazka.
-* Użyj innych obrazków. Sprawdź, czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się bedzię grało, gdy obrazki znacząco się od siebie różnią? Nie zapomij zmienić kostiumów na duszkach odpowiedzi.
+* Użyj innych obrazków. Sprawdź, czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się będzie grało, gdy obrazki znacząco się od siebie różnią? Nie zapomnij zmienić kostiumów na duszkach odpowiedzi.
 
 Zapisz swój projekt.
 
 ##Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze
 
-Teraz, za każdym razem jak zaczynasz grę, obrazki są zniekształcone w ten sam sposób. W drugim kroku próbowaliśmy kombinacji różnych znieszkształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.
+Teraz, za każdym razem jak zaczynasz grę, obrazki są zniekształcone w ten sam sposób. W drugim kroku próbowaliśmy kombinacji różnych zniekształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.
 
 Spróbuj użyć innych kombinacji zniekształceń, które działałyby równie dobrze.
 
-Zmień grę w taki sposób, że za każdym razem jak rozpoczniesz nową grę, obrazki zniekształacane są w inny sposób.
+Zmień grę w taki sposób, że za każdym razem jak rozpoczniesz nową grę, obrazki zniekształcane są w inny sposób.
 
-__Podpowiedź:__ Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku if w pętli 'powtarzaj aż', aby użyć odpowiedniego zniekształcenia.
+__Podpowiedź:__ Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku jeżeli w pętli 'powtarzaj aż', aby użyć odpowiedniego zniekształcenia.
 
 Zapisz swój projekt.
 
@@ -238,7 +238,7 @@ __Podpowiedź:__ Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, p
 
 Zapisz swój projekt.
 
-##Wyzwanie 4: Spraw, aby każda nastepna runda była trudniejsza
+##Wyzwanie 4: Spraw, aby każda następna runda była trudniejsza
 
 Z rundy na rundę spraw, aby gra była coraz trudniejsza.
 
@@ -250,7 +250,7 @@ Zapisz swój projekt.
 
 ##Wyzwanie 5: Graj tak długo, aż się pomylisz
 
-Zamiast grać w określoną ilość rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz tudniejsza z każdą następną rundą.
+Zamiast grać w określoną ilość rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz trudniejsza z każdą następną rundą.
 
 Zapisz swój projekt.
 

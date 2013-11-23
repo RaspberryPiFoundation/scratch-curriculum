@@ -7,7 +7,6 @@ Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pu
 ##Umiejętności
 Ten projekt uczy: 
 
-* Events
 * Zmiennych
 * Animacji
 * Odgrywania dźwięków

@@ -23,13 +23,9 @@ Ta zmienna będzie kontrolować jak szybko wiedźma się rusza. Korzystamy ze zm
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ustaw prędkość na 5
-
 	zawsze
-
 		przesuń o prędkość kroków
-
 	(koniec zawsze)
 ```
 		
@@ -40,17 +36,11 @@ __Kliknij zieloną flagę__ i zobacz, co robi wiedźma. Dlaczego utyka na brzegu
 
 
 ```scratch
-
-	kiedy kliknięto FLAGĘ
-	
+	kiedy kliknięto FLAGĘ	
 	ustaw prędkość na 5
-
 	zawsze
-
 		przesuń o prędkość kroków
-
 		jeżeli na brzegu, odbij się
-
 	(koniec zawsze)
 ```
 
@@ -60,13 +50,13 @@ __Kliknij zieloną flagę__ i zobacz, co robi wiedźma. Dlaczego utyka na brzegu
 __Kliknij zieloną flagę.__
 Czy wiedźma lata od brzegu do brzegu ekranu?
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 ###Rzeczy do spróbowania
 __Spróbuj zmieniać wartość zmiennej prędkości, aby sprawić, żeby wiedźma latała szybciej i wolniej.__
 
 __Co zrobić, aby wiedźma była coraz szybsza im dłużej lata?__
-(To jest trochę tricky, więc nie martw się, jeżeli nie widisz jeszcze rozwiązania. Dostaniesz więcej wskazówek podczas dalszej pracy nad projektem.)
+(To jest trochę skomplikowane, więc nie martw się, jeżeli nie widzisz jeszcze rozwiązania. Dostaniesz więcej wskazówek podczas dalszej pracy nad projektem.)
 
 ##KROK 2: Spraw, aby wiedźma pojawiała się i znikała losowo
 
@@ -77,24 +67,18 @@ __Stwórz poniższy skrypt dla wiedźmy:__
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	zawsze
-
 		ukryj
-
 		czekaj losuj liczbę pomiędzy 2 a 5 s
-
 		pokaż
-
 		czekaj losuj liczbę pomiędzy 3 a 5 s
-
 	(koniec zawsze)
 ```
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę.__
-Czy wiedźma lata od brzegu do brzegu ekranu oraz pojawia się i nizka w losowych momentach?
+Czy wiedźma lata od brzegu do brzegu ekranu oraz pojawia się i znika w losowych momentach?
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 ###Rzeczy do spróbowania
 __Spróbuj zmieniać przedział liczb losowych. Co się dzieje, jeżeli wybierzesz bardzo duże albo bardzo małe liczby?__
@@ -102,7 +86,7 @@ Czy podpowiada ci to już jak sprawić, aby wiedźma latała coraz szybciej?)
 
 ##KROK 3: Spraw, aby wiedźma znikała, gdy się na nią kliknie
 
-Aby zamienić ten projekt w grę, musimy dać graczom coś do robienia. Niech klikają wiedźmę, aby zniknęła. Chemy, aby po kliknięciu było słuchać dźwięk i aby wiedźma znikała z ekranu.
+Aby zamienić ten projekt w grę, musimy dać graczom coś do robienia. Niech klikają wiedźmę, aby zniknęła. Chcemy, aby po kliknięciu było słuchać dźwięk i aby wiedźma znikała z ekranu.
 
 1. W karcie __Dźwięki__ zaimportuj __Fairydust__ z katalogu __Electronic__. 
 
@@ -111,9 +95,7 @@ Aby zamienić ten projekt w grę, musimy dać graczom coś do robienia. Niech kl
 ```scratch
 
 	kiedy kliknięto duszek1
-
 	ukryj
-
 	zagraj dźwięk Fairydust
 ```
 ###Przetestuj swój projekt
@@ -121,7 +103,7 @@ __Kliknij zieloną flagę.__
 
 Czy wiedźma znika i gra muzykę, kiedy się na nią kliknie?
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 ###Rzeczy do spróbowania
 __Zapytaj osoby prowadzącej zajęcia, czy można nagrywać własne dźwięki do odegrania.__
@@ -135,11 +117,8 @@ Mamy wiedźmę, ale teraz chcemy zrobić grę! Chcemy liczyć punkty za każde k
 ```scratch
 
 	kiedy kliknięto duszek1
-
 	ukryj
-
 	zagraj dźwięk Fairydust
-
 	zmień Wynik o 1
 ```
 
@@ -148,19 +127,12 @@ Mamy wiedźmę, ale teraz chcemy zrobić grę! Chcemy liczyć punkty za każde k
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-
 	ustaw Czas na 30
-
 	ustaw Wynik na 0
-
 	powtarzaj aż Czas = 0
-
 		czekaj 1 s
-
 		zmień Czas o -1
-
 	(koniec powtarzaj)
-
 	zakończ wszystko
 ```
 
@@ -168,7 +140,7 @@ Mamy wiedźmę, ale teraz chcemy zrobić grę! Chcemy liczyć punkty za każde k
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 ###Rzeczy do spróbowania
 __Jak można sprawić, żeby wiedźma latała coraz szybciej?__
@@ -189,7 +161,7 @@ __Kliknij zieloną flagę.__
 
 Czy masz trzy wiedźmy, które latają od brzegu do brzegu ekranu, pojawiają się i znikają niespodziewanie, oraz znikają po kliknięciu na nie?
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 ###Rzeczy do spróbowania?
 2. __Jak dużo wiedźm jest w sam raz dla tej gry?__

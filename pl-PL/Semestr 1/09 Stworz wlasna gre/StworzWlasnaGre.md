@@ -21,7 +21,7 @@ Jak będzie wyglądała scena w tej grze? Narysuj ją niżej. Pamiętaj, żeby p
 
 Jak będziesz liczyć punkty? Jak można wygrać w tę grę? Ilu graczy będzie brało w niej udział? Czy będziesz mieć licznik czasu? Czy będzie się kontrolowało postacie? Na przykład, czy będzie się klikało myszką czy wciskało klawisze? Potrzebujesz dźwięki? Jeżeli tak, to jakie? Odpowiedz na te pytania poniżej:
 
-##KORK 5: Stwórz swoją grę
+##KROK 5: Stwórz swoją grę
 
 Teraz pora zacząć tworzyć skrypty do gry.
 

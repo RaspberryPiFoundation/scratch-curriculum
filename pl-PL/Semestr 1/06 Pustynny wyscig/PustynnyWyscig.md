@@ -73,7 +73,7 @@ Zapisz swój projekt.
 
 Chcemy, aby ścigający ruszali się tylko po rozpoczęciu wyścigu. Chcemy też wiedzieć, kiedy wyścig się zakończył. Będziemy potrzebować zmiennej do przechowywania tej informacji.
 
-5. Dodaj zmienną do wszytkich duszków i nazwij ją wyścig. Odznacz pole przy niej, aby nie było jej widać na scenie.
+5. Dodaj zmienną do wszystkich duszków i nazwij ją wyścig. Odznacz pole przy niej, aby nie było jej widać na scenie.
 6. Teraz ustaw wyścig na 0, kiedy gra się rozpocznie. Dodaj ten krok do skryptu przycisku:
 
 ```scratch
@@ -186,14 +186,12 @@ __Potrzebujemy, aby duszek, który wygra, ogłosił swoje zwycięstwo.__
 ```
 5. Przejdź do duszka przycisku i dodaj skrypt, który go pokazuje po otrzymaniu komunikatu, że wyścig się zakończył.
 
-5. Now click on the button sprite and add a script that shows it when it receives the finished message.
-
 ###Przetestuj swój projekt
 __Wciśnij zieloną flagę__
 
 Możesz się ścigać z przyjacielem, kiedy jedno z was kieruje papugą wciskając 'A', a drugie kieruje lwem wciskając 'L'?
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 ##Wyzwanie: Dodaj dopalacz
 
@@ -203,7 +201,7 @@ Zapisz swój projekt
 
 ###Przetestuj swój projekt
 
-Zapisz swój projekt
+Zapisz swój projekt.
 
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__

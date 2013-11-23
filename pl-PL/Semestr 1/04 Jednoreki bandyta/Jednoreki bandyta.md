@@ -29,12 +29,9 @@ __Skoro mamy już kostiumy, teraz chcemy, aby duszek nosił je wszystkie na zmia
 ```scratch
 
 	kiedy kliknięto FLAGĘ
-	
 	zawsze		
-		następny kostium
-		
-		czekaj 0.1 s
-		
+		następny kostium		
+		czekaj 0.1 s		
 	(koniec zawsze)
 ```
 

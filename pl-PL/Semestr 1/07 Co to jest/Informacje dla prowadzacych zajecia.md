@@ -7,13 +7,13 @@ Na tablicy jest pokazany jakiś obrazek, ale zniekształcony. Musisz zgadnąć c
 
 ###Umiejętności
 
-W tym projekcie będziemy:
+Ten projekt uczy:
 
-* Liczyć i zapamietywać ilość zdobytych punktów
-* Zmieniać wygląd obiektów i kostiumów
-* Ustawiać przypadkową odpowiedź
-* Wykrywać zdarzenie kliknięcia przycisku myszy oraz sprawdzać, czy odpowiedni duszek został kliknięty
-* Wysyłać wiadomości
+* Liczenia i zapamiętywania ilości zdobytych punktów
+* Zmiany wyglądu obiektów i kostiumów
+* Wybierania przypadkowej odpowiedzi
+* Wykrywania kliknięcia przycisku myszy oraz sprawdzania, czy odpowiedni duszek został kliknięty
+* Nadawania wiadomości
 
 ###Zasoby
 
