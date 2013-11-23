@@ -37,4 +37,4 @@ Krok 6: Pieczątki
 
 1. Tęczowy ołówek
 2. Skróty klawiszowe
-3. Różne rozmiary
+3. Różne rozmiary linii

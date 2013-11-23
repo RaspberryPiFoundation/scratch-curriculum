@@ -196,104 +196,97 @@ Czy gumka działa? Czy działa przy samych brzegach ekranu? Możesz przełącza�
 
 Zapisz swój projekt.
 
-##STEP 6: Stamps
+##KROK 6: Pieczątka
 
-The next thing to add is a stamp tool, to stamp small pictures on the drawing.
-Activity Checklist
+Następną rzeczą, którą możemy dodać, jest pieczątka, przy pomocy której będziemy dodawać małe obrazki na tablicę.
 
-1. Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should __broadcast stamp__
-2. Add a new costume for this pencil sprite, the same as the one you chose for the __stamp__ button.
-3. Select the pencil sprite and create a new variable __pencil mode__ for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.
-4. Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the __pencil mode__ variable to __false__.
-5. Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the __pencil mode__ to __true__.
-6. Finally, lets check this variable __when the mouse button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. 
+1. Dodaj nowego duszka i wybierz mu taki kostium, jaki tylko chcesz. Zmniejsz go i ustaw na liście obok przycisków wyboru koloru. Po kliknięciu, duszek powinien nadawać wiadomość __pieczątka__.
+2. Dodaj wybranego duszka jako nowy kostium dla ołówka.
+3. Zaznacz duszka ołówka i dodaj do niego zmienną __rysowanie__. Zmienna powinna być dostępna tylko dla tego duszka. Będziemy jej używać do sprawdzania, czy rysujemy, czy stawiamy pieczątki.
+4. Dodaj skrypt, który odbiera wiadomość nadaną przez pieczątkę. Skrypt powinien zmieniać kostium ołówka oraz ustawiać zmienną __rysowanie__ na __fałsz__.
+5. Zmień pozostałe skrypty ołówka, które reagują na wiadomości nadawane przez przyciski z tablicy, aby ustawiały zmienną __rysowanie__ na __prawda__.
+6. Na koniec, sprawdzajmy tą zmienną __kiedy wciśnięty jest przycisk myszy__, aby się upewnić, czy powinniśmy rysować, czy stawiać pieczątki. Jeżeli rysowanie = prawda, powinniśmy używać bloku __przyłóż pisak__. Jeżeli nie, powinniśmy użyć bloku __stempluj__.
 
-##Test Your Project
-__Click on the green flag.__
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-Does the stamp tool work correctly?
+Czy pieczątka działa jak trzeba?
 
-What happens when you switch back to one of the normal pencil tools?
+Co się dzieje, jeżeli przełączysz z powrotem na zwykły ołówek?
 
-SAVE YOUR PROJECT
+Zapisz swój projekt.
 
-__Well done, you have completed the basic steps for this project.
-Try these challenges!__
+__Brawo! Udało Ci się zakończyć podstawowe elementy tego projektu. Teraz spróbuj zmierzyć się z poniższymi wyzwaniami!__
 
-##Challenge 1: Rainbow pencil
+##Wyzwanie 1: Tęczowy ołówek
 
-Let’s add a special pencil that paints in rainbow colours. It’s something that you can’t do with ordinary pens and pencils, so it’s nice to show off how drawing on a computer allows you do to different things. The secret to making it work is the change pen colour by block.
+Dodajmy specjalny ołówek, który rysuje we wszystkich kolorach tęczy. Zwykłe kredki tego nie potrafią, więc masz teraz okazję pokazać, że rysowanie na komputerze pozwala robić rzeczy, które nie są normalnie możliwe. Aby to zrobić, musisz zmienić kolor ołówka według bloków.
 
-First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:
+Na początek dodaj jednak przycisk wyboru tęczowego koloru i tęczowy kostium dla duszka ołówka:
 
-1. Create a new tool selection sprite and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the resources/rainbow-selector costume and have it broadcast rainbow when clicked.
-2. Add the resources/rainbow-pencil costume to the pencil sprite.
+1. Dodaj nowego duszka z wyborem koloru na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu 'teczowy-olowek' z katalogu Zasoby i każ mu nadawać wiadomość __tęcza__ po kliknięciu.
+2. Dodaj 'teczowy-olowek' jako kostium do duszka ołówka.
 
-You need to build a script that will change the pen colour many times a second to give the rainbow effect (I found that changing it by 5 every 0.05 seconds works well, but you should try out different values). The timer Scratch card shows how you can make something change every so often. Use a change pen colour by 5 block instead of a change timer by -1 block inside the loop.
+Potrzebujesz zbudować skrypt, który będzie zmieniał kolor ołówka wiele razy w ciągu sekundy, aby oddać efekt tęczy. Zmienianie koloru o 5 co 0,05 sekund działa całkiem dobrze, ale przetestuj inne wartości. Karta 'Timer' pokazuje, jak możesz zmieniać różne rzeczy co ileś sekund. Skorzystaj z bloku __zmień kolor pisaka o 5__ zamiast zmieniać licznik o -1 wewnątrz pętli.
 
-You also need to control that loop so that it only changes the pen colour when you’ve selected the rainbow pencil, otherwise all the pencils will have a rainbow effect! You can do this in a very similar way to how the pencil sprite changes between pencil and stamp modes. You need to create a variable called rainbowChange that has the value true when you want the rainbow effect and false otherwise. Every time the pencil responds to a tool-selection message, it should set the value of rainbowChange accordingly.
+Musisz też pilnować, aby ta pętla zmieniała kolory tylko wtedy, kiedy jest wybrany tęczowy ołówek – w przeciwnym przypadku wszystkie ołówki będą rysować tęcze! Możesz to zrobić w sposób podobny do tego, w który kontrolujesz czy rysujesz, czy stawiasz pieczątki. Musisz stworzyć zmienną __pokażTęczę__, która ma wartość __prawda__ jeżeli chcesz rysować tęczę i wartość __fałsz__, jeżeli nie chcesz. Za każdym razem, gdy ołówek reaguje na wiadomość odebraną od przycisku na dole tablicy, powinien ustawiać odpowiednią wartość dla zmiennej __pokażTęczę__.
 
-Use what you learnt from the stamp step above to control the rainbow effect. The scripts that respond to the tool-selection messages will set two variables each: pencilMode and rainbowChange.
+Użyj przykładu z pieczątkami, aby nauczyć się kontrolować tęczę. Każdy skrypt, który reaguje na wiadomości nadawane przez przyciski wyboru na tablicy, będzie musiał ustawiać wartość dwóch zmiennych: rysowanie i pokażTęczę.
 
-##Test Your Project
-__Click on the green flag.__
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-Does the rainbow tool work correctly?
+Czy rysowanie na tęczowo działa jak należy?
 
-What happens when you switch back to one of the normal pencil tools?
+Co się dzieje, kiedy przełączasz się między tęczowym ołówkiem a pozostałymi narzędziami?
 
-SAVE YOUR PROJECT
+Zapisz swój projekt
 
-##Challenge 2: Keyboard shortcuts
+##Wyzwanie 2: Skróty klawiszowe
 
-Rather than using the tool-selection sprites at the bottom of the stage, you can use the keyboard to select the different tools.
-You can use the when [] key pressed blocks to respond to the keyboard. For each key you want to use, you’ll need another when [] key pressed block, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.
+Zamiast klikać na przyciski na dole tablicy, możesz używać klawiatury, aby przełączać się pomiędzy różnymi narzędziami. Możesz skorzystać z bloku __naciśnięty klawisz []__, aby reagować na komendy klawiatury. Dla każdego skrótu, który chcesz użyć, potrzebujesz ustawić osobny blok __naciśnięty klawisz []__, który prześle tę samą wiadomość, którą nadałby kliknięty odpowiedni przycisk. Dodaj te skrypty do sceny.
 
-I used these shortcuts:
-* Clear all - a
-* Eraser - e
-* Red pencil -r 
-* Blue pencil - b
-* Yellow pencil - y
-* Green pencil - g
-* Rainbow pencil - w
-* Stamp - s
+My skorzystaliśmy z tych skrótów:
+* Wyczyść wszystko - w
+* Gumka - g
+* Czerwony ołówek - c
+* Niebieski ołówek - n
+* Żółty ołówek - x
+* Zielony ołówek - z 
+* Tęczowy ołówek - t
+* Pieczątka - p
 
-##Test Your Project
-__Click on the green flag.__
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-Do all the tools get selected with the correct keyboard shortcuts? Does each of the tools work correctly when you select it with keyboard? Are the correct tools still selected with the tool-selection sprites on the stage?
+Czy wszystkie skróty klawiszowe działają? Czy możesz wybierać wszystkie narzędzia przy pomocy klawiatury? Czy klikanie na przyciski na tablicy dalej działa?
 
-SAVE YOUR PROJECT
+Zapisz swój projekt
 
-##Challenge 3: Big and Small
-Another feature that most drawing packages have is the ability to change the
-size of the pencil. Let’s add that.
-There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.
+##Wyzwanie 3: Różne rozmiary linii
 
-Create two new tool-selection sprites, called bigger and smaller. They should have the resources/bigger-selector and resources/smaller-selector costumes and should send the bigger and smaller messages.
+Następną opcją, która jest dostępna w programach graficznych, jest możliwość zmieniania rozmiaru linii. Dodajmy to do naszego projektu.
+Mamy jeden problem, z którym trzeba będzie się zmierzyć: zmiana rozmiaru czasami musi zmienić rozmiar ołówka, a czasami rozmiar kostiumu duszka. Wszystko zależy od tego, czy rysujemy, czy też stawiamy pieczątki.
 
-The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an if-else block, similar to how the sprite chooses between putting the pen down or stamping)
-Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.
+Stwórz dwa nowe duszki-przyciski na tablicy i nazwij je __powiększ__ i __pomniejsz__. Dodaj do nich odpowiednie kostiumy z katalogu Zasoby. Oba duszki powinny też nadawać odpowiednie wiadomości (powiększ i pomniejsz) po kliknięciu.
 
-SAVE YOUR PROJECT
+Duszek ołówek może reagować na te wiadomości na dwa sposoby: albo zmieniając rozmiar pisaka o 1, albo rozmiar kostiumu o 10, w zależności od wartości zmiennej __rysowanie__. Skorzystaj z bloku __jeżeli w przeciwnym przypadku__, aby to kontrolować – podobnie jak w przypadku wybierania między przyłożeniem pisaka a stawianiem pieczątek. Nie zapomnij dodać skrótów klawiszowych dla nowego narzędzia (my dodaliśmy strzałkę w górę i dół).
 
-What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.
-To stop that, you need to set the size to 100% every time you change to a pencil tool. so that the tools look the right size.
+Zapisz swój projekt
 
-To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new variable called stampSize, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.
+Pewnie udało Ci się zauważyć, że zmiana rozmiaru pieczątki zmienia też rozmiar duszka na ekranie, łączenie z ołówkami. Aby tego uniknąć, musisz ustawiać rozmiar kostiumu na 100% za każdym razem, kiedy przełączasz się na ołówek. Pomoże to zachować odpowiedni rozmiar ołówków. 
 
-##Test Your Project
-__Click on the green flag.__
+Możesz jeszcze bardziej ulepszyć swoje narzędzia, każąc pieczątce zapamiętać swój rozmiar, tak aby po przełączeniu się na ołówek można było wrócić do starego rozmiaru pieczątki. Najłatwiejszym rozwiązaniem jest dodanie zmiennej __rozmiarPieczątki__, która zapisuje obecny rozmiar pieczątki po każdej jego zmianie. Po ponownym wybraniu pieczątki, powinna ona odczytać tę zmienną i wybrać odpowiedni rozmiar.
 
-Do the size controls work for the pencils?
+###Przetestuj swój projekt
+__Kliknij zieloną flagę.__
 
-What happens if you switch to the stamp, change the size and then switch back to a pencil?
+Czy przyciski zmiany rozmiaru działają dla ołówków?
 
-SAVE YOUR PROJECT
+Co się dzieje, kiedy przełączasz się na pieczątkę, zmieniasz jej rozmiar i przełączasz się na ołówek?
+
+Zapisz swój projekt.
 
 
-__Well done you’ve finished, now you can enjoy the game!__
-
-
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
+Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
