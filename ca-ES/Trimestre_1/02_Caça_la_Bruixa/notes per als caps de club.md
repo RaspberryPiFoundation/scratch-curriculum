@@ -5,13 +5,13 @@
 Aquest projecte s´inspira en el joc de fira d´origen anglès anomenat Whack-a-Mole. Obtindreu punts al clicar sobre les bruixes que apareixen a la pantalla. L´objectiu és aconseguir tants punts com sigui possible en un període de 30 segons.
 
 ###Competències
-Aquest projecte abasta:
+Aquest projecte inclou:
 * Definir una variable
 * Bucles
-* Registrar i restablir el marcador
+* Registrar i restablir la puntuació
 
 ###Recursos
-Podeu aconseguir els recursos que us calen per fer aquest projecte utilitza a les carpetes Scratch Backgrounds and Costumes
+Podeu aconseguir els recursos que us calen per fer aquest projecte utilitza a les carpetes Scratch Fons i Vestits
 
 ###Targetes Scratch necessàries
 * Mantenir la puntuació (Keep score) 
