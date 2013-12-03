@@ -1,5 +1,5 @@
 #NOTES FOR CLUB LEADERS
-##(Whack-a-Ghost)
+##(Ghostbusters)
 
 ###Introduction
 This project is like the carnival game called whack-a-mole. You get points for hitting the ghosts that appear on the screen. The aim is to get as many points as possible in 30 seconds.
