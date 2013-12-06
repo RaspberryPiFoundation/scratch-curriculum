@@ -1,14 +1,13 @@
 ---
-lesson: Lesson X
-level:1
-lesson_title: Example Lesson
+lesson_title: Felix and Herbert
+level: Level 1
 language: en
 ...
 
 # Introduction { .intro}
 We are going to make a game of catch with __Felix the cat__ and __Herbert__ the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
 
-# STEP 1: Felix follows the mouse pointer {.activity}
+# STEP 1: Felix follows the mouse pointer { .activity}
 
 ## Activity Checklist { .check}
 
