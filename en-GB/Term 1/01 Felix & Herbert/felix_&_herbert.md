@@ -20,16 +20,11 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 ```blocks
 
 	When FLAG clicked
-
 	forever
-
-		point towards mouse-pointer
-
-		move 10 steps
-
+		point towards [mouse-pointer]
+		move (10) steps
 		next costume
-
-		play drum 62 for 0.3 beats
+		play drum (62) for (0.3) beats
 
 ```
 		
@@ -56,8 +51,8 @@ Try six clicks on the shrink button:
 	
 	When FLAG clicked
 	forever
-		go to mouse-pointer
-		point towards Felix
+		go to [mouse-pointer]
+		point towards [Felix]
 ```
 
 ## Test Your Project { .flag}
@@ -78,12 +73,12 @@ __We want Felix to know when he’s caught Herbert, and tell us.__
 	
 	when FLAG clicked
 	forever
-		point towards mouse-pointer
-		move 10 steps
+		point towards [mouse-pointer]
+		move (10) steps
 		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			say Caught you! for 1 secs
+		play (drum 62) for (0.3) beats
+		if <touching [Herbert]?> then
+			say [Caught you!] for (1) secs
 ```
 
 ## Test Your Project { .flag}
@@ -105,14 +100,14 @@ __Instead of Felix saying something, we want Herbert to turn into a ghost when h
 	
 	when FLAG clicked
 	forever
-		point towards mouse-pointer
-		move 10 steps
+		point towards [mouse-pointer]
+		move (10) steps
 		next costume
-		play drum 62 for 0.3 beats
-		if touching Herbert
-			broadcast caught
-			play drum 58 for 0.2 beats
-			wait 1 sec
+		play drum (62) for (0.3) beats
+		if <touching [Herbert]?> then
+			broadcast [caught]
+			play drum (58) for (0.2) beats
+			wait (1) sec
 ```
 + Import a new costume into Herbert from fantasy/ghost2-a.
 + Edit the costume to make it smaller.
@@ -124,10 +119,10 @@ called ‘alive’ and the ghost costume is called ‘dead’.
 
 ```blocks
 	
-	when I receive caught
-	switch to costume dead
-	wait 0.5 secs
-	switch to costume alive
+	when I receive [caught]
+	switch to costume [dead]
+	wait (0.5) secs
+	switch to costume [alive]
 ```
 	
 ## Test Your Project { .flag}
@@ -152,14 +147,12 @@ We’ll start the score at zero and increase it by one every second. If Felix ca
 ```blocks
 	
 	when FLAG clicked
-	set score to 0
+	set score to (0)
 	forever
-		change score by 1
-		wait 1 secs
-	(end forever)
-	
-	when I receive caught
-	change score by -100
+		change score by (1)
+		wait (1) secs
+	when I receive [caught]
+	change score by (-100)
 ```
 	
 ## Test Your Project { .flag}
