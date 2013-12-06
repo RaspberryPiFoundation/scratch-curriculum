@@ -2,7 +2,7 @@
 ##(Feliks i Herbert)
 
 ####Wstęp:
-Zrobimy grę w berka, w której kot Feliks goni mysz o imnieniu Herbert. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty! Ten projekt jest bardzo prosty i ma za zadanie zapoznać dzieci z podstawami programu Scratch.
+Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty! Ten projekt jest bardzo prosty i ma za zadanie zapoznać dzieci z podstawami programu Scratch.
 
 ####Umiejętności
 
