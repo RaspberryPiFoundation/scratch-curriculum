@@ -3,14 +3,14 @@ Poziom 1
 #Feliks i Herbert
 
 __Wstęp:__
-Zrobimy grę w berka, w której kot Feliks goni mysz Herberta. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty!
+Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty!
 
 ##KROK 1: Feliks podąża za kursorem myszy
 
 1. Stwórz nowy projekt.
 2. Kliknij na scenę na lewo od duszka, a następnie kliknij zakładkę Tła i zaimportuj tło "hall" z katalogu "Indoors". Usuń puste tło z listy.
 3. Zmień nazwę duszka na Feliks.
-4. Upewnij się, że Feliks obraca się tylko w lewo i prawo wciskając ten przycisk:
+4. Upewnij się, że Feliks obraca się tylko w lewo i prawo, wciskając ten przycisk:
 5. Stwórz poniższy skrypt:
 
 ```scratch
@@ -60,7 +60,7 @@ Zapisz swój projekt.
 
 ##KROK 3: Feliks ogłasza, że złapał Herberta
 
-__Chcemy, aby Feliks nam powiedział że złapał Herberta.__
+__Chcemy, aby Feliks nam powiedział, że złapał Herberta.__
 
 1. Zmień skrypt Feliksa na poniższy:
 
@@ -128,7 +128,7 @@ Sześć kliknięć na przycisku do zmniejszania powinno załatwić sprawę.
 ###Przetestuj swój projekt
 __Wciśnij zieloną flagę.__
 
-Czy Herbert zamienia się w ducha jak zostanie złapany?
+Czy Herbert zamienia się w ducha, gdy zostanie złapany?
 Czy Feliks wydaje odpowiednie odgłosy w odpowiednich momentach?
 Czy po złapaniu Feliks nie rusza się odpowiednio długo, aby Herbert mógł od niego uciec?
 
@@ -136,7 +136,7 @@ Zapisz swój projekt.
 
 ##KROK 5: Liczymy punkty
 
-__Dodajmy licznik punktów, aby było widać jak dobrze nam idzie ratowanie Herberta.
+__Dodajmy licznik punktów, aby było widać, jak dobrze nam idzie ratowanie Herberta.
 Zaczniemy od zera i co sekundę będziemy dodawać jeden punkt. Gdy Feliks złapie Herberta, odejmiemy 100 punktów.__
 
 1. Stwórz zmienną o nazwie "Wynik" "dla każdego duszka". Aby to zrobić, wybierz Zmienne, dodaj nową zmienną i zmień jej nazwę.
