@@ -8,7 +8,7 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
 ##KROK 1: Feliks podąża za kursorem myszy
 
 1. Stwórz nowy projekt.
-2. Kliknij na scenę na lewo od duszka, a następnie kliknij zakładkę Tła i zaimportuj tło "hall" z katalogu "Indoors". Usuń puste tło z listy.
+2. Kliknij na scenę na lewo od duszka, a następnie kliknij zakładkę Tła i zaimportuj tło „hall” z katalogu „Indoors”. Usuń puste tło z listy.
 3. Zmień nazwę duszka na Feliks.
 4. Upewnij się, że Feliks obraca się tylko w lewo i prawo, wciskając ten przycisk:
 5. Stwórz poniższy skrypt:
@@ -35,8 +35,8 @@ Zapisz swój projekt.
 
 __Teraz sprawimy, aby Feliks zaczął gonić Herberta zamiast podążać za kursorem myszy.__
 
-1. Stwórz następnego duszka. Kliknij "wybierz nowego duszka z pliku" i wybierz "Mouse1" z katalogu "Animals".
-2. Zmień nazwę duszka na Herbert.
+1. Stwórz następnego duszka. Kliknij „wybierz nowego duszka z pliku” i wybierz „Mouse1” z katalogu „Animals”.
+2. Zmień nazwę duszka na „Herbert”.
 3. Kliknij przycisk edycji kostiumu i zmniejsz Herberta.
 Kliknij sześć razy na przycisku do zmniejszania:
 4. Upewnij się, że Herbert obraca się tylko w lewo i prawo.
@@ -107,13 +107,13 @@ __Zamiast wiadomości od Feliksa, że złapał mysz, chcemy, aby Herbert zamieni
 	(koniec zawsze)
 ```
 
-2. Dodaj Herbertowi nowy kostium: kliknij Importuj i wybierz "ghost2-a" z katalogu "Fantasy".
+2. Dodaj Herbertowi nowy kostium: kliknij Importuj i wybierz „ghost2-a” z katalogu „Fantasy”.
 
 3. Zmniejsz nowy kostium.
 
 Sześć kliknięć na przycisku do zmniejszania powinno załatwić sprawę.
 
-4. Zmień nazwy kostiumów Herberta: nazwij mysz "żywy", a ducha "nieżywy".
+4. Zmień nazwy kostiumów Herberta: nazwij mysz „żywy”, a ducha „nieżywy”.
 
 5. Dodaj nowy skrypt, który zamienia Herberta w ducha:
 
@@ -139,7 +139,7 @@ Zapisz swój projekt.
 __Dodajmy licznik punktów, aby było widać, jak dobrze nam idzie ratowanie Herberta.
 Zaczniemy od zera i co sekundę będziemy dodawać jeden punkt. Gdy Feliks złapie Herberta, odejmiemy 100 punktów.__
 
-1. Stwórz zmienną o nazwie "Wynik" "dla każdego duszka". Aby to zrobić, wybierz Zmienne, dodaj nową zmienną i zmień jej nazwę.
+1. Stwórz zmienną o nazwie „Wynik” „dla każdego duszka”. Aby to zrobić, wybierz Zmienne, dodaj nową zmienną i zmień jej nazwę.
 
 2. Kliknij na Scenę i dodaj oba poniższe skrypty
 
