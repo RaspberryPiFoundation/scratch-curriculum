@@ -9,9 +9,7 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
 Ten projekt uczy:
 
 1. Zmiany wyglądu obiektów i kostiumów
-
 2. Liczenia i zapamiętywania liczby zdobytych punktów
-
 3. Nadawania wiadomości
 
 ####Zasoby
@@ -19,8 +17,8 @@ Ten projekt uczy:
 Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch
 
 ####Podstawowe ćwiczenia
-Krok 1: Feliks podąża za kursorem myszy
-Krok 2: Feliks goni Herberta
-Krok 3: Feliks ogłasza, że złapał Herberta
-Krok 4: Herbert zamienia się w ducha po złapaniu
-Krok 5: Liczymy punkty
+* Krok 1: Feliks podąża za kursorem myszy
+* Krok 2: Feliks goni Herberta
+* Krok 3: Feliks ogłasza, że złapał Herberta
+* Krok 4: Herbert zamienia się w ducha po złapaniu
+* Krok 5: Liczymy punkty
