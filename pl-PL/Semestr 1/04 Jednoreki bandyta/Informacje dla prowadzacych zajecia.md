@@ -2,9 +2,10 @@
 ##(Jednoręki bandyta)
 
 ###Wstęp:
-Prosta gra z trzema duszkami, które zmieniają swój kostium. Trzeba je zatrzymać, kiedy wszystkie wyglądają tak samo (podobnie jak w jednorękim bandycie!).
+Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Musisz je zatrzymać w momencie, kiedy wszystkie wyglądają tak samo (podobnie jak w jednorękim bandycie!).
 
 ###Umiejętności
+
 Ten projekt uczy:
 
 1. Zmiany kostiumów
@@ -12,15 +13,16 @@ Ten projekt uczy:
 3. Zatrzymywania pętli kliknięciem myszki
 
 ###Zasoby
-Ten projekt korzysta tylko ze standardowych obrazków dostępnych w bibliotece Scratcha.
+Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch
 
 ###Podstawowe ćwiczenia
-Krok 1: Tworzenie duszka, który zmienia kostiumy
-Krok 2: Sprawianie, aby obrazki się zmieniały
-Krok 3: Zatrzymywanie zmieniających się obrazków kliknięciem myszki
-Krok 4: Tworzenie innych duszków
+* Krok 1: Tworzenie duszka, który zmienia kostiumy
+* Krok 2: Zmieniamy pojawiające się obrazki
+* Krok 3: Zatrzymujemy obrazki kliknięciem klawisza myszki
+* Krok 4: Dodajemy dodatkowe duszki
 
 ###Wyzwania
 1. Zwiększ poziom trudności gry
-2. Dodaj zmienny poziom trudności: coraz trudniej/coraz łatwiej wraz z czasem gry
-3. Wykrywaj, kiedy wszystkie duszki zatrzymały się na tym samym kostiumie
+2. Dodaj zmienny poziom trudności: niech gra staje się coraz łatwiejsza lub coraz trudniejsza w miarę upływu czasu
+3. Sprawdź, kiedy wszystkie duszki zatrzymały się na tym samym obrazku
+

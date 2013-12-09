@@ -9,7 +9,7 @@ Ta interaktywna zabawka pokazuje wybuchające fajerwerki i odtwarza dźwięk wyb
 
 __Zaimportujmy wszystkie obrazki potrzebne do gry__
 
-1. Rozpocznij nowy projekt w Scratchu. Skasuj kota, klikając na nim prawym przyciskiem myszki i wybierając „usuń”.
+1. Rozpocznij nowy projekt w Scratchu. Usuń kota, klikając na nim prawym przyciskiem myszki i wybierając „usuń”.
 2. Zmień tło na „city-with-water” z katalogu „Outdoor”.
 3. Użyj przycisku __„Wybierz nowego duszka z pliku”__, aby dodać rakietę. Otwórz katalog „Zasoby” i wybierz plik „rakieta.png”. Zmień nazwę duszka na „Rakieta”.
 4. Spraw, aby rakieta zniknęła po wciśnięciu zielonej flagi.
