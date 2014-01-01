@@ -11,158 +11,171 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 
 ## Activity Checklist { .check}
 
-+ Start a new project.
-+ Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.
-+ Change the name of the sprite to Felix.
++ **Start a new project.**
++ Click on the **stage** next to the sprite and switch to the `Backdrops` {.block .lightgrey} tab, and then click the `Choose Backdrop from Library` {.block .lightgrey} button and choose the background indoors/hall. Delete the original blank background.
++ Click on the sprite, and then click on the i button to the top left of the Sprite. Change the name of the sprite to **Felix**.
 + Make sure Felix only points left-right by clicking this button:
-+ Create this script:
++ **Create this script**:
 
 ```blocks
-
-	When FLAG clicked
-	forever
-		point towards [mouse-pointer]
-		move (10) steps
-		next costume
-		play drum (62) for (0.3) beats
-
+				when FLAG clicked
+				forever
+					point towards [mouse-pointer v]
+					move (10) steps
+					next costume
+					play drum (3 v) for (0.3) beats
+				end
 ```
-		
-## Test Your Project { .flag}
-__Click the green flag.__
+
+##Test your project { .flag}
+
+**Click the green flag.**
+
 Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
 
-## Save your project { .save}
+##Save your project { .save}
 
-# STEP 2: Felix chases Herbert {.activity}
 
-__Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.__
+#**Step 2:**   Felix chases Herbert {.activity}
 
-## Activity Checklist { .check}
+*Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.*
 
-+ Create another sprite using the choose new sprite from file button and selecting animals/mouse1.
-+ Change the name of the sprite to Herbert.
-+ Edit the costume and make it smaller than Felix.
-Try six clicks on the shrink button:
-+ Make sure Herbert only points left-right. 5. Give Herbert this script:
+##Activity Checklist { .check}
 
++ Create another sprite using the `choose sprite from library` {.block .grey} button and selecting **animals/mouse1**.
++ Change the name of the sprite to **Herbert**.
++ Click on the costume in the Paint Editor, and a box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.
++ Make sure Herbert only points left-right.
++ **Give Herbert this script:**
 
 ```blocks
-	
-	When FLAG clicked
-	forever
-		go to [mouse-pointer]
-		point towards [Felix]
+  when FLAG clicked
+    forever
+      go to [mouse-pointer v]
+      point towards [Felix v]
+    end
 ```
 
-## Test Your Project { .flag}
-__Click the green flag.__
+##Test your project { .flag}
+
+**Click the green flag.**
 
 Does Herbert move with the mouse pointer? Does Felix chase Herbert?
 
-## Save your project { .save}
+##Save your project { .save}
 
-# STEP 3: Felix says when he's caught Herbert {.activity}
 
-__We want Felix to know when he’s caught Herbert, and tell us.__
-## Activity Checklist { .check}
+#**Step 3:**   Felix says when he’s caught Herbert {.activity}
 
-1. Change Felix’s script to be this:
+**We want Felix to know when he’s caught Herbert, and tell us.**
+
+##Activity Checklist { .check}
+
++ **Change Felix’s script to be this:**
 
 ```blocks
-	
-	when FLAG clicked
-	forever
-		point towards [mouse-pointer]
-		move (10) steps
-		next costume
-		play (drum 62) for (0.3) beats
-		if <touching [Herbert]?> then
-			say [Caught you!] for (1) secs
+  when FLAG clicked
+  forever
+    point towards [mouse-pointer]
+    move (10) steps
+    next costume
+    play drum (3 v) for (0.3) beats
+    if <touching [herbert v]?>
+      say [Caught you!] for (1) secs
+    end
+   end
 ```
 
-## Test Your Project { .flag}
-__Click the green flag.__
+##Test your project { .flag}
+
+**Click the green flag.**
 
 Does Felix say when he’s caught Herbert?
 
-## Save your project { .save}
+##Save your project { .save}
 
-# STEP 4: Herbert turns into a ghost when he’s caught { .activity}
+#**Step 4:**  Herbert turns into a ghost when he’s caught {.activity}
 
-__Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.__
+**Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.**
 
-## Activity Checklist { .check}
+##Activity Checklist { .check}
 
-+ Change Felix’s script to send this message when he catches Herbert.
-
-```blocks
-	
-	when FLAG clicked
-	forever
-		point towards [mouse-pointer]
-		move (10) steps
-		next costume
-		play drum (62) for (0.3) beats
-		if <touching [Herbert]?> then
-			broadcast [caught]
-			play drum (58) for (0.2) beats
-			wait (1) sec
-```
-+ Import a new costume into Herbert from fantasy/ghost2-a.
-+ Edit the costume to make it smaller.
-Six clicks on the shrink button should do.
-+ Change the names of Herbert’s
-costumes so the mouse costume is
-called ‘alive’ and the ghost costume is called ‘dead’.
-+ Create a new script for Herbert to turn him into a ghost:
++ **Change Felix’s script to send this message when he catches Herbert:**
 
 ```blocks
-	
-	when I receive [caught]
-	switch to costume [dead]
-	wait (0.5) secs
-	switch to costume [alive]
+        when FLAG clicked
+        forever
+          point towards [mouse-pointer v]
+          move (10) steps
+          move (20) steps
+          next costume
+          play drum (3 v) for (0.3) beats
+          if <touching [herbert v]?>
+            broadcast [caught v]
+            play drum (17 v) for (0.2) beats
+            wait (1) secs
+          end
+        end
 ```
-	
-## Test Your Project { .flag}
-__Click the green flag.__
+
++ Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the `Choose costume from Library button ` {.block .lightgrey}. Select the **fantasy/ghost2-a** costume.
+
++ Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.
+
++ Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.
++ **Create a new script for Herbert to turn him into a ghost:**
+
+```blocks
+  when I receive [caught v]
+    switch to costume [dead v]
+    wait (1) secs
+    switch to costume [alive v]
+
+```
+
+##Test your project { .flag}
+
+**Click the green flag.**
 
 Does Herbert turn into a ghost when he’s caught?
 Does Felix play the right sounds at the right time?
-Does Felix still stay still for long enough for Herbert to get away
+Does Felix still stay still for long enough for Herbert to get away?
 
-## Save your project { .save}
+##Save your project { .save}
 
-# STEP 5: Keep score { .activity}
+#**Step 5:**  Keep score {.activity}
 
-__Let’s add a score so we know how well we do at keeping Herbert alive.
-We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.__
+**Let’s add a score so we know how well we do at keeping Herbert alive.
+We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.**
 
-## Activity Checklist { .check}
+##Activity Checklist { .check}
 
-+ Make a variable, for all sprites, called score. Click on Variables in the top menu, make a variable and name it score
-+ On the stage, create these two scripts
++ Make a variable, for all sprites, called Score. Click on `Data` {.block .orange} in the top menu, make a variable and name it `score` {.block .orange}, ensuring that "For all sprites" is selected.
++ **On the stage, create these two scripts:**
+
 
 ```blocks
-	
-	when FLAG clicked
-	set score to (0)
-	forever
-		change score by (1)
-		wait (1) secs
-	when I receive [caught]
-	change score by (-100)
+when gf clicked
+   set [score v] to (0)
+   forever
+      change [score v] by (1)
+      wait (1) secs
+   end
+
+when i receive [caught]
+change [score v] by (-100)
 ```
-	
-## Test Your Project { .flag}
-__Click the green flag.__
+
+##Test your project { .flag}
+
+**Click the green flag.** 
 
 Does the score go up by one every second?
 Does the score go down by one hundred when Herbert is caught?
 What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?
 
-## Save your project { .save}
+##Save your project { .save}
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar
+**Well done you’ve finished, now you can enjoy the game!**
+
+Don’t forget you can share your game with all your friends and family by clicking on **Share** on the menu bar!
