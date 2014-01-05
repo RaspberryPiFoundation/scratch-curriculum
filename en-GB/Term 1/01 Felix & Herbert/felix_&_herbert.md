@@ -12,8 +12,8 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 ## Activity Checklist { .check}
 
 + **Start a new project.**
-+ Click on the **stage** next to the sprite and switch to the `Backdrops` {.block .lightgrey} tab, and then click the `Choose Backdrop from Library` {.block .lightgrey} button and choose the background indoors/hall. Delete the original blank background.
-+ Click on the sprite, and then click on the i button to the top left of the Sprite. Change the name of the sprite to **Felix**.
++ Click on the **stage** next to the sprite and switch to the `Backdrops` {.blocklightgrey} tab, and then click the `Choose Backdrop from library` {.blocklightgrey} button and choose the background indoors/hall. Delete the original blank background.
++ Click on the sprite, and then click on the `i` button to the top left of the Sprite. Change the name of the sprite to **Felix**.
 + Make sure Felix only points left-right by clicking this button:
 + **Create this script**:
 
@@ -42,9 +42,9 @@ Does Felix follow the mouse pointer? Does it look like he’s walking when he mo
 
 ##Activity Checklist { .check}
 
-+ Create another sprite using the `choose sprite from library` {.block .grey} button and selecting **animals/mouse1**.
++ Create another sprite using the `choose sprite from library` {.blockgrey} button and selecting **animals/mouse1**.
 + Change the name of the sprite to **Herbert**.
-+ Click on the costume in the Paint Editor, and a box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.
++ Switch to the __Costumes__ tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.
 + Make sure Herbert only points left-right.
 + **Give Herbert this script:**
 
@@ -118,7 +118,7 @@ Does Felix say when he’s caught Herbert?
         end
 ```
 
-+ Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the `Choose costume from Library button ` {.block .lightgrey}. Select the **fantasy/ghost2-a** costume.
++ Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the `Choose costume from Library button ` {.blocklightgrey}. Select the **fantasy/ghost2-a** costume.
 
 + Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.
 
@@ -127,9 +127,9 @@ Does Felix say when he’s caught Herbert?
 
 ```blocks
   when I receive [caught v]
-    switch to costume [dead v]
+    switch costume to [dead v]
     wait (1) secs
-    switch to costume [alive v]
+    switch costume to [alive v]
 
 ```
 
@@ -150,13 +150,13 @@ We’ll start the score at zero and increase it by one every second. If Felix ca
 
 ##Activity Checklist { .check}
 
-+ Make a variable, for all sprites, called Score. Click on `Data` {.block .orange} in the top menu, make a variable and name it `score` {.block .orange}, ensuring that "For all sprites" is selected.
++ Make a variable, for all sprites, called Score. Click on `Data` {.blockorange} in the top menu, make a variable and name it `score` {.blockorange}, ensuring that "For all sprites" is selected.
 + **On the stage, create these two scripts:**
 
 
 ```blocks
 when gf clicked
-   set [score v] to (0)
+   set [score v] to [0]
    forever
       change [score v] by (1)
       wait (1) secs
