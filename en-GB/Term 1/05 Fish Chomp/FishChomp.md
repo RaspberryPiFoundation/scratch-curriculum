@@ -10,19 +10,18 @@ __Let’s make the Hungry Fish swim around the sea!__
 
 1. Start a new Scratch project.
 2. Select the Stage, then select the Stage’s Backdrop tab. Import the
-background Nature/underwater3 using 'choose background from library'. Finally, remove backdrop1.
+background **Nature/underwater3** using 'choose background from library'. Finally, remove **backdrop1**.
 3. Change the name of Sprite1 to 'Hungry Fish' by clicking on the blue 'i' symbol.
-4. Import Hungry Fish’s costume, resources/hungry-fish then remove its existing costume1 and costume2.
-5. Click on  the blue 'i' symbol again,  and make sure the sprite can only flip left-right.
+4. Import Hungry Fish’s costume, **resources/hungry-fish** then remove its existing costume1 and costume2.
+5. Click on  the blue '**i**' symbol again,  and make sure the sprite can only flip left-right.
 6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
 
-```scratch
-
-  when FLAG clicked
-  forever    	
-	point towards [mouse pointer v]
-	move (3) steps
-```
+    ```scratch
+    when FLAG clicked
+        forever    	
+            point towards [mouse pointer v]
+            move (3) steps
+    ```
 
 ###Test Your Project
 __Click the green flag.__ 
@@ -30,19 +29,16 @@ Move the mouse pointer around the sea. Does the fish follow the pointer?
 What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
 
 
-7. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
-(The **distance to** block is in the
+1. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
+(The `distance to` block is in the
 *Sensing* palette).
 
-
-```scratch
-
-when FLAG clicked
-    forever	if <(distance to [mouse-pointer v]) > (10)>
-		point towards [mouse-pointer v]
-		move (3) steps
-	
-```
+    ```scratch
+    when FLAG clicked
+        forever if <(distance to [mopuse-pointer v]) > (10)>
+            point towards [mouse-pointer v]
+            move (3) steps
+    ```
 
 
 ###Test Your Project
@@ -57,19 +53,18 @@ If you want, you can put different numbers in the script. How does that change h
 ##STEP 2: Add some prey
 __It's time to make something for the Hungry Fish to try to eat!__
 
-1. Create a new sprite from the file Animals/starfish. 
+1. Create a new sprite from the file **Animals/starfish**. 
 2. Use the Shrink sprite tool (above the Stage)
 to make the sprite smaller.
 3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.
 
-```scratch
-
-	when FLAG clicked
-    forever		
-		move (2) steps
-		turn right (pick random (-20) to (20)) degrees
-		if on edge, bounce
-```
+    ```scratch
+    when FLAG clicked
+    	forever		
+            move (2) steps
+            turn right (pick random (-20) to (20)) degrees
+            if on edge, bounce  
+    ```
 
 ###Test Your Project
 __Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
@@ -81,7 +76,7 @@ Save your project
 ###Things to try
 
 * Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
-* What does the **if on edge, bounce** block do? Take it out and see what happens.
+* What does the `if on edge, bounce` block do? Take it out and see what happens.
 
 ##STEP 3: Hungry Fish eats the prey
 
@@ -89,7 +84,7 @@ __Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has c
 * The Hungry Fish needs to close its mouth and make a "chomp" sound.
 * The prey needs to disappear, then reappear a short while later.
 
-1. First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the **touching** block to see if it is touching the fish.
+1. First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the `touching` block to see if it is touching the fish.
 
 ```scratch
 
@@ -106,59 +101,57 @@ forever
 ###Test Your Project
 __Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
 
-2. How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the **touching color** block, and see if it is touching the fish’s blue teeth. To do this, replace the **touching** block with a
-**touching color** block in your script, click on the color in the block and then click again on the fish’s teeth.
-3. Next we can make the prey move to a random point on the screen before reappearing using a **go to** block, and giving it a random value for **x** and **y**.
+2. How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the `touching color` block, and see if it is touching the fish’s blue teeth. To do this, replace the `touching` block with a
+`touching color` block in your script, click on the color in the block and then click again on the fish’s teeth.
+3. Next we can make the prey move to a random point on the screen before reappearing using a `go to` block, and giving it a random value for **x** and **y**.
 
-```scratch
-
-when FLAG clicked
-    forever		
-		move (2) steps
-		turn right (pick random (-20) to (20)) degrees
-		if on edge, bounce
-		if <touching color []?> then
-			hide
-			wait (3) secs
-			go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
-			show
-```
+	```scratch
+	when FLAG clicked
+    	forever		
+			move (2) steps
+			turn right (pick random (-20) to (20)) degrees
+			if on edge, bounce
+			if <touching color []?> then
+				hide
+				wait (3) secs
+				go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
+				show
+	```
+    
 ###Test your project
 
 Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
 
-4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey **broadcast** the fact that it’s been eaten before vanishing.
+4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey `broadcast` the fact that it’s been eaten before vanishing.
 
-```scratch
+	```scratch
 
 	when FLAG clicked
 	forever		
-		move 2 steps
-		turn pick random -20 to 20 degrees
+		move (2) steps
+		turn right <pick random (-20) to (20)> degrees
 		if on edge, bounce
-		if touching colour []?
-			broadcast got me
+		if <touching color []?>
+			broadcast [got me v]
 			hide
-			wait 3 secs
-			go to x:random -220 to 220 y: pick random -170 to 170
+			wait (3) secs
+			go to x:<pick random (-220) to (220)> y: <pick random (-170) to (170)>
 			show
-		(end if)
-	(end forever)
-```
+		
+	```
 __Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.__
 
-5. Add the **resources/mouth-closed costume** and the **resources/chomp** sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message **broadcast** by the prey. This script should make the fish play the 'chomp' sound and **switch to** the mouth-closed costume, wait briefly and then switch back.
+5. Add the **resources/mouth-closed** costume and the **resources/chomp** sound to the Hungry Fish sprite.
+6. Then, add a new script to the Hungry Fish to respond to the message `broadcast` by the prey. This script should make the fish play the 'chomp' sound and ``switch to` the mouth-closed costume, wait briefly and then switch back.
 
-```scratch
-
-when I receive [got me v]
-    play sound [chomp v]
-	repeat (2)
-		switch to costume [mouth-closed v]
-		wait (0.5) secs
-		switch to costume [hungry-fish v]
-```
+	```scratch
+	when I receive [got me v]
+		play sound [chomp v]
+		repeat (2)
+			switch to costume [mouth-closed v]
+			wait (0.5) secs
+			switch to costume [hungry-fish v]
+	```
 
 __Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
 
@@ -181,9 +174,9 @@ move differently?__
 __Hint:__ Don’t spend too long on this bit without looking at the other activities in this
 project.
 
-__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the **set color effect block**. That way, you can tell it apart from the rest of the prey.
+__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the ``set color effect` block. That way, you can tell it apart from the rest of the prey.
 
-Make this prey move slower than the others. __Hint:__ Look at the **move (2) steps** block.
+Make this prey move slower than the others. __Hint:__ Look at the `move 2 steps` block.
 
 
 ###Test Your Project
@@ -192,7 +185,7 @@ If you can do that, __try making one of the prey move quicker than the others.__
 
 
 Does the prey still move in a sensible way? Do these changes make the game better?
-__Hint:__ If your prey swims around in circles, check the values of the **pick random** block in the **turn** block.
+__Hint:__ If your prey swims around in circles, check the values of the `pick random` block in the `turn` block.
 
 How about you make each of the prey behave differently, using different combinations of these changes?
 
@@ -208,7 +201,7 @@ There’s no block in Scratch that tells you the direction that another sprite i
 
 Using that idea, __make one of the prey always point away from the Hungry Fish.__ 
 
-You might find that your prey gets stuck in the corner if it is always swimming away from the fish. You might want to have the prey only try to escape when the fish gets close. __Hint:__ Look back at how we used the **distnace to* block ealier in the game. 
+You might find that your prey gets stuck in the corner if it is always swimming away from the fish. You might want to have the prey only try to escape when the fish gets close. __Hint:__ Look back at how we used the `distance to` block ealier in the game. 
 
 ###Test Your Project
 Does this make the prey harder to catch? Does it make the game better?

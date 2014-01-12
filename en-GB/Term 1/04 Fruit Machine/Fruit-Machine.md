@@ -20,21 +20,20 @@ __Now we’ve got some costumes, we want the sprite to change between them.__
 ##STEP 2: Making the picture change
 
 1. Click the *Scripts* tab.
-2. Click *Events* and drag a **when flag clicked** into the scripts area. This will be triggered when we click the green flag.
-3. Click the Control tab and add a **forever** and attach it so it snaps to the bottom.
+2. Click *Events* and drag a `when flag clicked` into the scripts area. This will be triggered when we click the green flag.
+3. Click the Control tab and add a `forever` and attach it so it snaps to the bottom.
 4. Click the green flag in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.
-5. Now click *Looks* and drag in a **next costume**
-6. How do we slow it down so it isn’t changing so quickly? Click the *Control* tab and drag in a **wait 1 secs**
-7. Adjust the time until it’s repeating at a faster pace (a time of 0.1s looks good). What would happen if we didn’t have the **wait** block?
+5. Now click *Looks* and drag in a `next costume`
+6. How do we slow it down so it isn’t changing so quickly? Click the *Control* tab and drag in a `wait 1 secs`
+7. Adjust the time until it’s repeating at a faster pace (a time of 0.1s looks good). What would happen if we didn’t have the `wait 1 secs` block?
 
-```scratch
-
+    ```scratch
     when FLAG clicked
     forever		
-		next costume
-		wait (0.1) secs
+        next costume
+        wait (0.1) secs
 
-```
+    ```
 
 ###Test Your Project
 __Click the green flag.__ 
@@ -44,27 +43,26 @@ Save your project
 
 ###Things to try
 
-Adjust the time in the **wait** block.What numbers do you think would make the game too easy, or too hard?
+Adjust the time in the `wait 1 secs` block.What numbers do you think would make the game too easy, or too hard?
 
 ##STEP 3: Making it stop when we click on it
 
 Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?
 
-1. Create a new variable by clicking *Data* and **Make a variable**. Call it 'stopped' and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.
-2. Set the variable 'stopped' to the value 1 when someone clicks on the image using **when this sprite clicked** and **set stopped to 0** making sure to change the value from 0 to 1.
-3. Now we need to make the image stop changing when the variable 'stopped' equals 1. Click the *Control* tab and add an **if...then** loop and use a new **equals** block (found under the *operator* tab) to check if 'stopped' does equal 0.
-4. Finally, add a **set stopped to 0** underneath the when flag clicked.
- 
-```scratch
+1. Create a new variable by clicking *Data* and **Make a variable**. Call it **stopped** and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.
+2. Set the variable **stopped** to the value 1 when someone clicks on the image using `when this sprite clicked` and `set stopped to 0` making sure to change the value from 0 to 1.
+3. Now we need to make the image stop changing when the variable **stopped** equals 1. Click the *Control* tab and add an `if...then` loop and use a new **equals** block (found under the *operator* tab) to check if 'stopped' does equal 0.
+4. Finally, add a `set stopped to 0` underneath the when flag clicked.
 
-   when FLAG clicked
+    ```scratch
+    when FLAG clicked
     set [stopped v] to (0)
-	forever	
-		if <(stopped) = (0)> then
-		next costume
-		wait (0.1) secs
+    forever 
+        if <(stopped) = (0)> then
+            next costume
+            wait (0.1) secs
 
-```
+    ```
 
 ###Test Your Project
 __Click the green flag, wait for a moment, then click on the sprite.__ 
@@ -116,31 +114,31 @@ Every time you make a change, think about whether it make the game easier or har
 
 __The aim of the game is click on the sprites so they’re stopped while showing the same costume. It would be nice if the stage detected when you’d finished playing and then told you if you had won or lost by checking to see if each sprite had the same costume.__
 
-First, the stage needs to know when the player has finished. We can do this by having the stage check to see if all sprites have stopped moving when we click on one of them. Go back and modify each of the **when this sprite clicked** blocks for each sprite to **broadcast** a new message: 'checkForEnd'
+First, the stage needs to know when the player has finished. We can do this by having the stage check to see if all sprites have stopped moving when we click on one of them. Go back and modify each of the `when this sprite clicked` blocks for each sprite to `broadcast` a new message: 'checkForEnd'
 
-The Stage can respond to this message and check if the game is over by seeing if all three sprites’ stopped variables are set to 1, by using a **x position of Sprite** (found under the *Sensing* tab) block for each sprite, and changing “x position” to 'stopped'. If all three sprites have a 'stopped' value of 1, we know the game is over and we can check to see if the player has won.
+The Stage can respond to this message and check if the game is over by seeing if all three sprites’ stopped variables are set to 1, by using a `x position of Sprite` (found under the *Sensing* tab) block for each sprite, and changing **x position** to **stopped**. If all three sprites have a **stopped** value of 1, we know the game is over and we can check to see if the player has won.
 
-To do this, we can use the same **x position of Sprite** block, but instead of looking at the stopped variable, we can look at the **costume #** and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
+To do this, we can use the same `x position of Sprite` block, but instead of looking at the stopped variable, we can look at the **costume #** and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
 
-To do this, you’ll need an **if...then** block to check each 'stopped' variable, and inside that an **if...then...else** block to see if the player has won or lost by comparing each **costume #**.
+To do this, you’ll need an `if...then` block to check each **stopped** variable, and inside that an `if...then...else` block to see if the player has won or lost by comparing each **costume #**.
 
-```scratch
+    ```scratch
+    when I receive [checkForEnd v]
+        if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
+            if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
+            else
 
-   when I receive [checkForEnd v]
-         if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
-                 if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
-                 else
-
-```
+    ```
+    
 From this point on, you could announce the result of the game using a broadcast and respond to this with another sprite. Maybe get Felix back to congratulate or commiserate the player?
 
 ##Challenge 3: Make the game get harder and easier over time
 
 Different people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__
 
-One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called __delay__, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier). 
+One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called **delay**, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier). 
 
-You'll probably need to think about using a different way of starting the game each time it is played instead of the ** when flag clicked**. Then you can store values in variables that are remmebered between each round of the game. 
+You'll probably need to think about using a different way of starting the game each time it is played instead of the `when flag clicked`. Then you can store values in variables that are remembered between each round of the game. 
 
 __Well done you’ve finished, now you can enjoy the game!__
 Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
