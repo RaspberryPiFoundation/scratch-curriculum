@@ -7,6 +7,8 @@ language: en
 # Introduction { .intro}
 We are going to make a game of catch with __Felix the cat__ and __Herbert__ the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/01%20Felix%20%26%20Herbert/felixherbert_screenshot.png)
+
 # STEP 1: Felix follows the mouse pointer { .activity}
 
 ## Activity Checklist { .check}
