@@ -14,6 +14,7 @@ This project covers:
 * Playing Sounds
 * Conditional statements 
 * Modifying resources
+* Using custom blocks
 
 ##Resources
 This project uses resources found in the scratch backgrounds and costumes folders as well as a user created resource based on a scratch resource.
