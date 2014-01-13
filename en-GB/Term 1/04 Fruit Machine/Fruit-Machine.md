@@ -4,9 +4,6 @@ level: Level 2
 language: en
 ...
 
-
-#Fruit machine
-
 # Introduction: ( .intro}
 This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
 
