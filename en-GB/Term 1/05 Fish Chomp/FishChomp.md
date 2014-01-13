@@ -1,12 +1,18 @@
-Level 2
+---
+lesson_title: Fish Chomp
+level: Level 2
+language: en
+...
 
 #Fish Chomp
 
-__Introduction:__
+# Introduction: { .intro}
 We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
 
-##STEP 1: Create a sprite that follows the mouse
+# STEP 1: Create a sprite that follows the mouse { .activity}
 __Let’s make the Hungry Fish swim around the sea!__
+
+## Activity Checklist { .check}
 
 1. Start a new Scratch project.
 2. Select the Stage, then select the Stage’s Backdrop tab. Import the
@@ -23,15 +29,14 @@ background **Nature/underwater3** using 'choose background from library'. Finall
             move (3) steps
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
+
 __Click the green flag.__ 
 Move the mouse pointer around the sea. Does the fish follow the pointer?
 What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
 
-
 1. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
-(The `distance to` block is in the
-*Sensing* palette).
+(The `distance to` block is in the *Sensing* palette).
 
     ```scratch
     when FLAG clicked
@@ -41,17 +46,17 @@ What happens if you don’t move the mouse pointer and the fish catches up with 
     ```
 
 
-###Test Your Project
+## Save your project { .save}
 
-Save your project
-
-##Things to try
+## Things to try { .try}
 
 If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
 
 
-##STEP 2: Add some prey
+# STEP 2: Add some prey { .activity}
 __It's time to make something for the Hungry Fish to try to eat!__
+
+## Activity Checklist { .check}
 
 1. Create a new sprite from the file **Animals/starfish**. 
 2. Use the Shrink sprite tool (above the Stage)
@@ -66,23 +71,26 @@ to make the sprite smaller.
             if on edge, bounce  
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
+
 __Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
 
 __At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
 
-Save your project
+## Save your project { .save}
 
-###Things to try
+## Things to try { .try}
 
 * Try changing the numbers in the pick random and move blocks. How do they make the prey move differently?
 * What does the `if on edge, bounce` block do? Take it out and see what happens.
 
-##STEP 3: Hungry Fish eats the prey
+##STEP 3: Hungry Fish eats the prey { .activity}
 
 __Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
 * The Hungry Fish needs to close its mouth and make a "chomp" sound.
 * The prey needs to disappear, then reappear a short while later.
+
+## Activity Checklist { .check}
 
 1. First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the `touching` block to see if it is touching the fish.
 
@@ -98,7 +106,7 @@ forever
 			show
 ```
 
-###Test Your Project
+## Test Your Project { .flag}
 __Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
 
 2. How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the `touching color` block, and see if it is touching the fish’s blue teeth. To do this, replace the `touching` block with a
@@ -118,7 +126,7 @@ __Try out your game again – can you spot any problems?__ Notice that the prey 
 				show
 	```
     
-###Test your project
+## Test Your Project { .flag}
 
 Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
 
@@ -155,11 +163,11 @@ __Now we want the fish to respond to this message by making a “chomp” sound 
 
 __Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
 
-###Test Your Project
+## Test Your Project { .flag}
 Click the green flag.
 Does the Hungry Fish eat the prey? Does it eat each of the different prey?
 
-Save your project
+## Save your project { .save}
 
 ###Things to think about
 Why do we need to add a show block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
@@ -167,7 +175,7 @@ Why do we need to add a show block to the start of the prey’s script? Think ab
 __Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
 
 
-##Challenge 1: Make the prey move differently
+## Challenge 1: Make the prey move differently { .challenge}
 
 At the moment, all the prey move in the same way. __Can you make one of them
 move differently?__
@@ -179,7 +187,7 @@ __Pick one of the prey to experiment on.__ If they have the same costumes, make 
 Make this prey move slower than the others. __Hint:__ Look at the `move 2 steps` block.
 
 
-###Test Your Project
+## Test Your Project { .flag}
 Does the prey move slower? Does this make the game better?
 If you can do that, __try making one of the prey move quicker than the others.__
 
@@ -191,9 +199,9 @@ How about you make each of the prey behave differently, using different combinat
 
 Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
 
-Save your project
+## Save your project { .save}
 
-##Challenge 2: Make the prey avoid the Hungry Fish
+## Challenge 2: Make the prey avoid the Hungry Fish { .challenge}
 
 The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real prey swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
 
@@ -203,31 +211,31 @@ Using that idea, __make one of the prey always point away from the Hungry Fish._
 
 You might find that your prey gets stuck in the corner if it is always swimming away from the fish. You might want to have the prey only try to escape when the fish gets close. __Hint:__ Look back at how we used the `distance to` block ealier in the game. 
 
-###Test Your Project
+## Test Your Project { .flag}
 Does this make the prey harder to catch? Does it make the game better?
 
-Save your project
+## Save your project { .save}
 
-##Challenge 3: Add a score
+## Challenge 3: Add a score { .challenge}
 It’s not enough just to eat lobsters. How do you know you’re better at the game than your friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
 
 Where should you put the block that changes the score?
 
 Make sure the score goes back to zero at the start of the game. Where should you put that block?
 
-###Test Your Project
+## Test Your Project { .flag}
 Does the score go to zero at the start of the game? Does it go up every time you eat prey?
 
-Save your project
+## Save your project { .save}
 
-##Challenge 4: Add a countdown
+## Challenge 4: Add a countdown { .challenge}
 
 __Give yourself a time limit in the game.__ How many prey can you eat in thirty
 seconds?
 
 Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
 
-###Test Your Project
+## Test Your Project { .flag}
 Does the timer start at 30?
 
 Does it go down at the right speed?
@@ -236,21 +244,22 @@ Can you catch prey while the timer is going?
 
 Does the game stop when the timer reaches zero?
 
-Save your project
+## Save your project { .save}
 
-##Challenge 5: Add a bonus score
+## Challenge 5: Add a bonus score { .challenge}
 Award a large bonus score if you can eat all three lobsters at the same time. How can
 you tell how many prey have been eaten?
+
 __Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
 
-Save your project
+## Save your project { .save}
 
-##Challenge 6: Change the game: keep a prey alive!
+## Challenge 6: Change the game: keep a prey alive! { .challenge}
 Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
 
 __Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten? Instead of having a score, how about giving the prey 3 lives and ending the game when they're all gone?
 
-Save your project
+## Save your project { .save}
 
 __Well done you’ve finished, now you can enjoy the game!__
 Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!

@@ -1,25 +1,28 @@
-Level 2
+---
+lesson_title: Desert Race
+level: Level 2
+language: en
+...
 
-#Desert Race
 
-__Introduction:__
+# Introduction: { .intro}
 This game is a two player game where you race a parrot and a lioness across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
 
 
-##STEP 1: Create the scene and add the sprites
+# STEP 1: Create the scene and add the sprites { .activity}
+
+## Activity Checklist { .check}
 
 1. Select the Stage, and add the Nature/desert backdrop.
 ticking off the boxes below:
 2. Add a new sprite, select the Lioness sprite that you will find in the Animals folder.
 3. Add another sprite, select the Parrot sprite that you will find in the Animals folder. Shrink it so that it is roughly the same size as the lioness sprite.
 
-
-
-##STEP 2: Make the lioness and the parrot move
-
+# STEP 2: Make the lioness and the parrot move { .activity}
 
 We want the sprite to move when you press a key.
 
+## Activity Checklist { .check}
 
 1. First select the lion sprite and set it to `move (4) steps` when you press the ‘L’ key.
 
@@ -35,16 +38,19 @@ We want the sprite to move when you press a key.
         move (4) steps
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
+
 __Click the green flag__ 
 Do your lioness and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
 
-Save your project
+## Save your project { .save}
 
 
-##STEP 3: Starting the race
+# STEP 3: Starting the race { .activity}
 
 We need to have a way to start the race and to know who has won. __First we create a start button.__
+
+## Activity Checklist { .check}
 
 1. Add a new sprite from a file. Choose the button3 sprite which is inside “Things”.
 2. Edit the costume of the button sprite, add the text ‘start’ to it and click OK. Move the sprite to the middle of the stage.
@@ -65,12 +71,12 @@ We need to have a way to start the race and to know who has won. __First we crea
         hide
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
 __Click on the green flag.__
 
 When you press the start button does it countdown to the start of the race before disappearing?
 
-Save your project
+## Save your project { .save}
 
 We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.
 
@@ -94,7 +100,7 @@ parrot to move if __racing = 1__.
 ```
 5. Now do the same for the lion sprite.
 
-###Test Your Project
+## Test Your Project { .flag}
 __Click on the green flag.__
 
 Does the lioness or the parrot move only after the countdown has finished?
@@ -102,7 +108,11 @@ Does the lioness or the parrot move only after the countdown has finished?
 We want to know who wins the race and reset it when it has finished so you can
 race again.
 
-##STEP 4: Finishing the race
+## Save your project { .save}
+
+# STEP 4: Finishing the race { .activity}
+
+## Activity Checklist { .check}
 
 1. Add a block to the parrot’s script that sets the **racing** variable to be 0 when the sprite touches the edge of the screen.
 
@@ -127,20 +137,22 @@ race again.
     ```
 4. Now repeat these steps for the lioness.
 
-###Test Your Project
+## Test Your Project { .flag}
 __Click on the green flag.__
 
 Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?
 Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
 
-Save your project
+## Save your project { .save}
 
-##STEP 5: Resetting the game
+# STEP 5: Resetting the game { .activity}
 
 After the race is finished we need to tell the other sprites we have won and reset the
 game so we can play again.
 
 __We need the winning sprite to broadcast that it has won.__
+
+## Activity Checklist { .check}
 
 1. Click on the Parrot sprite.
 Add a block that broadcasts a "finished” message after the sprite says it has won.
@@ -173,15 +185,16 @@ when we click the flag.
     ```
 5. Now click on the button sprite and add a script that shows it when it receives the finished message.
 
-###Test Your Project
+## Test Your Project { .flag}
+
 __Click on the green flag.__
 
 Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the
 other moving the Lion by pressing ‘L’?
 
-Save your project
+## Save your project { .save}
 
-##Challenge 1: Add a booster
+##Challenge 1: Add a booster { .challenge}
 
 * __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__
 * __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.
@@ -200,11 +213,11 @@ Save your project
             broadcast [finished v]
     ```
     
-###Test Your Project
+## Test Your Project { .flag}
 
-Save your project
+## Save your project { .save}
 
-##Challenge 2: Use custom blocks to simplify your script
+##Challenge 2: Use custom blocks to simplify your script { .challenge}
 
 The code to check if the race has finished is now used in two places for each sprite: when the sprite is moving normally and when it's moving with the booster. We can simplify our script using a custom block which is a chunk of code that gets used in more than one place. It's a bit like making up our own Scratch code block!
 
@@ -236,8 +249,8 @@ Delete the other `if touching edge?` block from your script and replace it with 
 
 Does this make your code easier to read? Can you create a similar custom block for the lioness sprite?
 
-###Test Your Project
+## Test Your Project { .flag}
 
-Save your project
+## Save your project { .save}
 
 __Well done you’ve finished, now you can enjoy the game!__

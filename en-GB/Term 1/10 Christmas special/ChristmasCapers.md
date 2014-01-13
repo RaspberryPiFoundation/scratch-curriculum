@@ -1,12 +1,18 @@
-Level 2
+---
+lesson_title: Christmas Capers
+level: Level 2
+language: en
+...
 
-#Christmas Capers
 
-__Introduction:__
+# Introduction: { .intro}
+
 __In this project we’ll create a game with scrolling backgrounds, scoring and a festive game over screen.__
 A disaster in a toy factory has sent presents flying into the sky, help Rudolf to save Christmas by catching the presents!
 
-##STEP 1: Make Rudolph fly
+# STEP 1: Make Rudolph fly {.activity}
+
+## Activity Checklist { .check}
 
 1. Start a new Scratch project. Delete the cat by right-clicking it and selecting Delete
 2. Replace the background with SkyBackground.png.
@@ -20,9 +26,11 @@ A disaster in a toy factory has sent presents flying into the sky, help Rudolf t
 			go to [mouse-pointer v]
 	```
 
-###Test Your Project
+## Test Your Project { .flag}
 
 __Click the green flag and move the mouse__, does Rudolph follow the mouse?
+
+## Save your project { .save}
 
 1. To make the game more interesting we will add some moving snowy hills to make it look like Rudolf is flying. Add the Snow sprite to the project (use the __SnowHills.png__ file).
 2. Rename the sprite to __Snow1__.
@@ -40,9 +48,11 @@ it from the stage. This will be used to control how the hills move.
 			set [ScrollX v] to [0]
 	```
 
-###Test Your Project
+## Test Your Project { .flag}
 
 __Click the green flag__, do the hills move? What happens as the hills move to the side of the screen?
+
+## Save your project { .save}
 
 10. Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the __new sprite from file__ button to add the Snow sprite to the project again (use the SnowHills.png file).
 11. Rename the sprite to __Snow2__.
@@ -55,13 +65,15 @@ __Click the green flag__, do the hills move? What happens as the hills move to t
         set x to <(ScrollX) + [479]>
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
 
 __Click the green flag__, do the hills move? Has the issue with the flickering trees been fixed?
 
-__Save your project__
+## Save your project { .save}
 
-##STEP 2: Falling Presents
+# STEP 2: Falling Presents { .activity}
+
+## Activity Checklist { .check}
 
 1. We now need to add in the presents for Rudolph to collect. Add the **Present** sprite to the project (use the **Present.png** file).
 2. __Create a new variable__ by clicking the *Data*  tab and then **make a variable**. Call it **Finish** and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control when the present should be removed from the game.
@@ -84,9 +96,11 @@ __Save your project__
 				set (Finish) to [1]
     ```
 
-###Test your project
+## Test Your Project { .flag}
 
 __Click the green flag,__ do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?
+
+## Save your project { .save}
 
 1. Let’s make the game more interesting by changing the colour of the presents each time they fall. Do this by using the `change colour` block.
 2. Change the speed of each present by replacing `set Speed to -1` with the
@@ -108,10 +122,15 @@ __Click the green flag,__ do the presents fall from the sky? Do they disappear w
 				set (Finish) to [1]
 	```
 
-###Test Your Project
+## Test Your Project { .flag}
+
 __Click the green flag,__ do the presents fall at different speeds and colours?
 
-##STEP 3: Scoring and Sound Effects
+## Save your project { .save}
+
+# STEP 3: Scoring and Sound Effects { .activity}
+
+## Activity Checklist { .check}
 
 1. __Let’s change our script to keep track of a score within the game.__ We can then use this later to work out when the game over message should appear.
 2. Create a new variable. Call it **Score** and make it for all sprites. Leave this variable ticked so it appears on the screen.
@@ -150,13 +169,13 @@ __Click the green flag,__ do the presents fall at different speeds and colours?
 
 Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.
 
-###Test Your Project
+## Test Your Project { .flag}
 
 __Click the green flag,__ does the score change when Rudolph touches a present?
 
-__SAVE YOUR PROJECT__
+## Save your project { .save}
 
-##STEP 4: Game over
+# STEP 4: Game over { .activity}
 
 1. __Let’s change our script to keep track of a score within the game.__ We can then use this later to work out when the game over message should appear.
 2. Change the script on the __Stage__ so when the __Score reaches 10__ we will
@@ -185,18 +204,20 @@ __SAVE YOUR PROJECT__
 	stop [all v]
 	```
 
-###Test Your Project
+## Test Your Project { .flag}
 
 __Click the green flag,__ does the score change when Rudolph touches a present? 
 
-__SAVE YOUR PROJECT__
+## Save your project { .save}
 
-##Challenge: Make the game harder
+##Challenge: Make the game harder { .challenge}
 
 * Can you make the presents wobble on their way down the screen?
 * Can you add more than one present to the game at the same time? 
 * Change the game over message to appear after 20 presents are collected. 
 * Can you reduce the score by 1 when a present hits the ground?
+
+## Save your project { .save}
 
 __Well done you’ve finished, now you can enjoy the game.__
 Have a very Merry Christmas!

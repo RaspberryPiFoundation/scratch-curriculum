@@ -1,11 +1,18 @@
-Level 2
+---
+lesson_title: Fruit Machine
+level: Level 2
+language: en
+...
+
 
 #Fruit machine
 
-__Introduction:__
+# Introduction: ( .intro}
 This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
 
-##STEP 1: Create a sprite that changes costumes
+# STEP 1: Create a sprite that changes costumes { .activity}
+
+## Activity Checklist { .check}
 
 __Let’s import the different pictures for the game__
 
@@ -17,7 +24,9 @@ __Let’s import the different pictures for the game__
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
 
-##STEP 2: Making the picture change
+# STEP 2: Making the picture change { .activity}
+
+## Activity Checklist { .check}
 
 1. Click the *Scripts* tab.
 2. Click *Events* and drag a `when flag clicked` into the scripts area. This will be triggered when we click the green flag.
@@ -35,17 +44,19 @@ __Now we’ve got some costumes, we want the sprite to change between them.__
 
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
 __Click the green flag.__ 
 Do the costumes change at a sensible rate?
 
-Save your project
+## Save your project { .save}
 
-###Things to try
+## Things to try { .try}
 
 Adjust the time in the `wait 1 secs` block.What numbers do you think would make the game too easy, or too hard?
 
-##STEP 3: Making it stop when we click on it
+# STEP 3: Making it stop when we click on it {.activity}
+
+## Activity Checklist { .check}
 
 Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?
 
@@ -64,7 +75,7 @@ Great! We can make the sprite change costumes forever, but how do we make it sto
 
     ```
 
-###Test Your Project
+## Test Your Project { .flag}
 __Click the green flag, wait for a moment, then click on the sprite.__ 
 
 Does it change costume before you click on it? 
@@ -73,21 +84,21 @@ Does it stop when you do click on it?
 
 __Start the program again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click somewhere else on the Stage? Somewhere else in the Scratch window? Somewhere outside the Scratch window?
 
-Save your project
+## Save your project { .save}
 
-##Step 4: Creating the other sprite
+# Step 4: Creating the other sprite {.activity}
 __Now we need to make the other sprites so we can play our game!__
 
 1. Duplicate the sprite (Fruit1) by right clicking on it in the bottom right corner.
 2. Duplicate it again so there are 3 sprites on the screen.
 3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
 
-###Test Your Project
+## Test Your Project { .flag}
 __Click the green flag.__ All the sprites should change. Try to stop them all on the same picture!
 
-Save your project
+## Save your project { .save}
 
-###Things to try
+## Things to try { .try}
 
 When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. Can you make the sprites change to a random costume when the green flag is clicked?
 Hint: try picking a random costume for each sprite when the game is started.
@@ -95,7 +106,7 @@ Hint: try picking a random costume for each sprite when the game is started.
 __Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
 
 
-##Challenge 1: Make the game harder
+##Challenge 1: Make the game harder { .challenge}
 
 Change the difficulty of the game somehow. Just making the costumes change quicker is easy. Try and do something more imaginative. Some ideas you might like to try:
 
@@ -110,7 +121,7 @@ __Have fun coming up with your own things!__
 Every time you make a change, think about whether it make the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
 
 
-##Challenge 2: Detect when all the sprites have stopped on the same costume
+##Challenge 2: Detect when all the sprites have stopped on the same costume { .challenge}
 
 __The aim of the game is click on the sprites so they’re stopped while showing the same costume. It would be nice if the stage detected when you’d finished playing and then told you if you had won or lost by checking to see if each sprite had the same costume.__
 
@@ -132,7 +143,7 @@ To do this, you’ll need an `if...then` block to check each **stopped** variabl
     
 From this point on, you could announce the result of the game using a broadcast and respond to this with another sprite. Maybe get Felix back to congratulate or commiserate the player?
 
-##Challenge 3: Make the game get harder and easier over time
+##Challenge 3: Make the game get harder and easier over time { .challenge}
 
 Different people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__
 
