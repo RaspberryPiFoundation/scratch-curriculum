@@ -13,11 +13,10 @@ __Let’s import the different pictures for the game__
 ## Activity Checklist { .check}
 
 + Start a new Scratch project. Delete the cat by right clicking it and clicking Delete
-+ Replace the background with outdoor/city-with-water
-+ Use the __new sprite from file__ button to add a Rocket sprite
-to the project (use the Resources/Rocket.png costume).
-+ Make the rocket hide when the green
-flag is clicked.
++ Replace the backdrop with __outdoor/city-with-water__
++ Use the `Upload sprite from file` {.blockgrey} button to add a Rocket sprite
+to the project (use the __Resources/Rocket.png__ costume).
++ Make the rocket hide when the green flag is clicked.
 
 Now we want to make the rocket move towards the mouse when the mouse is clicked.
 
@@ -28,7 +27,7 @@ Now we want to make the rocket move towards the mouse when the mouse is clicked.
 	when FLAG clicked
 	hide
 
-	when (space key) pressed 
+	when [space v] key pressed 
 	show
 	glide (1) secs to x: (mouse x) y: (mouse y)
 ```
@@ -48,7 +47,7 @@ What happens if you move the mouse and press space again?
 	when FLAG clicked
 	hide
 
-	when (space key) pressed
+	when [space v] key pressed 
 	go to x: (mouse x) y: (-200)
 	show
 	glide (1) secs to x: (mouse x) y: (mouse y)
@@ -61,8 +60,7 @@ Does the rocket fly towards the mouse from the bottom of the screen? What happen
 ## Activity Checklist { .check}
 
 + Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
-Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least make
-sure the rocket is hidden when everything starts up.
+Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least make sure the rocket is hidden when everything starts up.
 
 ```blocks
 
@@ -87,7 +85,7 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 
 ## Activity Checklist { .check}
 
-+ The first step to make the rocket explode is to make it play a bang sound Resources\bang before it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click import
++ The first step to make the rocket explode is to make it play a bang sound __Resources/bang.wav__ before it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click the `Upload sound from file` {.blockgrey} button.
 
 ```blocks
 
@@ -96,12 +94,12 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 	forever
 		if <mouse down?> then
 			go to x: (mouse x) y: (-200)
-			play sound [bang]
+			play sound [bang v]
 			show
 			glide (1) secs to x: (mouse x) y: (mouse y)
 			hide
 ```
-2. Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
++ Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
 
 ```blocks
 
@@ -110,11 +108,11 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 	forever
 		if <mouse down?> then
 			go to x: (mouse x) y: (-200)
-			play sound [bang]
+			play sound [bang v]
 			show
 			glide (1) secs to x: (mouse x) y: (mouse y)
 			hide
-			broadcast [explode]
+			broadcast [explode v]
 ```
 ##Test Your Project {.flag}
 __Click the green flag.__ 
@@ -122,16 +120,16 @@ Make sure the rocket plays a noise and hides when it reaches the mouse.
 
 ## Activity Checklist { .check}
 
-+ Create new sprite from File,  Resources/firework1.png
++ Create new sprite from File, __Resources/firework1.png__
 + When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
 
 ```blocks
 
-	when I receive [explode]
+	when I receive [explode v]
 	hide
-	go to x: ([x position] of [rocket]) y: ([y position] of [rocket])
+	go to [rocket v]
 	show
-	wait (1) sec
+	wait (1) secs
 	hide
 ```
 ## Test Your Project { .flag}
@@ -143,16 +141,16 @@ What happens if you hold the mouse button down whilst moving the mouse? (Don’t
 
 #STEP 3: Make each explosion unique { .activity}
 
-+ Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.
++ Now we can make each explosion even more unique by using the `set color effect` {.blockpurple} block, and have it pick a random colour between __1__ and __200__ before showing it.
 
 ```blocks
 
 	when I receive [explode]
 	hide
-	set [color] effect to (pick random (1) to (200))
-	go to x: ([x position] of [rocket]) y: ([y position] of [rocket])
+	set [color v] effect to (pick random (1) to (200))
+	go to [rocket v]
 	show
-	wait (1) sec
+	wait (1) secs
 	hide	
 	
 ```
@@ -164,28 +162,28 @@ Does each explosion have a different colour?
 
 ## Activity Checklist { .check}
 
-+ Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.
++ Lets add a number of different possible explosion graphics as costumes, using __Resources/firework2.png__ and __Resources/firework3.png__, and switch between them for each rocket, again before showing it.
 
-###Test Your Project { .flag}
+##Test Your Project { .flag}
 __Click the green flag.__ 
 
 Does each rocket have a different explosion graphic?
 
 ## Activity Checklist { .check}
 
-+ Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.
++ Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to __5%__ before we show it, and then once it’s shown, increase the size by __2 fifty times__, using a `repeat` {.blockorange} block.
 
 ```blocks
 	
 	when I receive [explode]
 	hide
 	set [color] effect to (pick random (1) to (200))
-	go to x: ([x position] of [rocket]) y: ([y position] of [rocket])
+	go to [rocket v]
 	show
 	set size to (5) %
-	repeat 50
-		change size by 2
-	wait (1) sec
+	repeat (50)
+		change size by (2)
+	end
 	hide
 	
 ```
@@ -195,7 +193,7 @@ __Click the green flag.__
 Does the explosion graphic spread out from the centre of the rocket and slowly grow?
 
 ##Things to try { .try}
-Why not try making each explosion more unique by altering the size and speed of growth for the explosion.
++ Why not try making each explosion more unique by altering the size and speed of growth for the explosion.
 
 ##Save your project { .save}
 
@@ -214,11 +212,11 @@ This occurs because when the rocket broadcasts its explosion, it will immediatel
 	forever
 		if <mouse down?> then
 			go to x: (mouse x) y: (-200)
-			play sound [bang]
+			play sound [bang v]
 			show
 			glide (1) secs to x: (mouse x) y: (mouse y)
 			hide
-			broadcast [explode] and wait
+			broadcast [explode v] and wait
 
 ```
 ##Test Your Project { .flag}
