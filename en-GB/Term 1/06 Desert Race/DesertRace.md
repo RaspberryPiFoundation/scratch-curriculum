@@ -5,6 +5,7 @@ Level 2
 __Introduction:__
 This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/06%20Desert%20Race/desertrace_screenshot.png?raw=true)
 
 ##STEP 1: Create the scene and add the sprites
 

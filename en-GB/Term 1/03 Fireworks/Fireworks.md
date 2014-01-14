@@ -7,6 +7,8 @@ language: en
 # Introduction { .intro}
 In this project, we’ll create a fireworks display over a city.
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/03%20Fireworks/fireworks_screenshot.png?raw=true)
+
 #STEP 1: Create a rocket that flies towards the mouse { .activity}
 __Let’s import the different pictures for the game__
 

@@ -5,6 +5,8 @@ Level 2
 __Introduction:__
 We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/05%20Fish%20Chomp/fishchomp_screenshot.png?raw=true)
+
 ##STEP 1: Create a sprite that follows the mouse
 __Let’s make the Hungry Fish swim around the sea!__
 

@@ -6,6 +6,8 @@ __Introduction:__
 __In this project we’ll create a game with scrolling backgrounds, scoring and a festive game over screen.__
 A disaster in a toy factory has sent presents flying into the sky, help Rudolf to save Christmas by catching the presents!
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/10%20Christmas%20special/xmas_screenshot.png?raw=true)
+
 ##STEP 1: Make Rudolph fly
 
 1. Start a new Scratch project. Delete the cat by right-clicking it and selecting Delete

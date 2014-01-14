@@ -5,6 +5,8 @@ Level 3
 __Introduction__
 A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/07%20What's%20That/whatsthat_screenshot.png?raw=true)
+
 ##STEP 1: Make different things appear on the blackboard
 
 We want a few different pictures to show up on the blackboard.

@@ -5,6 +5,8 @@ Level 2
 __Introduction:__
 This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/04%20Fruit%20Machine/fruitmachine_screenshot.png?raw=true)
+
 ##STEP 1: Create a sprite that changes costumes
 
 __Let’s import the different pictures for the game__

@@ -7,6 +7,8 @@ language: en
 # Introduction { .intro}
 This project is like the game __Whack-a-Mole__. You get points for hitting the ghosts that appear on the screen. The aim is to get as many points as possible in 30 seconds!
 
+![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/02%20Ghostbusters/ghostbsuters_screenshot.png?raw=true)
+
 #STEP 1: Create a flying ghost { .activity}
 
 ## Activity Checklist { .check}
