@@ -23,3 +23,4 @@ Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes 
 
 ###Wyzwania
 1. Dodaj więcej wiedźm
+
