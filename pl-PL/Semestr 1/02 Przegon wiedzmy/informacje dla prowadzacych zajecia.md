@@ -1,10 +1,10 @@
 #INFORMACJE DLA PROWADZĄCYCH ZAJĘCIA
 ##(Przegoń wiedźmy)
 
-####Wstęp:
+###Wstęp
 Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty, klikając wiedźmy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu trzydziestu sekund.
 
-####Umiejętności
+###Umiejętności
 
 Ten projekt uczy:
 
@@ -12,10 +12,10 @@ Ten projekt uczy:
 2. Korzystania z pętli
 3. Ustawiania i liczenia punktów
 
-####Zasoby
+###Zasoby
 Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch.
 
-####Podstawowe ćwiczenia
+###Podstawowe ćwiczenia
 * Krok 1: Stwórz latającą wiedźmę
 * Krok 2: Spraw, aby wiedźma losowo pojawiała się i znikała
 * Krok 3: Spraw, aby wiedźma znikała, gdy na nią klikniesz
