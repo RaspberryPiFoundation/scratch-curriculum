@@ -4,7 +4,7 @@ Poziom 1
 
 __Wstęp:__
 
-Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty, klikając wiedźmy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu trzydziestu sekund.
+Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty, klikając wiedźmy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu trzydziestu sekund.
 
 ##KROK 1: Stwórz latającą wiedźmę
 
