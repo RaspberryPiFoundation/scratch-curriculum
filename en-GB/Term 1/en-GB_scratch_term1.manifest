@@ -1,0 +1,65 @@
+{
+    "name": "scratch",
+    "language": "en-GB",
+    "term": 1,
+
+
+    "projects": [
+        {
+            "filename": "01 Felix & Herbert/felix_&_herbert.md",
+            "notes": ["01 Felix & Herbert/notes for club leaders.md"],
+            "number": 1
+        },
+        {
+            "filename": "02 Ghostbusters/Ghostbusters.md",
+            "notes": ["02 Ghostbusters/notes for club leaders.md"],
+            "number": 2
+        },
+        {
+            "filename": "03 Fireworks/Fireworks.md",
+            "notes": ["03 Fireworks/notes for club leaders.md"],
+            "number": 3
+        },
+        {
+            "filename": "04 Fruit Machine/FruitMachine.md",
+            "notes": ["04 Fruit Machine/notes for club leaders.md"],
+            "number": 4
+        },
+        {
+            "filename": "05 Fish Chomp/FishChomp.md",
+            "notes": ["05 Fish Chomp/notes for club leaders.md"],
+            "number": 5
+        },
+        {
+            "filename": "06 Desert Race/DesertRace.md",
+            "notes": ["06 Desert Race/notes for club leaders.md"],
+            "number": 6
+        },
+        {
+            "filename": "07 What's That/WhatsThat.md",
+            "notes": ["07 What's That/notes for club leaders.md"],
+            "number": 7
+        },
+        {
+            "filename": "08 Paint Box/PaintBox.md",
+            "notes": ["08 Paint Box/notes for club leaders.md"],
+            "number": 8
+        },
+        {
+            "filename": "09 Create Your Own Game/CreateYourOwnGame.md",
+            "notes": ["09 Create Your Own Game/notes for club leaders.md"],
+            "number": 9
+        },
+        {
+            "filename": "10 Christmas special/ChristmasCapers.md",
+            "number": 10
+        }
+    ],
+    "resources": [
+        { 
+            "name": "Volunteer Notes",
+            "files": ["volunteer resources/*.md"]
+        }
+    ]
+}
+
