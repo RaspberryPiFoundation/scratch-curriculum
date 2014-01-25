@@ -1,5 +1,5 @@
 ---
-lesson_title: Ghostbusters
+title: Ghostbusters
 level: Level 1
 language: en
 ...

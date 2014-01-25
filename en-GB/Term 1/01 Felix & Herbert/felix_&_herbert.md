@@ -1,7 +1,8 @@
 ---
-lesson_title: Felix and Herbert
+title: Felix and Herbert
 level: Level 1
 language: en
+stylesheet: scratch
 ...
 
 # Introduction { .intro}
@@ -19,16 +20,16 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 + Make sure Felix only points left-right by clicking this button:
 + Create this script:
 
-```blocks
-
-	When FLAG clicked
-	forever
-		point towards [mouse-pointer]
-		move (10) steps
-		next costume
-		play drum (62) for (0.3) beats
-
-```
+    ```blocks
+    
+        When FLAG clicked
+        forever
+            point towards [mouse-pointer]
+            move (10) steps
+            next costume
+            play drum (62) for (0.3) beats
+    
+    ```
 		
 ## Test Your Project { .flag}
 __Click the green flag.__
@@ -48,14 +49,13 @@ __Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.
 Try six clicks on the shrink button:
 + Make sure Herbert only points left-right. 5. Give Herbert this script:
 
-
-```blocks
-	
-	When FLAG clicked
-	forever
-		go to [mouse-pointer]
-		point towards [Felix]
-```
+    ```blocks
+        
+        When FLAG clicked
+        forever
+            go to [mouse-pointer]
+            point towards [Felix]
+    ```
 
 ## Test Your Project { .flag}
 __Click the green flag.__
@@ -71,17 +71,17 @@ __We want Felix to know when he’s caught Herbert, and tell us.__
 
 1. Change Felix’s script to be this:
 
-```blocks
-	
-	when FLAG clicked
-	forever
-		point towards [mouse-pointer]
-		move (10) steps
-		next costume
-		play (drum 62) for (0.3) beats
-		if <touching [Herbert]?> then
-			say [Caught you!] for (1) secs
-```
+    ```blocks
+        
+        when FLAG clicked
+        forever
+            point towards [mouse-pointer]
+            move (10) steps
+            next costume
+            play (drum 62) for (0.3) beats
+            if <touching [Herbert]?> then
+                say [Caught you!] for (1) secs
+    ```
 
 ## Test Your Project { .flag}
 __Click the green flag.__
@@ -98,19 +98,19 @@ __Instead of Felix saying something, we want Herbert to turn into a ghost when h
 
 + Change Felix’s script to send this message when he catches Herbert.
 
-```blocks
-	
-	when FLAG clicked
-	forever
-		point towards [mouse-pointer]
-		move (10) steps
-		next costume
-		play drum (62) for (0.3) beats
-		if <touching [Herbert]?> then
-			broadcast [caught]
-			play drum (58) for (0.2) beats
-			wait (1) sec
-```
+    ```blocks
+        
+        when FLAG clicked
+        forever
+            point towards [mouse-pointer]
+            move (10) steps
+            next costume
+            play drum (62) for (0.3) beats
+            if <touching [Herbert]?> then
+                broadcast [caught]
+                play drum (58) for (0.2) beats
+                wait (1) sec
+    ```
 + Import a new costume into Herbert from fantasy/ghost2-a.
 + Edit the costume to make it smaller.
 Six clicks on the shrink button should do.
@@ -119,13 +119,13 @@ costumes so the mouse costume is
 called ‘alive’ and the ghost costume is called ‘dead’.
 + Create a new script for Herbert to turn him into a ghost:
 
-```blocks
-	
-	when I receive [caught]
-	switch to costume [dead]
-	wait (0.5) secs
-	switch to costume [alive]
-```
+    ```blocks
+        
+        when I receive [caught]
+        switch to costume [dead]
+        wait (0.5) secs
+        switch to costume [alive]
+    ```
 	
 ## Test Your Project { .flag}
 __Click the green flag.__
@@ -146,16 +146,16 @@ We’ll start the score at zero and increase it by one every second. If Felix ca
 + Make a variable, for all sprites, called score. Click on Variables in the top menu, make a variable and name it score
 + On the stage, create these two scripts
 
-```blocks
-	
-	when FLAG clicked
-	set score to (0)
-	forever
-		change score by (1)
-		wait (1) secs
-	when I receive [caught]
-	change score by (-100)
-```
+    ```blocks
+        
+        when FLAG clicked
+        set score to (0)
+        forever
+            change score by (1)
+            wait (1) secs
+        when I receive [caught]
+        change score by (-100)
+    ```
 	
 ## Test Your Project { .flag}
 __Click the green flag.__

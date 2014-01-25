@@ -1,7 +1,7 @@
 {
     "name": "scratch",
     "language": "en-GB",
-    "term": 1,
+    "number": 1,
 
 
     "projects": [
@@ -55,10 +55,10 @@
             "number": 10
         }
     ],
-    "resources": [
+    "extras": [ 
         { 
             "name": "Volunteer Notes",
-            "files": ["volunteer resources/*.md"]
+            "notes": ["volunteer resources/*.md"]
         }
     ]
 }
