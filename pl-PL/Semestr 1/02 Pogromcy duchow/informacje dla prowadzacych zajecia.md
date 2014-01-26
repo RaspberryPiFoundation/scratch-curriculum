@@ -13,7 +13,7 @@ Ten projekt uczy:
 3. Ustawiania i liczenia punktów
 
 ####Zasoby
-Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch
+Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch.
 
 ####Podstawowe ćwiczenia
 * Krok 1: Stwórz latającego ducha

@@ -14,7 +14,7 @@ Ten projekt uczy:
 
 ####Zasoby
 
-Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch
+Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch.
 
 ####Podstawowe ćwiczenia
 * Krok 1: Feliks podąża za kursorem myszy
