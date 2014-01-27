@@ -1,4 +1,4 @@
-#NOTES FOR CLUB LEADERS
+#TILL INSTRUKTÖRERNA
 ##(Målarlådan)
 
 ###Introduktion
