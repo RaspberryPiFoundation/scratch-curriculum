@@ -20,14 +20,14 @@ __Now we want to make our ghost move__
 
 + Add a `Variable` {.blocklightgrey} for this sprite only called `speed` {.blockorange}.
 On the __Stage__, the stage monitor for this variable should say “__Ghost1 speed__”.
-If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the __Variables palette__ so it does not show on the Stage.
+If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the __Data palette__ so it does not show on the Stage.
 The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
 + We want the ghost to start moving when the game starts, __so make a script like this__:
 
 ```blocks
 
 	when FLAG clicked
-	set [speed] to [5]
+	set [speed v] to [5]
 	forever
 		move (speed) steps
 ```
@@ -94,7 +94,7 @@ To turn this into a game, we need to give the player something to do. They need 
 
 ## Activity Checklist { .check}
 
-+ In the __Sounds__ tab, add a new sound __electronic/fairydust__, using the `Choose sound from library` {.blockgrey} button. 
++ In the __Sounds__ tab, add a new sound __Electronic/fairydust__, using the `Choose sound from library` {.blockgrey} button. 
 
 + __Add this script to the ghost__:
 

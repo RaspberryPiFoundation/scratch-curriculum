@@ -129,7 +129,7 @@ Make sure the rocket plays a noise and hides when it reaches the mouse.
 	hide
 	go to [rocket v]
 	show
-	wait (1) sec
+	wait (1) secs
 	hide
 ```
 ## Test Your Project { .flag}
@@ -150,7 +150,7 @@ What happens if you hold the mouse button down whilst moving the mouse? (Don’t
 	set [color v] effect to (pick random (1) to (200))
 	go to [rocket v]
 	show
-	wait (1) sec
+	wait (1) secs
 	hide	
 	
 ```
@@ -178,7 +178,7 @@ Does each rocket have a different explosion graphic?
 	when I receive [explode]
 	hide
 	set [color] effect to (pick random (1) to (200))
-	go to [rocket V]
+	go to [rocket v]
 	show
 	set size to (5) %
 	repeat (50)

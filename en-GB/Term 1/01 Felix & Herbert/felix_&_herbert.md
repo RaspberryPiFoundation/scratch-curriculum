@@ -12,7 +12,9 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 ## Activity Checklist { .check}
 
 + **Start a new project.**
-+ Click on the **stage** next to the sprite and switch to the `Backdrops` {.blocklightgrey} tab, and then click the `Choose Backdrop from library` {.blocklightgrey} button and choose the background indoors/hall. Delete the original blank background.
+
++ Click on the **stage** next to the sprite and switch to the `Backdrops` {.blocklightgrey} tab, and then click the `Choose Backdrop from library` {.blocklightgrey} button and choose the backdrop indoors/hall. Delete the original blank backdrop.
+
 + Click on the sprite, and then click on the `i` button to the top left of the Sprite. Change the name of the sprite to **Felix**.
 + Make sure Felix only points left-right by clicking this button:
 + **Create this script**:
@@ -76,11 +78,11 @@ Does Herbert move with the mouse pointer? Does Felix chase Herbert?
 ```blocks
   when FLAG clicked
   forever
-    point towards [mouse-pointer]
+    point towards [mouse-pointer v]
     move (10) steps
     next costume
     play drum (3 v) for (0.3) beats
-    if <touching [herbert v]?>
+    if <touching [herbert v]?> then
       say [Caught you!] for (1) secs
     end
    end
@@ -110,7 +112,7 @@ Does Felix say when he’s caught Herbert?
           move (20) steps
           next costume
           play drum (3 v) for (0.3) beats
-          if <touching [herbert v]?>
+          if <touching [herbert v]?> then
             broadcast [caught v]
             play drum (17 v) for (0.2) beats
             wait (1) secs
@@ -162,7 +164,7 @@ when gf clicked
       wait (1) secs
    end
 
-when i receive [caught]
+when i receive [caught v]
 change [score v] by (-100)
 ```
 
