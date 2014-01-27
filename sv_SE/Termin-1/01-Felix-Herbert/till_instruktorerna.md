@@ -6,8 +6,11 @@ Vi ska skapa ett spel där katten Felix ska försöka ta musen Herbert. Du kontr
 
 #### Färdigheter
 Det här projektet täcker:
+
 1. Att byta klädsel och utseende
+
 2. Hålla koll på och sätta poängen
+
 3. Skicka ut meddelanden
 
 #### Material
@@ -17,8 +20,13 @@ Det här projektet använder material som finns i mapparna "Scratch Backgrounds"
 Följa musen
 
 #### Övningar
+
 Steg 1: Felix följer muspekaren
+
 Steg 2: Felix jagar Herbert
+
 Steg 3: Felix berättar när han fångat Herbert
+
 Steg 4: Herbert förvandlas till ett spöke när han blir fångad
+
 Steg 5: Poänghållning
