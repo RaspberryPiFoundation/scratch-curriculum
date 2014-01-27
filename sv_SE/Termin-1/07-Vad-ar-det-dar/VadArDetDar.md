@@ -161,7 +161,7 @@ Testet resulterar i två problem. Först och främst kommer felaktiga gissningar
 	visa
 ```
 
-För att fixa det andra problemet behöver vi stoppa __frågespritens__ repetera tills-loop när spelaren klickar på rätt svar. Vi använder en ny variabel för att göra det. Vi sätter den till __noll__ när spelet börjar och till __ett__ när man har vunnit spelet. Vi gör så att repetera tills-loopen tar slut när antingen poängen når __noll_ ELLER när spelvinnarvariabeln är satt till __ett.__
+För att fixa det andra problemet behöver vi stoppa __frågespritens__ repetera tills-loop när spelaren klickar på rätt svar. Vi använder en ny variabel för att göra det. Vi sätter den till __noll__ när spelet börjar och till __ett__ när man har vunnit spelet. Vi gör så att repetera tills-loopen tar slut när antingen poängen når __noll__ ELLER när spelvinnarvariabeln är satt till __ett.__
 
 12. Skapa en ny variabel som heter vunnit?
 13. Byt ut scripten så att de ser ut såhär:
