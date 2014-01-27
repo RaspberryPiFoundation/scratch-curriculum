@@ -83,13 +83,13 @@ för alltid
 	sätt Stopp till 0
 	gå till x: slumptal -230 till 230 y: slumptal 50 till 170
 	sätt Hastighet till -1
-	repetera tills Stop = 1
+	repetera tills stopp = 1
 		ändra y med hastighet 
 		om y-läge av Present < -160
-			sätt Stop till 1
+			sätt stopp till 1
 		(slut på om)
 		om rör Rudolf?
-			sätt stop till 1
+			sätt stopp till 1
 		(slut på om)
 	(slut på repetera)
 (slut på för alltid)
@@ -106,17 +106,17 @@ __Klicka på den gröna flaggan,__ faller julklapparna från himlen? Försvinner
 ```scratch
 när FLAGGA klickas på
 för alltid
-	sätt Stop till 0
+	sätt stopp till 0
 	gå till x: slumptal -230 till 230 y: slumptal 50 till 170
 	ändra färg effekten med slumptal 1 till 100
 	sätt hastighet  till -1
-	repetera tills Stop = 1
+	repetera tills stopp = 1
 		ändra y med hastighet 
 		om y-läge av Present < -160
-			sätt Stop till 1
+			sätt stopp till 1
 		(slut på om)
 		om rör Rudolf?
-			sätt stop till 1
+			sätt stopp till 1
 		(slut på om)
 	(slut på repetera)
 (slut på för alltid)
