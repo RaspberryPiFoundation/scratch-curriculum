@@ -1,6 +1,9 @@
-Level 4
-
-#Design & animate your own monster
+---
+title: Design & animate your own monster
+stylesheet: scratch
+level: 4
+language: en-GB
+...
 
 __Introduction:__
 In this project you will design and animate your very own monster! There are a few steps before your monster is finished though. You’ll need to plan what your monster looks like, how they move, where they live and if they make any sounds.

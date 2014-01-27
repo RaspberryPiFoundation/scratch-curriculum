@@ -1,0 +1,27 @@
+{
+    "name": "scratch",
+    "language": "en-GB",
+    "number": 2,
+
+
+    "projects": [
+        {
+            "filename":"01 Make a monster/For students/Monster-worksheet.md",
+            "note": "01 Make a monster/For leaders/Monster-notes.md",
+            "number": 1
+        },
+        {
+            "filename": "02 Sound machine/For students/SoundMachine-WORKSHEET.pdf",
+            "title": "Sound Machine",
+            "note": "02 Sound machine/For leaders/SoundMachine-notes.md",
+            "number": 2
+        },
+        {
+            "title":"Frantic Felix",
+            "filename": "03 Frantic Felix/For students/01-Worksheet-FranticFelix-V2.pdf",
+            "note": "03 Frantic Felix/For leaders/Frantic-Felix-notes.md",
+            "number": 3
+        }
+    ]
+}
+
