@@ -1,4 +1,4 @@
-Level 1
+Nivå 1
 
 #Whack-a-Witch
 
