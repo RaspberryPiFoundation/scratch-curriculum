@@ -71,7 +71,7 @@ Byt sedan __när mellanslag trycks__-kontrollblocket med __när flaggan klickats
 	(slut på för alltid)
 ```
 ###Testa ditt projekt
-__Klicka på den fröna flaggan, tryck sedan på musknappen någonstans på scenen. Klicka igen på en annan punkt.__ 
+__Klicka på den gröna flaggan, tryck sedan på musknappen någonstans på scenen. Klicka igen på en annan punkt.__ 
 
 ###Saker att pröva
 1. Försök att göra några raketer lite långsammare eller snabbare än andra. 
