@@ -18,10 +18,10 @@ Det här projektet använder sig bara av standardbilder som finns inom Scratch.
 Sända ut meddelanden
 
 ###Övningar
-Steg 1: Skapa en sprite som byter klädsel
-Steg 2: Få bilden att ändras
-Steg 3: Få den att stoppa när man klickar på den
-Steg 4: Skapa de andra spritearna
+* Steg 1: Skapa en sprite som byter klädsel
+* Steg 2: Få bilden att ändras
+* Steg 3: Få den att stoppa när man klickar på den
+* Steg 4: Skapa de andra spritearna
 
 ###Utmaningar
 1. Göra spelet svårare
