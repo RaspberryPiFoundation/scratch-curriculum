@@ -16,8 +16,8 @@ Det här projektet täcker:
 Det här projektet använder material som finns i mappen "Scratch Backgrounds" samt mappen "Resources" i Fyrverkeripaketet. 
 
 ###Scratchkort som behövs
-Byta färg
-Glida
+* Byta färg
+* Glida
 
 ###Övningar
 * Steg 1: Skapa en raket som flyger mot muspekaren
