@@ -181,7 +181,7 @@ Spara ditt projekt
 Varför måste vi lägga till ett visa-block i början av kräftans script? Fundera på vad som skulle hända om kräftan blev uppäten och spelet avslutades innan den hann komma tillbaka. Vad skulle hända om spelet startades om då?
 
 
-__ Bra jobbat, nu är du klar med grundspelet. Men det finns fler saker du kan lägga till. Är du redo för en utmaning?__
+__Bra jobbat, nu är du klar med grundspelet. Men det finns fler saker du kan lägga till. Är du redo för en utmaning?__
 
 
 ##Utmaning 1: Få kräftorna att röra sig annorlunda
