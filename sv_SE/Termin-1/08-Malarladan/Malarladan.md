@@ -183,7 +183,7 @@ __Det är kul att rita streck, men det händer att man gör ett misstag och vill
 
 Lägg till en ny knappsprite till Scenen för att kunna välja suddgummit. Använder klädseln __resources/eraser__ som du gör lite mindre så att den passar in längst ner på Scenen. Den ska fungera på samma sätt som de andra färgvalsknapparna, och sända ut ett suddmeddelande.
 
-Pennspriten ska svara på suddmeddelandet genom att byta pennfärg till grå (kom ihåg att du kan använda __pipetten__ för att välja färgen från bakgrunden). Den kommer även behöva en klädsel som ser ut som ett suddgummi: använd samma klädsel, __resources/eraser__. __Kom ihåg att ändra klädselns mittpunkt.
+Pennspriten ska svara på suddmeddelandet genom att byta pennfärg till grå (kom ihåg att du kan använda __pipetten__ för att välja färgen från bakgrunden). Den kommer även behöva en klädsel som ser ut som ett suddgummi: använd samma klädsel, __resources/eraser__. __Kom ihåg att ändra klädselns mittpunkt.__
 
 ##Testa ditt projekt
 __Klicka på den gröna flaggan.__
