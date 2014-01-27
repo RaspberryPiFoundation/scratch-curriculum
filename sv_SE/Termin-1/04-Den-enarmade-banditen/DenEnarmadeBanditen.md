@@ -46,7 +46,7 @@ Spara ditt projekt
 
 Ändra tiden i väntablocket. Vilka siffror tror du skulle göra spelet för lätt eller för svårt?
 
-##STEG 3: Stoppa spriten när vi klickar på den
+##Steg 3: Stoppa spriten när vi klickar på den
                     
 Bra! Vi kan nu få spritearna att byta klädslar för alltid, men hur får vi dem att stoppa när vi klickar på dem?
 
@@ -100,9 +100,9 @@ Varje gång du gör en förändring, fundera på om det gör spelet svårare ell
 
 ##Utmaning 2: Få spelet att bli svårare och lättare allt eftersom 
 
-Olika personer kommer att vara olika duktiga på att spela spelet. __ Hur kan du få spelet att anpassa svårighetsgraden beroende på spelaren?__
+Olika personer kommer att vara olika duktiga på att spela spelet. __Hur kan du få spelet att anpassa svårighetsgraden beroende på spelaren?__
 
-Ett sätt att göra det är att__Anpassa hastigheten för klädslarnas byte__. Du kan använda en variabel som kallas __fördröjning__, för att sätta tiden på varje sprites fördröjningsblock. Om spelaren vinner omgången kan fördröjningen minskas en aning (för att göra spelet svårare). Om spelaren förlorar omgången så kan fördröjningen ökas en aning (för att göra spelet lättare).
+Ett sätt att göra det är att __Anpassa hastigheten för klädslarnas byte__. Du kan använda en variabel som kallas __fördröjning__, för att sätta tiden på varje sprites fördröjningsblock. Om spelaren vinner omgången kan fördröjningen minskas en aning (för att göra spelet svårare). Om spelaren förlorar omgången så kan fördröjningen ökas en aning (för att göra spelet lättare).
 
 ##Utmaning 3: Upptäck när alla sprites har stannat med samma klädsel
 
