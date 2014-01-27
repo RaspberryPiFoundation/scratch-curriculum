@@ -1,11 +1,16 @@
-Level 2
+---
+title: Fruit machine
+level: Level 2
+stylesheet: scratch
+language: en
+embeds: "*.png"
+...
 
-#Fruit machine
 
 __Introduction:__
 This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
 
-![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/04%20Fruit%20Machine/fruitmachine_screenshot.png?raw=true)
+![screenshot](fruitmachine_screenshot.png)
 
 ##STEP 1: Create a sprite that changes costumes
 

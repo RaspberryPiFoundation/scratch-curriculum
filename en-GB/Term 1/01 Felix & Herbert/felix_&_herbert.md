@@ -1,7 +1,7 @@
 ---
 title: Felix and Herbert
 level: Level 1
-language: en
+language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 ...

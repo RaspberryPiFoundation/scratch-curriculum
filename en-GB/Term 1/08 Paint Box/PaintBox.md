@@ -1,11 +1,15 @@
-Level 3
-
-#Paint Box
+---
+title: Paint Box
+level: Level 3
+language: en-GB
+stylesheet: scratch
+embeds: "*.png"
+...
 
 __Introduction:__
 The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!
 
-![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/08%20Paint%20Box/paintbox_screenshot.png?raw=true)
+![screenshot](paintbox_screenshot.png)
 
 ##STEP 1: Drag and draw
 

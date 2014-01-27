@@ -1,6 +1,10 @@
-Level 3
-
-#Create Your Own Game
+---
+title: Create Your Own Game
+level: Level 3
+language: en-GB
+stylesheet: scratch
+embeds: "*.png"
+...
 
 __Introduction:__
 In this project you will design and create a game for you and your friends

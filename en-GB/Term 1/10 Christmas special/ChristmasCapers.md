@@ -1,12 +1,16 @@
-Level 2
-
-#Christmas Capers
+---
+title: Christmas Capers
+level: Level 2
+language: en-GB
+stylesheet: scratch
+embeds: "*.png"
+...
 
 __Introduction:__
 __In this project we’ll create a game with scrolling backgrounds, scoring and a festive game over screen.__
 A disaster in a toy factory has sent presents flying into the sky, help Rudolf to save Christmas by catching the presents!
 
-![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/10%20Christmas%20special/xmas_screenshot.png?raw=true)
+![screenshot](xmas_screenshot.png)
 
 ##STEP 1: Make Rudolph fly
 

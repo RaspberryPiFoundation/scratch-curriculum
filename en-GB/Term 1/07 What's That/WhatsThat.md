@@ -1,11 +1,15 @@
-Level 3
-
-#What's That
+---
+title: What's That
+level: Level 3
+language: en-GB
+stylesheet: scratch
+embeds: "*.png"
+...
 
 __Introduction__
 A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
 
-![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/07%20What's%20That/whatsthat_screenshot.png?raw=true)
+![screenshot](whatsthat_screenshot.png)
 
 ##STEP 1: Make different things appear on the blackboard
 

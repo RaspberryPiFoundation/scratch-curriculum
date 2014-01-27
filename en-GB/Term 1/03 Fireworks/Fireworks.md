@@ -1,13 +1,15 @@
 ---
-lesson_title: Fireworks
+title: Fireworks
 level: Level 1
-language: en
+language: en-GB
+stylesheet: scratch
+embeds: "*.png"
 ...
 
 # Introduction { .intro}
 In this project, we’ll create a fireworks display over a city.
 
-![screenshot](https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/03%20Fireworks/fireworks_screenshot.png?raw=true)
+![screenshot](fireworks_screenshot.png)
 
 #STEP 1: Create a rocket that flies towards the mouse { .activity}
 __Let’s import the different pictures for the game__
