@@ -4,6 +4,7 @@ level: Level 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
+note: "notes for club leaders.md"
 ...
 
 # Introduction { .intro}

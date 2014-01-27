@@ -4,6 +4,7 @@ level: Level 2
 stylesheet: scratch
 language: en
 embeds: "*.png"
+note: "notes for club leaders.md"
 ...
 
 
