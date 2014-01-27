@@ -225,7 +225,7 @@ Detta inträffar på grund av att när raketen sänder explosionen så kommer de
 	(slut på för alltid)
 ```
 ###Testa ditt projekt
-__Klicka på den gröna flaggan, håll nere musknappen och flytta musepekaren runt scenen.__ 
+__Klicka på den gröna flaggan, håll nere musknappen och flytta muspekaren runt scenen.__ 
 
 Syns explosionsbilden på rätt plats och vid rätt tid?
 
