@@ -1,0 +1,50 @@
+{
+    "name": "scratch",
+    "language": "sv-SE",
+    "number": 1,
+
+
+    "projects": [
+        {
+            "filename": "01-Felix-Herbert/felix-herbert.md",
+            "number": 1
+        },
+        {
+            "filename": "02-Whack-a-Witch/whack-a-witch.md",
+            "number": 2
+        },
+        {
+            "filename": "03-Fyrverkerier/Fyrverkerier.md",
+            "number": 3
+        },
+        {
+            "filename": "04-Den-enarmade-banditen/DenEnarmadeBanditen.md",
+            "number": 4
+        },
+        {
+            "filename": "05-Den-hungriga-fisken/DenHungrigaFisken.md",
+            "number": 5
+        },
+        {
+            "filename": "06-Okenracet/Okenracet.md",
+            "number": 6
+        },
+        {
+            "filename": "07-Vad-ar-det-dar/VadArDetDar.md",
+            "number": 7
+        },
+        {
+            "filename": "08-Malarladan/Malarladan.md",
+            "number": 8
+        },
+        {
+            "filename": "09-Skapa-ditt-eget-spel/SkapaDittEgetSpel.md",
+            "number": 9
+        },
+        {
+            "filename": "10-Julskoj/Julskoj.md",
+            "number": 10
+        }
+    ]
+}
+
