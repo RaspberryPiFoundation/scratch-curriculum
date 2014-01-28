@@ -6,6 +6,7 @@ This interactive toy shows fireworks exploding in the sky wherever you click and
 
 ###Skills
 This project covers:
+
 * Responding to clicks
 * Changing the appearance of sprites • Playing sounds
 * Broadcasting and receiving events

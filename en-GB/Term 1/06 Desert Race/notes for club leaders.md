@@ -1,11 +1,11 @@
 #NOTES FOR CLUB LEADERS
 ##(Desert Race)
 
-##Introduction
+###Introduction
 
 This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
 
-##Skills
+###Skills
 This project covers: 
 
 * Events
@@ -15,13 +15,13 @@ This project covers:
 * Conditional statements 
 * Modifying resources
 
-##Resources
+###Resources
 This project uses resources found in the scratch backgrounds and costumes folders as well as a user created resource based on a scratch resource.
 
-##Scratch Cards
+###Scratch Cards
 Say Something
 
-##Basic Exercises
+###Basic Exercises
 
 * Step 1: Create the scene and add sprites 
 * Step 2: Make the characters move
@@ -29,6 +29,6 @@ Say Something
 * Step 4: Finishing the race
 * Step 5: Resetting the game 
 
-##Challenge 
+###Challenge 
 
 Add a booster

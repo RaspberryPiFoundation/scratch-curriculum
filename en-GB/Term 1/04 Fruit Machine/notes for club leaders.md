@@ -18,13 +18,10 @@ This project uses only standard Scratch images found within Scratch.
 Broadcast
 
 ###Basic exercises
-Step 1: Create a sprite that changes costumes 
-
-Step 2: Making the picture change
-
-Step 3: Making it stop when we click on it 
-
-Step 4: Creating the other sprites
+* Step 1: Create a sprite that changes costumes 
+* Step 2: Making the picture change
+* Step 3: Making it stop when we click on it 
+* Step 4: Creating the other sprites
 
 ###Challenges
 1. Make the game harder

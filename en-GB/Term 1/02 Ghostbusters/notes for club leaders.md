@@ -6,6 +6,7 @@ This project is like the carnival game called whack-a-mole. You get points for h
 
 ###Skills
 This project covers:
+
 * Setting a variable
 * Loops
 * Keeping and setting the score
