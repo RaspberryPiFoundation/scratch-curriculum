@@ -13,7 +13,7 @@ Vi ska skapa ett spel där __katten Felix__ ska försöka ta __musen Herbert__. 
 
 #STEG 1: Felix följer muspekaren
 
-## {.check}
+##Checklista {.check}
 
 1. Skapa ett nytt projekt.
 2. Klicka på Scen bredvid spriten och byt till fliken Bakgrunder, importa sen bakgrunden indoors/hall. Radera den ursprungliga tomma bakgrunden.
@@ -48,7 +48,7 @@ Följer Felix muspekaren? Ser det ut som att han går när han rör sig? Rör ha
 
 __Nu vill vi att Felix ska jaga musen Herbert istället för muspekaren.__
 
-## {.check}
+##Checklista {.check}
 
 1. Skapa en ny sprite genom att klicka på Välj ny sprite från fil-knappen och välj animals/mouse1.
 2. Byt namn på spriten till Herbert.
