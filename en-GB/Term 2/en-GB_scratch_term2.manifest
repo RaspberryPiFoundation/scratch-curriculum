@@ -1,5 +1,7 @@
 {
-    "name": "scratch",
+    "id": "scratch",
+    "title":"Advanced Scratch",
+    "description":"",
     "language": "en-GB",
     "number": 2,
 

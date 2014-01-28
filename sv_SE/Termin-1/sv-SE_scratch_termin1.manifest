@@ -1,5 +1,7 @@
 {
-    "name": "scratch",
+    "id": "scratch",
+    "title":"Scratch",
+    "description":"",
     "language": "sv-SE",
     "number": 1,
 
