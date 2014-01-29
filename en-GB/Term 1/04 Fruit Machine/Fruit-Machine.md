@@ -14,8 +14,8 @@ This is a game that has three sprites that change costume. You have to stop them
 __Let’s import the different pictures for the game__
 
 1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete
-2. First of all let's add a new Backdrop from the library. Choose the **rays** backdrop from the *Other* category and then delete the original blank stage. 
-2. Now import a new sprite.
+2. First of all let's add a new Backdrop from the library. Choose the **rays** backdrop from the **Other** category and then delete the original blank stage. 
+2. Now add a new sprite from the library.
 3. Choose an image from any folder. We used **things/Bananas**, but you can use any image you want to.
 4. Click on the blue '**i**' next to the sprite's picture in the Sprites window. Rename the sprite to 'Fruit'.
 5. Now click the Costumes tab and import two more things so there are three costumes in total (we used **things/apple** and **things/watermelon-a**, but you can use any images you like).
@@ -74,7 +74,7 @@ forever
     when this sprite clicked
     set [stopped v] to (YES)
 ```
-4. Finally we need to make the sprite stop changing costume when the variable `stopped`{.blockorange} changes to "YES". Add an `if...then` { .blockyellow} loop and use a new **equals** `[] = []` { .blockgreen} operator block (found under the *Operators* tab) to check if `stopped`{.blockorange}  is still "NO".
+4. Finally we need to make the sprite stop changing costume when the variable `stopped`{.blockorange} changes to "YES". Add an `if...then` { .blockyellow} loop and use a new **equals** `[] = []` {.blockgreen} operator block (found under the *Operators* tab) to check if `stopped`{.blockorange}  is still "NO".
 
 ```blocks
 when FLAG clicked
@@ -204,7 +204,7 @@ __The aim of the game is to click on the sprites so they stop while showing the 
 ## Activity Checklist { .check}
 
 1. We wrote the code to check that the game was over in __step 6__, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word **"WIN"**. Then change its name to **"Win"**.
-2. Copy the backdrop again to create one with a "Lose" message. Give it the name "Lose".
+2. Copy the backdrop again to create one with a **"Lose"** message. Give it the name **"Lose"**.
 3. Now we need some code to work out which backrop to display once the game is over. We can use an `if...then...else` { .blockyellow} block to see if the player has won or lost by comparing each `costume #`{.blockpurple}  (costume number) using a similar `x position of Sprite` { .blockblue} block like we did before. This time, instead of looking at the `stopped`{.blockorange} variable, we can check the`costume #`{.blockpurple}  and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
  
 
