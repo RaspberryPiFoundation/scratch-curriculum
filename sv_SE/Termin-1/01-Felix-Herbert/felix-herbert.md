@@ -24,17 +24,11 @@ Vi ska skapa ett spel där __katten Felix__ ska försöka ta __musen Herbert__. 
     ```scratch
 
         När FLAGGA klickas på
-
         för alltid
-
             peka mot musmarkör
-
             gå 10 steg
-
             nästa klädsel
-
             spela trumman 62 i 0.3 taktslag
-
         (slut på för alltid)
     ```
 		
