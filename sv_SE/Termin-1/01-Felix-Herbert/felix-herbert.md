@@ -11,7 +11,7 @@ note: "till_instruktorerna.md"
 
 Vi ska skapa ett spel där __katten Felix__ ska försöka ta __musen Herbert__. Du kontrollerar Herbert med muspekaren och försöker undvika att bli fångad av Felix. Ju längre du håller dig ifrån honom desto fler poäng får du, men se till att inte åka fast för då går poängen ner igen!
 
-#STEG 1: Felix följer muspekaren
+# STEG 1: Felix följer muspekaren {.activity}
 
 ##Checklista {.check}
 
@@ -42,7 +42,7 @@ Vi ska skapa ett spel där __katten Felix__ ska försöka ta __musen Herbert__. 
 __Klicka på den gröna flaggan.__
 Följer Felix muspekaren? Ser det ut som att han går när han rör sig? Rör han sig i rätt hastighet?
 
-## Spara ditt projekt
+## Spara ditt projekt {.save}
 
 # STEG 2: Felix jagar Herbert {.activity}
 
@@ -73,11 +73,10 @@ Rör sig Herbert med musmarkören? Jagar Felix Herbert?
 
 ## Spara ditt projekt. {.save}
 
-#STEG 3: Felix säger till när han har fångat Herbert
+# STEG 3: Felix säger till när han har fångat Herbert {.activity}
 
 __Vi vill att Felix ska veta när han har fångat Herbert, och säga det till oss.__
 
-## {.activity}
 
 1. Ändra Felix script så det ser ut såhär:
 
@@ -102,11 +101,11 @@ Säger Felix till när han har fångat Herbert?
 
 ## Spara ditt projekt {.save}
 
-#STEG 4: Herbert blir ett spöke när han fångas
+#STEG 4: Herbert blir ett spöke när han fångas {.activity}
 
 __Istället för att Felix säger någonting så vill vi att Herbert ska förvandlas till ett spöke när han fångas.__
 
-## {.activity}
+##Checklista {.check}
 
 1. Ändra i Felix script så att det skickar ut följande meddelande när han fångar Herbert.
 
@@ -149,10 +148,12 @@ Står Felix still tillräckligt länge för att Herbert ska kunna ge sig iväg?
 
 ##Spara ditt projekt {.save}
 
-#STEG 5: Räkna poäng
+#STEG 5: Räkna poäng {.activity}
 
 __Nu lägger vi till ett poängsystem så vi vet hur bra vi är på att hålla Herbert vid liv.
 Vi börjar med att låta poängen vara noll och höjer den med ett varje sekund. Om Felix fångar Herbert minskar vi poängen med hundra.__
+
+##Checklista {.check}
 
 1. Skapa en variabel som heter poäng för alla sprites. Klicka på Variabler i toppmenyn, skapa en variabel och kalla den poäng.
 2. På scenen, skapa de här två scripten
