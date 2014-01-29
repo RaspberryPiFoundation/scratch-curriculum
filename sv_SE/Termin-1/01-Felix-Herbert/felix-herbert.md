@@ -71,7 +71,7 @@ __Klicka på den gröna flaggan.__
 
 Rör sig Herbert med musmarkören? Jagar Felix Herbert?
 
-## Spara ditt projekt. {.flag}
+## Spara ditt projekt. {.save}
 
 #STEG 3: Felix säger till när han har fångat Herbert
 
