@@ -16,7 +16,7 @@ __Let’s make the Hungry Fish swim around the sea!__
 2. Select the Stage, then select the Stage’s Backdrop tab. Import the
 background **Nature/underwater3** using `choose background from library`{.blocklightgrey}. Finally, remove **backdrop1**.
 3. Change the name of Sprite1 to 'Hungry Fish' by clicking on the blue 'i' symbol.
-4. Import Hungry Fish’s costume, **resources/hungry-fish.png** then remove its existing costume1 and costume2.
+4. Import Hungry Fish’s costume, **resources/hungry-fish.png** then remove its existing **costume1** and **costume2**.
 5. Click on the blue '**i**' symbol again,  and make sure the sprite can only flip left-right.
 6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
 
@@ -55,7 +55,7 @@ __It's time to make something for the Hungry Fish to try to eat!__
 
 ## Activity Checklist { .check}
 
-1. Create a new sprite from the file **Animals/starfish**. 
+1. Create a new sprite from the library, using **Animals/starfish**. 
 2. Use the `Shrink`{.blocklightgrey} sprite tool (above the Stage) to make the sprite smaller.
 3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.
 
@@ -145,7 +145,7 @@ forever
 __Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.__
 
 5. Add the **resources/mouth-closed.png** costume and the **resources/chomp.mp3** sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message `broadcast`{.blockyellow} by the prey. This script should make the fish play the 'chomp' sound and `switch to`{.blockpurple} the mouth-closed costume, wait briefly and then switch back.
+6. Then, add a new script to the Hungry Fish to respond to the message `broadcast`{.blockyellow} by the prey. This script should make the fish play the **'chomp'** sound and `switch to`{.blockpurple} the mouth-closed costume, wait briefly and then switch back.
 
 ```blocks
 when I receive [got me v]
@@ -172,10 +172,7 @@ __Well done you’ve finished the basic game. There are more things you can do t
 
 ## Challenge 1: Make the prey move differently { .challenge}
 
-At the moment, all the prey move in the same way. __Can you make one of them
-move differently?__
-__Hint:__ Don’t spend too long on this bit without looking at the other activities in this
-project.
+At the moment, all the prey move in the same way. __Can you make one of them move differently?__ __Hint:__ Don’t spend too long on this bit without looking at the other activities in this project.
 
 __Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the `set color effect`{.blockpurple} block. That way, you can tell it apart from the rest of the prey.
 
@@ -241,8 +238,7 @@ Does the game stop when the timer reaches zero?
 ## Save your project { .save}
 
 ## Challenge 5: Add a bonus score { .challenge}
-Award a large bonus score if you can eat all three lobsters at the same time. How can
-you tell how many prey have been eaten?
+Award a large bonus score if you can eat all three lobsters at the same time. How can you tell how many prey have been eaten?
 
 __Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
 
