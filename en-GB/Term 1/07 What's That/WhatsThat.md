@@ -14,7 +14,7 @@ __We want a few different pictures to show up on the blackboard.__
 
 + Start a new Scratch project and delete the cat sprite.
 
-+ Click Stage and then the Backdrops tab. `Choose Backdrop From Library` {.blockgrey} to change the background to __indoors/chalkboard__.
++ Click Stage and then the Backdrops tab. `Choose Backdrop From Library` {.blockgrey} to change the backdrop to __indoors/chalkboard__.
 + Create a new sprite from the library, and give it any costume you like. You can pick something from the things folder.
 + Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.
 + Click the Costumes tab and import four more things. They can be anything you want, yay!
@@ -47,7 +47,7 @@ We’ll use a score variable to control how much distortion there is. If the sco
 
 ## Activity Checklist { .check}
 
-+ On the Variables palette, create a variable called Score. 
++ On the Data palette, create a variable called Score. 
 
 + Change the script to look like this:
 
@@ -101,7 +101,6 @@ First, we need to know what the right answer is.
 + Change the script you’ve written to record the right answer. Add the `set [answer] to costume #` {.blockorange} blocks just after the first repeat loop:
 
 ```blocks
-
 	when FLAG clicked
 	hide
 	repeat (pick random (1) to (5)	
@@ -114,7 +113,7 @@ First, we need to know what the right answer is.
 		set [pixelate effect v] to (score)
 		set [colour effect v] to (score)
 		show
-		wait 1 secs
+		wait (1) secs
 	end
 ```
 __Now we need to add the sprites that the player can click on.__
@@ -137,7 +136,7 @@ Now we want to have each sprite respond to being clicked and do something depend
 		broadcast [won v]
 	else
 		hide
-	end
+	
 ```
 
 + Drag this script into each of the other answer sprites. __In each sprite, change the 1 to 2, 3, and so on.__
@@ -190,7 +189,7 @@ To fix the second problem, we need to stop the __question sprite__’s repeat un
 		set [pixelate effect v] to (score)
 		set [colour effect v] to (score)
 		show
-		wait 1 secs
+		wait (1) secs
 	end
 	
 	when I receive [won v]

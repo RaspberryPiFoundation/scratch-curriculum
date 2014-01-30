@@ -27,6 +27,7 @@ How will points be scored? How do you win the game? How many players are there? 
 How will the game be controlled? E.g. Will you click a mouse button or press a key? Do you need sound effects? If so, what are they?
 Answer these questions in the space below:
 
+
 # STEP 5: Building your game {.activity}
 
 Now it’s time to start writing the scripts that will make your game work.
