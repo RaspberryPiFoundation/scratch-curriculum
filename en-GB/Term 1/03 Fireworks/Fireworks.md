@@ -145,7 +145,7 @@ What happens if you hold the mouse button down whilst moving the mouse? (Don’t
 
 ```blocks
 
-	when I receive [explode]
+	when I receive [explode v]
 	hide
 	set [color v] effect to (pick random (1) to (200))
 	go to [rocket v]
@@ -175,9 +175,9 @@ Does each rocket have a different explosion graphic?
 
 ```blocks
 	
-	when I receive [explode]
+	when I receive [explode v]
 	hide
-	set [color] effect to (pick random (1) to (200))
+	set [color v] effect to (pick random (1) to (200))
 	go to [rocket v]
 	show
 	set size to (5) %

@@ -105,16 +105,16 @@ Does Felix say when he’s caught Herbert?
 + **Change Felix’s script to send this message when he catches Herbert:**
 
 ```blocks
-        when FLAG clicked
+     when FLAG clicked
         forever
           point towards [mouse-pointer v]
           move (10) steps
           move (20) steps
           next costume
-          play drum (3 v) for (0.3) beats
+          play drum [3 v] for (0.3) beats
           if <touching [herbert v]?> then
             broadcast [caught v]
-            play drum (17 v) for (0.2) beats
+            play drum [17 v] for (0.2) beats
             wait (1) secs
           end
         end
@@ -164,7 +164,7 @@ when gf clicked
       wait (1) secs
    end
 
-when i receive [caught v]
+when I receive [caught v]
 change [score v] by (-100)
 ```
 
