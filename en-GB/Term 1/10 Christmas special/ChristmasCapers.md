@@ -55,9 +55,9 @@ forever
 
 __Click the green flag__, do the hills move? What happens as the hills move to the side of the screen?
 
-10 Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the __new sprite from file__ button to add the Snow sprite to the project again (use the SnowHills.png file).
-11 Rename the sprite to __Snow2__.
-12 Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:
+10. Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the __new sprite from file__ button to add the Snow sprite to the project again (use the SnowHills.png file).
+11. Rename the sprite to __Snow2__.
+12. Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:
 
 ```scratch
 when FLAG clicked
@@ -105,8 +105,8 @@ forever
 
 __Click the green flag,__ do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?
 
-7 Let’s make the game more interesting by changing the colour of the presents each time they fall. Do this by using the change colour command.
-8 Change the speed of each present by replacing set Speed to -1 with the
+7. Let’s make the game more interesting by changing the colour of the presents each time they fall. Do this by using the change colour command.
+8. Change the speed of each present by replacing set Speed to -1 with the
 pick random command, try different values such as -10 to -1. Your script should now look like this.
 
 
@@ -162,7 +162,7 @@ forever
 (end forever)
 ```
 
-4 Let’s add some music to the game, import the sound file __Jingle_Bells.mp3__ to the __Stage__.
+4. Let’s add some music to the game, import the sound file __Jingle_Bells.mp3__ to the __Stage__.
 
 ```scratch
 when FLAG clicked
@@ -171,7 +171,7 @@ set Score to 0
 play sound Jingle_Bells
 ```
 
-5 Add the following script to the __Stage__, this will __set our score to 0__ when the game is started. It will also play Jingle Bells while the game is being played.
+5. Add the following script to the __Stage__, this will __set our score to 0__ when the game is started. It will also play Jingle Bells while the game is being played.
 
 Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.
 
