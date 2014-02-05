@@ -23,4 +23,5 @@ Follow the mouse
 * Step 1: Felix follows the mouse pointer
 * Step 2: Felix chases Herbert
 * Step 3: Felix says when he’s caught Herbert
-* Step 4: Herbert turns into a ghost when he’s caught Step 5: Keep score
+* Step 4: Herbert turns into a ghost when he’s caught 
+* Step 5: Keep score
