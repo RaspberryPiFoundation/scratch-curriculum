@@ -33,7 +33,7 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
             play drum (62) for (0.3) beats
     
     ```
-		
+	
 ## Test Your Project { .flag}
 __Click the green flag.__
 Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
@@ -129,7 +129,7 @@ called ‘alive’ and the ghost costume is called ‘dead’.
         wait (0.5) secs
         switch to costume [alive]
     ```
-	
+
 ## Test Your Project { .flag}
 __Click the green flag.__
 
@@ -159,7 +159,7 @@ We’ll start the score at zero and increase it by one every second. If Felix ca
         when I receive [caught]
         change score by (-100)
     ```
-	
+
 ## Test Your Project { .flag}
 __Click the green flag.__
 
