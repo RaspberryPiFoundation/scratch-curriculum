@@ -16,27 +16,25 @@ This project is like the game __Whack-a-Mole__. You get points for hitting the g
 
 ## Activity Checklist { .check}
 
-+. __Start a new scratch project.__
-+ __Remove the cat sprite__ and replace the background with the __nature/woods__
-background.
-+ Use the `new sprite from file` button to add a new ghoul
++ __Start a new scratch project.__
++ __Remove the cat sprite__ and replace the background with the __nature/woods__ background.
++ Use the `Choose sprite from library` {.blockgrey} button to add a new ghoul
 sprite to the project (use the __fantasy/ghost1__ costume). 
 
 __Now we want to make our ghost move__
 
-+ Add a `Variable` for this sprite only called `speed`.
-On the __Stage__, the stage monitor for this variable should say “__Sprite1 speed__”.
-If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the
-__Variables palette__ so it does not show on the Stage.
++ Add a `Variable` {.blocklightgrey} for this sprite only called `speed` {.blockorange}.
+On the __Stage__, the stage monitor for this variable should say “__Ghost1 speed__”.
+If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the __Data palette__ so it does not show on the Stage.
 The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
 + We want the ghost to start moving when the game starts, __so make a script like this__:
 
 ```blocks
 
 	when FLAG clicked
-	set [speed] to (5)
+	set [speed v] to [5]
 	forever
-		move [speed] steps
+		move (speed) steps
 ```
 		
 ##Test Your Project { .flag}
@@ -44,18 +42,17 @@ __Click the green flag__ and see what your ghost does. Why does it get stuck on 
 
 ## Activity Checklist { .check}
 
-+ To stop the ghost getting stuck we need to make her go back the other way when it touches the edge of the screen. Edit your existing script by adding a  an `if on edge, bounce` block below your
-`move speed steps` block.
++ To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an `if on edge, bounce` {.blockblue} block below your `move ` {.blockblue}`speed` {.blockorange}` steps` {.blockblue} block.
 
 ```blocks
 
 	when FLAG clicked
-	set [speed] to (5)
+	set [speed v] to [5]
 	forever
-		move [speed] steps
+		move (speed) steps
 		if on edge, bounce
 ```
-+ To stop the ghost flipping upside down, click on the `only face left-right` button in the Sprite Summary area.
++ To stop the ghost flipping upside down, click on the `rotation style: left-right` {.blockgrey} button in the Sprite Summary area.
 
 ##Test Your Project { .flag}
 __Click the green flag.__ 
@@ -81,9 +78,9 @@ __Create this script for the ghost:__
 	when FLAG clicked
 	forever
 		hide
-		wait (pick random (2) to (5) secs)
+		wait (pick random (2) to (5)) secs
 		show
-		wait (pick random (3) to (5) secs)
+		wait (pick random (3) to (5)) secs
 
 ```
 ##Test Your Project { .flag}
@@ -102,15 +99,15 @@ To turn this into a game, we need to give the player something to do. They need 
 
 ## Activity Checklist { .check}
 
-+ In the __Sounds__ tab, import the sound __electronic/fairydust__. 
++ In the __Sounds__ tab, add a new sound __Electronic/fairydust__, using the `Choose sound from library` {.blockgrey} button. 
 
 + __Add this script to the ghost__:
 
 ```blocks
 
-	when [sprite1] clicked
+	when this sprite clicked
 	hide
-	play sound [Fairydust]
+	play sound [Fairydust v]
 ```
 ##Test Your Project { .flag}
 __Click the green flag.__ 
@@ -120,7 +117,7 @@ Does the ghost disappear and play the sound when you click it?
 ##Save your project { .save}
 
 ##Things to try { .try}
-__Ask your volunteer if you can record your own sound to play.__
++ __Ask your volunteer if you can record your own sound to play.__
 
 #Step 4: Add a score and timer { .activity}
 
@@ -128,28 +125,28 @@ We’ve got a ghost, but now we want to make a game! We want to score points eve
 
 ## Activity Checklist { .check}
 
-+ Create a new `Variable` for all sprites called __score__, and alter the script for the ghost to increase this variable by one when it is clicked.
++ Create a new `Variable` {.blockgrey} for all sprites called __score__, and alter the script for the ghost to increase this variable by one when it is clicked.
 
 ```blocks
 
-	when [sprite1] clicked
+	when this sprite clicked
 	hide
-	play sound [Fairydust]
-	change score by (1)
+	play sound [Fairydust v]
+	change [score v] by (1)
 ```
-+ Switch to the __Stage__ and create a __new variable__ (this time just for the stage) called __timer__. Add a new script that occurs when the green flag is clicked to set `timer` to __30__ and reset the score to __0__. Then use a `repeat until` block to wait a second and then reduce `timer` by
-one. This should repeat until timer is 0, at which point use `stop all` to stop the game.
++ Switch to the __Stage__ and create a __new variable__ called __timer__. Add a new script that occurs when the green flag is clicked to set `timer` {.blockorange} to __30__ and reset the score to __0__. Then use a `repeat until` {.blockyellow} block to wait a second and then reduce `timer` {.blockorange}  by
+one. This should repeat until timer is 0, at which point use `stop all` {.blockyellow} to stop the game.
 
 ```blocks
 
 	when FLAG clicked
-	set [timer] to (30)
-	set [score]to (0)
-	repeat until <[timer] = 0>
+	set [timer v] to (30)
+	set [score v] to (0)
+	repeat until <(timer) = [0]>
 		wait (1) secs
-		change [timer] by (-1)
+		change [timer v] by (-1)
 	
-	stop all
+	stop [all v]
 ```
 
 
