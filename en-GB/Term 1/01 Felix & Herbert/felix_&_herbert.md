@@ -4,7 +4,7 @@ level: Level 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: "Felix-and-Herbert.sb"
+materials: "Felix-and-Herbert.sb2"
 note: "notes for club leaders.md"
 ...
 

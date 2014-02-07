@@ -5,6 +5,7 @@ stylesheet: scratch
 language: en-GB
 embeds: "*.png"
 note: "notes for club leaders.md"
+materials: "*.sb2"
 ...
 
 # Introduction {.intro}
