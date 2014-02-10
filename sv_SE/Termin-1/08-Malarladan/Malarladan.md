@@ -1,13 +1,20 @@
-Nivå 3
+---
+title: Målarlådan
+level: Nivå 3
+language: sv-SE
+stylesheet: scratch
+embeds: "*.png"
+note: "till_instruktorerna.md"
+...
 
-#Målarlådan
-
-__Introduktion:__
+#Introduktion {.intro}
 I det här projektet bygger vi ett ritverktyg som du kan använda för att skapa din egen konst. Du kan byta färg, tömma skärmen, göra stämplar och mycket mer!
 
-##STEG 1: Dra och måla
+##STEG 1: Dra och måla {.activity}
 
 Vi börjar med en penna som ritar när du drar runt den på Scenen.
+
+##Checklista {.check}
 
 1. Skapa ett nytt Scratchprojekt. Radera katten genom att högerklicka på den och välj radera.
 2. Klicka på __Scenen__ och sen på fliken __Bakgrunder__. Ladda upp bakgrunden frame.bmp.
@@ -38,7 +45,7 @@ för alltid
 (slut på för alltid)
 ```
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 Följer pennan muspekaren? Vad händer om du håller nere musknappen och flyttar musen? Bry dig inte om färgen på pennan än.
 
@@ -57,16 +64,18 @@ för alltid
 (slut på för alltid)
 ```
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Försvinner din teckning när du klickar på den gröna flaggan?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##STEG 2: Radera allt
+##STEG 2: Radera allt {.activity}
 
 Istället för att behöva starta om hela projektet för att tömma skärmen, vill vi ha en knapp som suddar ut teckningen. Den ska göra det genom att använda blocket radera.
+
+##Checklista {.check}
 
 1. Skapa en ny sprite från klädseln __resources/cancel button__.
 2. Byt namn på spriten till __radera__.
@@ -78,16 +87,18 @@ när radera klickas på
 radera
 ```
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Tömmer raderaknappen din skärm?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##STEG 3: Byta färg
+##STEG 3: Byta färg {.activity}
 
 Hittills kan vi bara rita blåa streck. Nu vill vi rita med fler färger! Vi lägger till lite fler sprites längst ner på skärmen. Spritearna kommer se ut som färgade knappar. Om vi klickar på en knapp kommer den byta färg på strecket vi ritar. För att låta oss hålla koll på vilken färg vi använder ska knappen även byta färg på pennspriten.
+
+##Checklista {.check}
 
 1. Lägg till en ny sprite som du kallar __röd__ Använd klädseln __resources/red-selector__.
 2. Placera den någonstans längst ner på skärmen, nära __radera-knappen__.
@@ -112,23 +123,23 @@ växla till klädsel röd-penna
 sätt pennans färg till (röd)
 ```
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Börja med att rita ett streck. Klicka sen på spriten som gör pennan röd och rita lite mer. Bytter pennan klädsel? Ritar den i rött nu? Ritar den från pennspetsen?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
 5. Gör om det just gjorde för blå, gul och grön väljfärgarsprite.
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Fungerar alla färgvalknappar? Byter de pennans klädsel till rätt färg? Får de alla pennan att måla med rätt färg? Ritar alla pennans klädslar med pennspetsen?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##STEG 4: Rita bara inom ramarna
+##STEG 4: Rita bara inom ramarna {.activity}
 
 Du har säkert märkt att du kan måla överallt på skärmen, till och med på kanten. Så vill vi inte ha det. Vi vill ha målningen i mitten av Scenen. Vi kan lösa det genom att se till att pennan inte kan lämna ritytan - den ljusgrå delen av Scenen.
 
@@ -170,14 +181,14 @@ för alltid
 (slut på för alltid)
 ```
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Kan du fortfarande rita inom ritytan? Kan du rita utanför ritytan? Vad händer med pennan när du lämnar ritytan och går tillbaka till den?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##STEG 5: Suddgummi
+##STEG 5: Suddgummi {.activity}
 
 __Det är kul att rita streck, men det händer att man gör ett misstag och vill kunna sudda.__ Vi kan göra det med ett nytt pennverktyg som ritar med grått (samma färg som bakgrunden).
 
@@ -185,17 +196,18 @@ Lägg till en ny knappsprite till Scenen för att kunna välja suddgummit. Anvä
 
 Pennspriten ska svara på suddmeddelandet genom att byta pennfärg till grå (kom ihåg att du kan använda __pipetten__ för att välja färgen från bakgrunden). Den kommer även behöva en klädsel som ser ut som ett suddgummi: använd samma klädsel, __resources/eraser__. __Kom ihåg att ändra klädselns mittpunkt.__
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Suddar suddgummit? Fungerar det ända fram till kanten? Kan du byta mellan penna och sudd?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##STEG 6: Stämplar
+##STEG 6: Stämplar {.activity}
 
 Det nästa vi ska göra är att skapa ett stämpelverktyg som vi kan ha för att stämpla små bilder på teckningen.
-Aktivitetslista
+
+##Checklista {.check}
 
 1. Skapa en ny sprite med vilken klädsel som helst. Krymp spriten och placera den längst ner på scenen bredvid de andra verktygen. När den här spriten klickas på ska den __sända ut meddelandet stämpel__
 2. Lägg till en ny klädsel till den här pennspriten, samma som du valde till __stämpel__ -knappen.
@@ -204,23 +216,24 @@ Aktivitetslista
 5. Ändra i de andra scripten som svarar på verktygsväljarmeddelanden (röd, grön, blå och sudd) så att de var och en sätter __pennläge__ till __sant__.
 6. Till sist ska vi se till att den här variabeln kollas __när musknappen är nere__, så att programmet vet om vi ska rita eller stämpla. Om pennläge = sant ska vi använda den befintliga __penna ned__, annars stämpeln.
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Fungerar stämpelverktyget som du vill?
 
 Vad händer om du byter tillbaka till ett av de vanliga pennverktygen?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
 __Snyggt jobbat, nu är du klar med de grundläggande stegen i det här projektet.
 Pröva de här utmaningarna!__
 
-##Utmaning 1: Regnbågspenna
+##Utmaning 1: Regnbågspenna {.challenge}
 
 Vi lägger till en specialpenna som målar i regnbågens alla färger. Det kan man ju inte göra med riktiga pennor, så det blir kul att få datorn att göra det. Hemligheten bakom regnbågsmålning är blocket ändra pennans färg med.
 
 Lägg först till regnbågsverktygväljarspriten och regnbågsverktygklädseln till pennspriten:
+
 
 1. Skapa en ny verktygsväljarsprite och placera den längst ner på scenen, bredvid alla de andra pennfärgspritearna. Använd klädseln resources/rainbow-selector och låt den sända ut meddelandet regnbåge när den klickas på.
 2. Lägg till klädseln resources/rainbow-pencil till pennspriten.
@@ -232,30 +245,30 @@ Du behöver också kontrollera den loopen så att den bara ändrar pennfärgen n
 Använd det du lärt dig från stämpelsteget ovan för att kontrollera regnbågseffekten. Scriptet som svarar på verktygsväljarmeddelanden kommer sätta två variabler var: pennläge och regnbågsbyte.
 
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Fungerar regnbågsverktygen som du vill?
 
 Vad händer när du byter tillbaka till någon av de vanliga pennverktygen?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##Utmaning 2: Kortkommandon
+##Utmaning 2: Kortkommandon {.challenge}
 
 Istället för att använda verktygsväljarspritearna längst ner på scenen kan du använda tangentbordet för att välja olika verktyg.
 Du kan använda [] nedtryckt?-block för att svara på tangentbordstryckningar. För varje tangent du vill använda måste du dra in ett nytt [] nedtryckt?-block, som skickar samma meddelande som respektive verktygsväljarsprite skickar när den klickas på. Lägg till dessa scripts till scenen.
 
 Det kan vara bra att låta kortkommandot vara en bokstav som påminner om det man ska göra med det, till exempel s för stämpla.
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Har alla verktyg ett eget kortkommando nu? Fungerar alla på rätt sätt när du väljer dem med tangetbordet? Är de rätta verktyget fortfarande valda med verktygsväljarspritearna på scenen?
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
-##Utmaning 3: Stor och liten
+##Utmaning 3: Stor och liten {.challenge}
 En annan funktion som de flesta ritprogram har är att kunna byta storlek på pennan. Vi lägger till det.
 Det finns en svårighet dock, nämligen att ibland behöver vi ändra storlek på pennan och ibland behöver vi ändra storlek på pennspritens klädsel. Det beror på om vi använder en penna eller en stämpel.
 
@@ -264,22 +277,21 @@ Skapa två nya verktygsväljarsprites, som du kallar större och mindre. Den ska
 Pennspriten kan svara på meddelandena genom att ändra antingen pennstorlek med 1 eller klädselstorlek med 10, beroende på värdet hos variabeln pennläge (använd ett om-annars-block, ungefär på samma sätt som spriten väljer mellan att rita eller stämpla).
 Glöm inte att skapa kortkommandon för förstoringen och förminskningen. T.ex. upp- och nertangenterna.
 
-SPARA DITT PROJEKT
+##Spara ditt projekt {.save}
 
 Du kanske har lagt märke till att varje gång du ändrar storlek på stämpeln ändras också storleken på pennan när du byter till den.
 För att förhindra att det händer behöver du sätta storleken till 100% varje gång du byter till ett pennverktyg. Då får verktyget rätt storlek.
 
 För att göra allt ännu bättre, låt stämpeln komma ihåg vilken storlek den hade innan du valde pennverktyget och gå tillbaka till den storleken när du väljer stämpelverktyget igen. Det lättaste sättet att göra det här är att skapa en ny variabel som heter "stämpelstorlek", som uppdateras med den nuvarande storleken varje gång stämpelns storlek ändras. När stämpelverktyget sen väljs kan den hämta sin storlek från den här variabeln.
 
-##Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Fungerar storleksförändring på pennorna?
 
 Vad händer om du byter till en stämpel, ändrar storleken på den och sen byter tillbaka till en penna?
 
-SPARA DITT PROJEKT
-
+##Spara ditt projekt {.save}
 
 __Snyggt jobbat, nu är du klar! Varsågod och rita något vackert.__
 

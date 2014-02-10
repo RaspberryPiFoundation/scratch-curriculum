@@ -1,13 +1,20 @@
-Nivå 3
+---
+title: Vad är det där?
+level: Nivå 3
+language: sv-SE
+stylesheet: scratch
+embeds: "*.png"
+note: "till_instruktorerna.md"
+...
 
-#Vad är det där?
-
-__Introduktion__
+#Introduktion {.intro}
 Ett slumpvist valt föremål visas på svarta tavlan, fast alldeles otydligt. Du ska gissa vad det är genom att klicka på rätt bild under. Ju fortare du gissar, desto högre poäng får du!
 
-##STEG 1: Få olika saker att visas på svarta tavlan
+##STEG 1: Få olika saker att visas på svarta tavlan {.activity}
 
 Vi vill att några olika bilder ska kunna visas på tavlan.
+
+##Checklista {.check}
 
 1. Påbörja ett nytt Scratchprojekt och ta bort kattspriten.
 2. Klicka på Scenen och sen fliken Bakgrunder. Importera bakgrunden indoors/chalkboard.
@@ -25,7 +32,7 @@ Nu tar vi och får en slumpvis bild att visas.
 	(slut på repetera)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Får spriten en annan klädsel?
@@ -33,13 +40,15 @@ Får spriten en annan klädsel?
 __Klicka på den några gånger till.__
 Får du olika klädslar varje gång? Ibland kommer du få samma klädsel två gånger i rad, men det är lugnt. Du kommer också märka att du kan se spriten blinka till när den byter klädsel. Det ska vi lösa i nästa steg.
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##STEG 2: Gör bilden otydlig
+##STEG 2: Gör bilden otydlig {.activity}
 
 __Nu ska vi göra så att bilden är otydlig när den dyker upp, och blir tydlig efter några sekunder.__
 
 Vi använder en poängvariabel för att hålla koll på hur otydlig bilden är. Om poängen är hög kommer bilden vara mycket otydlig. I och med att poängen går ner kommer också bilden att bli tydligare. Poängen har också rollen av en timer, som i __Timer-Scratchkortet.__
+
+##Checklista {.check}
 
 1. På variabelpaletten, skapa en variabel som heter poäng.
 2. Redigera scriptet så att det ser ut såhär:
@@ -61,7 +70,7 @@ Vi använder en poängvariabel för att hålla koll på hur otydlig bilden är. 
 	(slut på repetera)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 Dyker det upp en slumpvis otydlig bild?
@@ -76,17 +85,19 @@ Får du fortfarande en ny bild varje gång du klickar på den gröna flaggan?
 
 Spara ditt projekt
 
-##Saker att pröva
+##Saker att pröva {.try}
 
 __Pröva att ändra startpoängen och hur mycket den ändras för varje gång i loopen.__ Hur påverkar det här bildens utseende? Blir det svårare eller lättare att upptäcka vad bilden föreställer?
 
 __Pröva några olika grafikeffekter från rullgardinsmenyerna.__ På vilket sätt påverkar de svårighetsgraden?
 
-##STEG 3: Låt spelaren gissa vad bilden föreställer
+##STEG 3: Låt spelaren gissa vad bilden föreställer {.activity}
 
 Så här långt har vi fått vår slumpvisa bild att långsamt dyka upp, och en poängsiffra som blir mindre med tiden, men hur vinner man spelet? Vi ska lägga till några sprites på underdelen av skärmen som spelaren kan klicka på. Om den klickar på rätt vinner den spelet. Om den klickar på fel bild förvinner spriten och spelet fortsätter.
 
 Först behöver vi veta vad det rätta svaret är.
+
+##Checklista {.check}
 
 1. Skapa en ny variabel som heter __svar__. Se till att den finns för alla sprites.
 2. Ändra i scriptet du har skrivit så att det håller koll på rätt svar. Lägg till "sätt [svar] till klädsel #"-blocken precis efter den första repetitionsloopen:
@@ -140,7 +151,7 @@ Nu vill vi att varje sprite ska reagera när man klickar på den, och göra någ
 	säg förena Grattis! Du fick poäng poäng i 2 sekunder
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__
 
 När du testar spelet kan du välja att visa svaret på skärmen för att kolla att spelet fungerar som det ska. 
@@ -190,13 +201,13 @@ För att fixa det andra problemet behöver vi stoppa __frågespritens__ repetera
 	säg förena Grattis! Du fick poäng poäng i 2 sekunder
 ```
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
 __Bra jobbat, nu är du klar med grundspelet!__
 
 Men det finns fler saker du kan göra i ditt spel. Ta och testa de här utmaningarna!
 
-##Utmaning 1: Gör spelet svårare eller lättare
+##Utmaning 1: Gör spelet svårare eller lättare {.challenge}
 
 Ändra hur svårt spelet är.
 
@@ -204,9 +215,9 @@ Men det finns fler saker du kan göra i ditt spel. Ta och testa de här utmaning
 * Försök ändra effekt på otydligheten i bilden.
 * Försök ändra bilderna man ska gissa på, så att de antingen är mer lika varandra eller mer olika. Om du gör det här, glöm då inte att ändra svarspritens klädsel.
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 2: Gör olika typer av otydlighet i varje spelomgång
+##Utmaning 2: Gör olika typer av otydlighet i varje spelomgång {.challenge}
 
 Som det ser ut nu har varje spelomgång samma typ av otydlighet i gissningsbilden. I steg 2 kanske du prövade några olika effekter som fungerar minst lika bra som färg + pixelförvandlingen vi använde.
 
@@ -216,18 +227,18 @@ Leta upp några olika otydlighetseffekter som fungerar bra.
 
 __Tips:__ Pröva att skapa en ny variabel som du kallar "effekt att använda". Sätt den till ett slumpvist värde i början av spelet. Använd om-block inuti repetera tills-loopen för att lägga till den korrekta effekten för den här spelomgången.
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 3: Låt spelet ha flera rundor
+##Utmaning 3: Låt spelet ha flera rundor {.challenge}
 
 Som det ser ut nu är varje spel fristående. Ändra det så att spelet pågår flera rundor. Låt till exempel en spelomgång ha tre rundor, så att spelaren måste gissa tre bilder och kan få upp till 300 poäng.
 
 __Tips:__ Du kommer behöva en extra variabel för att hålla koll på den sammanlagda poängen för de olika rundorna. Du kommer också behöva en loop som sträcker sig över de olika rundorna.
 __Tips:__ Du kommer även behöva göra så att de felaktiga gissningarnas bilder kommer tillbaka när nästa runda startar. Du kanske kan lösa det genom att sända ut ett meddelande?
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 4: Gör de senare rundorna svårare
+##Utmaning 4: Gör de senare rundorna svårare {.challenge}
 
 Gör spelet svårare för varje ny runda du påbörjar.
 
@@ -235,35 +246,35 @@ Behöver varje runda ge lika mycket poäng? Borde man få mer poäng för att gi
 
 __Tips:__ Hur ska du kunna veta vilken runda du befinner dig på? Hur kan du använda det för att ändra svårighetsgrad och poängräkning?
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 5: Fortsätt spelet tills spelaren gissar fel
+##Utmaning 5: Fortsätt spelet tills spelaren gissar fel {.challenge}
 
 Istället för att ha ett förutbestämt antal rundor, gör så att man får spela tills man svarar fel. Det här fungerar förmodligen bara om spelet blir svårare ju längre man kommer.
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 6: Gör spelet svårare eller lättare beroende på hur duktig spelaren är
+##Utmaning 6: Gör spelet svårare eller lättare beroende på hur duktig spelaren är {.challenge}
 
 Istället för att alltid göra spelet svårare kan vi göra så att spelet ändrar svårighetsgrad beroende på hur bra det går för spelaren. Om han ellr hon gissar rätt snabbt kan spelet bli lite svårare. Om han eller hon istället tar lång tid på sig att svara rätt, eller svarar fel, då kan du göra spelet lättare.
 
 Den här idén fungerar bara om du låter bli att räkna samman spelarens poäng från runda till runda.
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 7: Håll koll på den högsta poängen
+##Utmaning 7: Håll koll på den högsta poängen {.challenge}
 
 Håll koll på den högsta poängen. Om någon lyckas slå den, be henne eller honom skriva in sitt namn och uppdatera högsta poängen. Se till att poängen och personens namn syns på skärmen.
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-##Utmaning 8: Gör felaktiga gissningar dyra
+##Utmaning 8: Gör felaktiga gissningar dyra {.challenge}
 
 Som det ser ut nu finns det inget straff om man bara klickar på alla sprites så fort man kan. Ändra i spelet så att poängen går ner lite för varje gång man gissar fel.
 
 Gör det här spelet bättre?
-
-Spara ditt projekt
+ 
+##Spara ditt projekt {.save}
 
 __Snyggt jobbat, nu är du klar! Varsågod och spela.__
 Glöm inte att du kan dela spelet med kompisar och familj genom att klicka på __Dela ut__ i menyn!

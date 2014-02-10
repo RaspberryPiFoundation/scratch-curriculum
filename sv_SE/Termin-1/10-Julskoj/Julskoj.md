@@ -1,12 +1,19 @@
-Nivå 2
+---
+title: Julskoj
+level: Nivå 2
+language: sv-SE
+stylesheet: scratch
+embeds: "*.png"
+note: "till_instruktorerna.md"
+...
 
-#Julskoj
-
-__Introduktion:__
+##Introduktion {.intro}
 __I det här projektet kommer vi att skapa ett spel med rullande bakgrunder, poängsättning och en festlig Game Over-skärm.__
 En olycka i en leksaksfabrik har gjort att julklappar faller ner från himlen. Hjälp Rudolf att rädda Julen genom att fånga julklapparna!
 
-##STEG 1: Gör så att Rudolf flyger
+##STEG 1: Gör så att Rudolf flyger {.activity}
+
+##Checklista {.check}
 
 1. Starta ett nytt Scratchprojekt. Ta bort katten genom att högerklicka på den och välja Radera. 
 2. Byt bakgrunden till SkyBackground.png.
@@ -23,9 +30,11 @@ för alltid
 (slut på för alltid)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 
 __Klicka på den gröna flaggan och flytta på muspekaren__, följer Rudolf efter muspekaren? 
+
+##Checklista {.check}
 
 6. För att göra spelet mer intressant ska vi lägga till några rörliga snöiga backar så att det ser ut som att Rudolf flyger. Använd knappen __Välj ny sprite från fil__ för att lägga till Snöspriten till projektet ( använd filen __SnowHills.png)
 7. Byt namn på spriten till __Snow1__.
@@ -45,9 +54,11 @@ för alltid
 (slut på för alltid)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 
 __Klicka på den gröna flaggan__, rör sig backarna? Vad händer då backarna rör sig mot sidan av scenen? 
+
+##Checklista {.check}
 
 10. Låt oss fixa problemet med att de snöiga backarna flimrar då de når den högra sidan av skärmen. Lägg till mer backar till scenen genom att använda __Välj ny sprite från fil__ knappen för att lägga till Snö-spriten till projektet igen (använd SnowHills.png-filen).
 11. Byt namn på spriten till __Snow2__.
@@ -61,13 +72,15 @@ för alltid
 (slut på för alltid)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 
 __Klicka på den gröna flaggan__, rör sig backarna? Har problemet med de flimrande träden försvunnit? 
 
-__Spara ditt projekt__
+##Spara ditt projekt {.save}
 
-##STEG 2: Fallande julklappar
+##STEG 2: Fallande julklappar {.activity}
+
+##Checklista {.check}
 
 1. Vi måste nu lägga till julklappar som Rudolf ska samla in. Använd knappen __Välj ny sprite från fil__ för att lägga till Julklapp-spriten till projektet (använd Present.png filen).
 2. Byt namn på spriten __Julklapp__.
@@ -95,9 +108,11 @@ för alltid
 (slut på för alltid)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 
 __Klicka på den gröna flaggan,__ faller julklapparna från himlen? Försvinner de när Rudolf rör dem eller då de slår i marken?
+
+##Checklista {.check}
 
 7. Låt oss göra spelet mer intressant genom att byta färg på julklapparna varje gång de faller ner. Gör detta genom att använda ändra färg-kommandot. 
 8. Ändra hastigheten på varje julklapp genom att byta ut sätt hastighet  med slumptal-kommandot, prova olika värden som -10 till -1. Ditt script ska nu se ut så här. 
@@ -122,10 +137,12 @@ för alltid
 (slut på för alltid)
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan,__ faller julklapparna med olika hastighet och har de olika färg?
 
-##STEG 3: Poängsättning och ljudeffekter 
+##STEG 3: Poängsättning och ljudeffekter {.activity}
+
+##Checklista {.check}
 
 1. __Låt oss ändra vårt script för att hålla koll på poängsättningen i spelet.__ Vi kan sedan använda detta för att bestämma när game over-meddelandet ska visas.
 2. Skapa en ny __variabel__ genom att klicka på variabler. Kalla den "Poäng" och gör den för alla sprites. Låt denna variabel vara ibockad så att den syns på skärmen. 
@@ -167,13 +184,15 @@ spela ljudet Jingle_Bells
 
 Notera, om musiken till en början låter "hackig" ska du spara projektet, stänga ner Scratch och öppna projektet igen.  
 
-###Testa ditt projekt
+##Testa ditt projekt {.test}
 
 __Klicka på den gröna flaggan,__ ändras poängen när Rudolf rör vid en julklapp? 
 
-__SPARA DITT PROJEKT__
+##Spara ditt projekt {.save}
 
-##STEG 4: Game over
+##STEG 4: Game over {.activity}
+
+##Checklista {.check}
 
 1. __Låt oss ändra vårt script för att hålla koll på poängen i spelet.__ Vi kan använda detta senare för att bestämma när game over-meddelandet ska visas. 
 2. Ändra scriptet på __Scenen__ så att när __poäng når 10__ ska vi "sända" ett __GameOver__ -meddelande. 
@@ -205,13 +224,13 @@ visa
 stoppa alla
 ```
 
-###Testa ditt projekt
+##Testa ditt projekt {.flag}
 
 __Klicka på den gröna flaggan,__ ändras poängen när Rudolf rör vid julklappen? 
 
-__SPARA DITT PROJEKT__
+##Spara ditt projekt {.save}
 
-##Utmaning: Gör spelet svårare 
+##Utmaning: Gör spelet svårare {.challenge}
 
 * Kan du få julklapparna att vingla på deras väg nerför skärmen? 
 * Kan du lägga till mer än en julklapp till spelet på samma gång? 
