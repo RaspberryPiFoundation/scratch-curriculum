@@ -32,13 +32,9 @@ Hastighetsvariabeln kommer att kontrollera hur snabbt häxan rör sig. Vi använ
 ```scratch
 
 	när FLAGGAN klickas på
-
 	sätt hastighet till 5
-
 	För alltid
-
 		gå hastighet steg
-
 	(slut på för alltid)
 ```
 		
@@ -72,7 +68,7 @@ Rör sig häxan från sida till sida över skärmen?
 
 Spara ditt projekt  {.save}
 
-###Saker att pröva {.activity}
+###Saker att pröva {.try}
 __Försök att ändra värdet för hastighetsvariabeln så att hon kan flyga snabbare eller långsammare. __
 
 __Hur skulle du göra så att häxan flyger snabbare ju längre tid hon flyger?__
@@ -87,17 +83,11 @@ __Skapa ett script för häxan:__
 ```scratch
 
 	när FLAGGAN klickas på
-
 	för alltid
-
 		göm
-
 		vänta slumptal 2 till 5 sekunder 
-
 		visa
-
 		vänta slumptal 2 till 5 sekunder
-
 	(slut på för alltid)
 ```
 ###Testa ditt projekt {.flag}
@@ -106,7 +96,7 @@ Rör sig häxan från sida till sida över skärmen och försvinner och dyker ho
 
 Spara ditt projekt {.save}
 
-###Saker att pröva {.activity}
+###Saker att pröva {.try}
 __Försök att ändra intervallet av slumptal. Vad händer om du väljer väldigt höga siffror eller väldigt låga?__
 (Ger det här dig några ledtrådar för hur man får häxan att öka hastigheten ju längre spelet håller på? )
 
@@ -135,7 +125,7 @@ Försvinner häxan och spelar ljudet när du klickar på den?
 
 ##Spara ditt projekt {.save}
 
-###Saker att pröva {.activity}
+###Saker att pröva {.try}
 __Fråga en instruktör om du kan spela in ditt eget ljud för att spela upp.__
 
 ##Steg 4: Lägg till poängsättning och tidtagning {.activity}
@@ -147,13 +137,9 @@ Vi har en häxa, men nu vill vi göra ett spel! Vi vill ge poäng varje gång vi
 1. Skapa en ny "variabel" för sprites som heter __poäng__, och ändra häxans script för att öka varibeln med 1 varje gång hon klickas på. 
 
 ```scratch
-
 	när sprite1 klickas på
-
 	göm
-
 	spela ljudet Fairydust
-
 	ändra score med 1
 ```
 
@@ -163,19 +149,12 @@ ett. Detta ska fortgå tills timer är 0, då används "stoppa alla" för att st
 ```scratch
 
 	när FLAGGAN klickas på
-
 	sätt timer till 30
-
 	sätt score till 0
-
 	repetera tills timer = 0
-
 		vänta 1 sekunder
-
 		ändra timer med -1
-
 	(slut på repetera)
-
 	stoppa alla
 ```
 
@@ -185,13 +164,13 @@ __Klicka på den gröna flaggan.__
 
 ##Spara ditt projekt {.save}
 
-###Saker att pröva
+###Saker att pröva {.try}
 __Hur kan du göra så att häxan ökar hastigheten under spelets gång?__
 
 
 __Bra gjort, du har gjort klart det grundläggande spelet. Det finns dock fler saker som du kan göra med ditt spel. Prova på den här utmaningen!__
 
-##Utmaning: lägg till fler häxor {.activity}
+##Utmaning: lägg till fler häxor {.challenge}
 
 Om det är bra med en häxa, så måste det vara ännu bättre mer fler! __Låt oss ha tre häxor som flyger omkring.__
 1. Duplicera häxan genom att __högerklicka__ på den i spritelistan. 
@@ -206,7 +185,7 @@ Har du tre häxor som rör sig från sida till sida över skärmen, som slumpvis
 
 ##Spara ditt projekt {.save}
 
-###Saker att pröva {.activity}
+###Saker att pröva {.try}
 1. __Hur många häxor är ett bra antal för spelet?__
 2. __Kan du få häxorna att se olika ut? Du kan antingen ändra deras klädslar eller också använda några block från "Utseende" för att ändra dem.__
 3. __Kan du göra så att häxorna är värda olika mycket poäng? Vad sägs om att göra den snabbaste (och minsta) värd 10 poäng?__
