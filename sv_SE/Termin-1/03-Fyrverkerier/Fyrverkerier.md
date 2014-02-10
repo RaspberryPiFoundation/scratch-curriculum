@@ -74,10 +74,11 @@ Byt sedan __när mellanslag trycks__-kontrollblocket med __när flaggan klickats
 		glid 1 sek till x: mus x y: mus y
 	(slut på för alltid)
 ```
+
 ##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan, tryck sedan på musknappen någonstans på scenen. Klicka igen på en annan punkt.__ 
 
-##Saker att pröva {.activity}
+##Saker att pröva {.try}
 1. Försök att göra några raketer lite långsammare eller snabbare än andra. 
 2. Försök att ändra raketens riktning innan den glider mot muspekaren så att den får en båge. 
 
@@ -189,7 +190,7 @@ __Klicka på den gröna flaggan.__
 
 Sprider sig explosionsbilden från mitten av raketen och växer sakta? 
 
-##Saker att pröva {.activity}
+##Saker att pröva {.try}
 Varför inte försöka göra varje explosion unik genom att ändra storlek och förstoringshastighet?
 
 ##Spara ditt projekt {.save}
