@@ -10,7 +10,7 @@ Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdob
 
 1. __Stwórz nowy projekt.__
 2. __Usuń duszka kota__ i zastąp tło lasem (woods) z katalogu __Nature__.
-3. Kliknij przycisk "Wybierz nowego duszka z pliku" i dodaj ducha do projektu (znajdź kostium __ghost1__ w katalogu __Fantasy__).
+3. Kliknij przycisk "Wybierz nowego duszka z pliku" i dodaj ducha do projektu (znajdź kostium __ghost2-b__ w katalogu __Fantasy__).
 
     __Teraz sprawmy, aby duch zaczął latać__
 
