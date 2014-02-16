@@ -17,7 +17,7 @@ Ten projekt uczy
 * Tworzenia i korzystania z logiki Boole'a
 
 ###Materiały
-Ten projekt korzysta z kostiumów dostępnych w katalogu Zasoby. Upewnij się, że ten katalog jest dostępny na pulpicie każdego komputera, z którego będą korzystać dzieci.
+Ten projekt korzysta z kostiumów dostępnych w katalogu Zasoby. Upewnij się, że ten katalog jest dostępny na każdym komputerze, z którego będą korzystać dzieci.
 
 ##Podstawowe ćwiczenia
 

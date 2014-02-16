@@ -7,9 +7,9 @@ Podczas tego projektu stworzymy podstawowe narzędzia do rysowania. Będzie moż
 
 ##KROK 1: Rysowanie kursorem myszy
 
-Zaczniemy od stworzenia kredki, która rysuje, gdy przeciąga się ją po scenie.
+Zaczniemy od stworzenia kredki, która rysuje po scenie.
 
-1. Rozpocznij nowy projekt w Scratchu. Skasuj duszka kota, klikając na nim prawym przyciskiem myszy i wybierając Usuń.
+1. Rozpocznij nowy projekt w Scratchu. Skasuj kota, klikając na nim prawym przyciskiem myszy i wybierając Usuń.
 2. Kliknij na Scenę i przejdź do karty Tła. Wybierz tablicę z katalogu Zasoby.
 3. Stwórz nowego duszka o nazwie __kredka__, wybierając __zielona-kredka__ z katalogu Zasoby.
 4. Przejdź na kartę z kostiumami i kliknij na edycję kostiumu. W edytorze obrazów zmień centrum kostiumu na rysik kredki. Aby to zrobić, kliknij __Ustaw środek kostiumu__ i przesuń punkt przecięcia linii na ekranie, aby był na końcu rysika.
@@ -227,7 +227,7 @@ Na początek dodaj jednak przycisk wyboru tęczowego koloru i tęczowy kostium d
 1. Dodaj nowego duszka z wyborem koloru na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu 'teczowa kredka' z katalogu Zasoby i każ mu nadawać wiadomość __tęcza__ po kliknięciu.
 2. Dodaj 'teczowa kredka' jako kostium do duszka ołówka.
 
-Potrzebujesz zbudować skrypt, który będzie zmieniał kolor kredki wiele razy w ciągu sekundy, aby oddać efekt tęczy. Zmienianie koloru o 5 co 0,05 sekund działa całkiem dobrze, ale przetestuj inne wartości. Karta 'Timer' pokazuje, jak możesz zmieniać różne rzeczy co ileś sekund. Skorzystaj z bloku __zmień kolor pisaka o 5__ zamiast zmieniać licznik o -1 wewnątrz pętli.
+Potrzebujesz zbudować skrypt, który będzie zmieniał kolor kredki wiele razy w ciągu sekundy, aby oddać efekt tęczy. Zmienianie koloru o 5 co 0,05 sekund działa całkiem dobrze, ale przetestuj inne wartości. Skorzystaj z bloku __zmień kolor pisaka o 5__ zamiast zmieniać licznik o -1 wewnątrz pętli.
 
 Musisz też pilnować, aby ta pętla zmieniała kolory tylko wtedy, kiedy jest wybrana tęczowa kredka – w przeciwnym przypadku wszystkie kredki będą rysować na tęczowo! Możesz to zrobić w sposób podobny do tego, w który kontrolujesz, czy rysujesz, czy stawiasz pieczątki. Musisz stworzyć zmienną __pokażTęczę__, która ma wartość __prawda__ jeżeli chcesz rysować tęczę i wartość __fałsz__, jeżeli nie chcesz. Za każdym razem, gdy kredka reaguje na wiadomość odebraną od przycisku na dole tablicy, powinna ustawiać odpowiednią wartość dla zmiennej __pokażTęczę__.
 
