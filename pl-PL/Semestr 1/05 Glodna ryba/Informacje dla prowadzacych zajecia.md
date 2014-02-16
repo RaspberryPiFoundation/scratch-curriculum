@@ -2,7 +2,7 @@
 ##(Na ryby)
 
 ###Wstęp
-Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu, aby udało jej się zjeść wszystkie przynęty.
+Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu, aby udało jej się zjeść wszystkie krewetki.
 
 ###Umiejętności
 Ten projekt uczy:
@@ -19,8 +19,8 @@ Ten projekt korzysta z zasobów z katalogów Backgrounds i Costumes oraz plików
 
 ###Podstawowe ćwiczenia
 Krok 1: Głodna ryba podążą za kursorem myszy
-Krok 2: Dodajemy żyjątka
-Krok 3: Głodna ryba zjada żyjątka
+Krok 2: Dodajemy krewetki
+Krok 3: Głodna ryba zjada krewetki
 
 ###Wyzwania
 1. Spraw, aby krewetki poruszały się inaczej
