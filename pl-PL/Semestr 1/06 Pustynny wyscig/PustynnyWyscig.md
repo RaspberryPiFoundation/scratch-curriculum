@@ -3,7 +3,7 @@ Poziom 2
 #Pustynny wyścig
 
 __Wstęp:__
-Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierze, które pierwsze dotrze do krawędzi ekranu wygrywa.
+Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierze, które pierwsze dotrze do krawędzi ekranu, wygrywa.
 
 
 ##KROK 1: Stwórz scenę i dodaj duszki
@@ -13,9 +13,9 @@ Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pu
 3. Dodaj kolejnego duszka i wybierz kostium papugi.
 
 
-##KROK 2: Spraw, aby lew i papuga się ruszały
+##KROK 2: Spraw, aby lew i papuga się poruszały
 
-Chcemy, aby duszek się ruszał, kiedy naciskasz klawisz.
+Chcemy, aby duszki poruszały się w odpowiedzi na wciśnięcie klawiszy.
 
 1. Na początek wybierzmy lwa i ustawmy, aby poruszał się o 4 kroki po wciśnięciu klawisza 'L'
 
@@ -53,7 +53,7 @@ Aby móc określić później, kto wygrał, musimy najpierw wiedzieć, kiedy wy�
 	kiedy kliknięto flagę
 	pokaż
 ```
-4. Teraz chcemy, aby przycisk odliczał od 3 i ogłosił start wyścigu, a następnie się schował. Dodaj poniższy skrypt:
+4. Teraz chcemy, aby przycisk odliczał od 3 w dół i ogłaszał start wyścigu, a następnie się chował. Dodaj poniższy skrypt:
 
 ```scratch
 
@@ -71,7 +71,7 @@ Czy widzisz odliczanie po kliknięciu przycisku? Czy przycisk znika po zakończe
 
 Zapisz swój projekt.
 
-Chcemy, aby ścigający ruszali się tylko po rozpoczęciu wyścigu. Chcemy też wiedzieć, kiedy wyścig się zakończył. Będziemy potrzebować zmiennej do przechowywania tej informacji.
+Chcemy, aby ścigający poruszali się tylko po rozpoczęciu wyścigu. Chcemy też wiedzieć, kiedy wyścig się zakończył. Będziemy potrzebować zmiennej do przechowywania tej informacji.
 
 5. Dodaj zmienną do wszystkich duszków i nazwij ją wyścig. Odznacz pole przy niej, aby nie było jej widać na scenie.
 6. Teraz ustaw wyścig na 0, kiedy gra się rozpocznie. Dodaj ten krok do skryptu przycisku:
@@ -118,9 +118,9 @@ Teraz chcemy notować, kto wygrał wyścig i usuwać tę informację po zakończ
 	
 ```
 
-2. Teraz chcemy, aby papuga dała nam znać, czy wygrała. Nagraj nowy dźwięk dla papugi, który będzie odegrany, jeżeli papuga wygra! Przejdź na kartę __dźwięki__ duszka i nagraj 
+2. Teraz chcemy, aby papuga dała nam znać, czy wygrała. Nagraj nowy dźwięk dla papugi, który będzie odegrany, jeżeli papuga wygra. Przejdź na kartę __dźwięki__ duszka i nagraj odgłos zwycięstwa!
 
-3. Dodaj do skryptu komendę, która odgrywa to nagranie, gdy papuga wygra:
+3. Dodaj do skryptu komendę, która odgrywa to nagranie po wygranej:
 
 ```scratch
 
@@ -149,7 +149,7 @@ Zapisz swój projekt.
 
 Po zakończeniu wyścigu musimy powiedzieć wszystkim duszkom, że to koniec i zresetować grę, aby mogła się zacząć od nowa.
 
-__Potrzebujemy, aby duszek, który wygra, ogłosił swoje zwycięstwo.__
+__Duszek, który wygra, musi ogłosić swoje zwycięstwo.__
 
 1. Kliknij na papugę i dodaj do skryptu ogłaszanie końca wyścigu po wygranej.
 
@@ -197,7 +197,7 @@ Zapisz swój projekt.
 
 * __Spróbuj dodać dopalacz__, który każdy duszek może użyć tylko raz podczas wyścigu. Dopalacz przesuwa postać w przód o __30 kroków__.
 * __Dodaj nowy kostium__ z płomieniem za każdym duszkiem i ustaw, aby się pokazywał, kiedy dopalacz zostanie użyty.
-* __Nagraj następny dźwięk__, który wydadzą duszki po użyciu dopalacza.
+* __Nagraj następny dźwięk__, który będzie odegrany po użyciu dopalacza.
 
 ###Przetestuj swój projekt
 
