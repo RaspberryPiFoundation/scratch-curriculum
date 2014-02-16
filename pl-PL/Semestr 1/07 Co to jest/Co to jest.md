@@ -240,7 +240,7 @@ Zapisz swój projekt.
 
 ##Wyzwanie 4: Spraw, aby każda następna runda była trudniejsza
 
-Z rundy na rundę spraw, aby gra była coraz trudniejsza.
+Spraw, aby gra była coraz trudniejsza z rundy na rundę.
 
 Czy w każdej rundzie punkty powinny być przyznawane w ten sam sposób? Może gracz powinien zdobywać więcej punktów w póżniejszych rundach, jeżeli szybciej odgadnie obrazek?
 
