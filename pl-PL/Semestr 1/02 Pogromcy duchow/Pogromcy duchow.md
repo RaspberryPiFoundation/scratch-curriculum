@@ -12,7 +12,7 @@ Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdob
 2. __Usuń duszka kota__ i zastąp tło lasem (woods) z katalogu __Nature__.
 3. Kliknij przycisk "Wybierz nowego duszka z pliku" i dodaj ducha do projektu (znajdź kostium __ghost1__ w katalogu __Fantasy__).
 
-    __Teraz sprawmy, aby duch zaczęł latać__
+    __Teraz sprawmy, aby duch zaczął latać__
 
 4. Dodaj zmienną 'Tylko dla tego duszka' i nazwij ją "prędkość". Nowa zmienna powinna pojawić się na __Scenie__ jako __"Duszek1 prędkość"__.
 
@@ -20,7 +20,7 @@ Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdob
 
     Odznacz "prędkość" w __panelu Zmiennych__, aby nie było jej widać na Scenie. Ta zmienna będzie kontrolować prędkość lotu naszego ducha. Korzystamy ze zmiennej, aby móc później zmieniać prędkość lotu ducha.
 
-5. Chcemy, aby duch zaczęł latać zaraz po rozpoczęciu gry. __Stwórz dla niego poniższy skrypt__:
+5. Chcemy, aby duch zaczął latać zaraz po rozpoczęciu gry. __Stwórz dla niego poniższy skrypt__:
 
 ```scratch
 
@@ -46,7 +46,7 @@ __Kliknij zieloną flagę__ i zobacz, co robi duch. Dlaczego utknął na brzegu 
         (koniec zawsze)
     ```
 
-2. Aby duch nie obracała się do góry nogami, wybierz opcję "odwróć tylko w prawo-lewo" w ustawieniach tego duszka.
+2. Aby duch nie obracał się do góry nogami, wybierz opcję "odwróć tylko w prawo-lewo" w ustawieniach tego duszka.
 
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę.__
@@ -92,7 +92,7 @@ Czy pomoże Ci to sprawić, aby duch latał coraz szybciej?
 
 ##KROK 3: Spraw, aby duch znikał, gdy na niego klikniesz
 
-Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech klikają w ducha, aby zniknął. Chcemy, aby po kliknięciu w ducha było słychać jakiś dźwięk, a sam duch zniknął z ekranu.
+Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech klikają w ducha, aby zniknął. Chcemy, aby po kliknięciu w ducha było słychać jakiś dźwięk, a sam duch znikał z ekranu.
 
 1. W zakładce __Dźwięki__ zaimportuj dźwięk __Fairydust__ z katalogu __Electronic__.
 
@@ -108,7 +108,7 @@ Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech k
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
-Czy ducha znika i wydaje dźwięk, jak go klikniesz?
+Czy ducha znika i wydaje dźwięk, gdy go klikniesz?
 
 Zapisz swój projekt.
 
@@ -129,7 +129,7 @@ Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy li
         zmień wynik o 1
     ```
 
-2. Kliknij na __Scenę__, stwórz nową zmienną (tym razem tylko da sceny) i nazwij ją __czas__. Dodaj nowy skrypt ustawiający czas na __30__ oraz wynik na __0__, który zostaje wykonany po wciśnięciu zielonej flagi. Skorzystaj z bloku "powtarzaj aż", aby odczekać sekundę i zmniejszyć wartość czasu o 1. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku "zatrzymaj wszystko".
+2. Kliknij na __Scenę__, stwórz nową zmienną (tym razem tylko da sceny) i nazwij ją __czas__. Dodaj nowy skrypt uruchamiany kliknioęciem flagi, który ustawia czas na __30__ oraz wynik na __0__. Skorzystaj z bloku "powtarzaj aż", aby odczekać sekundę i zmniejszyć wartość czasu o 1. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku "zatrzymaj wszystko".
 
     ```scratch
 
