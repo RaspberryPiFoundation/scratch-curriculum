@@ -2,7 +2,7 @@
 ##(Jednoręki bandyta)
 
 ###Wstęp:
-Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Musisz je zatrzymać w momencie, kiedy wszystkie wyglądają tak samo (podobnie jak w jednorękim bandycie!).
+Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Jeżeli po zatrzymaniu wszystkie duszki wyglądają tak samo – gratulacje! Tak jak w jednorękim bandycie, takie same duszki wygrywają.
 
 ###Umiejętności
 

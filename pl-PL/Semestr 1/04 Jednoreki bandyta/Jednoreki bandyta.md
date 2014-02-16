@@ -4,7 +4,7 @@ Poziom 2
 
 __Wstęp:__
 
-Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Musisz je zatrzymać w momencie, kiedy wszystkie wyglądają tak samo (podobnie jak w jednorękim bandycie!).
+Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Jeżeli po zatrzymaniu wszystkie duszki wyglądają tak samo – gratulacje! Tak jak w jednorękim bandycie, takie same duszki wygrywają.
 
 ##KROK 1: Tworzenie duszka, który zmienia kostiumy
 
@@ -12,20 +12,19 @@ __Zaimportujmy potrzebne obrazki do gry__
 
 1. Rozpocznij nowy projekt w Scratchu. Usuń kota, klikając na nim prawym przyciskiem myszki i wybierając 'usuń'.
 2. Zaimportuj nowego duszka.
-3. Wybierz obrazek z dowolnego katalogu. My użyliśmy 'bananas1' z katalogu 'Things', ale ty możesz wybrać dowolny obrazek, który ci się podoba.
-4. Kliknij na zakładkę 'Kostiumy' i wybierz dwie inne obrazki - w sumie potrzebujemy trzy różne kostiumy (my wybraliśmy 'bee1' z katalogu 'Animals' i 'lego' z katalogu 'Things', ale możesz wybrać którykolwiek chcesz).
+3. Wybierz obrazek z dowolnego katalogu. My użyliśmy 'bananas1' z katalogu 'Things', ale możesz wybrać dowolny obrazek, który ci się podoba.
+4. Kliknij na zakładkę 'Kostiumy' i wybierz dwa inne obrazki – potrzebujemy w sumie trzy różne kostiumy (my wybraliśmy 'bee1' z katalogu 'Animals' i 'lego' z katalogu 'Things', ale możesz wybrać którekolwiek chcesz).
 
 __Skoro mamy już kostiumy, teraz sprawmy, aby duszek nosił je wszystkie na zmianę.__
 
 ##KROK 2: Zmieniamy pojawiające się obrazki
 
 1. Przejdź do zakładki Skrypty.
-2. Kliknij na palecie Kontrola i przeciągnij blok "kiedy kliknięto FLAGĘ" na obszar ze skryptami. Ten blok zostanie uruchomiony po wciśnięciu ikony zielonej flagi w prawym rogu nad Sceną.
+2. Kliknij na palecie Kontrola i przeciągnij blok "kiedy kliknięto FLAGĘ" na obszar ze skryptami.
 3. Dodaj blok "zawsze" i dołącz go do bloku z flagą.
-4. Kliknij zieloną flagę. Zwróć uwagę, że wokół naszego skryptu pojawia się biała ramka. Oznacza to, że nasz skrypt jest właśnie w tym momencie wykonywany.
-5. Kliknij na palecie Wygląd i dołacz do naszego skryptu blok "następny kostium". Kliknij jeszcze raz zieloną flagę.
+4. Kliknij na palecie Wygląd i dołacz do skryptu blok "następny kostium". Kliknij zieloną flagę.
 6. Co możemy zrobić, aby obrazki nie zmieniały się tak szybko? Dodaj blok "czekaj 1 s" z palety Kontrola.
-7. Zmień czas, aby obrazki zmieniały się troszkę szybciej, ale nie za szybko - 0.1 s powinno być w sam raz. Co się stanie, jeżeli usuniemy z naszego skryptu blok "czekaj"?
+7. Zmień czas, aby obrazki zmieniały się troszkę szybciej, ale nie za szybko - 0.1 s powinno być w sam raz. Co się stanie, jeżeli usuniemy ze skryptu blok "czekaj"?
 
 ```scratch
 
@@ -64,7 +63,7 @@ Czy duszek zatrzymuje się po kliknięciu?
 
 __Uruchom skrypt jeszcze raz.__
 
-Czy duszek zatrzymuje się, jeżeli najedziesz na niego kursorem myszki, ale nie klikniesz? Czy zatrzymuje się, jeżeli klikniesz gdzieś indziej na Scenie? Gdzieś indziej w oknie Scratcha? A gdy klikniesz gdzieś poza oknem Scratcha?
+Czy duszek zatrzymuje się, jeżeli najedziesz na niego kursorem myszki, ale nie klikniesz? Czy zatrzymuje się, jeżeli klikniesz gdzie indziej na Scenie? Gdzie indziej w oknie Scratcha? A gdy klikniesz gdzieś poza oknem Scratcha?
 
 Zapisz swój projekt.
 
@@ -72,7 +71,7 @@ Zapisz swój projekt.
 __Teraz potrzebujemy stworzyć dwa inne duszki, abyśmy mogli zagrać w naszą grę!__
 
 1. Zduplikuj duszka (Duszek1), klikając na nim prawym przyciskiem myszki.
-2. Zduplikuj go jeszcze raz, tak abyśmy mieli w sumie trzy duszki na obszarze w prawym dolnym rogu ekranu.
+2. Zduplikuj go jeszcze raz, tak aby były w sumie trzy.
 3. Poprzesuwaj duszki na Scenie, tak aby były obok siebie. Jeśli chcesz, możesz je trochę zmniejszyć.
 
 ###Przetestuj swój projekt
@@ -83,11 +82,11 @@ Wszystkie duszki powinny się zmieniać. Spróbuj zatrzymać je na tym samym obr
 Zapisz swój projekt.
 
 ###Rzeczy do spróbowania
-Gdy zaczynasz grę, wszystkie duszki pokazują ten sam kostium i zmieniają się razem w taki sam sposób. Może spróbuj to zmienić w taki sposób, aby kostiumy zaczęły się zmieniać losowo po wciśnięciu flagi?
+Gdy zaczynasz grę, wszystkie duszki pokazują ten sam kostium i zmieniają się razem w taki sam sposób. Może spróbuj to zmienić tak, aby kostiumy zmieniały się losowo po wciśnięciu flagi?
 
-Wskazówka: spróbuj wybrać losowy strój dla każdego duszka po rozpoczęciu gry.
+Wskazówka: spróbuj wylosować strój dla każdego duszka po rozpoczęciu gry.
 
-__Brawo! Udało ci się skończyć podstawową wersję gry! Jest jeszcze kilka rzeczy, które możesz zmienić w swojej grze. Zmierz się z poniższymi wyzwaniami!__
+__Brawo! Udało ci się skończyć podstawową wersję gry! Jest jeszcze kilka rzeczy, które możesz zmienić w grze. Zmierz się z poniższymi wyzwaniami!__
 
 ##Wyzwanie 1: Zwiększ poziom trudności gry
 
@@ -104,15 +103,15 @@ Za każdym razem, jak coś zmieniasz, zastanów się, jaki ma to wpływ na pozio
 
 ##Wyzwanie 2: Dodaj zmienny poziom trudności: niech gra staje się coraz łatwiejsza lub coraz trudniejsza w miarę upływu czasu
 
-Różni ludzie różnie sobie radzą podczas grania w grę. __Jak możesz zmodyfikować grę, aby dopasowywała swój poziom trudności w zależności od gracza?__
+Różni ludzie różnie sobie radzą z grą. __Jak możesz zmodyfikować grę, aby dopasowywała swój poziom trudności do zdolności gracza?__
 
 Jednym z rozwiązań jest __dopasowanie prędkości, z jaką zmieniają się kostiumy__. Możesz dodać zmienną o nazwie __opóźnienie__, aby kierować blokiem "czekaj". Jeżeli gracz wygra rundę, opóźnienie może się zmniejszyć (co podniesie nieco poziom trudności gry). Jeżeli gracz przegra rundę, opóźnienie może wzrosnąć, co ułatwi nieco grę.
 
 ##Wyzwanie 3: Sprawdź, kiedy wszystkie duszki zatrzymały się na tym samym obrazku
 
-__Celem gry jest takie kliknięcie na duszki, aby zatrzymały się wszystkie pokazując ten sam kostium. Byłoby fajnie, gdyby Scena potrafiła wykryć, kiedy runda się skończyła i jaki był wynik gry. Scena mogłaby sprawdzać, czy wszystkie duszki były takie same.__
+__Celem gry jest takie kliknięcie na duszki, aby zatrzymały się wszystkie pokazując ten sam kostium. Byłoby fajnie, gdyby Scena potrafiła wykryć, kiedy runda się skończyła i jaki był wynik gry. Scena mogłaby sprawdzać, czy wszystkie duszki są takie same.__
 
-Po pierwsze, Scena musi wiedzieć, kiedy gracz skończył. Aby to zrobić, sprawmy, aby Scena sprawdzała, czy wszystkie duszki przestały się ruszać po kliknięciu na jednym z nich. Zmodyfikuj blok "kiedy kliknięto Duszek" dla każdego duszka i nadawaj komunikat "sprawdźCzyKoniec".
+Po pierwsze, Scena musi wiedzieć, kiedy gracz skończył. Aby to zrobić, musi sprawdzać, czy wszystkie duszki przestały się ruszać po kliknięciu na jednym z nich. Zmodyfikuj blok "kiedy kliknięto Duszek" dla każdego duszka i nadawaj komunikat "sprawdźCzyKoniec".
 
 Scena może odpowiedzieć na ten komunikat i sprawdzić, czy gra się skończyła, sprawdzając czy zmienna "zatrzymano" jest ustawiona na 1 dla wszystkich duszków. Możemy do tego użyć bloku "współrzędna x z Duszek" dla każdego duszka i zamienić "współrzędną x" na zmienną "zatrzymano". Jeżeli wartość zmiennej "zatrzymano" jest równa 1 dla wszystkich duszków, wówczas wiemy, że gra się skończyła i możemy sprawdzić czy gracz wygrał.
 
