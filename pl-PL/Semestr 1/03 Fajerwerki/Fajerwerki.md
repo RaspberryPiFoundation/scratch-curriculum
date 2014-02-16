@@ -14,7 +14,7 @@ __Zaimportujmy wszystkie obrazki potrzebne do gry__
 3. Użyj przycisku __„Wybierz nowego duszka z pliku”__, aby dodać rakietę. Otwórz katalog „Zasoby” i wybierz plik „rakieta.png”. Zmień nazwę duszka na „Rakieta”.
 4. Spraw, aby rakieta zniknęła po wciśnięciu zielonej flagi.
 
-    Teraz sprawimy, aby po klinięciu rakieta poleciała w kierunku kursora myszki.
+Teraz sprawimy, aby po klinięciu rakieta poleciała w kierunku kursora myszki.
 
 5. Dodaj blok „kiedy klawisz spacja naciśnięty” do skryptu, a pod nim dodaj skrypt pokazujący ponownie rakietę i sprawiający, że poleci ona w kierunku kursora myszy.
 
@@ -35,7 +35,7 @@ Czy rakieta pojawia się na ekranie i leci w kierunku kursora myszy?
 
 Co się dzieje, kiedy poruszysz myszą i wciśniesz spację ponownie?
 
-1. Fajerwerki nie latają na boki, więc upewnijmy się, że za każdym razem rakieta leci prosto do góry. Zanim pokażemy rakietę na ekranie, sprawmy, aby ustawiła się pionowo na spodzie ekranu, używając bloku „idź do”.
+1. Fajerwerki nie latają na boki, więc upewnijmy się, że za każdym razem rakieta leci prosto do góry. Zanim pokażemy rakietę na ekranie, użyjmy bloku „idź do”, aby ustawić ją pionowo na dole ekranu.
 
 ```scratch
 
@@ -72,14 +72,14 @@ Co się dzieje, kiedy przesuniesz kursor w bok i wciśniesz spację ponownie?
 __Kliknij zieloną flagę, a następnie kliknij na scenie. Kliknij jeszcze raz w innym miejscu.__
 
 ###Rzeczy do spróbowania
-1. Spróbuj zmienić miejsce, do którego leci rakieta zanim zacznie lecieć w stronę myszy. (Tak aby leciała lekko po łuku.)
+1. Spróbuj zmienić cel rakiety, zanim zacznie lecieć w stronę myszy. (Tak aby leciała lekko po łuku.)
 2. Spróbuj zmienić prędkość rakiety: niech niektóre lecą szybciej, a inne wolniej.
 
 Zapisz swój projekt.
 
 ##KROK 2: Spraw, aby rakieta wybuchła
 
-1. Pierwszym zadaniem dla nas będzię dodanie odgłosu huku rakiety, zanim zacznie ona lecieć, a następnie schowanie jej, gdy już doleci do kursora myszy. Aby zaimportować odgłos wybuchu, przejdź do zakładki „Dźwięki” i wybierz plik „bum” z katalogu Zasoby.
+1. Pierwszym zadaniem dla nas będzię dodanie odgłosu huku tuż przed wylotem rakiety oraz schowanie jej, gdy doleci do celu. Aby zaimportować odgłos wybuchu, przejdź do zakładki „Dźwięki” i wybierz plik „bum” z katalogu Zasoby.
 
     ```scratch
 
@@ -113,10 +113,10 @@ Zapisz swój projekt.
 ###Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
-Upewnij się, że rakieta odtwarza dźwięk i ukrywa się, gdy dolatuje do kursora myszy.
+Upewnij się, że rakieta odtwarza dźwięk i chowa się po osiągnięciu celu.
 
 1. Dodaj nowego duszka i wybierz plik „fajerwerki1.png” z katalogu „Zasoby”.
-2. Kiedy nowy duszek odbierze komunikat o wybuchu, powinien się ukryć i przesunąć w miejsce, w którym jest rakieta, korzystając z bloku „idź do”. Następnie powinien się pokazać w nowym miejscu i zniknąć ponownie, sekundę później.
+2. Kiedy nowy duszek odbierze komunikat o wybuchu, powinien się ukryć i przesunąć w miejsce, w którym jest rakieta – użyj do tego bloku „idź do”. Następnie powinien się pokazać w nowym miejscu i zniknąć ponownie sekundę później.
 
 ```scratch
 
@@ -139,7 +139,7 @@ Zapisz swój projekt.
 
 ##KROK 3: Spraw, aby każda eksplozja była unikalna
 
-1. Teraz sprawmy, aby każdy wybuch był unikalny i wyjątkowy. Skorzystaj z bloku „zmień efekt kolor” i każ mu wybierać losowy kolor z listy od 1 do 200 przed pokazaniem wybuchu.
+1. Teraz sprawmy, aby każdy wybuch był inny. Skorzystaj z bloku „zmień efekt kolor” i każ mu wybierać losowy kolor z listy od 1 do 200 przed pokazaniem wybuchu.
 
 ```scratch
 
@@ -194,7 +194,7 @@ Zapisz swój projekt.
 
 Pamiętasz błąd, który pojawił się wcześniej przy poruszaniu kursora myszy, gdy przycisk myszy jest wciśnięty?
 
-Dzieje się tak z powodu tego, że rakieta nadaje komunikat o wybuchu i natychmiast powtarza pętlę „jeżeli”, która z kolei nadaje kolejny komunikat o wybuchu, zanim ten poprzedni skończył się wyświetlać.
+Dzieje się tak z dlatego, że rakieta nadaje komunikat o wybuchu i natychmiast powtarza pętlę „jeżeli”, która z kolei nadaje kolejny komunikat o wybuchu, zanim ten poprzedni skończył się wyświetlać.
 
 1. Aby to naprawić, możemy zastąpić blok „nadaj” blokiem „nadaj i czekaj”, przez co pętla nie powtórzy się, dopóki wybuch się nie skończy.
 
