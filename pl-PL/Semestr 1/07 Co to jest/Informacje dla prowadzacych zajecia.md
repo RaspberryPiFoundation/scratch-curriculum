@@ -3,7 +3,7 @@
 
 ##Wstęp
 
-Na tablicy jest pokazany jakiś obrazek, ale zniekształcony. Musisz zgadnąć co to jest klikając na odpowiednią odpowiedź poniżej. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
+Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
 ###Umiejętności
 
