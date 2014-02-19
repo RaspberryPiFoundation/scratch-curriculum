@@ -88,7 +88,7 @@ Does Herbert move with the mouse pointer? Does Felix chase Herbert?
     move (10) steps
     next costume
     play drum (3 v) for (0.3) beats
-    if <touching [herbert v]?> then
+    if <touching [herbert v]?>
       say [Caught you!] for (1) secs
     end
    end
@@ -118,7 +118,7 @@ Does Felix say when he’s caught Herbert?
           move (20) steps
           next costume
           play drum [3 v] for (0.3) beats
-          if <touching [herbert v]?> then
+          if <touching [herbert v]?>
             broadcast [caught v]
             play drum [17 v] for (0.2) beats
             wait (1) secs
