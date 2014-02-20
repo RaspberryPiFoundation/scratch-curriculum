@@ -163,7 +163,7 @@ __Click the green flag__, do pipes appear with gaps to fly through at different 
 ##Activity Checklist { .check}
 
 + Let's add a sound to play when Flappy collides. Click on the **Flappy** sprite then on the `Sounds` {.blockgrey} tab.
-+ Click the `Choose sound from library` {.buttongrey} button.
++ Click the `Choose sound from library` {.blockgrey} button.
 + Pick a collision sound for **Flappy**. The **screech** sound is good.
 + Now click back on the `Scripts` {.blockgrey} tab.
 + Add the following script:
@@ -221,7 +221,7 @@ __Click the green flag__, does the player score points for flying Flappy through
 
 ##Challenge 1: add a high score { .challenge}
 
-+ Make a new variable and tick the `Cloud variable (stored on server)` {.buttongrey} box. Call the variable `hi-score` {.buttonorange}
++ Make a new variable and tick the `Cloud variable (stored on server)` {.blockgrey} box. Call the variable `hi-score` {.blockorange}
 + when the game is over check if you need to set a new high score:
 
 ```blocks
@@ -278,7 +278,7 @@ __Click the green flag__, does Flappy now accelerate when falling and flapping?
 
 When the player loses make Flappy fall off the bottom of the screen before ending the game.
 
-+ Replace the `broadcast GameOver` {.blockbrown}  block with `broadcast Fall`
++ Replace the `broadcast GameOver` {.blockbrown}  block with `broadcast Fall` {.blockbrown}
 + Now add the following scripts:
 
 ```blocks
