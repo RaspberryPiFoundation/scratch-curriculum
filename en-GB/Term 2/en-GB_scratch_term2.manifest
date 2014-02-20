@@ -8,9 +8,45 @@
 
     "projects": [
         {
+			"title":"Make a monster",
             "filename":"01 Make a monster/For students/Monster-worksheet.md",
             "note": "01 Make a monster/For leaders/Monster-notes.md",
             "number": 1
+        },
+        {
+			"title":"Make a monster: Eyes",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Eyes.md",
+            "number": 1.1
+        },
+        {
+			"title":"Make a monster: Jointed Arm",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-JointedArm.md",
+            "number": 1.2
+        },
+        {
+			"title":"Make a monster: Legs",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Legs.md",
+            "number": 1.3
+        },
+        {
+			"title":"Make a monster: MouthsTalk",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-MouthsTalk.md",
+            "number": 1.4
+        },
+        {
+			"title":"Make a monster: Movement",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Movement.md",
+            "number": 1.5
+        },
+        {
+			"title":"Make a monster: Tentacles",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Tentacles.md",
+            "number": 1.6
+        },
+        {
+			"title":"Make a monster: Wheels",
+            "filename": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Wheels.md",
+            "number": 1.7
         },
         {
             "filename": "02 Sound machine/For students/SoundMachine-WORKSHEET.pdf",
