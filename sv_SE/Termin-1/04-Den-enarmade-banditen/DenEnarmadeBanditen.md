@@ -1,13 +1,20 @@
-Nivå 2
+---
+title: Den enarmade banditen
+level: Nivå 1
+language: sv-SE
+stylesheet: scratch
+embeds: "*.png"
+note: "till_instruktorerna.md"
+...
 
-#Den enarmade banditen
-
-__Introduktion:__
+# Introduktion {.intro}
 I det här spelet finns tre sprites som ändrar klädslar. Du ska stoppa dem när de visar samma bild (som en enarmad bandit!).
 
-##STEG 1: Skapa en sprite som ändrar klädsel
+##STEG 1: Skapa en sprite som ändrar klädsel {.activity}
 
 __Nu ska vi importera bilder till spelet__
+
+##Checklista {.check}
 
 1. Skapa ett nytt Scratchprojekt. Radera katten genom att högerklicka på den och välj radera.
 2. Importera en ny sprite.
@@ -17,7 +24,9 @@ __Nu ska vi importera bilder till spelet__
 
 __Nu när vi har klädslar vill vi att spriten ska kunna byta mellan dem.__
 
-##STEG 2: Få bilden att ändras
+##STEG 2: Få bilden att ändras {.activity}
+
+##Checklista {.check}
 
 1. Klicka på Scripts-fliken.
 2. Klicka på Kontroll och dra "när flagga klickas på" till Scriptrutan. Detta kommer att utlösas när vi klickar på den gröna flaggan.
@@ -36,47 +45,49 @@ __Nu när vi har klädslar vill vi att spriten ska kunna byta mellan dem.__
 	(slut på för alltid)
 ```
 
-###Testa ditt projekt 
+## Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__ 
 Ändras klädslarna i lagom takt? 
 
-Spara ditt projekt
+## Spara ditt projekt {.save}
 
-###Saker att pröva
+## Saker att pröva {.try}
 
 Ändra tiden i väntablocket. Vilka siffror tror du skulle göra spelet för lätt eller för svårt?
 
-##Steg 3: Stoppa spriten när vi klickar på den
+##Steg 3: Stoppa spriten när vi klickar på den {.activity}
                     
 Bra! Vi kan nu få spritearna att byta klädslar för alltid, men hur får vi dem att stoppa när vi klickar på dem?
+
+##Checklista {.check}
 
 1. Skapa en ny variabel genom att klicka på Variabler och Ny variabel. Kalla den för "stopp" och välj att den endast ska finnas för denna sprite. Klicka sedan ur rutan bredvid så att variabeln inte syns på scenen.
 2. Sätt stoppad till 1 när någon klickar på bilden genom att använda "när Sprite 1 klickas på" och "sätt stoppad till 0". Där du ska byta ut nollan mot en etta.
 3. Nu måste vi få bilden att sluta ändras när variabeln stoppad blir 1. Klicka på Kontroll och ändra "för alltid"-loopen till "för alltid om" och skapa en ny likhetsoperator för att se om stoppad är lika med 0.  
 4. Slutligen, lägg till en "sätt stoppad till 0" under "när flaggan klickas på".
 
-###Testa ditt projekt 
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan, vänta en liten stund och klicka sedan på spriten.__ 
 
 Ändrar den klädsel innan du klickar på den?
 Slutar den när du klickar på den?
 __Starta spriten igen.__ Stannar den när du håller muspekaren över spriten, utan att klicka på den? Stannar spriten när du klickar någon annanstans på scenen? Någon annanstans i Scratchfönstret? Någonstans utanför Scratchfönstret?
 
-Spara ditt projekt 
+##Spara ditt projekt {.save}
 
-##Steg 4: Skapa den andra spriten
+##Steg 4: Skapa den andra spriten {.activity}
 __Nu ska vi skapa de andra spritearna så att vi kan spela vårt spel!__
 
 1. Duplicera spriten (Sprite1) genom att högerklicka på den i det högra nedre hörnet.
 2. Duplicera den igen så att det finns tre sprites på skärmen. 
 3. Flytta på varje sprite så att de hamnar bredvid varandra på en linje. Gör dem lite mindre om det behövs.
 
-###Testa ditt projekt 
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__ Alla sprites ska ändras. Försök att få dem alla att stanna på samma bild!
 
-Spara ditt projekt
+##Spara ditt projekt {.save}
 
-###Saker att pröva
+##Saker att pröva {.try}
 
 När du startar spelet precis efter att det har laddats så visar alla sprites samma klädsel och byter klädsel samtidigt. Vad tror du om att försöka få spritearna att ändras till en slumpad klädsel när du klickar på den gröna flaggan? 
 Ledtråd: Försök att välja en slumpmässig klädsel för varje sprite när spelet har börjat. 
@@ -84,9 +95,11 @@ Ledtråd: Försök att välja en slumpmässig klädsel för varje sprite när sp
 __Bra gjort, nu är du klar med spelet. Det finns dock fler saker som du kan göra med ditt spel. Försök dig på någon av dessa utmaningar!__
 
 
-##Utmaning 1: Gör spelet svårare
+##Utmaning 1: Gör spelet svårare {.challenge}
 
 Ändra svårighetsgraden på spelet på något sätt. Att bara ändra hur snabbt klädslarna byts ut är enkelt. Försök göra något kreativt. Här finns några idéer som du kanske vill prova:
+
+##Checklista {.check}
 
 1. Byt ut antalet klädslar som varje sprite har. 
 2. Se till att vissa sprites har unika klädslar. 
@@ -98,13 +111,13 @@ __Försök komma på egna roliga saker!__
 Varje gång du gör en förändring, fundera på om det gör spelet svårare eller lättare. Är spelet för svårt eller för lätt? Hur kan du anpassa svårighetsgraden så att den blir lagom?
 
 
-##Utmaning 2: Få spelet att bli svårare och lättare allt eftersom 
+##Utmaning 2: Få spelet att bli svårare och lättare allt eftersom {.challenge}
 
 Olika personer kommer att vara olika duktiga på att spela spelet. __Hur kan du få spelet att anpassa svårighetsgraden beroende på spelaren?__
 
 Ett sätt att göra det är att __Anpassa hastigheten för klädslarnas byte__. Du kan använda en variabel som kallas __fördröjning__, för att sätta tiden på varje sprites fördröjningsblock. Om spelaren vinner omgången kan fördröjningen minskas en aning (för att göra spelet svårare). Om spelaren förlorar omgången så kan fördröjningen ökas en aning (för att göra spelet lättare).
 
-##Utmaning 3: Upptäck när alla sprites har stannat med samma klädsel
+##Utmaning 3: Upptäck när alla sprites har stannat med samma klädsel {.challenge}
 
 __Målet med spelet är ju att klicka på spritearna så att de stannar när alla visar samma klädsel. Det hade varit bra om scenen upptäckte när du hade spelat klart och då berättade om du har vunnit eller förlorat genom att kolla om alla sprites har samma klädsel eller inte.__
 

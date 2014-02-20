@@ -5,6 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
+materials: "*.sb2"
 ...
 
 # Introduction { .intro}
@@ -203,8 +204,9 @@ Does the explosion graphic spread out from the centre of the rocket and slowly g
 ##Save your project { .save}
 
 #Step 4: Fixing the Broadcast Bug { .activity}
-Remember earlier we had a problem involving holding down the mouse button?
-This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying. In computing we often call such problems "bugs".
+
+Remember earlier we had a bug involving holding down the mouse button?
+This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and move the rocket back to the bottom of the stage. This happens before the explosion has moved to the position of the rocket.
 
 ## Activity Checklist { .check}
 
