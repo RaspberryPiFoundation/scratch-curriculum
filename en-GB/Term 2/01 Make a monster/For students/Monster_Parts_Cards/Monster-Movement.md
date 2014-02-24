@@ -25,12 +25,10 @@ materials: "*.sb2"
 when [right arrow v] key pressed
 change x by (moveSpeed)
 broadcast [moved right v]
-stop [this script v]
 
 when [left arrow v] key pressed
 change x by ((moveSpeed) * (-1))
 broadcast [moved left v]
-stop [this script v]
 ```
 
 ```blocks
@@ -38,11 +36,9 @@ stop [this script v]
 
 when I receive [moved right v]
 change x by (moveSpeed)
-stop [this script v]
 
 when I receive [moved left v]
 change x by ((moveSpeed) * (-1))
-stop [this script v]
 ```
 
 + Using `broadcast`{.blockbrown} also means if we want to change the way our movement
@@ -59,7 +55,6 @@ if (not (touching [edge v]?))
 	broadcast [moved right v]
 	broadcast [moved v]
 end
-stop [this script v]
 
 when [left arrow v] key pressed
 change x by ((moveSpeed) * (-1))
@@ -69,7 +64,6 @@ if (not (touching [edge v]?))
 	broadcast [moved left v]
 	broadcast [moved v]
 end
-stop [this script v]
 ```
 
 + Here we’re telling the body to face the direction it
@@ -93,6 +87,5 @@ stop [this script v]
 ```blocks
 when I receive [moved right v]
 next costume
-stop [this script v]
 ```
 
