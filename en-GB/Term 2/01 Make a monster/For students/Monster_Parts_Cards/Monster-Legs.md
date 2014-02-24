@@ -25,21 +25,18 @@ materials: "*.sb2"
 when FLAG clicked
 set [move speed v] to [5]
 set [step v] to [0]
-stop [this script v]
 
 when I receive [moved left v]
 change [step v] by [1]
 if < (step) > [1] >
 	set [step v] to [0]
 end
-stop [this script v]
 
 when I receive [moved right v]
 change [step v] by [1]
 if < (step) > [1] >
 	set [step v] to [0]
 end
-stop [this script v]
 ```
 
 +	 Now we can set our legs to swing by checking
@@ -60,7 +57,6 @@ if < (step) = [0] >
 else
 	point in direction (165 v)
 end
-stop [this script v]
 
 when I receive [moved left v]
 change x by ((move speed) * [-1])
@@ -69,7 +65,6 @@ if < (step) = [1] >
 else
 	point in direction (180 v)
 end
-stop [this script v]
 ```
 
 **You could use the same sort of actions to make
