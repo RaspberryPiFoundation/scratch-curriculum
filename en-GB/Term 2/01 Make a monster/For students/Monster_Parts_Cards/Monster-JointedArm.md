@@ -25,7 +25,6 @@ turn cw (15) degrees
 set [left arm v] to (direction)
 broadcast [moved v]
 change x by (move speed)
-stop [this script v]
 ```
 + This next calculation is used to control the
 	 **lower arm**. This is where we use trigonometry to calculate where the lower arm
@@ -34,7 +33,6 @@ stop [this script v]
 when I receive [moved v]
 go to [Sprite3 v]
 go to x: ((x position) + ((45) * ([sin v] of (left arm)))) y: ((y position) + ((45) * ([cos v] of (left arm))))
-stop [this script v]
 ```
 + First of all our arm will update when the broadcast `moved`{.blockbrown} is used but you can
 	 use any broadcast as long as your upper arm is broadcasting it or moving to
