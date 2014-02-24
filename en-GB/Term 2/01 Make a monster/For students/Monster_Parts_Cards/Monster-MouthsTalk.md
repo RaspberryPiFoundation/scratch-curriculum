@@ -82,7 +82,6 @@ times?)**
 ```blocks
 when I receive [talking v]
 play sound [Screech v]
-stop [this script v]
 ```
 **Why not try adding sounds to other events, you could use a spooky hovering
 sound for a ghost drifting around the screen! If you have a microphone on
