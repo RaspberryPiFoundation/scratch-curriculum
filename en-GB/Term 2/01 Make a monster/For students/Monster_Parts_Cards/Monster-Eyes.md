@@ -19,11 +19,9 @@ forever
 
 when I receive [moved right v]
 change x by (move speed)
-stop [this script v]
 
 when I receive [moved left v]
 change x by ((move speed) * (-1))
-stop [this script v]
 ```
 
 **Notice we also use broadcast to move our eyes along with our body and other parts. What else can you make the eyes do? If you move your mouse cursor between your monster’s eyes, it will go cross eyed!**
