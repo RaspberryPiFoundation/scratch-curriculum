@@ -17,12 +17,10 @@ materials: "*.sb2"
 when I receive [moved left v]
 change x by ((move speed) * (-1))
 turn ccw (15) degrees
-stop [this script v]
 
 when I receive [moved right v]
 change x by (move speed)
 turn cw (15) degrees
-stop [this script v]
 ```
 
 +	 If you wanted, you could replace the
