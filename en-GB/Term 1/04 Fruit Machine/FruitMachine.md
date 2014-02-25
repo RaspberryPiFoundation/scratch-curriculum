@@ -9,7 +9,8 @@ materials: "*.sb2"
 ...
 
 # Introduction {.intro}
-This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
+This is a game that has three sprites that change costume. You have to stop 
+them when they’re showing the same picture (like a fruit machine!).
 
 ![screenshot](fruitmachine_screenshot.png)
 >>>>>>> scratch2
@@ -20,12 +21,21 @@ This is a game that has three sprites that change costume. You have to stop them
 
 __Let’s import the different pictures for the game__
 
-1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete
-2. First of all let's add a new Backdrop from the library. Choose the **rays** backdrop from the **Other** category and then delete the original blank stage. 
-2. Now add a new sprite from the library.
-3. Choose an image from any folder. We used **things/Bananas**, but you can use any image you want to.
-4. Click on the blue '**i**' next to the sprite's picture in the Sprites window. Rename the sprite to 'Fruit'.
-5. Now click the Costumes tab and import two more things so there are three costumes in total (we used **things/apple** and **things/watermelon-a**, but you can use any images you like).
++ Start a new scratch project. Delete the cat by right clicking it and 
+  clicking Delete
+
++ Add a new Backdrop from the library. Choose the **rays** backdrop from the 
+  **Other** category and then delete the original blank stage. 
+
++ Now add a new sprite from the library. Choose an image from any folder. We 
+  used **things/Bananas**, but you can use any image you want to.
+
++ Click on the blue '**i**' next to the sprite's picture in the Sprites 
+  window. Rename the sprite to 'Fruit 1'.
+
++ Now click the Costumes tab and import two more things so there are three 
+  costumes in total (we used **things/apple** and **things/watermelon-a**, but 
+  you can use any images you like).
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
 
@@ -33,13 +43,25 @@ __Now we’ve got some costumes, we want the sprite to change between them.__
 
 ## Activity Checklist { .check}
 
-1. Click the `Scripts` {.blocklightgrey} tab.
-2. Click `Events`{.blockgrey} and drag a `when flag clicked` { .blockyellow} into the scripts area. This will be triggered when we click the green flag.
-3. Click the Control tab and add a `forever` { .blockyellow} and attach it so it snaps to the bottom.
-4. **Click the green flag** in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.
-5. Now click `Looks`{.blockgrey} and drag in a `next costume` { .blockpurple}
-6. How do we slow it down so it isn’t changing so quickly? Click the `Control`{.blockgrey} tab and drag in a `wait 1 secs` { .blockyellow}
-7. Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the `wait 1 secs` { .blockyellow} block?
++ Click the `Scripts` {.blocklightgrey} tab.
+
++ Click `Events`{.blockgrey} and drag a `when flag clicked` { .blockyellow} 
+  into the scripts area. This will be triggered when we click the green flag.
+
++ Click the Control tab and add a `forever` { .blockyellow} and attach it so it 
+  snaps to the bottom.
+
++ **Click the green flag** in the top right. Notice that a yellow outline is 
+  around our script. It’s running because we clicked the green flag, which 
+  triggers this.
+
++ Now click `Looks`{.blockgrey} and drag in a `next costume` { .blockpurple}
+
++ How do we slow it down so it isn’t changing so quickly? Click the 
+  `Control`{.blockgrey} tab and drag in a `wait 1 secs` { .blockyellow}
+
++ Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks 
+  good). 
 
 ```blocks
 when FLAG clicked
@@ -56,40 +78,52 @@ Do the costumes change at a sensible rate?
 
 ## Things to try { .try}
 
-Adjust the time in the `wait 1 secs` {.blockyellow} block.What numbers do you think would make the game too easy, or too hard?
+Adjust the time in the `wait 0.5 secs` {.blockyellow} block. What numbers do 
+you think would make the game too easy, or too hard?
 
 # STEP 3: Making it stop when we click on it {.activity}
 
 ## Activity Checklist { .check}
 
-**Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?**
-One way to do it is by using a variable to set the state of the Sprite. This will also be useful later...
+**Great! We can make the sprite change costumes forever, but how do we make 
+it stop when we click on it?**
 
-1. Create a new variable by clicking `Data` {.blockgrey} and `Make a variable`{.blocklightgrey}. Call it `stopped`{.blockorange} and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.
-2. At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to **"NO"**. 
+One way to do it is by using a variable to remember the state of the Sprite. 
+
++ Create a new variable by clicking `Data` {.blockgrey} and 
+  `Make a variable`{.blocklightgrey}. Call it `stopped`{.blockorange} and 
+  make it for only this sprite.
+
++ At the start of the game, the sprite won't have been clicked so we'll set 
+  the variable to **"NO"**. 
 
 ```blocks
 when FLAG clicked
 set [stopped v] to (NO)
 forever 
-    next costume
-    wait (0.1) secs
+  next costume
+  wait (0.1) secs
 ```
-3. Now we'll set the variable `stopped`{.blockorange} to  **"YES"** when someone clicks on the sprite.  
 
++ Now we'll set the variable `stopped`{.blockorange} to  **"YES"** when 
+  someone clicks on the sprite.  
 ```blocks
-    when this sprite clicked
-    set [stopped v] to (YES)
+when this sprite clicked
+set [stopped v] to (YES)
 ```
-4. Finally we need to make the sprite stop changing costume when the variable `stopped`{.blockorange} changes to "YES". Add an `if...then` { .blockyellow} loop and use a new **equals** `[] = []` {.blockgreen} operator block (found under the *Operators* tab) to check if `stopped`{.blockorange}  is still "NO".
+
++ Finally we need to make the sprite stop changing costume when the variable 
+  `stopped`{.blockorange} changes to "YES". Add an `if...then` { .blockyellow} 
+  loop and use a new **equals** `[] = []`{.blockgreen} operator block (found 
+  under the *Operators* tab) to check if `stopped`{.blockorange}  is still "NO".
 
 ```blocks
 when FLAG clicked
 set [stopped v] to (NO)
 forever	
-	if <(stopped) = [NO]> then	
-    	next costume
-    	wait (0.5) secs
+  if <(stopped) = [NO]> then
+    next costume
+    wait (0.5) secs
 ```
 
 ## Test Your Project { .flag}
@@ -99,7 +133,16 @@ Does it change costume before you click on it?
 
 Does it stop when you do click on it?
 
-__Start the program again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click anywhere else on the Stage? 
+__Start the program again.__ Does it stop when you put the mouse pointer on 
+it, without clicking? Does the sprite stop when you click anywhere else on 
+the Stage? 
+
+Keep an eye on the `stopped`{.blockorange} variable watcher on the stage. Does 
+it say "YES" and "NO" at the right times?
+
++ Now you know the `stopped`{.blockorange} variable is working properly, hide 
+  the watcher either by right-clicking it on the stage, or clearing the 
+  checkbox next to it in the *Variables* tab.
 
 ## Save your project { .save}
 
@@ -108,41 +151,59 @@ __Now we need to make the other sprites so we can play our game!__
 
 ## Activity Checklist { .check}
 
-1. **Duplicate the sprite** (Fruit) by right-clicking on it in the bottom right corner.
-2. Duplicate it again so there are **3** sprites on the screen.
-3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
++ **Duplicate the sprite** (Fruit 1) by right-clicking on it in the bottom right 
+  corner.
+
++ Duplicate it again so there are **3** sprites on the screen.
+
++ Move each sprite so they are in a line. Make them a bit smaller with if you 
+  need to.
+
++ Change the names of the new sprites to "Fruit 2" and "Fruit 3" by clicking on
+  the blue '**i**"''
 
 ## Test Your Project { .flag}
-__Click the green flag.__ All the sprites should change. Try to stop them all on the same picture by clicking on each one in turn!
+__Click the green flag.__ All the sprites should change. Try to stop them all 
+on the same picture by clicking on each one in turn!
 
 ## Save your project { .save}
 
 # Step 5: Start each sprite with a random costume { .activity}
-__Let's make the sprites change to a random costume when the green flag is clicked.__
+__Let's make the sprites change to a random costume when the green flag is 
+clicked.__
 
-When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. 
-It would make the game more interesting (and harder) if they changed in a less predictable way. 
+When you start the game just after you’ve loaded it, all the sprites show the 
+same costume and change in unison. It would make the game more interesting 
+(and harder) if they changed in a less predictable way. 
 
 ## Activity Checklist { .check}
 
-1. If you look under the `costumes`{.blocklightgrey}  tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.
-2. To make the sprite start with a random costume, let's add a `switch costume to` { .blockpurple} block with  `pick random (1) to (3)` { .blockgreen} to choose 
-the costume number. 
-3. We can also use exactly the same block in the `forever`{.blockyellow} loop so that the sprite switches to a different costume each time it changes during the game.
++ If you look under the `costumes`{.blocklightgrey}  tab for a sprite then 
+you'll see that each costume has a number. You can specify which costume a 
+sprite is wearing using either its name or its number.
 
++ To make the sprite start with a random costume, let's add a 
+  `switch costume to` { .blockpurple} block with 
+  `pick random (1) to (3)` { .blockgreen} to choose the costume number. 
+
++ We can also use exactly the same block in the `forever`{.blockyellow} loop 
+  so that the sprite switches to a different costume each time it changes 
+  during the game.
 ```blocks
 when FLAG clicked
 set [stopped v] to (0)
 switch costume to <pick random (1) to (3)>
 forever	
-	if <(stopped) = [NO]> then	
-    	switch costume to <pick random (1) to (3)>
-	     	wait (0.5) secs
+  if <(stopped) = [NO]> then	
+    switch costume to <pick random (1) to (3)>
+    wait (0.5) secs
 ```
-4. Do the same thing for each of your sprites. 
+
++ Do the same thing for each of your sprites. 
 
 ## Test Your Project { .flag}
-__Click the green flag.__ All the sprites should change their costumes in an unpredictable sequence.
+__Click the green flag.__ All the sprites should change their costumes 
+unpredictably.
 
 How would we need to change our script if we added another costume?
  
@@ -152,7 +213,9 @@ How would we need to change our script if we added another costume?
  
  __Make the game harder__ 
 
-Change the difficulty of the game somehow. Just making the costumes change quicker is fairly easy. Can you come up with something more imaginative. Some ideas you might like to try:
+Change the difficulty of the game somehow. Just making the costumes change 
+quicker is fairly easy. Can you come up with something more imaginative. Some 
+ideas you might like to try:
 
 + Change the number of costumes each sprite has.
 + Make some sprites have unique costumes.
@@ -160,88 +223,181 @@ Change the difficulty of the game somehow. Just making the costumes change quick
 
 __Have fun coming up with your own things!__
 
-Every time you make a change, think about whether it makes the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
+Every time you make a change, think about whether it makes the game easier or 
+harder. Is the game too easy or too hard? How can you adjust the difficulty 
+so it’s just right?
 
 ## Step 6: Display a message when the game has finished. { .activity}
 __Let's show the player a "Game Over" message when they've finished__
 
 ## Activity Checklist { .check}
 
-First of all, let's create a different Backdrop to display when the game has finished.
-1. Click on the stage and then the `Backdrops`{.blocklightgrey} tab. Change the name of the existing backdrop to **"GameOn"**. 
-2. Duplicate the backdrop and then add some text to the copy that says **"Game Over"**. You can change the size of the text by clicking on it and then 
-dragging one of the corners. Rename this backdrop to be **"GameOver"**.
-3. Click on the `Scripts`{.blocklightgrey} tab for the stage and set the "GameOn" backdrop to be the one displayed when the game is started. 	
-4. How can we detect when all the sprites have stopped? Remember we use the `stopped`{.blockorange} variable to record whether each sprite has been clicked? Let's check the `stopped`{.blockorange} variable for the **Fruit3** sprite to see if the game is over.  Select the Fruit3 sprite and then can use a `x position of Fruit3` { .blockblue} block from the `Sensing`{.blocklightgrey} tab, but change **x position** to `stopped`{.blockorange}.
-	
+First of all, let's create a different Backdrop to display when the game has 
+finished.
+
++ Click on the stage and then the `Backdrops`{.blocklightgrey} tab. Change the 
+  name of the existing backdrop to **Game On**. 
+
++ Duplicate the backdrop and then add some text to the copy that says 
+  **Game Over**. You can change the size of the text by clicking on it and then 
+  dragging one of the corners. Rename this backdrop to be **Game Over**.
+
++ Click on the `Scripts`{.blocklightgrey} tab for the stage and set the 
+  "Game On" backdrop to be the one displayed when the game is started. 	
+
++ How can we detect when all the sprites have stopped? The easiest way is to 
+  have another variable that tracks the number of sprites that are still 
+  spinning. When the game starts, the Stage should show the "Game On" 
+  background and set the `sprites spinning`{.blockorange} variable.
 ```blocks
 when FLAG clicked
-switch backdrop to [GameOn v]
-forever
-	if <([stopped v] of [Fruit3 v]) = [YES]> then
-		switch backdrop to [GameOver v]
+set [sprites spinning v] to (3)
+switch backdrop to [Game On v]
 ```
 
-## Test Your Project { .flag}
-__Click the green flag.__ Does the "Game Over" message appear when you click on Fruit3?
-
-What happens if you stop Fruit3 before you've clicked on both of the other fruit sprites? Let's
-modify our script so that it will work regardless of the order in which the sprites are stopped.
-
-5. To check to see that __all three__ fruit sprites have had their `stopped`{.blockorange} variables set to **YES**, we can use the `and` {. blockgreen} operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time. 
-
++ Every time a sprite stops spinning, the sprite will reduce the number by 1 
+  and then ask the Stage to check if the game is over. Add this script to all
+  the sprites.
 ```blocks
-	when FLAG clicked
-switch backdrop to [GameOn v]
-forever
-    if <<<([stopped v]  of [Fruit1 v]) = [YES]> and <([stopped v]  of [Fruit2 v]) = [YES]>> and <([stopped v]  of [Fruit3 v]) = [YES]>> then
-        switch backdrop to [GameOver v]
+when this sprite clicked
+change [sprites spinning v] by -1
+set [stopped v] to (YES)
+broadcast [check for end v]
+```
+
++ The Stage needs to check if the game has finished and change the background.
+  Add this script to the stage.
+```blocks
+when I receive [check for end v]
+if <(sprites spinning) = (0)
+  switch backdrop to [Game Over]
 ```
 
 ## Test Your Project { .flag}
-__Click the green flag.__ Does the "Game Over" message appear when you all 3 Fruits are stopped.
-regardless of the order you clicked on them?
+__Click the green flag.__ Does the backdrop change to the "Game On" one?
+
+Do the sprites keep spinning?
+
+Do the sprites stop when you click on them?
+
+Does the "Game Over" message appear when you stop all of the sprites?
+
+Click the green flag again. Click one of the sprites a few times. What happens
+when you click on one sprite a lot?
+
++ Each sprite should only change the `sprites spinning`{.blockorange} variable
+  when it's clicked __and__ it was spinning. Change the script in all the 
+  sprites to check this.
+```blocks
+when this sprite clicked
+if <(stopped) = (NO)>
+  change [sprites spinning v] by -1
+end 
+set [stopped v] to (YES)
+broadcast [check for end v]
+```
+
+## Test Your Project { .flag}
+__Click the green flag.__ Does the "Game Over" message appear when all 3 
+sprites are stopped?
+
+Does the "Game Over" message appear when one sprite is clicked a lot?
 
 ## Save your project { .save}
 
 # Step 7. Tell the player whether they've won or lost. { .activity}
 
-__The aim of the game is to click on the sprites so they stop while showing the same costume. It would be nice to also display a message that told you whether you'd won or lost.__
+__The aim of the game is to click on the sprites so they stop while showing 
+the same costume. It would be nice to also display a message that told you 
+whether you'd won or lost.__
+
+We'll do this with another variable, `winning costume`{.blockorange}, that 
+records what costume all the sprites should end up on. 
+
+When the game starts, we don't know what the winning costume will be, so the
+`winning costume`{.blockorange} will be **0**. 
+
+When the first sprite is clicked, we know what all the other sprites will have 
+to be to win the game, so we can record that. When the other sprites are 
+clicked, they can check if they're showing the same costume. If they're not, 
+they should set `winning costume`{.blockorange} to **LOSE**.
+
+When the last sprite is clicked, the stage can check if 
+`winning costume`{.blockorange} is **LOSE** or not and show either a **You 
+win!** or **You lose!** message.
 
 ## Activity Checklist { .check}
 
-1. We wrote the code to check that the game was over in __step 6__, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word **"WIN"**. Then change its name to **"Win"**.
-2. Copy the backdrop again to create one with a **"Lose"** message. Give it the name **"Lose"**.
-3. Now we need some code to work out which backrop to display once the game is over. We can use an `if...then...else` { .blockyellow} block to see if the player has won or lost by comparing each `costume #`{.blockpurple}  (costume number) using a similar `x position of Sprite` { .blockblue} block like we did before. This time, instead of looking at the `stopped`{.blockorange} variable, we can check the`costume #`{.blockpurple}  and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
- 
++ Change the text on the "Game Over" backdrop to "You Win!" and rename the 
+  backdrop to "Win".
 
-```blocks
-	when FLAG clicked
-switch backdrop to [GameOn v]
-forever
-    if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
-    	if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
-        	switch backdrop to [Win v]
-        else    
-			switch backdrop to [Lose v]
++ Duplicate the "Win" backdrop, rename it "Lose", and change the text to 
+  "You Lose!"
+
++ Create the `winning costume`{.blockorange} variable and set its value to 
+  **0** when the game starts by modifying the script on the Stage.
+```block
+when FLAG clicked
+set [winning costume v] to (0)
+set [sprites spinning v] to (3)
+switch backdrop to [Game On v]
 ```
+
++ Change the scripts in __each__ sprite to set the winning costume 
+  appropriately. 
+```blocks
+when this sprite clicked
+if <(stopped) = (NO)>
+  change [sprites spinning v] by -1
+end 
+set [stopped v] to (YES)
+if <(winning costume) = 0>
+  set [winning costume v] to (costume #)
+end
+if <not <(winning costume) = (costume #)>>
+  set [winning costume v] to (LOSE)
+end
+broadcast [check for end v]
+```
+
++ Back on the stage, modify the script that changes the background when the 
+  game ends so that it looks at the value of `winning costume`{.blockorange}.
+```blocks
+when I receive [check for end v]
+if <(sprites spinning) = (0)
+  if <(winning costume) = (LOSE)>
+    switch backdrop to [Lose]
+  else
+    switch backdrop to [Win]
+```  
  
 ## Test Your Project { .flag}
-__Click the green flag.__ Does the correct message appear when the game has finished? What will happen if each sprite's costume numbers don't match (for example, if Fruit2's costume number 3 is an apple and Fruit3's costume number 3 is a melon)?
+__Click the green flag.__ Does any message disappear when the game starts? 
+Does the correct message appear when you lose the game? How about when you win
+the game? What happens when you click on a sprite several times in a game?
 
 ## Save your project { .save}
-   
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
+
+__Well done you’ve finished the basic game. There are more things you can do 
+to your game though. Have a go at this challenge!__
 
 ##Challenge: Make the game get harder and easier over time { .challenge}
 
-Different people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__
+Different people will have different skills at playing the game. __How could 
+you make the game adjust its difficulty depending on the player?__
 
-One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called `delay`{.blockorange}, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier). 
+One way you could do it is to __adjust the speed the costumes change at__. 
+You can use a variable, called `delay`{.blockorange}, to give the duration of 
+each sprite’s wait block. If the player wins the round, the delay can be 
+reduced a little (to make the game harder). If the player loses the round, 
+the delay can be increased a little (to make the game easier). 
 
-You'll probably need to think about using a different way of starting the game each time it is played instead of the `when flag clicked`{.blockyellow} Then you can store values in variables that are remembered between each round of the game. 
+You'll also need to think about how to reset the difficulty level of the game.
+
 
 ## Save your project { .save}
 
 __Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+
+Don’t forget you can share your game with all your friends and family by 
+clicking on __Share__ on the menu bar!
