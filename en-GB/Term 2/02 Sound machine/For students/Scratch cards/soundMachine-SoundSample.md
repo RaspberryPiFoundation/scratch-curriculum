@@ -11,8 +11,8 @@ materials: "*.sb2"
 
 + Create a new sprite and make it resemble the sound you will be making.
 
-+ In the `sounds`{.blockgrey} tab, create a new recording or import a sound.
-  (cat sound sample)[sound-sample.png]
++ In the `sounds`{.blocklightgrey} tab, create a new recording or import a sound.
+  ![cat sound sample](sound-sample.png)
 
 + When the sprite is clicked, `broadcast`{.blockbrown} the same name as your 
   sprite.
