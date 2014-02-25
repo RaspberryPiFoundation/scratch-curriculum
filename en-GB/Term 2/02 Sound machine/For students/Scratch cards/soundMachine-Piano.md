@@ -10,7 +10,7 @@ materials: "*.sb2"
 ## Activity Checklist { .check}
 
 + Draw a piano by creating black and white rectangles. 
-  (costume1)[piano-costume1.png]
+  ![costume1](piano-costume1.png)
 
 + Now create a script which plays a note when the “a” key is pressed.
 ```blocks
@@ -42,8 +42,8 @@ play note (67 v) for (0.5) beats
 ```
 
 + Copy the costume 3 times. Fill in a different key on each one. 
-  (costume3)[piano-costume-3.png]
-  (all costumes)[piano-costumes.png]
+  ![costume3](piano-costume-3.png)
+  ![all costumes](piano-costumes.png)
 + Make each note switch to a different costume and then switch back to 
   `costume1`{.blockblue}.
 ```blocks

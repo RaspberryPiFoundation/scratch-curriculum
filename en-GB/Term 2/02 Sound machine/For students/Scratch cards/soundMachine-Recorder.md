@@ -12,7 +12,7 @@ materials: "*.sb2"
 + Create two new lists (for all sprites). Call one of them 
   `instrument`{.blockred} and the other `timing`{.blockred}.
 
-+ Create a new variable (for all sprites) called `recording`{.blockred}
++ Create a new variable (for all sprites) called `recording`{.blockorange}
 
 + For each of your instruments (drum, piano, each sound sample etc.), you will 
   need to add the following items to the `when I receive`{.blockbrown} block. 
@@ -36,9 +36,9 @@ set size to (100) %
 ```
 
 + Draw a new sprite and give it a red circle costume. Name this sprite “Record”.
-  (record costume)[record-costume.png]
+  ![record costume](record-costume.png)
 
-+ Create a script that sets `recording`{.blockred} to 1 and deletes all of 
++ Create a script that sets `recording`{.blockorange} to 1 and deletes all of 
   `instrument`{.blockred} and `timing`{.blockred} when clicked. 
 
 ## Test your project {.flag}
@@ -46,9 +46,9 @@ set size to (100) %
 
 + Create another sprite and give it a costume in the shape of a green arrow. 
   Call this “Play”.
-  (play costume)[play-costume.png]
+  ![play costume](play-costume.png)
 
-+ Create a new variable called `index`{.blockred} for Play only.
++ Create a new variable called `index`{.blockorange} for Play only.
 
 + Now we need to make the playback actually do something. Add this script to 
   "Play"
