@@ -1,0 +1,20 @@
+{
+    "id": "scratch",
+    "title":"Iniciación a Scratch",
+    "description":"Scratch es una forma sencilla y divertida de programar arrastrando bloques y colocándolos juntos",
+    "language": "es-ES",
+    "number": 1,
+
+
+    "projects": [
+        {
+            "filename": "01 Félix y Herbert/félix_y_herbert.md",
+            "number": 1
+        },
+        {
+            "filename": "02 Caza de brujas/caza-de-brujas.md",
+            "number": 2
+        }
+    ]
+}
+

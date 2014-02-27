@@ -1,134 +1,187 @@
+---
+title: Félix y Hérbert
+level: Nivel 1
+language: es-ES
+stylesheet: scratch
+embeds: "*.png"
+note: "notas para coordinadores.md"
+...
 
-Nivel 1
+# Introducción { .intro}
+Vamos a crear un juego en el que __el gato Félix__ y __el ratón Hérbert__ juegan a pillarse. Tú controlarás a Hérbert con el ratón para evitar que lo pille Félix. Cuanto más tiempo puedas evitarlo, más puntos te dará el juego, pero ten cuidado porque ¡perderás puntos si te pilla!
 
-#Félix y Herbert
+![Captura de Pantalla](felixherbert_screenshot.png "Captura de Pantalla")
 
-__Introducción:__Vamos a crear un juego en el que el gato Félix y el ratón Herbert juegan a pillar. Tú controlarás a Herbert con el ratón para evitar que lo pille Félix. Cuanto más tiempo puedas evitarlo, más puntos te dará el juego, pero ten cuidado porque ¡perderás puntos si te pilla! 
+# PASO 1: Félix sigue al puntero del ratón { .activity}
 
-##￼PASO 1: Félix sigue el puntero del ratón
+## Progreso { .check}
 
-Marca cada casilla para indicar tu progreso.
++ **Crea un proyecto nuevo.**
 
-1. Crea un proyecto nuevo.
-2. Haz doble-clic en el escenario y cambia a la pestaña de Fondos, y luego importa el fondo indoors/hall. Borra el fondo blanco original.
-3. Cambia el nombre del objeto a Félix.
-4. Asegúrate de que Félix solo mire a la izquierda y derecha pinchando en este botón:
-5. Crea este programa:
++ Haz click en **escenario** y cambia a la pestaña `Fondos` {.blocklightgrey}. Haz click en el botón `Elegir un fondo de la biblioteca` {.blocklightgrey} y selecciona el fondo interiores/hall. Borra el fondo blanco original.
 
-```scratch
++ Haz click en el objeto Gato, y después pulsa la `i` azul que hay arriba a la izquierda. Cambia el nombre del objeto a **Félix**.
++ Asegúrate de que Félix sólo gira a la izquierda o a la derecha pulsando el botón: ![Estilo de rotación](estilo-rotacion-izq-dcha.png "Estilo de rotación")
++ **Crea este programa para Félix**:
 
-	al presionar BANDERA
-
-	por siempre
-
-		apuntar hacia apuntador del ratón
-
-		mover 10 pasos
-
-		siguiente disfraz
-
-		tocar tambor 62 durante 0.3 pulsos
-
-	(fin por siempre)
-```		
-###Prueba Tu Proyecto
-__Pincha en la bandera verde.__
-¿Sigue Félix al puntero del ratón? ¿Camina al moverse? ¿Se mueve a la velocidad adecuada?
-
-Guarda tu proyecto
-
-##PASO 2: Félix persigue a Herbert
-__A continuación queremos que Félix persiga a Herbert el ratón, en vez de al puntero del ratón.__
-
-1. Crea otro objeto usando el botón 'Escoger un nuevo objeto desde archivo' y selecciona animals/mouse1.
-2. Cambia el nombre del objeto a Herbert.
-3. Edita el disfraz y hazlo más pequeño que Félix. Prueba pinchando el botón 'Achicar' seis veces.
-4. Asegúrate de que Herbert solo mire a la izquierda y derecha.
-5. Dale este programa a Herbert:
-
-```scratch
-	
-	al presionar BANDERA
-	por siempre
-		ir a apuntador del ratón
-		apuntar hacia Félix
-	(fin por siempre)
-```
-###Prueba Tu Proyecto__Pincha en la bandera verde.__
-¿Se mueve Herbert bajo el puntero del ratón? ¿Persigue Félix a Herbert?
-Guarda tu proyecto.
-##PASO 3: Félix dice cuando ha pillado a Herbert
-__Queremos que Félix sepa cuándo ha pillado a Herbert, y que nos lo diga.__
-1. Cambia el programa de  Félix:
-
-```scratch
-	
-	al presionar BANDERA
-	por siempre
-		apuntar hacia apuntador del ratón
-		mover 10 pasos
-		siguiente disfraz
-		tocar tambor 62 durante 0.3 pulsos
-		si ¿tocando Herbert?
-			decir ¡Te pillé! por 1 segundos
-		(fin si)
-	(fin por siempre)
+```blocks
+				al presionar BANDERA VERDE
+    			por siempre
+			        apuntar hacia [puntero del ratón v]
+			        mover (10) pasos
+			        siguiente disfraz
+			        tocar tambor (62) durante (0.1) pulsos
 ```
 
-###Prueba Tu Proyecto__Pincha en la bandera verde.__
-¿Dice algo Félix cuando ha pillado a Herbert?
-Guarda tu proyecto.
+##Prueba tu proyecto { .flag}
 
-##PASO 4: Herbert se convierte en un fantasma cuando lo pillan
+**Haz click en la bandera verde.**
 
-__En vez de hacer que Félix diga algo, queremos que Herbert se convierta en un fantasma cuando lo pillan.__
+¿Sigue Félix al puntero del ratón? ¿Parece que está caminando cuando se mueve? ¿Se mueve a la velocidad correcta?
 
-1. Cambia el programa de Félix para que envíe este mensaje cuando pilla a Herbert.
+##Guarda tu proyecto { .save}
 
-```scratch
-	
-	al presionar BANDERA
-	por siempre
-		apuntar hacia apuntador del ratón
-		mover 10 pasos
-		siguiente disfraz
-		tocar tambor 62 durante 0.3 pulsos
-		si ¿tocando Herbert?
-			enviar a todos pillado
-			tocar tambor 58 durante 0.2 pulsos
-			esperar 1 segundos
-		(fin si)
-	(fin por siempre)
-```2. Importa un nuevo disfraz para Herbert desde fantasy/ghost2-a.3. Edita el disfraz haciéndolo más pequeño. Pinchando seis veces en el botón 'Achicar' debería bastar.4. Cambia los nombres de los disfraces de Herbert para que el de ratón se llame 'vivo' y el de fantasma se llame 'muerto'.5. Crea un programa nuevo para Herbert que lo convierta en fantasma:
-```scratch
-	
-	al recibir pillado
-	cambiar el disfraz a muerto
-	esperar 0.5 segundos
-	cambiar el disfraz a vivo
+
+#**Paso 2:**   Félix persigue a Hérbert {.activity}
+
+**Ahora, queremos que Félix persiga a Hérbert el ratón en vez de al puntero del ratón.**
+
+##Progreso { .check}
+
++ Crea otro objecto usando el botón `Elegir un objecto desde la biblioteca` {.blockgrey} y elije **animales/mouse1**.
++ Cambia el nombre del nuevo objeto a **Hérbert**.
++ Cambia a la pestaña __Disfraces__, haz click en el disfraz en el editor de dibujos. Aparecerá una caja alrededor del dibujo. Arrastra una de las esquinas para hacer que Hérbert sea más pequeño que Félix. 
++ Asegúrate de que Hérbert sólo mira a la derecha y a la izquierda.
++ **Dale éste programa a Hérbert:**
+
+```blocks
+  al presionar BANDERA VERDE
+    por siempre
+      ir a [puntero del ratón v]
+      apuntar hacia [Félix v]
 ```
-	
-###Prueba Tu Proyecto__Pincha en la bandera verde.__
-¿Se convierte Herbert en un fantasma cuando lo pillan?¿Hace Félix los ruidos correctos en cada momento?
-¿Se queda quieto Félix lo suficiente para que Herbert pueda escapar?
-Guarda tu proyecto.
-##PASO 5: El marcador
-__Vamos a añadir un marcador para saber si se nos da bien mantener a Herbert con vida.Empezamos el marcador a cero y le sumamos un punto por segundo. Si Félix pilla a Herbert, le restamos cien al marcador.__
-1. Crea una variable para todos los objetos llamada Marcador.2. En el escenario, crea estos dos programas:
-```scratch
-	
-	al presionar BANDERA
-	fijar Marcador a 0
-	por siempre
-		cambiar Marcador por 1
-		esperar 1 segundos
-	(fin por siempre)
-	
-	al recibir pillado
-	cambiar Marcador por -100
+
+##Prueba tu proyecto { .flag}
+
+**Haz click en la bandera verde.**
+
+¿Se mueve Hérbert cuando mueves el puntero del ratón? ¿Persigue Félix a Hérbert?
+
+##Guarda tu proyecto { .save}
+
+
+#**Paso 3:**   Félix dice cuando ha pillado a Hérbert {.activity}
+
+**Queremos que Félix sepa cuando ha pillado a Hérbert y nos lo diga.**
+
+##Progreso { .check}
+
++ **Cambia el programa de Félix para que sea así:**
+
+```blocks
+  al presionar BANDERA VERDE
+  por siempre
+    apuntar hacia [puntero del ratón v]
+    mover (10) pasos
+    siguiente disfraz
+    tocar tambor (62) durante (0.1) pulsos
+    si <¿tocando [Hérbert v]?> entonces
+      decir [Te pillé!] por (1) segundos
+    end
+   end
 ```
-	
-###Prueba Tu Proyecto__Pincha en la bandera verde.__
-¿Aumenta el marcador un punto por segundo?¿Disminuye el marcador cien puntos cuando lo pillan a Herbert?¿Qué pasa cuando a Herbert lo pillan antes de que el marcador llega a cien? ¿vuelve otra vez el marcador a cero al empezar una nueva partida?
-Guarda tu proyecto.
-__Bien hecho, hemos terminado. ¡Ahora puedes disfrutar de tu propio juego!__No olvides que puedes compartir tu juego con amigos y familiares pinchando en __Compartir__ en el menú.
+
+##Prueba tu proyecto { .flag}
+
+**Haz click en la bandera verde.**
+
+¿Dice Félix cuando ha pillado a Hérbert?
+
+##Guarda tu proyecto { .save}
+
+#**Paso 4:**  Hérbert se convierte en un fantasma cuando le pillan {.activity}
+
+**En vez de que Félix lo diga, queremos que Hérbert se convierta en un fantasma cuando le pillan.**
+
+##Progreso { .check}
+
++ **Cambia el programa de Félix para que envíe éste mensaje cuando pilla a Hérbert:**
+
+```blocks
+  al presionar BANDERA VERDE
+  por siempre
+    apuntar hacia [puntero del ratón v]
+    mover (10) pasos
+    mover (20) pasos
+    siguiente disfraz
+    tocar tambor (62 v) durante (0.1) pulsos
+    si <¿tocando [Hérbert v]?> entonces
+      enviar [pillado v]
+      tocar tambor (17 v) durante (0.2) pulsos
+      esperar (1) segundos
+    end
+   end
+```
+
++ Crea un nuevo disfraz para Hérbert: Seleccionalo, ve a la pestaña Disfraces y haz click en el botón `Elegir un disfraz desde la biblioteca` {.blocklightgrey}. Selecciona el disfraz **fantasía/ghost2-a**.
+
++ Haz el disfraz más pequeño, seleccionándolo en el Editor y arrastra una esquina de la caja que aparece para cambiar su tamaño.
+
++ Cambia el nombre de los disfraces de Hérbert para que el disfraz de ratón se llame ‘vivo‘ y el de fantasma ‘muerto‘.
+
++ **Crea un nuevo script para que Hérbert se convierta en un fantasma cuando le pillen:**
+
+```blocks
+  al recibir [pillado v]
+    cambiar el disfraz a [muerto v]
+    esperar (1) segundos
+    cambiar el disfraz a [vivo v]
+
+```
+
+##Prueba tu proyecto { .flag}
+
+**Haz click en la bandera verde.**
+
+¿Se convierte Hérbert en un fantasma cuando le pillan?
+¿Hace Félix el sonido correcto en el momento adecuado?
+¿Se queda Félix quieto el tiempo suficiente para que Hérbert se aleje?
+
+##Guarda tu proyecto { .save}
+
+#**Paso 5:**  Mantener puntuación {.activity}
+
+**Vamos a añadir un marcador para ver cómo de bien se nos da mantener a Hérbert vivo.
+Empezaremos con 0 puntos y ganaremos un punto cada segundo. Si Félix pilla a Hérbert perdemos 100 puntos.**
+
+##Progreso { .check}
+
++ Crea una variable, para todos los objetos, llamada Puntos. Haz cliz en `Datos` {.blockorange} en la pestaña Programas, crea una variable y llámala `puntos` {.blockorange}, asegurándote de que "Para todos los objetos" está seleccionado.
++ **En el escenario, añade estos dos programas:**
+
+
+```blocks
+al presionar BANDERA VERDE
+   fijar [puntos v] a [0]
+   por siempre
+      cambiar [puntos v] por (1)
+      esperar (1) segundos
+   end
+
+al recibir [pillado v]
+cambiar [puntos v] por (-100)
+```
+
+##Prueba tu proyecto { .flag}
+
+**Haz click en la bandera verde.**
+
+¿Ganas un punto cada segundo?
+¿Pierdes 100 puntos cuando te pillan?
+¿Qué pasa si pillas a Hérbert antes de que el marcador llegue a 100? ¿Vuelve el marcador a 0 cuando empiezas el juego de nuevo?
+
+##Guarda tu proyecto { .save}
+
+**¡Bien hecho! ¡Has terminado! Ahora puedes disfrutar el juego**
+
+No olvides que puedes compartir el juego con tu familia y amigos pulsando el botón `Compartir` {.blockgrey} en la barra de herramientas
