@@ -1,6 +1,9 @@
-Level 5
-
-#Sound Machine
+---
+title: Sound machine
+level: Level 5
+language: en-GB
+stylesheet: scratch
+...
 
 __Introduction:__
 In this project you will design your own sound machine then write a song with it and record your song all using Scratch!

@@ -56,9 +56,30 @@
 	    "materials": "02 Sound machine/For leaders/Scratch files/*.sb"
         },
         {
+            "filename": "02 Sound machine/For students/Scratch cards/soundMachine-Drum.md",
+            "title": "Sound Machine: Drum",
+            "number": 2.1
+        },
+        {
+            "filename": "02 Sound machine/For students/Scratch cards/soundMachine-Piano.md",
+            "title": "Sound Machine: Piano",
+            "number": 2.2
+        },
+        {
+            "filename": "02 Sound machine/For students/Scratch cards/soundMachine-SoundSample.md",
+            "title": "Sound Machine: Sound Sample",
+            "number": 2.3
+        },
+        {
+            "filename": "02 Sound machine/For students/Scratch cards/soundMachine-Recorder.md",
+            "title": "Sound Machine: Recorder",
+            "number": 2.4
+        },
+        {
             "title":"Frantic Felix",
-            "filename": "03 Frantic Felix/For students/01-Worksheet-FranticFelix-V2.pdf",
+            "filename": "03 Frantic Felix/For students/Frantic-Felix-worksheet.md",
             "note": "03 Frantic Felix/For leaders/Frantic-Felix-notes.md",
+	    "materials": "03 Frantic Felix/For leaders/Scratch files/*.sb",
             "number": 3
         }
     ]
