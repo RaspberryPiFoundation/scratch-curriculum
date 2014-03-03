@@ -81,6 +81,16 @@
             "note": "03 Frantic Felix/For leaders/Frantic-Felix-notes.md",
 	    "materials": "03 Frantic Felix/For leaders/Scratch files/*.sb",
             "number": 3
+        },
+        {
+            "title":"Frantic Felix: Record",
+            "filename": "03 Frantic Felix/For students/02-Scratch cards/Scratch card record.md",
+            "number": 3.1
+        },
+        {
+            "title":"Frantic Felix: Playback",
+            "filename": "03 Frantic Felix/For students/02-Scratch cards/Scratch card playback.md",
+            "number": 3.1
         }
     ]
 }
