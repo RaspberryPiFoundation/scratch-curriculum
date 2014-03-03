@@ -49,10 +49,11 @@
             "number": 1.7
         },
         {
-            "filename": "02 Sound machine/For students/SoundMachine-WORKSHEET.pdf",
+            "filename": "02 Sound machine/For students/SoundMachine-worksheet.md",
             "title": "Sound Machine",
             "note": "02 Sound machine/For leaders/SoundMachine-notes.md",
-            "number": 2
+            "number": 2, 
+	    "materials": "02 Sound machine/For leaders/Scratch files/*.sb"
         },
         {
             "title":"Frantic Felix",
