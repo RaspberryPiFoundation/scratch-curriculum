@@ -28,13 +28,13 @@ __We want a few different pictures to show up on the blackboard.__
 Let’s now make a random picture appear. 
 + Create this script:
 
-```blocks
-
-	when FLAG clicked
-	repeat (pick random (1) to (5)
-		next costume
-    end
-```
+    ```blocks
+    
+        when FLAG clicked
+        repeat (pick random (1) to (5)
+            next costume
+        end
+    ```
 
 ##Test Your Project { .flag}
 __Click the green flag.__
@@ -58,22 +58,22 @@ We’ll use a score variable to control how much distortion there is. If the sco
 
 + Change the script to look like this:
 
-```blocks	
-
-	when FLAG clicked
-	hide
-	repeat (pick random (1) to (5)		
-		next costume
-	end
-	set [score v] to (110)
-	repeat until ((score) = (0)
-		change [score v] by [-10]
-		set [pixelate v] effect to (score)
-		set [colour v] effect to (score)
-		show
-		wait (1) secs
-	end
-```
+    ```blocks	
+    
+        when FLAG clicked
+        hide
+        repeat (pick random (1) to (5)		
+            next costume
+        end
+        set [score v] to (110)
+        repeat until ((score) = (0)
+            change [score v] by [-10]
+            set [pixelate v] effect to (score)
+            set [colour v] effect to (score)
+            show
+            wait (1) secs
+        end
+    ```
 
 You should add the `hide` {.blockpurple} block at the top and the `set [score] to 110` {.blockorange} block, and everything below it.
 
@@ -107,22 +107,22 @@ First, we need to know what the right answer is.
 + __Create a new variable__ called __answer__. Make sure it’s for all sprites.
 + Change the script you’ve written to record the right answer. Add the `set [answer] to costume #` {.blockorange} blocks just after the first repeat loop:
 
-```blocks
-	when FLAG clicked
-	hide
-	repeat (pick random (1) to (5)	
-		next costume
-	end
-	set [answer v] to (costume #)
-	set [score v] to (110)
-	repeat until ((score) = (0))
-		change [score v] by (-10)
-		set [pixelate effect v] to (score)
-		set [colour effect v] to (score)
-		show
-		wait (1) secs
-	end
-```
+    ```blocks
+        when FLAG clicked
+        hide
+        repeat (pick random (1) to (5)	
+            next costume
+        end
+        set [answer v] to (costume #)
+        set [score v] to (110)
+        repeat until ((score) = (0))
+            change [score v] by (-10)
+            set [pixelate effect v] to (score)
+            set [colour effect v] to (score)
+            show
+            wait (1) secs
+        end
+    ```
 __Now we need to add the sprites that the player can click on.__
 
 + Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.
@@ -136,24 +136,24 @@ Now we want to have each sprite respond to being clicked and do something depend
 
 + Add this script to the answer1 sprite:
 
-```blocks
-
-	when this sprite clicked
-	if ((answer) = (1)
-		broadcast [won v]
-	else
-		hide
-	
-```
+    ```blocks
+    
+        when this sprite clicked
+        if ((answer) = (1)
+            broadcast [won v]
+        else
+            hide
+        
+    ```
 
 + Drag this script into each of the other answer sprites. __In each sprite, change the 1 to 2, 3, and so on.__
 + We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:
 
-```blocks
-
-	when I receive [won v]
-	say (join [Congratulations! You scored] (score))
-```
+    ```blocks
+    
+        when I receive [won v]
+        say (join [Congratulations! You scored] (score))
+    ```
 
 ##Test Your Project {.flag}
 __Click the green flag.__
@@ -170,40 +170,40 @@ The test shows up two problems. First, wrong guesses don’t reappear when the n
 
 + To fix the first problem, add this script to each of the five answer sprites:
 
-```blocks
-
-	when FLAG clicked
-	show
-```
+    ```blocks
+    
+        when FLAG clicked
+        show
+    ```
 
 To fix the second problem, we need to stop the __question sprite__’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to __zero__ when the game starts and set it to __one__ when the game is won. We’ll make the repeat until loop stop when either the score reaches __zero__ OR the __game-winning flag__ is set to __one.__
 
 + Create a new variable called won?
 + Change the scripts so they look like this:
 
-```blocks
-
-	when FLAG clicked
-	hide
-	repeat (pick random (1) to (5)
-		next costume
-	end
-	set [answer v] to (costume)
-	set [score v] to (110)
-	set [won v] to (0)
-	repeat until <<(score) = (0)> or <(won) = (1)>>
-		change [score v] by (-10)
-		set [pixelate effect v] to (score)
-		set [colour effect v] to (score)
-		show
-		wait (1) secs
-	end
-	
-	when I receive [won v]
-	set [won v] to (1)
-	clear graphic effects
-	say (join [Congratulations! You scored] (score))
-```
+    ```blocks
+    
+        when FLAG clicked
+        hide
+        repeat (pick random (1) to (5)
+            next costume
+        end
+        set [answer v] to (costume)
+        set [score v] to (110)
+        set [won v] to (0)
+        repeat until <<(score) = (0)> or <(won) = (1)>>
+            change [score v] by (-10)
+            set [pixelate effect v] to (score)
+            set [colour effect v] to (score)
+            show
+            wait (1) secs
+        end
+        
+        when I receive [won v]
+        set [won v] to (1)
+        clear graphic effects
+        say (join [Congratulations! You scored] (score))
+    ```
 
 ##Save your project {.save}
 

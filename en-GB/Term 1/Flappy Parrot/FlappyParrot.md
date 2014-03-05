@@ -23,12 +23,12 @@ Press the space bar to flap and try to navigate through the gaps in the pipes!
 + Change the name of your sprite to __Flappy__.
 + Give Flappy the following script:
 
-```blocks
-when FLAG clicked
-	go to x: (-50) y: (0)
-	forever
-		change y by (-3)
-```
+    ```blocks
+    when FLAG clicked
+        go to x: (-50) y: (0)
+        forever
+            change y by (-3)
+    ```
 
 ## Test Your Project { .flag}
 
@@ -45,17 +45,17 @@ __Click the green flag__, does Flappy start in the middle of the screen and then
 + Click on the __Costumes__ tab and name the costumes **wings up** and **wings down**.
 + Now switch back to the __Scripts__ tab and add this script:
 
-```blocks
-when [space v] key pressed
-	switch costume to [wings down v]
-	repeat (10)
-		change y by (6)
-	end
-	switch costume to [wings up v]
-	repeat (10)
-		change y by (6)
-	end
-```
+    ```blocks
+    when [space v] key pressed
+        switch costume to [wings down v]
+        repeat (10)
+            change y by (6)
+        end
+        switch costume to [wings up v]
+        repeat (10)
+            change y by (6)
+        end
+    ```
 
 ## Test Your Project { .flag}
 
@@ -73,30 +73,30 @@ __Click the green flag__, are you able to control Flappy with the space bar? Do 
 + Make a new variable `For this sprite only` {.blockgrey} and call it `flaps` {.blockorange}.
 + Add the following script by draging in the blocks you put aside:
 
-```blocks
-when FLAG clicked
-	set [flaps v] to [0]
-	switch costume to [wings up v]
-	forever
-		repeat until <(flaps) = [0]>
-			change [flaps v] by (-1)
-			switch costume to [wings down v]
-			repeat (10)
-				change y by (6)
-			end
-			switch costume to [wings up v]
-			repeat (10)
-				change y by (6)
-			end
+    ```blocks
+    when FLAG clicked
+        set [flaps v] to [0]
+        switch costume to [wings up v]
+        forever
+            repeat until <(flaps) = [0]>
+                change [flaps v] by (-1)
+                switch costume to [wings down v]
+                repeat (10)
+                    change y by (6)
+                end
+                switch costume to [wings up v]
+                repeat (10)
+                    change y by (6)
+                end
 
-```
+    ```
 
 + Finally, add to your `when space key pressed` {.blockbrown} event:
 
-```blocks
-when [space v] key pressed
-	change [flaps v] by (1)
-```
+    ```blocks
+    when [space v] key pressed
+        change [flaps v] by (1)
+    ```
 
 ## Test Your Project { .flag}
 
@@ -133,22 +133,22 @@ __Click the green flag__, does Flappy now flap once for each time you press the 
 + Click on your **Pipe** sprite and select the `Scripts` {.blockgrey} tab.
 + Add the following scripts:
 
-```blocks
-when FLAG clicked
-	hide
-	set size to (200)%
-	forever
-		create clone of [myself v]
-		wait (2) secs
+    ```blocks
+    when FLAG clicked
+        hide
+        set size to (200)%
+        forever
+            create clone of [myself v]
+            wait (2) secs
 
-when I start as a clone
-	go to x: (240) y: (pick random (-80) to (80))
-	show
-	repeat (120)
-		change x by (-4)
-	end
-	delete this clone
-```
+    when I start as a clone
+        go to x: (240) y: (pick random (-80) to (80))
+        show
+        repeat (120)
+            change x by (-4)
+        end
+        delete this clone
+    ```
 
 ## Test Your Project { .flag}
 
@@ -168,21 +168,21 @@ __Click the green flag__, do pipes appear with gaps to fly through at different 
 + Now click back on the `Scripts` {.blockgrey} tab.
 + Add the following script:
 
-```blocks
-when FLAG clicked
-	wait until ((touching [edge v]?) or (touching [Pipe v]?))
-	play sound [screech v]
-	say [Game Over!]
-	broadcast [GameOver v]
-	stop [other scripts in sprite v]
-```
+    ```blocks
+    when FLAG clicked
+        wait until ((touching [edge v]?) or (touching [Pipe v]?))
+        play sound [screech v]
+        say [Game Over!]
+        broadcast [GameOver v]
+        stop [other scripts in sprite v]
+    ```
 
 + Click on the **Pipe** sprite and add a script:
 
-```blocks
-when I receive [GameOver v]
-	stop [other scripts in sprite v]
-```
+    ```blocks
+    when I receive [GameOver v]
+        stop [other scripts in sprite v]
+    ```
 
 ## Test Your Project { .flag}
 
@@ -202,12 +202,12 @@ __Click the green flag__, does the game end when Flappy touches a pipe or the ed
 + Add a block to set the score to 0 when the flag is clicked.
 + Add the following block:
 
-```blocks
-when I start as a clone
-	wait until <(x position) < ([x position v] of [Flappy v])>
-	change [score v] by (1)
-	play sound [bird v]
-```
+    ```blocks
+    when I start as a clone
+        wait until <(x position) < ([x position v] of [Flappy v])>
+        change [score v] by (1)
+        play sound [bird v]
+    ```
 
 ## Test Your Project { .flag}
 
@@ -224,13 +224,13 @@ __Click the green flag__, does the player score points for flying Flappy through
 + Make a new variable and tick the `Cloud variable (stored on server)` {.blockgrey} box. Call the variable `hi-score` {.blockorange}
 + when the game is over check if you need to set a new high score:
 
-```blocks
-when I receive [GameOver v]
-	if <(score) > (hi-score)> then
-		set [hi-score v] to (score)
-	end
-	stop [other scripts in sprite v]
-```
+    ```blocks
+    when I receive [GameOver v]
+        if <(score) > (hi-score)> then
+            set [hi-score v] to (score)
+        end
+        stop [other scripts in sprite v]
+    ```
 
 ##Test Your Project { .flag}
 __Click the green flag__, does your score update the hi score?
@@ -244,30 +244,30 @@ When something falls under gravity it doesn't usually fall at a fixed rate. For 
 + Add a new variable `For this sprite only` {.blockgrey} to **Flappy** and call it `rise` {.blockorange}.
 + Change Flappy's falling script:
 
-```blocks
-when FLAG clicked
-	set [rise v] to [0]
-	go to x: (-50) y: (0)
-	forever
-		change y by (rise)
-		change [rise v] by (-0.4)
-```
+    ```blocks
+    when FLAG clicked
+        set [rise v] to [0]
+        go to x: (-50) y: (0)
+        forever
+            change y by (rise)
+            change [rise v] by (-0.4)
+    ```
 
 + And change Flappy's flapping script:
 
-```blocks
-when FLAG clicked
-	set [flaps v] to [0]
-	switch costume to [wings up v]
-	forever
-		repeat until <(flaps) = [0]>
-			change [flaps v] by (-1)
-			switch costume to [wings down v]
-			change [rise v] by (8)
-			wait (0.2) secs
-			switch costume to [wings up v]
-			wait (0.2) secs
-```
+    ```blocks
+    when FLAG clicked
+        set [flaps v] to [0]
+        switch costume to [wings up v]
+        forever
+            repeat until <(flaps) = [0]>
+                change [flaps v] by (-1)
+                switch costume to [wings down v]
+                change [rise v] by (8)
+                wait (0.2) secs
+                switch costume to [wings up v]
+                wait (0.2) secs
+    ```
 
 ##Test Your Project { .flag}
 __Click the green flag__, does Flappy now accelerate when falling and flapping?
@@ -281,19 +281,19 @@ When the player loses make Flappy fall off the bottom of the screen before endin
 + Replace the `broadcast GameOver` {.blockbrown}  block with `broadcast Fall` {.blockbrown}
 + Now add the following scripts:
 
-```blocks
-when I receive [Fall v]
-	repeat (10)
-		turn ccw (5) degrees
+    ```blocks
+    when I receive [Fall v]
+        repeat (10)
+            turn ccw (5) degrees
 
-when I receive [Fall v]
-	repeat until <(y position) < [-180]>
-		change y by (rise)
-		change [rise v] by (-0.4)
-	end
-	hide
-	broadcast [GameOver v]
-```
+    when I receive [Fall v]
+        repeat until <(y position) < [-180]>
+            change y by (rise)
+            change [rise v] by (-0.4)
+        end
+        hide
+        broadcast [GameOver v]
+    ```
 
 + Don't forget to add a `show` {.blockpurple} block and reset Flappy's direction when the game restarts.
 

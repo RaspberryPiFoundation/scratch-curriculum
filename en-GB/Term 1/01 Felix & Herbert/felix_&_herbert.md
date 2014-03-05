@@ -25,15 +25,15 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 + Make sure Felix only points left-right by clicking this button:
 + **Create this script**:
 
-```blocks
-				when FLAG clicked
-				forever
-					point towards [mouse-pointer v]
-					move (10) steps
-					next costume
-					play drum (3 v) for (0.3) beats
-				end
-```
+    ```blocks
+        when FLAG clicked
+        forever
+            point towards [mouse-pointer v]
+            move (10) steps
+            next costume
+            play drum (3 v) for (0.3) beats
+        end
+    ```
 
 ##Test your project { .flag}
 
@@ -56,13 +56,13 @@ Does Felix follow the mouse pointer? Does it look like he’s walking when he mo
 + Make sure Herbert only points left-right.
 + **Give Herbert this script:**
 
-```blocks
-  when FLAG clicked
-    forever
-      go to [mouse-pointer v]
-      point towards [Felix v]
-    end
-```
+    ```blocks
+      when FLAG clicked
+        forever
+          go to [mouse-pointer v]
+          point towards [Felix v]
+        end
+    ```
 
 ##Test your project { .flag}
 
@@ -81,18 +81,18 @@ Does Herbert move with the mouse pointer? Does Felix chase Herbert?
 
 + **Change Felix’s script to be this:**
 
-```blocks
-  when FLAG clicked
-  forever
-    point towards [mouse-pointer v]
-    move (10) steps
-    next costume
-    play drum (3 v) for (0.3) beats
-    if <touching [herbert v]?>
-      say [Caught you!] for (1) secs
-    end
-   end
-```
+    ```blocks
+      when FLAG clicked
+      forever
+        point towards [mouse-pointer v]
+        move (10) steps
+        next costume
+        play drum (3 v) for (0.3) beats
+        if <touching [herbert v]?>
+          say [Caught you!] for (1) secs
+        end
+       end
+    ```
 
 ##Test your project { .flag}
 
@@ -110,7 +110,7 @@ Does Felix say when he’s caught Herbert?
 
 + **Change Felix’s script to send this message when he catches Herbert:**
 
-```blocks
+    ```blocks
      when FLAG clicked
         forever
           point towards [mouse-pointer v]
@@ -124,7 +124,7 @@ Does Felix say when he’s caught Herbert?
             wait (1) secs
           end
         end
-```
+    ```
 
 + Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the `Choose costume from Library button ` {.blocklightgrey}. Select the **fantasy/ghost2-a** costume.
 
@@ -133,13 +133,12 @@ Does Felix say when he’s caught Herbert?
 + Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.
 + **Create a new script for Herbert to turn him into a ghost:**
 
-```blocks
-  when I receive [caught v]
-    switch costume to [dead v]
-    wait (1) secs
-    switch costume to [alive v]
-
-```
+    ```blocks
+    when I receive [caught v]
+        switch costume to [dead v]
+        wait (1) secs
+        switch costume to [alive v]
+    ```
 
 ##Test your project { .flag}
 
@@ -161,18 +160,17 @@ We’ll start the score at zero and increase it by one every second. If Felix ca
 + Make a variable, for all sprites, called Score. Click on `Data` {.blockorange} in the top menu, make a variable and name it `score` {.blockorange}, ensuring that "For all sprites" is selected.
 + **On the stage, create these two scripts:**
 
+    ```blocks
+    when gf clicked
+       set [score v] to [0]
+       forever
+          change [score v] by (1)
+          wait (1) secs
+       end
 
-```blocks
-when gf clicked
-   set [score v] to [0]
-   forever
-      change [score v] by (1)
-      wait (1) secs
-   end
-
-when I receive [caught v]
-change [score v] by (-100)
-```
+    when I receive [caught v]
+    change [score v] by (-100)
+    ```
 
 ##Test your project { .flag}
 

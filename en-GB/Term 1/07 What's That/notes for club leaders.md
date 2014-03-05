@@ -1,11 +1,14 @@
-#NOTES FOR CLUB LEADERS
-##(What's That)
+---
+title: What’s That — Notes for Club Leaders           
+language: en-GB
+embeds: "*.png"
+...
 
-###Introduction
+#Introduction
 
 A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
 
-###Skills
+#Skills
 
 This project covers
 
@@ -15,20 +18,20 @@ This project covers
 * Detecting a click and checking if the right sprite was clicked 
 * Broadcast messages
 
-###Resources
+#Resources
 
 This project uses resources found in the Scratch Backgrounds and Costumes folders
 
-###Scratch Cards required:
+#Scratch Cards required:
 
 Timer
 
-###Basic exercises
+#Basic exercises
 * Step 1: Make different things appear on the blackboard 
 * Step 2: Make the pictures distorted
 * Step 3: Allow the player to guess the picture
 
-###Challenges
+#Challenges
 1. Make the game harder or easier
 2. Distort the picture differently in each game
 3. Make a game have a few rounds

@@ -26,12 +26,12 @@ background **Nature/underwater3** using `choose background from library`{.blockl
 5. Click on the blue '**i**' symbol again,  and make sure the sprite can only flip left-right.
 6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
 
-```blocks
-when FLAG clicked
-    forever    	
-        point towards [mouse pointer v]
-        move (3) steps
-```
+    ```blocks
+    when FLAG clicked
+        forever    	
+            point towards [mouse pointer v]
+            move (3) steps
+    ```
 
 ## Test Your Project { .flag}
 
@@ -42,12 +42,12 @@ What happens if you don’t move the mouse pointer and the fish catches up with 
 1. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
 (The `distance to`{.blocklightblue} block is in the `Sensing`{.blocklightgrey} palette).
 
-```blocks
-when FLAG clicked
-    forever if <(distance to [mouse-pointer v]) > (10)>
-        point towards [mouse-pointer v]
-        move (3) steps
-```
+    ```blocks
+    when FLAG clicked
+        forever if <(distance to [mouse-pointer v]) > (10)>
+            point towards [mouse-pointer v]
+            move (3) steps
+    ```
 
 ## Save your project { .save}
 
@@ -65,13 +65,13 @@ __It's time to make something for the Hungry Fish to try to eat!__
 2. Use the `Shrink`{.blocklightgrey} sprite tool (above the Stage) to make the sprite smaller.
 3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.
 
-```blocks
-when FLAG clicked
-	forever		
-        move (2) steps
-        turn right (pick random (-20) to (20)) degrees
-        if on edge, bounce  
-```
+    ```blocks
+    when FLAG clicked
+        forever		
+            move (2) steps
+            turn right (pick random (-20) to (20)) degrees
+            if on edge, bounce  
+    ```
 
 ## Test Your Project { .flag}
 
@@ -96,9 +96,9 @@ __Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has c
 
 1. First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the `touching`{.blocklightblue} block to see if it is touching the fish.
 
-```blocks
-
-forever    	
+    ```blocks
+    
+    forever    	
 		move (2) steps
 		turn right (pick random (-20) to (20)) degrees
 		if on edge, bounce
@@ -106,7 +106,7 @@ forever
 			hide
 			wait (3) secs
 			show
-```
+    ```
 
 ## Test Your Project { .flag}
 __Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
@@ -114,18 +114,18 @@ __Try out your game again – can you spot any problems?__ Notice that the prey 
 2. How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the `touching color`{.blocklightblue} block, and see if it is touching the fish’s blue teeth. To do this, replace the `touching`{.blocklightblue} block with a `touching color`{.blocklightblue} block in your script, click on the color in the block and then click again on the fish’s teeth.
 3. Next we can make the prey move to a random point on the screen before reappearing using a `go to`{.blockblue} block, and giving it a random value for **x** and **y**.
 
-```blocks
-when FLAG clicked
-	forever		
-		move (2) steps
-		turn right (pick random (-20) to (20)) degrees
-		if on edge, bounce
-		if <touching color [#FFFFFF]?> then
-			hide
-			wait (3) secs
-			go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
-			show
-```
+    ```blocks
+    when FLAG clicked
+        forever		
+            move (2) steps
+            turn right (pick random (-20) to (20)) degrees
+            if on edge, bounce
+            if <touching color [#FFFFFF]?> then
+                hide
+                wait (3) secs
+                go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
+                show
+    ```
     
 ## Test Your Project { .flag}
 
@@ -133,34 +133,34 @@ Try the game again – does the prey only vanish when it touches the fish’s mo
 
 4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey `broadcast`{.blockyellow} the fact that it’s been eaten before vanishing.
 
-```blocks
-
-when FLAG clicked
-forever		
-	move (2) steps
-	turn right <pick random (-20) to (20)> degrees
-	if on edge, bounce
-	if <touching color [#FFFFFF]?>
-		broadcast [got me v]
-		hide
-		wait (3) secs
-		go to x:<pick random (-220) to (220)> y: <pick random (-170) to (170)>
-		show
-	
-```
-__Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.__
+    ```blocks
+    
+    when FLAG clicked
+    forever		
+        move (2) steps
+        turn right <pick random (-20) to (20)> degrees
+        if on edge, bounce
+        if <touching color [#FFFFFF]?>
+            broadcast [got me v]
+            hide
+            wait (3) secs
+            go to x:<pick random (-220) to (220)> y: <pick random (-170) to (170)>
+            show
+        
+    ```
+    __Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.__
 
 5. Add the **resources/mouth-closed.png** costume and the **resources/chomp.mp3** sound to the Hungry Fish sprite.
 6. Then, add a new script to the Hungry Fish to respond to the message `broadcast`{.blockyellow} by the prey. This script should make the fish play the **'chomp'** sound and `switch to`{.blockpurple} the mouth-closed costume, wait briefly and then switch back.
 
-```blocks
-when I receive [got me v]
-	play sound [chomp v]
-	repeat (2)
-		switch to costume [mouth-closed v]
-		wait (0.5) secs
-		switch to costume [hungry-fish v]
-```
+    ```blocks
+    when I receive [got me v]
+        play sound [chomp v]
+        repeat (2)
+            switch to costume [mouth-closed v]
+            wait (0.5) secs
+            switch to costume [hungry-fish v]
+    ```
 
 __Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
 

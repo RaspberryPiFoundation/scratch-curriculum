@@ -1,10 +1,13 @@
-#NOTES FOR CLUB LEADERS
-##(Fireworks)
+---
+title: Fireworks — Notes for Club Leaders                  
+language: en-GB
+embeds: "*.png"
+...
 
-###Introduction
+#Introduction
 This interactive toy shows fireworks exploding in the sky wherever you click and plays the sound of the fireworks exploding.
 
-###Skills
+#Skills
 This project covers:
 
 * Responding to clicks
@@ -12,13 +15,13 @@ This project covers:
 * Broadcasting and receiving events
 * Coordinates
 
-###Resources
+#Resources
 This project uses resources found in the Scratch Backgrounds folders as well as the files found in the Fireworks resources folder included in this pack.
 
-###Scratch Cards required
+#Scratch Cards required
 Change color Glide
 
-###Basic exercises
+#Basic exercises
 * Step 1: Create a rocket that flies towards the mouse Step 2: Make the rocket explode
 * Step 3: Making each explosion unique
 * Step 4: Fixing the Broadcast Bug

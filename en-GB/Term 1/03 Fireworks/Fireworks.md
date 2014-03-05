@@ -28,15 +28,14 @@ Now we want to make the rocket move towards the mouse when the mouse is clicked.
 
 + Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse
 
-```blocks
-
+    ```blocks
 	when FLAG clicked
 	hide
 
 	when [space v] key pressed 
 	show
 	glide (1) secs to x: (mouse x) y: (mouse y)
-```
+    ```
 		
 ##Test Your Project { .flag}
 __Click the green flag, place your mouse over the stage and press the space bar.__
@@ -48,7 +47,7 @@ What happens if you move the mouse and press space again?
 
 + Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it to move to below the bottom of the screen, but stay in the same place horizontally.
 
-```blocks
+    ```blocks
 
 	when FLAG clicked
 	hide
@@ -57,7 +56,7 @@ What happens if you move the mouse and press space again?
 	go to x: (mouse x) y: (-200)
 	show
 	glide (1) secs to x: (mouse x) y: (mouse y)
-```
+    ```
 
 ##Test Your Project { .flag}
 __Click the green flag, place your mouse over the stage and press the space bar.__ 
@@ -68,7 +67,7 @@ Does the rocket fly towards the mouse from the bottom of the screen? What happen
 + Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a __forever if mouse down__.
 Then swap the __when space key pressed__ control block for __when flag clicked__ and last but not least make sure the rocket is hidden when everything starts up.
 
-```blocks
+    ```blocks
 
 	when FLAG clicked
 	hide
@@ -77,7 +76,7 @@ Then swap the __when space key pressed__ control block for __when flag clicked__
 			go to x: (mouse x) y: (-200)
 			show
 			glide (1) secs to x: (mouse x) y: (mouse y)
-```
+    ```
 ##Test Your Project { .flag}
 __Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
 
@@ -93,7 +92,7 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 
 + The first step to make the rocket explode is to make it play a bang sound __Resources/bang.wav__ before it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click the `Upload sound from file` {.blockgrey} button.
 
-```blocks
+    ```blocks
 
 	when FLAG clicked
 	hide
@@ -104,10 +103,10 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 			show
 			glide (1) secs to x: (mouse x) y: (mouse y)
 			hide
-```
+    ```
 + Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.
 
-```blocks
+    ```blocks
 
 	when FLAG clicked
 	hide
@@ -119,7 +118,7 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 			glide (1) secs to x: (mouse x) y: (mouse y)
 			hide
 			broadcast [explode v]
-```
+    ```
 ##Test Your Project {.flag}
 __Click the green flag.__ 
 Make sure the rocket plays a noise and hides when it reaches the mouse.
@@ -129,7 +128,7 @@ Make sure the rocket plays a noise and hides when it reaches the mouse.
 + Create new sprite from File, __Resources/firework1.png__
 + When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
 
-```blocks
+    ```blocks
 
 	when I receive [explode v]
 	hide
@@ -137,7 +136,7 @@ Make sure the rocket plays a noise and hides when it reaches the mouse.
 	show
 	wait (1) secs
 	hide
-```
+    ```
 ## Test Your Project { .flag}
 __Send another rocket flying.__ 
 Does it get replaced with the explosion graphic when it explodes?
@@ -149,7 +148,7 @@ What happens if you hold the mouse button down whilst moving the mouse? (Don’t
 
 + Now we can make each explosion even more unique by using the `set color effect` {.blockpurple} block, and have it pick a random colour between __1__ and __200__ before showing it.
 
-```blocks
+    ```blocks
 
 	when I receive [explode v]
 	hide
@@ -159,7 +158,7 @@ What happens if you hold the mouse button down whilst moving the mouse? (Don’t
 	wait (1) secs
 	hide	
 	
-```
+    ```
 
 ##Test Your Project { .flag}
 __Click the green flag.__ 
@@ -179,7 +178,7 @@ Does each rocket have a different explosion graphic?
 
 + Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to __5%__ before we show it, and then once it’s shown, increase the size by __2 fifty times__, using a `repeat` {.blockorange} block.
 
-```blocks
+    ```blocks
 	
 	when I receive [explode v]
 	hide
@@ -192,7 +191,7 @@ Does each rocket have a different explosion graphic?
 	end
 	hide
 	
-```
+    ```
 ##Test Your Project { .flag}
 __Click the green flag.__ 
 
@@ -212,7 +211,7 @@ This occurs because when the rocket broadcasts its explosion, it will immediatel
 
 + To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.
 
-```blocks
+    ```blocks
 	
 	when FLAG clicked
 	hide
@@ -225,7 +224,7 @@ This occurs because when the rocket broadcasts its explosion, it will immediatel
 			hide
 			broadcast [explode v] and wait
 
-```
+    ```
 ##Test Your Project { .flag}
 __Click the green flag, hold down the mouse button and move the mouse around the stage.__ 
 

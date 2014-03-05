@@ -29,13 +29,12 @@ If it just says “speed”, delete the variable and create it again, for this s
 The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
 + We want the ghost to start moving when the game starts, __so make a script like this__:
 
-```blocks
-
-	when FLAG clicked
-	set [speed v] to [5]
-	forever
-		move (speed) steps
-```
+    ```blocks
+    when FLAG clicked
+    set [speed v] to [5]
+    forever
+        move (speed) steps
+    ```
 		
 ##Test Your Project { .flag}
 __Click the green flag__ and see what your ghost does. Why does it get stuck on the edge of the screen?
@@ -44,14 +43,14 @@ __Click the green flag__ and see what your ghost does. Why does it get stuck on 
 
 + To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an `if on edge, bounce` {.blockblue} block below your `move ` {.blockblue}`speed` {.blockorange}` steps` {.blockblue} block.
 
-```blocks
+    ```blocks
+    when FLAG clicked
+    set [speed v] to [5]
+    forever
+        move (speed) steps
+        if on edge, bounce
+    ```
 
-	when FLAG clicked
-	set [speed v] to [5]
-	forever
-		move (speed) steps
-		if on edge, bounce
-```
 + To stop the ghost flipping upside down, click on the `rotation style: left-right` {.blockgrey} button in the Sprite Summary area.
 
 ##Test Your Project { .flag}
@@ -74,13 +73,12 @@ To make the game more fun, we want the ghost to appear and vanish randomly. We�
 __Create this script for the ghost:__
 
 ```blocks
-
-	when FLAG clicked
-	forever
-		hide
-		wait (pick random (2) to (5)) secs
-		show
-		wait (pick random (3) to (5)) secs
+when FLAG clicked
+forever
+    hide
+    wait (pick random (2) to (5)) secs
+    show
+    wait (pick random (3) to (5)) secs
 
 ```
 ##Test Your Project { .flag}
@@ -103,12 +101,12 @@ To turn this into a game, we need to give the player something to do. They need 
 
 + __Add this script to the ghost__:
 
-```blocks
+    ```blocks
+    when this sprite clicked
+    hide
+    play sound [Fairydust v]
+    ```
 
-	when this sprite clicked
-	hide
-	play sound [Fairydust v]
-```
 ##Test Your Project { .flag}
 __Click the green flag.__ 
 
@@ -127,18 +125,17 @@ We’ve got a ghost, but now we want to make a game! We want to score points eve
 
 + Create a new `Variable` {.blockgrey} for all sprites called __score__, and alter the script for the ghost to increase this variable by one when it is clicked.
 
-```blocks
-
+    ```blocks
 	when this sprite clicked
 	hide
 	play sound [Fairydust v]
 	change [score v] by (1)
-```
+    ```
+
 + Switch to the __Stage__ and create a __new variable__ called __timer__. Add a new script that occurs when the green flag is clicked to set `timer` {.blockorange} to __30__ and reset the score to __0__. Then use a `repeat until` {.blockyellow} block to wait a second and then reduce `timer` {.blockorange}  by
 one. This should repeat until timer is 0, at which point use `stop all` {.blockyellow} to stop the game.
 
-```blocks
-
+    ```blocks
 	when FLAG clicked
 	set [timer v] to (30)
 	set [score v] to (0)
@@ -147,8 +144,7 @@ one. This should repeat until timer is 0, at which point use `stop all` {.blocky
 		change [timer v] by (-1)
 	
 	stop [all v]
-```
-
+    ```
 
 ##Test Your Project { .flag}
 __Click the green flag.__ 

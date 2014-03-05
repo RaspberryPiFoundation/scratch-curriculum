@@ -41,12 +41,12 @@ __Now we’ve got some costumes, we want the sprite to change between them.__
 6. How do we slow it down so it isn’t changing so quickly? Click the `Control`{.blockgrey} tab and drag in a `wait 1 secs` { .blockyellow}
 7. Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the `wait 1 secs` { .blockyellow} block?
 
-```blocks
-when FLAG clicked
-forever    	
-    next costume
-    wait (0.5) secs
-```
+    ```blocks
+    when FLAG clicked
+    forever    	
+        next costume
+        wait (0.5) secs
+    ```
 
 ## Test Your Project { .flag}
 __Click the green flag.__ 
@@ -68,29 +68,29 @@ One way to do it is by using a variable to set the state of the Sprite. This wil
 1. Create a new variable by clicking `Data` {.blockgrey} and `Make a variable`{.blocklightgrey}. Call it `stopped`{.blockorange} and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.
 2. At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to **"NO"**. 
 
-```blocks
-when FLAG clicked
-set [stopped v] to (NO)
-forever 
-    next costume
-    wait (0.1) secs
-```
+    ```blocks
+    when FLAG clicked
+    set [stopped v] to (NO)
+    forever 
+        next costume
+        wait (0.1) secs
+    ```
 3. Now we'll set the variable `stopped`{.blockorange} to  **"YES"** when someone clicks on the sprite.  
 
-```blocks
+    ```blocks
     when this sprite clicked
     set [stopped v] to (YES)
-```
+    ```
 4. Finally we need to make the sprite stop changing costume when the variable `stopped`{.blockorange} changes to "YES". Add an `if...then` { .blockyellow} loop and use a new **equals** `[] = []` {.blockgreen} operator block (found under the *Operators* tab) to check if `stopped`{.blockorange}  is still "NO".
 
-```blocks
-when FLAG clicked
-set [stopped v] to (NO)
-forever	
-	if <(stopped) = [NO]> then	
-    	next costume
-    	wait (0.5) secs
-```
+    ```blocks
+    when FLAG clicked
+    set [stopped v] to (NO)
+    forever	
+        if <(stopped) = [NO]> then	
+            next costume
+            wait (0.5) secs
+    ```
 
 ## Test Your Project { .flag}
 __Click the green flag, wait for a moment, then click on the sprite.__ 
@@ -130,15 +130,15 @@ It would make the game more interesting (and harder) if they changed in a less p
 the costume number. 
 3. We can also use exactly the same block in the `forever`{.blockyellow} loop so that the sprite switches to a different costume each time it changes during the game.
 
-```blocks
-when FLAG clicked
-set [stopped v] to (0)
-switch costume to <pick random (1) to (3)>
-forever	
-	if <(stopped) = [NO]> then	
-    	switch costume to <pick random (1) to (3)>
-	     	wait (0.5) secs
-```
+    ```blocks
+    when FLAG clicked
+    set [stopped v] to (0)
+    switch costume to <pick random (1) to (3)>
+    forever	
+        if <(stopped) = [NO]> then	
+            switch costume to <pick random (1) to (3)>
+                wait (0.5) secs
+    ```
 4. Do the same thing for each of your sprites. 
 
 ## Test Your Project { .flag}
@@ -174,13 +174,13 @@ dragging one of the corners. Rename this backdrop to be **"GameOver"**.
 3. Click on the `Scripts`{.blocklightgrey} tab for the stage and set the "GameOn" backdrop to be the one displayed when the game is started. 	
 4. How can we detect when all the sprites have stopped? Remember we use the `stopped`{.blockorange} variable to record whether each sprite has been clicked? Let's check the `stopped`{.blockorange} variable for the **Fruit3** sprite to see if the game is over.  Select the Fruit3 sprite and then can use a `x position of Fruit3` { .blockblue} block from the `Sensing`{.blocklightgrey} tab, but change **x position** to `stopped`{.blockorange}.
 	
-```blocks
-when FLAG clicked
-switch backdrop to [GameOn v]
-forever
-	if <([stopped v] of [Fruit3 v]) = [YES]> then
-		switch backdrop to [GameOver v]
-```
+    ```blocks
+    when FLAG clicked
+    switch backdrop to [GameOn v]
+    forever
+        if <([stopped v] of [Fruit3 v]) = [YES]> then
+            switch backdrop to [GameOver v]
+    ```
 
 ## Test Your Project { .flag}
 __Click the green flag.__ Does the "Game Over" message appear when you click on Fruit3?
@@ -190,13 +190,13 @@ modify our script so that it will work regardless of the order in which the spri
 
 5. To check to see that __all three__ fruit sprites have had their `stopped`{.blockorange} variables set to **YES**, we can use the `and` {. blockgreen} operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time. 
 
-```blocks
-	when FLAG clicked
-switch backdrop to [GameOn v]
-forever
-    if <<<([stopped v]  of [Fruit1 v]) = [YES]> and <([stopped v]  of [Fruit2 v]) = [YES]>> and <([stopped v]  of [Fruit3 v]) = [YES]>> then
-        switch backdrop to [GameOver v]
-```
+    ```blocks
+        when FLAG clicked
+    switch backdrop to [GameOn v]
+    forever
+        if <<<([stopped v]  of [Fruit1 v]) = [YES]> and <([stopped v]  of [Fruit2 v]) = [YES]>> and <([stopped v]  of [Fruit3 v]) = [YES]>> then
+            switch backdrop to [GameOver v]
+    ```
 
 ## Test Your Project { .flag}
 __Click the green flag.__ Does the "Game Over" message appear when you all 3 Fruits are stopped.
@@ -215,16 +215,16 @@ __The aim of the game is to click on the sprites so they stop while showing the 
 3. Now we need some code to work out which backrop to display once the game is over. We can use an `if...then...else` { .blockyellow} block to see if the player has won or lost by comparing each `costume #`{.blockpurple}  (costume number) using a similar `x position of Sprite` { .blockblue} block like we did before. This time, instead of looking at the `stopped`{.blockorange} variable, we can check the`costume #`{.blockpurple}  and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
  
 
-```blocks
-	when FLAG clicked
-switch backdrop to [GameOn v]
-forever
-    if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
-    	if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
-        	switch backdrop to [Win v]
-        else    
-			switch backdrop to [Lose v]
-```
+    ```blocks
+        when FLAG clicked
+    switch backdrop to [GameOn v]
+    forever
+        if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
+            if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
+                switch backdrop to [Win v]
+            else    
+                switch backdrop to [Lose v]
+    ```
  
 ## Test Your Project { .flag}
 __Click the green flag.__ Does the correct message appear when the game has finished? What will happen if each sprite's costume numbers don't match (for example, if Fruit2's costume number 3 is an apple and Fruit3's costume number 3 is a melon)?
