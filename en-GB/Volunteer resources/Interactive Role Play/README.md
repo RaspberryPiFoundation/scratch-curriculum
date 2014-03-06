@@ -8,7 +8,7 @@ The following documents are ideas on interactive role plays that can be conducte
 
 Well, in short, you don't.
 
-However, I have found that in the first 5 weeks of term 1 the kids were so excited about CodeClub that they zoomed through their worksheets, copying the scripts from the examples and not stopping to understand what is was they were actually doing.
+However, I have found that in the first 5 weeks of term 1 the kids were so excited about Code Club that they zoomed through their worksheets, copying the scripts from the examples and not stopping to understand what is was they were actually doing.
 
 This meant that when the children's scripts were not working as expected, they didn't know where to look to fix them and instead resorted to asking me.
 
