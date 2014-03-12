@@ -5,7 +5,7 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: "Feliks-i-Herbert.sb2"
-note: "informacje dla prowadzacych zajecia.md"
+note: "Informacje dla prowadzacych zajecia.md"
 ...
 
 # Wstęp {.intro}

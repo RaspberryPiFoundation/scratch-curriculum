@@ -1,11 +1,18 @@
-﻿Poziom 1
+﻿---
+title: Fajerwerki
+level: Poziom 1
+language: pl-PL
+stylesheet: scratch
+embeds: "*.png"
+materials: "*.sb"
+note: "Informacje dla prowadzacych zajecia.md"
+...
 
-#Fajerwerki
+# Wstęp {.intro}
 
-__Wstęp:__
 Ta interaktywna zabawka pokazuje wybuchające fajerwerki i odtwarza dźwięk wybuchu przy każdym kliknięciu.
 
-##KROK 1: Stwórz rakietę, która leci w kierunku kursora myszki
+#KROK 1: Stwórz rakietę, która leci w kierunku kursora myszki
 
 __Zaimportujmy wszystkie obrazki potrzebne do gry__
 
@@ -28,7 +35,7 @@ Teraz sprawimy, aby po klinięciu rakieta poleciała w kierunku kursora myszki.
 	leć przez 1 s do x: x myszy y: y myszy
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę, ustaw kursor myszy na Scenie i wciśnij spację.__
 
 Czy rakieta pojawia się na ekranie i leci w kierunku kursora myszy?
@@ -48,7 +55,7 @@ Co się dzieje, kiedy poruszysz myszą i wciśniesz spację ponownie?
 	leć przez 1 do to x: x myszy y: y myszy
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę, ustaw kursor myszy na Scenie i wciśnij spację.__
 
 Czy rakieta leci w kierunku kursora z samego dołu ekranu?
@@ -68,16 +75,16 @@ Co się dzieje, kiedy przesuniesz kursor w bok i wciśniesz spację ponownie?
 	(koniec zawsze)
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę, a następnie kliknij na scenie. Kliknij jeszcze raz w innym miejscu.__
 
-###Rzeczy do spróbowania
+##Rzeczy do spróbowania
 1. Spróbuj zmienić cel rakiety, zanim zacznie lecieć w stronę myszy. (Tak aby leciała lekko po łuku.)
 2. Spróbuj zmienić prędkość rakiety: niech niektóre lecą szybciej, a inne wolniej.
 
 Zapisz swój projekt.
 
-##KROK 2: Spraw, aby rakieta wybuchła
+#KROK 2: Spraw, aby rakieta wybuchła
 
 1. Pierwszym zadaniem dla nas będzię dodanie odgłosu huku tuż przed wylotem rakiety oraz schowanie jej, gdy doleci do celu. Aby zaimportować odgłos wybuchu, przejdź do zakładki „Dźwięki” i wybierz plik „bum” z katalogu Zasoby.
 
@@ -110,7 +117,7 @@ Zapisz swój projekt.
         (koniec zawsze)
     ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Upewnij się, że rakieta odtwarza dźwięk i chowa się po osiągnięciu celu.
@@ -128,7 +135,7 @@ Upewnij się, że rakieta odtwarza dźwięk i chowa się po osiągnięciu celu.
 	ukryj
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Wystrzel następną rakietę.__
 
 Czy rakieta została zastąpiona obrazkiem wybuchu?
@@ -137,7 +144,7 @@ Co się dzieje, kiedy przytrzymasz wciśnięty przycisk myszy i przesuwasz kurso
 
 Zapisz swój projekt.
 
-##KROK 3: Spraw, aby każda eksplozja była unikalna
+#KROK 3: Spraw, aby każda eksplozja była unikalna
 
 1. Teraz sprawmy, aby każdy wybuch był inny. Skorzystaj z bloku „zmień efekt kolor” i każ mu wybierać losowy kolor z listy od 1 do 200 przed pokazaniem wybuchu.
 
@@ -152,14 +159,14 @@ Zapisz swój projekt.
 	ukryj
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Czy każda eksplozja ma inny kolor?
 
 1. Dodajmy kilka różnych rodzajów eksplozji. Zaimportuj pliki „fajerwerki2.png” i „fajerwerki3.png” z katalogu „Zasoby” jako nowe kostiumy i dodaj przełączanie między nimi dla każdej rakiety tuż przed jej pokazaniem się.
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Czy każda rakieta wybucha w inny sposób i ma inny kolor?
@@ -180,17 +187,17 @@ Czy każda rakieta wybucha w inny sposób i ma inny kolor?
 	ukryj
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Czy wybuch rakiety powiększa się w miarę upływu czasu?
 
-###Rzeczy do spróbowania
+##Rzeczy do spróbowania
 Spróbuj sprawić, aby każdy wybuch był bardziej unikalny, zmieniając jego rozmiar i szybkość wzrostu każdej eksplozji.
 
 Zapisz swój projekt.
 
-##KROK 4: Naprawiamy problem z nadawaniem
+#KROK 4: Naprawiamy problem z nadawaniem
 
 Pamiętasz błąd, który pojawił się wcześniej przy poruszaniu kursora myszy, gdy przycisk myszy jest wciśnięty?
 
@@ -213,7 +220,7 @@ Dzieje się tak z dlatego, że rakieta nadaje komunikat o wybuchu i natychmiast 
 
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę, przytrzymaj przycisk myszy i przesuń kursor po ekranie.__
 
 Czy obrazek eksplozji pojawia się teraz w odpowiednim miejscu i we właściwym czasie?

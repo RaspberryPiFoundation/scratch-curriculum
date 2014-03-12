@@ -1,11 +1,14 @@
-#INFORMACJE DLA PROWADZĄCYCH ZAJĘCIA
-##(Kolorowe kredki)
+---
+title: Kolorowe kredki — Informacje dla prowadzących zajęcia
+language: pl-PL
+embeds: "*.png"
+...
 
-###Wstęp
+#Wstęp
 
 Podczas tego projektu stworzymy podstawowe narzędzia do rysowania. Będzie można rysować po ekranie kursorem myszy, zmieniać kolor linii oraz czyścić ekran.
 
-###Umiejętności
+#Umiejętności
 
 Ten projekt uczy
 
@@ -16,10 +19,10 @@ Ten projekt uczy
 * Ustalania ograniczeń
 * Tworzenia i korzystania z logiki Boole'a
 
-###Materiały
+#Materiały
 Ten projekt korzysta z kostiumów dostępnych w katalogu Zasoby. Upewnij się, że ten katalog jest dostępny na każdym komputerze, z którego będą korzystać dzieci.
 
-##Podstawowe ćwiczenia
+#Podstawowe ćwiczenia
 
 Krok 1: Rysowanie kursorem myszy
 
@@ -33,7 +36,7 @@ Krok 5: Gumka
 
 Krok 6: Pieczątki
 
-##Wyzwania
+#Wyzwania
 
 1. Tęczowa kredka
 2. Skróty klawiszowe

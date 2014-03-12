@@ -1,11 +1,14 @@
-#INFORMACJE DLA PROWADZĄCYCH ZAJĘCIA
-##(Co to jest)
+---
+title: Co to jest — Informacje dla prowadzących zajęcia
+language: pl-PL
+embeds: "*.png"
+...
 
-##Wstęp
+#Wstęp
 
 Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
-###Umiejętności
+#Umiejętności
 
 Ten projekt uczy:
 
@@ -15,11 +18,11 @@ Ten projekt uczy:
 * Wykrywania kliknięcia przycisku myszy oraz sprawdzania, czy odpowiedni duszek został kliknięty
 * Nadawania wiadomości
 
-###Zasoby
+#Zasoby
 
 Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds i Costumes programu Scratch
 
-###Podstawowe ćwiczenia
+#Podstawowe ćwiczenia
 
 Krok 1: Wyświetl różne obrazki na tablicy
 
@@ -27,7 +30,7 @@ Krok 2: Zniekształć obrazki
 
 Krok 3: Pozwól graczowi zgadnąć, co to za obrazek
 
-###Wyzwania
+#Wyzwania
 
 1. Spraw, aby gra była trudniejsza albo łatwiejsza
 

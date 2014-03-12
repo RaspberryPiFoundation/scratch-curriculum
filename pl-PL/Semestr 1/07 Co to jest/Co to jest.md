@@ -1,11 +1,18 @@
-Poziom 3
+---
+title: Co to jest
+level: Poziom 3
+language: pl-PL
+stylesheet: scratch
+embeds: "*.png"
+materials: "*.sb"
+note: "Informacje dla prowadzacych zajecia.md"
+...
 
-#Co to jest
+# Wstęp {.intro}
 
-__Wstęp:__
 Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
-##KROK 1: Wyświetl różne obrazki na tablicy
+#KROK 1: Wyświetl różne obrazki na tablicy
 
 Chcemy pokazać na tablicy kilka różnych obrazków.
 
@@ -27,7 +34,7 @@ Wyświetlmy teraz jakiś przypadkowy obrazek.
 	(koniec powtórz)
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Czy duszek ma inny kostium?
@@ -37,7 +44,7 @@ Czy duszek ma inny kostium za każdym razem? Czasem ten sam kostium może pojawi
 
 Zapisz swój projekt.
 
-##KROK 2: Zniekształć obrazki
+#KROK 2: Zniekształć obrazki
 
 __Zniekształćmy teraz obrazek, kiedy pojawi się na tablicy po raz pierwszy, a w miarę upływu czasu niech staje się on coraz bardziej wyraźny__.
 
@@ -67,7 +74,7 @@ W miarę jak ilość punktów będzie się zmniejszać z czasem, obrazek będzie
 
 Nie zapomnij dodać bloku 'ukryj' na początku skryptu, ustawić Punkty na 110 oraz wszystkiego poniżej.
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Czy na tablicy pojawia się przypadkowy, zniekształcony obrazek?
@@ -83,13 +90,13 @@ Czy na tablicy pojawia się inny obrazek po każdym wciśnięciu flagi?
 
 Zapisz swój projekt.
 
-##Rzeczy do spróbowania
+#Rzeczy do spróbowania
 
 __Spróbuj zmienić ilość punktów na początku gry i wartość o jaką ilość punktów się zmniejsza w pętli__. W jaki sposób wpływa to na wygląd obrazka? Czy teraz jest trudniej czy łatwiej odgadnąć co to jest?
 
 __Wypróbuj inne efekty graficzne z rozwijanej listy__. W jaki sposób wpływają one na poziom trudności gry?
 
-##KROK 3: Pozwól graczowi zgadnąć co to za obrazek
+#KROK 3: Pozwól graczowi zgadnąć co to za obrazek
 
 Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a ilość punktów maleje w miarę upływu czasu. Ale jak mamy tę grę wygrać? Najpierw dodamy kilka dodatkowych duszków pod tablicą, które możesz kliknąć. Jeżeli klikniesz odpowiednią miniaturkę, wygrasz grę. Jeżeli klikniesz na zły obrazek, ten duszek zniknie i musisz spróbować zgadnąć jeszcze raz.
 
@@ -149,7 +156,7 @@ Teraz zmienimy sposób, w jaki duszki będą reagować na kliknięcia myszką. D
 	powiedz połącz Gratulacje! Twoje punkty: i Punkty
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Kliknij zieloną flagę.__
 
 Podczas testowania gry warto włączyć podgląd na zmienną __odpowiedź__, aby widzieć poprawną odpowiedź. Na palecie Zmienne kliknij pole obok zmiennej __odpowiedź__, a pojawi się ona na scenie, w lewym górnym rogu.
@@ -206,7 +213,7 @@ __Brawo! Podstawowa wersja gry jest już gotowa!__
 
 Jest jeszcze kilka rzeczy, które można zmienić, aby ulepszyć grę. Spróbuj zrobić poniższe wyzwania!
 
-##Wyzwanie 1: Spraw, aby gra była trudniejsza albo łatwiejsza
+#Wyzwanie 1: Spraw, aby gra była trudniejsza albo łatwiejsza
 
 Zmień poziom trudności gry.
 
@@ -216,7 +223,7 @@ Zmień poziom trudności gry.
 
 Zapisz swój projekt.
 
-##Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze
+#Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze
 
 Teraz, za każdym razem jak zaczynasz grę, obrazki są zniekształcone w ten sam sposób. W drugim kroku próbowaliśmy kombinacji różnych zniekształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.
 
@@ -228,7 +235,7 @@ __Podpowiedź:__ Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypis
 
 Zapisz swój projekt.
 
-##Wyzwanie 3: Spraw, aby w grze było kilka rund
+#Wyzwanie 3: Spraw, aby w grze było kilka rund
 
 Obecnie każda gra jest niezależna. Zmień grę tak, aby można było zagrać w nią kilka razy. Na przykład, niech gracz w ciągu jednej gry ma 3 rundy - niech spróbuje odgadnąć 3 obrazki i zdobyć maksymalnie 300 punktów.
 
@@ -238,7 +245,7 @@ __Podpowiedź:__ Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, p
 
 Zapisz swój projekt.
 
-##Wyzwanie 4: Spraw, aby każda następna runda była trudniejsza
+#Wyzwanie 4: Spraw, aby każda następna runda była trudniejsza
 
 Spraw, aby gra była coraz trudniejsza z rundy na rundę.
 
@@ -248,13 +255,13 @@ __Podpowiedź:__ Skąd będziemy wiedzieć, w której jesteśmy rundzie gry? W j
 
 Zapisz swój projekt.
 
-##Wyzwanie 5: Graj tak długo, aż się pomylisz
+#Wyzwanie 5: Graj tak długo, aż się pomylisz
 
 Zamiast grać w określoną ilość rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz trudniejsza z każdą następną rundą.
 
 Zapisz swój projekt.
 
-##Wyzwanie 6: Spraw, aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje
+#Wyzwanie 6: Spraw, aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje
 
 Spróbujmy dostosować trudność gry do umiejętności gracza, zamiast zwiększać trudność gry z każdą rundą. Jeżeli gracz odgadnie obrazek szybko, spraw, aby gra była trudniejsza w następnej rundzie. Ale jeżeli gracz się pomyli, albo potrzebuje więcej czasu, aby odgadnąć obrazek, niech następna runda będzie troszkę łatwiejsza.
 
@@ -262,13 +269,13 @@ Ten pomysł będzie miał sens tylko wtedy, kiedy nie będziemy sumować ilości
 
 Zapisz swój projekt.
 
-##Wyzwanie 7: Zapamiętaj najlepszy wynik
+#Wyzwanie 7: Zapamiętaj najlepszy wynik
 
 Zapamiętaj najlepszy wynik. Jeżeli ktoś będzie lepszy w kolejnej grze, zapytaj gracza o jego imię i zapisz nowy najlepszy wynik. Upewnij się, że najlepszy wynik i imię najlepszego gracza są wyświetlone na ekranie.
 
 Zapisz swój projekt.
 
-##Wyzwanie 8: Za niepoprawną odpowiedź odejmij punkty
+#Wyzwanie 8: Za niepoprawną odpowiedź odejmij punkty
 
 Póki co, gracz nie jest karany za niepoprawne odpowiedzi, więc teoretycznie może spróbować kliknąć na wszystkie odpowiedzi tak szybko jak się da, aż w końcu trafi na dobrą odpowiedź. Zmieńmy grę, aby za każdą niepoprawną odpowiedź gracz tracił punkty.
 

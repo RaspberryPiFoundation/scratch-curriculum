@@ -1,19 +1,26 @@
-Poziom 2
+---
+title: Pustynny wyścig
+level: Poziom 2
+language: pl-PL
+stylesheet: scratch
+embeds: "*.png"
+materials: "*.sb"
+note: "informacje dla prowadzacych zajecia.md"
+...
 
-#Pustynny wyścig
+# Wstęp {.intro}
 
-__Wstęp:__
 Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierze, które pierwsze dotrze do krawędzi ekranu, wygrywa.
 
 
-##KROK 1: Stwórz scenę i dodaj duszki
+#KROK 1: Stwórz scenę i dodaj duszki
 
 1. Kliknij na scenę i dodaj tło z pustynią.
 2. Dodaj nowego duszka i wybierz kostium lwa z katalogu ze zwierzętami.
 3. Dodaj kolejnego duszka i wybierz kostium papugi.
 
 
-##KROK 2: Spraw, aby lew i papuga się poruszały
+#KROK 2: Spraw, aby lew i papuga się poruszały
 
 Chcemy, aby duszki poruszały się w odpowiedzi na wciśnięcie klawiszy.
 
@@ -33,14 +40,14 @@ Chcemy, aby duszki poruszały się w odpowiedzi na wciśnięcie klawiszy.
 	przesuń o 4 kroków
 ```
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Wciśnij zieloną flagę__ 
 Czy lew i papuga poruszają się po ekranie, gdy wciskasz 'A' i 'L'?
 
 Zapisz swój projekt.
 
 
-##KROK 3: Rozpoczęcie wyścigu
+#KROK 3: Rozpoczęcie wyścigu
 
 Aby móc określić później, kto wygrał, musimy najpierw wiedzieć, kiedy wyścig się rozpoczął. __Dodajmy przycisk Start.__
 
@@ -64,7 +71,7 @@ Aby móc określić później, kto wygrał, musimy najpierw wiedzieć, kiedy wy�
 	powiedz Start! przez 1 s
 	ukryj
 ```
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Wciśnij zieloną flagę__
 
 Czy widzisz odliczanie po kliknięciu przycisku? Czy przycisk znika po zakończeniu odliczania?
@@ -95,14 +102,14 @@ Chcemy, aby ścigający poruszali się tylko po rozpoczęciu wyścigu. Chcemy te
 ```
 9. Ustaw to samo dla lwa.
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Wciśnij zieloną flagę__
 
 Czy lew i papuga ruszają się tylko po zakończeniu odliczania?
 
 Teraz chcemy notować, kto wygrał wyścig i usuwać tę informację po zakończeniu gry, aby można było zacząć od nowa.
 
-##KROK 4: Kończenie wyścigu
+#KROK 4: Kończenie wyścigu
 
 1. Dodaj blok do skryptu papugi, który ustawia zmienną wyścig na 0, kiedy papuga dotknie brzegu ekranu.
 
@@ -137,7 +144,7 @@ Teraz chcemy notować, kto wygrał wyścig i usuwać tę informację po zakończ
 ```
 4. Powtórz to samo dla lwa.
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Wciśnij zieloną flagę__
 
 Czy działa rozpoczynanie wyścigu po wciśnięciu przycisku? Można się ścigać wciskając przyciski 'A' i 'L'?
@@ -145,7 +152,7 @@ Czy duszki dobrze ogłaszają, który z nich wygrał?
 
 Zapisz swój projekt.
 
-##KROK 5: Restartowanie gry
+#KROK 5: Restartowanie gry
 
 Po zakończeniu wyścigu musimy powiedzieć wszystkim duszkom, że to koniec i zresetować grę, aby mogła się zacząć od nowa.
 
@@ -186,20 +193,20 @@ __Duszek, który wygra, musi ogłosić swoje zwycięstwo.__
 ```
 5. Przejdź do duszka przycisku i dodaj skrypt, który go pokazuje po otrzymaniu komunikatu, że wyścig się zakończył.
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 __Wciśnij zieloną flagę__
 
 Możesz się ścigać z przyjacielem, kiedy jedno z was kieruje papugą wciskając 'A', a drugie kieruje lwem wciskając 'L'?
 
 Zapisz swój projekt.
 
-##Wyzwanie: Dodaj dopalacz
+#Wyzwanie: Dodaj dopalacz
 
 * __Spróbuj dodać dopalacz__, który każdy duszek może użyć tylko raz podczas wyścigu. Dopalacz przesuwa postać w przód o __30 kroków__.
 * __Dodaj nowy kostium__ z płomieniem za każdym duszkiem i ustaw, aby się pokazywał, kiedy dopalacz zostanie użyty.
 * __Nagraj następny dźwięk__, który będzie odegrany po użyciu dopalacza.
 
-###Przetestuj swój projekt
+##Przetestuj swój projekt
 
 Zapisz swój projekt.
 
