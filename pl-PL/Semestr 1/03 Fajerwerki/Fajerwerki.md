@@ -1,4 +1,4 @@
-﻿---
+---
 title: Fajerwerki
 level: Poziom 1
 language: pl-PL
