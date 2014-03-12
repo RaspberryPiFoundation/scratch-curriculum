@@ -12,7 +12,7 @@ note: "Informacje dla prowadzacych zajecia.md"
 
 Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu, aby udało jej się zjeść wszystkie krewetki.
 
-#KROK 1: Stwórz duszka, który zmienia kostiumy
+# Krok 1: Stwórz duszka, który zmienia kostiumy {.activity}
 __Dodajmy rybę, która pływa po morzu!__
 
 1. Zacznij nowy projekt w Scratchu.
@@ -31,7 +31,7 @@ __Dodajmy rybę, która pływa po morzu!__
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Wciśnij zieloną flagę.__
 Poruszaj kursorem myszy po morzu. Czy ryba pływa za nim?
 Co się dzieje, jeżeli nie ruszasz kursorem i ryba go łapie? Jak to wygląda? Dlaczego tak się dzieje?
@@ -48,15 +48,15 @@ Co się dzieje, jeżeli nie ruszasz kursorem i ryba go łapie? Jak to wygląda? 
 ```
 
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 Jeżeli chcesz, możesz zmienić liczby w skrypcie. W jaki sposób zmienia to sposób poruszania się Głodnej Ryby? Zmień odległość na jakiąś dużą liczbę (np. 100) albo jakąś bardzo małą (np. 1). Zmień ilość kroków na coś dużego (np. 20) lub małego (np. 1 lub nawet 0). Co się dzieje?
 
 
-#KROK 2: Dodaj krewetkę
+# Krok 2: Dodaj krewetkę {.activity}
 
 1. Stwórz nowego duszka korzystając z kostiumu lobster1 z katalogu Animals.
 2. Zmniejsz nowego duszka (narzędzie do zmniejszania znajduje się nad Sceną).
@@ -72,19 +72,19 @@ Jeżeli chcesz, możesz zmienić liczby w skrypcie. W jaki sposób zmienia to sp
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Wciśnij zieloną flagę__ i popatrz, jak krewetka porusza się po ekranie. Czy pływa tak jak trzeba? Czy wygląda to realistycznie?
 
 __Obecnie ryba i krewetka nie interesują się sobą. Zajmiemy się tym w następnym kroku.__
 
-Zapisz swój projekt
+## Zapisz swój projekt {.save}
 
 ##Rzeczy do spróbowania
 
 * Zmień liczby w bloku __losuj liczbę pomiędzy__ oraz odległość, o jaką porusza się krewetka. W jaki sposób te zmiany wpływają na sposób poruszania się?
 * Co robi blok __jeżeli na brzegu, odbij się__? Co się stanie, jak go nie będzie? Usuń go i sprawdź.
 
-#KROK 3: Głodna ryba łapie krewetkę
+# Krok 3: Głodna ryba łapie krewetkę {.activity}
 
 __Chcemy, aby ryba zjadła swoją ofiarę!__ Jak tylko ryba złapie żyjątko, dwie rzeczy muszą mieć miejsce:
 * Ryba musi zamknąć paszczę z głośnym "mlask!"
@@ -107,7 +107,7 @@ __Chcemy, aby ryba zjadła swoją ofiarę!__ Jak tylko ryba złapie żyjątko, d
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że krewetka znika bez względu na to, z której strony dotknie rybę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekundach może od razu zjeść krewetkę – to jest trochę niefajne!
 
 2. Co możemy zrobić, aby upewnić się, że krewetka znika tylko wtedy, gdy ryba dotknie jej paszczą? Możemy skorzystać z czujnika koloru i sprawdzać, czy krewetka dotyka niebieskich zębów ryby! Aby to zrobić, zamień blok 'dotyka Głodna Ryba' na 'dotyka koloru', kliknij kwadracik z kolorem, a gdy kursor myszy się zmieni, kliknij na zębach ryby.
@@ -129,7 +129,7 @@ __Spróbuj złapać krewetkę – czy widzisz jakieś problemy?__ Zauważ, że k
 	(koniec zawsze)
 
 ```
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 Spróbuj złapać krewetkę jeszcze raz – czy znika ona tylko wtedy, kiedy dotknie zębów ryby? I czy pojawia się w losowym miejscu na ekranie zamiast od razu tam, gdzie została zjedzona?
 
 4. Ryba musi wiedzieć, kiedy zjadła krewetkę, aby mogła wydać dźwięk i zmienić kostium. Aby to zrobić, musimy najpierw nadać sygnał, że krewetka została zjedzona.
@@ -171,11 +171,11 @@ __Teraz chcemy, aby ryba odpowiedziała na to głośnym zamknięciem paszczy.__
 
 __Skoro nasza Głodna Ryba jest gotowa jeść, wypełnijmy ocean jedzeniem. Kliknij na krewetce prawym przyciskiem myszy i zduplikuj ją kilka razy.__
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 Kliknij zieloną flagę.
 Czy Głodna Ryba zjada swoje ofiary? Czy potrafi zjeść każdą krewetkę?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do przemyślenia
 Dlaczego musimy dodać blok 'pokaż' na początku skryptu każdej krewetki? Pomyśl, co by się stało, gdyby gra została zatrzymana zanim zjedzona krewetka ponownie pojawi się na ekranie. Co by się stało po uruchomieniu gry?
@@ -197,7 +197,7 @@ Spraw, aby ta krewetka poruszała się wolniej od innych.
 
 __Podpowiedź:__ Spójrz na blok `przesuń o 2 kroków'.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 Czy krewetka porusza się wolniej? Czy gra jest teraz lepsza?
 Jeżeli udało ci się to zrobić, __wybierz inną krewetkę i spraw, aby poruszała się szybciej od innych.__
 
@@ -209,7 +209,7 @@ A może spróbujesz zmienić zachowanie krewetek, tak aby każda poruszała się
 
 Czy te zmiany sprawiły, że gra jest jeszcze lepsza? Czy gra podoba ci się bardziej, jest trudniejsza czy łatwiejsza? Może któraś konkretna zmiana podoba ci się najbardziej?
 
-Zapisz swój projekt
+## Zapisz swój projekt {.save}
 
 #Wyzwanie 2: Spraw, aby krewetki unikały głodnej ryby.
 
@@ -221,10 +221,10 @@ W Scratchu nie ma bloku, który powiedziałby ci, w którym kierunku porusza si�
 
 Wykorzystując ten pomysł, __spraw, aby jedna z krewetek zawsze była odwrócona do Głodnej Ryby plecami__. Może spróbujesz sprawić, aby się trzęsła jak będzie uciekać?
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 Czy teraz trudniej jest złapać krewetkę? Czy gra jest teraz lepsza?
 
-Zapisz swój projekt
+## Zapisz swój projekt {.save}
 
 #Wyzwanie 3: Dodaj punkty
 
@@ -235,10 +235,10 @@ Gdzie należy dodać blok, który będzie zmieniał ilość punktów?
 
 Upewnij się, żeby punkty przestawiały się na zero przy rozpoczęciu nowej gry. Gdzie trzeba dodać ten blok?
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 Czy jak zaczynasz nową grę, to ilość punktów jest równa zero? Czy dostajesz punkt za każdą zjedzoną krewetkę?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 4: Dodaj zegar
 
@@ -246,7 +246,7 @@ __Ograniczmy czas, w którym możesz zjadać krewetki.__ Jak wiele krewetek uda 
 
 Jeżeli nie masz pomysłu, jak to zrobić, poproś osobę prowadzącą zajęcia o kartę __Zegar__ (Timer). Na początek niech gra trwa 30 sekund.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 Czy jak zaczynasz grę, zegar wskazuje 30?
 
 Czy zegar poprawnie odlicza czas?
@@ -255,21 +255,21 @@ Czy udaje Ci się zjeść jakieś krewetki w tym czasie?
 
 Czy gra się zatrzymuje po upływie czasu?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 5: Zdobądź dodatkowe punkty
 Zdobywaj dodatkowe punkty, jeżeli uda Ci się zjeść 3 krewetki na raz! W jaki sposób możesz sprawdzić, ile krewetek udało Ci się zjeść?
 
 __Podpowiedź:__ Jeden ze sposobów, w jaki możesz to zrobić, to __użyć zmiennej, która policzy jak wiele krewetek pływa wokoło ryby__.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 6: Zmień cel gry: krewetka musi przeżyć!
 Czasami super pomysły przychodzą do głowy, jeżeli spróbujesz zrobić coś na odwrót.
 
 __Zmień grę w ten sposób, żeby zamiast sterować Głodną Rybą, która próbuje zjeść krewetki, sterowało się krewetką otoczoną wieloma Głodnymi Rybami__. Jak długo uda jej się przetrwać, zanim zostanie zjedzona?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
 Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.

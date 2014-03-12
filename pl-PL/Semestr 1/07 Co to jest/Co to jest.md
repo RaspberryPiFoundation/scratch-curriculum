@@ -12,7 +12,7 @@ note: "Informacje dla prowadzacych zajecia.md"
 
 Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
-#KROK 1: Wyświetl różne obrazki na tablicy
+# Krok 1: Wyświetl różne obrazki na tablicy {.activity}
 
 Chcemy pokazać na tablicy kilka różnych obrazków.
 
@@ -34,7 +34,7 @@ Wyświetlmy teraz jakiś przypadkowy obrazek.
 	(koniec powtórz)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy duszek ma inny kostium?
@@ -42,9 +42,9 @@ Czy duszek ma inny kostium?
 __Kliknij flagę jeszcze kilka razy__
 Czy duszek ma inny kostium za każdym razem? Czasem ten sam kostium może pojawić się 2 razy z rzędu. Ale nie przejmuj się, to nie jest problem. Prawdopodobnie zauważyliście, że duszek miga za każdym razem jak zmienia kostium. Zaraz naprawimy ten problem.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
-#KROK 2: Zniekształć obrazki
+# Krok 2: Zniekształć obrazki {.activity}
 
 __Zniekształćmy teraz obrazek, kiedy pojawi się na tablicy po raz pierwszy, a w miarę upływu czasu niech staje się on coraz bardziej wyraźny__.
 
@@ -74,7 +74,7 @@ W miarę jak ilość punktów będzie się zmniejszać z czasem, obrazek będzie
 
 Nie zapomnij dodać bloku 'ukryj' na początku skryptu, ustawić Punkty na 110 oraz wszystkiego poniżej.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy na tablicy pojawia się przypadkowy, zniekształcony obrazek?
@@ -88,7 +88,7 @@ Czy zniekształcenie znika całkowicie, kiedy ilość punktów spadnie do 0?
 Czy na tablicy pojawia się inny obrazek po każdym wciśnięciu flagi?
 
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Rzeczy do spróbowania
 
@@ -96,7 +96,7 @@ __Spróbuj zmienić ilość punktów na początku gry i wartość o jaką iloś�
 
 __Wypróbuj inne efekty graficzne z rozwijanej listy__. W jaki sposób wpływają one na poziom trudności gry?
 
-#KROK 3: Pozwól graczowi zgadnąć co to za obrazek
+# Krok 3: Pozwól graczowi zgadnąć co to za obrazek {.activity}
 
 Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a ilość punktów maleje w miarę upływu czasu. Ale jak mamy tę grę wygrać? Najpierw dodamy kilka dodatkowych duszków pod tablicą, które możesz kliknąć. Jeżeli klikniesz odpowiednią miniaturkę, wygrasz grę. Jeżeli klikniesz na zły obrazek, ten duszek zniknie i musisz spróbować zgadnąć jeszcze raz.
 
@@ -156,7 +156,7 @@ Teraz zmienimy sposób, w jaki duszki będą reagować na kliknięcia myszką. D
 	powiedz połącz Gratulacje! Twoje punkty: i Punkty
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Podczas testowania gry warto włączyć podgląd na zmienną __odpowiedź__, aby widzieć poprawną odpowiedź. Na palecie Zmienne kliknij pole obok zmiennej __odpowiedź__, a pojawi się ona na scenie, w lewym górnym rogu.
@@ -207,7 +207,7 @@ Aby naprawić drugi problem, trzeba zatrzymać pętlę 'powtórz' na duszku odpo
 	powiedz połącz Gratulacje! Zdobyłeś Punkty
 ```
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 __Brawo! Podstawowa wersja gry jest już gotowa!__
 
@@ -221,7 +221,7 @@ Zmień poziom trudności gry.
 * Spróbuj zmienić rodzaj zniekształceń obrazka.
 * Użyj innych obrazków. Sprawdź, czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się gra, gdy obrazki znacząco się od siebie różnią? Nie zapomnij zmienić kostiumów na duszkach odpowiedzi.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze
 
@@ -233,7 +233,7 @@ Zmień grę w taki sposób, że za każdym razem obrazki zniekształcane są w i
 
 __Podpowiedź:__ Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku jeżeli w pętli 'powtarzaj aż', aby użyć odpowiedniego zniekształcenia.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 3: Spraw, aby w grze było kilka rund
 
@@ -243,7 +243,7 @@ __Podpowiedź:__ Będziesz potrzebować dodatkowej zmiennej, aby wiedzieć, ile 
 
 __Podpowiedź:__ Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, pojawiły się z powrotem na ekranie na początku każdej rundy. Aby to zrobić, spróbuj nadać jakąś wiadomość.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 4: Spraw, aby każda następna runda była trudniejsza
 
@@ -253,13 +253,13 @@ Czy w każdej rundzie punkty powinny być przyznawane w ten sam sposób? Może g
 
 __Podpowiedź:__ Skąd będziemy wiedzieć, w której jesteśmy rundzie gry? W jaki sposób pomoże nam to zwiększyć trudność gry i przyznawać więcej punktów?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 5: Graj tak długo, aż się pomylisz
 
 Zamiast grać w określoną ilość rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz trudniejsza z każdą następną rundą.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 6: Spraw, aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje
 
@@ -267,13 +267,13 @@ Spróbujmy dostosować trudność gry do umiejętności gracza, zamiast zwiększ
 
 Ten pomysł będzie miał sens tylko wtedy, kiedy nie będziemy sumować ilości punktów w ciągu całej gry.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 7: Zapamiętaj najlepszy wynik
 
 Zapamiętaj najlepszy wynik. Jeżeli ktoś będzie lepszy w kolejnej grze, zapytaj gracza o jego imię i zapisz nowy najlepszy wynik. Upewnij się, że najlepszy wynik i imię najlepszego gracza są wyświetlone na ekranie.
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 8: Za niepoprawną odpowiedź odejmij punkty
 
@@ -281,7 +281,7 @@ Póki co, gracz nie jest karany za niepoprawne odpowiedzi, więc teoretycznie mo
 
 Jak myślisz, czy gra teraz jest lepsza?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
 Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.

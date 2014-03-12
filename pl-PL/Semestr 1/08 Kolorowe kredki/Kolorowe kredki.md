@@ -11,7 +11,7 @@ note: "Informacje dla prowadzacych zajecia.md"
 # Wstęp
 Podczas tego projektu stworzymy podstawowe narzędzia do rysowania. Będzie można rysować po ekranie kursorem myszy, zmieniać kolor linii, czyścić ekran czy robić pieczątki!
 
-#KROK 1: Rysowanie kursorem myszy
+# Krok 1: Rysowanie kursorem myszy {.activity}
 
 Zaczniemy od stworzenia kredki, która rysuje po scenie.
 
@@ -46,7 +46,7 @@ __Teraz chcemy używać tego duszka jak prawdziwej kredki.__ Jeżeli zajrzysz do
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 Czy kredka podąża za kursorem myszy? Co się dzieje, kiedy wciśniesz przycisk myszy i ją przesuniesz? Nie przejmuj się na razie kolorem linii.
 
@@ -66,14 +66,14 @@ Czy kredka podąża za kursorem myszy? Co się dzieje, kiedy wciśniesz przycisk
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy rysunek znika po wciśnięciu flagi?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
-#KROK 2: Czyszczenie ekranu
+# Krok 2: Czyszczenie ekranu {.activity}
 
 Zamiast uruchamiać cały projekt ponownie, aby wyczyścić ekran, dodajmy przycisk czyszczący. Możemy do tego także wykorzystać blok __wyczyść__.
 
@@ -88,14 +88,14 @@ Zamiast uruchamiać cały projekt ponownie, aby wyczyścić ekran, dodajmy przyc
 	wyczyść
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy przycisk czyści ekran z rysunków?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
-#KROK 3: Zmienianie kolorów
+# Krok 3: Zmienianie kolorów {.activity}
 
 Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać kolory! Dodamy kilka duszków na dole ekranu, które wyglądają jak kolorowe przyciski i klikając na nie, będziemy zmieniać kolor linii oraz kolor duszka-kredki. 
 
@@ -125,23 +125,23 @@ __Wskazówka:__ jeżeli klikniesz na kolorowy kwadrat bloku __ustaw kolor pisaka
 	ustaw kolor pisaka na (czerwony)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Narysuj linię, a następnie kliknij na przycisk zmiany koloru na czerwony i narysuj coś jeszcze. Czy kredka zmieniła kostium? Czy rysuje teraz na czerwono? Czy rysuje końcem rysika?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 5. Powtórz powyższe kroki dodając duszki wyboru niebieskiego, żółtego i zielonego koloru.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy wszystkie przyciski wyboru koloru działają? Czy wszystkie zmieniają kostium na odpowiedni kolor? Czy po zmianie wszystkie linie są w odpowiednim kolorze? Czy wszystkie kredki rysują czubkiem rysika?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
-#KROK 4: Rysowanie tylko wewnątrz danego obszaru
+# Krok 4: Rysowanie tylko wewnątrz danego obszaru {.activity}
 
 Obecnie możemy rysować po całej scenie, nie tylko po tablicy. Trzeba to naprawić. Chcemy, aby można było rysować tylko po tablicy, trzeba więc będzie pilnować, aby kredka nie wyszła poza dozwolony obszar (czyli tablicę).
 
@@ -180,14 +180,14 @@ Skoro nie możemy rysować poza wyznaczonym obszarem, byłoby dobrze chować kre
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy możesz ciągle rysować po tablicy? Możesz rysować poza tym obszarem? Co się dzieje, kiedy wyjdziesz poza obszar, po którym można rysować, a potem do niego wrócisz?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
-#KROK 5: Gumka
+# Krok 5: Gumka {.activity}
 
 __Super, że możemy już rysować, ale przydałoby się dodać gumkę do poprawiania drobnych błędów.__ Możemy to zrobić dodając nową kredkę, który rysuje na szaro (czyli w tym samym kolorze, co tło).
 
@@ -195,14 +195,14 @@ Dodaj nowego duszka i wybierz dla niego kostium __gumka__ z katalogu Zasoby. Zmn
 
 Duszek-kredka powinien reagować na wiadomość gumki i zmieniać kolor na szary (pamiętaj, że możesz użyć pipetę, aby wybrać odpowiedni kolor z tła). Duszek potrzebuje też nowy kostium – użyj tej samej gumki, co do przycisku wcześniej. __Pamiętaj, aby ustawić środek duszka na jego końcu__.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy gumka działa? Czy działa przy samych brzegach ekranu? Możesz przełączać się między gumką a kredkami?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
-#KROK 6: Pieczątka
+# Krok 6: Pieczątka {.activity}
 
 Następną rzeczą, którą możemy dodać, jest pieczątka, przy pomocy której będziemy dodawać małe obrazki na tablicę.
 
@@ -213,14 +213,14 @@ Następną rzeczą, którą możemy dodać, jest pieczątka, przy pomocy której
 5. Zmień pozostałe skrypty kredki, które reagują na wiadomości nadawane przez przyciski z tablicy, aby ustawiały zmienną __rysowanie__ na __prawda__.
 6. Na koniec, sprawdzajmy tą zmienną __kiedy wciśnięty jest przycisk myszy__, aby się upewnić, czy powinniśmy rysować, czy stawiać pieczątki. Jeżeli rysowanie = prawda, powinniśmy używać bloku __przyłóż pisak__. Jeżeli nie, powinniśmy użyć bloku __stempluj__.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy pieczątka działa jak trzeba?
 
 Co się dzieje, jeżeli przełączysz z powrotem na zwykłą kredkę?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 __Brawo! Udało Ci się zakończyć podstawowe elementy tego projektu. Teraz spróbuj zmierzyć się z poniższymi wyzwaniami!__
 
@@ -239,14 +239,14 @@ Musisz też pilnować, aby ta pętla zmieniała kolory tylko wtedy, kiedy jest w
 
 Użyj przykładu z pieczątkami, aby nauczyć się kontrolować tęczę. Każdy skrypt, który reaguje na wiadomości nadawane przez przyciski wyboru na tablicy, będzie musiał ustawiać wartość dwóch zmiennych: rysowanie i pokażTęczę.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy rysowanie na tęczowo działa jak należy?
 
 Co się dzieje, kiedy przełączasz się między tęczową kredką a pozostałymi narzędziami?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 2: Skróty klawiszowe
 
@@ -262,12 +262,12 @@ My skorzystaliśmy z tych skrótów:
 * Tęczowy ołówek - t
 * Pieczątka - p
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy wszystkie skróty klawiszowe działają? Czy możesz wybierać wszystkie narzędzia przy pomocy klawiatury? Czy klikanie na przyciski na tablicy dalej działa?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Wyzwanie 3: Różne rozmiary linii
 
@@ -278,20 +278,20 @@ Stwórz dwa nowe duszki-przyciski na tablicy i nazwij je __powiększ__ i __pomni
 
 Duszek-kredka może reagować na te wiadomości na dwa sposoby: albo zmieniając rozmiar pisaka o 1, albo rozmiar kostiumu o 10, w zależności od wartości zmiennej __rysowanie__. Skorzystaj z bloku __jeżeli w przeciwnym przypadku__, aby to kontrolować – podobnie jak w przypadku wybierania między przyłożeniem pisaka a stawianiem pieczątek. Nie zapomnij dodać skrótów klawiszowych dla nowego narzędzia (my dodaliśmy strzałkę w górę i dół).
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 Pewnie udało Ci się zauważyć, że zmiana rozmiaru pieczątki zmienia też rozmiar duszka na ekranie, łączenie z kredkami. Aby tego uniknąć, musisz ustawiać rozmiar kostiumu na 100% za każdym razem, kiedy przełączasz się na kredkę. Pomoże to zachować odpowiedni rozmiar kredek. 
 
 Możesz jeszcze bardziej ulepszyć swoje narzędzia, każąc pieczątce zapamiętać swój rozmiar, tak aby po przełączeniu się na kredkę czy gumkę można było wrócić do starego rozmiaru pieczątki. Najłatwiejszym rozwiązaniem jest dodanie zmiennej __rozmiarPieczątki__, która zapisuje obecny rozmiar pieczątki po każdej jego zmianie. Po ponownym wybraniu pieczątki, powinna ona odczytać tę zmienną i wybrać odpowiedni rozmiar.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy przyciski zmiany rozmiaru działają dla kredek?
 
 Co się dzieje, kiedy przełączasz się na pieczątkę, zmieniasz jej rozmiar i przełączasz się na kredkę?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
 Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.

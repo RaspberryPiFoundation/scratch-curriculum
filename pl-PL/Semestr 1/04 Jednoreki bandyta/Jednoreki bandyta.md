@@ -12,7 +12,7 @@ note: "Informacje dla prowadzacych zajecia.md"
 
 Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Jeżeli po zatrzymaniu wszystkie duszki wyglądają tak samo – gratulacje! Tak jak w jednorękim bandycie, takie same duszki wygrywają.
 
-#KROK 1: Tworzenie duszka, który zmienia kostiumy
+# Krok 1: Tworzenie duszka, który zmienia kostiumy {.activity}
 
 __Zaimportujmy potrzebne obrazki do gry__
 
@@ -23,7 +23,7 @@ __Zaimportujmy potrzebne obrazki do gry__
 
 __Skoro mamy już kostiumy, teraz sprawmy, aby duszek nosił je wszystkie na zmianę.__
 
-#KROK 2: Zmieniamy pojawiające się obrazki
+# Krok 2: Zmieniamy pojawiające się obrazki {.activity}
 
 1. Przejdź do zakładki Skrypty.
 2. Kliknij na palecie Kontrola i przeciągnij blok "kiedy kliknięto FLAGĘ" na obszar ze skryptami.
@@ -41,17 +41,17 @@ __Skoro mamy już kostiumy, teraz sprawmy, aby duszek nosił je wszystkie na zmi
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy kostiumy zmieniają się z rozsądną szybkością?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 Zmień ilość sekund w bloku "czekaj". Jak myślisz, przy jakiej wartości gra stanie się zbyt prosta, a przy jakiej wartości będzie za trudna?
 
-#KROK 3: Zatrzymujemy obrazki kliknięciem klawisza myszki
+# Krok 3: Zatrzymujemy obrazki kliknięciem klawisza myszki {.activity}
 
 Świetnie! Potrafimy już sprawić, aby kostiumy duszka zmieniały się w nieskończoność, ale jak zrobić, aby zatrzymały się, kiedy na niego klikniemy?
 
@@ -60,7 +60,7 @@ Zmień ilość sekund w bloku "czekaj". Jak myślisz, przy jakiej wartości gra 
 3. Teraz musimy sprawić, aby obrazek przestał się zmieniać, kiedyś zmienna "zatrzymano" będzie miała wartość 1. Kliknij na palecie Kontrola i zamień pętlę "zawsze" na pętlę "zawsze, jeżeli" w bloku "kiedy kliknięto FLAGĘ". Użyj wyrażenia ze znakiem równości, aby sprawdzić, czy "zatrzymano" jest równe 0.
 4. Na koniec dodaj "ustaw zatrzymano na 0" zaraz pod kliknięciem we flagę.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę, poczekaj chwilę i kliknij na duszka.__
 
 Czy duszek zmienia kostium, zanim na niego klikniesz?
@@ -71,7 +71,7 @@ __Uruchom skrypt jeszcze raz.__
 
 Czy duszek zatrzymuje się, jeżeli najedziesz na niego kursorem myszki, ale nie klikniesz? Czy zatrzymuje się, jeżeli klikniesz gdzie indziej na Scenie? Gdzie indziej w oknie Scratcha? A gdy klikniesz gdzieś poza oknem Scratcha?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 #Step 4: Dodajemy dodatkowe duszki
 __Teraz potrzebujemy stworzyć dwa inne duszki, abyśmy mogli zagrać w naszą grę!__
@@ -80,12 +80,12 @@ __Teraz potrzebujemy stworzyć dwa inne duszki, abyśmy mogli zagrać w naszą g
 2. Zduplikuj go jeszcze raz, tak aby były w sumie trzy.
 3. Poprzesuwaj duszki na Scenie, tak aby były obok siebie. Jeśli chcesz, możesz je trochę zmniejszyć.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Wszystkie duszki powinny się zmieniać. Spróbuj zatrzymać je na tym samym obrazku!
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 Gdy zaczynasz grę, wszystkie duszki pokazują ten sam kostium i zmieniają się razem w taki sam sposób. Może spróbuj to zmienić tak, aby kostiumy zmieniały się losowo po wciśnięciu flagi?

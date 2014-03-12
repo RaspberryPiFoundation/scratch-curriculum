@@ -12,7 +12,7 @@ note: "informacje dla prowadzacych zajecia.md"
 
 Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej ilości punktów w ciągu 30 sekund.
 
-#KROK 1: Stwórz latającego ducha
+# Krok 1: Stwórz latającego ducha {.activity}
 
 1. __Stwórz nowy projekt.__
 2. __Usuń duszka kota__ i zastąp tło lasem (woods) z katalogu __Nature__.
@@ -37,7 +37,7 @@ Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdob
 	(koniec zawsze)
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę__ i zobacz, co robi duch. Dlaczego utknął na brzegu ekranu?
 
 1. Aby duch nie zatrzymywał się na brzegu ekranu, musimy sprawić, aby zawracał za każdym razem, gdy doleci do brzegu ekranu. Dodajmy blok "jeżeli na brzegu, odbij się" poniżej bloku "przesuń o prędkość kroków" w skrypcie ducha.
@@ -54,12 +54,12 @@ __Kliknij zieloną flagę__ i zobacz, co robi duch. Dlaczego utknął na brzegu 
 
 2. Aby duch nie obracał się do góry nogami, wybierz opcję "odwróć tylko w prawo-lewo" w ustawieniach tego duszka.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy duch lata od brzegu do brzegu ekranu?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 __Spróbuj zmienić wartość zmiennej prędkość, aby sprawić, żeby duch latał szybciej lub wolniej.__
@@ -68,7 +68,7 @@ __Co zrobić, aby duch leciał coraz szybciej w trakcie gry?__
 
 (Jest to troszkę skomplikowane, więc nie przejmuj się, jeżeli jeszcze nie wiesz jak to zrobić. Podpowiemy Ci troszkę później jak to zrobić.)
 
-#KROK 2: Spraw, aby duch losowo pojawiał się i znikał
+# Krok 2: Spraw, aby duch losowo pojawiał się i znikał {.activity}
 
 Aby gra była ciekawsza, spróbujemy sprawić, aby duch losowo pojawiał się i znikał. Będzie nam do tego potrzebny kolejny skrypt, który działa w tym samym czasie co ten odpowiedzialny za poruszanie duchem. Nowy skrypt powinien niespodziewanie ukryć ducha i po jakimiś czasie znowu pokazać go na ekranie (i robić to cały czas w trakcie gry).
 
@@ -84,19 +84,19 @@ __Dodajmy duchowi poniższy skrypt:__
 		czekaj losuj liczbę pomiędzy 3 a 5 s
 	(koniec zawsze)
 ```
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy duch lata od brzegu do brzegu ekranu oraz losowo pojawia się i znika?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 __Spróbuj zmienić wartość liczb, które użyliśmy do ukrywania i pojawiania się ducha. Co się stanie, jeżeli wybierzemy bardzo duże albo bardzo małe liczby?__
 
 Czy pomoże Ci to sprawić, aby duch latał coraz szybciej?
 
-#KROK 3: Spraw, aby duch znikał, gdy na niego klikniesz
+# Krok 3: Spraw, aby duch znikał, gdy na niego klikniesz {.activity}
 
 Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech klikają w ducha, aby zniknął. Chcemy, aby po kliknięciu w ducha było słychać jakiś dźwięk, a sam duch znikał z ekranu.
 
@@ -111,17 +111,17 @@ Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech k
 	zagraj dźwięk Fairydust
 ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy ducha znika i wydaje dźwięk, gdy go klikniesz?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 __Zapytaj osoby prowadzącej zajęcia, czy możesz spróbować nagrywać własny dźwięk i użyć go w swoim projekcie.__
 
-#KROK 4: Dodaj punkty i zegar
+# Krok 4: Dodaj punkty i zegar {.activity}
 
 Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy liczyć punkty za każde kliknięcie na duchu oraz dodajmy limit czasu do gry. W tym celu użyjemy 2 nowe zmienne.
 
@@ -149,10 +149,10 @@ Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy li
         zakończ wszystko
     ```
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania
 __Jak można sprawić, aby duch latał coraz szybciej?__
@@ -170,12 +170,12 @@ __Dodajmy kolejne latające duchy do naszej gry.__
 3. Zmień __zmienną "prędkość"__ każdego ducha, aby każdy z nich latał z inną prędkością.
 4. Poprzesuwaj duchy po ekranie, aby nie latały wszystkie obok siebie.
 
-##Przetestuj swój projekt
+##Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
 
 Czy masz na ekranie kilka duchów, latających od brzegu do brzegu ekranu, które niespodziewanie pojawiają się i znikają? Czy duchy znikają po kliknięciu na nie?
 
-Zapisz swój projekt.
+## Zapisz swój projekt. {.save}
 
 ##Rzeczy do spróbowania?
 
