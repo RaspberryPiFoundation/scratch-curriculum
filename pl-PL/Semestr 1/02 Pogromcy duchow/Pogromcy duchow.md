@@ -4,6 +4,7 @@ level: Poziom 1
 language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
+materials: "Pogromcy duchow.sb"
 note: "Informacje dla prowadzacych zajecia.md"
 ...
 
@@ -11,7 +12,7 @@ note: "Informacje dla prowadzacych zajecia.md"
 
 Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.
 
-# KROK 1: Stwórz latającego ducha {.activity}
+# Krok 1: Stwórz latającego ducha {.activity}
 
 ## Zadania do wykonania {.check}
 
@@ -36,7 +37,6 @@ Odznacz "prędkość" w __panelu Dane__, aby nie było jej widać na Scenie. Ta 
 
 ## Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę__ i zobacz, co robi duch. Dlaczego utknął na brzegu ekranu?
-
 
 ## Zadania do wykonania {.check}
 
@@ -63,7 +63,7 @@ Czy duch lata od brzegu do brzegu ekranu?
 + __Co zrobić, aby duch leciał coraz szybciej w trakcie gry?__
 (Jest to troszkę skomplikowane, więc nie przejmuj się, jeżeli jeszcze nie wiesz jak to zrobić. Podpowiemy Ci troszkę później jak to zrobić.)
 
-# KROK 2: Spraw, aby duch losowo pojawiał się i znikał {.activity}
+# Krok 2: Spraw, aby duch losowo pojawiał się i znikał {.activity}
 
 Aby gra była ciekawsza, spróbujemy sprawić, aby duch losowo pojawiał się i znikał. Będzie nam do tego potrzebny kolejny skrypt, który działa w tym samym czasie co ten odpowiedzialny za poruszanie duchem. Nowy skrypt powinien niespodziewanie ukryć ducha i po jakimiś czasie znowu pokazać go na ekranie (i robić to cały czas w trakcie gry).
 
@@ -91,7 +91,7 @@ Czy duch lata od brzegu do brzegu ekranu oraz losowo pojawia się i znika?
 + __Spróbuj zmienić wartość liczb, które użyliśmy do ukrywania i pojawiania się ducha. Co się stanie, jeżeli wybierzemy bardzo duże albo bardzo małe liczby?__
 (Czy pomoże Ci to sprawić, aby duch latał coraz szybciej?)
 
-# KROK 3: Spraw, aby duch znikał, gdy na niego klikniesz {.activity}
+# Krok 3: Spraw, aby duch znikał, gdy na niego klikniesz {.activity}
 
 Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech klikają w ducha, aby zniknął. Chcemy, aby po kliknięciu w ducha było słychać jakiś dźwięk, a sam duch znikał z ekranu.
 
@@ -117,7 +117,7 @@ Czy ducha znika i wydaje dźwięk, gdy go klikniesz?
 ## Rzeczy do spróbowania {.try}
 + __Zapytaj osoby prowadzącej zajęcia, czy możesz spróbować nagrywać własny dźwięk i użyć go w swoim projekcie.__
 
-# KROK 4: Dodaj punkty i zegar {.activity}
+# Krok 4: Dodaj punkty i zegar {.activity}
 
 Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy liczyć punkty za każde kliknięcie na duchu oraz dodajmy limit czasu do gry. W tym celu użyjemy 2 nowe zmienne.
 
@@ -170,7 +170,6 @@ Czy masz na ekranie kilka duchów, latających od brzegu do brzegu ekranu, któr
 ## Zapisz swój projekt. {.save}
 
 ## Rzeczy do spróbowania {.try}
-
 + __Jaka liczba duchów będzie najlepsza dla naszej gry?__
 + __Czy możesz sprawić, aby duchy wyglądały inaczej? Możesz zmienić ich kostium albo wybrać zupełnie inny wygląd?__
 + __Czy możesz zmienić liczbę punktów, które dostaje się za różne duchy? Na przykład najszybszy (i najmniejszy) duch mógłby być wart 10 punktów.__

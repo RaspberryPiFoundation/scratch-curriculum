@@ -1,10 +1,13 @@
-#INFORMACJE DLA PROWADZĄCYCH ZAJĘCIA
-##(Pustynny wyścig)
+---
+title: Pustynny wyścig — Informacje dla prowadzących zajęcia
+language: pl-PL
+embeds: "*.png"
+...
 
-##Wstęp
+#Wstęp
 Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierze, które pierwsze dotrze do krawędzi ekranu, wygrywa.
 
-##Umiejętności
+#Umiejętności
 Ten projekt uczy: 
 
 * Zmiennych
@@ -13,10 +16,10 @@ Ten projekt uczy:
 * Warunków
 * Modyfikowania zasobów
 
-##Zasoby
+#Zasoby
 Ten projekt korzysta z zasobów dostępnych w katalogach Scratcha oraz stworzonych przez użytkownika na ich podstawie.
 
-##Podstawowe ćwiczenia
+#Podstawowe ćwiczenia
 
 * Krok 1: Stwórz scenę i dodaj duszki
 * Krok 2: Spraw, aby postacie się ruszały
@@ -24,6 +27,6 @@ Ten projekt korzysta z zasobów dostępnych w katalogach Scratcha oraz stworzony
 * Krok 4: Zakończenie wyścigu
 * Krok 5: Restartowanie gry
 
-##Wyzwanie 
+#Wyzwanie 
 
 Dodaj dopalacz
