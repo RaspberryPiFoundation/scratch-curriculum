@@ -12,6 +12,8 @@ note: "Informacje dla prowadzacych zajecia.md"
 
 Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.
 
+![screenshot](pogromcy-duchow.png)
+
 # Krok 1: Stwórz latającego ducha {.activity}
 
 ## Zadania do wykonania {.check}
@@ -22,7 +24,7 @@ Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz
 
 __Teraz sprawmy, aby duch zaczął latać__
 
-+ Dodaj `zmienną` {.blocklightgray} tylko dla tego duszka i nazwij ją `prędkość` {.blockorange}.
++ Dodaj `zmienną` {.blocklightgrey} tylko dla tego duszka i nazwij ją `prędkość` {.blockorange}.
 Nowa zmienna powinna pojawić się na __Scenie__ jako __"Duszek1 prędkość"__.
 Jeżeli widzisz tam tylko "prędkość", usuń zmienną i stwórz ją na nowo, tylko tym razem wybierz opcję "Tylko dla tego duszka".
 Odznacz "prędkość" w __panelu Dane__, aby nie było jej widać na Scenie. Ta zmienna będzie kontrolować prędkość lotu naszego ducha. Korzystamy ze zmiennej, aby móc później zmieniać prędkość lotu ducha.
@@ -40,7 +42,8 @@ __Kliknij zieloną flagę__ i zobacz, co robi duch. Dlaczego utknął na brzegu 
 
 ## Zadania do wykonania {.check}
 
-+ Aby duch nie zatrzymywał się na brzegu ekranu, musimy sprawić, aby zawracał za każdym razem, gdy doleci do brzegu ekranu. Dodajmy blok `jeżeli na brzegu, odbij się` {.blockblue} poniżej bloku `przesuń o ` {.blockblue}`prędkość` {.blockorange}` kroków` {.blockblue} w skrypcie ducha.
++ Aby duch nie zatrzymywał się na brzegu ekranu, musimy sprawić, aby zawracał za każdym razem, gdy doleci do brzegu ekranu. Dodajmy blok `jeżeli na brzegu, odbij się` {.blockblue} poniżej bloku
+`przesuń o ` {.blockblue}`prędkość` {.blockorange}` kroków` {.blockblue} w skrypcie ducha.
 
     ```blocks
         kiedy kliknięto zieloną flagę
@@ -50,7 +53,7 @@ __Kliknij zieloną flagę__ i zobacz, co robi duch. Dlaczego utknął na brzegu 
             jeżeli na brzegu, odbij się
     ```
 
-+ Aby duch nie obracał się do góry nogami, wybierz opcję `odwróć tylko w prawo-lewo` {.blockgrey} w ustawieniach tego duszka.
++ Aby duch nie obracał się do góry nogami, wybierz opcję `Styl obrotów: prawo-lewo` {.blockgrey} w ustawieniach tego duszka.
 
 ## Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
@@ -71,14 +74,14 @@ Aby gra była ciekawsza, spróbujemy sprawić, aby duch losowo pojawiał się i 
 
 __Dodajmy duchowi poniższy skrypt:__
 
-    ```blocks
-        kiedy kliknięto zieloną flagę
-        zawsze
-            ukryj
-            czekaj (losuj liczbę pomiędzy (2) a (5)) s
-            pokaż
-            czekaj (losuj liczbę pomiędzy (3) a (5)) s
-    ```
+```blocks
+    kiedy kliknięto zieloną flagę
+    zawsze
+        ukryj
+        czekaj (losuj liczbę pomiędzy (2) a (5)) s
+        pokaż
+        czekaj (losuj liczbę pomiędzy (3) a (5)) s
+```
 
 ## Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
@@ -121,6 +124,8 @@ Czy ducha znika i wydaje dźwięk, gdy go klikniesz?
 
 Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy liczyć punkty za każde kliknięcie na duchu oraz dodajmy limit czasu do gry. W tym celu użyjemy 2 nowe zmienne.
 
+## Zadania do wykonania {.check}
+
 + Stwórz nową `zmienną` {.blockgrey} dla każdego duszka i nazwij ją __wynik__. Zmieńmy skypt ducha tak, aby przy każdym kliknięciu wartość tej zmiennej zwiększała się o jeden punkt.
 
     ```blocks
@@ -140,7 +145,7 @@ Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy li
             czekaj (1) s
             zmień [czas v] o (-1)
 
-        zakończ [wszystko v]
+        zatrzymaj [wszystko v]
     ```
 
 ## Przetestuj swój projekt {.flag}
