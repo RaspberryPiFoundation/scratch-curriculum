@@ -19,7 +19,7 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
 
 + **Stwórz nowy projekt.**
 
-+ Kliknij na **scenę** na lewo od duszka, następnie kliknij zakładkę `Tła` {.blocklightgrey}, a później kliknij na obrazek `Wybierz z biblioteki` {.blocklightgrey} i zaimportuj tło „hall” z katalogu „Indoors”. Usuń puste tło z listy.
++ Kliknij na **scenę** na lewo od duszka, następnie kliknij zakładkę `Tła` {.blocklightgrey}, a później kliknij na obrazek `Wybierz z biblioteki` {.blocklightgrey} i zaimportuj tło „hall” z kategorii „W pomieszczeniu”. Usuń puste tło z listy.
 
 + Kliknij na duszka, następnie kliknij na ikonkę „i” w jego lewym górnym rogu. Zmień nazwę duszka na **Feliks**.
 + Upewnij się, że Feliks obraca się tylko w lewo i prawo, wciskając ten przycisk:
@@ -28,10 +28,10 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
     ```blocks
         kiedy kliknięto zieloną flagę
         zawsze
-            idź do [wskaźnik myszy v]
+            ustaw w stronę [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
-            zagraj bębenkiem (3 v) przez (0.3) taktów
+            zagraj bęben (3 v) przez (0.3) taktów
         koniec
     ```
 
@@ -87,8 +87,8 @@ Czy Herbert podąża za kursorem myszy? Czy Feliks goni Herberta?
         idź do [wskaźnik myszy v]
         przesuń o (10) kroków
         następny kostium
-        zagraj bębenkiem (3 v) przez (0.3) taktów
-        jeżeli <dotyka [Herbert v]?>
+        zagraj bęben (3 v) przez (0.3) taktów
+        jeżeli <dotyka [Herbert v]?> to
           powiedz [Mam cię!] przez (1) s
         koniec
       koniec
@@ -102,7 +102,7 @@ Czy Feliks mówi, że złapał Herberta?
 
 ## Zapisz swój projekt. {.save}
 
-# **Krok 4:** Herbert zamienia się w ducha po złapaniu
+# **Krok 4:** Herbert zamienia się w ducha po złapaniu {.activity}
 
 **Zamiast wiadomości od Feliksa, że złapał mysz, chcemy, aby Herbert zamienił się w ducha.**
 
@@ -116,10 +116,10 @@ Czy Feliks mówi, że złapał Herberta?
             idź do [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
-            zagraj bębenkiem [3 v] przez (0.3) taktów
-            jeżeli <dotyka [Herbert v]?>
+            zagraj bęben [3 v] przez (0.3) taktów
+            jeżeli <dotyka [Herbert v]?> to
                 nadaj [złapany v]
-                zagraj bębenkiem [17 v] przez (0.2) taktów
+                zagraj bęben [17 v] przez (0.2) taktów
                 czekaj (1) s
             koniec
         koniec
