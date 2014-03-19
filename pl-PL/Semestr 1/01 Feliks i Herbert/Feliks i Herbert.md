@@ -84,7 +84,7 @@ Czy Herbert podąża za kursorem myszy? Czy Feliks goni Herberta?
     ```blocks
       kiedy kliknięto zieloną flagę
       zawsze
-        idź do [wskaźnik myszy v]
+        ustaw w stronę [wskaźnik myszy v]
         przesuń o (10) kroków
         następny kostium
         zagraj bęben (3 v) przez (0.3) taktów
@@ -113,7 +113,7 @@ Czy Feliks mówi, że złapał Herberta?
     ```blocks
         kiedy kliknięto zieloną flagę
         zawsze
-            idź do [wskaźnik myszy v]
+            ustaw w stronę [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
             zagraj bęben [3 v] przez (0.3) taktów
