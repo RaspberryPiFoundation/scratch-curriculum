@@ -77,6 +77,7 @@ Then swap the __when space key pressed__ control block for __when flag clicked__
 			show
 			glide (1) secs to x: (mouse x) y: (mouse y)
     ```
+
 ##Test Your Project { .flag}
 __Click the green flag, and then press the mouse button over the stage. Click again at another point.__ 
 
@@ -119,6 +120,7 @@ __Click the green flag, and then press the mouse button over the stage. Click ag
 			hide
 			broadcast [explode v]
     ```
+
 ##Test Your Project {.flag}
 __Click the green flag.__ 
 Make sure the rocket plays a noise and hides when it reaches the mouse.
@@ -137,6 +139,7 @@ Make sure the rocket plays a noise and hides when it reaches the mouse.
 	wait (1) secs
 	hide
     ```
+
 ## Test Your Project { .flag}
 __Send another rocket flying.__ 
 Does it get replaced with the explosion graphic when it explodes?
@@ -192,6 +195,7 @@ Does each rocket have a different explosion graphic?
 	hide
 	
     ```
+
 ##Test Your Project { .flag}
 __Click the green flag.__ 
 
@@ -225,6 +229,7 @@ This occurs because when the rocket broadcasts its explosion, it will immediatel
 			broadcast [explode v] and wait
 
     ```
+
 ##Test Your Project { .flag}
 __Click the green flag, hold down the mouse button and move the mouse around the stage.__ 
 
