@@ -10,7 +10,7 @@ note: "Informacje dla prowadzacych zajecia.md"
 
 # Wstęp {.intro}
 
-Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.
+Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając w duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.
 
 ![screenshot](pogromcy-duchow.png)
 
@@ -19,13 +19,13 @@ Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz
 ## Zadania do wykonania {.check}
 
 + __Stwórz nowy projekt.__
-+ __Usuń duszka kota__ i zastąp tło lasem (woods) z katalogu __Nature__.
++ __Usuń duszka kota__ i zastąp tło lasem (woods) z katalogu __Natura__.
 + Kliknij przycisk `Wybierz nowego duszka z biblioteki` {.blockgrey} i dodaj ducha do projektu (znajdź kostium __Fikcja/ghost2-b__).
 
 __Teraz sprawmy, aby duch zaczął latać__
 
 + Dodaj `zmienną` {.blocklightgrey} tylko dla tego duszka i nazwij ją `prędkość` {.blockorange}.
-Nowa zmienna powinna pojawić się na __Scenie__ jako __"Duszek1 prędkość"__.
+Nowa zmienna powinna pojawić się na __Scenie__ jako __"Ghost2: prędkość"__.
 Jeżeli widzisz tam tylko "prędkość", usuń zmienną i stwórz ją na nowo, tylko tym razem wybierz opcję "Tylko dla tego duszka".
 Odznacz "prędkość" w __panelu Dane__, aby nie było jej widać na Scenie. Ta zmienna będzie kontrolować prędkość lotu naszego ducha. Korzystamy ze zmiennej, aby móc później zmieniać prędkość lotu ducha.
 + Chcemy, aby duch zaczął latać zaraz po rozpoczęciu gry. __Stwórz dla niego poniższy skrypt__:
@@ -78,9 +78,9 @@ __Dodajmy duchowi poniższy skrypt:__
     kiedy kliknięto zieloną flagę
     zawsze
         ukryj
-        czekaj (losuj liczbę pomiędzy (2) a (5)) s
+        czekaj (losuj od (2) do (5)) s
         pokaż
-        czekaj (losuj liczbę pomiędzy (3) a (5)) s
+        czekaj (losuj od (3) do (5)) s
 ```
 
 ## Przetestuj swój projekt {.flag}
@@ -122,7 +122,7 @@ Czy ducha znika i wydaje dźwięk, gdy go klikniesz?
 
 # Krok 4: Dodaj punkty i zegar {.activity}
 
-Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy liczyć punkty za każde kliknięcie na duchu oraz dodajmy limit czasu do gry. W tym celu użyjemy 2 nowe zmienne.
+Mamy już ducha, więc wykorzystamy go do stworzenia własnej gry! Zaczniemy liczyć punkty za każde kliknięcie na ducha. Dodamy też do gry limit czasu. W tym celu użyjemy dwóch nowych zmiennych.
 
 ## Zadania do wykonania {.check}
 
@@ -135,7 +135,7 @@ Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy li
         zmień [wynik v] o (1)
     ```
 
-+ Kliknij na __Scenę__, stwórz __nową zmienną__ (tym razem tylko dla sceny) i nazwij ją __czas__. Dodaj nowy skrypt uruchamiany kliknięciem flagi, który ustawia `czas` {.blockorange} na __30__ oraz wynik na __0__. Skorzystaj z bloku `powtarzaj aż` {.blockyellow}, aby odczekać sekundę i zmniejszyć wartość `czasu` {.blockorange} o jeden. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku `zatrzymaj wszystko` {.blockyellow}.
++ Kliknij na __Scenę__, stwórz __nową zmienną__ i nazwij ją __czas__. Dodaj nowy skrypt uruchamiany kliknięciem flagi, który ustawia `czas` {.blockorange} na __30__ oraz wynik na __0__. Skorzystaj z bloku `powtarzaj aż` {.blockyellow}, aby odczekać sekundę i zmniejszyć wartość `czasu` {.blockorange} o jeden. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku `zatrzymaj wszystko` {.blockyellow}.
 
     ```blocks
         kiedy kliknięto zieloną flagę
@@ -144,7 +144,7 @@ Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy li
         powtarzaj aż <(czas) = [0]>
             czekaj (1) s
             zmień [czas v] o (-1)
-
+        koniec
         zatrzymaj [wszystko v]
     ```
 
