@@ -11,13 +11,13 @@ Ta interaktywna zabawka pokazuje wybuchające fajerwerki i odtwarza dźwięk wyb
 
 Ten projekt uczy:
 
-1. Reagowania na kliknięcia
-2. Zmiany wyglądu duszków
-3. Odgrywania dźwięków
-4. Nadawania i odczytywania wydarzeń
+* Reagowania na kliknięcia
+* Zmiany wyglądu duszków
+* Odgrywania dźwięków
+* Nadawania i odczytywania wydarzeń
 
 # Zasoby
-Ten projekt korzysta z zasobów dostępnych w katalogach Backgrounds programu Scratch oraz plików fajerwerków dostępnych razem z tym projektem (katalog Zasoby).
+Ten projekt korzysta z zasobów dostępnych w katalogach Tła programu Scratch oraz plików fajerwerków dostępnych razem z tym projektem (katalog Zasoby).
 
 # Podstawowe ćwiczenia
 * Krok 1: Stwórz rakietę, która leci w kierunku kursora myszki

@@ -11,7 +11,8 @@ This interactive toy shows fireworks exploding in the sky wherever you click and
 This project covers:
 
 * Responding to clicks
-* Changing the appearance of sprites • Playing sounds
+* Changing the appearance of sprites
+* Playing sounds
 * Broadcasting and receiving events
 * Coordinates
 
@@ -22,6 +23,7 @@ This project uses resources found in the Scratch Backgrounds folders as well as 
 Change color Glide
 
 #Basic exercises
-* Step 1: Create a rocket that flies towards the mouse Step 2: Make the rocket explode
+* Step 1: Create a rocket that flies towards the mouse
+* Step 2: Make the rocket explode
 * Step 3: Making each explosion unique
 * Step 4: Fixing the Broadcast Bug
