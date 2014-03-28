@@ -1,0 +1,19 @@
+{
+    "id": "scratch",
+    "title":"Scratch",
+    "description":"Scratch er en enkel og morsom måte å programmere ved å dra og slippe blokker sammen",
+    "language": "nb-NO",
+    "number": 1,
+
+
+    "projects": [
+        {
+            "filename": "01 FelixogHerbert/felixogherbert.md",
+            "number": 1
+        },
+        {
+            "filename": "02 spokelsesjakten/spokelsesjakten.md",
+            "number": 2
+        }
+    ]
+}
