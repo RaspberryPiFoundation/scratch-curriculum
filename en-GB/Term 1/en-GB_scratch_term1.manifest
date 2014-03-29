@@ -15,32 +15,12 @@
         {
             "filename": "03 Fireworks/Fireworks.md", 
             "number": 3
-            "materials": "03 Fireworks/Resources",
-            "extras":[
-                {
-                    "note": "03 Fireworks/Resources/bang.wav",
-                    "name": "Fireworks: bang"
-                },
-                {
-                    "note": "03 Fireworks/Resources/firework1.png",
-                    "name": "Fireworks: firework1"
-                },
-                {
-                    "note": "03 Fireworks/Resources/firework2.png",
-                    "name": "Fireworks: firework2"
-                },
-                {
-                    "note": "03 Fireworks/Resources/firework3.png",
-                    "name": "Fireworks: firework3"
-                },
-                {
-                    "note": "03 Fireworks/Resources/firework4.png",
-                    "name": "Fireworks: firework4"
-                },
-                {
-                    "note": "03 Fireworks/Resources/rocket.png",
-                    "name": "Fireworks: rocket"
-                }
+            "materials":[ "03 Fireworks/Resources/bang.wav",
+                          "03 Fireworks/Resources/firework1.png",
+                          "03 Fireworks/Resources/firework2.png",
+                          "03 Fireworks/Resources/firework3.png",
+                          "03 Fireworks/Resources/firework4.png",
+                          "03 Fireworks/Resources/rocket.png"
             ]
         }, 
         {
