@@ -1,56 +1,80 @@
 {
-    "id": "scratch",
-    "title":"Beginner Scratch",
-    "description":"Scratch is a simple, fun way to program by dragging and dropping blocks together",
-    "language": "en-GB",
-    "number": 1,
-
-
+    "description": "Scratch is a simple, fun way to program by dragging and dropping blocks together", 
+    "id": "scratch", 
+    "language": "en-GB", 
+    "number": 1, 
     "projects": [
         {
-            "filename": "01 Felix & Herbert/felix_&_herbert.md",
+            "filename": "01 Felix & Herbert/felix_&_herbert.md", 
             "number": 1
-        },
+        }, 
         {
-            "filename": "02 Ghostbusters/Ghostbusters.md",
+            "filename": "02 Ghostbusters/Ghostbusters.md", 
             "number": 2
-        },
+        }, 
         {
-            "filename": "03 Fireworks/Fireworks.md",
+            "filename": "03 Fireworks/Fireworks.md", 
             "number": 3
-        },
+            "materials": "03 Fireworks/Resources",
+            "extras":[
+                {
+                    "note": "03 Fireworks/Resources/bang.wav",
+                    "name": "Fireworks: bang"
+                },
+                {
+                    "note": "03 Fireworks/Resources/firework1.png",
+                    "name": "Fireworks: firework1"
+                },
+                {
+                    "note": "03 Fireworks/Resources/firework2.png",
+                    "name": "Fireworks: firework2"
+                },
+                {
+                    "note": "03 Fireworks/Resources/firework3.png",
+                    "name": "Fireworks: firework3"
+                },
+                {
+                    "note": "03 Fireworks/Resources/firework4.png",
+                    "name": "Fireworks: firework4"
+                },
+                {
+                    "note": "03 Fireworks/Resources/rocket.png",
+                    "name": "Fireworks: rocket"
+                }
+            ]
+        }, 
         {
-            "filename": "04 Fruit Machine/FruitMachine.md",
+            "filename": "04 Fruit Machine/FruitMachine.md", 
             "number": 4
-        },
+        }, 
         {
-            "filename": "05 Fish Chomp/FishChomp.md",
+            "filename": "05 Fish Chomp/FishChomp.md", 
             "number": 5
-        },
+        }, 
         {
-            "filename": "06 Desert Race/DesertRace.md",
+            "filename": "06 Desert Race/DesertRace.md", 
             "number": 6
-        },
+        }, 
         {
-            "filename": "07 What's That/WhatsThat.md",
+            "filename": "07 What's That/WhatsThat.md", 
             "number": 7
-        },
+        }, 
         {
-            "filename": "08 Paint Box/PaintBox.md",
+            "filename": "08 Paint Box/PaintBox.md", 
             "number": 8
-        },
+        }, 
         {
-            "filename": "09 Create Your Own Game/CreateYourOwnGame.md",
+            "filename": "09 Create Your Own Game/CreateYourOwnGame.md", 
             "number": 9
-        },
+        }, 
         {
-            "filename": "10 Christmas special/ChristmasCapers.md",
+            "filename": "10 Christmas special/ChristmasCapers.md", 
             "number": 10
-        },
+        }, 
         {
-            "filename": "Flappy Parrot/FlappyParrot.md",
+            "filename": "Flappy Parrot/FlappyParrot.md", 
             "number": 11
         }
-    ]
+    ], 
+    "title": "Beginner Scratch"
 }
-
