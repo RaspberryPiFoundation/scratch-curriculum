@@ -14,14 +14,14 @@
         }, 
         {
             "filename": "03 Fireworks/Fireworks.md", 
-            "number": 3
-            "materials":[ "03 Fireworks/Resources/bang.wav",
-                          "03 Fireworks/Resources/firework1.png",
-                          "03 Fireworks/Resources/firework2.png",
-                          "03 Fireworks/Resources/firework3.png",
-                          "03 Fireworks/Resources/firework4.png",
-                          "03 Fireworks/Resources/rocket.png"
-            ]
+            "number": 3,
+            "materials":[   "03 Fireworks/Resources/bang.wav",
+                            "03 Fireworks/Resources/firework1.png",
+                            "03 Fireworks/Resources/firework2.png",
+                            "03 Fireworks/Resources/firework3.png",
+                            "03 Fireworks/Resources/firework4.png",
+                            "03 Fireworks/Resources/rocket.png"
+                        ]
         }, 
         {
             "filename": "04 Fruit Machine/FruitMachine.md", 
@@ -29,7 +29,11 @@
         }, 
         {
             "filename": "05 Fish Chomp/FishChomp.md", 
-            "number": 5
+            "number": 5,
+            "materials":[   "05 Fish Chomp/Resources/chomp.mp3",
+                            "05 Fish Chomp/Resources/hungry-fish.png",
+                            "05 Fish Chomp/Resources/mouth-closed.png"
+                        ]
         }, 
         {
             "filename": "06 Desert Race/DesertRace.md", 
@@ -41,7 +45,23 @@
         }, 
         {
             "filename": "08 Paint Box/PaintBox.md", 
-            "number": 8
+            "number": 8,
+            "materials":[   "08 Paint Box/Resources/bigger-selector.gif",
+                            "08 Paint Box/Resources/blue-pencil.png",
+                            "08 Paint Box/Resources/cancel-button.png",                       
+                            "08 Paint Box/Resources/eraser.png",
+                            "08 Paint Box/Resources/frame.png",
+                            "08 Paint Box/Resources/green-pencil.png",
+                            "08 Paint Box/Resources/green-selector.gif",
+                            "08 Paint Box/Resources/rainbow-pencil.BMP",
+                            "08 Paint Box/Resources/rainbow-pencil.png",
+                            "08 Paint Box/Resources/rainbow-selector.gif",
+                            "08 Paint Box/Resources/red-pencil.png",
+                            "08 Paint Box/Resources/red-selector.gif",
+                            "08 Paint Box/Resources/smaller-selector.gif",
+                            "08 Paint Box/Resources/yellow-pencil.png",
+                            "08 Paint Box/Resources/yellow-selector.gif"
+                        ]
         }, 
         {
             "filename": "09 Create Your Own Game/CreateYourOwnGame.md", 
@@ -49,7 +69,14 @@
         }, 
         {
             "filename": "10 Christmas special/ChristmasCapers.md", 
-            "number": 10
+            "number": 10,
+            "materials":[   "10 Christmas special/Images/GameOver.png",
+                            "10 Christmas special/Images/Jingle_Bells.mp3",
+                            "10 Christmas special/Images/Present.png",
+                            "10 Christmas special/Images/Rudolf.png",
+                            "10 Christmas special/Images/SkyBackground.png",
+                            "10 Christmas special/Images/SnowHills.png"         
+                        ]
         }, 
         {
             "filename": "Flappy Parrot/FlappyParrot.md", 
