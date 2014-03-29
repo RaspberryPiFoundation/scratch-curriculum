@@ -142,7 +142,7 @@ one. This should repeat until timer is 0, at which point use `stop all` {.blocky
 	repeat until <(timer) = [0]>
 		wait (1) secs
 		change [timer v] by (-1)
-	
+	end
 	stop [all v]
     ```
 
