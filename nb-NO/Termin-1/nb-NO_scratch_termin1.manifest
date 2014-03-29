@@ -1,7 +1,7 @@
 {
     "id": "scratch",
     "title":"Scratch",
-    "description":"Scratch er en enkel og morsom måte å programmere ved å dra og slippe blokker sammen",
+    "description":"...",
     "language": "nb-NO",
     "number": 1,
 
@@ -14,6 +14,10 @@
         {
             "filename": "02 spokelsesjakten/spokelsesjakten.md",
             "number": 2
+        },
+	{
+            "filename": "Flappy Parrot/FlappyParrot.md",
+            "number": 3
         }
     ]
 }
