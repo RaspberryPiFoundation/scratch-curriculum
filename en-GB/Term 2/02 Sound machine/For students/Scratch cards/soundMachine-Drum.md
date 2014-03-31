@@ -16,7 +16,9 @@ materials: "*.sb2"
 ```blocks
 when Drum clicked
 broadcast [drum v]
+```
 
+```blocks
 when [space v] key pressed
 broadcast [drum v]
 ```
