@@ -19,6 +19,7 @@ broadcast [piano-1 v]
 
 when I receive [piano-1 v]
 play note (60 v) for (0.5) beats
+end
 ```
 + Create two more notes when you press “s” and “d” on the keyboard.
 ```blocks
@@ -39,6 +40,7 @@ play note (64 v) for (0.5) beats
 
 when I receive [piano-3 v]
 play note (67 v) for (0.5) beats
+end
 ```
 
 + Copy the costume 3 times. Fill in a different key on each one. 
@@ -61,6 +63,7 @@ when I receive [piano-3 v]
 switch to costume [costume4 v]
 play note (67 v) for (0.5) beats
 switch to costume [costume1 v]
+end
 ```
 
 # Challenge {.challenge} Create a way to change the instrument.
