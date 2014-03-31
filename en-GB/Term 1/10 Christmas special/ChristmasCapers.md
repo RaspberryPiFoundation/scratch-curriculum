@@ -5,6 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb2"
+materials: ["*.sb2", "Images/*.png"]
 ...
 
 # Introduction { .intro}
