@@ -46,6 +46,7 @@
             "note": "02 Sound machine/For leaders/SoundMachine-notes.md",
             "number": 2, 
 	    "materials": "02 Sound machine/For leaders/Scratch files/*.sb",
+	    "embeds": "02 Sound machine/For students/Scratch cards/*.png",
  	    "extras":[
 		{
 		    "note": "02 Sound machine/For students/Scratch cards/soundMachine-Drum.md",
