@@ -24,28 +24,28 @@ We’ll start with a pen that draws when you drag it around the Stage.
 4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click the __Set costume center__ button and drag the lines until they are at the tip.
 5. Make the pencil follow the mouse around the stage using the `forever` {.blockyellow} and `go to` {.blockblue} mouse-pointer blocks.
 
-        ```blocks
-        when FLAG clicked
-        forever
-            go to [mouse-pointer v]
-        end
-        ```
+    ```blocks
+    when FLAG clicked
+    forever
+        go to [mouse-pointer v]
+    end
+    ```
 
 __Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are `pen down`{.blockgreen} and `pen up`{.blockgreen}.
 
 6. We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an `if... else`{.blockyellow} and `mouse down?`{.blocklightblue} blocks.
 
-        ```blocks
-        when FLAG clicked
-        forever
-            go to [mouse-pointer v]
-            if (mouse down?)
-            pen down
-            else
-            pen up
-            end
+    ```blocks
+    when FLAG clicked
+    forever
+        go to [mouse-pointer v]
+        if (mouse down?)
+        pen down
+        else
+        pen up
         end
-        ```
+    end
+    ```
 ##Test Your Project { .flag}
 __Click on the green flag.__
 Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.
@@ -53,18 +53,18 @@ Does the pen follow the mouse around? What happens if you hold the mouse button 
 
 7. Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.
 
-        ```blocks
-        when FLAG clicked
-        clear
-        forever
-            go to [mouse-pointer v]
-            if (mouse down?)
-            pen down
-            else
-            pen up
-            end
+    ```blocks
+    when FLAG clicked
+    clear
+    forever
+        go to [mouse-pointer v]
+        if (mouse down?)
+        pen down
+        else
+        pen up
         end
-        ```
+    end
+    ```
 
 ##Test Your Project { .flag}
 __Click on the green flag.__
@@ -85,10 +85,10 @@ clears the drawing. It will do that using the clear block.
 3. Position the sprite near the bottom-left corner of the stage.
 4. Give the clear sprite this simple script:
 
-        ```blocks
-        when this sprite clicked
-        clear
-        ```
+    ```blocks
+    when this sprite clicked
+    clear
+    ```
 
 ##Test Your Project { .flag}
 __Click on the green flag.__
@@ -111,14 +111,13 @@ So far, we can only draw blue lines. Let’s draw with some different colours! W
     when this sprite clicked
     broadcast [red v]
     ```
-__Yes, that’s all it does. The hard work is done by the pencil.__
+    __Yes, that’s all it does. The hard work is done by the pencil.__
 
-In the pencil, upload a new costume, __resources/red-pencil.png__. Set the costume centre to be the tip of the pencil as you did for the original costume.
+    In the pencil, upload a new costume, __resources/red-pencil.png__. Set the costume centre to be the tip of the pencil as you did for the original costume.
 
 4. Add a new script to the pencil. When the pencil receives the message __red__, it should change to the red pencil costume and change the pen colour to red (using the `set pen color to`{.blockgreen} block).
 
-__Hint:__ if you click on the coloured square in the `set pen color to`{.blockgreen} block, you can
-click the red button sprite to make sure it’s the same colour.
+    __Hint:__ if you click on the coloured square in the `set pen color to`{.blockgreen} block, you can click the red button sprite to make sure it’s the same colour.
 
     ```blocks
     when I receive [red v]
@@ -155,34 +154,34 @@ and mouse x is greater than -230 and mouse x is less than 230
 
 __Note__ to do this you’ll need to use multiple `and` {.blockgreen} operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:
 
-    ```blocks
-    clear
-    forever 
-    if <<(mouse y) > (-120)> and <(mouse y) < (170)> and <(mouse x) > (-230)> and <(mouse x) < (230)>>
-    go to [mouse-pointer v]
-    end
-    end
-    ```
+```blocks
+clear
+forever 
+if <<(mouse y) > (-120)> and <(mouse y) < (170)> and <(mouse x) > (-230)> and <(mouse x) < (230)>>
+go to [mouse-pointer v]
+end
+end
+```
 
 Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the `if` {.blockyellow} with an `if else` {.blockyellow} block. Keep the same condition for the `if` {.blockyellow}, and `show` {.blockblue} the pencil if it’s true, otherwise hide it.
 
-    ```blocks
-    when FLAG clicked
-    clear
-    forever
-        if <<(mouse y) > (-120)> and <(mouse y) < (170)> and <(mouse x) > (-230)> and <(mouse x) < (230)>>
-            go to [mouse-pointer v]
-            show
-            if (mouse down?)
-                pen down
-            else
-                pen up
-            end
+```blocks
+when FLAG clicked
+clear
+forever
+    if <<(mouse y) > (-120)> and <(mouse y) < (170)> and <(mouse x) > (-230)> and <(mouse x) < (230)>>
+        go to [mouse-pointer v]
+        show
+        if (mouse down?)
+            pen down
         else
-            hide
+            pen up
         end
+    else
+        hide
     end
-    ```
+end
+```
 
 ##Test Your Project { .flag}
 __Click on the green flag.__
