@@ -52,7 +52,7 @@ set size to (100) %
 
 + Now we need to make the playback actually do something. Add this script to 
   "Play"
-```
+```blocks
 when Play clicked
 set [recording v] to (0)
 set [index v] to (1)
