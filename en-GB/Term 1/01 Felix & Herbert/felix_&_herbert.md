@@ -131,6 +131,17 @@ Does Felix say when he’s caught Herbert?
 + Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.
 
 + Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.
++ **Change Herbert's script to make sure he starts off with the right costume:**
+ 
+    ```blocks
+      when FLAG clicked
+        switch costume to [alive v]
+        forever
+          go to [mouse-pointer v]
+          point towards [Felix v]
+        end
+    ```
+
 + **Create a new script for Herbert to turn him into a ghost:**
 
     ```blocks
