@@ -6,7 +6,7 @@ __Introduction:__
 This game is a two player game where you race a parrot and a lion across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
 
 
-##STEP 1: Create the scene and add the sprites
+##Step 1: Create the scene and add the sprites
 
 1. Select the Stage, and add the desert background.
 ticking off the boxes below:
@@ -15,7 +15,7 @@ ticking off the boxes below:
 
 
 
-##STEP 2: Make the lion and the parrot move
+##Step 2: Make the lion and the parrot move
 
 
 We want the sprite to move when you press a key.
@@ -38,13 +38,13 @@ We want the sprite to move when you press a key.
 ```
 
 ###Test Your Project
-__Click the green flag__ 
+__Click the green flag__
 Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
 
 Save your project
 
 
-##STEP 3: Starting the race
+##Step 3: Starting the race
 
 We need to have a way to start the race and to know who has won. __First we create a start button.__
 
@@ -107,7 +107,7 @@ Does the lion or the parrot move only after the countdown has finished?
 We want to know who wins the race and reset it when it has finished so you can
 race again.
 
-##STEP 4: Finishing the race
+##Step 4: Finishing the race
 
 1. Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.
 
@@ -146,7 +146,7 @@ Do the sprites make their winning sound and say they’ve won when they reach th
 
 Save your project
 
-##STEP 5: Resetting the game
+##Step 5: Resetting the game
 
 After the race is finished we need to tell the other sprites we have won and reset the
 game so we can play again.

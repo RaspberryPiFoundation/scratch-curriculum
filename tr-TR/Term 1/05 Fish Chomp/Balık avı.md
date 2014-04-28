@@ -5,7 +5,7 @@
 __Tanıtım:__
 Balık avı oyunu dizayn edeceğiz. Büyük açgözlü balığa etrafındaki küçük hayvanları avlamasına yardım edin.
 
-##￼STEP 1:Kılık değiştiren kukla yap
+##￼Step 1:Kılık değiştiren kukla yap
 __Açgözlü balığın denizde yüzmesini sağlıyalım!__
 
 1.Yeni Scratch perojesine başla
@@ -18,15 +18,15 @@ __Açgözlü balığın denizde yüzmesini sağlıyalım!__
 ```scratch
 
 	Bayrak tıklanınca
-	Sürekli tekrar et	
+	Sürekli tekrar et
 		Fare okuna doğru dön
 		3 adım git
 	(Hepsini durdur)
 ```
 
 ###Projeni dene
-__Yeşil bayrağı tıkla.__ 
-Bilgisayar okunu deniz etrafında hareket ettir. Balık biligsayar okunu takip ediyor mu? Eğer biligsayar okunu hareket ettirmezsen ve balık yetişirse ne oldu? 
+__Yeşil bayrağı tıkla.__
+Bilgisayar okunu deniz etrafında hareket ettir. Balık biligsayar okunu takip ediyor mu? Eğer biligsayar okunu hareket ettirmezsen ve balık yetişirse ne oldu?
 Neye benzer? Niçin bu şekilde sonuçlandı?
 
 7. Açgözlü balığın deli gibi ters donüp yüzmesini, biligsayar okuna yakın olamdığı zaman yüzmesini kodlayarak durdurabilirisniz ( mesafe kodu algılama tabındadır).
@@ -56,7 +56,7 @@ Projeni kaydet
 ```scratch
 
 	Bayrak tıklanınca
-	sürekli tekrarla	
+	sürekli tekrarla
 		2 adım git
 		dön 20 ile -20 arasında rastgele rakam seç
 		kenara değdimi geri dön
@@ -72,7 +72,7 @@ Projeni kaydet
 
 ###Extra hedefler
 
-* Rastgele ve hareket yazılımlarındaki rakamları değiştir. Avlar şimdi farklı hareket ediyorlar mı? 
+* Rastgele ve hareket yazılımlarındaki rakamları değiştir. Avlar şimdi farklı hareket ediyorlar mı?
 * Eğer kenara değerse geri dön kodu ne yapar? Kodu sil ve etkisini gör.
 
 ##3.Adım: Açgözlü balık avlarını yer
@@ -81,12 +81,12 @@ __Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ Açğözlü bal
 * Açgözlü balık ağzını kapatıp, "chomp" sesi yapmalı.
 * Av bir süre görünmez olup, sonra tekrar goörünmeli.
 
-1. Eaçgözlü balığa değerseğer av, açgözlü balığa değerse 3 saniye görünmez olmalı. 
+1. Eaçgözlü balığa değerseğer av, açgözlü balığa değerse 3 saniye görünmez olmalı.
 
 ```scratch
 
 	Bayrak tıklanınca
-	sürekli tekrarla	
+	sürekli tekrarla
 		2 adım git
 		dön 20 ile -20 arasında rastgele rakam seç
 		kenara değdimi geri dön
@@ -96,7 +96,7 @@ __Şimdi,açgözlü balığın  avlarını yemesini istiyoruz!__ Açğözlü bal
 			göster
 			(eğer ise)
 	(hepsini durdur)
-	
+
 ```
 
 ###Projeni dene
@@ -108,7 +108,7 @@ __Projeni tekrar dene – Herhangi bir sorun var mı?__ Avın, açgözlü balı�
 ```scratch
 
 	Bayrak tıklanınca
-	sürekli tekrarla	
+	sürekli tekrarla
 		2 adım git
 		dön 20 ile -20 arasında rastgele rakam seç
 		kenara değdimi geri dön
@@ -129,7 +129,7 @@ Oyunu tekrar dene- Av sadece balığın ağızına dokununcamı kayboluyor? Tekr
 ```scratch
 
 		Bayrak tıklanınca
-	sürekli tekrarla	
+	sürekli tekrarla
 		2 adım git
 		dön 20 ile -20 arasında rastgele rakam seç
 		kenara değdimi geri dön
@@ -172,7 +172,7 @@ Av yazılımına neden 'göster' kodu ile başladık? Eğer av, yakalandıktan s
 Aferin, oyununu tamamladın. Oyununu daha ilginç yapabilirsin. Duelloya hazır mısın?
 
 
-##Extra Hedef 1: Avları farklı şekilde hareket ettir 
+##Extra Hedef 1: Avları farklı şekilde hareket ettir
 
 Bütün avlar aynı şekilde hareket ediyor? Birini farkli hareket ettire bilir misin?
 __ipucu:__ Bu projedeki diğer aktivetelere bakmadan bu soru için çok zaman harcama
@@ -196,7 +196,7 @@ Bu değişiklikler oyunu daha iyi yaptımı?  Oyun daha ilginç, daha eğlenceli
 
 Projeni kaydet
 
-##Extra Hedef 2: .Avın açgözlü balıktan sakınmasını sağla 
+##Extra Hedef 2: .Avın açgözlü balıktan sakınmasını sağla
 
 Bu oyundaki avlar aptal. Avlanana kadar rastgele yüzüyorlar. Gerçek av, avcısından uzaklaşır. __Avlardan birini, balıktan uzağa yüzdürelim.__
 
@@ -209,7 +209,7 @@ Bu avın yakalanmasını zorlaştırdı mı? Oyunu daha iyi yaptı mı?
 Projeni kaydet
 
 ##Extra Hedef 3: Puan ekle
-Sadece avı yemek yeterli değil. Bu oyunu arkadaşlarından daha iyi oynadığını nasil bileceksin? __Puan değişkeni ekleyip, puanı kayıt etmen gerekli. Puan değişkeni kartına bak ve nasıl yapıldığını öğren. 
+Sadece avı yemek yeterli değil. Bu oyunu arkadaşlarından daha iyi oynadığını nasil bileceksin? __Puan değişkeni ekleyip, puanı kayıt etmen gerekli. Puan değişkeni kartına bak ve nasıl yapıldığını öğren.
 
 WPuanı değiştirmek için, kodu nereye eklemen lazım?
 
