@@ -5,7 +5,7 @@ Level 3
 __Introduction__
 A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
 
-##STEP 1: Make different things appear on the blackboard
+##Step 1: Make different things appear on the blackboard
 
 We want a few different pictures to show up on the blackboard.
 
@@ -14,13 +14,13 @@ We want a few different pictures to show up on the blackboard.
 3. Import a new sprite and give it any costume you like. You can picked some from the things folder.
 4. Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.
 5. Click the Costumes tab and import four more things. They can be anything you want, yay!
-Let’s now make a random picture appear. 
+Let’s now make a random picture appear.
 6. Create this script:
 
 ```scratch
 
 	when FLAG clicked
-	repeat pick random 1 to 5		
+	repeat pick random 1 to 5
 		next costume
 	(end repeat)
 ```
@@ -34,13 +34,13 @@ __Click on it a few more times.__
  Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.
  Save your project
 
-##STEP 2: Make the pictures distorted
+##Step 2: Make the pictures distorted
 
 __Let’s now make a picture distorted when it appears, and become clearer over a few seconds.__
 
 We’ll use a score variable to control how much distortion there is. If the score is high, there will be lots of distortion. As the score goes down, there will be less and less distortion. The score also acts as a timer, like on the __Timer Scratch Card.__
 
-1. On the Variables palette, create a variable called Score. 
+1. On the Variables palette, create a variable called Score.
 
 2. Change the script to look like this:
 
@@ -48,7 +48,7 @@ We’ll use a score variable to control how much distortion there is. If the sco
 
 	when FLAG clicked
 	hide
-	repeat pick random 1 to 5		
+	repeat pick random 1 to 5
 		next costume
 	(end repeat)
 	set score to 110
@@ -84,7 +84,7 @@ __Try changing the starting score and how much it changes each time around the l
 
 __Try some different graphic effects from the pull-down lists.__ How do they change the difficulty?
 
-##STEP 3: Allow the player to guess the picture
+##Step 3: Allow the player to guess the picture
 
 So far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.
 
@@ -97,7 +97,7 @@ First, we need to know what the right answer is.
 
 	when FLAG clicked
 	hide
-	repeat pick random 1 to 5		
+	repeat pick random 1 to 5
 		next costume
 	(end repeat)
 	set answer to costume
@@ -172,7 +172,7 @@ To fix the second problem, we need to stop the __question sprite__’s repeat un
 
 	when FLAG clicked
 	hide
-	repeat pick random 1 to 5		
+	repeat pick random 1 to 5
 		next costume
 	(end repeat)
 	set answer to costume
@@ -185,7 +185,7 @@ To fix the second problem, we need to stop the __question sprite__’s repeat un
 		show
 		wait 1 secs
 	(end repeat)
-	
+
 	When I receive won
 	set won to 1
 	clear graphics effects
@@ -213,7 +213,7 @@ Save your project
 
 At the moment, each play of the game uses the same distortion. In Step 2, you might have tried some different distortions that work at least as well as the colour + pixelation we used.
 
-Find some different distortions that work well. 
+Find some different distortions that work well.
 
 Change the game so that each game uses a different distortion in the repeat until loop.
 

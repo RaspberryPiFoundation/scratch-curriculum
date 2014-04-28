@@ -1,56 +1,78 @@
 {
-    "id": "scratch",
-    "title":"Beginner Scratch",
-    "description":"Scratch is a simple, fun way to program by dragging and dropping blocks together",
+    "description": "Scratch is a simple, fun way to program by dragging and dropping blocks together.",
+    "id": "scratch_01",
     "language": "en-GB",
     "number": 1,
-
+    "title": "Beginner Scratch",
 
     "projects": [
         {
-            "filename": "01 Felix & Herbert/felix_&_herbert.md",
-            "number": 1
+            "number":   1,
+            "filename": "01 Felix and Herbert/01 Felix and Herbert.md",
+            "pdf":      "01 Felix and Herbert/01 Felix and Herbert.pdf",
+            "note":     "01 Felix and Herbert/01 Felix and Herbert - Notes.md",
+            "note_pdf": "01 Felix and Herbert/01 Felix and Herbert - Notes.pdf"
         },
+
         {
-            "filename": "02 Ghostbusters/Ghostbusters.md",
-            "number": 2
+            "number":   2,
+            "filename": "02 Ghostbusters/02 Ghostbusters.md",
+            "pdf":      "02 Ghostbusters/02 Ghostbusters.pdf",
+            "note":     "02 Ghostbusters/02 Ghostbusters - Notes.md",
+            "note_pdf": "02 Ghostbusters/02 Ghostbusters - Notes.pdf"
         },
+
         {
-            "filename": "03 Fireworks/Fireworks.md",
-            "number": 3
+            "number":   3,
+            "filename": "03 Fireworks/03 Fireworks.md",
+            "pdf":      "03 Fireworks/03 Fireworks.pdf",
+            "note":     "03 Fireworks/03 Fireworks - Notes.md",
+            "note_pdf": "03 Fireworks/03 Fireworks - Notes.pdf"
         },
+
         {
-            "filename": "04 Fruit Machine/FruitMachine.md",
-            "number": 4
+            "number":   4,
+            "filename": "04 Fruit Machine/04 Fruit Machine.md",
+            "pdf":      "04 Fruit Machine/04 Fruit Machine.pdf",
+            "note":     "04 Fruit Machine/04 Fruit Machine - Notes.md",
+            "note_pdf": "04 Fruit Machine/04 Fruit Machine - Notes.pdf"
         },
+
         {
-            "filename": "05 Fish Chomp/FishChomp.md",
-            "number": 5
+            "number":   5,
+            "filename": "05 Fish Chomp/05 Fish Chomp.md",
+            "pdf":      "05 Fish Chomp/05 Fish Chomp.pdf",
+            "note":     "05 Fish Chomp/05 Fish Chomp - Notes.md",
+            "note_pdf": "05 Fish Chomp/05 Fish Chomp - Notes.pdf"
         },
+
         {
-            "filename": "06 Desert Race/DesertRace.md",
-            "number": 6
+            "number":   6,
+            "filename": "06 Desert Race/06 Desert Race.md",
+            "pdf":      "06 Desert Race/06 Desert Race.pdf",
+            "note":     "06 Desert Race/06 Desert Race - Notes.md",
+            "note_pdf": "06 Desert Race/06 Desert Race - Notes.pdf"
         },
+
         {
-            "filename": "07 What's That/WhatsThat.md",
-            "number": 7
+            "number":   7,
+            "filename": "07 Christmas Capers/07 Christmas Capers.md",
+            "pdf":      "07 Christmas Capers/07 Christmas Capers.pdf"
         },
+
         {
-            "filename": "08 Paint Box/PaintBox.md",
-            "number": 8
+            "number":   8,
+            "filename": "08 Flappy Parrot/08 Flappy Parrot.md",
+            "pdf":      "08 Flappy Parrot/08 Flappy Parrot.pdf"
         },
+
         {
-            "filename": "09 Create Your Own Game/CreateYourOwnGame.md",
-            "number": 9
-        },
-        {
-            "filename": "10 Christmas special/ChristmasCapers.md",
-            "number": 10
-        },
-        {
-            "filename": "Flappy Parrot/FlappyParrot.md",
-            "number": 11
+            "number":   9,
+            "filename": "09 What's That/09 What's That.md",
+            "pdf":      "09 What's That/09 What's That.pdf",
+            "note":     "09 What's That/09 What's That - Notes.md",
+            "note_pdf": "09 What's That/09 What's That - Notes.pdf"
         }
+
     ]
 }
-
