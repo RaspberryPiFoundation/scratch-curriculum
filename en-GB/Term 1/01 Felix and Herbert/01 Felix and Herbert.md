@@ -52,8 +52,7 @@ Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.
 + Create another sprite using the `choose sprite from library` { .blockgrey } button and selecting **animals/mouse1**.
 + Change the name of the sprite to **Herbert**.
 + Switch to the __Costumes__ tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.
-+ Make sure Herbert only points left-right by clicking this button:
-!(flip_arrows.png)
++ Make sure Herbert only points left-right by clicking this button: <img alt="" class="inline" src="flip_arrows.png">
 + **Give Herbert this script:**
 ```blocks
     when FLAG clicked
