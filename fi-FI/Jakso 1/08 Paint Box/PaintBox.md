@@ -5,7 +5,7 @@ Level 3
 __Introduction:__
 The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!
 
-##STEP 1: Drag and draw
+##Step 1: Drag and draw
 
 We’ll start with a pen that draws when you drag it around the Stage.
 
@@ -14,7 +14,7 @@ We’ll start with a pen that draws when you drag it around the Stage.
 3. Create a new sprite called __pencil__, using __resources\green-pencil.__
 4. Switch to the __costumes__ tab and click edit from the __Paint Editor__, change the center of the image to be at the tip of the pen. To do this, click __Set costume center__ and drag the lines until they are at the tip.
 5. Make the pencil follow
-the mouse around the stage using the __forever__ 
+the mouse around the stage using the __forever__
 and __go to__ mouse-pointer blocks.
 
 ```scratch
@@ -66,12 +66,12 @@ Does your drawing disappear when you click on the green flag?
 
 SAVE YOUR PROJECT
 
-##STEP 2: Clearing up
+##Step 2: Clearing up
 
 Rather than having to stop and start the whole project, let’s add a button that
 clears the drawing. It will do that using the clear block.
 
-1. Create a new sprite from the __resources/cancel button__ costume. 
+1. Create a new sprite from the __resources/cancel button__ costume.
 2. Change the sprite’s name to __clear__.
 3. Position the sprite near the bottom-left corner of the stage.
 4. Give the clear sprite this simple script:
@@ -88,11 +88,11 @@ Does the clear button clear all your drawing?
 
 SAVE YOUR PROJECT
 
-##STEP 3: Changing colour
+##Step 3: Changing colour
 
 So far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.
 
-1. Add a new sprite, called __red__, using the __resources/red-selector costume__. 
+1. Add a new sprite, called __red__, using the __resources/red-selector costume__.
 2. Place it somewhere along the bottom of the frame, near the __clear button__.
 3. When the red sprite is clicked, it should broadcast the message __red__.
 
@@ -133,7 +133,7 @@ Do all the selector buttons work? Do they all change the pencil’s costume to t
 
 SAVE YOUR PROJECT
 
-##STEP 4: Only drawing inside the border
+##Step 4: Only drawing inside the border
 
 You’ve probably noticed that you can draw all over the Stage, even in the border. We don’t want that to happen. We want to keep the drawing in the middle of the Stage. We can do this by making sure the pen isn’t allowed to leave the drawing area - the light grey part on the Stage.
 
@@ -181,7 +181,7 @@ Can you still draw inside the drawing area? Can you draw outside the drawing are
 
 SAVE YOUR PROJECT
 
-##STEP 5: Eraser
+##Step 5: Eraser
 
 __Drawing lines is great, but there are times when you’ve made a mistake and you want to rub it out.__ We can do that with a new pencil tool that draws in grey (the same colour as the background).
 
@@ -196,7 +196,7 @@ Does the eraser rub out lines? Does it work right up to the edges? Can you switc
 
 SAVE YOUR PROJECT
 
-##STEP 6: Stamps
+##Step 6: Stamps
 
 The next thing to add is a stamp tool, to stamp small pictures on the drawing.
 Activity Checklist
@@ -206,7 +206,7 @@ Activity Checklist
 3. Select the pencil sprite and create a new variable __pencil mode__ for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.
 4. Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the __pencil mode__ variable to __false__.
 5. Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the __pencil mode__ to __true__.
-6. Finally, lets check this variable __when the mouse button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead. 
+6. Finally, lets check this variable __when the mouse button is down__ to see if we should be drawing or stamping. If pencil mode = true we should use the existing __pen down__, if not we should stamp instead.
 
 ##Test Your Project
 __Click on the green flag.__
@@ -252,7 +252,7 @@ You can use the when [] key pressed blocks to respond to the keyboard. For each 
 I used these shortcuts:
 * Clear all - a
 * Eraser - e
-* Red pencil -r 
+* Red pencil -r
 * Blue pencil - b
 * Yellow pencil - y
 * Green pencil - g

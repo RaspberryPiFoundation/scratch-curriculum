@@ -1,88 +1,124 @@
 {
-    "id": "scratch",
-    "title":"Advanced Scratch",
-    "description":"",
+    "description": "",
+    "id": "scratch_02",
     "language": "en-GB",
     "number": 2,
+    "title": "Advanced Scratch",
+
     "projects": [
         {
-	    "title":"Make a monster",
-            "filename":"01 Make a monster/For students/Monster-worksheet.md",
-            "note": "01 Make a monster/For leaders/Monster-notes.md",
-            "number": 1,
-	    "extras": [
-            {
-    		"name":"Make a monster: Eyes",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Eyes.md"
-            },
-            {
-		"name":"Make a monster: Jointed Arm",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-JointedArm.md"
-            },
-            {
-		"name":"Make a monster: Legs",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Legs.md"
-            },
-            {
-		"name":"Make a monster: MouthsTalk",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-MouthsTalk.md"
-            },
-            {
-		"name":"Make a monster: Movement",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Movement.md"
-            },
-            {
-		"name":"Make a monster: Tentacles",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Tentacles.md"
-            },
-            {
-		"name":"Make a monster: Wheels",
-                "note": "01 Make a monster/For students/Monster_Parts_Cards/Monster-Wheels.md"
-            }]
-        },
-        {
-            "filename": "02 Sound machine/For students/SoundMachine-worksheet.md",
-            "title": "Sound Machine",
-            "note": "02 Sound machine/For leaders/SoundMachine-notes.md",
-            "number": 2, 
-	    "materials": "02 Sound machine/For leaders/Scratch files/*.sb",
-	    "embeds": "02 Sound machine/For students/Scratch cards/*.png",
- 	    "extras":[
-		{
-		    "note": "02 Sound machine/For students/Scratch cards/soundMachine-Drum.md",
-		    "name": "Sound Machine: Drum"
-		},
-		{
-		    "note": "02 Sound machine/For students/Scratch cards/soundMachine-Piano.md",
-		    "name": "Sound Machine: Piano"
-		},
-		{
-		    "note": "02 Sound machine/For students/Scratch cards/soundMachine-SoundSample.md",
-		    "name": "Sound Machine: Sound Sample"
-		},
-		{
-		    "note": "02 Sound machine/For students/Scratch cards/soundMachine-Recorder.md",
-		    "name": "Sound Machine: Recorder"
-		}
-	    ]
-        },
-        {
-            "title":"Frantic Felix",
-            "filename": "03 Frantic Felix/For students/Frantic-Felix-worksheet.md",
-            "note": "03 Frantic Felix/For leaders/Frantic-Felix-notes.md",
-	    "materials": "03 Frantic Felix/For leaders/Scratch files/*.sb",
-            "number": 3,
+            "title":     "Make a Monster",
+            "number":    1,
+            "filename":  "01 Make a Monster/For Students/01 Make a Monster.md",
+            "pdf":       "01 Make a Monster/For Students/01 Make a Monster.pdf",
+            "note":      "01 Make a Monster/For Leaders/01 Make a Monster - Notes.md",
+            "note_pdf":  "01 Make a Monster/For Leaders/01 Make a Monster - Notes.pdf",
+            "materials": "01 Make a Monster/For Leaders/Scratch Files/*.sb",
+
             "extras": [
-		{
-		    "name":"Frantic Felix: Record",
-		    "note": "03 Frantic Felix/For students/02-Scratch cards/Scratch card record.md"
-		},
-		{
-		    "name":"Frantic Felix: Playback",
-		    "note": "03 Frantic Felix/For students/02-Scratch cards/Scratch card playback.md"
-		}
-	    ]
+                {
+                    "name": "Eyes",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-01 Make a Monster - Eyes.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-01 Make a Monster - Eyes.pdf"
+                },
+
+                {
+                    "name": "Jointed Arm",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-02 Make a Monster - Jointed Arm.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-02 Make a Monster - Jointed Arm.pdf"
+                },
+
+                {
+                    "name": "Legs",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-03 Make a Monster - Legs.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-03 Make a Monster - Legs.pdf"
+                },
+
+                {
+                    "name": "Mouths and Talking",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-04 Make a Monster - Mouths.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-04 Make a Monster - Mouths.pdf"
+                },
+
+                {
+                    "name": "Movement",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-05 Make a Monster - Movement.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-05 Make a Monster - Movement.pdf"
+                },
+
+                {
+                    "name": "Tentacles",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-06 Make a Monster - Tentacles.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-06 Make a Monster - Tentacles.pdf"
+                },
+
+                {
+                    "name": "Wheels",
+                    "note": "01 Make a Monster/For Students/Scratch Cards/01-07 Make a Monster - Wheels.md",
+                    "pdf":  "01 Make a Monster/For Students/Scratch Cards/01-07 Make a Monster - Wheels.pdf"
+                }
+            ]
+        },
+
+        {
+            "title":     "Sound Machine",
+            "number":    2,
+            "embeds":    "02 Sound Machine/For Students/Scratch Cards/*.png",
+            "filename":  "02 Sound Machine/For Students/02 Sound Machine.md",
+            "pdf":       "02 Sound Machine/For Students/02 Sound Machine.pdf",
+            "note":      "02 Sound Machine/For Leaders/02 Sound Machine - Notes.md",
+            "note_pdf":  "02 Sound Machine/For Leaders/02 Sound Machine - Notes.pdf",
+            "materials": "02 Sound Machine/For Leaders/Scratch Files/*.sb",
+
+            "extras": [
+                {
+                    "name": "Drum",
+                    "note": "02 Sound Machine/For Students/Scratch Cards/02-01 Sound Machine - Drum.md",
+                    "pdf":  "02 Sound Machine/For Students/Scratch Cards/02-01 Sound Machine - Drum.pdf"
+                },
+
+                {
+                    "name":   "Piano",
+                    "note":   "02 Sound Machine/For Students/Scratch Cards/02-02 Sound Machine - Piano.md",
+                    "pdf":    "02 Sound Machine/For Students/Scratch Cards/02-02 Sound Machine - Piano.pdf"
+                },
+
+                {
+                    "name": "Recorder",
+                    "note": "02 Sound Machine/For Students/Scratch Cards/02-03 Sound Machine - Recorder.md",
+                    "pdf":  "02 Sound Machine/For Students/Scratch Cards/02-03 Sound Machine - Recorder.pdf"
+                },
+
+                {
+                    "name": "Sound Sampler",
+                    "note": "02 Sound Machine/For Students/Scratch Cards/02-04 Sound Machine - Sound Sampler.md",
+                    "pdf":  "02 Sound Machine/For Students/Scratch Cards/02-04 Sound Machine - Sound Sampler.pdf"
+                }
+            ]
+        },
+
+        {
+            "title":     "Frantic Felix",
+            "number":    3,
+            "filename":  "03 Frantic Felix/For Students/03 Frantic Felix.md",
+            "pdf":       "03 Frantic Felix/For Students/03 Frantic Felix.pdf",
+            "note":      "03 Frantic Felix/For Leaders/03 Frantic Felix - Notes.md",
+            "note_pdf":  "03 Frantic Felix/For Leaders/03 Frantic Felix - Notes.pdf",
+            "materials": "03 Frantic Felix/For Leaders/Scratch Files/*.sb",
+
+            "extras": [
+                {
+                    "name": "Record",
+                    "note": "03 Frantic Felix/For Students/Scratch Cards/03-01 Frantic Felix - Record.md",
+                    "pdf":  "03 Frantic Felix/For Students/Scratch Cards/03-01 Frantic Felix - Record.pdf"
+                },
+
+                {
+                    "name": "Playback",
+                    "note": "03 Frantic Felix/For Students/Scratch Cards/03-02 Frantic Felix - Playback.md",
+                    "pdf":  "03 Frantic Felix/For Students/Scratch Cards/03-02 Frantic Felix - Playback.pdf"
+                }
+            ]
         }
     ]
 }
-

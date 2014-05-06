@@ -44,7 +44,7 @@ Vi vill att spritearna ska röra på sig när du trycker ner en tangent.
 
 ##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan
-Rör sig ditt lejon och din papegoja över skärmen när du trycker ner A och L?__ 
+Rör sig ditt lejon och din papegoja över skärmen när du trycker ner A och L?__
 
 ##Spara ditt projekt {.save}
 
@@ -116,7 +116,7 @@ Flyttar sig lejonet och papegojan bara efter att nedräkningen är färdig?
 
 Vi vill veta vem som vinner racet och återställa det när det är slut så att du kan tävla igen.
 
-##STEP 4: Målgången {.activity}
+##Step 4: Målgången {.activity}
 
 1. Lägg till ett block i papegojans script som sätter springer-variabeln till 0 när spriten nuddar kanten av skärmen (mål).
 

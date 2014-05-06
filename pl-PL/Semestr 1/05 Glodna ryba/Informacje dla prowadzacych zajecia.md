@@ -1,7 +1,7 @@
 ---
-title:Na ryby — Informacje dla prowadzących zajęcia
+title: Na ryby — Informacje dla prowadzących zajęcia
 language: pl-PL
-embeds: "*.png"
+embeds: ["*.png"]
 ...
 
 # Wstęp
