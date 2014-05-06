@@ -72,7 +72,22 @@
             "pdf":      "09 What's That/09 What's That.pdf",
             "note":     "09 What's That/09 What's That - Notes.md",
             "note_pdf": "09 What's That/09 What's That - Notes.pdf"
-        }
+        },
 
+        {
+            "number":   10,
+            "filename": "10 Paint Box/10 Paint Box.md",
+            "pdf":      "10 Paint Box/10 Paint Box.pdf",
+            "note":     "10 Paint Box/10 Paint Box - Notes.md",
+            "note_pdf": "10 Paint Box/10 Paint Box - Notes.pdf"
+        },
+
+        {
+            "number":   11,
+            "filename": "11 Create Your Own Game/11 Create Your Own Game.md",
+            "pdf":      "11 Create Your Own Game/11 Create Your Own Game.pdf",
+            "note":     "11 Create Your Own Game/11 Create Your Own Game - Notes.md",
+            "note_pdf": "11 Create Your Own Game/11 Create Your Own Game - Notes.pdf"
+        }
     ]
 }
