@@ -131,7 +131,7 @@ When you start the game just after you’ve loaded it, all the sprites show the 
 + We can also use exactly the same block in the `forever` { .blockyellow } loop so that the sprite switches to a different costume each time it changes during the game.
 ```blocks
     when FLAG clicked
-        set [stopped v] to (0)
+        set [stopped v] to [NO]
         switch costume to <pick random (1) to (3)>
         forever
             if <(stopped) = [NO]> then
@@ -218,7 +218,7 @@ The aim of the game is to click on the sprites so they stop while showing the sa
     when FLAG clicked
         switch backdrop to [GameOn v]
         forever
-            if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
+            if <<<([stopped v]  of [Fruit1 v]) = [YES]> and <([stopped v]  of [Fruit2 v]) = [YES]>> and <([stopped v]  of [Fruit3 v]) = [YES]>> then
                 if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit2 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
                     switch backdrop to [Win v]
                 else
