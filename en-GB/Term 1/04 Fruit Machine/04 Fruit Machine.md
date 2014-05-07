@@ -71,7 +71,7 @@ One way to do it is by using a variable to set the state of the Sprite. This wil
 + At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to **"NO"**.
 ```blocks
     when FLAG clicked
-    set [stopped v] to (NO)
+    set [stopped v] to [NO]
     forever
         next costume
         wait (0.1) secs
@@ -79,12 +79,12 @@ One way to do it is by using a variable to set the state of the Sprite. This wil
 + Now we'll set the variable `stopped` { .blockorange } to  **"YES"** when someone clicks on the sprite.
 ```blocks
     when this sprite clicked
-        set [stopped v] to (YES)
+        set [stopped v] to [YES]
 ```
 + Finally we need to make the sprite stop changing costume when the variable `stopped` { .blockorange } changes to "YES". Add an `if...then` { .blockyellow } loop and use a new **equals** `[] = []` { .blockgreen } operator block (found under the *Operators* tab) to check if `stopped` { .blockorange } is still "NO".
 ```blocks
     when FLAG clicked
-        set [stopped v] to (NO)
+        set [stopped v] to [NO]
         forever
             if <(stopped) = [NO]> then
                 next costume
