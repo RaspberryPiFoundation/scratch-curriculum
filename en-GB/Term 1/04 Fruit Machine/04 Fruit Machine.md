@@ -219,7 +219,7 @@ The aim of the game is to click on the sprites so they stop while showing the sa
         switch backdrop to [GameOn v]
         forever
             if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
-                if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
+                if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit2 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
                     switch backdrop to [Win v]
                 else
                     switch backdrop to [Lose v]
