@@ -191,7 +191,7 @@ Możesz się ścigać z kolegą, kiedy jedno z was kieruje papugą wciskając 'A
 
 ## Zapisz swój projekt. {.save}
 
-## Wyzwanie: Dodaj dopalacz {.challenge}
+## Wyzwanie 1: Dodaj dopalacz {.challenge}
 
 + __Spróbuj dodać dopalacz__, który każdy duszek może użyć tylko raz podczas wyścigu. Dopalacz przesuwa postać w przód o __30 kroków__.
 + __Dodaj nowy kostium__ z płomieniem za każdym duszkiem i ustaw, aby się pokazywał, kiedy dopalacz zostanie użyty.
@@ -213,6 +213,40 @@ Możesz się ścigać z kolegą, kiedy jedno z was kieruje papugą wciskając 'A
 
 ## Zapisz swój projekt. {.save}
 
+## Wyzwanie 2: Stwórz własne bloki, aby uprościć swój skrypt {.challenge}
+
+Ten sam kod, który sprawdza, czy wyścig się skończył jest używany teraz w dwóch miejscach dla każdego duszka: kiedy duszek normalnie się porusza i kiedy rusza się z dopalaczem. Możemy uprościć nasz skrypt tworząc własny blok, w którym znajdą się bloki, które do tej pory powtarzały się w wielu miejscach.
+
++ Pokaż skrypt papugi.
++ Wybierz paletę `Więcej bloków` {.blocklightgrey} i kliknij na przycisk `Stwórz blok` {.blocklightgrey}.
++ Nadaj nowemu blokowi nazwę wpisując **"zakończony"** w różowe pole. Następnie kliknij OK.
++ Zauważ, że blok `definiuj zakończony` {.blockpurple} pojawił się w oknie ze skryptami. Przeciągnij go na puste miejsce tak, aby nie zasłaniał innych skryptów.
++ Odłącz blok `jeżeli`{.blockyellow}`dotyka krawędź?`{.blocklightblue}`to`{.blockyellow} i przeciągnij go podłączając pod blok `definiuj zakończony`{.blockputple}.
+```blocks
+    definiuj zakończony
+        jeżeli <dotyka [krawędź v]?> to
+            ustaw (wyścig) na [0]
+            zagraj dźwięk [nagranie1 v]
+            powiedz [Papuga wygrała!] przez (3) s
+            nadaj [koniec v]
+
+    kiedy klawisz [p v] naciśnięty
+        jeżeli <<(wyścig) = [1]> and <(dopalacz) = [0]>> to
+            zmień kostium na [parrot-dopalacz v]
+            ustaw [dopalacz v] na [1]
+            przesuń o (4) kroków
+            zakończony
+```
+
+Czy możesz przeciągnąć blok `zakończony` {.blockpurple} z palety i użyć go jak każdego innego bloku?
+
+Usuń pozostałe bloki `jeżeli`{.blockyellow}`dotyka krawędź?`{.blocklightblue}`to`{.blockyellow} z twojego skryptu i wstaw w ich miejsce twój blok `zakończony` {.blockputple}.
+
+Czy to sprawiło, że twój kod jest teraz łatwiejszy do przeczytania? Czy możesz utworzyć podobny blok dla duszka lwa?
+
+## Przetestuj swój projekt {.flag}
+
+## Zapisz swój projekt. {.save}
 
 __Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!__
 Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu __Udostępnij__.
