@@ -30,15 +30,14 @@ We’ll have four sprites that follow Frantic Felix around. __Each will detect c
 + Create four `variables` (for all sprites): __blocked top__, __blocked bottom__, __blocked right__, and __blocked left__.
 + Give each of the detector sprites this script:
 ``` scratch
-	when 'flag' clicked
+when FLAG clicked
 		forever
-			go to Felix
+			go to [Felix v]
 			if <color [] is touching [] ?>
-				set blocked right to 1
+				set [blocked right v] to (1)
 			else
-			set block right to 0
-			end if
-		end forever
+			set [blocked right v] to (0)
+		
 ```
 + Change the variables for each detector. The bottom detector needs an __or__ block so that it sets blocked bottom if it’s touching either green or black. __Hint__: It’s easier to pick the colours in one sprite, then drag the script to the other sprites and change the variables being set. It saves having to find the right colours four times. At the moment, Felix just needs a script to follow the mouse pointer forever.
 
@@ -57,30 +56,32 @@ You should see Felix follow the mouse pointer around, surrounded by a red rectan
 + We could animate Felix’s legs in the same block, but they end up moving too fast. Do the animation in a separate `forever` block under another when __green flag clicked__ hat.
 + The final thing to do is __falling__. If there’s no solid ground under Felix, we want him to fall. That’s another `forever loop` under another __green flag__ hat.
 ```scratch
-	when FLAG clicked (handle moving)
+when FLAG clicked //handle moving
 		forever
-			if <<key left arrow pressed?> and (blocked left)=0>
-				point in direction -90
-				move two steps
-			end if
-			if <<key right arrow pressed?> and (blocked right)=0>
-				point in direction 90
-				move two steps
-			end if
-		end forever
+			if <<key [left arrow v] pressed?> and <(blocked left)=(0)>
+				point in direction (-90 v)
+				move (2) steps
+end
 
-	when FLAG clicked (animate Felix)
-		forever if <<key left arrow pressed?>or<key right arrow pressed?>>
+			
+			if <<key [right arrow v] pressed?> and <(blocked left)=(0)>
+				point in direction (90 v)
+				move (2) steps
+end
+			
+
+	when FLAG clicked //[animate Felix]
+		forever if <<key [left arrow v] pressed?>or<key [right arrow v] pressed?>>
 			next costume
-			wait 0.1 secs
-		end if
+			wait (0.1) secs
+		end 
 
-	when FLAG clicked (handle falling)
+	when FLAG clicked //handle falling
 		forever
-			if <blocked bottom=0>
-				change by -2
-			end if
-		end forever
+			if <(blocked bottom)=(0)>
+				change  y by (-2)
+			end 
+		end 
 ```
 + We also want the collision detectors to disappear. We can’t just use a `hide` block, because then they won’t detect any collisions. Instead, put a `set [ghost] effect to 100` right under the green flag hat in each collision detector. That makes the sprite invisible without hiding it.
 
@@ -110,21 +111,21 @@ The final part of making Felix move is jumping. Let’s have the __space key__ m
 + When we know Felix is jumping up, we need to check if he’s bumped his head against something. If __blocked top__ is __1__, set __height to jump__ to __zero__. (This stops Felix jumping up into obstacles). __Otherwise, move Felix up by ten and reduce height to jump by ten.__
 + You should end up with this:
 ```scratch
-	when FLAG clicked (handle falling)
+	when FLAG clicked //handle falling
 		forever
-			if <height to jump=0>
-				if blocked top=1
-					set height to jump to 0
+			if <(height to jump)>(0)>
+				if <(blocked top)=(1)>
+					set [height to jump v] to (0)
 				else
-					change y by 10
-					change height to jump by -10
-				end if
+					change y by (10)
+					change [height to jump v] by (-10)
+				end 
 			else
-				if <blocked bottom=0>
-					change by -2
-				end if
-			end if
-		end forever
+				if <(blocked bottom)=(0)>
+					change y by (-2)
+				end 
+			end 
+		end 
 ```
 
 ## Test your project {.flag}
@@ -144,14 +145,14 @@ We’ll put three keys around the cavern. Felix collects a key by touching it. W
 + The escape pod has a slightly more complex script. It uses a `forever if` block to wait for __keys to get__ to become __zero__. As soon as that happens, the pod starts flashing (to show the player that they can escape). Then we can use another `if` to detect when Felix touches the flashing escape pod. As soon as he does, the pod `broadcasts` a win message and says “You win!”. Felix responds to the win message by hiding.
 ```scratch
 	when FLAG clicked
-		go to x:220 y:-125
-		forever if <key to get = 0>
-			change color effect by 25
-			if <touching Felix?>
-				broadcast win
-				say You win
-			end if
-		end forever if
+		go to x:(220) y:(-125)
+		forever if <(key to get) = (0)>
+			change [color v] effect by (25)
+			if <touching [Felix v]?>
+				broadcast [win v]
+				say [You win!]
+			end
+		end 
 ```
 
 ## Test Your Project {.flag}
@@ -174,20 +175,20 @@ __Let’s do the roving baddie first. It will just move along a fixed path.__
 + Put three `if` statements inside a forever loop. The first if checks whether the baddie is touching Felix; if it is, it `broadcasts` the __lose__ message. The other two `if`’s check whether the baddie has reached the end of its path; if it has, the baddie turns round. Finally, the baddie takes two steps. (Using __move__ instead of __glide__ blocks makes it easier to control how fast the baddie goes.) __We don’t need to use the collision detector sprites here, as we don’t care which side of Felix touches the baddie.__
 ```scratch
 	when FLAG clicked
-		go to x:-50 y:47
-		point in direction -90
+		go to x:(-50) y:(47)
+		point in direction (-90 v)
 		forever
-			if <touching Felix?>
-				broadcast lose
-			end if
-			if x position > -200
-				point in direction 90
-			end if
-			if x position > -50
-				point in direction -90
-			end if
-			move 2 steps
-		end forever
+			if <touching [Felix v]?>
+				broadcast [lose v]
+			end 
+			if <(x position) > (-200)>
+				point in direction (90 v)
+			end 
+			if <(x position) > (-50)>
+				point in direction (-90 v)
+			end 
+			move (2) steps
+		end 
 ```
 + Add scripts to both Felix and the escape pod to respond to the lose message. Felix should just hide in response. The pod should say [You lose!].
 
@@ -276,23 +277,23 @@ __Before you do anything, save your work__. You’ll be making changes throughou
 __Keep testing your game after every change. Keep testing the bits you’ve already changed, to make sure they keep working.__ We won’t tell you how to make all the changes. However, we’ll show you Felix’s revised scripts to show you the sort of thing you need to do.
 
 ```scratch
-	when I receive [start level]
-		go to x:(item 'current level' of [xs])y:(item `current level` of [ys])
-		point in direction (item `current level` of [directions])
+when I receive [start level v]
+		go to x:(item (current level) of [xs v])y:(item (current level) of [ys v])
+		point in direction (item (current level) of [directions v])
 		show
 		forever
-			if <<key[left arrow]pressed?>and `blocked left`=[0]>
-				point in direction -90
-				move 2 steps
-			end if
-			if <<key[right arrow]pressed?>and `blocked right`=[0]>
-				point in direction 90
-				move 2 steps
-			end if
-			if <<key[space]pressed?>and `blocked bottom`=[1]>
-				set [height to jump]to[100]
-			end if
-		end forever
+			if <<key[left arrow v]pressed?>and <(blocked left)=(0)>
+				point in direction (-90)
+				move (2) steps
+			end 
+			if <<key[right arrow v]pressed?>and <(blocked right)=(0)>
+				point in direction (90)
+				move (2) steps
+			end 
+			if <<key[space v]pressed?>and <(blocked bottom) =(1)>
+				set [height to jump v]to[100]
+			end 
+		end 
 ```
 
 You’ll notice that the initial __x__, __y__, and __direction__ for Felix are set with lists. We created some lists for each sprite (each list private to that sprite) to store all the values we need for that sprite. You need one list for each thing you store. You don’t have to use lists: you can use `if` blocks that check the current level and do the right thing depending on its value.
@@ -300,27 +301,27 @@ You’ll notice that the initial __x__, __y__, and __direction__ for Felix are s
 And here’s the escape pod, which handles all the level-changing:
 
 ```scratch
-	when FLAG clicked
-		set [current level] to 1
-		broadcast [start level]
+		when FLAG clicked
+		set [current level v] to [1]
+		broadcast [start level v]
 
-	when I receive [start level]
-		go to x:(item current level of [xs])y:(item current level of [ys])
+	when I receive [start level v]
+		go to x:(item (current level) of [xs v])y:(item (current level) of [ys v])
 		forever
-			if <if keys to get = 0>
-			change [color]effect by [25]
-				if <touching [Felix]?>
-					if <current level = `length of [keys per level]>
+			if <(keys to get) = [0]>
+			change [color v]effect by [25]
+				if <touching [Felix v]?>
+					if <(current level) = (length of [keys per level v])>
 						say [You win!]
-						broadcast [win]
+						broadcast [win v]
 						stop all
 					else
-						change [current level] by 1
-						broadcast [start level]
-					end if
-				end if
-			end if
-		end forever
+						change [current level v] by [1]
+						broadcast [start level v]
+					end 
+				end 
+			end 
+		end 
 ```
 
 ## Task 2: Play!
