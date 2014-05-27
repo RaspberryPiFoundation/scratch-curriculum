@@ -131,15 +131,15 @@ We’ve got a ghost, but now we want to make a game! We want to score points eve
 	   change [score v] by (1)
 ```
 
-+ Switch to the **Stage** and create a **new variable** called **timer**.
-+ Add a new script that occurs when the green flag is clicked to set `timer` { .blockorange } to **30** and reset the score to **0**. Then use a `repeat until` { .blockyellow } block to wait a second and then reduce `timer` { .blockorange } by one. This should repeat until timer is 0, at which point use `stop all` { .blockyellow } to stop the game.
++ Switch to the **Stage** and create a **new variable** called **time_left**.
++ Add a new script that occurs when the green flag is clicked to set `time_left` { .blockorange } to **30** and reset the score to **0**. Then use a `repeat until` { .blockyellow } block to wait a second and then reduce `time_left` { .blockorange } by one. This should repeat until `time_left` is 0, at which point use `stop all` { .blockyellow } to stop the game.
 ```blocks
 	when FLAG clicked
-    	set [timer v] to (30)
+    	set [time_left v] to (30)
     	set [score v] to (0)
-    	repeat until <(timer) = [0]>
+    	repeat until <(time_left) = [0]>
     		wait (1) secs
-    		change [timer v] by (-1)
+    		change [time_left v] by (-1)
     	end
     	stop [all v]
 ```
