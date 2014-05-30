@@ -30,14 +30,14 @@ We’ll have four sprites that follow Frantic Felix around. __Each will detect c
 + Create four `variables` (for all sprites): __blocked top__, __blocked bottom__, __blocked right__, and __blocked left__.
 + Give each of the detector sprites this script:
 ``` scratch
-when FLAG clicked
+	when FLAG clicked
 		forever
 			go to [Felix v]
 			if <color [] is touching [] ?>
 				set [blocked right v] to (1)
 			else
-			set [blocked right v] to (0)
-		
+				set [blocked right v] to (0)
+			end
 ```
 + Change the variables for each detector. The bottom detector needs an __or__ block so that it sets blocked bottom if it’s touching either green or black. __Hint__: It’s easier to pick the colours in one sprite, then drag the script to the other sprites and change the variables being set. It saves having to find the right colours four times. At the moment, Felix just needs a script to follow the mouse pointer forever.
 
@@ -56,32 +56,32 @@ You should see Felix follow the mouse pointer around, surrounded by a red rectan
 + We could animate Felix’s legs in the same block, but they end up moving too fast. Do the animation in a separate `forever` block under another when __green flag clicked__ hat.
 + The final thing to do is __falling__. If there’s no solid ground under Felix, we want him to fall. That’s another `forever loop` under another __green flag__ hat.
 ```scratch
-when FLAG clicked //handle moving
+	when FLAG clicked //handle moving
 		forever
 			if <<key [left arrow v] pressed?> and <(blocked left)=(0)>
 				point in direction (-90 v)
 				move (2) steps
-end
+			end
 
-			
+
 			if <<key [right arrow v] pressed?> and <(blocked left)=(0)>
 				point in direction (90 v)
 				move (2) steps
-end
-			
+			end
+
 
 	when FLAG clicked //[animate Felix]
 		forever if <<key [left arrow v] pressed?>or<key [right arrow v] pressed?>>
 			next costume
 			wait (0.1) secs
-		end 
+		end
 
 	when FLAG clicked //handle falling
 		forever
 			if <(blocked bottom)=(0)>
 				change  y by (-2)
-			end 
-		end 
+			end
+		end
 ```
 + We also want the collision detectors to disappear. We can’t just use a `hide` block, because then they won’t detect any collisions. Instead, put a `set [ghost] effect to 100` right under the green flag hat in each collision detector. That makes the sprite invisible without hiding it.
 
@@ -119,13 +119,13 @@ The final part of making Felix move is jumping. Let’s have the __space key__ m
 				else
 					change y by (10)
 					change [height to jump v] by (-10)
-				end 
+				end
 			else
 				if <(blocked bottom)=(0)>
 					change y by (-2)
-				end 
-			end 
-		end 
+				end
+			end
+		end
 ```
 
 ## Test your project {.flag}
@@ -152,7 +152,7 @@ We’ll put three keys around the cavern. Felix collects a key by touching it. W
 				broadcast [win v]
 				say [You win!]
 			end
-		end 
+		end
 ```
 
 ## Test Your Project {.flag}
@@ -180,15 +180,15 @@ __Let’s do the roving baddie first. It will just move along a fixed path.__
 		forever
 			if <touching [Felix v]?>
 				broadcast [lose v]
-			end 
+			end
 			if <(x position) > (-200)>
 				point in direction (90 v)
-			end 
+			end
 			if <(x position) > (-50)>
 				point in direction (-90 v)
-			end 
+			end
 			move (2) steps
-		end 
+		end
 ```
 + Add scripts to both Felix and the escape pod to respond to the lose message. Felix should just hide in response. The pod should say [You lose!].
 
@@ -285,15 +285,15 @@ when I receive [start level v]
 			if <<key[left arrow v]pressed?>and <(blocked left)=(0)>
 				point in direction (-90)
 				move (2) steps
-			end 
+			end
 			if <<key[right arrow v]pressed?>and <(blocked right)=(0)>
 				point in direction (90)
 				move (2) steps
-			end 
+			end
 			if <<key[space v]pressed?>and <(blocked bottom) =(1)>
 				set [height to jump v]to[100]
-			end 
-		end 
+			end
+		end
 ```
 
 You’ll notice that the initial __x__, __y__, and __direction__ for Felix are set with lists. We created some lists for each sprite (each list private to that sprite) to store all the values we need for that sprite. You need one list for each thing you store. You don’t have to use lists: you can use `if` blocks that check the current level and do the right thing depending on its value.
@@ -318,10 +318,10 @@ And here’s the escape pod, which handles all the level-changing:
 					else
 						change [current level v] by [1]
 						broadcast [start level v]
-					end 
-				end 
-			end 
-		end 
+					end
+				end
+			end
+		end
 ```
 
 ## Task 2: Play!
