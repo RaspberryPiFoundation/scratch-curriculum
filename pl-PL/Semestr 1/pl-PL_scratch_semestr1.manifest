@@ -33,8 +33,9 @@
             "note":     "06 Pustynny wyscig/06 Pustynny Wyscig - Informacje.md"
         },
         {
-            "filename": "07 Co to jest/Co to jest.md",
-            "number": 7
+            "number": 7,
+            "filename": "07 Co to jest/07 Co to jest.md",
+            "note":     "07 Co to jest/07 Co to jest - Informacje.md"
         },
         {
             "filename": "08 Kolorowe kredki/Kolorowe kredki.md",
