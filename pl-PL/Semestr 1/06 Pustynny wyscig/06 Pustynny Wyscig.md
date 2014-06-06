@@ -11,6 +11,7 @@ materials: "*.sb"
 
 Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierzę, które pierwsze dotrze do krawędzi ekranu, wygrywa.
 
+![screenshot](Pustynny-wyscig.png)
 
 # Krok 1: Stwórz scenę i dodaj duszki {.activity}
 
