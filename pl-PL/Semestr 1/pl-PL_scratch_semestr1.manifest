@@ -33,13 +33,14 @@
             "note":     "06 Pustynny wyscig/06 Pustynny Wyscig - Informacje.md"
         },
         {
-            "number": 7,
+            "number":   7,
             "filename": "07 Co to jest/07 Co to jest.md",
             "note":     "07 Co to jest/07 Co to jest - Informacje.md"
         },
         {
-            "filename": "08 Kolorowe kredki/Kolorowe kredki.md",
-            "number": 8
+            "number":   8,
+            "filename": "08 Kolorowe kredki/08 Kolorowe kredki.md",
+            "note":     "08 Kolorowe kredki/08 Kolorowe kredki - Informacje.md"
         },
         {
             "filename": "09 Stworz wlasna gre/StworzWlasnaGre.md",
