@@ -1,4 +1,0 @@
-#OPMERKINGEN VOOR CLUBLEIDERS
-##(Fruitautomaat)###Introductie:Dit is een eenvoudig spel waarin drie sprites van uiterlijk veranderen. Je moet ze stoppen wanneer ze het zelfde uiterlijk hebben (net zoals bij een fruitautomaat!).###VaardighedenDit project behandelt- Uiterlijken veranderen- Een loop maken- Een loop laten stoppen als je klikt###BronnenDit project gebruikt alleen standaard Scratch-plaatjes die meegeleverd worden met Scratch.###Vereiste Scratch Cards:Zend signaal###BasisoefeningenStap 1: Maak een sprite die van uiterlijk verandert 
-Stap 2: Laat het plaatje veranderenStap 3: Zorg er voor dat het veranderen stopt als je er op klikt 
-Stap 4: De andere sprites maken###Uitdagingen1. Maak het spel moeilijker2. Maak het spel makkelijker en moeilijker als je langer speelt3. Controleer of alle sprites gestopt zijn op het zelfde uiterlijk 
