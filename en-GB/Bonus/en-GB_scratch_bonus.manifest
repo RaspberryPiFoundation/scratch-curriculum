@@ -1,0 +1,15 @@
+{
+    "description": "Here’s a bonus list of cool scratch games.",
+    "id": "scratch_bonus",
+    "language": "en-GB",
+    "number": 1,
+    "title": "Bonus Scratch Games",
+
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Scratch Table Football/Scratch Table Football.md",
+            "pdf": "Scratch Table Football/Scratch Table Football.pdf"
+        }
+    ]
+}
