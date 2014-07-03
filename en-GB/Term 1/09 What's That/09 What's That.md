@@ -95,15 +95,15 @@ So far we’ve got our random picture appearing slowly, and a score which decrea
 
 First, we need to know what the right answer is.
 
-+ __Create a new variable__ called __answer__. Make sure it’s for all sprites.
-+ Change the script you’ve written to record the right answer. Add the `set [answer] to costume #` {.blockorange} blocks just after the first repeat loop:
++ __Create a new variable__ called __right answer__. Make sure it’s for all sprites.
++ Change the script you’ve written to record the right answer. Add the `set [right answer] to costume #` {.blockorange} blocks just after the first repeat loop:
 ```blocks
     when FLAG clicked
     hide
     repeat (pick random (1) to (5)
         next costume
     end
-    set [answer v] to (costume #)
+    set [right answer v] to (costume #)
     set [score v] to (110)
     repeat until ((score) = (0))
         change [score v] by (-10)
@@ -128,7 +128,7 @@ Now we want to have each sprite respond to being clicked and do something depend
 + Add this script to the answer1 sprite:
 ```blocks
     when this sprite clicked
-        if ((answer) = (1)
+        if ((right answer) = (1))
             broadcast [won v]
         else
             hide
@@ -168,7 +168,7 @@ To fix the second problem, we need to stop the __question sprite__’s repeat un
         repeat (pick random (1) to (5)
             next costume
         end
-        set [answer v] to (costume)
+        set [right answer v] to (costume)
         set [score v] to (110)
         set [won v] to (0)
         repeat until <<(score) = (0)> or <(won) = (1)>>
