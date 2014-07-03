@@ -104,7 +104,7 @@
             "pdf":       "03 Frantic Felix/For Students/03 Frantic Felix.pdf",
             "note":      "03 Frantic Felix/For Leaders/03 Frantic Felix - Notes.md",
             "note_pdf":  "03 Frantic Felix/For Leaders/03 Frantic Felix - Notes.pdf",
-            "materials": "03 Frantic Felix/For Leaders/Scratch Files/*.sb",
+            "materials": ["03 Frantic Felix/For Leaders/Scratch Files/*.sb", "03 Frantic Felix/For Leaders/Resources/*"],
 
             "extras": [
                 {
