@@ -20,8 +20,8 @@ Zaczniemy od stworzenia kredki, która rysuje po scenie.
 ## Zadania do wykonania {.check}
 
 + Rozpocznij nowy projekt w Scratchu. Skasuj kota, klikając na nim prawym przyciskiem myszy i wybierając __usuń__.
-+ Kliknij na __Scenę__ i przejdź do karty __Tła__. Dodaj tło z pliku __Zasoby\tablica.png__.
-+ Stwórz nowego duszka o nazwie __zielona-kredka__, wybierając plik __Zasoby\zielona-kredka.png__.
++ Kliknij na __Scenę__ i przejdź do karty __Tła__. Dodaj tło z pliku __Zasoby\tablica__.
++ Stwórz nowego duszka o nazwie __zielona-kredka__, wybierając plik __Zasoby\zielona-kredka__.
 + Przejdź na kartę z __kostiumami__ i kliknij na edycję kostiumu. W edytorze obrazów zmień centrum kostiumu na rysik kredki. Aby to zrobić, kliknij __Ustaw środek kostiumu__ i przesuń punkt przecięcia linii na ekranie, aby był na końcu rysika.
 + Spraw, aby kredka podążała za kursorem myszy. Skorzystaj z bloków `zawsze` {.blockyellow} oraz `idź do` {.blockblue}. 
 ```blocks
@@ -82,7 +82,7 @@ Zamiast uruchamiać cały projekt ponownie, aby wyczyścić ekran, dodajmy przyc
 
 ## Zadania do wykonania {.check}
 
-+ Stwórz nowego duszka korzystając z kostiumu z pliku __Zasoby/przycisk-wyczysc.png__.
++ Stwórz nowego duszka korzystając z kostiumu z pliku __Zasoby/przycisk-wyczysc__.
 + Zmień nazwę duszka na __wyczyść__.
 + Przesuń duszka do dolnego lewego rogu sceny.
 + Dodaj poniższy skrypt:
@@ -105,7 +105,7 @@ Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać k
 
 ## Zadania do wykonania {.check}
 
-+ Dodaj nowego duszka i nazwij go __czerwony__. Użyj kostiumu z pliku __Zasoby/czerwony-kolor.gif__.
++ Dodaj nowego duszka i nazwij go __czerwony__. Użyj kostiumu z pliku __Zasoby/czerwony-kolor__.
 + Ustaw go na dole ekranu obok przycisku __wyczyść__.
 + Po wciśnięciu, duszek czerwony powinien nadawać wiadomość __czerwony__.
 ```blocks
@@ -115,7 +115,7 @@ Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać k
 
 __Tak, to wszystko, co ma robić ten duszek. Całą trudną robotą zajmuje się kredka.__
 
-Przejdź do duszka-kredki i zaimportuj kostium z pliku __Zasoby/czerwona-kredka.png__. Ustaw środek kostiumu na końcu rysika tak jak dla oryginalnego kostiumu.
+Przejdź do duszka-kredki i zaimportuj kostium z pliku __Zasoby/czerwona-kredka__. Ustaw środek kostiumu na końcu rysika tak jak dla oryginalnego kostiumu.
 
 + Dodaj nowy skrypt do kredki. Kiedy kredka otrzyma wiadomość __czerwony__, powinna zmienić swój kostium oraz zmienić kolor linii. __Wskazówka:__ jeżeli klikniesz na kolorowy kwadrat bloku `ustaw kolor pisaka na` {.blockgreen}, kursor zmieni się w pipetę – możesz nią kliknąć na czerwonym duszku, aby upewnić się, że używasz tego samego odcienia czerwonego.
 ```blocks	
@@ -196,7 +196,7 @@ Czy możesz ciągle rysować po tablicy? Możesz rysować poza tym obszarem? Co 
 
 __Super, że możemy już rysować, ale przydałoby się dodać gumkę do poprawiania drobnych błędów.__ Możemy to zrobić dodając nową kredkę, która rysuje na szaro (czyli w tym samym kolorze, co tło).
 
-Dodaj nowego duszka i wybierz dla niego kostium z pliku __Zasoby/gumka.png__. Zmniejsz go, aby zmieścił się na dole ekranu i pasował do pozostałych przycisków. Nowy przycisk powinien działać tak samo, jak poprzednie i nadawać informacje, że jest gumką.
+Dodaj nowego duszka i wybierz dla niego kostium z pliku __Zasoby/gumka__. Zmniejsz go, aby zmieścił się na dole ekranu i pasował do pozostałych przycisków. Nowy przycisk powinien działać tak samo, jak poprzednie i nadawać informacje, że jest gumką.
 
 Duszek-kredka powinien reagować na wiadomość gumki i zmieniać kolor na szary (pamiętaj, że możesz użyć pipetę, aby wybrać odpowiedni kolor z tła). Duszek potrzebuje też nowy kostium – użyj tej samej gumki, co do przycisku wcześniej. __Pamiętaj, aby ustawić środek duszka na jego końcu__.
 
@@ -239,8 +239,8 @@ __Dodajmy specjalną kredkę, który rysuje we wszystkich kolorach tęczy.__ Zwy
 
 __Na początek dodaj jednak przycisk wyboru tęczowego koloru i tęczowy kostium dla duszka-kredki:__
 
-+ __Dodaj nowego duszka z wyborem koloru__ na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu z pliku 'Zasoby/teczowy-kolor.gif' i każ mu nadawać wiadomość __tęcza__ po kliknięciu.
-+ Dodaj kostium z pliku 'Zasoby/teczowa-kredka.png' do duszka-kredki.
++ __Dodaj nowego duszka z wyborem koloru__ na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu z pliku 'Zasoby/teczowy-kolor' i każ mu nadawać wiadomość __tęcza__ po kliknięciu.
++ Dodaj kostium z pliku 'Zasoby/teczowa-kredka' do duszka-kredki.
 
 Potrzebujesz zbudować skrypt, który będzie zmieniał kolor kredki wiele razy w ciągu sekundy, aby oddać efekt tęczy. Zmienianie koloru o 5 co 0,05 sekundy działa całkiem dobrze, ale przetestuj inne wartości. Skorzystaj z bloku `zmień kolor pisaka o 5` {.blockgreen}.
 
