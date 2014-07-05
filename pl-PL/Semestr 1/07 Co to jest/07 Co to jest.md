@@ -11,7 +11,7 @@ materials: "*.sb"
 
 Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!
 
-![screenshot](cotojest.png)
+![screenshot](Co-to-jest.png)
 
 # Krok 1: Wyświetl różne obrazki na tablicy {.activity}
 
@@ -27,11 +27,11 @@ __Chcemy pokazać na tablicy kilka różnych obrazków.__
 
 + Wyświetlmy teraz jakiś przypadkowy obrazek. Stwórz poniższy skrypt:
 
-```blocks
-    kiedy kliknięto zieloną FLAGĘ
-    powtórz (losuj od (1) do (5)) razy
-        następny kostium
-```
+    ```blocks
+        kiedy kliknięto zieloną FLAGĘ
+        powtórz (losuj od (1) do (5)) razy
+            następny kostium
+    ```
 
 ## Przetestuj swój projekt {.flag}
 __Kliknij zieloną flagę.__
@@ -56,21 +56,21 @@ W miarę jak liczba punktów będzie się zmniejszać z czasem, obrazek będzie 
 + Kliknij paletę Dane i stwórz zmienną o nazwie 'Punkty'
 + Zmień skrypt, aby wyglądał tak jak ten poniżej:
 
-```blocks
-    kiedy kliknięto zieloną FLAGĘ
-    ukryj
-    powtórz (losuj od (1) do (5)) razy
-        następny kostium
-    koniec
-    ustaw [Punkty v] na (110)
-    powtarzaj aż ((Punkty) = (0))
-        zmień [Punkty v] o (-10)
-        ustaw efekt [pikselizacja v] na (Punkty)
-        ustaw efekt [kolor v] na (Punkty)
-        pokaż
-        czekaj (1) s
-    koniec
-```
+    ```blocks
+        kiedy kliknięto zieloną FLAGĘ
+        ukryj
+        powtórz (losuj od (1) do (5)) razy
+            następny kostium
+        koniec
+        ustaw [Punkty v] na (110)
+        powtarzaj aż ((Punkty) = (0))
+            zmień [Punkty v] o (-10)
+            ustaw efekt [pikselizacja v] na (Punkty)
+            ustaw efekt [kolor v] na (Punkty)
+            pokaż
+            czekaj (1) s
+        koniec
+    ```
 
 Nie zapomnij dodać bloku 'ukryj' {.blockpurple} na początku skryptu, `ustawić Punkty na 110` {.blockorange} oraz wszystkiego poniżej.
 
@@ -101,22 +101,22 @@ Najpierw musimy wiedzieć, która odpowiedź jest poprawna.
 + Stwórz nową zmienną 'dla każdego duszka' i nazwij ją __odpowiedź__.
 + Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok `ustaw [odpowiedź] na kostium #` {.blockorange} zaraz za pierwszą pętlą 'powtórz':
 
-```blocks
-    kiedy kliknięto zieloną FLAGĘ
-    ukryj
-    powtórz (losuj od (1) do (5)) razy
-        następny kostium
-    koniec
-    ustaw [odpowiedź v] na (kostium #)
-    ustaw [Punkty v] na (110)
-    powtarzaj aż ((Punkty) = (0))
-        zmień [Punkty v] o (-10)
-        ustaw efekt [pikselizacja v] na (Punkty)
-        ustaw efekt [kolor v] na (Punkty)
-        pokaż
-        czekaj (1) s
-    koniec
-```
+    ```blocks
+        kiedy kliknięto zieloną FLAGĘ
+        ukryj
+        powtórz (losuj od (1) do (5)) razy
+            następny kostium
+        koniec
+        ustaw [odpowiedź v] na (kostium #)
+        ustaw [Punkty v] na (110)
+        powtarzaj aż ((Punkty) = (0))
+            zmień [Punkty v] o (-10)
+            ustaw efekt [pikselizacja v] na (Punkty)
+            ustaw efekt [kolor v] na (Punkty)
+            pokaż
+            czekaj (1) s
+        koniec
+    ```
 
 __Teraz musimy dodać duszki, które gracz będzie mógł kliknąć.__
 
@@ -131,21 +131,21 @@ Powinniśmy teraz mieć pięć duszków w rzędzie pod tablicą, każdy z innym 
 Teraz zmienimy sposób, w jaki duszki będą reagować na kliknięcia myszką. Dalsze akcje będą zależeć od tego, czy odpowiedź jest poprawna.
 
 + Dodaj poniższy skrypt do duszka 'odpowiedź1':
-```blocks
-    kiedy duszek kliknięty
-    jeżeli ((odpowiedź) = (1)) to
-        nadaj [wygrana v]
-    w przeciwnym razie
-        ukryj
-```
+    ```blocks
+        kiedy duszek kliknięty
+        jeżeli ((odpowiedź) = (1)) to
+            nadaj [wygrana v]
+        w przeciwnym razie
+            ukryj
+    ```
 
 + Przeciągnij ten skrypt na pozostałe duszki odpowiedzi. __Dla każdego duszka, zmień 1 na 2, 3, itd.__
 + Teraz musimy dodać coś, co będzie reagować na naszą wiadomość 'wygrana'. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:
 
-```blocks
-    kiedy otrzymam [wygrana v]
-    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))
-```
+    ```blocks
+        kiedy otrzymam [wygrana v]
+        powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))
+    ```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -159,38 +159,38 @@ __Kliknij zieloną flagę.__
 Podczas testów zauważysz pewnie dwa problemy. Po pierwsze, duszki z niepoprawnymi odpowiedziami nie wracają na ekran po rozpoczęciu nowej gry. Po drugie, liczba punktów nie zatrzymuje się przy kliknięciu na poprawną odpowiedź.
 
 + Aby naprawić pierwszy problem, dodaj poniższy skrypt do wszystkich duszków odpowiedzi:
-```blocks
-    kiedy kliknięto zieloną FLAGĘ
-    pokaż
-```
+    ```blocks
+        kiedy kliknięto zieloną FLAGĘ
+        pokaż
+    ```
 
 Aby naprawić drugi problem, trzeba zatrzymać pętlę 'powtórz' na duszku odpowiedzi po kliknięciu poprawnej odpowiedzi. Wymaga to nowej zmiennej. Ustaw ją na __0__ po rozpoczęciu gry, a potem na __1__ po wygraniu gry.
 
 + Stwórz nową zmienną i nazwij ją 'wygrano?'
 + Zmień istniejące skrypty, aby wyglądały tak jak poniżej:
 
-```blocks
-    kiedy kliknięto zieloną FLAGĘ
-    ukryj
-    powtórz (losuj od (1) do (5)) razy
-        następny kostium
-    koniec
-    ustaw [odpowiedź v] na (kostium #)
-    ustaw [Punkty v] na (110)
-    ustaw [wygrano? v] na (0)
-    powtarzaj aż (((Punkty) = (0)) lub ((wygrano?) = (1))
-        zmień [Punkty v] o (-10)
-        ustaw efekt [pikselizacja v] na (Punkty)
-        ustaw efekt [kolor v] na (Punkty)
-        pokaż
-        czekaj (1) s
-    koniec
-
-    kiedy otrzymam [wygrana v]
-    ustaw [wygrano? v] na (1)
-    wyczyść efekty graficzne
-    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))
-```
+    ```blocks
+        kiedy kliknięto zieloną FLAGĘ
+        ukryj
+        powtórz (losuj od (1) do (5)) razy
+            następny kostium
+        koniec
+        ustaw [odpowiedź v] na (kostium #)
+        ustaw [Punkty v] na (110)
+        ustaw [wygrano? v] na (0)
+        powtarzaj aż (((Punkty) = (0)) lub ((wygrano?) = (1))
+            zmień [Punkty v] o (-10)
+            ustaw efekt [pikselizacja v] na (Punkty)
+            ustaw efekt [kolor v] na (Punkty)
+            pokaż
+            czekaj (1) s
+        koniec
+    
+        kiedy otrzymam [wygrana v]
+        ustaw [wygrano? v] na (1)
+        wyczyść efekty graficzne
+        powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))
+    ```
 
 ## Zapisz swój projekt. {.save}
 

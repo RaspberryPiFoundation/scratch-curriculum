@@ -4,14 +4,14 @@ level: Poziom 1
 language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
-materials: "Feliks-i-Herbert.sb2"
-note: "Informacje dla prowadzacych zajecia.md"
+materials: "*.sb2"
 ...
 
 # Wstęp {.intro}
+
 Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty!
 
-![screenshot](feliks-i-herbert.png)
+![screenshot](Feliks-i-Herbert.png)
 
 # Krok 1: Feliks podąża za kursorem myszy {.activity}
 
@@ -22,7 +22,7 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
 + Kliknij na **scenę** na lewo od duszka, następnie kliknij zakładkę `Tła` {.blocklightgrey}, a później kliknij na obrazek `Wybierz z biblioteki` {.blocklightgrey} i zaimportuj tło „hall” z kategorii „W pomieszczeniu”. Usuń puste tło z listy.
 
 + Kliknij na duszka, następnie kliknij na ikonkę „i” w jego lewym górnym rogu. Zmień nazwę duszka na **Feliks**.
-+ Upewnij się, że Feliks obraca się tylko w lewo i prawo, wciskając ten przycisk:
++ Upewnij się, że Feliks obraca się tylko w lewo i prawo, wciskając ten przycisk: <img alt="" class="inline" src="flip_arrows.png">
 + **Stwórz poniższy skrypt**:
 
     ```blocks
@@ -31,7 +31,7 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
             ustaw w stronę [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
-            zagraj bęben (3 v) przez (0.3) taktów
+            zagraj bębenkiem (3 v) przez (0.3) taktów
         koniec
     ```
 
@@ -87,7 +87,7 @@ Czy Herbert podąża za kursorem myszy? Czy Feliks goni Herberta?
         ustaw w stronę [wskaźnik myszy v]
         przesuń o (10) kroków
         następny kostium
-        zagraj bęben (3 v) przez (0.3) taktów
+        zagraj bębenkiem (3 v) przez (0.3) taktów
         jeżeli <dotyka [Herbert v]?> to
           powiedz [Mam cię!] przez (1) s
         koniec
@@ -116,10 +116,10 @@ Czy Feliks mówi, że złapał Herberta?
             ustaw w stronę [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
-            zagraj bęben [3 v] przez (0.3) taktów
+            zagraj bębenkiem [3 v] przez (0.3) taktów
             jeżeli <dotyka [Herbert v]?> to
                 nadaj [złapany v]
-                zagraj bęben [17 v] przez (0.2) taktów
+                zagraj bębenkiem [17 v] przez (0.2) taktów
                 czekaj (1) s
             koniec
         koniec

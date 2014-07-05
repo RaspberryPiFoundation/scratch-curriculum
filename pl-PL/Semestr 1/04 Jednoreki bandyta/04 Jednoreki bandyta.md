@@ -5,14 +5,13 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb"
-note: "Informacje dla prowadzacych zajecia.md"
 ...
 
 # Wstęp {.intro}
 
 Zrobimy prostą grę z trzema duszkami, które się zmieniają w trakcie gry. Twoje zadanie polega na zatrzymaniu tych duszków w taki sposób, aby wszystkie miały taki sam obrazek (jak w jednorękim bandycie!).
 
-![screenshot](jednoreki-bandyta.png)
+![screenshot](Jednoreki-bandyta.png)
 
 # Krok 1: Tworzenie duszka, który zmienia kostiumy {.activity}
 

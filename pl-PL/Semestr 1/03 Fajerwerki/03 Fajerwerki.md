@@ -5,13 +5,12 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb"
-note: "Informacje dla prowadzacych zajecia.md"
 ...
 
 # Wstęp {.intro}
 Ta interaktywna zabawka pokazuje wybuchające fajerwerki i odtwarza dźwięk wybuchu przy każdym kliknięciu.
 
-![screenshot](fajerwerki.png)
+![screenshot](Fajerwerki.png)
 
 # Krok 1: Stwórz rakietę, która leci w kierunku kursora myszki {.activity}
 __Zaimportujmy wszystkie obrazki potrzebne do gry__
