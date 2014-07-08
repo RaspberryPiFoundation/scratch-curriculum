@@ -31,7 +31,7 @@ Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będzies
             ustaw w stronę [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
-            zagraj bęben (3 v) przez (0.3) taktów
+            zagraj bębenkiem (3 v) przez (0.3) taktów
         koniec
     ```
 
@@ -87,7 +87,7 @@ Czy Herbert podąża za kursorem myszy? Czy Feliks goni Herberta?
         ustaw w stronę [wskaźnik myszy v]
         przesuń o (10) kroków
         następny kostium
-        zagraj bęben (3 v) przez (0.3) taktów
+        zagraj bębenkiem (3 v) przez (0.3) taktów
         jeżeli <dotyka [Herbert v]?> to
           powiedz [Mam cię!] przez (1) s
         koniec
@@ -116,10 +116,10 @@ Czy Feliks mówi, że złapał Herberta?
             ustaw w stronę [wskaźnik myszy v]
             przesuń o (10) kroków
             następny kostium
-            zagraj bęben [3 v] przez (0.3) taktów
+            zagraj bębenkiem [3 v] przez (0.3) taktów
             jeżeli <dotyka [Herbert v]?> to
                 nadaj [złapany v]
-                zagraj bęben [17 v] przez (0.2) taktów
+                zagraj bębenkiem [17 v] przez (0.2) taktów
                 czekaj (1) s
             koniec
         koniec
