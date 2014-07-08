@@ -192,6 +192,7 @@ Czy każda rakieta wybucha w inny sposób i ma inny kolor?
         pokaż
         powtórz (50) razy
             zmień rozmiar o (2)
+        koniec
         ukryj
     ```
 
