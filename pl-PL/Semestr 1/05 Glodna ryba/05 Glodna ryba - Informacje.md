@@ -1,5 +1,5 @@
 ---
-title: Na ryby — Informacje dla prowadzących zajęcia
+title: Głodna ryba — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: ["*.png"]
 ...

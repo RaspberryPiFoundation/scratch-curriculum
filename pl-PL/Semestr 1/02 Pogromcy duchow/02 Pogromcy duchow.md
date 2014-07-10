@@ -4,15 +4,14 @@ level: Poziom 1
 language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
-materials: "Pogromcy duchow.sb"
-note: "Informacje dla prowadzacych zajecia.md"
+materials: "*.sb"
 ...
 
 # Wstęp {.intro}
 
 Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając w duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.
 
-![screenshot](pogromcy-duchow.png)
+![screenshot](Pogromcy-duchow.png)
 
 # Krok 1: Stwórz latającego ducha {.activity}
 

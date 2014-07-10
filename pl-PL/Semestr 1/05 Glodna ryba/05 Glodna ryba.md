@@ -5,14 +5,13 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb", "Zasoby/*.mp3", "Zasoby/*.png"]
-note: "Informacje dla prowadzacych zajecia.md"
 ...
 
 # Wstęp {.intro}
 
 Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu w taki sposób, aby udało jej się zjeść wszystkie rozgwiazdy.
 
-![screenshot](glodna-ryba.png)
+![screenshot](Glodna-ryba.png)
 
 # Krok 1: Stwórz duszka, który goni kursor myszki {.activity}
 __Dodajmy rybę, która pływa po morzu!__
@@ -26,12 +25,12 @@ __Dodajmy rybę, która pływa po morzu!__
 * Kliknij ponownie na niebieską ikonkę **i** i upewnij się, że duszek może obracać się tylko w prawo i lewo.
 * Dodaj skrypt, który każe rybie pływać w kierunku kursora myszki:
 
-```blocks
-    kiedy kliknięto zieloną flagę
-    zawsze
-        ustaw w stronę [wskaźnik myszy v]
-        przesuń o (3) kroków
-```
+    ```blocks
+        kiedy kliknięto zieloną flagę
+        zawsze
+            ustaw w stronę [wskaźnik myszy v]
+            przesuń o (3) kroków
+    ```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -43,13 +42,13 @@ Co się dzieje, jeżeli nie ruszasz kursorem i ryba go złapie? Jak to wygląda?
 
 * Możesz zapobiec takiemu motaniu się ryby, jeżeli każesz jej ruszać się tylko wtedy, kiedy nie jest za blisko kursora (w sekcji `Czujniki` {.blocklightblue} znajdziesz blok `odległość do` {.blocklightblue}).
 
-```blocks
-    kiedy kliknięto zieloną flagę
-    zawsze
-        jeżeli <(odległość do [wskaźnik myszy v]) > (10)> to
-            ustaw w stronę [wskaźnik myszy v]
-            przesuń o (3) kroków
-```
+    ```blocks
+        kiedy kliknięto zieloną flagę
+        zawsze
+            jeżeli <(odległość do [wskaźnik myszy v]) > (10)> to
+                ustaw w stronę [wskaźnik myszy v]
+                przesuń o (3) kroków
+    ```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -67,13 +66,13 @@ Jeżeli chcesz, możesz zmienić liczby w skrypcie. W jaki sposób zmienia to sp
 * Zmniejsz nowego duszka (narzędzie do zmniejszania znajduje się nad Sceną).
 * Dodaj skrypt, który kieruje pływającą rozgwiazdą. Chcemy, aby ruszała się losowo, więc byłoby dobrze, aby najpierw ruszała się trochę do przodu, a potem skręciła albo w lewo, albo w prawo, a potem zaczęła się ruszać od nowa.
 
-```blocks
-    kiedy kliknięto zieloną flagę
-    zawsze
-        przesuń o (2) kroków
-        obróć @ o (losuj od (-20) do (20)) stopni
-        jeżeli na brzegu, odbij się
-```
+    ```blocks
+        kiedy kliknięto zieloną flagę
+        zawsze
+            przesuń o (2) kroków
+            obróć @ o (losuj od (-20) do (20)) stopni
+            jeżeli na brzegu, odbij się
+    ```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -99,17 +98,17 @@ __Chcemy, aby ryba zjadła rozgwiazdę!__ Jak tylko ryba złapie żyjątko, musz
 
 * Na początek sprawmy, aby rozgwiazda znikała po dotknięciu ryby i po 3 sekundach pojawiała się gdzie indziej. Użyjemy bloku `dotyka` {.blocklightblue}, aby sprawdzić, czy rozgwiazda jest w kontakcie z rybą.
 
-```blocks
-    kiedy kliknięto zieloną flagę
-    zawsze
-        przesuń o (2) kroków
-        obróć @ o (losuj od (-20) do (20)) stopni
-        jeżeli na brzegu, odbij się
-        jeżeli <dotyka [Głodna Ryba v]?> to
-            ukryj
-            czekaj (3) s
-            pokaż
-```
+    ```blocks
+        kiedy kliknięto zieloną flagę
+        zawsze
+            przesuń o (2) kroków
+            obróć @ o (losuj od (-20) do (20)) stopni
+            jeżeli na brzegu, odbij się
+            jeżeli <dotyka [Głodna Ryba v]?> to
+                ukryj
+                czekaj (3) s
+                pokaż
+    ```
 
 ## Przetestuj swój projekt {.flag}
 __Spróbuj złapać rozgwiazdę – czy widzisz jakieś problemy?__ Zauważ, że rozgwiazda znika bez względu na to, z której strony dotknie rybę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekundach może od razu zjeść rozgwiazdę – to jest trochę niefajne!
