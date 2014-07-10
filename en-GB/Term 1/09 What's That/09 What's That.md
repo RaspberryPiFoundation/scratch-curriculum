@@ -84,7 +84,7 @@ __Click the green flag.__
 
 ## Save your project {.save}
 
-## Things to try {.try .activity}
+## Things to try {.try}
 
 + __Try changing the starting score and how much it changes each time around the loop.__ How does this change how the picture looks? Does it make it harder or easier to spot what the picture is?
 + __Try some different graphic effects from the pull-down lists.__ How do they change the difficulty?
