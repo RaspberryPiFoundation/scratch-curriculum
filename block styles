@@ -1,0 +1,59 @@
+/*!
+ * Block Styles
+ * Keith Wilson
+ * August 2014
+ */
+
+code {
+  background: #d7d7d7;
+  border-radius: 0.25em;
+  color: #111;
+  font-family: Consolas, monaco, monospace;
+  font-size: 1.0em;
+  padding: 0 0.5em;
+}
+
+/*------------------------------------*\
+    #BLOCK COLORS
+\*------------------------------------*/
+
+code.blockmotion {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(74, 108, 212, 0.8);
+}
+code.blocklooks {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(138, 85, 215, 0.8);
+}
+code.blocksound {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(187, 66, 195, 0.8);
+}
+code.blockpen {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(14, 154, 108, 0.8);
+}
+code.blockdata {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(238, 125, 22, 0.8);
+}
+code.blockevents {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(200, 131, 48, 0.8);
+}
+code.blockcontrol {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(225, 169, 26, 0.8);
+}
+code.blocksensing {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(44, 165, 226, 0.8);
+}
+code.blockoperator {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(92, 183, 18, 0.8);
+}
+code.blockmore {
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(99, 45, 153, 0.8);
+}
