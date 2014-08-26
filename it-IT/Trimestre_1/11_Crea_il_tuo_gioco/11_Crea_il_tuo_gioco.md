@@ -4,7 +4,6 @@ level: Level 3
 language: it-IT
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.pdf"]
 ...
 
 # Introduzione { .intro}
