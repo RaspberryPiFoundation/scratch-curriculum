@@ -1,9 +1,9 @@
 {
-    "description": "Scratch is a simple, fun way to program by dragging and dropping blocks together.",
+    "description": "The Scratch curriculum is currently being updated. If you can't find a project, it may have been moved to another section.",
     "id": "scratch_01",
     "language": "en-GB",
     "number": 1,
-    "title": "Beginner Scratch",
+    "title": "Scratch Term 1",
 
     "projects": [
         {
@@ -13,7 +13,6 @@
             "note":     "01 Felix and Herbert/01 Felix and Herbert - Notes.md",
             "note_pdf": "01 Felix and Herbert/01 Felix and Herbert - Notes.pdf"
         },
-
         {
             "number":   2,
             "filename": "02 Ghostbusters/02 Ghostbusters.md",
@@ -21,7 +20,6 @@
             "note":     "02 Ghostbusters/02 Ghostbusters - Notes.md",
             "note_pdf": "02 Ghostbusters/02 Ghostbusters - Notes.pdf"
         },
-
         {
             "number":   3,
             "filename": "03 Fireworks/03 Fireworks.md",
@@ -29,7 +27,6 @@
             "note":     "03 Fireworks/03 Fireworks - Notes.md",
             "note_pdf": "03 Fireworks/03 Fireworks - Notes.pdf"
         },
-
         {
             "number":   4,
             "filename": "04 Fruit Machine/04 Fruit Machine.md",
@@ -37,7 +34,6 @@
             "note":     "04 Fruit Machine/04 Fruit Machine - Notes.md",
             "note_pdf": "04 Fruit Machine/04 Fruit Machine - Notes.pdf"
         },
-
         {
             "number":   5,
             "filename": "05 Fish Chomp/05 Fish Chomp.md",
@@ -45,7 +41,6 @@
             "note":     "05 Fish Chomp/05 Fish Chomp - Notes.md",
             "note_pdf": "05 Fish Chomp/05 Fish Chomp - Notes.pdf"
         },
-
         {
             "number":   6,
             "filename": "06 Desert Race/06 Desert Race.md",
@@ -53,19 +48,16 @@
             "note":     "06 Desert Race/06 Desert Race - Notes.md",
             "note_pdf": "06 Desert Race/06 Desert Race - Notes.pdf"
         },
-
         {
             "number":   7,
             "filename": "07 Christmas Capers/07 Christmas Capers.md",
             "pdf":      "07 Christmas Capers/07 Christmas Capers.pdf"
         },
-
         {
             "number":   8,
             "filename": "08 Flappy Parrot/08 Flappy Parrot.md",
             "pdf":      "08 Flappy Parrot/08 Flappy Parrot.pdf"
         },
-
         {
             "number":   9,
             "filename": "09 What's That/09 What's That.md",
@@ -73,7 +65,6 @@
             "note":     "09 What's That/09 What's That - Notes.md",
             "note_pdf": "09 What's That/09 What's That - Notes.pdf"
         },
-
         {
             "number":   10,
             "filename": "10 Paint Box/10 Paint Box.md",
@@ -81,7 +72,6 @@
             "note":     "10 Paint Box/10 Paint Box - Notes.md",
             "note_pdf": "10 Paint Box/10 Paint Box - Notes.pdf"
         },
-
         {
             "number":   11,
             "filename": "11 Create Your Own Game/11 Create Your Own Game.md",

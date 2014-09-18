@@ -1,9 +1,9 @@
 {
-    "description": "Here’s a bonus list of cool scratch games.",
+    "description": "The Scratch curriculum is currently being updated. If you can't find a project, it may have been moved to another section.",
     "id": "scratch_bonus",
     "language": "en-GB",
-    "number": 5,
-    "title": "Bonus Scratch Games",
+    "number": 6,
+    "title": "Additional Scratch Projects",
 
     "projects": [
         {
@@ -11,5 +11,6 @@
             "filename": "Scratch Table Football/Scratch Table Football.md",
             "pdf": "Scratch Table Football/Scratch Table Football.pdf"
         }
+
     ]
 }
