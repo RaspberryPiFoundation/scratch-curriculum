@@ -4,6 +4,7 @@ level: Level 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
+materials: ["Ghostbusters.sb2"]
 ...
 
 # Introduction { .intro }
