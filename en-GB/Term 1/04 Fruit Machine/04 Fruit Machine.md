@@ -28,7 +28,7 @@ This is a game that has three sprites that change costume. You have to stop them
 
 Now we’ve got some costumes, we want the sprite to change between them.
 
-# Step 2: Making the picture change { .activity }
+# Step 2: Making the picture change { .activity .new-page }
 
 ## Activity Checklist { .check }
 
@@ -205,7 +205,7 @@ modify our script so that it will work regardless of the order in which the spri
 
 ## Save your project { .save }
 
-# Step 7. Tell the player whether they've won or lost. { .activity }
+# Step 7. Tell the player whether they've won or lost. { .activity .new-page}
 
 The aim of the game is to click on the sprites so they stop while showing the same costume. It would be nice to also display a message that told you whether you'd won or lost.
 

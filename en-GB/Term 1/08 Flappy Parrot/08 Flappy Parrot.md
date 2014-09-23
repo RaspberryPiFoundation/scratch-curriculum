@@ -39,7 +39,7 @@ __Click the green flag__, does Flappy start in the middle of the screen and then
 
 # **Step 2:** Make Flappy fly {.activity}
 
-*Next, we want Flappy to flap upwards when you press the space bar.*
+Next, we want Flappy to flap upwards when you press the space bar.
 
 ## Activity Checklist { .check}
 
@@ -61,11 +61,11 @@ __Click the green flag__, does Flappy start in the middle of the screen and then
 
 __Click the green flag__, are you able to control Flappy with the space bar? Do you notice that sometimes you press the space bar but Flappy doesn't move? We'll fix that next...
 
-## Save your project { .save}
+## Save your project { .save }
 
-# **Step 3:** Fix the controls {.activity}
+# **Step 3:** Fix the controls {.activity .new-page }
 
-*We'd like Flappy to respond every time we press the space bar. But when we push the space bar Flappy begins two loops of movements. If we push the space bar again before these loops have finished, Scratch ignores the second press. To solve this, we'll use a variable to count up how many flaps we need to do.*
+We'd like Flappy to respond every time we press the space bar. But when we push the space bar Flappy begins two loops of movements. If we push the space bar again before these loops have finished, Scratch ignores the second press. To solve this, we'll use a variable to count up how many flaps we need to do.
 
 ## Activity Checklist { .check}
 
@@ -102,7 +102,7 @@ __Click the green flag__, does Flappy now flap once for each time you press the 
 
 # **Step 4:** Add the pipes {.activity}
 
-*Next we'll add some obstacles for Flappy to fly through.*
+Next we'll add some obstacles for Flappy to fly through.
 
 ## Activity Checklist { .check}
 
@@ -122,7 +122,7 @@ __Click the green flag__, does Flappy now flap once for each time you press the 
 
 # **Step 5:** Make the pipes move {.activity}
 
-*Next we'll make the pipes move and arrange them randomly to provide an obstacle course for Flappy.*
+Next we'll make the pipes move and arrange them randomly to provide an obstacle course for Flappy.
 
 ## Activity Checklist { .check}
 
@@ -153,7 +153,7 @@ __Click the green flag__, do pipes appear with gaps to fly through at different 
 
 # **Step 6:** Detect collision with the pipes {.activity}
 
-*To make the game a challenge, the player needs to guide Flappy through the gaps without touching the pipes or the edges of the screen. Now we'll add some blocks to detect if Flappy hits something.*
+To make the game a challenge, the player needs to guide Flappy through the gaps without touching the pipes or the edges of the screen. Now we'll add some blocks to detect if Flappy hits something.
 
 ## Activity Checklist { .check}
 
@@ -184,7 +184,7 @@ __Click the green flag__, does the game end when Flappy touches a pipe or the ed
 
 # **Step 7:** Add scoring {.activity}
 
-*The player should score a point every time Flappy makes it though a pipe. Let's add that next.*
+The player should score a point every time Flappy makes it though a pipe. Let's add that next.
 
 ## Activity Checklist { .check}
 

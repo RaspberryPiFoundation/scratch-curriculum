@@ -55,7 +55,7 @@ Click the green flag.
 + Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1).
 + Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
 
-# Step 2: Add some prey {.activity}
+# Step 2: Add some prey {.activity .new-page }
 
 It's time to make something for the Hungry Fish to try to eat!
 

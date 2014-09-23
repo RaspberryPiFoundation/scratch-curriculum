@@ -206,7 +206,7 @@ Does the eraser rub out lines? Does it work right up to the edges? Can you switc
 
 ## Save your project {.save}
 
-# Step 6: Stamps {.activity}
+# Step 6: Stamps {.activity .new-page }
 
 The next thing to add is a stamp tool, to stamp small pictures on the drawing.
 

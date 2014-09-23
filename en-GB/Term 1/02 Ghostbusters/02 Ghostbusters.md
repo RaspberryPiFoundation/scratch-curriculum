@@ -64,7 +64,7 @@ Click the green flag.
 + Try changing the value of the speed variable to make the ghost fly faster or slower.
 + How would you make the ghost get faster the longer it flies? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
 
-# Step 2: Make the ghost appear & vanish randomly { .activity }
+# Step 2: Make the ghost appear & vanish randomly { .activity .new-page }
 
 To make the game more fun, we want the ghost to appear and vanish randomly. We’ll do that with another script that runs at the same time as the one that moves the ghost. This new script needs to hide the ghost for a random time, then show it for a random time, and repeat that forever (or until the game finishes).
 
@@ -118,7 +118,7 @@ Click the green flag.
 
 + Ask your volunteer if you can record your own sound to play.
 
-# Step 4: Add a score and timer { .activity }
+# Step 4: Add a score and timer { .activity .new-page }
 
 We’ve got a ghost, but now we want to make a game! We want to score points every time we click on the ghost but we also want to have a time limit on the game. We can use a variable for the score and the timer.
 

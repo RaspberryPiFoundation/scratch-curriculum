@@ -85,7 +85,7 @@ Click the green flag, and then press the mouse button over the stage. Click agai
 
 ## Save your project { .save }
 
-# Step 2: Make the rocket explode { .activity }
+# Step 2: Make the rocket explode { .activity .new-page }
 
 ## Activity Checklist { .check }
 
@@ -142,7 +142,7 @@ Send another rocket flying.
 
 ## Save your project { .save }
 
-# Step 3: Make each explosion unique { .activity }
+# Step 3: Make each explosion unique { .activity .new-page }
 
 + Now we can make each explosion even more unique by using the `set color effect` { .blockpurple } block, and have it pick a random colour between **1** and **200** before showing it.
 ```blocks
@@ -196,7 +196,7 @@ Click the green flag.
 
 ## Save your project { .save }
 
-# Step 4: Fixing the Broadcast Bug { .activity }
+# Step 4: Fixing the Broadcast Bug { .activity .new-page }
 
 Remember earlier we had a bug involving holding down the mouse button? This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and move the rocket back to the bottom of the stage. This happens before the explosion has moved to the position of the rocket.
 

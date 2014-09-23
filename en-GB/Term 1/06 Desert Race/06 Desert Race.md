@@ -45,7 +45,7 @@ Do your lioness and parrot move across the screen when you press the ‘A’ and
 
 ## Save your project {.save}
 
-# Step 3: Starting the race {.activity}
+# Step 3: Starting the race {.activity .new-page }
 
 We need to have a way to start the race and to know who has won. __First we create a start button.__
 
@@ -195,7 +195,7 @@ Can you race against a friend, one of you moving the parrot by pressing ‘A’ 
             broadcast [finished v]
 ```
 
-## Test Your Project {.flag}
+## Test Your Project {.flag .new-page }
 
 ## Save your project {.save}
 

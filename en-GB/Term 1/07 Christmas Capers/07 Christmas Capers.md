@@ -71,7 +71,7 @@ __Click the green flag__, do the hills move? Has the issue with the flickering t
 
 ## Save your project { .save}
 
-# Step 2: Falling Presents { .activity}
+# Step 2: Falling Presents { .activity .new-page }
 
 ## Activity Checklist { .check}
 
