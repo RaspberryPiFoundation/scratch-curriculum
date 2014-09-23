@@ -156,7 +156,7 @@ __Note__ to do this you’ll need to use multiple `and` {.blockgreen} operator b
 ```blocks
     clear
     forever
-        if <<(mouse y) > (-120)> and <(mouse y) < (170)> and <(mouse x) > (-230)> and <(mouse x) < (230)>>
+        if <<<<(mouse y) > (-120)> and <(mouse y) < (170) >>and <(mouse x) > (-230)>> and <(mouse x) < (230)>
             go to [mouse-pointer v]
         end
     end
@@ -168,7 +168,7 @@ Since we can’t draw outside of the drawing area, we could hide the pencil tool
     when FLAG clicked
     clear
     forever
-        if <<(mouse y) > (-120)> and <(mouse y) < (170)> and <(mouse x) > (-230)> and <(mouse x) < (230)>>
+        if <<<<(mouse y) > (-120)> and <(mouse y) < (170) >>and <(mouse x) > (-230)>> and <(mouse x) < (230)>
             go to [mouse-pointer v]
             show
             if (mouse down?)
