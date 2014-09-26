@@ -93,6 +93,17 @@
                     "name": "Sound Sampler",
                     "note": "02 Sound Machine/For Students/Scratch Cards/02-04 Sound Machine - Sound Sampler.md",
                     "pdf":  "02 Sound Machine/For Students/Scratch Cards/02-04 Sound Machine - Sound Sampler.pdf"
+                },
+                {
+                    "name": "Record",
+                    "note": "02 Sound Machine/For Students/Scratch Cards/02-05 Sound Machine - Record.md",
+                    "pdf":  "02 Sound Machine/For Students/Scratch Cards/02-05 Sound Machine - Record.pdf"
+                },
+
+                {
+                    "name": "Playback",
+                    "note": "02 Sound Machine/For Students/Scratch Cards/02-06 Sound Machine - Playback.md",
+                    "pdf":  "02 Sound Machine/For Students/Scratch Cards/02-06 Sound Machine - Playback.pdf"
                 }
             ]
         },
@@ -104,21 +115,7 @@
             "pdf":       "03 Frantic Felix/For Students/03 Frantic Felix.pdf",
             "note":      "03 Frantic Felix/For Leaders/03 Frantic Felix - Notes.md",
             "note_pdf":  "03 Frantic Felix/For Leaders/03 Frantic Felix - Notes.pdf",
-            "materials": ["03 Frantic Felix/For Leaders/Scratch Files/*.sb", "03 Frantic Felix/For Leaders/Resources/*"],
-
-            "extras": [
-                {
-                    "name": "Record",
-                    "note": "03 Frantic Felix/For Students/Scratch Cards/03-01 Frantic Felix - Record.md",
-                    "pdf":  "03 Frantic Felix/For Students/Scratch Cards/03-01 Frantic Felix - Record.pdf"
-                },
-
-                {
-                    "name": "Playback",
-                    "note": "03 Frantic Felix/For Students/Scratch Cards/03-02 Frantic Felix - Playback.md",
-                    "pdf":  "03 Frantic Felix/For Students/Scratch Cards/03-02 Frantic Felix - Playback.pdf"
-                }
-            ]
+            "materials": ["03 Frantic Felix/For Leaders/Scratch Files/*.sb", "03 Frantic Felix/For Leaders/Resources/*"]
         }
     ]
 }

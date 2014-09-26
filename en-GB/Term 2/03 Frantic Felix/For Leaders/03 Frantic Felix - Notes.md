@@ -8,11 +8,6 @@ In this project the students will make a platform game like Manic Miner or Mario
 ##Resources
 This project uses assets provided by Code Club so check your folder. Children will create other assets themselves.
 
-##Scratch Cards required:
-
-* Record a sequence
-* Play back a sequence
-
 __Notes on tricky bits and collision detection:__
 
 Platform games, like Manic Miner and Mario Bros, are all about the central figure moving around a world and bumping into things. Some things, like walls and floors, just stop you moving. Some things, like baddies, will kill you. Some things, like keys, you want to collect. Some things are just scenery and don’t affect the game at all.
