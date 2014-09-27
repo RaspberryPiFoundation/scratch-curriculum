@@ -189,7 +189,7 @@ Click the green flag. Does the "Game Over" message appear when you click on Frui
 What happens if you stop Fruit3 before you've clicked on both of the other fruit sprites? Let's
 modify our script so that it will work regardless of the order in which the sprites are stopped.
 
-5. To check to see that **all three** fruit sprites have had their `stopped` { .blockorange } variables set to **YES**, we can use the `and` { . blockgreen } operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time.
+5. To check to see that **all three** fruit sprites have had their `stopped` { .blockorange } variables set to **YES**, we can use the `and` { .blockgreen } operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time.
 
     ```blocks
         when FLAG clicked
