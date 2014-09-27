@@ -187,7 +187,7 @@ Can you race against a friend, one of you moving the parrot by pressing ‘A’ 
     if <<(racing) = [1]> and <(boosted) = [0]>>
         switch to costume [parrot-boost v]
         set [boosted v] to [1]
-        move (4) steps
+        move (30) steps
         if <touching [edge v]?>
              set (racing) to [0]
             play sound [recording1 v]
