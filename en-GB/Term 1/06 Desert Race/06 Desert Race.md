@@ -51,7 +51,7 @@ We need to have a way to start the race and to know who has won. __First we crea
 
 ## Activity Checklist {.check}
 
-+ Add a new sprite from a file. Choose the **button3** sprite which is inside **“Things”**.
++ Add a new sprite from the library. Choose the **button3** sprite which is inside **“Things”**.
 + Edit the costume of the button sprite, add the text **‘start’** to it and click OK. Move the sprite to the middle of the stage.
 + Now add a script that shows the sprite when the project is run:
 ```blocks
