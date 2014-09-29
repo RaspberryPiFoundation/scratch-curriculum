@@ -18,10 +18,10 @@ We are going to make a game of catch with __Felix the cat__ and __Herbert__ the 
 ## Activity Checklist { .check }
 
 + Start a new project.
-+ Click on the **stage** next to the sprite and switch to the `Backdrops` tab, and then click the `Choose Backdrop from library` button and choose the backdrop indoors/hall. Delete the original blank backdrop.
-+ Click on the sprite, and then click on the `i` button to the top left of the Sprite. Change the name of the sprite to **Felix**.
-+ Make sure Felix only points left-right by clicking this button: <img alt="" class="inline" src="flip_arrows.png">
-+ Create this script:
++ Click on the **stage backdrop** next to the sprite and switch to the `Backdrops` tab, and then click the `Choose Backdrop from library` button and choose the backdrop indoors/hall. Delete the original blank backdrop by right clicking on the blank stage backdrop and choose Delete.
++ Click on the sprite Sprite1 in the Sprite Summary Area, and then click on the `i` button to the top left of the Sprite1 in Sprite Summary area. Change the name of the sprite to **Felix**.
++ Make sure Felix only points left-right by clicking this button in the rotation-style option for Felix: <img alt="" class="inline" src="flip_arrows.png">
++ Create this script on the scripts tab for Felix sprite:
 ```blocks
     when FLAG clicked
     forever
@@ -50,9 +50,9 @@ Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.
 ## Activity Checklist { .check }
 
 + Create another sprite using the `choose sprite from library` { .blockgrey } button and selecting **animals/mouse1**.
-+ Change the name of the sprite to **Herbert**.
-+ Switch to the __Costumes__ tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.
-+ Make sure Herbert only points left-right by clicking this button: <img alt="" class="inline" src="flip_arrows.png">
++ Click on the sprite Mouse1 in the Sprite Summary Area, and then click on the `i` button to the top left of the Mouse1 in Sprite Summary area. Change the name of the sprite to **Herbert**.
++ Make sure Herbert only points left-right by clicking this button in the Rotation-style option for Herbert: <img alt="" class="inline" src="flip_arrows.png">
++ Switch to the __Costumes__ tab, then click on the image of the mouse in the Paint Editor area. A box will appear around the costume. Click and Drag a corner of the box to make Herbert smaller than Felix.
 
 + **Give Herbert this script:**
 ```blocks
@@ -96,7 +96,8 @@ We want Felix to know when he’s caught Herbert, and tell us.
 
 Click the green flag.
 
-+ Does Felix say when he’s caught Herbert?
++ What does Felix say when he’s caught Herbert?
++ What do you notice about Felix catching Herbert?
 
 ## Save your project { .save }
 
@@ -122,10 +123,10 @@ Instead of Felix saying something, we want Herbert to turn into a ghost when he�
         end
     end
 ```
-+ Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the `Choose costume from Library button ` { .blocklightgrey }. Select the **fantasy/ghost2-a** costume.
-+ Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.
++ Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and click the `Choose costume from Library button ` { .blocklightgrey }. Select the **fantasy/ghost2-a** costume.
++ Make the ghost costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.
 + Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.
-+ Create a new script for Herbert to turn him into a ghost:
++ Create a new second script for Herbert in the scripts area to turn him into a ghost:
 ```blocks
     when I receive [caught v]
         switch costume to [dead v]
@@ -151,8 +152,8 @@ We’ll start the score at zero and increase it by one every second. If Felix ca
 
 ## Activity Checklist { .check }
 
-+ Make a variable, for all sprites, called Score. Click on `Data` { .blockorange } in the top menu, make a variable and name it `score` { .blockorange }, ensuring that "For all sprites" is selected.
-+ On the stage, create these two scripts:
++ Make a variable, for all sprites, called Score. Click on `Data` { .blockorange } in the top menu, make a variable and name it `score` { .blockorange }, ensuring that "For all sprites" is selected Leave the tick in the box so the Score shows up on the Stage, you can move the score box to where you would like on the hall background.
++ On the stage, create these two scripts in the backdrop's script area:
 ```blocks
     when gf clicked
         set [score v] to [0]
