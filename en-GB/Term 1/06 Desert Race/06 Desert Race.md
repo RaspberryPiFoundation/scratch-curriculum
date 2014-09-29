@@ -51,7 +51,7 @@ We need to have a way to start the race and to know who has won. __First we crea
 
 ## Activity Checklist {.check}
 
-+ Add a new sprite from a file. Choose the **button3** sprite which is inside **“Things”**.
++ Add a new sprite from the library. Choose the **button3** sprite which is inside **“Things”**.
 + Edit the costume of the button sprite, add the text **‘start’** to it and click OK. Move the sprite to the middle of the stage.
 + Now add a script that shows the sprite when the project is run:
 ```blocks
@@ -187,7 +187,7 @@ Can you race against a friend, one of you moving the parrot by pressing ‘A’ 
     if <<(racing) = [1]> and <(boosted) = [0]>>
         switch to costume [parrot-boost v]
         set [boosted v] to [1]
-        move (4) steps
+        move (30) steps
         if <touching [edge v]?>
              set (racing) to [0]
             play sound [recording1 v]
