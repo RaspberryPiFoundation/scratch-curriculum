@@ -23,8 +23,7 @@ This project covers
 This project uses resources found in the Scratch Backgrounds and Costumes folders
 
 #Scratch Cards required:
-
-Timer
++ Timer
 
 #Basic exercises
 * Step 1: Make different things appear on the blackboard 

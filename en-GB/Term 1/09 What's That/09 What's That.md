@@ -4,7 +4,7 @@ level: Level 3
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: "*.sb2"
+materials: ["*.sb2","Timer Scratchcard.pdf"]
 ...
 
 # Introduction {.intro}

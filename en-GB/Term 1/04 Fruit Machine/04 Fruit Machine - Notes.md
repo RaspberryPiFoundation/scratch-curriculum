@@ -18,7 +18,7 @@ This project covers
 This project uses only standard Scratch images found within Scratch.
 
 #Scratch Cards required:
-Broadcast
++ Broadcast
 
 #Basic exercises
 * Step 1: Create a sprite that changes costumes 

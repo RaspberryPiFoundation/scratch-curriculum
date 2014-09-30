@@ -23,7 +23,7 @@ This project covers:
 This project uses resources found in the scratch backgrounds and costumes folders as well as a user created resource based on a scratch resource.
 
 #Scratch Cards
-Say Something
++ Say Something
 
 #Basic Exercises
 

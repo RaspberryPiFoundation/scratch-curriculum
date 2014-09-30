@@ -20,7 +20,7 @@ This project covers:
 This project uses resources found in the Scratch Backgrounds folders as well as the files found in the Fireworks resources folder included in this pack.
 
 #Scratch Cards required
-Change color Glide
++ Change color
 
 #Basic exercises
 * Step 1: Create a rocket that flies towards the mouse
