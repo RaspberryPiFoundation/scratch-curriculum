@@ -36,10 +36,9 @@ __Nu när vi har klädslar vill vi att spriten ska kunna byta mellan dem.__
 6. Hur gör vi så att det går långsammare och den inte ändras så fort? Klicka på Kontroll och dra in "vänta 1 sekunder".
 7. Ändra tiden tills det upprepas i en snabbare takt (tiden 0.1 sekunder ser bra ut). Vad skulle hända om vi inte hade väntablocket?
 
-```Scratch
-
-	när FLAGGA klickas på 
-	för alltid		
+```scratch
+	när FLAGGA klickas på
+	för alltid
 		nästa klädsel
 		vänta 0.1 sekunder
 	(slut på för alltid)
