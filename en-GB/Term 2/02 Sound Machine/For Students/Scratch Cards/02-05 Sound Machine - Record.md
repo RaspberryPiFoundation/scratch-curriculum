@@ -1,5 +1,5 @@
 ---
-title: Frantic Felix - Record
+title: Scratch Card - Record
 level: Level 6
 language: en-GB
 stylesheet: scratch
