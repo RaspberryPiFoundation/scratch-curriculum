@@ -24,27 +24,27 @@ Zaczniemy od stworzenia kredki, która rysuje po scenie.
 + Stwórz nowego duszka o nazwie __zielona-kredka__, wybierając plik __Zasoby\zielona-kredka__.
 + Przejdź na kartę z __kostiumami__ i kliknij na edycję kostiumu. W edytorze obrazów zmień centrum kostiumu na rysik kredki. Aby to zrobić, kliknij __Ustaw środek kostiumu__ i przesuń punkt przecięcia linii na ekranie, aby był na końcu rysika.
 + Spraw, aby kredka podążała za kursorem myszy. Skorzystaj z bloków `zawsze` {.blockyellow} oraz `idź do` {.blockblue}. 
-    ```blocks
-        kiedy kliknięto zieloną FLAGĘ
-        zawsze
-            idź do [wskaźnik myszy v]
-        koniec
-    ```
+```scratch
+    kiedy kliknięto zieloną FLAGĘ
+    zawsze
+        idź do [wskaźnik myszy v]
+    koniec
+```
 
 __Teraz chcemy używać tego duszka jak prawdziwej kredki.__ Jeżeli zajrzysz do panelu Pisak, znajdziesz tam bloki związane z rysowaniem. Na razie interesują nas bloki `przyłóż pisak` {.blockgreen} i `podnieś pisak` {.blockgreen}.
 
 + Chcemy kontrolować kredkę przyciskiem myszy: jeżeli przycisk jest wciśnięty, kredka dotyka tablicy, a kiedy nie jest wciśnięty, kredka nie dotyka tablicy. Możemy to kontrolować korzystając z bloku `jeżeli... w przeciwnym razie` {.blockyellow} i `wciśnięty klawisz myszy?` {.blocklightblue}.
-    ```blocks
-        kiedy kliknięto zieloną FLAGĘ
-        zawsze
-            idź do [wskaźnik myszy v]
-            jeżeli (wciśnięty klawisz myszy?) to
-                przyłóż pisak
-            w przeciwnym razie
-                podnieś pisak
-            koniec
+```scratch
+    kiedy kliknięto zieloną FLAGĘ
+    zawsze
+        idź do [wskaźnik myszy v]
+        jeżeli (wciśnięty klawisz myszy?) to
+            przyłóż pisak
+        w przeciwnym razie
+            podnieś pisak
         koniec
-    ```
+    koniec
+```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -55,18 +55,18 @@ Czy kredka podąża za kursorem myszy? Co się dzieje, kiedy wciśniesz przycisk
 ## Zadania do wykonania {.check}
 
 + Prędzej czy później ekran zapełni się rysunkami. Użyj bloku wyczyść do czyszczenia ekranu.
-    ```blocks
-        kiedy kliknięto zieloną FLAGĘ
-        wyczyść
-        zawsze
-            idź do [wskaźnik myszy v]
-            jeżeli (wciśnięty klawisz myszy?) to
-                przyłóż pisak
-            w przeciwnym razie
-                podnieś pisak
-            koniec
+```scratch
+    kiedy kliknięto zieloną FLAGĘ
+    wyczyść
+    zawsze
+        idź do [wskaźnik myszy v]
+        jeżeli (wciśnięty klawisz myszy?) to
+            przyłóż pisak
+        w przeciwnym razie
+            podnieś pisak
         koniec
-    ```
+    koniec
+```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -86,7 +86,7 @@ Zamiast uruchamiać cały projekt ponownie, aby wyczyścić ekran, dodajmy przyc
 + Zmień nazwę duszka na __wyczyść__.
 + Przesuń duszka do dolnego lewego rogu sceny.
 + Dodaj poniższy skrypt:
-    ```blocks
+    ```scratch
         kiedy duszek kliknięty
         wyczyść
     ```
@@ -108,21 +108,21 @@ Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać k
 + Dodaj nowego duszka i nazwij go __czerwony__. Użyj kostiumu z pliku __Zasoby/czerwony-kolor__.
 + Ustaw go na dole ekranu obok przycisku __wyczyść__.
 + Po wciśnięciu, duszek czerwony powinien nadawać wiadomość __czerwony__.
-    ```blocks
-        kiedy duszek kliknięty
-        nadaj [czerwony v]
-    ```
+```scratch
+    kiedy duszek kliknięty
+    nadaj [czerwony v]
+```
 
 __Tak, to wszystko, co ma robić ten duszek. Całą trudną robotą zajmuje się kredka.__
 
 Przejdź do duszka-kredki i zaimportuj kostium z pliku __Zasoby/czerwona-kredka__. Ustaw środek kostiumu na końcu rysika tak jak dla oryginalnego kostiumu.
 
 + Dodaj nowy skrypt do kredki. Kiedy kredka otrzyma wiadomość __czerwony__, powinna zmienić swój kostium oraz zmienić kolor linii. __Wskazówka:__ jeżeli klikniesz na kolorowy kwadrat bloku `ustaw kolor pisaka na` {.blockgreen}, kursor zmieni się w pipetę – możesz nią kliknąć na czerwonym duszku, aby upewnić się, że używasz tego samego odcienia czerwonego.
-    ```blocks	
-        kiedy otrzymam [czerwony v]
-        zmień kostium na [czerwona-kredka v]
-        ustaw kolor pisaka na [#FF0000]
-    ```
+```scratch
+    kiedy otrzymam [czerwony v]
+    zmień kostium na [czerwona-kredka v]
+    ustaw kolor pisaka na [#FF0000]
+```
 
 ## Przetestuj swój projekt {.flag}
 
@@ -154,35 +154,35 @@ Aby to zrobić, owiń istniejące bloki `idź do...` {.blockblue} `jeżeli` {.bl
 
 __Uwaga__. Aby to zrobić, potrzebujesz użyć kilku bloków z operatorem `i` {.blockgreen}: jeden dla obu warunków dla współrzędnych na osi x, jeden dla obu warunków dla współrzędnych na osi y oraz jeden do połączenia wszystkich warunków ze sobą.
 
-    ```blocks
-        wyczyść
-        zawsze
-            jeżeli <<<(x myszy) > (-230)> i <(x myszy) < (230)>> i <<(y myszy) > (-120)> i <(y myszy) < (170)>>> to
-                idź do [wskaźnik myszy v]
-            koniec
+```scratch
+    wyczyść
+    zawsze
+        jeżeli <<<(x myszy) > (-230)> i <(x myszy) < (230)>> i <<(y myszy) > (-120)> i <(y myszy) < (170)>>> to
+            idź do [wskaźnik myszy v]
         koniec
-    ```
+    koniec
+```
 
 Skoro nie możemy rysować poza wyznaczonym obszarem, byłoby dobrze chować kredkę, kiedy wyjdziemy poza tablicę. Aby to zrobić, zamień blok `jeżeli` {.blockyellow} na blok `jeżeli... w przeciwnym razie` {.blockyellow}. Zostaw warunek, który masz w `jeżeli` {.blockyellow} i `pokaż` {.blockblue} kredkę, kiedy to prawda, w przeciwnym wypadku schowaj ją.
 
-    ```blocks
-        kiedy kliknięto zieloną FLAGĘ
-        podnieś pisak
-        wyczyść
-        zawsze
-            jeżeli <<<(x myszy) > (-230)> i <(x myszy) < (230)>> i <<(y myszy) > (-120)> i <(y myszy) < (170)>>> to
-                idź do [wskaźnik myszy v]
-                pokaż
-                jeżeli (wciśnięty klawisz myszy?) to
-                    przyłóż pisak
-                w przeciwnym razie
-                    podnieś pisak
-                koniec
+```scratch
+    kiedy kliknięto zieloną FLAGĘ
+    podnieś pisak
+    wyczyść
+    zawsze
+        jeżeli <<<(x myszy) > (-230)> i <(x myszy) < (230)>> i <<(y myszy) > (-120)> i <(y myszy) < (170)>>> to
+            idź do [wskaźnik myszy v]
+            pokaż
+            jeżeli (wciśnięty klawisz myszy?) to
+                przyłóż pisak
             w przeciwnym razie
-                ukryj
+                podnieś pisak
             koniec
+        w przeciwnym razie
+            ukryj
         koniec
-    ```
+    koniec
+```
 
 ## Przetestuj swój projekt {.flag}
 
