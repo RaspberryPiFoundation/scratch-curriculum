@@ -11,7 +11,7 @@ materials: "*.sb2"
 
 Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty!
 
-![screenshot](Feliks-i-Herbert.png)
+![screenshot](feliks-i-herbert.png)
 
 # Krok 1: Feliks podąża za kursorem myszy {.activity}
 
