@@ -11,7 +11,7 @@ materials: ["*.sb", "Zasoby/*.mp3", "Zasoby/*.png"]
 
 Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu w taki sposób, aby udało jej się zjeść wszystkie rozgwiazdy.
 
-![screenshot](Glodna-ryba.png)
+![screenshot](glodna-ryba.png)
 
 # Krok 1: Stwórz duszka, który goni kursor myszki {.activity}
 __Dodajmy rybę, która pływa po morzu!__

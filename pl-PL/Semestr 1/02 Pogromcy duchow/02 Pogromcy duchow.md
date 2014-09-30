@@ -11,7 +11,7 @@ materials: "*.sb"
 
 Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając w duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.
 
-![screenshot](Pogromcy-duchow.png)
+![screenshot](pogromcy-duchow.png)
 
 # Krok 1: Stwórz latającego ducha {.activity}
 
