@@ -31,7 +31,7 @@ We’ll start with a pen that draws when you drag it around the Stage.
         end
 ```
 
-Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are `pen down` {.blockgreen} and `pen up` {.blockgreen}.
+Now we want to use this pen sprite as an actual pen. If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are `pen down` {.blockgreen} and `pen up` {.blockgreen}.
 
 + We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an `if... else` {.blockyellow} and `mouse down?` {.blocklightblue} blocks.
 ```blocks
