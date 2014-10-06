@@ -44,7 +44,7 @@ Czy Feliks podąża za kursorem myszy? Czy wygląda jakby chodził? Czy porusza 
 ## Zapisz swój projekt. {.save}
 
 
-# **Krok 2:** Feliks goni Herberta {.activity}
+# Krok 2: Feliks goni Herberta {.activity}
 
 *Teraz sprawimy, aby Feliks zaczął gonić Herberta zamiast podążać za kursorem myszy.*
 
@@ -73,7 +73,7 @@ Czy Herbert podąża za kursorem myszy? Czy Feliks goni Herberta?
 ## Zapisz swój projekt. {.save}
 
 
-# **Krok 3:** Feliks ogłasza, że złapał Herberta {.activity}
+# Krok 3: Feliks ogłasza, że złapał Herberta {.activity}
 
 **Chcemy, aby Feliks nam powiedział, że złapał Herberta.**
 
@@ -102,7 +102,7 @@ Czy Feliks mówi, że złapał Herberta?
 
 ## Zapisz swój projekt. {.save}
 
-# **Krok 4:** Herbert zamienia się w ducha po złapaniu {.activity}
+# Krok 4: Herbert zamienia się w ducha po złapaniu {.activity}
 
 **Zamiast wiadomości od Feliksa, że złapał mysz, chcemy, aby Herbert zamienił się w ducha.**
 
@@ -150,7 +150,7 @@ Czy po złapaniu Feliks nie rusza się odpowiednio długo, aby Herbert mógł od
 
 ## Zapisz swój projekt. {.save}
 
-# **Krok 5:** Liczymy punkty {.activity}
+# Krok 5: Liczymy punkty {.activity}
 
 **Dodajmy licznik punktów, aby było widać, jak dobrze nam idzie ratowanie Herberta.
 Zaczniemy od zera i co sekundę będziemy dodawać jeden punkt. Gdy Feliks złapie Herberta, odejmiemy sto punktów.**
