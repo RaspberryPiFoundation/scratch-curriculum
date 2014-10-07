@@ -81,7 +81,7 @@ Click the green flag, and then press the mouse button over the stage. Click agai
 ## Things to try { .try }
 
 + Try making some rockets a little slower or faster than others.
-+ Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.
++ Try changing where the rocket moves to before gliding towards the mouse to make it arc a little.
 
 ## Save your project { .save }
 
