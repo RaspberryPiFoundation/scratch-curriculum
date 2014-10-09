@@ -115,7 +115,7 @@ Instead of Felix saying something, we want Herbert to turn into a ghost when heâ
         move (20) steps
         next costume
         play drum [3 v] for (0.3) beats
-        if <touching [herbert v]?>
+        if <touching [herbert v]?> then
             broadcast [caught v]
             play drum [17 v] for (0.2) beats
             wait (1) secs
