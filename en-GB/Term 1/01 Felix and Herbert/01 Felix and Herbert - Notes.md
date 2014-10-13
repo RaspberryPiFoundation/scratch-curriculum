@@ -11,9 +11,10 @@ We are going to make a game of catch with Felix the cat and Herbert the mouse. Y
 # Skills
 This project covers:
 
-1. Changing costumes and appearance
-2. Keeping and setting the score
-3. Broadcast messages
+1. Motion and Collision Detection - Events
+2. Changing costumes and appearance - UX
+3. Keeping and setting the score - Variables
+4. Broadcast messages - Events
 
 # Resources
 This project uses resources found in the Scratch Backgrounds and Costumes folders
