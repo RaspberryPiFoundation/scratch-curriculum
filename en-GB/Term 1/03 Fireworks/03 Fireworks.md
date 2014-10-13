@@ -162,6 +162,16 @@ Click the green flag. Does each explosion have a different colour?
 ## Activity Checklist { .check }
 
 + Lets add a number of different possible explosion graphics as costumes, using __Resources/firework2.png__ and __Resources/firework3.png__, and switch between them for each rocket, again before showing it.
+```blocks
+	when I receive [explode v]
+		hide
+		switch costume to (pick random (1) to (3))
+		set [color v] effect to (pick random (1) to (200))
+		go to [rocket v]
+		show
+		wait (1) secs
+		hide
+```
 
 ##Test Your Project { .flag}
 __Click the green flag.__
@@ -174,6 +184,7 @@ Does each rocket have a different explosion graphic?
 ```blocks
 	when I receive [explode v]
 		hide
+		switch costume to (pick random (1) to (3))		
 		set [color v] effect to (pick random (1) to (200))
 		go to [rocket v]
 		show
