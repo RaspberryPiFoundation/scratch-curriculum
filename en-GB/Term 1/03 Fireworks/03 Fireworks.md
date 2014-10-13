@@ -165,7 +165,7 @@ Click the green flag. Does each explosion have a different colour?
 ```blocks
 	when I receive [explode v]
 		hide
-		switch constume to (pick random (1) to (3))
+		switch costume to (pick random (1) to (3))
 		set [color v] effect to (pick random (1) to (200))
 		go to [rocket v]
 		show
@@ -184,7 +184,7 @@ Does each rocket have a different explosion graphic?
 ```blocks
 	when I receive [explode v]
 		hide
-		switch constume to (pick random (1) to (3))		
+		switch costume to (pick random (1) to (3))		
 		set [color v] effect to (pick random (1) to (200))
 		go to [rocket v]
 		show
