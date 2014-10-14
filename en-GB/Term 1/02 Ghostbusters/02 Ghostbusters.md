@@ -18,10 +18,11 @@ This project is like the game __Whack-a-Mole__. You get points for hitting the g
 ## Activity Checklist { .check }
 
 + Start a new scratch project.
-+ Remove the cat sprite and replace the background with the **nature/woods** background.
++ Remove the cat sprite by right click on Sprite in Sprite Summary Area and choose Delete
++ Remove similar to above and replace the background with the **nature/woods** background using the `Choose background from library` button.
 + Use the `Choose sprite from library` button to add a new ghoul sprite to the project (use the **fantasy/ghost1** costume).
 + Now we want to make our ghost move. Add a `Variable` for this sprite only called `speed` { .blockorange }.
-+ On the **Stage**, the stage monitor for this variable should say “__Ghost1 speed__”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the **Data palette** so it does not show on the Stage. The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
++ On the **Stage view**, the stage monitor for this variable should say “__Ghost1: speed__”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the **Data palette** so it does not show on the Stage. The speed variable will control how fast this ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
 + We want the ghost to start moving when the game starts, __so make a script like this__:
 ```blocks
     when FLAG clicked
@@ -40,7 +41,7 @@ Why does it get stuck on the edge of the screen?
 
 ## Activity Checklist { .check }
 
-+ To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an `if on edge, bounce` { .blockblue } block below your `move`{ .blockblue }`speed`{ .blockorange }`steps`{ .blockblue } block.
++ To stop the ghost getting stuck we need to make it go back the other way when it touches the edge of the screen. Edit your existing script by adding an `if on edge, bounce` { .blockblue } block below your `move`{ .blockblue }`speed`{ .blockorange }`steps`{ .blockblue } block.
 ```blocks
     when FLAG clicked
         set [speed v] to [5]
@@ -49,7 +50,7 @@ Why does it get stuck on the edge of the screen?
             if on edge, bounce
 ```
 
-+ To stop the ghost flipping upside down, click on the `rotation style: left-right` button in the Sprite Summary area.
++ To stop the ghost flipping upside down, click on the `rotation style: left-right` button in the i section of Sprite Summary area for the ghost sprite.
 
 ## Test Your Project { .flag }
 
@@ -62,7 +63,7 @@ Click the green flag.
 ## Things to try { .try }
 
 + Try changing the value of the speed variable to make the ghost fly faster or slower.
-+ How would you make the ghost get faster the longer it flies? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
++ How would you make the ghost get faster the longer time it flies for? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
 
 # Step 2: Make the ghost appear & vanish randomly { .activity .new-page }
 
@@ -99,7 +100,7 @@ To turn this into a game, we need to give the player something to do. They need 
 ## Activity Checklist { .check }
 
 + In the **Sounds** tab, add a new sound **Electronic/fairydust**, using the `Choose sound from library` button.
-+ Add this script to the ghost:
++ Add this second script block to the ghost sprite script area:
 ```blocks
     when this sprite clicked
         hide
@@ -120,7 +121,7 @@ Click the green flag.
 
 # Step 4: Add a score and timer { .activity .new-page }
 
-We’ve got a ghost, but now we want to make a game! We want to score points every time we click on the ghost but we also want to have a time limit on the game. We can use a variable for the score and the timer.
+We’ve got a ghost, but now we want to make a great game! We want to score points every time we click on the ghost but we also want to have a time limit on the game. We can use a variable for the score and the timer.
 
 ## Activity Checklist { .check }
 
@@ -132,7 +133,7 @@ We’ve got a ghost, but now we want to make a game! We want to score points eve
 	   change [score v] by (1)
 ```
 
-+ Switch to the **Stage** and create a **new variable** called **time_left**.
++ Switch to the **Stage** and create a **new variable** called **time_left** - Note you can only create variables for 'all sprites' here.
 + Add a new script that occurs when the green flag is clicked to set `time_left` { .blockorange } to **30** and reset the score to **0**. Then use a `repeat until` { .blockyellow } block to wait a second and then reduce `time_left` { .blockorange } by one. This should repeat until `time_left` is 0, at which point use `stop all` { .blockyellow } to stop the game.
 ```blocks
 	when FLAG clicked
@@ -164,7 +165,7 @@ If one ghost is good, more must be better! Let’s have three ghosts flying arou
 1. Duplicate the ghost by **right-clicking** it in the sprite list.
 2. For each ghost **adjust the size of the sprite** so the ghosts are different sizes.
 3. For each ghost change the **speed variable** so that they fly at different speeds.
-4. Move the ghosts around the canvas so that they are not all together.
+4. Move the ghosts up and down around the canvas so that they are not all together.
 
 ## Test Your Project { .flag }
 
