@@ -197,11 +197,11 @@ Popping 1 balloon isn't much of a game, so let's add lots more!
 
 	Drag your balloon `when flag clicked` {.blockred} code (except the `score` {.blockred} block) off of the event (don't delete it), and instead add code to create 20 balloon clones:
 
-	![screenshot](balloons-clone1.png)
+	![screenshot](balloons-clone-1.png)
 
 + You can now attach the code you've just removed to the `when I start as a clone` {.blockred} event (adding a `show` {.blockpurple} block at the top), so that your balloon code now looks like this:
 
-	![screenshot](balloons-clone2.png)
+	![screenshot](balloons-clone-2.png)
 
 	Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before.
 
