@@ -8,76 +8,37 @@
     "projects": [
         {
             "number":   1,
-            "filename": "01 Felix and Herbert/01 Felix and Herbert.md",
-            "pdf":      "01 Felix and Herbert/01 Felix and Herbert.pdf",
-            "note":     "01 Felix and Herbert/01 Felix and Herbert - Notes.md",
-            "note_pdf": "01 Felix and Herbert/01 Felix and Herbert - Notes.pdf"
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - Notes.md"
         },
         {
             "number":   2,
-            "filename": "02 Ghostbusters/02 Ghostbusters.md",
-            "pdf":      "02 Ghostbusters/02 Ghostbusters.pdf",
-            "note":     "02 Ghostbusters/02 Ghostbusters - Notes.md",
-            "note_pdf": "02 Ghostbusters/02 Ghostbusters - Notes.pdf"
+            "filename": "Rock Band/Rock Band.md",
+            "note":     "Rock Band/Rock Band - Notes.md"
         },
         {
             "number":   3,
-            "filename": "03 Fireworks/03 Fireworks.md",
-            "pdf":      "03 Fireworks/03 Fireworks.pdf",
-            "note":     "03 Fireworks/03 Fireworks - Notes.md",
-            "note_pdf": "03 Fireworks/03 Fireworks - Notes.pdf"
+            "filename": "Balloons/Balloons.md",
+            "note":     "Balloons/Balloons - Notes.md"
         },
         {
             "number":   4,
-            "filename": "04 Fruit Machine/04 Fruit Machine.md",
-            "pdf":      "04 Fruit Machine/04 Fruit Machine.pdf",
-            "note":     "04 Fruit Machine/04 Fruit Machine - Notes.md",
-            "note_pdf": "04 Fruit Machine/04 Fruit Machine - Notes.pdf"
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - Notes.md"
         },
         {
             "number":   5,
-            "filename": "05 Fish Chomp/05 Fish Chomp.md",
-            "pdf":      "05 Fish Chomp/05 Fish Chomp.pdf",
-            "note":     "05 Fish Chomp/05 Fish Chomp - Notes.md",
-            "note_pdf": "05 Fish Chomp/05 Fish Chomp - Notes.pdf"
+            "filename": "Felix and Herbert/Felix and Herbert.md",
+            "pdf":      "Felix and Herbert/Felix and Herbert.pdf",
+            "note":     "Felix and Herbert/Felix and Herbert - Notes.md",
+            "note_pdf": "Felix and Herbert/Felix and Herbert - Notes.pdf"
         },
         {
             "number":   6,
-            "filename": "06 Desert Race/06 Desert Race.md",
-            "pdf":      "06 Desert Race/06 Desert Race.pdf",
-            "note":     "06 Desert Race/06 Desert Race - Notes.md",
-            "note_pdf": "06 Desert Race/06 Desert Race - Notes.pdf"
-        },
-        {
-            "number":   7,
-            "filename": "07 Christmas Capers/07 Christmas Capers.md",
-            "pdf":      "07 Christmas Capers/07 Christmas Capers.pdf"
-        },
-        {
-            "number":   8,
-            "filename": "08 Flappy Parrot/08 Flappy Parrot.md",
-            "pdf":      "08 Flappy Parrot/08 Flappy Parrot.pdf"
-        },
-        {
-            "number":   9,
-            "filename": "09 What's That/09 What's That.md",
-            "pdf":      "09 What's That/09 What's That.pdf",
-            "note":     "09 What's That/09 What's That - Notes.md",
-            "note_pdf": "09 What's That/09 What's That - Notes.pdf"
-        },
-        {
-            "number":   10,
-            "filename": "10 Paint Box/10 Paint Box.md",
-            "pdf":      "10 Paint Box/10 Paint Box.pdf",
-            "note":     "10 Paint Box/10 Paint Box - Notes.md",
-            "note_pdf": "10 Paint Box/10 Paint Box - Notes.pdf"
-        },
-        {
-            "number":   11,
-            "filename": "11 Create Your Own Game/11 Create Your Own Game.md",
-            "pdf":      "11 Create Your Own Game/11 Create Your Own Game.pdf",
-            "note":     "11 Create Your Own Game/11 Create Your Own Game - Notes.md",
-            "note_pdf": "11 Create Your Own Game/11 Create Your Own Game - Notes.pdf"
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "pdf":      "Ghostbusters/Ghostbusters.pdf",
+            "note":     "Ghostbusters/Ghostbusters - Notes.md",
+            "note_pdf": "Ghostbusters/Ghostbusters - Notes.pdf"
         }
     ]
 }
