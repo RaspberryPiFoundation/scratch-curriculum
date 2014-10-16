@@ -124,7 +124,7 @@ Lets allow the player to pop the balloons!
 		play sound [pop v]
 	```
 
-+ Test out your project. Can you pop the balloon? Does it work as you expected? You'll need to improve this code, so that when the balloon is clicked, it shows the 'burst' costume for a short time, and then disappears. You can make all of this happen by changing your balloon clicked code to this:
++ Test out your project. Can you pop the balloon? Does it work as you expected? You'll need to improve this code, so that when the balloon is clicked, it shows the 'burst' costume for a short time, and then disappears. You can make all of this happen by changing your balloon `when sprite clicked` {.blockred} code to this:
 
 	```blocks
 		when this sprite clicked
@@ -148,11 +148,11 @@ Let's make things more interesting by keeping score.
 
 + To keep the player's score, you need a place to put it. A _variable_ is a place to store data that can change, like a score.
 
-	To create a new variable, click on the 'Scripts' tab, select 'data' and then click 'Make a Variable'.
+	To create a new variable, click on the 'Scripts' tab, select 'Data' and then click 'Make a Variable'.
 
 	![screenshot](balloons-score.png)
 
-	Type 'score' as the name of the variable, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your 'score' variable.
+	Type 'score' as the name of the variable, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockred} variable.
 
 	![screenshot](balloons-variable.png)
 

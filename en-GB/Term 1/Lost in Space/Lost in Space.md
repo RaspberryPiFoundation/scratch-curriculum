@@ -68,7 +68,7 @@ You should save your work regularly, so that you don't lose it. First, give your
 
 ![screenshot](space-save.png)
 
-If you're using Scratch online, clicking 'Save' adds your program to your 'stuff', which is an online folder that you can access from anywhere, even from home. You can access your stuff by clicking File, and then clicking 'Go to My Stuff'.
+If you're using Scratch online, clicking 'Save' adds your program to your 'stuff', which is an online folder that you can access from anywhere, even from home. You can access your stuff by clicking 'File', and then clicking 'Go to My Stuff'.
 
 ![screenshot](space-stuff.png)
 
@@ -121,7 +121,7 @@ Now that you have some sprites, let's add code to animate them!
 
 	You'll find the `wait (1) secs` {.blockorange} block by clicking on the orange 'Control' blocks section. 
 
-+ Your spaceship now moves _every_ time you click the flag. Try it!
++ Your spaceship now moves _every_ time you run your code. Try it!
 
 + You can also attach your animation code to an 'event'. This means that the code will run when something happens, such as when the green flag is clicked, a key is pressed or a sprite is clicked.
 
@@ -161,7 +161,7 @@ You'll need to change the numbers in this block:
 
 + Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockblue} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area. 
 
-	Once you've removed your code, and this code instead:
++ Once you've removed your code, and this code instead:
 
 	```blocks
 		when FLAG clicked
@@ -176,7 +176,7 @@ You'll need to change the numbers in this block:
 
 + The `repeat` {.blockorange} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before. 
 
-+ Using a loop to move the spaceship means that you can add more code inside the `repeat (100)` {.blockorange} loop to do interesting things. Add the `change [color] effect by (25)` {.blockpurple} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
++ Using a loop to move the spaceship means that you can add more code inside the `repeat (100)` {.blockorange} loop to do interesting things. Add the `change color effect by 25` {.blockpurple} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
 
 	```blocks
 		when FLAG clicked
@@ -216,7 +216,7 @@ You'll need to change the numbers in this block:
 
 ## Activity Checklist { .check }
 
-+ Let's add monkey to your animation, that's lost in space! Start by adding in the monkey sprite from the library.
++ Let's add monkey to your animation, who's lost in space! Start by adding in the monkey sprite from the library.
 
 	![screenshot](space-monkey.png)
 
@@ -264,6 +264,6 @@ Stop your space animation, and click 'File' and then 'New', to start a new proje
 
 ## Save your project { .save }
 
-Well done! You've now completed your first Scratch project. If you are using the online editor, you can let others see your animation by clicking 'Share' in the top-right of the screen!
+Well done! You've now completed your first Scratch project. If you are using the online editor, you can let others see your animation by clicking 'Share' in the top-right of the Scratch editor!
 
 ![screenshot](space-share.png)

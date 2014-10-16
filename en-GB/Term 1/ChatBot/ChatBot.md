@@ -67,7 +67,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 	![screenshot](chatbot-answer.png)
 
-+ Test out this new program. Does it work as you expected? Can you fix any problems that you can see? You can try adding in a space somewhere!
++ Test out this new program. Does it work as you expected? Can you fix any problems that you can see? (Hint: you can try adding in a space somewhere!)
 
 + It may be that you want to store the user's name in a variable, so that you can use it again later. Create a new variable called 'name'. If you've forgotten how to do this, the previous 'Balloons' project will help you.
 
@@ -193,7 +193,7 @@ You can also program your chatbot to change its location.
 		end
 	```
 
-+ You also need to make sure that your chatbot is outside when you start talking to it. Add this code to the top of your chatbot code:
++ You also need to make sure that your chatbot is outside when you start talking to it. Add this block to the top of your chatbot code:
 
 	```blocks
 		switch to background [space v]

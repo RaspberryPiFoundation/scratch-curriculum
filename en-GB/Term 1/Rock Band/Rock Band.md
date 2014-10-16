@@ -116,7 +116,7 @@ Let's add a singer to our band!
 		play sound [singer1 v] until done
 	```
 
-+ Click on your singer, to make sure that they sing when clicked.
++ Click on your singer, to make sure that she sings when clicked.
 
 ## Save your project { .save }
 
