@@ -74,7 +74,7 @@ One way to do it is by using a variable to set the state of the Sprite. This wil
     set [stopped v] to [NO]
     forever
         next costume
-        wait (0.1) secs
+        wait (0.5) secs
 ```
 + Now we'll set the variable `stopped` { .blockorange } to  **"YES"** when someone clicks on the sprite.
 ```blocks

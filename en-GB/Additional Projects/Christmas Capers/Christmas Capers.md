@@ -87,7 +87,7 @@ __Click the green flag__, do the hills move? Has the issue with the flickering t
             set [Speed v] to [-1]
             repeat until <(Finish) = [1]>
                 change y  by (Speed)
-                if <([y position v] of [Present v]) < [-160]>
+                if <(y position) < [-160]>
                     set (Finish) to [1]
                 end
                 if <touching [Rudolph v]?>
@@ -111,7 +111,7 @@ __Click the green flag,__ do the presents fall from the sky? Do they disappear w
             set [Speed v] to <pick random (-10) to (-1)
             repeat until <(Finish) = [1]>
                 change y  by (Speed)
-                if <([y position v] of [Present v]) < [-160]> then
+                if <(y position) < [-160]> then
                     set (Finish) to [1]
                 end
                 if <touching [Rudolph v]?> then
@@ -140,7 +140,7 @@ __Click the green flag,__ do the presents fall at different speeds and colours?
             set [Speed v] to <pick random (-10) to (-1)
             repeat until <(Finish) = [1]>
                 change y  by (Speed)
-                if <([y position v] of [Present v]) < [-160]> then
+                if <(y position) < [-160]> then
                     play drum [57 v] for (+2) beats
                     set (Finish) to [1]
                 end

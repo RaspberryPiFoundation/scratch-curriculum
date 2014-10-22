@@ -118,7 +118,7 @@ Try out your game again – can you spot any problems? Notice that the prey disa
             move (2) steps
             turn right (pick random (-20) to (20)) degrees
             if on edge, bounce
-            if <touching color [#FFFFFF]?> then
+            if <touching color [#010071]?> then
                 hide
                 wait (3) secs
                 go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
@@ -137,7 +137,7 @@ The fish needs to know when it has eaten something so it can play a sound and ch
             move (2) steps
             turn right <pick random (-20) to (20)> degrees
             if on edge, bounce
-            if <touching color [#FFFFFF]?>
+            if <touching color [#010071]?> then
                 broadcast [got me v]
                 hide
                 wait (3) secs
