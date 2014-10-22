@@ -88,7 +88,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 ## Save your project { .save }
 
-## Challeng: More questions {.chalenge}
+## Challenge: More questions {.challenge}
 Program your chatbot to ask another question. Can you store their answer in a variable?
 
 ![screenshot](chatbot-question.png)
