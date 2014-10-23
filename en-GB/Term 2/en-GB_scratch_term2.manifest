@@ -1,5 +1,6 @@
 {
-    "description": "The Scratch curriculum is currently being updated. If you can't find a project, it may have been moved to another section.",
+    "description": false,
+    "warning": "The Scratch curriculum is currently being updated. If you can't find a project, it may have been moved to another section.",
     "id": "scratch_02",
     "language": "en-GB",
     "number": 2,
