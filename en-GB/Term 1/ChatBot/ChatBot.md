@@ -7,20 +7,24 @@ embeds: "*.png"
 materials: ["ChatBot.sb2"]
 ...
 
-#Heads Up! { .beta}
+# Heads Up! { .beta }
+
 This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
 
 # Introduction { .intro }
 
 You are going to learn how to program your own talking robot!
 
-![screenshot](chatbot-final.png)
+<div class="scratch-preview">
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=true" frameborder="0"></iframe>
+	<img src="chatbot-final.png">
+</div>
 
 # Step 1: Your chatbot { .activity }
 
 ## Activity Checklist { .check }
 
-+ Before you start making your chatbot, you need to decide on their personality. 
++ Before you start making your chatbot, you need to decide on their personality.
 	+ What is their name?
 	+ Where do they live?
 	+ Are they happy? serious? funny? shy? friendly?
@@ -33,14 +37,14 @@ You are going to learn how to program your own talking robot!
 
 ## Save your project { .save }
 
-# Step 2: A talking chatbot { .activity .new-page}
+# Step 2: A talking chatbot { .activity .new-page }
 
 Now that you have a chatbot with a personality, let's program it to talk to us.
 
 ## Activity Checklist { .check }
 
 + Click on your chatbot character, and add this code:
-	
+
 	```blocks
 		when this sprite clicked
 		ask [Hey! What's your name?] and wait
@@ -59,7 +63,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 		say <join [Hi] (answer)> for (2) secs
 	```
 
-	To create the last block, you'll need to first drag on a green `join` {.blockgreen} block, and drag it on to the `say` {.blockpurple} block. 
+	To create the last block, you'll need to first drag on a green `join` {.blockgreen} block, and drag it on to the `say` {.blockpurple} block.
 
 	![screenshot](chatbot-join.png)
 
@@ -88,7 +92,8 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 ## Save your project { .save }
 
-## Challenge: More questions {.challenge}
+## Challenge: More questions { .challenge }
+
 Program your chatbot to ask another question. Can you store their answer in a variable?
 
 ![screenshot](chatbot-question.png)
@@ -139,11 +144,11 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 + You can put any code inside an `if` {.blockorange} or `else` {.blockorange} block, not just code to make your chatbot speak. For example, you can change the chatbot's costume to match the response.
 
-	If you have a look at your chatbot's costumes, you may see that there is more than one. (If not, you can always add more yourself!) 
+	If you have a look at your chatbot's costumes, you may see that there is more than one. (If not, you can always add more yourself!)
 
 	![screenshot](chatbot-costumes.png)
 
-	You can use these costumes as part of your chatbot's response, by using this code: 
+	You can use these costumes as part of your chatbot's response, by using this code:
 
 	```blocks
 		when this sprite clicked
@@ -167,7 +172,8 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 ## Save your project { .save }
 
-## Challenge: More decisions {.challenge}
+## Challenge: More decisions { .challenge }
+
 Program your chatbot to ask another question - something with a 'yes' or 'no' answer. Can you make your chatbot respond to the answer?
 
 ![screenshot](chatbot-joke.png)
@@ -197,7 +203,7 @@ You can also program your chatbot to change its location.
 
 	```blocks
 		switch to background [space v]
-	``` 
+	```
 
 + Test your program, and answer 'yes' when asked if you want to go home. You should see that the chatbot's location has changed.
 
