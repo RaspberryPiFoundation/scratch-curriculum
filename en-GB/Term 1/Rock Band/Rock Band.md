@@ -14,7 +14,10 @@ This project is in Beta. That means we're still testing it, and there's a small 
 
 In this project you'll learn how to code your own musical instruments!
 
-![screenshot](band-final.png)
+<div class="scratch-preview">
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=true" frameborder="0"></iframe>
+	<img src="band-final.png">
+</div>
 
 # Step 1: Coding a Drum { .activity }
 
