@@ -196,8 +196,8 @@ You can also program your chatbot to change its location.
 + You also need to make sure that your chatbot is outside when you start talking to it. Add this block to the top of your chatbot code:
 
 	```blocks
-		switch to background [space v]
-	``` 
+		switch backdrop to [space v]
+	```
 
 + Test your program, and answer 'yes' when asked if you want to go home. You should see that the chatbot's location has changed.
 
