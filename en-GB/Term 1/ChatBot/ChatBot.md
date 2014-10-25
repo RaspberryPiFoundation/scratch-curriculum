@@ -63,11 +63,11 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 		say <join [Hi] (answer)> for (2) secs
 	```
 
-	To create the last block, you'll need to first drag on a green `join` {.blockgreen} block, and drag it on to the `say` {.blockpurple} block.
+	To create the last block, you'll need to first drag on a green `join` {.blockoperators} block, and drag it on to the `say` {.blocklooks} block.
 
 	![screenshot](chatbot-join.png)
 
-	You can then change the text "hello" to say "Hi", and drag the light blue `answer` {.blocklightblue} block (from the 'Sensing' section) onto the text "world".
+	You can then change the text "hello" to say "Hi", and drag the light blue `answer` {.blocksensing} block (from the 'Sensing' section) onto the text "world".
 
 	![screenshot](chatbot-answer.png)
 
@@ -121,9 +121,9 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 	Notice that now you've stored the user's name in a variable, you can use it as much as you like.
 
-+ To test this program properly, you'll need to test it twice - once typing 'no' as your answer, and once typing 'yes'. You should only get a response from your chatbot `if` {.blockorange} you answer 'yes'.
++ To test this program properly, you'll need to test it twice - once typing 'no' as your answer, and once typing 'yes'. You should only get a response from your chatbot `if` {.blockcontrol} you answer 'yes'.
 
-+ The trouble with your chatbot is that it doesn't give a reply if the user answers 'no'. You can fix this, by changing the `if` {.blockorange} block to an `if/else` {.blockorange} block, so that your code now looks like this:
++ The trouble with your chatbot is that it doesn't give a reply if the user answers 'no'. You can fix this, by changing the `if` {.blockcontrol} block to an `if/else` {.blockcontrol} block, so that your code now looks like this:
 
 	```blocks
 		when this sprite clicked
@@ -138,11 +138,11 @@ You can program your chatbot to decide what to do, based on the user's responses
 		end
 	```
 
-+ If you test your code, you'll now see that you get a response when you answer 'yes' or 'no'. Your chatbot should reply with "That's great to hear!" when you answer 'yes', but will reply with "Oh no!" if you type anything other than yes (`else` {.blockorange} means 'otherwise').
++ If you test your code, you'll now see that you get a response when you answer 'yes' or 'no'. Your chatbot should reply with "That's great to hear!" when you answer 'yes', but will reply with "Oh no!" if you type anything other than yes (`else` {.blockcontrol} means 'otherwise').
 
 	![screenshot](chatbot-else.png)
 
-+ You can put any code inside an `if` {.blockorange} or `else` {.blockorange} block, not just code to make your chatbot speak. For example, you can change the chatbot's costume to match the response.
++ You can put any code inside an `if` {.blockcontrol} or `else` {.blockcontrol} block, not just code to make your chatbot speak. For example, you can change the chatbot's costume to match the response.
 
 	If you have a look at your chatbot's costumes, you may see that there is more than one. (If not, you can always add more yourself!)
 

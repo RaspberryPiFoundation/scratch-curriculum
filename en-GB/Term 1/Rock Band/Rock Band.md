@@ -70,7 +70,7 @@ First, let's make a drum that makes a sound when it's hit.
 		switch costume to [not hit v]
 	```
 
-	The code block for changing the costume is in the `Looks` {.blockpurple} section.
+	The code block for changing the costume is in the `Looks` {.blocklooks} section.
 
 + When clicked, your drum should now change costumes, to look like it's been hit, and then change back again.
 
@@ -82,7 +82,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 ![screenshot](band-drum-sound.png)
 
-+ Can you also get the drum to make a sound when the spacebar is pressed? You'll need to use this `event` {.blockred} block:
++ Can you also get the drum to make a sound when the spacebar is pressed? You'll need to use this `event` {.blockevents} block:
 
 ```blocks
 	when [space v] key pressed
@@ -175,7 +175,7 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 	![screenshot](band-shrink.png)
 
-+ Next, you should change the name of the sprite, as 'sprite1' isn't a very helpful name! Click the icon for your cymbal sprite, and then click on the blue 'i' (information) icon in the top-left.
++ Next, you should change the name of the sprite, as 'sprite1' isn't a very helpful name! Click the icon for your cymbal sprite, and then click on the blue `i` {.blockmotion} (information) icon in the top-left.
 
 	![screenshot](band-info.png)
 

@@ -47,7 +47,7 @@ You are going to make a balloon-popping game!
 
 	![screenshot](balloons-flip.png)
 
-	Balloons don't move like this! To fix this, click on the balloon sprite icon, and then click the blue 'i' information icon. 
+	Balloons don't move like this! To fix this, click on the balloon sprite icon, and then click the blue `i` {.blockmotion} information icon. 
 
 	![screenshot](balloons-info.png)
 	In the 'rotation style' section, click the dot to stop the balloon rotating.
@@ -86,7 +86,7 @@ You are going to make a balloon-popping game!
 
 	![screenshot](balloons-colour.png)
 
-	What happens if this code is put at the start of your program? Does anything different happen if you put this code _inside_ the `forever` {.blockorange} loop? Which do you prefer?
+	What happens if this code is put at the start of your program? Does anything different happen if you put this code _inside_ the `forever` {.blockcontrol} loop? Which do you prefer?
 
 ## Save your project { .save }
 
@@ -127,7 +127,7 @@ Lets allow the player to pop the balloons!
 		play sound [pop v]
 	```
 
-+ Test out your project. Can you pop the balloon? Does it work as you expected? You'll need to improve this code, so that when the balloon is clicked, it shows the 'burst' costume for a short time, and then disappears. You can make all of this happen by changing your balloon `when sprite clicked` {.blockred} code to this:
++ Test out your project. Can you pop the balloon? Does it work as you expected? You'll need to improve this code, so that when the balloon is clicked, it shows the 'burst' costume for a short time, and then disappears. You can make all of this happen by changing your balloon `when sprite clicked` {.blockevents} code to this:
 
 	```blocks
 		when this sprite clicked
@@ -137,7 +137,7 @@ Lets allow the player to pop the balloons!
 		hide
 	```
 
-+ Now that you're hiding the balloon when it's clicked, you'll also need to add a `show` {.blockpurple} block to the start of the `when flag clicked` {.blockred} code.
++ Now that you're hiding the balloon when it's clicked, you'll also need to add a `show` {.blocklooks} block to the start of the `when flag clicked` {.blockevents} code.
 
 + Try popping a balloon again, to check that it works properly.
 
@@ -151,11 +151,11 @@ Let's make things more interesting by keeping score.
 
 + To keep the player's score, you need a place to put it. A _variable_ is a place to store data that can change, like a score.
 
-	To create a new variable, click on the 'Scripts' tab, select 'Data' and then click 'Make a Variable'.
+	To create a new variable, click on the 'Scripts' tab, select `Data` {.blockdata} and then click 'Make a Variable'.
 
 	![screenshot](balloons-score.png)
 
-	Type 'score' as the name of the variable, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockred} variable.
+	Type 'score' as the name of the variable, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockdata} variable.
 
 	![screenshot](balloons-variable.png)
 
@@ -163,7 +163,7 @@ Let's make things more interesting by keeping score.
 
 	![screenshot](balloons-stage-score.png)
 
-+ When a new game is started (by clicking the flag), you want to set the player's score to 0. Add this code to the top of the balloon's `when flag clicked` {.blockred} code:
++ When a new game is started (by clicking the flag), you want to set the player's score to 0. Add this code to the top of the balloon's `when flag clicked` {.blockevents} code:
 
 	```blocks
 	set [score v] to [0]
@@ -198,11 +198,11 @@ Popping 1 balloon isn't much of a game, so let's add lots more!
 
 	Another way of getting lots of balloons is to _clone_ the balloon sprite.
 
-	Drag your balloon `when flag clicked` {.blockred} code (except the `score` {.blockred} block) off of the event (don't delete it), and instead add code to create 20 balloon clones:
+	Drag your balloon `when flag clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones:
 
 	![screenshot](balloons-clone-1.png)
 
-+ You can now attach the code you've just removed to the `when I start as a clone` {.blockred} event (adding a `show` {.blockpurple} block at the top), so that your balloon code now looks like this:
++ You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event (adding a `show` {.blocklooks} block at the top), so that your balloon code now looks like this:
 
 	![screenshot](balloons-clone-2.png)
 
@@ -240,11 +240,11 @@ You can make your game more interesting, by only giving your player 10 seconds t
 		stop [all v]
 	```
 
-	To add the `repeat until time = 0` code, first you'll need to drag a green `=` {.blockgreen} block, onto your `repeat until` {.blockorange} block:
+	To add the `repeat until`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} code, first you'll need to drag a green `=` {.blockoperators} block, onto your `repeat until` {.blockcontrol} block:
 
 	![screenshot](balloons-timer-1.png)
 
-	You can then drag your `time` {.blockred} variable onto the `=` {.blockgreen} block:
+	You can then drag your `time` {.blockdata} variable onto the `=` {.blockoperators} block:
 
 	![screenshot](balloons-timer-2.png)
 

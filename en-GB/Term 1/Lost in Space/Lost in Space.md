@@ -94,7 +94,7 @@ Now that you have some sprites, let's add code to animate them!
 		glide (1) secs to x:(0) y: (0)
 	```
 
-	To make the `point towards Earth` {.blockblue} block, you'll have to drag on the block, and then click the down arrow to select your 'Earth' sprite.
+	To make the `point towards Earth` {.blockmotion} block, you'll have to drag on the block, and then click the down arrow to select your 'Earth' sprite.
 
 	![screenshot](space-select.png)
 
@@ -102,7 +102,7 @@ Now that you have some sprites, let's add code to animate them!
 
 	![screenshot](space-animate-stage.png)
 
-	The screen position `x:(0) y:(0)` {.blockblue } is the center of the stage. A position like `x:(-150) y:(-150)` {.blockblue} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockblue } is near the top-right.
+	The screen position `x:(0) y:(0)` {.blockmotion} is the center of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
 
 	![screenshot](space-xy.png)
 
@@ -122,7 +122,7 @@ Now that you have some sprites, let's add code to animate them!
 		glide (1) secs to x:(0) y: (0)
 	```
 
-	You'll find the `wait (1) secs` {.blockorange} block by clicking on the orange 'Control' blocks section. 
+	You'll find the `wait (1) secs` {.blockcontrol} block by clicking on the orange `Control` {.blockcontrol} blocks section. 
 
 + Your spaceship now moves _every_ time you run your code. Try it!
 
@@ -162,7 +162,7 @@ You'll need to change the numbers in this block:
 
 ## Activity Checklist { .check }
 
-+ Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockblue} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area. 
++ Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area. 
 
 + Once you've removed your code, and this code instead:
 
@@ -177,9 +177,9 @@ You'll need to change the numbers in this block:
 		end
 	```
 
-+ The `repeat` {.blockorange} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before. 
++ The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before. 
 
-+ Using a loop to move the spaceship means that you can add more code inside the `repeat (100)` {.blockorange} loop to do interesting things. Add the `change color effect by 25` {.blockpurple} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
++ Using a loop to move the spaceship means that you can add more code inside the `repeat (100)` {.blockcontrol} loop to do interesting things. Add the `change color effect by 25` {.blocklooks} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
 
 	```blocks
 		when FLAG clicked
@@ -238,7 +238,7 @@ You'll need to change the numbers in this block:
 
 	![screenshot](space-monkey-loop.png)
 
-	The `forever` {.blockorange} block is another loop, but this time one that never ends. You'll have to click the stop button (next to the flag) to end this animation.
+	The `forever` {.blockcontrol} block is another loop, but this time one that never ends. You'll have to click the stop button (next to the flag) to end this animation.
 
 + You can also combine loops. Add a 'star' sprite to your animation, and add this code to it:
 
@@ -256,7 +256,7 @@ You'll need to change the numbers in this block:
 
 	![screenshot](space-star.png)
 
-+ Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it's original size. These 2 loops are inside a `forever` {.blockorange} loop, so the animation keeps repeating.
++ Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it's original size. These 2 loops are inside a `forever` {.blockcontrol} loop, so the animation keeps repeating.
 
 ## Save your project { .save }
 
