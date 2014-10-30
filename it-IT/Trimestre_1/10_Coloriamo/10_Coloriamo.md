@@ -4,7 +4,7 @@ level: Level 3
 language: it-IT
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb2","Resources/*.gif", "Resources/*.png", "*.pdf"]
+materials: ["*.sb2", "Resources/*.png", "*.pdf"]
 ...
 
 # Introduzione {.intro}
@@ -52,8 +52,8 @@ Adesso vogliamo che questo sprite funzioni come una matita. Se dai un'occhiata a
 
 __Fai click sulla bandierina verde.__
 
-+ La penna segue il mouse quando lo muovi? 
-Cosa succede se tieni premuto il bottone del mouse e lo muovi nello stage? 
++ La penna segue il mouse quando lo muovi?
+Cosa succede se tieni premuto il bottone del mouse e lo muovi nello stage?
 Non ti preoccupare del colore della matita per il momento.
 
 ## Lista delle Attivita' {.check}
@@ -133,8 +133,8 @@ __Suggerimento:__ se fai click nel quadratino del blocco `usa penna di colore`  
 
 __Fai click sulla bandierina verde.__
 
-Inizia disegnando una linea. Poi fai click sul pulsante rosso and disegna ancora. 
-+ Vedi la matita cambiare colore? Scrive in rosso? 
+Inizia disegnando una linea. Poi fai click sul pulsante rosso and disegna ancora.
++ Vedi la matita cambiare colore? Scrive in rosso?
 + Scrive esattamente dalla punta della matita?
 
 ## Salva il progetto {.save}
@@ -145,8 +145,8 @@ Inizia disegnando una linea. Poi fai click sul pulsante rosso and disegna ancora
 
 __Fai click sulla bandierina verde.__
 
-+ Tutti i pulsanti di selezione colore funzionano? 
-+ Tutti cambiano l'aspetto della matita ed il colore del tratto? 
++ Tutti i pulsanti di selezione colore funzionano?
++ Tutti cambiano l'aspetto della matita ed il colore del tratto?
 + Tutte le matite scrivono esattamente dalla punta?
 
 ## Salva il progetto {.save}
@@ -160,7 +160,7 @@ Ricordati che in Scratch un punto e' definito da x e y. L'area di disegno e' com
 + Racchiudi il blocco `raggiungi` {.blockblue} in un nuovo blocco `se` {.blockyellow} e qui controlla che:
 `y del mouse sia maggiore di -120 and minore di 170` e che `x del mouse sia maggiore di -230 e minore di 230`
 
-__Nota__ per implementare questo controllo devi usare diversi operatori `e` {.blockgreen}, uno per le due coordinate x del mouse, uno per le due coordinate y del mouse e uno per unire il tutto:  
+__Nota__ per implementare questo controllo devi usare diversi operatori `e` {.blockgreen}, uno per le due coordinate x del mouse, uno per le due coordinate y del mouse e uno per unire il tutto:
 ```blocks
 	pulisci
 	per sempre
@@ -170,8 +170,8 @@ __Nota__ per implementare questo controllo devi usare diversi operatori `e` {.bl
 	fine
 ```
 
-Siccome non possiamo disegnare al difuori dell'area di disegno, possiamo nascondere la matita ogni volta che ne usciamo. 
-+ Sostituisci il blocco `se` {.blockyellow} con un blocco `se...allora` {.blockyellow}. Usa la stessa condizione per il `se` {.blockyellow} e usa il blocco `mostrati` {.blockpurple} per la matita se la condizione 'e vera altrimenti `nasconditi` {.blockpurple}	
+Siccome non possiamo disegnare al difuori dell'area di disegno, possiamo nascondere la matita ogni volta che ne usciamo.
++ Sostituisci il blocco `se` {.blockyellow} con un blocco `se...allora` {.blockyellow}. Usa la stessa condizione per il `se` {.blockyellow} e usa il blocco `mostrati` {.blockpurple} per la matita se la condizione 'e vera altrimenti `nasconditi` {.blockpurple}
 ```blocks
 	quando si clicca su @
 	pulisci
@@ -212,8 +212,8 @@ La matita deve ricevere questo messaggio e cambiare il colore del tratto in grig
 
 __Fai click sulla bandierina verde.__
 
-+ La gomma cancella cio' che hai disegnato? 
-+ Funziona bene anche negli angoli? 
++ La gomma cancella cio' che hai disegnato?
++ Funziona bene anche negli angoli?
 + Riesci a passare dalla gomma alla matita e viceversa?
 
 ## Salva il progetto {.save}
@@ -256,7 +256,7 @@ Aggiungiamo una matita speciale che disegna con i colori dell'arcobaleno. E' una
 
 Prima di tutto aggiungi, sotto la lavagna, il pulsante di selezione per la matita arcobaleno e poi aggiungi anche il costume arcobaleno alla matita principale:
 
-+ Crea un nuovo sprite per il pulsante di selezione e posizionalo in basso sotto la lavagna. Usa il file **rainbow-selector.gif** nella cartella **Resources** del progetto. Fai in modo che quando gli fai click sopra invii un messaggio a tutti chiamato `rainbow` {.blockyellow}
++ Crea un nuovo sprite per il pulsante di selezione e posizionalo in basso sotto la lavagna. Usa il file **rainbow-selector.png** nella cartella **Resources** del progetto. Fai in modo che quando gli fai click sopra invii un messaggio a tutti chiamato `rainbow` {.blockyellow}
 + Aggiungi lo stesso file come costume della matita principale.
 
 Quello che devi fare e' creare uno script che cambi il colore del tratto della matita molte volte al secodno ottenendo cosi' un effetto arcobaleno.(cambia il colore di 5 ogni 0,5 secondi, ma se vuoi puoi anche provare altri valori). Come speigato nella Scratch card chiamata `Timer` usa un blocco `cambia colore penna di 5` {.blockgreen} al posto del blocco `cambia timer di -1` {.blockorange} nel ciclo principale.
@@ -300,19 +300,19 @@ Queste sono le scorciatoie usate:
 
 __Fai click sulla bandierina verde.__
 
-+ Riesci a selezionare tutti gli strumenti tramite i tasti scorciatoia? 
-+ Gli strumenti funzionano correttamente quando seleionati con la tastiera? 
++ Riesci a selezionare tutti gli strumenti tramite i tasti scorciatoia?
++ Gli strumenti funzionano correttamente quando seleionati con la tastiera?
 + Riesci a selezionare gli strumenti con il mouse e con i pulsanti sotto la lavagna?
 
 ## Salva il progetto {.save}
 
 ## Sfida 3: Spessore del tratto {.challenge}
 
-Un'altra funzionalita' che quasi tutti gli strumenti di disegno mettono a disposizione e' la possibilita' di cambiare la dimensione del tratto della matita. Facciamolo anche noi!! 
+Un'altra funzionalita' che quasi tutti gli strumenti di disegno mettono a disposizione e' la possibilita' di cambiare la dimensione del tratto della matita. Facciamolo anche noi!!
 
 Il problema di questa sfida e' che alle volta devi cambiare il tratto della matita e altre volte devi cambiare la dimensione dello stampino. Dipende da cio' che stai usando per disegnare.
 
-Crea due nuovi pulsanti di selezione, chiamati __bigger__ and __smaller__. Usa il costume **bigger-selector.gif** e **smaller-selector.gif** nella cartella **Resources**. Questi due sprite devono rispettivamente inviare un messaggioa  tutti chiamato `bigger` e `smaller`
+Crea due nuovi pulsanti di selezione, chiamati __bigger__ and __smaller__. Usa il costume **bigger-selector.png** e **smaller-selector.png** nella cartella **Resources**. Questi due sprite devono rispettivamente inviare un messaggioa  tutti chiamato `bigger` e `smaller`
 
 Lo script della matita principale deve rispondere a questi due messaggi e cambiare la dimensione della matita di +- 1 o la dimensione dello stampino di +- 10 in base al valore della variabile `pencil mode  {.blockorange} (usa un blocco `se...allora...altrimenti`  {.blockyellow} )
 

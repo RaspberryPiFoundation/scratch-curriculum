@@ -4,7 +4,7 @@ level: Poziom 3
 language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb", "Zasoby/*.png", "Zasoby/*.gif"]
+materials: ["*.sb", "Zasoby/*.png"]
 ...
 
 # Wstęp {.intro}
@@ -23,7 +23,7 @@ Zaczniemy od stworzenia kredki, która rysuje po scenie.
 + Kliknij na __Scenę__ i przejdź do karty __Tła__. Dodaj tło z pliku __Zasoby\tablica__.
 + Stwórz nowego duszka o nazwie __zielona-kredka__, wybierając plik __Zasoby\zielona-kredka__.
 + Przejdź na kartę z __kostiumami__ i kliknij na edycję kostiumu. W edytorze obrazów zmień centrum kostiumu na rysik kredki. Aby to zrobić, kliknij __Ustaw środek kostiumu__ i przesuń punkt przecięcia linii na ekranie, aby był na końcu rysika.
-+ Spraw, aby kredka podążała za kursorem myszy. Skorzystaj z bloków `zawsze` {.blockyellow} oraz `idź do` {.blockblue}. 
++ Spraw, aby kredka podążała za kursorem myszy. Skorzystaj z bloków `zawsze` {.blockyellow} oraz `idź do` {.blockblue}.
 ```scratch
     kiedy kliknięto zieloną FLAGĘ
     zawsze
@@ -101,7 +101,7 @@ Czy przycisk czyści ekran z rysunków?
 
 # Krok 3: Zmienianie kolorów {.activity}
 
-Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać kolory! Dodamy kilka duszków na dole ekranu, które wyglądają jak kolorowe przyciski i klikając na nie, będziemy zmieniać kolor linii oraz kolor duszka-kredki. 
+Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać kolory! Dodamy kilka duszków na dole ekranu, które wyglądają jak kolorowe przyciski i klikając na nie, będziemy zmieniać kolor linii oraz kolor duszka-kredki.
 
 ## Zadania do wykonania {.check}
 
@@ -269,7 +269,7 @@ My skorzystaliśmy z tych skrótów:
 * Czerwony ołówek - c
 * Niebieski ołówek - n
 * Żółty ołówek - x
-* Zielony ołówek - z 
+* Zielony ołówek - z
 * Tęczowy ołówek - t
 * Pieczątka - p
 
@@ -295,7 +295,7 @@ Nie zapomnij dodać skrótów klawiszowych dla nowego narzędzia (my dodaliśmy 
 
 ## Zapisz swój projekt. {.save}
 
-Pewnie udało Ci się zauważyć, że zmiana rozmiaru pieczątki zmienia też rozmiar duszka na ekranie, łączenie z kredkami. Aby tego uniknąć, musisz ustawiać rozmiar kostiumu na 100% za każdym razem, kiedy przełączasz się na kredkę. Pomoże to zachować odpowiedni rozmiar kredek. 
+Pewnie udało Ci się zauważyć, że zmiana rozmiaru pieczątki zmienia też rozmiar duszka na ekranie, łączenie z kredkami. Aby tego uniknąć, musisz ustawiać rozmiar kostiumu na 100% za każdym razem, kiedy przełączasz się na kredkę. Pomoże to zachować odpowiedni rozmiar kredek.
 
 Możesz jeszcze bardziej ulepszyć swoje narzędzia, każąc pieczątce zapamiętać swój rozmiar, tak aby po przełączeniu się na kredkę czy gumkę można było wrócić do starego rozmiaru pieczątki. Najłatwiejszym rozwiązaniem jest dodanie `zmiennej` {.blocklightgrey} `rozmiarPieczątki` {.blockorange}, która zapisuje obecny rozmiar pieczątki po każdej jego zmianie. Po ponownym wybraniu pieczątki, powinna ona odczytać tę zmienną i wybrać odpowiedni rozmiar.
 

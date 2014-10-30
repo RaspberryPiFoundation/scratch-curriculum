@@ -4,7 +4,7 @@ level: Level 3
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb2","Resources/*.gif", "Resources/*.png"]
+materials: ["*.sb2","Resources/*.png"]
 ...
 
 # Introduction {.intro}
@@ -239,7 +239,7 @@ __Let’s add a special pencil that paints in rainbow colours.__ It’s somethin
 
 __First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:__
 
-+ __Create a new tool selection sprite__ and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the __resources/rainbow-selector.gif__ costume and have it `broadcast rainbow` {.blockyellow} when clicked.
++ __Create a new tool selection sprite__ and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the __resources/rainbow-selector.png__ costume and have it `broadcast rainbow` {.blockyellow} when clicked.
 + Add the __resources/rainbow-pencil.png__ costume to the __pencil sprite__.
 
 You need to build a script that will change the pen colour many times a second to give the rainbow effect (changing it by 5 every +05 seconds works well, but you should try out different values). The timer Scratch card shows how you can make something change every so often. Use a `change pen colour by 5` {.blockgreen} block instead of a `change timer by -1` {.blockorange} block inside the loop.
@@ -289,7 +289,7 @@ __Another feature that most drawing packages have is the ability to change the s
 
 There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.
 
-__Create two new tool-selection sprites__, called __bigger__ and __smaller__. They should have the __resources/bigger-selector.gif__ and __resources/smaller-selector.gif__ costumes and should send the bigger and smaller messages.
+__Create two new tool-selection sprites__, called __bigger__ and __smaller__. They should have the __resources/bigger-selector.png__ and __resources/smaller-selector.png__ costumes and should send the bigger and smaller messages.
 
 The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an `if-else` {.blockyellow} block, similar to how the sprite chooses between putting the pen down or stamping)
 
