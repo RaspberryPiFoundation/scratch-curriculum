@@ -106,13 +106,13 @@ Now that you have some sprites, let's add code to animate them!
 
 	![screenshot](space-xy.png)
 
-	If you need to know the coordinates of a position on the stage, move the mouse to the position you want and make a note of the cordinates, which are displayed below the stage.
+	If you need to know the coordinates of a position on the stage, move the mouse to the position you want and make a note of the coordinates, which are displayed below the stage.
 
 	![screenshot](space-coordinates.png)
 
 + If you try to click the code again, to run it a second time, nothing happens! That's because the spaceship is already at the position it's been told to glide to. Let's improve your animation, by telling the spaceship to start at the bottom-left of the stage, and point upwards to begin with. 
 
-+ Add some more blocks to your animation, adding them on top of the blocks you already have. Your code should now looks like this:
++ Add some more blocks to your animation, adding them on top of the blocks you already have. Your code should now look like this:
 
 	```blocks
 		point in direction (0 v)
@@ -164,7 +164,7 @@ You'll need to change the numbers in this block:
 
 + Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area. 
 
-+ Once you've removed your code, and this code instead:
++ Once you've removed your code, add this code instead:
 
 	```blocks
 		when FLAG clicked
