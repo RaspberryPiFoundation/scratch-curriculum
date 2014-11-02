@@ -141,11 +141,11 @@ __Click the green flag,__ do the presents fall at different speeds and colours?
             repeat until <(Finish) = [1]>
                 change y  by (Speed)
                 if <(y position) < [-160]> then
-                    play drum [57 v] for (+2) beats
+                    play drum [57 v] for (0.25) beats
                     set (Finish) to [1]
                 end
                 if <touching [Rudolph v]?> then
-                    play drum [39 v] for (+2) beats
+                    play drum [39 v] for (0.25) beats
                     set (Finish) to [1]
                     change [Score v] by [1]
 ```
