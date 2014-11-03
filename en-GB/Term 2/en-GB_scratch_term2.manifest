@@ -7,47 +7,47 @@
     "title": "Scratch Term 2",
 
     "projects": [
-        {
+         {
             "number":   1,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "pdf":      "Ghostbusters/Ghostbusters.pdf",
+            "note":     "Ghostbusters/Ghostbusters - Notes.md",
+            "note_pdf": "Ghostbusters/Ghostbusters - Notes.pdf"
+        },
+        {
+            "number":   2,
             "filename": "Fireworks/Fireworks.md",
             "pdf":      "Fireworks/Fireworks.pdf",
             "note":     "Fireworks/Fireworks - Notes.md",
             "note_pdf": "Fireworks/Fireworks - Notes.pdf"
         },
         {
-            "number":   2,
+            "number":   3,
             "filename": "Fruit Machine/Fruit Machine.md",
             "pdf":      "Fruit Machine/Fruit Machine.pdf",
             "note":     "Fruit Machine/Fruit Machine - Notes.md",
             "note_pdf": "Fruit Machine/Fruit Machine - Notes.pdf"
         },
         {
-            "number":   3,
+            "number":   4,
             "filename": "Fish Chomp/Fish Chomp.md",
             "pdf":      "Fish Chomp/Fish Chomp.pdf",
             "note":     "Fish Chomp/Fish Chomp - Notes.md",
             "note_pdf": "Fish Chomp/Fish Chomp - Notes.pdf"
         },
         {
-            "number":   4,
+            "number":   5,
             "filename": "Desert Race/Desert Race.md",
             "pdf":      "Desert Race/Desert Race.pdf",
             "note":     "Desert Race/Desert Race - Notes.md",
             "note_pdf": "Desert Race/Desert Race - Notes.pdf"
         },
         {
-            "number":   5,
+            "number":   6,
             "filename": "What's That/What's That.md",
             "pdf":      "What's That/What's That.pdf",
             "note":     "What's That/What's That - Notes.md",
             "note_pdf": "What's That/What's That - Notes.pdf"
-        },
-        {
-            "number":   6,
-            "filename": "Paint Box/Paint Box.md",
-            "pdf":      "Paint Box/Paint Box.pdf",
-            "note":     "Paint Box/Paint Box - Notes.md",
-            "note_pdf": "Paint Box/Paint Box - Notes.pdf"
         },
         {
             "number":   7,
