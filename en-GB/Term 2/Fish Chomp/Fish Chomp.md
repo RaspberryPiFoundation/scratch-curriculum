@@ -42,7 +42,7 @@ Click the green flag.
 ```blocks
     when FLAG clicked
         forever
-            if <(distance to [mouse-pointer v]) > (10)>
+            if <(distance to [mouse-pointer v]) > (10)> then
                 point towards [mouse-pointer v]
                 move (3) steps
 ```
