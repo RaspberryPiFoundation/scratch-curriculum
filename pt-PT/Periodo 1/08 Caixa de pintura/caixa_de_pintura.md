@@ -149,7 +149,7 @@ cancelar.  Quando clicares num desses botões, a cor do lápis mudará para a co
 do botão. O actor instrumento também mudará o seu traje para um lápis da mesma
 cor para podermos saber com que cor estamos a desenhar.
 
-1. Carrega um novo actor a partir do arquivo «Recursos/o botão vermelho.gif».
+1. Carrega um novo actor a partir do arquivo «Recursos/o botão vermelho.png».
 Altera o nome do seu único traje para «normal».
 
 2. Posiciona o novo actor na base do palco, sob o quadro, ao lado do botão de
@@ -315,7 +315,7 @@ direita (isto quando a orientação da ferramenta é a «normal», ou seja, para
 direita, ou seja ainda, 90°) e
 
 - porque o Scratch não deixa que os actores saiam demasiado da zona visível do
-palco. 
+palco.
 
 A solução para este problema passa por alterar a orientação da ferramente sempre
 que este se aproximar de pelo menos uma das bordas.
@@ -520,8 +520,8 @@ carimbo não deve levar à alteração da dimensão do actor quando a ferramenta
 usada é outra.
 
 Cria dois novos actores, "o botão «aumentar»" e "o botão «reduzir»", a partir
-dos arquivos "Recursos/o botão «aumentar».gif" e "Recursos/o botão
-«reduzir».gif", respectivamente. Estes botões devem recorrer à difusão de
+dos arquivos "Recursos/o botão «aumentar».png" e "Recursos/o botão
+«reduzir».png", respectivamente. Estes botões devem recorrer à difusão de
 mensagens, tal como os restantes botões (com excepção do botão de apagar o
 quadro).
 

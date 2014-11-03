@@ -10,7 +10,7 @@ This project uses assets provided by Code Club so check your folder. Children wi
 
 ##Scratch Cards required:
 
-* Record a sequence 
+* Record a sequence
 * Play back a sequence
 
 __Notes on tricky bits and collision detection:__
@@ -34,7 +34,7 @@ You can stop Felix moving through thin things by making the collision detectors 
 
 __Drawing your own collision detectors__
 
-If the children want to use their own costume instead of Felix, they’ll have to create their own collision detectors for it. I created them by importing the costume into the GIMP and creating one layer for each side bar. By selecting which layers are visible, you can easily export all four collision detectors (as .gif files). As when designing levels (below), check that you get the correct colours when you convert the image to an indexed palette.
+If the children want to use their own costume instead of Felix, they’ll have to create their own collision detectors for it. I created them by importing the costume into the GIMP and creating one layer for each side bar. By selecting which layers are visible, you can easily export all four collision detectors (as .png files). As when designing levels (below), check that you get the correct colours when you convert the image to an indexed palette.
 
 Also note that the top and bottom edge detectors shouldn’t overlap the side ones. This prevents the sprite hanging in mid-air if it bumps into an obstacle during a jump.
 
