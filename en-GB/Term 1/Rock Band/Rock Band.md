@@ -88,7 +88,7 @@ First, let's make a drum that makes a sound when it's hit.
 	when [space v] key pressed
 ```
 
-You can copy your existing code by, right-clicking on it and clicking 'duplicate'.
+You can copy your existing code by right-clicking on it and clicking 'duplicate'.
 
 ![screenshot](band-duplicate-code.png)
 
