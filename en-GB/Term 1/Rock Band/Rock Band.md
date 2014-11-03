@@ -230,10 +230,10 @@ You can even add some music for your band to play along to!
 		end
 
 		when [m v] key pressed
-		set volume to (100)%
+		set volume to (0)%
 
 		when [u v] key pressed
-		set volume to (0)%		
+		set volume to (100)%
 	```
 
 ## Save your project { .save }
