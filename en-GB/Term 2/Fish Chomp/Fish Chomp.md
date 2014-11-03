@@ -41,8 +41,7 @@ Click the green flag.
 + You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer (The `distance to` {.blocklightblue} block is in the `Sensing` palette).
 ```blocks
     when FLAG clicked
-        forever
-            if <(distance to [mouse-pointer v]) > (10)>
+        if <(distance to [mouse-pointer v]) > (10)> then
                 point towards [mouse-pointer v]
                 move (3) steps
 ```
