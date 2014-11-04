@@ -88,7 +88,7 @@ First, let's make a drum that makes a sound when it's hit.
 	when [space v] key pressed
 ```
 
-You can copy your existing code by, right-clicking on it and clicking 'duplicate'.
+You can copy your existing code by right-clicking on it and clicking 'duplicate'.
 
 ![screenshot](band-duplicate-code.png)
 
@@ -230,10 +230,10 @@ You can even add some music for your band to play along to!
 		end
 
 		when [m v] key pressed
-		set volume to (100)%
+		set volume to (0)%
 
 		when [u v] key pressed
-		set volume to (0)%		
+		set volume to (100)%
 	```
 
 ## Save your project { .save }
