@@ -185,7 +185,7 @@ Can you race against a friend, one of you moving the parrot by pressing ‘A’ 
 ```blocks
     when [p v] key pressed
     if <<(racing) = [1]> and <(boosted) = [0]>>
-        switch to costume [parrot-boost v]
+        switch costume to [parrot-boost v]
         set [boosted v] to [1]
         move (30) steps
         if <touching [edge v]?>
@@ -218,7 +218,7 @@ The code to check if the race has finished is now used in two places for each sp
 
     when [q v] key pressed
         if <<(racing) = [1]> and <(boosted) = [0]>>
-            switch to costume [parrot-boost v]
+            switch costume to [parrot-boost v]
             set [boosted v] to [1]
             move (4) steps
 

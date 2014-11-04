@@ -118,7 +118,7 @@ In the pencil, upload a new costume, __resources/red-pencil.png__. Set the costu
 + Add a new script to the pencil. When the pencil receives the message __red__, it should change to the red pencil costume and change the pen colour to red (using the `set pen color to` {.blockgreen} block). __Hint:__ if you click on the coloured square in the `set pen color to` {.blockgreen} block, you can click the red button sprite to make sure it’s the same colour.
 ```blocks
     when I receive [red v]
-        switch to costume [red-pencil v]
+        switch costume to [red-pencil v]
         set pen color to [#FF0000]
 ```
 

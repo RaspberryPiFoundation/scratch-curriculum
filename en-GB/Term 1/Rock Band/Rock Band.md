@@ -135,12 +135,12 @@ Let's add a singer to our band!
 
 	```blocks
 		when flag clicked
-		switch to costume [singing v]
+		switch costume to [singing v]
 
 		when this sprite clicked
-		switch to costume [singing v]
+		switch costume to [singing v]
 		play sound [singer1 v] until done
-		switch to costume [not singing v]
+		switch costume to [not singing v]
 	```
 
 + Click on your singer, to test that your new code works.
@@ -189,12 +189,12 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 	```blocks
 		when flag clicked
-		switch to costume [not hit v]
+		switch costume to [not hit v]
 
 		when this sprite clicked
-		switch to costume [hit v]
+		switch costume to [hit v]
 		play sound [cymbal crash v] until done
-		switch to costume [not hit v]
+		switch costume to [not hit v]
 	```
 
 + Test out your cymbal, to see if it works!
