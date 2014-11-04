@@ -1,6 +1,6 @@
 ---
 title: Fish Chomp
-level: Level 2
+level: Term 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

@@ -1,6 +1,6 @@
 ---
 title: Fireworks
-level: Level 1
+level: Term 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

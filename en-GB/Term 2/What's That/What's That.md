@@ -1,6 +1,6 @@
 ---
 title: What's That
-level: Level 3
+level: Term 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
