@@ -77,6 +77,8 @@ If you're using Scratch online, clicking 'Save' adds your program to your 'stuff
 
 This shows you a list of all your projects. Click 'See inside' to continue programming your animation.
 
+If you're using Scratch online and don't have a username, you can click 'Download to your computer' to save your project.
+
 # Step 2: Animating your sprites { .activity .new-page}
 
 Now that you have some sprites, let's add code to animate them!
