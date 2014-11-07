@@ -267,4 +267,12 @@ You'll also need code to `turn` {.blockmotion} the boat when the left and right 
 
 ## Save your project { .save }
 
+## Challenge: More levels! {.challenge .new-page}
+Can you create additional backdrops, and allow the player to choose between levels? 
 
+```blocks
+	when [space v] key pressed
+	next backdrop
+```
+
+## Save your project { .save }

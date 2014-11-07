@@ -29,7 +29,8 @@ Project resources:
 + "Winning!" - use of `touching color ...` {.blocksensing} block;
 + "Sound effects" - adding sound and music to the game;
 + "More obstacles!" - consolidating learning of sensing blocks;
-+ "More boats!" - use of `key ... pressed?` {.blocksensing} blocks.
++ "More boats!" - use of `key ... pressed?` {.blocksensing} blocks;
++ "More levels!" - additional player-controlled backdrops.
 
 #Frequently Asked Questions
 + This is the first project in which much less step-by-step guidance is given. Use this as an opportunity to consolidate learning, and to start drawing on knowledge learnt in this and previous projects. 
