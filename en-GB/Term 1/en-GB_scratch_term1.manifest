@@ -31,13 +31,11 @@
             "number":   5,
             "filename": "Paint Box/Paint Box.md",
             "note":     "Paint Box/Paint Box - notes.md"
-        },        
+        },
         {
             "number":   6,
-            "filename": "Felix and Herbert/Felix and Herbert.md",
-            "pdf":      "Felix and Herbert/Felix and Herbert.pdf",
-            "note":     "Felix and Herbert/Felix and Herbert - Notes.md",
-            "note_pdf": "Felix and Herbert/Felix and Herbert - Notes.pdf"
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 }

@@ -132,6 +132,13 @@
             "note":      "Frantic Felix/For Leaders/Frantic Felix - Notes.md",
             "note_pdf":  "Frantic Felix/For Leaders/Frantic Felix - Notes.pdf",
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
+        },
+        {
+            "number":   7,
+            "filename": "Create Your Own Game/Create Your Own Game.md",
+            "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
+            "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
+            "note_pdf": "Create Your Own Game/Create Your Own Game - Notes.pdf"
         }
 
     ]
