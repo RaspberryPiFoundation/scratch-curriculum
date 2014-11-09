@@ -202,7 +202,7 @@ Popping 1 balloon isn't much of a game, so let's add lots more!
 
 	![screenshot](balloons-clone-1.png)
 
-+ You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event (adding a `show` {.blocklooks} block at the top), so that your balloon code now looks like this:
++ You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event, so that your balloon code now looks like this:
 
 	![screenshot](balloons-clone-2.png)
 
