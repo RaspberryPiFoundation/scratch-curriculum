@@ -63,7 +63,7 @@ We need to have a way to start the race and to know who has won. __First we crea
     when this sprite clicked
         say [3] for (1) secs
         say [2] for (1) secs
-        say [2] for (1) secs
+        say [1] for (1) secs
         say [GO!] for (1) secs
         hide
 ```
