@@ -37,7 +37,7 @@ You are going to make a balloon-popping game!
 		point in direction (45 v)
 		forever
 			move (1) steps
-			if on edge bounce
+			if on edge, bounce
 		end
 	```
 
@@ -72,7 +72,7 @@ You are going to make a balloon-popping game!
 		point in direction (45 v)
 		forever
 			move (1) steps
-			if on edge bounce
+			if on edge, bounce
 		end
 	```
 
@@ -115,7 +115,7 @@ Lets allow the player to pop the balloons!
 		change [color v] effect by (pick random (0) to (200))
 		forever
 			move (1) steps
-			if on edge bounce
+			if on edge, bounce
 		end
 	```
 
@@ -273,7 +273,7 @@ You'll need to think about the objects you're adding. Think about:
 + How many will there be? 
 + How big is it? How does it move?
 + How many points will you score (or lose) for clicking it?
-+ Will it moves faster or slower than the balloons?
++ Will it move faster or slower than the balloons?
 + What will it look/sound like when it's been clicked?
 
 If you need help adding another object, you can reuse the steps above!
