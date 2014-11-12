@@ -139,7 +139,9 @@ Lets allow the player to pop the balloons!
 
 + Now that you're hiding the balloon when it's clicked, you'll also need to add a `show` {.blocklooks} block to the start of the `when flag clicked` {.blockevents} code.
 
-+ Try popping a balloon again, to check that it works properly.
++ Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:
+
+	![screenshot](balloons-fullscreen.png)
 
 ## Save your project { .save }
 
