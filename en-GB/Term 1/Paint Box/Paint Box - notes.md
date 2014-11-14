@@ -24,7 +24,7 @@ Project resources:
 
 #Learning Objectives
 + Importing images;
-+ Relational and boolean operators ('>' & 'and');
++ Relational and boolean operators (`>` {.blockoperators} & `and` {.blockoperators});
 + Broadcasting between sprites.
 
 #Challenges

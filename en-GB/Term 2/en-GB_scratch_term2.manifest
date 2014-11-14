@@ -7,54 +7,54 @@
     "title": "Scratch Term 2",
 
     "projects": [
-         {
+        {
             "number":   1,
+            "filename": "Felix and Herbert/Felix and Herbert.md",
+            "pdf":      "Felix and Herbert/Felix and Herbert.pdf",
+            "note":     "Felix and Herbert/Felix and Herbert - Notes.md",
+            "note_pdf": "Felix and Herbert/Felix and Herbert - Notes.pdf"
+        },
+        {
+            "number":   2,
             "filename": "Ghostbusters/Ghostbusters.md",
             "pdf":      "Ghostbusters/Ghostbusters.pdf",
             "note":     "Ghostbusters/Ghostbusters - Notes.md",
             "note_pdf": "Ghostbusters/Ghostbusters - Notes.pdf"
         },
         {
-            "number":   2,
+            "number":   3,
             "filename": "Fireworks/Fireworks.md",
             "pdf":      "Fireworks/Fireworks.pdf",
             "note":     "Fireworks/Fireworks - Notes.md",
             "note_pdf": "Fireworks/Fireworks - Notes.pdf"
         },
         {
-            "number":   3,
+            "number":   4,
             "filename": "Fruit Machine/Fruit Machine.md",
             "pdf":      "Fruit Machine/Fruit Machine.pdf",
             "note":     "Fruit Machine/Fruit Machine - Notes.md",
             "note_pdf": "Fruit Machine/Fruit Machine - Notes.pdf"
         },
         {
-            "number":   4,
+            "number":   5,
             "filename": "Fish Chomp/Fish Chomp.md",
             "pdf":      "Fish Chomp/Fish Chomp.pdf",
             "note":     "Fish Chomp/Fish Chomp - Notes.md",
             "note_pdf": "Fish Chomp/Fish Chomp - Notes.pdf"
         },
         {
-            "number":   5,
+            "number":   6,
             "filename": "Desert Race/Desert Race.md",
             "pdf":      "Desert Race/Desert Race.pdf",
             "note":     "Desert Race/Desert Race - Notes.md",
             "note_pdf": "Desert Race/Desert Race - Notes.pdf"
         },
         {
-            "number":   6,
+            "number":   7,
             "filename": "What's That/What's That.md",
             "pdf":      "What's That/What's That.pdf",
             "note":     "What's That/What's That - Notes.md",
             "note_pdf": "What's That/What's That - Notes.pdf"
-        },
-        {
-            "number":   7,
-            "filename": "Create Your Own Game/Create Your Own Game.md",
-            "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
-            "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
-            "note_pdf": "Create Your Own Game/Create Your Own Game - Notes.pdf"
         }
     ]
 }

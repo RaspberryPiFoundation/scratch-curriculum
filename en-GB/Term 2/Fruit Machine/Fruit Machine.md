@@ -1,6 +1,6 @@
 ---
 title: Fruit machine
-level: Level 2
+level: Term 2
 stylesheet: scratch
 language: en-GB
 embeds: "*.png"
@@ -211,7 +211,7 @@ The aim of the game is to click on the sprites so they stop while showing the sa
 
 ## Activity Checklist { .check }
 
-+ We wrote the code to check that the game was over in **step 6**, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word **"WIN"**. Then change its name to **"Win"**.
++ We wrote the code to check that the game was over in **step 6**, so all we need to do now is check to see if the player has won. Go back to the backdrops and add some more text to the GameOver backdrop so that also displays the word **"WIN"**. Then change its name to **"Win"**.
 + Copy the backdrop again to create one with a **"Lose"** message. Give it the name **"Lose"**.
 + Now we need some code to work out which backdrop to display once the game is over. We can use an `if...then...else` { .blockyellow } block to see if the player has won or lost by comparing each `costume #` { .blockpurple }  (costume number) using a similar `x position of Sprite` { .blockblue } block like we did before. This time, instead of looking at the `stopped` { .blockorange } variable, we can check the`costume #` { .blockpurple }  and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
 ```blocks

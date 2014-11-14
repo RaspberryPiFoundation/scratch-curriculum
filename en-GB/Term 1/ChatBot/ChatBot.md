@@ -31,7 +31,11 @@ You are going to learn how to program your own talking robot!
 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
-+ Choose a sprite and a backdrop that fit your chatbot's personality. Here's an example, although yours doesn't have to look like this:
++ Choose one of these character sprites, and add them to your project:
+
+	![screenshot](chatbot-characters.png)
+
++ Choose a backdrop that fits your chatbot's personality. Here's an example, although yours doesn't have to look like this:
 
 	![screenshot](chatbot-sprite.png)
 

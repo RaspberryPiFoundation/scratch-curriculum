@@ -23,3 +23,8 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 #Challenges
 + "More randomness" - using random numbers;
 + "More objects" - applying skills to create another game object.
+
+#Frequently Asked Questions
++ If children find it difficult to pop balloons without dragging them around, they can play the game in fullscreen mode, in which balloons aren't draggable.
+
+![screenshot](balloons-fullscreen.png)

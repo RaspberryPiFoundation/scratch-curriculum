@@ -88,7 +88,7 @@ First, let's make a drum that makes a sound when it's hit.
 	when [space v] key pressed
 ```
 
-You can copy your existing code by, right-clicking on it and clicking 'duplicate'.
+You can copy your existing code by right-clicking on it and clicking 'duplicate'.
 
 ![screenshot](band-duplicate-code.png)
 
@@ -135,12 +135,12 @@ Let's add a singer to our band!
 
 	```blocks
 		when flag clicked
-		switch to costume [singing v]
+		switch costume to [singing v]
 
 		when this sprite clicked
-		switch to costume [singing v]
+		switch costume to [singing v]
 		play sound [singer1 v] until done
-		switch to costume [not singing v]
+		switch costume to [not singing v]
 	```
 
 + Click on your singer, to test that your new code works.
@@ -189,12 +189,12 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 	```blocks
 		when flag clicked
-		switch to costume [not hit v]
+		switch costume to [not hit v]
 
 		when this sprite clicked
-		switch to costume [hit v]
+		switch costume to [hit v]
 		play sound [cymbal crash v] until done
-		switch to costume [not hit v]
+		switch costume to [not hit v]
 	```
 
 + Test out your cymbal, to see if it works!
@@ -230,10 +230,10 @@ You can even add some music for your band to play along to!
 		end
 
 		when [m v] key pressed
-		set volume to (100)%
+		set volume to (0)%
 
 		when [u v] key pressed
-		set volume to (0)%		
+		set volume to (100)%
 	```
 
 ## Save your project { .save }

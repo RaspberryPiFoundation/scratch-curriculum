@@ -18,9 +18,9 @@ materials: "*.sb2"
 ```blocks
 	repeat (8)
 		wait (0.1) secs
-		switch to costume [mouthClosed v]
+		switch costume to [mouthClosed v]
 		wait (0.1) secs
-		switch to costume [mouthOpen v]
+		switch costume to [mouthOpen v]
 	end
 ```
 + To hook the two up, have the block that does the `say` {.blockpurple} broadcast a message that the other block can react to.
@@ -32,9 +32,9 @@ materials: "*.sb2"
 	when I receive [talk v]
 		repeat (8)
 			wait (0.1) secs
-			switch to costume [mouthClosed v]
+			switch costume to [mouthClosed v]
 			wait (0.1) secs
-			switch to costume [mouthOpen v]
+			switch costume to [mouthOpen v]
 		end
 ```
 + To make this a bit more flexible, use a variable to control the `talkTime`{.blockorange} the monster says something for, and also to control how many times the animation loop is repeated.
@@ -52,9 +52,9 @@ materials: "*.sb2"
 	when I receive [talk v]
 		repeat ((talkTime) * (4))
 			wait (0.1) secs
-			switch to costume [mouthClosed v]
+			switch costume to [mouthClosed v]
 			wait (0.1) secs
-			switch to costume [mouthOpen v]
+			switch costume to [mouthOpen v]
 		end
 ```
 

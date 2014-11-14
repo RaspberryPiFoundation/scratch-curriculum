@@ -20,8 +20,8 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + Sequential code blocks;
 + Events;
 + Loops:
-	+ 'Repeat' loops;
-	+ 'Forever' loops.
+	+ `Repeat` {.blockcontrol} loops;
+	+ `Forever` {.blockcontrol} loops.
 
 #Challenges
 + "Adding another sprite" - adding a sprite to a project;

@@ -43,19 +43,19 @@ materials: "*.sb2"
 + Make each note switch to a different costume and then switch back to `costume1`{.blockblue}.
 ```blocks
     when I receive [piano-1 v]
-        switch to costume [costume2 v]
+        switch costume to [costume2 v]
         play note (60 v) for (0.5) beats
-        switch to costume [costume1 v]
+        switch costume to [costume1 v]
 
     when I receive [piano-2 v]
-        switch to costume [costume3 v]
+        switch costume to [costume3 v]
         play note (64 v) for (0.5) beats
-        switch to costume [costume1 v]
+        switch costume to [costume1 v]
 
     when I receive [piano-3 v]
-        switch to costume [costume4 v]
+        switch costume to [costume4 v]
         play note (67 v) for (0.5) beats
-        switch to costume [costume1 v]
+        switch costume to [costume1 v]
 ```
 
 # Challenge: Create a way to change the instrument.

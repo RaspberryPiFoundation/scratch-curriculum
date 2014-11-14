@@ -136,6 +136,13 @@
         {
             "number":   7,
             "filename": "Simone Ballerina/Simone Ballerina.md"
+        },
+        {
+            "number":   8,
+            "filename": "Create Your Own Game/Create Your Own Game.md",
+            "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
+            "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
+            "note_pdf": "Create Your Own Game/Create Your Own Game - Notes.pdf"
         }
     ]
 }

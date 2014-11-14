@@ -1,6 +1,6 @@
 ---
 title: Fish Chomp
-level: Level 2
+level: Term 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
@@ -154,9 +154,9 @@ Now we want the fish to respond to this message by making a “chomp” sound an
     when I receive [got me v]
         play sound [chomp v]
         repeat (2)
-            switch to costume [mouth-closed v]
+            switch costume to [mouth-closed v]
             wait (0.5) secs
-            switch to costume [hungry-fish v]
+            switch costume to [hungry-fish v]
 ```
 
 Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.

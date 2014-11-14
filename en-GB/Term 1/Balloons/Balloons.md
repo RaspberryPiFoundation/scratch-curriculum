@@ -37,7 +37,7 @@ You are going to make a balloon-popping game!
 		point in direction (45 v)
 		forever
 			move (1) steps
-			if on edge bounce
+			if on edge, bounce
 		end
 	```
 
@@ -72,7 +72,7 @@ You are going to make a balloon-popping game!
 		point in direction (45 v)
 		forever
 			move (1) steps
-			if on edge bounce
+			if on edge, bounce
 		end
 	```
 
@@ -115,7 +115,7 @@ Lets allow the player to pop the balloons!
 		change [color v] effect by (pick random (0) to (200))
 		forever
 			move (1) steps
-			if on edge bounce
+			if on edge, bounce
 		end
 	```
 
@@ -139,7 +139,9 @@ Lets allow the player to pop the balloons!
 
 + Now that you're hiding the balloon when it's clicked, you'll also need to add a `show` {.blocklooks} block to the start of the `when flag clicked` {.blockevents} code.
 
-+ Try popping a balloon again, to check that it works properly.
++ Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:
+
+	![screenshot](balloons-fullscreen.png)
 
 ## Save your project { .save }
 
@@ -202,7 +204,7 @@ Popping 1 balloon isn't much of a game, so let's add lots more!
 
 	![screenshot](balloons-clone-1.png)
 
-+ You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event (adding a `show` {.blocklooks} block at the top), so that your balloon code now looks like this:
++ You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event, so that your balloon code now looks like this:
 
 	![screenshot](balloons-clone-2.png)
 
@@ -273,7 +275,7 @@ You'll need to think about the objects you're adding. Think about:
 + How many will there be? 
 + How big is it? How does it move?
 + How many points will you score (or lose) for clicking it?
-+ Will it moves faster or slower than the balloons?
++ Will it move faster or slower than the balloons?
 + What will it look/sound like when it's been clicked?
 
 If you need help adding another object, you can reuse the steps above!

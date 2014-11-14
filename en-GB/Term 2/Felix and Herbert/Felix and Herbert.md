@@ -1,6 +1,6 @@
 ---
 title: Felix and Herbert
-level: Level 1
+level: Term 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

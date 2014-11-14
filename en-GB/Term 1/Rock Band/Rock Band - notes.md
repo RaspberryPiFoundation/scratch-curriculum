@@ -17,7 +17,7 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 
 #Learning Objectives
 + Costumes;
-+ More events (Key presses and mouse clicks);
++ More events (Key presses and sprite clicks);
 + Sound and music.
 
 #Challenges

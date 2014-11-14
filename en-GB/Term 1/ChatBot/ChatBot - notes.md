@@ -18,10 +18,10 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 #Learning Objectives
 + Text input;
 + Decisions:
-	+ 'if' statements;
-	+ 'if/else' statements.
+	+ `if ... then` {.blockcontrol} statements;
+	+ `if ... then ... else` {.blockcontrol} statements.
 
 #Challenges
-+ "More questions" - consolidating learning of input and the answer block;
++ "More questions" - consolidating learning of input and the `answer` {.blocksensing} block;
 + "More decisions" - using decisions;
 + "Make your own chatbot" - consolidation of learning from this and past projects.

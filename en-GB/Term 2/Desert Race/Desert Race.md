@@ -1,6 +1,6 @@
 ---
 title: Desert Race
-level: Level 2
+level: Term 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
@@ -63,7 +63,7 @@ We need to have a way to start the race and to know who has won. __First we crea
     when this sprite clicked
         say [3] for (1) secs
         say [2] for (1) secs
-        say [2] for (1) secs
+        say [1] for (1) secs
         say [GO!] for (1) secs
         hide
 ```
@@ -185,7 +185,7 @@ Can you race against a friend, one of you moving the parrot by pressing ‘A’ 
 ```blocks
     when [p v] key pressed
     if <<(racing) = [1]> and <(boosted) = [0]>>
-        switch to costume [parrot-boost v]
+        switch costume to [parrot-boost v]
         set [boosted v] to [1]
         move (30) steps
         if <touching [edge v]?>
@@ -218,7 +218,7 @@ The code to check if the race has finished is now used in two places for each sp
 
     when [q v] key pressed
         if <<(racing) = [1]> and <(boosted) = [0]>>
-            switch to costume [parrot-boost v]
+            switch costume to [parrot-boost v]
             set [boosted v] to [1]
             move (4) steps
 
