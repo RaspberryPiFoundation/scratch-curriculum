@@ -132,7 +132,10 @@
             "note":      "Frantic Felix/For Leaders/Frantic Felix - Notes.md",
             "note_pdf":  "Frantic Felix/For Leaders/Frantic Felix - Notes.pdf",
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
+        },
+        {
+            "number":   7,
+            "filename": "Simone Ballerina/Simone Ballerina.md"
         }
-
     ]
 }
