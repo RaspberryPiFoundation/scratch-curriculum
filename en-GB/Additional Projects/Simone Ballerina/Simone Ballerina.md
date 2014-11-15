@@ -3,6 +3,7 @@ title: Simone Ballerina
 level: Level 2
 language: en-GB
 stylesheet: scratch
+embeds: "*.png"
 ...
 
 # Introduction { .intro }
@@ -18,11 +19,11 @@ Let’s generate the random sequence. We also want to make the ballerina's dress
 ## Activity Checklist { .check }
 
 + Start a new Scratch project. Delete the cat by right clicking it and clicking **Delete**.
-+ Replace the background of the stage with **Indoors/spotlight-stage**.
++ Replace the background of the stage with a background from Indoors, **spotlight-stage**.
 + Select a main character for the game. If you really don't want a ballerina then choose something else. It doesn't have to be a person, but it needs to be able to show different colours.
 + Create 4 costumes for you sprite and edit the main colour of them using the *Fill tool* to be different.
-+ Rename your character to something memorable E.g. Simone
-+ In Variables *Make a list* called *sequence* *For this sprite only*
++ Rename your character to something memorable E.g. **Simone**
++ In Variables, make a list `For this sprite only` {.blockgrey} and call it `sequence` {.blockorange}.
 
 ```blocks
 when FLAG clicked
@@ -53,13 +54,13 @@ Now we need to add some coloured drums so you can enter in your guess at the seq
 ## Activity Checklist { .check }
 
 + Import a new sprite **Things/drum2**
-+ Make the sprite a bit smaller by clicking on the *Shrink sprite* icon and then on the drum several times.
++ Make the sprite a bit smaller by clicking on the `Shrink sprite` {.blockgrey} icon and then on the drum several times.
 + Rename the sprite *BlueDrum*
-+ Using the Fill tool again, edit the costume so that the top of the drum is blue.
++ Using the `Fill tool` {.blockgrey} again, edit the costume so that the top of the drum is blue.
 + Add the following code to send a message to Ballerina
 
 ```blocks
-when [BlueDrum] clicked
+when this sprite clicked
 broadcast [BlueClicked v]
 ```
 
@@ -68,7 +69,11 @@ broadcast [BlueClicked v]
 + Rename each one after it's colour
 + Create a new broadcast message for each one
 
-Now we need to return to the Ballerina sprite, and add some code to receive the messages and check our guesses.
+## Save your project { .save }
+
+# Step 3: Check if the guess is correct { .activity }
+
+Now we need to return to the *Ballerina* sprite, and add some code to receive the messages and check our guesses.
 
 ```blocks
 when I receive [BlueClicked v]
@@ -78,23 +83,29 @@ else
     say [Wrong!] for (1) secs
 ```
 
-You will need 4 copies of this script, one for each colour message. The numbers to use to compare with the list item can be seen by looking at the Costumes, and seeing the numbers you have for each colour.
+You will need 4 copies of this script, one for each colour message. The numbers to use to compare with the list item can be seen by looking at the `Costumes`, and seeing the numbers you have for each colour.
+
+![screenshot](costume_numbers.png)
+![screenshot](receiver_code.png)
 
 ## Test Your Project { .flag }
 
 Click the green flag.
 
 + Can you get the sequence right?
++ Do all the buttons work as expected?
++ When you make an incorrect guess, does the ballerina say Wrong?
 
 ## Things to try { .try }
 
 + It is slightly too easy to remember the last colour in the sequence as the ballerina remains in that colour dress. Can you make the ballerina change to a white dress when she has finished the sequence?
++ When you make a correct guess, it sometimes feels like nothing is happening. Can you play a sound when you click on a drum? or maybe a different sound for each drum?
 
 ## Save your project { .save }
 
-# Step 3: Let's celebrate success { .activity }
+# Step 4: Let's celebrate success { .activity }
 
-If you get the sequence correct, it would be nice if the game did something exciting! Let's add the following script to the *Stage*
+If you get the sequence correct, it would be nice if the game did something exciting! Let's add the following script to the **Stage**
 
 ```blocks
 when I receive [Won v]
@@ -126,3 +137,12 @@ if <(item (1 v) of [sequence v])=[1]>
 else
     say [Wrong!] for (1) secs
 ```
+
+## Save your project { .save}
+
+## Things to try { .try}
+
++ __Make the game start again after you win__
++ __Make the sequence get longer each time__
++ __Can you make the game end if you make an incorrect guess, and display a final score?__
++ __Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
