@@ -45,3 +45,84 @@ Click the green flag.
 + Try playing a sound after each costume change, so that you can tell if it is the same colour twice in a row.
 
 ## Save your project { .save }
+
+# Step 2: Add buttons to input the sequence guess { .activity }
+
+Now we need to add some coloured drums so you can enter in your guess at the sequence.
+
+## Activity Checklist { .check }
+
++ Import a new sprite **Things/drum2**
++ Make the sprite a bit smaller by clicking on the *Shrink sprite* icon and then on the drum several times.
++ Rename the sprite *BlueDrum*
++ Using the Fill tool again, edit the costume so that the top of the drum is blue.
++ Add the following code to send a message to Ballerina
+
+```blocks
+when [BlueDrum] clicked
+broadcast [BlueClicked v]
+```
+
++ Duplicate the drum sprite 3 times
++ Edit the colour of each drum
++ Rename each one after it's colour
++ Create a new broadcast message for each one
+
+Now we need to return to the Ballerina sprite, and add some code to receive the messages and check our guesses.
+
+```blocks
+when I receive [BlueClicked v]
+if <(item (1 v) of [sequence v])=[1]>
+    delete (1 v) of [sequence v]
+else
+    say [Wrong!] for (1) secs
+```
+
+You will need 4 copies of this script, one for each colour message. The numbers to use to compare with the list item can be seen by looking at the Costumes, and seeing the numbers you have for each colour.
+
+## Test Your Project { .flag }
+
+Click the green flag.
+
++ Can you get the sequence right?
+
+## Things to try { .try }
+
++ It is slightly too easy to remember the last colour in the sequence as the ballerina remains in that colour dress. Can you make the ballerina change to a white dress when she has finished the sequence?
+
+## Save your project { .save }
+
+# Step 3: Let's celebrate success { .activity }
+
+If you get the sequence correct, it would be nice if the game did something exciting! Let's add the following script to the *Stage*
+
+```blocks
+when I receive [Won v]
+play sound [Eggs v]
+repeat (90)
+    change [color v] effect by (25)
+    wait (0.1) secs
+end
+clear graphic effects
+```
+
+You can see what it does by double clicking on it. Disco!
+
+When you get tired of that excitment, let's move on. We need to create a way to detect if we've completed the sequence and broadcast the *Won* message. Add the following code to 
+
+```blocks
+when I receive [CorrectGuess v]
+delete (1 v) of [sequence v]
+if <(length of [sequence v])=[0]>
+    broadcast [Won v]
+```
+
+And we need to edit each of the 4 receiver codes to broadcast CorrectGuess rather than delete an item from *sequence*.
+
+```blocks
+when I receive [BlueClicked v]
+if <(item (1 v) of [sequence v])=[1]>
+    broadcast [CorrectGuess v]
+else
+    say [Wrong!] for (1) secs
+```
