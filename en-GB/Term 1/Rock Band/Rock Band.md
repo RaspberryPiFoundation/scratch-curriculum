@@ -135,7 +135,7 @@ Let's add a singer to our band!
 
 	```blocks
 		when flag clicked
-		switch costume to [singing v]
+		switch costume to [not singing v]
 
 		when this sprite clicked
 		switch costume to [singing v]
