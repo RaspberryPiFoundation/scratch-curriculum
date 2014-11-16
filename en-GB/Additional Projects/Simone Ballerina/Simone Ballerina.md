@@ -1,29 +1,43 @@
 ---
 title: Simone Ballerina
-level: Level 2
+level: Level 3
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
+materials: "*.sb"
 ...
 
 # Introduction { .intro }
 
 In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
 
+This project makes use a list variable to store the random sequence.
+
 ![screenshot](finished_screenshot.png)
 
-# Step 1: Create a random colour sequence { .activity }
+# Step 1: Getting started { .activity }
 
-Let’s generate the random sequence. We also want to make the ballerina's dress flash different colours to represent the sequence.
+Before we start coding, let's create the main character and background.
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project. Delete the cat by right clicking it and clicking **Delete**.
-+ Replace the background of the stage with a background from Indoors, **spotlight-stage**.
-+ Select a main character for the game. If you really don't want a ballerina then choose something else. It doesn't have to be a person, but it needs to be able to show different colours.
-+ Create 4 costumes for you sprite and edit the main colour of them using the *Fill tool* to be different.
++ Start a new Scratch project.
++ Remove the cat sprite and replace the background with the **Indoors/spotlight-stage**.
++ Select a main character for the game. Use the `Choose new sprite from file` {.blockgrey} button to add a new sprite to the project (use **People/ballerina-c**). If you really don't want a ballerina then choose something else. It doesn't have to be a person, but it needs to be able to show different colours.
 + Rename your character to something memorable E.g. **Simone**
-+ In Variables, make a list `For this sprite only` {.blockgrey} and call it `sequence` {.blockorange}.
++ Create 4 costumes for you sprite using `Copy` {.blockgrey} and `Edit` {.blockgrey} the main colour of them using the *Fill tool* so they are obviously different.
+
+![screenshot](costume_numbers.png)
+
+**Note:** Each costume has a number. These will become important later on when we map our buttons to costume colours, so remember where you can reference them.
+
+# Step 2: Create a random colour sequence { .activity }
+
+Now we can start to code. We are going to use a list variable. These are like ordinary variables, but they can hold more than one number at a time. This is ideal for storing a sequence of numbers, as we will see.
+
+## Activity Checklist { .check }
+
++ With **Simone** selected, in Variables, make a list `For this sprite only` {.blockgrey} and call it `sequence` {.blockorange}.
 
 ```blocks
 when FLAG clicked
@@ -33,6 +47,8 @@ repeat (4)
     switch to costume (item (last v) of [sequence v]
     wait (1) secs
 ```
+
+The above code loops around, adding a random number to the end of the list. It then switches the sprite's costume to that new number, which is the last item in the list.
 
 ## Test Your Project { .flag }
 
@@ -47,7 +63,7 @@ Click the green flag.
 
 ## Save your project { .save }
 
-# Step 2: Add buttons to input the sequence guess { .activity }
+# Step 3: Add buttons to input the sequence guess { .activity }
 
 Now we need to add some coloured drums so you can enter in your guess at the sequence.
 
@@ -64,16 +80,16 @@ when this sprite clicked
 broadcast [BlueClicked v]
 ```
 
+## Activity Checklist { .check }
 + Duplicate the drum sprite 3 times
-+ Edit the colour of each drum
-+ Rename each one after it's colour
++ Edit the colour of each drum and rename it after it's colour
 + Create a new broadcast message for each one
 
 ## Save your project { .save }
 
-# Step 3: Check if the guess is correct { .activity }
+# Step 4: Check if the guess is correct { .activity }
 
-Now we need to return to the *Ballerina* sprite, and add some code to receive the messages and check our guesses.
+Now we need to return to the *Ballerina* sprite, and add some code to receive the messages and check our guesses against the sequence.
 
 ```blocks
 when I receive [BlueClicked v]
@@ -83,9 +99,10 @@ else
     say [Wrong!] for (1) secs
 ```
 
-You will need 4 copies of this script, one for each colour message. The numbers to use to compare with the list item can be seen by looking at the `Costumes`, and seeing the numbers you have for each colour.
+The code checks that your guess matches the first item in the sequence. If your guess is correct, it removes that item from the list. The remaining items all move up one position, so that the second item moves to the top of the list.
 
-![screenshot](costume_numbers.png)
+You will need 4 copies of the above script, one for each colour message. Remember the numbers to use to compare with the list item can be seen by looking at the `Costumes`, and seeing the numbers you have for each colour.
+
 ![screenshot](receiver_code.png)
 
 ## Test Your Project { .flag }
@@ -94,7 +111,7 @@ Click the green flag.
 
 + Can you get the sequence right?
 + Do all the buttons work as expected?
-+ When you make an incorrect guess, does the ballerina say Wrong?
++ When you make an incorrect guess, does the ballerina say "Wrong!"?
 
 ## Things to try { .try }
 
@@ -103,7 +120,7 @@ Click the green flag.
 
 ## Save your project { .save }
 
-# Step 4: Let's celebrate success { .activity }
+# Step 5: Let's celebrate success { .activity }
 
 If you get the sequence correct, it would be nice if the game did something exciting! Let's add the following script to the **Stage**
 
@@ -119,7 +136,7 @@ clear graphic effects
 
 You can see what it does by double clicking on it. Disco!
 
-When you get tired of that excitment, let's move on. We need to create a way to detect if we've completed the sequence and broadcast the *Won* message. Add the following code to 
+When you get tired of that excitment, let's move on. We need to create a way to detect if we've completed the sequence and broadcast the *Won* message. Add the following code to the Ballerina sprite.
 
 ```blocks
 when I receive [CorrectGuess v]
@@ -138,11 +155,18 @@ else
     say [Wrong!] for (1) secs
 ```
 
+## Test Your Project { .flag }
+
+Click the green flag.
+
++ When you get the sequence right, do you get the flashing lights?
+
 ## Save your project { .save}
 
 ## Things to try { .try}
 
+__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
+
 + __Make the game start again after you win__
 + __Make the sequence get longer each time__
 + __Can you make the game end if you make an incorrect guess, and display a final score?__
-+ __Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
