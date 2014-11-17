@@ -23,7 +23,7 @@ Before we start coding, let's create the main character and background.
 + Start a new Scratch project.
 + Delete the cat sprite and replace the backdrop of the Stage with the **Indoors/spotlight-stage**.
 + Add a new sprite using the `Choose sprite from library` {.blockgrey} button (use **People/Ballerina**). If you really don't want a ballerina then choose something else. It doesn't have to be a person, but it needs to be able to show different colours.
-+ Go to the `Costumes` {.blockgrey} tab and edit the main colours of them using the *Color a shape* tool so they are obviously different colours.
++ Go to the `Costumes` {.blockgrey} tab and edit the main colours of them using the `Color a shape` tool so they are obviously different colours.
 
 ![screenshot](costume_numbers.png)
 
@@ -37,18 +37,19 @@ Now we can start to code. We are going to use a list variable. These are like or
 
 ## Activity Checklist { .check }
 
-+ With **Simone** selected, in the **Data** section, select **Make a List** {.blockgrey} and call it `sequence` {.blockorange} `For this sprite only`.
++ With **Simone** selected, in the **Data** section, select `Make a List` {.blockgrey} and call it `sequence` {.blockorange} `For this sprite only`.
 
-```blocks
-when FLAG clicked
-delete (all v) of [sequence v]
-repeat (4)
-    add (pick random (1) to (4)) to [sequence v]
-    switch to costume (item (last v) of [sequence v]
-    wait (1) secs
-```
++ Add the following code:
 
-The above code loops around, adding a random number to the end of the list. It then switches the sprite's costume to that new number, which is the last item in the list.
+    ```blocks
+        when FLAG clicked
+        delete (all v) of [sequence v]
+        repeat (4)
+            add (pick random (1) to (4)) to [sequence v]
+            switch to costume (item (last v) of [sequence v]
+            wait (1) secs
+        end
+    ```
 
 ## Test Your Project { .flag }
 
@@ -70,20 +71,17 @@ Now we need to add some coloured drums so you can enter in your guess at the seq
 
 ## Activity Checklist { .check }
 
-+ Add a new sprite from the library **Things/drum2**
++ Add a new sprite **Things/drum2** from the library.
 + Make the sprite a bit smaller by clicking on the `Shrink` {.blockgrey} icon and then on the drum several times.
-+ Rename the sprite *DrumBlue*
-+ Using the *Color a shape* tool again, edit the costume so that the drum looks blue.
-+ Add the following code to send a message to Ballerina
++ Rename the sprite *DrumBlue*.
++ Using the `Color a shape` tool again, edit the costume so that the drum looks blue.
++ Add the following code to send a message to Ballerina:
 
-```blocks
-when this sprite clicked
-broadcast [BlueClicked v]
-```
+    ```blocks
+        when this sprite clicked
+        broadcast [BlueClicked v]
+    ```
 
-Now we need 3 more drum buttons. You can either repeat the instructions above, or follow the instructions below.
-
-## Activity Checklist { .check }
 + Duplicate the drum sprite 3 times.
 + Edit the colour of each drum and rename it after its colour.
 + Create a new broadcast message for each one.
@@ -92,7 +90,7 @@ Now we need 3 more drum buttons. You can either repeat the instructions above, o
 
 # Step 4: Check if the guess is correct { .activity }
 
-Now we need to return to the *Ballerina* sprite, and add some code to receive the messages and check our guesses against the sequence.
+Now we need to return to the `Ballerina` sprite, and add some code to receive the messages and check our guesses against the sequence.
 
 ```blocks
 when I receive [BlueClicked v]
@@ -139,7 +137,7 @@ clear graphic effects
 
 You can see what it does by double clicking on it. Disco!
 
-When you get tired of that excitment, let's move on. We need to create a way to detect if we've completed the sequence and broadcast the *Won* message. Add the following code to the Ballerina sprite.
+When you get tired of that excitment, let's move on. We need to create a way to detect if we've completed the sequence and broadcast the `Won` message. Add the following code to the Ballerina sprite.
 
 ```blocks
 when I receive [CorrectGuess v]
@@ -148,7 +146,7 @@ if <(length of [sequence v])=[0]>
     broadcast [Won v]
 ```
 
-And we need to edit each of the 4 receiver codes to broadcast CorrectGuess rather than delete an item from *sequence*.
+And we need to edit each of the 4 receiver codes to broadcast CorrectGuess rather than delete an item from `sequence` {.blockorange}.
 
 ```blocks
 when I receive [BlueClicked v]
