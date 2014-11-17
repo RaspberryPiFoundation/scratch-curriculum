@@ -4,7 +4,6 @@ level: Level 3
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: "*.sb"
 ...
 
 # Introduction { .intro }
@@ -22,14 +21,15 @@ Before we start coding, let's create the main character and background.
 ## Activity Checklist { .check }
 
 + Start a new Scratch project.
-+ Remove the cat sprite and replace the background with the **Indoors/spotlight-stage**.
-+ Select a main character for the game. Use the `Choose new sprite from file` {.blockgrey} button to add a new sprite to the project (use **People/ballerina-c**). If you really don't want a ballerina then choose something else. It doesn't have to be a person, but it needs to be able to show different colours.
-+ Rename your character to something memorable E.g. **Simone**
-+ Create 4 costumes for you sprite using `Copy` {.blockgrey} and `Edit` {.blockgrey} the main colour of them using the *Fill tool* so they are obviously different.
++ Delete the cat sprite and replace the backdrop of the Stage with the **Indoors/spotlight-stage**.
++ Add a new sprite using the `Choose sprite from library` {.blockgrey} button (use **People/Ballerina**). If you really don't want a ballerina then choose something else. It doesn't have to be a person, but it needs to be able to show different colours.
++ Go to the `Costumes` {.blockgrey} tab and edit the main colours of them using the *Color a shape* tool so they are obviously different colours.
 
 ![screenshot](costume_numbers.png)
 
 **Note:** Each costume has a number. These will become important later on when we map our buttons to costume colours, so remember where you can reference them.
+
+## Save your project { .save }
 
 # Step 2: Create a random colour sequence { .activity }
 
@@ -37,7 +37,7 @@ Now we can start to code. We are going to use a list variable. These are like or
 
 ## Activity Checklist { .check }
 
-+ With **Simone** selected, in Variables, make a list `For this sprite only` {.blockgrey} and call it `sequence` {.blockorange}.
++ With **Simone** selected, in the **Data** section, select **Make a List** {.blockgrey} and call it `sequence` {.blockorange} `For this sprite only`.
 
 ```blocks
 when FLAG clicked
@@ -55,6 +55,7 @@ The above code loops around, adding a random number to the end of the list. It t
 Click the green flag.
 
 + Does the dress change colour 4 times?
++ Is the sequence different each time?
 + Is it hard to tell when you get the same colour twice in the sequence?
 
 ## Things to try { .try }
@@ -69,10 +70,10 @@ Now we need to add some coloured drums so you can enter in your guess at the seq
 
 ## Activity Checklist { .check }
 
-+ Import a new sprite **Things/drum2**
-+ Make the sprite a bit smaller by clicking on the `Shrink sprite` {.blockgrey} icon and then on the drum several times.
-+ Rename the sprite *BlueDrum*
-+ Using the `Fill tool` {.blockgrey} again, edit the costume so that the top of the drum is blue.
++ Add a new sprite from the library **Things/drum2**
++ Make the sprite a bit smaller by clicking on the `Shrink` {.blockgrey} icon and then on the drum several times.
++ Rename the sprite *DrumBlue*
++ Using the *Color a shape* tool again, edit the costume so that the drum looks blue.
 + Add the following code to send a message to Ballerina
 
 ```blocks
@@ -80,10 +81,12 @@ when this sprite clicked
 broadcast [BlueClicked v]
 ```
 
+Now we need 3 more drum buttons. You can either repeat the instructions above, or follow the instructions below.
+
 ## Activity Checklist { .check }
-+ Duplicate the drum sprite 3 times
-+ Edit the colour of each drum and rename it after it's colour
-+ Create a new broadcast message for each one
++ Duplicate the drum sprite 3 times.
++ Edit the colour of each drum and rename it after its colour.
++ Create a new broadcast message for each one.
 
 ## Save your project { .save }
 
