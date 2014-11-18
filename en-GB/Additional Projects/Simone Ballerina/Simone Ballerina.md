@@ -94,7 +94,7 @@ Now we need to return to the `Ballerina` sprite, and add some code to receive th
 
 ```blocks
 when I receive [BlueClicked v]
-if <(item (1 v) of [sequence v])=[1]>
+if <(item (1 v) of [sequence v])=[1]> then
     delete (1 v) of [sequence v]
 else
     say [Wrong!] for (1) secs
@@ -142,7 +142,7 @@ When you get tired of that excitment, let's move on. We need to create a way to 
 ```blocks
 when I receive [CorrectGuess v]
 delete (1 v) of [sequence v]
-if <(length of [sequence v])=[0]>
+if <(length of [sequence v])=[0]> then
     broadcast [Won v]
 ```
 
@@ -150,7 +150,7 @@ And we need to edit each of the 4 receiver codes to broadcast CorrectGuess rathe
 
 ```blocks
 when I receive [BlueClicked v]
-if <(item (1 v) of [sequence v])=[1]>
+if <(item (1 v) of [sequence v])=[1]> then
     broadcast [CorrectGuess v]
 else
     say [Wrong!] for (1) secs
@@ -170,4 +170,5 @@ __Well done you’ve finished the basic game. There are more things you can do t
 
 + __Make the game start again after you win__
 + __Make the sequence get longer each time__
++ __Add more colours & costumes to the game__
 + __Can you make the game end if you make an incorrect guess, and display a final score?__
