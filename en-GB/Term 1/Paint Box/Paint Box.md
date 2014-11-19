@@ -143,7 +143,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 	![screenshot](paint-green-message.png)
 
-+ You now need you tell your pen sprite what to do when it receives the message. Add this code to your pen sprite:
++ You now need to tell your pen sprite what to do when it receives the message. Add this code to your pen sprite:
 
 	```blocks
 		when I receive [green v]
