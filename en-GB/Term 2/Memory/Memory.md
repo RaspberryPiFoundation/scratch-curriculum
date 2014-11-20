@@ -7,14 +7,13 @@ embeds: "*.png"
 materials: ["Memory.sb2"]
 ...
 
-#Heads Up! { .beta}
-This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
-
 ## Community Contributed Project { .challenge }
-
-This project was created with Erik and Ruth.
+This project was created with Erik and his daughter Ruth.
 
 If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+
+#Heads Up! { .beta}
+This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
 
 # Introduction { .intro }
 
@@ -35,11 +34,9 @@ First, let's create a character that can change to a random sequence of colours 
 
 + Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
 
-	You can find the ballerina sprite by clicking 'People' and then 'Ballerina', and the stage backdrop by clicking 'Indoors' and then 'Stage'.
-
 	![screenshot](colour-sprite.png)
 
-+ In your game, you'll use numbers to represent each colour:
++ In your game, you'll use a different number to represent each colour:
 
 	+ 1 = red;
 	+ 2 = blue;
@@ -50,7 +47,7 @@ First, let's create a character that can change to a random sequence of colours 
 
 	![screenshot](colour-costume.png)
 
-+ To create a random sequence, you need to create a _list_. A list is just a variable that stores lots of data _in order_. Create a new list called `sequence` {.blockdata}.
++ To create a random sequence, you need to create a _list_. A list is just a variable that stores lots of data _in order_. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
 
 	![screenshot](colour-list.png)
 
@@ -87,11 +84,9 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
 + Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
 
-	If you want to use the drum, you can find it by clicking 'Things' and then 'Drum1' or 'Drum2'.
-
 	![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know a button has ben clicked:
++ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has ben clicked:
 
 	```blocks
 		when this sprite clicked
@@ -110,11 +105,22 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		end
 	```
 
-+ You could also display a "Well done!" message once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
++ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
 
 	```blocks
-		wait until < (length of [sequence v]) = [0] >
-		say [Well done!] for (1) secs
+		broadcast [won v] and wait
+	```
+
++ Click on your stage, and add this code to make the backdrop change colour once the player has won.
+
+	```blocks
+		when I receive [won v]
+		play sound [drum machine v]
+		repeat (50)
+			change [color v] effect by (25)
+			wait (0.1) secs
+		end
+		clear graphic effects
 	```
 
 ## Challenge: Creating 4 buttons {.challenge}
@@ -136,10 +142,10 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 
 	![screenshot](colour-score.png)
 
-+ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 1. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
++ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
 
 	```blocks
-		set [score v] to [1]
+		set [score v] to [3]
 	```
 
 + Instead of always creating a sequence of 5 colours, you now want the `score` {.blockdata} to determine the sequence length. Change your character's `repeat` {.blockcontrol} loop (for creating the sequence) to:
@@ -160,15 +166,15 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 	```blocks
 		when flag clicked
 		forever
-			set [score v] to [1]
+			set [score v] to [3]
 			delete (all v) of [sequence v]
 			repeat (score)
 				add (pick random (1) to (4)) to [sequence v]
 				switch to costume (item (last v) of [sequence v]
 				wait (1) secs
 			end
-			wait until < length of [sequence v] = [0]>
-			say [Well done!] for (1) secs
+			wait until < (length of [sequence v]) = [0]>
+			broadcast [won v] and wait
 			change [score v] by (1)
 		end
 	```
