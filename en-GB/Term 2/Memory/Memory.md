@@ -12,7 +12,7 @@ This project is in Beta. That means we're still testing it, and there's a small 
 
 ## Community Contributed Project { .challenge }
 
-This project was created with Erik ... and [name].
+This project was created with Erik and Ruth.
 
 If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
 
@@ -34,6 +34,8 @@ First, let's create a character that can change to a random sequence of colours 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
 + Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
+
+	You can find the ballerina sprite by clicking 'People' and then 'Ballerina', and the stage backdrop by clicking 'Indoors' and then 'Stage'.
 
 	![screenshot](colour-sprite.png)
 
@@ -85,6 +87,8 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
 + Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
 
+	If you want to use the drum, you can find it by clicking 'Things' and then 'Drum1' or 'Drum2'.
+
 	![screenshot](colour-drums.png)
 
 + When the red drum is clicked, you'll need to broadcast a message to your character, letting them know a button has ben clicked:
@@ -118,7 +122,7 @@ Repeat the steps above for your blue, green and yellow buttons. Which code will 
 
 You can also add sounds for when the buttons are pressed.
 
-Remember to test the code you've added! Can you memorise a sequence of 5 colours?
+Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
 
 ## Save your project { .save }
 
@@ -216,7 +220,7 @@ Let's save the high score, so that you can play against your friends.
 
 	![screenshot](colour-use-block.png)
 
-+ Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the 'Game over' {.blockmoreblocks} block that you made, and not 4 separate times!
++ Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
 
 	![screenshot](colour-cough.png)
 
@@ -230,6 +234,8 @@ Can you make another custom block, that is used by each button?
 ## Save your project { .save }
 
 ## Challenge: Another costume {.challenge}
+Have you noticed that your game starts with your character showing one of the 4 colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+
 Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
 
 ![screenshot](colour-white.png)
