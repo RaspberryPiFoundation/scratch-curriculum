@@ -1,6 +1,6 @@
 ---
 title: Sound machine
-level: Level 5
+level: Additional Projects
 language: en-GB
 stylesheet: scratch
 ...

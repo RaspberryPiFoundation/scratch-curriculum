@@ -1,6 +1,6 @@
 ---
 title: Fruit machine
-level: Term 2
+level: Additional Projects
 stylesheet: scratch
 language: en-GB
 embeds: "*.png"

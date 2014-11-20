@@ -1,6 +1,6 @@
 ---
 title: Create Your Own Game
-level: Term 2
+level: Additional Projects
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
