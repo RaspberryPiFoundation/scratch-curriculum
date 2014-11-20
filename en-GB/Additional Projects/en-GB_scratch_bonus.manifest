@@ -134,7 +134,15 @@
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
         },
         {
-            "number":   7,
+            "number":    7,
+            "filename":  "Fruit Machine/Fruit Machine.md",
+            "pdf":       "Fruit Machine/Fruit Machine.pdf",
+            "note":      "Fruit Machine/Fruit Machine - Notes.md",
+            "note_pdf":  "Fruit Machine/Fruit Machine - Notes.pdf",
+            "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
+        },
+        {
+            "number":   8,
             "filename": "Create Your Own Game/Create Your Own Game.md",
             "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
             "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
