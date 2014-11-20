@@ -147,7 +147,10 @@
             "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
             "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
             "note_pdf": "Create Your Own Game/Create Your Own Game - Notes.pdf"
+        },
+        {
+            "number":   9,
+            "filename": "Snowball Fight/Snowball Fight.md"
         }
-
     ]
 }
