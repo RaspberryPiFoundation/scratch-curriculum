@@ -41,7 +41,7 @@ You are going to learn how to program your own talking robot!
 
 ## Save your project { .save }
 
-# Step 2: A talking chatbot { .activity .new-page }
+# Step 2: A talking chatbot { .activity }
 
 Now that you have a chatbot with a personality, let's program it to talk to us.
 

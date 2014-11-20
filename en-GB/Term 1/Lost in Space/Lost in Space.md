@@ -217,7 +217,7 @@ You'll need to change the numbers in this block:
 
 ## Save your project { .save }
 
-# Step 4: More loops { .activity .new-page}
+# Step 4: More loops { .activity }
 
 ## Activity Checklist { .check }
 
