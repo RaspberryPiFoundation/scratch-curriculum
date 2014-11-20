@@ -42,17 +42,8 @@
         },
         {
             "number":   6,
-            "filename": "Desert Race/Desert Race.md",
-            "pdf":      "Desert Race/Desert Race.pdf",
-            "note":     "Desert Race/Desert Race - Notes.md",
-            "note_pdf": "Desert Race/Desert Race - Notes.pdf"
-        },
-        {
-            "number":   7,
-            "filename": "What's That/What's That.md",
-            "pdf":      "What's That/What's That.pdf",
-            "note":     "What's That/What's That - Notes.md",
-            "note_pdf": "What's That/What's That - Notes.pdf"
-        }
+            "filename": "Create Your Own World/Create Your Own World.md",
+            "note":     "Create Your Own World/Create Your Own World - Notes.md"
+        }  
     ]
 }
