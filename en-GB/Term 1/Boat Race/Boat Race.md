@@ -73,7 +73,7 @@ You are going to learn how to make a game, in which you'll use the mouse to cont
 
 ## Save your project { .save }
 
-# Step 2: Crashing! { .activity }
+# Step 2: Crashing! { .activity .new-page }
 
 Your boat can sail through the wooden barriers! Let's fix that.
 

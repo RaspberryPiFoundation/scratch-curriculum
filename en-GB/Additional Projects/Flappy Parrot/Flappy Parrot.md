@@ -1,6 +1,6 @@
 ---
 title: Flappy Parrot
-level: Level 2
+level: Additional Projects
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

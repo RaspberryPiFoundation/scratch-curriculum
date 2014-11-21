@@ -145,7 +145,7 @@ Lets allow the player to pop the balloons!
 
 ## Save your project { .save }
 
-# Step 4: Adding a score { .activity }
+# Step 4: Adding a score { .activity .new-page }
 
 Let's make things more interesting by keeping score.
 

@@ -94,7 +94,7 @@ You can copy your existing code by right-clicking on it and clicking 'duplicate'
 
 ## Save your project { .save }
 
-# Step 2: Coding a Singer { .activity }
+# Step 2: Coding a Singer { .activity .new-page }
 
 Let's add a singer to our band!
 
@@ -147,7 +147,7 @@ Let's add a singer to our band!
 
 ## Save your project { .save }
 
-# Step 3: Coding a cymbal { .activity }
+# Step 3: Coding a cymbal { .activity .new-page }
 
 So far all of your instruments have used images from the Scratch library. Why not draw a sprite of your own!
 
@@ -201,7 +201,7 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 ## Save your project { .save }
 
-# Step 3: Backing music { .activity }
+# Step 3: Backing music { .activity .new-page }
 
 You can even add some music for your band to play along to!
 

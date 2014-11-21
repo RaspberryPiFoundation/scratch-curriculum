@@ -1,6 +1,6 @@
 ---
 title: Scratch Table Football
-level: Level 3
+level: Additional Projects
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

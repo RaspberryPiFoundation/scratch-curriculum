@@ -134,8 +134,12 @@
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
         },
         {
-            "number":   7,
-            "filename": "Simone Ballerina/Simone Ballerina.md"
+            "number":    7,
+            "filename":  "Fruit Machine/Fruit Machine.md",
+            "pdf":       "Fruit Machine/Fruit Machine.pdf",
+            "note":      "Fruit Machine/Fruit Machine - Notes.md",
+            "note_pdf":  "Fruit Machine/Fruit Machine - Notes.pdf",
+            "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
         },
         {
             "number":   8,
@@ -143,6 +147,24 @@
             "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
             "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
             "note_pdf": "Create Your Own Game/Create Your Own Game - Notes.pdf"
+        },
+        {
+            "number":   9,
+            "filename": "Desert Race/Desert Race.md",
+            "pdf":      "Desert Race/Desert Race.pdf",
+            "note":     "Desert Race/Desert Race - Notes.md",
+            "note_pdf": "Desert Race/Desert Race - Notes.pdf"
+        },
+        {
+            "number":   10,
+            "filename": "What's That/What's That.md",
+            "pdf":      "What's That/What's That.pdf",
+            "note":     "What's That/What's That - Notes.md",
+            "note_pdf": "What's That/What's That - Notes.pdf"
+        },
+        {
+            "number":   11,
+            "filename": "Snowball Fight/Snowball Fight.md"
         }
     ]
 }

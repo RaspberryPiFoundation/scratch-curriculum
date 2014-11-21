@@ -1,6 +1,6 @@
 ---
 title: Frantic Felix
-level: Level 6
+level: Additional Projects
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
