@@ -190,6 +190,7 @@ We need the ball to bounce off the players on the pitch.
 + Modify the last code block you created (**“bounce about”**) to look like this:
 ```blocks
     when FLAG clicked // bounce about
+    broadcast [resetball v]
     forever
         move (10) steps
         if on edge, bounce
