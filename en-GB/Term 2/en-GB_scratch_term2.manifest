@@ -10,7 +10,7 @@
         {
             "number":   1,
             "filename": "Memory/Memory.md",
-            "note":     "Memory/Memory - Notes.md"
+            "note":     "Memory/Memory - notes.md"
         },    
         {
             "number":   2,
@@ -43,7 +43,7 @@
         {
             "number":   6,
             "filename": "Create Your Own World/Create Your Own World.md",
-            "note":     "Create Your Own World/Create Your Own World - Notes.md"
+            "note":     "Create Your Own World/Create Your Own World - notes.md"
         }  
     ]
 }
