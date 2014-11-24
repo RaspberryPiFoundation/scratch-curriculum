@@ -138,7 +138,7 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 
 ## Activity Checklist { .check }
 
-+ Create a vew variable called `score` {.blockdata}.
++ Create a new variable called `score` {.blockdata}.
 
 	![screenshot](colour-score.png)
 

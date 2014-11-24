@@ -44,10 +44,10 @@ Okay – our pitch is looking good! Now let’s add some players and get them mo
     when FLAG clicked
     go to x: (-190) y: (0)
     forever
-        if <<key [q v] pressed?> and <(y position) < [80]>>
+        if <<key [q v] pressed?> and <(y position) < [80]>> then
             change y by (5)
         end
-        if <<key [a v] pressed?> and <(y position) > [-80]>>
+        if <<key [a v] pressed?> and <(y position) > [-80]>> then
             change y by (-5)
         end
     end
@@ -79,10 +79,10 @@ We can’t play a game of football with just one player! We need to add some mor
     when FLAG clicked
     go to x: (190) y: (0)
     forever
-        if <<key [p v] pressed?> and <(y position) < [80]>>
+        if <<key [p v] pressed?> and <(y position) < [80]>> then
             change y by (5)
         end
-        if <<key [l v] pressed?> and <(y position) > [-80]>>
+        if <<key [l v] pressed?> and <(y position) > [-80]>> then
             change y by (-5)
         end
     end
@@ -110,10 +110,10 @@ Click the green flag.
     when FLAG clicked
     go to x: (70) y: (0)
     forever
-        if <<key [w v] pressed?> and <(y position) < [80]>>
+        if <<key [w v] pressed?> and <(y position) < [80]>> then
             change y by (5)
         end
-        if <<key [s v] pressed?> and <(y position) > [-80]>>
+        if <<key [s v] pressed?> and <(y position) > [-80]>> then
             change y by (-5)
         end
     end
@@ -127,10 +127,10 @@ Click the green flag.
     when FLAG clicked
     go to x: (-70) y: (0)
     forever
-        if <<key [o v] pressed?> and <(y position) < [80]>>
+        if <<key [o v] pressed?> and <(y position) < [80]>> then
             change y by (5)
         end
-        if <<key [k v] pressed?> and <(y position) > [-80]>>
+        if <<key [k v] pressed?> and <(y position) > [-80]>> then
             change y by (-5)
         end
     end
@@ -190,10 +190,11 @@ We need the ball to bounce off the players on the pitch.
 + Modify the last code block you created (**“bounce about”**) to look like this:
 ```blocks
     when FLAG clicked // bounce about
+    broadcast [resetball v]
     forever
         move (10) steps
         if on edge, bounce
-        if <<touching color [#0A9AF7]?> or <touching color [#FF0D01]?>>
+        if <<touching color [#0A9AF7]?> or <touching color [#FF0D01]?>> then
             turn cw (pick random (140) to (220)) degrees
         end
     end
@@ -216,7 +217,7 @@ Press the green flag.
 ```blocks
     when FLAG clicked // goal line technology
     forever
-        if <touching [ball v]>
+        if <touching [ball v]> then
             broadcast [goal v]
         end
     end
