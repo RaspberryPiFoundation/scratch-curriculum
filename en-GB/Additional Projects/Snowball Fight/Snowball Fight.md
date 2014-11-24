@@ -220,7 +220,7 @@ Let's add in a target for your snowballs!
 		broadcast [new shot v]
 	```
 
-+ When your bear receives this nessage, move it to a new random position with this code:
++ When your bear receives this message, move it to a new random position with this code:
 
 	```blocks
 		when I receive [new shot v]
