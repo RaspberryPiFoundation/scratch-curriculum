@@ -54,7 +54,7 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 + Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?
 
-+ Have you noticed that it's the center of the pen, and not the tip, that follows the mouse pointer? 
++ Have you noticed that it's the centre of the pen, and not the tip, that follows the mouse pointer? 
 
 	![screenshot](paint-center.png)
 
@@ -62,7 +62,7 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 	![screenshot](paint-center-icon.png)
 
-+ You should notice that a crosshair appears on the costume. You can now click just below the tip of the pen, to set this point as the costume center.
++ You should notice that a crosshair appears on the costume. You can now click just below the tip of the pen, to set this point as the costume centre.
 
 	![screenshot](paint-pen-center.png)
 
@@ -118,7 +118,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 ## Activity Checklist { .check }
 
-+ First, let's add another green pen costume to your pen sprite. Click on your pen sprite, and click 'Upload costume from file' and select the 'green-pencil.png' image to add it to your sprite. Remember to set the center of your new costume.
++ First, let's add another green pen costume to your pen sprite. Click on your pen sprite, and click 'Upload costume from file' and select the 'green-pencil.png' image to add it to your sprite. Remember to set the centre of your new costume.
 
 	![screenshot](paint-green-costume.png)
 
@@ -203,7 +203,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 	Notice that you don't need to send a message to clear the canvas, as any sprite can do it!
 
-+ You can also create an eraser. To do this, add the 'eraser.png' image as a new costume to your pen sprite (remember to set the costume center) _and_ as a new selector sprite.
++ You can also create an eraser. To do this, add the 'eraser.png' image as a new costume to your pen sprite (remember to set the costume centre) _and_ as a new selector sprite.
 
 	![screenshot](paint-eraser.png) 
 
