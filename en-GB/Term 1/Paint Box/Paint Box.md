@@ -214,7 +214,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 		broadcast [eraser v]
 	```
 
-+ When the pen recieves this message, you can create an eraser by switching the pen costume to the eraser, and switching the pen colour to the same colour as the canvas!
++ When the pen receives this message, you can create an eraser by switching the pen costume to the eraser, and switching the pen colour to the same colour as the canvas!
 
 	```blocks
 		when I receive [eraser v]
