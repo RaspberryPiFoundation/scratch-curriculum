@@ -117,6 +117,7 @@ Let's make a snowball, that you can throw around your stage.
 
 	```blocks
 		when I receive [throw v]
+		switch costume to [snowball v]
 		repeat until < touching [edge v]? >
 			move (power) steps
 		end
@@ -148,7 +149,7 @@ You now have a snowball, but let's make it move a bit more realistically.
 	```blocks
 		repeat until< not <key [space v] pressed?> >
 			if < (power) < [20] > then
-				move (power) steps
+				change [power v] by (1)
 				wait (0.1) secs
 			end
 		end
