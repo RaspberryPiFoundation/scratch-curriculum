@@ -15,6 +15,19 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 
 + CreateYourOwnWorld.sb2
 
+This link also includes a 'Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+
+Project resources:
++ player.png;
++ room1/2/3.png;
++ sign.png;
++ chest.png;
++ person.png;
++ enemy.png;
++ coins.png;
++ door-blue/key-blue.png.
+
+
 #Learning Objectives
 + This project consolidates learning of all programming skills learnt.
 
