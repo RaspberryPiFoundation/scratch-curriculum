@@ -58,13 +58,13 @@ You should see Felix follow the mouse pointer around, surrounded by a red rectan
 ```scratch
 	when FLAG clicked //handle moving
 		forever
-			if <<key [left arrow v] pressed?> and <(blocked left)=(0)> then
+			if <<key [left arrow v] pressed?> and <(blocked left)=(0)>> then
 				point in direction (-90 v)
 				move (2) steps
 			end
 
 
-			if <<key [right arrow v] pressed?> and <(blocked left)=(0)> then
+			if <<key [right arrow v] pressed?> and <(blocked left)=(0)>> then
 				point in direction (90 v)
 				move (2) steps
 			end
@@ -286,15 +286,15 @@ when I receive [start level v]
 		point in direction (item (current level) of [directions v])
 		show
 		forever
-			if <<key[left arrow v]pressed?>and <(blocked left)=(0)> then
+			if <<key[left arrow v]pressed?> and <(blocked left)=(0)>> then
 				point in direction (-90)
 				move (2) steps
 			end
-			if <<key[right arrow v]pressed?>and <(blocked right)=(0)> then
+			if <<key[right arrow v]pressed?> and <(blocked right)=(0)>> then
 				point in direction (90)
 				move (2) steps
 			end
-			if <<key[space v]pressed?>and <(blocked bottom) =(1)> then
+			if <<key[space v]pressed?> and <(blocked bottom) =(1)>> then
 				set [height to jump v]to[100]
 			end
 		end
