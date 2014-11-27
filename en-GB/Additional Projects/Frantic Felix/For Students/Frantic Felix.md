@@ -71,9 +71,11 @@ You should see Felix follow the mouse pointer around, surrounded by a red rectan
 
 
 	when FLAG clicked //[animate Felix]
-		forever if <<key [left arrow v] pressed?>or<key [right arrow v] pressed?>>
-			next costume
-			wait (0.1) secs
+		forever
+			if <<key [left arrow v] pressed?>or<key [right arrow v] pressed?>> then
+				next costume
+				wait (0.1) secs
+			end
 		end
 
 	when FLAG clicked //handle falling
@@ -146,11 +148,13 @@ We’ll put three keys around the cavern. Felix collects a key by touching it. W
 ```scratch
 	when FLAG clicked
 		go to x:(220) y:(-125)
-		forever if <(key to get) = (0)>
-			change [color v] effect by (25)
-			if <touching [Felix v]?> then
-				broadcast [win v]
-				say [You win!]
+		forever
+			if <(key to get) = (0)> then
+				change [color v] effect by (25)
+				if <touching [Felix v]?> then
+					broadcast [win v]
+					say [You win!]
+				end
 			end
 		end
 ```
