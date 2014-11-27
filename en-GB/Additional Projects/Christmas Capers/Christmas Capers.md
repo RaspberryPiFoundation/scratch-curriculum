@@ -89,10 +89,10 @@ __Click the green flag__, do the hills move? Has the issue with the flickering t
             set [Speed v] to [-1]
             repeat until <(Finish) = [1]>
                 change y  by (Speed)
-                if <(y position) < [-160]>
+                if <(y position) < [-160]> then
                     set (Finish) to [1]
                 end
-                if <touching [Rudolph v]?>
+                if <touching [Rudolph v]?> then
                     set (Finish) to [1]
 ```
 
