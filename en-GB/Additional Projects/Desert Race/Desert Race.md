@@ -88,7 +88,7 @@ We only want the racers to move after the race has started and we want to know w
 + Now we need to stop the lion and the parrot from moving unless the racing variable is set to be + Click on the parrot sprite. __Add a control block to the script__ that only allows the parrot to move if __racing = 1__.
 ```blocks
     when [a v] key pressed
-        if <(racing) = [1]>
+        if <(racing) = [1]> then
             move (4) steps
 ```
 + Now do the same for the lion sprite.
@@ -110,18 +110,18 @@ race again.
 + Add a block to the parrot’s script that sets the **racing** variable to be 0 when the sprite touches the edge of the screen.
 ```blocks
     when [a v] key pressed
-    if <(racing) = [1]>
+    if <(racing) = [1]> then
         move (4) steps
-        if <touching [edge v]?>
+        if <touching [edge v]?> then
         set (racing) to [0]
 ```
 + Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click `sounds`{.blocklightgrey} and then record the sound of the parrot winning the race!
 + Now add blocks that `play`{.blockpurple} the sound you recorded and makes the parrot say it has won:
 ```blocks
         when [a v] key pressed
-        if <(racing) = [1]>
+        if <(racing) = [1]> then
             move (4) steps
-            if <touching [edge v]?>
+            if <touching [edge v]?> then
                 set (racing) to [0]
                 play sound [recording1 v]
                 say [The Parrot Wins! v] for (3) secs
@@ -148,9 +148,9 @@ __We need the winning sprite to broadcast that it has won.__
 Add a block that broadcasts a **"finished”** message after the sprite says it has won.
 ```blocks
     when [a v] key pressed
-    if <(racing) = [1]>
+    if <(racing) = [1]> then
         move (4) steps
-        if <touching [edge v]?>
+        if <touching [edge v]?> then
             set (racing) to [0]
             play sound [recording1 v]
             say [The Parrot Wins! v] for (3) secs
@@ -184,11 +184,11 @@ Can you race against a friend, one of you moving the parrot by pressing ‘A’ 
 + __Create another sound__ that the sprite will make when the boost is pressed.
 ```blocks
     when [p v] key pressed
-    if <<(racing) = [1]> and <(boosted) = [0]>>
+    if <<(racing) = [1]> and <(boosted) = [0]>> then
         switch costume to [parrot-boost v]
         set [boosted v] to [1]
         move (30) steps
-        if <touching [edge v]?>
+        if <touching [edge v]?> then
              set (racing) to [0]
             play sound [recording1 v]
             say [The Parrot Wins! v] for (3) secs
@@ -210,14 +210,14 @@ The code to check if the race has finished is now used in two places for each sp
 + Detach the `if`{.blockyellow}`touching edge?`{.blocklightblue}`then`{.blockyellow} block and drag it to the `define finished`{.blockpurple} block.
 ```blocks
     define finished
-        if <touching [edge v]?>
+        if <touching [edge v]?> then
             set (racing) to [0]
             play sound [recording1 v]
             say [The Parrot Wins! v] for (3) secs
             broadcast [finished v]
 
     when [q v] key pressed
-        if <<(racing) = [1]> and <(boosted) = [0]>>
+        if <<(racing) = [1]> and <(boosted) = [0]>> then
             switch costume to [parrot-boost v]
             set [boosted v] to [1]
             move (4) steps

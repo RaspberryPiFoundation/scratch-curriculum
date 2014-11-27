@@ -20,13 +20,13 @@ To do this we need to first set up a `step`{.blockorange} variable, then every t
 
 	when I receive [moved left v]
 		change [step v] by [1]
-		if < (step) > [1] >
+		if < (step) > [1] > then
 			set [step v] to [0]
 		end
 
 	when I receive [moved right v]
 	change [step v] by [1]
-	if < (step) > [1] >
+	if < (step) > [1] > then
 		set [step v] to [0]
 	end
 ```
@@ -37,7 +37,7 @@ Don’t forget to move you legs along with your body using your `move speed`{.bl
 ```blocks
 	when I receive [moved right v]
 		change x by (move speed)
-		if < (step) = [0] >
+		if < (step) = [0] > then
 			point in direction (180 v)
 		else
 			point in direction (165 v)
@@ -45,7 +45,7 @@ Don’t forget to move you legs along with your body using your `move speed`{.bl
 
 	when I receive [moved left v]
 	change x by ((move speed) * [-1])
-	if < (step) = [1] >
+	if < (step) = [1] > then
 		point in direction (165 v)
 	else
 		point in direction (180 v)

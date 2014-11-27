@@ -183,7 +183,7 @@ __Click the green flag,__ does the score change when Rudolph touches a present?
         set [Score v] to [0]
         play sound [Jingle_Bells v]
         forever
-        if <(score) = [10]>
+        if <(score) = [10]> then
             broadcast [GameOver v] and wait
 ```
 
