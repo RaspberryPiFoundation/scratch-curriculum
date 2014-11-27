@@ -155,14 +155,15 @@ __Click the green flag,__ do the presents fall at different speeds and colours?
 Let’s add some music to the game:
 
 + Import the sound file **Jingle_Bells.mp3** to the __Stage__.
+
++ Add the following script to the __Stage__, this will `set score to 0`{.blockorange} when the game is started. It will also play Jingle Bells while the game is being played.
++ 
 ```blocks
     when FLAG clicked
         set [ScrollX v] to [0]
         set [Score v] to [0]
         play sound [Jingle_Bells v]
 ```
-
-+ Add the following script to the __Stage__, this will `set score to 0`{.blockorange} when the game is started. It will also play Jingle Bells while the game is being played.
 
 Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.
 
