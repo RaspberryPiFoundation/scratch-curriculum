@@ -62,7 +62,7 @@ First, let's create a character that can change to a random sequence of colours 
 		delete (all v) of [sequence v]
 		repeat (5)
 			add (pick random (1) to (4)) to [sequence v]
-			switch to costume (item (last v) of [sequence v]
+			switch costume to (item (last v) of [sequence v]
 			wait (1) secs
 		end
 	```
@@ -170,7 +170,7 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 			delete (all v) of [sequence v]
 			repeat (score)
 				add (pick random (1) to (4)) to [sequence v]
-				switch to costume (item (last v) of [sequence v]
+				switch costume to (item (last v) of [sequence v]
 				wait (1) secs
 			end
 			wait until < (length of [sequence v]) = [0]>

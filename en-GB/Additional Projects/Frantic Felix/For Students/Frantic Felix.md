@@ -33,7 +33,7 @@ We’ll have four sprites that follow Frantic Felix around. __Each will detect c
 	when FLAG clicked
 		forever
 			go to [Felix v]
-			if <color [] is touching [] ?>
+			if <color [] is touching [] ?> then
 				set [blocked right v] to (1)
 			else
 				set [blocked right v] to (0)
@@ -58,27 +58,29 @@ You should see Felix follow the mouse pointer around, surrounded by a red rectan
 ```scratch
 	when FLAG clicked //handle moving
 		forever
-			if <<key [left arrow v] pressed?> and <(blocked left)=(0)>
+			if <<key [left arrow v] pressed?> and <(blocked left)=(0)>> then
 				point in direction (-90 v)
 				move (2) steps
 			end
 
 
-			if <<key [right arrow v] pressed?> and <(blocked left)=(0)>
+			if <<key [right arrow v] pressed?> and <(blocked left)=(0)>> then
 				point in direction (90 v)
 				move (2) steps
 			end
 
 
 	when FLAG clicked //[animate Felix]
-		forever if <<key [left arrow v] pressed?>or<key [right arrow v] pressed?>>
-			next costume
-			wait (0.1) secs
+		forever
+			if <<key [left arrow v] pressed?>or<key [right arrow v] pressed?>> then
+				next costume
+				wait (0.1) secs
+			end
 		end
 
 	when FLAG clicked //handle falling
 		forever
-			if <(blocked bottom)=(0)>
+			if <(blocked bottom)=(0)> then
 				change  y by (-2)
 			end
 		end
@@ -113,15 +115,15 @@ The final part of making Felix move is jumping. Let’s have the __space key__ m
 ```scratch
 	when FLAG clicked //handle falling
 		forever
-			if <(height to jump)>(0)>
-				if <(blocked top)=(1)>
+			if <(height to jump)>(0)> then
+				if <(blocked top)=(1)> then
 					set [height to jump v] to (0)
 				else
 					change y by (10)
 					change [height to jump v] by (-10)
 				end
 			else
-				if <(blocked bottom)=(0)>
+				if <(blocked bottom)=(0)> then
 					change y by (-2)
 				end
 			end
@@ -146,11 +148,13 @@ We’ll put three keys around the cavern. Felix collects a key by touching it. W
 ```scratch
 	when FLAG clicked
 		go to x:(220) y:(-125)
-		forever if <(key to get) = (0)>
-			change [color v] effect by (25)
-			if <touching [Felix v]?>
-				broadcast [win v]
-				say [You win!]
+		forever
+			if <(key to get) = (0)> then
+				change [color v] effect by (25)
+				if <touching [Felix v]?> then
+					broadcast [win v]
+					say [You win!]
+				end
 			end
 		end
 ```
@@ -178,13 +182,13 @@ __Let’s do the roving baddie first. It will just move along a fixed path.__
 		go to x:(-50) y:(47)
 		point in direction (-90 v)
 		forever
-			if <touching [Felix v]?>
+			if <touching [Felix v]?> then
 				broadcast [lose v]
 			end
-			if <(x position) > (-200)>
+			if <(x position) > (-200)> then
 				point in direction (90 v)
 			end
-			if <(x position) > (-50)>
+			if <(x position) > (-50)> then
 				point in direction (-90 v)
 			end
 			move (2) steps
@@ -282,15 +286,15 @@ when I receive [start level v]
 		point in direction (item (current level) of [directions v])
 		show
 		forever
-			if <<key[left arrow v]pressed?>and <(blocked left)=(0)>
+			if <<key[left arrow v]pressed?> and <(blocked left)=(0)>> then
 				point in direction (-90)
 				move (2) steps
 			end
-			if <<key[right arrow v]pressed?>and <(blocked right)=(0)>
+			if <<key[right arrow v]pressed?> and <(blocked right)=(0)>> then
 				point in direction (90)
 				move (2) steps
 			end
-			if <<key[space v]pressed?>and <(blocked bottom) =(1)>
+			if <<key[space v]pressed?> and <(blocked bottom) =(1)>> then
 				set [height to jump v]to[100]
 			end
 		end
@@ -308,10 +312,10 @@ And here’s the escape pod, which handles all the level-changing:
 	when I receive [start level v]
 		go to x:(item (current level) of [xs v])y:(item (current level) of [ys v])
 		forever
-			if <(keys to get) = [0]>
+			if <(keys to get) = [0]> then
 			change [color v]effect by [25]
-				if <touching [Felix v]?>
-					if <(current level) = (length of [keys per level v])>
+				if <touching [Felix v]?> then
+					if <(current level) = (length of [keys per level v])> then
 						say [You win!]
 						broadcast [win v]
 						stop all

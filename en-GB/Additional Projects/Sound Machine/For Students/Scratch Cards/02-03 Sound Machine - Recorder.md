@@ -13,7 +13,7 @@ materials: "*.sb2"
 + Create a new variable (for all sprites) called `recording`{.blockorange}
 + For each of your instruments (drum, piano, each sound sample etc.), you will need to add the following items to the `when I receive`{.blockbrown} block.
 ```blocks
-    if <(recording) = (1)>
+    if <(recording) = (1)> then
         add (timer) to [timing v]
         add (cat) to [instrument v]
 ```
@@ -22,7 +22,7 @@ materials: "*.sb2"
 ```blocks
     when I receive [drum v]
         play drum (48 v) for (0.2) beats
-        if <(recording) = (1)>
+        if <(recording) = (1)> then
             add (timer) to [timing v]
             add (cat) to [instrument v]
         end
@@ -47,10 +47,10 @@ Try clicking the record button. What happens when you play instruments?
         set [index v] to (1)
         reset timer
         forever
-            if <(item (index) of [timing v]) < (timer)>
+            if <(item (index) of [timing v]) < (timer)> then
                 broadcast (item (index) of [instrument v])
                 change [index v] by (1)
-                if <(index) > (length of [timing v])>
+                if <(index) > (length of [timing v])> then
                     stop script
                 end
             end
