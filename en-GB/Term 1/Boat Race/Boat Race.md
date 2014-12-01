@@ -234,7 +234,7 @@ If your new object isn't brown, you'll need to add to your boat code:
 ## Challenge: More boats! {.challenge .new-page}
 Can you turn your game into a race between 2 players? 
 
-+ Duplicate the boat, rename it 'Player 2' and change it's colour.
++ Duplicate the boat, rename it 'Player 2' and change its colour.
 
 ![screenshot](boat-p2.png)
 
