@@ -8,9 +8,7 @@ materials: ["Memory.sb2"]
 ...
 
 ## Community Contributed Project { .challenge }
-This project was created with Erik and his daughter Ruth.
-
-If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
 
 #Heads Up! { .beta}
 This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
