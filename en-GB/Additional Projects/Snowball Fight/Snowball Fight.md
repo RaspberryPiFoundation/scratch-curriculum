@@ -4,7 +4,7 @@ level: Additional Projects
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["SnowballFight.sb2","Resources/*.*"]
+materials: ["Resources/*.*"]
 ...
 
 #Heads Up! { .beta}
