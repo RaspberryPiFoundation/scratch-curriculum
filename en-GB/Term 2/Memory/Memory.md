@@ -132,7 +132,7 @@ Remember to test the code you've added! Can you memorise a sequence of 5 colours
 
 ## Save your project { .save }
 
-# Step 3: Multiple levels { .activity }
+# Step 3: Multiple levels { .activity .new-page }
 
 So far, the player only has to remember 5 colours. Let's improve your game, so that the length of the sequence increases.
 
