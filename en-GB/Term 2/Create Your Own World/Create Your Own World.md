@@ -1,6 +1,6 @@
 ---
 title: (Beta) Create Your Own World
-level: Term 2
+level: Scratch 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

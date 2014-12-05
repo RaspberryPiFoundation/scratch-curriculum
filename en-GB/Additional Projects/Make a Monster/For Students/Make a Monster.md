@@ -1,6 +1,6 @@
 ---
 title: Design & animate your own monster
-level: Additional Projects
+level: Scratch +
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

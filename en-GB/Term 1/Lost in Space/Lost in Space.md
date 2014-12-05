@@ -1,6 +1,6 @@
 ---
 title: (Beta) Lost in Space
-level: Term 1
+level: Scratch 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

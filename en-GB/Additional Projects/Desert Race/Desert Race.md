@@ -1,6 +1,6 @@
 ---
 title: Desert Race
-level: Term 2
+level: Scratch +
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
