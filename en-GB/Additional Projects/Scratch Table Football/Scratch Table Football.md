@@ -15,7 +15,7 @@ If you'd like to contribute a project of your own, then [get in touch with us on
 
 # Introduction { .intro }
 
-It’s the Football World Cup! So to celebrate, let’s make a world cup football game in Scratch!
+Let’s make a world cup football game in Scratch!
 
 ![screenshot](scratch_table_football_screenshot.png)
 
