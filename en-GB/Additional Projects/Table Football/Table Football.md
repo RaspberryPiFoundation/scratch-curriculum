@@ -7,6 +7,12 @@ embeds: "*.png"
 materials: ["Resources/*.png", "Resources/whistle.mp3", "Resources/pitch.jpg"]
 ...
 
+## Community Contributed Project { .challenge .pdf-hidden }
+
+This project was generously contributed by [Mark Hardisty](https://twitter.com/hardistymark) (idea, art, and original design) and [Andy Lulham](https://twitter.com/andylolz) (editing and formatting as a Code Club project).
+
+If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+
 # Introduction { .intro }
 
 Let’s make a world cup football game in Scratch!
