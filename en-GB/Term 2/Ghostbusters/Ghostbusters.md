@@ -21,7 +21,7 @@ This project is like the game __Whack-a-Mole__. You get points for hitting the g
 + Remove the cat sprite and replace the background with the **nature/woods** background.
 + Use the `Choose sprite from library` button to add a new ghoul sprite to the project (use the **fantasy/ghost1** costume).
 + Now we want to make our ghost move. Add a `Variable` for this sprite only called `speed` { .blockorange }.
-+ On the **Stage**, the stage monitor for this variable should say “__Ghost1 speed__”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the **Data palette** so it does not show on the Stage. The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
++ On the **Stage view**, the stage monitor for this variable should say “__Ghost1: speed__”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the **Data palette** so it does not show on the Stage. The speed variable will control how fast this ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
 + We want the ghost to start moving when the game starts, __so make a script like this__:
 ```blocks
     when FLAG clicked
@@ -49,7 +49,7 @@ Why does it get stuck on the edge of the screen?
             if on edge, bounce
 ```
 
-+ To stop the ghost flipping upside down, click on the `rotation style: left-right` button in the Sprite Summary area.
++ To stop the ghost flipping upside down, click on the `rotation style: left-right` button in the (i) section of the Sprite Summary area for the ghost sprite.
 
 ## Test Your Project { .flag }
 
@@ -62,7 +62,7 @@ Click the green flag.
 ## Things to try { .try }
 
 + Try changing the value of the speed variable to make the ghost fly faster or slower.
-+ How would you make the ghost get faster the longer it flies? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
++ How would you make the ghost get faster the longer it's flying? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)
 
 # Step 2: Make the ghost appear & vanish randomly { .activity .new-page }
 
