@@ -27,9 +27,7 @@
             "title":     "Make a Monster",
             "number":    4,
             "filename":  "Make a Monster/For Students/Make a Monster.md",
-            "pdf":       "Make a Monster/For Students/Make a Monster.pdf",
             "note":      "Make a Monster/For Leaders/Make a Monster - Notes.md",
-            "note_pdf":  "Make a Monster/For Leaders/Make a Monster - Notes.pdf",
             "materials": "Make a Monster/For Leaders/Scratch Files/*.sb",
 
             "extras": [
@@ -82,9 +80,7 @@
             "number":    5,
             "embeds":    "Sound Machine/For Students/Scratch Cards/*.png",
             "filename":  "Sound Machine/For Students/Sound Machine.md",
-            "pdf":       "Sound Machine/For Students/Sound Machine.pdf",
             "note":      "Sound Machine/For Leaders/Sound Machine - Notes.md",
-            "note_pdf":  "Sound Machine/For Leaders/Sound Machine - Notes.pdf",
             "materials": "Sound Machine/For Leaders/Scratch Files/*.sb",
 
             "extras": [
@@ -128,39 +124,29 @@
             "title":     "Frantic Felix",
             "number":    6,
             "filename":  "Frantic Felix/For Students/Frantic Felix.md",
-            "pdf":       "Frantic Felix/For Students/Frantic Felix.pdf",
             "note":      "Frantic Felix/For Leaders/Frantic Felix - Notes.md",
-            "note_pdf":  "Frantic Felix/For Leaders/Frantic Felix - Notes.pdf",
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
         },
         {
             "number":    7,
             "filename":  "Fruit Machine/Fruit Machine.md",
-            "pdf":       "Fruit Machine/Fruit Machine.pdf",
             "note":      "Fruit Machine/Fruit Machine - Notes.md",
-            "note_pdf":  "Fruit Machine/Fruit Machine - Notes.pdf",
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
         },
         {
             "number":   8,
             "filename": "Create Your Own Game/Create Your Own Game.md",
-            "pdf":      "Create Your Own Game/Create Your Own Game.pdf",
-            "note":     "Create Your Own Game/Create Your Own Game - Notes.md",
-            "note_pdf": "Create Your Own Game/Create Your Own Game - Notes.pdf"
+            "note":     "Create Your Own Game/Create Your Own Game - Notes.md"
         },
         {
             "number":   9,
             "filename": "Desert Race/Desert Race.md",
-            "pdf":      "Desert Race/Desert Race.pdf",
-            "note":     "Desert Race/Desert Race - Notes.md",
-            "note_pdf": "Desert Race/Desert Race - Notes.pdf"
+            "note":     "Desert Race/Desert Race - Notes.md"
         },
         {
             "number":   10,
             "filename": "What's That/What's That.md",
-            "pdf":      "What's That/What's That.pdf",
-            "note":     "What's That/What's That - Notes.md",
-            "note_pdf": "What's That/What's That - Notes.pdf"
+            "note":     "What's That/What's That - Notes.md"
         },
         {
             "number":   11,

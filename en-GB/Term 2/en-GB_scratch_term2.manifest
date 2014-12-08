@@ -15,30 +15,22 @@
         {
             "number":   2,
             "filename": "Felix and Herbert/Felix and Herbert.md",
-            "pdf":      "Felix and Herbert/Felix and Herbert.pdf",
-            "note":     "Felix and Herbert/Felix and Herbert - Notes.md",
-            "note_pdf": "Felix and Herbert/Felix and Herbert - Notes.pdf"
+            "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
         },
         {
             "number":   3,
             "filename": "Ghostbusters/Ghostbusters.md",
-            "pdf":      "Ghostbusters/Ghostbusters.pdf",
-            "note":     "Ghostbusters/Ghostbusters - Notes.md",
-            "note_pdf": "Ghostbusters/Ghostbusters - Notes.pdf"
+            "note":     "Ghostbusters/Ghostbusters - Notes.md"
         },
         {
             "number":   4,
             "filename": "Fireworks/Fireworks.md",
-            "pdf":      "Fireworks/Fireworks.pdf",
-            "note":     "Fireworks/Fireworks - Notes.md",
-            "note_pdf": "Fireworks/Fireworks - Notes.pdf"
+            "note":     "Fireworks/Fireworks - Notes.md"
         },
         {
             "number":   5,
             "filename": "Fish Chomp/Fish Chomp.md",
-            "pdf":      "Fish Chomp/Fish Chomp.pdf",
-            "note":     "Fish Chomp/Fish Chomp - Notes.md",
-            "note_pdf": "Fish Chomp/Fish Chomp - Notes.pdf"
+            "note":     "Fish Chomp/Fish Chomp - Notes.md"
         },
         {
             "number":   6,
