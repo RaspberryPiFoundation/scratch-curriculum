@@ -4,7 +4,7 @@ level: Scratch 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["BoatRace.sb2","Resources/*.*"]
+materials: ["BoatRace.sb2","BoatRaceResources.sb2","Resources/*.*"]
 ...
 
 #Heads Up! { .beta}

@@ -4,7 +4,7 @@ level: Scratch 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["PaintBox.sb2","Resources/*.*"]
+materials: ["PaintBox.sb2","PaintBoxResources.sb2","Resources/*.*"]
 ...
 
 #Heads Up! { .beta}
