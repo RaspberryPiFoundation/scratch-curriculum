@@ -1,0 +1,56 @@
+{
+    "id": "scratch",
+    "title":"Beginner Scratch",
+    "description":"Scratch is a simple, fun way to program by dragging and dropping blocks together",
+    "language": "en-GB",
+    "number": 1,
+
+
+    "projects": [
+        {
+            "filename": "01 Felix & Herbert/felix_&_herbert.md",
+            "number": 1
+        },
+        {
+            "filename": "02 Ghostbusters/Ghostbusters.md",
+            "number": 2
+        },
+        {
+            "filename": "03 Fireworks/Fireworks.md",
+            "number": 3
+        },
+        {
+            "filename": "04 Fruit Machine/FruitMachine.md",
+            "number": 4
+        },
+        {
+            "filename": "05 Fish Chomp/FishChomp.md",
+            "number": 5
+        },
+        {
+            "filename": "06 Desert Race/DesertRace.md",
+            "number": 6
+        },
+        {
+            "filename": "07 What's That/WhatsThat.md",
+            "number": 7
+        },
+        {
+            "filename": "08 Paint Box/PaintBox.md",
+            "number": 8
+        },
+        {
+            "filename": "09 Create Your Own Game/CreateYourOwnGame.md",
+            "number": 9
+        },
+        {
+            "filename": "10 Christmas special/ChristmasCapers.md",
+            "number": 10
+        },
+        {
+            "filename": "Flappy Parrot/FlappyParrot.md",
+            "number": 11
+        }
+    ]
+}
+
