@@ -1,5 +1,5 @@
 # NOTES FOR CLUB LEADERS
-## Design & animate your own monster (level 4)
+## Create your own monster
 
 __Introduction:__
 

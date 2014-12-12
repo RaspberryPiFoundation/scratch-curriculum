@@ -7,7 +7,7 @@
 
     "projects": [
         {
-            "title":     "Make a Monster",
+            "title":     "Create your own monster",
             "number":    1,
             "filename":  "Make a Monster/For Students/Make a Monster.md",
             "note":      "Make a Monster/For Leaders/Make a Monster - Notes.md",
@@ -105,8 +105,9 @@
         },
         {
             "title":"Frantic Felix",
-            "filename": "03 Frantic Felix/For students/01-Worksheet-FranticFelix-V2.pdf",
-            "note": "03 Frantic Felix/For leaders/Frantic-Felix-notes.md",
+            "filename":  "Frantic Felix/For Students/Frantic Felix.md",
+            "note": "Frantic Felix/For Leaders/Frantic Felix - Notes.md",
+            "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"],
             "number": 3
         }
     ]

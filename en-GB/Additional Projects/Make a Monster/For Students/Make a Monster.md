@@ -1,5 +1,5 @@
 ---
-title: Design & animate your own monster
+title: Create your own monster
 level: Scratch +
 language: en-GB
 stylesheet: scratch
