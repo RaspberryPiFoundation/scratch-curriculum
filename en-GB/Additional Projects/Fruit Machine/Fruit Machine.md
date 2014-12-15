@@ -38,7 +38,7 @@ Now we’ve got some costumes, we want the sprite to change between them.
 + **Click the green flag** in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.
 + Now click `Looks` and drag in a `next costume` { .blockpurple }
 + How do we slow it down so it isn’t changing so quickly? Click the `Control` tab and drag in a `wait 1 secs` { .blockyellow }
-+ Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the `wait 1 secs` { .blockyellow } block?
++ Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good).
 ```blocks
     when FLAG clicked
     forever
