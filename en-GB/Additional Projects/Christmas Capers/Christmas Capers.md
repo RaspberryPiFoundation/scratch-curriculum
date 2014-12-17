@@ -32,7 +32,7 @@ A disaster in a toy factory has sent presents flying into the sky, help Rudolph 
 
 ## Test Your Project { .flag}
 
-__Click the green flag and move the mouse__, does Rudolph follow the mouse?
+__Click the green flag and move the mouse.__ Does Rudolph follow the mouse?
 
 ## Save your project { .save}
 
@@ -52,13 +52,13 @@ __Click the green flag and move the mouse__, does Rudolph follow the mouse?
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, do the hills move? What happens as the hills move to the side of the screen?
+__Click the green flag.__ Do the hills move? What happens as the hills move to the side of the screen?
 
 ## Save your project { .save}
 
-+ Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the __new sprite from file__ button to add the Snow sprite to the project again (use the **SnowHills.png** file).
++ Let’s fix the issue with the snowy hills suddenly reappearing. Add a second set of hills to the stage. Use the __new sprite from file__ button to add the Snow sprite to the project again (use the **SnowHills.png** file).
 + Rename the sprite to __Snow2__.
-+ Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:
++ Add the following script to the Snow2 sprite to allow the second set of hills to follow closely behind the first:
 ```blocks
     when FLAG clicked
         set y to (0)
@@ -68,7 +68,7 @@ __Click the green flag__, do the hills move? What happens as the hills move to t
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, do the hills move? Has the issue with the flickering trees been fixed?
+__Click the green flag.__ Do the hills move? Has the issue with the reappearing trees been fixed?
 
 ## Save your project { .save}
 
@@ -80,7 +80,7 @@ __Click the green flag__, do the hills move? Has the issue with the flickering t
 + __Create a new variable__ by clicking the `Data`{.blocklightgrey}  tab and then **make a variable**. Call it `Finish`{.blockorange} and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control when the present should be removed from the game.
 + __Create another variable__ and call it `Speed`{.blockorange} and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control the speed that the present falls down the screen.
 + Add the following script to the **Present** sprite to allow it to fall from the sky. Note that we will use `pick random`{.blockgreen} to make the present appear in a different place each time.
-+ By using the `touching [ Rudolph ]`{.blocklightblue} block we can make the present disappear when touched, we can use this later to keep a score.
++ By using the `touching [ Rudolph ]`{.blocklightblue} block we can make the present disappear when touched. We can use this later to keep a score.
 ```blocks
     when FLAG clicked
         forever
@@ -98,12 +98,12 @@ __Click the green flag__, do the hills move? Has the issue with the flickering t
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?
+__Click the green flag.__ Do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?
 
 ## Save your project { .save}
 
 + Let’s make the game more interesting by changing the colour of the presents each time they fall. Do this by using the `change colour`{.blockpurple} block.
-+ Change the speed of each present by replacing `set Speed to -1`{.blockorange} with the `pick random`{.blockgreen} block, try different values such as **-10** to **-1**. Your script should now look like this.
++ Change the speed of each present by replacing `set Speed to -1`{.blockorange} with the `pick random`{.blockgreen} block. Try different values such as **-10** to **-1**. Your script should now look like this.
 ```blocks
     when FLAG clicked
         forever
@@ -122,7 +122,7 @@ __Click the green flag,__ do the presents fall from the sky? Do they disappear w
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ do the presents fall at different speeds and colours?
+__Click the green flag.__ Do the presents fall at different speeds and colours?
 
 ## Save your project { .save}
 
@@ -156,8 +156,7 @@ Let’s add some music to the game:
 
 + Import the sound file **Jingle_Bells.mp3** to the __Stage__.
 
-+ Add the following script to the __Stage__, this will `set score to 0`{.blockorange} when the game is started. It will also play Jingle Bells while the game is being played.
-+ 
++ Add the following script to the __Stage__. This will `set score to 0`{.blockorange} when the game is started. It will also play Jingle Bells while the game is being played.
 ```blocks
     when FLAG clicked
         set [ScrollX v] to [0]
@@ -165,17 +164,17 @@ Let’s add some music to the game:
         play sound [Jingle_Bells v]
 ```
 
-Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.
+Note, if at first the music sounds ‘choppy’, save your project, close Scratch and then open your project again.
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ does the score change when Rudolph touches a present?
+__Click the green flag.__ Does the score change when Rudolph touches a present?
 
 ## Save your project { .save}
 
 # Step 4: Game over { .activity}
 
-+ __Let’s change our script to keep track of a score within the game.__ We can then use this later to work out when the game over message should appear.
++ Let’s use our score to work out when the game over message should appear.
 + Change the script on the __Stage__ so when the `Score`{.blockorange} reaches **10** we will `broadcast`{.blockyellow} a __GameOver__ message.
 ```blocks
     when FLAG clicked
@@ -201,7 +200,7 @@ __Click the green flag,__ does the score change when Rudolph touches a present?
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ does the score change when Rudolph touches a present?
+__Click the green flag.__ Does the score change when Rudolph touches a present?
 
 ## Save your project { .save}
 
