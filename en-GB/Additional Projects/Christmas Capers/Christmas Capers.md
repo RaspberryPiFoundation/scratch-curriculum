@@ -32,7 +32,7 @@ A disaster in a toy factory has sent presents flying into the sky, help Rudolph 
 
 ## Test Your Project { .flag}
 
-__Click the green flag and move the mouse__, does Rudolph follow the mouse?
+__Click the green flag and move the mouse.__ Does Rudolph follow the mouse?
 
 ## Save your project { .save}
 
@@ -52,7 +52,7 @@ __Click the green flag and move the mouse__, does Rudolph follow the mouse?
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, do the hills move? What happens as the hills move to the side of the screen?
+__Click the green flag.__ Do the hills move? What happens as the hills move to the side of the screen?
 
 ## Save your project { .save}
 
@@ -68,7 +68,7 @@ __Click the green flag__, do the hills move? What happens as the hills move to t
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, do the hills move? Has the issue with the flickering trees been fixed?
+__Click the green flag.__ Do the hills move? Has the issue with the flickering trees been fixed?
 
 ## Save your project { .save}
 
@@ -98,7 +98,7 @@ __Click the green flag__, do the hills move? Has the issue with the flickering t
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?
+__Click the green flag.__ Do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?
 
 ## Save your project { .save}
 
@@ -122,7 +122,7 @@ __Click the green flag,__ do the presents fall from the sky? Do they disappear w
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ do the presents fall at different speeds and colours?
+__Click the green flag.__ Do the presents fall at different speeds and colours?
 
 ## Save your project { .save}
 
@@ -169,7 +169,7 @@ Note, if at first the music sounds ‘choppy’ save your project, close Scratch
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ does the score change when Rudolph touches a present?
+__Click the green flag.__ Does the score change when Rudolph touches a present?
 
 ## Save your project { .save}
 
@@ -201,7 +201,7 @@ __Click the green flag,__ does the score change when Rudolph touches a present?
 
 ## Test Your Project { .flag}
 
-__Click the green flag,__ does the score change when Rudolph touches a present?
+__Click the green flag.__ Does the score change when Rudolph touches a present?
 
 ## Save your project { .save}
 
