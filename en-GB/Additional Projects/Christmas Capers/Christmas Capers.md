@@ -56,9 +56,9 @@ __Click the green flag.__ Do the hills move? What happens as the hills move to t
 
 ## Save your project { .save}
 
-+ Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the __new sprite from file__ button to add the Snow sprite to the project again (use the **SnowHills.png** file).
++ Let’s fix the issue with the snowy hills suddenly reappearing. Add a second set of hills to the stage. Use the __new sprite from file__ button to add the Snow sprite to the project again (use the **SnowHills.png** file).
 + Rename the sprite to __Snow2__.
-+ Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:
++ Add the following script to the Snow2 sprite to allow the second set of hills to follow closely behind the first:
 ```blocks
     when FLAG clicked
         set y to (0)
@@ -68,7 +68,7 @@ __Click the green flag.__ Do the hills move? What happens as the hills move to t
 
 ## Test Your Project { .flag}
 
-__Click the green flag.__ Do the hills move? Has the issue with the flickering trees been fixed?
+__Click the green flag.__ Do the hills move? Has the issue with the reappearing trees been fixed?
 
 ## Save your project { .save}
 
