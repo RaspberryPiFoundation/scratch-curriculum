@@ -91,7 +91,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		broadcast [red v]
 	```
 
-+ When your character receives this message, they should check whether the number 1 is at the start of the list (that means that red is the next colour in the sequence). If it is, you can remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
++ When your character receives this message, they should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, you can remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
 
 	```blocks
 		when I receive [red v]
@@ -106,6 +106,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 + You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
 
 	```blocks
+		wait until < (length of [sequence v]) = [0]>
 		broadcast [won v] and wait
 	```
 
