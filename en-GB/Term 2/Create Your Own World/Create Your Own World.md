@@ -5,6 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["CreateYourOwnWorld.sb2","CreateYourOwnWorldResources.sb2","Resources/*.*"]
+beta: true
 ...
 
 # Introduction { .intro }

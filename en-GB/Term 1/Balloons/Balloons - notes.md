@@ -1,5 +1,5 @@
 ---
-title: (Beta) Balloons — Notes for Club Leaders
+title: Balloons — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]

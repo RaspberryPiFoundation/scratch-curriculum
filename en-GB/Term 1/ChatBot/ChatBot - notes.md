@@ -1,5 +1,5 @@
 ---
-title: (Beta) ChatBot — Notes for Club Leaders
+title: ChatBot — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]

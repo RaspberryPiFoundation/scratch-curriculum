@@ -1,5 +1,5 @@
 ---
-title: (Beta) Boat Race — Notes for Club Leaders
+title: Boat Race — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]

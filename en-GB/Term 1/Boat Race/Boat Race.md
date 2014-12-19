@@ -1,14 +1,12 @@
 ---
-title: (Beta) Boat Race
+title: Boat Race
 level: Scratch 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["BoatRace.sb2","BoatRaceResources.sb2","Resources/*.*"]
+beta: true
 ...
-
-#Heads Up! { .beta}
-This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
 
 # Introduction { .intro }
 
