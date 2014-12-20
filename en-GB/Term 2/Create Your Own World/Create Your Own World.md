@@ -1,11 +1,10 @@
 ---
-title: (Beta) Create Your Own World
+title: Create Your Own World
 level: Scratch 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["CreateYourOwnWorld.sb2","CreateYourOwnWorldResources.sb2","Resources/*.*"]
-beta: true
 ...
 
 # Introduction { .intro }
@@ -248,7 +247,7 @@ Can you add code to your new person, so that they only appear in room 1? Make su
 + Test out your enemy, to make sure that:
 	+ It's only visible in room 2;
 	+ It patrols the room;
-	+ The game ends if the player touches it. 
+	+ The game ends if the player touches it.
 
 ## Save your project { .save }
 
@@ -351,7 +350,7 @@ You can now continue creating your own world. Here are some ideas:
 
 	![screenshot](world-bribe.png)
 
-+ You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level. 
++ You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
 
 	![screenshot](world-north-south.png)
 

@@ -1,14 +1,11 @@
 ---
-title: (Beta) Snowball Fight
+title: Snowball Fight
 level: Scratch +
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Resources/*.*"]
 ...
-
-#Heads Up! { .beta}
-This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
 
 # Introduction { .intro }
 
@@ -213,7 +210,7 @@ Let's add in a target for your snowballs!
 
 	![screenshot](snow-hit.png)
 
-+ Let's do a couple of things to make the game harder. First, let's move the bear each time the player throws the snowball. 
++ Let's do a couple of things to make the game harder. First, let's move the bear each time the player throws the snowball.
 
 	To do this, first add a `broadcast` {.blockcontrol} to your snowball, near the top of your `forever` {.blockcontrol} loop. This will let your bear know that a new shot is about to be taken.
 

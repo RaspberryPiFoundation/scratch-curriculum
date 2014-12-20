@@ -5,7 +5,6 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["PaintBox.sb2","PaintBoxResources.sb2","Resources/*.*"]
-beta: true
 ...
 
 # Introduction { .intro }
@@ -52,11 +51,11 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 + Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?
 
-+ Have you noticed that it's the centre of the pen, and not the tip, that follows the mouse pointer? 
++ Have you noticed that it's the centre of the pen, and not the tip, that follows the mouse pointer?
 
 	![screenshot](paint-center.png)
 
-	To fix this, click on the 'blue-pencil' costume of your pen sprite, and click 'Set costume center'. 
+	To fix this, click on the 'blue-pencil' costume of your pen sprite, and click 'Set costume center'.
 
 	![screenshot](paint-center-icon.png)
 
@@ -133,7 +132,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 		broadcast [green v]
 	```
 
-	To create the `broadcast` {.blockevents} block, click the down arrow and select 'new message...'. 
+	To create the `broadcast` {.blockevents} block, click the down arrow and select 'new message...'.
 
 	![screenshot](paint-broadcast.png)
 
@@ -192,7 +191,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 	![screenshot](paint-clear.png)
 
-+ Add code to this new cancel button to clear the canvas when it's clicked. 
++ Add code to this new cancel button to clear the canvas when it's clicked.
 
 	```blocks
 		when this sprite clicked
@@ -203,7 +202,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 + You can also create an eraser. To do this, add the 'eraser.png' image as a new costume to your pen sprite (remember to set the costume centre) _and_ as a new selector sprite.
 
-	![screenshot](paint-eraser.png) 
+	![screenshot](paint-eraser.png)
 
 + You can then add code to the eraser selector sprite, to tell the pen to switch to an eraser.
 
@@ -272,7 +271,7 @@ You could even allow the user to change the pen width with the arrow keys!
 ## Save your project { .save }
 
 ## Challenge: More pens {.challenge}
-Can you add red, yellow and black pens to your paint program? You'll find all of the images you need in your 'Resources' folder. Remember to add keyboard shortcuts for these new pens! 
+Can you add red, yellow and black pens to your paint program? You'll find all of the images you need in your 'Resources' folder. Remember to add keyboard shortcuts for these new pens!
 
 Can you use your pens to draw a picture?
 

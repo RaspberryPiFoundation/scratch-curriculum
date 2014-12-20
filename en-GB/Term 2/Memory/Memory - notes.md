@@ -1,5 +1,5 @@
 ---
-title: (Beta) Memory — Notes for Club Leaders
+title: Memory — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]

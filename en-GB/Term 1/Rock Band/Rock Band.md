@@ -1,11 +1,10 @@
 ---
-title: (Beta) Rock Band
+title: Rock Band
 level: Scratch 1
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["RockBand.sb2"]
-beta: true
 ...
 
 # Introduction { .intro }
@@ -40,7 +39,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 + Click the drum to try out your new instrument!
 
-+ You can also change how the drum looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the drum image. 
++ You can also change how the drum looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the drum image.
 
 	![screenshot](band-drum-costume.png)
 
@@ -76,7 +75,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 ##Challenge: Improving your drum { .challenge }
 
-+ Can you change the sound that the drum makes when it's clicked? 
++ Can you change the sound that the drum makes when it's clicked?
 
 ![screenshot](band-drum-sound.png)
 
@@ -121,7 +120,7 @@ Let's add a singer to our band!
 
 ## Save your project { .save }
 
-+ You can also change the costume of your singer, to make it look like she is singing. Just like with the drum, right-click on the costume to duplicate it, so that you have 2. Rename the 2 costumes to 'not singing' and 'singing'. 
++ You can also change the costume of your singer, to make it look like she is singing. Just like with the drum, right-click on the costume to duplicate it, so that you have 2. Rename the 2 costumes to 'not singing' and 'singing'.
 
 	![screenshot](band-singer-costume.png)
 
@@ -237,7 +236,7 @@ You can even add some music for your band to play along to!
 ## Save your project { .save }
 
 ##Challenge: Make your own band { .challenge }
-Use what you've learnt in this project to make your own band! You can create any instruments you like, but look at the available sounds and instruments to get some ideas. 
+Use what you've learnt in this project to make your own band! You can create any instruments you like, but look at the available sounds and instruments to get some ideas.
 
 ![screenshot](band-ideas.png)
 

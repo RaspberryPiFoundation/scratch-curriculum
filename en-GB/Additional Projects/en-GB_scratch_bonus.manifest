@@ -147,6 +147,7 @@
         },
         {
             "number":   11,
+            "beta":     true,
             "filename": "Snowball Fight/Snowball Fight.md"
         }
     ]

@@ -1,11 +1,10 @@
 ---
-title: (Beta) Memory
+title: Memory
 level: Scratch 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Memory.sb2"]
-beta: true
 ...
 
 ## Community Contributed Project { .challenge .pdf-hidden }

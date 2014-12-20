@@ -5,7 +5,6 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Balloons.sb2"]
-beta: true
 ...
 
 # Introduction { .intro }
@@ -45,7 +44,7 @@ You are going to make a balloon-popping game!
 
 	![screenshot](balloons-flip.png)
 
-	Balloons don't move like this! To fix this, click on the balloon sprite icon, and then click the blue `i` {.blockmotion} information icon. 
+	Balloons don't move like this! To fix this, click on the balloon sprite icon, and then click the blue `i` {.blockmotion} information icon.
 
 	![screenshot](balloons-info.png)
 	In the 'rotation style' section, click the dot to stop the balloon rotating.
@@ -74,7 +73,7 @@ You are going to make a balloon-popping game!
 		end
 	```
 
-+ If you click the green flag a few times, you should notice that your balloon starts in a different place each time. 
++ If you click the green flag a few times, you should notice that your balloon starts in a different place each time.
 
 + You could even use a random number to choose a random balloon colour each time:
 
@@ -270,7 +269,7 @@ Can you add in other objects to your game? You can add good objects, like donuts
 
 You'll need to think about the objects you're adding. Think about:
 
-+ How many will there be? 
++ How many will there be?
 + How big is it? How does it move?
 + How many points will you score (or lose) for clicking it?
 + Will it move faster or slower than the balloons?

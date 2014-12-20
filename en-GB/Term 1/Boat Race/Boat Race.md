@@ -5,7 +5,6 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["BoatRace.sb2","BoatRaceResources.sb2","Resources/*.*"]
-beta: true
 ...
 
 # Introduction { .intro }
@@ -29,11 +28,11 @@ You are going to learn how to make a game, in which you'll use the mouse to cont
 
 + From this 'Resources' folder, import 'background.png' as the stage backdrop and 'boat.png' as a new sprite.
 
-+ Rename your sprite 'Player 1', shrink it slightly, and move it to the bottom of the stage. 
++ Rename your sprite 'Player 1', shrink it slightly, and move it to the bottom of the stage.
 
 	Your project should look like this:
 
-	![screenshot](boat-bg.png)	
+	![screenshot](boat-bg.png)
 
 + You are going to control the boat with your mouse. Add this code to your boat:
 
@@ -230,7 +229,7 @@ If your new object isn't brown, you'll need to add to your boat code:
 ## Save your project { .save }
 
 ## Challenge: More boats! {.challenge .new-page}
-Can you turn your game into a race between 2 players? 
+Can you turn your game into a race between 2 players?
 
 + Duplicate the boat, rename it 'Player 2' and change its colour.
 
@@ -251,7 +250,7 @@ Can you turn your game into a race between 2 players?
 	end
 ```
 
-...and replace it with code to control the boat using the arrow keys. 
+...and replace it with code to control the boat using the arrow keys.
 
 This is the code you'll need to move the boat forward:
 
@@ -266,7 +265,7 @@ You'll also need code to `turn` {.blockmotion} the boat when the left and right 
 ## Save your project { .save }
 
 ## Challenge: More levels! {.challenge .new-page}
-Can you create additional backdrops, and allow the player to choose between levels? 
+Can you create additional backdrops, and allow the player to choose between levels?
 
 ```blocks
 	when [space v] key pressed

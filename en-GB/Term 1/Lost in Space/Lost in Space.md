@@ -5,7 +5,6 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["LostInSpace.sb2"]
-beta: true
 ...
 
 # Introduction { .intro }
@@ -22,19 +21,19 @@ You are going to learn how to program your own animation!
 ## Activity Checklist { .check }
 
 + First, make sure that you have opened up the <a href="http://scratch.mit.edu/projects/editor/" target="_blank">Scratch editor</a>. It should look something like this:
-    
+
 	![screenshot](space-scratch.png)
 
 + Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called 'sprites'. The cat that you can see is a sprite called Felix, who is the Scratch mascot. Let's get rid of him for now, by right-clicking on him, and clicking 'delete'.
-	    
+
 	![screenshot](space-delete.png)
 
 + Next, click 'Choose sprite from library' to open up a list of all the available Scratch sprites.
-	    
+
 	![screenshot](space-sprite-library.png)
 
 + Scroll down until you see a spaceship sprite. Click on the spaceship, and click 'OK' to add it to your animation.
-	    
+
 	![screenshot](space-sprite-spaceship.png)
 
 + Click on your new spaceship sprite, and click the 'Costumes' tab.
@@ -46,18 +45,18 @@ You are going to learn how to program your own animation!
 	![screenshot](space-rotate.png)
 
 + You should now have a big spaceship on your 'stage'. The 'stage' is the area on the left, and is where your animation will happen. Think of it as a performance area, just like a real stage! You can drag the spaceship around the stage to move it.
-	    
+
 	At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking on the 'Stage' icon, and then clicking 'Choose backdrop from library'.
 
 	![screenshot](space-stage.png)
 
-+ Click 'Space' on the left, and then click the 'Stars' backdrop and click 'OK' to add it to the stage. 
++ Click 'Space' on the left, and then click the 'Stars' backdrop and click 'OK' to add it to the stage.
 
 	![screenshot](space-backdrop.png)
 
 	Your stage should now look like this:
 
-	![screenshot](space-step1.png)    
+	![screenshot](space-step1.png)
 
 ##Challenge: Adding another sprite { .challenge }
 Can you add another sprite (the Earth) to your stage, so that it looks like this:
@@ -65,7 +64,7 @@ Can you add another sprite (the Earth) to your stage, so that it looks like this
 ![screenshot](space-earth.png)
 
 ## Save your project { .save }
-You should save your work regularly, so that you don't lose it. First, give your program a name, by typing one into the text box above the stage. You can then click 'File' and then 'Save now' to save your project.  
+You should save your work regularly, so that you don't lose it. First, give your program a name, by typing one into the text box above the stage. You can then click 'File' and then 'Save now' to save your project.
 
 ![screenshot](space-save.png)
 
@@ -110,7 +109,7 @@ Now that you have some sprites, let's add code to animate them!
 
 	![screenshot](space-coordinates.png)
 
-+ If you try to click the code again, to run it a second time, nothing happens! That's because the spaceship is already at the position it's been told to glide to. Let's improve your animation, by telling the spaceship to start at the bottom-left of the stage, and point upwards to begin with. 
++ If you try to click the code again, to run it a second time, nothing happens! That's because the spaceship is already at the position it's been told to glide to. Let's improve your animation, by telling the spaceship to start at the bottom-left of the stage, and point upwards to begin with.
 
 + Add some more blocks to your animation, adding them on top of the blocks you already have. Your code should now look like this:
 
@@ -122,7 +121,7 @@ Now that you have some sprites, let's add code to animate them!
 		glide (1) secs to x:(0) y: (0)
 	```
 
-	You'll find the `wait (1) secs` {.blockcontrol} block by clicking on the orange `Control` {.blockcontrol} blocks section. 
+	You'll find the `wait (1) secs` {.blockcontrol} block by clicking on the orange `Control` {.blockcontrol} blocks section.
 
 + Your spaceship now moves _every_ time you run your code. Try it!
 
@@ -162,7 +161,7 @@ You'll need to change the numbers in this block:
 
 ## Activity Checklist { .check }
 
-+ Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area. 
++ Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area.
 
 + Once you've removed your code, add this code instead:
 
@@ -177,7 +176,7 @@ You'll need to change the numbers in this block:
 		end
 	```
 
-+ The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before. 
++ The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before.
 
 + Using a loop to move the spaceship means that you can add more code inside the `repeat (100)` {.blockcontrol} loop to do interesting things. Add the `change color effect by 25` {.blocklooks} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
 

@@ -5,7 +5,6 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["ChatBot.sb2"]
-beta: true
 ...
 
 # Introduction { .intro }
