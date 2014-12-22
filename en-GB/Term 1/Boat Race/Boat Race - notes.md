@@ -2,7 +2,7 @@
 title: Boat Race — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
-materials: [""]
+materials: ["Club Leader Resources/*.*"]
 ...
 
 #Introduction:
@@ -19,7 +19,7 @@ There is also a version of this project with the <a href="http://scratch.mit.edu
 
 + BoatRaceResources.sb2 
 
-This link also includes a 'Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
 
 Project resources:
 + background.png;

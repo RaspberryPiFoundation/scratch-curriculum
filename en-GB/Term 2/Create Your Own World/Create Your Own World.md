@@ -4,7 +4,7 @@ level: Scratch 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["CreateYourOwnWorld.sb2","CreateYourOwnWorldResources.sb2","Resources/*.*"]
+materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 ...
 
 # Introduction { .intro }
