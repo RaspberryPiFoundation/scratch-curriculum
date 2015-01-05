@@ -32,11 +32,11 @@ Bây giờ chúng ta cần tạo một tên lửa di chuyển về phía con tr�
     when FLAG clicked
     hide
 
-    when [space v] key pressed 
+    when [space v] key pressed
     show
     glide (1) secs to x: (mouse x) y: (mouse y)
 ```
-        
+
 ##Chạy thử dự án của bạn { .flag}
 __Chọn vào lá cờ màu xanh lá cây, đặt con trỏ chuột lên sân khấu.__
 
@@ -52,14 +52,14 @@ Chuyện gì sẽ xảy ra khi ta không di chuyển chuột và nhấn vào kho
     when FLAG clicked
     hide
 
-    when [space v] key pressed 
+    when [space v] key pressed
     go to x: (mouse x) y: (-200)
     show
     glide (1) secs to x: (mouse x) y: (mouse y)
 ```
 
 ##Chạy thử dự án của bạn { .flag}
-__Click vào lá cờ màu xanh, đặt trỏ chuột vào màn hình và nhấn phím cách.__ 
+__Click vào lá cờ màu xanh, đặt trỏ chuột vào màn hình và nhấn phím cách.__
 Tên lửa có bay về phía trỏ chuột từ dưới màn hình? Chuyện gì xảy ra khi ta di chuyển chuột và nhấn vào khoảng không một lần nữa?
 
 ## Danh sách hoạt động { .check}
@@ -71,14 +71,14 @@ Sau đó hoán đổi khối __when space key pressed__ (khi ấn chuột) bằn
 
     when FLAG clicked
     hide
-    forever 
+    forever
         if <mouse down?> then
             go to x: (mouse x) y: (-200)
             show
             glide (1) secs to x: (mouse x) y: (mouse y)
 ```
 ##Chạy thử dự án của bạn { .flag}
-__Click vài lá cờ màu xanh lá, sau đó nhấn chuột trên sân khấu. Click một lần nữa tại một điểm khác.__ 
+__Click vài lá cờ màu xanh lá, sau đó nhấn chuột trên sân khấu. Click một lần nữa tại một điểm khác.__
 
 ##Hãy thử! { .try}
 1. Thử làm cho một vài tên lửa chậm hoặc nhanh hơn các tên lửa khác một chút.
@@ -138,7 +138,7 @@ Hãy chắc chắn rằng tên lửa phát ra âm thanh và ẩn khi tới vị 
     hide
 ```
 ##Chạy thử dự án của bạn { .flag}
-__Bắn một quả tên lửa khác.__ 
+__Bắn một quả tên lửa khác.__
 
 Nó có được thay thế bằng hình vụ nổ khi phát nổ không?
 Chuyện gì sẽ xảy ra khi bạn giữ chuột trong lúc di chuyển nó? (Đừng lo lắng, chúng ta sẽ sửa lỗi đó sau).
@@ -157,12 +157,12 @@ Chuyện gì sẽ xảy ra khi bạn giữ chuột trong lúc di chuyển nó? (
     go to [rocket v]
     show
     wait (1) secs
-    hide    
-    
+    hide
+
 ```
 
 ##Chạy thử dự án của bạn { .flag}
-__Click vào lá cờ màu xanh.__ 
+__Click vào lá cờ màu xanh.__
 
 Mỗi vụ nổ có một màu khác nhau không?
 
@@ -171,7 +171,7 @@ Mỗi vụ nổ có một màu khác nhau không?
 + Hãy thêm một số hình ảnh khác nhau cho vụ nổ bằng các sử dụng __Resources/firework2.png__ và __Resources/firework3.png__, rồi chuyển đổi chúng cho mỗi tên lửa một lần nữa trước khi hiển thị nó.
 
 ##Chạy thử dự án của bạn { .flag}
-__Click vào lá cờ xanh lá.__ 
+__Click vào lá cờ xanh lá.__
 
 Mỗi tên lửa có một hình ảnh vụ nổ khác nhau không?
 
@@ -180,7 +180,7 @@ Mỗi tên lửa có một hình ảnh vụ nổ khác nhau không?
 + Cuối cùng, hãy làm cho vụ nổ lớn hơn sau khi tên lửa phát nổ! Thay vì chờ trong một giây, đặt kích thước của sprite __5%__ trước khi hiển thị nó, và sau khi nó đã được thể hiện, tăng kích thước __2 fifty times__, sử dụng lệnh `repeat` {.blockorange}.
 
 ```blocks
-    
+
     when I receive [explode v]
     hide
     set [color v] effect to (pick random (1) to (200))
@@ -191,10 +191,10 @@ Mỗi tên lửa có một hình ảnh vụ nổ khác nhau không?
         change size by (2)
     end
     hide
-    
+
 ```
 ##Chạy thử dự án của bạn { .flag}
-__Click vào lá cờ màu xanh lá.__ 
+__Click vào lá cờ màu xanh lá.__
 
 Hình ảnh vụ nổ có lan ra từ trung tâm và lớn dần lên không?
 
@@ -213,7 +213,7 @@ Vấn đề này xuất hiện bởi khi tên lửa phát thông tin vụ nổ c
 + Để sửa lỗi này, chúng ta có thể thay thế các khối truyền phát bằng một khối truyền và chờ. Bằng cách này, vòng lặp sẽ không lặp lại tới khi vụ nổ kết thúc.
 
 ```blocks
-    
+
     when FLAG clicked
     hide
     forever
@@ -227,9 +227,9 @@ Vấn đề này xuất hiện bởi khi tên lửa phát thông tin vụ nổ c
 
 ```
 ##Chạy thử dự án của bạn { .flag}
-__Click vào lá cờ màu xanh lá, giữ chuột và di chuyển quanh sân khấu.__ 
+__Click vào lá cờ màu xanh lá, giữ chuột và di chuyển quanh sân khấu.__
 
-Hình ảnh vụ nổ xuất hiện ở đúng nơi và vào đúng thời điểm không? 
+Hình ảnh vụ nổ xuất hiện ở đúng nơi và vào đúng thời điểm không?
 
 ##Lưu dự án của bạn { .save}
 
