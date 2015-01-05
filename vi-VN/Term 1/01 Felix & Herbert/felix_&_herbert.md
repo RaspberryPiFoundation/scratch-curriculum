@@ -26,13 +26,13 @@ Chúng ta sẽ cùng làm một trò chơi đuổi bắt với __mèo Felix__ v�
 + **Create this script**:
 
 ```blocks
-				when FLAG clicked
-				forever
-					point towards [mouse-pointer v]
-					move (10) steps
-					next costume
-					play drum (3 v) for (0.3) beats
-				end
+khi nhấn vào @
+lặp mãi mãi
+   xoay về phía [con trỏ chuột v]
+   di chuyển (10) bước
+   hình dạng tiếp theo
+   chơi trống (3 v) trong (0.3) nhịp
+end
 ```
 
 ##Chạy thử chương trình{ .flag}
@@ -57,11 +57,11 @@ Felix có di chuyển theo đúng hướng con trỏ chuột không? Khi di chuy
 + **Give Herbert this script:**
 
 ```blocks
-  when FLAG clicked
-    forever
-      go to [mouse-pointer v]
-      point towards [Felix v]
-    end
+khi nhấn vào @
+lặp mãi mãi
+   nhảy tới [con trỏ chuột v]
+   xoay về phía [Felix v]
+end
 ```
 
 ##Chạy thử chương trình { .flag}
@@ -82,16 +82,16 @@ Herbert có di chuyển theo con trỏ chuột không? Felix có đuổi theo He
 + **Change Felix’s script to be this:** (Thay đổi tập lệnh của Felix thành:)
 
 ```blocks
-  when FLAG clicked
-  forever
-    point towards [mouse-pointer v]
-    move (10) steps
-    next costume
-    play drum (3 v) for (0.3) beats
-    if <touching [herbert v]?>
-      say [Caught you!] for (1) secs
-    end
+khi nhấn vào @
+lặp mãi mãi
+   xoay về phía [con trỏ chuột v]
+   di chuyển (10) bước
+   hình dạng tiếp theo
+   chơi trống (3 v) trong (0.3) nhịp
+   nếu <đang chạm vào [herbert v]?>
+      nói [Caught you!] trong (1) giây
    end
+end
 ```
 
 ##Kiểm tra dự án của bạn { .flag}
@@ -111,19 +111,19 @@ Felix có nói khi bắt được Herbert không?
 + **Change Felix’s script to send this message when he catches Herbert:** (Thay đổi tập lệnh của Felix để gửi tin nhắn này khi bắt được Herbert)
 
 ```blocks
-     when FLAG clicked
-        forever
-          point towards [mouse-pointer v]
-          move (10) steps
-          move (20) steps
-          next costume
-          play drum [3 v] for (0.3) beats
-          if <touching [herbert v]?>
-            broadcast [caught v]
-            play drum [17 v] for (0.2) beats
-            wait (1) secs
-          end
-        end
+khi nhấn vào @
+lặp mãi mãi
+   xoay về phía [con trỏ chuột v]
+   di chuyển (10) bước
+   di chuyển (20) bước
+   hình dạng tiếp theo
+   chơi trống [3 v] trong (0.3) nhịp
+   nếu <đang chạm vào [herbert v]?>
+      thông báo [caught v]
+      chơi trống [17 v] trong (0.2) nhịp
+      đợi (1) giây
+   end
+end
 ```
 
 + Thêm trang phục mới cho Herbert bằng cách chọn Herbert, vào phần Costumes, và click vào `Choose costume from Library button ` {.blocklightgrey}. Chọn trang phục **fantasy/ghost2-a**.
@@ -134,11 +134,10 @@ Felix có nói khi bắt được Herbert không?
 + **Create a new script for Herbert to turn him into a ghost:** (Tại 1 tập lệnh mới cho Herbert để biến 1 bóng ma)
 
 ```blocks
-  when I receive [caught v]
-    switch costume to [dead v]
-    wait (1) secs
-    switch costume to [alive v]
-
+khi tôi nhận được thông báo [caught v]
+đổi hình dạng thành [dead v]
+đợi (1) giây
+đổi hình dạng thành [alive v]
 ```
 
 ##Kiểm tra dự án của bạn { .flag}
@@ -163,15 +162,15 @@ Bắt đầu tính điểm ở mức 0 và tăng theo từng giây. Nếu Felix 
 
 
 ```blocks
-when gf clicked
-   set [score v] to [0]
-   forever
-      change [score v] by (1)
-      wait (1) secs
-   end
+khi nhấn vào @
+đặt [score v] là [0]
+lặp mãi mãi
+   thay đổi [score v] một lượng (1)
+   đợi (1) giây
+end
 
-when I receive [caught v]
-change [score v] by (-100)
+khi tôi nhận được thông báo [caught v]
+thay đổi [score v] một lượng (-100)
 ```
 
 ##Kiểm tra dự án của bạn { .flag}
