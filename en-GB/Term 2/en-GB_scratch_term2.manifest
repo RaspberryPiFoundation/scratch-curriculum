@@ -15,23 +15,24 @@
         },
         {
             "number":   2,
+            "filename": "Dodgeball/Dodgeball.md",
+            "beta":     true,
+            "note":     "Dodgeball/Dodgeball - notes.md"
+        },
+        {
+            "number":   3,
             "filename": "Felix and Herbert/Felix and Herbert.md",
             "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
         },
         {
-            "number":   3,
+            "number":   4,
             "filename": "Ghostbusters/Ghostbusters.md",
             "note":     "Ghostbusters/Ghostbusters - Notes.md"
         },
         {
-            "number":   4,
+            "number":   5,
             "filename": "Fireworks/Fireworks.md",
             "note":     "Fireworks/Fireworks - Notes.md"
-        },
-        {
-            "number":   5,
-            "filename": "Fish Chomp/Fish Chomp.md",
-            "note":     "Fish Chomp/Fish Chomp - Notes.md"
         },
         {
             "number":   6,
