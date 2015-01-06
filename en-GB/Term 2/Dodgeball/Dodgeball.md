@@ -14,7 +14,7 @@ In this project you'll learn how to create a platform game, in which you have to
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
-	<img src="world-final.png">
+	<img src="dodge-final.png">
 </div>
 
 # Step 1: Character movement { .activity }
