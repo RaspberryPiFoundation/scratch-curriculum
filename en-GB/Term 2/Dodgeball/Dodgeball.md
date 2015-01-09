@@ -5,7 +5,6 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Dodgeball.sb2","DodgeballResources.sb2","Resources/*.*"]
-beta: true
 ...
 
 # Introduction { .intro }
