@@ -198,7 +198,7 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 ## Save your project { .save }
 
-# Step 3: Backing music { .activity .new-page }
+# Step 4: Backing music { .activity .new-page }
 
 You can even add some music for your band to play along to!
 
