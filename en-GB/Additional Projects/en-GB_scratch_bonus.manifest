@@ -152,6 +152,11 @@
         },
         {
             "number":   12,
+            "filename": "Fireworks/Fireworks.md",
+            "note":     "Fireworks/Fireworks - Notes.md"
+        },
+        {
+            "number":   13,
             "beta":     true,
             "filename": "Snowball Fight/Snowball Fight.md"
         }
