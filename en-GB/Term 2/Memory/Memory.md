@@ -4,7 +4,7 @@ level: Scratch 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
+materials: ["Memory.sb2","Club Leader Resources/*.*"]
 ...
 
 ## Community Contributed Project { .challenge .pdf-hidden }
@@ -81,7 +81,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
 	![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has ben clicked:
++ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked:
 
 	```blocks
 		when this sprite clicked
@@ -161,8 +161,8 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 
 	```blocks
 		when flag clicked
+		set [score v] to [3]
 		forever
-			set [score v] to [3]
 			delete (all v) of [sequence v]
 			repeat (score)
 				add (pick random (1) to (4)) to [sequence v]
