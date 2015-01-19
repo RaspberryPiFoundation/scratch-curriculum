@@ -181,7 +181,7 @@ Now that you've got your character moving around, let's add some balls for your 
 
 	![screenshot](dodge-ball-test.png)
 
-+ Add more code to your ball sprite, so that they moves across all 3 platforms.
++ Add more code to your ball sprite, so that they move across all 3 platforms.
 
 	![screenshot](dodge-ball-more-motion.png)
 
