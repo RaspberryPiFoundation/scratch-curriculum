@@ -124,14 +124,14 @@ Lets allow the player to pop the balloons!
 		play sound [pop v]
 	```
 
-+ Test out your project. Can you pop the balloon? Does it work as you expected? You'll need to improve this code, so that when the balloon is clicked, it shows the 'burst' costume for a short time, and is then deleted. You can make all of this happen by changing your balloon `when sprite clicked` {.blockevents} code to this:
++ Test out your project. Can you pop the balloon? Does it work as you expected? You'll need to improve this code, so that when the balloon is clicked, it shows the 'burst' costume for a short time, and is then hidden. You can make all of this happen by changing your balloon `when sprite clicked` {.blockevents} code to this:
 
 	```blocks
 		when this sprite clicked
 		switch costume to [burst v]
 		play sound [pop v]
 		wait (0.3) secs
-		delete this clone
+		hide
 	```
 
 + Now that you're deleting the balloon when it's clicked, you'll also need to add a `show` {.blocklooks} block to the start of the `when flag clicked` {.blockevents} code.
@@ -176,7 +176,7 @@ Let's make things more interesting by keeping score.
 		play sound [pop v]
 		wait (0.3) secs
 		change [score v] by (1)
-		delete this clone
+		hide
 	```
 
 + Run your program again and click the balloon. Does your score change?
