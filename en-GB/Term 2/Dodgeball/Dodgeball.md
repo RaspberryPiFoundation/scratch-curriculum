@@ -24,7 +24,7 @@ Let's start by creating a character, that can move left and right, as well as cl
 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
-+ For this project, you should have a 'Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ For this project, you should have a 'Project Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 
 	![screenshot](dodge-resources.png)
 

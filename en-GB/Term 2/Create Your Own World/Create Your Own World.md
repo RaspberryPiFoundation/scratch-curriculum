@@ -24,11 +24,11 @@ Let's start by creating a player, that can move around your world.
 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
-+ For this project, you should have a 'Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 
 	![screenshot](world-resources.png)
 
-+ Add the image 'room1.png' as a new stage backdrop, and the image 'player.png' as a new sprite. Here's how your project should look:
++ Add the image 'room1.png' as a new stage backdrop, and the image 'player.png' as a new sprite. If you don't have these images you can draw them yourself! Here's how your project should look:
 
 	![screenshot](world-player.png)
 

@@ -24,7 +24,7 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
-+ For this project, you should have a 'Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 
 	![screenshot](paint-resources.png)
 
@@ -32,11 +32,11 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 	![screenshot](paint-file.png)
 
-+ Find your 'Resources folder', and choose the file called 'frame.png'. Your stage should now look like this:
++ Find your 'Project Resources' folder, and choose the file called 'frame.png'. If you don't have this image you can draw your own backdrop! Your stage should now look like this:
 
 	![screenshot](paint-frame.png)
 
-+ Let's also add a pen to your project. Click 'Upload sprite from file' and choose the image called 'blue-pencil.png' from your resources folder. Click the `i` {.blockmotion} icon, and name this sprite 'Pen'.
++ Let's also add a pen to your project. Click 'Upload sprite from file' and choose the image called 'blue-pencil.png' from your resources folder. Again, if you don't have this image you can draw your own. Click the `i` {.blockmotion} icon, and name this sprite 'Pen'.
 
 	![screenshot](paint-blue-pencil.png)
 

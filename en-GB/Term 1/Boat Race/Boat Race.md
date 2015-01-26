@@ -22,11 +22,11 @@ You are going to learn how to make a game, in which you'll use the mouse to cont
 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
-+ For this project, you should have a 'Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 
 	![screenshot](boat-resources.png)
 
-+ From this 'Resources' folder, import 'background.png' as the stage backdrop and 'boat.png' as a new sprite.
++ From this 'Project Resources' folder, import 'background.png' as the stage backdrop and 'boat.png' as a new sprite. If you don't have these images you can draw them yourself!
 
 + Rename your sprite 'Player 1', shrink it slightly, and move it to the bottom of the stage.
 
