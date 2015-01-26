@@ -1,25 +1,15 @@
 # Code Club Scratch Curriculum
 
 This repository contains all the material for Term 1 and 2 of [Code Club][codeclub].
-It consists of lesson notes and plans in [Markdown][markdown] format,
-[Scratch][scratch] project files, and a few PDFs.
-
-This material is openly available for everyone to use and contribute to.
-Right now, we’re receiving translations from all over the world.
-See 'contributing' below to find out how you can take part.
+It consists of lesson notes and plans in [Markdown][markdown] format along with
+[Scratch][scratch] project files.
 
 ## Contributing
 
-To contribute:
+This material is openly available for everyone to use and contribute to. Right now, we’re receiving translations from all over the world.
 
-1. Fork the repo
-2. Add your new translation in its own folder *or*
-   Add to one of the existing translations
-3. Send us a pull request
-4. Ask another native speaker to read through and comment with :+1:
-   if they like your work
+Instructions on how to contribute to our curriculum can be found [here](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md).
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 ## Discuss
 Ask questions and share your experiences with other Code Clube World local teams in our community:
 https://plus.google.com/communities/107429287353708601653
