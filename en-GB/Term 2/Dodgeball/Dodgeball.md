@@ -18,7 +18,7 @@ In this project you'll learn how to create a platform game, in which you have to
 
 # Step 1: Character movement { .activity }
 
-Let's start by creating a character, that can move left and right, as well as climb up poles.
+Let's start by creating a character that can move left and right, as well as climb up poles.
 
 ## Activity Checklist { .check }
 
@@ -49,13 +49,13 @@ Let's start by creating a character, that can move left and right, as well as cl
 		end
 	```
 
-+ Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does you character look like they are walking?
++ Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does your character look like they are walking?
 
 	![screenshot](dodge-walking.png)
 
 + To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
 
-+ To climb a pole, your character should move up slighly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
++ To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
 
 	```blocks
 		if < <key [up arrow v] pressed?> and <touching color [#FFFF00]?> > then
@@ -221,7 +221,7 @@ The balls your character has to dodge all look the same, and always appear every
 
 # Step 4: Lasers! { .activity }
 
-Let's make your game a little harder to compelte, by adding lasers!
+Let's make your game a little harder to complete, by adding lasers!
 
 ## Activity Checklist { .check }
 
