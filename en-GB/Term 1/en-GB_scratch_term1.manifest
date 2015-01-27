@@ -10,37 +10,31 @@
         {
             "number":   1,
             "filename": "Lost in Space/Lost in Space.md",
-            "beta":     true,
             "note":     "Lost in Space/Lost in Space - notes.md"
         },
         {
             "number":   2,
             "filename": "Rock Band/Rock Band.md",
-            "beta":     true,
             "note":     "Rock Band/Rock Band - notes.md"
         },
         {
             "number":   3,
             "filename": "Balloons/Balloons.md",
-            "beta":     true,
             "note":     "Balloons/Balloons - notes.md"
         },
         {
             "number":   4,
             "filename": "ChatBot/ChatBot.md",
-            "beta":     true,
             "note":     "ChatBot/ChatBot - notes.md"
         },
         {
             "number":   5,
             "filename": "Paint Box/Paint Box.md",
-            "beta":     true,
             "note":     "Paint Box/Paint Box - notes.md"
         },
         {
             "number":   6,
             "filename": "Boat Race/Boat Race.md",
-            "beta":     true,
             "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
