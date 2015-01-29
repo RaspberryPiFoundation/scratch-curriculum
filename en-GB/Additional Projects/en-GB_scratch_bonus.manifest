@@ -157,6 +157,11 @@
         },
         {
             "number":   13,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "note":     "Ghostbusters/Ghostbusters - Notes.md"
+        },
+        {
+            "number":   14,
             "beta":     true,
             "filename": "Snowball Fight/Snowball Fight.md"
         }

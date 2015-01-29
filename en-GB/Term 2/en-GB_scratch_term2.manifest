@@ -27,13 +27,14 @@
         },
         {
             "number":   4,
-            "filename": "Felix and Herbert/Felix and Herbert.md",
-            "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
+            "filename": "Catch the Dots/Catch the Dots.md",
+            "beta":     true,
+            "note":     "Catch the Dots/Catch the Dots - notes.md"
         },
         {
             "number":   5,
-            "filename": "Ghostbusters/Ghostbusters.md",
-            "note":     "Ghostbusters/Ghostbusters - Notes.md"
+            "filename": "Felix and Herbert/Felix and Herbert.md",
+            "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
         },
         {
             "number":   6,
