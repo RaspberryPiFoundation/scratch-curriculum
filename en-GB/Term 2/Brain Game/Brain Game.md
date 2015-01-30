@@ -74,7 +74,7 @@ Can you add a score to your game? You can add a point for every correct answer. 
 
 ## Save your project { .save }
 
-# Step 2: Multiple games { .activity }
+# Step 2: Multiple games { .activity .new-page}
 
 Let's add a 'play' button to your game, so that you can play lots of times.
 
@@ -169,7 +169,7 @@ hide variable [time v]
 
 ## Save your project { .save }
 
-# Step 3: Adding graphics { .activity }
+# Step 3: Adding graphics { .activity .new-page}
 
 Instead of your character just saying `yes! :)` or `nope :(` to the player, lets add some graphics that will let the player know how they are doing.
 

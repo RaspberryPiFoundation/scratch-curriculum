@@ -185,7 +185,7 @@ Edit these sprites (including their code), so that each coloured dot has to matc
 
 ## Save your project { .save }
 
-# Step 3: Increasing the difficulty { .activity }
+# Step 3: Increasing the difficulty { .activity .new-page}
 
 Let's make the game get more difficult the longer the player survives, by slowly reducing the delay between dots appearing.
 

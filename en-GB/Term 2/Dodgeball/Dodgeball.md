@@ -157,7 +157,7 @@ Your character is able to jump whenever the spacebar is pressed, even if they're
 
 ## Save your project { .save }
 
-# Step 3: Dodging balls { .activity }
+# Step 3: Dodging balls { .activity .new-page}
 
 Now that you've got your character moving around, let's add some balls for your character to avoid.
 
@@ -219,7 +219,7 @@ The balls your character has to dodge all look the same, and always appear every
 
 ## Save your project { .save }
 
-# Step 4: Lasers! { .activity }
+# Step 4: Lasers! { .activity .new-page}
 
 Let's make your game a little harder to complete, by adding lasers!
 
