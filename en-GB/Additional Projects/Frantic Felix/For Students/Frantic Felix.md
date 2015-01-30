@@ -185,7 +185,7 @@ __Let’s do the roving baddie first. It will just move along a fixed path.__
 			if <touching [Felix v]?> then
 				broadcast [lose v]
 			end
-			if <(x position) > (-200)> then
+			if <(x position) < (-200)> then
 				point in direction (90 v)
 			end
 			if <(x position) > (-50)> then
