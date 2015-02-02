@@ -4,6 +4,8 @@ This repository contains all the material for Term 1 and 2 of [Code Club][codecl
 It consists of lesson notes and plans in [Markdown][markdown] format along with
 [Scratch][scratch] project files.
 
+__More information on our curriculum can be found [here](https://github.com/CodeClub/curriculum_documentation/blob/master/README.md).__
+
 # New Projects
 
 If you're a club leader trying out new projects, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
