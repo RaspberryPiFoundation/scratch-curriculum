@@ -216,7 +216,7 @@ Instead of your character just saying `yes! :)` or `nope :(` to the player, lets
 ## Save your project { .save }
 
 ## Challenge: Improved animation {.challenge}
-Can you improve your graphics animation? You could code the tick and cross so that they fade out as well as fade in. Or, you could use other cool effects:
+Can you improve your graphic's animation? You could code the tick and cross so that they fade out as well as fade in. Or, you could use other cool effects:
 
 ![screenshot](brain-effects.png)
 
@@ -238,7 +238,7 @@ Can you add sound effects and music to your game? For example:
 ## Save your project { .save }
 
 ## Challenge: Race to 10 points {.challenge}
-Can you change your game, so that instead of answering as many questions as they can in 30 seconds, the player has to see how quickly they can get 10 qustions correct?
+Can you change your game, so that instead of answering as many questions as they can in 30 seconds, the player has to see how quickly they can get 10 questions correct?
 
 To do this, you'll only need to change your timer code. Can you see what needs to be changed?
 
