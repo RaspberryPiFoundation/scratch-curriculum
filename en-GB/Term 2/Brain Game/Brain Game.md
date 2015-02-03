@@ -171,7 +171,7 @@ hide variable [time v]
 
 # Step 3: Adding graphics { .activity .new-page}
 
-Instead of your character just saying `yes! :)` or `nope :(` to the player, lets add some graphics that will let the player know how they are doing.
+Instead of your character just saying `yes! :)` or `nope :(` to the player, let's add some graphics that will let the player know how they are doing.
 
 + Create a new sprite called 'Result', containing both a 'tick' and a 'cross' costume.
 
@@ -216,7 +216,7 @@ Instead of your character just saying `yes! :)` or `nope :(` to the player, lets
 ## Save your project { .save }
 
 ## Challenge: Improved animation {.challenge}
-Can you improve your graphic's animation? You could code the tick and cross so that they fade out as well as fade in. Or, you could use other cool effects:
+Can you improve the animation of your graphics? You could code the tick and cross so that they fade out as well as fade in. Or, you could use other cool effects:
 
 ![screenshot](brain-effects.png)
 
