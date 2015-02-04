@@ -193,15 +193,15 @@ One simple way to get lots of balloons is just to right-click on the balloon spr
 
 	A much better way of getting lots of balloons is to _clone_ the balloon sprite.
 
-+ Drag your balloon `when flag clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones:
++ Drag your balloon `when flag clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones.
 
-+ You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event. You should also replace the `hide` {.blocklooks} block in the balloon-clicking script with a `delete this clone` {.blockcontrol} block. Your balloon code should now look like this:
+	You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event. You should also replace the `hide` {.blocklooks} block in the balloon-clicking script with a `delete this clone` {.blockcontrol} block.
 
-	![screenshot](balloons-clone-2.png)
+	Your balloon code should now look like this:
 
-	Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before.
+	![screenshot](balloons-clone.png)
 
-+ Test your project to see if you can pop the 20 balloons!
++ Test your project! Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before. See if you can pop the 20 balloons!
 
 ## Save your project { .save }
 
