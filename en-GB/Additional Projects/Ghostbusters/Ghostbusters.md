@@ -1,6 +1,6 @@
 ---
 title: Ghostbusters
-level: Scratch 2
+level: Scratch +
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
