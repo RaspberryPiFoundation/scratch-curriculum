@@ -154,7 +154,7 @@ Let's make things more interesting by keeping score.
 
 	![screenshot](balloons-score.png)
 
-	Type 'score' as the name of the variable, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockdata} variable.
+	Type 'score' as the name of the variable, make sure that it is available for all sprites, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockdata} variable.
 
 	![screenshot](balloons-variable.png)
 
@@ -211,7 +211,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 
 ## Activity Checklist { .check }
 
-+ You can use another variable to store the remaining time left. Create a new variable called 'time':
++ You can use another variable to store the remaining time left. Click on the stage, and create a new variable called 'time':
 
 	![screenshot](balloons-time.png)
 
