@@ -81,7 +81,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
 	![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked:
++ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
 
 	```blocks
 		when this sprite clicked
