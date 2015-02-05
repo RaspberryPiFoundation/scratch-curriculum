@@ -193,7 +193,7 @@ Let's make the game get more difficult the longer the player survives, by slowly
 
 + Create a new variable called `delay` {.blockdata}.
 
-+ In your stage, create a new script that sets the delay to a high number, and then slowly reduces the delay time.
++ On your stage, create a new script that sets the delay to a high number, and then slowly reduces the delay time.
 
 	```blocks
 		when flag clicked
