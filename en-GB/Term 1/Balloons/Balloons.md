@@ -187,13 +187,13 @@ Let's make things more interesting by keeping score.
 
 Popping 1 balloon isn't much of a game, so let's add lots more!
 
+One simple way to get lots of balloons is just to right-click on the balloon sprite and click 'duplicate'. This is OK if you only want a few, but what if you need 20? or 100? Are you really going to click 'duplicate' that many times?
+
 ## Activity Checklist { .check }
 
-One simple way to get lots of balloons is just to right-click on the balloon sprite and click 'duplicate'. This is OK if you only want a few, but what if you need 20? or 100? or 1000? Are you really going to click 'duplicate' that many times?
++ A much better way of getting lots of balloons is to _clone_ the balloon sprite.
 
-	A much better way of getting lots of balloons is to _clone_ the balloon sprite.
-
-+ Drag your balloon `when flag clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones.
+	Drag your balloon `when flag clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones.
 
 	You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event. You should also replace the `hide` {.blocklooks} block in the balloon-clicking script with a `delete this clone` {.blockcontrol} block.
 
