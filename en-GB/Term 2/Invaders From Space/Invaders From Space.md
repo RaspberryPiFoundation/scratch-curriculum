@@ -28,23 +28,16 @@ Let's make a spaceship, that will defend the Earth!
 
 + Start a new project, and delete the cat sprite, so that your project is empty.
 
-+ Add the 'stars' backdrop and the 'spaceship' sprite to your project.
++ Add the 'stars' backdrop and the 'spaceship' sprite to your project. Shrink the spaceship and move it near the bottom of the screen.
 
 	![screenshot](invaders-sprites.png)
-
-+ Add code to your spaceship, so that it moves to the bottom of the stage when the game is started:
-
-	```blocks
-		when flag clicked
-		go to x:(0) y:(-140)
-	```
 
 + Add code to move your spaceship to the left when the left arrow key is pressed. You'll need to use these blocks:
 
 	```blocks
 		forever
 			if <key [left arrow v] pressed?> then
-				change x by (4)
+				change x by (-4)
 			end
 		end
 	```
@@ -65,19 +58,26 @@ Let's give the spaceship the ability to fire lightning bolts!
 
 	![screenshot](invaders-lightning.png)
 
-+ When the game is started, the lightning should be hidden. Whenever the space key is pressed, you need to create a clone of the lightning:
++ When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.
 
 	```blocks
 		when flag clicked
 		hide
+	```
+
++ Add the following code **to the spaceship** to create a new lightning bolt whenever the space key is pressed.
+
+
+	```blocks
+		when flag clicked
 		forever
 			if <key [space v] pressed?> then
-				create clone of [myself v]
+				create clone of [Lightning v]
 			end
 		end
 	```
 
-+ Whenever a new clone is created, it should go to the spaceship, and then move up the stage until it touches the edge:
++ Whenever a new clone is created, it should start in the same place as the spaceship, and then move up the stage until it touches the edge. Add the following code **to the Lightning sprite**:
 
 	```blocks
 		when I start as a clone
@@ -88,6 +88,8 @@ Let's give the spaceship the ability to fire lightning bolts!
 		end
 		delete this clone
 	```
+
+Note: We move the new clone to the spaceship while it is still hidden, before then showing it. This just looks nicer.
 
 + Test your lightning, by pressing the space key.
 
@@ -108,16 +110,11 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 	![screenshot](invaders-hippo.png)
 
-+ Create a new hippo clone every few seconds:
++ Set its rotation style to be left-right only, and add the following code to hide the sprite when the game starts:
 
 	```blocks
 		when flag clicked
-		set rotation style [left-right v]
 		hide
-		forever
-			wait (pick random (3) to (6)) secs
-			create clone of [myself v]
-		end
 	```
 
 + Create a new variable called `speed` {.blockdata}, that is for the hippo sprite only.
@@ -128,11 +125,22 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 	![screenshot](invaders-var-test.png)
 
-+ When each hippo clone starts, make it move around the stage (at a random speed) until it gets hit by the lightning:
++ The following code will create a new hippo every few seconds. **The Stage** is a good place for this code to live:
+
+	```blocks
+		when flag clicked
+		forever
+			wait (pick random (2) to (4)) secs
+			create clone of [Hippo1 v]
+		end
+	```
+
++ When each hippo clone starts, make it move around the stage (at a random speed) until it gets hit by the lightning. Add this code **to the hippo** sprite:
 
 	```blocks
 		when I start as a clone
 		set [speed v] to (pick random (2) to (4))
+		go to x: (pick random (-220) to (220)) y: (150)
 		show
 		repeat until <touching [lightning v] ?>
 			move (speed) steps
@@ -145,6 +153,8 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 + Test out your hippo code. You should see a new hippo clone appear every few seconds, each moving at its own speed.
 
 	![screenshot](invaders-hippo-test.png)
+
++ Test your laser cannon. If you hit a hippo, does it vanish?
 
 + When a hippo touches your spaceship, we need to make the spaceship explode! To do this, first make sure that your spaceship has 2 costumes called 'normal' and 'hit'.
 
@@ -187,9 +197,9 @@ Can you add a `lives` {.blockdata}, `score` {.blockdata} or even a `highscore` {
 
 ## Save your project { .save }
 
-# Step 4: Bats! { .activity .new-page }
+# Step 4: Fruit Bats! { .activity .new-page }
 
-Let's make a bat, that throws oranges at your spaceship.
+Let's make a fruit bat, that throws oranges at your spaceship.
 
 ## Activity Checklist { .check }
 
@@ -236,7 +246,7 @@ Let's make a bat, that throws oranges at your spaceship.
 		delete this clone
 	```
 
-+ In your spaceship sprite, you'll need to modify your code so that you are hit if you touch a hippo or a bat:
++ In your spaceship sprite, you'll need to modify your code so that you are hit if you touch a hippo or an orange:
 
 	```blocks
 		wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
