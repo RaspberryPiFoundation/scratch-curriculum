@@ -33,8 +33,9 @@
         },
         {
             "number":   5,
-            "filename": "Felix and Herbert/Felix and Herbert.md",
-            "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
+            "filename": "Invaders From Space/Invaders From Space.md",
+            "beta":     true,
+            "note":     "Invaders From Space/Invaders From Space - notes.md"
         },
         {
             "number":   6,

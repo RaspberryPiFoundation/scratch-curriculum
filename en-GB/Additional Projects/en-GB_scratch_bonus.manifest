@@ -162,6 +162,11 @@
         },
         {
             "number":   14,
+            "filename": "Felix and Herbert/Felix and Herbert.md",
+            "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
+        },
+        {
+            "number":   15,
             "beta":     true,
             "filename": "Snowball Fight/Snowball Fight.md"
         }
