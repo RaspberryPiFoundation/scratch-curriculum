@@ -1,5 +1,5 @@
 ---
-title: Invaders from Space
+title: Clone Wars
 level: Scratch 2
 language: en-GB
 stylesheet: scratch

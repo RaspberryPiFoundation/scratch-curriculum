@@ -1,5 +1,5 @@
 ---
-title: Invaders from Space — Notes for Club Leaders
+title: Clone Wars — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
@@ -13,7 +13,7 @@ For this project, Scratch 2 should be used. Scratch 2 can either be used <a href
 
 You can find a completed version of this project <a href="http://scratch.mit.edu/projects/46018140/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
 
-+ InvadersFromSpace.sb2
++ CloneWars.sb2
 
 #Learning Objectives
 + This project consolidates learning of previous programming skills learnt, and demonstrates how sprites can create clones of _other_ sprites, and how multiple clones can be used as projectiles.
