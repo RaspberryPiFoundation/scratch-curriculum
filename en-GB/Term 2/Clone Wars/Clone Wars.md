@@ -100,7 +100,7 @@ What happens if you keep the space key held down? Can you use a `wait` {.blockco
 
 ## Save your project { .save }
 
-# Step 3: Flying Space-hippos { .activity .new-page }
+# Step 3: Flying Space-hippos { .activity }
 
 Let's add lots of flying hippos that are trying to destroy your spaceship.
 
@@ -197,7 +197,7 @@ Can you add a `lives` {.blockdata}, `score` {.blockdata} or even a `highscore` {
 
 ## Save your project { .save }
 
-# Step 4: Fruit Bats! { .activity .new-page }
+# Step 4: Fruit Bats! { .activity }
 
 Let's make a fruit bat, that throws oranges at your spaceship.
 
@@ -256,7 +256,7 @@ Let's make a fruit bat, that throws oranges at your spaceship.
 
 ## Save your project { .save }
 
-# Step 5: Game over { .activity .new-page }
+# Step 5: Game over { .activity }
 
 Let's add a 'game over' message at the end of the game.
 
