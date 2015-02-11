@@ -56,11 +56,11 @@ Let's start by creating a controller, that will be used to collect dots.
 		when flag clicked
 		set [controller speed v] to [0]
 		forever
-			turn right (controlled speed) degrees
+			turn right (controller speed) degrees
 		end
 	```
 
-+ At the moment, this code won't move the controller, as the speed has been set to 0! Create a separate script in your controller, that increases the speed when the right arrow is pressed.
++ At the moment, this code won't move the controller, as the speed has been set to 0! Create a separate script in your controller that increases the speed when the right arrow is pressed.
 
 	```blocks
 		when flag clicked
@@ -94,13 +94,13 @@ Let's start by creating a controller, that will be used to collect dots.
 ## Challenge: Spinning left {.challenge}
 Duplicate the entire controller script for spinning to the right. Can you modify this duplicated code so that your controller spins to the left when the left arrow key is held down?
 
-You'll need to change some of the numbers in the code! (hint: the controller will spin to the left if the `controller speed` {.blockdata} variable has a negative value.)
+You'll need to change some of the numbers in the code! (Hint: the controller will spin to the left if the `controller speed` {.blockdata} variable has a negative value.)
 
 ## Save your project { .save }
 
 # Step 2: Collecting dots { .activity }
 
-Let's add dots to the game, that the player will collect with their controller.
+Let's add dots to the game that the player will collect with their controller.
 
 ## Activity Checklist { .check }
 
@@ -147,7 +147,7 @@ Let's add dots to the game, that the player will collect with their controller.
 
 + Create 2 new variables called `lives` {.blockdata} and `score` {.blockdata}.
 
-+ Add code to your stage, to set the `lives` {.blockdata} to 3 and the `score` {.blockdata} to 0 at the start of the game.
++ Add code to your stage to set the `lives` {.blockdata} to 3 and the `score` {.blockdata} to 0 at the start of the game.
 
 + You need to add code to the end of your red dot's `when I start as a clone` {.blockcontrol} code, so that either 1 is added to the player's `score` {.blockdata} if the colours match, or 1 is taken from the player's `lives` {.blockdata} if the colours don't match.
 
@@ -246,7 +246,7 @@ Let's save the high score, so that players can see how well they're doing.
 		end
 	```
 
-+ Test the code you've added. Play your game to check whether the `high score` {.blockdata} is updated correcly.
++ Test the code you've added. Play your game to check whether the `high score` {.blockdata} is updated correctly.
 
 ## Save your project { .save }
 
