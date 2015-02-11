@@ -129,7 +129,7 @@ Let's add a timer to the game, so that the player has to get to the desert islan
 
 ## Activity Checklist { .check }
 
-+ Add a new variable called `time` {.blockdata} to your game. You can also change the display of your new variable. If you need help, have a look at the 'Balloons' project.
++ Add a new variable called `time` {.blockdata} to your stage. You can also change the display of your new variable. If you need help, have a look at the 'Balloons' project.
 
 	![screenshot](boat-variable.png)
 
