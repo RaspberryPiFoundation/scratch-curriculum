@@ -75,7 +75,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 + It may be that you want to store the user's name in a variable, so that you can use it again later. Create a new variable called 'name'. If you've forgotten how to do this, the previous 'Balloons' project will help you.
 
-+ The information that you entered is already stored in a special variable called 'answer'. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in 'answer' should then be shown on the top=left of the stage.
++ The information that you entered is already stored in a special variable called 'answer'. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in 'answer' should then be shown on the top-left of the stage.
 
 + Once you've created your new variable, make sure that your chatbot's code looks like this:
 
@@ -86,7 +86,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 		say <join [Hi ] (name)> for (2) secs
 	```
 
-+ If you test your program again, you'll notice that the answer is stored in the 'name' variable, and is shown in the top-left of the stage. The 'name' variable should contain the same value as the 'answer' variable.
++ If you test your program again, you'll notice that the answer is stored in the 'name' variable, and is shown in the top-left of the stage. The 'name' variable should now contain the same value as the 'answer' variable.
 
 	![screenshot](chatbot-variable.png)
 
