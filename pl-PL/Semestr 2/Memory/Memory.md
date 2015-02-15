@@ -1,252 +1,255 @@
 ---
 title: Memory
 level: Scratch 2
-language: en-GB
+language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+## Projekt stworzony przez społeczność { .challenge .pdf-hidden }
+Ten projekt stworzył Erik wraz ze swoją córką Ruth. Jeśli też chcesz podzielić się swoim projektem [odwiedź nas na GitHubie](https://github.com/CodeClub).
 
-# Introduction { .intro }
+# Wstęp { .intro }
 
-In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
+Ten projekt polega na stworzeniu gry pamięciowej. Będziesz musiał zapamiętać w jakiej kolejności pokazały się kolory, a następnie powtórzyć tę kolejność.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
 	<img src="colour-final.png">
 </div>
 
-# Step 1: Random colours { .activity }
+# Krok 1: Losowe kolory { .activity }
 
-First, let's create a character that can change to a random sequence of colours for the player to memorise.
+Najpierw stwórzmy postać, która będzie losowo zmieniać kolor. Gracz będzie musiał zapamiętać kolejność tych kolorów.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.
 
-+ Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
++ Wybirz postać i tło gry. Postać nie musi być osobą, ale powinna wyglądać tak, by mogła zmieniać kolory.
 
 	![screenshot](colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ W grze będziemy używać różnych liczb, które będą odpowiadać poszczególnym kolorom:
 
-	+ 1 = red;
-	+ 2 = blue;
-	+ 3 = green;
-	+ 4 = yellow.
+	+ 1 = czerwony,
+	+ 2 = niebieski,
+	+ 3 = zielony,
+	+ 4 = żółty.
 
-	Give your character 4 different colour costumes, one for each of the 4 colours above. Make sure that your coloured costumes are in the right order.
+	Dodaj do twojej postaci kostiumy w taki sposób, by razem było ich 4 - jeden kostium dla każdego koloru. Upewnij się, że kostiumy są ustawione w odpowiedniej kolejności (takiej jak na liście kolorów).
 
 	![screenshot](colour-costume.png)
 
-+ To create a random sequence, you need to create a _list_. A list is just a variable that stores lots of data _in order_. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
++ Aby kolejność kolorów była losowa trzeba stworzyć _listę_. Lista to po prostu zmienna, w której przechowywane są informacje _w odpowiedniej kolejności_. Stwórz nową listę i nazwij ją `sekwencja` {.blockdata}. Tej listy będzie potrzebować tylko twoja postać, więc możesz też zaznaczyć 'Tylko dla tego duszka'.
 
 	![screenshot](colour-list.png)
 
-	You should now see your empty list in the top-left of your stage, as well as lots of new blocks for using lists.
+	Teraz lista powinna się pojawić w lewym górnym rogu sceny. Powinny się też pojawić nowe bloki, które pozwolą ci użyć stworzonej właśnie listy.
 
 	![screenshot](colour-list-blocks.png)
 
 + Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
++ Dodaj ten skrypt do twojej postaci, aby dodać losową liczbę do listy (i aby pokazać odpowiedni kostium) 5 razy:
 
 	```blocks
-		when flag clicked
-		delete (all v) of [sequence v]
-		repeat (5)
-			add (pick random (1) to (4)) to [sequence v]
-			switch costume to (item (last v) of [sequence v]
-			wait (1) secs
-		end
+		kiedy kliknięto zieloną flagę
+		usuń (wszystko v) z [sekwencja v]
+		powtórz (5) razy
+			dodaj (losuj od (1) do (4)) do [sekwencja v]
+			zmień kostium na (element (ostatni v) z [sekwencja v])
+			czekaj (1) s
+		koniec
 	```
 
-	Notice that you have also emptied the list to begin with.
+	Zauważ, że na początku cała lista została wyczyszczona.
 
-## Challenge: Adding sound {.challenge}
-Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume?
+## Wyzwanie: Dodanie dźwięku {.challenge}
+Przetestuj kilka razy swój projekt. Pewnie zauważysz, że czasami losowany jest ten sam kolor dwa (albo więcej) razy pod rząd, przez co trudniej jest zapamiętać kolejność. Czy możesz sprawić, aby przy każdej zmianie kostiumu zagrał bęben?
 
-Can you make a different drum sound play depending on the random number chosen? This will be _very_ similar to your code to change the character's costume.
+A może każdy kolor powinien mieć swój dźwięk? Będzie to _bardzo_ podobne do bloku, który zmienia kostium twojej postaci.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 2: Repeating the sequence { .activity }
+# Krok 2: Powtarzanie sekwencji { .activity }
 
-Let's add 4 buttons, for the player to repeat the sequence they've remembered.
+Dodaj 4 przyciski, które będzie naciskał gracz powtarzając w ten sposób kolejność kolorów, którą zapamiętał.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
++ Dodaj do projektu 4 duszki, które będą przyciskami. Zmień każdy z duszków w taki sposób, by każdy z nich odpowiadał jednemu z czterech kolorów.
 
 	![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
++ Kiedy zostanie kliknięty czerwony bęben musisz nadać wiadomość do twojej postaci, aby wiedziała, że czerwony przycisk został naciśnięty. Dodaj ten kod do czerwonego bębna:
 
 	```blocks
-		when this sprite clicked
-		broadcast [red v]
+		kiedy duszek kliknięty
+		nadaj [czerwony v]
 	```
 
-+ When your character receives this message, they should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, you can remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
++ Kiedy postać otrzyma wiadomość, powinna sprawdzić, czy liczba 1 jest pierwsza na liści (co znaczy, że czerwony to następny kolor w sekwencji). Jeśli tak, możesz usunąć tę liczbę z listy, ponieważ gracz zgadł poprawnie. W przeciwnym razie gra się kończy!
 
 	```blocks
-		when I receive [red v]
-		if <(item (1 v) of [sequence v])=[1]> then
-			delete (1 v) of [sequence v]
-		else
-			say [Game over!] for (1) secs
-			stop [all v]
-		end
+		kiedy otrzymam [czerwony v]
+		jeżeli <(element (1 v) z [sekwencja v])=[1]> to
+			usuń (1 v) z [sekwencja v]
+		w przeciwnym razie
+			powiedz [Koniec gry!] przez (1) s
+			zatrzymaj [wszystko v]
+		koniec
 	```
 
-+ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
++ Możesz także wyświetlić jakieś migające światła kiedy lista będzie pusta. Pusta lista oznacza, że gracz zapamiętał poprawnie całą sekwencję kolorów. Dodaj poniższy kod na końcu skryptu rozpoczynającego się od `kiedy kliknięto zieloną flagę` {.blockevents}:
 
 	```blocks
-		wait until < (length of [sequence v]) = [0]>
-		broadcast [won v] and wait
+		czekaj aż < (długość [sekwencja v]) = [0]>
+		nadaj [wygrana v] i czekaj
 	```
 
-+ Click on your stage, and add this code to make the backdrop change colour once the player has won.
++ Kliknij na scenę i dodaj poniższy kod, aby tło zmieniało kolor, kiedy gracz wygra grę:
 
 	```blocks
-		when I receive [won v]
-		play sound [drum machine v]
-		repeat (50)
-			change [color v] effect by (25)
-			wait (0.1) secs
-		end
-		clear graphic effects
+		kiedy otrzymam [wygrana v]
+		zagraj dźwięk [drum machine v]
+		powtórz (50) razy
+			zmień efekt [kolor v] o (25)
+			czekaj (0.1) s
+		koniec
+		wyczyść efekty graficzne
 	```
 
-## Challenge: Creating 4 buttons {.challenge}
-Repeat the steps above for your blue, green and yellow buttons. Which code will stay the same, and which code will change for each button?
+## Wyzwanie: Dodanie 4 przycisków {.challenge}
+Powtórz powyższe kroki dla niebieskiego, zielonego i żółtego przycisku. Które bloki pozostaną takie same, a które trzeba będzie zmienić dla każdego przycisku?
 
-You can also add sounds for when the buttons are pressed.
+Możesz też dodać dźwięk, który będzie zagrany po naciśnięciu każdego przycisku.
 
-Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
+Pamiętaj, aby przetestować kod, który właśnie dodałeś! Czy potrafisz zapamiętać sekwencję pięciu kolorów? Czy sekwencja jest inna za każdym razem?
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 3: Multiple levels { .activity .new-page }
+# Krok 3: Wiele poziomów { .activity .new-page }
 
-So far, the player only has to remember 5 colours. Let's improve your game, so that the length of the sequence increases.
+Na razie gracz musi tylko zapamiętać 5 kolorów. Ulepsz swoją grę w taki sposób, by długość sekwencji wzrastała.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Create a new variable called `score` {.blockdata}.
++ Stwórz nową zmienną i nazwij ją `wynik` {.blockdata}.
 
 	![screenshot](colour-score.png)
 
-+ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
++ `wynik` {.blockdata} będzie używany, by zdecydować jakiej długości będzie sekwencja, którą musi zapamiętać gracz. Na początek ustawmy wynik (i długość sekwencji) na 3. Dodaj poniższy blok kodu na początek skryptu zaczynającego się od `kiedy kliknięto zieloną flagę` {.blockevents}:
 
 	```blocks
-		set [score v] to [3]
+		ustaw [wynik v] na [3]
 	```
 
-+ Instead of always creating a sequence of 5 colours, you now want the `score` {.blockdata} to determine the sequence length. Change your character's `repeat` {.blockcontrol} loop (for creating the sequence) to:
++ Zamiast za każdym razem tworzyć sekwencję 5 kolorów, teraz chcemy by zmienna `wynik` {.blockdata} wyznaczyła długość sekwencji. Zmień blok `powtórz` {.blockcontrol} w twojej postaci (który tworzy sekwencję) na poniższy:
 
 	```blocks
-		repeat (score)
-		end
+		powtórz (wynik) razy
+		koniec
 	```
 
-+ If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence.
++ Jeśli sekwencja została poprawnie odgadnięta, powinieneś dodać 1 do wyniku, by zwiększyć długość sekwencji.
 
 	```blocks
-		change [score v] by (1)
+		zmień [wynik v] o (1)
 	```
 
-+ Finally, you need to add a `forever` {.blockcontrol} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
++ Na koniec, musisz dodać pętlę `zawsze` {.blockcontrol} wokół kodu, który generuje sekwencję. W ten sposób sekwencja będzie tworzona dla każdego poziomu. Tak powinien wyglądać kod twojej postaci:
 
 	```blocks
-		when flag clicked
-		set [score v] to [3]
-		forever
-			delete (all v) of [sequence v]
-			repeat (score)
-				add (pick random (1) to (4)) to [sequence v]
-				switch costume to (item (last v) of [sequence v]
-				wait (1) secs
-			end
-			wait until < (length of [sequence v]) = [0]>
-			broadcast [won v] and wait
-			change [score v] by (1)
-		end
+		kiedy kliknięto zieloną flagę
+		ustaw [wynik v] na [3]
+		zawsze
+			usuń (wszystko v) z [sekwencja v]
+			powtórz (wynik) razy
+				dodaj (losuj od (1) do (4)) do [sekwencja v]
+				zmień kostium na (element (ostatni v) z [sekwencja v]
+				czekaj (1) s
+			koniec
+			czekaj aż < (długość [sekwencja v]) = [0]>
+			nadaj [wygrana v] i czekaj
+			zmień [wynik v] o (1)
+		koniec
 	```
 
-+ Get your friends to test out your game. Remember to hide the `sequence` {.blockdata} list before they play it!
++ Daj swoim znajomym przetestować twoją grę. Pamiętaj by ukryć listę `sekwencja` {.blockdata} zanim zaczną grać!
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 4: High score { .activity }
+# Krok 4: Najlepszy wynik { .activity }
 
-Let's save the high score, so that you can play against your friends.
+Zapiszmy najlepszy wynik, abyś mógł rywalizować z twoimi znajomymi.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Add 2 new variables to your project, called `high score` {.blockdata} and `name` {.blockdata}.
++ Dodaj dwie nowe zmienne do projektu i nazwij je `najlepszy wynik` {.blockdata} i `imię` {.blockdata}.
 
-+ If ever the game ends (by pressing the wrong button), you need to check whether the player's score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player. Here's how your red button should look:
++ Kiedy gra się skończy (gdy gracz wybierze nieprawidłowy przycisk), musisz sprawdzić czy wynik grającego jest wyższy niż aktualny najwyższy wynik. Jeśli tak, musisz zapisać jego wynik jako najlepszy wynik i zachować imię gracza. Tak powinien powinien wyglądać skrypt czerwonego przycisku:
 
 	```blocks
-		when I receive [red v]
-		if <(item (1 v) of [sequence v])=[1]> then
-			delete (1 v) of [sequence v]
-		else
-			say [Game over!] for (1) secs
-			if < (score) > (high score) > then
-				set [high score v] to [score v]
-				ask [High score! What is your name?] and wait
-				set [name v] to (answer)
-			end
-			stop [all v]
-		end
+		kiedy otrzymam [czerwony v]
+		jeżeli <(element (1 v) z [sekwencja v])=[1]> to
+			usuń (1 v) z [sekwencja v]
+		w przeciwnym razie
+			powiedz [Koniec gry!] przez (1) s
+			jeżeli < (wynik) > (najlepszy wynik) > to
+				ustaw [najlepszy wynik v] na [wynik v]
+				zapytaj [Najlepszy wynik! Jak masz na imię?] i czekaj
+				ustaw [imię v] na (odpowiedź)
+			koniec
+			zatrzymaj [wszystko v]
+		koniec
 	```
 
-+ You'll need to add this new code to the other 3 buttons too! Have you noticed that the 'Game over' code in each of the 4 buttons is exactly the same?
++ Powinieneś dodać nowy kod także do trzech pozostałych przycisków! Czy zauważyłeś, że fragment kodu z blokiem "Koniec gry" w każdym z czterech przycisków jest identyczny?
 
 	![screenshot](colour-same.png)
 
-+ If ever you need to change any of this code, such as adding a sound or changing the 'Game over!' message, you'd have to change it 4 times! That could get annoying, and waste a lot of time.
++ Jeśli będziesz chciał zmienić ten fragment, np. dodając dźwięk albo zmieniająć tekst "Koniec gry!", będziesz musiał zmienić to cztery razy! To na pewno uciążliwe, a poza tym to strata czasu.
 
-	Instead, you can define your own blocks, and reuse them in your project! To do this, click `more blocks` {.blockmoreblocks}, and then 'Make a block'. Call this new block 'Game over'.
+	Zamiast tego, możesz zdefiniować własny blok i użyć go w swoim projekcie! Aby to zrobić kliknij na `Więcej bloków` {.blockmoreblocks}, a nastęmnie `Stwórz blok`. Nowy blok nazwij "Koniec gry".
 
 	![screenshot](colour-more.png)
 
-+ Add the code from the `else` {.blockcontrol} block from the red button to the new block that appears:
++ Do nowego bloku dodaj kod, który do tej pory był umieszczony pod blokiem `w przeciwnym razie` {.blockcontrol}:
 
 	![screenshot](colour-make-block.png)
 
-+ You've now made a new _function_ called `Game over` {.blockmoreblocks}, which you can use anywhere you like. Drag your new `Game over` {.blockmoreblocks} block onto the 4 scripts for the buttons.
++ Właśnie stworzyłeś nową _funkcję_, która nazywa się `Koniec gry` {.blockmoreblocks}. Możesz jej użyć gdzie tylko chcesz. Przeciągnij blok `Koniec gry` {.blockmoreblocks} do czterech skryptów przycisków.
 
 	![screenshot](colour-use-block.png)
 
 + Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
++ Teraz dodaj dźwięk, który usłyszy gracz po wciśnięciu złego przycisku. Musisz dodać ten kod tylko _raz_ w bloku `Koniec gry` {.blockmoreblocks}, a nie cztery razy w każdym z przycisków!
 
 	![screenshot](colour-cough.png)
 
-## Challenge: Making more blocks {.challenge}
-Do you notice any other code that is the same for all 4 buttons?
+## Wyzwanie: Stwórz nowe bloki {.challenge}
+Zauważyłeś inne fragmenty kodu, które powtarzają się w każdym z czterech przycisków?
 
 ![screenshot](colour-more-blocks.png)
 
-Can you make another custom block, that is used by each button?
+Czy możesz stworzyć inny wspólny blok, który będzie używany przez wszystkie przyciski?
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Another costume {.challenge}
-Have you noticed that your game starts with your character showing one of the 4 colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+## Wyzwanie: Końcowy kostium {.challenge}
+Czy zauważyłeś, że na początku gry postać ma jeden z czterech kolorów, a na koniec, gdy gracz powtarza sekwencję, zawsze ma ostatni kolor z sekwencji?
 
-Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
+Czy możesz dodać swojej postaci inny, biały kostium, który będzie wyświetlany na początku gry i wtedy, gdy gracz próbuje odgadnąć kolejność kolorów?
 
 ![screenshot](colour-white.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Difficulty level {.challenge}
-Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all 4 drums)?
+## Wyzwanie: Poziom trudności {.challenge}
 
-You could even add a 'hard' mode, which makes use of a 5th drum!
+Możesz udostępnić graczowi wybór jednego poziomu trudności: "prosty" (dostępne są tylko bębny czerwony i niebieski), "normalny" (wszystkie cztery bębny).
 
-## Save your project { .save }
+Możesz nawet dodać poziom "trudny", gdzie do dyspozycji będzie jeszcze piąty bęben!
+
+## Zapisz swój projekt { .save }
