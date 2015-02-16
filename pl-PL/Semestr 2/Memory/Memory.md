@@ -50,7 +50,6 @@ Najpierw stwórzmy postać, która będzie losowo zmieniać kolor. Gracz będzie
 
 	![screenshot](colour-list-blocks.png)
 
-+ Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
 + Dodaj ten skrypt do twojej postaci, aby dodać losową liczbę do listy (i aby pokazać odpowiedni kostium) 5 razy:
 
 	```blocks
@@ -89,7 +88,7 @@ Dodaj 4 przyciski, które będzie naciskał gracz powtarzając w ten sposób kol
 		nadaj [czerwony v]
 	```
 
-+ Kiedy postać otrzyma wiadomość, powinna sprawdzić, czy liczba 1 jest pierwsza na liści (co znaczy, że czerwony to następny kolor w sekwencji). Jeśli tak, możesz usunąć tę liczbę z listy, ponieważ gracz zgadł poprawnie. W przeciwnym razie gra się kończy!
++ Kiedy postać otrzyma wiadomość, powinna sprawdzić, czy liczba 1 jest pierwsza na liście (co znaczy, że czerwony to następny kolor w sekwencji). Jeśli tak, możesz usunąć tę liczbę z listy, ponieważ gracz zgadł poprawnie. W przeciwnym razie gra się kończy!
 
 	```blocks
 		kiedy otrzymam [czerwony v]
@@ -211,7 +210,7 @@ Zapiszmy najlepszy wynik, abyś mógł rywalizować z twoimi znajomymi.
 
 + Jeśli będziesz chciał zmienić ten fragment, np. dodając dźwięk albo zmieniająć tekst "Koniec gry!", będziesz musiał zmienić to cztery razy! To na pewno uciążliwe, a poza tym to strata czasu.
 
-	Zamiast tego, możesz zdefiniować własny blok i użyć go w swoim projekcie! Aby to zrobić kliknij na `Więcej bloków` {.blockmoreblocks}, a nastęmnie `Stwórz blok`. Nowy blok nazwij "Koniec gry".
+	Zamiast tego, możesz zdefiniować własny blok i użyć go w swoim projekcie! Aby to zrobić kliknij na `Więcej bloków` {.blockmoreblocks}, a następnie `Stwórz blok`. Nowy blok nazwij "Koniec gry".
 
 	![screenshot](colour-more.png)
 
@@ -223,7 +222,6 @@ Zapiszmy najlepszy wynik, abyś mógł rywalizować z twoimi znajomymi.
 
 	![screenshot](colour-use-block.png)
 
-+ Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
 + Teraz dodaj dźwięk, który usłyszy gracz po wciśnięciu złego przycisku. Musisz dodać ten kod tylko _raz_ w bloku `Koniec gry` {.blockmoreblocks}, a nie cztery razy w każdym z przycisków!
 
 	![screenshot](colour-cough.png)
