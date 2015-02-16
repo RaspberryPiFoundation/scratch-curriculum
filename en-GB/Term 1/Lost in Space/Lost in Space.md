@@ -20,7 +20,7 @@ You are going to learn how to program your own animation!
 
 ## Activity Checklist { .check }
 
-+ First, make sure that you have opened up the <a href="http://scratch.mit.edu/projects/editor/" target="_blank">Scratch editor</a>. It should look something like this:
++ First, make sure that you have opened up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It should look something like this:
 
 	![screenshot](space-scratch.png)
 

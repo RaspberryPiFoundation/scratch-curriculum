@@ -20,7 +20,7 @@ You are going to learn how to make a game, in which you'll use the mouse to cont
 
 ## Activity Checklist { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 

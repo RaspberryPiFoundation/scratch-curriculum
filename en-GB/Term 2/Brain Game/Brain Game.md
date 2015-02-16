@@ -22,7 +22,7 @@ Let's start by creating random questions for the player to answer.
 
 ## Activity Checklist { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Choose a character and a backdrop for your game. You can choose any you like! Here's an example:
 

@@ -23,7 +23,7 @@ Let's start by creating a controller, that will be used to collect dots.
 
 ## Activity Checklist { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + For this project, you should have a 'Project Resources' folder, containing the controller image you can use. Make sure that you can find this folder, and ask your club leader if you can't find it.
 

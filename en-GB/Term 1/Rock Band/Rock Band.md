@@ -22,7 +22,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 ## Activity Checklist { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Add a drum sprite to your blank project, as well as adding a suitable backdrop image to the stage.
 
