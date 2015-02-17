@@ -1,309 +1,309 @@
 ---
 title: Dodgeball
 level: Scratch 2
-language: en-GB
+language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 ...
 
-# Introduction { .intro }
+# Wstęp { .intro }
 
-In this project you'll learn how to create a platform game, in which you have to dodge the moving balls and reach the end of the level.
+Tym razem nauczymy się, jak stworzyć grę platformową, w której musisz unikać kulających się piłek, aby dojść do końca planszy.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
 	<img src="dodge-final.png">
 </div>
 
-# Step 1: Character movement { .activity }
+# Krok 1: Poruszanie postacią { .activity }
 
-Let's start by creating a character that can move left and right, as well as climb up poles.
+Zacznijmy od stworzenia postaci, którą będzie można poruszać w lewo i w prawo oraz wspinać się po słupach.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.
 
-+ For this project, you should have a 'Project Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Aby wykonać ten projekt, powinieneś mieć katalog "Zasoby", w którym znajdziesz obrazek tłą, którego będziesz potrzebować. Upewnij się, że masz ten katalog, a jeśli nie zapytaj o niego prowadzącego.
 
 	![screenshot](dodge-resources.png)
 
-+ Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the poles and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
++ Ustaw nowe tło sceny z pliku "background.png" lub narysuj własne! Jeśli rysujesz własny poziom zadbaj o to, by słupy i podłogi były miały różne kolory. Narysuj także drzwi (lub coś podobnego), gdzie twoja postać będzie musiała dojść. Projekt powinien wyglądać mniej więcej tak:
 
 	![screenshot](dodge-background.png)
 
-+ Add a new sprite, which will be your character. It's better if you choose a sprite with multiple costumes, so that you can make it look as though it's walking.
++ Dodaj nowego duszka, którym będzie kierował gracz. Gra będzie ciekawsza, jeśli wybierzesz duszka z wieloma kostiumami - dzięki temu będziesz mógł sprawić, że będzie wyglądać jakby się poruszał.
 
 	![screenshot](dodge-characters.png)
 
-+ Let's use the arrow keys to move your character around. When the player presses the right arrow, you want your character to point right, move a few steps and change to the next costume:
++ Użyjmy klawiszy ze strzałkami, aby poruszać postacią. Kiedy gracz naciśnie strzałkę w prawo, twoja postać powinna obrócić się w prawo, przejść kilka kroków i zmienić kostium:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [right arrow v] pressed? > then
-				point in direction (90 v)
-				move (3) steps
-				next costume
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <klawisz [strzałka w prawo v] naciśnięty? > to
+				ustaw kierunek na (90 v)
+				przesuń o (3) kroków
+				następny kostium
+			koniec
+		koniec
 	```
 
-+ Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does your character look like they are walking?
++ Przetestuj postać klikając na zieloną flagę, a następnie wciskając strzałkę w prawo. Czy duszek przesuwa się w prawo? Czy postać wygląda jakby chodziła?
 
 	![screenshot](dodge-walking.png)
 
-+ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
++ Aby przesunąć postać w lewo musisz dodać kolejny blok `jeżeli` {.blockcontrol} w środku pętli `zawsze` {.blockcontrol}. Pamiętaj o przetestowaniu nowego kodu, żeby sprawdzić czy działa prawidłowo!
 
-+ To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
++ Aby wspinać się po słupie, twoja postać powinna płynnie przesuwać się do góry kiedy jest wciśnięta strzałka w górę i postać dotyka odpowiedniego koloru. Dodaj poniższy kod w środku pętli `zawsze` {.blockcontrol} twojej postaci:
 
 	```blocks
-		if < <key [up arrow v] pressed?> and <touching color [#FFFF00]?> > then
-			change y by (4)
-		end
+		jeżeli < <klawisz [strzałka w górę v] naciśnięty?> i <dotyka koloru [#FFFF00]?> > to
+			zmień y o (4)
+		koniec
 	```
 
-+ Test your character - can you climb the yellow poles and get to the end of your level?
++ Przetestuj swoją postać - czy może wspinać się po żółtym słupie i dojść do końca planszy?
 
 	![screenshot](dodge-test-character.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Completing the level {.challenge}
-Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the brown door?
+## Wyzwanie: Koniec planszy {.challenge}
+Czy możesz dodać trochę kodu do twojej postaci, aby powiedziała coś `jeżeli` {.blockcontrol} dotrze do brązowych drzwi?
 
 ![screenshot](dodge-win.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 2: Gravity and jumping { .activity }
+# Krok 2: Grawitacja i skakanie { .activity }
 
-Let's make your character move more realistically, by adding gravity and allowing them to jump.
+Sprawmy, by postać poruszała się bardziej realistycznie. W tym celu dodamy grawitację i nauczymy ją skakać.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ You may have noticed that your character can walk off a platform into mid-air. Try to walk off of a platform and see what happens.
++ Jak pewnie zauważyłeś twoja postać może zejść z platformy i dalej chodzić w powietrzu. Spróbuj zejść z platformy i zobaczyć co się stanie.
 
 	![screenshot](dodge-no-gravity.png)
 
-+ To fix this, let's add gravity to your game. Create a new variable called `gravity` {.blockdata}. You can hide this variable from your stage if you want to.
++ Aby to poprawić dodamy do gry grawitację. Stwórz nową zmienną i nazwij ją `grawitacja` {.blockdata}. Jeśli chcesz możesz ukryć tą zmienną, by nie była widoczna na scenie.
 
 	![screenshot](dodge-gravity.png)
 
-+ Add this new code block, which sets the gravity to a negative number, and then uses this to repeatedly change your character's y-coordinate.
++ Dodaj poniższy blok kodu, który ustawia grawitację na liczbę ujemną, a następnie używa jej do zmiany współrzędnej y twojej postaci.
 
 	```blocks
-		when flag clicked
-		set [gravity v] to [-4]
-		forever
-			change y by (gravity)
-		end
+		kiedy kliknięto zieloną flagę
+		ustaw [grawitacja v] na [-4]
+		zawsze
+			zmień y o (grawitacja)
+		koniec
 	```
 
-+ Click the flag, and then drag your character to the top of the stage. What happens? Does the gravity work as you expected?
++ Kliknij na zieloną flagę i przeciągnij swoją postać na górę sceny. Co się dzieje? Czy grawitacja działa tak, jak się tego spodziewałeś?
 
 	![screenshot](dodge-gravity-drag.png)
 
-+ Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
++ Grawitacja nie powinna przesuwać twojej postaci, kiedy znajduje się ona na platformie albo na słupie! Dodaj blok `jeżeli` {.blockcontrol} do twojego kodu w ten sposób, by grawitacja działałą tylko, gdy postać jest w powietrzu. Kod grawitacji powinien wyglądać tak:
 
 	```blocks
-		when flag clicked
-		set [gravity v] to [-4]
-		forever
-			if < not < <touching color [#0000FF]?> or <touching color [#FFFF00]?> > > then
-				change y by (gravity)
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		ustaw [grawitacja v] na [-4]
+		zawsze
+			jeżeli < nie < <dotyka koloru [#0000FF]?> lub <dotyka koloru [#FFFF00]?> > > to
+				zmień y o (grawitacja)
+			koniec
+		koniec
 	```
 
-+ Test the gravity again. Does your character stop when they are on a platform or a pole? Can you walk off the edge of platforms to the level below?
++ Przetestuj grawitację ponownie. Czy twoja postać zatrzymuje się kiedy trafi na platformę lub słup? Czy możesz zejść z wyższej platformy na niższą kiedy dojdziesz do jej krawędzi?
 
 	![screenshot](dodge-gravity-test.png)
 
-+  Let's also make your character jump when the player presses the space bar. One very easy way to do this is to move your character up a few times, using this code:
++ Dodajmy teraz postaci możliwość skakania, kiedy gracz naciśnie spację. Jest na to jeden bardzo łatwy sposób - przesuń postać kilka razy w górę używając takiego kodu:
 
 	```blocks
-		when [space v] key pressed
-		repeat (10)
-			change y by (4)
-		end
+		kiedy klawisz [spacja v] naciśnięty
+		powtórz (10) razy
+			zmień y o (4)
+		koniec
 	```
 
-	As gravity is constantly pushing your character down by 4 pixels, you need to choose a number greated than 4 in your `change y by (4)` {.blockmotion} block. Change this number until you're happy with the height your character jumps.
+	Ponieważ grawitacja nieustannie ciągnie postać w dół o 4 piksele, musisz wybrać liczbę większą od 4 w bloku `zmień y o (4)` {.blockmotion}. Zmieniaj tę liczbę tak długo, aż wysokość skoku będzie dla ciebie zadowalająca.
 
-+ If you test out this code, you'll notice that it works, but the movement isn't very smooth. To make jumping look smoother, you'll need to move your character by smaller and smaller amounts, until they're not jumping anymore.
++ Kiedy będziesz testować ten kod zobaczysz, że działa, ale ruch twojej postaci nie jest zbyt płynny. By sprawić, że skoki są bardziej naturalne, powinieneś przesuwać postać w górę o coraz mniejszą wartość.
 
-+ To do this, create another variable called `jump height` {.blockdata}. Again, you can hide this variable if you prefer.
++ Aby to zrobić, stwórz kolejną zmienną i nazwij ją `wysokość skoku` {.blockdata}. Możesz ukryć tą zmienną jeśli chcesz, tak jak poprzednio.
 
-+ Delete the jumping code you added to your character, and replace it with this code:
++ Usuń blok kodu od skakania, który dodałeś do postaci i zamień go na poniższy:
 
 	```blocks
-		when [space v] key pressed
-		set [jump height v] to [8]
-		repeat until < (jump height) = [0] >
-			change y by (jump height)
-			change [jump height v] by (-0.5)
-		end
+		kiedy klawisz [spacja v] naciśnięty
+		ustaw [wysokość skoku v] na [8]
+		powtarzaj aż < (wysokość skoku) = [0] >
+			zmień y o (wysokość skoku)
+			zmień [wysokość skoku v] o (-0.5)
+		koniec
 	```
 
-	This code moves your character up by 8 pixels, then 7.5 pixels, then 7 pixels, and so on, until your character has finished jumping. This makes jumping look much smoother.
+	Ten kod przesunie twoją postać w górę najpierw o 8 pikseli, następnie o 7,5 piksela, o 7 pikseli i tak dalej aż do momentu, w którym postać skończy skok. To sprawia, że skok wydaje się dużo płynniejszy.
 
-+ Change the starting value of your `jump height` {.blockdata} variable and test it until you're happy with the height your character jumps.
++ Zmieniaj początkową wartość zmiennej `wysokość skoku` {.blockdata} i sprawdź, jaka wartość będzie najlepsza dla twojej postaci.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Improved jumping {.challenge}
-Your character is able to jump whenever the spacebar is pressed, even if they're already in mid-air. You can test this by just holding down the spacebar. Can you fix this, so that your character can only jump `if` {.blockcontrol} they're touching a blue platform?
+## Wyzwanie: Jeszcze lepsze skoki {.challenge}
+Twoja postać może teraz skakać kiedy tylko spacja jest naciśnięta, nawet jeśli jest wtedy w powietrzu. Możesz to zobaczyć trzymając spację wciśniętą. Czy potrafisz to naprawić tak, by postać mogła skakać tylko `jeżeli` {.blockcontrol} dotyka niebieskiej platformy?
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 3: Dodging balls { .activity .new-page}
+# Krok 3: Omijanie piłek { .activity .new-page}
 
-Now that you've got your character moving around, let's add some balls for your character to avoid.
+Teraz, kiedy masz już postać, którą możesz sterować, dodajmy parę piłek, które będzie ona musiała omijać.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Create a new ball sprite. You can choose any type of ball you like.
++ Swtórz nowego duszka - piłkę. Możesz wybrać dowolny typ.
 
 	![screenshot](dodge-balls.png)
 
-+ Resize your ball, so that your character can jump over it. Try jumping over the ball to test it. 
++ Zmień wielkość piłki w taki sposób, by twoja postać mogła ją przeskoczyć. Przeskocz nad piłką by sprawdzić, czy piłka jest wystarczająco mała.
 
 	![screenshot](dodge-ball-resize.png)
 
-+ Add this code to your ball:
++ Dodaj taki kod do twojej piłki:
 
 	![screenshot](dodge-ball-motion.png)
 
-	This code creates a new ball clone every 3 seconds. Each new clone moves along the top platform.
+	Ten kod tworzy nowy klon piłki co 3 sekundy. Każdy klon porusza się wzdłuż górnej platformy.
 
-+ Click the flag to test this out.
++ Kliknij w zieloną flagę, aby zobaczyć jak to działa.
 
 	![screenshot](dodge-ball-test.png)
 
-+ Add more code to your ball sprite, so that they move across all 3 platforms.
++ Dodaj więcej kodu do twojej piłki tak, by toczyła się po wszystkich trzech platformach.
 
 	![screenshot](dodge-ball-more-motion.png)
 
-+ Finally, you'll need code for when your character gets hit by a ball! Add this code to your ball sprite:
++ Teraz nadszedł czas na dodanie kodu, który sprawdzi czy piłka uderzyła w twoją postać! Dodaj taki kod do piłki:
 
 	```blocks
-		when I start as a clone
-		forever
-			if < touching [Pico walking v]? > then
-				broadcast [hit v]
-			end
-		end
+		kiedy zaczynam jako klon
+		zawsze
+			jeżeli < dotyka [Pico walking v]? > to
+				nadaj [uderzony v]
+			koniec
+		koniec
 	```
 
-+ You'll also need to add code to your character, to move back to the start when they're hit:
++ Musisz dodać także kod do twojej postaci, by przesunąć ją na początek, kiedy zostanie uderzona:
 
 	```blocks
-		when I receive [hit v]
-		point in direction (90 v)
-		go to x: (-210) y: (-120)
+		kiedy otrzymam [uderzony v]
+		ustaw kierunek na (90 v)
+		idź do x: (-210) y: (-120)
 	```	
 
-+ Test out your character and see if they go back to the start when they've been hit by a ball.
++ Przetestuj swoją postać i zobacz czy wraca na start, kiedy piłka ją uderzy.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Random balls {.challenge}
-The balls your character has to dodge all look the same, and always appear every 3 seconds. Can you improve them, so that they:
+## Wyzwanie: Losowe piłki {.challenge}
+Wszystkie piłki, które musi przeskakiwać twoja postać są identyczne i zawsze pojawiają się co 3 sekundy. Czy możesz ulepszyć je w taki sposób, aby:
 
-+ don't all look the same?
-+ appear after a random amount of time?
-+ are a random size?
++ różniły się od siebie wyglądem?
++ pojawiały się w losowym momencie?
++ były różnej wielkości?
 
 ![screenshot](dodge-ball-random.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 4: Lasers! { .activity .new-page}
+# Krok 4: Lasery! { .activity .new-page}
 
-Let's make your game a little harder to complete, by adding lasers!
+Sprawmy, by twoja gra była nieco trudniejsza do przejścia dodając lasery!
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Add a new sprite to your game, called 'Laser'. It should have 2 costumes, called 'on' and 'off'.
++ Dodaj nowego duszka do twojej gry i nazwij go "Laser". Powinien mieć 2 kostiumy o nazwach "włączony" i "wyłączony".
 
 	![screenshot](dodge-lasers-costume.png)
 
-+ Place your new laser anywhere you like, between 2 platforms.
++ Dodaj laser gdzie tylko chcesz pomiędzy platformami.
 
 	![screenshot](dodge-lasers-position.png)
 
-+ Add code to your laser, to make it switch between the 2 costumes.
++ Dodaj kod do lasera, by przełączał na zmianę swoje kostiumy:
 
 	```blocks
-		when flag clicked
-		forever
-			switch costume to [on v]
-			wait (2) secs
-			switch costume to [off v]
-			wait (2) secs
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			zmień kostium na [włączony v]
+			czekaj (2) s
+			zmień kostium na [wyłączony v]
+			czekaj (2) s
+		koniec
 	```
 
-	If you prefer, you can `wait` {.blockcontrol} a `random` {.blockoperators} amount of time between costume changes.
+	Jeśli chcesz, możesz `czekać` {.blockcontrol} `losową` {.blockoperators} ilość czasu pomiędzy zmianą kostiumów.
 
-+ Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be the same as the code you added to your ball sprite.
++ Teraz dodaj kod do lasera, by nadawał wiadomość 'uderzony', kiedy laser dotknie twojej postaci. To będzie taki sam kod, jak ten, który dodałeś do piłki.
 
-	You don't need to add any more code to your character - they already know what to do when they get hit!
+	Nie musisz dodawać żadnego kodu do twojej postaci - ona już wie co zrobić kiedy zostanie uderzona!
 
-+ Test out your game to see if you can get past the laser. Change the `wait` {.blockcontrol} times in your code if the lasers are too easy or too hard.
++ Przetestuj swoją grę i sprawdź czy możesz przejść przez laser. Jeśli lasery są za proste lub za trudne możesz zmienić czasy `czekania` {.blockcontrol}.
 
-## Challenge: More obstacles {.challenge}
-If you think your game is still too easy, you can add more obstacles to your level. You can add anything you like, but here are some ideas:
+## Wyzwanie: Więcej przeszkód {.challenge}
+Jeśli uważasz, że twoja gra ciągle jest za prosta, możesz dodać więcej przeszkód na planszy. To może być co tylko chcesz. Oto kilka podpowiedzi:
 
-+ A flying killer butterfly;
-+ Platforms that appear and disappear;
-+ Falling tennis balls that must be avoided.
++ latający jadowity motyl,
++ platformy, które pojawiają się i znikają,
++ spadające piłki tenisowe, które trzeba omijać.
 
 ![screenshot](dodge-obstacles.png)
 
-You could even create more than one backdrop, and move to the next level when your character reaches the brown door:
+Możesz nawet stworzyć więcej niż jedno tło sceny i przechodzić na następny poziom, kiedy postać dojdzie do brązowych drzwi:
 
 ```blocks
-	if <touching color [#714300]?> then
-		switch backdrop to [next backdrop v]
-		go to x: (-210) y: (-120)
-		wait (1) secs
+	jeżeli <dotyka koloru [#714300]?> to
+		zmień kostium na [next backdrop v]
+		idź do x: (-210) y: (-120)
+		czekaj (1) s
 	end
 ```
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Improved gravity {.challenge}
-There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
+## Wyzwanie: Usprawniona grawitacja {.challenge}
+W twojej grze jest jeszcze jeden mały błąd: grawitacja nie przyciąga w dół twojej postaci jeśli _jakakolwiek_ jej część dotyka niebieskiej platformy - nawet jeśli dotyka jej głową! Możesz to sprawdzić wspinając się prawie do końca słupa i ruszyć w lewo.
 
 ![screenshot](dodge-gravity-bug.png)
 
-Can you fix this bug? To do this, you need to give your character different coloured trousers (on _all_ costumes)...
+Czy potrafisz naprawić ten błąd? Aby to zrobić będziesz musiał dać twojej postaci spodnie, które różnią się kolorem od reszty (zmień to we _wszystkich_ kostiumach)...
 
 ![screenshot](dodge-trousers.png)
 
-...and then replace the code: 
+...i zamienić ten kod: 
 
 ```blocks
-	< touching color [#0000FF]? >
+	< dotyka koloru [#0000FF]? >
 ```
 
-with:
+na taki:
 
 ```blocks
-	< color [#00FF00] is touching [#0000FF]? >
+	< czy kolor [#00FF00] dotyka [#0000FF]? >
 ```
 
-Remember to test your improvements to make sure you've fixed the bug!
+Pamiętaj, żeby przetestować to usparwnienie i sprawdzić czy udało się naprawić błąd!
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: More lives {.challenge}
-Can you give your player 3 `lives` {.blockdata}, instead of just sending them back to the beginning each time? Here's how your game could work:
+## Wyzwanie: Więcej żyć {.challenge}
+Możesz dać graczowi 3 `życia` {.blockdata}, zamiast po prostu wysyłać go z powrotem na początek za każdym razem. Oto, jak może działać twoja gra:
 
-+ Your player starts with 3 lives;
-+ Whenever your player gets hit, one life is lost and they go back to the start;
-+ If there are no lives left, the game ends.
++ gracz zaczyna z trzema życiami,
++ kiedy gracz zostanie uderzony traci jedno życie i wraca na start,
++ jeśli nie zostało mu już więcej żyć gra się kończy.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
