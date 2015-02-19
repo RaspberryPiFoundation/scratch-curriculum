@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 
 # Wstęp { .intro }
 
-Tym razem nauczymy się, jak stworzyć grę platformową, w której musisz unikać kulających się piłek, aby dojść do końca planszy.
+Tym razem nauczymy się, jak stworzyć grę platformową, w której musisz unikać toczących się piłek i dojść do końca planszy.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
@@ -24,11 +24,11 @@ Zacznijmy od stworzenia postaci, którą będzie można poruszać w lewo i w pra
 
 + Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.
 
-+ Aby wykonać ten projekt, powinieneś mieć katalog "Zasoby", w którym znajdziesz obrazek tłą, którego będziesz potrzebować. Upewnij się, że masz ten katalog, a jeśli nie zapytaj o niego prowadzącego.
++ Aby wykonać ten projekt, powinieneś mieć katalog "Zasoby", w którym znajdziesz obrazek tła, którego będziesz potrzebować. Upewnij się, że masz ten katalog, a jeśli nie zapytaj o niego prowadzącego.
 
 	![screenshot](dodge-resources.png)
 
-+ Ustaw nowe tło sceny z pliku "background.png" lub narysuj własne! Jeśli rysujesz własny poziom zadbaj o to, by słupy i podłogi były miały różne kolory. Narysuj także drzwi (lub coś podobnego), gdzie twoja postać będzie musiała dojść. Projekt powinien wyglądać mniej więcej tak:
++ Ustaw nowe tło sceny z pliku "background.png" lub narysuj własne! Jeśli rysujesz własny poziom zadbaj o to, by podłoga miała inny kolor niż słup. Narysuj także drzwi (lub coś podobnego), do których twoja postać będzie musiała dojść. Projekt powinien wyglądać mniej więcej tak:
 
 	![screenshot](dodge-background.png)
 
@@ -157,9 +157,9 @@ Twoja postać może teraz skakać kiedy tylko spacja jest naciśnięta, nawet je
 
 ## Zapisz swój projekt { .save }
 
-# Krok 3: Omijanie piłek { .activity .new-page}
+# Krok 3: Unikanie piłek { .activity .new-page}
 
-Teraz, kiedy masz już postać, którą możesz sterować, dodajmy parę piłek, które będzie ona musiała omijać.
+Mamy już postać, którą można sterować. Dodajmy parę piłek, które będzie ona musiała przeskakiwać.
 
 ## Zadania do wykonania { .check }
 
@@ -221,7 +221,7 @@ Wszystkie piłki, które musi przeskakiwać twoja postać są identyczne i zawsz
 
 # Krok 4: Lasery! { .activity .new-page}
 
-Sprawmy, by twoja gra była nieco trudniejsza do przejścia dodając lasery!
+Sprawmy, by twoja gra była nieco trudniejsza do przejścia - dodajmy lasery!
 
 ## Zadania do wykonania { .check }
 
