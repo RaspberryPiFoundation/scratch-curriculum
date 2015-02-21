@@ -43,7 +43,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 	![screenshot](band-drum-costume.png)
 
-+ Right-click on the costume and click 'duplicate' to create 2 copies of the costume.
++ Right-click on the costume and click 'duplicate' to create a copy of the costume.
 
 	![screenshot](band-drum-duplicate.png)
 
@@ -158,7 +158,7 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 	![screenshot](band-cymbal.png)
 
-+ Duplicate your cymbal sprite to create a second costume, and remember to name it 'hit'.
++ Duplicate your cymbal costume to create a second costume, and remember to name it 'hit'.
 
 + To make your cymbal look like it's been hit, you can rotate it. To do this, click the 'Select' tool and drag to highlight the cymbal. You can then click and drag the circular 'rotate' handle to rotate the cymbal.
 
