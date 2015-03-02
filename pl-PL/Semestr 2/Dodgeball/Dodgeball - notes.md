@@ -11,7 +11,7 @@ Realizując ten projekt dzieci uczą się jak zrobić grę platformową korzysta
 #Zasoby
 Projekt do wykonania w programie Scratch 2. Program dostępny jest w wersji <a href="http://scratch.mit.edu/projects/editor/">online</a> oraz <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
 
-Gotowa wersja tego projektu jest dostępna <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>. Można ją też pobrać klikając na link "Pobierz materiały", które zawierają:
+Gotowa wersja tego projektu jest dostępna <a href="http://scratch.mit.edu/projects/48737944/#editor">online</a>. Można ją też pobrać klikając na link "Pobierz materiały", które zawierają:
 
 + Dodgeball.sb2
 
