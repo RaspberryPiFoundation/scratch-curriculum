@@ -1,29 +1,29 @@
 ---
-title: Brain Game — Notes for Club Leaders
-language: en-GB
+title: Brain Game — Informacje dla prowadzącego
+language: pl-PL
 embeds: "*.png"
 materials: [""]
 ...
 
-#Introduction:
-In this project, children will learn how to make a times table quiz game, in which the player has to answer as many questions correctly as they can in 30 seconds.
+#Wstęp
+Ten projekt uczy dzieci, jak wykonać quiz z tabliczki mnożenia, w którym gracz musi poprawnie odpowiedzieć jak najwięcej razy w ciągu 30 sekund.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used <a href="http://scratch.mit.edu/projects/editor/">online</a> or <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
+#Zasoby
+Projekt do wykonania w programie Scratch 2. Program dostępny jest w wersji <a href="http://scratch.mit.edu/projects/editor/">online</a> oraz <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/42225768/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Gotowa wersja tego projektu jest dostępna <a href="http://scratch.mit.edu/projects/42225768/#editor">online</a>. Można ją też pobrać klikając na link "Pobierz materiały", które zawierają:
 
 + BrainGame.sb2
 
-#Learning Objectives
-+ This project consolidates learning of previous programming skills learnt, and shows how broadcasts can be used to create a simple game menu system.
+#Cele edukacyjne
++ Ten projekt ugruntowuje umiejętności kodowania zdobyte wcześniej i pokazuje jak można wykorzystać nadawanie wiadomości do stworzenia prostego menu gry.
 
-#Challenges
-+ "Changing costumes" - changing how the game character looks in response to correct and incorrect answers;
-+ "Adding a score" - adding a point for every correct question answered;
-+ "Start screen" - changing the stage backdrop in response to the `start` {.blockevents} and `end` {.blockevents} broadcast messages, creating 2 game 'screens';
-+ "Improved animation" - using loops and effects to improve the correct/wrong graphics animation;
-+ "Sound and music" - consolidating learning of music loops and sound effects;
-+ "Race to 10 points" - changing the game logic to create a new game objective;
-+ "Instruction screen" - consolidating the use of broadcasts to create a game menu, by adding a new 'instructions' button and screen.
+#Wyzwania
++ "Zmiana kostiumów" - zmiana wyglądu postaci w odpowiedzi na poprawną lub błędną odpowiedź;
++ "Dodanie punktacji" - dodanie punktu za każdą poprawną odpowiedź;
++ "Ekran początkowy" - zmiana tła sceny w odpowiedzi na wiadomości `start` {.blockevents} i `koniec` {.blockevents}, przygotowanie w grze dwóch "ekranów".
++ "Podrasowana animacja" - użycie pętli i efektów do usprawnienia animacji pokazującej poprawną lub błędną odpowiedź;
++ "Dźwięk i muzyka" - utrwalanie wiedzy z zakresu zapętlania muzyki i efektów dźwiękowych;
++ "Zbierz 10 punktów" - zmiana logiki gry w celu uzyskania nowego celu gry; 
++ "Ekran z instrukcją" - utrwalelnie umiejętności używania wiadomości do stworzenia menu gry poprzez dodanie nowego przycisku "Instrukcja" i dodatkowego ekranu.
 
