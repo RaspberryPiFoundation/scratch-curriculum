@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*.*"]
 Ten projekt nauczy cię, jak wykonać quiz z tabliczki mnożenia, w którym musisz poprawnie odpowiedzieć jak najwięcej razy w ciągu 30 sekund.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/49781348/?autostart=false" frameborder="0"></iframe>
 	<img src="brain-final.png">
 </div>
 
