@@ -8,7 +8,7 @@ materials: [""]
 #Wstęp
 Realizując ten projekt dzieci uczą się jak używać list do przechowywania danych, a także jak wykorzystać własne bloki (funkcje) do uproszczenia kodu programu.
 
-#Materiały
+#Zasoby
 Projekt do wykonania w programie Scratch 2. Program dostępny jest w wersji <a href="http://scratch.mit.edu/projects/editor/">online</a> oraz <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
 
 Gotowa wersja tego projektu jest dostępna <a href="http://scratch.mit.edu/projects/48304744/#editor">online</a>. Można ją też pobrać klikając na link "Pobierz materiały", które zawierają:
