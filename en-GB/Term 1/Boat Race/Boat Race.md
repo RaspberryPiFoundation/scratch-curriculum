@@ -123,7 +123,7 @@ Can you add sound effects to your game, for when the boat crashes, or reaches th
 
 ## Save your project { .save }
 
-# Step 4: Time Trial { .activity }
+# Step 3: Time Trial { .activity }
 
 Let's add a timer to the game, so that the player has to get to the desert island as fast as possible.
 
