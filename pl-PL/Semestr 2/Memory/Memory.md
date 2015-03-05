@@ -15,7 +15,7 @@ Ten projekt stworzył Erik wraz ze swoją córką Ruth. Jeśli też chcesz podzi
 Ten projekt polega na stworzeniu gry pamięciowej. Będziesz musiał zapamiętać w jakiej kolejności pokazały się kolory, a następnie powtórzyć tę kolejność.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/48304744/?autostart=false" frameborder="0"></iframe>
 	<img src="colour-final.png">
 </div>
 

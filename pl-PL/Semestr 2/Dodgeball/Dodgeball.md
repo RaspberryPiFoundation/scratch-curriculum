@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 Tym razem nauczymy się, jak stworzyć grę platformową, w której musisz unikać toczących się piłek i dojść do końca planszy.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/48737944/?autostart=false" frameborder="0"></iframe>
 	<img src="dodge-final.png">
 </div>
 
