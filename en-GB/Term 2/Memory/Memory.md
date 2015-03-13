@@ -196,7 +196,7 @@ Let's save the high score, so that you can play against your friends.
 		else
 			say [Game over!] for (1) secs
 			if < (score) > (high score) > then
-				set [high score v] to [score v]
+				set [high score v] to (score)
 				ask [High score! What is your name?] and wait
 				set [name v] to (answer)
 			end
