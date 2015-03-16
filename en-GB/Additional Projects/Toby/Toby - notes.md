@@ -2,12 +2,11 @@
 title: Toby - Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
-materials: ["*sb2"]
+materials: ["*.sb2"]
 ...
 
 #Introduction:
-In this project, we are going to create a simple game in which Toby the dog has to collect 5 cheese-puffs bowls to win, whilst preventing balls from falling on the floor. 
-If Toby drops more than 2 balls, the game is over…
+In this project, we are going to create a simple game in which Toby the dog has to collect 5 cheese-puffs bowls to win, whilst preventing balls from falling on the floor. If Toby drops more than 2 balls, the game is over.
 
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used <a href="http://scratch.mit.edu/projects/editor/">online</a> or <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
@@ -15,7 +14,6 @@ For this project, Scratch 2 should be used. Scratch 2 can either be used <a href
 You can find a completed version of this project <a href="http://scratch.mit.edu/projects/49677948/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
 
 + Toby.sb2
-
 
 #Learning Objectives
 + Controlling the dog sprite with the arrow keys
