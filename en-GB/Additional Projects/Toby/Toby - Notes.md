@@ -26,7 +26,7 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + "Add a new level" - Add a level 2 to the game, with a new background and more balls
 
 #Frequently Asked Questions
-+ For this project, it is assumed that the children know how to import new sounds. 
-+ Remind the children to make sure that the centre is set correctly on the ball's costume. If the children use the costume editor to reduce the size of their sprites, the centre will often be shifted after resizing. Clicking on the **shrink** icon instead is a better option as it doesn't affect the centre of the costume. 
++ For this project, it is assumed that the children know how to import new sounds.
++ Remind the children to make sure that the centre is set correctly on the ball's costume. If the children use the costume editor to reduce the size of their sprites, the centre will often be shifted after resizing. Clicking on the **shrink** icon instead is a better option as it doesn't affect the centre of the costume.
 
-	
+
