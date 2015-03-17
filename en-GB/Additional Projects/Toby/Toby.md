@@ -34,7 +34,7 @@ If Toby drops more than 2 balls, the game is over. So the question is: can you k
 
 + Select the `left-right rotation style` {.blockmotion} as shown on the picture below:
 
-	![screenshot](Toby_sprite.png)
+	![screenshot](Toby_Sprite.png)
 
 + We want Toby to move right when we press the right arrow key. Click on the scripts tab, and add this script:
 
