@@ -5,7 +5,7 @@
     "language": "en-GB",
     "number": 2,
     "title": "Scratch 2",
-
+    "category": "cat-official",
     "projects": [
         {
             "number":   1,
