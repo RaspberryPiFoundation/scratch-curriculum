@@ -6,9 +6,6 @@ stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
 base: https://github.com/CodeClub/scratch-curriculum/blob/7f103592928e9ff0251c401fd6cfe78596737494/en-GB/Term%201/Lost%20in%20Space/Lost%20in%20Space.md
-translators: Claudio's wife, Michel
-reviewers: Patrick, Ingrid
-status: free
 ...
 
 # Einleitung { .intro }

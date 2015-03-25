@@ -6,9 +6,6 @@ stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
 base: https://github.com/CodeClub/scratch-curriculum/blob/7f103592928e9ff0251c401fd6cfe78596737494/en-GB/Term%201/Balloons/Balloons.md
-translators: Carole Roth, Gianluca D'Amico, Marco D'Amico
-reviewers: Patrick, Ingrid
-status: free to review
 ...
 
 # Einführung { .intro }

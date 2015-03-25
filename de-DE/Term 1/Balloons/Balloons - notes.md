@@ -4,9 +4,6 @@ language: de-DE
 embeds: "*.png"
 materials: [""]
 base: https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/Balloons/Balloons%20-%20notes.md
-translators: Marco D'Amico, Gianluca D'Amico, Carole Roth
-reviewers: To be defined
-status: Feel free to review
 ...
 
 #Einführung:

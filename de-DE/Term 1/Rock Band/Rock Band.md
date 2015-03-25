@@ -6,9 +6,6 @@ stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
 base: https://github.com/CodeClub/scratch-curriculum/blob/93cdaf1a69301125114f58c6f056cdfd59634925/en-GB/Term%201/Rock%20Band/Rock%20Band.md
-translators: Michel Weimerskirch OK
-reviewers: Patrick OK, May OK
-status: free to review
 ...
 
 # Einleitung { .intro }
