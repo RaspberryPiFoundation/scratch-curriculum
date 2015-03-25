@@ -7,6 +7,8 @@
     "number": 7,
     "title": "Additional Scratch Projects",
 
+    "category": "",
+
     "projects": [
         {
             "number":   1,
@@ -175,7 +177,7 @@
             "number":   16,
             "beta":     true,
             "filename": "Toby/Toby.md",
-            "note":     "Toby/Toby - Notes.md"            
+            "note":     "Toby/Toby - Notes.md"
         }
     ]
 }
