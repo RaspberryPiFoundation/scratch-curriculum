@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/codeclub/scratch-curriculum.png?label=ready&title=Ready)](https://waffle.io/codeclub/scratch-curriculum)
 # Code Club Scratch Curriculum
 
 This repository contains all the material for Term 1 and 2 of [Code Club][codeclub].
