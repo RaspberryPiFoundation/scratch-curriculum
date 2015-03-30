@@ -1,0 +1,15 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "fr-FR",
+    "number": 1,
+    "title": "Scratch 1",
+    "category": "",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - notes.md"
+        }
+    ]
+}
