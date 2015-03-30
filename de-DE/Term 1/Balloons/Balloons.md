@@ -1,4 +1,4 @@
-﻿---
+---
 title: Luftballons
 level: Scratch 1
 language: de-DE
