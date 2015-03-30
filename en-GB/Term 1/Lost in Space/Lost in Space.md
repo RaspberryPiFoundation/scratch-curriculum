@@ -157,7 +157,7 @@ You'll need to change the numbers in this block:
 
 ## Save your project { .save }
 
-# Step 3: Animating using loops { .activity }
+# Step 3: Animating using loops { .activity .new-page }
 
 ## Activity Checklist { .check }
 
