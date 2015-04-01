@@ -13,7 +13,7 @@ This project was created with Erik. If you'd like to contribute a project of you
 
 # Introduction { .intro }
 
-In this project you'll learn how to create a game, in which you have to save the Earth from space-monsters.
+In this project you'll learn how to create a game in which you have to save the Earth from space monsters.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
@@ -22,19 +22,20 @@ In this project you'll learn how to create a game, in which you have to save the
 
 # Step 1: Making a Spaceship { .activity }
 
-Let's make a spaceship, that will defend the Earth!
+Let's make a spaceship that will defend the Earth!
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start a new Scratch project and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Add the 'stars' backdrop and the 'spaceship' sprite to your project. Shrink the spaceship and move it near the bottom of the screen.
++ Add the 'stars' backdrop and the 'Spaceship' sprite to your project. Shrink the spaceship and move it near the bottom of the screen.
 
 	![screenshot](invaders-sprites.png)
 
 + Add code to move your spaceship to the left when the left arrow key is pressed. You'll need to use these blocks:
 
 	```blocks
+		when flag clicked
 		forever
 			if <key [left arrow v] pressed?> then
 				change x by (-4)
@@ -65,7 +66,7 @@ Let's give the spaceship the ability to fire lightning bolts!
 		hide
 	```
 
-+ Add the following code **to the spaceship** to create a new lightning bolt whenever the space key is pressed.
++ Add the following code **to the Spaceship** to create a new lightning bolt whenever the space key is pressed.
 
 
 	```blocks
@@ -164,7 +165,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 	![screenshot](invaders-sun.png)
 
-+ Add this code to your spaceship, so that it switches costume whenever it collides with a flying hippo:
++ Add this code to your spaceship so that it switches costume whenever it collides with a flying hippo:
 
 	```blocks
 		when flag clicked
@@ -199,7 +200,7 @@ Can you add a `lives` {.blockdata}, `score` {.blockdata} or even a `highscore` {
 
 # Step 4: Fruit Bats! { .activity }
 
-Let's make a fruit bat, that throws oranges at your spaceship.
+Let's make a fruit bat that throws oranges at your spaceship.
 
 ## Activity Checklist { .check }
 
@@ -228,7 +229,7 @@ Let's make a fruit bat, that throws oranges at your spaceship.
 		end
 	```
 
-+ Click on your orange sprite, and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
++ Click on your orange sprite and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
 
 	```blocks
 		when flag clicked
@@ -262,7 +263,7 @@ Let's add a 'game over' message at the end of the game.
 
 ## Activity Checklist { .check }
 
-+ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives, and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
++ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
 
 + Draw a new sprite called 'Game Over', using the text tool.
 
