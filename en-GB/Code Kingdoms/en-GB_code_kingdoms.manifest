@@ -1,0 +1,30 @@
+{
+    "description": "Code Kingdoms teaches Computer Science and programming in a way that’s fun for children. Children use real JavaScript code to design their own game worlds, and then challenge friends to complete them.",
+    "id": "scratch_01",
+    "language": "en-GB",
+    "number": 10,
+    "title": "Code Kingdoms",
+    "category": "cat-additional",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Puzzle Pack 1/Puzzle Pack 1.md",
+            "note": "Puzzle Pack 1/CK_PuzzlePack1.pdf"
+        },
+        {
+            "number":   2,
+            "filename": "Puzzle Pack 2/Puzzle Pack 2.md",
+            "note": "Puzzle Pack 2/CK_PuzzlePack2.pdf"
+        }
+    ],
+     "extras": [
+		{
+            "name": "Dashboard Guide",
+            "note": "CK_DashboardGuide.pdf"
+        },
+        {
+            "name": "Teacher Guide",
+            "note": "CK_TeacherGuide.pdf"
+        }
+    ]
+}
