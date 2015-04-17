@@ -127,8 +127,7 @@
             "title":     "Frantic Felix",
             "number":    7,
             "filename":  "Frantic Felix/For Students/Frantic Felix.md",
-            "note":      "Frantic Felix/For Leaders/Frantic Felix - Notes.md",
-            "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
+            "note":      "Frantic Felix/For Leaders/Frantic Felix - Notes.md"
         },
         {
             "number":    8,
