@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 
 # Introduction { .intro }
 
-In this project you'll learn how to create your own open-world adventure game.
+In this project you'll learn how to create your own open world adventure game.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=true" frameborder="0"></iframe>
@@ -18,7 +18,7 @@ In this project you'll learn how to create your own open-world adventure game.
 
 # Step 1: Coding your player { .activity }
 
-Let's start by creating a player, that can move around your world.
+Let's start by creating a player that can move around your world.
 
 ## Activity Checklist { .check }
 
@@ -32,7 +32,7 @@ Let's start by creating a player, that can move around your world.
 
 	![screenshot](world-player.png)
 
-+ Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing it's y-coordinate. Add this code to the player sprite:
++ Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the player sprite:
 
 	```blocks
 		when flag clicked
@@ -47,7 +47,7 @@ Let's start by creating a player, that can move around your world.
 
 	![screenshot](world-up.png)
 
-+ To move the player to the left, you need to add another `if` {.blockcontrol} block to your player, which changes the x-coordinate:
++ To move the player to the left, you need to add another `if` {.blockcontrol} block to your player, which changes the x coordinate:
 
 	```blocks
 		when flag clicked
@@ -66,11 +66,11 @@ Can you add more code to your player, so that they can move up, down, left and r
 
 ## Save your project { .save }
 
-+ Test out your player again, and you'll see they have the ability to walk through the light-grey walls.
++ Test out your player again, and you'll see they have the ability to walk through the light grey walls.
 
 	![screenshot](world-walls.png)
 
-+ To fix this, you need to move the player, but then move them back if they're touching a light-grey wall. Here's the code you'll need:
++ To fix this, you need to move the player, but then move them back if they're touching a light grey wall. Here's the code you'll need:
 
 	```blocks
 		when flag clicked
@@ -86,7 +86,7 @@ Can you add more code to your player, so that they can move up, down, left and r
 
 	Notice that the new `if`{.blockcontrol}`touching color`{.blocksensing} block is _inside_ the `if`{.blockcontrol}`key [up arrow]`{.blocksensing} block.
 
-+ Test this new code, by moving below the wall - you shouldn't be able to move up into it.
++ Test this new code by moving below the wall - you shouldn't be able to move up into it.
 
 	![screenshot](world-walls-test.png)
 
@@ -95,7 +95,7 @@ Can you add more code to your player, so that they can move up, down, left and r
 	![screenshot](world-wall-code.png)
 
 ## Challenge: Fixing your player's movement {.challenge}
-Add code to your player, so that you can't walk through walls in any direction. Use the code you already have to help you!
+Add code to your player so that you can't walk through walls in any direction. Use the code you already have to help you!
 
 ## Save your project { .save }
 
@@ -123,7 +123,7 @@ Let's allow the player to walk through doors into other rooms!
 		end
 	```
 
-+ Add this code to the _start_ of your player code (before the `forever` {.blockcontrol} loop, to make sure that everything is reset when the flag is clicked:
++ Add this code to the _start_ of your player code (before the `forever` {.blockcontrol} loop) to make sure that everything is reset when the flag is clicked:
 
 	```blocks
 		set [room v] to (1)
@@ -194,7 +194,7 @@ Can you add a new treasure chest sprite, using the image 'chest.png'. This treas
 
 # Step 4: People { .activity }
 
-Let's add other people to your world, that your player can interact with.
+Let's add other people to your world that your player can interact with.
 
 ## Activity Checklist { .check }
 
@@ -216,14 +216,14 @@ Let's add other people to your world, that your player can interact with.
 		end
 	```
 
-+ You could also allow your player to move, by using these two blocks:
++ You could also allow your person to move, by using these two blocks:
 
 	```blocks
 		move (1) steps
 		if on edge, bounce
 	```
 
-	Your player will act differently, depending on whether you place this code inside the `forever` {.blockcontrol} loop or the `if` {.blockcontrol} block. Try both and see which you prefer.
+	Your person will act differently, depending on whether you place this code inside the `forever` {.blockcontrol} loop or the `if` {.blockcontrol} block. Try both and see which you prefer.
 
 	![screenshot](world-person-test.png)
 
@@ -264,7 +264,7 @@ Can you create another enemy in room 3, that patrols up and down through the gap
 
 + Add a new variable valled `coins` {.blockdata} to your project.
 
-+ Add a new 'coin' sprite to your project.
++ Add a new 'coins' sprite to your project.
 
 ![screenshot](world-coins.png)
 
@@ -317,7 +317,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 		delete (all v) of [inventory v]
 	```
 
-+ Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the 2 walls.
++ Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the two walls.
 
 	![screenshot](world-door.png)
 
