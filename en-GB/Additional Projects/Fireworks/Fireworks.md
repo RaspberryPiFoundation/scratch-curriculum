@@ -124,6 +124,7 @@ Click the green flag. Make sure the rocket plays a noise and hides when it reach
 
 + Create new sprite from File, **Resources/firework1.png**
 + When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.
+
 ```blocks
 	when I receive [explode v]
 		hide

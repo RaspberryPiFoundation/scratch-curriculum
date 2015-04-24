@@ -16,6 +16,11 @@
             "number":   2,
             "filename": "Puzzle Pack 2/Puzzle Pack 2.md",
             "pdf": "Puzzle Pack 2/CK_PuzzlePack2.pdf"
+        },
+        {
+            "number":   3,
+            "filename": "Puzzle Pack 3/Puzzle Pack 3.md",
+            "pdf": "Puzzle Pack 3/CK_PuzzlePack3.pdf"
         }
     ],
      "extras": [
