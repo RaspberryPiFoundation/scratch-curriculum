@@ -24,7 +24,7 @@ You are going to learn how to program your own animation!
 
 	![screenshot](space-scratch.png)
 
-+ Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called 'sprites'. The cat that you can see is a sprite called Felix, who is the Scratch mascot. Let's get rid of him for now, by right-clicking on him, and clicking 'delete'.
++ Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called 'sprites'. The cat that you can see is the Scratch mascot. Let's get rid of him for now, by right-clicking on him, and clicking 'delete'.
 
 	![screenshot](space-delete.png)
 
