@@ -3,7 +3,7 @@ title: Puzzle Pack 2
 level: Code Kingdoms
 language: en-GB
 stylesheet: scratch
-embeds: "*.png"
+embeds: ["*.png, CK_Help2.pdf"]
 ...
 
 # Code Kingdoms { .intro }
