@@ -9,26 +9,32 @@
 
     "projects": [
         {
-            "number":   1,
+            "number": 1,
+            "beta": true,
+            "filename": "Space Junk/Space Junk.md",
+            "note": "Space Junk/Space Junk - notes.md"
+        },
+        {
+            "number":   2,
             "filename": "Fish Chomp/Fish Chomp.md",
             "note":     "Fish Chomp/Fish Chomp - Notes.md"
         },
         {
-            "number":   2,
+            "number":   3,
             "filename": "Christmas Capers/Christmas Capers.md"
         },
         {
-            "number":   3,
+            "number":   4,
             "filename": "Flappy Parrot/Flappy Parrot.md"
         },
         {
-            "number":   4,
+            "number":   5,
             "filename": "Table Football/Table Football.md"
         },
         {
 
             "title":     "Make a Monster",
-            "number":    5,
+            "number":    6,
             "filename":  "Make a Monster/For Students/Make a Monster.md",
             "note":      "Make a Monster/For Leaders/Make a Monster - Notes.md",
             "materials": "Make a Monster/For Leaders/Scratch Files/*.sb",
@@ -80,7 +86,7 @@
 
         {
             "title":     "Sound Machine",
-            "number":    6,
+            "number":    7,
             "embeds":    "Sound Machine/For Students/Scratch Cards/*.png",
             "filename":  "Sound Machine/For Students/Sound Machine.md",
             "note":      "Sound Machine/For Leaders/Sound Machine - Notes.md",
@@ -125,53 +131,53 @@
         },
         {
             "title":     "Frantic Felix",
-            "number":    7,
+            "number":    8,
             "filename":  "Frantic Felix/For Students/Frantic Felix.md",
             "note":      "Frantic Felix/For Leaders/Frantic Felix - Notes.md"
         },
         {
-            "number":    8,
+            "number":    9,
             "filename":  "Fruit Machine/Fruit Machine.md",
             "note":      "Fruit Machine/Fruit Machine - Notes.md",
             "materials": ["Frantic Felix/For Leaders/Scratch Files/*.sb", "Frantic Felix/For Leaders/Resources/*"]
         },
         {
-            "number":   9,
+            "number":   10,
             "filename": "Create Your Own Game/Create Your Own Game.md",
             "note":     "Create Your Own Game/Create Your Own Game - Notes.md"
         },
         {
-            "number":   10,
+            "number":   11,
             "filename": "Desert Race/Desert Race.md",
             "note":     "Desert Race/Desert Race - Notes.md"
         },
         {
-            "number":   11,
+            "number":   12,
             "filename": "What's That/What's That.md",
             "note":     "What's That/What's That - Notes.md"
         },
         {
-            "number":   12,
+            "number":   13,
             "filename": "Fireworks/Fireworks.md",
             "note":     "Fireworks/Fireworks - Notes.md"
         },
         {
-            "number":   13,
+            "number":   14,
             "filename": "Ghostbusters/Ghostbusters.md",
             "note":     "Ghostbusters/Ghostbusters - Notes.md"
         },
         {
-            "number":   14,
+            "number":   15,
             "filename": "Felix and Herbert/Felix and Herbert.md",
             "note":     "Felix and Herbert/Felix and Herbert - Notes.md"
         },
         {
-            "number":   15,
+            "number":   16,
             "beta":     true,
             "filename": "Snowball Fight/Snowball Fight.md"
         },
         {
-            "number":   16,
+            "number":   17,
             "beta":     true,
             "filename": "Toby/Toby.md",
             "note":     "Toby/Toby - Notes.md"
