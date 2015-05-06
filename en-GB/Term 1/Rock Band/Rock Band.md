@@ -28,7 +28,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 	![screenshot](band-stage.png)
 
-	If you're not sure how to do this, the previous project ("Lost in Space") will help you!
+	If you're not sure how to do this, the previous [../Lost in Space.html](Lost in Space) project will help you!
 
 + Let's program the drum to play a sound when it's clicked. Make sure the drum sprite is selected and add this code:
 
@@ -93,7 +93,7 @@ You can copy your existing code by right-clicking on it and clicking 'duplicate'
 
 # Step 2: Coding a Singer { .activity .new-page }
 
-Let's add a singer to our band!
+Let's add a singer to your band!
 
 ## Activity Checklist { .check }
 
@@ -120,7 +120,7 @@ Let's add a singer to our band!
 
 ## Save your project { .save }
 
-+ You can also change the costume of your singer, to make it look like she is singing. Just like with the drum, right-click on the costume to duplicate it, so that you have 2. Rename the 2 costumes to 'not singing' and 'singing'.
++ You can also make your singer look like she is singing. Just like with the drum, right-click on the costume to duplicate it, so that you have 2. Rename the 2 costumes to 'not singing' and 'singing'.
 
 	![screenshot](band-singer-costume.png)
 
@@ -128,19 +128,8 @@ Let's add a singer to our band!
 
 	![screenshot](band-singer-final.png)
 
-+ Now add code to change your singer's costume when clicked:
-
-	```blocks
-		when flag clicked
-		switch costume to [not singing v]
-
-		when this sprite clicked
-		switch costume to [singing v]
-		play sound [singer1 v] until done
-		switch costume to [not singing v]
-	```
-
-+ Click on your singer, to test that your new code works.
+##Challenge: Changing your singer's costume { .challenge }
+Can you add code to your singer sprite, to change her costume when clicked? Remember to test that your new code works!
 
 ## Save your project { .save }
 
@@ -244,7 +233,9 @@ Your instruments don't have to be sensible though. For example, you could make a
 
 ![screenshot](band-piano.png)
 
-Can you make your own song, or even get together with your friends to make a band?
+If you have a microphone you can record your own sounds, or even use a webcam to hit your instruments!
+
+![screenshot](band-io.png)
 
 ## Save your project { .save }
 
