@@ -20,11 +20,11 @@ You are going to learn how to program your own animation!
 
 ## Activity Checklist { .check }
 
-+ First, make sure that you have opened up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It should look something like this:
++ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It should look something like this:
 
 	![screenshot](space-scratch.png)
 
-+ Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called 'sprites'. The cat that you can see is the Scratch mascot. Let's get rid of him for now, by right-clicking on him, and clicking 'delete'.
++ Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called __sprites__. The cat that you can see is the Scratch mascot. Let's get rid of him for now, by right-clicking on him, and clicking 'delete'.
 
 	![screenshot](space-delete.png)
 
@@ -44,7 +44,7 @@ You are going to learn how to program your own animation!
 
 	![screenshot](space-rotate.png)
 
-+ You should now have a big spaceship on your 'stage'. The 'stage' is the area on the left, and is where your animation will happen. Think of it as a performance area, just like a real stage! You can drag the spaceship around the stage to move it.
++ You should now have a big spaceship on your __stage__. The stage is the area on the left, and is where your animation will happen. Think of it as a performance area, just like a real stage! You can drag the spaceship around the stage to move it.
 
 	At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking on the 'Stage' icon, and then clicking 'Choose backdrop from library'.
 
@@ -64,11 +64,13 @@ Can you add another sprite (the Earth) to your stage, so that it looks like this
 ![screenshot](space-earth.png)
 
 ## Save your project { .save }
-You should save your work regularly, so that you don't lose it. First, give your program a name, by typing one into the text box above the stage. You can then click 'File' and then 'Save now' to save your project.
+Give your program a name, by typing one into the text box above the stage.
+
+If you're using Scratch online, you can then click 'File' and then 'Save now' to save your project.
 
 ![screenshot](space-save.png)
 
-If you're using Scratch online, clicking 'Save' adds your program to your 'stuff', which is an online folder that you can access from anywhere, even from home. You can access your stuff by clicking 'File', and then clicking 'Go to My Stuff'.
+ Clicking 'Save now' adds your program to your 'stuff', which you can access by clicking 'File', and then clicking 'Go to My Stuff'.
 
 ![screenshot](space-stuff.png)
 
@@ -109,17 +111,11 @@ Now that you have some sprites, let's add code to animate them!
 
 	![screenshot](space-coordinates.png)
 
-+ If you try to click the code again, to run it a second time, nothing happens! That's because the spaceship is already at the position it's been told to glide to. Let's improve your animation, by telling the spaceship to start at the bottom-left of the stage, and point upwards to begin with.
++ If you click the code to run it again, nothing happens! The spaceship doesn't glide towards the center of the stage because it's already there! Let's improve your animation, by telling the spaceship to start at the bottom-left of the stage, and point upwards to begin with.
 
 + Add some more blocks to your animation, adding them on top of the blocks you already have. Your code should now look like this:
 
-	```blocks
-		point in direction (0 v)
-		go to x:(-150) y:(-150)
-		wait (1) secs
-		point towards [Earth v]
-		glide (1) secs to x:(0) y: (0)
-	```
+	![screenshot](space-start-code.png)
 
 	You'll find the `wait (1) secs` {.blockcontrol} block by clicking on the orange `Control` {.blockcontrol} blocks section.
 
