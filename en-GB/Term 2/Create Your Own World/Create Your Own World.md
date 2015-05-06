@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 In this project you'll learn how to create your own open world adventure game.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=true" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
 	<img src="world-final.png">
 </div>
 

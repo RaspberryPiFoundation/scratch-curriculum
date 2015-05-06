@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 In this project, you will be making your own paint program!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/28541444/?autostart=true" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/28541444/?autostart=false" frameborder="0"></iframe>
 	<img src="paint-final.png">
 </div>
 
