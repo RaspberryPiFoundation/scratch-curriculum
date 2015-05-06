@@ -55,7 +55,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 	![screenshot](chatbot-text.png)
 
-+ Your chatbot simply replies "What a lovely name!" every time. You can personalise your chatbot's reply, by making use of the user's answer. Change the chatbot's code, so that it looks like this:
++ Your chatbot simply replies `What a lovely name!` every time. You can personalise your chatbot's reply, by making use of the user's answer. Change the chatbot's code, so that it looks like this:
 
 	```blocks
 		when this sprite clicked
@@ -67,15 +67,15 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 	![screenshot](chatbot-join.png)
 
-	You can then change the text "hello" to say "Hi", and drag the light blue `answer` {.blocksensing} block (from the 'Sensing' section) onto the text "world".
+	You can then change the text `hello` to say `Hi`, and drag the light blue `answer` {.blocksensing} block (from the 'Sensing' section) onto the text `world`.
 
 	![screenshot](chatbot-answer.png)
 
 + Test out this new program. Does it work as you expected? Can you fix any problems that you can see? (Hint: you can try adding in a space somewhere!)
 
-+ It may be that you want to store the user's name in a variable, so that you can use it again later. Create a new variable called 'name'. If you've forgotten how to do this, the previous 'Balloons' project will help you.
++ It may be that you want to store the user's name in a variable, so that you can use it again later. Create a new variable called `name` {.blockdata}. If you've forgotten how to do this, the [Balloons](../03/Balloons.html) project will help you.
 
-+ The information that you entered is already stored in a special variable called 'answer'. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in 'answer' should then be shown on the top-left of the stage.
++ The information that you entered is already stored in a special variable called `answer` {.blocksensing}. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in `answer` {.blocksensing} should then be shown on the top-left of the stage.
 
 + Once you've created your new variable, make sure that your chatbot's code looks like this:
 
@@ -86,7 +86,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 		say <join [Hi ] (name)> for (2) secs
 	```
 
-+ If you test your program again, you'll notice that the answer is stored in the 'name' variable, and is shown in the top-left of the stage. The 'name' variable should now contain the same value as the 'answer' variable.
++ If you test your program again, you'll notice that the answer is stored in the `name` {.blockdata} variable, and is shown in the top-left of the stage. The `name` {.blockdata} variable should now contain the same value as the `answer` {.blocksensing} variable.
 
 	![screenshot](chatbot-variable.png)
 
@@ -108,7 +108,7 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 ## Activity Checklist { .check }
 
-+ Let's get your chatbot to ask the user a question which has a 'yes' or 'no' answer. Here's an example, but you can change the question if you like:
++ Let's get your chatbot to ask the user a question which has a `yes` or `no` answer. Here's an example, but you can change the question if you like:
 
 	```blocks
 		when this sprite clicked
@@ -123,9 +123,9 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 	Notice that now you've stored the user's name in a variable, you can use it as much as you like.
 
-+ To test this program properly, you'll need to test it twice - once typing 'no' as your answer, and once typing 'yes'. You should only get a response from your chatbot `if` {.blockcontrol} you answer 'yes'.
++ To test this program properly, you'll need to test it twice - once typing `no` as your answer, and once typing `yes`. You should only get a response from your chatbot `if` {.blockcontrol} you answer `yes`.
 
-+ The trouble with your chatbot is that it doesn't give a reply if the user answers 'no'. You can fix this, by changing the `if` {.blockcontrol} block to an `if/else` {.blockcontrol} block, so that your code now looks like this:
++ The trouble with your chatbot is that it doesn't give a reply if the user answers `no`. You can fix this, by changing the `if` {.blockcontrol} block to an `if/else` {.blockcontrol} block, so that your code now looks like this:
 
 	```blocks
 		when this sprite clicked
@@ -140,7 +140,7 @@ You can program your chatbot to decide what to do, based on the user's responses
 		end
 	```
 
-+ If you test your code, you'll now see that you get a response when you answer 'yes' or 'no'. Your chatbot should reply with "That's great to hear!" when you answer 'yes', but will reply with "Oh no!" if you type anything other than yes (`else` {.blockcontrol} means 'otherwise').
++ If you test your code, you'll now see that you get a response when you answer `yes` or `no`. Your chatbot should reply with `That's great to hear!` when you answer `yes`, but will reply with `Oh no!` if you type anything other than `yes` (`else` {.blockcontrol} means 'otherwise').
 
 	![screenshot](chatbot-else.png)
 
@@ -176,7 +176,7 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 ## Challenge: More decisions { .challenge }
 
-Program your chatbot to ask another question - something with a 'yes' or 'no' answer. Can you make your chatbot respond to the answer?
+Program your chatbot to ask another question - something with a `yes` or `no` answer. Can you make your chatbot respond to the answer?
 
 ![screenshot](chatbot-joke.png)
 
@@ -205,11 +205,11 @@ You can also program your chatbot to change its location.
 
 	![screenshot](chatbot-outside.png)
 
-+ Test your program, and answer 'yes' when asked if you want to go home. You should see that the chatbot's location has changed.
++ Test your program, and answer `yes` when asked if you want to go home. You should see that the chatbot's location has changed.
 
 	![screenshot](chatbot-backdrop.png)
 
-+ Does your chatbot change location if you type 'no'? What about if you type 'I'm not sure'?
++ Does your chatbot change location if you type `no`? What about if you type `I'm not sure`?
 
 ## Save your project { .save }
 
