@@ -119,7 +119,7 @@ Click the green flag.
     end
 ```
   You should only have to change three things: the `x position` { .blockblue }, and which keys are pressed.
-+ Create one more sprite using the `Upload sprite from file` button and selecting **resources/attack_red.png**. Rename sprite to **red attack**.
++ Create one more sprite using the `Upload sprite from file` button and selecting **resources/attack_red.png**. Rename the sprite to **red attack**.
 + As before, grow the sprite 10 times, so all the players on the pitch are the same size.
 + Move the sprite into the left-hand side of the pitch, so they are attacking the blue team’s goal.
 + Drag the script from **blue attack** to **red attack**, and modify it to match this:
