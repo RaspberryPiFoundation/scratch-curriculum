@@ -24,10 +24,10 @@ Vi ska skapa ett spel där __katten Felix__ ska försöka ta __musen Herbert__. 
 ```blocks
 när @ klickas på
 för alltid
-  peka mot [muspekare v]
-  gå (10) steg
-  nästa klädsel
-  spela trumman (13 v) i (0.25) taktslag
+	peka mot [muspekare v]
+	gå (10) steg
+	nästa klädsel
+	spela trumman (13 v) i (0.25) taktslag
 ```
 		
 ## Testa ditt projekt {.flag}
@@ -52,8 +52,8 @@ Pröva med sex klick på Förminska-knappen:
 ```blocks
 när @ klickas på
 för alltid
-    gå till [muspekare v]
-    peka mot [Felix v]
+	gå till [muspekare v]
+	peka mot [Felix v]
 ```
 
 ## Testa ditt projekt {.flag}
@@ -73,12 +73,12 @@ __Vi vill att Felix ska veta när han har fångat Herbert, och säga det till os
 ```blocks
 när @ klickas på
 för alltid
-    peka mot [muspekare v]
-    gå (10) steg
-    nästa klädsel
-    spela trumman (13 v) i (0.25) taktslag
-    om <rör [Herbert v]?> då
-        säg [Fångad!] i (1) sekunder
+	peka mot [muspekare v]
+	gå (10) steg
+	nästa klädsel
+	spela trumman (13 v) i (0.25) taktslag
+	om <rör [Herbert v]?> då
+		säg [Fångad!] i (1) sekunder
 ```
 
 ##Testa ditt projekt {.flag}
@@ -99,13 +99,13 @@ __Istället för att Felix säger någonting så vill vi att Herbert ska förvan
 ```blocks
 när @ klickas på
 för alltid
-    peka mot [muspekare v]
-    gå (10) steg
-    nästa klädsel
-    spela trumman (13 v) i (0.25) taktslag
-    om <rör [Herbert v]?> då
-	    skicka [fångad v]
-        säg [Fångad!] i (1) sekunder
+	peka mot [muspekare v]
+	gå (10) steg
+	nästa klädsel
+	spela trumman (13 v) i (0.25) taktslag
+	om <rör [Herbert v]?> då
+		skicka [fångad v]
+	säg [Fångad!] i (1) sekunder
 ```
 
 + Importera en ny klädsel till Herbert från Fantasy/ghost2-a.
@@ -144,8 +144,8 @@ Vi börjar med att låta poängen vara noll och höjer den med ett varje sekund.
 när @ klickas på
 sätt [poäng v] till [0]
 för alltid
-    ändra [poäng v] med (1)
-    vänta (1) sekunder
+	ändra [poäng v] med (1)
+	vänta (1) sekunder
 end
 
 
