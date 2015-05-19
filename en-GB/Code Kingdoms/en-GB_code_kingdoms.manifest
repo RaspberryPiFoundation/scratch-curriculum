@@ -31,6 +31,14 @@
         {
             "name": "Teacher Guide",
             "note": "CK_TeacherGuide.pdf"
+        },
+        {
+            "name": "Learning Guide: What, where, when and how",
+            "note": "CK_WhatWhereWhenHow.pdf"
+        },
+        {
+            "name": "Sandbox Guide",
+            "note": "CK_SandboxGuide.pdf"
         }
     ]
 }
