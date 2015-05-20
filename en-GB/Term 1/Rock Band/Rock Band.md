@@ -28,7 +28,7 @@ First, let's make a drum that makes a sound when it's hit.
 
 	![screenshot](band-stage.png)
 
-	If you're not sure how to do this, the previous [../Lost in Space.html](Lost in Space) project will help you!
+	If you're not sure how to do this, the Lost in Space project will help you!
 
 + Let's program the drum to play a sound when it's clicked. Make sure the drum sprite is selected and add this code:
 
