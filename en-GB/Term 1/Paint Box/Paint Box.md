@@ -24,10 +24,6 @@ Let's start by making a pencil, that can be used to draw on the stage.
 
 + Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
-
-	![screenshot](paint-resources.png)
-
 + Add the pencil sprite to your project.
 
 	![screenshot](paint-pencil.png) 
@@ -170,11 +166,11 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 	Notice that you don't need to send a message to clear the stage, as any sprite can do it!
 
-+ You can also create an eraser. To do this, click 'Upload costume from file' add add the 'eraser.png' image from your resources folder.
++ You can also create an eraser. If your club leader has given you a 'Resources' folder, click 'Upload costume from file' and add the 'eraser.png' image.
 
 	![screenshot](paint-eraser-costume.png)
 	
-	If you don't have this image, just create a new white pen instead!
+	If you don't have the eraser.png image, just create a new white pen instead!
 
 + You should also add the eraser image as a new selector sprite. This is how your stage shoud look:
 
