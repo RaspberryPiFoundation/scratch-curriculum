@@ -16,9 +16,9 @@ In this project you'll learn how to code your own musical instruments!
 	<img src="band-final.png">
 </div>
 
-# Step 1: Coding a Drum { .activity }
+# Step 1: Making a Drum { .activity }
 
-First, let's make a drum that makes a sound when it's hit.
+First, let's create a drum that makes a sound when it's hit.
 
 ## Activity Checklist { .check }
 
@@ -91,7 +91,7 @@ You can copy your existing code by right-clicking on it and clicking 'duplicate'
 
 ## Save your project { .save }
 
-# Step 2: Coding a Singer { .activity .new-page }
+# Step 2: Making a Singer { .activity .new-page }
 
 Let's add a singer to your band!
 
@@ -120,20 +120,16 @@ Let's add a singer to your band!
 
 ## Save your project { .save }
 
-+ You can also make your singer look like she is singing. Just like with the drum, right-click on the costume to duplicate it, so that you have 2. Rename the 2 costumes to 'not singing' and 'singing'.
-
-	![screenshot](band-singer-costume.png)
-
-+ Add some lines near your singer's mouth. Your singer should look something like this:
+##Challenge: Changing your singer's costume { .challenge }
+Can you make your singer look like she is singing when clicked? If you need help, you can use the instructions for creating a drum above.
 
 	![screenshot](band-singer-final.png)
 
-##Challenge: Changing your singer's costume { .challenge }
-Can you add code to your singer sprite, to change her costume when clicked? Remember to test that your new code works!
+Remember to test that your new code works!
 
 ## Save your project { .save }
 
-# Step 3: Coding a cymbal { .activity .new-page }
+# Step 3: Making a cymbal { .activity .new-page }
 
 So far all of your instruments have used images from the Scratch library. Why not draw a sprite of your own!
 
@@ -143,7 +139,7 @@ So far all of your instruments have used images from the Scratch library. Why no
 
 	![screenshot](band-draw.png)
 
-+ As you can see, you now have a blank sprite called 'Sprite1'. Draw your cymbal in 'costume1', using a yellow ellipse and some black lines. You should also rename this costume 'not hit', just like with your other sprites.
++ Draw your cymbal in 'costume1', using a yellow ellipse and some black lines. You should also rename this costume 'not hit', just like with your other sprites.
 
 	![screenshot](band-cymbal.png)
 
