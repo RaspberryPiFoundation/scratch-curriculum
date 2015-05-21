@@ -77,7 +77,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 ## Activity Checklist { .check }
 
-+ First, let's add a green pencil costume to your pencil sprite. Click on your pencil sprite, click 'Costumes' and duplicate your 'pencil-blue' costume.
++ Click on your pencil sprite, click 'Costumes' and duplicate your 'pencil-blue' costume.
 
 	![screenshot](paint-blue-duplicate.png)
 
@@ -111,7 +111,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 	```blocks
 		when I receive [green v]
 		switch costume to [pencil-green v]
-		set pencil color to [#00FF00]
+		set pen color to [#00ff00]
 	```
 
 	To set the pencil to colour to green, click the coloured box in the `set color` {.blockpen} block, and click on the green selector icon to choose green as your pencil colour.
@@ -128,7 +128,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 	```blocks
 		when I receive [blue v]
 		switch costume to [pencil-blue v]
-		set pencil color to [#0000FF]
+		set pen color to [#0000ff]
 	```
 
 + Finally, you need to tell your pencil sprite what costume and pencil colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pencil's `when flag clicked` {.blockevents} code (before the `forever` {.blockcontrol} loop):
@@ -136,7 +136,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 	```blocks
 		clear
 		switch costume to [blue-pencil v]
-		set pencil color to [#0000FF]
+		set pen color to [#0000ff]
 	```
 
 	If you prefer, you can start with a different colour pencil!
@@ -188,7 +188,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 	```blocks
 		when I receive [eraser v]
 		switch costume to [eraser v]
-		set pencil color to [#FFFFFF]
+		set pen color to [#FFFFFF]
 	```
 
 + Test your project, to see if you can clear and erase on the stage.
@@ -203,7 +203,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 	![screenshot](pencil-gt-code.png)
 
-+ Test your project; you now shouldn't be able to draw below the drawing surface.
++ Test your project; you now shouldn't be able to draw near the selector blocks.
 
 	![screenshot](paint-fixed.png)
 
@@ -220,7 +220,7 @@ Let's allow the user to draw using a range of different pencil sizes.
 + Add this line _inside_ the `forever` {.blockcontrol} loop of your pencil's code:
 
 	```blocks
-		set pencil size to (width)
+		set pen size to (width)
 	```
 
 	Your pencil width will now repeatedly be set to the value of your 'width' variable.
