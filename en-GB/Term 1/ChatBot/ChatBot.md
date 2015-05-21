@@ -39,7 +39,7 @@ You are going to learn how to program your own talking robot!
 
 # Step 2: A talking chatbot { .activity }
 
-Now that you have a chatbot with a personality, let's program it to talk to us.
+Now that you have a chatbot with a personality, let's program it to talk to you.
 
 ## Activity Checklist { .check }
 
@@ -51,7 +51,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 		say [What a lovely name!] for (2) secs
 	```
 
-+ Click your chatbot to test it out. After you are asked your name, type it into the box along the bottom of the stage, and click the tick (or press return).
++ Click your chatbot to test it out. After you are asked your name, type it into the box along the bottom of the stage.
 
 	![screenshot](chatbot-text.png)
 
@@ -90,7 +90,7 @@ Now that you have a chatbot with a personality, let's program it to talk to us.
 
 	![screenshot](chatbot-variable.png)
 
-	If you'd rather not see the variable on your stage, you can click the tick next to the variable name in the 'Scripts' tab to hide it.
+	If you'd rather not see the variables on your stage, you can click the tick next to the variable names in the 'Scripts' tab to hide them.
 
 ## Save your project { .save }
 
