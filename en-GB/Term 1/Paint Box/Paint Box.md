@@ -12,13 +12,13 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 In this project, you will be making your own paint program!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/28541444/?autostart=false" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
 	<img src="paint-final.png">
 </div>
 
-# Step 1: Making a pen { .activity }
+# Step 1: Making a pencil { .activity }
 
-Let's start by making a pen, that can be used to draw on the stage.
+Let's start by making a pencil, that can be used to draw on the stage.
 
 ## Activity Checklist { .check }
 
@@ -28,19 +28,19 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 	![screenshot](paint-resources.png)
 
-+ Let's add the drawing canvas image to your stage. Click the stage, and then click 'Upload backdrop from file'.
++ Add the pencil sprite to your project.
 
-	![screenshot](paint-file.png)
+	![screenshot](paint-pencil.png) 
 
-+ Find your 'Project Resources' folder, and choose the file called 'frame.png'. If you don't have this image you can draw your own backdrop! Your stage should now look like this:
++ Click 'Costumes', and delete the 'pencil-b' costume.
 
-	![screenshot](paint-frame.png)
+	![screenshot](paint-pencil-delete.png) 
 
-+ Let's also add a pen to your project. Click 'Upload sprite from file' and choose the image called 'blue-pencil.png' from your resources folder. Again, if you don't have this image you can draw your own. Click the `i` {.blockmotion} icon, and name this sprite 'Pen'.
++ Rename your costume 'pencil-blue', and use the 'Color a shape' tool to make the pencil blue. 
 
-	![screenshot](paint-blue-pencil.png)
+	![screenshot](paint-pencil-blue.png) 
 
-+ As you'll be using the mouse to draw, you'll want the pen to always follow the mouse. Add this code to your pen sprite:
++ As you'll be using the mouse to draw, you'll want the pencil to follow the mouse `forever` {.blockcontrol}. Add this code to your pencil sprite:
 
 	```blocks
 		when flag clicked
@@ -51,61 +51,27 @@ Let's start by making a pen, that can be used to draw on the stage.
 
 + Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?
 
-+ Have you noticed that it's the centre of the pen, and not the tip, that follows the mouse pointer?
++ Have you noticed that it's the centre of the pencil, and not the tip, that follows the mouse pointer?
 
 	![screenshot](paint-center.png)
 
-	To fix this, click on the 'blue-pencil' costume of your pen sprite, and click 'Set costume center'.
+	To fix this, click on the 'pencil-blue' costume of your pencil sprite, and click 'Set costume center'.
 
 	![screenshot](paint-center-icon.png)
 
-+ You should notice that a crosshair appears on the costume. You can now click just below the tip of the pen, to set this point as the costume centre.
++ You should notice that a crosshair appears on the costume. You can now click just below the tip of the pencil, to set this point as the costume centre.
 
-	![screenshot](paint-pen-center.png)
+	![screenshot](paint-pencil-center.png)
 
-+ Click the 'Scripts' tab, and then test out your pen again - does it work better than it did before?
++ Click the 'Scripts' tab, and then test out your pencil again - does it work better than it did before?
 
-+ Next, let's make your pen draw whenever the mouse has been clicked. Add this code to your pen sprite:
++ Next, let's make your pencil draw `if` {.blockcontrol} the mouse has been clicked. Add this code to your pencil sprite:
 
-	```blocks
-		when flag clicked
-		forever
-		  go to [mouse pointer v]
-		  if <mouse down?> then
-		    pen down
-		  else
-		    pen up
-		  end
-		end
-	```
+	![screenshot](paint-pencil-draw-code.png)	
 
-	As well as using a `forever` {.blockcontrol} loop to make the pen follow the mouse, you've now also used an `if` {.blockcontrol} statement to draw on the stage if the mouse button is being held down.
-
-+ Test your code again. This time, move the pen around the stage and hold down the mouse button. Can you draw with your pen?
++ Test your code again. This time, move the pencil around the stage and hold down the mouse button. Can you draw with your pencil?
 
 	![screenshot](paint-draw.png)
-
-+ There's one more problem with the pen - you can draw anywhere on the stage, including the bit below the drawing surface!
-
-	![screenshot](paint-draw-problem.png)
-
-	To fix this, you have to tell the pen only to draw if the mouse is clicked _and_ if the y-position of the mouse is greater than -110 (`mouse y`{.blocksensing}`> -110` {.blockoperators}). Change your pen's `if` {.blockcontrol} statement to look like this:
-
-	```blocks
-		when flag clicked
-		forever
-		  go to [mouse pointer v]
-		  if < <mouse down?> and < (mouse y) > (-110) > > then
-		    pen down
-		  else
-		    pen up
-		  end
-		end
-	```
-
-+ Test your project; you now shouldn't be able to draw below the drawing surface.
-
-	![screenshot](paint-fixed.png)
 
 ## Save your project { .save }
 
@@ -115,17 +81,21 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 ## Activity Checklist { .check }
 
-+ First, let's add another green pen costume to your pen sprite. Click on your pen sprite, and click 'Upload costume from file' and select the 'green-pencil.png' image to add it to your sprite. Remember to set the centre of your new costume.
++ First, let's add a green pencil costume to your pencil sprite. Click on your pencil sprite, click 'Costumes' and duplicate your 'pencil-blue' costume.
 
-	![screenshot](paint-green-costume.png)
+	![screenshot](paint-blue-duplicate.png)
 
-+ You also need to add two sprites, that will be used to select the colour of the pen. Click 'Upload sprite from file' to add both the 'blue-selector.png' and 'green-selector.png' images as separate sprites.
++ Rename your new costume 'pencil-green', and colour the pencil green.
 
-	Your stage should now look like this:
+	![screenshot](paint-pencil-green.png)
+
++ Create two new sprites, which you will use to select the blue or green pencil.
 
 	![screenshot](paint-selectors.png)
 
-+ When the green selector icon is clicked, you need to `broadcast` {.blockevents} a message to the pen sprite, telling it to change its costume and pen colour. To do this, firstly add this code to the green selector icon:
++ When the green selector icon is clicked, you need to `broadcast` {.blockevents} a message to the pencil sprite, telling it to change its costume and pencil colour.
+
+	To do this, first add this code to the green selector icon:
 
 	```blocks
 		when this sprite clicked
@@ -140,40 +110,40 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 	![screenshot](paint-green-message.png)
 
-+ You now need to tell your pen sprite what to do when it receives the message. Add this code to your pen sprite:
++ You now need to tell your pencil sprite what to do when it receives the message. Add this code to your pencil sprite:
 
 	```blocks
 		when I receive [green v]
-		switch costume to [green-pencil v]
-		set pen color to [#00FF00]
+		switch costume to [pencil-green v]
+		set pencil color to [#00FF00]
 	```
 
-	To set the pen to colour to green, click the coloured box in the `set color` {.blockpen} block, and click on the green selector icon to choose green as your pen colour.
+	To set the pencil to colour to green, click the coloured box in the `set color` {.blockpen} block, and click on the green selector icon to choose green as your pencil colour.
 
-+ You can now do the same for the blue pen icon, adding this code to the blue selector sprite:
++ You can now do the same for the blue pencil icon, adding this code to the blue selector sprite:
 
 	```blocks
 		when this sprite clicked
 		broadcast [blue v]
 	```
 
-	...and adding this code to the pen sprite:
+	...and adding this code to the pencil sprite:
 
 	```blocks
 		when I receive [blue v]
-		switch costume to [blue-pencil v]
-		set pen color to [#0000FF]
+		switch costume to [pencil-blue v]
+		set pencil color to [#0000FF]
 	```
 
-+ Finally, you need to tell your pen sprite what costume and pen colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pen's `when flag clicked` {.blockevents} code (before the `forever` {.blockcontrol} loop):
++ Finally, you need to tell your pencil sprite what costume and pencil colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pencil's `when flag clicked` {.blockevents} code (before the `forever` {.blockcontrol} loop):
 
 	```blocks
 		clear
 		switch costume to [blue-pencil v]
-		set pen color to [#0000FF]
+		set pencil color to [#0000FF]
 	```
 
-	If you prefer, you can start with a different colour pen!
+	If you prefer, you can start with a different colour pencil!
 
 + Test out your project. Can you switch between blue and green pens?
 
@@ -187,57 +157,77 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 ## Activity Checklist { .check }
 
-+ As well as clearing the canvas when your project is started, let's add a button to clear the canvas as well. To do this, add a new sprite using the 'cancel-button.png' image in your 'Resources' folder.
++ Let's add a button to clear the stage. To do this, add the 'X-block' letter sprite to the stage, and colour it in red.
 
-	![screenshot](paint-clear.png)
+	![screenshot](paint-x.png)
 
-+ Add code to this new cancel button to clear the canvas when it's clicked.
++ Add code to your new cancel button to clear the stage when it's clicked.
 
 	```blocks
 		when this sprite clicked
 		clear
 	```
 
-	Notice that you don't need to send a message to clear the canvas, as any sprite can do it!
+	Notice that you don't need to send a message to clear the stage, as any sprite can do it!
 
-+ You can also create an eraser. To do this, add the 'eraser.png' image as a new costume to your pen sprite (remember to set the costume centre) _and_ as a new selector sprite.
++ You can also create an eraser. To do this, click 'Upload costume from file' add add the 'eraser.png' image from your resources folder.
 
-	![screenshot](paint-eraser.png)
+	![screenshot](paint-eraser-costume.png)
+	
+	If you don't have this image, just create a new white pen instead!
 
-+ You can then add code to the eraser selector sprite, to tell the pen to switch to an eraser.
++ You should also add the eraser image as a new selector sprite. This is how your stage shoud look:
+
+	![screenshot](paint-eraser-stage.png)
+
++ You can then add code to the eraser selector sprite, to tell the pencil to switch to an eraser.
 
 	```blocks
 		when this sprite clicked
 		broadcast [eraser v]
 	```
 
-+ When the pen receives this message, you can create an eraser by switching the pen costume to the eraser, and switching the pen colour to the same colour as the canvas!
++ When the pencil receives this message, you can create an eraser by switching the pencil costume to the eraser, and switching the pencil colour to the same colour as the stage!
 
 	```blocks
 		when I receive [eraser v]
 		switch costume to [eraser v]
-		set pen color to [#8d8d8d]
+		set pencil color to [#FFFFFF]
 	```
 
-+ Test your project, to see if you can clear and erase on the canvas.
++ Test your project, to see if you can clear and erase on the stage.
 
 	![screenshot](paint-erase-test.png)
 
-# Step 4: Changing the pen width { .activity }
++ There's one more problem with the pencil - you can draw anywhere on the stage, including near the selector icons!
 
-Let's allow the user to draw using a range of different pen sizes.
+	![screenshot](paint-draw-problem.png)
+
+	To fix this, you have to tell the pencil only to draw if the mouse is clicked _and_ if the y-position of the mouse is greater than -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Change your pencil's `if` {.blockcontrol} statement to look like this:
+
+	![screenshot](pencil-gt-code.png)
+
++ Test your project; you now shouldn't be able to draw below the drawing surface.
+
+	![screenshot](paint-fixed.png)
+
+## Save your project { .save }
+
+# Step 4: Changing the pencil width { .activity }
+
+Let's allow the user to draw using a range of different pencil sizes.
 
 ## Activity Checklist { .check }
 
 + First, add a new variable called 'width'. If you're not sure how to do this, the 'Balloons' project will help you.
 
-+ Add this line _inside_ the `forever` {.blockcontrol} loop of your pen's code:
++ Add this line _inside_ the `forever` {.blockcontrol} loop of your pencil's code:
 
 	```blocks
-		set pen size to (width)
+		set pencil size to (width)
 	```
 
-	Your pen width will now repeatedly be set to the value of your 'width' variable.
+	Your pencil width will now repeatedly be set to the value of your 'width' variable.
 
 + You can change the number stored in this variable by right-clicking on your variable (on the stage) and clicking 'slider'.
 
@@ -247,7 +237,7 @@ Let's allow the user to draw using a range of different pen sizes.
 
 	![screenshot](paint-slider-change.png)
 
-+ Test your project, and see if you can modify the pen width.
++ Test your project, and see if you can modify the pencil width.
 
 	![screenshot](paint-width-test.png)
 
@@ -259,8 +249,9 @@ Let's allow the user to draw using a range of different pen sizes.
 
 ## Save your project { .save }
 
-## Challenge: Shortcuts {.challenge}
+## Challenge: Shortcuts
 Can you create keyboard shortcuts for your commands? For example:
+
 + b = Switch to blue pen
 + g = switch to green pen
 + e = switch to eraser
@@ -276,5 +267,3 @@ Can you add red, yellow and black pens to your paint program? You'll find all of
 Can you use your pens to draw a picture?
 
 ![screenshot](paint-final.png)
-
-## Save your project { .save }
