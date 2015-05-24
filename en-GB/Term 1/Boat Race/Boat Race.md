@@ -9,37 +9,43 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 
 # Introduction { .intro }
 
-You are going to learn how to make a game, in which you'll use the mouse to control a boat. You must try to get to the desert island, avoiding the wooden barriers. The white arrows boost your boat and make it go faster.
+You are going to learn how to make a game, in which you'll use the mouse to navigate a boat to a desert island.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/29125780/?autostart=false" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/.../?autostart=false" frameborder="0"></iframe>
 	<img src="boat-final.png">
 </div>
 
-# Step 1: Controlling a boat { .activity }
+# Step 1: Planning your game { .activity }
 
 ## Activity Checklist { .check }
 
 + Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Click on your stage backdrop and plan out your level. You should add:
+	+ Wood that your boat has to avoid;
+	+ A desert island that your boat has to get to.
 
-	![screenshot](boat-resources.png)
+	Here's how your game could look:
 
-+ From this 'Project Resources' folder, import 'background.png' as the stage backdrop and 'boat.png' as a new sprite. If you don't have these images you can draw them yourself!
+	![screenshot](boat-bg.png) 
 
-+ Rename your sprite 'Player 1', shrink it slightly, and move it to the bottom of the stage.
+# Step 2: Controlling the boat { .activity }
 
-	Your project should look like this:
+## Activity Checklist { .check }
 
-	![screenshot](boat-bg.png)
++ If your club leader has given you a 'Resources' folder, click 'Upload sprite from file' and add the 'boat.png' image. You should shrink the sprite and put it in it's starting position.
+
+	![screenshot](boat-boat.png)
+
+	If you don't have the boat.png image, you can draw your own boat instead!
 
 + You are going to control the boat with your mouse. Add this code to your boat:
 
 	```blocks
 		when flag clicked
 		point in direction (0 v)
-		go to x: (-215) y: (-160)
+		go to x: (-190) y: (-150)
 		forever
 			point towards [mouse-pointer v]
 			move (1) steps
@@ -50,45 +56,35 @@ You are going to learn how to make a game, in which you'll use the mouse to cont
 
 	![screenshot](boat-mouse.png)
 
-+ Have a look what happens when the boat reaches the mouse pointer.
++ What happens if the boat reaches the mouse pointer?
 
 	To stop this happening, you'll need to add an `if` {.blockcontrol} block to your code, so that the boat only moves if it is more than 5 pixels away from the mouse.
 
-	```blocks
-		when flag clicked
-		point in direction (0 v)
-		go to x: (-215) y: (-160)
-		forever
-			if < (distance to [mouse-pointer v]) > [5] > then
-				point towards [mouse-pointer v]
-				move (1) steps
-			end
-		end
-	```
+	![screenshot](boat-pointer.png)	
 
 + Test out your boat again, to check whether the problem has been fixed.
 
 ## Save your project { .save }
 
-# Step 2: Crashing! { .activity .new-page }
+# Step 3: Crashing! { .activity .new-page }
 
 Your boat can sail through the wooden barriers! Let's fix that.
 
 ## Activity Checklist { .check }
 
-+ You'll need 2 costumes for your boat, one normal costume, and one for when the boat crashes. Duplicate your boat costume, and name them 'hit' and 'not hit'.
++ You'll need 2 costumes for your boat, one normal costume, and one for when the boat crashes. Duplicate your boat costume, and name them 'normal' and 'hit'.
 
 + Click on your 'hit' costume, and choose the 'Select' tool to grab bits of the boat and move and rotate them around. Make your boat look as if it's crashed.
 
 	![screenshot](boat-hit-costume.png)
 
-+ Add this code to your boat, inside the `forever` {.blockcontrol} loop, so that it crashes when it touches any brown wooden barriers:
++ Add this code to your boat, inside the `forever` {.blockcontrol} loop, so that it crashes when it touches any brown wooden bits:
 
 	```blocks
-		if <touching color [#A36400]?> then
+		if <touching color [#603C15]?> then
 			switch costume to [hit v]
 			say [Noooooo!] for (1) secs
-			switch costume to [not hit v]
+			switch costume to [normal v]
 			point in direction (0 v)
 			go to x: (-215) y: (-160)
 		end
@@ -96,7 +92,7 @@ Your boat can sail through the wooden barriers! Let's fix that.
 
 	This code is inside the `forever` {.blockcontrol} loop, so that your code keeps checking if the boat has crashed.
 
-+ You should also make sure that your boat always starts looking like it's 'not hit'.
++ You should also make sure that your boat always starts looking like it's 'normal'.
 
 + Now if you try to sail through a wooden barrier, you should see that your boat crashes and moves back to the start.
 
@@ -107,7 +103,7 @@ Your boat can sail through the wooden barriers! Let's fix that.
 ## Challenge: Winning! {.challenge}
 Can you add another `if` {.blockcontrol} statement to your boat's code, so that the player wins when they get to the desert island?
 
-When the boat gets to the yellow sand, it should say 'YEAH!' and then the game should stop. You'll need to use this code:
+When the boat gets to the yellow desert island, it should say 'YEAH!' and then the game should stop. You'll need to use this code:
 
 ```blocks
 	say [YEAH!] for (1) secs
@@ -123,9 +119,9 @@ Can you add sound effects to your game, for when the boat crashes, or reaches th
 
 ## Save your project { .save }
 
-# Step 3: Time Trial { .activity }
+# Step 4: Time Trial { .activity }
 
-Let's add a timer to the game, so that the player has to get to the desert island as fast as possible.
+Let's add a timer to your game, so that the player has to get to the desert island as fast as possible.
 
 ## Activity Checklist { .check }
 
@@ -133,7 +129,7 @@ Let's add a timer to the game, so that the player has to get to the desert islan
 
 	![screenshot](boat-variable.png)
 
-+ Add this code to your _stage_, so that the timer counts up until the boat reaches the desert island:
++ Add this code to your __stage__, so that the timer counts up until the boat reaches the desert island:
 
 	```blocks
 		when flag clicked
@@ -150,7 +146,7 @@ Let's add a timer to the game, so that the player has to get to the desert islan
 
 ## Save your project { .save }
 
-# Step 4: Obstacles and power-ups { .activity }
+# Step 5: Obstacles and power-ups { .activity }
 
 This game is _far_ too easy - let's add things to make it more interesting.
 
@@ -168,26 +164,17 @@ This game is _far_ too easy - let's add things to make it more interesting.
 		end
 	```
 
-+ You can also add in a spinning gate, which your boat has to avoid. Add in a new sprite called 'Gate', which looks like this:
++ You can also add in a spinning gate, which your boat has to avoid. Add in a new sprite called 'gate', which looks like this:
 
 	![screenshot](boat-gate.png)
 
-+ Make sure that the colour of the gate is the same as the other wooden barriers.
-
-	![screenshot](boat-colour.png)
+	Make sure that the colour of the gate is the same as the other wooden barriers.
 
 + Set the center of the gate sprite.
 
 	![screenshot](boat-center.png)
 
-+ Add this code to your gate, to make it spin slowly:
-
-	```blocks
-		when flag clicked
-		forever
-			turn right (1) degrees
-		end
-	```
++ Add code to your gate, to make it spin slowly `forever` {.blockcontrol}.
 
 + Test out your game. You should now have a spinning gate that you must avoid.
 
@@ -196,11 +183,7 @@ This game is _far_ too easy - let's add things to make it more interesting.
 ## Save your project { .save }
 
 ## Challenge: More obstacles! {.challenge .new-page}
-Can you add more obstacles to your game? Here are some ideas to help you:
-
-+ You could add more wood to your backdrop, to make your game more difficult.
-
-![screenshot](boat-wood.png)
+Can you add more obstacles to your game? Here are some ideas:
 
 + You could add green slime to your backdrop, which slows the player down when they touch it. You can use a `wait` {.blockcontrol} block to do this:
 
@@ -210,7 +193,11 @@ Can you add more obstacles to your game? Here are some ideas to help you:
 
 ![screenshot](boat-algae.png)
 
-+ You could add a moving object, like a log or a shark! These blocks may help you:
++ You could add a moving object, like a log or a shark!
+
+![screenshot](boat-obstacles.png)
+
+These blocks may help you:
 
 ```blocks
 	move (1) steps
@@ -220,11 +207,9 @@ Can you add more obstacles to your game? Here are some ideas to help you:
 If your new object isn't brown, you'll need to add to your boat code:
 
 ```blocks
-	if <  <touching color [#A36400]?> or <touching [shark v]?> > then
+	if <  <touching color [#603C15]?> or <touching [shark v]?> > then
 	end
 ```
-
-![screenshot](boat-log.png)
 
 ## Save your project { .save }
 
@@ -238,7 +223,7 @@ Can you turn your game into a race between 2 players?
 + Change Player 2's starting position, by changing this code:
 
 ```blocks
-	go to x: (-215) y: (-160)
+	go to x: (-190) y: (-150)
 ```
 
 + Delete the code that uses the mouse to control the boat:

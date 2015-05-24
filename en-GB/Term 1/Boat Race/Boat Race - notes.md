@@ -11,11 +11,11 @@ In this project, children will learn how sprites can sense their environment.
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/29125780/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+You can find a completed version of this project <a href="http://scratch.mit.edu/projects/63958014/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
 
 + BoatRace.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/boat-resources](http://jumpto.cc/boat-resources), or in the downloadable project materials, which contains:
+There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/boatrace-resources](http://jumpto.cc/boatrace-resources), or in the downloadable project materials, which contains:
 
 + BoatRaceResources.sb2 
 
@@ -42,7 +42,3 @@ Project resources:
 + This is the first project in which much less step-by-step guidance is given. Use this as an opportunity to consolidate learning, and to start drawing on knowledge learnt in this and previous projects. 
 
 	For example, if children need help adding sound effects and music to their game, remind them of the work they did in the 'Rock Band' project. Encourage children to go back and look at the previous project notes for guidance.
-
-	The same is also true for movement of sprites. For example, a 'log' obstacle would move around the stage in a very similar way to the balloons in the 'Balloons' project!
-
-+ Although background and boat images have been provided to save time, children can make these themselves quite easily using the Scratch costume editor.
