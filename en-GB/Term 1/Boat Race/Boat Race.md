@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 You are going to learn how to make a game, in which you'll use the mouse to navigate a boat to a desert island.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/.../?autostart=false" frameborder="0"></iframe>
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
 	<img src="boat-final.png">
 </div>
 
