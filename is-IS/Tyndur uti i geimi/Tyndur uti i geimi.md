@@ -1,7 +1,7 @@
 ---
 title: Lost in Space
 level: Scratch 1
-language: en-GB
+language: is-IS
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
