@@ -88,12 +88,7 @@ Now that you have some sprites, let's add code to animate them!
 
 	![screenshot](space-animate.png)
 
-	Change the numbers in the code blocks, so that the code is exactly the same as in the image above. Here is the code that you should add:
-
-	```blocks
-		point towards [Earth v]
-		glide (1) secs to x:(0) y: (0)
-	```
+	Change the numbers in the code blocks, so that the code is exactly the same as in the image above.
 
 	To make the `point towards Earth` {.blockmotion} block, you'll have to drag on the block, and then click the down arrow to select your 'Earth' sprite.
 
@@ -155,47 +150,27 @@ You'll need to change the numbers in this block:
 
 # Step 3: Animating using loops { .activity .new-page }
 
+Another way of animating the spaceship is to tell it to move a small amount, lots of times.
+
 ## Activity Checklist { .check }
 
-+ Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area.
++ Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area.
 
 + Once you've removed your code, add this code instead:
 
 	![screenshot](space-loop.png)
 
-+ The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before.
++ The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a __loop__. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before.
 
-+ Using a loop to move the spaceship means that you can add more code inside the `repeat (100)` {.blockcontrol} loop to do interesting things. Add the `change color effect by 25` {.blocklooks} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
++ You can add more code to your loop, to do interesting things. Add the `change color effect by 25` {.blocklooks} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
 
-	```blocks
-		when FLAG clicked
-		point in direction (0 v)
-		go to x:(-150) y:(-150)
-		wait (1) secs
-		point towards [Earth v]
-		repeat (100)
-		    move (4) steps
-		    change [color v] effect by (25)
-		end
-	```
+	![screenshot](space-colour.png)
 
 + Click the flag to see your new animation.
 
-+ You can also improve your animation, by making the spaceship get smaller as it moves towards the Earth. Remember to also add code to the top of your animation, to make your spaceship full size to start with.
++ You can also make your spaceship get smaller as it moves towards the Earth. Remember to also add code to the top of your animation, to make your spaceship full size to start with.
 
-	```blocks
-		when FLAG clicked
-		set size to (100)%
-		point in direction (0 v)
-		go to x:(-150) y:(-150)
-		wait (1) secs
-		point towards [Earth v]
-		repeat (100)
-		    move (4) steps
-		    change [color v] effect by (25)
-		    change size by (-1)
-		end
-	```
+	![screenshot](space-size.png)
 
 + If you try out your animation now, you'll see that it looks much better than before!
 
