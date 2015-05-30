@@ -161,16 +161,7 @@ You'll need to change the numbers in this block:
 
 + Once you've removed your code, add this code instead:
 
-	```blocks
-		when FLAG clicked
-		point in direction (0 v)
-		go to x:(-150) y:(-150)
-		wait (1) secs
-		point towards [Earth v]
-		repeat (100)
-		    move (4) steps
-		end
-	```
+	![screenshot](space-loop.png)
 
 + The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a 'loop'. If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before.
 
