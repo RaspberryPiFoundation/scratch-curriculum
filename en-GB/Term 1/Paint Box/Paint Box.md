@@ -245,7 +245,7 @@ Let's allow the user to draw using a range of different pencil sizes.
 
 ## Save your project { .save }
 
-## Challenge: Shortcuts
+## Challenge: Shortcuts { .challenge }
 Can you create keyboard shortcuts for your commands? For example:
 
 + b = Switch to blue pen
@@ -257,7 +257,7 @@ You could even allow the user to change the pen width with the arrow keys!
 
 ## Save your project { .save }
 
-## Challenge: More pens {.challenge}
+## Challenge: More pens { .challenge }
 Can you add red, yellow and black pens to your paint program? You'll find all of the images you need in your 'Resources' folder. Remember to add keyboard shortcuts for these new pens!
 
 Can you use your pens to draw a picture?
