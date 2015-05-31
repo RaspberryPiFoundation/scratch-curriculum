@@ -147,7 +147,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 ## Save your project { .save }
 
-# Step 3: Making mistakes { .activity }
+# Step 3: Making mistakes { .activity .new-page }
 
 Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our project!
 
@@ -209,7 +209,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 ## Save your project { .save }
 
-# Step 4: Changing the pencil width { .activity }
+# Step 4: Changing the pencil width { .activity .new-page }
 
 Let's allow the user to draw using a range of different pencil sizes.
 

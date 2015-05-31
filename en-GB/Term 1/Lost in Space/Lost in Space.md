@@ -176,7 +176,7 @@ Another way of animating the spaceship is to tell it to move a small amount, lot
 
 ## Save your project { .save }
 
-# Step 4: More loops { .activity }
+# Step 4: More loops { .activity .new-page }
 
 ## Activity Checklist { .check }
 
