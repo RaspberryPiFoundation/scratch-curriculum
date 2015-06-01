@@ -1,4 +1,10 @@
-#NOTES PER ALS CAPS DE CLUB
+---
+title: Felix i Herbert — Notes per cpa de club
+language: ca-ES
+embeds: "*.png"
+materials: [""]
+...
+
 ##(Fèlix i Herbert)
 
 ####Introducció

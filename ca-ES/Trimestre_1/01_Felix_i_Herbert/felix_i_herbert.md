@@ -1,4 +1,11 @@
-Nivell 1
+---
+title: Felix i Herbert
+level: Scratch 1
+language: ca-ES
+stylesheet: scratch
+embeds: "*.png"
+materials: ["*.sb2"]
+...
 
 #Fèlix i Herbert
 
@@ -14,15 +21,14 @@ Construirem un joc on __el gat Fèlix__ i el ratolí __Herbert__ jugen a atrapar
 5. Creeu aquest programa:
 
 ```scratch
-
-	Quan la bandera verda es premi
-	fixa la rotació a esquerra-dreta
-	per sempre
-		apunta cap a punter del ratolí
-		mou-te 10 passos
-		següent vestit
-		toca la nota 62 durant 0.3 pulsacions
-	(fi del per sempre)
+quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   apunta cap a [punter del ratolí v]
+   mou-te (10) passos
+   següent vestit
+   toca el tambor (3 v) durant (0.3) pulsacions
+fi
 ```
 		
 ###Proveu el projecte
@@ -43,14 +49,13 @@ Proveu fent 6 clics al botó __encongir__.
 
 
 ```scratch
-	
-	Quan la bandera verda es premi
-	fixa la rotació a esquerra-dreta
-	per sempre
-		vés a punter del ratolí
-		apunta cap a Fèlix
-	(fi del per sempre)
-´´´
+quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   vés a [punter del ratolí v]
+   apunta cap a [Felix v]
+fi
+```
 
 ###Proveu el projecte
 __Feu clic a la bandera verda.__
@@ -64,22 +69,21 @@ En Herbert, segueix el punter del ratolí? En Fèlix persegueix al Herbert?
 __Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.__
 
 1. Modifiqueu el programa d'en Felix així:
-  
-´´´scratch
-	
-	Quan la bandera verda es premi
-	fixa la rotació a esquerra-dreta
-	per sempre
-		apunta cap al punter del ratolí
-		mou-te 10 passos
-		següent vestit
-		toca la nota 62 durant 0.3 pulsacions
-		si tocant Herbert llavors
-		    digues atrapat
-			espera 1 segons
-		(fi del si)
-	(fi del per sempre)
-´´´
+
+  
+```scratch
+quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   apunta cap a [punter del ratolí v]
+   mou-te (10) passos
+   següent vestit
+   toca el tambor (3 v) durant (0.3) pulsacions
+   si <tocant [herbert v]?>
+      digues [Atrapat!] durant (1) segons
+   fi
+fi
+```
 
 ###Proveu el projecte
 __Feu clic a la bandera verda.__
@@ -92,24 +96,24 @@ En Fèlix diu quan ha atrapat en Herbert?
 __En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en un fantasma quan l'atrapin.__
 
 1. Canvieu el programa d'en Fèlix per tal d'enviar aquest missatge quan atrapi en Herbert.
-  
-´´´scratch
-	
-	Quan la bandera verda es premi
-	fixa la rotació a esquerra-dreta
-	per sempre
-		apunta cap al punter del ratolí
-		mou-te 10 passos
-		següent vestit
-		toca la nota 62 durant 0.3 pulsacions
-		si tocant Herbert llavors
-		    digues atrapat
-			envia a tots atrapat
-			toca la nota 59 durant 0.2 pulsacions
-			espera 1 segons
-		(fi del si)
-	(fi del per sempre)
-´´´
+
+  
+```scratch
+quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   apunta cap a [punter del ratolí v]
+   mou-te (10) passos
+   mou-te (20) passos
+   següent vestit
+   toca el tambor [3 v] durant (0.3) pulsacions
+   si <tocant [herbert v]?> llavors
+      envia a tots [caught v]
+      toca el tambor [17 v] durant (0.2) pulsacions
+      espera (1) segons
+   fi
+fi
+```
 
 
 2. Importeu un nou vestit per en Herbert de __fantasy/ghost2-a__.
@@ -118,12 +122,12 @@ __En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en
 5. Creeu un nou programa per tal de convertir en Herbert en un fantasma:
 
 ```scratch
-	
-	al rebre atrapat
-	canvia el vestit a fantasma
-	espera 0.5 segons
-	canvia el vestit a viu
-´´´	
+en rebre [caught v]
+canvia el vestit a [fantasma v]
+espera (1) segons
+canvia el vestit a [viu v]
+```
+
 ###Proveu el projecte
 __Feu clic a la bandera verda.__
 
@@ -142,17 +146,17 @@ Començarem amb el marcador a zero i l'incrementarem una unitat cada segon. Si e
 2. Creeu aquests dos programes a l'escenari
 
 ```scratch
-	
-	Quan la bandera verda es premi
-	assigna a puntuacio el valor 0
-	per sempre
-		augmenta puntuació en  1 
-		espera 1 segons
-	(fi del per sempre)
-		
-	al rebre atrapat
-	augmenta puntuació en -100 
-´´´
+quan la @ es premi
+fixa [score v] a [0]
+per sempre
+   augmenta [score v] en (1)
+   espera (1) segons
+fi
+
+en rebre [caught v]
+augmenta [score v] en (-100)
+```
+
 ###Proveu el projecte
 __Feu click a la bandera verda.__
 
