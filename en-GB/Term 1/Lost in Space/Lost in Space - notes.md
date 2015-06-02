@@ -46,3 +46,5 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + The 'spaceship' sprite will move sideways unless it is rotated 90 degrees clockwise. Rotating the spaceship is part of the project instructions, but another sprite can be substituted for the spaceship if this is causing problems.
 
 	![screenshot](space-rotate.png)
+
++ On Linux, right-clicking to delete a sprite may not work. If this is the case, holding shift and left-clicking will bring up the menu to delete a sprite.
