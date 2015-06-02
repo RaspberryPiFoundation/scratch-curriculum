@@ -123,7 +123,7 @@ Let's add a singer to your band!
 ##Challenge: Changing your singer's costume { .challenge }
 Can you make your singer look like she is singing when clicked? If you need help, you can use the instructions for creating a drum above.
 
-	![screenshot](band-singer-final.png)
+![screenshot](band-singer-final.png)
 
 Remember to test that your new code works!
 
