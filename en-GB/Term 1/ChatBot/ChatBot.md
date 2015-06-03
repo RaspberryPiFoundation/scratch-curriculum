@@ -188,16 +188,16 @@ You can also program your chatbot to change its location.
 
 ## Activity Checklist { .check }
 
-+ Add another backdrop to your stage, and make sure that it has a useful name (for example 'bedroom2').
++ Add another backdrop to your stage, for example the 'moon' backdrop.
 
-	![screenshot](chatbot-bedroom.png)
+	![screenshot](chatbot-moon.png)
 
 + You can now program your chatbot to change location, by adding this code to your chatbot:
 
 	```blocks
-		ask [I'm going home, do you want to come with me?] and wait
+		ask [I'm going to the moon. Do you want to come with me?] and wait
 		if ((answer) = [yes]) then
-			switch backdrop to [bedroom2 v]
+			switch backdrop to [moon v]
 		end
 	```
 
@@ -205,7 +205,7 @@ You can also program your chatbot to change its location.
 
 	![screenshot](chatbot-outside.png)
 
-+ Test your program, and answer `yes` when asked if you want to go home. You should see that the chatbot's location has changed.
++ Test your program, and answer `yes` when asked if you want to go to the moon. You should see that the chatbot's location has changed.
 
 	![screenshot](chatbot-backdrop.png)
 
