@@ -70,7 +70,7 @@ If you're using Scratch online, you can then click 'File' and then 'Save now' to
 
 ![screenshot](space-save.png)
 
- Clicking 'Save now' adds your program to your 'stuff', which you can access by clicking 'File', and then clicking 'Go to My Stuff'.
+Clicking 'Save now' adds your program to your 'stuff', which you can access by clicking 'File', and then clicking 'Go to My Stuff'.
 
 ![screenshot](space-stuff.png)
 

@@ -25,14 +25,12 @@ Let's start by creating a controller, that will be used to collect dots.
 
 + Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ For this project, you should have a 'Project Resources' folder, containing the controller image you can use. Make sure that you can find this folder, and ask your club leader if you can't find it.
-
-	![screenshot](dots-resources.png)
-
-+ From this 'Project Resources' folder, import 'controller.png' as a new sprite. If you don't have this image you can draw it yourself! You should also make the stage black. Here's how your stage should look:
++ If your club leader has given you a 'Resources' folder, click 'Upload sprite from file' and add the 'controller.png' image. You should move this sprite to the center of the stage.
 
 	![screenshot](dots-controller.png)
-
+	
+	If you don't have this image, you can draw it yourself!
+	
 + You can move your controller really easily, by turning it left or right when the arrows are pressed:
 
 	```blocks
