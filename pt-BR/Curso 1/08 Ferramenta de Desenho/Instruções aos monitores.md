@@ -1,5 +1,0 @@
-#Instruções aos monitores
-##(Feramenta de desenho)###IntroductionNeste projeto, vamos criar uma ferramenta de pintura para criar desenhos. Esta ferramenta permitirá escolher a cor do lápis, limpar a tela, usar carimbos e muito mais!###CompetênciasEste projeto abrange* Mover objetos;* Desenhar usando canetas;* Anunciar e ouvir eventos* Mudar de traje* Definir restrições* Construindo e usando expressões booleanas ###RecursosEste projeto usa recursos disponíveis na pasta recursos. Certifique-se que exista uma cópia da pasta recurso na área de trabalho de cada computador, para que os alunos possam acessá-la.##Exercícios BásicosPasso 1: Arrastando e desenhandoPasso 2: ApagandoPasso 3: Mudando de corPasso 4: Desenhando dentro da margem 
-Passo 5: BorrachaPasso 6: Carimbos￼
-##Desafios1. Caneta Arco-Íris2. Atalhos de teclado 
-3. Maior ou menor
