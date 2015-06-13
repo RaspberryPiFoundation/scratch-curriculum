@@ -146,7 +146,7 @@ Let's add signs to your world, to guide your player on their journey.
 
 ## Activity Checklist { .check }
 
-+ Upload the image 'sign.png' as a new sprite, and rename the sprite 'welcome sign'.
++ Upload the image 'sign.svg' as a new sprite, and rename the sprite 'welcome sign'.
 
 	![screenshot](world-sign.png)
 
@@ -186,7 +186,7 @@ Let's add signs to your world, to guide your player on their journey.
 ## Save your project { .save }
 
 ## Challenge: Treasure! {.challenge}
-Can you add a new treasure chest sprite, using the image 'chest.png'. This treasure chest should be placed in room 3, and should say 'Well done!' when the player touches it.
+Can you add a new treasure chest sprite, using the image 'chest.svg'. This treasure chest should be placed in room 3, and should say 'Well done!' when the player touches it.
 
 ![screenshot](world-treasure.png)
 
@@ -264,7 +264,7 @@ Can you create another enemy in room 3, that patrols up and down through the gap
 
 + Add a new variable valled `coins` {.blockdata} to your project.
 
-+ Add a new 'coins' sprite to your project.
++ Add a new 'coin' sprite to your project.
 
 ![screenshot](world-coins.png)
 
@@ -293,7 +293,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 
 ## Activity Checklist { .check }
 
-+ Create a new sprite from your 'key-blue.png' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
++ Create a new sprite from your 'key-blue.svg' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
 
  	![screenshot](world-key.png)
 
