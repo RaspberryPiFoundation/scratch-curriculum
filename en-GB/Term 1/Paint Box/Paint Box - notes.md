@@ -22,7 +22,7 @@ There is also a version of this project with the external resources pre-loaded. 
 This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
 
 Project resources:
-+ eraser.png
++ eraser.svg
 
 #Learning Objectives
 + Importing images;
