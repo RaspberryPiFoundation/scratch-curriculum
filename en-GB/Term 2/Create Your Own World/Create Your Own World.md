@@ -268,23 +268,23 @@ Can you create another enemy in room 3, that patrols up and down through the gap
 
 ![screenshot](world-coins.png)
 
-+ Add code to your coins, so that they only appear in room 1.
++ Add code to your coin, so that it only appears in room 1.
 
-+ Add code to your coin sprite, to add 3 to your `coins` {.blockdata} once they've been picked up:
++ Add code to your coin sprite, to add 1 to your `coins` {.blockdata} once they've been picked up:
 
 	```blocks
 		when flag clicked
 		wait until <touching [player v]?>
-		change [coins v] by (3)
+		change [coins v] by (1)
 		stop [other scripts in sprite v]
 		hide
 	```
 
-	The code `stop other scripts in sprite` {.blockcontrol} is needed so that the coins stop being displayed in room 1 once they've been collected.
+	The code `stop other scripts in sprite` {.blockcontrol} is needed so that the coin stops being displayed in room 1 once it's been collected.
 
 + You'll also need to add code to set your `coins` {.blockdata} variable to 0 at the start of your game.
 
-+ Test your project - collecting your coins should change your score to 3
++ Test your project - collecting your coins should change your score to 1.
 
 ## Challenge: More coins {.challenge}
 Can you add more coins to your game? They can be in different rooms, and some coins could even be guarded by patroling enemies.
