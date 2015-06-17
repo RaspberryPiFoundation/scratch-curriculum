@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 ##Introduktion {.intro}
 I det här projektet kommer du att designa och skapa ett eget spel för dig och dina vänner! 

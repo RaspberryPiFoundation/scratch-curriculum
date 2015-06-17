@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
-...
+---
 
 # Введение { .intro}
 В этом проекте мы создадим фейерверк над городом

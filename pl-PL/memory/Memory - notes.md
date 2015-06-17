@@ -3,7 +3,7 @@ title: Memory — Informacje dla prowadzącego
 language: pl-PL
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Wstęp
 Realizując ten projekt dzieci uczą się jak używać list do przechowywania danych, a także jak wykorzystać własne bloki (funkcje) do uproszczenia kodu programu.

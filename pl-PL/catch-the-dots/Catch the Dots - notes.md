@@ -3,7 +3,7 @@ title: Catch the Dots — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project children will learn how to make a game, in which the player has to match up coloured dots with the corresponding part of the controller.

@@ -2,7 +2,7 @@
 title: Stwórz własną grę — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: "*.png"
-...
+---
 
 #Wstęp
 Tym razem zaprojektujesz i stworzysz swoją własną grę! Potrzebujesz wymyślić plan gry, ustalić, jakie elementy będą potrzebne i stworzyć je w Scratchu. Możesz użyć poprzednie projekty jako inspirację.

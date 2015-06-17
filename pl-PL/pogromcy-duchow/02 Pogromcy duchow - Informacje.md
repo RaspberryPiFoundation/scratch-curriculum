@@ -2,7 +2,7 @@
 title: Pogromcy duchów — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: "*.png"
-...
+---
 
 # Wstęp
 Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.

@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 # Introduktion {.intro}
 

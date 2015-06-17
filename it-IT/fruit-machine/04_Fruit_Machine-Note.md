@@ -2,7 +2,7 @@
 title: Fruit Machine — Note per i Club Leaders                  
 language: it-IT
 embeds: "*.png"
-...
+---
 
 #Introduzione:
 Questo e' il gioco della Slot Machine. E' un gioco che ha 3 sprite che cambiano il loro aspetto (costume). Lo scopo e' di fermare i 3 sprite sullo stesso frutto (come una Slot Machine).

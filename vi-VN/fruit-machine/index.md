@@ -6,7 +6,7 @@ language: en-GB
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
-...
+---
 
 # Introduction {.intro}
 This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).

@@ -2,7 +2,7 @@
 title: Pappagallo Flappy — Note per i Club Leaders                  
 language: it-IT
 embeds: "*.png"
-...
+---
 
 # Introduzione
 In questo progetto creaiamo la nostra versione del famosissimo gioco per mobile chiamato Flappy Bird. Questo progetto necessita di Scratch 2.0.

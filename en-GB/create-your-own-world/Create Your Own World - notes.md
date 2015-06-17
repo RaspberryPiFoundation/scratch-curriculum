@@ -3,7 +3,7 @@ title: Create Your Own World — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to make their own open-world game, making use of all Scratch concepts and skills that have been learnt in previous projects.

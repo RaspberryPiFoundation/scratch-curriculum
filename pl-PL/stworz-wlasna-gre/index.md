@@ -5,7 +5,7 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb"
-...
+---
 
 # Wstęp
 Tym razem zaprojektujesz i stworzysz swoją własną grę! Potrzebujesz wymyślić plan gry, ustalić, jakie elementy będą potrzebne i stworzyć je w Scratchu. Możesz użyć poprzednich projektów jako inspirację.

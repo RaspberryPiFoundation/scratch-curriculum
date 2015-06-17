@@ -2,7 +2,7 @@
 title: Kolorowe kredki — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: "*.png"
-...
+---
 
 #Wstęp
 

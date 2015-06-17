@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 note: "notas para coordinadores.md"
 materials: ["*.sb2", "Resources/*.wav", "Resources/*.png"]
-...
+---
 
 # Introducción { .intro }
 

@@ -3,7 +3,7 @@ title: Space Junk — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to use loops, decisions and variables to create a simple game.

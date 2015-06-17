@@ -2,7 +2,7 @@
 title: Acchiappa Fantasmi  — Note per i Club Leaders 
 language: it-IT
 embeds: "*.png"
-...
+---
 
 #Introduzione
 Questo progetto e' simile al gioco da luna park chiamato whack-a-mole (colpisci la talpa). Ottieni dei punti se colpisci i fantasmi che appaiono sul video. Lo scopo del gioco e' totalizzare il piu' alto punteggio possibile in 30 secondi.

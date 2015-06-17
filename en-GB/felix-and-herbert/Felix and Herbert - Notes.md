@@ -3,7 +3,7 @@ title: Felix and Herbert — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: ["Resources/*.png"]
-...
+---
 
 #Introduction:
 We are going to make a game of catch with Felix the cat and Herbert the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down! This is a simple project to introduce the basics of Scratch.

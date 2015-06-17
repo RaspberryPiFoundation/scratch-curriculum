@@ -2,7 +2,7 @@
 title: Crea il tuo gioco — Note per i Club Leaders           
 language: it-IT
 embeds: "*.png"
-...
+---
 
 
 # Introduzione { .intro}

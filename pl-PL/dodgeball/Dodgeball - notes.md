@@ -3,7 +3,7 @@ title: Dodgeball — Informacje dla prowadzącego
 language: pl-PL
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Wstęp
 Realizując ten projekt dzieci uczą się jak zrobić grę platformową korzystając z umiejętności zdobytych przy realizacji poprzednich projektów.

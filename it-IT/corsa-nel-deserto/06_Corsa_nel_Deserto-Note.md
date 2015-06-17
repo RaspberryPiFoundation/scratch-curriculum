@@ -2,7 +2,7 @@
 title: Corsa nel Deserto — Note per i Club Leaders                  
 language: it-IT
 embeds: "*.png"
-...
+---
 
 # Introduzione
 In questo esercizio sviluppiamo un gioco per due giocatori. Lo scopo e' di far gareggiare un pappagallo ed un leone nel deserto. Ogni giocatore deve premere un tasto il piu' velocmente possibile per far correre il proprio animale. Il primo che raggiunge il bordo dello schermo vince.

@@ -4,7 +4,7 @@ level: Code Kingdoms
 language: en-GB
 stylesheet: scratch
 embeds: ["*.png", "CK_Help1.pdf"]
-...
+---
 
 # Code Kingdoms { .intro }
 

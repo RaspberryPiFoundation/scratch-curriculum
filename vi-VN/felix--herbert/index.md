@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 materials: "Felix-and-Herbert.sb2"
 note: "notes for club leaders.md"
-...
+---
 
 # Giới thiệu { .intro}
 Chúng ta sẽ cùng làm một trò chơi đuổi bắt với __mèo Felix__ và chuột __Herbert__. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!

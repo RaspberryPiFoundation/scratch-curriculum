@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
-...
+---
 
 # Introduction { .intro}
 The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!

@@ -3,7 +3,7 @@ title: Rock Band — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to add sound and music to their projects, as well as changing and programming sprite costumes.

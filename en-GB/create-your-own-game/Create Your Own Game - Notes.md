@@ -2,7 +2,7 @@
 title: Make Your Own Game — Notes for Club Leaders           
 language: en-GB
 embeds: "*.png"
-...
+---
 
 #NOTES FOR CLUB LEADERS
 (Make Your Own Game)

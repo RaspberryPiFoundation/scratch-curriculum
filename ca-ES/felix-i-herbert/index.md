@@ -5,7 +5,7 @@ language: ca-ES
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb2"]
-...
+---
 
 #Fèlix i Herbert
 

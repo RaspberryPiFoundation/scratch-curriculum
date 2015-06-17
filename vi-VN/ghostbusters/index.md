@@ -5,7 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
-...
+---
 
 # Giới thiệu { .intro}
 Dự án này gần giống trò chơi __Đập chuột__. Bạn ghi điểm khi đánh con ma xuất hiện trên màn hình. Mục tiêu là ghi thật nhiều điểm trong thời gian 30 giây.

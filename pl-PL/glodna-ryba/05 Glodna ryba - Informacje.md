@@ -2,7 +2,7 @@
 title: Głodna ryba — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: ["*.png"]
-...
+---
 
 # Wstęp
 Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu, aby udało jej się zjeść wszystkie krewetki.

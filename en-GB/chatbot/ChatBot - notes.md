@@ -3,7 +3,7 @@ title: ChatBot — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to use 'if' statements to make decisions in their programs.

@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*", "Project Resources/*.*"]
 beta: true
-...
+---
 
 # Introduction { .intro }
 

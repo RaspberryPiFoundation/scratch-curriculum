@@ -3,7 +3,7 @@ title: Brain Game — Informacje dla prowadzącego
 language: pl-PL
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Wstęp
 Ten projekt uczy dzieci, jak wykonać quiz z tabliczki mnożenia, w którym gracz musi poprawnie odpowiedzieć jak najwięcej razy w ciągu 30 sekund.

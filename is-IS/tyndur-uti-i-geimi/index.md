@@ -5,7 +5,7 @@ language: is-IS
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
-...
+---
 
 # Introduction { .intro }
 

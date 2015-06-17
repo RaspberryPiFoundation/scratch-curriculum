@@ -5,7 +5,7 @@ language: it-IT
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb2", "*.pdf"]
-...
+---
 
 # Introduzione { .intro }
 

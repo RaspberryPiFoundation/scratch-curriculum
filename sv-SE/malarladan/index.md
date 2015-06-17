@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 #Introduktion {.intro}
 I det här projektet bygger vi ett ritverktyg som du kan använda för att skapa din egen konst. Du kan byta färg, tömma skärmen, göra stämplar och mycket mer!

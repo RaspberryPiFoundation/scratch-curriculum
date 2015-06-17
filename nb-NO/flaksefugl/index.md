@@ -5,7 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb2"
-...
+---
 
 # Introduksjon { .intro}
 __I denne oppgaven skal vi lage vår egen versjon av spillet Flappy Bird.__

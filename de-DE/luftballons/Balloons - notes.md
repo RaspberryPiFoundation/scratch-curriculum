@@ -4,7 +4,7 @@ language: de-DE
 embeds: "*.png"
 materials: [""]
 base: https://github.com/CodeClub/scratch-curriculum/blob/master/en-GB/Term%201/Balloons/Balloons%20-%20notes.md
-...
+---
 
 #Einführung:
 In diesem Projekt werden die Kindern lernen wie sie Variablen benutzen können um Daten in ihren Programmen abzuspeichern.

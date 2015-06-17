@@ -5,7 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb2"
-...
+---
 
 # Introduction { .intro}
 __In this project we’ll make our own version of the highly popular mobile game Flappy Bird. This project requires Scratch 2.0.__

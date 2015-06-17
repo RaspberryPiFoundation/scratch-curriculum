@@ -2,7 +2,7 @@
 title: Regali di Natale — Note per i Club Leaders                  
 language: it-IT
 embeds: "*.png"
-...
+---
 
 # Introduzione
 In questo progetto creiamo un gioco con uno sfondo scorrevole, con un punteggio e con una schermata di Game Over

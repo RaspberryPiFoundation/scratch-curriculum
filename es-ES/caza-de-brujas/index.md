@@ -5,7 +5,7 @@ language: es-ES
 stylesheet: scratch
 embeds: "*.png"
 note: "notas para coordinadores.md"
-...
+---
 
 # Introducción { .intro}
 En este proyecto vamos a __Cazar Brujas__. Consigues puntos por golpear a los fantasmas que aparecen en la pantalla. ¡La meta es conseguir todos los puntos que puedas en 30 segundos!

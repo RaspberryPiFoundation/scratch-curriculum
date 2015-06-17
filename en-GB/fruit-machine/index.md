@@ -5,7 +5,7 @@ stylesheet: scratch
 language: en-GB
 embeds: "*.png"
 materials: ["*.sb2","Broadcast Scratchcard.pdf"]
-...
+---
 
 # Introduction { .intro }
 

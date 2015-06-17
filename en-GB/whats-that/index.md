@@ -5,7 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb2","Timer Scratchcard.pdf"]
-...
+---
 
 # Introduction {.intro}
 

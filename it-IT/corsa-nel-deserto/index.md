@@ -5,7 +5,7 @@ language: it-IT
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb2", "*.pdf"]
-...
+---
 
 # Introduzione {.intro}
 In questo esercizio sviluppiamo un gioco per due giocatori. Lo scopo e' di far gareggiare un pappagallo ed un leone nel deserto. Ogni giocatore deve premere un tasto il piu' velocmente possibile per far correre il proprio animale. Il primo che raggiunge il bordo dello schermo vince.

@@ -3,7 +3,7 @@ title: Balloons — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to use variables to store data in their programs.

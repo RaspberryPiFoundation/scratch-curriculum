@@ -3,7 +3,7 @@ title: Dodgeball — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to make a platform game, making use of Scratch concepts and skills that have been learnt in previous projects.

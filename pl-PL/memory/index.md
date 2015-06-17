@@ -5,7 +5,7 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
-...
+---
 
 ## Projekt stworzony przez społeczność { .challenge .pdf-hidden }
 Ten projekt stworzył Erik wraz ze swoją córką Ruth. Jeśli też chcesz podzielić się swoim projektem [odwiedź nas na GitHubie](https://github.com/CodeClub).

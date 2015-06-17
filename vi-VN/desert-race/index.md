@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
-...
+---
 
 # Introduction { .intro}
 This game is a two player game where you race a parrot and a lioness across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.

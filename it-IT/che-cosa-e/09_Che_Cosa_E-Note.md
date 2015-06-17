@@ -2,7 +2,7 @@
 title: Che Cos'e'? — Notes per i Club Leaders           
 language: it-IT
 embeds: "*.png"
-...
+---
 
 # Introduzione
 

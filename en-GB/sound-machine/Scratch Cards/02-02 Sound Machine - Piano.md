@@ -4,7 +4,7 @@ level: Level 5
 language: en-GB
 stylesheet: scratch
 materials: "*.sb2"
-...
+---
 
 ## Activity Checklist { .check}
 

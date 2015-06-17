@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 # Introduktion {.intro}
 I det här spelet finns tre sprites som ändrar klädslar. Du ska stoppa dem när de visar samma bild (som en enarmad bandit!).

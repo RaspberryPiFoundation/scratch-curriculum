@@ -3,7 +3,7 @@ title: Clone Wars — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project children will learn how to make a game, in which the player controls a spaceship that can fire lightning bolts at enemies.

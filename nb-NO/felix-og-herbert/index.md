@@ -3,7 +3,7 @@ title: Felix og Herbert
 level: 1.1
 language: nb-NO
 embeds: ["*.png"]
-...
+---
 
 # Felix og Herbert
 

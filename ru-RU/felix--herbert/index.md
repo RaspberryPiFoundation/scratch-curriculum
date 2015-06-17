@@ -5,7 +5,7 @@ language: ru-RU
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb"]
-...
+---
 
 Уровень 1
 

@@ -2,7 +2,7 @@
 title: Fireworks — Notes for Club Leaders                  
 language: en-GB
 embeds: "*.png"
-...
+---
 
 #Introduction
 This interactive toy shows fireworks exploding in the sky wherever you click and plays the sound of the fireworks exploding.

@@ -3,7 +3,7 @@ title: Memory — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 In this project, children will learn how to use list variables to store data, as well as how simple custom blocks (functions) can be used to simplify their programs.

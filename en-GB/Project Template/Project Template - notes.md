@@ -3,7 +3,7 @@ title: Project Template — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: [""]
-...
+---
 
 #Introduction:
 Explain the project, focusing on what children will learn. Remember that these notes will be read by club leaders and not children.

@@ -2,7 +2,7 @@
 title: Jednoręki bandyta — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: "*.png"
-...
+---
 
 # Wstęp
 Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Jeżeli po zatrzymaniu wszystkie duszki wyglądają tak samo – gratulacje! Tak jak w jednorękim bandycie, takie same duszki wygrywają.

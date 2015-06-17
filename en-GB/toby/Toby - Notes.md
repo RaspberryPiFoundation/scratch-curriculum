@@ -3,7 +3,7 @@ title: Toby - Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 materials: ["*.sb2"]
-...
+---
 
 #Introduction:
 In this project, we are going to create a simple game in which Toby the dog has to collect 5 cheese-puffs bowls to win, whilst preventing balls from falling on the floor. If Toby drops more than 2 balls, the game is over.

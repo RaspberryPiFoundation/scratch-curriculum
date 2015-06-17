@@ -5,7 +5,7 @@ language: es-ES
 stylesheet: scratch
 embeds: "*.png"
 note: "notas para coordinadores.md"
-...
+---
 
 # Introducción { .intro}
 Vamos a crear un juego en el que __el gato Félix__ y __el ratón Hérbert__ juegan a pillarse. Tú controlarás a Hérbert con el ratón para evitar que lo pille Félix. Cuanto más tiempo puedas evitarlo, más puntos te dará el juego, pero ten cuidado porque ¡perderás puntos si te pilla!

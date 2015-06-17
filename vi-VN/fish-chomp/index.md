@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
-...
+---
 
 # Introduction { .intro}
 We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.

@@ -4,7 +4,7 @@ level: Nivå 2
 language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
-...
+---
 
 ##Introduktion {.intro}
 __I det här projektet kommer vi att skapa ett spel med rullande bakgrunder, poängsättning och en festlig Game Over-skärm.__

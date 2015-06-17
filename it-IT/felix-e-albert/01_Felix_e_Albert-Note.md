@@ -3,7 +3,7 @@ title: Felix e Albert — Note per i Club Leaders
 language: it-IT
 embeds: "*.png"
 materials: ["Resources/*.png"]
-...
+---
 
 #Introduzione:
 In questo esercizio creiamo un gioco dove il gatto __Felix__ deve inseguire e catturare il topolino __Albert__ . Il giocatore controlla Albert con il mouse e deve cercare di evitare di essere catturato da Felix. Piu' a lungo si riesce ad evitare Felix e piu' punti si accumulano ma fa attenzione a non essere catturato perche' il tuo punteggio scendera tantissimo! Questo e' un semplice progretto per introdurre e spiegare i fondamenti dell'ambiente Scratch.

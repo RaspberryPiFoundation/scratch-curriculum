@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
-...
+---
 
 # Lời giới thiệu { .intro}
 Lần này, chúng ta sẽ tạo một màn hình pháo hóa trong một thành phố.

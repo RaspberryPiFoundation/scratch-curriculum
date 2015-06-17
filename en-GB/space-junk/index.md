@@ -5,7 +5,7 @@ language: en-GB
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
-...
+---
 
 ## Scratch Day: May 9th 2015 { .challenge .pdf-hidden }
 

@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 # Introduktion {.intro}
 Vi ska göra ett spel om en hunrgig fisk! Styr den stora Hungriga Fisken och försök att äta upp alla kräftor som simmar omkring.

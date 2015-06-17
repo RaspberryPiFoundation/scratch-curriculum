@@ -2,7 +2,7 @@
 title: Pustynny wyścig — Informacje dla prowadzących zajęcia
 language: pl-PL
 embeds: "*.png"
-...
+---
 
 #Wstęp
 Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierze, które pierwsze dotrze do krawędzi ekranu, wygrywa.

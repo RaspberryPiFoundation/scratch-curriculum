@@ -3,7 +3,7 @@ title: Sound machine
 level: Scratch +
 language: en-GB
 stylesheet: scratch
-...
+---
 
 In this project you will design your own sound machine then write a song with it and record your song all using Scratch!
 

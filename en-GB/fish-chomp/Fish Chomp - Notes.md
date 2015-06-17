@@ -2,7 +2,7 @@
 title: Fish Chomp — Notes for Club Leaders                  
 language: en-GB
 embeds: "*.png"
-...
+---
 
 #Introduction
 We’re going to make a Fish Chomp game! Guide the large Hungry Fish around and try to eat all the prey that are swimming around.

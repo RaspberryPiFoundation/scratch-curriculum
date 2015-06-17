@@ -2,7 +2,7 @@
 title: Fuochi Artificiali — Note per i Club Leaders                  
 language: it-IT
 embeds: "*.png"
-...
+---
 
 #Introduzione
 Questo gioco interattivo permette di far esplodere dei fuochi artificiali nel cielo di una citta' nel punto in cui si fa click con il mouse ed ascoltarne il boato.

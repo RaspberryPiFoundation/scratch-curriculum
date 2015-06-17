@@ -2,7 +2,7 @@
 title: Fruit Machine — Notes for Club Leaders                  
 language: en-GB
 embeds: "*.png"
-...
+---
 
 #Introduction:
 This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).

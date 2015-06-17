@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 # Introduktion {.intro}
 Det här är ett spel för två personer där en papegoja och ett lejon har kapplöpning genom öknen. Varje spelare ska slå på en tangent så fort den kan för att flytta på sitt djur, och den första som når kanten på skärmen vinner.

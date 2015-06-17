@@ -6,7 +6,7 @@ stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
 beta: true
-...
+---
 
 ## Community Contributed Project { .challenge .pdf-hidden }
 This project was created with Erik. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).

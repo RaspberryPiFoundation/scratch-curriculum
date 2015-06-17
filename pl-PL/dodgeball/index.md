@@ -5,7 +5,7 @@ language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
-...
+---
 
 # Wstęp { .intro }
 

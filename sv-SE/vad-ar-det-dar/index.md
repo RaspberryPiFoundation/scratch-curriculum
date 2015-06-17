@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 note: "till_instruktorerna.md"
-...
+---
 
 #Introduktion {.intro}
 Ett slumpvist valt föremål visas på svarta tavlan, fast alldeles otydligt. Du ska gissa vad det är genom att klicka på rätt bild under. Ju fortare du gissar, desto högre poäng får du!

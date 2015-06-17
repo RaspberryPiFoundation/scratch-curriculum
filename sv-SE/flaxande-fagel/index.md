@@ -5,7 +5,7 @@ language: sv-SE
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb2"
-...
+---
 
 # Introduktion { .intro}
 __I det här projektet ska vi göra vår egen version av det väldigt populära spelet Flappy Bird. Projektet kräver Scratch 2.0.__

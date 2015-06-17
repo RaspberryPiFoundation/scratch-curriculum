@@ -2,7 +2,7 @@
 title: Coloriamo — Note per i Club Leaders     
 language: it-IT
 embeds: "*.png"
-...
+---
 
 # Introduzione {.intro}
 
