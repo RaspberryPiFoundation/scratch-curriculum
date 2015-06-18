@@ -1,9 +1,7 @@
 ---
 title: Охотники за привидениями
 level: Уровень 1
-language: ru-RU
-stylesheet: scratch
-embeds: "*.png"
+notes: "notes for club leaders.md"
 ---
 
 # Введение { .intro}

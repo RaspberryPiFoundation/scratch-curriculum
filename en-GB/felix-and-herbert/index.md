@@ -1,10 +1,8 @@
 ---
 title: Felix and Herbert
 level: Scratch 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Felix-and-Herbert.sb2"]
+notes: "Felix and Herbert - Notes.md"
 ---
 
 # Introduction { .intro }

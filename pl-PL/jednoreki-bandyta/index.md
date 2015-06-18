@@ -1,10 +1,10 @@
 ---
 title: Jednoręki bandyta
 level: Poziom 2
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb"
+pdf: "04 Jednoreki bandyta.pdf"
+notes: "04 Jednoreki bandyta - Informacje.md"
+notes_pdf: "04 Jednoreki bandyta - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

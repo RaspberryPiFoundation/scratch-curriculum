@@ -1,7 +1,5 @@
 ---
 title: Fuochi Artificiali — Note per i Club Leaders                  
-language: it-IT
-embeds: "*.png"
 ---
 
 #Introduzione

@@ -1,10 +1,7 @@
 ---
 title: Fuegos Artificiales
 level: Nivel 1
-language: es-ES
-stylesheet: scratch
-embeds: "*.png"
-note: "notas para coordinadores.md"
+notes: "notas para coordinadores.md"
 materials: ["*.sb2", "Resources/*.wav", "Resources/*.png"]
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Co to jest
 level: Poziom 3
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb"
+pdf: "07 Co to jest.pdf"
+notes: "07 Co to jest - Informacje.md"
+notes_pdf: "07 Co to jest - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

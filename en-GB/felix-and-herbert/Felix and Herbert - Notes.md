@@ -1,7 +1,5 @@
 ---
 title: Felix and Herbert — Notes for Club Leaders
-language: en-GB
-embeds: "*.png"
 materials: ["Resources/*.png"]
 ---
 

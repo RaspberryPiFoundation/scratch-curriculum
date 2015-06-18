@@ -1,10 +1,7 @@
 ---
 title: Create Your Own Game
 level: Уровень 3
-language: ru-RU
-stylesheet: scratch
-embeds: "*.png"
-note: "notes for club leaders.md"
+notes: "notes for club leaders.md"
 materials: "*.sb2"
 ---
 

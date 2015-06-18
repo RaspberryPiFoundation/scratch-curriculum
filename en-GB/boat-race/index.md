@@ -1,10 +1,8 @@
 ---
 title: Boat Race
 level: Scratch 1
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+index: "Boat Race - notes.md"
 ---
 
 # Introduction { .intro }

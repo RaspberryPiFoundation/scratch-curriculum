@@ -1,9 +1,6 @@
 ---
 title: Julskoj
 level: Nivå 2
-language: sv-SE
-stylesheet: scratch
-embeds: "*.png"
 ---
 
 ##Introduktion {.intro}

@@ -1,10 +1,10 @@
 ---
 title: Fajerwerki
 level: Poziom 1
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb"
+pdf: "03 Fajerwerki.pdf"
+notes: "03 Fajerwerki - Informacje.md"
+notes_pdf: "03 Fajerwerki - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

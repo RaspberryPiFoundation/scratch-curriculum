@@ -1,10 +1,10 @@
 ---
 title: Pustynny wyścig
 level: Poziom 2
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb"
+pdf: "06 Pustynny wyscig.pdf"
+notes: "06 Pustynny wyscig - Informacje.md"
+notes_pdf: "06 Pustynny wyscig - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

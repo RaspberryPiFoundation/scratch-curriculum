@@ -1,10 +1,9 @@
 ---
 title: Space Junk
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+notes: "Space Junk - notes.md"
+beta: true
 ---
 
 ## Scratch Day: May 9th 2015 { .challenge .pdf-hidden }

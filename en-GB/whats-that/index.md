@@ -1,10 +1,8 @@
 ---
 title: What's That
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2","Timer Scratchcard.pdf"]
+notes: "What's That - Notes.md"
 ---
 
 # Introduction {.intro}

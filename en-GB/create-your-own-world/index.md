@@ -1,10 +1,9 @@
 ---
 title: Create Your Own World
 level: Scratch 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+beta: true,
+notes: "Create Your Own World - notes.md"
 ---
 
 # Introduction { .intro }

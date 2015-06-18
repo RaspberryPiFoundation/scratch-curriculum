@@ -1,10 +1,10 @@
 ---
 title: Pogromcy duchów
 level: Poziom 1
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb"
+pdf: "02 Pogromcy duchow.pdf"
+notes: "02 Pogromcy duchow - Informacje.md"
+notes_pdf: "02 Pogromcy duchow - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

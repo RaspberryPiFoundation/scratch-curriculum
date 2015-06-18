@@ -1,7 +1,5 @@
 ---
 title: Regali di Natale — Note per i Club Leaders                  
-language: it-IT
-embeds: "*.png"
 ---
 
 # Introduzione

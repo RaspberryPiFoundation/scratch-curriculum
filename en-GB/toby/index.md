@@ -1,10 +1,9 @@
 ---
 title: Toby
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
+notes: "Toby - Notes.md"
+beta: true
 ---
 
 # Introduction { .intro}

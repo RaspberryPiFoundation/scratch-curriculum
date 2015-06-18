@@ -1,10 +1,8 @@
 ---
 title: ChatBot
 level: Scratch 1
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+notes: "ChatBot - notes.md"
 ---
 
 # Introduction { .intro }

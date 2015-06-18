@@ -1,10 +1,10 @@
 ---
 title: Acchiappa Fantasmi
 level: Level 1
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2", "*.pdf"]
+pdf: "02_Acchiappa_Fantasmi.pdf"
+notes: "02_Acchiappa_Fantasmi-Note.md"
+notes_pdf: "02_Acchiappa_Fantasmi-Note.pdf"
 ---
 
 # Introduzione { .intro }

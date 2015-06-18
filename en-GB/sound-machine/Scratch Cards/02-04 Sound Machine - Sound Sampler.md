@@ -1,9 +1,6 @@
 ---
 title: Scratch Card - Sound Sample
 level: Level 5
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
 ---
 

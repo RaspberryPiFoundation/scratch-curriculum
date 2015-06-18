@@ -1,10 +1,9 @@
 ---
 title: Memory
 level: Scratch 2
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+beta: true
+notes: "Memory - notes.md"
 ---
 
 ## Projekt stworzony przez społeczność { .challenge .pdf-hidden }

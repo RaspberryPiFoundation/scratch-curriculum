@@ -1,10 +1,8 @@
 ---
 title: Fish Chomp
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2", "Resources/*.mp3", "Resources/*.png","Timer Scratchcard.pdf"]
+notes: "Fish Chomp - Notes.md"
 ---
 
 # Introduction {.intro}

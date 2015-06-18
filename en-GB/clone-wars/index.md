@@ -1,11 +1,9 @@
 ---
 title: Clone Wars
 level: Scratch 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
 beta: true
+notes: "Clone Wars - notes.md"
 ---
 
 ## Community Contributed Project { .challenge .pdf-hidden }

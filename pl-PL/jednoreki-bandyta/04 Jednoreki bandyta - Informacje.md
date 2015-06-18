@@ -1,7 +1,5 @@
 ---
 title: Jednoręki bandyta — Informacje dla prowadzących zajęcia
-language: pl-PL
-embeds: "*.png"
 ---
 
 # Wstęp

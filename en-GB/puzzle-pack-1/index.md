@@ -1,9 +1,7 @@
 ---
 title: Puzzle Pack 1
 level: Code Kingdoms
-language: en-GB
-stylesheet: scratch
-embeds: ["*.png", "CK_Help1.pdf"]
+pdf: "CK_PuzzlePack1.pdf"
 ---
 
 # Code Kingdoms { .intro }

@@ -1,11 +1,8 @@
 ---
 title: Felix và Herbert
 level: Level 1
-language: vi-VN
-stylesheet: scratch
-embeds: "*.png"
 materials: "Felix-and-Herbert.sb2"
-note: "notes for club leaders.md"
+notes: "notes for club leaders.md"
 ---
 
 # Giới thiệu { .intro}

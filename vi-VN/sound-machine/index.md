@@ -1,8 +1,33 @@
 ---
 title: Sound machine
 level: Scratch +
-language: en-GB
-stylesheet: scratch
+materials: "For Leaders/Scratch Files/*.sb"
+notes: "For Leaders/Sound Machine - Notes.md"
+extras:
+    -
+        name: "Drum"
+        note: "Scratch Cards/02-01 Sound Machine - Drum.md"
+        pdf: "Scratch Cards/02-01 Sound Machine - Drum.pdf"
+    -
+        name: "Piano"
+        note: "Scratch Cards/02-02 Sound Machine - Piano.md"
+        pdf: "Scratch Cards/02-02 Sound Machine - Piano.pdf"
+    -
+        name: "Recorder"
+        note: "Scratch Cards/02-03 Sound Machine - Recorder.md"
+        pdf: "Scratch Cards/02-03 Sound Machine - Recorder.pdf"
+    -
+        name: "Sound Sampler"
+        note: "Scratch Cards/02-04 Sound Machine - Sound Sampler.md"
+        pdf: "Scratch Cards/02-04 Sound Machine - Sound Sampler.pdf"
+    -
+        name: "Record"
+        note: "Scratch Cards/02-05 Sound Machine - Record.md"
+        pdf: "Scratch Cards/02-05 Sound Machine - Record.pdf"
+    -
+        name: "Playback"
+        note: "Scratch Cards/02-06 Sound Machine - Playback.md"
+        pdf: "Scratch Cards/02-06 Sound Machine - Playback.pdf"
 ---
 
 In this project you will design your own sound machine then write a song with it and record your song all using Scratch!

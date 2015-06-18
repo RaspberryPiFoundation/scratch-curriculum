@@ -1,9 +1,6 @@
 ﻿---
 title: Christmas Capers
 level: Уровень 2
-language: ru-RU
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
 ---
 

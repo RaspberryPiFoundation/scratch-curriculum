@@ -1,7 +1,5 @@
 ---
 title: Co to jest — Informacje dla prowadzących zajęcia
-language: pl-PL
-embeds: "*.png"
 ---
 
 #Wstęp

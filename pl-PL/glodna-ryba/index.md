@@ -1,10 +1,10 @@
 ---
 title: Głodna ryba
 level: Poziom 2
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb", "Zasoby/*.mp3", "Zasoby/*.png"]
+pdf: "05 Glodna ryba.pdf"
+notes: "05 Glodna ryba - Informacje.md"
+notes_pdf: "05 Glodna ryba - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

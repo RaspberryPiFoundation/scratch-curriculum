@@ -1,7 +1,5 @@
 ---
 title: Memory — Informacje dla prowadzącego
-language: pl-PL
-embeds: "*.png"
 materials: [""]
 ---
 

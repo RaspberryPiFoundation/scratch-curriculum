@@ -1,7 +1,5 @@
 ---
 title: Notes for Club Leaders 
-language: ru-RU
-embeds: "*.png"
 ---
 
 #ЗАМЕТКИ ДЛЯ РУКОВОДИТЕЛЕЙ КЛУБА

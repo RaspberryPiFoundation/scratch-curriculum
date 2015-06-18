@@ -1,9 +1,6 @@
 ---
 title: Flaksefugl
 level: Level 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
 ---
 

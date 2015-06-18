@@ -1,11 +1,9 @@
 ---
 title: Catch the Dots
 level: Scratch 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*", "Project Resources/*.*"]
 beta: true
+notes: "Catch the Dots - notes.md"
 ---
 
 # Introduction { .intro }

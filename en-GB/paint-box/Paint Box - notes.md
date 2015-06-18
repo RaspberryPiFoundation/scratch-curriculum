@@ -1,7 +1,5 @@
 ---
 title: Paint Box — Notes for Club Leaders
-language: en-GB
-embeds: "*.png"
 materials: [""]
 ---
 

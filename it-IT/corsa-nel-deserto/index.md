@@ -1,10 +1,10 @@
 ---
 title: Corsa nel Deserto
 level: Level 2
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2", "*.pdf"]
+pdf: "06_Corsa_nel_Deserto.pdf"
+notes: "06_Corsa_nel_Deserto-Note.md"
+notes_pdf: "06_Corsa_nel_Deserto-Note.pdf"
 ---
 
 # Introduzione {.intro}

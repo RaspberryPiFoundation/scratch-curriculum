@@ -1,7 +1,5 @@
 ---
 title: Felix e Albert — Note per i Club Leaders
-language: it-IT
-embeds: "*.png"
 materials: ["Resources/*.png"]
 ---
 

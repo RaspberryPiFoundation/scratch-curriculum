@@ -1,10 +1,8 @@
 ---
 title: Ghostbusters
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Ghostbusters.sb2","Timer Scratchcard.pdf"]
+notes: "Ghostbusters - Notes.md"
 ---
 
 # Introduction { .intro }

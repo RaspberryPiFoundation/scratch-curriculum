@@ -1,10 +1,10 @@
 ---
 title: Coloriamo
 level: Level 3
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2","Resources/*.gif", "Resources/*.png", "*.pdf"]
+pdf: "10_Coloriamo.pdf"
+notes: "10_Coloriamo-Note.md"
+notes_pdf: "10_Coloriamo-Note.pdf"
 ---
 
 # Introduzione {.intro}

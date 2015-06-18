@@ -1,10 +1,8 @@
 ---
 title: Rock Band
 level: Scratch 1
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+notes: "Rock Band - notes.md"
 ---
 
 # Introduction { .intro }

@@ -1,7 +1,5 @@
 ---
 title: Stwórz własną grę — Informacje dla prowadzących zajęcia
-language: pl-PL
-embeds: "*.png"
 ---
 
 #Wstęp

@@ -1,9 +1,6 @@
 ---
 title: Scratch Card - Jointed Arm
 level: Level 4
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
 ---
 

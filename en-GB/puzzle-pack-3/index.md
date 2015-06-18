@@ -1,9 +1,7 @@
 ---
 title: Puzzle Pack 3
 level: Code Kingdoms
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
+pdf: "CK_PuzzlePack3.pdf"
 ---
 
 # Code Kingdoms { .intro }

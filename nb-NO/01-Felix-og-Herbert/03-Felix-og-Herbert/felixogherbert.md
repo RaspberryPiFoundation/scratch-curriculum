@@ -1,9 +1,6 @@
 ---
 title: Felix og Herbert
 level: 1
-language: nb-NO
-embeds: ["*.png"]
-stylesheet: scratch
 ---
 
 # Felix og Herbert

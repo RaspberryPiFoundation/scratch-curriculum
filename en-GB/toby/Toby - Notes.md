@@ -1,7 +1,5 @@
 ---
 title: Toby - Notes for Club Leaders
-language: en-GB
-embeds: "*.png"
 materials: ["*.sb2"]
 ---
 

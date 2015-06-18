@@ -1,9 +1,6 @@
 ---
 title: Table Football
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Resources/*.png", "Resources/whistle.mp3", "Resources/pitch.jpg"]
 ---
 

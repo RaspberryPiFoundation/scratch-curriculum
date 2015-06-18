@@ -1,10 +1,10 @@
 ---
 title: Kolorowe kredki
 level: Poziom 3
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb", "Zasoby/*.png", "Zasoby/*.gif"]
+pdf: "08 Kolorowe kredki.pdf"
+notes: "08 Kolorowe kredki - Informacje.md"
+notes_pdf: "08 Kolorowe kredki - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

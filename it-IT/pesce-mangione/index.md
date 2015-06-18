@@ -1,10 +1,10 @@
 ---
 title: Pesce Mangione
 level: Level 2
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2", "Resources/*.mp3", "Resources/*.png", "*.pdf"]
+pdf: "05_Pesce_Mangione.pdf"
+notes: "05_Pesce_Mangione-Note.md"
+notes_pdf: "05_Pesce_Mangione-Note.pdf"
 ---
 
 # Introduzione {.intro}

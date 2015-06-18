@@ -1,9 +1,7 @@
 ---
 title: Crea il tuo gioco
 level: Level 3
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
+notes: "11_Crea_il_tuo_gioco-Note.md"
 ---
 
 # Introduzione { .intro}

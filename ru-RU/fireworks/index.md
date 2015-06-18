@@ -1,10 +1,7 @@
 ---
 title: Фейерверк
 level: Уровень 1
-language: ru-RU
-stylesheet: scratch
-embeds: "*.png"
-note: "notes for club leaders.md"
+notes: "notes for club leaders.md"
 materials: "*.sb2"
 ---
 

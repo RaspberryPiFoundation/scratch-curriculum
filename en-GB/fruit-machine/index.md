@@ -1,10 +1,8 @@
 ---
 title: Fruit machine
 level: Scratch +
-stylesheet: scratch
-language: en-GB
-embeds: "*.png"
 materials: ["*.sb2","Broadcast Scratchcard.pdf"]
+notes: "Fruit Machine - Notes.md"
 ---
 
 # Introduction { .intro }

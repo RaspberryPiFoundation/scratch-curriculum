@@ -1,10 +1,9 @@
 ---
 title: Dodgeball
 level: Scratch 2
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+beta: true
+notes: "Dodgeball - notes.md"
 ---
 
 # Wstęp { .intro }

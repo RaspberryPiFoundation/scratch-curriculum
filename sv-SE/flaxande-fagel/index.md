@@ -1,9 +1,6 @@
 ---
 title: Flaxande Fågel
 level: Level 2
-language: sv-SE
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
 ---
 

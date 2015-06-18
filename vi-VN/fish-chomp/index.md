@@ -1,10 +1,7 @@
 ---
 title: Fish Chomp
 level: Level 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
-note: "notes for club leaders.md"
+notes: "notes for club leaders.md"
 materials: "*.sb2"
 ---
 

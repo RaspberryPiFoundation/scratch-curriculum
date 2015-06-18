@@ -1,7 +1,5 @@
 ---
 title: Fruit Machine — Note per i Club Leaders                  
-language: it-IT
-embeds: "*.png"
 ---
 
 #Introduzione:

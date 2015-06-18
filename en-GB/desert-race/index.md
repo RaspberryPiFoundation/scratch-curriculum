@@ -1,10 +1,8 @@
 ---
 title: Desert Race
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
+notes: "Desert Race - Notes.md"
 ---
 
 # Introduction {.intro}

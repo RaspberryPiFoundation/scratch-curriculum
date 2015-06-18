@@ -1,10 +1,7 @@
 ---
 title: Ökenracet
 level: Nivå 2
-language: sv-SE
-stylesheet: scratch
-embeds: "*.png"
-note: "till_instruktorerna.md"
+notes: "till_instruktorerna.md"
 ---
 
 # Introduktion {.intro}

@@ -1,10 +1,10 @@
 ---
 title: Stwórz własną grę
 level: Poziom 3
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb"
+pdf: "09 Stworz wlasna gre.pdf"
+notes: "09 Stworz wlasna gre - Informacje.md"
+notes_pdf: "09 Stworz wlasna gre - Informacje.pdf"
 ---
 
 # Wstęp

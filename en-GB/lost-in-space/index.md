@@ -1,10 +1,8 @@
 ---
 title: Lost in Space
 level: Scratch 1
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+notes: "Lost in Space - notes.md"
 ---
 
 # Introduction { .intro }

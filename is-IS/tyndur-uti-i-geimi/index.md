@@ -1,10 +1,8 @@
 ---
 title: Lost in Space
 level: Scratch 1
-language: is-IS
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+notes: "Tyndur uti i geimi - leidbeiningar.md"
 ---
 
 # Introduction { .intro }

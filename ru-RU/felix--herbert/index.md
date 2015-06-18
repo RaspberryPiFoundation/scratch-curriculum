@@ -1,10 +1,8 @@
 ---
 title: Феликс и Герберт
 level: Уровень 1
-language: ru-RU
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb"]
+notes: "notes for club leaders.md"
 ---
 
 Уровень 1

@@ -1,10 +1,10 @@
 ---
 title: Che Cos'e'?
 level: Level 3
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2", "*.pdf"]
+pdf: "09_Che_Cosa_E.pdf"
+notes: "09_Che_Cosa_E-Note.md"
+notes_pdf: "09_Che_Cosa_E-Note.pdf"
 ---
 
 # Introduzione {.intro}

@@ -1,10 +1,10 @@
 ---
 title: Feliks i Herbert
 level: Poziom 1
-language: pl-PL
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
+pdf: "01 Feliks i Herbert.pdf"
+notes: "01 Feliks i Herbert - Informacje.md"
+notes_pdf: "01 Feliks i Herbert - Informacje.pdf"
 ---
 
 # Wstęp {.intro}

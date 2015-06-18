@@ -1,10 +1,8 @@
 ---
 title: Create Your Own Game
 level: Scratch +
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: "*.sb2"
+notes: "Create Your Own Game - Notes.md"
 ---
 
 # Introduction { .intro}

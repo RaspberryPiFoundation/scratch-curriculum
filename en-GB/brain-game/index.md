@@ -1,10 +1,9 @@
 ---
 title: Brain Game
 level: Scratch 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
 materials: ["Club Leader Resources/*.*"]
+beta: true
+notes: "Brain Game - notes.md"
 ---
 
 # Introduction { .intro }

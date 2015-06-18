@@ -1,10 +1,7 @@
 ---
 title: Vad är det där?
 level: Nivå 3
-language: sv-SE
-stylesheet: scratch
-embeds: "*.png"
-note: "till_instruktorerna.md"
+notes: "till_instruktorerna.md"
 ---
 
 #Introduktion {.intro}

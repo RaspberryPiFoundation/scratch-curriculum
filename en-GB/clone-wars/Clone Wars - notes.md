@@ -1,7 +1,5 @@
 ---
 title: Clone Wars — Notes for Club Leaders
-language: en-GB
-embeds: "*.png"
 materials: [""]
 ---
 

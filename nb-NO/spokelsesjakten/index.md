@@ -1,9 +1,6 @@
 ---
 title: Spøkelsesjakten
 level: 1
-language: nb-NO
-embeds: ["*.png"]
-stylesheet: scratch
 ---
 
 # Introduksjon { .intro}

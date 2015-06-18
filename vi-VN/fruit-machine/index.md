@@ -1,10 +1,7 @@
 ---
 title: Fruit machine
 level: Level 2
-stylesheet: scratch
-language: en-GB
-embeds: "*.png"
-note: "notes for club leaders.md"
+notes: "notes for club leaders.md"
 materials: "*.sb2"
 ---
 

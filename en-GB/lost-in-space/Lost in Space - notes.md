@@ -1,7 +1,5 @@
 ---
 title: Lost in Space — Notes for Club Leaders
-language: en-GB
-embeds: "*.png"
 materials: [""]
 ---
 

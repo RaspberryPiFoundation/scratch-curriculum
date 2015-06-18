@@ -1,10 +1,8 @@
 ---
 title: Felix i Herbert
 level: Scratch 1
-language: ca-ES
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2"]
+notes: Notes_per_caps_de_club.md
 ---
 
 #Fèlix i Herbert

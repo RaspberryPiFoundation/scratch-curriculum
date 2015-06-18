@@ -1,10 +1,37 @@
 ---
 title: Create your own monster
 level: Term 2
-language: en-GB
-stylesheet: scratch
-embeds: "*.png"
-materials: "*.sb2"
+materials: "For Leaders/Scratch Files/*.sb"
+notes: "For Leaders/Make a Monster - Notes.md"
+extras:
+    -
+        name: "Eyes"
+        notes: "Scratch Cards/01-01 Make a Monster - Eyes.md"
+        pdf: "Scratch Cards/01-01 Make a Monster - Eyes.pdf"
+    -
+        name: "Jointed Arm"
+        notes: "Scratch Cards/01-02 Make a Monster - Jointed Arm.md"
+        pdf: "Scratch Cards/01-02 Make a Monster - Jointed Arm.pdf"
+    -
+        name: "Legs"
+        notes: "Scratch Cards/01-03 Make a Monster - Legs.md"
+        pdf: "Scratch Cards/01-03 Make a Monster - Legs.pdf"
+    -
+        name: "Mouths and Talking"
+        notes: "Scratch Cards/01-04 Make a Monster - Mouths.md"
+        pdf: "Scratch Cards/01-04 Make a Monster - Mouths.pdf"
+    -
+        name: "Movement"
+        notes: "Scratch Cards/01-05 Make a Monster - Movement.md"
+        pdf: "Scratch Cards/01-05 Make a Monster - Movement.pdf"
+    -
+        name: "Tentacles"
+        notes: "Scratch Cards/01-06 Make a Monster - Tentacles.md"
+        pdf: "Scratch Cards/01-06 Make a Monster - Tentacles.pdf"
+    -
+        name: "Wheels"
+        notes: "Scratch Cards/01-07 Make a Monster - Wheels.md"
+        pdf: "Scratch Cards/01-07 Make a Monster - Wheels.pdf"
 ---
 
 # Introduction: {.intro}

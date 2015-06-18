@@ -1,10 +1,10 @@
 ---
 title: Felix e Albert
 level: Level 1
-language: it-IT
-stylesheet: scratch
-embeds: "*.png"
 materials: ["*.sb2", "*.pdf"]
+pdf: "01_Felix_e_Albert.pdf"
+notes: "01_Felix_e_Albert-Note.md"
+notes_pdf: "01_Felix_e_Albert-Note.pdf"
 ---
 
 # Introduzione { .intro }

@@ -1,7 +1,5 @@
 ---
 title: Fajerwerki — Informacje dla prowadzących zajęcia
-language: pl-PL
-embeds: "*.png"
 ---
 
 # Wstęp
