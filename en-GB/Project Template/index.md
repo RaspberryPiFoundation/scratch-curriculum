@@ -2,6 +2,8 @@
 title: Project Template
 level: Scratch +
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+notes: "Project Template - notes.md"
+layout: project
 ---
 
 # Introduction { .intro }
