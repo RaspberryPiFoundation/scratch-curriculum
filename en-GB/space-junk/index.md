@@ -1,6 +1,5 @@
 ---
 title: Space Junk
-level: Scratch +
 materials: ["Club Leader Resources/*.*"]
 notes: "Space Junk - notes.md"
 layout: project

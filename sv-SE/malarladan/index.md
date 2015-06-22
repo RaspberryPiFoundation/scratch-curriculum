@@ -1,6 +1,5 @@
 ---
 title: Målarlådan
-level: Nivå 3
 notes: "till_instruktorerna.md"
 layout: project
 ---

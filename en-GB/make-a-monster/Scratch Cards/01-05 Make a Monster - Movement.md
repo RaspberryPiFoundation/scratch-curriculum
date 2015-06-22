@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Movement
-level: Level 4
 materials: "*.sb2"
 ---
 

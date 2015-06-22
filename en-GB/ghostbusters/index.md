@@ -1,6 +1,5 @@
 ---
 title: Ghostbusters
-level: Scratch +
 materials: ["Ghostbusters.sb2","Timer Scratchcard.pdf"]
 notes: "Ghostbusters - Notes.md"
 layout: project

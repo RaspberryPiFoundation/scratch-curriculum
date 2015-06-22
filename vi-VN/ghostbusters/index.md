@@ -1,6 +1,5 @@
 ---
 title: Ghostbusters
-level: Level 1
 notes: "notes for club leaders.md"
 layout: project
 ---

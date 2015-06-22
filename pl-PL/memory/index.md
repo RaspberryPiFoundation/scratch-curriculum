@@ -1,6 +1,5 @@
 ---
 title: Memory
-level: Scratch 2
 materials: ["Club Leader Resources/*.*"]
 beta: true
 notes: "Memory - notes.md"

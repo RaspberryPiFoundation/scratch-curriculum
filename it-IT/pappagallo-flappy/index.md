@@ -1,6 +1,5 @@
 ---
 title: Pappagallo Flappy
-level: Level 2
 materials: ["*.sb2", "*.pdf"]
 pdf: "08_Pappagallo_Flappy.pdf"
 notes: "08_Pappagallo_Flappy-Note.md"

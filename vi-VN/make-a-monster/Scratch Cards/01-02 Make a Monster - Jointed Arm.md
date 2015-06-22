@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Jointed Arm
-level: Level 4
 materials: "*.sb2"
 ---
 

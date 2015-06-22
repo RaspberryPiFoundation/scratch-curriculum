@@ -1,6 +1,5 @@
 ---
 title: Che Cos'e'?
-level: Level 3
 materials: ["*.sb2", "*.pdf"]
 pdf: "09_Che_Cosa_E.pdf"
 notes: "09_Che_Cosa_E-Note.md"

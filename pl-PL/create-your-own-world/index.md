@@ -1,6 +1,5 @@
 ---
 title: Create Your Own World
-level: Scratch 2
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 beta: true
 notes: "Create Your Own World - notes.md"

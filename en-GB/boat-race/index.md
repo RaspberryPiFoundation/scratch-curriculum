@@ -1,6 +1,5 @@
 ---
 title: Boat Race
-level: Scratch 1
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 notes: "Boat Race - notes.md"
 layout: project

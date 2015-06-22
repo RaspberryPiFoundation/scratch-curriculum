@@ -1,6 +1,5 @@
 ---
 title: Felix & Herbert
-level: Nivå 1
 notes: "till_instruktorerna.md"
 layout: project
 ---

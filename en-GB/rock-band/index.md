@@ -1,6 +1,5 @@
 ---
 title: Rock Band
-level: Scratch 1
 materials: ["Club Leader Resources/*.*"]
 notes: "Rock Band - notes.md"
 layout: project

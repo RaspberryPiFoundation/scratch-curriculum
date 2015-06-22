@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Mouths and talking
-level: Level 4
 materials: "*.sb2"
 ---
 

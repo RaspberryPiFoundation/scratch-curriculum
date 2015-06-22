@@ -1,6 +1,5 @@
 ---
 title: Fuochi Artificiali
-level: Level 1
 materials: ["*.sb2","Resources/*.wav", "Resources/*.png", "*.pdf"]
 pdf: "03_Fuochi_Artificiali.pdf"
 notes: "03_Fuochi_Artificiali-Note.md"

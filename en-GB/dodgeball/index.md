@@ -1,6 +1,5 @@
 ---
 title: Dodgeball
-level: Scratch 2
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 beta: true
 notes: "Dodgeball - notes.md"

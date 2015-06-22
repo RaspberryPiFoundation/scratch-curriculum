@@ -1,6 +1,5 @@
 ---
 title: Lost in Space
-level: Scratch 1
 materials: ["Club Leader Resources/*.*"]
 notes: "Lost in Space - notes.md"
 layout: project

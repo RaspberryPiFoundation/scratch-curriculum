@@ -1,6 +1,5 @@
 ---
 title: Skapa ditt eget spel
-level: Nivå 3
 notes: "till_instruktorerna.md"
 layout: project
 ---

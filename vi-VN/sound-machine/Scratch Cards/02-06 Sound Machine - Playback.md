@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Playback
-level: Level 6
 ---
 
 ## Activity Checklist { .check}

@@ -1,6 +1,5 @@
 ---
 title: Acchiappa Fantasmi
-level: Level 1
 materials: ["*.sb2", "*.pdf"]
 pdf: "02_Acchiappa_Fantasmi.pdf"
 notes: "02_Acchiappa_Fantasmi-Note.md"

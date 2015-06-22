@@ -1,6 +1,5 @@
 ---
 title: Toby
-level: Scratch +
 materials: "*.sb2"
 notes: "Toby - Notes.md"
 layout: project

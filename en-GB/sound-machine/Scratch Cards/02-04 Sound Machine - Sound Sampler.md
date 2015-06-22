@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Sound Sample
-level: Level 5
 materials: "*.sb2"
 ---
 

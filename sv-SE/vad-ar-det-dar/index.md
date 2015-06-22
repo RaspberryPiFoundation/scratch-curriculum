@@ -1,6 +1,5 @@
 ---
 title: Vad är det där?
-level: Nivå 3
 notes: "till_instruktorerna.md"
 layout: project
 ---

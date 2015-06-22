@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Record
-level: Level 6
 ---
 
 ## Activity Checklist { .check}

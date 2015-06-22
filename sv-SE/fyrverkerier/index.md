@@ -1,6 +1,5 @@
 ---
 title: Fyrverkerier
-level: Nivå 1
 notes: "till_instruktorerna.md"
 layout: project
 ---

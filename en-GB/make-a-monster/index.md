@@ -1,6 +1,5 @@
 ---
 title: Make a Monster
-level: Scratch +
 materials: "For Leaders/Scratch Files/*.sb"
 notes: "For Leaders/Make a Monster - Notes.md"
 layout: project

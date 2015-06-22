@@ -1,6 +1,5 @@
 ---
 title: Julskoj
-level: Nivå 2
 layout: project
 ---
 

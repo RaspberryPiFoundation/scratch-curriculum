@@ -1,6 +1,5 @@
 ---
 title: Fajerwerki
-level: Poziom 1
 materials: "*.sb"
 pdf: "03 Fajerwerki.pdf"
 notes: "03 Fajerwerki - Informacje.md"

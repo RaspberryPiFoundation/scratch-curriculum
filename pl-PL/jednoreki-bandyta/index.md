@@ -1,6 +1,5 @@
 ---
 title: Jednoręki bandyta
-level: Poziom 2
 materials: "*.sb"
 pdf: "04 Jednoreki bandyta.pdf"
 notes: "04 Jednoreki bandyta - Informacje.md"

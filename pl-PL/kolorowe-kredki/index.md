@@ -1,6 +1,5 @@
 ---
 title: Kolorowe kredki
-level: Poziom 3
 materials: ["*.sb", "Zasoby/*.png", "Zasoby/*.gif"]
 pdf: "08 Kolorowe kredki.pdf"
 notes: "08 Kolorowe kredki - Informacje.md"

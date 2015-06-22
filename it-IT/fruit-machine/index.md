@@ -1,6 +1,5 @@
 ---
 title: Fruit machine
-level: Level 2
 materials: ["*.sb2", "*.pdf"]
 pdf: "04_Fruit_Machine.pdf"
 notes: "04_Fruit_Machine-Note.md"

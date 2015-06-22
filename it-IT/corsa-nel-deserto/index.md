@@ -1,6 +1,5 @@
 ---
 title: Corsa nel Deserto
-level: Level 2
 materials: ["*.sb2", "*.pdf"]
 pdf: "06_Corsa_nel_Deserto.pdf"
 notes: "06_Corsa_nel_Deserto-Note.md"

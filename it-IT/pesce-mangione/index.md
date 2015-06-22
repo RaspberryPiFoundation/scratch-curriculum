@@ -1,6 +1,5 @@
 ---
 title: Pesce Mangione
-level: Level 2
 materials: ["*.sb2", "Resources/*.mp3", "Resources/*.png", "*.pdf"]
 pdf: "05_Pesce_Mangione.pdf"
 notes: "05_Pesce_Mangione-Note.md"

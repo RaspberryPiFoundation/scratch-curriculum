@@ -1,6 +1,5 @@
 ---
 title: Christmas Capers
-level: Level 2
 materials: "*.sb2"
 layout: project
 ---

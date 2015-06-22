@@ -1,6 +1,5 @@
 ---
 title: Felix og Herbert
-level: 1
 ---
 
 # Felix og Herbert

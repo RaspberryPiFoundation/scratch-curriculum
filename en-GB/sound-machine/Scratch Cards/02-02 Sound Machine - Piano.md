@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Piano
-level: Level 5
 materials: "*.sb2"
 ---
 

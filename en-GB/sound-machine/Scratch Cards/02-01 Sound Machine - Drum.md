@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Drum
-level: Level 5
 materials: "*.sb2"
 ---
 

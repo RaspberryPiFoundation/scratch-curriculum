@@ -1,6 +1,5 @@
 ---
 title: Crea il tuo gioco
-level: Level 3
 notes: "11_Crea_il_tuo_gioco-Note.md"
 layout: project
 ---

@@ -1,6 +1,5 @@
 ---
 title: Игровой автомат(фрукты)
-level: Уровень 1
 materials: ["*.sb"]
 notes: "notes for club leaders.md"
 layout: project

@@ -1,6 +1,5 @@
 ---
 title: Pogromcy duchów
-level: Poziom 1
 materials: "*.sb"
 pdf: "02 Pogromcy duchow.pdf"
 notes: "02 Pogromcy duchow - Informacje.md"

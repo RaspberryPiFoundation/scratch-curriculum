@@ -1,6 +1,5 @@
 ---
 title: Stwórz własną grę
-level: Poziom 3
 materials: "*.sb"
 pdf: "09 Stworz wlasna gre.pdf"
 notes: "09 Stworz wlasna gre - Informacje.md"

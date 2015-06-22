@@ -1,6 +1,5 @@
 ---
 title: Co to jest
-level: Poziom 3
 materials: "*.sb"
 pdf: "07 Co to jest.pdf"
 notes: "07 Co to jest - Informacje.md"

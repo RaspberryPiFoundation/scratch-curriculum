@@ -1,6 +1,5 @@
 ---
 title: Create Your Own Game
-level: Scratch +
 materials: "*.sb2"
 notes: "Create Your Own Game - Notes.md"
 layout: project

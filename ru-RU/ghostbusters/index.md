@@ -1,6 +1,5 @@
 ---
 title: Охотники за привидениями
-level: Уровень 1
 notes: "notes for club leaders.md"
 layout: project
 ---

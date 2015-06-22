@@ -1,6 +1,5 @@
 ---
 title: Sound machine
-level: Scratch +
 materials: "For Leaders/Scratch Files/*.sb"
 notes: "For Leaders/Sound Machine - Notes.md"
 layout: project

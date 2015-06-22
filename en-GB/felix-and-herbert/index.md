@@ -1,6 +1,5 @@
 ---
 title: Felix and Herbert
-level: Scratch 2
 materials: ["Felix-and-Herbert.sb2"]
 notes: "Felix and Herbert - Notes.md"
 layout: project

@@ -1,6 +1,5 @@
 ---
 title: Flappy Parrot
-level: Scratch +
 materials: "*.sb2"
 layout: project
 ---

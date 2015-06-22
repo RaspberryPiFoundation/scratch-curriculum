@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Legs
-level: Level 4
 materials: "*.sb2"
 ---
 

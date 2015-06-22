@@ -1,6 +1,5 @@
 ---
 title: Głodna ryba
-level: Poziom 2
 materials: ["*.sb", "Zasoby/*.mp3", "Zasoby/*.png"]
 pdf: "05 Glodna ryba.pdf"
 notes: "05 Glodna ryba - Informacje.md"

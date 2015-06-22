@@ -1,6 +1,5 @@
 ---
 title: Regali di Natale
-level: Level 2
 materials: ["*.sb2", "Resources/*.png", "*.pdf"]
 pdf: "07_Regali_di_Natale.pdf"
 notes: "07_Regali_di_Natale-Note.md"

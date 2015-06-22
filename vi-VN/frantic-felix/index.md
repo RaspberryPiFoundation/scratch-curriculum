@@ -1,6 +1,5 @@
 ---
 title: Frantic Felix
-level: Scratch +
 materials: ["Resources/*.gif", "For Leaders/Scratch Files/*.sb", "For Leaders/Resources/*"]
 notes: "For Leaders/Frantic Felix - Notes.md"
 layout: project

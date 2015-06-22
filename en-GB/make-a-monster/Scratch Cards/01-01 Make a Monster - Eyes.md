@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Eyes
-level: Level 4
 materials: "*.sb2"
 ---
 

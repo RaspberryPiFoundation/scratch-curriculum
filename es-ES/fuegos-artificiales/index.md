@@ -1,6 +1,5 @@
 ---
 title: Fuegos Artificiales
-level: Nivel 1
 materials: ["*.sb2", "Resources/*.wav", "Resources/*.png"]
 notes: "notas para coordinadores.md"
 layout: project

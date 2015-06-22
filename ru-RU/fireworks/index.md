@@ -1,6 +1,5 @@
 ---
 title: Фейерверк
-level: Уровень 1
 materials: "*.sb2"
 notes: "notes for club leaders.md"
 layout: project

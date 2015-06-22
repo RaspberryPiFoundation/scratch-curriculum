@@ -1,6 +1,5 @@
 ---
 title: Scratch Card - Tentacles
-level: Level 4
 materials: "*.sb2"
 ---
 

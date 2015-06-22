@@ -1,6 +1,5 @@
 ---
 title: Pustynny wyścig
-level: Poziom 2
 materials: "*.sb"
 pdf: "06 Pustynny wyscig.pdf"
 notes: "06 Pustynny wyscig - Informacje.md"

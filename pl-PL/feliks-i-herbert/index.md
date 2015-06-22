@@ -1,6 +1,5 @@
 ---
 title: Feliks i Herbert
-level: Poziom 1
 materials: "*.sb2"
 pdf: "01 Feliks i Herbert.pdf"
 notes: "01 Feliks i Herbert - Informacje.md"

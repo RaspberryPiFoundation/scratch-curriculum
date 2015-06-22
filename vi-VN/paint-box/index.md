@@ -1,6 +1,5 @@
 ---
 title: Paint Box
-level: Level 3
 materials: "*.sb2"
 notes: "notes for club leaders.md"
 layout: project
