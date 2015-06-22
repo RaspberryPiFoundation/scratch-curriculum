@@ -2,6 +2,7 @@
 title: Christmas Capers
 level: Уровень 2
 materials: "*.sb2"
+layout: project
 ---
 
 # Введение { .intro}
