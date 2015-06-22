@@ -2,6 +2,7 @@
 title: Snowball Fight
 level: Scratch +
 materials: ["Resources/*.*"]
+layout: project
 ---
 
 # Introduction { .intro }

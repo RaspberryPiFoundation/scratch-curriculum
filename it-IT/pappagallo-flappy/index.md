@@ -5,6 +5,7 @@ materials: ["*.sb2", "*.pdf"]
 pdf: "08_Pappagallo_Flappy.pdf"
 notes: "08_Pappagallo_Flappy-Note.md"
 notes_pdf: "08_Pappagallo_Flappy-Note.pdf"
+layout: project
 ---
 
 # Introduzione { .intro}

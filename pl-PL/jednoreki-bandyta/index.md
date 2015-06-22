@@ -5,6 +5,7 @@ materials: "*.sb"
 pdf: "04 Jednoreki bandyta.pdf"
 notes: "04 Jednoreki bandyta - Informacje.md"
 notes_pdf: "04 Jednoreki bandyta - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

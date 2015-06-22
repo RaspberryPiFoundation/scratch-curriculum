@@ -1,8 +1,9 @@
 ---
 title: Create Your Own Game
 level: Уровень 3
-notes: "notes for club leaders.md"
 materials: "*.sb2"
+notes: "notes for club leaders.md"
+layout: project
 ---
 
 __Введение:__

@@ -5,6 +5,7 @@ materials: "*.sb"
 pdf: "02 Pogromcy duchow.pdf"
 notes: "02 Pogromcy duchow - Informacje.md"
 notes_pdf: "02 Pogromcy duchow - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

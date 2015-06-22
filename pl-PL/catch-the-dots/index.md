@@ -4,6 +4,7 @@ level: Scratch 2
 materials: ["Club Leader Resources/*.*", "Project Resources/*.*"]
 beta: true
 notes: "Catch the Dots - notes.md"
+layout: project
 ---
 
 # Introduction { .intro }

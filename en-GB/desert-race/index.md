@@ -3,6 +3,7 @@ title: Desert Race
 level: Scratch +
 materials: "*.sb2"
 notes: "Desert Race - Notes.md"
+layout: project
 ---
 
 # Introduction {.intro}

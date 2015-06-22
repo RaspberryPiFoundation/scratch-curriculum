@@ -3,6 +3,7 @@ title: Balloons
 level: Scratch 1
 materials: ["Club Leader Resources/*.*"]
 notes: "Balloons - notes.md"
+layout: project
 ---
 
 # Introduction { .intro }

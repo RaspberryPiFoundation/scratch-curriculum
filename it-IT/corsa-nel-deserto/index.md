@@ -5,6 +5,7 @@ materials: ["*.sb2", "*.pdf"]
 pdf: "06_Corsa_nel_Deserto.pdf"
 notes: "06_Corsa_nel_Deserto-Note.md"
 notes_pdf: "06_Corsa_nel_Deserto-Note.pdf"
+layout: project
 ---
 
 # Introduzione {.intro}

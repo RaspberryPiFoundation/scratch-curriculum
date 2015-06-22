@@ -4,6 +4,7 @@ level: Scratch 2
 materials: ["Club Leader Resources/*.*"]
 beta: true
 notes: "Clone Wars - notes.md"
+layout: project
 ---
 
 ## Community Contributed Project { .challenge .pdf-hidden }

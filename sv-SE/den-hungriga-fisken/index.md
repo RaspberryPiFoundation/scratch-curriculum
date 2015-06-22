@@ -2,6 +2,7 @@
 title: Den hungriga fisken
 level: Nivå 2
 notes: "till_instruktorerna.md"
+layout: project
 ---
 
 # Introduktion {.intro}

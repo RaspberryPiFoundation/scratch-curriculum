@@ -2,6 +2,7 @@
 title: Caza de brujas
 level: Nivel 1
 notes: "notas para coordinadores.md"
+layout: project
 ---
 
 # Introducción { .intro}

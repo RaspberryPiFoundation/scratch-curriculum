@@ -2,6 +2,7 @@
 title: Table Football
 level: Scratch +
 materials: ["Resources/*.png", "Resources/whistle.mp3", "Resources/pitch.jpg"]
+layout: project
 ---
 
 ## Community Contributed Project { .challenge .pdf-hidden }

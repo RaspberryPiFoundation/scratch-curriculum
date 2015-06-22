@@ -2,6 +2,7 @@
 title: Ökenracet
 level: Nivå 2
 notes: "till_instruktorerna.md"
+layout: project
 ---
 
 # Introduktion {.intro}

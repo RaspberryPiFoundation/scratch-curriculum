@@ -4,6 +4,7 @@ level: Scratch 2
 materials: ["Club Leader Resources/*.*"]
 beta: true
 notes: "Memory - notes.md"
+layout: project
 ---
 
 ## Projekt stworzony przez społeczność { .challenge .pdf-hidden }

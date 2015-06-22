@@ -2,6 +2,7 @@
 title: Christmas Capers
 level: Scratch +
 materials: ["*.sb2", "Resources/*.png", "Resources/*.mp3"]
+layout: project
 ---
 
 # Introduction { .intro}

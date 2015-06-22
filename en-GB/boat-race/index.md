@@ -2,7 +2,8 @@
 title: Boat Race
 level: Scratch 1
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
-index: "Boat Race - notes.md"
+notes: "Boat Race - notes.md"
+layout: project
 ---
 
 # Introduction { .intro }

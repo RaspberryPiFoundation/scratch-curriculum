@@ -3,6 +3,7 @@ title: Frantic Felix
 level: Scratch +
 materials: ["Resources/*.gif", "For Leaders/Scratch Files/*.sb", "For Leaders/Resources/*"]
 notes: "For Leaders/Frantic Felix - Notes.md"
+layout: project
 ---
 
 In this project, you’ll build a complex game. It’s a platform game, where Felix the Cat jumps around, dodging baddies and collecting keys to escape the cavern. When he’s done that, he’ll go to the next cavern and do it all over again.

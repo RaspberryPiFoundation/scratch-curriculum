@@ -1,6 +1,7 @@
 ---
 title: Spøkelsesjakten
 level: 1
+layout: project
 ---
 
 # Introduksjon { .intro}

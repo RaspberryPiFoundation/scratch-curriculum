@@ -2,6 +2,7 @@
 title: Flaxande Fågel
 level: Level 2
 materials: "*.sb2"
+layout: project
 ---
 
 # Introduktion { .intro}

@@ -2,6 +2,7 @@
 title: Den enarmade banditen
 level: Nivå 1
 notes: "till_instruktorerna.md"
+layout: project
 ---
 
 # Introduktion {.intro}

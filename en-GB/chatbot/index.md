@@ -3,6 +3,7 @@ title: ChatBot
 level: Scratch 1
 materials: ["Club Leader Resources/*.*"]
 notes: "ChatBot - notes.md"
+layout: project
 ---
 
 # Introduction { .intro }

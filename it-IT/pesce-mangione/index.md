@@ -5,6 +5,7 @@ materials: ["*.sb2", "Resources/*.mp3", "Resources/*.png", "*.pdf"]
 pdf: "05_Pesce_Mangione.pdf"
 notes: "05_Pesce_Mangione-Note.md"
 notes_pdf: "05_Pesce_Mangione-Note.pdf"
+layout: project
 ---
 
 # Introduzione {.intro}

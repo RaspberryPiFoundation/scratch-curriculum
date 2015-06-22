@@ -5,6 +5,7 @@ materials: ["*.sb", "Zasoby/*.mp3", "Zasoby/*.png"]
 pdf: "05 Glodna ryba.pdf"
 notes: "05 Glodna ryba - Informacje.md"
 notes_pdf: "05 Glodna ryba - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

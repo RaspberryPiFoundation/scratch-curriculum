@@ -3,6 +3,7 @@ title: Paint Box
 level: Scratch 1
 materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 notes: "Paint Box - notes.md"
+layout: project
 ---
 
 # Introduction { .intro }

@@ -5,6 +5,7 @@ materials: "*.sb"
 pdf: "09 Stworz wlasna gre.pdf"
 notes: "09 Stworz wlasna gre - Informacje.md"
 notes_pdf: "09 Stworz wlasna gre - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp

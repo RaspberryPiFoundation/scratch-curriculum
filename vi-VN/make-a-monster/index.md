@@ -3,6 +3,7 @@ title: Create your own monster
 level: Term 2
 materials: "For Leaders/Scratch Files/*.sb"
 notes: "For Leaders/Make a Monster - Notes.md"
+layout: project
 extras:
     -
         name: "Eyes"

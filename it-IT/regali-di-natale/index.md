@@ -5,6 +5,7 @@ materials: ["*.sb2", "Resources/*.png", "*.pdf"]
 pdf: "07_Regali_di_Natale.pdf"
 notes: "07_Regali_di_Natale-Note.md"
 notes_pdf: "07_Regali_di_Natale-Note.pdf"
+layout: project
 ---
 
 # Introduzione { .intro}

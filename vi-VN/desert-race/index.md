@@ -1,8 +1,9 @@
 ---
 title: Desert Race
 level: Level 2
-notes: "notes for club leaders.md"
 materials: "*.sb2"
+notes: "notes for club leaders.md"
+layout: project
 ---
 
 # Introduction { .intro}

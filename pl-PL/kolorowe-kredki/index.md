@@ -5,6 +5,7 @@ materials: ["*.sb", "Zasoby/*.png", "Zasoby/*.gif"]
 pdf: "08 Kolorowe kredki.pdf"
 notes: "08 Kolorowe kredki - Informacje.md"
 notes_pdf: "08 Kolorowe kredki - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

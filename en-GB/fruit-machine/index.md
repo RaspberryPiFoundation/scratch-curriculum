@@ -3,6 +3,7 @@ title: Fruit machine
 level: Scratch +
 materials: ["*.sb2","Broadcast Scratchcard.pdf"]
 notes: "Fruit Machine - Notes.md"
+layout: project
 ---
 
 # Introduction { .intro }

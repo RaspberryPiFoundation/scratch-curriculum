@@ -5,6 +5,7 @@ materials: ["*.sb2","Resources/*.gif", "Resources/*.png", "*.pdf"]
 pdf: "10_Coloriamo.pdf"
 notes: "10_Coloriamo-Note.md"
 notes_pdf: "10_Coloriamo-Note.pdf"
+layout: project
 ---
 
 # Introduzione {.intro}

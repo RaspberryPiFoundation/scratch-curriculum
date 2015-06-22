@@ -5,6 +5,7 @@ materials: "*.sb"
 pdf: "03 Fajerwerki.pdf"
 notes: "03 Fajerwerki - Informacje.md"
 notes_pdf: "03 Fajerwerki - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

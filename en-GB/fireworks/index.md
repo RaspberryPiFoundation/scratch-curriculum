@@ -2,6 +2,7 @@
 title: Fireworks
 level: Scratch +
 materials: ["*.sb2","Resources/*.wav", "Resources/*.png"]
+layout: project
 ---
 
 # Introduction { .intro }

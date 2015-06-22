@@ -3,6 +3,7 @@ title: Felix và Herbert
 level: Level 1
 materials: "Felix-and-Herbert.sb2"
 notes: "notes for club leaders.md"
+layout: project
 ---
 
 # Giới thiệu { .intro}

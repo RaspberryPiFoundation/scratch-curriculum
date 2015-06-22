@@ -5,6 +5,7 @@ materials: ["*.sb2","Resources/*.wav", "Resources/*.png", "*.pdf"]
 pdf: "03_Fuochi_Artificiali.pdf"
 notes: "03_Fuochi_Artificiali-Note.md"
 notes_pdf: "03_Fuochi_Artificiali-Note.pdf"
+layout: project
 ---
 
 # Introduzione { .intro }

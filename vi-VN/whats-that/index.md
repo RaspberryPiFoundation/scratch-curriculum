@@ -1,8 +1,9 @@
 ---
 title: What's That
 level: Level 3
-notes: "notes for club leaders.md"
 materials: "*.sb2"
+notes: "notes for club leaders.md"
+layout: project
 ---
 
 # Introduction { .intro}

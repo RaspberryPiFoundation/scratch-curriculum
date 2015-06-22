@@ -5,6 +5,7 @@ materials: "*.sb2"
 pdf: "01 Feliks i Herbert.pdf"
 notes: "01 Feliks i Herbert - Informacje.md"
 notes_pdf: "01 Feliks i Herbert - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

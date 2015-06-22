@@ -3,6 +3,7 @@ title: Felix i Herbert
 level: Scratch 1
 materials: ["*.sb2"]
 notes: Notes_per_caps_de_club.md
+layout: project
 ---
 
 #Fèlix i Herbert

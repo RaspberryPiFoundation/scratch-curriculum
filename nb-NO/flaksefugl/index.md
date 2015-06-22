@@ -2,6 +2,7 @@
 title: Flaksefugl
 level: Level 2
 materials: "*.sb2"
+layout: project
 ---
 
 # Introduksjon { .intro}

@@ -3,6 +3,7 @@ title: Fish Chomp
 level: Scratch +
 materials: ["*.sb2", "Resources/*.mp3", "Resources/*.png","Timer Scratchcard.pdf"]
 notes: "Fish Chomp - Notes.md"
+layout: project
 ---
 
 # Introduction {.intro}

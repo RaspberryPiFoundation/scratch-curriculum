@@ -2,6 +2,7 @@
 title: Puzzle Pack 3
 level: Code Kingdoms
 pdf: "CK_PuzzlePack3.pdf"
+layout: project
 ---
 
 # Code Kingdoms { .intro }

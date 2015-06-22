@@ -3,6 +3,7 @@ title: What's That
 level: Scratch +
 materials: ["*.sb2","Timer Scratchcard.pdf"]
 notes: "What's That - Notes.md"
+layout: project
 ---
 
 # Introduction {.intro}

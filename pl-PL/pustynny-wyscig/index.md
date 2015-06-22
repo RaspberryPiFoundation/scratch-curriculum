@@ -5,6 +5,7 @@ materials: "*.sb"
 pdf: "06 Pustynny wyscig.pdf"
 notes: "06 Pustynny wyscig - Informacje.md"
 notes_pdf: "06 Pustynny wyscig - Informacje.pdf"
+layout: project
 ---
 
 # Wstęp {.intro}

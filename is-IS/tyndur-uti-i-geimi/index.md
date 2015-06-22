@@ -3,6 +3,7 @@ title: Lost in Space
 level: Scratch 1
 materials: ["Club Leader Resources/*.*"]
 notes: "Tyndur uti i geimi - leidbeiningar.md"
+layout: project
 ---
 
 # Introduction { .intro }
