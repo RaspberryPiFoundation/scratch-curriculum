@@ -15,16 +15,16 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 
 + LostInSpace.sb2
 
+There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/space-resources](http://jumpto.cc/space-resources), or in the downloadable project materials, which contains:
+
++ LostInSpaceResources.sb2 
+
 #Learning Objectives
-+ Sprites;
-+ Sequential code blocks;
-+ Events;
 + Loops:
 	+ `Repeat` {.blockcontrol} loops;
 	+ `Forever` {.blockcontrol} loops.
 
 #Challenges
-+ "Adding another sprite" - adding a sprite to a project;
 + "Improving your animation" - altering the numbers in a short program;
 + "Make your own animation" - applying the learning to make a new animation.
 
@@ -46,5 +46,3 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + The 'spaceship' sprite will move sideways unless it is rotated 90 degrees clockwise. Rotating the spaceship is part of the project instructions, but another sprite can be substituted for the spaceship if this is causing problems.
 
 	![screenshot](space-rotate.png)
-
-+ On Linux, right-clicking to delete a sprite may not work. If this is the case, holding shift and left-clicking will bring up the menu to delete a sprite.
