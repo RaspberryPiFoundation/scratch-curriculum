@@ -9,18 +9,23 @@
 
     "projects": [
         {
-            "number": 1,
+            "number":   1,
+            "filename": "Balloons/Balloons.md",
+            "note": "Balloons/Balloons - notes.md"
+        }
+        {
+            "number": 2,
             "beta": true,
             "filename": "Space Junk/Space Junk.md",
             "note": "Space Junk/Space Junk - notes.md"
         },
         {
-            "number":   4,
+            "number":   3,
             "filename": "Flappy Parrot/Flappy Parrot.md"
         },
         {
-            "number":   16,
+            "number":   4,
             "filename": "Snowball Fight/Snowball Fight.md"
-        }
+        }      
     ]
 }

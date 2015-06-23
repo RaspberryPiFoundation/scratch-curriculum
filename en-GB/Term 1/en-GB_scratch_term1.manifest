@@ -18,8 +18,9 @@
         },
         {
             "number":   3,
-            "filename": "Balloons/Balloons.md",
-            "note":     "Balloons/Balloons - notes.md"
+            "beta": true,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "note":     "Ghostbusters/Ghostbusters - notes.md"
         },
         {
             "number":   4,
