@@ -26,6 +26,10 @@
         {
             "number":   4,
             "filename": "Snowball Fight/Snowball Fight.md"
-        }      
+        },
+        {
+            "number":   5,
+            "filename": "Christmas Capers/Christmas Capers.md"
+        },      
     ]
 }
