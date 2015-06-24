@@ -15,7 +15,7 @@ You are going to make a ghost-catching game!
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
-	<img src="balloons-final.png">
+	<img src="ghost-final.png">
 </div>
 
 # Step 1: Animating a ghost { .activity }
@@ -178,7 +178,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 ## Challenge: More objects {.challenge}
 Can you add in other objects to your game?
 
-![screenshot](ghost-objects.png)
+![screenshot](ghost-final.png)
 
 You'll need to think about the objects you're adding. Think about:
 
