@@ -12,8 +12,8 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 In this project, you will be making your own paint program!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
-	<img src="paint-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
+  <img src="paint-final.png">
 </div>
 
 # Step 1: Making a pencil { .activity }

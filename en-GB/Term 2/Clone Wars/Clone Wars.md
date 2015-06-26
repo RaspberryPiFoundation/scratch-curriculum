@@ -16,8 +16,8 @@ This project was created with Erik. If you'd like to contribute a project of you
 In this project you'll learn how to create a game in which you have to save the Earth from space monsters.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
-	<img src="invaders-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
+  <img src="invaders-final.png">
 </div>
 
 # Step 1: Making a Spaceship { .activity }

@@ -12,8 +12,8 @@ materials: ["Club Leader Resources/*.*"]
 You are going to learn how to program your own talking robot!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
-	<img src="chatbot-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
+  <img src="chatbot-final.png">
 </div>
 
 # Step 1: Your chatbot { .activity }

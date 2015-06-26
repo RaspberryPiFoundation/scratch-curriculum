@@ -12,8 +12,8 @@ materials: ["Resources/*.*"]
 In this project you're going to make a game in which you have to throw snowballs at a target. You'll use the mouse pointer to angle the snowball and the spacebar to choose the snowball's power.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/35172420/?autostart=true" frameborder="0"></iframe>
-	<img src="snow-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/35172420/?autostart=true" frameborder="0"></iframe>
+  <img src="snow-final.png">
 </div>
 
 # Step 1: Making a snowball { .activity }

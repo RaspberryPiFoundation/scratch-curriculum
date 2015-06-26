@@ -12,8 +12,8 @@ materials: ["Club Leader Resources/*.*"]
 Help the Scratch mascot avoid the space junk and return safely back to Earth!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/59295958/?autostart=false" frameborder="0"></iframe>
-	<img src="sj-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/59295958/?autostart=false" frameborder="0"></iframe>
+  <img src="sj-final.png">
 </div>
 
 # Step 1: Controlling the cat { .activity }
