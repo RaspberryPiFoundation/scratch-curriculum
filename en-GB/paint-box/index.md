@@ -164,11 +164,11 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 	Notice that you don't need to send a message to clear the stage, as any sprite can do it!
 
-+ You can also create an eraser. If your club leader has given you a 'Resources' folder, click 'Upload costume from file' and add the 'eraser.png' image.
++ You can also create an eraser. If your club leader has given you a 'Resources' folder, click 'Upload costume from file' and add the 'eraser.svg' image.
 
 	![screenshot](paint-eraser-costume.png)
 	
-	If you don't have the eraser.png image, just create a new white pen instead!
+	If you don't have the eraser.svg image, just create a new white pen instead!
 
 + You should also add the eraser image as a new selector sprite. This is how your stage shoud look:
 
