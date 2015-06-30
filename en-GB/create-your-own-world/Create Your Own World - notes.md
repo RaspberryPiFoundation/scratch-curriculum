@@ -22,12 +22,13 @@ This link also includes a 'Project Resources' folder, which contains images that
 Project resources:
 + player.png;
 + room1/2/3.png;
-+ sign.png;
-+ chest.png;
++ sign.svg;
++ chest.svg;
 + person.png;
 + enemy.png;
-+ coins.png;
-+ door-blue/key-blue.png.
++ coin.svg;
++ door-blue.png
++ key-blue.png.
 
 
 #Learning Objectives
