@@ -14,26 +14,69 @@ In this project you'll learn how to code your own musical instruments!
   <img src="band-final.png">
 </div>
 
-# Step 1: Making a Drum { .activity }
+# Step 1: Sprites { .activity }
 
-First, let's create a drum that makes a sound when it's hit.
+Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called __sprites__. 
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It looks like this:
 
-+ Add a drum sprite to your blank project, as well as adding a suitable backdrop image to the stage.
+	![screenshot](band-scratch.png)
+
++ The cat sprite that you can see is the Scratch mascot. Let's get rid of it, by right-clicking and then clicking 'delete'.
+
+	![screenshot](band-delete.png)
+
++ Next, click 'Choose sprite from library' to open up a list of all the Scratch sprites.
+
+	![screenshot](band-sprite-library.png)
+
++ Scroll down until you see a drum sprite. Click on a drum, and click 'OK' to add it to your project.
+
+	![screenshot](band-sprite-drum.png)
+
++ Click the 'shrink' icon, and then click on the drum a few times to make it smaller.
+
+	![screenshot](band-shrink.png)
+
+## Save your project { .save }
+
+Give your program a name, by typing one into the text box above the stage.
+
+You can then click 'File' and then 'Save now' to save your project.
+
+![screenshot](band-save.png)
+
+# Step 2: The Stage { .activity }
+
+The __stage__ is the area on the left, and is where your project comes to life. Think of it as a performance area, just like a real stage!
+
+## Activity Checklist { .check }
+
++ At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking 'Choose backdrop from library'.
+
+	![screenshot](band-stage-choose.png)
+
++ Click 'Indoors' on the left, and then click on a stage backdrop and click 'OK'.
+
+	![screenshot](band-backdrop.png)
+
++ Your stage should now look like this:
 
 	![screenshot](band-stage.png)
 
-	If you're not sure how to do this, the 'Lost in Space' project will help you!
+# Step 3: Making a Drum { .activity }
 
-+ Let's program the drum to play a sound when it's clicked. Make sure the drum sprite is selected and add this code:
+Let's code your drum to make a sound when it's hit.
 
-	```blocks
-		when this sprite clicked
-		play drum (1 v) for (0.25) beats
-	```
+## Activity Checklist { .check }
+
++ You can find the code blocks in the 'Scripts' tab, and they are all colour-coded! 
+
+	Click on the drum sprite, and then drag these 2 blocks into the code area to the right, making sure that they are connected together (like Lego blocks):
+
+	![screenshot](band-code.png)
 
 + Click the drum to try out your new instrument!
 
@@ -53,21 +96,13 @@ First, let's create a drum that makes a sound when it's hit.
 
 	![screenshot](band-drum-name.png)
 
-+ Now that you have 2 different costumes for your drum, you can choose which costume is displayed! Add this code to your drum:
++ Now that you have 2 different costumes for your drum, you can choose which costume is displayed! Add these 2 blocks to your drum:
 
-	```blocks
-		when flag clicked
-		switch costume to [not hit v]
-
-		when this sprite clicked
-		switch costume to [hit v]
-		play drum (1 v) for (0.25) beats
-		switch costume to [not hit v]
-	```
+	![screenshot](band-looks.png)
 
 	The code block for changing the costume is in the `Looks` {.blocklooks} section.
 
-+ When clicked, your drum should now change costumes, to look like it's been hit, and then change back again.
++ Test your drum. When clicked, your drum should now look like it's been hit!
 
 ## Save your project { .save }
 
@@ -89,7 +124,7 @@ You can copy your existing code by right-clicking on it and clicking 'duplicate'
 
 ## Save your project { .save }
 
-# Step 2: Making a Singer { .activity .new-page }
+# Step 4: Making a Singer { .activity .new-page }
 
 Let's add a singer to your band!
 
@@ -127,97 +162,6 @@ Remember to test that your new code works!
 
 ## Save your project { .save }
 
-# Step 3: Making a cymbal { .activity .new-page }
-
-So far all of your instruments have used images from the Scratch library. Why not draw a sprite of your own!
-
-## Activity Checklist { .check }
-
-+ To draw your own cymbal sprite, click on the 'Paint new sprite' icon.
-
-	![screenshot](band-draw.png)
-
-+ Draw your cymbal in 'costume1', using a yellow ellipse and some black lines. You should also rename this costume 'not hit', just like with your other sprites.
-
-	![screenshot](band-cymbal.png)
-
-+ Duplicate your cymbal costume to create a second costume, and remember to name it 'hit'.
-
-+ To make your cymbal look like it's been hit, you can rotate it. To do this, click the 'Select' tool and drag to highlight the cymbal. You can then click and drag the circular 'rotate' handle to rotate the cymbal.
-
-	![screenshot](band-cymbal-rotate.png)
-
-	Your cymbal costumes should look something like this:
-
-	![screenshot](band-cymbal-hit.png)
-
-+ Your cymbal is probably a bit too big. Click the 'Shrink' icon, and you should notice that the mouse cursor changes. Click on your cymbal a few times to shrink it. You can also move your cymbal to a better place on the stage.
-
-	![screenshot](band-shrink.png)
-
-+ Next, you should change the name of the sprite, as 'sprite1' isn't a very helpful name! Click the icon for your cymbal sprite, and then click on the blue `i` {.blockmotion} (information) icon in the top-left.
-
-	![screenshot](band-info.png)
-
-	You can then change the sprite name to something more useful, like 'Cymbal'!
-
-+ Now that you have your graphics made, you can add in a sound to the cymbal sprite. Click 'Choose sound from library', and then click 'Percussion' and choose the 'cymbal crash' sound.
-
-	![screenshot](band-crash.png)
-
-+ Add this code to the cymbal, so that it makes a sound and changes costume when clicked:
-
-	```blocks
-		when flag clicked
-		switch costume to [not hit v]
-
-		when this sprite clicked
-		switch costume to [hit v]
-		play sound [cymbal crash v] until done
-		switch costume to [not hit v]
-	```
-
-+ Test out your cymbal, to see if it works!
-
-## Save your project { .save }
-
-# Step 4: Backing music { .activity .new-page }
-
-You can even add some music for your band to play along to!
-
-## Activity Checklist { .check }
-
-+ Click on the stage, and then click the 'Sounds' tab and then 'Choose sound from library' to add some music to the stage. The music is in the 'Music Loops' section.
-
-+ Add this code to your stage, remembering to select the sound that you chose:
-
-	```blocks
-		when flag clicked
-		forever
-			play sound [eggs v] until done
-		end
-	```
-
-+ This code repeatedly plays the music that you have chosen. Click the flag to test it out!
-
-+ You can even add this code to your stage, to allow you to mute and unmute the background music using the 'm' and 'u' keys:
-
-	```blocks
-		when flag clicked
-		set volume to (100)%
-		forever
-			play sound [eggs v] until done
-		end
-
-		when [m v] key pressed
-		set volume to (0)%
-
-		when [u v] key pressed
-		set volume to (100)%
-	```
-
-## Save your project { .save }
-
 ##Challenge: Make your own band { .challenge }
 Use what you've learnt in this project to make your own band! You can create any instruments you like, but look at the available sounds and instruments to get some ideas.
 
@@ -227,11 +171,12 @@ Your instruments don't have to be sensible though. For example, you could make a
 
 ![screenshot](band-piano.png)
 
+As well as using existing sprites, you can also draw your own.
+
+![screenshot](band-draw.png)
+
 If you have a microphone you can record your own sounds, or even use a webcam to hit your instruments!
 
 ![screenshot](band-io.png)
 
 ## Save your project { .save }
-
-
-
