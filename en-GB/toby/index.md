@@ -12,8 +12,8 @@ In this project, we are going to create a game in which Toby the dog has to coll
 If Toby drops more than 2 balls, the game is over. So the question is: can you keep all the balls in the air?
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/49677948/?autostart=false" frameborder="0"></iframe>
-	<img src="Toby_dog.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/49677948/?autostart=false" frameborder="0"></iframe>
+  <img src="Toby_dog.png">
 </div>
 
 

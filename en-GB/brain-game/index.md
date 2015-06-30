@@ -11,8 +11,8 @@ layout: project
 In this project you'll learn how to create a times table quiz, in which you have to get as many answers correct as you can in 30 seconds.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
-	<img src="brain-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
+  <img src="brain-final.png">
 </div>
 
 # Step 1: Creating questions { .activity }

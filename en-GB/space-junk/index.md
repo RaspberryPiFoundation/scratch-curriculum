@@ -6,21 +6,13 @@ layout: project
 beta: true
 ---
 
-## Scratch Day: May 9th 2015 { .challenge .pdf-hidden }
-
-Saturday 9th May is Scratch Day - a day for people around the world to celebrate creating awesome games, art, stories and more with the help of Scratch!
-
-To mark this occasion, we’ve created the project below for you to use either at home, at school or in your Code Clubs!
-
-This project is aimed at those who have used Scratch before, but only a basic level of knowledge is needed! If you need a bit of practice before starting this project, we recommend trying our first Scratch project: [Lost in Space](http://projects.codeclub.org.uk/en-GB/01_scratch_01/01/Lost%20in%20Space.html).
-
 # Introduction { .intro }
 
 Help the Scratch mascot avoid the space junk and return safely back to Earth!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/59295958/?autostart=false" frameborder="0"></iframe>
-	<img src="sj-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/59295958/?autostart=false" frameborder="0"></iframe>
+  <img src="sj-final.png">
 </div>
 
 # Step 1: Controlling the cat { .activity }

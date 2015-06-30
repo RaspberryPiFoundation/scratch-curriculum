@@ -14,8 +14,8 @@ This project was created with Erik and his daughter Ruth. If you'd like to contr
 In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-	<img src="colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
+  <img src="colour-final.png">
 </div>
 
 # Step 1: Random colours { .activity }
