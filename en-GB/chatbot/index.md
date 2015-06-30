@@ -10,8 +10,8 @@ layout: project
 You are going to learn how to program your own talking robot!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
-	<img src="chatbot-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
+  <img src="chatbot-final.png">
 </div>
 
 # Step 1: Your chatbot { .activity }
@@ -148,23 +148,9 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 	![screenshot](chatbot-costumes.png)
 
-	You can use these costumes as part of your chatbot's response, by using this code:
+	You can use these costumes as part of your chatbot's response, by adding this code:
 
-	```blocks
-		when this sprite clicked
-		switch costume to [nano-a v]
-		ask [Hey! What's your name?] and wait
-		set [name v] to (answer)
-		say <join [Hi ] (name)> for (2) secs
-		ask <join [Are you OK ] (name)> and wait
-		if ((answer)=[yes]) then
-			switch costume to [nano-c v]
-			say [That's great to hear!] for (2) secs
-		else
-			switch costume to [nano-d v]
-			say [Oh no!] for (2) secs
-		end
-	```
+	![screenshot](chatbot-costumes-code.png)
 
 + Test out your program, and you should see your chatbot's face change depending on the answer you give.
 
@@ -208,6 +194,21 @@ You can also program your chatbot to change its location.
 	![screenshot](chatbot-backdrop.png)
 
 + Does your chatbot change location if you type `no`? What about if you type `I'm not sure`?
+
++ You can also add this code inside your `if` {.blockcontrol} block, to make your chatbot jump up and down 4 times if the answer is `yes`:
+
+	```scratch
+	repeat (4)
+		change y by (10)
+		wait (0.1) secs
+		change y by (-10)
+		wait (0.1) secs
+	end
+	```
+
+	![screenshot](chatbot-loop.png)
+
++ Test your code again. Does your chatbot jump up and down if you answer `yes`?
 
 ## Save your project { .save }
 
