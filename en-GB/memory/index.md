@@ -41,7 +41,7 @@ First, let's create a character that can change to a random sequence of colours 
 
 	![screenshot](colour-costume.png)
 
-+ To create a random sequence, you need to create a _list_. A list is just a variable that stores lots of data _in order_. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
++ To create a random sequence, you need to create a __list__. A list is just a variable that stores lots of data _in order_. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
 
 	![screenshot](colour-list.png)
 
