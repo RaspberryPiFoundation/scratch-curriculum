@@ -42,5 +42,13 @@
             "beta":     true,
             "note":     "Create Your Own World/Create Your Own World - notes.md"
         }
+    ],
+
+    "extras": [
+        {
+            "name": "Introduction to Scratch",
+            "note": "../Volunteer resources/scratch.md"
+        }
     ]
+    
 }
