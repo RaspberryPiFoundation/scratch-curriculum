@@ -3,6 +3,7 @@ title: Rock Band
 materials: ["Club Leader Resources/*.*"]
 notes: "Rock Band - notes.md"
 layout: project
+project-type: sample
 ---
 
 # Introduction { .intro }

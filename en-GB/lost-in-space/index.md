@@ -3,6 +3,7 @@ title: Lost in Space
 materials: ["Club Leader Resources/*.*"]
 notes: "Lost in Space - notes.md"
 layout: project
+project-type: sample
 ---
 
 # Introduction { .intro }
