@@ -10,7 +10,7 @@ layout: project
 You are going to make a balloon-popping game!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26745384/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26745384/?autostart=false" frameborder="0"></iframe>
   <img src="balloons-final.png">
 </div>
 
