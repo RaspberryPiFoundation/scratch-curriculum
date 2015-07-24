@@ -43,7 +43,7 @@ Before you can start animating, you'll need to add in a 'thing' to animate. In S
 
 ## Save your project { .save }
 
-Give your program a name, by typing one into the text box above the stage.
+Give your program a name, by typing one into the text box in the top-left corner.
 
 You can then click 'File' and then 'Save now' to save your project.
 
