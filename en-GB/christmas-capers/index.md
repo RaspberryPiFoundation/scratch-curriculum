@@ -6,7 +6,7 @@ layout: project
 
 # Introduction { .intro}
 
-__In this project we’ll create a game with scrolling backgrounds, scoring and a festive game over screen.__
+In this project we’ll create a game with scrolling backgrounds, scoring and a festive game over screen.
 
 A disaster in a toy factory has sent presents flying into the sky, help Rudolph to save Christmas by catching the presents!
 
