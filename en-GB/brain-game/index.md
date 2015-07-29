@@ -25,7 +25,7 @@ Let's start by creating random questions for the player to answer.
 
 + Choose a character and a backdrop for your game. You can choose any you like! Here's an example:
 
-	![screenshot](brain-setting.png)	
+	![screenshot](brain-setting.png)
 
 + Create 2 new variables called `number 1` {.blockdata} and `number 2` {.blockdata}. These variables will store the 2 numbers that will be multiplied together.
 
@@ -104,7 +104,7 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 
 + Click the green flag and then click your new play button to test it. You should see that the game doesn't start until the button is clicked.
 
-+ Did you notice that the timer starts when the green flag is clicked, and not when the game starts? 
++ Did you notice that the timer starts when the green flag is clicked, and not when the game starts?
 
 	![screenshot](brain-timer-bug.png)
 
@@ -182,7 +182,7 @@ Instead of your character just saying `yes! :)` or `nope :(` to the player, let'
 
 + You can now use these messages to show the 'tick' or 'cross' costume. Add this code to your new 'Result' sprite:
 
-	![screenshot](brain-show-answer.png)	
+	![screenshot](brain-show-answer.png)
 
 + Test out your game again. You should see a tick whenever you get a question correct, and a cross whenever you get one wrong!
 
@@ -204,7 +204,7 @@ Instead of your character just saying `yes! :)` or `nope :(` to the player, let'
 
 	```blocks
 		define [animate]
-		set [ghost v] effect to (100)		
+		set [ghost v] effect to (100)
 		show
 		repeat (25)
 			change [ghost v] effect by (-4)
@@ -232,7 +232,7 @@ Can you add sound effects and music to your game? For example:
 		play drum (10 v) for (0.1) beats
 	```
 
-+ You could also constantly play music on a loop (if you're not sure how to do this, step 4 of the 'Rock Band' project will help you). 
++ You could also constantly play music on a loop (if you're not sure how to do this, step 4 of the 'Rock Band' project will help you).
 
 ## Save your project { .save }
 
