@@ -23,23 +23,23 @@ Before you can start animating, you'll need to add in a 'thing' to animate. In S
 
 + First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It looks like this:
 
-	![screenshot](band-scratch.png)
+	![screenshot](Images/band-scratch.png)
 
 + The cat sprite that you can see is the Scratch mascot. Let's get rid of it, by right-clicking and then clicking 'delete'.
 
-	![screenshot](band-delete.png)
+	![screenshot](Images/band-delete.png)
 
 + Next, click 'Choose sprite from library' to open up a list of all the Scratch sprites.
 
-	![screenshot](band-sprite-library.png)
+	![screenshot](Images/band-sprite-library.png)
 
 + Scroll down until you see a drum sprite. Click on a drum, and click 'OK' to add it to your project.
 
-	![screenshot](band-sprite-drum.png)
+	![screenshot](Images/band-sprite-drum.png)
 
 + Click the 'shrink' icon, and then click on the drum a few times to make it smaller.
 
-	![screenshot](band-shrink.png)
+	![screenshot](Images/band-shrink.png)
 
 ## Save your project { .save }
 
@@ -47,7 +47,7 @@ Give your program a name, by typing one into the text box in the top-left corner
 
 You can then click 'File' and then 'Save now' to save your project.
 
-![screenshot](band-save.png)
+![screenshot](Images/band-save.png)
 
 # Step 2: The Stage { .activity }
 
@@ -57,15 +57,15 @@ The __stage__ is the area on the left, and is where your project comes to life. 
 
 + At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking 'Choose backdrop from library'.
 
-	![screenshot](band-stage-choose.png)
+	![screenshot](Images/band-stage-choose.png)
 
 + Click 'Indoors' on the left, and then click on a stage backdrop and click 'OK'.
 
-	![screenshot](band-backdrop.png)
+	![screenshot](Images/band-backdrop.png)
 
 + Your stage should now look like this:
 
-	![screenshot](band-stage.png)
+	![screenshot](Images/band-stage.png)
 
 # Step 3: Making a Drum { .activity }
 
@@ -77,29 +77,29 @@ Let's code your drum to make a sound when it's hit.
 
 	Click on the drum sprite, and then drag these 2 blocks into the code area to the right, making sure that they are connected together (like Lego blocks):
 
-	![screenshot](band-code.png)
+	![screenshot](Images/band-code.png)
 
 + Click the drum to try out your new instrument!
 
 + You can also change how the drum looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the drum image.
 
-	![screenshot](band-drum-costume.png)
+	![screenshot](Images/band-drum-costume.png)
 
 + Right-click on the costume and click 'duplicate' to create a copy of the costume.
 
-	![screenshot](band-drum-duplicate.png)
+	![screenshot](Images/band-drum-duplicate.png)
 
 + Click on the new costume (called 'drum2') and then select the line tool and draw lines to make it look like the drum is making a sound.
 
-	![screenshot](band-drum-hit.png)
+	![screenshot](Images/band-drum-hit.png)
 
 + The names of the costumes aren't very helpful at the moment. Rename the 2 costumes to 'not hit' and 'hit' by typing the new name of each costume into the text box.
 
-	![screenshot](band-drum-name.png)
+	![screenshot](Images/band-drum-name.png)
 
 + Now that you have 2 different costumes for your drum, you can choose which costume is displayed! Add these 2 blocks to your drum:
 
-	![screenshot](band-looks.png)
+	![screenshot](Images/band-looks.png)
 
 	The code block for changing the costume is in the `Looks` {.blocklooks} section.
 
@@ -111,7 +111,7 @@ Let's code your drum to make a sound when it's hit.
 
 + Can you change the sound that the drum makes when it's clicked?
 
-![screenshot](band-drum-sound.png)
+![screenshot](Images/band-drum-sound.png)
 
 + Can you also get the drum to make a sound when the spacebar is pressed? You'll need to use this `event` {.blockevents} block:
 
@@ -121,7 +121,7 @@ Let's code your drum to make a sound when it's hit.
 
 You can copy your existing code by right-clicking on it and clicking 'duplicate'.
 
-![screenshot](band-duplicate-code.png)
+![screenshot](Images/band-duplicate-code.png)
 
 ## Save your project { .save }
 
@@ -133,15 +133,15 @@ Let's add a singer to your band!
 
 + Add another 2 sprites to your stage; a singer and a microphone.
 
-	![screenshot](band-singer-mic.png)
+	![screenshot](Images/band-singer-mic.png)
 
 + Before you can make your singer sing, you need to add a sound to your sprite. Make sure that you have selected your singer, then click the 'Sounds' tab, and click 'Choose sound from library':
 
-	![screenshot](band-import-sound.png)
+	![screenshot](Images/band-import-sound.png)
 
 + If you click 'Vocals' on the left hand side, you will then be able to choose a suitable sound to add to your sprite.
 
-	![screenshot](band-choose-sound.png)
+	![screenshot](Images/band-choose-sound.png)
 
 + Now that the sound has been added, you can add this code to your singer:
 
@@ -157,7 +157,7 @@ Let's add a singer to your band!
 ##Challenge: Changing your singer's costume { .challenge }
 Can you make your singer look like she is singing when clicked? If you need help, you can use the instructions for creating a drum above.
 
-![screenshot](band-singer-final.png)
+![screenshot](Images/band-singer-final.png)
 
 Remember to test that your new code works!
 
@@ -166,18 +166,18 @@ Remember to test that your new code works!
 ##Challenge: Make your own band { .challenge }
 Use what you've learnt in this project to make your own band! You can create any instruments you like, but look at the available sounds and instruments to get some ideas.
 
-![screenshot](band-ideas.png)
+![screenshot](Images/band-ideas.png)
 
 Your instruments don't have to be sensible though. For example, you could make a piano made out of muffins!
 
-![screenshot](band-piano.png)
+![screenshot](Images/band-piano.png)
 
 As well as using existing sprites, you can also draw your own.
 
-![screenshot](band-draw.png)
+![screenshot](Images/band-draw.png)
 
 If you have a microphone you can record your own sounds, or even use a webcam to hit your instruments!
 
-![screenshot](band-io.png)
+![screenshot](Images/band-io.png)
 
 ## Save your project { .save }
