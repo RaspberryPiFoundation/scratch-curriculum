@@ -25,37 +25,37 @@ Let's make a spaceship that flies towards the Earth!
 
 + Add 'Spaceship' and 'Earth' sprites to your stage. You should also add the 'Stars' backdrop to your stage. This is how your stage should look:
 
-	![screenshot](space-sprites.png)
+	![screenshot](images/space-sprites.png)
 
 + Click on your new spaceship sprite, and click the 'Costumes' tab.
 
-	![screenshot](space-costume.png)
+	![screenshot](images/space-costume.png)
 
 + Use the arrow tool to select the image. Then click on the circular rotate handle, and rotate the image until it is on its side.
 
-	![screenshot](space-rotate.png)
+	![screenshot](images/space-rotate.png)
 
 + Add this code to your spaceship sprite:
 
-	![screenshot](space-animate.png)
+	![screenshot](images/space-animate.png)
 
 	Change the numbers in the code blocks, so that the code is exactly the same as in the image above.
 
 + If you click on the code blocks to run the code, you should see the spaceship speak, turn and move towards the centre of the stage.
 
-	![screenshot](space-animate-stage.png)
+	![screenshot](images/space-animate-stage.png)
 
 	The screen position `x:(0) y:(0)` {.blockmotion} is the center of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
 
-	![screenshot](space-xy.png)
+	![screenshot](images/space-xy.png)
 
 	If you need to know the coordinates of a position on the stage, move the mouse to the position you want and make a note of the coordinates, which are displayed below the stage.
 
-	![screenshot](space-coordinates.png)
+	![screenshot](images/space-coordinates.png)
 
 + Try out your animation, by clicking on the green flag just above the stage.
 
-	![screenshot](space-flag.png)
+	![screenshot](images/space-flag.png)
 
 ## Challenge: Improving your animation {.challenge}
 Can you change the numbers in your animation code, so that:
@@ -78,11 +78,11 @@ Another way of animating the spaceship is to tell it to move a small amount, lot
 
 + Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area.
 
-	![screenshot](space-delete-glide.png)
+	![screenshot](images/space-delete-glide.png)
 
 + Once you've removed your code, add this code instead:
 
-	![screenshot](space-loop.png)
+	![screenshot](images/space-loop.png)
 
 	The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a __loop__.
 
@@ -90,15 +90,15 @@ Another way of animating the spaceship is to tell it to move a small amount, lot
 
 + You can add more code to your loop, to do interesting things. Add the `change color effect by 25` {.blocklooks} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
 
-	![screenshot](space-colour.png)
+	![screenshot](images/space-colour.png)
 
 + Click the flag to see your new animation.
 
-	![screenshot](space-colour-test.png)
+	![screenshot](images/space-colour-test.png)
 
 + You can also make your spaceship get smaller as it moves towards the Earth.
 
-	![screenshot](space-size.png)
+	![screenshot](images/space-size.png)
 
 + Test out your animation. What happens if you click the flag a second time? Does your spaceship start off the right size? Can you use this block to fix your animation:
 
@@ -116,11 +116,11 @@ Let's add monkey to your animation, who's lost in space!
 
 + Start by adding in the monkey sprite from the library.
 
-	![screenshot](space-monkey.png)
+	![screenshot](images/space-monkey.png)
 
 + If you click on your new monkey sprite and then click 'Costumes', you can edit how the monkey looks. Click the 'Ellipse' tool, and draw a white space helmet around the monkey's head.
 
-	![screenshot](space-monkey-edit.png)
+	![screenshot](images/space-monkey-edit.png)
 
 + Now click 'Scripts', and add this code to the monkey, so that it spins slowly in a circle forever:
 
@@ -135,7 +135,7 @@ Let's add monkey to your animation, who's lost in space!
 
 + Click the flag to test your monkey. You'll have to click the stop button (next to the flag) to end this animation.
 
-	![screenshot](space-monkey-loop.png)
+	![screenshot](images/space-monkey-loop.png)
 
 # Step 4: Bouncing Asteroids { .activity .new-page }
 
@@ -145,7 +145,7 @@ Let's add some floating space-rock to your animation.
 
 + Add a 'rock' sprite to your animation.
 
-	![screenshot](space-rock-sprite.png)
+	![screenshot](images/space-rock-sprite.png)
 
 + Add this code to your rock, to make it bounce around the stage:
 
@@ -167,11 +167,11 @@ Let's combine loops to make a shining star.
 
 + Add a 'star' sprite to your animation
 
-	![screenshot](space-star-sprite.png)
+	![screenshot](images/space-star-sprite.png)
 
 + Add this code to your star:
 
-	![screenshot](space-star.png)
+	![screenshot](images/space-star.png)
 
 + Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it's original size. These 2 loops are inside a `forever` {.blockcontrol} loop, so the animation keeps repeating.
 
@@ -182,6 +182,6 @@ Stop your space animation, and click 'File' and then 'New', to start a new proje
 
 Use what you've learnt in this project to make your own animation. It can be anything you like, but try to make your animation match the setting. Here are some examples:
 
-![screenshot](space-egs.png)
+![screenshot](images/space-egs.png)
 
 ## Save your project { .save }
