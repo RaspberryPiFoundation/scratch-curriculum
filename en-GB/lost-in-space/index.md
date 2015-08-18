@@ -101,8 +101,8 @@ Another way of animating the spaceship is to tell it to move a small amount, lot
 
 + Test out your animation. What happens if you click the flag a second time? Does your spaceship start off the right size? Can you use this block to fix your animation:
 
-	```scratch
-	set size to (100) %
+	```blocks
+		set size to (100) %
 	```
 
 ## Save your project { .save }
@@ -148,12 +148,13 @@ Let's add some floating space-rock to your animation.
 
 + Add this code to your rock, to make it bounce around the stage:
 
-	```scratch
-	when flag clicked
-	point towards [Earth v]
-	forever
-		move (2) steps
-		if on edge, bounce
+	```blocks
+		when flag clicked
+		point towards [Earth v]
+		forever
+			move (2) steps
+			if on edge, bounce
+		end
 	```
 
 + Click the flag to test your rock. Does it bounce around the stage?
