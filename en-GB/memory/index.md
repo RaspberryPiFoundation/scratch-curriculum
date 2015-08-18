@@ -1,9 +1,8 @@
 ---
 title: Memory
-materials: ["Club Leader Resources/*.*"]
-beta: true
-notes: "Memory - notes.md"
+description: Create a memory game, where you have to memorise and repeat a sequence of random colours!
 layout: project
+notes: "Memory - notes.md"
 ---
 
 ## Community Contributed Project { .challenge .pdf-hidden }
@@ -15,7 +14,7 @@ In this project, you will create a memory game where you have to memorise and re
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="colour-final.png">
+  <img src="images/colour-final.png">
 </div>
 
 # Step 1: Random colours { .activity }
@@ -28,7 +27,7 @@ First, let's create a character that can change to a random sequence of colours 
 
 + Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
 
-	![screenshot](colour-sprite.png)
+	![screenshot](images/colour-sprite.png)
 
 + In your game, you'll use a different number to represent each colour:
 
@@ -39,15 +38,15 @@ First, let's create a character that can change to a random sequence of colours 
 
 	Give your character 4 different colour costumes, one for each of the 4 colours above. Make sure that your coloured costumes are in the right order.
 
-	![screenshot](colour-costume.png)
+	![screenshot](images/colour-costume.png)
 
 + To create a random sequence, you need to create a __list__. A list is just a variable that stores lots of data _in order_. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
 
-	![screenshot](colour-list.png)
+	![screenshot](images/colour-list.png)
 
 	You should now see your empty list in the top-left of your stage, as well as lots of new blocks for using lists.
 
-	![screenshot](colour-list-blocks.png)
+	![screenshot](images/colour-list-blocks.png)
 
 + Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
 
@@ -78,7 +77,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
 + Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
 
-	![screenshot](colour-drums.png)
+	![screenshot](images/colour-drums.png)
 
 + When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
 
@@ -135,7 +134,7 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 
 + Create a new variable called `score` {.blockdata}.
 
-	![screenshot](colour-score.png)
+	![screenshot](images/colour-score.png)
 
 + This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
 
@@ -205,30 +204,30 @@ Let's save the high score, so that you can play against your friends.
 
 + You'll need to add this new code to the other 3 buttons too! Have you noticed that the 'Game over' code in each of the 4 buttons is exactly the same?
 
-	![screenshot](colour-same.png)
+	![screenshot](images/colour-same.png)
 
 + If ever you need to change any of this code, such as adding a sound or changing the 'Game over!' message, you'd have to change it 4 times! That could get annoying, and waste a lot of time.
 
 	Instead, you can define your own blocks, and reuse them in your project! To do this, click `more blocks` {.blockmoreblocks}, and then 'Make a block'. Call this new block 'Game over'.
 
-	![screenshot](colour-more.png)
+	![screenshot](images/colour-more.png)
 
 + Add the code from the `else` {.blockcontrol} block from the red button to the new block that appears:
 
-	![screenshot](colour-make-block.png)
+	![screenshot](images/colour-make-block.png)
 
 + You've now made a new _function_ called `Game over` {.blockmoreblocks}, which you can use anywhere you like. Drag your new `Game over` {.blockmoreblocks} block onto the 4 scripts for the buttons.
 
-	![screenshot](colour-use-block.png)
+	![screenshot](images/colour-use-block.png)
 
 + Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
 
-	![screenshot](colour-cough.png)
+	![screenshot](images/colour-cough.png)
 
 ## Challenge: Making more blocks {.challenge}
 Do you notice any other code that is the same for all 4 buttons?
 
-![screenshot](colour-more-blocks.png)
+![screenshot](images/colour-more-blocks.png)
 
 Can you make another custom block, that is used by each button?
 
@@ -239,7 +238,7 @@ Have you noticed that your game starts with your character showing one of the 4 
 
 Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
 
-![screenshot](colour-white.png)
+![screenshot](images/colour-white.png)
 
 ## Save your project { .save }
 

@@ -1,6 +1,5 @@
 ---
-title: Dodgeball — Notes for Club Leaders
-materials: [""]
+title: Dodgeball — Volunteer Notes
 ---
 
 #Introduction:
@@ -9,7 +8,7 @@ In this project, children will learn how to make a platform game, making use of 
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+You can find a completed version of this project <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, or it can be downloaded by clicking the 'Project Materials' link for this project, which contains:
 
 + Dodgeball.sb2
 

@@ -1,8 +1,10 @@
 ---
-title: Project Template
-materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
-notes: "Project Template - notes.md"
+title: ProjectName
+description: Learn how to make a badge that shows your mood.
 layout: project
+notes: "ProjectName - notes.md"
+new: true
+project-type: community
 ---
 
 # Introduction { .intro }
@@ -13,7 +15,7 @@ You can also add an embedded version of the final project, so that children can 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/32722912/?autostart=true" frameborder="0"></iframe>
-  <img src="project-final.png">
+  <img src="images/project-final.png">
 </div>
 
 # Step 1: Step name goes here { .activity }
@@ -28,7 +30,7 @@ Briefly explain the outcome of this step.
 
 + To aid clarity, you can also include images, like this:
 
-	![screenshot](image.png)
+	![screenshot](images/image.png)
 
 + You should also regularly remind children to save their project:
 
@@ -57,7 +59,7 @@ This step shows how to add Scratch code to your project.
 
 + You can also colour-code your text, to match the colour of Scratch blocks.
 
-	![screenshot](blocks.png)
+	![screenshot](images/blocks.png)
 
 	You can add:
 

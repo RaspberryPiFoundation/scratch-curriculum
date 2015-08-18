@@ -1,6 +1,5 @@
 ---
-title: Toby - Notes for Club Leaders
-materials: ["*.sb2"]
+title: Toby - Volunteer Notes
 ---
 
 #Introduction:
@@ -9,7 +8,7 @@ In this project, we are going to create a simple game in which Toby the dog has 
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used <a href="http://scratch.mit.edu/projects/editor/">online</a> or <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/49677948/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+You can find a completed version of this project <a href="http://scratch.mit.edu/projects/49677948/#editor">online</a>, or it can be downloaded by clicking the 'Project Materials' link for this project, which contains:
 
 + Toby.sb2
 

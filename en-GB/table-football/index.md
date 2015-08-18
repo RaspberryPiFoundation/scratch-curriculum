@@ -1,7 +1,9 @@
 ---
 title: Table Football
-materials: ["Resources/*.png", "Resources/whistle.mp3", "Resources/pitch.jpg"]
+description: Learn how to make a world cup football game in Scratch!
 layout: project
+notes: "Table Football - notes.md"
+project-type: community
 ---
 
 ## Community Contributed Project { .challenge .pdf-hidden }
@@ -14,7 +16,7 @@ If you'd like to contribute a project of your own, then [get in touch with us on
 
 Let’s make a world cup football game in Scratch!
 
-![screenshot](table_football_screenshot.png)
+![screenshot](images/table_football_screenshot.png)
 
 # Step 1: Get the pitch ready for a game { .activity }
 

@@ -1,8 +1,8 @@
 ---
 title: ChatBot
-materials: ["Club Leader Resources/*.*"]
-notes: "ChatBot - notes.md"
+description: Learn how to program your own talking robot!
 layout: project
+notes: "ChatBot - notes.md"
 ---
 
 # Introduction { .intro }
@@ -11,7 +11,7 @@ You are going to learn how to program your own talking robot!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
-  <img src="chatbot-final.png">
+  <img src="images/chatbot-final.png">
 </div>
 
 # Step 1: Your chatbot { .activity }
@@ -27,11 +27,11 @@ You are going to learn how to program your own talking robot!
 
 + Choose one of these character sprites, and add them to your project:
 
-	![screenshot](chatbot-characters.png)
+	![screenshot](images/chatbot-characters.png)
 
 + Choose a backdrop that fits your chatbot's personality. Here's an example, although yours doesn't have to look like this:
 
-	![screenshot](chatbot-sprite.png)
+	![screenshot](images/chatbot-sprite.png)
 
 ## Save your project { .save }
 
@@ -51,7 +51,7 @@ Now that you have a chatbot with a personality, let's program it to talk to you.
 
 + Click your chatbot to test it out. After you are asked your name, type it into the box along the bottom of the stage.
 
-	![screenshot](chatbot-text.png)
+	![screenshot](images/chatbot-text.png)
 
 + Your chatbot simply replies `What a lovely name!` every time. You can personalise your chatbot's reply, by making use of the user's answer. Change the chatbot's code, so that it looks like this:
 
@@ -63,11 +63,11 @@ Now that you have a chatbot with a personality, let's program it to talk to you.
 
 	To create the last block, you'll need to first drag on a green `join` {.blockoperators} block, and drag it on to the `say` {.blocklooks} block.
 
-	![screenshot](chatbot-join.png)
+	![screenshot](images/chatbot-join.png)
 
 	You can then change the text `hello` to say `Hi`, and drag the light blue `answer` {.blocksensing} block (from the 'Sensing' section) onto the text `world`.
 
-	![screenshot](chatbot-answer.png)
+	![screenshot](images/chatbot-answer.png)
 
 + Test out this new program. Does it work as you expected? Can you fix any problems that you can see? (Hint: you can try adding in a space somewhere!)
 
@@ -86,7 +86,7 @@ Now that you have a chatbot with a personality, let's program it to talk to you.
 
 + If you test your program again, you'll notice that the answer is stored in the `name` {.blockdata} variable, and is shown in the top-left of the stage. The `name` {.blockdata} variable should now contain the same value as the `answer` {.blocksensing} variable.
 
-	![screenshot](chatbot-variable.png)
+	![screenshot](images/chatbot-variable.png)
 
 	If you'd rather not see the variables on your stage, you can click the tick next to the variable names in the 'Scripts' tab to hide them.
 
@@ -96,7 +96,7 @@ Now that you have a chatbot with a personality, let's program it to talk to you.
 
 Program your chatbot to ask another question. Can you store their answer in a variable?
 
-![screenshot](chatbot-question.png)
+![screenshot](images/chatbot-question.png)
 
 ## Save your project { .save }
 
@@ -140,21 +140,21 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 + If you test your code, you'll now see that you get a response when you answer `yes` or `no`. Your chatbot should reply with `That's great to hear!` when you answer `yes`, but will reply with `Oh no!` if you type anything other than `yes` (`else` {.blockcontrol} means 'otherwise').
 
-	![screenshot](chatbot-else.png)
+	![screenshot](images/chatbot-else.png)
 
 + You can put any code inside an `if` {.blockcontrol} or `else` {.blockcontrol} block, not just code to make your chatbot speak. For example, you can change the chatbot's costume to match the response.
 
 	If you have a look at your chatbot's costumes, you may see that there is more than one. (If not, you can always add more yourself!)
 
-	![screenshot](chatbot-costumes.png)
+	![screenshot](images/chatbot-costumes.png)
 
 	You can use these costumes as part of your chatbot's response, by adding this code:
 
-	![screenshot](chatbot-costumes-code.png)
+	![screenshot](images/chatbot-costumes-code.png)
 
 + Test out your program, and you should see your chatbot's face change depending on the answer you give.
 
-	![screenshot](chatbot-face.png)
+	![screenshot](images/chatbot-face.png)
 
 ## Save your project { .save }
 
@@ -162,7 +162,7 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 Program your chatbot to ask another question - something with a `yes` or `no` answer. Can you make your chatbot respond to the answer?
 
-![screenshot](chatbot-joke.png)
+![screenshot](images/chatbot-joke.png)
 
 ## Save your project { .save }
 
@@ -174,7 +174,7 @@ You can also program your chatbot to change its location.
 
 + Add another backdrop to your stage, for example the 'moon' backdrop.
 
-	![screenshot](chatbot-moon.png)
+	![screenshot](images/chatbot-moon.png)
 
 + You can now program your chatbot to change location, by adding this code to your chatbot:
 
@@ -187,11 +187,11 @@ You can also program your chatbot to change its location.
 
 + You also need to make sure that your chatbot is outside when you start talking to it. Add this block to the top of your chatbot code:
 
-	![screenshot](chatbot-outside.png)
+	![screenshot](images/chatbot-outside.png)
 
 + Test your program, and answer `yes` when asked if you want to go to the moon. You should see that the chatbot's location has changed.
 
-	![screenshot](chatbot-backdrop.png)
+	![screenshot](images/chatbot-backdrop.png)
 
 + Does your chatbot change location if you type `no`? What about if you type `I'm not sure`?
 
@@ -206,7 +206,7 @@ You can also program your chatbot to change its location.
 	end
 	```
 
-	![screenshot](chatbot-loop.png)
+	![screenshot](images/chatbot-loop.png)
 
 + Test your code again. Does your chatbot jump up and down if you answer `yes`?
 
@@ -215,7 +215,7 @@ You can also program your chatbot to change its location.
 ## Challenge: Make your own chatbot {.challenge}
 Use what you've learnt to finish creating your interactive chatbot. Here are some ideas:
 
-![screenshot](chatbot-ideas.png)
+![screenshot](images/chatbot-ideas.png)
 
 Once you've finished making your chatbot, get your friends to have a conversation with it! Do they like your character? Did they spot any problems?
 

@@ -1,8 +1,8 @@
 ---
 title: Balloons
-materials: ["Club Leader Resources/*.*"]
-notes: "Balloons - notes.md"
+description: Learn how to make a balloon-popping game!
 layout: project
+notes: "Balloons - notes.md"
 ---
 
 # Introduction { .intro }
@@ -11,7 +11,7 @@ You are going to make a balloon-popping game!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26745384/?autostart=false" frameborder="0"></iframe>
-  <img src="balloons-final.png">
+  <img src="images/balloons-final.png">
 </div>
 
 # Step 1: Animating a balloon { .activity }
@@ -22,7 +22,7 @@ You are going to make a balloon-popping game!
 
 + Add in a new balloon sprite, and a suitable stage backdrop.
 
-	![screenshot](balloons-balloon.png)
+	![screenshot](images/balloons-balloon.png)
 
 + Add this code to your balloon, so that it bounces around the screen:
 
@@ -40,14 +40,14 @@ You are going to make a balloon-popping game!
 
 + Did you also notice that your balloon flips as it moves around the screen?
 
-	![screenshot](balloons-flip.png)
+	![screenshot](images/balloons-flip.png)
 
 	Balloons don't move like this! To fix this, click on the balloon sprite icon, and then click the blue `i` {.blockmotion} information icon.
 
-	![screenshot](balloons-info.png)
+	![screenshot](images/balloons-info.png)
 	In the 'rotation style' section, click the dot to stop the balloon rotating.
 
-	![screenshot](balloons-lock.png)
+	![screenshot](images/balloons-lock.png)
 
 + Test your program again to see if the problem is fixed.
 
@@ -79,7 +79,7 @@ You are going to make a balloon-popping game!
 		change [colour v] effect by (pick random (0) to (200))
 	```
 
-	![screenshot](balloons-colour.png)
+	![screenshot](images/balloons-colour.png)
 
 	What happens if this code is put at the start of your program? Does anything different happen if you put this code _inside_ the `forever` {.blockcontrol} loop? Which do you prefer?
 
@@ -98,7 +98,7 @@ Lets allow the player to pop the balloons!
 
 + Click on your balloon sprite, and then click the 'Costumes' tab. You can delete all of the other costumes, just leaving 1 balloon costume. Add a new costume, by clicking 'Paint new costume' and create a new costume called 'burst'.
 
-	![screenshot](balloons-costume.png)
+	![screenshot](images/balloons-costume.png)
 
 + Make sure that your balloon switches to the right costume when the game starts. Your code should now look like this:
 
@@ -136,7 +136,7 @@ Lets allow the player to pop the balloons!
 
 + Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:
 
-	![screenshot](balloons-fullscreen.png)
+	![screenshot](images/balloons-fullscreen.png)
 
 ## Save your project { .save }
 
@@ -150,15 +150,15 @@ Let's make things more interesting by keeping score.
 
 	To create a new variable, click on the 'Scripts' tab, select `Data` {.blockdata} and then click 'Make a Variable'.
 
-	![screenshot](balloons-score.png)
+	![screenshot](images/balloons-score.png)
 
 	Type 'score' as the name of the variable, make sure that it is available for all sprites, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockdata} variable.
 
-	![screenshot](balloons-variable.png)
+	![screenshot](images/balloons-variable.png)
 
 	You'll also see the score in the top-left of the stage.
 
-	![screenshot](balloons-stage-score.png)
+	![screenshot](images/balloons-stage-score.png)
 
 + When a new game is started (by clicking the flag), you want to set the player's score to 0. Add this code to the top of the balloon's `when flag clicked` {.blockevents} code:
 
@@ -197,7 +197,7 @@ One simple way to get lots of balloons is just to right-click on the balloon spr
 
 	Your balloon code should now look like this:
 
-	![screenshot](balloons-clone.png)
+	![screenshot](images/balloons-clone.png)
 
 + Test your project! Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before. See if you can pop the 20 balloons!
 
@@ -211,7 +211,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 
 + You can use another variable to store the remaining time left. Click on the stage, and create a new variable called 'time':
 
-	![screenshot](balloons-time.png)
+	![screenshot](images/balloons-time.png)
 
 + This is how the timer should work:
 
@@ -233,15 +233,15 @@ You can make your game more interesting, by only giving your player 10 seconds t
 
 	To add the `repeat until`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} code, first you'll need to drag a green `=` {.blockoperators} block, onto your `repeat until` {.blockcontrol} block:
 
-	![screenshot](balloons-timer-1.png)
+	![screenshot](images/balloons-timer-1.png)
 
 	You can then drag your `time` {.blockdata} variable onto the `=` {.blockoperators} block:
 
-	![screenshot](balloons-timer-2.png)
+	![screenshot](images/balloons-timer-2.png)
 
 + Drag your 'time' variable display to the right side of the stage. You can also right-click on the variable display and choose 'large readout' to change how the time is displayed.
 
-	![screenshot](balloons-readout.png)
+	![screenshot](images/balloons-readout.png)
 
 + Test your game. How many points can you score? If your game is too easy, you can:
 
@@ -257,7 +257,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 ## Challenge: More objects {.challenge}
 Can you add in other objects to your game? You can add good objects, like donuts, that give you lots of points, or bad objects, like bats, that take points away.
 
-![screenshot](balloons-objects.png)
+![screenshot](images/balloons-objects.png)
 
 You'll need to think about the objects you're adding. Think about:
 

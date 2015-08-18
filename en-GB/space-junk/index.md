@@ -1,9 +1,8 @@
 ---
 title: Space Junk
-materials: ["Club Leader Resources/*.*"]
-notes: "Space Junk - notes.md"
+description: Help the Scratch mascot avoid the space junk and return safely back to Earth!
 layout: project
-beta: true
+notes: "Space Junk - notes.md"
 ---
 
 # Introduction { .intro }
@@ -12,7 +11,7 @@ Help the Scratch mascot avoid the space junk and return safely back to Earth!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/59295958/?autostart=false" frameborder="0"></iframe>
-  <img src="sj-final.png">
+  <img src="images/sj-final.png">
 </div>
 
 # Step 1: Controlling the cat { .activity }
@@ -25,15 +24,15 @@ Let's allow the player to control the cat with the arrow keys.
 
 + Click the 'Shrink' button and then click on the cat a few times to make it a little smaller.
 
-	![screenshot](sj-shrink.png)
+	![screenshot](images/sj-shrink.png)
 
 + To add a background, click 'Choose backdrop from library' and select the 'Stars' backdrop.
 
-	![screenshot](sj-bg.png)
+	![screenshot](images/sj-bg.png)
 
 	This is how your stage should look:
 
-	![screenshot](sj-stage.png)
+	![screenshot](images/sj-stage.png)
 
 + Let's move the cat to the left when the left arrow key is pressed. 
 
@@ -46,7 +45,7 @@ Let's allow the player to control the cat with the arrow keys.
 
 	Notice that you need to change the x coordinate to move the cat to the left.
 
-	![screenshot](sj-coords.png)
+	![screenshot](images/sj-coords.png)
 
 + Test out your cat by pressing the left arrow key. You should see your cat move towards the left of the stage.
 
@@ -74,7 +73,7 @@ Let's add some space junk for the cat to avoid.
 
 + Click 'Add new sprite from library' and add the 'Planet2' sprite to your stage. You can change the size of the planet if you want to.
 
-	![screenshot](sj-planet.png)
+	![screenshot](images/sj-planet.png)
 
 + Add this code to make the planet move around the stage forever:
 
@@ -122,7 +121,7 @@ Let's add some space junk for the cat to avoid.
 ## Challenge: Changing your planet's orbit {.challenge}
 Can you change the way your planet moves? You can use these blocks to help you, as well as any other blocks you like.
 
-![screenshot](sj-move-help.png)
+![screenshot](images/sj-move-help.png)
 
 ## Save your project { .save }
 
@@ -134,7 +133,7 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 
 + Firstly, let's add the Earth sprite to the center of your stage.
 
-	![screenshot](sj-earth.png)
+	![screenshot](images/sj-earth.png)
 
 + Add this code to your Earth sprite, so that it starts off very small and slowly get's bigger and bigger:
 
@@ -148,15 +147,15 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 
 + Test out your Earth sprite. It should look as if your cat is slowly floating towards Earth!
 
-	![screenshot](sj-earth-big.png)
+	![screenshot](images/sj-earth-big.png)
 
 + Click on your stage, and create a new variable to store the time.
 
-	![screenshot](sj-time.png)
+	![screenshot](images/sj-time.png)
 
 	You should now see your timer in the top-left of the stage.
 
-	![screenshot](sj-time-stage.png)
+	![screenshot](images/sj-time-stage.png)
 
 + Add this code to your stage, so that the timer counts up forever:
 
@@ -170,7 +169,7 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 
 + Click the green flag and you should see your timer start to count up!
 
-	![screenshot](sj-time-test.png)
+	![screenshot](images/sj-time-test.png)
 
 + The game is won if the cat can avoid the space junk for 30 seconds.
 
@@ -191,7 +190,7 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 ## Challenge: More space junk {.challenge}
 Can you add more enemy sprites to your game, for the cat to avoid? You could add rocks, aliens, or anything else you like!
 
-![screenshot](sj-more-junk.png)
+![screenshot](images/sj-more-junk.png)
 
 See if you can make each sprite moves differently.
 
@@ -202,6 +201,6 @@ Can you improve your game, so that one of your enemy sprites is controlled by an
 
 You could even let one of your players use the mouse to control their character. Here are some blocks that may help you:
 
-![screenshot](sj-mouse.png)
+![screenshot](images/sj-mouse.png)
 
 ## Save your project { .save }

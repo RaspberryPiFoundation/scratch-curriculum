@@ -1,7 +1,7 @@
 ---
 title: Flappy Parrot
-materials: "*.sb2"
 layout: project
+project-type: community
 ---
 
 # Introduction { .intro}

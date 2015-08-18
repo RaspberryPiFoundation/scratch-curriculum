@@ -1,6 +1,5 @@
 ---
-title: Balloons — Notes for Club Leaders
-materials: [""]
+title: Balloons — Volunteer Notes
 ---
 
 #Introduction:
@@ -9,7 +8,7 @@ In this project, children will learn how to use variables to store data in their
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26745384/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26745384/#editor">online</a>, or it can be downloaded by clicking the 'Project Materials' link for this project, which contains:
 
 + Balloons.sb2
 
@@ -25,4 +24,4 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 #Frequently Asked Questions
 + If children find it difficult to pop balloons without dragging them around, they can play the game in fullscreen mode, in which balloons aren't draggable.
 
-![screenshot](balloons-fullscreen.png)
+![screenshot](images/balloons-fullscreen.png)

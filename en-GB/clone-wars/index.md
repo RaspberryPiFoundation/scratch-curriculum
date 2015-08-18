@@ -1,9 +1,8 @@
 ---
 title: Clone Wars
-materials: ["Club Leader Resources/*.*"]
-beta: true
-notes: "Clone Wars - notes.md"
+description: Create a game in which you have to save the Earth from space monsters.
 layout: project
+notes: "Clone Wars - notes.md"
 ---
 
 ## Community Contributed Project { .challenge .pdf-hidden }
@@ -15,7 +14,7 @@ In this project you'll learn how to create a game in which you have to save the 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
-  <img src="invaders-final.png">
+  <img src="images/invaders-final.png">
 </div>
 
 # Step 1: Making a Spaceship { .activity }
@@ -28,7 +27,7 @@ Let's make a spaceship that will defend the Earth!
 
 + Add the 'stars' backdrop and the 'Spaceship' sprite to your project. Shrink the spaceship and move it near the bottom of the screen.
 
-	![screenshot](invaders-sprites.png)
+	![screenshot](images/invaders-sprites.png)
 
 + Add code to move your spaceship to the left when the left arrow key is pressed. You'll need to use these blocks:
 
@@ -55,7 +54,7 @@ Let's give the spaceship the ability to fire lightning bolts!
 
 + Add the 'Lightning' sprite from the Scratch library. Click the sprite's costume and turn the lightning upside-down.
 
-	![screenshot](invaders-lightning.png)
+	![screenshot](images/invaders-lightning.png)
 
 + When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.
 
@@ -107,7 +106,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 + Create a new sprite from the 'Hippo1' image in the Scratch library.
 
-	![screenshot](invaders-hippo.png)
+	![screenshot](images/invaders-hippo.png)
 
 + Set its rotation style to be left-right only, and add the following code to hide the sprite when the game starts:
 
@@ -118,11 +117,11 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 + Create a new variable called `speed` {.blockdata}, that is for the hippo sprite only.
 
-	![screenshot](invaders-var.png)
+	![screenshot](images/invaders-var.png)
 
 	You'll know if you've done this correctly because the variable will have the name of the sprite next to it, like this:
 
-	![screenshot](invaders-var-test.png)
+	![screenshot](images/invaders-var-test.png)
 
 + The following code will create a new hippo every few seconds. **The Stage** is a good place for this code to live:
 
@@ -151,17 +150,17 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 + Test out your hippo code. You should see a new hippo clone appear every few seconds, each moving at its own speed.
 
-	![screenshot](invaders-hippo-test.png)
+	![screenshot](images/invaders-hippo-test.png)
 
 + Test your laser cannon. If you hit a hippo, does it vanish?
 
 + When a hippo touches your spaceship, we need to make the spaceship explode! To do this, first make sure that your spaceship has 2 costumes called 'normal' and 'hit'.
 
-	![screenshot](invaders-spaceship-costumes.png)
+	![screenshot](images/invaders-spaceship-costumes.png)
 
 	The spaceship's 'hit' costume can be made by importing the 'Sun' image from the Scratch library, and using the 'Color a shape' tool to change its colour.
 
-	![screenshot](invaders-sun.png)
+	![screenshot](images/invaders-sun.png)
 
 + Add this code to your spaceship so that it switches costume whenever it collides with a flying hippo:
 
@@ -187,7 +186,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 + Test out this code by starting a new game and colliding with a hippo. 
 
-	![screenshot](invaders-hippo-collide.png)
+	![screenshot](images/invaders-hippo-collide.png)
 
 ## Save your project { .save }
 
@@ -204,17 +203,17 @@ Let's make a fruit bat that throws oranges at your spaceship.
 
 + Firstly, make a new bat sprite that will `move` {.blockmotion} across the top of the stage `forever` {.blockcontrol}. Remember to test out your code.
 
-	![screenshot](invaders-bat.png)
+	![screenshot](images/invaders-bat.png)
 
 + If you look at the bat's costumes, you'll see that it already has 2:
 
-	![screenshot](invaders-bat-costume.png)
+	![screenshot](images/invaders-bat-costume.png)
 
 	Use the `next costume` {.blocklooks} block to make the bat flap its wings as it moves.
 
 + Create a new 'Orange' sprite from the Scratch library
 
-	![screenshot](invaders-orange.png)
+	![screenshot](images/invaders-orange.png)
 
 
 + Add code to your bat, so that it creates a new orange clone every few seconds.
@@ -265,7 +264,7 @@ Let's add a 'game over' message at the end of the game.
 
 + Draw a new sprite called 'Game Over', using the text tool.
 
-	![screenshot](invaders-game-over.png)
+	![screenshot](images/invaders-game-over.png)
 
 + On your stage, broadcast a `game over` {.blockevents} message just before the game ends.
 
@@ -293,11 +292,11 @@ Let's add a 'game over' message at the end of the game.
 What improvements can you make to your game? Here are some ideas:
 + Add health packs that you can collect to gain extra lives;
 
-![screenshot](invaders-aid.png)
+![screenshot](images/invaders-aid.png)
 
 + Add floating rocks that your spaceship must avoid;
 	
-![screenshot](invaders-rocks.png)
+![screenshot](images/invaders-rocks.png)
 
 + Make more enemies appear when your score gets to 100.
 

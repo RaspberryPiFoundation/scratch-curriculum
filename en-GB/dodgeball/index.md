@@ -1,9 +1,8 @@
 ---
-title: Dodgeball
-materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
-beta: true
-notes: "Dodgeball - notes.md"
+title: Dodgeball 
+description: Create a platform game, in which you have to dodge the moving balls and reach the end of the level.
 layout: project
+notes: "Dodgeball  - notes.md"
 ---
 
 # Introduction { .intro }
@@ -12,7 +11,7 @@ In this project you'll learn how to create a platform game, in which you have to
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
-  <img src="dodge-final.png">
+  <img src="images/dodge-final.png">
 </div>
 
 # Step 1: Character movement { .activity }
@@ -25,15 +24,15 @@ Let's start by creating a character that can move left and right, as well as cli
 
 + For this project, you should have a 'Project Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 
-	![screenshot](dodge-resources.png)
+	![screenshot](images/dodge-resources.png)
 
 + Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the poles and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
 
-	![screenshot](dodge-background.png)
+	![screenshot](images/dodge-background.png)
 
 + Add a new sprite, which will be your character. It's better if you choose a sprite with multiple costumes, so that you can make it look as though it's walking.
 
-	![screenshot](dodge-characters.png)
+	![screenshot](images/dodge-characters.png)
 
 + Let's use the arrow keys to move your character around. When the player presses the right arrow, you want your character to point right, move a few steps and change to the next costume:
 
@@ -50,7 +49,7 @@ Let's start by creating a character that can move left and right, as well as cli
 
 + Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does your character look like they are walking?
 
-	![screenshot](dodge-walking.png)
+	![screenshot](images/dodge-walking.png)
 
 + To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
 
@@ -64,14 +63,14 @@ Let's start by creating a character that can move left and right, as well as cli
 
 + Test your character - can you climb the yellow poles and get to the end of your level?
 
-	![screenshot](dodge-test-character.png)
+	![screenshot](images/dodge-test-character.png)
 
 ## Save your project { .save }
 
 ## Challenge: Completing the level {.challenge}
 Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the brown door?
 
-![screenshot](dodge-win.png)
+![screenshot](images/dodge-win.png)
 
 ## Save your project { .save }
 
@@ -83,11 +82,11 @@ Let's make your character move more realistically, by adding gravity and allowin
 
 + You may have noticed that your character can walk off a platform into mid-air. Try to walk off of a platform and see what happens.
 
-	![screenshot](dodge-no-gravity.png)
+	![screenshot](images/dodge-no-gravity.png)
 
 + To fix this, let's add gravity to your game. Create a new variable called `gravity` {.blockdata}. You can hide this variable from your stage if you want to.
 
-	![screenshot](dodge-gravity.png)
+	![screenshot](images/dodge-gravity.png)
 
 + Add this new code block, which sets the gravity to a negative number, and then uses this to repeatedly change your character's y-coordinate.
 
@@ -101,7 +100,7 @@ Let's make your character move more realistically, by adding gravity and allowin
 
 + Click the flag, and then drag your character to the top of the stage. What happens? Does the gravity work as you expected?
 
-	![screenshot](dodge-gravity-drag.png)
+	![screenshot](images/dodge-gravity-drag.png)
 
 + Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
 
@@ -117,7 +116,7 @@ Let's make your character move more realistically, by adding gravity and allowin
 
 + Test the gravity again. Does your character stop when they are on a platform or a pole? Can you walk off the edge of platforms to the level below?
 
-	![screenshot](dodge-gravity-test.png)
+	![screenshot](images/dodge-gravity-test.png)
 
 +  Let's also make your character jump when the player presses the space bar. One very easy way to do this is to move your character up a few times, using this code:
 
@@ -164,25 +163,25 @@ Now that you've got your character moving around, let's add some balls for your 
 
 + Create a new ball sprite. You can choose any type of ball you like.
 
-	![screenshot](dodge-balls.png)
+	![screenshot](images/dodge-balls.png)
 
 + Resize your ball, so that your character can jump over it. Try jumping over the ball to test it. 
 
-	![screenshot](dodge-ball-resize.png)
+	![screenshot](images/dodge-ball-resize.png)
 
 + Add this code to your ball:
 
-	![screenshot](dodge-ball-motion.png)
+	![screenshot](images/dodge-ball-motion.png)
 
 	This code creates a new ball clone every 3 seconds. Each new clone moves along the top platform.
 
 + Click the flag to test this out.
 
-	![screenshot](dodge-ball-test.png)
+	![screenshot](images/dodge-ball-test.png)
 
 + Add more code to your ball sprite, so that they move across all 3 platforms.
 
-	![screenshot](dodge-ball-more-motion.png)
+	![screenshot](images/dodge-ball-more-motion.png)
 
 + Finally, you'll need code for when your character gets hit by a ball! Add this code to your ball sprite:
 
@@ -214,7 +213,7 @@ The balls your character has to dodge all look the same, and always appear every
 + appear after a random amount of time?
 + are a random size?
 
-![screenshot](dodge-ball-random.png)
+![screenshot](images/dodge-ball-random.png)
 
 ## Save your project { .save }
 
@@ -226,11 +225,11 @@ Let's make your game a little harder to complete, by adding lasers!
 
 + Add a new sprite to your game, called 'Laser'. It should have 2 costumes, called 'on' and 'off'.
 
-	![screenshot](dodge-lasers-costume.png)
+	![screenshot](images/dodge-lasers-costume.png)
 
 + Place your new laser anywhere you like, between 2 platforms.
 
-	![screenshot](dodge-lasers-position.png)
+	![screenshot](images/dodge-lasers-position.png)
 
 + Add code to your laser, to make it switch between the 2 costumes.
 
@@ -259,7 +258,7 @@ If you think your game is still too easy, you can add more obstacles to your lev
 + Platforms that appear and disappear;
 + Falling tennis balls that must be avoided.
 
-![screenshot](dodge-obstacles.png)
+![screenshot](images/dodge-obstacles.png)
 
 You could even create more than one backdrop, and move to the next level when your character reaches the brown door:
 
@@ -276,11 +275,11 @@ You could even create more than one backdrop, and move to the next level when yo
 ## Challenge: Improved gravity {.challenge}
 There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
 
-![screenshot](dodge-gravity-bug.png)
+![screenshot](images/dodge-gravity-bug.png)
 
 Can you fix this bug? To do this, you need to give your character different coloured trousers (on _all_ costumes)...
 
-![screenshot](dodge-trousers.png)
+![screenshot](images/dodge-trousers.png)
 
 ...and then replace the code: 
 

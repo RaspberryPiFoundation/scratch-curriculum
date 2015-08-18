@@ -1,9 +1,8 @@
 ---
 title: Brain Game
-materials: ["Club Leader Resources/*.*"]
-beta: true
-notes: "Brain Game - notes.md"
+description: Learn how to create a quiz.
 layout: project
+notes: "Brain Game - notes.md"
 ---
 
 # Introduction { .intro }
@@ -12,7 +11,7 @@ In this project you'll learn how to create a times table quiz, in which you have
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
-  <img src="brain-final.png">
+  <img src="images/brain-final.png">
 </div>
 
 # Step 1: Creating questions { .activity }
@@ -25,11 +24,11 @@ Let's start by creating random questions for the player to answer.
 
 + Choose a character and a backdrop for your game. You can choose any you like! Here's an example:
 
-	![screenshot](brain-setting.png)
+	![screenshot](images/brain-setting.png)
 
 + Create 2 new variables called `number 1` {.blockdata} and `number 2` {.blockdata}. These variables will store the 2 numbers that will be multiplied together.
 
-	![screenshot](brain-variables.png)
+	![screenshot](images/brain-variables.png)
 
 + Add code to your character, to set both of these variables to a `random` {.blockoperators} number between 2 and 12.
 
@@ -66,7 +65,7 @@ Let's start by creating random questions for the player to answer.
 ## Challenge: Changing costumes {.challenge}
 Can you change your character's costumes, so that they respond to the player's answer?
 
-![screenshot](brain-costume.png)
+![screenshot](images/brain-costume.png)
 
 ## Challenge: Adding a score {.challenge}
 Can you add a score to your game? You can add a point for every correct answer. If you're feeling mean, you could even reset the player's score to 0 if they get a question wrong!
@@ -81,7 +80,7 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 
 + Create a new 'Play' button sprite, which your player will click to start a new game. You can draw it yourself, or edit a sprite from the Scratch library.
 
-	![screenshot](brain-play.png)
+	![screenshot](images/brain-play.png)
 
 + Add this code to your new button.
 
@@ -100,19 +99,19 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 
 	Replace the `when flag clicked` {.blockevents} code with `when I receive start` {.blockevents}.
 
-	![screenshot](brain-start.png)
+	![screenshot](images/brain-start.png)
 
 + Click the green flag and then click your new play button to test it. You should see that the game doesn't start until the button is clicked.
 
 + Did you notice that the timer starts when the green flag is clicked, and not when the game starts?
 
-	![screenshot](brain-timer-bug.png)
+	![screenshot](images/brain-timer-bug.png)
 
 	Can you fix this problem?
 
 + Click on the stage, and replace the `stop all` {.blockcontrol} block with an `end` {.blockevents} message.
 
-	![screenshot](brain-end.png)
+	![screenshot](images/brain-end.png)
 
 + You can now add code to your button, to show it again at the end of each game.
 
@@ -148,7 +147,7 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 		end
 	```
 
-	![screenshot](brain-fisheye.png)
+	![screenshot](images/brain-fisheye.png)
 
 ## Save your project { .save }
 
@@ -164,7 +163,7 @@ show variable [time v]
 hide variable [time v]
 ```
 
-![screenshot](brain-startscreen.png)
+![screenshot](images/brain-startscreen.png)
 
 ## Save your project { .save }
 
@@ -174,29 +173,29 @@ Instead of your character just saying `yes! :)` or `nope :(` to the player, let'
 
 + Create a new sprite called 'Result', containing both a 'tick' and a 'cross' costume.
 
-	![screenshot](brain-result.png)
+	![screenshot](images/brain-result.png)
 
 + Change your character's code, so that instead of telling the player how they did, it broadcasts `correct` {.blockevents} and `wrong` {.blockevents} messages instead.
 
-	![screenshot](brain-broadcast-answer.png)
+	![screenshot](images/brain-broadcast-answer.png)
 
 + You can now use these messages to show the 'tick' or 'cross' costume. Add this code to your new 'Result' sprite:
 
-	![screenshot](brain-show-answer.png)
+	![screenshot](images/brain-show-answer.png)
 
 + Test out your game again. You should see a tick whenever you get a question correct, and a cross whenever you get one wrong!
 
-	![screenshot](brain-test-answer.png)
+	![screenshot](images/brain-test-answer.png)
 
 + Have you noticed that the code for `when I receive correct` {.blockevents} and `when I receive wrong` {.blockevents} is nearly identical? Let's create a function to make it easier for you to make changes to your code.
 
 	On your 'Result' sprite, click `More Blocks` {.blockmoreblocks}, and then 'Make a Block'. Create a new function called `animate` {.blockmoreblocks}.
 
-	![screenshot](brain-animate-function.png)
+	![screenshot](images/brain-animate-function.png)
 
 + You can then add the animation code into your new animation function, and then just use the function twice:
 
-	![screenshot](brain-use-function.png)
+	![screenshot](images/brain-use-function.png)
 
 + Now, if you want to show the tick and the cross for a longer or shorter time, you only need to make one change to your code. Try it!
 
@@ -217,7 +216,7 @@ Instead of your character just saying `yes! :)` or `nope :(` to the player, let'
 ## Challenge: Improved animation {.challenge}
 Can you improve the animation of your graphics? You could code the tick and cross so that they fade out as well as fade in. Or, you could use other cool effects:
 
-![screenshot](brain-effects.png)
+![screenshot](images/brain-effects.png)
 
 ## Save your project { .save }
 
@@ -256,7 +255,7 @@ To do this, you'll only need to change your timer code. Can you see what needs t
 ## Challenge: Instruction screen {.challenge}
 Can you add an instructions screen to your game, telling your player how to play the game? You'll need an 'Instructions' button, and another stage background.
 
-![screenshot](brain-instructions.png)
+![screenshot](images/brain-instructions.png)
 
 You may also need a 'Back' button to take you to the main menu.
 

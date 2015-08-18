@@ -1,9 +1,8 @@
 ---
-title: Create Your Own World
-materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
-beta: true,
-notes: "Create Your Own World - notes.md"
+title: Create Your Own World 
+description: Learn how to create your own open world adventure game.
 layout: project
+notes: "Create Your Own World - notes.md"
 ---
 
 # Introduction { .intro }
@@ -12,7 +11,7 @@ In this project you'll learn how to create your own open world adventure game.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
-  <img src="world-final.png">
+  <img src="images/world-final.png">
 </div>
 
 # Step 1: Coding your player { .activity }
@@ -25,11 +24,11 @@ Let's start by creating a player that can move around your world.
 
 + For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
 
-	![screenshot](world-resources.png)
+	![screenshot](images/world-resources.png)
 
 + Add the image 'room1.png' as a new stage backdrop, and the image 'player.png' as a new sprite. If you don't have these images you can draw them yourself! Here's how your project should look:
 
-	![screenshot](world-player.png)
+	![screenshot](images/world-player.png)
 
 + Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the player sprite:
 
@@ -44,7 +43,7 @@ Let's start by creating a player that can move around your world.
 
 + Test out your player by clicking the flag and then holding down the up arrow. Does your player move up?
 
-	![screenshot](world-up.png)
+	![screenshot](images/world-up.png)
 
 + To move the player to the left, you need to add another `if` {.blockcontrol} block to your player, which changes the x coordinate:
 
@@ -67,7 +66,7 @@ Can you add more code to your player, so that they can move up, down, left and r
 
 + Test out your player again, and you'll see they have the ability to walk through the light grey walls.
 
-	![screenshot](world-walls.png)
+	![screenshot](images/world-walls.png)
 
 + To fix this, you need to move the player, but then move them back if they're touching a light grey wall. Here's the code you'll need:
 
@@ -87,11 +86,11 @@ Can you add more code to your player, so that they can move up, down, left and r
 
 + Test this new code by moving below the wall - you shouldn't be able to move up into it.
 
-	![screenshot](world-walls-test.png)
+	![screenshot](images/world-walls-test.png)
 
 + Let's do the same for the left arrow, moving back if the player is touching a wall. This is how your player code should look so far:
 
-	![screenshot](world-wall-code.png)
+	![screenshot](images/world-wall-code.png)
 
 ## Challenge: Fixing your player's movement {.challenge}
 Add code to your player so that you can't walk through walls in any direction. Use the code you already have to help you!
@@ -106,11 +105,11 @@ Let's allow the player to walk through doors into other rooms!
 
 + Add 2 more backdrops to your stage ('room2.png' and 'room3.png'), so that you have 3 backdrops in total. Make sure that they are in the right order - this will help you later.
 
-	![screenshot](world-backdrops.png)
+	![screenshot](images/world-backdrops.png)
 
 + You'll need a new variable called `room` {.blockdata}, to keep track of what room the player is in.
 
-	![screenshot](world-room.png)
+	![screenshot](images/world-room.png)
 
 + When the player touches the orange door in the first room, the next backdrop should be displayed, and the player should move back to the left side of the stage. Here's the code you'll need - it should go inside the player's `forever` {.blockcontrol} loop:
 
@@ -132,7 +131,7 @@ Let's allow the player to walk through doors into other rooms!
 
 + Click the flag and move your player over the orange door. Does your player move to the next screen? Does the `room` {.blockdata} variable change to 2?
 
-	![screenshot](world-room-test.png)
+	![screenshot](images/world-room-test.png)
 
 ## Challenge: Moving to the previous room {.challenge}
 Can you make your player move to the previous room when they touch a yellow door? Remember that this code will be _very_ similar to the code you've already added for moving to the next room.
@@ -147,7 +146,7 @@ Let's add signs to your world, to guide your player on their journey.
 
 + Upload the image 'sign.svg' as a new sprite, and rename the sprite 'welcome sign'.
 
-	![screenshot](world-sign.png)
+	![screenshot](images/world-sign.png)
 
 + This sign will only be visible in room 1, so let's add some code to the sign to make sure that this happens:
 
@@ -164,7 +163,7 @@ Let's add signs to your world, to guide your player on their journey.
 
 + Test your sign by moving between rooms. Your sign should only be visible in room 1.
 
-	![screenshot](world-sign-test.png)
+	![screenshot](images/world-sign-test.png)
 
 + A sign isn't much good if it doesn't say anything! Let's add some more code (in another separate block) to display a message if the sign is touching the player:
 
@@ -180,14 +179,14 @@ Let's add signs to your world, to guide your player on their journey.
 	```
 + Test out your sign, and you should see a message when the player touches it.
 
-	![screenshot](world-sign-test2.png)
+	![screenshot](images/world-sign-test2.png)
 
 ## Save your project { .save }
 
 ## Challenge: Treasure! {.challenge}
 Can you add a new treasure chest sprite, using the image 'chest.svg'. This treasure chest should be placed in room 3, and should say 'Well done!' when the player touches it.
 
-![screenshot](world-treasure.png)
+![screenshot](images/world-treasure.png)
 
 ## Save your project { .save }
 
@@ -199,7 +198,7 @@ Let's add other people to your world that your player can interact with.
 
 + Add in a new person sprite, using the image 'person.png'.
 
-	![screenshot](world-person.png)
+	![screenshot](images/world-person.png)
 
 + Add in this code, so that the person talks to your player. This code is very similar to the code you added to your sign:
 
@@ -224,11 +223,11 @@ Let's add other people to your world that your player can interact with.
 
 	Your person will act differently, depending on whether you place this code inside the `forever` {.blockcontrol} loop or the `if` {.blockcontrol} block. Try both and see which you prefer.
 
-	![screenshot](world-person-test.png)
+	![screenshot](images/world-person-test.png)
 
 + Have you noticed that your person flips upside-down. To stop this, click the sprite's information icon (`i`{.blockmotion}), and click the dot to fix to rotation style.
 
-	![screenshot](world-person-rotate.png)
+	![screenshot](images/world-person-rotate.png)
 
 ## Challenge: Improving your person {.challenge}
 Can you add code to your new person, so that they only appear in room 1? Make sure you test out your new code!
@@ -241,7 +240,7 @@ Can you add code to your new person, so that they only appear in room 1? Make su
 
 + You'll also need to add code to move the enemy, and to end the game if the enemy touches the player. It's easier to do this in separate code blocks. Here's how your enemy code should look:
 
-	![screenshot](world-enemy-code.png)
+	![screenshot](images/world-enemy-code.png)
 
 + Test out your enemy, to make sure that:
 	+ It's only visible in room 2;
@@ -253,7 +252,7 @@ Can you add code to your new person, so that they only appear in room 1? Make su
 ## Challenge: More enemies {.challenge}
 Can you create another enemy in room 3, that patrols up and down through the gap in the wall?
 
-![screenshot](world-enemy2.png)
+![screenshot](images/world-enemy2.png)
 
 ## Save your project { .save }
 
@@ -265,7 +264,7 @@ Can you create another enemy in room 3, that patrols up and down through the gap
 
 + Add a new 'coin' sprite to your project.
 
-![screenshot](world-coins.png)
+![screenshot](images/world-coins.png)
 
 + Add code to your coin, so that it only appears in room 1.
 
@@ -294,7 +293,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 
 + Create a new sprite from your 'key-blue.svg' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
 
- 	![screenshot](world-key.png)
+ 	![screenshot](images/world-key.png)
 
 + Make sure that your key is only visible in room 3.
 
@@ -318,7 +317,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 
 + Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the two walls.
 
-	![screenshot](world-door.png)
+	![screenshot](images/world-door.png)
 
 + Add code to your door, so that it is only visible in room 3.
 
@@ -347,11 +346,11 @@ You can now continue creating your own world. Here are some ideas:
 
 + Use coins to get information from other people;
 
-	![screenshot](world-bribe.png)
+	![screenshot](images/world-bribe.png)
 
 + You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
 
-	![screenshot](world-north-south.png)
+	![screenshot](images/world-north-south.png)
 
 ## Save your project { .save }
 

@@ -1,9 +1,9 @@
 ---
 title: Toby
-materials: "*.sb2"
-notes: "Toby - Notes.md"
+description: Toby the dog has to collect 5 cheese-puffs bowls to win, whilst preventing balls from falling on the floor.
 layout: project
-beta: true
+notes: "Toby - notes.md"
+project-type: community
 ---
 
 # Introduction { .intro}
@@ -13,7 +13,7 @@ If Toby drops more than 2 balls, the game is over. So the question is: can you k
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/49677948/?autostart=false" frameborder="0"></iframe>
-  <img src="Toby_dog.png">
+  <img src="images/Toby_dog.png">
 </div>
 
 
@@ -33,7 +33,7 @@ If Toby drops more than 2 balls, the game is over. So the question is: can you k
 
 + Select the `left-right rotation style` {.blockmotion} as shown on the picture below:
 
-	![screenshot](Toby_Sprite.png)
+	![screenshot](images/Toby_Sprite.png)
 
 + We want Toby to move right when we press the right arrow key. Click on the scripts tab, and add this script:
 
@@ -86,12 +86,12 @@ Now that Toby can move, let's give him something to do. In order to win the game
 
 + Click on the __Costumes__ tab and reduce the size of the cheese-puffs bowl by clicking on the **shrink** icon at the top near the scissors. You then need to click on the bowl sprite to make it smaller. The shrink icon looks like this:
 
-	![screenshot](shrink.png)
+	![screenshot](images/shrink.png)
 
 
 + If you used a different method to resize the bowl, you may need to reset the centre of the costume so that it is at the centre of the bowl. To do this, click on the **Set costume centre** icon at the top right corner, and move the crosshair as shown on the picture below:  
 
-	![screenshot](Set_centre.png)
+	![screenshot](images/Set_centre.png)
 
 
 + The **cheesy-puffs** need to appear in random places on the pavement. The `y position` {.blockmotion} will remain the same, but the `x position` {.blockmotion} needs to change so that the bowl sometimes appears on the right, on the left, or in the middle. Add the following script to the **bowl** sprite: 
@@ -135,7 +135,7 @@ In order to win the game, Toby must collect 5 cheese-puffs bowls.
 
 + Create a `bowls` {.blockdata} variable to keep track of how many bowls Toby has collected so far.
 
-	![screenshot](bowls.png)
+	![screenshot](images/bowls.png)
 
 + Now we need to add some code to keep track of how many bowls Toby has collected so far. Each time that Toby touches a cheese-puffs bowl, the `bowls` {.blockdata} variable needs to be increased by 1. So add this script to the cheese-puffs bowl sprite. (Make sure that you keep the previous script as well! We need both scripts)
 
@@ -285,7 +285,7 @@ Can you see a new ball falling from the top? Is it a different colour?
 
 + We now need to keep track of how many balls Toby has dropped so far. To do this, create a variable for all sprites called `droppedBalls` {.blockdata}.
 
-	![screenshot](droppedBalls.png)
+	![screenshot](images/droppedBalls.png)
 
 + When we start the game, Toby has not dropped any balls yet, so we need to initialise the `droppedBalls` {.blockdata} variable to 0. Each time the balls touches the floor, the `droppedBalls` {.blockdata} variable needs to be increased by 1.
 When the number of dropped balls is more than 3, the game is over, so we will broadcast a new message called `gameover` {.blockevents} to tell the other sprites and the background that the game is over, and the player has lost. Your **Beachball** script should now look like this: 

@@ -1,9 +1,8 @@
 ---
 title: Catch the Dots
-materials: ["Club Leader Resources/*.*", "Project Resources/*.*"]
-beta: true
-notes: "Catch the Dots - notes.md"
+description: Learn how to make a dot-catching game.
 layout: project
+notes: "Catch the Dots - notes.md"
 ---
 
 # Introduction { .intro }
@@ -12,7 +11,7 @@ In this project you'll learn how to create a game, in which you have to match up
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
-  <img src="dots-final.png">
+  <img src="images/dots-final.png">
 </div>
 
 # Step 1: Creating a controller { .activity }
@@ -25,7 +24,7 @@ Let's start by creating a controller, that will be used to collect dots.
 
 + If your club leader has given you a 'Resources' folder, click 'Upload sprite from file' and add the 'controller.svg' image. You should move this sprite to the center of the stage.
 
-	![screenshot](dots-controller.png)
+	![screenshot](images/dots-controller.png)
 	
 	If you don't have this image, you can draw it yourself!
 	
@@ -81,7 +80,7 @@ Let's start by creating a controller, that will be used to collect dots.
 
 	Here's how your controller code should look:
 
-	![screenshot](dots-right.png)
+	![screenshot](images/dots-right.png)
 
 + Test your project again. If you hold down the right arrow key your controller should speed up. Let go of the key and your controller should gradually slow down.
 
@@ -102,7 +101,7 @@ Let's add dots to the game that the player will collect with their controller.
 
 + Create a new sprite called 'red'. This sprite should be a small red dot.
 
-	![screenshot](dots-red.png)
+	![screenshot](images/dots-red.png)
 
 + Add this script to your 'red' dot sprite, to create a new dot clone every few seconds:
 
@@ -117,11 +116,11 @@ Let's add dots to the game that the player will collect with their controller.
 
 + When each clone is created, you want it to appear in one of the 4 corners of the stage.
 
-	![screenshot](dots-start.png)
+	![screenshot](images/dots-start.png)
 
 	To do this, first create a new list variable called `start positions` {.blockdata} and click the `(+)` to add in the values `-180` and `180`.
 
-	![screenshot](dots-list.png)
+	![screenshot](images/dots-list.png)
 
 + You can use these 2 list items to pick a random corner of the stage. Add this code to the 'dot' sprite, so that each new clone moves to a random corner and then slowly moves towards the controller.
 
@@ -139,7 +138,7 @@ Let's add dots to the game that the player will collect with their controller.
 
 + Test your project. You should see lots of red dots appear in each corner of the screen, and move slowly towards the controller.
 
-	![screenshot](dots-red-test.png)
+	![screenshot](images/dots-red-test.png)
 
 + Create 2 new variables called `lives` {.blockdata} and `score` {.blockdata}.
 
@@ -173,11 +172,11 @@ Let's add dots to the game that the player will collect with their controller.
 ## Challenge: More dots {.challenge}
 Duplicate your 'red' dot sprite twice, and name the two new sprites 'yellow' and 'blue'.
 
-![screenshot](dots-more-dots.png)
+![screenshot](images/dots-more-dots.png)
 
 Edit these sprites (including their code), so that each coloured dot has to match the correct colour on the controller. Remember to test your project, making sure you gain points and lose lives at the right times, and that your game isn't too easy or too hard!
 
-![screenshot](dots-all-test.png)
+![screenshot](images/dots-all-test.png)
 
 ## Save your project { .save }
 
@@ -227,11 +226,11 @@ Let's save the high score, so that players can see how well they're doing.
 
 + Click on your stage, and create a new custom block called `check high score` {.blockmoreblocks}.
 
-	![screenshot](dots-custom-1.png)
+	![screenshot](images/dots-custom-1.png)
 
 + Just before the end of the game, add in your new custom block.
 
-	![screenshot](dots-custom-2.png)
+	![screenshot](images/dots-custom-2.png)
 
 + Add code to your custom block to store the current `score` {.blockdata} as the `high score` {.blockdata} `if` {.blockcontrol} it's the highest score so far:
 
