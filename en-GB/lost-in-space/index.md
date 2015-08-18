@@ -1,9 +1,8 @@
 ---
 title: Lost in Space
-materials: ["Club Leader Resources/*.*"]
-notes: "Lost in Space - notes.md"
+description: Learn how to program your own animation!
 layout: project
-project-type: sample
+notes: "Lost in Space - notes.md"
 ---
 
 # Introduction { .intro }

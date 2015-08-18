@@ -1,9 +1,8 @@
 ---
 title: Rock Band
-materials: ["Club Leader Resources/*.*"]
-notes: "Rock Band - notes.md"
+description: Learn how to code your own musical instruments!
 layout: project
-project-type: sample
+notes: "Rock Band - notes.md"
 ---
 
 # Introduction { .intro }

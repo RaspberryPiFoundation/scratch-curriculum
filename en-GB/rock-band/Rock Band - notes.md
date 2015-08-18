@@ -1,6 +1,5 @@
 ---
-title: Rock Band — Notes for Club Leaders
-materials: [""]
+title: Rock Band — Volunteer Notes
 ---
 
 #Introduction:

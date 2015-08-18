@@ -1,6 +1,5 @@
 ---
-title: Lost in Space — Notes for Club Leaders
-materials: [""]
+title: Lost in Space — Volunteer Notes
 ---
 
 #Introduction:
