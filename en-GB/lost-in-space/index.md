@@ -3,6 +3,7 @@ title: Lost in Space
 description: Learn how to program your own animation!
 layout: project
 notes: "Lost in Space - notes.md"
+project-type: sample
 ---
 
 # Introduction { .intro }

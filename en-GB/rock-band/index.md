@@ -3,6 +3,7 @@ title: Rock Band
 description: Learn how to code your own musical instruments!
 layout: project
 notes: "Rock Band - notes.md"
+project-type: sample
 ---
 
 # Introduction { .intro }
