@@ -10,7 +10,7 @@ In this project we’ll make our own version of the highly popular mobile game F
 
 Press the space bar to flap and try to navigate through the gaps in the pipes!
 
-![screenshot](flappy_screenshot.png)
+![screenshot](images/flappy_screenshot.png)
 
 # **Step 1:** Make Flappy fall {.activity}
 
@@ -110,7 +110,7 @@ Next we'll add some obstacles for Flappy to fly through.
 + Click on the `Rectangle` {.blockgrey}, pick a colour, and click on the `Filled rectangle` {.blockgrey} button.
 + Click and drag two boxes, one from the top middle and one from the bottom middle as shown:
 
-![screenshot](pipe_design.png)
+![screenshot](images/pipe_design.png)
 
 + You can shade your pipes by clicking on the `Color a shape` {.blockgrey} button and click on the `Horizontal gradient` {.blockgrey} button. Choose two shades of the same colour one for the foreground and one for the background. When you click to fill the shapes, the colours will fade between your chosen colours.
 + Name your sprite **Pipe**.
