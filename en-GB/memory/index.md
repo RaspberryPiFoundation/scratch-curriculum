@@ -5,9 +5,6 @@ layout: project
 notes: "Memory - notes.md"
 ---
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
-
 # Introduction { .intro }
 
 In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!

@@ -5,9 +5,6 @@ layout: project
 notes: "Clone Wars - notes.md"
 ---
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
-
 # Introduction { .intro }
 
 In this project you'll learn how to create a game in which you have to save the Earth from space monsters.
