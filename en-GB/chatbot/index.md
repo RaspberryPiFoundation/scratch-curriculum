@@ -197,7 +197,7 @@ You can also program your chatbot to change its location.
 
 + You can also add this code inside your `if` {.blockcontrol} block, to make your chatbot jump up and down 4 times if the answer is `yes`:
 
-	```scratch
+	```blocks
 	repeat (4)
 		change y by (10)
 		wait (0.1) secs
