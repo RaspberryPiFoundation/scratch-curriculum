@@ -10,7 +10,7 @@ notes: "Catch the Dots - notes.md"
 In this project you'll learn how to create a game, in which you have to match up coloured dots with the correct part of the controller.
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
   <img src="images/dots-final.png">
 </div>
 
@@ -28,74 +28,28 @@ Let's start by creating a controller, that will be used to collect dots.
 	
 	If you don't have this image, you can draw it yourself!
 	
-+ You can move your controller really easily, by turning it left or right when the arrows are pressed:
-
-	```blocks
-		when flag clicked
-		forever
-			if <key [left arrow v] pressed?> then
-				turn left (2) degrees
-			end
-			if <key [right arrow v] pressed?> then
-				turn right (2) degrees
-			end
-		end
-	```
-+ Test out your controller -- it should spin left and right.
-
-+ Although this code works, it would be much better if the controller sped up and slowed down gradually. To do this, delete the code you just created for your controller, and create a new variable called `controller speed` {.blockdata}.
-
-+ Add this code to your controller, to make it repeatedly use the `controller speed` {.blockdata} to move:
-
-	```blocks
-		when flag clicked
-		set [controller speed v] to [0]
-		forever
-			turn right (controller speed) degrees
-		end
-	```
-
-+ At the moment, this code won't move the controller, as the speed has been set to 0! Create a separate script in your controller that increases the speed when the right arrow is pressed.
++ Turn your controller to the right when the right arrow key is pressed:
 
 	```blocks
 		when flag clicked
 		forever
 			if <key [right arrow v] pressed?> then
-				change [controller speed v] by (0.2)
-			else
-
+				turn right (3) degrees
 			end
 		end
 	```
-
-+ Have you noticed that there's a gap in the code above? You will need to add some code to slow down the controller if the right arrow key isn't pressed. However, you only want to slow down the controller until the speed gets back down to 0, otherwise it'll start spinning backwards.
-
-	Here's the code you should add:
-
-	```blocks
-	if <(controller speed) > [0.1]> then
-		change [controller speed v] by (-0.2)
-	end
-	```
-
-	Here's how your controller code should look:
-
-	![screenshot](images/dots-right.png)
-
-+ Test your project again. If you hold down the right arrow key your controller should speed up. Let go of the key and your controller should gradually slow down.
++ Test out your controller -- it should spin to the right.
 
 ## Save your project { .save }
 
 ## Challenge: Spinning left {.challenge}
-Duplicate the entire controller script for spinning to the right. Can you modify this duplicated code so that your controller spins to the left when the left arrow key is held down?
-
-You'll need to change some of the numbers in the code! (Hint: the controller will spin to the left if the `controller speed` {.blockdata} variable has a negative value.)
+Can you make your controller spin to the left when the left arrow key is pressed?
 
 ## Save your project { .save }
 
 # Step 2: Collecting dots { .activity }
 
-Let's add dots to the game that the player will collect with their controller.
+Let's add some dots for the player to collect with their controller.
 
 ## Activity Checklist { .check }
 
@@ -256,3 +210,4 @@ Can you think of ways to improve your game? For example, you could create specia
 
 ## Challenge: Game menu {.challenge}
 Can you add a menu (with buttons) to your game? You could add an instructions screen, or a separate screen for showing the high score. If you need help with this, the 'Brain Game' project will help you.
+
