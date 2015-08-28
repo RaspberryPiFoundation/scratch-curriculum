@@ -7,9 +7,6 @@ embeds: "*.png"
 materials: ["Recursos para el líder del Club/*.*"]
 ...
 
-## Proyecto creado por la Comunidad { .challenge .pdf-hidden }
-Este proyecto ha sido creado con Erik y su hija Ruth. Si quieres crear tu propio proyecto, [ponte en contacto con nosotros a través de Github](https://github.com/CodeClub).
-
 # Introducción { .intro }
 
 En este proyecto, ¡vas a crear un juego de memoria en el que tendrás que memorizar y repetir una secuencia de colores aleatoria!
@@ -84,7 +81,7 @@ Vamos a añadir 4 botones para que el jugador pueda repetir la secuencia a recor
 + Al presionar el tambor rojo, tendrás que enviar un mensaje a tu personaje, diciéndole que se ha presionado el botón rojo. Añade este código al tambor rojo:
 
 	```blocks
-		al hacer clic en este objeto
+		al clickear este objeto
 		enviar [rojo v]
 	```
 
