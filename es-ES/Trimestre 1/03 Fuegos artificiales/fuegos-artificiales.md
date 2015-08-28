@@ -130,7 +130,7 @@ Pulsa la bandera verde. Comprueba que el cohete hace ruido y se esconde cuando l
 		esconder
 		ir a [cohete v]
 		mostrar
-		esperar (1) segs
+		esperar (1) segundos
 		esconder
 ```
 
@@ -152,7 +152,7 @@ Pulsa la bandera verde. Comprueba que el cohete hace ruido y se esconde cuando l
 		establecer efecto [color v] a (número al azar entre (1) y (200))
 		ir a [cohete v]
 		mostrar
-		esperar (1) segs
+		esperar (1) segundos
 		esconder
 ```
 
