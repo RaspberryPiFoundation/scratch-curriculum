@@ -5,9 +5,6 @@ layout: project
 notes: "Ghostbusters - notes.md"
 ---
 
-## Note: { .challenge .pdf-hidden }
-The 'Balloons' project has been moved to the [Additional Scratch Projects](http://projects.codeclub.org.uk/en-GB/03_scratch_bonus/index.html) section.
-
 # Introduction { .intro }
 
 You are going to make a ghost-catching game!
