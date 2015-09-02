@@ -7,9 +7,6 @@ embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"]
 ...
 
-## Bemærk: { .challenge .pdf-hidden }
-'Ballon' projektet er flyttet til [Additional Scratch Projects](http://projects.codeclub.org.uk/en-GB/03_scratch_bonus/index.html) sektionen.
-
 # Introduktion { .intro }
 
 Du skal lave et spøgelses fangelegsspil! 

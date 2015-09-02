@@ -1,13 +1,13 @@
 {
-    "description": false,
-    "id": "scratch_01",
-    "language": “da-DK”,
-    "number": 1,
+    "id": "scratch-1",
     "title": "Scratch 1",
-    "category": "cat-scratch",
+    "description": "",
+    "language": "da-DK",
+    "number": 1,
     "projects": [
         {
             "number":   1,
+            "beta": true,
             "filename": "Rock Band/Rock Band.md",
             "note":     "Rock Band/Rock Band - noter.md"
         },
@@ -16,4 +16,6 @@
             "beta": true,
             "filename": "Ghostbusters/Ghostbusters.md",
             "note":     "Ghostbusters/Ghostbusters - noter.md"
-        },
+        }       
+    ]
+}
