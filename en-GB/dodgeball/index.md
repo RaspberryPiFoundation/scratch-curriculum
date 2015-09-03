@@ -2,7 +2,7 @@
 title: Dodgeball 
 description: Create a platform game, in which you have to dodge the moving balls and reach the end of the level.
 layout: project
-notes: "Dodgeball  - notes.md"
+notes: "Dodgeball - notes.md"
 ---
 
 # Introduction { .intro }
