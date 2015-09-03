@@ -147,7 +147,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 # Step 3: Making mistakes { .activity .new-page }
 
-Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our project!
+Sometimes mistakes happen, so let's add a 'clear' button and an eraser to your project!
 
 ## Activity Checklist { .check }
 
