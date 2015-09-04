@@ -8,19 +8,25 @@ In this project, children will learn how sprites can sense their environment.
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
+The 'Project Materials' link for this project contains the following resources:
+
+####Volunteer Resources
+
 You can find a completed version of this project <a href="http://scratch.mit.edu/projects/63957956/#editor">online</a>, or it can be downloaded by clicking the 'Project Materials' link for this project, which contains:
 
 + BoatRace.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/boatrace-resources](http://jumpto.cc/boatrace-resources), or in the downloadable project materials, which contains:
+####Project Resources
+
+For this project, club members can make use of external resources that aren't available in the Scratch library:
+
++ boat.png.
+
+Make sure that each child has access to a copy of these resources.
+
+For club members that aren't able to access these project resources, there is a Scratch project with the external resources pre-loaded. This is available online at [jumpto.cc/boat-resources](http://jumpto.cc/boat-resources), or in the downloadable project materials, which contains:
 
 + BoatRaceResources.sb2 
-
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
-
-Project resources:
-+ background.png;
-+ boat.png.
 
 #Learning Objectives
 + Sensing blocks:
