@@ -29,12 +29,12 @@ Du skal lave et spøgelses fangelegsspil!
 + Tilføj denne kode til dit spøgelse så det gentagne gange kommer frem og forsvinder:  
 
 	```blocks
-	når du klikker på ⚑
- for evigt
-   skjul
-   vent (1) sekunder
-   vis
-   vent (1) sekunder  
+		når du klikker på ⚑
+ 		for evigt
+   			skjul
+   			vent (1) sekunder
+   			vis
+   			vent (1) sekunder  
 		end 
 	``` 
  
@@ -51,14 +51,14 @@ Dit spøgelse er ret let at fange for det bevæger sig ikke!
 + Frem for at blive i samme position kan du lade Scratch vælge tilfældige x og y koordinater i stedet. Tilføj en `gå til` {.blockmotion} blok til koden af dit spøgelse, så den ser således ud:
 
 	```blocks
-når du klikker på ⚑
-for evigt
-   skjul
-   vent (1) sekunder
-   gå til x:(vælg tilfældigt mellem (-150) og (150)) y:(vælg tilfældigt mellem (-150) og (150))
-   vis
-   vent (1) sekunder
-end 
+		når du klikker på ⚑
+		for evigt
+		   skjul
+		   vent (1) sekunder
+		   gå til x:(vælg tilfældigt mellem (-150) og (150)) y:(vælg tilfældigt mellem (-150) og (150))
+		   vis
+		   vent (1) sekunder
+		end 
 	```
  
 + Test dit spøgelse igen og du bør se at det dukker op et forskelligt sted hver gang.
