@@ -49,6 +49,8 @@ You can then click 'File' and then 'Save now' to save your project.
 
 ![screenshot](images/band-save.png)
 
+(If you don't have a Scratch account, you can save a copy of your project by clicking 'Download to your computer' instead).
+
 # Step 2: The Stage { .activity }
 
 The __stage__ is the area on the left, and is where your project comes to life. Think of it as a performance area, just like a real stage!
