@@ -2,7 +2,6 @@
 title: Table Football
 description: Learn how to make a world cup football game in Scratch!
 layout: project
-notes: "Table Football - Notes.md"
 project-type: community
 ---
 
