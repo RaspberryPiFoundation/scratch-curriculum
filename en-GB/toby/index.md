@@ -2,7 +2,7 @@
 title: Toby
 description: Toby the dog has to collect 5 cheese-puffs bowls to win, whilst preventing balls from falling on the floor.
 layout: project
-notes: "Toby - notes.md"
+notes: "Toby - Notes.md"
 project-type: community
 ---
 
