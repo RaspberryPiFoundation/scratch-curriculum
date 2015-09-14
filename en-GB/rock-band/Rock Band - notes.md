@@ -25,7 +25,7 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + "Make your own band" - using the skills learnt to create new instruments.
 
 #Frequently Asked Questions
-+ When creating their own sprites, children may find that their sprite 'jumps' when it's clicked, as it changes costume. This is because the two costumes are't centered in the same place.
++ When creating their own sprites, children may find that their sprite 'jumps' when it's clicked, as it changes costume. This is because the two costumes aren't centered in the same place.
 
 	To fix this, click 'Set costume center' on _both_ sprites, and make sure they are centered at the same point in both costumes.
 
