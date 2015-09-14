@@ -1,77 +1,41 @@
 {
-    "id": "scratch",
-    "title":"Scratch 1",
-    "description":"",
+    "description": false,
+    "id": "scratch_01",
     "language": "pl-PL",
-    "category": "cat-scratch",
     "number": 1,
-
-
+    "title": "Scratch 1",
+    "category": "cat-scratch",
     "projects": [
         {
             "number":   1,
-            "filename": "01 Feliks i Herbert/01 Feliks i Herbert.md",
-            "pdf":      "01 Feliks i Herbert/01 Feliks i Herbert.pdf",
-            "note":     "01 Feliks i Herbert/01 Feliks i Herbert - Informacje.md",
-            "note_pdf": "01 Feliks i Herbert/01 Feliks i Herbert - Informacje.pdf"
-
+            "filename": "Kapela rockowa/Kapela rockowa.md",
+            "note":     "Kapela rockowa/Kapela rockowa - notatki.md"
         },
         {
             "number":   2,
-            "filename": "02 Pogromcy duchow/02 Pogromcy duchow.md",
-            "pdf":      "02 Pogromcy duchow/02 Pogromcy duchow.pdf",
-            "note":     "02 Pogromcy duchow/02 Pogromcy duchow - Informacje.md",
-            "note_pdf": "02 Pogromcy duchow/02 Pogromcy duchow - Informacje.pdf"
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - notes.md"
         },
         {
             "number":   3,
-            "filename": "03 Fajerwerki/03 Fajerwerki.md",
-            "pdf":      "03 Fajerwerki/03 Fajerwerki.pdf",
-            "note":     "03 Fajerwerki/03 Fajerwerki - Informacje.md",
-            "note_pdf": "03 Fajerwerki/03 Fajerwerki - Informacje.pdf"
+            "beta": true,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "note":     "Ghostbusters/Ghostbusters - notes.md"
         },
         {
             "number":   4,
-            "filename": "04 Jednoreki bandyta/04 Jednoreki bandyta.md",
-            "pdf":      "04 Jednoreki bandyta/04 Jednoreki bandyta.pdf",
-            "note":     "04 Jednoreki bandyta/04 Jednoreki bandyta - Informacje.md",
-            "note_pdf": "04 Jednoreki bandyta/04 Jednoreki bandyta - Informacje.pdf"
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - notes.md"
         },
         {
             "number":   5,
-            "filename": "05 Glodna ryba/05 Glodna ryba.md",
-            "pdf":      "05 Glodna ryba/05 Glodna ryba.pdf",
-            "note":     "05 Glodna ryba/05 Glodna ryba - Informacje.md",
-            "note_pdf": "05 Glodna ryba/05 Glodna ryba - Informacje.pdf"
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - notes.md"
         },
         {
             "number":   6,
-            "filename": "06 Pustynny wyscig/06 Pustynny wyscig.md",
-            "pdf":      "06 Pustynny wyscig/06 Pustynny wyscig.pdf",
-            "note":     "06 Pustynny wyscig/06 Pustynny wyscig - Informacje.md",
-            "note_pdf": "06 Pustynny wyscig/06 Pustynny wyscig - Informacje.pdf"
-        },
-        {
-            "number":   7,
-            "filename": "07 Co to jest/07 Co to jest.md",
-            "pdf":      "07 Co to jest/07 Co to jest.pdf",
-            "note":     "07 Co to jest/07 Co to jest - Informacje.md",
-            "note_pdf": "07 Co to jest/07 Co to jest - Informacje.pdf"
-        },
-        {
-            "number":   8,
-            "filename": "08 Kolorowe kredki/08 Kolorowe kredki.md",
-            "pdf":      "08 Kolorowe kredki/08 Kolorowe kredki.pdf",
-            "note":     "08 Kolorowe kredki/08 Kolorowe kredki - Informacje.md",
-            "note_pdf": "08 Kolorowe kredki/08 Kolorowe kredki - Informacje.pdf"
-        },
-        {
-            "number":   9,
-            "filename": "09 Stworz wlasna gre/09 Stworz wlasna gre.md",
-            "pdf":      "09 Stworz wlasna gre/09 Stworz wlasna gre.pdf",
-            "note":     "09 Stworz wlasna gre/09 Stworz wlasna gre - Informacje.md",
-            "note_pdf": "09 Stworz wlasna gre/09 Stworz wlasna gre - Informacje.pdf"
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 }
-
