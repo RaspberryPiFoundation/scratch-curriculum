@@ -32,6 +32,8 @@ For this project, club members can make use of external resources that aren't av
 
 Make sure that each child has access to a copy of these resources.
 
+(The project resources also includes a .zip containing all the resources listed above.)
+
 For club members that aren't able to access these project resources, there is a Scratch project with the external resources pre-loaded. This is available online at [jumpto.cc/world-resources](http://jumpto.cc/world-resources), or in the downloadable project materials, which contains:
 
 + CreateYourOwnWorldResources.sb2 
