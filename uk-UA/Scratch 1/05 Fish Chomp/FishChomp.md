@@ -1,3 +1,12 @@
+---
+title: Fish Chomp
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["project resources/*.*" , "volunteer resources/*.*"]
+...
+
 Рівень 2
 
 #Риба-хижак (Рибожер)
