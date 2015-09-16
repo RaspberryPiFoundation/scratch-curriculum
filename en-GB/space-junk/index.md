@@ -20,7 +20,7 @@ Let's allow the player to control the cat with the arrow keys.
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start a new Scratch project. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
 
 + Click the 'Shrink' button and then click on the cat a few times to make it a little smaller.
 

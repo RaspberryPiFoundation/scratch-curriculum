@@ -23,7 +23,7 @@ You are going to learn how to program your own talking robot!
 	+ Where do they live?
 	+ Are they happy? serious? funny? shy? friendly?
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
 
 + Choose one of these character sprites, and add them to your project:
 

@@ -21,7 +21,7 @@ Before you can start animating, you'll need to add in a 'thing' to animate. In S
 
 ## Activity Checklist { .check }
 
-+ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It looks like this:
++ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>. It looks like this:
 
 	![screenshot](images/band-scratch.png)
 
