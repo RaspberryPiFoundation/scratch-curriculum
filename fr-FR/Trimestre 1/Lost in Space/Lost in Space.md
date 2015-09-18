@@ -1,5 +1,5 @@
 ---
-title: Perdu dans l'espace
+title: Lost in space
 level: Scratch 1
 language: fr-FR
 stylesheet: scratch
