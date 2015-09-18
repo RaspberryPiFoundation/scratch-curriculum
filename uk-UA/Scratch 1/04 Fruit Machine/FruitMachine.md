@@ -1,4 +1,12 @@
-Рівень 2 
+---
+title: Fruitmachine
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["notes for club leaders/*.*"]
+...
+
 
 #Гральний автомат "фруктова машина"
 

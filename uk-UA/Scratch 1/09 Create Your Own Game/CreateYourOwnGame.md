@@ -1,4 +1,12 @@
-Рівень 3
+---
+title: Create Your Own Game
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["notes for club leaders/*.*"]
+...
+
 
 #Створи свою власну гру
 

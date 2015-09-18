@@ -1,4 +1,12 @@
-Level 2
+---
+title: Christmas Capers
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["notes for club leaders/*.*"]
+...
+
 
 #Christmas Capers
 
