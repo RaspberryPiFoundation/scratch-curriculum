@@ -1,4 +1,12 @@
-Рівень 1
+---
+title: Whack-a-witch
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["notes for club leaders/*.*"]
+...
+
 
 #Полювання на відьом
 
