@@ -11,7 +11,7 @@ I dette projekt vil børnene lære hvordan man tilføjer lyd og musik til deres 
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline.
 
-Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, og kan også downloades ved at klikke på linket 'Download projektmateriale' under dette projekt, som indeholder: 
+Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Project Materials' under dette projekt, som indeholder: 
 
 + RockBand.sb2
 
@@ -30,7 +30,7 @@ Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu
 #Ofte Stillede Spørgsmål
 + Når man laver sine egne sprites kan børnene måske opleve at deres sprite 'hopper' når de klikker på den, når kostumet ændres. Dette er fordi de to kostumer ikke er centrerede samme sted.
 
-	For at omgå dette, klik på 'Sæt kostumets midte' på _begge_ sprites, og sørg for begge kostumer er centrerede samme sted.
+	For at omgå dette, klik på 'Sæt kostumets center' på _begge_ sprites, og sørg for begge kostumer er centrerede samme sted.
 
 	![screenshot](band-center.png)
 
