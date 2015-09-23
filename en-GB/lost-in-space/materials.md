@@ -2,5 +2,5 @@
 title: Lost in Space - Materials
 layout: materials
 volunteer-resources: LostInSpace.sb2
-project-resources: LostInSpaceResources.sb2
+project-resources:
 ---

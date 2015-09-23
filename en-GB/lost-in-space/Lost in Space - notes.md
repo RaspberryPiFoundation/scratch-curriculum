@@ -12,10 +12,6 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 
 + LostInSpace.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/space-resources](http://jumpto.cc/space-resources), or in the downloadable project materials, which contains:
-
-+ LostInSpaceResources.sb2 
-
 #Learning Objectives
 + Loops:
 	+ `Repeat` {.blockcontrol} loops;
