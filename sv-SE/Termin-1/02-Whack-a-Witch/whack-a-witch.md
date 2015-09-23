@@ -15,108 +15,96 @@ Det här projektet är som spelet __Whack-a-Mole__. Du får poäng för att trä
 
 ##Checklista {.check}
 
-1. __Skapa ett nytt Scratchprojekt.__
-2. __Radera kattspriten__ och ersätt bakgrunden med bakgrunden __nature/woods__.
-3. Använd "ny sprite från fil"-knappen för att lägga till en ny häxsprite till projektet (använd __fantasy/witch1__ ). 
++ __Skapa ett nytt Scratchprojekt.__
++ __Radera kattspriten__ och ersätt bakgrunden med bakgrunden __nature/woods__.
++ Använd "ny sprajt från fil"-knappen för att lägga till en ny häxsprite till projektet (använd __fantasy/witch1__ ). 
 
 __Nu vill vi göra så att häxan rör sig.__
 
 ##Checklista {.check}
 
-4. Lägg till en "variabel" för denna sprite som heter "hastighet". 
-På __Scenen__, ska denna variabel visas som "__Sprite1 hastighet__". 
-Om det bara står "hastighet", radera variabeln och skapa den igen, för enbart denna sprite. Klicka bort bocken från rutan bredvid hastighetsblocket i __variabelpaletten__ så att den inte syns i Scenfönstret.
-Hastighetsvariabeln kommer att kontrollera hur snabbt häxan rör sig. Vi använder en variabel så att vi kan ändra hur snabbt häxan rör sig under spelets gång.  
-5. Vi vill att häxan ska börja röra sig när spelet startar, __så gör ett script som ser ut så här__:
++ Gå till fliken `Skript` och välj `Data` {.blockdata}. Skapa en variabel OCH välj "Enbart för denna sprajt" och döp variabeln till "hastighet". OBS! Om du väljer "För alla sprajter" istället för "Enbart för denna sprajt" kommer spelet inte fungera. Då får du radera variablen och göra om.
++ Klicka bort bocken från rutan bredvid blocket `hastighet` {.blockdata} under `Skapa en variabel` så att den inte syns i Scenfönstret. Variablen "hastighet" kommer att styra hur snabbt häxan rör sig.
++ Vi vill att häxan ska börja röra sig när spelet startar, __så gör ett script som ser ut så här__:
 
-```scratch
-
-	när FLAGGAN klickas på
-	sätt hastighet till 5
-	För alltid
-		gå hastighet steg
-	(slut på för alltid)
+```blocks
+när @ klickas på
+sätt [hastighet v] till [5]
+för alltid
+    gå (hastighet) steg
+end
 ```
-		
-###Testa ditt projekt {.flag}
+
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan__ och se vad häxan gör. Varför fastnar hon vid kanten av skärmen?
 
 ##Checklista {.check}
 
-6. För att förhindra att häxan fastnar måste vi göra så att hon går tillbaka åt andra hållet när hon rör vid kanten av skärmen. 
-Ändra ditt befintliga script genom att lägga till ett "studsa om vid kanten"-block under "gå hastighet steg"-blocket. 
+Vi måste gör så att häxan går tillbaka åt andra hållet när hon rör vid kanten av skärmen. 
 
-```scratch
++ Ändra ditt befintliga script genom att lägga till blocket `studsa, vid kanten` {.blockmotion}:
 
-	när FLAGGAN klickas på
-
-	sätt hastighet till 5
-
-	för alltid
-
-		gå hastighet steg
-
-		studsa om vid kanten
-
-	(slut på för alltid)
+```blocks
+när @ klickas på
+sätt [hastighet v] till [5]
+för alltid
+    gå (hastighet) steg
+    studsa, vid kanten
+end
 ```
-7. För att förhindra att häxan vänder sig upp och ner, klicka på "enbart vänd vänster-höger"-knappen i Spriteöversiktsområdet. 
++ För att förhindra att häxan vänder sig upp och ner, gå till sprajtinfo <img alt="" class="inline" src="info.gif"> klicka på <img alt="" class="inline" src="vanster-hoger.png">.
 
-###Testa ditt projekt {.flag}
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__ 
 Rör sig häxan från sida till sida över skärmen? 
 
 Spara ditt projekt  {.save}
 
-###Saker att pröva {.try}
+##Saker att pröva {.try}
 __Försök att ändra värdet för hastighetsvariabeln så att hon kan flyga snabbare eller långsammare. __
 
 __Hur skulle du göra så att häxan flyger snabbare ju längre tid hon flyger?__
 (Det här är en klurig en, så oroa dig inte om du inte förtår hur man gör. Du kommer att få mer ledtrådar under tiden du arbetar med projektet.)
 
-##STEG 2: Gör så att häxan syns och försvinner slumpvis. {.activity}
+#STEG 2: Gör så att häxan syns och försvinner slumpvis. {.activity}
 
-För att göra spelet roligare vill vi att häxan ska synas och försvinna slumpvis. Vi gör det med ett annat script som körs samtidigt som det som flyttar häxan. Det nya scriptet behöver gömma häxan en godtycklig tid, sedan visa henne en godtycklig tid, och fortsätta så för alltid (eller tills  spelet avslutas). 
+För att göra spelet roligare vill vi att häxan ska synas och försvinna slumpvis. Vi gör det med ett annat skript som körs samtidigt som det första. Det nya skriptet behöver gömma häxan ett tag, sedan visa henne ett tag, och fortsätta så för alltid (eller tills  spelet avslutas). 
 
-__Skapa ett script för häxan:__
++ __Skapa ett script för häxan:__
 
-```scratch
-
-	när FLAGGAN klickas på
-	för alltid
-		göm
-		vänta slumptal 2 till 5 sekunder 
-		visa
-		vänta slumptal 2 till 5 sekunder
-	(slut på för alltid)
+```blocks
+när @ klickas på
+för alltid
+    göm
+    vänta (slumptal (2) till (3)) sekunder
+    visa
+    vänta (slumptal (2) till (5)) sekunder
+end
 ```
-###Testa ditt projekt {.flag}
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__ 
-Rör sig häxan från sida till sida över skärmen och försvinner och dyker hon upp slumpvis? 
++ Rör sig häxan från sida till sida över skärmen och försvinner och dyker hon upp slumpvis? 
 
-Spara ditt projekt {.save}
+##Spara ditt projekt {.save}
 
-###Saker att pröva {.try}
-__Försök att ändra intervallet av slumptal. Vad händer om du väljer väldigt höga siffror eller väldigt låga?__
-(Ger det här dig några ledtrådar för hur man får häxan att öka hastigheten ju längre spelet håller på? )
+##Saker att pröva {.try}
+__Försök att ändra slumptalen. Vad händer om du väljer väldigt höga siffror eller väldigt låga?__
 
-##STEG 3: Gör så att häxan försvinner när hon klickas på {.activity}
+Kan du få häxan att öka hastigheten ju längre spelet håller på?
 
-För att göra detta till ett spel, måste vi ge spelaren något att göra. Den måste klicka på häxan för att få henne att försvinna. När häxan klickas på, vill vi att hon försvinner och spelar ett ljud. 
+#STEG 3: Gör så att häxan försvinner när hon klickas på {.activity}
+
+För att göra detta till ett spel, måste vi ge spelaren något att göra. När spelaren klickar på häxan, vill vi att hon försvinner och spelar ett ljud. 
 
 ##Checklista {.check}
 
-1. I fliken __Sounds__ importerar vi ljudet __electronic/fairydust__. 
++ I fliken <img alt="" class="inline" src="ljud-flik.png"> importerar vi med knappen <img alt="" class="inline" src="int-speaker.png"> ljudet __Elecktronisk/fairydust__.
++ __Lägg till detta skript till häxan__:
 
-2. __Lägg till detta script till häxan__:
-
-```scratch
-
-	när sprite1 klickas på 
-
-	göm
-
-	spela ljudet Fairydust
+```blocks
+när denna sprajt klickas på
+göm
+spela ljudet [fairydust v]
 ```
 ###Testa ditt Projekt {.flag}
 __Klicka på den gröna flaggan.__ 
@@ -125,70 +113,76 @@ Försvinner häxan och spelar ljudet när du klickar på den?
 
 ##Spara ditt projekt {.save}
 
-###Saker att pröva {.try}
+##Saker att pröva {.try}
 __Fråga en instruktör om du kan spela in ditt eget ljud för att spela upp.__
 
-##Steg 4: Lägg till poängsättning och tidtagning {.activity}
+#Steg 4: Lägg till poängsättning och tidtagning {.activity}
 
-Vi har en häxa, men nu vill vi göra ett spel! Vi vill ge poäng varje gång vi klickar på häxan men vi vill även ha en tidsgräns på spelet. Vi kan använda en variabel för poängsättning och tidtagning. 
+Vi har en häxa, men nu vill vi göra ett spel! Vi vill ge poäng varje gång vi klickar på häxan men vi vill även ha en tidsgräns på spelet. Vi kan använda en variabel för poängen och en för tiden. 
 
 ##Checklista {.check}
 
-1. Skapa en ny "variabel" för sprites som heter __poäng__, och ändra häxans script för att öka varibeln med 1 varje gång hon klickas på. 
++ Skapa en ny variabel för ALLA sprajtar som heter `Poäng` {.blockdata}.
++ Ändra häxans skript för att öka varibeln med 1 varje gång hon klickas på. 
 
-```scratch
-	när sprite1 klickas på
-	göm
-	spela ljudet Fairydust
-	ändra score med 1
+```blocks
+när denna sprajt klickas på
+göm
+spela ljudet [fairydust v]
+ändra [Poäng v] med (-1)
 ```
 
-2. Byt till __Scenen__ och skapa en  __ny variabel__ (denna gång bara för Scenen) som kallas __timer__. Lägg till ett nytt script som inträffar när den gröna flaggan klickas på som sätter "timer" till __30__ och återställer score till __0__. Använd sedan "repetera tills"-blocket för att vänta en sekund och sedan minska "timer" med
-ett. Detta ska fortgå tills timer är 0, då används "stoppa alla" för att stoppa spelet. 
++ Byt till __Scenen__ och skapa en __ny variabel__ som kallas `Tid` {.blockdata}. 
++ Lägg till ett nytt skript som minskar "Tid" med 1 varje sekund tills Tid = 0:
 
-```scratch
-
-	när FLAGGAN klickas på
-	sätt timer till 30
-	sätt score till 0
-	repetera tills timer = 0
-		vänta 1 sekunder
-		ändra timer med -1
-	(slut på repetera)
-	stoppa alla
+```blocks
+repetera tills <(Tid) = [0]>
+    vänta (1) sekunder
+    ändra [Tid v] med (-1)
+end
 ```
 
++ När spelet startar så ska Tid vara 30 sekunder och Poäng vara 0. Lägg till några block i början:
 
-###Testa ditt projekt {.flag}
+```blocks
+när @ klickas på
+sätt [Tid v] till [30]
+sätt [Poäng v] till [0]
+repetera tills <(Tid) = [0]>
+    vänta (1) sekunder
+    ändra [Tid v] med (-1)
+end
+```
+
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__ 
 
-##Spara ditt projekt {.save}
+#Spara ditt projekt {.save}
 
-###Saker att pröva {.try}
+##Saker att pröva {.try}
 __Hur kan du göra så att häxan ökar hastigheten under spelets gång?__
-
 
 __Bra gjort, du har gjort klart det grundläggande spelet. Det finns dock fler saker som du kan göra med ditt spel. Prova på den här utmaningen!__
 
 ##Utmaning: lägg till fler häxor {.challenge}
 
 Om det är bra med en häxa, så måste det vara ännu bättre mer fler! __Låt oss ha tre häxor som flyger omkring.__
-1. Duplicera häxan genom att __högerklicka__ på den i spritelistan. 
-2. __Anpassa storleken på spriten__ för varje häxa så att häxorna får olika storlek.
-3. Byt __hastighetsvariabeln__ för varje häxa så att de alla flyger i olika hastigheter. 
-4. Flytta runt häxorna på skärmen så att de inte är alla på samma plats. 
++ Kopiera häxan genom att __högerklicka__ på den i sprajtområdet. 
++ __Anpassa storleken på sprajten__ för varje häxa så att häxorna får olika storlek (Använd förstora/förminska-knapparna i menyraden).
++ Skapa en __hastighetsvariabel__ för varje häxa så att alla flyger i olika hastigheter. 
++ Flytta runt häxorna på skärmen så att de inte är alla på samma plats. 
 
-###Testa ditt projekt {.flag}
+##Testa ditt projekt {.flag}
 __Klicka på den gröna flaggan.__ 
 
 Har du tre häxor som rör sig från sida till sida över skärmen, som slumpvis syns och försvinner, och försvinner de då du klickar på dem?
 
 ##Spara ditt projekt {.save}
 
-###Saker att pröva {.try}
-1. __Hur många häxor är ett bra antal för spelet?__
-2. __Kan du få häxorna att se olika ut? Du kan antingen ändra deras klädslar eller också använda några block från "Utseende" för att ändra dem.__
-3. __Kan du göra så att häxorna är värda olika mycket poäng? Vad sägs om att göra den snabbaste (och minsta) värd 10 poäng?__
+##Saker att pröva {.try}
++ __Hur många häxor är ett bra antal för spelet?__
++ __Kan du få häxorna att se olika ut? Du kan antingen ändra deras klädslar eller också använda några block från "Utseende" för att ändra dem.__
++ __Kan du göra så att häxorna är värda olika mycket poäng? Vad sägs om att göra den snabbaste (och minsta) värd 10 poäng?__
 
 
 __Bra gjort, du är klar, nu kan du njuta av spelet!__
