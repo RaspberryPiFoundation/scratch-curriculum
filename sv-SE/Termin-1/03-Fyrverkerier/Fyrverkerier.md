@@ -143,7 +143,7 @@ för alltid
         göm
         skicka [explosion v]
     end
-end```
+```
 
 ##Testa ditt projekt {.flag}
 
