@@ -16,11 +16,11 @@ Vi ska skapa ett spel där __katten Felicia__ ska försöka ta __musen Herbert__
 ##Checklista {.check}
 
 + Skapa ett nytt projekt.
-+ Klicka på **Scen** bredvid sprajten och byt till fliken `Bakgrunder` <img alt="" class="inline" src="bakgrunder-flik.png">.
-+ Klicka på `Välj bakgrund från biblioteket` <img alt="" class="inline" src="valj_bakgrund.png"> och välj sedan bakgrunden **Inomhus/hall** (eller annan).
-+ Radera den ursprungliga tomma bakgrunden.
++ Klicka på **Scen** bredvid sprajten och byt till fliken <img alt="" class="inline" src="bakgrunder-flik.png">.
++ Klicka på <img alt="" class="inline" src="valj_bakgrund.png"> `Välj bakgrund från biblioteket` och välj sedan bakgrunden **Inomhus/hall** (eller annan).
++ Ta bort den gamla tomma bakgrunden.
 + Klicka på sprajten. Klicka sedan på <img alt="" class="inline" src="info.png"> i övre vänstra hörnet. Byt namn på sprajten till **Felicia**.
-+ Se till att Felicia bara pekar åt vänster-höger genom att klicka på den här knappen: <img alt="" class="inline" src="flip_arrows.png">
++ Se till att Felicia bara pekar åt vänster-höger genom att klicka på den här knappen: <img alt="" class="inline" src="vanster-hoger.png">
 + Skapa följande skript:
 
 ```blocks
@@ -49,7 +49,7 @@ __Nu vill vi att Felicia ska jaga musen Herbert istället för muspekaren.__
 
 + Skapa en ny sprajt genom att klicka på `Välj ny sprajt från biblioteket` <img alt="" class="inline" src="valj_sprajt_biblioteket.png"> och välj **Djur/mouse1**.
 + Byt namn på sprajten till **Herbert**.
-+ Byt klädsel och gör den mindre än Felicia genom att klicka på knappen `Förminska`: <img alt="" class="inline" src="forminska.png"> och sedan direkt på Herbert i händelsefönstret några gånger.
++ Byt klädsel och gör den mindre än Felicia genom att klicka på knappen <img alt="" class="inline" src="forminska.png"> `Förminska` och sedan direkt på Herbert i händelsefönstret några gånger.
 + Se till så att Herbert bara pekar åt vänster-höger genom att klicka på den här knappen: <img alt="" class="inline" src="flip_arrows.png">
 + Se till att sprajten Herbert är vald och ge honom det här skriptet:
 
@@ -99,7 +99,14 @@ __Istället för att Felicia säger någonting så vill vi att Herbert ska förv
 
 ##Checklista {.check}
 
-+ Ändra i Felicias skript så att det skickar ut följande meddelande när hon fångar Herbert. I blocket ´skicka´ behöver du skriva in ett meddelande, i det här fallet **fångad**.
++ Ändra i Felicias skript så att det skickar ut följande meddelande när hon fångar Herbert. Lägg följade block på skriptytan:
+
+```blocks
+skicka [message1 v]
+```
+
++ Tryck på nedåtpilen och välj `nytt meddelande` och skriv in **fångad**.
++ Lägg till blocket `skicka` {.blockevents} i Felicias skript:
 
 ```blocks
 när @ klickas på
@@ -113,9 +120,9 @@ för alltid
   säg [Fångad!] i (1) sekunder
 ```
 
-+ Importera en ny klädsel till Herbert genom att markera honom, klicka på fliken `Klädslar` <img alt="" class="inline" src="kladslar-flik.png">, sedan på `Välj klädsel från biblioteket` <img alt="" class="inline" src="valj_sprajt_biblioteket.png"> och välj **Fantasy/ghost2-a**.
-+ Gör den nya spökklädseln mindre med knappen `Förminska` som tidigare: <img alt="" class="inline" src="forminska.png">
-+ Byt namn på Herberts klädslar så att musklädseln heter **levande** och spökklädseln heter **död** (det gör man i övre delen av ritfönstret).
++ Importera en ny klädsel till Herbert genom att markera honom, klicka på fliken <img alt="" class="inline" src="kladslar-flik.png">, sedan på <img alt="" class="inline" src="valj_sprajt_biblioteket.png"> `Välj klädsel från biblioteket` och välj **Fantasy/ghost2-a**.
++ Gör den nya spökklädseln mindre med knappen <img alt="" class="inline" src="forminska.png"> `Förminska` som tidigare.
++ Byt namn på Herberts klädslar så att musklädseln heter *levande* och spökklädseln heter *död* (det gör man i övre delen av ritfönstret).
 + Skapa ett nytt skript till Herbert så att han kan förvandlas till spöke:
 
 ```blocks
@@ -135,13 +142,13 @@ __Klicka på den gröna flaggan.__
 
 #STEG 5: Räkna poäng {.activity}
 
-__Nu lägger vi till ett poängsystem så vi vet hur bra vi är på att hålla Herbert vid liv.
+Nu lägger vi till ett poängsystem så vi vet hur bra vi är på att hålla Herbert vid liv.
 
-Vi börjar med att låta poängen vara noll och höjer den med ett varje sekund. Om Felicia fångar Herbert minskar vi poängen med fem.__
+Vi börjar med att låta poängen vara noll och höjer den med ett varje sekund. Om Felicia fångar Herbert minskar vi poängen med fem.
 
 ##Checklista {.check}
 
-+ Gå till fliken `Skript` och välj `Data`. Skapa en variabel som heter **poäng** för alla sprajter.
++ Gå till fliken `Skript` och välj `Data` {.blockdata}. Skapa en variabel som heter *poäng* för ALLA sprajter.
 + Markera Scenen och skapa de här två skripten:
 
 ```blocks
@@ -168,4 +175,4 @@ __Klicka på den gröna flaggan.__
 ##Spara ditt projekt {.save}
 
 __Bra jobbat, nu är du klar och kan spela spelet!__
-Glöm inte att du kan dela spelet med dina kompisar genom att klicka på **Dela** i menyn.
+Glöm inte att du kan dela spelet med dina kompisar genom att klicka på _Dela_ i menyn.
