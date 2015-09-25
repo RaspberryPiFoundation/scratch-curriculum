@@ -1,7 +1,7 @@
 ---
 title: Rock Band — Noter til ledere af kodeklub 
-language: dk-DK
-embeds: "*.png"er
+language: da-DK
+embeds: "*.png"
 materials: [""]
 ...
 

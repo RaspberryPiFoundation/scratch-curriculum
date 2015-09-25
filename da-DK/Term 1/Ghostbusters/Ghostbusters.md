@@ -1,7 +1,7 @@
 ---
 title: Ghostbusters
 level: Scratch 1
-language: dk-DK
+language: da-DK
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"]
