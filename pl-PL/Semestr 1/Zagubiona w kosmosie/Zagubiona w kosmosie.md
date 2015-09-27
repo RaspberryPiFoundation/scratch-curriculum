@@ -22,7 +22,7 @@ Zróbmy rakietę lecącą w kierunku Ziemi!
 
 ## Zadania do wykonania { .check }
 
-+ Rozpocznij w Scratchu nowy projekt, a następnie usuń duszka-kota aby uzyskać pusty projekt. Edytor Scratch online możesz znaleźć tutaj: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Rozpocznij w Scratchu nowy projekt, a następnie usuń duszka-kota, aby uzyskać pusty projekt. Edytor Scratch online możesz znaleźć tutaj: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Dodaj do swojej sceny duszki "Statek kosmiczny" (ang. spaceship) oraz "Ziemia" (ang. Earth). Zmień także tło swojej sceny na "Gwiazdy" (ang. Stars). Tak powinna wyglądać Twoja scena:
 
@@ -42,15 +42,15 @@ Zróbmy rakietę lecącą w kierunku Ziemi!
 
 	Zmień liczby w blokach kodu, aby były dokładnie takie jak na powyższym obrazku.
 
-+ Gdy klikniesz na zieloną flagę aby uruchomić swój kod, zauważysz, że statek kosmiczny mówi, obraca się i porusza w kierunku środka sceny.
++ Gdy klikniesz na zieloną flagę, aby uruchomić swój kod, zauważysz, że statek kosmiczny mówi, obraca się i porusza w kierunku środka sceny.
 
 	![screenshot](space-animate-stage.png)
 
-	Pozycja ekranu `x:(0) y:(0)` {.blockmotion} to środek sceny. Pozycja `x:(-150) y:(-150)` {.blockmotion} przesuwa się w stronę dolnego lewgo rogu, natomiast pozycja `x:(150) y:(150)` {.blockmotion} jest blisko górnego prawego narożnika.
+	Pozycja ekranu `x:(0) y:(0)` {.blockmotion} to środek sceny. Pozycja `x:(-150) y:(-150)` {.blockmotion} przesuwa się w stronę dolnego lewego rogu, natomiast pozycja `x:(150) y:(150)` {.blockmotion} jest blisko górnego prawego narożnika.
 
 	![screenshot](space-xy.png)
 
-	Gdy będziesz potrzebował znać współrzędne pozycji na scenie, najedź kursorem myszy na pozycję, której współrzędnych potrzebujesz - wyświetli się ona poniżej sceny po prawej stronie.
+	Gdy będziesz potrzebował współrzędnych pozycji na scenie, najedź kursorem myszy na pozycję, której współrzędnych potrzebujesz - wyświetlą się one poniżej sceny po prawej stronie.
 
 	![screenshot](space-coordinates.png)
 
@@ -66,7 +66,7 @@ Czy możesz tak zmienić liczby w swoim kodzie, aby:
 Będziesz musiał zmienić liczby w tym bloku:
 
 ```blocks
-	glide (1) secs to x:(0) y:(0)
+	leć przez (1) s do x:(0) y:(0)
 ```
 
 ## Zapisz swój projekt { .save }
@@ -77,7 +77,7 @@ Inną metodą na animację rakiety jest powiedzieć jej, aby poruszyła się wie
 
 ## Zadania do wykonania { .check }
 
-+ Usuń blok `leć` {.blockmotion} ze swojego kodu poprzez kliknięcie na nim prawym przyciskiem myszy i wybraniem opcji "usuń". Możesz ten blok także usunąć przeciągając go z powrotem w obszar wyboru bloków kodu. 
++ Usuń blok `leć` {.blockmotion} ze swojego kodu poprzez kliknięcie na nim prawym przyciskiem myszy i wybranie opcji "usuń". Możesz ten blok także usunąć przeciągając go z powrotem w obszar wyboru bloków kodu. 
 
 	![screenshot](space-delete-glide.png)
 
@@ -85,11 +85,11 @@ Inną metodą na animację rakiety jest powiedzieć jej, aby poruszyła się wie
 
 	![screenshot](space-loop.png)
 
-	Bloku `repeat` {.blockcontrol} używa się aby powtórzyć coś wielokrotnie i jest także nazywany __pętlą__ (ang. loop).
+	Bloku `powtórz` {.blockcontrol} używa się, aby powtórzyć coś wielokrotnie i jest także nazywany __pętlą__ (ang. loop).
 
-+ Gdy klikniesz na flagę aby przetestować nowy kod, zobaczysz, że robi on praktycznie to samo co wcześniej.
++ Gdy klikniesz na flagę, aby przetestować nowy kod, zobaczysz, że robi on praktycznie to samo co wcześniej.
 
-+ Możesz zrobić ciekawe rzeczy dodając więcej kodu do środka pętli. Dodaj blok `change color effect by 25` {.blocklooks} (z sekcji "Wygląd") wewnątrz pętli, aby stopniowo zmieniać kolor wraz z ruchem rakiety:
++ Możesz zrobić ciekawe rzeczy dodając więcej kodu do środka pętli. Dodaj blok `zmień efekt kolor o 25` {.blocklooks} (z sekcji "Wygląd") wewnątrz pętli, aby stopniowo zmieniać kolor wraz z ruchem rakiety:
 
 	![screenshot](space-colour.png)
 
@@ -103,8 +103,8 @@ Inną metodą na animację rakiety jest powiedzieć jej, aby poruszyła się wie
 
 + Przetestuj swoją animację. Co się dzieje gdy klikniesz na flagę po raz kolejny? Czy kiedy Twoja rakieta startuje, ma odpowiednią wielkość? Aby naprawić swoją animację, możesz użyć tego kodu:
 
-	```scratch
-	set size to (100) %
+	```blocks
+		ustaw rozmiar na (100)%
 	```
 
 ## Zapisz swój projekt { .save }
@@ -119,22 +119,22 @@ Dodaj do swojej animacji małpę, która zagubiła się w kosmosie!
 
 	![screenshot](space-monkey.png)
 
-+ Gdy klikniesz na swoją nową małpę a następnie na zakładkę "Kostiumy", możesz edytować wygląd małpy. Wybierz narzędzie "Elipsa" i narysuj biały hełm wokół głowy małpy.
++ Gdy klikniesz na swoją nową małpę, a następnie na zakładkę "Kostiumy", możesz edytować wygląd małpy. Wybierz narzędzie "Elipsa" i narysuj biały hełm wokół głowy małpy.
 
 	![screenshot](space-monkey-edit.png)
 
 + Teraz kliknij na zakładkę "Skrypty" i dodaj poniższy kod do małpy, aby kręciła się powoli w nieskończoność.
 
 	```blocks
-		when FLAG clicked
-		forever
-		    turn right (1) degrees
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+		    obróć @ o (1) stopni
+		koniec
 	```
 
-	Blok `forever` {.blockcontrol} jest innym rodzajem pętli, takim, który nigdy się nie kończy.
+	Blok `zawsze` {.blockcontrol} jest innym rodzajem pętli, takim, który nigdy się nie kończy.
 
-+ Kliknij na flagę, aby przetestować swoją małpę. Będziesz musiał później wcisnąć przycisk stop (znajdujący się obok flagi) aby zakończyć animację.
++ Kliknij na flagę, aby przetestować swoją małpę. Będziesz musiał później wcisnąć przycisk stop (znajdujący się obok flagi), aby zakończyć animację.
 
 	![screenshot](space-monkey-loop.png)
 
@@ -150,19 +150,19 @@ Dodaj latającą asteroiodę do swojej animacji.
 
 + Dodaj ten kod do swojej skały, aby odbijała się wokół sceny:
 
-	```scratch
-	when flag clicked
-	point towards [Earth v]
-	forever
-		move (2) steps
-		if on edge, bounce
+	```blocks
+		kiedy kliknięto zieloną flagę
+		ustaw w stronę [Earth v]
+		zawsze
+			przesuń o (2) kroków
+			jeżeli na brzegu, odbij się
 	```
 
 + Naciśnij flagę, aby przetestować asteroidę. Czy odbija się od sceny?
 
 # Krok 5: Mrugające gwiazdy { .activity .new-page }
 
-Wykorzystajmy połączenie różnych pętli aby zrobić mrugającą gwiazdę.
+Wykorzystajmy połączenie różnych pętli, aby zrobić mrugającą gwiazdę.
 
 ## Zadania do wykonania { .check }
 
@@ -174,14 +174,14 @@ Wykorzystajmy połączenie różnych pętli aby zrobić mrugającą gwiazdę.
 
 	![screenshot](space-star.png)
 
-+ Kliknij na flagę aby przetestować animację gwiazdy. Co robi dodany kod? Cóż, gwiazda robi się trochę większa 20 razy a następnie, zmniejsza się o trochę 20 razy, powracając do początkowego rozmiaru. Te dwie pętle są wewnątrz pętli `forever` {.blockcontrol}, dzięki czemu animacja ta się powtarza w nieskończoność.
++ Kliknij na flagę, aby przetestować animację gwiazdy. Co robi dodany kod? Cóż, gwiazda robi się trochę większa 20 razy, a następnie zmniejsza się o trochę 20 razy, powracając do początkowego rozmiaru. Te dwie pętle są wewnątrz pętli `zawsze` {.blockcontrol}, dzięki czemu animacja ta się powtarza w nieskończoność.
 
 ## Zapisz swój projekt { .save }
 
 ## Wyzwanie: Zrób swoją własną animację {.challenge}
 Zatrzymaj swoją animację kosmosu, a następnie naciśnij na menu "Plik" i wybierz "Nowy", aby rozpocząć nowy projekt.
 
-Użyj tego, czego się nauczyłeś podczas tego projektu aby zrobić swoją własną animację. To może być cokolwiek chcesz, ale postaraj się, aby Twoja animacja pasowałą do tego, co wybierzesz. Poniżej znajdują się dwa przykłady:
+Użyj tego, czego się nauczyłeś podczas tego projektu, aby zrobić swoją własną animację. To może być cokolwiek chcesz, ale postaraj się, aby Twoja animacja pasowałą do tego, co wybierzesz. Poniżej znajdują się dwa przykłady:
 
 ![screenshot](space-egs.png)
 
