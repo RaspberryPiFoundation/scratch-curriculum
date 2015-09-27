@@ -203,14 +203,6 @@ Here's how your code should look:
 
 You'll find the `repeat` {.blockcontrol} and `wait` {.blockcontrol} blocks are in the `control` {.blockcontrol} section.
 
-+ If you click the 'Costumes' tab on your computer, you'll see that it has 3 different costumes.
-
-![screenshot](images/poetry-costume.png)
-
-+ Add some `next costume` {.blocklooks} blocks __inside__ your `repeat` {.blockcontrol} block, to animate the computer's steam.
-
-![screenshot](images/poetry-steam.png)
-
 + Click the 'Sounds' tab, and click 'Choose sound from library'.
 
 ![screenshot](images/poetry-sound.png)
