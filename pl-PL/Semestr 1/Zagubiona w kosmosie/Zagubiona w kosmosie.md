@@ -181,7 +181,7 @@ Wykorzystajmy połączenie różnych pętli aby zrobić mrugającą gwiazdę.
 ## Wyzwanie: Zrób swoją własną animację {.challenge}
 Zatrzymaj swoją animację kosmosu, a następnie naciśnij na menu "Plik" i wybierz "Nowy", aby rozpocząć nowy projekt.
 
-Użyj tego, czego się nauczyłeś podczas tego projektu aby zrobić swoją własną animację. To może być cokolwiek chcesz, ale postaraj się, aby Twoja animacja ...?. Poniżej znajdują się dwa przykłady:
+Użyj tego, czego się nauczyłeś podczas tego projektu aby zrobić swoją własną animację. To może być cokolwiek chcesz, ale postaraj się, aby Twoja animacja pasowałą do tego, co wybierzesz. Poniżej znajdują się dwa przykłady:
 
 ![screenshot](space-egs.png)
 
