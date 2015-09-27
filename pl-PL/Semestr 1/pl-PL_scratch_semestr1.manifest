@@ -15,27 +15,6 @@
             "number":   2,
             "filename": "Zagubiona w kosmosie/Zagubiona w kosmosie.md",
             "note":     "Zagubiona w kosmosie/Zagubiona w kosmosie - notatki.md"
-        },
-        {
-            "number":   3,
-            "beta": true,
-            "filename": "Ghostbusters/Ghostbusters.md",
-            "note":     "Ghostbusters/Ghostbusters - notes.md"
-        },
-        {
-            "number":   4,
-            "filename": "ChatBot/ChatBot.md",
-            "note":     "ChatBot/ChatBot - notes.md"
-        },
-        {
-            "number":   5,
-            "filename": "Paint Box/Paint Box.md",
-            "note":     "Paint Box/Paint Box - notes.md"
-        },
-        {
-            "number":   6,
-            "filename": "Boat Race/Boat Race.md",
-            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 }

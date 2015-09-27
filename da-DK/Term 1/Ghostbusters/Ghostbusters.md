@@ -1,7 +1,7 @@
 ---
 title: Ghostbusters
 level: Scratch 1
-language: dk-DK
+language: da-DK
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"]
@@ -9,7 +9,7 @@ materials: ["Klubleder Ressourcer/*.*"]
 
 # Introduktion { .intro }
 
-Du skal lave et spøgelses fangelegsspil! 
+Du skal lave et fangelegsspil med spøgelser! 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
@@ -66,8 +66,7 @@ Dit spøgelse er ret let at fange for det bevæger sig ikke!
 ## Gem dit projekt { .save }
 
 ## Udfordring: Mere tilfældighed {.challenge}
-Kan du få dit spøgelse til at vente (med `vent`) {.blockcontrol} et tilfældigt antal gange før det kommer frem? Kan du bruge `sæt størrelsen` {.blocklooks} blokken til at få dit spøgelse til at være en tilfældig størrelse hver gang det kommer frem? 
-
+Kan du få dit spøgelse til at `vente` {.blockcontrol} et tilfældigt antal gange før det kommer frem? Kan du bruge `sæt størrelsen` {.blocklooks} blokken til at få dit spøgelse til at være en tilfældig størrelse hver gang det kommer frem? 
 ## Gem dit projekt { .save }
 
 # Trin 3: Fang spøgelser { .activity }
@@ -76,7 +75,7 @@ Lad os give spilleren mulighed for at fange spøgelser!
 
 ## Arbejdsliste { .check }
 
-+ For at give spilleren mulighed for at fange spøgelser, tilføj denne kode:
++ For at give spilleren mulighed for at fange spøgelser, så tilføj denne kode:
 
 	```blocks
 		når denne sprite klikkes
@@ -147,8 +146,8 @@ Du kan gøre dit spil mere interessant ved kun at give spilleren 10 sekunder til
 
 	```blocks
 		når du klikker på ⚑
-	sæt [time v] til [10]
-	gentag indtil <(time) = [0]>
+		sæt [time v] til [10]
+		gentag indtil <(time) = [0]>
    		vent (1) sekunder
    		ændr [time v] med (-1)
 	end
@@ -169,7 +168,7 @@ Du kan gøre dit spil mere interessant ved kun at give spilleren 10 sekunder til
 	+ Få spøgelserne til at vise sig færre gange
 	+ Lave spøgelserne mindre.
 
-	Test dit spil et par gange indtil du er tilfreds med sværhedsgraden. 
+	Afprøv dit spil et par gange indtil du er tilfreds med sværhedsgraden. 
 
 ## Gem dit projekt { .save }
 

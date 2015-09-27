@@ -1,6 +1,6 @@
 ---
 title: Ghostbusters — Noter til ledere af kodeklub
-language: dk-DK
+language: da-DK
 embeds: "*.png"
 materials: [""] 
 ...
@@ -11,7 +11,7 @@ I dette projekt vil børnene lære hvordan man bruger variabler til at opbevare 
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline.
 
-Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/60787262/#editor">online</a>, og kan også downloades ved at klikke på linket 'Download projektmateriale' under dette projekt, som indeholder: 
+Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/60787262/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Project Materials' under dette projekt, som indeholder: 
 
 + Ghostbusters.sb2
 

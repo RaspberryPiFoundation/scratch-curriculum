@@ -1,5 +1,5 @@
 ---
-Titre : Clone Wars
+title : Clone Wars
 level: Scratch 2
 language: fr-FR
 stylesheet: scratch

@@ -1,7 +1,7 @@
 ---
 title: Rock Band
 level: Scratch 1
-language: dk-DK
+language: da-DK
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"]
@@ -52,7 +52,7 @@ Du kan så klikke på 'Fil' og dernæst  'Gem nu' for at gemme dit projekt.
 
 # Trin 2: Scenen { .activity }
 
-__Scene__ er området til venstre, hvor dit projekt får liv. Tænk på det som et opvisningområde, ligesom en rigtig scene!
+__Scenen__ er området til venstre, hvor dit projekt får liv. Tænk på det som et opvisningområde, ligesom en rigtig scene!
 
 ## Arbejdsliste { .check }
 
@@ -156,12 +156,11 @@ Lad os tilføje en sanger til dit band!
 ## Gem dit projekt { .save }
 
 ##Udfordring: Ændr din sangers kostume { .challenge }
-Kan du få din sanger til at se ud som om hun synger, når man klikker på hende? Hvis du har brug for hjælp kan du benytte ovenstående
-instruktioner omkring, hvordan man laver en tromme.
+Kan du få din sanger til at se ud som om hun synger, når man klikker på hende? Hvis du har brug for hjælp kan du benytte ovenstående instruktioner omkring, hvordan man laver en tromme.
 
 ![screenshot](band-singer-final.png)
 
-Husk at teste hvordan din nye kode virker!
+Husk at afprøve hvordan din nye kode virker!
 
 ## Gem dit projekt { .save }
 
@@ -174,10 +173,10 @@ Dine instrumenter behøver dog ikke at give mening. Du kan for eksempel lave et 
 
 ![screenshot](band-piano.png)
 
-Lige så vel som du kan bruge allerede tilgængelige sprites, kan du også tegne dine egne sprites.
+Lige så vel som du kan bruge allerede tilgængelige sprites, så kan du også tegne dine egne sprites.
 ![screenshot](band-draw.png)
 
-Hvis du har en mikrofon kan du optage dine egne lyde, og du endda bruge et webcam til at slå på din instrumenter!
+Hvis du har en mikrofon kan du optage dine egne lyde, og du kan faktisk også bruge et webcam til at slå på dine instrumenter!
 
 ![screenshot](band-io.png)
 

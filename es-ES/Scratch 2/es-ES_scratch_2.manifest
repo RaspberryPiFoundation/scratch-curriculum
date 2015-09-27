@@ -9,7 +9,12 @@
             "filename": "Memoria/Memoria.md",
             "note": "Memoria/Memoria - notas.md",
             "number": 1
-        }        
+        },
+        {
+            "filename": "Balón Prisionero/Balón Prisionero.md",
+            "note": "Balón Prisionero/Balón Prisionero - notas.md",
+            "number": 2
+        }                
     ]
 }
 

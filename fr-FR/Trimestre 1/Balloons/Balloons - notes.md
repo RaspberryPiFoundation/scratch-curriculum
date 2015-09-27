@@ -1,8 +1,8 @@
 ---
-titre: Ballons — Notes pour Leaders de Club
+title: Ballons — Notes pour Leaders de Club
 language: fr-FR
 embeds: "*.png"
-matériels: [""]
+materials: [""]
 ...
 
 #Introduction:

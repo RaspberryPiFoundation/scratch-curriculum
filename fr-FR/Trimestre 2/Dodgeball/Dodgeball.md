@@ -1,5 +1,5 @@
 ---
-Titre : Dodgeball
+title : Dodgeball
 level: Scratch 2
 language: fr-FR
 stylesheet: scratch

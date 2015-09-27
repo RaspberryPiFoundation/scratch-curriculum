@@ -1,5 +1,5 @@
 ---
-Titre : Peint Box
+title : Peint Box
 level: Scratch 1
 language: fr-FR
 stylesheet: scratch

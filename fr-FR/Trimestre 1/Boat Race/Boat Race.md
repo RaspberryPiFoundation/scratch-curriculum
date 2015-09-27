@@ -1,5 +1,5 @@
 ---
-titre: Boat Race
+title: Boat Race
 level: Scratch 1
 language: fr-FR
 stylesheet: scratch

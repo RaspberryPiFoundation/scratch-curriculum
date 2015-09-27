@@ -1,5 +1,5 @@
 ---
-Titre : Catch the Dots
+title : Catch the Dots
 level: Scratch 2
 language: fr-FR
 stylesheet: scratch

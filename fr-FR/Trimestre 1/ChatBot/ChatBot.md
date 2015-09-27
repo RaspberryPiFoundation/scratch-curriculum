@@ -1,5 +1,5 @@
 ---
-titre: ChatBot
+title: ChatBot
 level: Scratch 1
 language: fr-FR
 stylesheet: scratch

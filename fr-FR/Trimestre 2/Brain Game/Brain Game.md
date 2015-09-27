@@ -1,5 +1,5 @@
 ---
-Titre : Brain Game
+title : Brain Game
 level: Scratch 2
 language: fr-FR
 stylesheet: scratch

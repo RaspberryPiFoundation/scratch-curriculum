@@ -1,5 +1,5 @@
 ---
-Titre : Rock Band
+title : Rock Band
 level: Scratch 1
 language: fr-FR
 stylesheet: scratch
