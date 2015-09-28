@@ -56,7 +56,7 @@ Let's start by creating random questions for the player to answer.
 
 + Add a `forever` {.blockcontrol} loop around this code, so that the player is asked lots of questions.
 
-+ Create a countdown timer on the stage, using a variable called `time` {.blockdata}. The 'Balloons' project has instructions for making a timer (in step 6) if you need help!
++ Create a countdown timer on the stage, using a variable called `time` {.blockdata}. The 'Ghostbusters' project has instructions for making a timer (in step 5) if you need help!
 
 + Test your project again - you should be able to continue asking questions until the time runs out.
 
