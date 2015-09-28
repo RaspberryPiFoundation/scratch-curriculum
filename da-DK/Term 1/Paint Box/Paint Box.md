@@ -49,11 +49,11 @@ Lad os starte med at lave en blyant, som vi kan bruge til at tegne med på scene
 
 + Har du lagt mærke til at det er midten af blyanten, og ikke spidsen af blyanten, som følger musemarkøren? 
 
-	![screenshot](paint-center.png)
+![screenshot](paint-center.png)
 
-	For at løse dette så klik på 'blyant-blå' kostumet på din blyantssprite, og klik på 'Sæt kostumets..'. 
+For at løse dette så klik på 'blyant-blå' kostumet på din blyantssprite, og klik på 'Sæt kostumets..'. 
 
-	![screenshot](paint-center-icon.png)
+![screenshot](paint-center-icon.png)
 
 + Som du kan se er der et kryds over kostumet. Klik lige nedenfor blyantens spids for at sætte dette punkt til kostumets midte.
 
@@ -91,20 +91,20 @@ Lad os tilføje forskellige farveblyanter til dit projekt og giv brugerne muligh
 
 + Når der klikkes på det grønne selektor ikon skal du `sende` {.blockevents} en besked til blyantsspriten og fortælle den, at den skal ændre sit kostume og blyantsfarve.
 
-	For at gøre dette, start med at tilføj denne kode til det grønne selektor ikon: 
+For at gøre dette, start med at tilføj denne kode til det grønne selektor ikon: 
 
 ```blocks 
 		når denne sprite klikkes
 		send [grøn v] til alle
 ```  
 
-	For at lave `send` {.blockevents} blokken skal du klikke på den nedadgående pil og vælge 'ny meddelelse...'.
+For at lave `send` {.blockevents} blokken skal du klikke på den nedadgående pil og vælge 'ny meddelelse...'.
 
-	![screenshot](paint-broadcast.png)
+![screenshot](paint-broadcast.png)
 
-	Du kan dernæst taste 'grøn' for at lave din besked. 
+Du kan dernæst taste 'grøn' for at lave din besked. 
 
-	![screenshot](paint-green-message.png)
+![screenshot](paint-green-message.png)
 
 + Du skal nu fortælle din blyantssprite, hvad den skal gøre, når den modtager beskeden. Tilføj denne kode til din blyantssprite: 
 
@@ -114,7 +114,7 @@ Lad os tilføje forskellige farveblyanter til dit projekt og giv brugerne muligh
 			skift penfarve til [#00ff00]
 ``` 
  
-	For at sætte blyanten til at farve grøn, klik på den farvede boks i 'skift penfarve til' {.blockpen} blokken, og klik på det grønne __selector__ ikon for at vælge grøn som din blyantsfarve. 
+For at sætte blyanten til at farve grøn, klik på den farvede boks i 'skift penfarve til' {.blockpen} blokken, og klik på det grønne __selector__ ikon for at vælge grøn som din blyantsfarve. 
 
 + Du kan nu gøre det samme med ikonet for den blå blyant ved at tilføje denne kode til den blå selektor sprite:
 
@@ -123,7 +123,7 @@ Lad os tilføje forskellige farveblyanter til dit projekt og giv brugerne muligh
 		send [blå v] til alle
 ```  
 
-	...og tilføje denne kode til blyantsspriten:
+...og tilføje denne kode til blyantsspriten:
 
 ```blocks 
 		når jeg modtager [blå v]
@@ -139,7 +139,7 @@ Lad os tilføje forskellige farveblyanter til dit projekt og giv brugerne muligh
 		skift penfarve til [#0000ff] 
 ```  
  
-	Hvis du heller vil kan du begynde med en anden farveblyant! 
+Hvis du heller vil kan du begynde med en anden farveblyant! 
 
 + Afprøv dit projekt. Kan du skifte mellem blå og grønne blyanter?
 
@@ -164,7 +164,7 @@ Nogle gange opstår der nogle fejl, så lad os tilføje en 'ryd' knap og et visk
 		ryd
 ```  
 
-	Læg mærke til at du ikke behøver sende en besked for at rydde scenen, for det kan hvilken som helst sprite gøre!   
+Læg mærke til at du ikke behøver sende en besked for at rydde scenen, for det kan hvilken som helst sprite gøre!   
 
 + Du kan også lave et viskelæder. Hvis din klubleder har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload kostume fra fil' og tilføj 'eraser.svg' billedet.
 
@@ -223,7 +223,7 @@ Lad os give brugeren mulighed for at tegne ved brug af en række forskellige bly
 		skift penstørrelse til (bredde)
 ``` 
 
-	Bredden på din blyant sættes nu repetitivt til værdien af din 'bredde' variabel. 
+Bredden på din blyant sættes nu repetitivt til værdien af din 'bredde' variabel. 
 
 + Du kan ændre det opbevarede tal i denne variabel ved at højreklikke på din variabel (på scenen) og klikke på 'skyder'. 
 

@@ -63,13 +63,13 @@ Nu hvor du har en chatbot med sin egen personlighed, så lad os programmere den 
 		sig <[Hej] tilkobles (svar)> i (2) sekunder
 ``` 
 
-	For at lave den sidste blok skal du først slæbe en grøn `tilkobles` {.blockoperators} blok hen på `sig` {.blocklooks} blokken.  
+For at lave den sidste blok skal du først slæbe en grøn `tilkobles` {.blockoperators} blok hen på `sig` {.blocklooks} blokken.  
 
-	![screenshot](chatbot-join.png)
+![screenshot](chatbot-join.png)
 
-	Du kan så ændre teksten `Hallo` til at sige `Hej`, og slæbe den lyseblå `svar` {.blocksensing} blok (fra 'Registrering' sektionen) hen på teksten `verden`.
+Du kan så ændre teksten `Hallo` til at sige `Hej`, og slæbe den lyseblå `svar` {.blocksensing} blok (fra 'Registrering' sektionen) hen på teksten `verden`.
 
-	![screenshot](chatbot-answer.png)
+![screenshot](chatbot-answer.png)
 
 + Afprøv dit nye program. Virker det som du forventede? Kan du løse eventuelle problemer? (Hint: du kan prøve at tilføje et mellemrum et sted!)  
 
@@ -121,7 +121,7 @@ Du kan programmere din chatbot til at tage beslutninger baseret på brugerens re
 		end 
 ```  
 
-	Læg mærke til, at nu hvor du har gemt brugerens navn i en variabel, så kan du bruge det så meget du har lyst til.
+Læg mærke til, at nu hvor du har gemt brugerens navn i en variabel, så kan du bruge det så meget du har lyst til.
 
 + For at teste programmet ordenligt, så skal du teste det to gange - én gang, hvor du taster `nej` som dit svar, og én gang hvor du taster `ja`. Du bør kun få en respons fra din chatbot `hvis` {.blockcontrol} du svarer `ja`.
 
@@ -181,7 +181,7 @@ Du kan også programmere din chatbot til at ændre hvor den befinder sig.
 + Du kan nu programmere din chatbot til at ændre dens omgivelser ved at tilføje denne kode til din chatbot:
 
 ```blocks
-    	bed om Jeg skal op til månen. Vil du med?] og vent
+    	bed om [Jeg skal op til månen. Vil du med?] og vent
 		hvis ((svar) = [ja]) så 
    		skift baggrund til [moon v]  
 		end 
@@ -208,7 +208,7 @@ Du kan også programmere din chatbot til at ændre hvor den befinder sig.
 		end
 ```  
 	
-	![screenshot](chatbot-loop.png)
+![screenshot](chatbot-loop.png)
 
 + Test din kode igen. Hopper din chatbot op og ned, når du svarer `ja`?
 

@@ -66,7 +66,7 @@ Kan du ændre tallene i din animationskode således at:
 Du skal ændre tallene i denne blok:
 
 ```blocks
-	glid (1) sek til x:(0) y:(0)
+	glid (1) sek. til x:(0) y:(0)
 ```
 
 ## Gem dit projekt { .save }
@@ -104,7 +104,7 @@ En anden måde du kan animere dit rumskib på er ved at fortælle det, at det sk
 
  
 ```scratch   
-	set size to (100) % 
+	sæt størrelsen til (100)%
 ```
  
 ## Gem dit projekt { .save } 
@@ -132,7 +132,7 @@ Lad os tilføje en abe, som er tabt ude i rummet, til din animation!
 		end
 ``` 
 
-	`For evigt` {.blockcontrol} blokken er endnu en loop, men denne gang er det en som aldrig stopper. 
+`For evigt` {.blockcontrol} blokken er endnu en loop, men denne gang er det en som aldrig stopper. 
  
 + Klik på flaget for at teste din abe. Du vil være nødt til at klikke på stop knappen (ved siden af flaget) for at afslutt animationen.
 

@@ -90,7 +90,7 @@ Din båd er i stand til at sejle gennem træbarriererne! Lad os finde en løsnin
 		end
 ``` 
 
-	Denne kode ligger indeni `for evigt` {.blockcontrol} loopen, så din kode bliver ved med at tjekke om din båd er stødt sammen med noget.
+Denne kode ligger indeni `for evigt` {.blockcontrol} loopen, så din kode bliver ved med at tjekke om din båd er stødt sammen med noget.
 	
 + Sørg også for at din båd altid starter ud med at se ud som 'normal'.   
 
