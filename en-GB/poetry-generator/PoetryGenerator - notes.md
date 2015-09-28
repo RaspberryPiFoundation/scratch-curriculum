@@ -32,5 +32,5 @@ Make sure that each child has access to a copy of these resources.
 #Challenges
 + "Code Ada to introduce herself" - Changing the text in a `say` {.blocklooks} code block;
 + "Personalise your poem" - Using a variable within a `say` {.blocklooks} block;
-+ "More words" - Adding more verbs and adverbs to the lists;
-+ "More poetry" - Use of additional lists to create a longer / different poem.
++ "More words" - Adding more verbs, adverbs nouns and adjectives to the lists;
++ "More poetry" - Use of different lists to create a different poem.

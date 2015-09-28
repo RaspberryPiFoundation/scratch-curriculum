@@ -18,7 +18,7 @@ You are going to learn how to program your own poetry generator!
 
 # Step 1: Ada Lovelace { .activity }
 
-In 1842, Ada Lovelace wrote about using a machine called the 'Analytical Engine' to make calculations, and is seen as the world's first computer programmer!
+In 1842, Ada Lovelace wrote about using a machine called the 'Analytical Engine' to make calculations, and is seen as the world's first computer programmer! Ada was the first to see that computers could be more than just big calculators.
 
 ## Activity Checklist { .check }
 
@@ -30,13 +30,13 @@ In 1842, Ada Lovelace wrote about using a machine called the 'Analytical Engine'
 
 Any code added underneath this block will run when Ada is clicked!
 
-+ Click the `Looks` {.blocklooks} tab, and drag the `say` {.blocklooks} Hello! `for 2 secs` {.blocklooks} block underneath the code you've already added.
++ Click the `Looks` {.blocklooks} tab, and drag the `say` {.blocklooks} `Hello!` `for 2 secs` {.blocklooks} block underneath the code you've already added.
 
 ![screenshot](images/poetry-say.png)
 
 + Click on Ada, and you should see her talk to you.
 
-![screenshot](poetry-say-test.png)
+![screenshot](images/poetry-say-test.png)
 
 ## Challenge: Code Ada to introduce herself {.challenge}
 Can you change your code, so that Ada says 'Hi, I'm Ada!' when you click on her?
@@ -123,7 +123,7 @@ Let's program Ada's computer (called the 'Analytical Engine') to generate poetry
 
 ## Activity Checklist { .check }
 
-+ Add this code to your 'Computer' sprite, so that it speaks then clicked:
++ Add this code to your 'Computer' sprite, so that it speaks when clicked:
 
 ```scratch
 when this sprite clicked
@@ -156,27 +156,58 @@ say (join [I ] (item (random v) of [verbs v])) for (2) secs
 
 # Step 4: More poetry { .activity }
 
-Your poem is quite short! Let's add a second line.
+Your poem is quite short - let's add to it!
 
 ## Activity Checklist { .check }
 
-+ Let's use adverbs in the next line of your poem. An adverb is a word that describes a verb. Create another list called __adverbs__, and add these 3 words:
++ Let's use adverbs in the next line of your poem. An __adverb__ is a word that describes a verb. Create another list called adverbs, and add these 3 words:
 
 ![screenshot](images/poetry-adverbs.png)
 
-+ Add this line to your computer's code, to say a random adverb at the end of your poem:
++ Add this line to your computer's code, to say a random adverb on the next line of your poem:
 
 ```scratch
 say (item (random v) of [adverbs v]) for (2) secs
 ```
 
-+ You can click the boxes next to your 2 lists to hide them.
-
-![screenshot](images/poetry-lists-tick.png)
-
 + Test your code a few times. You should see a random poem each time.
 
 ![screenshot](images/poetry-adverb-test.png)
+
++ Add a list of nouns to your project. A __noun__ is a place or a thing.
+
+![screenshot](images/poetry-nouns.png)
+
++ Add code to use the nouns in your poem.
+
+```scratch
+say (join [by the ] (item (random v) of [nouns v])) for (2) secs
+```
+
++ Add a list of adjectives to your project. An __adjective__ is a describing word.
+
+![screenshot](images/poetry-adjectives.png)
+
++ Add code to use the adjectives in your poem:
+
+```scratch
+say (join [I feel ] (item (random v) of [adjectives v])) for (2) secs
+```
+
++ You can click the boxes next to your lists to hide them.
+
+![screenshot](images/poetry-lists-tick.png)
+
++ Test out your new poem. Here's the code you should have:
+
+```scratch
+when this sprite clicked
+say [Here is your poem...] for (2) secs
+say (join [I ] (item (random v) of [verbs v])) for (2) secs
+say (item (random v) of [adverbs v]) for (2) secs
+say (join [by the ] (item (random v) of [nouns v])) for (2) secs
+say (join [I feel ] (item (random v) of [adjectives v])) for (2) secs
+```
 
 ## Save your project { .save }
 
@@ -201,7 +232,11 @@ Here's how your code should look:
 
 ![screenshot](images/poetry-animate.png)
 
-You'll find the `repeat` {.blockcontrol} and `wait` {.blockcontrol} blocks are in the `control` {.blockcontrol} section.
+You'll find the `repeat` {.blockcontrol} and `wait` {.blockcontrol} blocks are in the `Control` {.blockcontrol} section.
+
++ Test your project. You should see the computer shake before producing a poem!
+
+![screenshot](images/poetry-animate-test.png)
 
 + Click the 'Sounds' tab, and click 'Choose sound from library'.
 
@@ -211,7 +246,7 @@ You'll find the `repeat` {.blockcontrol} and `wait` {.blockcontrol} blocks are i
 
 ![screenshot](images/poetry-beeps.png)
 
-+ Add a `play sound` {.blocksound} block, to play your sound during the animation.
++ Add a `play sound` {.blocksound} block, to play your sound just before your animation starts.
 
 ![screenshot](images/poetry-play.png)
 
@@ -223,15 +258,9 @@ Can you use your `name` {.blockdata} variable to personalise your poem?
 ![screenshot](images/poetry-name-comp.png)
 
 ## Challenge: More words {.challenge}
-Can you add more verbs and adverbs to your lists, so that you can generate more poems?
-
-Remember:
-+ Verbs are action words (like 'cry' and 'dance')
-+ Adverbs are words that describs verbs (like 'silently' or 'loudly').
+Can you add more words to your lists, so that you can generate more poems?
 
 ## Challenge: More poetry {.challenge}
-Can you add more lists to your project, and use them to create more poetry?
-
-You can use __nouns__ (names of places or things, like 'sea' or 'moon'), or __adjectives__ (words that describe a noun, like 'beautiful' or 'small').
+Can you use your own lists to generate you own poetry?
 
 ## Save your project { .save }
