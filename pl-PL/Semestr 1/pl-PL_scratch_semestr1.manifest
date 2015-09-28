@@ -10,6 +10,11 @@
             "number":   1,
             "filename": "Kapela rockowa/Kapela rockowa.md",
             "note":     "Kapela rockowa/Kapela rockowa - notatki.md"
+        },
+        {
+            "number":   2,
+            "filename": "Zagubiona w kosmosie/Zagubiona w kosmosie.md",
+            "note":     "Zagubiona w kosmosie/Zagubiona w kosmosie - notatki.md"
         }
     ]
 }
