@@ -1,3 +1,10 @@
+---
+title: Caza de brujas — Notas para coordinadores
+language: es-ES
+embeds: "*.png"
+materials: [""]
+...
+
 #NOTAS PARA COORDINADORES
 ##(Caza de brujas)###IntroducciónEn este proyecto vamos a cazar unas brujas. Obtienes puntos al golpear a las brujas que aparecen en pantalla. ¡A ver cuántos puntos consigues en 30 segundos!###CompetenciasEste proyecto abarca:• Fijar variables• Bucles• Mantener y fijar un marcador###RecursosEste proyecto utiliza recursos de los directorios de Scratch: Backgrounds y Costumes.
 

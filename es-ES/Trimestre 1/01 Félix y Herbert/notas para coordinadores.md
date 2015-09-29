@@ -1,3 +1,10 @@
+---
+title: Félix y Herbert — Notas para coordinadores
+language: es-ES
+embeds: "*.png"
+materials: [""]
+...
+
 #NOTAS PARA COORDINADORES
 ##(Félix y Herbert)####Introducción:Vamos a crear un juego en el que el gato Félix y el ratón Herbert juegan a pillar. Tú controlarás a Herbert con el ratón para evitar que lo pille Félix. Cuanto más tiempo puedas evitarlo, más puntos te dará el juego, pero ten cuidado porque ¡perderás puntos si te pilla! Este proyecto es una introducción básica a Scratch.#### Competencias
 Este proyecto abarca:
