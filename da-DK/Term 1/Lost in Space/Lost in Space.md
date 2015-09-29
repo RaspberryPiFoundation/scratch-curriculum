@@ -66,7 +66,7 @@ Kan du ændre tallene i din animationskode således at:
 Du skal ændre tallene i denne blok:
 
 ```blocks
-	glid (1) sek. til x:(0) y:(0)
+	glid i (1) sek. til x:(0) y:(0)
 ```
 
 ## Gem dit projekt { .save }
