@@ -4,7 +4,6 @@ level: Level 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-note: "notas para coordinadores.md"
 ...
 
 #Rescata regalos
