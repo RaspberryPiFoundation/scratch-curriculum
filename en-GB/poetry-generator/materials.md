@@ -1,6 +1,6 @@
 ---
 title: Ada's Poetry Generator - Materials
 layout: materials
-volunteer-resources:
-project-resources:
+volunteer-resources: PoetryGenerator.sb2
+project-resources: PoetryGeneratorResources.sb2
 ---

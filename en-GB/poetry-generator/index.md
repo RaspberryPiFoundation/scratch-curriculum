@@ -18,7 +18,7 @@ You are going to learn how to program your own poetry generator!
 
 # Step 1: Ada Lovelace { .activity }
 
-In 1842, Ada Lovelace wrote about using a machine called the 'Analytical Engine' to make calculations, and is seen as the world's first computer programmer! Ada was the first to see that computers could be more than just big calculators.
+In 1842, Ada Lovelace wrote about using a machine called the 'Analytical Engine' to make calculations, and is seen as the world's first computer programmer! Ada was also the first to see that computers could be more than just big calculators.
 
 ## Activity Checklist { .check }
 
