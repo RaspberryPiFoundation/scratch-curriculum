@@ -117,7 +117,7 @@ say [Click the computer to generate a poem.] for (2) secs
 
 ## Save your project { .save }
 
-# Step 3: The Analytical Engine { .activity }
+# Step 3: The Analytical Engine { .activity .new-page }
 
 Let's program Ada's computer (called the 'Analytical Engine') to generate poetry.
 
@@ -154,7 +154,7 @@ say (join [I ] (item (random v) of [verbs v])) for (2) secs
 
 ## Save your project { .save }
 
-# Step 4: More poetry { .activity }
+# Step 4: More poetry { .activity .new-page }
 
 Your poem is quite short - let's add to it!
 
@@ -211,7 +211,7 @@ say (join [I feel ] (item (random v) of [adjectives v])) for (2) secs
 
 ## Save your project { .save }
 
-# Step 5: Animating the Analytical Engine { .activity }
+# Step 5: Animating the Analytical Engine { .activity .new-page }
 
 Let's animate your computer, so that it looks like it's generating poetry.
 
