@@ -6,7 +6,7 @@ materials: ["Klubleder Ressourcer/*.*"]
 ...
 
 #Introduktion:
-I dette projekt vil børnene lære, hvordan sprites kan fornemme deres omgivelser.
+I dette projekt skal børnene lære, hvordan sprites kan fornemme deres omgivelser.
 
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline. 
@@ -34,9 +34,9 @@ Projekt Ressourcer:
 #Udfordringer
 + "Du vinder!" - brug af `berører farven ...` {.blocksensing} blok; 
 + "Lydeffekter" - tilføje lyd og musik til spillet;
-+ "Flere forhindringer!" - underbygge vores læring om følingsblokke;
++ "Flere forhindringer!" - underbygge vores læring om berøringssblokke;
 + "Flere skibe!" - brug af `trykket på tasten...?` {.blocksensing} blokke;
-+ "Flere niveauer!" - yderligere spiller kontrollerede baggrunde.
++ "Flere niveauer!" - yderligere spiller-kontrollerede baggrunde.
 
 #Ofte Stillede Spørgsmål
 + Dette er det første projekt, som tilbyder væsentligt mindre trin-for-trin vejledning. Benyt dette som en mulighed for at underbygge børnenes læring, og hent viden fra dette og tidligere projekter.    
