@@ -18,7 +18,7 @@ I dette projekt vil du lære hvordan du kan kode dit eget musikinstrument!
 
 # Trin 1: Sprites { .activity }
 
-Før du kan begynde at animere skal du tilføje en "ting" som du kan animere. I Scratch kaldes disse 'ting' for __sprites__. 
+Før du kan begynde at animere skal du tilføje en "ting", som du kan animere. I Scratch kaldes disse 'ting' for __sprites__. 
 
 ## Arbejdsliste { .check }
 
@@ -82,7 +82,7 @@ Lad os kode din tromme så den laver en lyd, når man slår på den.
 
 + Klik på trommen for at afprøve dit nye instrument!
 
-+ Du kan også ændre udseendet på din tromme, når den klikkes på ved at lave et nyt kostume. Klik på 'Kostumer' fanebladet, og du vil se tromme billedet.
++ Du kan også ændre udseendet på din tromme, når den klikkes på, ved at lave et nyt kostume. Klik på 'Kostumer' fanebladet, og du vil så se tromme billedet.
 
 	![screenshot](band-drum-costume.png)
 
@@ -94,17 +94,17 @@ Lad os kode din tromme så den laver en lyd, når man slår på den.
 
 	![screenshot](band-drum-hit.png)
 
-+ Navnene på kostumerne er ikke særlig hjælpsomme ligenu. Omdøb de 2 kostumenavne til 'ikke slået' og 'slået' ved at taste de nye navne på kostumerne i tekstboksen.
++ Navnene på kostumerne er ikke særlig hjælpsomme ligenu. Omdøb de 2 kostumenavne til 'ikke slået' og 'slået' ved at taste de nye navne på kostumerne ind i tekstboksen.
 
 	![screenshot](band-drum-name.png)
 
-+ Nu hvor du har 2 forskellige kostumer til din tromme, kan du vælge hvilket kostume der vises! Tilføj disse 2 blokke til din tromme:
++ Nu hvor du har 2 forskellige kostumer til din tromme, så kan du vælge hvilket kostume der vises! Tilføj disse 2 blokke til din tromme:
 
 	![screenshot](band-looks.png)
 
 	Kodeblokken man skal bruge for at ændre kostumer ligger i `Udseende` {.blocklooks} sektionen.
 
-+ Afprøv din tromme. Når du klikker på den bør din tromme nu se ud som om, den er blevet slået på!
++ Afprøv din tromme. Når du klikker på den, bør din tromme nu se ud som om, den er blevet slået på!
 
 ## Gem dit projekt { .save }
 
@@ -136,11 +136,11 @@ Lad os tilføje en sanger til dit band!
 
 	![screenshot](band-singer-mic.png)
 
-+ Før du kan få din sanger til at synge skal du tilføje en lyd til din sprite. Sørg for at du har valgt en sanger, klik derefter på 'Lyde' fanebladet, og klik 'Vælg lyd fra biblioteket':
++ Før du kan få din sanger til at synge, så skal du tilføje en lyd til din sprite. Sørg for at du har valgt en sanger, klik derefter på 'Lyde' fanebladet, og klik 'Vælg lyd fra biblioteket':
 
 	![screenshot](band-import-sound.png)
 
-+ Hvis du klikker på 'Stemmer' i venstre side kan du da vælge en passende lyd, som du kan tilføje til din sprite.
++ Hvis du klikker på 'Stemmer' i venstre side, så kan du vælge en passende lyd, som du kan tilføje til din sprite.
 
 	![screenshot](band-choose-sound.png)
 
