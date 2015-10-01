@@ -26,7 +26,7 @@ Du skal lave et fangelegsspil med spøgelser!
 
 	![screenshot](ghost-ghost.png)
 
-+ Tilføj denne kode til dit spøgelse så det gentagne gange kommer frem og forsvinder:  
++ Tilføj denne kode til dit spøgelse, så det gentagne gange kommer frem og forsvinder:  
 
 	```blocks
 		når du klikker på ⚑
@@ -44,7 +44,7 @@ Du skal lave et fangelegsspil med spøgelser!
 
 # Trin 2: Tilfældige spøgelser { .activity }
 
-Dit spøgelse er ret let at fange for det bevæger sig ikke! 
+Dit spøgelse er ret let at fange, for det bevæger sig ikke! 
 
 ## Arbejdsliste { .check } 
 
@@ -61,7 +61,7 @@ Dit spøgelse er ret let at fange for det bevæger sig ikke!
 		end 
 	```
  
-+ Test dit spøgelse igen og du bør se at det dukker op et forskelligt sted hver gang.
++ Afprøv dit spøgelse igen, og du bør se at det dukker op et forskelligt sted hver gang.
 
 ## Gem dit projekt { .save }
 
@@ -82,12 +82,12 @@ Lad os give spilleren mulighed for at fange spøgelser!
 		skjul
 	``` 
 
-+ Test dit projekt. Kan du fange spøgelserne når de kommer frem? Hvis du synes det er svært at fange spøgelserne, så kan du spille spillet i fuldskærm ved at trykke på denne knap:
++ Afprøv dit projekt. Kan du fange spøgelserne, når de kommer frem? Hvis du synes det er svært at fange spøgelserne, så kan du spille spillet i fuldskærm ved at trykke på denne knap:
 
 	![screenshot](ghost-fullscreen.png)
 
 ## Udfordring: Tilføj en lyd { .challenge }
-Kan du lave en lyd hver gang der fanges et spøgelse? 
+Kan du lave en lyd, hver gang der fanges et spøgelse? 
 
 ## Gem dit projekt { .save }
 
@@ -99,15 +99,15 @@ Lad os gøre det hele lidt mere spændende ved at lave en pointoptælling (score
 
 + For at holde øje med en spillers score har du brug for et sted, hvor du kan opbevare den. En __variabel__ er et sted, hvor du kan opbevare data som kan ændre sig, ligesom en score.
 
-	For at lave en ny variabel, klik på 'Scripts' fanebladet, vælg `Data` {.blockdata} og klik så på 'Lav en Variabel'.
+	For at lave en ny variabel, så klik på 'Scripts' fanebladet, vælg `Data` {.blockdata} og klik så på 'Lav en Variabel'.
 
 	![screenshot](ghost-score.png)
 
-	Tast 'score' i navnet på variablen, sørg for at den er tilgængelig for alle sprites og klik 'OK' for at lave den. Herefter kan du se en del kodeblokke som kan bruges sammen med din `score` {.blockdata} variabel.
+	Tast 'score' i navnet på variablen, sørg for at den er tilgængelig for alle sprites, og klik 'OK' for at lave den. Herefter kan du se en del kodeblokke som kan bruges sammen med din `score` {.blockdata} variabel.
 
 	![screenshot](ghost-variable.png)
 
-	Du vil også se scoren oppe i venstre hjørne af scenen. 
+	Du vil også kunne se scoren oppe i venstre hjørne af scenen. 
 
 	![screenshot](ghost-stage-score.png)
 
