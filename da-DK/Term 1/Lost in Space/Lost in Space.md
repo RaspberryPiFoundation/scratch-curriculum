@@ -50,11 +50,11 @@ Lad os lave et rumskib som flyver mod Jorden!
 
 	![screenshot](space-xy.png)
 
-	Hvis du har brug for at vide din scenes koordinater, flyt pilen til din ønskede position, og notér koordinaterne som vises under scenen.
+	Hvis du har brug for at vide din scenes koordinater, så flyt pilen til din ønskede position, og notér koordinaterne som vises under scenen.
 
 	![screenshot](space-coordinates.png)
 
-+ Test din  nye animation ved at klikke på det grønne flag lige over scenen.
++ Afprøv din  nye animation ved at klikke på det grønne flag lige over scenen.
 
 	![screenshot](space-flag.png)
 
@@ -81,13 +81,13 @@ En anden måde du kan animere dit rumskib på er ved at fortælle det, at det sk
  
 	![screenshot](space-delete-glide.png)
 
-+ Når du har fjernet din kode, tilføj denne kode i stedet:
++ Når du har fjernet din kode, så tilføj denne kode i stedet:
 
 	![screenshot](space-loop.png)
 
 	`Gentag` {.blockcontrol} blokken bruges til at gentage noget mange gange, og kendes også som et __loop__.
 
-+ Hvis du klikker på flaget for at afprøve denne nye kode, så vil du se den faktisk gør det samme som før.
++ Hvis du klikker på flaget for at afprøve denne nye kode, så vil du se, at den faktisk gør det samme som før.
 
 + Du kan tilføje mere kode til dit loop for at gøre nogle spændende ting. Tilføj `ændr effekten farve med 25` {.blocklooks} blokken til loop'en (fra 'Udseende' sektionen) for gentagne gange at ændre farven på dit rumskib, når det flytter sig:
 
@@ -97,7 +97,7 @@ En anden måde du kan animere dit rumskib på er ved at fortælle det, at det sk
 
 	![screenshot](space-colour-test.png)
 
-+ Du kan også lave dit rumskib mindre og mindre jo tættere den kommer på Jorden.
++ Du kan også lave dit rumskib mindre og mindre jo nærmere den kommer mod Jorden.
 	![screenshot](space-size.png)
 
 + Afprøv din animation. Hvad sker der, hvis du klikker på flaget endnu en gang? Starter dit rumskib ud i den rigtige størrelse? Kan du bruge denne blok for at fikse din animation:
@@ -111,7 +111,7 @@ En anden måde du kan animere dit rumskib på er ved at fortælle det, at det sk
  
 # Trin 3: Svævende Abe { .activity .new-page }
 
-Lad os tilføje en abe, som er tabt ude i rummet, til din animation! 
+Lad os tilføje en abe til din animation, som er forsvundet ud i rummet! 
 
 ## Arbejdsliste { .check }
 
@@ -119,7 +119,7 @@ Lad os tilføje en abe, som er tabt ude i rummet, til din animation!
 
 	![screenshot](space-monkey.png)
 
-+ Hvis du klikker på din nye abe sprite og derpå klikker 'Kostumer', kan du redigere hvordan din abe ser ud. Klik på 'Ellipse' redskabet og tegn en hvid rumhjelm omkring abens hoved.
++ Hvis du klikker på din nye abe sprite og derpå klikker på 'Kostumer', så kan du redigere hvordan din abe ser ud. Klik på 'Ellipse' redskabet og tegn en hvid rumhjelm omkring abens hoved.
 
 	![screenshot](space-monkey-edit.png)
 
@@ -134,7 +134,7 @@ Lad os tilføje en abe, som er tabt ude i rummet, til din animation!
 
 `For evigt` {.blockcontrol} blokken er endnu en loop, men denne gang er det en som aldrig stopper. 
  
-+ Klik på flaget for at teste din abe. Du vil være nødt til at klikke på stop knappen (ved siden af flaget) for at afslutt animationen.
++ Klik på flaget for at afprøve din abe. Du er nødt til at klikke på stop knappen (ved siden af flaget) for at afslutte animationen.
 
 	![screenshot](space-monkey-loop.png)
 
@@ -148,7 +148,7 @@ Lad os tilføje nogle svævende rumsten til din animation.
 
 	![screenshot](space-rock-sprite.png)
 
-+ Tilføj denne kode til din sten så den hopper omkring på scenen:
++ Tilføj denne kode til din sten, så den bevæger sig rundt på scenen:
 
 ```scratch
 		når du klikker på ⚑ 
@@ -159,7 +159,7 @@ Lad os tilføje nogle svævende rumsten til din animation.
 		end
 ``` 
 
-+ Klik på flaget for at teste din sten. Hopper den rundt på scenen?  
++ Klik på flaget for at afprøve din sten. Bevæger den sig rundt på scenen?  
 
 # Trin 5: Skinnende Stjerner { .activity .new-page }
 
@@ -175,7 +175,7 @@ Lad os kombinere nogle loops for at lave en skinnende stjerne.
 
 	![screenshot](space-star.png)
 
-+ Klik på flaget for at teste din stjerneanimation. Hvad gør koden? Stjernen er gjort en anelse større 20 gange, og er derefter gjort en anelse mindre 20 gange, tilbage til sin oprindelige størrelse. Disse 2 loops er indeni et `for evigt` {.blockcontrol} loop, så animationen bliver ved med at gentage sig selv.
++ Klik på flaget for at afprøve din stjerneanimation. Hvad gør koden? Stjernen er gjort en anelse større 20 gange, og er derefter gjort en anelse mindre 20 gange, tilbage til sin oprindelige størrelse. Disse 2 loops er indeni et `for evigt` {.blockcontrol} loop, så animationen bliver ved med at gentage sig selv.
 
 ## Gem dit projekt { .save }
 
