@@ -1,3 +1,10 @@
+---
+title: Carrera en el desierto — Notas para coordinadores
+language: es-ES
+embeds: "*.png"
+materials: [""]
+...
+
 #NOTAS PARA COORDINADORES
 ##(Carrera en el desierto)
 

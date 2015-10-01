@@ -1,3 +1,10 @@
+---
+title: Fuegos artificiales — Notas para coordinadores
+language: es-ES
+embeds: "*.png"
+materials: [""]
+...
+
 #NOTAS PARA COORDINADORES
 ##(Fuegos artificiales)###IntroducciónEn este proyecto es una exhibición interactiva de fuegos artificiales sobre una ciudad.
 ###CompetenciasEste proyecto abarca:• Responder cuando se pulsa el botón del ratón.• Cambiar la apariencia de objetos.

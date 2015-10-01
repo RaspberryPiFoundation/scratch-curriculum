@@ -1,3 +1,10 @@
+---
+title: Crea tu propio juego — Notas para coordinadores
+language: es-ES
+embeds: "*.png"
+materials: [""]
+...
+
 #NOTAS PARA COORDINADORES
 ##(Crea tu propio juego)
 

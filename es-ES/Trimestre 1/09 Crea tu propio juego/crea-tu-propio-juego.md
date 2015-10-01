@@ -1,4 +1,11 @@
-Nivel 3
+---
+title: Crea tu propio juego
+level: Level 1
+language: es-ES
+stylesheet: scratch
+embeds: "*.png"
+note: "notas para coordinadores.md"
+...
 
 #Crea tu propio juego
 

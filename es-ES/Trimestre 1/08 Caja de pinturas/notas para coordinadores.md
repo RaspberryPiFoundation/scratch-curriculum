@@ -1,3 +1,10 @@
+---
+title: Caja de pinturas — Notas para coordinadores
+language: es-ES
+embeds: "*.png"
+materials: [""]
+...
+
 #NOTAS PARA COORDINADORES
 ##(Caja de pinturas)
 
