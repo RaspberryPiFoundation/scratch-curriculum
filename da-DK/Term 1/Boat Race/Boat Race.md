@@ -34,7 +34,7 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 
 ## Arbejdsliste { .check }
 
-+ Hvis din klubleder har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload sprite fra fil' og tilføj 'boat.png' billedet. Du bør formindske din sprite og stille den i sin start position.
++ Hvis din instruktør har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload sprite fra fil' og tilføj 'boat.png' billedet. Du bør formindske din sprite og stille den i sin start position.
 
 	![screenshot](boat-boat.png)
 
@@ -72,7 +72,7 @@ Din båd er i stand til at sejle gennem træbarriererne! Lad os finde en løsnin
 
 ## Arbejdsliste { .check }
 
-+ Du har brug for 2 kostumer til din båd- et normalt kostume og et kostume beregnet til når båden styrter sammen. Kopiér dit båds kostume og navngiv dem 'normal' og 'ramt'. 
++ Du får brug for 2 kostumer til din båd- et normalt kostume og et kostume beregnet til når båden styrter sammen. Kopiér dit båds kostume og navngiv dem 'normal' og 'ramt'. 
 
 + Klik på dit 'ramt' kostume, og vælg 'Marker' redskabet til at tage nogle bidder af din båd og rotér dem rundt. Få din båd til at se ud som om, den er styrtet sammen.
 
@@ -103,7 +103,7 @@ Denne kode ligger indeni `for evigt` {.blockcontrol} loopen, så din kode bliver
 ## Udfordring: Du vinder! {.challenge}
 Kan du tilføje en ny `hvis` {.blockcontrol} erklæring til koden for din båd, således at spilleren vinder, når de ankommer til den øde ø? 
 
-Når båden ankommer til den gule øde ø, så skal den sige 'YEAH!', og spillet skal stoppe. Du har brug for denne kode:
+Når båden ankommer til den gule øde ø, så skal den sige 'YEAH!', og spillet skal stoppe. Du får brug for denne kode:
 
 ```blocks
 	sig [YEAH!] i (1) sekunder
@@ -121,7 +121,7 @@ Kan du tilføje lydeffekter til dit spil til når båden styrter sammen eller de
 
 # Trin 4: Tidstælling { .activity }
 
-Lad os tilføje en timer til dit spil, så spilleren skal nå hen til den øde ø så hurtigt som muligt.
+Lad os tilføje et stopur til dit spil, så spilleren skal nå hen til den øde ø så hurtigt som muligt.
 
 ## Arbejdsliste { .check }
 
@@ -129,7 +129,7 @@ Lad os tilføje en timer til dit spil, så spilleren skal nå hen til den øde �
 
 	![screenshot](boat-variable.png)
 
-+ Tilføj denne kode til din __scene__, således at din timer tæller op til tidspunktet, hvor din båd når hen til den øde ø:
++ Tilføj denne kode til din __scene__, således at dit stopur tæller op til tidspunktet, hvor din båd når hen til den øde ø:
 
 ```blocks 
 		når du klikker på ⚑
@@ -185,7 +185,7 @@ Spillet er _alt_ for nemt - lad os tilføje nogle ting og gøre det mere spænde
 ## Udfordring: Flere forhindringer! {.challenge .new-page}
 Kan du tilføje nogle flere forhindringer til dit spil? Her er nogle idéer:
 
-+ Du kunne tilføje noget grønt slim til din baggrund, som gør spilleren langsommere, når de rører ved det. Du kan bruge en `vent` {.blockcontrol} blok for at lave dette:
++ Du kunne tilføje noget grønt slim til din baggrund, som gør spilleren langsommere, når de rører ved det. Til dette kan du bruge en `vent` {.blockcontrol} blok:
 
 ```blocks
 	vent (0.01) sekunder
@@ -193,7 +193,7 @@ Kan du tilføje nogle flere forhindringer til dit spil? Her er nogle idéer:
 
 ![screenshot](boat-algae.png)
 
-+ Du kunne også tilføje en genstand, der bevæger sig, fx en træstamme eller en haj! 
++ Du kan også tilføje en genstand, der bevæger sig, fx en træstamme eller en haj! 
 
 ![screenshot](boat-obstacles.png)
 
@@ -237,7 +237,7 @@ Kan du forme spillet, så det bliver til et racerløb mellem 2 spillere?
 
 ...og erstat den med en kode, der kontrollerer båden ved hjælp af piletasterne.
 
-Du har brug for denne kode til at flytte båden fremad:
+Du skal bruge denne kode til at flytte båden fremad:
 
 ```blocks
 	hvis <trykket på tasten [pil opad v]?> så 
