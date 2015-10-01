@@ -1,17 +1,17 @@
 {
     "id": "scratch-1",
     "title": "Scratch 1",
-    "description": "",
+    "description": false,
     "language": "ro-RO",
     "number": 1,
     "projects": [
         {
-            "number":   1,
+            "number": 1,
             "beta": true,
             "filename": "Rock Band/Rock Band.md"
         },
         {
-            "number":   2,
+            "number": 2,
             "beta": true,
             "filename": "Lost in Space/Lost in Space.md"
         }       

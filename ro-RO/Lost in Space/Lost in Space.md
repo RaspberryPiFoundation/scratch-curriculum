@@ -4,7 +4,6 @@ level: Scratch 1
 language: ro-RO
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
 ...
 
 # Introducere { .intro }
