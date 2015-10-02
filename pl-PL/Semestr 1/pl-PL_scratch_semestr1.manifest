@@ -15,6 +15,12 @@
             "number":   2,
             "filename": "Zagubiona w kosmosie/Zagubiona w kosmosie.md",
             "note":     "Zagubiona w kosmosie/Zagubiona w kosmosie - notatki.md"
+        },
+        {
+            "number":   3,
+            "beta":     true,
+            "filename": "Pogromcy duchów/Pogromcy duchów.md",
+            "note":     "Pogromcy duchów/Pogromcy duchów - notatki.md"
         }
     ]
 }
