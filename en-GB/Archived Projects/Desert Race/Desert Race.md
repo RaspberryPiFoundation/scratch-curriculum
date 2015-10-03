@@ -78,7 +78,7 @@ When you press the start button does it countdown to the start of the race befor
 We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.
 
 + Add a variable for all sprites called `racing`{.blockorange}. Untick the box next to it so it does not show on the stage.
-+ Now set **racing** to be **0** when the project is first started. Change your `when flag clicked`{.blockyellow} script from before to look like this:
++ Now set **racing** to be **0** when the project is first started. Change your `when FLAG clicked`{.blockyellow} script from before to look like this:
 ```blocks
     when FLAG clicked
         show

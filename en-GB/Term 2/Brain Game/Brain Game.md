@@ -35,7 +35,7 @@ Let's start by creating random questions for the player to answer.
 + Add code to your character, to set both of these variables to a `random` {.blockoperators} number between 2 and 12.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [number 1 v] to (pick random (2) to (12))
 		set [number 2 v] to (pick random (2) to (12))
 	```
@@ -43,7 +43,7 @@ Let's start by creating random questions for the player to answer.
 + You can then ask the player for the answer, and let them know if they were right or wrong.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [number 1 v] to (pick random (2) to (12))
 		set [number 2 v] to (pick random (2) to (12))
 		ask (join (number 1)(join [ x ] (number 2))) and wait
@@ -87,7 +87,7 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 + Add this code to your new button.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		show
 
 		when this sprite clicked
@@ -99,7 +99,7 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 
 + You'll need to edit your character's code, so that the game starts when they receive the `start` {.blockevents} message, and not when the flag is clicked.
 
-	Replace the `when flag clicked` {.blockevents} code with `when I receive start` {.blockevents}.
+	Replace the `when FLAG clicked` {.blockevents} code with `when I receive start` {.blockevents}.
 
 	![screenshot](brain-start.png)
 
@@ -138,7 +138,7 @@ Let's add a 'play' button to your game, so that you can play lots of times.
 + You can even change how the button looks when the mouse hovers over it.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		show
 		forever
 		if <touching [mouse-pointer v]?> then

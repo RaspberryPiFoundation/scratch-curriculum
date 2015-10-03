@@ -43,7 +43,7 @@ You are going to learn how to make a game, in which you'll use the mouse to navi
 + You are going to control the boat with your mouse. Add this code to your boat:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		point in direction (0 v)
 		go to x: (-190) y: (-150)
 		forever
@@ -132,7 +132,7 @@ Let's add a timer to your game, so that the player has to get to the desert isla
 + Add this code to your __stage__, so that the timer counts up until the boat reaches the desert island:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [time v] to [0]
 		forever
 			wait (0.1) secs

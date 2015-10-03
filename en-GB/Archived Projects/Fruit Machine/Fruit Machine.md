@@ -33,7 +33,7 @@ Now we’ve got some costumes, we want the sprite to change between them.
 ## Activity Checklist { .check }
 
 + Click the `Scripts` tab.
-+ Click `Events` and drag a `when flag clicked` { .blockyellow } into the scripts area. This will be triggered when we click the green flag.
++ Click `Events` and drag a `when FLAG clicked` { .blockyellow } into the scripts area. This will be triggered when we click the green flag.
 + Click the **Control** tab and add a `forever` { .blockyellow } and attach it so it snaps to the bottom.
 + **Click the green flag** in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.
 + Now click `Looks` and drag in a `next costume` { .blockpurple }
@@ -239,7 +239,7 @@ Different people will have different skills at playing the game. **How could you
 
 One way you could do it is to **adjust the speed the costumes change at**. You can use a variable, called `delay` { .blockorange }, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier).
 
-You'll probably need to think about using a different way of starting the game each time it is played instead of the `when flag clicked` { .blockyellow } Then you can store values in variables that are remembered between each round of the game.
+You'll probably need to think about using a different way of starting the game each time it is played instead of the `when FLAG clicked` { .blockyellow } Then you can store values in variables that are remembered between each round of the game.
 
 ## Save your project { .save }
 

@@ -45,7 +45,7 @@ This step shows how to add Scratch code to your project.
 + You can add Scratch code to your project like this:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		point in direction (120 v)
 		set pen color to [#FF0000]
 		pen down
@@ -64,7 +64,7 @@ This step shows how to add Scratch code to your project.
 	You can add:
 
 	+ `Motion` {.blockmotion} blocks, for example `move (10) steps` {.blockmotion} or `if on edge, bounce` {.blockmotion};
-	+ `Event` {.blockevents} blocks, for example `when flag clicked` {.blockevents} or `when I receive [message v]` {.blockevents};
+	+ `Event` {.blockevents} blocks, for example `when FLAG clicked` {.blockevents} or `when I receive [message v]` {.blockevents};
 	+ `Looks` {.blocklooks} blocks, for example `show` {.blocklooks} or `next costume` {.blocklooks}
 	+ `Control` {.blockcontrol} blocks, for example `forever` {.blockcontrol}, or `wait (1) secs` {.blockcontrol};
 	+ `Sound` {.blocksound} blocks, for example `play sound meow` {.blocksound} or `stop all sounds` {.blocksound};

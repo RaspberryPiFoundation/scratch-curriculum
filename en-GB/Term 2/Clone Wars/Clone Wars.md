@@ -35,7 +35,7 @@ Let's make a spaceship that will defend the Earth!
 + Add code to move your spaceship to the left when the left arrow key is pressed. You'll need to use these blocks:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [left arrow v] pressed?> then
 				change x by (-4)
@@ -62,7 +62,7 @@ Let's give the spaceship the ability to fire lightning bolts!
 + When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		hide
 	```
 
@@ -70,7 +70,7 @@ Let's give the spaceship the ability to fire lightning bolts!
 
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [space v] pressed?> then
 				create clone of [Lightning v]
@@ -114,7 +114,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 + Set its rotation style to be left-right only, and add the following code to hide the sprite when the game starts:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		hide
 	```
 
@@ -129,7 +129,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 + The following code will create a new hippo every few seconds. **The Stage** is a good place for this code to live:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			wait (pick random (2) to (4)) secs
 			create clone of [Hippo1 v]
@@ -168,7 +168,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 + Add this code to your spaceship so that it switches costume whenever it collides with a flying hippo:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			switch costume to [normal v]
 			wait until <touching [Hippo1 v]>?
@@ -222,7 +222,7 @@ Let's make a fruit bat that throws oranges at your spaceship.
 + Add code to your bat, so that it creates a new orange clone every few seconds.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			wait (pick random (5) to (10)) secs
 			create clone of [Orange v]
@@ -232,7 +232,7 @@ Let's make a fruit bat that throws oranges at your spaceship.
 + Click on your orange sprite and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		hide
 
 		when I start as a clone
@@ -278,7 +278,7 @@ Let's add a 'game over' message at the end of the game.
 + Add this code to your 'Game Over' sprite, so that the message shows at the end of the game:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		hide
 
 		when I receive [game over v]
