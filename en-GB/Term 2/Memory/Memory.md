@@ -53,7 +53,7 @@ First, let's create a character that can change to a random sequence of colours 
 + Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		delete (all v) of [sequence v]
 		repeat (5)
 			add (pick random (1) to (4)) to [sequence v]
@@ -100,7 +100,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		end
 	```
 
-+ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
++ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when FLAG clicked` {.blockevents} script:
 
 	```blocks
 		wait until < (length of [sequence v]) = [0]>
@@ -138,7 +138,7 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 
 	![screenshot](colour-score.png)
 
-+ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
++ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when FLAG clicked` {.blockevents} code:
 
 	```blocks
 		set [score v] to [3]
@@ -160,7 +160,7 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 + Finally, you need to add a `forever` {.blockcontrol} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [score v] to [3]
 		forever
 			delete (all v) of [sequence v]

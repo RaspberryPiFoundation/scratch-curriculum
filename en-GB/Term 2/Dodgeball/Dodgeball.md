@@ -39,7 +39,7 @@ Let's start by creating a character that can move left and right, as well as cli
 + Let's use the arrow keys to move your character around. When the player presses the right arrow, you want your character to point right, move a few steps and change to the next costume:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [right arrow v] pressed? > then
 				point in direction (90 v)
@@ -93,7 +93,7 @@ Let's make your character move more realistically, by adding gravity and allowin
 + Add this new code block, which sets the gravity to a negative number, and then uses this to repeatedly change your character's y-coordinate.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [gravity v] to [-4]
 		forever
 			change y by (gravity)
@@ -107,7 +107,7 @@ Let's make your character move more realistically, by adding gravity and allowin
 + Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [gravity v] to [-4]
 		forever
 			if < not < <touching color [#0000FF]?> or <touching color [#FFFF00]?> > > then
@@ -236,7 +236,7 @@ Let's make your game a little harder to complete, by adding lasers!
 + Add code to your laser, to make it switch between the 2 costumes.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			switch costume to [on v]
 			wait (2) secs

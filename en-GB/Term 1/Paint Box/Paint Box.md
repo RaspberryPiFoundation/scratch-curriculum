@@ -39,7 +39,7 @@ Let's start by making a pencil, that can be used to draw on the stage.
 + As you'll be using the mouse to draw, you'll want the pencil to follow the mouse `forever` {.blockcontrol}. Add this code to your pencil sprite:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 		  go to [mouse pointer v]
 		end
@@ -131,7 +131,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 		set pen color to [#0000ff]
 	```
 
-+ Finally, you need to tell your pencil sprite what costume and pencil colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pencil's `when flag clicked` {.blockevents} code (before the `forever` {.blockcontrol} loop):
++ Finally, you need to tell your pencil sprite what costume and pencil colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pencil's `when FLAG clicked` {.blockevents} code (before the `forever` {.blockcontrol} loop):
 
 	```blocks
 		clear

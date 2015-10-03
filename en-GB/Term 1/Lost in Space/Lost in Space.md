@@ -151,7 +151,7 @@ Let's add some floating space-rock to your animation.
 + Add this code to your rock, to make it bounce around the stage:
 
 	```scratch
-	when flag clicked
+	when FLAG clicked
 	point towards [Earth v]
 	forever
 		move (2) steps

@@ -35,7 +35,7 @@ Let's start by creating a player that can move around your world.
 + Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the player sprite:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [up arrow v] pressed? > then
 				change y by (2)
@@ -50,7 +50,7 @@ Let's start by creating a player that can move around your world.
 + To move the player to the left, you need to add another `if` {.blockcontrol} block to your player, which changes the x coordinate:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [up arrow v] pressed? > then
 				change y by (2)
@@ -73,7 +73,7 @@ Can you add more code to your player, so that they can move up, down, left and r
 + To fix this, you need to move the player, but then move them back if they're touching a light grey wall. Here's the code you'll need:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [up arrow v] pressed? > then
 				change y by (2)
@@ -153,7 +153,7 @@ Let's add signs to your world, to guide your player on their journey.
 + This sign will only be visible in room 1, so let's add some code to the sign to make sure that this happens:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if < (room) = [1] > then
 				show
@@ -170,7 +170,7 @@ Let's add signs to your world, to guide your player on their journey.
 + A sign isn't much good if it doesn't say anything! Let's add some more code (in another separate block) to display a message if the sign is touching the player:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if < touching [player v]? > then
 				say [Welcome! Can you get to the treasure?]
@@ -205,7 +205,7 @@ Let's add other people to your world that your player can interact with.
 + Add in this code, so that the person talks to your player. This code is very similar to the code you added to your sign:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		go to x: (-200) y: (0)
 		forever
 			if < touching [player v]? > then
@@ -273,7 +273,7 @@ Can you create another enemy in room 3, that patrols up and down through the gap
 + Add code to your coin sprite, to add 1 to your `coins` {.blockdata} once they've been picked up:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		wait until <touching [player v]?>
 		change [coins v] by (1)
 		stop [other scripts in sprite v]
@@ -304,7 +304,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 + The code for collecting the key is very similar to the code for collecting coins. The difference is that you add the key to your inventory.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		wait until <touching [player v]?>
 		add [blue key] to [inventory v]
 		stop [other scripts in sprite v]
@@ -326,7 +326,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 + You'll need to hide your blue door to allow your player to pass once you have the blue key in your inventory.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		wait until <[inventory v] contains [blue key]>
 		stop [other scripts in sprite v]
 		hide

@@ -32,7 +32,7 @@ You are going to make a ghost-catching game!
 + Add this code to your ghost, so that it repeatedly appears and disappears:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			hide
 			wait (1) secs
@@ -54,7 +54,7 @@ Your ghost is really easy to catch, because it doesn't move!
 + Instead of staying in the same position, you can let Scratch choose random x and y coordinates instead. Add a `go to` {.blockmotion} block to your ghost's code, so that it looks like this:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			hide
 			wait (1) secs
@@ -118,7 +118,7 @@ Let's make things more interesting by keeping score.
 + When a new game is started (by clicking the flag), you should set the player's score to 0:
 
 	```blocks
-	when flag clicked
+	when FLAG clicked
 	set [score v] to [0]
 	```
 
@@ -149,7 +149,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 	Here's the code to do this, which you can add to your __stage__:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [time v] to [10]
 		repeat until <(time) = [0]>
 			wait (1) secs

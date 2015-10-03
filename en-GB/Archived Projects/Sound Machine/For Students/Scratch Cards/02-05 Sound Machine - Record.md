@@ -20,7 +20,7 @@ embeds: "*.png"
     Empty the list when you start.
 
     ```scratch
-    when flag clicked
+    when FLAG clicked
     delete (all v) of [notes v]
     ```
 

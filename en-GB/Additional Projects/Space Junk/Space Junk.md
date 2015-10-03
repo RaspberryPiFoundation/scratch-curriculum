@@ -80,7 +80,7 @@ Let's add some space junk for the cat to avoid.
 + Add this code to make the planet move around the stage forever:
 
 	```scratch
-	when flag clicked
+	when FLAG clicked
 	forever
 		move (2) steps
 		if on edge, bounce
@@ -106,7 +106,7 @@ Let's add some space junk for the cat to avoid.
 	Here's how your planet's code should look:
 
 	```scratch
-	when flag clicked
+	when FLAG clicked
 	forever
 		move (2) steps
 		if on edge, bounce
@@ -140,7 +140,7 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 + Add this code to your Earth sprite, so that it starts off very small and slowly get's bigger and bigger:
 
 	```scratch
-	when flag clicked
+	when FLAG clicked
 	set size to (10) %
 	forever
 		change size by (0.3)
@@ -162,7 +162,7 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 + Add this code to your stage, so that the timer counts up forever:
 
 	```scratch
-	when flag clicked
+	when FLAG clicked
 	forever
 		wait (0.1) secs
 		change [time v] by (0.1)
@@ -180,7 +180,7 @@ Can you avoid the space junk for 30 seconds, and get back to Earth safely?
 	Click on your cat sprite, and add this script:
 
 	```scratch
-	when flag clicked
+	when FLAG clicked
 	set [time v] to [0]
 	wait until <(time) > [30]>
 	say [I made it!] for (2) secs

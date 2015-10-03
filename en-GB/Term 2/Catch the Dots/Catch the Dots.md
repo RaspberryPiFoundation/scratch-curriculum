@@ -34,7 +34,7 @@ Let's start by creating a controller, that will be used to collect dots.
 + Turn your controller to the right when the right arrow key is pressed:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if <key [right arrow v] pressed?> then
 				turn right (3) degrees
@@ -63,7 +63,7 @@ Let's add some dots for the player to collect with their controller.
 + Add this script to your 'red' dot sprite, to create a new dot clone every few seconds:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		wait (2) secs
 		forever
 			create clone of [myself v]
@@ -148,7 +148,7 @@ Let's make the game get more difficult the longer the player survives, by slowly
 + On your stage, create a new script that sets the delay to a high number, and then slowly reduces the delay time.
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [delay v] to (8)
 		repeat until < (delay) = (2)>
 			wait (10) secs

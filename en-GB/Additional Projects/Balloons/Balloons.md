@@ -29,7 +29,7 @@ You are going to make a balloon-popping game!
 + Add this code to your balloon, so that it bounces around the screen:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		go to x:(0) y:(0)
 		point in direction (45 v)
 		forever
@@ -64,7 +64,7 @@ You are going to make a balloon-popping game!
 + Instead of using the same x and y position each time, you can let Scratch choose a random number instead. Change your balloon's code, so that it looks like this:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
 		point in direction (45 v)
 		forever
@@ -105,7 +105,7 @@ Lets allow the player to pop the balloons!
 + Make sure that your balloon switches to the right costume when the game starts. Your code should now look like this:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		switch costume to [balloon1-a v]
 		point in direction (pick random (-90) to (180))
 		go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
@@ -134,7 +134,7 @@ Lets allow the player to pop the balloons!
 		hide
 	```
 
-+ Now that you're deleting the balloon when it's clicked, you'll also need to add a `show` {.blocklooks} block to the start of the `when flag clicked` {.blockevents} code.
++ Now that you're deleting the balloon when it's clicked, you'll also need to add a `show` {.blocklooks} block to the start of the `when FLAG clicked` {.blockevents} code.
 
 + Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:
 
@@ -162,7 +162,7 @@ Let's make things more interesting by keeping score.
 
 	![screenshot](balloons-stage-score.png)
 
-+ When a new game is started (by clicking the flag), you want to set the player's score to 0. Add this code to the top of the balloon's `when flag clicked` {.blockevents} code:
++ When a new game is started (by clicking the flag), you want to set the player's score to 0. Add this code to the top of the balloon's `when FLAG clicked` {.blockevents} code:
 
 	```blocks
 	set [score v] to [0]
@@ -193,7 +193,7 @@ One simple way to get lots of balloons is just to right-click on the balloon spr
 
 + A much better way of getting lots of balloons is to _clone_ the balloon sprite.
 
-	Drag your balloon `when flag clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones.
+	Drag your balloon `when FLAG clicked` {.blockevents} code (except the `score` {.blockdata} block) off of the event (don't delete it), and instead add code to create 20 balloon clones.
 
 	You can now attach the code you've just removed to the `when I start as a clone` {.blockevents} event. You should also replace the `hide` {.blocklooks} block in the balloon-clicking script with a `delete this clone` {.blockcontrol} block.
 
@@ -224,7 +224,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 	Here's the code to do this, which you can add to your _stage_:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		set [time v] to [10]
 		repeat until <(time) = [0]>
 			wait (1) secs

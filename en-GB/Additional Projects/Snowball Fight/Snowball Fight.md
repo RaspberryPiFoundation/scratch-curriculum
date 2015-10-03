@@ -39,7 +39,7 @@ Let's make a snowball, that you can throw around your stage.
 + First, let's allow the player to change the angle of the snowball. Add this code to your snowball sprite:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		wait (0.5) secs
 		go to x:(-200) y:(-130)
 		point in direction (90 v)
@@ -95,7 +95,7 @@ Let's make a snowball, that you can throw around your stage.
 	Here's how your snowball code should look:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		wait (0.5) secs
 		go to x:(-200) y:(-130)
 		point in direction (90 v)
@@ -129,7 +129,7 @@ Let's make a snowball, that you can throw around your stage.
 
 + Test out your snowball a few times. Does it move at different angles and different speeds?
 
-+ If you want to be able to throw your snowball lots of times, just add a `forever` {.blockcontrol} loop around your snowball `when flag clicked` {.blockevents} code.
++ If you want to be able to throw your snowball lots of times, just add a `forever` {.blockcontrol} loop around your snowball `when FLAG clicked` {.blockevents} code.
 
 	![screenshot](snow-throw.png)
 
@@ -141,7 +141,7 @@ You now have a snowball, but let's make it move a bit more realistically.
 
 + First, let's set a maximum power level, so that the snowball can't be thrown too hard.
 
-	In your snowball's `when flag clicked` {.blockevents} code, we need to increase the power only if it's less than 20. Change your code to:
+	In your snowball's `when FLAG clicked` {.blockevents} code, we need to increase the power only if it's less than 20. Change your code to:
 
 	```blocks
 		repeat until< not <key [space v] pressed?> >
@@ -198,7 +198,7 @@ Let's add in a target for your snowballs!
 + Add this code to your new sprite, so that it says "You got me!" when it gets hit:
 
 	```blocks
-		when flag clicked
+		when FLAG clicked
 		forever
 			if < touching [snowball v]? > then
 				say [You got me!] for (1) secs

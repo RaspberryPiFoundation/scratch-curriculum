@@ -63,7 +63,7 @@ Click the green flag, place your mouse over the stage and press the space bar.
 
 ## Activity Checklist { .check }
 
-+ Finally, let’s make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a `forever if mouse down` block, then swap the `when space key pressed` control block for `when flag clicked`. And last but not least make sure the rocket is hidden when everything starts up.
++ Finally, let's make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a `forever if mouse down` block, then swap the `when space key pressed` control block for `when FLAG clicked`. And last but not least make sure the rocket is hidden when everything starts up.
 ```blocks
 	when FLAG clicked
 		hide
