@@ -51,7 +51,7 @@ Lad os starte med at lave en blyant, som vi kan bruge til at tegne med på scene
 
 ![screenshot](paint-center.png)
 
-For at løse dette så klik på 'blyant-blå' kostumet på din blyantssprite, og klik på 'Sæt kostumets..'. 
+Løs dette ved at klikke på 'blyant-blå' kostumet på din blyantssprite, og klik på 'Sæt kostumets..'. 
 
 ![screenshot](paint-center-icon.png)
 
@@ -73,7 +73,7 @@ For at løse dette så klik på 'blyant-blå' kostumet på din blyantssprite, og
 
 # Trin 2: Farveblyanter { .activity }
 
-Lad os tilføje forskellige farveblyanter til dit projekt og giv brugerne mulighed for at vælge mellem dem! 
+Lad os tilføje nogle forskellige farveblyanter til dit projekt og give brugerne mulighed for at vælge mellem dem! 
 
 ## Arbejdsliste { .check }
 
@@ -89,9 +89,9 @@ Lad os tilføje forskellige farveblyanter til dit projekt og giv brugerne muligh
 
 	![screenshot](paint-selectors.png)
 
-+ Når der klikkes på det grønne selektor ikon skal du `sende` {.blockevents} en besked til blyantsspriten og fortælle den, at den skal ændre sit kostume og blyantsfarve.
++ Når der klikkes på det grønne selektor ikon skal du `sende` {.blockevents} en meddelelse til blyantsspriten og fortælle den, at den skal ændre sit kostume og blyantsfarve.
 
-For at gøre dette, start med at tilføj denne kode til det grønne selektor ikon: 
+Start med at tilføje denne kode til det grønne selektor ikon: 
 
 ```blocks 
 		når denne sprite klikkes
@@ -102,11 +102,11 @@ For at lave `send` {.blockevents} blokken skal du klikke på den nedadgående pi
 
 ![screenshot](paint-broadcast.png)
 
-Du kan dernæst taste 'grøn' for at lave din besked. 
+Du kan dernæst taste 'grøn' for at lave din meddelelse. 
 
 ![screenshot](paint-green-message.png)
 
-+ Du skal nu fortælle din blyantssprite, hvad den skal gøre, når den modtager beskeden. Tilføj denne kode til din blyantssprite: 
++ Du skal nu fortælle din blyantssprite, hvad den skal gøre, når den modtager meddelelsen. Tilføj denne kode til din blyantssprite: 
 
 ```blocks 
 			når jeg modtager [grøn v]
@@ -114,7 +114,7 @@ Du kan dernæst taste 'grøn' for at lave din besked.
 			skift penfarve til [#00ff00]
 ``` 
  
-For at sætte blyanten til at farve grøn, klik på den farvede boks i 'skift penfarve til' {.blockpen} blokken, og klik på det grønne __selector__ ikon for at vælge grøn som din blyantsfarve. 
+For at sætte blyanten til at farve grøn, så klik på den farvede boks i `skift penfarve til` {.blockpen} blokken, og klik på det grønne __selektor__ ikon for at vælge grøn som din blyantsfarve. 
 
 + Du kan nu gøre det samme med ikonet for den blå blyant ved at tilføje denne kode til den blå selektor sprite:
 
@@ -139,7 +139,7 @@ For at sætte blyanten til at farve grøn, klik på den farvede boks i 'skift pe
 		skift penfarve til [#0000ff] 
 ```  
  
-Hvis du heller vil kan du begynde med en anden farveblyant! 
+Hvis du hellere vil, så kan du starte ud med en anden farveblyant! 
 
 + Afprøv dit projekt. Kan du skifte mellem blå og grønne blyanter?
 
@@ -153,7 +153,7 @@ Nogle gange opstår der nogle fejl, så lad os tilføje en 'ryd' knap og et visk
 
 ## Arbejdsliste { .check }
 
-+ Lad os tilføje en knap for at rydde scenen. For at gøre dette, tilføj 'X-block' bogstavet til scenen og farv bogstavet rødt.
++ Lad os tilføje en knap for at rydde scenen. Tilføj 'X-block' bogstavet til din scene og farv bogstavet rødt.
 
 	![screenshot](paint-x.png)
 
@@ -164,15 +164,15 @@ Nogle gange opstår der nogle fejl, så lad os tilføje en 'ryd' knap og et visk
 		ryd
 ```  
 
-Læg mærke til at du ikke behøver sende en besked for at rydde scenen, for det kan hvilken som helst sprite gøre!   
+Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for det kan hvilken som helst sprite gøre!   
 
-+ Du kan også lave et viskelæder. Hvis din klubleder har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload kostume fra fil' og tilføj 'eraser.svg' billedet.
++ Du kan også lave et viskelæder. Hvis din instruktør har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload kostume fra fil' og tilføj 'eraser.svg' billedet.
 
 	![screenshot](paint-eraser-costume.png)
 	
 	Hvis du ikke har eraser.svg billedet, så bare lav en ny hvid blyant i stedet for! 
 
-+ Du bør også tilføje viskelæder billedet som en ny _selector_ sprite. Din scene bør se således ud: 
++ Du bør også tilføje viskelæder billedet som en ny _selektor_ sprite. Din scene bør se således ud: 
 
 	![screenshot](paint-eraser-stage.png)
 
@@ -183,7 +183,7 @@ Læg mærke til at du ikke behøver sende en besked for at rydde scenen, for det
 		send [eraser v] til alle
 ```  
 
-+ Når blyanten modtager denne besked, så kan du lave et viskelæder ved at udskifte blyantskostumet til viskelæderet, og skifte blyantsfarven til at være samme farve som scenen! 
++ Når blyanten modtager denne meddelelse, så kan du lave et viskelæder ved at udskifte blyantskostumet til viskelæderet, og skifte blyantsfarven til at være samme farve som scenen! 
 
 ```blocks 
 		når jeg modtager [eraser v]
@@ -195,15 +195,15 @@ Læg mærke til at du ikke behøver sende en besked for at rydde scenen, for det
 
 	![screenshot](paint-erase-test.png)
 
-+ Der er nogle problemer med blyanten - du kan tegne hvor som helst på scenen, også nær _selector_ ikonerne!  
++ Der er nogle problemer med blyanten - du kan tegne hvor som helst på scenen, også nær _selektor_ ikonerne!  
 
 	![screenshot](paint-draw-problem.png)
 
-	For at løse dette bliver du nødt til at fortælle blyanten, at der kun skal tegnes hvis der klikkes med musen _og_ hvis musens y-position er større end -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Ændr din blyants `hvis` {.blockcontrol} erklæring til at se således ud:
+	For at løse dette problem bliver du nødt til at fortælle blyanten, at der kun skal tegnes hvis der klikkes med musen _og_ hvis musens y-position er større end -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Ændr din blyants `hvis` {.blockcontrol} erklæring til at se således ud:
 
 	![screenshot](pencil-gt-code.png)
 
-+ Test dit projekt; nu burde du ikke kunne tegne nær selektor blokkene.
++ Test dit projekt; nu burde du ikke kunne tegne nær selektor ikonerne.
 
 	![screenshot](paint-fixed.png)
 
@@ -215,7 +215,7 @@ Lad os give brugeren mulighed for at tegne ved brug af en række forskellige bly
 
 ## Arbejdsliste { .check }
 
-+ Start med at tilføje en ny variabel du kalder 'penstørrelse'. Hvis du er usikker på, hvordan du gør det, så kan 'Balloons' projektet hjælpe dig. 
++ Start med at tilføje en ny variabel, som du kalder 'penstørrelse'. Hvis du er usikker på, hvordan du gør det, så kan 'Balloons' projektet hjælpe dig. 
 
 + Tilføj denne linje _inden i_ `for evigt` {.blockcontrol} loopen af koden til din blyant:
 
@@ -237,7 +237,7 @@ Bredden på din blyant sættes nu repetitivt til værdien af din 'bredde' variab
 
 	![screenshot](paint-width-test.png)
 
-	Hvis du foretrækker det, kan du sætte en tilladt minimum og en maksimum værdi på 'bredden'. Højreklik på din variabel igen og klik på 'sæt skyderen til min og maks'. Sæt minimum og maksimum værdierne til noget mere fornuftigt, såsom 1 og 20.
+	Hvis du foretrækker det, kan du sætte en tilladt minimum og maksimum værdi på 'bredden'. Højreklik på din variabel igen og klik på 'sæt skyderen til min og maks'. Sæt minimum og maksimum værdierne til noget mere fornuftigt, såsom 1 og 20.
 
 	![screenshot](paint-slider-max.png)
 
@@ -254,7 +254,7 @@ Kan du lave tasteturgenveje til dine kommandoer? For eksempel:
 + v = skift til viskelæder
 + r = ryd skærmen
 
-Du kan endda også tillade brugeren at ændre blyantsbredden med piletasterne! 
+Du kan ovenikøbet tillade brugeren at ændre blyantsbredden med piletasterne! 
 
 ## Gem dit projekt { .save }
 
