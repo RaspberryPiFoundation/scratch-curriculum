@@ -1,0 +1,27 @@
+{
+    "id": "scratch-2”,
+    "title": "Scratch 2”,
+    "description": "",
+    "language": "da-DK",
+    "number": 2,
+    "projects": [
+        {
+            "number":   1,
+            "beta": true,
+            "filename": "Memory/Memory.md",
+            "note":     "Memory/Memory - notes.md"
+        },
+        {
+            "number":   2,
+            "beta": true,
+            "filename": "Dodgeball/Dodgeball.md",
+            "note":     "Dodgeball/Dodgeball - notes.md"
+        },
+        {
+            "number":   3,
+            "beta": true,
+            "filename": "Brain Game/Brain Game.md",
+            "note":     "Brain Game/Ghostbusters - noter.md"
+        }       
+    ]
+}
