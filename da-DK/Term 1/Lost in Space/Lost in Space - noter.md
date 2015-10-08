@@ -6,7 +6,7 @@ materials: [""]
 ...
 
 #Introduktion:
-I dette projekt vil børnene lære at kombinere kodeblokke med henblik på at lave en simpel animation.
+I dette projekt skal børnene lære at kombinere kodeblokke med henblik på at lave en simpel animation.
 
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline.
@@ -36,7 +36,7 @@ Der findes også en version af dette projekt, hvor de eksterne ressourcer er loa
 ```
 
 ```blocks
-	sæt størrelse til (100)%
+	sæt størrelsen til (100)%
 ```
 
 ```blocks
