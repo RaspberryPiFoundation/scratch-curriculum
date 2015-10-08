@@ -1,6 +1,5 @@
 ---
-
-title : Creat Your Own World
+title: Créez votre monde
 level: Scratch 2
 language: fr-FR
 stylesheet: scratch
@@ -10,349 +9,370 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 
 # Introduction { .intro }
 
-Dans ce projet vous apprendrez à créer votre propre jeu d'aventure à monde ouvert.
+Ce projet te permettra d'apprendre comment créer ton propre monde pour un jeu d'aventure. 
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
-	<img src="world-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
+  <img src="world-final.png">
 </div>
 
-# Etape 1 : Codage de votre joueur { .activity }
+# Première étape : Coder ton joueur { .activity }
 
-Commençons en créant un acteur(joueur) qui peut se déplacer dans votre monde.
+Commençons par créer un personnage qui se deplacera dans ton monde. Let's start by creating a player that can move around your world.
 
-## liste de contrôle d'activité  { .check }
+## Liste d'action pour l'activité { .check }
 
-+ Commencez un nouveau projet scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur de scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Lance un nouveau project Scratch et efface l'image du Lutin Félix le chat pour que ton projet soit vide. Tu peux trouver l'editeur Scratch en ligne sur  <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Pour ce projet, vous devriez avoir un dossier de 'Ressources du Projet', contenant toutes les images dont vous aurez besoin. Assurez-vous que vous pouvez trouver ce dossier et demander à votre leader de club si vous ne trouvez pas cela.
++ Pour ce projet, tu devrais trouver un dossier "ressources projet" contenant toutes les images dont tu aura besoin. Assures toi de bien l'avoir et contactes le leader de ton club si tu ne le trouves pas.
 
 	![screenshot](world-resources.png)
 
-+ Ajoutez l'image 'room1.png' comme un nouveau fond de scène et l'image 'player.png' comme un nouveau lutin. Si vous n'avez pas ces images vous pouvez les dessiner vous-même! Voici à quoi votre projet devrait ressembler :
++ Ajoutes l'image "Salle1.png" comme arrière-plan et utilises l'image "Joueur1.png" comme photo de ton nouveau personnage. Si tu ne trouves pas ces images, dessines les toi même! Voici ce a quoi ton projet devrait maintenant ressembler:
 
 	![screenshot](world-player.png)
 
-+ Utilisons les touches de direction pour déplacer le joueur. Quand le joueur appuie sur la flèche haut, vous voulez que le joueur avance, en changeant sa coordonnée d'y. Ajoutez ce code au lutin de joueur :
++ Utilisons les touches flèches pour faire bouger le personnage. Lorsque le joueur appuye sur le flèche du haut, le personnage doit monter. Cela se fait en changeant ses coordonnées Y. Ajoutes ce code au personnage :
 
 	```blocks
-		quand le drapeau pressé
-		répéter indéfiniment
-			Si <touche [up arrow v] pressée? > alors
-				ajouter (2) à y
-			end
-		end
-	```
 
-+ Testez votre joueur en cliquant du drapeau et ensuite le maintien en haut la flèche. Votre joueur avance-t-il ?
+quand ⚑ pressé
+répéter indéfiniment
+   si <touche [flèche haut v] pressée?> alors
+      ajouter (2) à y
+   fin
+fin
+	```
++ Test ton personnage en cliquant le drapeau puis en maintenant la flèche du haut appuiée. Est ce que ton personnage monte?
 
 	![screenshot](world-up.png)
 
-+ Pour déplacer le joueur à gauche, vous devez ajouter un autre 'si' {.blockcontrol} à votre joueur, qui change la coordonnée de x :
++ Pour que ton personnage bouge vers la gauche, tu dois ajouter un nouveau code `if` {.blockcontrol}, qui modifiera les coordonnées X de ton personnage.
+```blocks
 
-	```blocks
-		quand le drapeau pressé
-		répéter indéfiniment
-			Si <touche [up arrow v] pressé? > alors
-				ajouter (2) à y
-			end
-			Si <touche [left arrow v] pressé? > alors
-				ajouter (-2) à x
-			end
-		end
-	```
+quand ⚑ pressé
+répéter indéfiniment
+   si <touche [flèche haut v] pressée?> alors
+      ajouter (2) à y
+   fin
+   si <touche [flèche gauche v] pressée?> alors
+      ajouter (-2) à x
+   fin
+fin
+```
 
-## Défi : Déplacement dans toutes les quatre directions {.challenge}
-Pouvez vous ajouter plus de code à votre joueur, pour qu'ils puissent avancer, en bas, gauche et droit. Utilisez le code ci-dessus pour vous aider!
+## Défi : Bouger dans toutes les directions {.challenge}
+Peux tu ajouter des lignes de codes supplémentaires a ton personnage pour qu'il puisse se déplacer vers le haut, le bas, la gauche et la droite? Utilises le code que l'on t'a donné pour t'aider!
+ 
+## Sauvegardes ton projet { .save }
 
-## Sauvegarder votre projet { .save }
 
-+ Testez votre joueur de nouveau et vous verrez qu'ils font la capacité de traverser les murs gris clair.
-
++ Teste ton personnage de nouveau, tu verras qu'il peut traverser les murs gris clair.
 	![screenshot](world-walls.png)
 
-+ Pour le réparer, vous devez déplacer le joueur, mais les déplacer ensuite en arrière s'ils touchent un mur gris clair. Voici le code dont vous aurez besoin:
++ Pour remedier à ce problème, il faut que le personnage puisse bouger, mais qu'il revienne sur ses pas s'il touche un mur gris clair. Voici le code qui te permettra d'y parvenir :
 
 	```blocks
-		quand le drapeau pressé
-		répéter indéfiniment
-			Si <touche [up arrow v] pressé? > alors
-				ajouter (2) à y
-				Si < couleur [#BABABA] touchée? > alors
-					ajouter (-2) à y
-				end
-			end
-		end
-	```
 
-	Remarquez que le nouveau 'si' {.blockcontrol}` couleur touchée ` {.blocksensing} est à l'intérieur `si`{.blockcontrol}`Touche [en haut flèche]`{.blocksensing}.
+quand ⚑ pressé
+répéter indéfiniment
+   si <touche [flèche haut v] pressée?> alors
+      ajouter (2) à y
+      si <couleur [#BABABA] touchée?> alors
+         ajouter (-2) à y
+      fin
+   fin
+fin
+```
 
-+ Testez ce nouveau code en vous déplaçant au-dessous du mur - vous ne devriez pas pouvoir avancer.
-	
+	Remarques que le nouveau code `if`{.blockcontrol}`touching color`{.blocksensing} est situé dans le code `if`{.blockcontrol}`key [up arrow]`{.blocksensing}
+
++ Teste ce nouveau code en deplaçant ton personnage vers le mur - tu ne devrais plus pouvoir le traverser.
+
 	![screenshot](world-walls-test.png)
 
-+ Faisons le même pour la flèche gauche, reculer si le joueur touche un mur. C'est comme-ci que devrait être votre code de joueur:
++ Faisons de même pour la commande flèche gauche, en reculant si le personnage touche un mur. Le code de ton personnage devrait ressembler a ceci :
 
 	![screenshot](world-wall-code.png)
 
-## Défi : Réparation du mouvement de votre joueur {.challenge}
-Ajoutez le code à votre joueur pour que vous ne puissiez traverser les murs dans aucune direction. Utilisez le code ci-dessus pour vous aider!
+## Defi : Régler les mouvements de ton personnage {.challenge}
+Ajoute des lignes de code a ton personnage pour que tu ne puisses plus marcher à travers les murs, dans aucune direction. Utilise le code que l'on t'a donné pour t'aider!
 
-## Sauvegarder votre projet { .save }
+## Sauvegrades ton projet { .save }
 
-# Etape 2 : Codage de votre monde { .activity }
+# Deuxième étape : coder ton monde { .activity }
 
-Permettons à au joueur de marcher par des portes pour aller dans d'autres pièces!
+Faisons en sorte que ton personnage puisse passer les portes pour d'autres salles!
 
-## Liste de contrôle d'activité { .check }
+## Liste d'action pour cette activité { .check }
 
-+ Ajoutez encore 2 fonds à votre scène ('room2.png' et 'room3.png'), pour que vous ayez 3 fonds. Assurez-vous qu'ils sont dans l'ordre ceci vous aidera plus tard.
++ Ajoutes 2 arrière-plans à ton monde ('room2.png' et 'room3.png'), tu devrais avoir 3 arrière-plans au total. Assures toi qu'ils sont dans le bon ordre - sinon cela compliquera les choses par la suite.
+
 
 	![screenshot](world-backdrops.png)
 
-+ Vous aurez besoin d'une nouvelle variable appelée 'room' {.blockdata}, Garder la trace de la chambre ou est présent le joueur.
++ Il te faut une nouvelle variable appellée `salle` {.blockdata} afin de savoir dans quelle pièce ton personnage se trouve.
 
 	![screenshot](world-room.png)
 
-+ Quand le joueur touche la porte orange dans la première chambre, le fond suivant devrait être affiché et le joueur devrait retourner au côté gauche de la scène. Voici le code dont vous aurez besoin - il devrait aller à l'intérieur du lutin joueur 'répeter indéfiniment' {.blockcontrol}:
++ Lorsque le personnage touche la porte orange dans la première pièce, le prochain arrière-plan doit apparaitre et le personnage doit se retrouver sur le côté gauche de l'écran. Voici les lignes de code qui te permettrons d'en faire ainsi - elles doivent s'inscrire au sein du code `forever` {.blockcontrol} de ton personnage :
 
 	```blocks
-		Si < couleur [#F2A24A] touchée > alors
-			basculer sur l'arrière-plan [next backdrop v]
-			aller à x: (-200) y: (0)
-			ajouter [room v] à (1)
-		end
-	```
+si <couleur [#F2A24A] touchée?> alors
+   basculer sur l'arrière-plan [arrière-plan suivant v]
+   aller à x:(-200) y:(0)
+   ajouter à [room v] (1)
+fin
+```
 
-+ Ajoutez ce code au début de votre code de joueur avant `répeter indéfiniment` {.blockcontrol} pour s'assurer que tout est remis quand le drapeau est cliqué :
+
+
++ Ajoutes ce code au début du code de ton personnage (avant la boucle `forever` {.blockcontrol}) pour t'assurer que tout soit remis a zero lorsque le drapeau est cliqué.
 
 	```blocks
-		mettre [room v] à (1)
-		aller à x: (-200) y: (0)
-		basculer sur l'arrière-plan [room1 v]
-	```
+[room v] prend la valeur (1)
+aller à x:(-200) y:(0)
+basculer sur l'arrière-plan [room1 v]
+```
 
-+ Cliquez sur le drapeau et déplacez votre joueur sur la porte orange. Votre joueur se déplace-t-il vers l'écran suivant ? Fait Mettre 'room'{.blockdata} à 2 ?
+
++ Clique sur le drapeau et positionne ton personnage sur la porte orange. Est ce que ton personnage se déplace sur l'autre écran? est ce que la variable `room` {.blockdata} change a 2?
 
 	![screenshot](world-room-test.png)
 
-## Défi : Déplacement vers la chambre précédente {.challenge}
-Pouvez-vous faire votre joueur vous déplacer vers la chambre précédente quand ils touchent une porte jaune ? Rappelez-vous que ce code sera très ressemblant au code vous avez déjà ajouté pour vous déplacer vers la chambre suivante.
 
-## Sauvegarder votre projet { .save }
+## Défi : Te déplacer dans la pièce précédente {.challenge}
+Peux tu faire se déplacer ton joueur dans la pièce précédente lorsqu'il touche la porte jaune? Rappelles toi que ce code sera _très_ similaire à celui que tu as écrit pour le faire se déplacer dans la pièce suivante.
 
-# Etape 3 : Indices { .activity }
+## Sauvegardes ton projet { .save }
 
-Ajoutons des indices à votre monde, guider votre joueur sur son voyage.
 
-## Liste de contrôle d'activité { .check }
 
-+ Téléchargez l'image 'sign.png' comme un nouveau lutin et rebaptisez le 'welcome sign’'.
+# Troisième étape : Signalisations { .activity }
+
+Ajoutons des panneaux à ton monde pour guider ton personnage dans leur voyage.
+
+## Liste d'action pour cette activité { .check }
+
++ Télécharge l'image 'sign.svg' en temps que nouveau "lutin" et renomme la 'Panneau de Bienvenue'
 
 	![screenshot](world-sign.png)
-
-+ Ce signe sera seulement visible dans la chambre 1, donc ajoutons un certain code au signe pour nous assurer que ceci arrive :
++ Ce panneau ne doit être visible que dans la premiére salle, ajoutons donc quelques lignes de code pour nous en assurer:
 
 	```blocks
-		quand le drapeau pressé
-		répéter indéfiniment
-			Si < (room) = [1] > alors
-				montrer
-			sinon
-				cacher
-			end
-		end
-	```
 
-+ Testez votre signe en vous déplaçant entre des pièces. Votre signe devrait seulement être visible dans la pièce 1.
+quand ⚑ pressé
+répéter indéfiniment
+   si <(room) = [1]> alors
+      montrer
+   sinon
+      cacher
+   fin
+fin
+```
+
+
+
++ Test ton panneau : déplaces toi entre les salles : le panneau ne devrait être visible que dans la première salle. 
 
 	![screenshot](world-sign-test.png)
 
-+ Un indice n'aide pas beaucoup s'il ne dit rien! Ajoutons un peu plus de code (dans un autre bloc séparé) pour afficher un message si le signe est touché :
++ Un panneau n;est pas très utilie s'il n'y a rien d;écrit dessus! Ajoutons un peu de code (dans un block différent) pour afficher un message lorsque la panneau touche le personnage. 
 
 	```blocks
-		quand le drapeau pressé
-		répéter indéfiniment
-			Si < touché [player v]? > alors
-				dire [Welcome! Can you get to the treasure?]
-			else
-				dire []
-			end
-		end
-	```
-+ Testez votre signe, vous devriez voir un message quand le joueur le touche.
+
+quand ⚑ pressé
+répéter indéfiniment
+   si <[player v] touché?> alors
+      dire [Bienvenue ! Peux tu trouver le trésor ?]
+   sinon
+      dire []
+   fin
+fin
+```
+
++ Teste ton panneau, tu devrais voir le message lorsque ton personnage le touche.  out your sign, and you should see a message when the player touches it.
 
 	![screenshot](world-sign-test2.png)
 
-## Sauvegarder votre projet { .save }
+## Sauvegardes ton projet { .save }
 
-## Défi : Trésor! {.challenge}
-Pouvez-vous ajouter un nouveau lutin de trésor, en utilisant l'image 'chest.png'. Ce coffre au trésor devrait être placé dans la pièce 3 et devrait dire 'Bravo !' quand le joueur le touche.
+## Défi : Trésor ! {.challenge}
+Peux tu ajouter un coffre a trésor (lutin) en utilisant l'image 'chest.svg' ? Ce coffre doit être placé dans la troisième salle et le message 'Bravo !' doit appariatre lorsqu'il est touché par un personnage. 
 
 ![screenshot](world-treasure.png)
 
-## Sauvegarder votre projet { .save }
+## Sauvegardes ton projet { .save }
 
-# Etape 4 : le Peuple { .activity }
+# Quatrième étape : les gents { .activity }
 
-Ajoutons des autres personnes à votre monde avec lequel votre joueur peut interagir.
+Ajoutons d'autres lutins a ton monde pour que la joueur puisse interragir avec eux. 
 
-## Liste de contrôle d'activité { .check }
+## Liste d'action pour cette activité  { .check }
 
-+ Ajoutez un nouveay lutin, utilisant l'image 'person.png'.
++ Ajoute un nouveau lutin, en utilisant l'image 'person.png'.
 
 	![screenshot](world-person.png)
 
-+ Ajoutez ce code, pour que la personne parle à votre joueur. Ce code est très ressemblant au code que vous avez ajouté à votre panneau :
++ Ajoutes ce code pour que le lutin puisse parler a ton joueur. Ce code est très similaire a celui que tu as écrit pour les panneau : 
 
 	```blocks
-		quand le drapeau pressé
-		aller à x: (-200) y: (0)
-		répeter indéfiniment
-			Si < touché [player v]? > alors
-				dire [Did you know that you can go through orange and yellow doors?]
-			else
-				dire []
-			end
-		end
-	```
 
-+ Vous pourriez aussi permettre à votre personne de se déplacer, en utilisant ces deux blocs :
+quand ⚑ pressé
+aller à x:(-200) y:(0)
+répéter indéfiniment
+   si <[player v] touché?> alors
+      dire [Savais-tu que tu peux traverser les portes jaunes et organges ?]
+   sinon
+      dire []
+   fin
+fin
+```
 
-	```blocks
-		avancer de (1) 
-		rebondir si le bord est atteint
-	```
 
-	Votre personne agira différemment, selon si vous placez ce code à l'intérieur du `répéter indéfiniment` {.blockcontrol} ou du `si` {.blockcontrol}. Essayez les deux et voyez ce que vous préférez.
++ Tu peux également permettre a ce lutin de bouger en utilisant ces deux blocks : 
+```blocks
+avancer de (1)
+rebondir si le bord est atteint
+```
+
+
+	le lutin se déplacera de façon différente selon l'endroit ou tu place ce code : au sein de la boucle`forever` {.blockcontrol} ou dans le `if` {.blockcontrol} block. Essaye les deux et choisit celui que tu préfères. 
 
 	![screenshot](world-person-test.png)
 
-+ Remarquez vous que la personne donne un coup à l'envers. Pour arrêter ceci, cliquez sur l'icône d'information sur le lutin(`i`{.blockmotion}), et cliquez sur le point pour fixer un style de rotation.
++ As tu remarqué que le lutin marche sur la tête ? Pour l'en empécher, cliques sur l'icone d'information sur le lutin (`i`{.blockmotion}) et cliques sur le points pour régler les paramètres de rotation. 
 
 	![screenshot](world-person-rotate.png)
 
-## Défi : Amélioration de votre personne {.challenge}
-Pouvez-vous ajouter le code à votre nouvelle personne, pour qu'ils apparaissent seulement dans la chambre 1 ? Assurez-vous de tester votre nouveau code!
+## Défi : Amméliorer ton lutin {.challenge}
+Peux tu ajouter du code a ton nouveau lutin pour qu'il n'apparaisse que cans la premiére salle ? Attention : n'oublies pas de tester ton nouveau code ! 
 
-## Sauvegarder votre projet { .save }
+## Sauvegardes ton projet { .save }
 
-+ Vous pouvez aussi ajouter des ennemis de patrouille, qui termine le jeu si le joueur les touchent. Ajoutez un nouveau lutin ennemi et changez le style de rotation, comme vous a fait avec le lutin 'personne'.
++ Tu peux également ajouter des énemis qui patrollerons ton monde : lorsque ton joueur les touche la partie se termine. Ajoute un énemi et changes les paramètres de rotation, comme tu l'a fait pour le lutin. 
 
-+ Ajoutez le code à votre ennemi, pour qu'ils apparaissent seulement dans la chambre 2.
++ Ajoutes les lignes de codes a ton énemi pour quil n'apparaisse que dans la deuxième salle. 
 
-+ Vous devrez aussi ajouter le code pour déplacer l'ennemi et terminer le jeu si l'ennemi touche le joueur. Il est plus facile de faire ceci dans des blocs de code séparés. Voici comment votre code ennemi devrait être :
++ Il ne reste plus qu'a ajouter le code pour terminer la partie si le joueur touche l'énemi. C'es plus facile a faire dans des blocks de codes séparés. Le code de ton énemi doit ressembler à cela : 
 
 	![screenshot](world-enemy-code.png)
 
-+ Testez votre ennemi, assurez vous que :
-	 + il est seulement visible dans la chambre 2;
-	 + Il patrouille dans la pièce;
-	 + le jeu se termine si le joueur le touche.
++ Teste ton énemi et assures toi : out your enemy, to make sure that:
+	+ Qu'il ne soit visible que dans la deuxième salle 
+	+ Qu'il patrolle la salle
+	+ Que la partie se termine si le joueur le touche
 
-## Sauvegarder votre projet { .save }
+## Sauvegardes ton projet { .save }
 
-## Défi : Plus d'ennemis {.challenge}
-Pouvez-vous créer un autre ennemi dans la chambre 3, qui patrouille en haut et en bas entre les murs?
+## Défi : Crée plus d'énemis {.challenge}
+Peux tu créer un énemi dans la salle 3 qui patrolle de haut en bas en passant par l'ouverture dans le mur ? 
 
 ![screenshot](world-enemy2.png)
 
-## Sauvegarder votre projet { .save }
+## Sauvegardes ton projet { .save }
 
-# Etape 5 : pièces de monnaie { .activity }
+# Cinquième étape : Collecter des pièces { .activity }
 
-## Liste de contrôle d'activité  { .check }
+## Activity Checklist { .check }
 
-+ Ajoutez une nouvelle variable 'pièces' {.blockdata} à votre projet.
++ Ajoutes àton projet une nouvelle variable que l'on appelera `pièce` {.blockdata}.
 
-+ Ajoutez un nouveau lutin 'coins' à votre projet.
++ Ajoutes une nouveau 'lutin' Pièce a ton projet.
 
 ![screenshot](world-coins.png)
 
-+ Ajoutez le code à vos pièces de monnaie, pour qu'ils apparaissent seulement dans la chambre 1.
++ Ajoutes du code a ta pièce pour qu'elle n'apparaisse qua dans la première salle. 
 
-+ Ajoutez le code à votre lutin de pièce, ajouter 1 à vos 'pièces' {.blockdata} une fois que vous l'avez ramassé :
++ Ajoutes du code a ton 'lutin' pièce pour ajouter '1' a ton nombre de pièces {.blockdata} dès que la pièce a été collectée : 
 
 	```blocks
-		quand le drapeau pressé
-		attendre jusqu'à  <touché [player v]?>
-		mettre [coins v] à (3)
-		stop [other scripts in sprite v]
-		cacher
-	```
 
-	Le code `stop autre scripts du lutin` {.blockcontrol} est nécessaire pour que la pièce de monnaie s'arrêtent d'être affiché dans la chambre 1 une fois qu'elle a été ramassé.
+quand ⚑ pressé
+attendre jusqu’à <[player v] touché?>
+ajouter à [coins v] (1)
+stop [autres scripts du lutin v]
+cacher
+```
 
-+ Vous devrez aussi ajouter le code pour mettre votre `pièces` {.blockdata} à 0 au début de votre jeu.
 
-+ Testez votre projet, rassembler la pièce de monnaie devrait changer votre score à 1
+	Le code `stop other scripts in sprite` {.blockcontrol} est nécessaire pour que la pièce n'apparaisse plus dans la première salle lorsqu'elle a été collectée. 
 
-## Défi : Plus de pièces de monnaie {.challenge}
-Pouvez-vous ajouter plus de pièces de monnaie à votre jeu ? Ils peuvent être dans des chambres différentes et quelques pièces de monnaie pourraient même être gardées par des gardes.
++ Il te faut maintenant ajouter quelques lignes de code pour que le nombre de 'pièce' {.blockdata} soit 0 au début du jeu.
 
-# Etape 6 : Portes et clés { .activity }
++ Teste ton projet - en collectant la pièce ton score doit passer de 0 a 1.
 
-## Liste d'activite de contrôle { .check }
+## Défi : plus de pièces {.challenge}
+Peux tu ajouter plus de pièces dans ton jeu ? elle peuvent se trouver dans differentes salles et certaines pièces peuvent également être gardées par des patrouilles d'énemis ! 
 
-+ Créez un nouvel lutin de vos image 'clé-blue.png'. Changez de votre scène au fond 3 et placez la clé a un endroit difficile a prendre!
+# Sixième étape : Portes et clefs { .activity }
+
+## Liste d'action pour cette activité { .check }
+
++ Crée un nouveau lutin à partit de l'image 'Clef Bleue.svg'. Positionne toi dans ton arrière plan 3 et place la clef quelque part difficile d'accès ! 
 
  	![screenshot](world-key.png)
 
-+ Assurez-vous que votre clé est seulement visible dans la chambre 3.
++ Assures toi que la clef ne soit visible que dans la troisième salle.
 
-+ Créez une nouvelle variable de liste appelée 'stock' {.blockdata}. Ceci servira à stocker tous les articles que votre joueur rassemble.
++ Crée une nouvelle liste variable que l'on appelera 'inventaire' {.blockdata}. C'est ici que tu stockera tous les objets que ton personnage collecte pendant la partie.
 
-+ Le code pour rassembler la clé est très semblable au code pour rassembler des pièces de monnaie. La différence est que vous ajoutez la clé à votre stock.
-
-	```blocks
-		quand le drapeau pressé
-		attendre jusqu'à <touché [player v]?>
-		ajouter [blue key] à [stock v]
-		stop [other scripts in sprite v]
-		cacher
-	```
-
-+ Testez votre clé, voir si vous pouvez la ramasser et l'ajouter à votre stock. Rappelez-vous d'ajouter le code à votre scène pour vider votre stock au début.
++ Le code pour collecter la clef est très similaire à celui pour collecter les pièces. La différence et que tu ajoutes la clef a ton inventaire. 
 
 	```blocks
-		supprimer l'élément (all v) de la liste [stock v]
-	```
 
-+ Créez un nouveau lutin de vos image ' porte-blue.png' et placez votre porte bleue à travers l'écart dans les deux murs.
+quand ⚑ pressé
+attendre jusqu’à <[player v] touché?>
+ajouter [clef bleue] à [inventaire v]
+stop [autres scripts du lutin v]
+cacher
+```
+
++ Teste ta clef : essaye de la collecter et l'ajouter dans ton inventaire. N'oublies pas d'ajouter le code pour vider ton inventaire au début de la partie.  
+
+	```blocks
+supprimer l'élément (tout v) de la liste [inventaire v]
+```
+
+
++ Crée un nouveau lutin avec l'image 'porte bleue.png', et place la porte bleue dans un des trou dans les murs.
 
 	![screenshot](world-door.png)
 
-+ Ajoutez le code à votre porte, pour que ce soit seulement visible dans la pièce 3.
++ Ajoutes du code a ta porte pour qu'elle ne soit visible que dans la troisième salle. 
 
-+ Vous devrez cacher votre porte bleue pour permettre à votre joueur de passer une fois que vous avez la clé bleue dans votre stock.
++ Il faut que la porte bleu disparaisse pour que ton joueur puisse passer lorsqu'ils ont la clef bleue dans leur inventaire. 
 
 	```blocks
-		quand le drapeau pressé
-		attendre jusqu'à  <[stock v] contient [touche bleue]>
-		stop [autre scripts du lutin v]
-		cacher
-	```
 
-+ Testez votre projet et voyez si vous pouvez ramasser la clé bleue pour ouvrir la porte!
+quand ⚑ pressé
+attendre jusqu’à <[Inventaire v] contient [clef bleue]>
+stop [autres scripts du lutin v]
+cacher
+```
 
-## Sauvegarder votre projet { .save }
 
-## Défi : Créez votre propre monde {.challenge}
-Vous pouvez maintenant continuer à créer votre propre monde. Voici quelques idées :
 
-+ Changez l'arrangement de votre jeu et vos graphisme de jeu;
-+ Ajouter le son et la musique à votre jeu;
-+ Ajouter plus de personnes, ennemis, des panneaux et des pièces de monnaie;
-+ Ajouter des portes rouges et jaunes, qui ont besoin de leurs propres clés pour les ouvrir;
-+ Ajouter plus de chambres à votre monde;
-+ Ajouter d'autres articles utiles à votre jeu;
++ Teste ton projet et voit si tu peux collecter la pièce bleue et ouvrir la porte bleue ! 
 
-+ Utiliser l'argent pour obtenir des informations a d'autres personnes;
+## Sauvegardes ton projet { .save }
+
+## Défi : Crée ton propre monde {.challenge}
+Tu peux maintenant continuer de créer ton propre monde. Quelque idées : 
+
++ Change les paramètres de ton jeu et les images ; 
++ Ajoutes des sons et de la musique àton jeu ;
++ Ajoute des gens, énemis, panneaus et pièces ;
++ Ajoutes des portes jaumes, rouges etc. Chaque porte devra avoir sa propre clef ; 
++ Ajoute des pièces a ton monde ;
++ Ajoute d'autres objects utiles ;
++ Utilise des pièces pour obtenir de informations d'autres personnes ;
 
 	![screenshot](world-bribe.png)
 
-+ Vous pourriez même ajouter des portes du Nord et du sud, pour que le joueur puisse se déplacer entre des chambres dans les 4 directions.
++ Tu pourrais même ajouter des portes vers le nord et le sud pour que ton joueur se déplace dans toutes les directions. Par example si tu avais 3 salles tu pourrais les positionner comme une grille 3x3. Tu pourrai ajouter 3  au numéro de la salle pour descendre d'un niveau. 
 
 	![screenshot](world-north-south.png)
 
-## Sauvegarder votre projet { .save }
+## Sauvegarde ton projet { .save }
+
