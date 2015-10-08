@@ -1,5 +1,5 @@
 ---
-titre: Creat Your Own World — Notes pour le leader du club
+title: Creat Your Own World — Notes pour le leader du club
 language: fr-FR
 embeds: "*.png"
 materials: [""]
