@@ -1,5 +1,5 @@
 ---
-title: Rock Band — Noter til ledere af kodeklub 
+title: Rockband — Noter til ledere af kodeklub 
 language: da-DK
 embeds: "*.png"
 materials: [""]
