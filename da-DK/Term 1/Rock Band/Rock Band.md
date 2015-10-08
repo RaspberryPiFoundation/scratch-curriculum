@@ -1,5 +1,5 @@
 ---
-title: Rock Band
+title: Rockband
 level: Scratch 1
 language: da-DK
 stylesheet: scratch
