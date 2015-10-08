@@ -27,11 +27,11 @@ Nu skal du lære hvordan du programmerer din egen talende robot!
 
 + Start et nyt Scratch projekt, og slet katte spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Vælg en af disse sprite personligheder, og tilføj den til dit projekt:
++ Vælg en af disse sprite figurer, og tilføj den til dit projekt:
 
 	![screenshot](chatbot-characters.png)
 
-+ Vælg en baggrund som passer til din chatbots personlighed. Her er et eksempel, selvom din behøver ikke se ud på denne måde:
++ Vælg en baggrund som passer til din chatbot. Her er et eksempel, selvom din behøver ikke se ud på denne måde:
  
     ![screenshot](chatbot-sprite.png)
  
@@ -86,11 +86,11 @@ Du kan så ændre teksten `Hallo` til at sige `Hej`, og slæbe den lyseblå `sva
 		sig <[Hej] tilkobles (name)> i (2) sekunder
 ```  
  
-+ Hvis du tester dit program igen vil du se, at svaret er opbevaret i `name` {.blockdata} variablen, og vises i øverste venstre hjørne af scenen. `name` {.blockdata} variablen bør nu indeholde samme værdi som `svar` {.blocksensing} variablen.
++ Hvis du tester dit program igen, så vil du se, at svaret er opbevaret i `name` {.blockdata} variablen, og vises i øverste venstre hjørne af scenen. `name` {.blockdata} variablen bør nu indeholde samme værdi som `svar` {.blocksensing} variablen.
 
 	![screenshot](chatbot-variable.png)
 
-	Hvis du foretrækker ikke at se variablerne på din scene, så klik for at fjerne fluebenene ud for variablernes navne under 'Scripts' fanen for at skjule dem.
+	Hvis du foretrækker ikke at se variablerne på din scene, så skjul dem ved at klikke og fjerne fluebenene ud for variablernes navne under 'Scripts' fanen.
 
 ## Gem dit projekt { .save }
 
@@ -125,7 +125,7 @@ Læg mærke til, at nu hvor du har gemt brugerens navn i en variabel, så kan du
 
 + For at teste programmet ordenligt, så skal du teste det to gange - én gang, hvor du taster `nej` som dit svar, og én gang hvor du taster `ja`. Du bør kun få en respons fra din chatbot `hvis` {.blockcontrol} du svarer `ja`.
 
-+ Problemet med din chatbot er, at den ikke giver et svar hvis brugeren svarer `nej`. Du kan løse dette ved at ændre `hvis` {.blockcontrol} blokken til en `hvis/ellers` {.blockcontrol} blok, sådan at din kode nu ser således ud:
++ Problemet med din chatbot er, at den ikke giver et svar hvis brugeren svarer `nej`. Dette kan du løse ved at ændre `hvis` {.blockcontrol} blokken til en `hvis/ellers` {.blockcontrol} blok, sådan at din kode nu ser således ud:
 
 ```blocks 
 		når denne sprite klikkes
@@ -146,15 +146,15 @@ Læg mærke til, at nu hvor du har gemt brugerens navn i en variabel, så kan du
 
 + Du kan putte hvilken som helst kode indeni en `hvis` {.blockcontrol} eller `ellers` {.blockcontrol} blok, ikke kun kode som får din chatbot til at tale. For eksempel, så kan du også skifte chatbottens kostume til at matche dens svar.  
 
-	Hvis du tager et kig på din chatbots kostumer, så vil du måske se at der er flere end en. (Hvis ikke, så kan du altid tilføje flere selv!) 
+	Hvis du tager et kig på din chatbots kostumer, så vil du måske se at der er flere end én. (Hvis ikke, så kan du altid tilføje flere selv!) 
 
 	![screenshot](chatbot-costumes.png)
 
-	Du kan bruge disse kostumer som del af din chatbots respons ved at tilføje denne kode:
+	Du kan bruge disse kostumer, som del af din chatbots respons, ved at tilføje denne kode:
 	
 	![screenshot](chatbot-costumes-code.png)
 
-+ Test dit program og du bør se chatbottens ansigt ændrer sig afhængig af, hvilket svar du giver. 
++ Afprøv dit program, og du bør se at chatbottens ansigt ændrer sig afhængig af hvilket svar du giver. 
 
 	![screenshot](chatbot-face.png)
 
@@ -162,7 +162,7 @@ Læg mærke til, at nu hvor du har gemt brugerens navn i en variabel, så kan du
 
 ## Udfordring: Flere beslutninger { .challenge }
 
-Programmér din chatbot til at stille et andet spørgsmål - et spørgsmål med et `ja` eller `nej` svar. Kan du få din chatbot til at respondere på svaret?
+Programmér din chatbot til at stille et andet spørgsmål - et spørgsmål med et `ja` eller `nej` svar. Kan du få din chatbot til at respondere på dit svar?
 
 ![screenshot](chatbot-joke.png)
 
@@ -187,11 +187,11 @@ Du kan også programmere din chatbot til at ændre hvor den befinder sig.
 		end 
 ``` 
 
-+ Du er også nødt til at sørge for, at din chatbot er udenfor, når du begynder at snakke med den. Tilføj denne kode til begyndelsen af din chatbot kode:
++ Du er også nødt til at sørge for, at din chatbot er udenfor, når du begynder at snakke med den. Tilføj denne kode til begyndelsen af koden til din chatbot:
 
 	![screenshot](chatbot-outside.png)
 
-+ Test dit program og svar `ja` når du bliver spurgt om du har lyst til at tage med på månen. Du bør se at chatbottens omgivelser har ændret sig.
++ Test dit program og svar `ja` når du bliver spurgt, om du har lyst til at tage med på månen. Du bør se at chatbottens omgivelser har ændret sig.
  
 	![screenshot](chatbot-backdrop.png)
 
