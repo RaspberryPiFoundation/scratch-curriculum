@@ -3,7 +3,7 @@ title: Høvdingebold
 level: Scratch 2
 language: dk-DK
 stylesheet: scratch
-embeds: "*.png"
+embeds: "/Billeder/*.png"
 materials: ["Klubleder Ressourcer/*.*","Projekt Ressourcer/*.*"]
 ...
 
