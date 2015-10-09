@@ -3,7 +3,7 @@ title: Hjernetræning
 level: Scratch 2
 language: dk-DK
 stylesheet: scratch
-embeds: "*.png"
+embeds: "/Billeder/*.png"
 materials: ["Klubleder Ressourcer/*.*"] 
 ...
 
@@ -59,7 +59,7 @@ Lad os starte med at lave nogle tilfældige spørgsmål, som spilleren skal svar
 
 + Tilføj en `for evigt` {.blockcontrol} loop rundt om koden, så spilleren stilles en masse spørgsmål.
 
-+ Lav et stopur på scenen som tæller ned ved at benytte en variabel du kalder `tid` {.blockdata}. 'Balloons' projectet indeholder instruktioner i at lave et stopur (trin 6), hvis du har brug for hjælp!
++ Lav et stopur på scenen som tæller ned ved at benytte en variabel du kalder `tid` {.blockdata}. 'Balloons' projektet indeholder instruktioner i at lave et stopur (trin 6), hvis du har brug for hjælp!
 
 + Afprøv dit projekt igen - du bør være i stand til at fortsætte med at stille spørgsmål indtil tiden løber ud.
 
@@ -217,7 +217,7 @@ skjul
 ## Udfordring: Forbedret animation {.challenge}
 Kan du forbedre animationen af din grafik? Du kan fx kode fluebenet og krydset, så de både forsvinder og kommer frem lidt efter lidt. Du kan også benytte andre seje effekter:
 
-![screenshot](brain-effects.png)    SKIFT BILLEDE
+![screenshot](brain-effects.png)    
 
 ## Gem dit projekt { .save }
 
@@ -232,7 +232,7 @@ Kan du tilføje lydeffekter og musik til dit spil? Eksempelvis:
 	spil tromme (10 v) i (0.1) slag 
 ``` 
 
-+ Du kan også vælge at afspille musik i en loop (hvis du ikke er sikker på hvordan du gør, så kan trin 4 i 'Rock Band' projektet hjælpe dig). 
++ Du kan også vælge at afspille musik i en loop (hvis du ikke er sikker på hvordan du gør, så kan trin 4 i 'Rockband' projektet hjælpe dig). 
 
 ## Gem dit projekt { .save }
 
