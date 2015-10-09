@@ -3,12 +3,12 @@ title: Hukommelsesspil
 level: Scratch 2
 language: dk-DK
 stylesheet: scratch
-embeds: "*.png"
+embeds: "/Billeder/*.png"
 materials: ["Klubleder Ressourcer/*.*"] 
 ...
 
-## Projekt skabt ved hjælp af brugerinput { .challenge .pdf-hidden }
-Dette projekt er lavet sammen med Erik og hans datter Ruth. Hvis du har lyst til at bidrage med dit eget projekt, så [kontakt os på Github](https://github.com/CodeClub).
+## Projekt skabt ved hjælp af brugerbidrag { .challenge .pdf-hidden }
+Dette projekt er lavet i samarbejde med Erik og hans datter Ruth. Hvis du har lyst til at bidrage med dit eget projekt, så [kontakt os på Github](https://github.com/CodeClub).
 
 # Introduktion { .intro }
 
@@ -65,7 +65,7 @@ end
 	Læg mærke til at du også har tømt listen til at starte med. 
 
 ## Udfordring: Tilføj lyd {.challenge}
-Afprøv dit projekt et par gange. Du vil måske lægge mærke til at det samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang karakteren skifter kostume? 
+Afprøv dit projekt et par gange. Du vil måske lægge mærke til, at det samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang karakteren skifter kostume? 
 
 Kan du få en anden trommelyd frem afhængig af det tilfældige nummer, som vælges? Dette vil være _meget_ lignende den kode, som ændrer figurens kostume.
 
@@ -249,6 +249,6 @@ Kan du tilføje et andet hvidt kostume til din figur, som vises i starten af dit
 ## Udfordring: Sværhedsgrad {.challenge}
 Kan du gøre det muligt for spilleren at vælge mellem 'begynder' niveau (hvor kun den røde og den blå tromme bruges) og 'normal' (som bruger alle 4 trommer)? 
 
-Du kunne faktisk også tilføje en 'øvet' version, som benytter en femte tromme!
+Du kan faktisk også tilføje en 'øvet' version, som benytter en femte tromme!
 
 ## Gem dit projekt { .save }
