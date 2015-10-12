@@ -4,66 +4,66 @@ level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Recursos para el líder del Club /*.*"]
+materials: ["Recursos para el l√≠der del Club /*.*"]
 ...
 
-# Introducción { .intro }
+# Introducci√≥n { .intro }
 
-¡Vas a aprender a programar tu propia animación!
+¬°Vas a aprender a programar tu propia animaci√≥n!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe>
   <img src="space-final.png">
 </div>
 
-# Primer paso: Animación de una nave espacial { .activity .new-page}
+# Primer paso: Animaci√≥n de una nave espacial { .activity .new-page}
 
-¡Hagamos una nave espacial que vuele hacia la Tierra!
+¬°Hagamos una nave espacial que vuele hacia la Tierra!
 
-## Lista de verificación de actividades { .check }
+## Lista de verificaci√≥n de actividades { .check }
 
-+ Comienza un nuevo proyecto Scratch, y elimina el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor de Scratch en línea en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Comienza un nuevo proyecto Scratch, y elimina el objeto gato para que tu proyecto est√© vac√≠o. Puedes encontrar el editor de Scratch en l√≠nea en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Agrega los objetos “Nave especial” y “Tierra” al escenario. También deberías agregar las “Estrellas” en el fondo de tu escenario. Tu escenario debería verse así:
++ Agrega los objetos ‚ÄúNave especial‚Äù y ‚ÄúTierra‚Äù al escenario. Tambi√©n deber√≠as agregar las ‚ÄúEstrellas‚Äù en el fondo de tu escenario. Tu escenario deber√≠a verse as√≠:
 
 	![screenshot](space-sprites.png)
 
-+ Haz clic en tu nuevo objeto nave especial, y haz clic en la lengüeta “Disfraces”.
++ Haz clic en tu nuevo objeto nave especial, y haz clic en la leng√ºeta ‚ÄúDisfraces‚Äù.
 
 	![screenshot](space-costume.png)
 
-+ Usa la herramienta de flechas para seleccionar la imagen. Luego haz clic en la manija rotatoria circular, y haz rotar la imagen hasta que esté de costado.
++ Usa la herramienta de flechas para seleccionar la imagen. Luego haz clic en la manija rotatoria circular, y haz rotar la imagen hasta que est√© de costado.
 
 	![screenshot](space-rotate.png)
 
-+ Agrega este código a tu objeto nave espacial:
++ Agrega este c√≥digo a tu objeto nave espacial:
 
 	![screenshot](space-animate.png)
 
-	Cambia los números en los bloques de código, para que el código sea exactamente igual que en la imagen anterior.
+	Cambia los n√∫meros en los bloques de c√≥digo, para que el c√≥digo sea exactamente igual que en la imagen anterior.
 
-+ Si haces clic en los bloques de código para ejecutar el código, deberías ver que la nave especial habla, dobla y se mueve hacia el centro del escenario.
++ Si haces clic en los bloques de c√≥digo para ejecutar el c√≥digo, deber√≠as ver que la nave especial habla, dobla y se mueve hacia el centro del escenario.
 
 	![screenshot](space-animate-stage.png)
 
-	La posición de la pantalla `x:(0) y:(0)` {.blockmotion} es el centro del escenario. Una posición como `x:(-150) y:(-150)` {.blockmotion} está hacia la parte inferior izquierda del esenario, y una posición como `x:(150) y:(150)` {.blockmotion} está cerca de la parte superior derecha.
+	La posici√≥n de la pantalla `x:(0) y:(0)` {.blockmotion} es el centro del escenario. Una posici√≥n como `x:(-150) y:(-150)` {.blockmotion} est√° hacia la parte inferior izquierda del esenario, y una posici√≥n como `x:(150) y:(150)` {.blockmotion} est√° cerca de la parte superior derecha.
 
 	![screenshot](space-xy.png)
 
-	Si necesitas saber las coordinadas de una posición en el scenario, mueve el ratón a la posición para la cual deseas saber las coordinadas, que se despliegan abajo del escenario.
+	Si necesitas saber las coordinadas de una posici√≥n en el scenario, mueve el rat√≥n a la posici√≥n para la cual deseas saber las coordinadas, que se despliegan abajo del escenario.
 
 	![screenshot](space-coordinates.png)
 
-+ Prueba tu animación haciendo clic en la bandera verde justo arriba del escenario.
++ Prueba tu animaci√≥n haciendo clic en la bandera verde justo arriba del escenario.
 
 	![screenshot](space-flag.png)
 
-## Desafío: Mejora tu animación {.challenge}
-Puedes cambiar los números en el código de tu animación, para que:
-+ ¿La nave especial se mueva hasta tocar la Tierra?
-+ ¿La nave espacial se mueva más lentamente hacia la Tierra?
+## Desaf√≠o: Mejora tu animaci√≥n {.challenge}
+Puedes cambiar los n√∫meros en el c√≥digo de tu animaci√≥n, para que:
++ ¬øLa nave especial se mueva hasta tocar la Tierra?
++ ¬øLa nave espacial se mueva m√°s lentamente hacia la Tierra?
 
-Necesitarás cambiar los números en este bloque:
+Necesitar√°s cambiar los n√∫meros en este bloque:
 
 ```blocks
 	deslizar en (1) segs a x:(0) y:(0)
@@ -71,59 +71,59 @@ Necesitarás cambiar los números en este bloque:
 
 ## Guarda tu proyecto { .save }
 
-# Segundo paso: Animación mediante el uso de loops { .activity .new-page }
+# Segundo paso: Animaci√≥n mediante el uso de loops { .activity .new-page }
 
-Otra manera de animar la nave espacial es decirle que se mueva distancias pequeñas, muchas veces.
+Otra manera de animar la nave espacial es decirle que se mueva distancias peque√±as, muchas veces.
 
-## Lista de verificación de actividades { .check }
+## Lista de verificaci√≥n de actividades { .check }
 
-+ Elimina el bloque `deslizar` {.blockmotion} de tu código haciendo clic con el botón derecho y haciendo clic en “eliminar”. También puedes eliminar código arrastrándolo del área de secuencia de comandos, de nuevo al área de los bloques de código.
++ Elimina el bloque `deslizar` {.blockmotion} de tu c√≥digo haciendo clic con el bot√≥n derecho y haciendo clic en ‚Äúeliminar‚Äù. Tambi√©n puedes eliminar c√≥digo arrastr√°ndolo del √°rea de secuencia de comandos, de nuevo al √°rea de los bloques de c√≥digo.
 
 	![screenshot](space-delete-glide.png)
 
-+ Una vez que hayas eliminado tu código, agrega este código en su lugar:
++ Una vez que hayas eliminado tu c√≥digo, agrega este c√≥digo en su lugar:
 
 	![screenshot](space-loop.png)
 
-	El bloque `repetir` {.blockcontrol} se usa para repetir algo muchas veces, y también se conoce como un __loop__.
+	El bloque `repetir` {.blockcontrol} se usa para repetir algo muchas veces, y tambi√©n se conoce como un __loop__.
 
-+ Si haces clic en la bandera para probar este nuevo código, verás que hace casi lo mismo que antes.
++ Si haces clic en la bandera para probar este nuevo c√≥digo, ver√°s que hace casi lo mismo que antes.
 
-+ Puedes agregar más código a tu loop, para hacer cosas interesantes. Agrega el bloque `cambiar efecto de color por 25` {.blocklooks} en el loop (de la sección “Vistas”), para cambiar el color de la nave espacial repetidamente a medida que se mueve:
++ Puedes agregar m√°s c√≥digo a tu loop, para hacer cosas interesantes. Agrega el bloque `cambiar efecto de color por 25` {.blocklooks} en el loop (de la secci√≥n ‚ÄúVistas‚Äù), para cambiar el color de la nave espacial repetidamente a medida que se mueve:
 
 	![screenshot](space-colour.png)
 
-+ Haz clic en la bandera para ver tu nueva animación.
++ Haz clic en la bandera para ver tu nueva animaci√≥n.
 
 	![screenshot](space-colour-test.png)
 
-+ También puedes hacer que tu nave especial se haga más pequeña a medida que se mueve hacia la Tierra.
++ Tambi√©n puedes hacer que tu nave especial se haga m√°s peque√±a a medida que se mueve hacia la Tierra.
 
 	![screenshot](space-size.png)
 
-+ Prueba tu animación. ¿Qué sucede si haces clic en la bandera una segunda vez? ¿Tu nave espacial empieza con el tamaño correcto? Puedes usar este bloque para fijar tu animación:
++ Prueba tu animaci√≥n. ¬øQu√© sucede si haces clic en la bandera una segunda vez? ¬øTu nave espacial empieza con el tama√±o correcto? Puedes usar este bloque para fijar tu animaci√≥n:
 
 	```scratch
-	fijar tamaño a (100) %
+	fijar tama√±o a (100) %
 	```
 
 ## Guarda tu proyecto { .save }
 
 # Tercer paso: Mono que flota { .activity .new-page }
 
-Agreguemos un mono a tu animación, que está ¡perdido en el espacio!! 
+Agreguemos un mono a tu animaci√≥n, que est√° ¬°perdido en el espacio!!
 
-## Lista de verificación de actividades { .check }
+## Lista de verificaci√≥n de actividades { .check }
 
 + Comienza agregando un objeto mono de la biblioteca.
 
 	![screenshot](space-monkey.png)
 
-+ Si haces clic en tu nuevo objeto mono y luego en “Disfraces”, puedes editar cómo se ve el mono. Haz clic en la herramienta “Elipse” y dibuja un casco espacial blanco alrededor de la cabeza del mono.
++ Si haces clic en tu nuevo objeto mono y luego en ‚ÄúDisfraces‚Äù, puedes editar c√≥mo se ve el mono. Haz clic en la herramienta ‚ÄúElipse‚Äù y dibuja un casco espacial blanco alrededor de la cabeza del mono.
 
 	![screenshot](space-monkey-edit.png)
 
-+ Ahora haz clic en “Secuancia de comandos”, y agrega este código a tu mono, para que gire lentamente en un círculo por siempre:
++ Ahora haz clic en ‚ÄúSecuancia de comandos‚Äù, y agrega este c√≥digo a tu mono, para que gire lentamente en un c√≠rculo por siempre:
 
 	```blocks
 		al presionar bandera verde
@@ -135,21 +135,21 @@ Agreguemos un mono a tu animación, que está ¡perdido en el espacio!!
 
 	El bloque `por siempre` {.blockcontrol} es otro loop, pero esta vez uno que nunca termina.
 
-+ Haz clic en la bandera para probar tu mono. Tendrás que hacer clic en el botón parar (al lado de la bandera) para terminar esta animación.
++ Haz clic en la bandera para probar tu mono. Tendr√°s que hacer clic en el bot√≥n parar (al lado de la bandera) para terminar esta animaci√≥n.
 
 	![screenshot](space-monkey-loop.png)
 
 # Cuarto paso: Asteroides que rebotan { .activity .new-page }
 
-Agreguemos a tu animación algunas rocas espaciales que flotan.
+Agreguemos a tu animaci√≥n algunas rocas espaciales que flotan.
 
-## Lista de verificación de actividades { .check }
+## Lista de verificaci√≥n de actividades { .check }
 
-+ Agrega un objeto “roca” a tu animación.
++ Agrega un objeto ‚Äúroca‚Äù a tu animaci√≥n.
 
 	![screenshot](space-rock-sprite.png)
 
-+ Agrega este código a tu roca, para hacer que rebote por todo el escenario:
++ Agrega este c√≥digo a tu roca, para hacer que rebote por todo el escenario:
 
 	```scratch
 	al presionar bandera verde
@@ -160,30 +160,30 @@ Agreguemos a tu animación algunas rocas espaciales que flotan.
 		if on edge, bounce
 	```
 
-+ Haz clic en la bandera para probar tu roca. ¿Rebota por todo el escenario?
++ Haz clic en la bandera para probar tu roca. ¬øRebota por todo el escenario?
 
 # Quinto paso: Estrellas que brillan { .activity .new-page }
 
 Combinemos loops para hacer una estrella que brilla.
 
-## Lista de verificación de actividades { .check }
+## Lista de verificaci√≥n de actividades { .check }
 
-+ Agrega un objeto “Estrella” a tu animación
++ Agrega un objeto ‚ÄúEstrella‚Äù a tu animaci√≥n
 
 	![screenshot](space-star-sprite.png)
 
-+ Agrega este código a tu estrella:
++ Agrega este c√≥digo a tu estrella:
 
 	![screenshot](space-star.png)
 
-+ Haz clic en la bandera para probar esta animación de la estrella. ¿Qué hace este código? Bien, la estrella se hace un poquito más grande 20 veces, y luego se hace un poquito más pequeña 20 veces, hasta llegar a su tamaño original. Estos 2 loops están dentro de un loop `por siempre` {.blockcontrol}, para que la animación se continúe repitiendo.
++ Haz clic en la bandera para probar esta animaci√≥n de la estrella. ¬øQu√© hace este c√≥digo? Bien, la estrella se hace un poquito m√°s grande 20 veces, y luego se hace un poquito m√°s peque√±a 20 veces, hasta llegar a su tama√±o original. Estos 2 loops est√°n dentro de un loop `por siempre` {.blockcontrol}, para que la animaci√≥n se contin√∫e repitiendo.
 
 ## Guarda tu proyecto { .save }
 
-## Desafío: Crea tu propia animación {.challenge}
-Detén tu animación especial, haz clic en “Archivo” y luego en “Nuevo”, para comenzar un nuevo proyecto.
+## Desaf√≠o: Crea tu propia animaci√≥n {.challenge}
+Det√©n tu animaci√≥n especial, haz clic en ‚ÄúArchivo‚Äù y luego en ‚ÄúNuevo‚Äù, para comenzar un nuevo proyecto.
 
-Usa lo que aprendiste en este proyecto para crear tu propia animación. Puede ser cualquier cosa que quieras, pero trata de que la animación concuerde con el escenario. Aquí te damos algunos ejemplos:
+Usa lo que aprendiste en este proyecto para crear tu propia animaci√≥n. Puede ser cualquier cosa que quieras, pero trata de que la animaci√≥n concuerde con el escenario. Aqu√≠ te damos algunos ejemplos:
 
 ![screenshot](space-egs.png)
 
