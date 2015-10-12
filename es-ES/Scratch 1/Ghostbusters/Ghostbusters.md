@@ -32,12 +32,12 @@ El Proyecto “Globos” se ha movido a la sección [Proyectos Scratch Adicional
 + Agrega este código a tu fantasma, para que continuamente aparezca y desaparezca:
 
 	```blocks
-		al presionar la bandera verde
+		al presionar bandera verde
 		por siempre
-			esconder
-			esperar (1) segundos
-			mostrar
-			esperar (1) segundos
+   			esconder
+   			esperar (1) segundos
+   			mostrar
+   			esperar (1) segundos
 		fin
 	```
 
@@ -191,3 +191,7 @@ Necesitas pensar sobre los objetos que agregas. Piensa acerca de:
 ¡Si necesitas ayuda para agregar otro objeto, puedes volver a usar los pasos anteriores!
 
 ## Guarda tu proyecto { .save }
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
