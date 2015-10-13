@@ -4,7 +4,7 @@ level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Recursos para el líder del Club/*.*"]
+materials: ["Club Leader Resources/*.*"]
 ...
 
 # Introducción { .intro }
