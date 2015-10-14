@@ -32,5 +32,5 @@ Projekt Ressourcer:
 + "Tilfældige bolde" - bruge `vælg tilfældigt mellem` {.blockoperators} blokken til at variere boldens kostume, størrelse og forsinkelse mellem kloner;
 + "Flere forhindringer" - tilføje yderligere sprites til spillet;
 + "Forbedret tyngdekraft" - bruge en ekstra `hvis` {.blockcontrol} blok til at løse et bug i `gravity` {.blockdata}; 
-+ "Flere liv" - tilføjelse af en `lives` {.blockdata} variabel.
++ "Flere liv" - tilføjelse af en `liv` {.blockdata} variabel.
 
