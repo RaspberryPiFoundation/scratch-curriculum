@@ -36,18 +36,17 @@ Lad os begynde med at lave en figur, som kan bevæge sig til venstre og højre s
 
 	![screenshot](dodge-characters.png)
 
-+ Lad os bruge piletasterne til at få din figur til at bevæge sig rundt. Når spilleren trykker på højre piletast skal din karakter pege mod højre og bevæge sig nogle trin fremad og ændre til det næste kostume:
++ Lad os bruge piletasterne til at få din figur til at bevæge sig rundt. Når spilleren trykker på højre piletast skal din figur pege mod højre og bevæge sig nogle trin fremad og ændre til det næste kostume:
 
 ```blocks 
-		når du klikker på ⚑
-			for evigt
-   			hvis <trykket på tasten [højrepil v]?> så
+	når du klikker på ⚑
+	for evigt
+   	hvis <trykket på tasten [højrepil v]?> så
       	peg i retning (90 v) 
       	gå (3) trin 
       næste kostume
    end
 end
-
 ``` 
  
 + Afprøv din figur ved at klikke på flaget og dernæst holde højre piletast ned. Bevæger din spiller sig til højre? Ser det ud som om din figur bevæger sig?   
@@ -59,9 +58,9 @@ end
 + For at kravle opad en stolpe skal din figur bevæge sig en lille smule, når der bliver trykket på Op piletasten og den rører den rigtige farve. Tilføj denne kode indeni din figurs `for evigt` {.blockcontrol} loop:
 
 ```blocks 
-		hvis <<trykket på tasten [pil opad v]?> og <berører farven [#FFFF00]?>> så
-   			ændr y med (4)
-		end
+	hvis <<trykket på tasten [pil opad v]?> og <berører farven [#FFFF00]?>> så
+   	ændr y med (4)
+   end
 ``` 
  
 + Afprøv din figur - kan du kravle opad de gule stolper og nå til enden af dit niveau?  
@@ -87,18 +86,18 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
 
 	![screenshot](dodge-no-gravity.png)
 
-+ Lad os tilføje noget tyngdekraft til dit spil for at løse det. Lav en ny variabel du kalder `gravity` {.blockdata}. Du kan skjule denne variabel fra din scene, hvis du foretrækker det. 
++ Lad os tilføje noget tyngdekraft til dit spil for at løse det. Lav en ny variabel du kalder `gravity` {.blockdata}. Du kan skjule denne variabel på din scene, hvis du foretrækker det. 
 
 	![screenshot](dodge-gravity.png) 
 
-+ Tilføj denne nye kodeblok der sætter tyngdekraften til et negativt tal og så benytter dette til, igen og igen, at gentage din figurs y-koordinat.
++ Tilføj denne nye kodeblok, der sætter tyngdekraften til et negativt tal og så benytter dette til, igen og igen, at gentage din figurs y-koordinat.
 
 ```blocks 
-		når du klikker på ⚑
-		sæt [gravity v] til [-4]
-		for evigt
-   			ændr y med (gravity)
-		end
+	når du klikker på ⚑
+	sæt [gravity v] til [-4]
+	for evigt
+   	ændr y med (gravity)
+	end
 ``` 
  
 + Klik på flaget og slæb din figur til toppen af scenen. Hvad sker der? Virker tyngdekraften som du forventede? 
@@ -110,8 +109,8 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
 ```blocks 
 	når du klikker på ⚑
 	sæt [gravity v] til [-4]
-		for evigt
-   			hvis <ikke <<berører farven [#0000FF]?> eller <berører farven [#FFFF00]?>>> så
+	for evigt
+   	hvis <ikke <<berører farven [#0000FF]?> eller <berører farven [#FFFF00]?>>> så
       ændr y med (gravity)
    end
 end
@@ -124,13 +123,13 @@ end
 +  Lad os også få din figur til at hoppe, når spilleren trykke på mellemrumstasten. Dette kan du nemt gøre ved at bevæge din figur op et par gange ved at bruge denne kode: 
  
 ```blocks 
-		når du trykker på [mellemrum v]
-		gentag (10) gange
-   			ændr y med (4)
-		end
+	når du trykker på [mellemrum v]
+	gentag (10) gange
+   	ændr y med (4)
+end
 ``` 
  
-	Siden tyngdekraften hele tiden skubber din figur ned med 4 pixels, så skal du vælge et tal, som er større end 4 i din `ændr y med (4)` {.blockmotion} blok. Ændr dette tal indtil du er tilfreds med den højde, som din figur hopper.  
+Siden tyngdekraften hele tiden skubber din figur ned med 4 pixels, så skal du vælge et tal, som er større end 4 i din `ændr y med 4` {.blockmotion} blok. Ændr dette tal indtil du er tilfreds med højden, som din figur hopper.  
 
 + Hvis du afprøver din kode, så vil du se at den virker, men bevægelserne er ikke særlig jævne. For at udjævne hoppene skal du flytte din figur et mindre og mindre stykke, indtil den ikke hopper mere. 
 
@@ -139,15 +138,15 @@ end
 + Slet den hoppekode du tilføjede til din figur og erstat den med denne kode:
 
 ```blocks 
-		når du trykker på [mellemrum v]
-		sæt [jump height v] til [8]
-		gentag indtil <(jump height) = [0]>
-   			ændr y med (jump height)
-   			ændr [jump height v] med (-0.5)
+	når du trykker på [mellemrum v]
+	sæt [jump height v] til [8]
+	gentag indtil <(jump height) = [0]>
+   	ændr y med (jump height)
+   	ændr [jump height v] med (-0.5)
 	end
 ``` 
  
-	Denne kode flytter din figur op med 8 pixels, dernæst med 7.5 pixels, så 7 pixels og så fremdeles, indtil din figur er færdig med at hoppe. Dette får hopningen til at se meget mere jævn ud.
+Denne kode flytter din figur op med 8 pixels, dernæst med 7.5 pixels, så 7 pixels og så fremdeles, indtil din figur er færdig med at hoppe. Dette får hopningen til at se meget mere jævn ud.
 
 + Ændr startværdien af din `jump height` {.blockdata} variabel og afprøv det indtil du er tilfreds med, hvor højt din figur hopper. 
 
@@ -176,7 +175,7 @@ Nu hvor du kan bevæge din figur rundt, så lad os tilføje nogle bolde, som din
 
 	![screenshot](dodge-ball-motion.png)
 
-	Koden laver en ny klon af bolden hvert 3. sekund. Hver ny klon bevæger sig langs den øverste platform. 
+Koden laver en ny klon af bolden hvert 3. sekund. Hver ny klon bevæger sig langs den øverste platform. 
 
 + Klik på flaget for at afprøve det.
 
@@ -189,9 +188,9 @@ Nu hvor du kan bevæge din figur rundt, så lad os tilføje nogle bolde, som din
 + Her tilsidst skal du bruge en kode til når din figur bliver ramt af en bold! Tilføj denne kode til din bold sprite: 
 
 ```blocks 
-		når jeg starter som klon
-		for evigt
-   			hvis <berører [Pico walking v]?> så
+	når jeg starter som klon
+	for evigt
+   	hvis <berører [Pico walking v]?> så
       	send [ramt v] til alle 
    end
 end
@@ -200,9 +199,9 @@ end
 + Du skal også tilføje denne kode til din figur for at flytte tilbage til start, når den bliver ramt:
 
 ```blocks  
-		når jeg modtager [ramt v]
-			peg i retning (90 v)
-		gå til x:(-210) y:(-120) 
+	når jeg modtager [ramt v]
+	peg i retning (90 v)
+	gå til x:(-210) y:(-120) 
 ```	 
  
 + Afprøv din figur og se om den går tilbage til start, når den bliver ramt af en bold. 
@@ -226,7 +225,7 @@ Lad os gøre spillet en smule sværere at fuldføre ved at tilføje nogle lasere
 
 ## Arbejdsliste { .check }
 
-+ Tilføj en ny sprite til dit spil som du kalder 'Laser'. Den bør have to kostumer, 'on' og 'off'.
++ Tilføj en ny sprite til dit spil som du kalder 'Laser'. Den bør have to kostumer, 'tændt' og 'slukket'.
 
 	![screenshot](dodge-lasers-costume.png)
 
@@ -237,24 +236,24 @@ Lad os gøre spillet en smule sværere at fuldføre ved at tilføje nogle lasere
 + Tilføj denne kode til din laser, sådan at det skifter mellem de 2 kostumer.
 
 ```blocks 
-		når du klikker på ⚑
-		for evigt
-   			skift kostume til [tændt v]
-   			vent (2) sekunder
-   			skift kostume til [slukket v]
-  		 vent (2) sekunder
+	når du klikker på ⚑
+	for evigt
+   	skift kostume til [tændt v]
+   	vent (2) sekunder
+   	skift kostume til [slukket v]
+  	vent (2) sekunder
 end
 ``` 
  
-	Hvis du foretrækker kan du `vente` {.blockcontrol} et `tilfældigt` {.blockoperators} antal gange mellem skift af kostume.
+Hvis du hellere vil, så kan du `vente` {.blockcontrol} et `tilfældigt` {.blockoperators} antal gange mellem skift af kostume.
 
-+ Tilsidst skal du tilføje en kode til din laser så 'hit' meddelelsen sendes, når laseren rører din figur. Koden vil være den samme som den kode du tilføjede til din bold sprite. 
++ Tilsidst skal du tilføje en kode til din laser så 'ramt' meddelelsen sendes, når laseren rører din figur. Koden vil være den samme som den kode du tilføjede til din bold sprite. 
 
-	 Du beøhver ikke tilføje mere kode til din figur - den ved allerede hvad den skal gøre, når den bliver ramt!
+Du beøhver ikke tilføje mere kode til din figur - den ved allerede hvad den skal gøre, når den bliver ramt!
 
 + Afprøv dit spil for at se, om du kan komme forbi laserne. Ændr `vent` {.blockcontrol} tiderne i din kode, hvis laserne er for nemme eller for svære.
 
-## Udfirdring: Flere forhindringer {.challenge}
+## Udfordring: Flere forhindringer {.challenge}
 Hvis du stadig synes, at dit spil er for nemt, så kan du tilføje flere forhindringer til dit niveau. Du kan tilføje hvad som helst, men her er nogle idéer: 
 
 + En flyvende dræbersommerfugl;
@@ -267,9 +266,9 @@ Du kan ovenikøbet lave mere end én baggrund og rykke til næste niveau, når d
 
 ```blocks
 	hvis <berører farven [#714300]?> så
-   		skift baggrund til [næste baggrund v]
-   		gå til x:(-210) y:(-120)
-   		vent (1) sekunder
+   	skift baggrund til [næste baggrund v]
+   	gå til x:(-210) y:(-120)
+   	vent (1) sekunder
 end 
 ``` 
  
@@ -289,18 +288,17 @@ Kan du løse dette bug? Til det formål skal du give din figur nogle bukser i fo
 ```blocks
 	berører farven [#0000FF]?
 ```
-
 med:
 
 ```blocks
 	berører [#00FF00] farven [#0000FF]?
 ```
 
-Husk at teste dine forbedringer for at være sikker på, at du har fixet vores bug! 
+Husk at afprøve dine forbedringer for at være sikker på, at du har løst vores bug! 
 
 ## Gem dit projekt { .save }
 
-## Udofrdring: Flere liv {.challenge}
+## Udfordring: Flere liv {.challenge}
 Kan du tildele spilleren 3 `liv` {.blockdata}, istedet for bare at sende dem tilbage til begyndelsen hver gang? Således bør dit spil fungere:
 
 + Din spiller starter med 3 liv; 
