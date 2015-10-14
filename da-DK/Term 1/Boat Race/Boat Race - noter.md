@@ -41,4 +41,4 @@ Projekt Ressourcer:
 #Ofte Stillede Spørgsmål
 + Dette er det første projekt, som tilbyder væsentligt mindre trin-for-trin vejledning. Benyt dette som en mulighed for at underbygge børnenes læring, og hent viden fra dette og tidligere projekter.    
 
-	For eksempel, hvis børnene har brug for hjælp til at tilføje lydeffekter og musik til deres spil, så mind dem om hvad de har lavet i 'Rock Band' projektet. Tilskynd børnene til at gå tilbage se på nogle af de tidligere projektnoter for at få vejledning. 
+	For eksempel, hvis børnene har brug for hjælp til at tilføje lydeffekter og musik til deres spil, så mind dem om hvad de har lavet i 'Rockband' projektet. Tilskynd børnene til at gå tilbage se på nogle af de tidligere projektnoter for at få vejledning. 
