@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"] 
 ...
 
-## Projekt skabt ved hjælp af brugerinput { .challenge .pdf-hidden }
+## Projekt skabt ved hjælp af brugerbidrag { .challenge .pdf-hidden }
 Dette projekt er lavet sammen med Erik og hans datter Ruth. Hvis du har lyst til at bidrage med dit eget projekt, så [kontakt os på Github](https://github.com/CodeClub).
 
 # Introduktion { .intro }
@@ -38,7 +38,7 @@ Lad os først lave lave en figur, som kan ændre sig til en tilfældig rækkefø
 	+ 3 = grøn;
 	+ 4 = gul.
 
-	Giv din figur 4 forskellige farvekostumer, en for hver af de 4 ovenstående farver. Sørg for at dine farvede kostumer ligger i den rigtige rækkefølge.
+Giv din figur 4 forskellige farvekostumer, en for hver af de 4 ovenstående farver. Sørg for at dine farvede kostumer ligger i den rigtige rækkefølge.
 
 	![screenshot](colour-costume.png)
 
@@ -46,26 +46,26 @@ Lad os først lave lave en figur, som kan ændre sig til en tilfældig rækkefø
 
 	![screenshot](colour-list.png)
 
-	Nu bør du se din tomme liste øverst til venstre af din scene samt en del nye brikker, der bruger lister.
+Nu bør du se din tomme liste øverst til venstre af din scene samt en del nye brikker, der bruger lister.
 
 	![screenshot](colour-list-blocks.png)   
 
 + Tilføj denne kode til din figur for at tilføje et tilfældigt nummer til din liste (og for at vise det korrekte kostume) 5 gange:
 
 ```blocks 
-		når du klikker på ⚑
-		slet (alle v) fra [sequence v]
-		gentag (5) gange	
-   		tilføj (vælg tilfældigt mellem (1) og (4)) til [sequence v] 
-   		skift kostume til (punkt (last v) på [sequence v])
+	når du klikker på ⚑
+	slet (alle v) fra [sequence v]
+	gentag (5) gange	
+   	tilføj (vælg tilfældigt mellem (1) og (4)) til [sequence v] 
+   	skift kostume til (punkt (last v) på [sequence v])
    	vent (1) sekunder 
 end
 ``` 
 
-	Læg mærke til at du også har tømt listen til at starte med. 
+Sørg også for at du har tømt listen til at starte med. 
 
 ## Udfordring: Tilføj lyd {.challenge}
-Afprøv dit projekt et par gange. Du vil måske lægge mærke til at det samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang karakteren skifter kostume? 
+Afprøv dit projekt et par gange. Du vil måske lægge mærke til at det samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang figuren skifter kostume? 
 
 Kan du få en anden trommelyd frem afhængig af det tilfældige nummer, som vælges? Dette vil være _meget_ lignende den kode, som ændrer figurens kostume.
 
@@ -84,28 +84,27 @@ Lad os tilføje 4 knapper så spilleren kan gentage den rækkefølge, de har hus
 + Når der klikkes på den røde tromme skal du udsende en meddelelse til din figur og lade den vide, at der er blevet klikket på den røde knap. Tilføj denne kode til din røde tromme:
 
 ```blocks 
-		når denne sprite klikkes
-		send [rød v] til alle 
+	når denne sprite klikkes
+	send [rød v] til alle 
 ``` 
 
-+ Når din figur modtager denne besked bør den tjekke om nummeret 1 befinder sig i starten af listen (hvilket betyder at rød er den næste farve i rækkefølgen). Hvis den er det kan du fjerne nummeret fra listen, da det er blevet gættet korrekt. Ellers er spillet slut!
++ Når din figur modtager denne besked bør den tjekke om nummeret 1 befinder sig i starten af listen (hvilket betyder at rød er den næste farve i rækkefølgen). Hvis den er det, kan du fjerne nummeret fra listen, da det er blevet gættet korrekt. Ellers er spillet slut!
 
 ```blocks 
-		når jeg modtager [rød v]
+	når jeg modtager [rød v]
 	hvis <(punkt (1 v) på [sequence v]) = [1]> så
-   		slet (1 v) fra [sequence v]
+   	slet (1 v) fra [sequence v]
 	ellers
-   		sig [Game over!] i (1) sekunder
-   		stop [alle v]
+   	sig [Game over!] i (1) sekunder
+   	stop [alle v]
 end
-
 ``` 
  
 + Du kan også vise nogle blinkende lys, når listen er tom, da dette betyder at hele rækkefølgen er gættet korrekt. Tilføj denne kode til slutningen af din figurs `når du klikker på ⚑` {.blockevents} script:
 
 ```blocks 
-		vent indtil <(længden af [sequence v]) = [0]>
-		send [won v] til alle og vent
+	vent indtil <(længden af [sequence v]) = [0]>
+	send [won v] til alle og vent
 ``` 
 
 + Klik på din scene og tilføj denne kode således at baggrunden ændrer farve, når spilleren har vundet.
@@ -113,12 +112,11 @@ end
 ```blocks 
 	når jeg modtager [won v] 
 	spil lyden [drum machine v]
-		gentag (50) gange
+	gentag (50) gange
    	ændr effekten [farve v] med (25)
-   		vent (0.1) sekunder
-end
-fjern grafiske effekter
-
+   	vent (0.1) sekunder
+	end
+	fjern grafiske effekter
 ```	
 
 ## Udfordring: Lav 4 knapper {.challenge}
@@ -143,41 +141,41 @@ Indtil videre skal spilleren kun huske på 5 farver. Lad os forbedre dit spil s�
 + Denne `score` {.blockdata} vil vi bruge til at bestemme længden af den rækkefølge, som spilleren skal huske på. Så til at starte med er scoren (og længden af rækkefølgen) 3. Tilføj denne kode til begyndelsen af `når du klikker på ⚑` {.blockevents} koden til din figur:
 
 ```blocks 
-		sæt [score v] til [3]
+   sæt [score v] til [3]
 ``` 
 
 + I stedet for altid at lave en rækkefølge på 5 farver, så bruger du nu `score` {.blockdata} variablen til at bestemme længden på rækkefølgen. Ændr din figurs `gentag` {.blockcontrol} loop (til at lave rækkefølgen) til:
 
 ```blocks 
-		gentag (score) gange
-		end
+	gentag (score) gange
+	end
 ``` 
 
 + Hvis rækkefølgen gættes rigtigt bør du tilføje 1 til scoren for at forlænge længden af rækkefølgen. 
 
 ```blocks 
-		ændr [score v] med (1)
+	ændr [score v] med (1)
 ``` 
 
 + Til sidst skal du tilføje en `for evigt` {.blockcontrol} loop rundt om koden, så der laves en ny rækkefølge (i rækkefølgen) for hvert niveau. Sådan bør koden for din figur se ud:    
 
 ```blocks 
-		når du klikker på ⚑ 
-		sæt [score v] til [3]
-		for evigt
-   		slet (alle v) fra [sequence v] 
-   			gentag (score) gange
+	når du klikker på ⚑ 
+	sæt [score v] til [3]
+	for evigt
+   	slet (alle v) fra [sequence v] 
+   	gentag (score) gange
       	tilføj (vælg tilfældigt mellem (1) og (4)) til [sequence v] 
-            skift kostume til (punkt (sidste v) på [sequence v])
-            vent (1) sekunder 
-   		    end
-   		    vent indtil <(længden af [sequence v]) = [0]>
-   		send [won v] til alle og vent
+        skift kostume til (punkt (sidste v) på [sequence v])
+        vent (1) sekunder 
+   	end
+   	vent indtil <(længden af [sequence v]) = [0]>
+   	send [won v] til alle og vent
    	ændr [score v] med (1) 
     end
 ``` 
  
-+ Få dine venner til at afprøve dit spil. Husk at skjule `sequence` {.blockdata} listen før de begynder at spille! 
++ Få dine venner til at afprøve dit spil. Husk at skjule `sequence` {.blockdata} listen, før de begynder at spille! 
 
 ## Gem dit projekt { .save }
 
@@ -192,17 +190,17 @@ Lad os gemme en high score så du kan spille mod dine venner.
 + Hver gang spillet slutter (ved tryk på den forkerte knap) skal du undersøge om spillerens score er højere end den nuværende high score. Hvis den er det skal du gemme scoren som en high score og opbevare spillerens navn. sådan bør din røde knap se ud:
 
 ```blocks 
-		når jeg modtager [rød v]
-			hvis <(punkt (1 v) på [sequence v]) = [1]> så
-   			slet (1 v) fra [sequence v]
-		ellers
-   			sig [Game over!] i (1) sekunder
-   			hvis <(score) > (high score)> så
-      			sæt [high score v] til (score)
-      		bed om [High score! Hvad er dit navn?] og vent
-      		sæt [navn v] til (svar)
-   		end
-   stop [alle v]
+	når jeg modtager [rød v]
+	hvis <(punkt (1 v) på [sequence v]) = [1]> så
+   	slet (1 v) fra [sequence v]
+	ellers
+   	sig [Game over!] i (1) sekunder
+   	hvis <(score) > (high score)> så
+      	sæt [high score v] til (score)
+      	bed om [High score! Hvad er dit navn?] og vent
+      	sæt [navn v] til (svar)
+   	end
+   	stop [alle v]
     end
 ``` 
  
@@ -210,9 +208,9 @@ Lad os gemme en high score så du kan spille mod dine venner.
 
 	![screenshot](colour-same.png)  
 
-+ Hvis du nogensinde får brug for at ændre noget i denne kode, fx tilføje en lyd eller ændre 'Game over!' beskeden, så vil du blive nødt til at ændre den 4 gange! Det kan godt være lidt irriterende og kan føles som spild af tid.
++ Hvis du nogensinde får brug for at ændre noget i denne kode, fx tilføje en lyd eller ændre 'Game over!' beskeden, så bliver du nødt til at ændre den 4 gange! Det kan godt være lidt irriterende og kan føles som spild af tid.
 
-	I stedet kan du definere dine egne brikker og genbruge dem i dit projekt! Her skal du klikke på `Flere Brikker` {.blockmoreblocks}, og dernæst 'Skab en Brik'. Kald denne nye brik 'Game over'. 
+I stedet kan du definere dine egne brikker og genbruge dem i dit projekt! Her skal du klikke på `Flere Brikker` {.blockmoreblocks}, og dernæst 'Skab en Brik'. Kald denne nye brik 'Game over'. 
 
 	![screenshot](colour-more.png)  
 
