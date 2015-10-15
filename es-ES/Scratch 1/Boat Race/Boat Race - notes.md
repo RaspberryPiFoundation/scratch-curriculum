@@ -2,7 +2,7 @@
 title: Carrera de botes — Notas para los líderes de club
 language: es-ES
 embeds: "*.png"
-materials: ["Recursos para los líderes de club/*.*"]
+materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 ...
 
 #Introducción:

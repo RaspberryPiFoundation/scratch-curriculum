@@ -4,7 +4,7 @@ level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Recursos para el líder del Club /*.*","Recursos del Proyecto /*.*"]
+materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 ...
 
 # Introducción { .intro }
@@ -43,7 +43,7 @@ Vas a aprender cómo crear un juego en el cual usarás el ratón para navegar tu
 + Vas a controlar el bote con tu ratón. Agrega este código a tu bote:
 
 	```blocks
-		al presionar la bandera verde
+		al presionar bandera verde
 		apuntar en dirección (0 v)
 		ir a x: (-190) y: (-150)
 		por siempre
@@ -81,13 +81,13 @@ Vas a aprender cómo crear un juego en el cual usarás el ratón para navegar tu
 + Agrega este código a tu bote, dentro del loop `por siempre` {.blockcontrol}, para que choque cuando toca cualquier trocito de madera marrón:
 
 	```blocks
-		si <tocando el color [#603C15]?> entonces
-			cambiar disfraz a [hit v]
-			decir [Noooooo!] por (1) segundos
-			cambiar disfraz a [normal v]
-			apuntar en dirección (0 v)
-			ir a x: (-215) y: (-160)
-		fin
+	si <¿tocando el color [#603C15]?> entonces
+   		cambiar disfraz a [hit v]
+   		decir [Noooooo!] por (1) segundos
+   		cambiar disfraz a [normal v]
+   		apuntar en dirección (0 v)
+   		ir a x:(-215) y:(-160)
+	fin
 	```
 
 	Este código está dentro del loop `por siempre` {.blockcontrol}, para que tu código constantemente verifique si tu bote ha chocado.
@@ -132,7 +132,7 @@ Agreguemos a tu juego un crnómetro, para que el jugador tenga que llegar a la i
 + Agrega este código a tu __escenario__, para que el cronómetro cuente hasta que el bote llega a la isla desierta:
 
 	```blocks
-		al presionar la bandera verde
+		al presionar bandera verde
 		fijar [time v] a [0]
 		por siempre
 			esperar (0.1) segundos
@@ -159,9 +159,9 @@ Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesa
 + Ahora puedes agregar código al loop `por siempre` {.blockcontrol} de tu bote, para que se mueva 2 _pasos extra_ cada vez que toca una fuente de energía blanca.
 
 	```blocks
-		si <tocando el color [#FFFFFF]?> entonces
-			mover (3) pasos
-		fin
+	si <¿tocando el color [#FFFFFF]?> entonces
+   		mover (3) pasos
+	fin
 	```
 
 + También puedes agregar una puerta giratoria, que tu bote tiene que evitar. Agrega un nuevo objeto que se llame 'puerta', y que se vea así:
@@ -187,9 +187,9 @@ Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesa
 
 + Podrías agregar cieno verde a tu scenario, lo que frena al jugador cuando lo toca. Para hacerlo puedes usar un bloque `espera` {.blockcontrol}:
 
-```blocks
-	esperar (0.01) segundos
-````
+	```blocks
+		esperar (0.01) segundos
+	````
 
 ![screenshot](boat-algae.png)
 
@@ -199,17 +199,17 @@ Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesa
 
 Estos bloques pueden ayudarte:
 
-```blocks
-	mover (1) pasos
-	rebotar si toca un borde
-````
+	```blocks
+		mover (1) pasos
+		rebotar si toca un borde
+	````
 
 Si tu nuevo objeto no es marrón, tendrás que agregar esto al código de tu bote:
-
-```blocks
-	si <  <tocando el color [#603C15]?> o <tocando [shark v]?> > entonces
+	
+	```blocks
+	si <<¿tocando el color [#603C15]?> o <¿tocando [shark v]?>> entonces
 	fin
-```
+	```
 
 ## Guarda tu proyecto { .save }
 
@@ -222,28 +222,28 @@ Si tu nuevo objeto no es marrón, tendrás que agregar esto al código de tu bot
 
 + Cambia este código para cambiar la posición de comienzo del Jugador 2:
 
-```blocks
-	ir a x: (-190) y: (-150)
-```
+	```blocks
+		ir a x: (-190) y: (-150)
+	```
 
 + Borra el código que usa el ratón para controlar el bote:
 
-```blocks
-	si < (distancia a [puntero del mouse v]) > [5] > entonces
-		apuntar hacia [apuntador del ratón v]
-		mover (1) pasos
-	fin
-```
+	```blocks
+		si < (distancia a [puntero del mouse v]) > [5] > entonces
+			apuntar hacia [apuntador del ratón v]
+			mover (1) pasos
+		fin
+	```
 
 ...y reemplázalo con código para controlar el bote usando las teclas de flechas.
 
 Este es el código que necesitas para mover el bote hacia adelante:
 
-```blocks
-	si < tecla [flecha arriba v] presionada? > entonces
-		mover (1) pasos
+	```blocks
+		si <¿tecla [flecha arriba v] presionada?> entonces
+   		mover (1) pasos
 	fin
-```
+	```
 
 También necesitarás un código para `doblar` {.blockmotion} el bote cuando se presionan las teclas de flechas izquierda y derecha.
 
@@ -252,9 +252,13 @@ También necesitarás un código para `doblar` {.blockmotion} el bote cuando se 
 ## Desafío: ¡Más niveles! {.challenge .new-page}
 ¿Puedes crear escenarios adicionales y permitirle al jugador que elija entre niveles?
 
-```blocks
-	al presionar la tecla [espacio v]
-	siguiente fondo
-```
+	```blocks
+		al presionar tecla [espacio v]
+		siguiente fondo
+	```
 
 ## Guarda tu proyecto { .save }
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.

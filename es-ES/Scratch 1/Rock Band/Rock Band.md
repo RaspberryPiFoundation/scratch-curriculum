@@ -1,260 +1,188 @@
 ---
-title: Carrera de botes
+title: Banda de Rock
 level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Recursos para el líder del Club /*.*","Recursos del Proyecto /*.*"]
+materials: ["Club Leader Resources/*.*"]
 ...
 
 # Introducción { .intro }
 
-Vas a aprender cómo crear un juego en el cual usarás el ratón para navegar tu bote a una isla desierta.
+¡En este Proyecto aprenderás cómo codificar tus propios instrumentos musicales!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
-  <img src="boat-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
+  <img src="band-final.png">
 </div>
 
-# Primer paso: Cómo planificar el juego { .activity }
+# Primer paso: Objetos { .activity }
+
+Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Scratch, estas “cosas” se llaman__objetos__. 
 
 ## Lista de verificación de actividades { .check }
 
-+ Comienza un nuevo proyecto Scratch, y borra el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor en línea de Scratch en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Primero, abre el editor de Scratch. Puedes encontrar el editor en línea de Scratch editor en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Se ve así:
 
-+ Haz clic en el fondo de tu escenario y planifica tu nivel. Deberías agregar:
-	+ Madera que tu bote tiene que evitar;
-	+ Una isla desierta a la que tu bote tiene que llegar.
+	![screenshot](band-scratch.png)
 
-	Tu juego podría verse algo así:
++ El objeto gato que puedes ver es la mascota de Scratch. Deshagámosnos de él haciendo clic en el botón derecho y luego haciendo clic en “eliminar”.
 
-	![screenshot](boat-bg.png)
+	![screenshot](band-delete.png)
 
-# Segundo paso: Cómo controlar el bote { .activity }
++ Luego, haz clic en “Elegir objeto de la biblioteca” para abrir una lista de todos los objetos de Scratch.
+
+	![screenshot](band-sprite-library.png)
+
++ Baja hasta encontrar un objeto de un tambor. Haz clic en un tambor, y haz clic en “OK” para agregarlo a tu proyecto.
+
+	![screenshot](band-sprite-drum.png)
+
++ Haz clic en el ícono “encoger”, y luego haz clic en el tambor unas cuantas veces para hacerlo más pequeño.
+
+	![screenshot](band-shrink.png)
+
+## Guarda tu proyecto { .save }
+
+Asigna un nombre a tu proyecto ingresándolo en la casilla de texto arriba del escenario.
+
+Después puedes hacer clic en “Archivo” y luego “Guardar ahora” para guardar tu proyecto.
+
+![screenshot](band-save.png)
+
+# Segundo paso: El Escenario { .activity }
+
+El __escenario__ es el área a la izquierda, y es donde tu proyecto cobra vida. Imagínate que es el área donde se hace la presentación, ¡como en un escenario real!
 
 ## Lista de verificación de actividades { .check }
 
-+ Si el líder de tu club te dio una carpeta de 'Recursos', haz clic en 'Cargar objeto del expediente' y agrega la imagen 'boat.png'. Deberías achicar el objeto y ubicarlo en la posición de comienzo.
++ ¡En estos momentos, el escenario es de color blanco y se ve bastante aburrido! Agreguemos un fondo al escenario haciendo clic en “Elegir fondo de la biblioteca”.
 
-	![screenshot](boat-boat.png)
+	![screenshot](band-stage-choose.png)
 
-	Si no tienes la imagen boat.png, ¡puedes dibujar tu propio bote!
++ Haz clic en “Interiores” en la izquierda y luego haz clic en un fondo de escenario y luego clic en “OK”.
 
-+ Vas a controlar el bote con tu ratón. Agrega este código a tu bote:
+	![screenshot](band-backdrop.png)
+
++ Ahora tu escenario debería verse así:
+
+	![screenshot](band-stage.png)
+
+# Tercer paso: Cómo crear un tambor { .activity }
+
+Codifiquemos tu tambor para que pueda sonar cuando se lo toca.
+
+## Lista de verificación de actividades { .check }
+
++ Puedes encontrar los bloques de código en la lengüeta “Secuencias de comandos” ¡y todas tienen códigos de color! 
+
+	Haz clic en el objeto tambor y luego arrastra estos 2 bloques al área de código a la derecha, asegurándote de que estén conectados juntos (como los bloques de lego):
+
+	![screenshot](band-code.png)
+
++ ¡Haz clic en el tambor para probar tu nuevo instrumento!
+
++ También puedes cambiar cómo se ve tu tambor cuando le hacen clic, creando un nuevo disfraz. Haz clic en la lengüeta “Disfraces”, y verás la imagen del tambor.
+
+	![screenshot](band-drum-costume.png)
+
++ Haz clic con el botón derecho en el disfraz y haz clic en “duplicar” para crear una copia del disfraz.
+
+	![screenshot](band-drum-duplicate.png)
+
++ Haz clic en el nuevo disfraz (que se llama “tambor 2”) y luego selecciona la herramienta de línea y dibuja líneas para que se vea como que el tambor está produciendo sonidos.
+
+	![screenshot](band-drum-hit.png)
+
++ En este momento los nombres de los disfraces no son muy útiles. Renombra los 2 disfraces a “sin tocar” y “tocado” ingresando el nuevo nombre para cada disfraz en la caja de texto.
+
+	![screenshot](band-drum-name.png)
+
++ ¡Ahora que ya tienes 2 disfraces diferentes para tu tambor, puedes elegir qué disfraz desplegar! Agrega estos 2 bloques a tu tambor:
+
+	![screenshot](band-looks.png)
+
+	El bloque de código para cambiar el disfraz está en la sección “Vistas” {.blocklooks}.
+
++ Prueba tu tambor. ¡Cuando haces clic en el tambor, debería verse como que está siendo tocado!
+
+## Guarda tu proyecto { .save }
+
+##Desafío: Mejora tu tambor { .challenge }
+
++ ¿Puedes cambiar el sonido que hace tu tambor cuando se le hace clic? 
+
+![screenshot](band-drum-sound.png)
+
++ ¿Puedes también hacer que el tambor haga un sonido cuando se presiona la barra espaciadora? Necesitarás utilizar este bloque “evento” {.blockevents}:
+
+```blocks
+	al presionar tecla [espacio v] 
+```
+
+Puedes copiar tu código existente haciendo clic en el código con el botón derecho y haciendo clic en “duplicar”.
+
+![screenshot](band-duplicate-code.png)
+
+## Guarda tu proyecto { .save }
+
+# Cuarto paso: Crear un cantante { .activity .new-page }
+
+¡Agreguemos un cantante a tu banda!
+
+## Lista de verificación de actividades { .check }
+
++ Agrega otros 2 objetos a tu escenario; un cantante y un micrófono.
+
+	![screenshot](band-singer-mic.png)
+
++ Antes de que puedas hacer que tu cantante cante, necesitarás agregar un sonido a tu objeto. Asegúrate de haber seleccionado tu cantante, y luego haz clic en la lengüeta “Sonidos” y haz clic en “Elegir sonido de la biblioteca”:
+
+	![screenshot](band-import-sound.png)
+
++ Si haces clic en “Voces” en el lado izquierdo, podrás elegir sonidos apropiados para agregar a tu objeto.
+
+	![screenshot](band-choose-sound.png)
+
++ Ahora que has agregado el sonido, puedes agregar este código a tu cantante:
 
 	```blocks
-		al presionar la bandera verde
-		apuntar en dirección (0 v)
-		ir a x: (-190) y: (-150)
-		por siempre
-			apuntar hacia [puntero del mouse v]
-			mover (1) pasos
-		fin
+		al hacer clic en este objeto
+		Tocar sonido [singer1 v] y esperar
 	```
 
-+ Prueba tu bote haciendo clic en la bandera y moviendo el ratón. ¿Navega el bote hacia el ratón?
-
-	![screenshot](boat-mouse.png)
-
-+ ¿Qué sucede si el bote llega al apuntador del ratón?
-
-	Para que esto no suceda, necesitarás agregar un bloque 'si'{.blockcontrol} a tu código, para que el bote solo se mueva si está a más de 5 píxeles del ratón.
-
-	![screenshot](boat-pointer.png)
-
-+ Prueba tu bote una vez más para ver si el problema ha sido resuelto.
++ Haz clic en tu cantante, para asegurarte de que cante cuando le haces clic.
 
 ## Guarda tu proyecto { .save }
 
-# Tercer paso: ¡Choques! { .activity .new-page }
+##Desafío: Cómo cambiar el disfraz de tu cantante { .challenge }
+¿Puedes hacer que tu cantante se vea como que está cantando cuando le haces clic? Si necesitas ayuda, puedes usar las instrucciones anteriores para crear un tambor.
 
-¡Tu bote puede navegar a través de barreras de madera! Arreglemos eso.
+![screenshot](band-singer-final.png)
 
-## Lista de verificación de actividades { .check }
-
-+ Necesitarás 2 disfraces para tu bote, uno normal y otro para cuando el bote choca. Duplica el disfraz de tu bote y nómbralos 'normal' y 'chocado'.
-
-+ Haz clic en tu disfraz 'chocado', y elige la herramienta 'Seleccionar' para tomar partecitas del bote y moverlas y rotarlas por todos lados. Haz que parezca que tu bote ha chocado.
-
-	![screenshot](boat-hit-costume.png)
-
-+ Agrega este código a tu bote, dentro del loop `por siempre` {.blockcontrol}, para que choque cuando toca cualquier trocito de madera marrón:
-
-	```blocks
-		si <tocando el color [#603C15]?> entonces
-			cambiar disfraz a [hit v]
-			decir [Noooooo!] por (1) segundos
-			cambiar disfraz a [normal v]
-			apuntar en dirección (0 v)
-			ir a x: (-215) y: (-160)
-		fin
-	```
-
-	Este código está dentro del loop `por siempre` {.blockcontrol}, para que tu código constantemente verifique si tu bote ha chocado.
-
-+ También deberías asegurarte de que al comienzo tu bote siempre se vea 'normal'.
-
-+ Ahora si tratas de navegar a través de una barrera de madera, deberías ver que tu bote choca y vuelve al inicio.
-
-	![screenshot](boat-crash.png)
+¡No olvides probar que tu nuevo código funciona!
 
 ## Guarda tu proyecto { .save }
 
-## Desafío: ¡Ganar! {.challenge}
-¿Puedes agregar otra declaración `si` {.blockcontrol} al código de tu bote, para que el jugador gane cuando llegue a la isla desierta?
+##Desafío: Crea tu propia banda { .challenge }
+¡Usa lo que aprendiste en este proyecto para crear tu propia banda! Puedes crear cualquier instrumento que desees, pero fíjate en los sonidos disponibles y en los instrumentos para tener algunas ideas.
 
-Cuando el bote llega a la isla desierta amarilla, debería decir 'YEAH!' y el juego debería terminar. Tendrás que usar este código:
+![screenshot](band-ideas.png)
 
-```bloques
-	decir [YEAH!] por (1) segundos
-	terminar [all v]
-```
+Sin embargo, tus instrumentos no tienen que ser sensibles. Puedes, por ejemplo, crear un piano hecho de muffins!
 
-![screenshot](boat-win.png)
+![screenshot](band-piano.png)
 
-## Guarda tu proyecto { .save }
+Puedes usar los objetos existentes y al mismo tiempo dibujar los tuyos propios.
 
-## Desafío: Efectos de sonido {.challenge}
-Puedes agregar efectos de sonido a tu juego para cuando el bote choca y para cuando llega a la isla al final del juego. Incluso puedes agregar música de fondo (si necesitas ayuda con esto mira el proyecto 'Banda de Rock' anterior).
+![screenshot](band-draw.png)
 
-## Guarda tu proyecto { .save }
+¡Si tienes un micrófono puedes grabar tus propios sonidos, o incluso usar una cámara web para tocar los instrumentos! 
 
-# Cuarto paso: Prueba del cronómetro { .activity }
-
-Agreguemos a tu juego un crnómetro, para que el jugador tenga que llegar a la isla lo más rápido posible.
-
-## Lista de verificación de actividades { .check }
-
-+ Agrega a tu escenario una nueva variable que se llame `tiempo` {.blockdata}. También puedes cambiar cómo se ve tu nueva variable. Si necesitas ayuda, mira el proyecto "Globos".
-
-	![screenshot](boat-variable.png)
-
-+ Agrega este código a tu __escenario__, para que el cronómetro cuente hasta que el bote llega a la isla desierta:
-
-	```blocks
-		al presionar la bandera verde
-		fijar [time v] a [0]
-		por siempre
-			esperar (0.1) segundos
-			cambiar [time v] por (0.1)
-		fin
-	```
-
-+ ¡Ya está! ¡Prueba tu juego para ver qué tan rápido puedes llegar a la isla desierta!
-
-	![screenshot](boat-variable-test.png)
+![screenshot](band-io.png)
 
 ## Guarda tu proyecto { .save }
 
-# Quinto paso: Obstáculos y fuentes de energía { .activity }
+## Community Contributed Translation { .challenge .pdf-hidden }
 
-Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesante.
-
-## Lista de verificación de actividades { .check }
-
-+ Primero agreguemos algunos "estímulos" a tu juego, que harán que el bote navegue más rápido. Edita el fondo de tu scenario y agrega algunas flechas blancas de energía.
-
-	![screenshot](boat-boost.png)
-
-+ Ahora puedes agregar código al loop `por siempre` {.blockcontrol} de tu bote, para que se mueva 2 _pasos extra_ cada vez que toca una fuente de energía blanca.
-
-	```blocks
-		si <tocando el color [#FFFFFF]?> entonces
-			mover (3) pasos
-		fin
-	```
-
-+ También puedes agregar una puerta giratoria, que tu bote tiene que evitar. Agrega un nuevo objeto que se llame 'puerta', y que se vea así:
-
-	![screenshot](boat-gate.png)
-
-	Asegúrate de que el color de la puerta sea igual al color de las otras barreras de madera.
-
-+ Fija el centro del objeto puerta.
-
-	![screenshot](boat-center.png)
-
-+ Agrega código a tu puerta para hacerla que lentamente gire `por siempre` {.blockcontrol}.
-
-+ Prueba tu juego. Ahora deberías tener una puerta giratoria que tienes que evitar.
-
-	![screenshot](boat-gate-test.png)
-
-## Guarda tu proyecto { .save }
-
-## Desafío: ¡Más obstáculos! {.challenge .new-page}
-¿Puedes agregar más obstáculos a tu juego? Aquí te damos algunas ideas:
-
-+ Podrías agregar cieno verde a tu scenario, lo que frena al jugador cuando lo toca. Para hacerlo puedes usar un bloque `espera` {.blockcontrol}:
-
-```blocks
-	esperar (0.01) segundos
-````
-
-![screenshot](boat-algae.png)
-
-+ ¡Podrías agregar un objeto en movimiento, como un tronco o un tiburón!
-
-![screenshot](boat-obstacles.png)
-
-Estos bloques pueden ayudarte:
-
-```blocks
-	mover (1) pasos
-	rebotar si toca un borde
-````
-
-Si tu nuevo objeto no es marrón, tendrás que agregar esto al código de tu bote:
-
-```blocks
-	si <  <tocando el color [#603C15]?> o <tocando [shark v]?> > entonces
-	fin
-```
-
-## Guarda tu proyecto { .save }
-
-## Desafío: ¡Más botes! {.challenge .new-page}
-¿Puedes convertir tu juego en una carrera entre 2 jugadores?
-
-+ Duplica el bote, renómbralo 'Jugador 2' y cámbiale el color.
-
-![screenshot](boat-p2.png)
-
-+ Cambia este código para cambiar la posición de comienzo del Jugador 2:
-
-```blocks
-	ir a x: (-190) y: (-150)
-```
-
-+ Borra el código que usa el ratón para controlar el bote:
-
-```blocks
-	si < (distancia a [puntero del mouse v]) > [5] > entonces
-		apuntar hacia [apuntador del ratón v]
-		mover (1) pasos
-	fin
-```
-
-...y reemplázalo con código para controlar el bote usando las teclas de flechas.
-
-Este es el código que necesitas para mover el bote hacia adelante:
-
-```blocks
-	si < tecla [flecha arriba v] presionada? > entonces
-		mover (1) pasos
-	fin
-```
-
-También necesitarás un código para `doblar` {.blockmotion} el bote cuando se presionan las teclas de flechas izquierda y derecha.
-
-## Guarda tu proyecto { .save }
-
-## Desafío: ¡Más niveles! {.challenge .new-page}
-¿Puedes crear escenarios adicionales y permitirle al jugador que elija entre niveles?
-
-```blocks
-	al presionar la tecla [espacio v]
-	siguiente fondo
-```
-
-## Guarda tu proyecto { .save }
+This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.

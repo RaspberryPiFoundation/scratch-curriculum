@@ -35,31 +35,31 @@ Commençons par créer un personnage qui se deplacera dans ton monde. Let's star
 + Utilisons les touches flèches pour faire bouger le personnage. Lorsque le joueur appuye sur le flèche du haut, le personnage doit monter. Cela se fait en changeant ses coordonnées Y. Ajoutes ce code au personnage :
 
 	```blocks
-
-quand ⚑ pressé
-répéter indéfiniment
-   si <touche [flèche haut v] pressée?> alors
-      ajouter (2) à y
-   fin
-fin
+	quand ⚑ pressé
+	répéter indéfiniment
+ 	si <touche [flèche haut v] pressée?> alors
+      	ajouter (2) à y
+  	fin
+	fin
 	```
+
 + Test ton personnage en cliquant le drapeau puis en maintenant la flèche du haut appuiée. Est ce que ton personnage monte?
 
 	![screenshot](world-up.png)
 
 + Pour que ton personnage bouge vers la gauche, tu dois ajouter un nouveau code `if` {.blockcontrol}, qui modifiera les coordonnées X de ton personnage.
-```blocks
 
-quand ⚑ pressé
-répéter indéfiniment
-   si <touche [flèche haut v] pressée?> alors
-      ajouter (2) à y
-   fin
-   si <touche [flèche gauche v] pressée?> alors
-      ajouter (-2) à x
-   fin
-fin
-```
+	```blocks
+	quand ⚑ pressé
+	répéter indéfiniment
+ 	  si <touche [flèche haut v] pressée?> alors
+      	ajouter (2) à y
+   	fin
+   	si <touche [flèche gauche v] pressée?> alors
+      	ajouter (-2) à x
+   	fin
+	fin
+	```
 
 ## Défi : Bouger dans toutes les directions {.challenge}
 Peux tu ajouter des lignes de codes supplémentaires a ton personnage pour qu'il puisse se déplacer vers le haut, le bas, la gauche et la droite? Utilises le code que l'on t'a donné pour t'aider!
@@ -73,17 +73,16 @@ Peux tu ajouter des lignes de codes supplémentaires a ton personnage pour qu'il
 + Pour remedier à ce problème, il faut que le personnage puisse bouger, mais qu'il revienne sur ses pas s'il touche un mur gris clair. Voici le code qui te permettra d'y parvenir :
 
 	```blocks
-
-quand ⚑ pressé
-répéter indéfiniment
-   si <touche [flèche haut v] pressée?> alors
-      ajouter (2) à y
-      si <couleur [#BABABA] touchée?> alors
+	quand ⚑ pressé
+	répéter indéfiniment
+ 	si <touche [flèche haut v] pressée?> alors
+      	ajouter (2) à y
+      	si <couleur [#BABABA] touchée?> alors
          ajouter (-2) à y
-      fin
-   fin
-fin
-```
+     	fin
+   	fin
+	fin
+	```
 
 	Remarques que le nouveau code `if`{.blockcontrol}`touching color`{.blocksensing} est situé dans le code `if`{.blockcontrol}`key [up arrow]`{.blocksensing}
 
@@ -108,7 +107,6 @@ Faisons en sorte que ton personnage puisse passer les portes pour d'autres salle
 
 + Ajoutes 2 arrière-plans à ton monde ('room2.png' et 'room3.png'), tu devrais avoir 3 arrière-plans au total. Assures toi qu'ils sont dans le bon ordre - sinon cela compliquera les choses par la suite.
 
-
 	![screenshot](world-backdrops.png)
 
 + Il te faut une nouvelle variable appellée `salle` {.blockdata} afin de savoir dans quelle pièce ton personnage se trouve.
@@ -118,35 +116,29 @@ Faisons en sorte que ton personnage puisse passer les portes pour d'autres salle
 + Lorsque le personnage touche la porte orange dans la première pièce, le prochain arrière-plan doit apparaitre et le personnage doit se retrouver sur le côté gauche de l'écran. Voici les lignes de code qui te permettrons d'en faire ainsi - elles doivent s'inscrire au sein du code `forever` {.blockcontrol} de ton personnage :
 
 	```blocks
-si <couleur [#F2A24A] touchée?> alors
-   basculer sur l'arrière-plan [arrière-plan suivant v]
-   aller à x:(-200) y:(0)
-   ajouter à [room v] (1)
-fin
-```
-
-
+	si <couleur [#F2A24A] touchée?> alors
+   	basculer sur l'arrière-plan [arrière-plan suivant v]
+   	aller à x:(-200) y:(0)
+   	ajouter à [room v] (1)
+	fin
+	```
 
 + Ajoutes ce code au début du code de ton personnage (avant la boucle `forever` {.blockcontrol}) pour t'assurer que tout soit remis a zero lorsque le drapeau est cliqué.
 
 	```blocks
-[room v] prend la valeur (1)
-aller à x:(-200) y:(0)
-basculer sur l'arrière-plan [room1 v]
-```
-
+	[room v] prend la valeur (1)
+	aller à x:(-200) y:(0)
+	basculer sur l'arrière-plan [room1 v]
+	```
 
 + Clique sur le drapeau et positionne ton personnage sur la porte orange. Est ce que ton personnage se déplace sur l'autre écran? est ce que la variable `room` {.blockdata} change a 2?
 
 	![screenshot](world-room-test.png)
 
-
 ## Défi : Te déplacer dans la pièce précédente {.challenge}
 Peux tu faire se déplacer ton joueur dans la pièce précédente lorsqu'il touche la porte jaune? Rappelles toi que ce code sera _très_ similaire à celui que tu as écrit pour le faire se déplacer dans la pièce suivante.
 
 ## Sauvegardes ton projet { .save }
-
-
 
 # Troisième étape : Signalisations { .activity }
 
@@ -160,18 +152,15 @@ Ajoutons des panneaux à ton monde pour guider ton personnage dans leur voyage.
 + Ce panneau ne doit être visible que dans la premiére salle, ajoutons donc quelques lignes de code pour nous en assurer:
 
 	```blocks
-
-quand ⚑ pressé
-répéter indéfiniment
-   si <(room) = [1]> alors
-      montrer
-   sinon
-      cacher
-   fin
-fin
-```
-
-
+	quand ⚑ pressé
+	répéter indéfiniment
+   	si <(room) = [1]> alors
+      	montrer
+   	sinon
+      	cacher
+   	fin
+	fin
+	```
 
 + Test ton panneau : déplaces toi entre les salles : le panneau ne devrait être visible que dans la première salle. 
 
@@ -180,16 +169,15 @@ fin
 + Un panneau n;est pas très utilie s'il n'y a rien d;écrit dessus! Ajoutons un peu de code (dans un block différent) pour afficher un message lorsque la panneau touche le personnage. 
 
 	```blocks
-
-quand ⚑ pressé
-répéter indéfiniment
-   si <[player v] touché?> alors
-      dire [Bienvenue ! Peux tu trouver le trésor ?]
-   sinon
-      dire []
-   fin
-fin
-```
+	quand ⚑ pressé
+	répéter indéfiniment
+   	si <[player v] touché?> alors
+      	dire [Bienvenue ! Peux tu trouver le trésor ?]
+   	sinon
+      	dire []
+   	fin
+	fin
+	```
 
 + Teste ton panneau, tu devrais voir le message lorsque ton personnage le touche.  out your sign, and you should see a message when the player touches it.
 
@@ -217,25 +205,23 @@ Ajoutons d'autres lutins a ton monde pour que la joueur puisse interragir avec e
 + Ajoutes ce code pour que le lutin puisse parler a ton joueur. Ce code est très similaire a celui que tu as écrit pour les panneau : 
 
 	```blocks
-
-quand ⚑ pressé
-aller à x:(-200) y:(0)
-répéter indéfiniment
-   si <[player v] touché?> alors
-      dire [Savais-tu que tu peux traverser les portes jaunes et organges ?]
-   sinon
-      dire []
-   fin
-fin
-```
-
+	quand ⚑ pressé
+	aller à x:(-200) y:(0)
+	répéter indéfiniment
+   	si <[player v] touché?> alors
+      	dire [Savais-tu que tu peux traverser les portes jaunes et organges ?]
+   	sinon
+     	dire []
+   	fin
+	fin
+	```
 
 + Tu peux également permettre a ce lutin de bouger en utilisant ces deux blocks : 
-```blocks
-avancer de (1)
-rebondir si le bord est atteint
-```
-
+	
+	```blocks
+	avancer de (1)
+	rebondir si le bord est atteint
+	```
 
 	le lutin se déplacera de façon différente selon l'endroit ou tu place ce code : au sein de la boucle`forever` {.blockcontrol} ou dans le `if` {.blockcontrol} block. Essaye les deux et choisit celui que tu préfères. 
 
@@ -287,14 +273,12 @@ Peux tu créer un énemi dans la salle 3 qui patrolle de haut en bas en passant 
 + Ajoutes du code a ton 'lutin' pièce pour ajouter '1' a ton nombre de pièces {.blockdata} dès que la pièce a été collectée : 
 
 	```blocks
-
-quand ⚑ pressé
-attendre jusqu’à <[player v] touché?>
-ajouter à [coins v] (1)
-stop [autres scripts du lutin v]
-cacher
-```
-
+	quand ⚑ pressé
+	attendre jusqu’à <[player v] touché?>
+	ajouter à [coins v] (1)
+	stop [autres scripts du lutin v]
+	cacher
+	```
 
 	Le code `stop other scripts in sprite` {.blockcontrol} est nécessaire pour que la pièce n'apparaisse plus dans la première salle lorsqu'elle a été collectée. 
 
@@ -320,20 +304,18 @@ Peux tu ajouter plus de pièces dans ton jeu ? elle peuvent se trouver dans diff
 + Le code pour collecter la clef est très similaire à celui pour collecter les pièces. La différence et que tu ajoutes la clef a ton inventaire. 
 
 	```blocks
-
-quand ⚑ pressé
-attendre jusqu’à <[player v] touché?>
-ajouter [clef bleue] à [inventaire v]
-stop [autres scripts du lutin v]
-cacher
-```
+	quand ⚑ pressé
+	attendre jusqu’à <[player v] touché?>
+	ajouter [clef bleue] à [inventaire v]
+	stop [autres scripts du lutin v]
+	cacher
+	```
 
 + Teste ta clef : essaye de la collecter et l'ajouter dans ton inventaire. N'oublies pas d'ajouter le code pour vider ton inventaire au début de la partie.  
 
 	```blocks
-supprimer l'élément (tout v) de la liste [inventaire v]
-```
-
+	supprimer l'élément (tout v) de la liste [inventaire v]
+	```
 
 + Crée un nouveau lutin avec l'image 'porte bleue.png', et place la porte bleue dans un des trou dans les murs.
 
@@ -344,14 +326,11 @@ supprimer l'élément (tout v) de la liste [inventaire v]
 + Il faut que la porte bleu disparaisse pour que ton joueur puisse passer lorsqu'ils ont la clef bleue dans leur inventaire. 
 
 	```blocks
-
-quand ⚑ pressé
-attendre jusqu’à <[Inventaire v] contient [clef bleue]>
-stop [autres scripts du lutin v]
-cacher
-```
-
-
+	quand ⚑ pressé
+	attendre jusqu’à <[Inventaire v] contient [clef bleue]>
+	stop [autres scripts du lutin v]
+	cacher
+	```
 
 + Teste ton projet et voit si tu peux collecter la pièce bleue et ouvrir la porte bleue ! 
 
