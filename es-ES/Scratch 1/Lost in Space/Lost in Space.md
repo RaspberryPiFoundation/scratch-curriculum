@@ -4,7 +4,7 @@ level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Recursos para el líder del Club /*.*"]
+materials: ["Club Leader Resources/*.*"]
 ...
 
 # Introducción { .intro }
@@ -126,11 +126,10 @@ Agreguemos un mono a tu animación, que está ¡perdido en el espacio!!
 + Ahora haz clic en “Secuancia de comandos”, y agrega este código a tu mono, para que gire lentamente en un círculo por siempre:
 
 	```blocks
-		al presionar bandera verde
-		por siempre
-		    girar (1) grados a la derecha
-		fin
-		end
+	al presionar bandera verde
+	por siempre
+   		girar ↻ (1) grados
+	fin
 	```
 
 	El bloque `por siempre` {.blockcontrol} es otro loop, pero esta vez uno que nunca termina.
@@ -188,3 +187,7 @@ Usa lo que aprendiste en este proyecto para crear tu propia animación. Puede se
 ![screenshot](space-egs.png)
 
 ## Guarda tu proyecto { .save }
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
