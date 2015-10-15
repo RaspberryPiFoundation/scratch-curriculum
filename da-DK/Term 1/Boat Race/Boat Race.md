@@ -115,7 +115,7 @@ Når båden ankommer til den gule øde ø, så skal den sige 'YEAH!', og spillet
 ## Gem dit projekt { .save }
 
 ## Udfordring: Lydeffekter {.challenge}
-Kan du tilføje lydeffekter til dit spil til når båden styrter sammen eller den når øen tilsidst? Du kan faktisk også tilføje noget baggrundsmusik (tag et kig på det tidligere 'Rock Band' projekt, hvis du har brug for hjælp). 
+Kan du tilføje lydeffekter til dit spil til når båden styrter sammen eller den når øen tilsidst? Du kan faktisk også tilføje noget baggrundsmusik (tag et kig på det tidligere 'Rockband' projekt, hvis du har brug for hjælp). 
 
 ## Gem dit projekt { .save }
 
@@ -125,7 +125,7 @@ Lad os tilføje et stopur til dit spil, så spilleren skal nå hen til den øde 
 
 ## Arbejdsliste { .check }
 
-+ Tilføj en ny variabel du kalder `tid` {.blockdata} til din scene. Du kan også ændre, hvordan din nye variabel vises. Hvis du har brug for hjælp, så tag et kig på 'Balloons' projektet.
++ Tilføj en ny variabel du kalder `time` {.blockdata} til din scene. Du kan også ændre, hvordan din nye variabel vises. Hvis du har brug for hjælp, så tag et kig på 'Balloons' projektet.
 
 	![screenshot](boat-variable.png)
 
