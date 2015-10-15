@@ -96,7 +96,7 @@ Lad os tilføje en 'play' knap til dit spil, så du kan spille flere gange.
 		send [start v] til alle
 ``` 
  
-	Koden viser play knappen, når dit projekt starter op. Når der klikkes på knappen skjules den, og den udsender så en meddelelse som starter spillet. 
+Koden viser play knappen, når dit projekt starter op. Når der klikkes på knappen skjules den, og den udsender så en meddelelse som starter spillet. 
 
 + Du skal redigere koden til din figur, sådan at spillet starter når den modtager `start` {.blockevents} meddelelsen, og ikke når der klikkes på flaget. 
 
@@ -137,15 +137,15 @@ Lad os tilføje en 'play' knap til dit spil, så du kan spille flere gange.
 + Du kan ovenikøbet ændre, hvordan knappen ser ud, når musen føres over den. 
 
 ```blocks
-		når du klikker på ⚑
-		vis
-		for evigt
-   				hvis <berører [musepil v]?> så
-      		sæt effekten [fiskeøje v] til (30)
-   				ellers
-      		sæt effekten [fiskeøje v] til (0)
-   		end
-	end
+	når du klikker på ⚑
+	vis
+	for evigt
+   		hvis <berører [musepil v]?> så
+      	sæt effekten [fiskeøje v] til (30)
+   		ellers
+      	sæt effekten [fiskeøje v] til (0)
+   	end
+end
 ``` 
  
 	![screenshot](brain-fisheye.png)
@@ -203,13 +203,13 @@ Istedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så l
 + I stedet for bare at vise og skjule fluebent og krydset, så kan du ændre din animationsfunktion, sådan at grafikken forsvinder lidt efter lidt.
 
 ```blocks 
-		definer [object Object]
+	definer [object Object]
         sæt effekten [spøgelse v] til (100)
         vis
         gentag (25) gange
-    ændr effekten [spøgelse v] med (-4) 
-    end 
-skjul
+    	ændr effekten [spøgelse v] med (-4) 
+    	end 
+	skjul
 ```  
  
 ## Gem dit projekt { .save }
@@ -217,7 +217,7 @@ skjul
 ## Udfordring: Forbedret animation {.challenge}
 Kan du forbedre animationen af din grafik? Du kan fx kode fluebenet og krydset, så de både forsvinder og kommer frem lidt efter lidt. Du kan også benytte andre seje effekter:
 
-![screenshot](brain-effects.png)    SKIFT BILLEDE
+![screenshot](brain-effects.png)    
 
 ## Gem dit projekt { .save }
 
@@ -232,7 +232,7 @@ Kan du tilføje lydeffekter og musik til dit spil? Eksempelvis:
 	spil tromme (10 v) i (0.1) slag 
 ``` 
 
-+ Du kan også vælge at afspille musik i en loop (hvis du ikke er sikker på hvordan du gør, så kan trin 4 i 'Rock Band' projektet hjælpe dig). 
++ Du kan også vælge at afspille musik i en loop (hvis du ikke er sikker på hvordan du gør, så kan trin 4 i 'Rockband' projektet hjælpe dig). 
 
 ## Gem dit projekt { .save }
 
@@ -243,10 +243,10 @@ Du skal kun ændre koden til dit stopur. Kan du se hvilke ændringer der skal ti
 
 ```blocks
 	når jeg modtager [start v]
-    sæt [tid v] til (30)
-    gentag indtil <(tid) = [0]>
-  vent (1) sekunder 
-  ændr [tid v] med (-1) 
+    	sæt [tid v] til (30)
+    	gentag indtil <(tid) = [0]>
+  	vent (1) sekunder 
+  	ændr [tid v] med (-1) 
     end
 send [afslut v] til alle
 ``` 
