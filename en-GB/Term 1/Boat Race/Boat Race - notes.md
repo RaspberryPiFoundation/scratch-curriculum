@@ -2,7 +2,6 @@
 title: Boat Race — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
 ...
 
 #Introduction:

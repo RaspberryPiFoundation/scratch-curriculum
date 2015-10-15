@@ -4,7 +4,7 @@ level: Scratch +
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb2", "Resources/*.png", "Resources/*.mp3"]
+materials: ["*.sb2", "Resources/*"]
 ...
 
 # Introduction { .intro}

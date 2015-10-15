@@ -4,7 +4,7 @@ level: Scratch 2
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
+materials: ["Club Leader Resources/*"]
 ...
 
 ## Community Contributed Project { .challenge .pdf-hidden }

@@ -2,7 +2,6 @@
 title: Catch the Dots — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
-materials: [""]
 ...
 
 #Introduction:
