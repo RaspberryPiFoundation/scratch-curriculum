@@ -1,6 +1,6 @@
 ---
 title: Hukommelsesspil — Noter til ledere af kodeklub
-language: dk-DK
+language: da-DK
 embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"] 
 ...
