@@ -1,7 +1,7 @@
 ---
 title: Hukommelsesspil
 level: Scratch 2
-language: dk-DK
+language: da-DK
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Klubleder Ressourcer/*.*"] 
