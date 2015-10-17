@@ -21,6 +21,11 @@
             "beta":     true,
             "filename": "Pogromcy duchów/Pogromcy duchów.md",
             "note":     "Pogromcy duchów/Pogromcy duchów - notatki.md"
+        },
+        {
+            "number":   4,
+            "filename": "Robot Gaduła/Robot Gaduła.md",
+            "note":     "Robot Gaduła/Robot Gaduła - notatki.md"
         }
     ]
 }
