@@ -284,7 +284,7 @@ Lad os tilføje en 'game over' besked i slutningen af spillet.
 		vis
 ```  
  
-	Fordi du har brugt en `send [game over] og vent` {.blockevents} blok på din scene, så venter den med at afslutte spillet indtil 'Game Over' spriten er blevet vist. 
+ Fordi du har brugt en `send [game over] og vent` {.blockevents} blok på din scene, så venter den med at afslutte spillet indtil 'Game Over' spriten er blevet vist. 
 
 + Afprøv dit spil. Hvor mange point kan du få? Kan du komme i tanker om nogle ting, som kan forbedre dit spil, hvis det enten er for nemt eller for svært?   
 
