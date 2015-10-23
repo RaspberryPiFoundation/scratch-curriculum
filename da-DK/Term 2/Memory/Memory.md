@@ -40,7 +40,7 @@ Lad os først lave lave en figur, som kan ændre sig til en tilfældig rækkefø
 
 Giv din figur 4 forskellige farvekostumer, en for hver af de 4 ovenstående farver. Sørg for at dine farvede kostumer ligger i den rigtige rækkefølge.
 
-	![screenshot](colour-costume.png)
+![screenshot](colour-costume.png)
 
 + Du skal oprette en _liste_ for at lave en tilfældig rækkefølge. En liste er blot en variabel, som opbevarer en stor mængde data __i ordnet rækkefølge__. Lav en liste som du kalder `sequence` {.blockdata}. Da det kun er din figur, som skal se denne liste, så kan vi også klikke på 'Kun for denne sprite'.
 
@@ -48,7 +48,7 @@ Giv din figur 4 forskellige farvekostumer, en for hver af de 4 ovenstående farv
 
 Nu bør du se din tomme liste øverst til venstre af din scene samt en del nye brikker, der bruger lister.
 
-	![screenshot](colour-list-blocks.png)   
+![screenshot](colour-list-blocks.png)   
 
 + Tilføj denne kode til din figur for at tilføje et tilfældigt nummer til din liste (og for at vise det korrekte kostume) 5 gange:
 
@@ -210,9 +210,9 @@ Lad os gemme en high score så du kan spille mod dine venner.
 
 + Hvis du nogensinde får brug for at ændre noget i denne kode, fx tilføje en lyd eller ændre 'Game over!' beskeden, så bliver du nødt til at ændre den 4 gange! Det kan godt være lidt irriterende og kan føles som spild af tid.
 
-I stedet kan du definere dine egne brikker og genbruge dem i dit projekt! Her skal du klikke på `Flere Brikker` {.blockmoreblocks}, og dernæst 'Skab en Brik'. Kald denne nye brik 'Game over'. 
+I stedet kan du definere dine egne brikker og genbruge dem i dit projekt! Her skal du klikke på `Flere Brikker` {.blockmoreblocks}, og dernæst 'Skab en Brik'. Kald denne nye brik 'Game over'.
 
-	![screenshot](colour-more.png)  
+![screenshot](colour-more.png)  
 
 + Tilføj `ellers` {.blockcontrol} kodeblokken fra den røde knap til den nye blok, som kommer frem: 
 
