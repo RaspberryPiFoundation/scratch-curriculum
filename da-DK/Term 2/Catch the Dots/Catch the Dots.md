@@ -75,7 +75,7 @@ Lad os tilføje nogle prikker, som spilleren skal samle sammen med deres styreen
 
 	![screenshot](dots-start.png)
 
-Til dette formål skal du først lave en ny listevariabel, som du kalder `start positioner` {.blockdata} og så klikke på `(+)` for at tilføje værdierne `-180` og `180`.  
+Til dette formål skal du først lave en ny listevariabel, som du kalder `start positioner` {.blockdata} og så klikke på `(+)` for at tilføje værdierne `-180` og `180`.
 
 	![screenshot](dots-list.png)
 
