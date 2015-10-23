@@ -223,9 +223,9 @@ end
 	hop tilbage ved kanten 
 ```  
 
-Din person opfører sig forskelligt, afhængigt af om du placerer koden indeni `for evigt` {.blockcontrol} loopen eller indeni `hvis` {.blockcontrol} blokken. Afprøv begge muligheder for at se, hvad du foretrækker. 
+Din person opfører sig forskelligt, afhængigt af om du placerer koden indeni `for evigt` {.blockcontrol} loopen eller indeni `hvis` {.blockcontrol} blokken. Afprøv begge muligheder for at se, hvad du foretrækker.
 
-	![screenshot](world-person-test.png)  
+![screenshot](world-person-test.png)  
 
 + Har du lagt mærke til at din person vender på hovedet? Stop dette ved at klikke på spritens informationsikon, og klik så på prikken for at ændre rotationsstilen.   
 
