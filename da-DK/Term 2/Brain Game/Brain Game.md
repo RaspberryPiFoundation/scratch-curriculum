@@ -147,7 +147,6 @@ Koden viser play knappen, når dit projekt starter op. Når der klikkes på knap
    	end
 end
 ``` 
- 
 	![screenshot](brain-fisheye.png)
 
 ## Gem dit projekt { .save }
