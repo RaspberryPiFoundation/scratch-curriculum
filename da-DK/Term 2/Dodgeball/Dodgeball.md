@@ -153,7 +153,7 @@ Denne kode flytter din figur op med 8 pixels, dernæst med 7.5 pixels, så 7 pix
 ## Gem dit projekt { .save }
 
 ## Udfordring: Forbedrede hop {.challenge}
-Din figur kan hoppe uanset hvornår der trykkes på mellemrumstasten, selv hvis den allerede befinder sig ude i luften. Dette kan du afprøve ved at holde mellemrumdstasten nede. Kan du finde en løsning så din figur kun kan hoppe `hvis` {.blockcontrol} den rører en blå platform?
+Din figur kan hoppe uanset hvornår der trykkes på mellemrumstasten, selv hvis den allerede befinder sig ude i luften. Dette kan du afprøve ved at holde mellemrumstasten nede. Kan du finde en løsning så din figur kun kan hoppe `hvis` {.blockcontrol} den rører en blå platform?
 
 ## Gem dit projekt { .save }
 
