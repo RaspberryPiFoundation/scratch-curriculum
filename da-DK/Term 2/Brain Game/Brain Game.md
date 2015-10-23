@@ -146,9 +146,9 @@ Koden viser play knappen, når dit projekt starter op. Når der klikkes på knap
       	sæt effekten [fiskeøje v] til (0)
    	end
 end
-``` 
- 
-	![screenshot](brain-fisheye.png)
+``` 	
+
+![screenshot](brain-fisheye.png)
 
 ## Gem dit projekt { .save }
 
