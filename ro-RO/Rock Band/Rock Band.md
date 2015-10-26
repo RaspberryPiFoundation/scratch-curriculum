@@ -1,4 +1,4 @@
-﻿---
+---
 title: Rock Band
 level: Scratch 1
 language: ro-RO
@@ -19,7 +19,7 @@ materials: ["Club Leader Resources/*.*"]
 # Pasul 1: Sprites { .activity }
 
 Înainte să începi să animezi ai nevoie să alegi un "actor" pe care să-l
-controlezi. În Scratch, aceste "caractere" se numesc __sprites__. 
+controlezi. În Scratch, aceste "caractere" se numesc __sprites__.
 
 ## Lista de Activități { .check }
 
@@ -65,7 +65,7 @@ __Scena__ este aria din stânga și este locul unde proiectul tău prinde viaț�
 
 	![screenshot](band-stage-choose.png)
 
-+ Din dosarul 'Media' selectează 'Backgrounds' și apoi 'Indoors'. 
++ Din dosarul 'Media' selectează 'Backgrounds' și apoi 'Indoors'.
 Din acest dosar alege fundalul pe care vrei să-l alegi pentru scena și apoi pe 'OK'.
 
 	![screenshot](band-backdrop.png)
@@ -81,7 +81,7 @@ Haide să scriem un script pentru tobă. Vrem ca ea să scoată un sunet când e
 ## Lista de Activități { .check }
 
 + Vei găsi script-urile în secțiunea 'Scripts'. Toate script-urile sunt grupate pe module reprezentate prin aceeași culoare.
-De exemplu toate script-urile care controlează sunetul au culoarea roz si se află în grupul 'Sound'! 
+De exemplu toate script-urile care controlează sunetul au culoarea roz si se află în grupul 'Sound'!
 
 Fă clic pe sprite-ul tobă și mută cele două script-uri în aria
 de cod din mijloc, având grijă să le conectezi între ele(asemena
@@ -123,7 +123,7 @@ unor piese Lego):
 
 ![screenshot](band-drum-sound.png)
 
-+ Poți să faci toba să sune și atunci când apeși tasta 'spacebar' de la tastatură? 
++ Poți să faci toba să sune și atunci când apeși tasta 'spacebar' de la tastatură?
 Va trebui sa folosesti acest bloc eveniment: 'event' {.blockevents}:
 
 ```blocks
@@ -146,7 +146,7 @@ Hai să adăugăm un cântăreț în formația noastră!
 
 	![screenshot](band-singer-mic.png)
 
-+ Pentru a-l face pe cântăreț să cânte trebuie să adaugăm un sunet sprite-ului tău. 
++ Pentru a-l face pe cântăreț să cânte trebuie să adaugăm un sunet sprite-ului tău.
 Selectează cântărețul și fă clic pe secțiunea 'Sounds'. Selectează opțiunea 'Choose sound from library' care ne permite să alegem un sunet din biblioteca de fișiere:
 
 	![screenshot](band-import-sound.png)
