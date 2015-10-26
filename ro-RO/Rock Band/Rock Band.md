@@ -1,14 +1,15 @@
----
+﻿---
 title: Rock Band
 level: Scratch 1
 language: ro-RO
 stylesheet: scratch
 embeds: "*.png"
+materials: ["Club Leader Resources/*.*"]
 ...
 
 # Introducere { .intro }
 
-In acest proiect vei invata sa creezi propiul tau instrument muzical!
+În acest proiect vei învăța să creezi propiul tău instrument muzical!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
@@ -17,179 +18,181 @@ In acest proiect vei invata sa creezi propiul tau instrument muzical!
 
 # Pasul 1: Sprites { .activity }
 
-Inainte sa incepi sa animezi ai nevoie sa alegi un "actor" pe care sa-l
-controlezi. In Scratch, aceste "caractere" se numesc __sprites__. 
+Înainte să începi să animezi ai nevoie să alegi un "actor" pe care să-l
+controlezi. În Scratch, aceste "caractere" se numesc __sprites__. 
 
-## Lista de Activitati { .check }
+## Lista de Activități { .check }
 
-+ Pentru inceput, deschide editorul de Scratch. Il poti vedea online la <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Arata cam asa:
++ Pentru început, deschide editorul de Scratch. Îl poți vedea online la <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Arată cam așa:
 
 	![screenshot](band-scratch.png)
 
-+ Sprite-ul pisica pe care il vezi este mascota Scratch. Haide sa-l stergem. Click dreapta pe mouse si dupa aceea pe ?delete?.
++ Sprite-ul pisică pe care îl vezi este mascota Scratch. Haide să-l ștergem. Clic dreapta pe mouse și după aceea pe 'delete'.
 
 	![screenshot](band-delete.png)
 
-+ Dupa aceea selecteaza ?Choose sprite from library' ca sa deschizi o lista cu toate caracterele din Scratch.
++ După aceea selectează 'Choose sprite from library' ca să deschizi o listă cu toate caracterele din Scratch.
 
 	![screenshot](band-sprite-library.png)
 
-+ Du-te mai jos pana cand vei vedea un ?sprite? toba (drum
-in engleza). Selecteaza-l si apasa ?OK? ca sa-l aduci in
-proiectul tau.
++ În dosarul 'Things' caută un 'sprite' tobă (în engleză
+'drum'). Selectează-l și apasă 'OK' pentru a-l aduce în
+proiectul tău.
 
 	![screenshot](band-sprite-drum.png)
 
-+ Apasa pe ?shrink' icon (micsorare), apoi pe toba de cateva ori sa o faci
-mai mica.
++ Apasă pe icoana 'shrink' (micșorare), apoi de câteva ori pe tobă ca să o faci
+mai mică.
 
 	![screenshot](band-shrink.png)
 
-## Salveaza proiectul { .save }
+## Salvează proiectul { .save }
 
-Da-i programului tau un nume. Scrie numele nou in fereastra de
+Dă un nume programului tău. Scrie numele nou în fereastra de
 deasupra scenei.
 
-Poti sa faci click pe ?File' si apoi pe ?Save now' ca sa-ti salvezi proiectul.
+Poți să faci clic pe 'File' și apoi pe 'Save now' ca să-ți salvezi proiectul.
 
 ![screenshot](band-save.png)
 
 # Pasul 2: Scena { .activity }
 
-__Scena__ este aria din stanga si este locul unde proiectul tau prinde viata.
+__Scena__ este aria din stânga și este locul unde proiectul tău prinde viață.
 
-## Lista de Activitati { .check }
+## Lista de Activități { .check }
 
-+ La inceput scena este goala si arata cam plictisitor! Haide sa-i punem un fundal. Selecteaza: 'Choose backdrop from library'.
++ La început scena este goală și arată cam plictisitor! Haide să-i punem un fundal. Selectează: 'Choose new sprite from file'.
 
 	![screenshot](band-stage-choose.png)
 
-+ Click pe ?Indoors? (asta inseamna "Interioare" in engleza)/ Fa click pe seciunea 'Indoors' (interior), apoi pe fundalul pe care vrei sa-l alegi pentru scena si apoi pe 'OK'
++ Din dosarul 'Media' selectează 'Backgrounds' și apoi 'Indoors'. 
+Din acest dosar alege fundalul pe care vrei să-l alegi pentru scena și apoi pe 'OK'.
 
 	![screenshot](band-backdrop.png)
 
-+ Scena ta ar trebui sa arate asa:
++ Scena ta ar trebui să arate așa:
 
 	![screenshot](band-stage.png)
 
-# Pasul 3: Construind o Toba { .activity }
+# Pasul 3: Construiește o Tobă { .activity }
 
-Haide sa scriem un script pentru toba. Vrem ca ea sa scoata un sunet cand este atinsa.
+Haide să scriem un script pentru tobă. Vrem ca ea să scoată un sunet când este atinsă.
 
-## Lista de Activitati { .check }
+## Lista de Activități { .check }
 
-+ Vei gasi script-urile in sectiunea ?Scripts?. Toate script-urile sunt grupate pe module reprezentate prin aceeasi culoare.
-De exemplu toate script-urile care controleaza sunetul au culoarea mov si se afla in grupul ?sound?! 
++ Vei găsi script-urile în secțiunea 'Scripts'. Toate script-urile sunt grupate pe module reprezentate prin aceeași culoare.
+De exemplu toate script-urile care controlează sunetul au culoarea roz si se află în grupul 'Sound'! 
 
-Fa click pe sprite-ul toba si muta cele doua script-uri in aria
-de cod din dreapta avand grija sa le conectezi impreuna (ca
-niste caramizi Lego):
+Fă clic pe sprite-ul tobă și mută cele două script-uri în aria
+de cod din mijloc, având grijă să le conectezi între ele(asemena
+unor piese Lego):
 
 	![screenshot](band-code.png)
 
-+ Fa click pe toba sa incerci noul tau instrument muzical!
++ Fă clic pe tobă și testează noul tău instrument muzical!
 
-+ Poti sa schimbi si cum arata toba cand o bati. Pentru asta trebuie sa creezi un costum nou. Apasa pe sectiunea ?Costumes', si vei vedea imaginea tobei.
++ Poti să schimbi cum arată toba atunci când o lovești. Pentru asta trebuie să creezi un costum nou. Apasă pe sectiunea 'Costumes', și vei vedea imaginea tobei.
 
 	![screenshot](band-drum-costume.png)
 
-+ Click-dreapta pe mouse pe costum si apoi click ?duplicate' ca sa creezi o copie a costumului.
++ Selecteză cu mouse-ul costumul și apoi clic dreapta pe acesta. Clic 'duplicate' ca să creezi o copie a costumului.
 
 	![screenshot](band-drum-duplicate.png)
 
-+ Selecteaza costumul nou (numit ?drum2'), iar apoi selecteaza "line tool" si deseneaza cateva linii ca si cum toba arata ca scoate un sunet.
++ Selectează noul costum(numit 'drum2'), apoi selectează 'line tool' și desenează câteva linii ca și cum toba ar scoate un sunet.
 
 	![screenshot](band-drum-hit.png)
 
-+ Numele costumelor nu sunt foarte clare. Haide sa le schimbam cu "not hit" si "hit". Uita-te la imaginea de mai jos.
++ Numele costumelor nu sunt foarte clare. Haide să le schimbăm cu 'not hit' și "hit" ca și în imaginea de mai jos.
 
 	![screenshot](band-drum-name.png)
 
-+ Acum daca ai doua costume pentru toba, poti sa alegi ce costum vrei sa arati! Adauga aceste doua blocuri la script-ul tau:
++ Acum că ai două costume pentru tobă, poți să alegi ce costum vrei să arăți! Adaugă aceste două blocuri la script-ul tău:
 
 	![screenshot](band-looks.png)
 
-	Blocul de cod pentru schimbarea costumelor se gaseste in sectiunea `Looks` {.blocklooks}.
+	Blocul de cod pentru schimbarea costumelor se găsește în secțiunea 'Looks' {.blocklooks}.
 
-+ Testeaza-ti toba. Cand o atingi, toba ta ar trebui sa para ca scoate un sunet!
++ Testează-ți toba. Când o atingi, toba ta ar trebui să pară că ar scoate un sunet!
 
-## Salveaza proiectul { .save }
+## Salvează proiectul { .save }
 
-##Exercitiu: Sa imbunatatim toba { .challenge }
+##Exercițiu: Să îmbunătățim toba { .challenge }
 
-+ Poti sa schimbi sunetul scos de toba atunci cand faci click pe ea?
++ Poți să schimbi sunetul scos de tobă atunci când faci clic pe ea?
 
 ![screenshot](band-drum-sound.png)
 
-+ Poti sa faci toba sa sune si atunci cand apesi tasta spacebar? Va trebui sa folosesti acest bloc eveniment `event` {.blockevents}:
++ Poți să faci toba să sune și atunci când apeși tasta 'spacebar' de la tastatură? 
+Va trebui sa folosesti acest bloc eveniment: 'event' {.blockevents}:
 
 ```blocks
 	when [space v] key pressed
 ```
 
-Poti refolosi codul deja existent daca faci click dreapta pe el si apoi alegi optiunea 'duplicate'.
+Poți să folosești codul deja existent dacă faci clic dreapta pe el și apoi alegi optiunea 'duplicate'.
 
 ![screenshot](band-duplicate-code.png)
 
-## Salveaza proiectul { .save }
+## Salvează proiectul { .save }
 
-# Pasul 4: Sa construim un cantaret { .activity .new-page }
+# Pasul 4: Să construim un cântăreț { .activity .new-page }
 
-Hai sa adaugam un cantaret in formatia noastra!
+Hai să adăugăm un cântăreț în formația noastră!
 
-## Lista de Activitati { .check }
+## Lista de Activități { .check }
 
-+ Adauga inca 2 sprites pe scena ta; un cantaret si un microfon.
++ Adaugă înca două caractere (sprites) pe scena ta: un cântăreț și un microfon.
 
 	![screenshot](band-singer-mic.png)
 
-+ Inainte sa il poti face pe cantaret sa cante, trebuie sa ii adaugam un sunet sprite-ului tau. 
-Dupa ce ai selectat cantaretul fa click pe tab-ul "Sounds" si apoi pe optiunea 'Choose sound from library', care ne permite sa alegem un sunet din biblioteca de fisiere:
++ Pentru a-l face pe cântăreț să cânte trebuie să adaugăm un sunet sprite-ului tău. 
+Selectează cântărețul și fă clic pe secțiunea 'Sounds'. Selectează opțiunea 'Choose sound from library' care ne permite să alegem un sunet din biblioteca de fișiere:
 
 	![screenshot](band-import-sound.png)
 
-+ Daca faci click pe sectiunea 'Vocals' din partea stanga, vei putea apoi alege un sunet potrivit pentru sprite-ul tau.
++ Dacă faci clic pe secțiunea 'Vocals' din partea stângă, vei putea apoi alege un sunet potrivit pentru sprite-ul tău.
 
 	![screenshot](band-choose-sound.png)
 
-+ Acum ca am adaugat sunetul, putem adauga acest cod cantaretului nostru:
++ Acum că am adăugat sunetul, putem adăuga acest script cântărețului nostru:
 
 	```blocks
 		when this sprite clicked
 		play sound [singer1 v] until done
 	```
 
-+ Fa click pe cantaretul tau pentru a verifica daca acesta canta atunci cand apasam pe el.
++ Fă clic pe cântărețul tău pentru a verifica dacă acesta cântă atunci când apăsăm pe el.
 
-## Salveaza proiectul { .save }
+## Salvează proiectul { .save }
 
-##Exercitiu: Sa schimbam costumul cantaretului { .challenge }
-Vrem ca atunci cand facem click pe cantaret, sa vedem ca acesta canta. Poti face asta? Daca ai nevoie de ajutor poti folosi instructiunile de la pasul 3 "Construind o toba".
+##Exercițiu: Să schimbăm costumul cântărețului { .challenge }
+Vrem ca atunci când facem clic pe cântăreț să vedem că acesta cântă. Poți face asta? Daca ai nevoie de ajutor poți folosi instrucțiunile de la pasul 3 "Construind o tobă".
 
 ![screenshot](band-singer-final.png)
 
-Nu uita sa testezi ca noul tau cod functioneaza corect!
+Nu uita să testezi dacă modificările tale funcționează corect!
 
-## Salveaza proiectul { .save }
+## Salvează proiectul { .save }
 
-##Exercitiu: Creaza propria ta formatie { .challenge }
-Poti folosi ceea ce ai invatat in acest proiect pentru a crea propria ta formatie muzicala!
-Poti crea orice instrument doresti, dar ca sa iti faci intai o idee, arunca o privire asupra sunetelor si instrumentelor disponibile in Scratch.
+##Exercițiu: Crează propria ta formație { .challenge }
+Poți folosi ceea ce ai învățat în acest proiect pentru a crea propria ta formație muzicală!
+Poți crea orice instrument dorești. Ca să îți faci întâi o idee, aruncă o privire asupra sunetelor și instrumentelor disponibile în Scratch.
 
 ![screenshot](band-ideas.png)
 
-Instrumentele nu trebuie sa fie neaparat reale. De exemplu, ai putea sa construiesti un pian din briose!
+Instrumentele nu trebuie să fie neapărat reale. De exemplu, ai putea să construiești un pian din brioșe!
 
 ![screenshot](band-piano.png)
 
-Pe langa sprite-urile existente, poti de asemenea sa desenezi unele noi.
+Pe lângă sprite-urile existente, poți de asemenea să desenezi unele noi.
 
 ![screenshot](band-draw.png)
 
-Daca ai un microfon poti sa inregistrezi sunetele tale, sau poti folosi un webcam pentru a interactiona cu instrumentele.
+Dacă ai un microfon, poți să înregistrezi sunetele tale sau poți folosi o camera web pentru a interacționa cu instrumentele.
 
 
 ![screenshot](band-io.png)
 
-## Salveaza proiectul { .save }
+## Salvează proiectul { .save }
 
