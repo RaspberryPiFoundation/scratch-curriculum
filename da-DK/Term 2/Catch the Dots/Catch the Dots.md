@@ -75,9 +75,9 @@ Lad os tilføje nogle prikker, som spilleren skal samle sammen med deres styreen
 
 	![screenshot](dots-start.png)
 
-Til dette formål skal du først lave en ny listevariabel, som du kalder `start positioner` {.blockdata} og så klikke på `(+)` for at tilføje værdierne `-180` og `180`.  
+Til dette formål skal du først lave en ny listevariabel, som du kalder `start positioner` {.blockdata} og så klikke på `(+)` for at tilføje værdierne `-180` og `180`.
 
-	![screenshot](dots-list.png)
+![screenshot](dots-list.png)
 
 + Du kan bruge disse 2 listeemner til at vælge et tilfældigt hjørne af scenen. Tilføj denne kode til 'prik' spriten, således at hver ny klon bevæger sig til et tilfældigt hjørne, og dernæst bevæger sig langsomt mod styreenheden.
 
