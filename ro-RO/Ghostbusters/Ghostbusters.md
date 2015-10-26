@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ghostbusters
 level: Scratch 1
 language: ro-RO
