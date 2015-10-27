@@ -1,5 +1,5 @@
 ---
-title: Project Template — Volunteer Notes
+title: ProjectName — Volunteer Notes
 ---
 
 #Introduction:
