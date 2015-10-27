@@ -1,8 +1,8 @@
 ---
 title: ProjectName
-description: Learn how to make a badge that shows your mood.
+description: Add a descrition here.
 layout: project
-notes: "ProjectName - notes.md"
+notes: "notes.md"
 new: true
 project-type: community
 ---
