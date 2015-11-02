@@ -15,10 +15,11 @@
             "note": "Balon Prisionero/Balon Prisionero - notas.md",
             "number": 2
         },
-	{
-            "filename": “Clone Wars/Clone Wars.md",
+	    {
+            "filename": "Clone Wars/Clone Wars.md",
             "note": "Clone Wars/Clone Wars - notas.md",
-            "number": 3                
+            "number": 3 
+        }               
     ]
 }
 
