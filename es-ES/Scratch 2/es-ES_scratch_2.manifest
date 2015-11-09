@@ -19,7 +19,12 @@
             "filename": "Clone Wars/Clone Wars.md",
             "note": "Clone Wars/Clone Wars - notas.md",
             "number": 3 
-        }               
+        },
+	    {
+            "filename": "Create Your Own World/Create Your Own World.md",
+            "note": "Create Your Own World/Create Your Own World - notes.md",
+            "number": 4 
+        }                 
     ]
 }
 
