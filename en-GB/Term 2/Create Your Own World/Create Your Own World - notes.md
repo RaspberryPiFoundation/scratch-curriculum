@@ -1,45 +1,45 @@
 ---
-title: Create Your Own World — Notes for Club Leaders
-language: en-GB
+title: Crea tu propio mundo — Notas para los líderes del Club
+language: es-ES
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to make their own open-world game, making use of all Scratch concepts and skills that have been learnt in previous projects.
+#Introducción:
+En este proyecto, la clase aprenderá a crear su propio juego de mundo abierto, utilizando todos los conceptos y habilidades de Scratch que han aprendido en proyectos anteriores.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Recursos
+Para este proyecto, se debería usar Scratch 2. Scratch 2 se puede usar online en [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) o se puede descargar desde [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) para usarlo offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+La versión completa de este proyecto se puede encontrar <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, o se puede descargar haciendo clic en el enlace 'Descargar Materiales del Proyecto', que contiene:
 
-+ CreateYourOwnWorld.sb2
++ CreaTuPropioMundo.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/world-resources](http://jumpto.cc/world-resources), or in the downloadable project materials, which contains:
+También hay una versión de este proyecto con los recursos externos ya cargados. Esta versión está disponible online en [jumpto.cc/world-resources](http://jumpto.cc/world-resources), o en los materiales descargables del proyecto, que contienen:
 
-+ CreateYourOwnWorldResources.sb2 
++ CreaTuPropioMundoRecursos.sb2 
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+Este enlace también incluye una carpeta de 'Recursos del Proyecto', que contiene imágenes que la clase necesitará para completar el proyecto. Toda la clase debería tener acceso a una copia de estos recursos.
 
-Project resources:
-+ player.png;
-+ room1/2/3.png;
-+ sign.svg;
-+ chest.svg;
-+ person.png;
-+ enemy.png;
-+ coin.svg;
-+ door-blue.png;
-+ key-blue.png.
+Recursos del Proyecto:
++ jugador.png;
++ habitación1/2/3.png;
++ señal.svg;
++ cofre.svg;
++ persona.png;
++ enemigo.png;
++ moneda.svg;
++ puerta-azul.png;
++ llave.png.
 
 
-#Learning Objectives
-+ This project consolidates learning of all programming skills learnt.
+#Objetivos de aprendizaje
++ Este proyecto consolida el aprendizaje de todas las habilidades de programación aprendidas.
 
-#Challenges
-+ "Moving in all four directions" - adding up, down, left and right player controls;
-+ "Fixing your player's movement" - not allowing the player to move through walls;
-+ "Moving to the previous room" - move back 1 room if touching a yellow door;
-+ "Treasure!" - consolidation of adding objects to the world;
-+ "Improving your person" - consolidation of adding objects to the world;
-+ "More enemies" - adding deadly moving objects;
-+ "Create your own world" - open-ended consolidation task.
+#Retos
++ "Moverse en las cuatro direcciones" - añadir al jugador controles hacia arriba, abajo, izquierda y derecha;
++ "Arreglar el movimiento de tu jugador" - evitar que el jugador atraviese las paredes;
++ "Volver a la habitación anterior" - retroceder 1 habitación al tocar una puerta amarilla;
++ "¡Tesoro!" - consolidar cómo añadir objetos al mundo;
++ "Mejorar el objeto persona" - consolidar cómo añadir objetos al mundo;
++ "Más enemigos" - añadir objetos en movimiento letales;
++ "Crea tu propio mundo" - tarea de consolidación abierta.
