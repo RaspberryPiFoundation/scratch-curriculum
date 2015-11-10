@@ -59,7 +59,7 @@ Lad os starte med at lave nogle tilfældige spørgsmål, som spilleren skal svar
 
 + Tilføj en `for evigt` {.blockcontrol} loop rundt om koden, så spilleren stilles en masse spørgsmål.
 
-+ Lav et stopur på scenen som tæller ned ved at benytte en variabel du kalder `tid` {.blockdata}. 'Balloons' projectet indeholder instruktioner i at lave et stopur (trin 6), hvis du har brug for hjælp!
++ Lav et stopur på scenen som tæller ned ved at benytte en variabel du kalder `tid` {.blockdata}. 'Balloons' projektet indeholder instruktioner i at lave et stopur (trin 6), hvis du har brug for hjælp!
 
 + Afprøv dit projekt igen - du bør være i stand til at fortsætte med at stille spørgsmål indtil tiden løber ud.
 
@@ -70,7 +70,7 @@ Kan du ændre din figurs kostume, så den reagerer på spillerens svar?
 
 ![screenshot](brain-costume.png)  
 
-## Udfordring: Tilføje en score {.challenge}
+## Udfordring: Tilføj en score {.challenge}
 Kan du tilføje en score til dit spil? Du kan tilføje et point for hvert korrekte svar. Hvis du vil være lidt besværlig, så kan du ovenikøbet nulstille din spillers score, hvis de svarer forkert på et spørgsmål! 
 
 ## Gem dit projekt { .save }
@@ -129,7 +129,7 @@ Koden viser play knappen, når dit projekt starter op. Når der klikkes på knap
 	stop [andre script i sprite v]	 
 	 
 ```  
-+ Afprøv din play knap ved at spille et par spil. Du bør så lægge mærke til, at play knappen vises efter hvert spil. For at gøre afprøvningen nemmere så kan du forkorte hvert spil, så det kun varer nogle få sekunder. 
++ Afprøv din play knap ved at spille et par spil. Du bør så lægge mærke til, at play knappen vises efter hvert spil. For at gøre afprøvningen nemmere, så kan du forkorte hvert spil, så det kun varer nogle få sekunder. 
 
 ```blocks    
 	sæt [tid v] til [10] 
@@ -168,11 +168,11 @@ Du kan også vise og skjule din figur, og dette gælder faktisk også for dit st
 
 ## Gem dit projekt { .save }
 
-# Trin 3: Tilføje grafik { .activity .new-page}
+# Trin 3: Tilføj grafik { .activity .new-page}
 
-Istedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så lad os tilføje noget grafik, som fortæller spilleren hvordan de klarer sig.
+I stedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så lad os tilføje noget grafik, som fortæller spilleren hvordan de klarer sig.
 
-+ Lav en ny sprite, som du kalder 'Resultat', der indeholder både et fluebens- og et krydskostume. 
++ Lav en ny sprite, som du kalder 'Resultat', og som indeholder både et fluebens- og et krydskostume. 
 
 	![screenshot](brain-result.png)  
 
