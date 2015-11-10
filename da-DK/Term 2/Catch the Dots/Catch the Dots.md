@@ -60,7 +60,7 @@ Lad os tilføje nogle prikker, som spilleren skal samle sammen med deres styreen
 
 	![screenshot](dots-red.png)
 
-+ Tilføj dette script til din 'rød'e sprite prik for at lave en ny klon af din prik med få sekunders mellemrum:
++ Tilføj dette script til din røde sprite prik for at lave en ny klon af din prik med få sekunders mellemrum:
 
 ```blocks 
 		når du klikker på ⚑
