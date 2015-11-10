@@ -59,7 +59,7 @@ Lad os give rumskibet mulighed for at affyre lyn!
 
 	![screenshot](invaders-lightning.png)
 
-+ Når spillet starter bør lynene være skjult indtil rumskibet affyrer dets laserkanoner. 
++ Når spillet starter bør lynene være skjult indtil rumskibet affyrer dem. 
 
 ```blocks 
 		når du klikker på ⚑
@@ -91,7 +91,7 @@ Lad os give rumskibet mulighed for at affyre lyn!
 
 Kommentar: Vi flytter den nye klon hen til rumskibet imens det stadig er skjult, og før vi så viser det. Det ser lidt bedre ud. 
 
-+ Afprøv dine lyn ved at trykke ned på mellemrumstasten.
++ Afprøv dine lyn ved at trykke på mellemrumstasten.
 
 ## Gem dit projekt { .save }
 
@@ -100,7 +100,7 @@ Hvad sker der, hvis du bliver ved med at holde mellemrumstasten nede? Kan du lø
 
 ## Gem dit projekt { .save }
 
-# Trin 3: Flyvende rum-flodheste { .activity }
+# Trin 3: Flyvende Rum-flodheste { .activity }
 
 Lad os tilføje en masse flyvende rum-flodheste, som prøver på at ødelægge dit rumskib.
 
@@ -121,7 +121,7 @@ Lad os tilføje en masse flyvende rum-flodheste, som prøver på at ødelægge d
 
 	![screenshot](invaders-var.png)
 
-	Du vil vide, når du har gjort dette rigtigt, fordi navnet på variablen vil så vises ved siden af spriten, på denne måde: 
+Du ved når du har gjort det rigtigt, fordi navnet på variablen vil så vises ved siden af spriten på denne måde: 
 
 	![screenshot](invaders-var-test.png)
 
@@ -135,7 +135,7 @@ Lad os tilføje en masse flyvende rum-flodheste, som prøver på at ødelægge d
 		end
 ```  
  
-+ Når en ny flodhesteklon begynder, så få den til at bevæge sig rundt på scenen (i tilfældig fart), indtil den bliver ramt af et lyn. Tilføj denne kode **til flodhest** spriten:
++ Når en ny flodhesteklon begynder, så få den til at bevæge sig rundt på scenen (i tilfældig hastighed), indtil den bliver ramt af et lyn. Tilføj denne kode **til flodhest** spriten:
 
 ```blocks 
 		når jeg starter som klon
@@ -155,7 +155,7 @@ Lad os tilføje en masse flyvende rum-flodheste, som prøver på at ødelægge d
 
 	![screenshot](invaders-hippo-test.png) 
 
-+ Afprøv dine laserkanoner. Forsinder flodhesten, hvis du rammer en?
++ Afprøv dine lyn. Forsinder flodhesten, hvis du rammer en af dem?
 
 + Vi skal få dit rumskib til at eksplodere, når en flodhest rører dit rumskib! Sørg først for at dit rumskib har 2 kostumer, henholdsvis et 'normal' og 'ramt' kostume.
 
