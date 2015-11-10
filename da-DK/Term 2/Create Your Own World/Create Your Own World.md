@@ -150,7 +150,7 @@ Lad os tilføje nogle skilte til din verden for at guide din spiller på rejsen.
 
 	![screenshot](world-sign.png)  
 
-+ Skiltet er kun synligt i rum 1, så lad os tilføje noget kode til skiltet, så vi er sikre på, at det er det, som er gældende:
++ Skiltet skal kun være synligt i rum 1, så lad os tilføje noget kode til skiltet, så vi er sikre på, at det er det, som er gældende:
 
 ```blocks 
 	når du klikker på ⚑ 
@@ -280,11 +280,11 @@ Kan du lave en anden fjende i rum 3, som patruljerer op og ned gennem hullet i v
     skjul 
 ``` 
  
-Koden `stop andre script i sprite` {.blockcontrol} er nødvendig for at stoppe mønterne i at blive vist i rum 1, efter de er blevet samlet op.   
+Koden `stop andre script i sprite` {.blockcontrol} er nødvendig for at stoppe mønterne fra at blive vist i rum 1, efter de er blevet samlet op.   
 
 + Du skal også sætte din `mønter` {.blockdata} variabel til 0 i begyndelsen af spillet. 
 
-+ Afprøv dit projekt - når du samler mønter bør scoren ændres til 1. 
++ Afprøv dit projekt - når du samler mønten bør scoren ændres med 1.
 
 ## Udfordring: Flere mønter {.challenge}
 Kan du tilføje flere mønter til dit spil? De kan fx være i forskellige rum, og nogle af mønterne kunne måske ovenikøbet være bevogtet af patruljerende fjender.
@@ -301,7 +301,7 @@ Kan du tilføje flere mønter til dit spil? De kan fx være i forskellige rum, o
 
 + Lav en ny listevariabel, som du kalder for `lager` {.blockdata}. Det er her, hvor du så opbevarer alle de genstande, som din spiller samler ind.  
 
-+ Koden til at opsamle nøglen ligner meget den kode, som du brugte til at samle mønter. Forskellen er, at du tilføjer nøglen til dit lager. 
++ Koden til at opsamle nøglen ligner meget den kode, som du brugte til at samle mønter. Forskellen er, at det er nøglen du tilføjer til dit lager. 
 
 ```blocks 
 	når du klikker på ⚑ 
