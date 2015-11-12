@@ -215,7 +215,7 @@ Lad os give brugeren mulighed for at tegne ved brug af en række forskellige bly
 
 ## Arbejdsliste { .check }
 
-+ Start med at tilføje en ny variabel, som du kalder 'penstørrelse'. Hvis du er usikker på, hvordan du gør det, så kan 'Balloons' projektet hjælpe dig. 
++ Start med at tilføje en ny variabel, som du kalder 'bredde'. Hvis du er usikker på, hvordan du gør det, så kan 'Balloons' projektet hjælpe dig. 
 
 + Tilføj denne linje _inden i_ `for evigt` {.blockcontrol} loopen af koden til din blyant:
 
