@@ -20,13 +20,13 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Klik på din scene baggrund og planlæg dit niveau. Du bør tilføje:
++ Klik på din scenebaggrund og planlæg dit niveau. Du bør tilføje:
 	+ Træ som din båd skal undgå; 
 	+ En øde ø som din båd skal nå.
 
-	Sådan skal dit spil se ud:
+Sådan skal dit spil se ud:
 
 	![screenshot](boat-bg.png) 
 
@@ -56,19 +56,19 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 
 	![screenshot](boat-mouse.png)
 
-+ Hvad sker der hvis båden når hen til musemarkøren? 
++ Hvad sker der, hvis båden når hen til musemarkøren? 
 
-	For at forhindre dette er du nødt til at føje en `hvis` {.blockcontrol} blok til din kode, således at båden kun bevæger sig hvis den befinder sig mere end 5 pixels fra båden.
+For at forhindre det, er du nødt til at føje en `hvis` {.blockcontrol} blok til din kode, således at båden kun bevæger sig hvis den befinder sig mere end 5 pixels fra båden.
 
 	![screenshot](boat-pointer.png)	
 
-+ Afprøv din båd igen og tjek om problemet er løst. 
++ Afprøv din båd igen og se om problemet er løst. 
 
 ## Gem dit projekt { .save }
 
 # Trin 3: Sammenstød! { .activity .new-page } 
 
-Din båd er i stand til at sejle gennem træbarriererne! Lad os finde en løsning.
+Din båd kan sejle gennem træbarriererne! Lad os finde en løsning.
 
 ## Arbejdsliste { .check }
 
@@ -78,7 +78,7 @@ Din båd er i stand til at sejle gennem træbarriererne! Lad os finde en løsnin
 
 	![screenshot](boat-hit-costume.png)
 
-+ Tilføj denne kode til din båd indeni `for evigt` {.blockcontrol} loopen, således at den styrter sammen, når den rører hvilken som helst form for brune træstykker:
++ Tilføj denne kode til din båd indeni `for evigt` {.blockcontrol} loopen, således at den styrter sammen, når den rører hvilke som helst former for brune træstykker:
 
 ```blocks 
 			hvis <berører farven [#603C15]?> så
@@ -101,7 +101,7 @@ Denne kode ligger indeni `for evigt` {.blockcontrol} loopen, så din kode bliver
 ## Gem dit projekt { .save }
 
 ## Udfordring: Du vinder! {.challenge}
-Kan du tilføje en ny `hvis` {.blockcontrol} erklæring til koden for din båd, således at spilleren vinder, når de ankommer til den øde ø? 
+Kan du tilføje en ny `hvis` {.blockcontrol} erklæring til koden for din båd, således at spilleren vinder, når han/hun ankommer til den øde ø? 
 
 Når båden ankommer til den gule øde ø, så skal den sige 'YEAH!', og spillet skal stoppe. Du får brug for denne kode:
 
@@ -115,7 +115,7 @@ Når båden ankommer til den gule øde ø, så skal den sige 'YEAH!', og spillet
 ## Gem dit projekt { .save }
 
 ## Udfordring: Lydeffekter {.challenge}
-Kan du tilføje lydeffekter til dit spil til når båden styrter sammen eller den når øen tilsidst? Du kan faktisk også tilføje noget baggrundsmusik (tag et kig på det tidligere 'Rockband' projekt, hvis du har brug for hjælp). 
+Kan du tilføje lydeffekter til dit spil, som afspilles når båden styrter sammen eller den når øen til sidst? Du kan ovenikøbet tilføje noget baggrundsmusik (tag et kig på det tidligere 'Rockband' projekt, hvis du har brug for hjælp). 
 
 ## Gem dit projekt { .save }
 
@@ -125,7 +125,7 @@ Lad os tilføje et stopur til dit spil, så spilleren skal nå hen til den øde 
 
 ## Arbejdsliste { .check }
 
-+ Tilføj en ny variabel du kalder `time` {.blockdata} til din scene. Du kan også ændre, hvordan din nye variabel vises. Hvis du har brug for hjælp, så tag et kig på 'Balloons' projektet.
++ Tilføj en ny variabel du kalder `tid` {.blockdata} til din scene. Du kan også ændre, hvordan din nye variabel vises. Hvis du har brug for hjælp, så tag et kig på 'Balloons' projektet.
 
 	![screenshot](boat-variable.png)
 
@@ -133,10 +133,10 @@ Lad os tilføje et stopur til dit spil, så spilleren skal nå hen til den øde 
 
 ```blocks 
 		når du klikker på ⚑
-		sæt [time v] til [0] 
+		sæt [tid v] til [0] 
 		for evigt
    			vent (0.1) sekunder
-   				ændr [time v] med (0.1)
+   				ændr [tid v] med (0.1)
 		end 
 ```  
 
@@ -152,7 +152,7 @@ Spillet er _alt_ for nemt - lad os tilføje nogle ting og gøre det mere spænde
 
 ## Arbejdsliste { .check }
 
-+ Lad os først tilføje nogle 'forstærkninger' til dit spil, som kan gøre din båd hurtigere. Redigér din scene baggrund og tilføj nogle hvide forstærkningspile.
++ Lad os først tilføje nogle 'forstærkninger' til dit spil, som kan gøre din båd hurtigere. Redigér din scenebaggrund og tilføj nogle hvide forstærkningspile.
 
 	![screenshot](boat-boost.png)
 
@@ -164,7 +164,7 @@ Spillet er _alt_ for nemt - lad os tilføje nogle ting og gøre det mere spænde
 	end 
 ``` 
 
-+ Du kan også tilføje en svingende port, som din båd skal undgå. Tilføj en ny sprite du kalder 'port', der ser således ud:
++ Du kan også tilføje en svingende port, som din båd skal undgå. Tilføj en ny sprite ved navn 'port', der ser således ud:
 
 	![screenshot](boat-gate.png)
 
@@ -183,7 +183,7 @@ Spillet er _alt_ for nemt - lad os tilføje nogle ting og gøre det mere spænde
 ## Gem dit spil { .save }
 
 ## Udfordring: Flere forhindringer! {.challenge .new-page}
-Kan du tilføje nogle flere forhindringer til dit spil? Her er nogle idéer:
+Kan du tilføje flere forhindringer til dit spil? Her er nogle idéer:
 
 + Du kunne tilføje noget grønt slim til din baggrund, som gør spilleren langsommere, når de rører ved det. Til dette kan du bruge en `vent` {.blockcontrol} blok:
 
@@ -204,7 +204,7 @@ Disse blokke kan måske hjælpe dig:
 		hop tilbage ved kanten
 ```` 
 
-Hvis din nye genstand ikke er brun, så skal du tilføje dette til din båds kode:
+Hvis din nye genstand ikke er brun, så skal du tilføje dette til koden for din båd:
 
 ```blocks
 	hvis <  <berører farven [#603C15]?> eller <berører [haj v]?> > så
