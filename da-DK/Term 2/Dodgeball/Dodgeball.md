@@ -26,15 +26,15 @@ Lad os begynde med at lave en figur, som kan bevæge sig til venstre og højre s
 
 + Til dette projekt bør du have en 'Projekt Ressourcer' mappe, som indeholder det baggrundsbillede du skal bruge. Sørg for at du kan finde denne mappe, og spørg din instruktør, hvis du ikke kan finde den.
 
-	![screenshot](dodge-resources.png)
+![screenshot](dodge-resources.png)
 
 + Tilføj 'background.png' billedet som din nye scenebaggrund, eller tegn din egen! Hvis du tegner dit eget niveau, så sørg for at stolperne og gulvene er forskellige farver, og at der er en dør (eller lignende), som din spiller skal nå. Sådan bør dit projekt se ud:
  
-	![screenshot](dodge-background.png)
+![screenshot](dodge-background.png)
 
-+ Tilføj en ny sprite som bliver din figur. Det er bedst hvis du vælger en sprite, som har flere kostumer, sådan at du kan få det til at se ud som om den går. 
++ Tilføj en ny sprite, som bliver din figur. Det er bedst hvis du vælger en sprite, som har flere kostumer, sådan at du kan få det til at se ud som om den går. 
 
-	![screenshot](dodge-characters.png)
+![screenshot](dodge-characters.png)
 
 + Lad os bruge piletasterne til at få din figur til at bevæge sig rundt. Når spilleren trykker på højre piletast skal din figur pege mod højre og bevæge sig nogle trin fremad og ændre til det næste kostume:
 
@@ -51,7 +51,7 @@ end
  
 + Afprøv din figur ved at klikke på flaget og dernæst holde højre piletast ned. Bevæger din spiller sig til højre? Ser det ud som om din figur bevæger sig?   
 
-	![screenshot](dodge-walking.png)
+![screenshot](dodge-walking.png)
 
 + For at bevæge din figur til venstre skal du tilføje endnu en `hvis` {.blockcontrol} blok inden i din `for evigt` {.blockcontrol} loop, som får din figur til at bevæge sig til venstre. Husk at afprøve din nye kode, så du er sikker på at det virker!  
 
@@ -65,11 +65,11 @@ end
  
 + Afprøv din figur - kan du kravle opad de gule stolper og nå til enden af dit niveau?  
 
-	![screenshot](dodge-test-character.png)
+![screenshot](dodge-test-character.png)
 
 ## Gem dit projekt { .save } 
 
-## Udfordring: Fuldende niveauet {.challenge}
+## Udfordring: Fuldend niveauet {.challenge}
 Kan du tilføje noget mere kode til din figur, så den siger noget `hvis` {.blockcontrol} den når hen til den brune dør?
 
 ![screenshot](dodge-win.png)
@@ -84,13 +84,13 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
 
 + Måske du har lagt mærke til at din figur kan gå væk fra en platform og midt ud i luften. Prøv at gå ud over en platform og se hvad der sker.
 
-	![screenshot](dodge-no-gravity.png)
+![screenshot](dodge-no-gravity.png)
 
-+ Lad os tilføje noget tyngdekraft til dit spil for at løse det. Lav en ny variabel du kalder `gravity` {.blockdata}. Du kan skjule denne variabel på din scene, hvis du foretrækker det. 
++ Lad os, som løsning, tilføje noget tyngdekraft til dit spil. Lav en ny variabel du kalder `gravity` {.blockdata}. Du kan skjule variablen på din scene, hvis du foretrækker det. 
 
-	![screenshot](dodge-gravity.png) 
+![screenshot](dodge-gravity.png) 
 
-+ Tilføj denne nye kodeblok, der sætter tyngdekraften til et negativt tal og så benytter dette til, igen og igen, at gentage din figurs y-koordinat.
++ Tilføj nedenstående kodeblok - den sætter tyngdekraften til et negativt tal og benytter så dette til, igen og igen, at gentage din figurs y-koordinat.
 
 ```blocks 
 	når du klikker på ⚑
@@ -102,7 +102,7 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
  
 + Klik på flaget og slæb din figur til toppen af scenen. Hvad sker der? Virker tyngdekraften som du forventede? 
 
-	![screenshot](dodge-gravity-drag.png)
+![screenshot](dodge-gravity-drag.png)
 
 + Tyngdekraften bør ikke flytte din figur gennem en platform eller en stolpe! Tilføj en `hvis` {.blockcontrol} blok til din kode, således at tyngdekraften kun virker, hvis din figur befinder sig midt i luften. Koden for tyngdekraften bør nu se således ud:
 
@@ -118,7 +118,7 @@ end
 
 + Afprøv tyngdekraften igen. Stopper din figur, når den er på en platform eller en stolpe? Kan du gå ud over kanten til en platform og komme til niveauet nedenunder? 
 
-	![screenshot](dodge-gravity-test.png)
+![screenshot](dodge-gravity-test.png)
 
 +  Lad os også få din figur til at hoppe, når spilleren trykke på mellemrumstasten. Dette kan du nemt gøre ved at bevæge din figur op et par gange ved at bruge denne kode: 
  
@@ -129,13 +129,13 @@ end
 end
 ``` 
  
-Siden tyngdekraften hele tiden skubber din figur ned med 4 pixels, så skal du vælge et tal, som er større end 4 i din `ændr y med 4` {.blockmotion} blok. Ændr dette tal indtil du er tilfreds med højden, som din figur hopper.  
+Siden tyngdekraften hele tiden skubber din figur ned med 4 pixels, så skal du vælge et tal, som er større end 4 i din `ændr y med 4` {.blockmotion} blok. Ændr dette tal indtil du er tilfreds med den højde, som din figur hopper.  
 
 + Hvis du afprøver din kode, så vil du se at den virker, men bevægelserne er ikke særlig jævne. For at udjævne hoppene skal du flytte din figur et mindre og mindre stykke, indtil den ikke hopper mere. 
 
 + Hertil skal du bruge en anden variabel du kalder `jump height` {.blockdata}. Igen kan du skjule denne variabel, hvis du foretrækker det.
  
-+ Slet den hoppekode du tilføjede til din figur og erstat den med denne kode:
++ Slet den hoppekode du føjede til din figur og erstat den med denne kode:
 
 ```blocks 
 	når du trykker på [mellemrum v]
@@ -153,7 +153,7 @@ Denne kode flytter din figur op med 8 pixels, dernæst med 7.5 pixels, så 7 pix
 ## Gem dit projekt { .save }
 
 ## Udfordring: Forbedrede hop {.challenge}
-Din figur kan hoppe uanset hvornår der trykkes på mellemrumstasten, selv hvis den allerede befinder sig ude i luften. Dette kan du afprøve ved at holde mellemrumstasten nede. Kan du finde en løsning så din figur kun kan hoppe `hvis` {.blockcontrol} den rører en blå platform?
+Din figur kan hoppe uanset hvornår der trykkes på mellemrumstasten, selv hvis den allerede befinder sig ude i luften. Dette kan du afprøve ved at holde mellemrumstasten nede. Kan du finde en løsning, så din figur kun kan hoppe `hvis` {.blockcontrol} den rører en blå platform?
 
 ## Gem dit projekt { .save }
 
@@ -165,27 +165,27 @@ Nu hvor du kan bevæge din figur rundt, så lad os tilføje nogle bolde, som din
 
 + Lav en ny bold sprite. Du kan vælge hvilken som helst type bold, som du har lyst til.
 
-	![screenshot](dodge-balls.png)
+![screenshot](dodge-balls.png)
 
 + Tilpas størrelsen på din bold så din figur kan hoppe over den. Prøv at hoppe over bolden for at afprøve det. 
 
-	![screenshot](dodge-ball-resize.png)
+![screenshot](dodge-ball-resize.png)
 
 + Tilføj denne kode til din bold:
 
-	![screenshot](dodge-ball-motion.png)
+![screenshot](dodge-ball-motion.png)
 
 Koden laver en ny klon af bolden hvert 3. sekund. Hver ny klon bevæger sig langs den øverste platform. 
 
-+ Klik på flaget for at afprøve det.
++ Afprøv ved at klikke på flaget.
 
-	![screenshot](dodge-ball-test.png)
+![screenshot](dodge-ball-test.png)
 
 + Tilføj noget mere kode til din bold sprite, så boldene bevæger sig rundt på alle 3 platforme. 
 
-	![screenshot](dodge-ball-more-motion.png)
+![screenshot](dodge-ball-more-motion.png)
 
-+ Her tilsidst skal du bruge en kode til når din figur bliver ramt af en bold! Tilføj denne kode til din bold sprite: 
++ Her til sidst skal du bruge en kode til når din figur bliver ramt af en bold! Tilføj denne kode til din bold sprite: 
 
 ```blocks 
 	når jeg starter som klon
@@ -209,7 +209,7 @@ end
 ## Gem dit projekt { .save }
 
 ## Udfordring: Tilfældige bolde {.challenge}
-Boldene som din figur skal undgå ser alle ens ud, og de kommer alle frem hvert 3. sekund. Kan du forbedre dem sådan at:  
+Boldene, som din figur skal undgå, ser alle ens ud og de kommer alle frem hvert 3. sekund. Kan du forbedre dem sådan at:  
 
 + de ikke ser ens ud alle sammen?
 + de kommer frem efter en tilfældig mængde af tid?
@@ -227,13 +227,13 @@ Lad os gøre spillet en smule sværere at fuldføre ved at tilføje nogle lasere
 
 + Tilføj en ny sprite til dit spil som du kalder 'Laser'. Den bør have to kostumer, 'tændt' og 'slukket'.
 
-	![screenshot](dodge-lasers-costume.png)
+![screenshot](dodge-lasers-costume.png)
 
 + Placer din nye laser hvor end du ønsker, mellem 2 platforme.
 
-	![screenshot](dodge-lasers-position.png)
+![screenshot](dodge-lasers-position.png)
 
-+ Tilføj denne kode til din laser, sådan at det skifter mellem de 2 kostumer.
++ Tilføj denne kode til din laser, sådan at den skifter mellem de 2 kostumer.
 
 ```blocks 
 	når du klikker på ⚑
@@ -275,7 +275,7 @@ end
 ## Gem dit projekt { .save }
 
 ## Udfordring: Forbedret tyngdekraft {.challenge}
-Der er en anden lille bug i dit spil: _Uanset hvilken del_ af din figur, som rører en blå platform (selv dens hoved) trækker tyngdekraften ikke din figur nedad! Dette kan du afprøve ved at kravle opad en stolpe det meste af vejen, og dernæst flytte til venstre. 
+Der er en anden lille bug i dit spil: _Uanset hvilken del_ af din figur, som rører en blå platform (selv dens hoved), trækker tyngdekraften ikke din figur nedad! Dette kan du afprøve ved at kravle opad en stolpe det meste af vejen, og dernæst flytte til venstre. 
 
 ![screenshot](dodge-gravity-bug.png)
 
