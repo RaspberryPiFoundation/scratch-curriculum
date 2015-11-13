@@ -41,7 +41,7 @@ Lad os starte med at lave en blyant, som vi kan bruge til at tegne med på scene
 ```blocks 
 		når du klikker på ⚑
 		for evigt 
-  			 gå til [mouse pointer v]
+  			 gå til [musepil v]
 		end 
 ```  
 
@@ -135,7 +135,7 @@ For at sætte blyanten til at farve grøn, så klik på den farvede boks i `skif
 
 ```blocks 
 		ryd  
-		skift kostume til [blå-blyant v] 
+		skift kostume til [blyant-blå v] 
 		skift penfarve til [#0000ff] 
 ```  
  
@@ -172,7 +172,7 @@ Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for
 	
 	Hvis du ikke har eraser.svg billedet, så bare lav en ny hvid blyant i stedet for! 
 
-+ Du bør også tilføje viskelæder billedet som en ny _selektor_ sprite. Din scene bør se således ud: 
++ Du bør også tilføje viskelæder billedet som en ny sprite, så du både har viskelæderet som et kostume i din blyant-sprite og som en sprite for sig selv. Din scene bør se således ud: 
 
 	![screenshot](paint-eraser-stage.png)
 
@@ -180,14 +180,14 @@ Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for
 
 ```blocks 
 		når denne sprite klikkes
-		send [eraser v] til alle
+		send [viskelæder v] til alle
 ```  
 
 + Når blyanten modtager denne meddelelse, så kan du lave et viskelæder ved at udskifte blyantskostumet til viskelæderet, og skifte blyantsfarven til at være samme farve som scenen! 
 
 ```blocks 
-		når jeg modtager [eraser v]
-		skift kostume til [eraser v]
+		når jeg modtager [viskelæder v]
+		skift kostume til [viskelæder v]
 		skift penfarve til [#FFFFFF] 
 ``` 
 
@@ -199,7 +199,7 @@ Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for
 
 	![screenshot](paint-draw-problem.png)
 
-	For at løse dette problem bliver du nødt til at fortælle blyanten, at der kun skal tegnes hvis der klikkes med musen _og_ hvis musens y-position er større end -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Ændr din blyants `hvis` {.blockcontrol} erklæring til at se således ud:
+For at løse dette problem bliver du nødt til at fortælle blyanten, at der kun skal tegnes hvis der klikkes med musen _og_ hvis musens y-position er større end -110 (`musens y-position`{.blocksensing}`> -120` {.blockoperators}). Ændr din blyants `hvis` {.blockcontrol} erklæring til at se således ud:
 
 	![screenshot](pencil-gt-code.png)
 
@@ -215,7 +215,7 @@ Lad os give brugeren mulighed for at tegne ved brug af en række forskellige bly
 
 ## Arbejdsliste { .check }
 
-+ Start med at tilføje en ny variabel, som du kalder 'penstørrelse'. Hvis du er usikker på, hvordan du gør det, så kan 'Balloons' projektet hjælpe dig. 
++ Start med at tilføje en ny variabel, som du kalder 'bredde'. Hvis du er usikker på, hvordan du gør det, så kan 'Balloons' projektet hjælpe dig. 
 
 + Tilføj denne linje _inden i_ `for evigt` {.blockcontrol} loopen af koden til din blyant:
 
