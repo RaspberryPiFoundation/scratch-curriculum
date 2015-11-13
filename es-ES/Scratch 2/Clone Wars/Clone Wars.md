@@ -26,13 +26,13 @@ En este proyecto aprenderás cómo crear un juego en el que tienes que salvar a 
 
 ## Lista de actividades { .check }
 
-+ Iniciar un nuevo proyecto Scratch y eliminar el objeto del gato para que su proyecto esté vacío. Puede encontrar el editor de Scratch en línea en  <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Iniciar un nuevo proyecto Scratch y eliminar el objeto del gato para que el proyecto esté vacío. Puedes encontrar el editor de Scratch en línea en  <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Añadir el fondo de 'estrellas' y el gráfico de la 'nave espacial' al proyecto. Reducir la nave espacial y moverla cerca de la parte inferior de la pantalla.
 
 	![screenshot](invaders-sprites.png)
 
-+ Añadir código para mover la nave espacial a la izquierda cuando se pulse la tecla de flecha izquierda. Tendrá que utilizar estos bloques:
++ Añadir código para mover la nave espacial a la izquierda cuando se pulse la tecla de flecha izquierda. Tendrás que utilizar estos bloques:
 
 	```blocks
 
@@ -56,11 +56,11 @@ En este proyecto aprenderás cómo crear un juego en el que tienes que salvar a 
 
 ## Lista de actividades { .check }
 
-+ Añadir el objeto del 'rayo' de la biblioteca Scratch. Haga clic en el disfraz del objeto y gire el rayo hasta ponerlo al revés.
++ Añadir el objeto del 'rayo' de la biblioteca Scratch. Haga clic en el disfraz del objeto y girar el rayo hasta ponerlo del revés.
 
 	![screenshot](invaders-lightning.png)
 
-+ Cuando se inicia el juego, los rayos debe estar ocultos hasta que la nave espacial dispara sus cañones láser.
++ Cuando se inicia el juego, los rayos deben estar ocultos hasta que la nave espacial dispare sus cañones láser.
 
 	```blocks
 		al presionar bandera verde
@@ -137,7 +137,7 @@ Vamos a añadir un montón de hipopótamos voladores que están tratando de dest
 		fin
 	```
 
-+ Cuando se inicia cada clon hipopótamo, moverlo por el escenario (a una velocidad aleatoria) hasta que es golpeado por el rayo. Añadir este código ** para el objeto hipopótamo ** :
++ Cuando se inicia cada clon hipopótamo, moverlo por el escenario (a una velocidad aleatoria) hasta que sea golpeado por el rayo. Añadir este código ** para el objeto hipopótamo ** :
 
 	```blocks
 		al comenzar como clon
@@ -162,7 +162,7 @@ Vamos a añadir un montón de hipopótamos voladores que están tratando de dest
 
 	![screenshot](invaders-spaceship-costumes.png)
 
-	El traje 'tocado' de la nave espacial se puede hacer mediante la importación de la imagen 'Sol' de la biblioteca Scratch, y el uso de la herramienta 'Colorear una forma', para cambiar su color.
+	El disfraz 'tocado' de la nave espacial se puede hacer mediante la importación de la imagen 'Sol' de la biblioteca Scratch, y el uso de la herramienta 'Colorear una forma', para cambiar su color.
 
 	![screenshot](invaders-sun.png)
 
@@ -205,7 +205,7 @@ Vamos a hacer un murciélago de la fruta que lanza naranjas a su nave espacial.
 
 ## Lista de actividades { .check }
 
-+ En primer lugar, hacer un nuevo objeto murciélago que se `moverá` {.blockmotion} en la parte superior del escenario `por siempre` {.blockcontrol}. Recordar probar el código.
++ En primer lugar, hacer un nuevo objeto murciélago que se `moverá` {.blockmotion} en la parte superior del escenario `por siempre` {.blockcontrol}. Recuerda probar el código.
 
 	![screenshot](invaders-bat.png)
 
@@ -264,13 +264,13 @@ Vamos a añadir un mensaje "Fin del Juego" al final del juego.
 
 ## Lista de actividades { .check }
 
-+ Si no lo ha hecho, cree una nueva variable llamada `vidas` {.blockdata}. La nave espacial debe comenzar con 3 vidas y perder una vida cada vez que choca con un enemigo. El juego debe parar también cuando te quedas sin vidas. Si necesitas ayuda, puedes utilizar el proyecto "Catch the Dots".
++ Si no lo has hecho, crea una nueva variable llamada `vidas` {.blockdata}. La nave espacial debe comenzar con 3 vidas y perder una vida cada vez que choca con un enemigo. El juego debe parar también cuando te quedas sin vidas. Si necesitas ayuda, puedes utilizar el proyecto "Catch the Dots".
 
 + Dibuja un nuevo objeto llamado 'Fin del Juego', utilizando la herramienta de texto.
 
 	![screenshot](invaders-game-over.png)
 
-+ En el escenario, difundir un mensaje `Fin del juego` {.blockevents} justo antes de que el juego termine.
++ En el escenario, mostrar un mensaje `Fin del juego` {.blockevents} justo antes de que el juego termine.
 
 	```blocks
 		enviar [Fin del juego v] y esperar
@@ -286,9 +286,9 @@ Vamos a añadir un mensaje "Fin del Juego" al final del juego.
 		mostrar
 	```
 
-	Debido a que ha usado un bloque `enviar [fin del juego] y esperar` {.blockevents}, se esperará a que el objeto de 'Fin del juego' se muestre antes de terminar el juego.
+	Como has usado un bloque `enviar [fin del juego] y esperar` {.blockevents}, se esperará a que el objeto de 'Fin del juego' se muestre antes de terminar el juego.
 
-+ Probar el juego. ¿Cuántos puntos se puede anotar? ¿Puedes pensar en maneras de mejorar su juego si es demasiado fácil o demasiado difícil?
++ Probar el juego. ¿Cuántos puntos se pueden anotar? ¿Puedes pensar en maneras de mejorar su juego si es demasiado fácil o demasiado difícil?
 
 ## Guardar el proyecto { .save }
 
@@ -309,7 +309,3 @@ Vamos a añadir un mensaje "Fin del Juego" al final del juego.
 ```
 
 ## Guardar el proyecto { .save }
-
-## Community Contributed Translation { .challenge .pdf-hidden }
-
-This project was translated by Miguel Angel Gonzalez Diez. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
