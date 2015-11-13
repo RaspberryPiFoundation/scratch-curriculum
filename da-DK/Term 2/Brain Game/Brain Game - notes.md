@@ -20,8 +20,8 @@ Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu
 
 #Udfordringer
 + "Ændre kostumer" - ændre hvordan spillets figur ser ud, når den reagerer på rigtige og forkerte svar;
-+ "Tilføje en score" - tilføje et point for hvert korrekte svar;
-+ "Startskærm" - ændre baggrundsscenen i respons til `start` {.blockevents} og `end` {.blockevents} udsendelsen af meddelelser for at lave 2 spil 'skærme'; 
++ "Tilføj en score" - tilføje et point for hvert korrekte svar;
++ "Startskærm" - ændre baggrundsscenen i respons til `start` {.blockevents} og `afslut` {.blockevents} udsendelsen af meddelelser for at lave 2 spil 'skærme'; 
 + "Forbedret animation" - benytte loops og effekter til at forbedre grafikken af rigtig/forkert animationen;
 + "Lyd og musik" - underbygge vores læring omkring musik loops og lydeffekter; 
 + "Kapløb til 10 point" - ændre spillogikken for at lave et nyt formål med spillet;
