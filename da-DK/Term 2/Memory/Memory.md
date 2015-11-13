@@ -29,7 +29,7 @@ Lad os først lave lave en figur, som kan ændre sig til en tilfældig rækkefø
 
 + Vælg en figur og en baggrund. Din figur behøver ikke være en person, men den skal være i stand til at vise forskellige farver.
 
-	![screenshot](colour-sprite.png)
+![screenshot](colour-sprite.png)
 
 + I dit spil skal du bruge et forskelligt nummer, som repræsenterer hver enkel farve:
 
@@ -42,9 +42,9 @@ Giv din figur 4 forskellige farvekostumer, en for hver af de 4 ovenstående farv
 
 ![screenshot](colour-costume.png)
 
-+ Du skal oprette en _liste_ for at lave en tilfældig rækkefølge. En liste er blot en variabel, som opbevarer en stor mængde data __i ordnet rækkefølge__. Lav en liste som du kalder `sequence` {.blockdata}. Da det kun er din figur, som skal se denne liste, så kan vi også klikke på 'Kun for denne sprite'.
++ Du skal oprette en _liste_ for at lave en tilfældig rækkefølge. En liste er blot en variabel, som opbevarer en stor mængde data __i ordnet rækkefølge__. Lav en liste som du kalder `sequence` {.blockdata}. Da det kun er din figur, som skal se denne liste, så vælger vi 'Kun for denne sprite'.
 
-	![screenshot](colour-list.png)
+![screenshot](colour-list.png)
 
 Nu bør du se din tomme liste øverst til venstre af din scene samt en del nye brikker, der bruger lister.
 
@@ -62,12 +62,12 @@ Nu bør du se din tomme liste øverst til venstre af din scene samt en del nye b
 end
 ``` 
 
-Sørg også for at du har tømt listen til at starte med. 
+Sørg også for at din liste er tom fra start af. 
 
 ## Udfordring: Tilføj lyd {.challenge}
-Afprøv dit projekt et par gange. Du vil måske lægge mærke til at det samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang figuren skifter kostume? 
+Afprøv dit projekt et par gange. Måske du har lagt mærke til, at samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang figuren skifter kostume? 
 
-Kan du få en anden trommelyd frem afhængig af det tilfældige nummer, som vælges? Dette vil være _meget_ lignende den kode, som ændrer figurens kostume.
+Kan du få en anden trommelyd frem afhængig af det tilfældige nummer, som bliver valgt? Dette vil ligne _meget_ den kode, som ændrer figurens kostume.
 
 ## Gem dit projekt { .save }
 
@@ -77,18 +77,18 @@ Lad os tilføje 4 knapper så spilleren kan gentage den rækkefølge, de har hus
 
 ## Arbejdsliste { .check }
 
-+ Tilføj 4 sprites til dit projekt, som bliver knapperne. Redigér dine 4 sprites, således der er 1 for hver af de 4 farver.
++ Tilføj 4 sprites til dit projekt, som bliver knapperne. Redigér dine 4 sprites, således der er 1 knap for hver af de 4 farver.
 
-	![screenshot](colour-drums.png)
+![screenshot](colour-drums.png)
 
-+ Når der klikkes på den røde tromme skal du udsende en meddelelse til din figur og lade den vide, at der er blevet klikket på den røde knap. Tilføj denne kode til din røde tromme:
++ Når man klikker på den røde tromme skal du udsende en meddelelse til din figur og lade den vide, at der er blevet klikket på den røde knap. Tilføj denne kode til din røde tromme:
 
 ```blocks 
 	når denne sprite klikkes
 	send [rød v] til alle 
 ``` 
 
-+ Når din figur modtager denne besked bør den tjekke om nummeret 1 befinder sig i starten af listen (hvilket betyder at rød er den næste farve i rækkefølgen). Hvis den er det, kan du fjerne nummeret fra listen, da det er blevet gættet korrekt. Ellers er spillet slut!
++ Når din figur modtager denne besked bør den tjekke, om nummeret '1' befinder sig i starten af listen (hvilket betyder at rød er den næste farve i rækkefølgen). Hvis den er det, kan du fjerne nummeret fra listen, da det så er blevet gættet korrekt. Ellers er spillet slut!
 
 ```blocks 
 	når jeg modtager [rød v]
@@ -100,7 +100,7 @@ Lad os tilføje 4 knapper så spilleren kan gentage den rækkefølge, de har hus
 end
 ``` 
  
-+ Du kan også vise nogle blinkende lys, når listen er tom, da dette betyder at hele rækkefølgen er gættet korrekt. Tilføj denne kode til slutningen af din figurs `når du klikker på ⚑` {.blockevents} script:
++ Du kan også vise nogle blinkende lys, når listen er tom, da dette betyder at hele rækkefølgen er blevet gættet korrekt. Tilføj denne kode til slutningen af din figurs `når du klikker på ⚑` {.blockevents} script:
 
 ```blocks 
 	vent indtil <(længden af [sequence v]) = [0]>
@@ -130,15 +130,15 @@ Husk at afprøve den kode, du har tilføjet! Kan du lære en rækkefølge på 5 
 
 # Trin 3: Flere niveauer { .activity .new-page }
 
-Indtil videre skal spilleren kun huske på 5 farver. Lad os forbedre dit spil således at længden af rækkefølgen bliver større.
+Indtil videre skal spilleren kun huske på 5 farver. Lad os forbedre dit spil, så rækkefølgen bliver længere.
 
 ## Arbejdsliste { .check }
 
-+ Lav en ny variabel du kalder `score` {.blockdata}. 
++ Lav en ny variabel, som du kalder `score` {.blockdata}. 
 
-	![screenshot](colour-score.png)  
+![screenshot](colour-score.png)  
 
-+ Denne `score` {.blockdata} vil vi bruge til at bestemme længden af den rækkefølge, som spilleren skal huske på. Så til at starte med er scoren (og længden af rækkefølgen) 3. Tilføj denne kode til begyndelsen af `når du klikker på ⚑` {.blockevents} koden til din figur:
++ Denne `score` {.blockdata} vil vi bruge til at bestemme længden af den rækkefølge, som spilleren skal huske. Så til at starte med er scoren (og længden af rækkefølgen) 3. Tilføj denne kode til begyndelsen af `når du klikker på ⚑` {.blockevents} koden til din figur:
 
 ```blocks 
    sæt [score v] til [3]
@@ -151,13 +151,13 @@ Indtil videre skal spilleren kun huske på 5 farver. Lad os forbedre dit spil s�
 	end
 ``` 
 
-+ Hvis rækkefølgen gættes rigtigt bør du tilføje 1 til scoren for at forlænge længden af rækkefølgen. 
++ Hvis rækkefølgen bliver gættet korrekt, bør du tilføje 1 til scoren for at forlænge længden af rækkefølgen. 
 
 ```blocks 
 	ændr [score v] med (1)
 ``` 
 
-+ Til sidst skal du tilføje en `for evigt` {.blockcontrol} loop rundt om koden, så der laves en ny rækkefølge (i rækkefølgen) for hvert niveau. Sådan bør koden for din figur se ud:    
++ Til sidst skal du tilføje en `for evigt` {.blockcontrol} loop rundt om koden, så der laves en ny rækkefølge (i rækkefølgen) for hvert niveau. Koden for din figur bør se således ud:    
 
 ```blocks 
 	når du klikker på ⚑ 
@@ -181,13 +181,13 @@ Indtil videre skal spilleren kun huske på 5 farver. Lad os forbedre dit spil s�
 
 # Trin 4: High score { .activity } 
 
-Lad os gemme en high score så du kan spille mod dine venner.
+Lad os gemme en high score, så du kan spille mod dine venner.
 
 ## Arbejdsliste { .check }
 
 + Tilføj 2 nye variabler til dit projekt, som du kalder `high score` {.blockdata} og `navn` {.blockdata}.
 
-+ Hver gang spillet slutter (ved tryk på den forkerte knap) skal du undersøge om spillerens score er højere end den nuværende high score. Hvis den er det skal du gemme scoren som en high score og opbevare spillerens navn. sådan bør din røde knap se ud:
++ Hver gang spillet slutter (ved tryk på den forkerte knap) skal du undersøge, om spillerens score er højere end den nuværende high score. Hvis den er det, skal du gemme scoren som en high score og opbevare spillerens navn. Din røde knap bør se således ud:
 
 ```blocks 
 	når jeg modtager [rød v]
@@ -206,28 +206,28 @@ Lad os gemme en high score så du kan spille mod dine venner.
  
 + Du er også nødt til at tilføje denne nye kode til de 3 andre knapper! Har du lagt mærke til at 'Game over' koden i hver af de 4 knapper er præcis den samme?
 
-	![screenshot](colour-same.png)  
+![screenshot](colour-same.png)  
 
-+ Hvis du nogensinde får brug for at ændre noget i denne kode, fx tilføje en lyd eller ændre 'Game over!' beskeden, så bliver du nødt til at ændre den 4 gange! Det kan godt være lidt irriterende og kan føles som spild af tid.
++ Hvis du nogensinde får brug for at ændre noget i denne kode, fx tilføje en lyd eller ændre 'Game over!' beskeden, så bliver du nødt til at ændre den 4 gange! Det kan godt være lidt irriterende og kan føles lidt som tiddspilde.
 
-I stedet kan du definere dine egne brikker og genbruge dem i dit projekt! Her skal du klikke på `Flere Brikker` {.blockmoreblocks}, og dernæst 'Skab en Brik'. Kald denne nye brik 'Game over'.
+I stedet kan du definere dine egne brikker og genbruge dem i dit projekt! Her skal du klikke på `Flere Brikker` {.blockmoreblocks} og dernæst 'Skab en Brik'. Kald din nye brik 'Game over'.
 
 ![screenshot](colour-more.png)  
 
-+ Tilføj `ellers` {.blockcontrol} kodeblokken fra den røde knap til den nye blok, som kommer frem: 
++ Tilføj `ellers` {.blockcontrol} kodeblokken fra den røde knap til den nye blok: 
 
-	![screenshot](colour-make-block.png)  
+![screenshot](colour-make-block.png)  
 
 + Nu har du lavet en ny _funktion_ der hedder `Game over` {.blockmoreblocks}, som du kan bruge, hvor du ønsker. Slæb din `Game over` {.blockmoreblocks} blok over på de 4 scripts for knapperne.
 
-	![screenshot](colour-use-block.png)  
+![screenshot](colour-use-block.png)  
 
-+ Tilføj nu en lyd når der trykkes på den forkerte knap. Du kan nøjes med at tilføje denne kode _én gang_ i `Game over` {.blockmoreblocks} blokken som du lavede, og ikke 4 forskellige gange! 
++ Tilføj nu en lyd når der trykkes på den forkerte knap. Du kan nøjes med at tilføje denne kode _én gang_ i `Game over` {.blockmoreblocks} blokken, og ikke 4 forskellige gange! 
 
-	![screenshot](colour-cough.png)  
+![screenshot](colour-cough.png)  
 
 ## Udfordring: Lav flere brikker {.challenge} 
-Lægger du mærke til noget andet kode, som er den samme for alle 4 knapper? 
+Kan du få øje på anden kode, som er den samme for alle 4 knapper? 
 
 ![screenshot](colour-more-blocks.png)
 
@@ -236,9 +236,9 @@ Kan du lave endnu en brik, som bruges af hver knap?
 ## Gem dit projekt { .save }
 
 ## Udfordring: Et andet kostume {.challenge}
-Har du lagt mærke til at dit spil begynder med, at din figur viser en af de 4 farver, og at den altid viser den sidste farve i rækkefølgen imens spilleren gentager rækkefølgen? 
+Har du lagt mærke til at dit spil begynder med, at din figur viser en af de 4 farver, og at den altid viser den sidste farve i rækkefølgen, imens spilleren gentager rækkefølgen? 
 
-Kan du tilføje et andet hvidt kostume til din figur, som vises i starten af dit spil, og når spilleren prøver at kopiere rækkefølgen? 
+Kan du tilføje et andet hvidt kostume til din figur, som vises i starten af dit spil, samt når spilleren prøver at kopiere rækkefølgen? 
 
 ![screenshot](colour-white.png)
 
