@@ -1,4 +1,4 @@
----
+﻿---
 title: Ghostbusters
 level: Scratch 1
 language: da-DK
@@ -20,15 +20,15 @@ Du skal lave et fangelegsspil med spøgelser!
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt, og slet katte spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. 
++ Start et nyt Scratch projekt, og slet-katte spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. 
 
-+ Tilføj en ny spøgelses sprite og en passende baggrund. 
++ Tilføj en ny spøgelses-sprite og en passende baggrund. 
 
-	![screenshot](ghost-ghost.png)
+![screenshot](ghost-ghost.png)
 
 + Tilføj denne kode til dit spøgelse, så det gentagne gange kommer frem og forsvinder:  
 
-	```blocks
+```blocks
 		når du klikker på ⚑
  		for evigt
    			skjul
@@ -36,7 +36,7 @@ Du skal lave et fangelegsspil med spøgelser!
    			vis
    			vent (1) sekunder  
 		end 
-	``` 
+``` 
  
 + Test koden af dit spøgelse ved at klikke på det grønne flag.
 
@@ -50,7 +50,7 @@ Dit spøgelse er ret let at fange, for det bevæger sig ikke!
 
 + Frem for at blive i samme position kan du lade Scratch vælge tilfældige x og y koordinater i stedet. Tilføj en `gå til` {.blockmotion} blok til koden af dit spøgelse, så den ser således ud:
 
-	```blocks
+```blocks
 		når du klikker på ⚑
 		for evigt
 		   skjul
@@ -59,7 +59,7 @@ Dit spøgelse er ret let at fange, for det bevæger sig ikke!
 		   vis
 		   vent (1) sekunder
 		end 
-	```
+```
  
 + Afprøv dit spøgelse igen, og du bør se at det dukker op et forskelligt sted hver gang.
 
@@ -77,14 +77,14 @@ Lad os give spilleren mulighed for at fange spøgelser!
 
 + For at give spilleren mulighed for at fange spøgelser, så tilføj denne kode:
 
-	```blocks
+```blocks
 		når denne sprite klikkes
 		skjul
-	``` 
+``` 
 
 + Afprøv dit projekt. Kan du fange spøgelserne, når de kommer frem? Hvis du synes det er svært at fange spøgelserne, så kan du spille spillet i fuldskærm ved at trykke på denne knap:
 
-	![screenshot](ghost-fullscreen.png)
+![screenshot](ghost-fullscreen.png)
 
 ## Udfordring: Tilføj en lyd { .challenge }
 Kan du lave en lyd, hver gang der fanges et spøgelse? 
@@ -99,68 +99,68 @@ Lad os gøre det hele lidt mere spændende ved at lave en pointoptælling (score
 
 + For at holde øje med en spillers score har du brug for et sted, hvor du kan opbevare den. En __variabel__ er et sted, hvor du kan opbevare data som kan ændre sig, ligesom en score.
 
-	For at lave en ny variabel, så klik på 'Scripts' fanebladet, vælg `Data` {.blockdata} og klik så på 'Lav en Variabel'.
+For at lave en ny variabel, så klik på 'Scripts' fanebladet, vælg `Data` {.blockdata} og klik så på 'Lav en Variabel'.
 
-	![screenshot](ghost-score.png)
+![screenshot](ghost-score.png)
 
-	Tast 'score' i navnet på variablen, sørg for at den er tilgængelig for alle sprites, og klik 'OK' for at lave den. Herefter kan du se en del kodeblokke som kan bruges sammen med din `score` {.blockdata} variabel.
+Tast 'score' i navnet på variablen, sørg for at den er tilgængelig for alle sprites, og klik 'OK' for at lave den. Herefter kan du se en del kodeblokke som kan bruges sammen med din `score` {.blockdata} variabel.
 
-	![screenshot](ghost-variable.png)
+![screenshot](ghost-variable.png)
 
-	Du vil også kunne se scoren oppe i venstre hjørne af scenen. 
+Du vil også kunne se scoren oppe i venstre hjørne af scenen. 
 
-	![screenshot](ghost-stage-score.png)
+![screenshot](ghost-stage-score.png)
 
 + Når et nyt spil startes (ved at klikke på flaget), bør du sætte spillerens score til 0: 
 
-	```blocks
+```blocks
 	når du klikker på ⚑
 	sæt [score v] til [0]
-	```  
+```  
 
 + Når der fanges et spøgelse skal du tilføje 1 til spillerens score: 
 
-	![screenshot](ghost-change-score.png)
+![screenshot](ghost-change-score.png)
 
 + Kør dit program igen og fang nogle spøgelser. Ændrer din score sig? 
 
 ## Gem dit projekt { .save }
 
-# Trin 5: Tilføj en timer { .activity }
+# Trin 5: Tilføj et stopur { .activity }
 
 Du kan gøre dit spil mere interessant ved kun at give spilleren 10 sekunder til at fange så mange spøgelser som muligt.
 
 ## Arbejdsliste { .check }
 
-+ Du kan bruge en anden variabel til at opbevare den øvrige tid som er tilbage. Klik på scenen og lav en ny variabel, som du kalder 'time':
++ Du kan bruge en anden variabel til at opbevare den øvrige tid som er tilbage. Klik på scenen og lav en ny variabel, som du kalder 'tid':
 
-	![screenshot](ghost-time.png)
+![screenshot](ghost-time.png)
 
-+ Din timer bør fungere således: 
++ Dit stopur bør fungere således: 
 
-	+ Timeren bør starte ud med 10 sekunder;
-	+ Timeren bør tælle ned hvert sekund;
-	+ Spillet bør stoppe når timeren når ned på 0.
+	+ Stopuret bør starte ud med 10 sekunder;
+	+ Stopuret bør tælle ned hvert sekund;
+	+ Spillet bør stoppe når stopuret når ned på 0.
 
 	Her er den kode du skal bruge, og som du kan tilføje til din __scene__:
 
-	```blocks
+```blocks
 		når du klikker på ⚑
-		sæt [time v] til [10]
-		gentag indtil <(time) = [0]>
+		sæt [tid v] til [10]
+		gentag indtil <(tid) = [0]>
    		vent (1) sekunder
-   		ændr [time v] med (-1)
+   		ændr [tid v] med (-1)
 	end
 	stop [alle v]
-	``` 
+``` 
  
-	Sådan tilføjer du din `gentag indtil`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} kode:
+Sådan tilføjer du din `gentag indtil`{.blockcontrol}`tid`{.blockdata}`= 0`{.blockoperators} kode:
 
-	![screenshot](ghost-timer-help.png)
+![screenshot](ghost-timer-help.png)
 
-+ Slæb din 'time' variabel viser til højre side af scenen. Du kan også højreklikke på variabel viseren og vælge 'stor visning' for at ændre hvordan timeren vises.
++ Slæb din 'tid' variabel-viser til højre side af scenen. Du kan også højreklikke på variabel viseren og vælge 'stor visning' for at ændre hvordan stopuret vises.
 
-	![screenshot](ghost-readout.png)
+![screenshot](ghost-readout.png)
 
 + Få en ven til at afprøve dit spil. Hvor mange point kan de score? Hvis dit spil er for nemt, så kan du: 
 
@@ -168,7 +168,7 @@ Du kan gøre dit spil mere interessant ved kun at give spilleren 10 sekunder til
 	+ Få spøgelserne til at vise sig færre gange
 	+ Lave spøgelserne mindre.
 
-	Afprøv dit spil et par gange indtil du er tilfreds med sværhedsgraden. 
+Afprøv dit spil et par gange indtil du er tilfreds med sværhedsgraden. 
 
 ## Gem dit projekt { .save }
 
@@ -184,5 +184,5 @@ Du bør tænke over hvilke objekter du tilføjer. Tænk på:
 + Hvordan skal det se ud, og lyde, når det fanges?  
 + Hvor mange point bliver der scoret (eller tabt) når det fanges?  
 
-Hvis du har brug for hjælp til at tilføje et nyt objekt, kan du genbruge trinene ovenfor! 
+Hvis du har brug for hjælp til at tilføje et nyt objekt, så kan du genbruge trinene ovenfor! 
 ## Gem dit projekt { .save }
