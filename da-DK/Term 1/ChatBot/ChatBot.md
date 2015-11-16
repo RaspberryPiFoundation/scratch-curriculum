@@ -148,11 +148,11 @@ Læg mærke til, at nu hvor du har gemt brugerens navn i en variabel, så kan du
 
 Hvis du tager et kig på din chatbots kostumer, så vil du måske se at der er flere end én. (Hvis ikke, så kan du altid tilføje flere selv!) 
 
-	![screenshot](chatbot-costumes.png)
+![screenshot](chatbot-costumes.png)
 
-	Du kan bruge disse kostumer, som del af din chatbots respons, ved at tilføje denne kode:
+Du kan bruge disse kostumer, som del af din chatbots respons, ved at tilføje denne kode:
 	
-	![screenshot](chatbot-costumes-code.png)
+![screenshot](chatbot-costumes-code.png)
 
 + Afprøv dit program. Nu bør se at chatbottens ansigt ændrer sig afhængig af, hvilket svar du giver. 
 
