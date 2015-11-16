@@ -28,7 +28,7 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 
 	Sådan skal dit spil se ud:
 
-		![screenshot](boat-bg.png) 
+	![screenshot](boat-bg.png) 
 
 # Trin 2: At kontrollere båden { .activity }
 
