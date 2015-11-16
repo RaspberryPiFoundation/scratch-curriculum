@@ -9,7 +9,7 @@ materials: ["Klubleder Ressourcer/*.*"]
 
 # Introduktion { .intro }
 
-I dette projekt vil du lære hvordan du kan kode dit eget musikinstrument!
+I dette projekt skal du lære, hvordan du kan kode dit eget musikinstrument!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
@@ -26,7 +26,7 @@ Før du kan begynde at animere skal du tilføje en "ting", som du kan animere. I
 
 	![screenshot](band-scratch.png)
 
-+ Katte spriten, som du kan se, er Scratch maskotten. Lad os fjerne den ved at højreklikke og derpå klikke på 'slet'.
++ Katte-spriten er vores Scratch maskot. Lad os fjerne den ved at højreklikke og derpå klikke 'slet'.
 
 	![screenshot](band-delete.png)
 
@@ -34,7 +34,7 @@ Før du kan begynde at animere skal du tilføje en "ting", som du kan animere. I
 
 	![screenshot](band-sprite-library.png)
 
-+ Scroll ned indtil du ser en tromme sprite. Klik på trommen og klik på 'OK' for at tilføje den til dit projekt.
++ Scroll ned indtil du ser en tromme-sprite. Klik på trommen og klik på 'OK' for at tilføje den til dit projekt.
 
 	![screenshot](band-sprite-drum.png)
 
@@ -60,7 +60,7 @@ __Scenen__ er området til venstre, hvor dit projekt får liv. Tænk på det som
 
 	![screenshot](band-stage-choose.png)
 
-+ Klik på 'Indendørs' til venstre og klik på en scene baggrund og klik 'OK'.
++ Klik på 'Indendørs' i venstre side og klik så på en scenebaggrund og klik 'OK'.
 
 	![screenshot](band-backdrop.png)
 
@@ -76,13 +76,13 @@ Lad os kode din tromme så den laver en lyd, når man slår på den.
 
 + Du kan finde kodeblokkene under 'Scripts' fanen, og de er alle farvekodede!
 
-	Klik på tromme spriten og træk så disse 2 blokke ind i kodeområdet til højre, og sikr dig at de er forbundne (ligesom legoklodser):
+Klik på tromme-spriten og træk så disse 2 blokke ind i kodeområdet til højre, og sikr dig at de er forbundne (ligesom legoklodser):
 
 	![screenshot](band-code.png)
 
 + Klik på trommen for at afprøve dit nye instrument!
 
-+ Du kan også ændre udseendet på din tromme, når den klikkes på, ved at lave et nyt kostume. Klik på 'Kostumer' fanebladet, og du vil så se tromme billedet.
++ Du kan også ændre udseendet på din tromme når man klikker på den ved at lave et nyt kostume. Klik på 'Kostumer' fanebladet - så vil du se trommebilledet.
 
 	![screenshot](band-drum-costume.png)
 
@@ -102,7 +102,7 @@ Lad os kode din tromme så den laver en lyd, når man slår på den.
 
 	![screenshot](band-looks.png)
 
-	Kodeblokken man skal bruge for at ændre kostumer ligger i `Udseende` {.blocklooks} sektionen.
+Kodeblokken, man skal bruge for at ændre kostumer, ligger under `Udseende` {.blocklooks} sektionen.
 
 + Afprøv din tromme. Når du klikker på den, bør din tromme nu se ud som om, den er blevet slået på!
 
@@ -140,11 +140,11 @@ Lad os tilføje en sanger til dit band!
 
 	![screenshot](band-import-sound.png)
 
-+ Hvis du klikker på 'Stemmer' i venstre side, så kan du vælge en passende lyd, som du kan tilføje til din sprite.
++ Hvis du klikker på 'Stemmer' i venstre side, så kan du vælge en passende lyd, som du kan føje til din sprite.
 
 	![screenshot](band-choose-sound.png)
 
-+ Nu hvor du har tilføjet en lyd kan du tilføje følgende kode til din sanger:
++ Nu hvor du har tilføjet en lyd, så kan du tilføje følgende kode til din sanger:
 
 ```blocks
 		når denne sprite klikkes
@@ -156,7 +156,7 @@ Lad os tilføje en sanger til dit band!
 ## Gem dit projekt { .save }
 
 ##Udfordring: Ændr din sangers kostume { .challenge }
-Kan du få din sanger til at se ud som om hun synger, når man klikker på hende? Hvis du har brug for hjælp kan du benytte ovenstående instruktioner omkring, hvordan man laver en tromme.
+Kan du få din sanger til at se ud som om hun synger, når man klikker på hende? Hvis du har brug for hjælp, så kan du benytte ovenstående instruktioner omkring, hvordan man laver en tromme.
 
 ![screenshot](band-singer-final.png)
 
@@ -176,7 +176,7 @@ Dine instrumenter behøver dog ikke at give mening. Du kan for eksempel lave et 
 Lige så vel som du kan bruge allerede tilgængelige sprites, så kan du også tegne dine egne sprites.
 ![screenshot](band-draw.png)
 
-Hvis du har en mikrofon kan du optage dine egne lyde, og du kan faktisk også bruge et webcam til at slå på dine instrumenter!
+Du kan også optage dine egne lyde, hvis du har en mikrofon, og du kan faktisk også bruge et webcam til at slå på dine instrumenter!
 
 ![screenshot](band-io.png)
 
