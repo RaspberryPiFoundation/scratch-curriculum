@@ -26,7 +26,7 @@ Før du kan begynde at animere skal du tilføje en "ting", som du kan animere. I
 
 ![screenshot](band-scratch.png)
 
-+ Katte-spriten på billedet er vores Scratch maskot. Lad os fjerne den ved at højreklikke og derpå klikke 'slet'.
++ Katte-spriten er vores Scratch maskot. Lad os fjerne den ved at højreklikke og derpå klikke 'slet'.
 
 ![screenshot](band-delete.png)
 

@@ -20,7 +20,7 @@ Du skal lave et fangelegsspil med spøgelser!
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt, og slet katte-spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. 
++ Start et nyt Scratch projekt, og slet-katte spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.  
 
 + Tilføj en ny spøgelses sprite og en passende baggrund. 
 
@@ -28,15 +28,15 @@ Du skal lave et fangelegsspil med spøgelser!
 
 + Tilføj denne kode til dit spøgelse, så det gentagne gange kommer frem og forsvinder:  
 
-	```blocks
-		når du klikker på ⚑
- 		for evigt
-   			skjul
-   			vent (1) sekunder
-   			vis
-   			vent (1) sekunder  
-		end 
-	``` 
+```blocks
+	når du klikker på ⚑
+		for evigt
+			skjul
+			vent (1) sekunder
+			vis
+			vent (1) sekunder  
+	end 
+``` 
  
 + Test koden af dit spøgelse ved at klikke på det grønne flag.
 
@@ -50,16 +50,16 @@ Dit spøgelse er ret let at fange, for det bevæger sig ikke!
 
 + Frem for at blive i samme position kan du lade Scratch vælge tilfældige x og y koordinater i stedet. Tilføj en `gå til` {.blockmotion} blok til koden af dit spøgelse, så den ser således ud:
 
-	```blocks
-		når du klikker på ⚑
-		for evigt
-		   skjul
-		   vent (1) sekunder
-		   gå til x:(vælg tilfældigt mellem (-150) og (150)) y:(vælg tilfældigt mellem (-150) og (150))
-		   vis
-		   vent (1) sekunder
-		end 
-	```
+```blocks
+	når du klikker på ⚑
+	for evigt
+	   skjul
+	   vent (1) sekunder
+	   gå til x:(vælg tilfældigt mellem (-150) og (150)) y:(vælg tilfældigt mellem (-150) og (150))
+	   vis
+	   vent (1) sekunder
+	end 
+```
  
 + Afprøv dit spøgelse igen - nu bør du se at det dukker op et forskelligt sted hver gang.
 
@@ -77,10 +77,10 @@ Lad os give spilleren mulighed for at fange spøgelser!
 
 + For at give spilleren mulighed for at fange spøgelser, så tilføj denne kode:
 
-	```blocks
-		når denne sprite klikkes
-		skjul
-	``` 
+```blocks
+	når denne sprite klikkes
+	skjul
+``` 
 
 + Afprøv dit projekt. Kan du fange spøgelserne, når de kommer frem? Hvis du synes det er svært at fange spøgelserne, så kan du spille spillet i fuldskærm ved at trykke på denne knap:
 
@@ -140,25 +140,25 @@ Du kan gøre dit spil mere interessant ved kun at give spilleren 10 sekunder til
 
 	+ Stopuret bør starte ud med 10 sekunder;
 	+ Stopuret bør tælle ned hvert sekund;
-	+ Stopuret bør stoppe når timeren når ned på 0.
+	+ Spillet bør stoppe når stopuret når ned på 0.
 
 Her er den kode du skal bruge, og som du kan tilføje til din __scene__:
 
-	```blocks
-		når du klikker på ⚑
-		sæt [time v] til [10]
-		gentag indtil <(time) = [0]>
-   		vent (1) sekunder
-   		ændr [time v] med (-1)
-	end
-	stop [alle v]
-	``` 
+```blocks
+	når du klikker på ⚑
+	sæt [tid v] til [10]
+	gentag indtil <(tid) = [0]>
+		vent (1) sekunder
+		ændr [tid v] med (-1)
+end
+stop [alle v]
+``` 
  
-Sådan tilføjer du din `gentag indtil`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} kode:
+Sådan tilføjer du din `gentag indtil`{.blockcontrol}`tid`{.blockdata}`= 0`{.blockoperators} kode:
 
 ![screenshot](ghost-timer-help.png)
 
-+ Slæb din 'tid' variabel viser til højre side af scenen. Du kan også højreklikke på variabel-viseren og vælge 'stor visning' for at ændre hvordan timeren vises.
++ Slæb din 'tid' variabel-viser til højre side af scenen. Du kan også højreklikke på variabel-viseren og vælge 'stor visning' for at ændre hvordan stopuret vises.
 
 ![screenshot](ghost-readout.png)
 
@@ -184,5 +184,5 @@ Du bør tænke over hvilke objekter du tilføjer. Tænk på:
 + Hvordan skal det se ud, og lyde, når det fanges?  
 + Hvor mange point bliver der scoret (eller tabt) når det fanges?  
 
-Hvis du har brug for hjælp til at tilføje et nyt objekt, kan du genbruge trinene ovenfor! 
+Hvis du har brug for hjælp til at tilføje et nyt objekt, så kan du genbruge trinene ovenfor! 
 ## Gem dit projekt { .save }
