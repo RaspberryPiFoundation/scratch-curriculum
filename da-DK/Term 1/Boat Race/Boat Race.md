@@ -26,9 +26,9 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 	+ Træ som din båd skal undgå; 
 	+ En øde ø som din båd skal nå.
 
-	Sådan skal dit spil se ud:
+Sådan skal dit spil se ud:
 
-	![screenshot](boat-bg.png) 
+![screenshot](boat-bg.png) 
 
 # Trin 2: At kontrollere båden { .activity }
 
@@ -36,9 +36,9 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 
 + Hvis din instruktør har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload sprite fra fil' og tilføj 'boat.png' billedet. Du bør formindske din sprite og stille den i sin start position.
 
-	![screenshot](boat-boat.png)
+![screenshot](boat-boat.png)
 
-	Hvis du ikke har boat.png billedet, så kan du i stedet tegne din egen båd! 
+Hvis du ikke har boat.png billedet, så kan du i stedet tegne din egen båd! 
 
 + Du skal kontrollere båden med din mus. Tilføj denne kode til din båd:
 
@@ -54,13 +54,13 @@ Du skal lære hvordan du laver et spil, hvor man bruger musen til at styre en b�
 
 + Afprøv din båd ved at klikke på flaget og flyt på musen. Sejler båden mod musen? 
 
-	![screenshot](boat-mouse.png)
+![screenshot](boat-mouse.png)
 
 + Hvad sker der, hvis båden når hen til musemarkøren? 
 
-	For at forhindre det, er du nødt til at føje en `hvis` {.blockcontrol} blok til din kode, således at båden kun bevæger sig hvis den befinder sig mere end 5 pixels fra båden.
+For at forhindre det, er du nødt til at føje en `hvis` {.blockcontrol} blok til din kode, således at båden kun bevæger sig hvis den befinder sig mere end 5 pixels fra båden.
 
-	![screenshot](boat-pointer.png)	
+![screenshot](boat-pointer.png)	
 
 + Afprøv din båd igen og se om problemet er løst. 
 
@@ -76,27 +76,27 @@ Din båd kan sejle gennem træbarriererne! Lad os finde en løsning.
 
 + Klik på dit 'ramt' kostume, og vælg 'Marker' redskabet til at tage nogle bidder af din båd og rotér dem rundt. Få din båd til at se ud som om, den er styrtet sammen.
 
-	![screenshot](boat-hit-costume.png)
+![screenshot](boat-hit-costume.png)
 
 + Tilføj denne kode til din båd indeni `for evigt` {.blockcontrol} loopen, således at den styrter sammen, når den rører hvilke som helst former for brune træstykker:
 
-	```blocks 
-		hvis <berører farven [#603C15]?> så
+```blocks 
+	hvis <berører farven [#603C15]?> så
 			skift kostume til [ramt v]
 			sig [Noooooo!] i (1) sekunder
 			skift kostume til [normal v]
 			peg i retning (0 v)
-			gå til x:(-215) y:(-160)
+		gå til x:(-215) y:(-160)
 	end
-	``` 
+``` 
 
-	Denne kode ligger indeni `for evigt` {.blockcontrol} loopen, så din kode bliver ved med at tjekke om din båd er stødt sammen med noget.
+Denne kode ligger indeni `for evigt` {.blockcontrol} loopen, så din kode bliver ved med at tjekke om din båd er stødt sammen med noget.
 	
 + Sørg også for at din båd altid starter ud med at se ud som 'normal'.   
 
 + Hvis du nu prøver at sejle gennem en barriere af træ, så bør du se at din båd styrter sammen og bevæger sig tilbage til start. 
 
-	![screenshot](boat-crash.png)
+![screenshot](boat-crash.png)
 
 ## Gem dit projekt { .save }
 
@@ -127,7 +127,7 @@ Lad os tilføje et stopur til dit spil, så spilleren skal nå hen til den øde 
 
 + Tilføj en ny variabel du kalder `tid` {.blockdata} til din scene. Du kan også ændre, hvordan din nye variabel vises. Hvis du har brug for hjælp, så tag et kig på 'Balloons' projektet.
 
-	![screenshot](boat-variable.png)
+![screenshot](boat-variable.png)
 
 + Tilføj denne kode til din __scene__, således at dit stopur tæller op til tidspunktet, hvor din båd når hen til den øde ø:
 
@@ -142,7 +142,7 @@ Lad os tilføje et stopur til dit spil, så spilleren skal nå hen til den øde 
 
 + Det var det! Afprøv dit spil og se hvor hurtigt du kan nå hen til den øde ø!
 
-	![screenshot](boat-variable-test.png)
+![screenshot](boat-variable-test.png)
 
 ## Gem dit projekt { .save }
 
@@ -154,7 +154,7 @@ Spillet er _alt_ for nemt - lad os tilføje nogle ting og gøre det mere spænde
 
 + Lad os først tilføje nogle 'forstærkninger' til dit spil, som kan gøre din båd hurtigere. Redigér din scenebaggrund og tilføj nogle hvide forstærkningspile.
 
-	![screenshot](boat-boost.png)
+![screenshot](boat-boost.png)
 
 + Nu kan du tilføje noget kode til din båds `for evigt` {.blockcontrol} loop, således at den flytter sig 2 _ekstra_ trin, når den rører en hvid forstærkning.
 
@@ -166,19 +166,19 @@ Spillet er _alt_ for nemt - lad os tilføje nogle ting og gøre det mere spænde
 
 + Du kan også tilføje en svingende port, som din båd skal undgå. Tilføj en ny sprite ved navn 'port', der ser således ud:
 
-	![screenshot](boat-gate.png)
+![screenshot](boat-gate.png)
 
-	Sørg for at portens farve er den samme farve som de øvrige træbarrierer. 
+Sørg for at portens farve er den samme farve som de øvrige træbarrierer. 
 
 + Centrér port spriten.
 
-	![screenshot](boat-center.png)
+![screenshot](boat-center.png)
 
 + Tilføj en kode til din port, som får den til at svinge langsomt `for evigt` {.blockcontrol}.
 
 + Afprøv dit spil. Du bør nu have en svingende port, som du skal undgå.
 
-	![screenshot](boat-gate-test.png)
+![screenshot](boat-gate-test.png)
 
 ## Gem dit spil { .save }
 
