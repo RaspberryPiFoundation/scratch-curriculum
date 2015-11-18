@@ -22,19 +22,19 @@ Lad os starte med at lave en blyant, som vi kan bruge til at tegne med på scene
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Tilføj blyantsspriten til dit projekt.
++ Tilføj blyant-spriten til dit projekt.
 
-	![screenshot](paint-pencil.png) 
+![screenshot](paint-pencil.png) 
 
 + Klik på 'Kostumer' og slet 'pencil-b' kostumet.
 
-	![screenshot](paint-pencil-delete.png) 
+![screenshot](paint-pencil-delete.png) 
 
 + Omdøb dit kostume til 'blyant-blå', og brug 'Farvelæg en figur' redskabet til at farve blyanten blå. 
 
-	![screenshot](paint-pencil-blue.png) 
+![screenshot](paint-pencil-blue.png) 
 
 + Siden du bruger musen til at tegne, så skal du have blyanten til at følge musen `for evigt` {.blockcontrol}. Tilføj denne kode til din blyantssprite:
 
@@ -57,17 +57,17 @@ Løs dette ved at klikke på 'blyant-blå' kostumet på din blyantssprite, og kl
 
 + Som du kan se er der et kryds over kostumet. Klik lige nedenfor blyantens spids for at sætte dette punkt til kostumets midte.
 
-	![screenshot](paint-pencil-center.png)
+![screenshot](paint-pencil-center.png)
 
 + Klik på 'Scripts' fanen, og afprøv din blyant igen - fungerer den bedre end den gjorde før? 
 
-+ Lad os nu få din blyant til at tegne `hvis` {.blockcontrol} der er blevet klikket med musen. Tilføj denne kode til din blyantssprite. 
++ Lad os nu få din blyant til at tegne `hvis` {.blockcontrol} der er blevet klikket med musen. Tilføj denne kode til din blyant-sprite. 
 
-	![screenshot](paint-pencil-draw-code.png)	
+![screenshot](paint-pencil-draw-code.png)	
 
 + Afprøv din kode igen. Og flyt denne gang din blyant rundt på scenen og hold museknappen nede. Kan du tegne med din blyant? 
 
-	![screenshot](paint-draw.png)
+![screenshot](paint-draw.png)
 
 ## Gem dit projekt { .save }
 
@@ -77,17 +77,17 @@ Lad os tilføje nogle forskellige farveblyanter til dit projekt og give brugerne
 
 ## Arbejdsliste { .check }
 
-+ Klik på din blyantssprite og klik så på 'Kostumer' og kopiér dit 'blyant-blå' kostume.
++ Klik på din blyant-sprite og klik så på 'Kostumer' og kopiér dit 'blyant-blå' kostume.
 
-	![screenshot](paint-blue-duplicate.png)
+![screenshot](paint-blue-duplicate.png)
 
 + Omdøb dit nye kostume til 'blyant-grøn', og farv blyanten grøn.
 
-	![screenshot](paint-pencil-green.png)
+![screenshot](paint-pencil-green.png)
 
-+ Lav to nye sprites, der skal bruges sådan, at man kan vælge den blå eller grønne blyant.
++ Lav to nye sprites, der skal bruges sådan, at man kan vælge den blå eller den grønne blyant.
 
-	![screenshot](paint-selectors.png)
+![screenshot](paint-selectors.png)
 
 + Når der klikkes på det grønne selektor ikon skal du `sende` {.blockevents} en meddelelse til blyantsspriten og fortælle den, at den skal ændre sit kostume og blyantsfarve.
 
@@ -106,7 +106,7 @@ Du kan dernæst taste 'grøn' for at lave din meddelelse.
 
 ![screenshot](paint-green-message.png)
 
-+ Du skal nu fortælle din blyantssprite, hvad den skal gøre, når den modtager meddelelsen. Tilføj denne kode til din blyantssprite: 
++ Du skal nu fortælle din blyant-sprite, hvad den skal gøre, når den modtager meddelelsen. Tilføj denne kode til din blyant-sprite: 
 
 ```blocks 
 			når jeg modtager [grøn v]
@@ -123,7 +123,7 @@ For at sætte blyanten til at farve grøn, så klik på den farvede boks i `skif
 		send [blå v] til alle
 ```  
 
-...og tilføje denne kode til blyantsspriten:
+...og tilføje denne kode til blyant-spriten:
 
 ```blocks 
 		når jeg modtager [blå v]
@@ -143,7 +143,7 @@ Hvis du hellere vil, så kan du starte ud med en anden farveblyant!
 
 + Afprøv dit projekt. Kan du skifte mellem blå og grønne blyanter?
 
-	![screenshot](paint-pens-test.png)
+![screenshot](paint-pens-test.png)
 
 ## Gem dit projekt { .save }
 
@@ -155,7 +155,7 @@ Nogle gange opstår der nogle fejl, så lad os tilføje en 'ryd' knap og et visk
 
 + Lad os tilføje en knap for at rydde scenen. Tilføj 'X-block' bogstavet til din scene og farv bogstavet rødt.
 
-	![screenshot](paint-x.png)
+![screenshot](paint-x.png)
 
 + Tilføj denne kode til din nye annullér knap, som rydder scenen, når der klikkes på knappen. 
 
@@ -168,15 +168,15 @@ Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for
 
 + Du kan også lave et viskelæder. Hvis din instruktør har givet dig en 'Projekt Ressourcer' mappe, så klik på 'Upload kostume fra fil' og tilføj 'eraser.svg' billedet.
 
-	![screenshot](paint-eraser-costume.png)
+![screenshot](paint-eraser-costume.png)
 	
 	Hvis du ikke har eraser.svg billedet, så bare lav en ny hvid blyant i stedet for! 
 
-+ Du bør også tilføje viskelæder billedet som en ny sprite, så du både har viskelæderet som et kostume i din blyant-sprite og som en sprite for sig selv. Din scene bør se således ud: 
++ Du bør også tilføje viskelæder billedet som en ny sprite, så du både har viskelæderet som et kostume til din blyant-sprite og som en sprite for sig selv. Din scene bør se således ud: 
 
-	![screenshot](paint-eraser-stage.png)
+![screenshot](paint-eraser-stage.png)
 
-+ Du kan derefter tilføje en kode til din viskelæder sprite for at fortælle blyanten, at den skal skifte over til et viskelæder. 
++ Du kan derefter tilføje en kode til din viskelæder-sprite for at fortælle blyanten, at den skal skifte over til et viskelæder. 
 
 ```blocks 
 		når denne sprite klikkes
@@ -193,19 +193,19 @@ Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for
 
 + Afprøv dit projekt for at se, om du kan rydde og viske ud på scenen.
 
-	![screenshot](paint-erase-test.png)
+![screenshot](paint-erase-test.png)
 
 + Der er nogle problemer med blyanten - du kan tegne hvor som helst på scenen, også nær _selektor_ ikonerne!  
 
-	![screenshot](paint-draw-problem.png)
+![screenshot](paint-draw-problem.png)
 
 For at løse dette problem bliver du nødt til at fortælle blyanten, at der kun skal tegnes hvis der klikkes med musen _og_ hvis musens y-position er større end -110 (`musens y-position`{.blocksensing}`> -120` {.blockoperators}). Ændr din blyants `hvis` {.blockcontrol} erklæring til at se således ud:
 
-	![screenshot](pencil-gt-code.png)
+![screenshot](pencil-gt-code.png)
 
 + Test dit projekt; nu burde du ikke kunne tegne nær selektor ikonerne.
 
-	![screenshot](paint-fixed.png)
+![screenshot](paint-fixed.png)
 
 ## Gem dit projekt { .save }
 
@@ -227,21 +227,21 @@ Bredden på din blyant sættes nu repetitivt til værdien af din 'bredde' variab
 
 + Du kan ændre det opbevarede tal i denne variabel ved at højreklikke på din variabel (på scenen) og klikke på 'skyder'. 
 
-	![screenshot](paint-slider.png)
+![screenshot](paint-slider.png)
 
-	Nu kan du så glide skyderen under variablen for at ændre dets værdi.
+Nu kan du så glide skyderen, under variablen, for at ændre dets værdi.
 
-	![screenshot](paint-slider-change.png)
+![screenshot](paint-slider-change.png)
 
-+ Test dit projekt og se om du kan modificere blyantens bredde. 
++ Afprøv dit projekt og se om du kan modificere blyantens bredde. 
 
-	![screenshot](paint-width-test.png)
+![screenshot](paint-width-test.png)
 
-	Hvis du foretrækker det, kan du sætte en tilladt minimum og maksimum værdi på 'bredden'. Højreklik på din variabel igen og klik på 'sæt skyderen til min og maks'. Sæt minimum og maksimum værdierne til noget mere fornuftigt, såsom 1 og 20.
+Hvis foretrækker, så kan du sætte en tilladt minimum og maksimum værdi på 'bredden'. Højreklik på din variabel igen og klik på 'sæt skyderen til min og maks'. Sæt minimum og maksimum værdierne til noget mere fornuftigt, såsom 1 og 20.
 
-	![screenshot](paint-slider-max.png)
+![screenshot](paint-slider-max.png)
 
-	Bliv ved med at afprøve din 'bredde' variabel indtil du er tilfreds.
+Bliv ved med at afprøve din 'bredde'-variabel indtil du er tilfreds.
 
 ## Gem dit projekt { .save }
  
