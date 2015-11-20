@@ -17,7 +17,7 @@ In this project you'll learn how to code your own musical instruments!
 
 # Step 1: Sprites { .activity }
 
-Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called __sprites__. 
+Before you can start coding, you'll need to add in a 'thing' to code. In Scratch, these 'things' are called __sprites__. 
 
 ## Activity Checklist { .check }
 
