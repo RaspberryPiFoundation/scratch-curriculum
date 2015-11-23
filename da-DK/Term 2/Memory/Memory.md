@@ -25,7 +25,7 @@ Lad os først lave lave en figur, som kan ændre sig til en tilfældig rækkefø
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Vælg en figur og en baggrund. Din figur behøver ikke være en person, men den skal være i stand til at vise forskellige farver.
 
@@ -42,7 +42,7 @@ Giv din figur 4 forskellige farvekostumer, en for hver af de 4 ovenstående farv
 
 ![screenshot](colour-costume.png)
 
-+ Du skal oprette en _liste_ for at lave en tilfældig rækkefølge. En liste er blot en variabel, som opbevarer en stor mængde data __i ordnet rækkefølge__. Lav en liste som du kalder `sequence` {.blockdata}. Da det kun er din figur, som skal se denne liste, så vælger vi 'Kun for denne sprite'.
++ Du skal oprette en _liste_ for at lave en tilfældig rækkefølge. En liste er blot en variabel, som opbevarer en stor mængde data __i ordnet rækkefølge__. Lav en liste som du kalder `rækkefølge` {.blockdata}. Da det kun er din figur, som skal se denne liste, så vælger vi 'Kun for denne sprite'.
 
 ![screenshot](colour-list.png)
 
@@ -54,10 +54,10 @@ Nu bør du se din tomme liste øverst til venstre af din scene samt en del nye b
 
 ```blocks 
 	når du klikker på ⚑
-	slet (alle v) fra [sequence v]
+	slet (alle v) fra [rækkefølge v]
 	gentag (5) gange	
-   	tilføj (vælg tilfældigt mellem (1) og (4)) til [sequence v] 
-   	skift kostume til (punkt (last v) på [sequence v])
+   	tilføj (vælg tilfældigt mellem (1) og (4)) til [rækkefølge v] 
+   	skift kostume til (punkt (last v) på [rækkefølge v])
    	vent (1) sekunder 
 end
 ``` 
@@ -67,13 +67,13 @@ Sørg også for at din liste er tom fra start af.
 ## Udfordring: Tilføj lyd {.challenge}
 Afprøv dit projekt et par gange. Måske du har lagt mærke til, at samme nummer vælges to (eller flere) gange i træk, hvilket gør rækkefølgen sværere at huske. Kan du lave en trommelyd hver gang figuren skifter kostume? 
 
-Kan du få en anden trommelyd frem afhængig af det tilfældige nummer, som bliver valgt? Dette vil ligne _meget_ den kode, som ændrer figurens kostume.
+Kan du få en anden trommelyd frem afhængig af det tilfældige nummer, som bliver valgt? Dette ligner _meget_ den kode, som ændrer figurens kostume.
 
 ## Gem dit projekt { .save }
 
 # Trin 2: Gentagelse af rækkefølgen { .activity }
 
-Lad os tilføje 4 knapper så spilleren kan gentage den rækkefølge, de har husket på.
+Lad os tilføje 4 knapper så spilleren kan gentage den rækkefølge, han/hun har husket på.
 
 ## Arbejdsliste { .check }
 
@@ -92,8 +92,8 @@ Lad os tilføje 4 knapper så spilleren kan gentage den rækkefølge, de har hus
 
 ```blocks 
 	når jeg modtager [rød v]
-	hvis <(punkt (1 v) på [sequence v]) = [1]> så
-   	slet (1 v) fra [sequence v]
+	hvis <(punkt (1 v) på [rækkefølge v]) = [1]> så
+   	slet (1 v) fra [rækkefølge v]
 	ellers
    	sig [Game over!] i (1) sekunder
    	stop [alle v]
@@ -103,14 +103,14 @@ end
 + Du kan også vise nogle blinkende lys, når listen er tom, da dette betyder at hele rækkefølgen er blevet gættet korrekt. Tilføj denne kode til slutningen af din figurs `når du klikker på ⚑` {.blockevents} script:
 
 ```blocks 
-	vent indtil <(længden af [sequence v]) = [0]>
-	send [won v] til alle og vent
+	vent indtil <(længden af [rækkefølge v]) = [0]>
+	send [vundet v] til alle og vent
 ``` 
 
 + Klik på din scene og tilføj denne kode således at baggrunden ændrer farve, når spilleren har vundet.
 
 ```blocks 
-	når jeg modtager [won v] 
+	når jeg modtager [vundet v] 
 	spil lyden [drum machine v]
 	gentag (50) gange
    	ændr effekten [farve v] med (25)
@@ -163,19 +163,19 @@ Indtil videre skal spilleren kun huske på 5 farver. Lad os forbedre dit spil, s
 	når du klikker på ⚑ 
 	sæt [score v] til [3]
 	for evigt
-   	slet (alle v) fra [sequence v] 
+   	slet (alle v) fra [rækkefølge v] 
    	gentag (score) gange
-      	tilføj (vælg tilfældigt mellem (1) og (4)) til [sequence v] 
-        skift kostume til (punkt (sidste v) på [sequence v])
+      	tilføj (vælg tilfældigt mellem (1) og (4)) til [rækkefølge v] 
+        skift kostume til (punkt (sidste v) på [rækkefølge v])
         vent (1) sekunder 
    	end
-   	vent indtil <(længden af [sequence v]) = [0]>
-   	send [won v] til alle og vent
+   	vent indtil <(længden af [rækkefølge v]) = [0]>
+   	send [vundet v] til alle og vent
    	ændr [score v] med (1) 
     end
 ``` 
  
-+ Få dine venner til at afprøve dit spil. Husk at skjule `sequence` {.blockdata} listen, før de begynder at spille! 
++ Få dine venner til at afprøve dit spil. Husk at skjule `rækkefølge` {.blockdata} listen, før de begynder at spille! 
 
 ## Gem dit projekt { .save }
 
@@ -191,8 +191,8 @@ Lad os gemme en high score, så du kan spille mod dine venner.
 
 ```blocks 
 	når jeg modtager [rød v]
-	hvis <(punkt (1 v) på [sequence v]) = [1]> så
-   	slet (1 v) fra [sequence v]
+	hvis <(punkt (1 v) på [rækkefølge v]) = [1]> så
+   	slet (1 v) fra [rækkefølge v]
 	ellers
    	sig [Game over!] i (1) sekunder
    	hvis <(score) > (high score)> så
@@ -245,8 +245,8 @@ Kan du tilføje et andet hvidt kostume til din figur, som vises i starten af dit
 ## Gem dit projekt { .save }
 
 ## Udfordring: Sværhedsgrad {.challenge}
-Kan du gøre det muligt for spilleren at vælge mellem 'begynder' niveau (hvor kun den røde og den blå tromme bruges) og 'normal' (som bruger alle 4 trommer)? 
+Kan du gøre det muligt for spilleren at vælge mellem 'begynder-niveau' (hvor kun den røde og den blå tromme bruges) og 'normal' (som bruger alle 4 trommer)? 
 
-Du kunne faktisk også tilføje en 'øvet' version, som benytter en femte tromme!
+Du kan ovenikøbet tilføje en 'øvet' version, som benytter en femte tromme!
 
 ## Gem dit projekt { .save }
