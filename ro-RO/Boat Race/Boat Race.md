@@ -259,3 +259,6 @@ Poți crea scene noi și să-i lași pe jucători să aleagă între nivele?
 
 ## Salvează proiectul { .save }
 
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by Elena-Georgeta Popa. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
