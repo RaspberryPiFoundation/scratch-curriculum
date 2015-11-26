@@ -20,17 +20,17 @@
             "beta": true,
             "filename": "Ghostbusters/Ghostbusters.md"
         },
-	{
+	    {
             "number": 4,
             "beta": true,
-            "filename": "ChatBot/ChatBot.md"
-  	    "note": "ChatBot/ChatBot - notes.md"
+            "filename": "ChatBot/ChatBot.md",
+  	        "note": "ChatBot/ChatBot - notes.md"
         },
         {
             "number": 5,
             "beta": true,
-            "filename": "Boat Race/Boat Race.md"
-  	    "note": "Boat Race/Boat Race - notes.md"
+            "filename": "Boat Race/Boat Race.md",
+  	        "note": "Boat Race/Boat Race - notes.md"
         }      
       
     ]
