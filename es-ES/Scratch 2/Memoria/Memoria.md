@@ -81,7 +81,7 @@ Vamos a añadir 4 botones para que el jugador pueda repetir la secuencia a recor
 + Al presionar el tambor rojo, tendrás que enviar un mensaje a tu personaje, diciéndole que se ha presionado el botón rojo. Añade este código al tambor rojo:
 
 	```blocks
-		al clickear este objeto
+		al hacer clic en este objeto
 		enviar [rojo v]
 	```
 
