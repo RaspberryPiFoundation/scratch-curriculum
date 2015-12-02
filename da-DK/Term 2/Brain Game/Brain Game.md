@@ -22,7 +22,7 @@ Lad os starte med at lave nogle tilfældige spørgsmål, som spilleren skal svar
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Vælg en figur og en baggrund til dit spil. Du kan vælge lige hvad du har lyst til! Her er et eksempel:
 
@@ -172,7 +172,7 @@ Du kan også vise og skjule din figur, og dette gælder faktisk også for dit st
 
 I stedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så lad os tilføje noget grafik, som fortæller spilleren hvordan de klarer sig.
 
-+ Lav en ny sprite, som du kalder 'Resultat', og som indeholder både et fluebens- og et krydskostume. 
++ Lav en ny sprite, som du kalder 'resultat', og som indeholder både et fluebens- og et krydskostume. 
 
 	![screenshot](brain-result.png)  
 
@@ -180,7 +180,7 @@ I stedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så 
 
 	![screenshot](brain-broadcast-answer.png)
 
-+ Nu kan du bruge disse meddelelser til at vise 'fluebens' -eller 'kryds' kostumet. Tilføj denne kode til din nye 'Resultat' sprite: 
++ Nu kan du bruge disse meddelelser til at vise 'fluebens' -eller 'kryds' kostumet. Tilføj denne kode til din nye resultat-sprite: 
 
 	![screenshot](brain-show-answer.png)	 
 
@@ -190,7 +190,7 @@ I stedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så 
 
 + Har du lagt mærke til at koden for `når jeg modtager rigtigt` {.blockevents} og `når jeg modtager forkert` {.blockevents} næsten er identiske? Lad os lave en funktion, som gør det lettere for dig at lave ændringer i din kode.
 
-	Vælg din 'Resultat' sprite og klik så på `Flere Brikker` {.blockmoreblocks} og dernæst `Skab en Brik`. Lav en ny funktion du kalder `animer` {.blockmoreblocks}.
+Vælg din resultat-sprite og klik så på `Flere Brikker` {.blockmoreblocks} og dernæst `Skab en Brik`. Lav en ny funktion du kalder `animer` {.blockmoreblocks}.
 
 	![screenshot](brain-animate-function.png)  
 
