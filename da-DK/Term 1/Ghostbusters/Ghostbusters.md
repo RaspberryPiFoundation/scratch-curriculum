@@ -22,7 +22,7 @@ Du skal lave et fangelegsspil med spøgelser!
 
 + Start et nyt Scratch projekt, og slet-katte spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.  
 
-+ Tilføj en ny spøgelses sprite og en passende baggrund. 
++ Tilføj en ny spøgelses-sprite og en passende baggrund. 
 
 ![screenshot](ghost-ghost.png)
 
