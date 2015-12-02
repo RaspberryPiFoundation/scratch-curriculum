@@ -11,7 +11,7 @@ I dette projekt skal børnene lære at kombinere kodeblokke med henblik på at l
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline.
 
-Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Project Materials', som indeholder:  
+Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Projektmateriale', som indeholder:  
 
 + LostInSpace.sb2
 
@@ -43,6 +43,6 @@ Der findes også en version af dette projekt, hvor de eksterne ressourcer er loa
 	fjern grafiske effekter
 ```
 
-+ 'Rumskib' spriten vil bevæge sig sidelæns medmindre det roteres 90 grader med uret. At rotere rumskibet er del af instruktionerne i projektet, men en ny sprite kan erstatte rumskibet, hvis der opstår problemer.
++ Rumskib-spriten vil bevæge sig sidelæns medmindre det roteres 90 grader med uret. At rotere rumskibet er del af instruktionerne i projektet, men en ny sprite kan erstatte rumskibet, hvis der opstår problemer.
 
-	![screenshot](space-rotate.png)
+![screenshot](space-rotate.png)
