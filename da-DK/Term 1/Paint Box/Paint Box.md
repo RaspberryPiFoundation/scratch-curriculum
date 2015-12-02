@@ -51,7 +51,7 @@ Lad os starte med at lave en blyant, som vi kan bruge til at tegne med på scene
 
 ![screenshot](paint-center.png)
 
-Løs dette ved at klikke på 'blyant-blå' kostumet på din blyantssprite, og klik på 'Sæt kostumets..'. 
+Løs dette ved at klikke på 'blyant-blå' kostumet på din blyant-sprite, og klik på 'Sæt kostumets..'. 
 
 ![screenshot](paint-center-icon.png)
 
@@ -170,9 +170,9 @@ Læg mærke til at du ikke behøver sende en meddelelse for at rydde scenen, for
 
 ![screenshot](paint-eraser-costume.png)
 	
-	Hvis du ikke har eraser.svg billedet, så bare lav en ny hvid blyant i stedet for! 
+Hvis du ikke har eraser.svg billedet, så bare lav en ny hvid blyant i stedet for! 
 
-+ Du bør også tilføje viskelæder billedet som en ny sprite, så du både har viskelæderet som et kostume til din blyant-sprite og som en sprite for sig selv. Din scene bør se således ud: 
++ Du bør også tilføje viskelæderbilledet som en ny sprite, så du både har viskelæderet som et kostume til din blyant-sprite og som en sprite for sig selv. Din scene bør se således ud: 
 
 ![screenshot](paint-eraser-stage.png)
 
