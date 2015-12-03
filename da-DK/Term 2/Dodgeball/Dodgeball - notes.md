@@ -6,12 +6,12 @@ materials: ["Klubleder Ressourcer/*.*"]
 ...
 
 #Introduktion:
-I dette projekt skal børnene lære, hvordan man laver et platformsspil ved at benytte de Scratch koncepter og færdigheder, som vi har lært i tidligere projekter.
+I dette projekt skal børnene lære, hvordan man laver et platformsspil ved at benytte de Scratch-koncepter og færdigheder, som vi har lært i tidligere projekter.
 
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline.
 
-Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Project Materials', som indeholder:  
+Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Projektmateriale', som indeholder:  
 
 + Dodgeball.sb2
 
