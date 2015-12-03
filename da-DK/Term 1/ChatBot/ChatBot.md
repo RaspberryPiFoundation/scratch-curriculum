@@ -25,9 +25,10 @@ Nu skal du lære hvordan du programmerer din egen talende robot!
 	+ Hvor bor den?
 	+ Er den glad? alvorlig? sjov? genert? venlig?
 
+
 + Start et nyt Scratch projekt, og slet katte-spriten så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Vælg en af disse sprite figurer, og tilføj den til dit projekt:
++ Vælg en af disse sprite-figurer, og tilføj den til dit projekt:
 
 	![screenshot](chatbot-characters.png)
 
