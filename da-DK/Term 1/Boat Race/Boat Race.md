@@ -83,7 +83,7 @@ Din båd kan sejle gennem træbarriererne! Lad os finde en løsning.
 ```blocks 
 	hvis <berører farven [#603C15]?> så
 			skift kostume til [ramt v]
-			sig [Noooooo!] i (1) sekunder
+			sig [Neeeeej!] i (1) sekunder
 			skift kostume til [normal v]
 			peg i retning (0 v)
 		gå til x:(-215) y:(-160)
