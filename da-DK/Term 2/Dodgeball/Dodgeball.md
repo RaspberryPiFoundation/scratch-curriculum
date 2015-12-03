@@ -22,7 +22,7 @@ Lad os begynde med at lave en figur, som kan bevæge sig til venstre og højre s
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Til dette projekt bør du have en 'Projekt Ressourcer' mappe, som indeholder det baggrundsbillede du skal bruge. Sørg for at du kan finde denne mappe, og spørg din instruktør, hvis du ikke kan finde den.
 
@@ -55,7 +55,7 @@ end
 
 + For at bevæge din figur til venstre skal du tilføje endnu en `hvis` {.blockcontrol} blok inden i din `for evigt` {.blockcontrol} loop, som får din figur til at bevæge sig til venstre. Husk at afprøve din nye kode, så du er sikker på at det virker!  
 
-+ For at kravle opad en stolpe skal din figur bevæge sig en lille smule, når der bliver trykket på Op piletasten og den rører den rigtige farve. Tilføj denne kode indeni din figurs `for evigt` {.blockcontrol} loop:
++ For at kravle opad en stolpe skal din figur bevæge sig en lille smule, når der bliver trykket på 'op' piletasten og den rører den rigtige farve. Tilføj denne kode indeni din figurs `for evigt` {.blockcontrol} loop:
 
 ```blocks 
 	hvis <<trykket på tasten [pil opad v]?> og <berører farven [#FFFF00]?>> så
@@ -86,7 +86,7 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
 
 ![screenshot](dodge-no-gravity.png)
 
-+ Lad os, som løsning, tilføje noget tyngdekraft til dit spil. Lav en ny variabel du kalder `gravity` {.blockdata}. Du kan skjule variablen på din scene, hvis du foretrækker det. 
++ Lad os, som løsning, tilføje noget tyngdekraft til dit spil. Lav en ny variabel du kalder `tyngdekraft` {.blockdata}. Du kan skjule variablen på din scene, hvis du foretrækker det. 
 
 ![screenshot](dodge-gravity.png) 
 
@@ -94,9 +94,9 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
 
 ```blocks 
 	når du klikker på ⚑
-	sæt [gravity v] til [-4]
+	sæt [tyngdekraft v] til [-4]
 	for evigt
-   	ændr y med (gravity)
+   	ændr y med (tyngdekraft)
 	end
 ``` 
  
@@ -108,10 +108,10 @@ Lad os få din figur til at bevæge sig mere realistisk ved at tilføje tyngdekr
 
 ```blocks 
 	når du klikker på ⚑
-	sæt [gravity v] til [-4]
+	sæt [tyngdekraft v] til [-4]
 	for evigt
    	hvis <ikke <<berører farven [#0000FF]?> eller <berører farven [#FFFF00]?>>> så
-      ændr y med (gravity)
+      ændr y med (tyngdekraft)
    end
 end
 ``` 
@@ -133,22 +133,22 @@ Siden tyngdekraften hele tiden skubber din figur ned med 4 pixels, så skal du v
 
 + Hvis du afprøver din kode, så vil du se at den virker, men bevægelserne er ikke særlig jævne. For at udjævne hoppene skal du flytte din figur et mindre og mindre stykke, indtil den ikke hopper mere. 
 
-+ Hertil skal du bruge en anden variabel du kalder `jump height` {.blockdata}. Igen kan du skjule denne variabel, hvis du foretrækker det.
++ Hertil skal du bruge en anden variabel du kalder `hoppehøjde` {.blockdata}. Igen kan du skjule denne variabel, hvis du foretrækker det.
  
 + Slet den hoppekode du føjede til din figur og erstat den med denne kode:
 
 ```blocks 
 	når du trykker på [mellemrum v]
-	sæt [jump height v] til [8]
-	gentag indtil <(jump height) = [0]>
-   	ændr y med (jump height)
-   	ændr [jump height v] med (-0.5)
+	sæt [hoppehøjde v] til [8]
+	gentag indtil <(hoppehøjde) = [0]>
+   	ændr y med (hoppehøjde)
+   	ændr [hoppehøjde v] med (-0.5)
 	end
 ``` 
  
 Denne kode flytter din figur op med 8 pixels, dernæst med 7.5 pixels, så 7 pixels og så fremdeles, indtil din figur er færdig med at hoppe. Dette får hopningen til at se meget mere jævn ud.
 
-+ Ændr startværdien af din `jump height` {.blockdata} variabel og afprøv det indtil du er tilfreds med, hvor højt din figur hopper. 
++ Ændr startværdien af din `hoppehøjde` {.blockdata} variabel og afprøv den indtil du er tilfreds med, hvor højt din figur hopper. 
 
 ## Gem dit projekt { .save }
 
@@ -163,7 +163,7 @@ Nu hvor du kan bevæge din figur rundt, så lad os tilføje nogle bolde, som din
 
 ## Arbejdsliste { .check }
 
-+ Lav en ny bold sprite. Du kan vælge hvilken som helst type bold, som du har lyst til.
++ Lav en ny bold-sprite. Du kan vælge hvilken som helst type bold, som du har lyst til.
 
 ![screenshot](dodge-balls.png)
 
@@ -181,11 +181,11 @@ Koden laver en ny klon af bolden hvert 3. sekund. Hver ny klon bevæger sig lang
 
 ![screenshot](dodge-ball-test.png)
 
-+ Tilføj noget mere kode til din bold sprite, så boldene bevæger sig rundt på alle 3 platforme. 
++ Tilføj noget mere kode til din bold-sprite, så boldene bevæger sig rundt på alle 3 platforme. 
 
 ![screenshot](dodge-ball-more-motion.png)
 
-+ Her til sidst skal du bruge en kode til når din figur bliver ramt af en bold! Tilføj denne kode til din bold sprite: 
++ Her til sidst skal du bruge en kode til når din figur bliver ramt af en bold! Tilføj denne kode til din bold-sprite: 
 
 ```blocks 
 	når jeg starter som klon
@@ -196,7 +196,7 @@ Koden laver en ny klon af bolden hvert 3. sekund. Hver ny klon bevæger sig lang
 end
 ``` 
 
-+ Du skal også tilføje denne kode til din figur for at flytte tilbage til start, når den bliver ramt:
++ Du skal også tilføje denne kode til din figur for at flytte tilbage til start, når figuren bliver ramt:
 
 ```blocks  
 	når jeg modtager [ramt v]
@@ -229,7 +229,7 @@ Lad os gøre spillet en smule sværere at fuldføre ved at tilføje nogle lasere
 
 ![screenshot](dodge-lasers-costume.png)
 
-+ Placer din nye laser hvor end du ønsker, mellem 2 platforme.
++ Placér din nye laser hvor end du ønsker, mellem 2 platforme.
 
 ![screenshot](dodge-lasers-position.png)
 
@@ -247,9 +247,9 @@ end
  
 Hvis du hellere vil, så kan du `vente` {.blockcontrol} et `tilfældigt` {.blockoperators} antal gange mellem skift af kostume.
 
-+ Tilsidst skal du tilføje en kode til din laser så 'ramt' meddelelsen sendes, når laseren rører din figur. Koden vil være den samme som den kode du tilføjede til din bold sprite. 
++ Tilsidst skal du tilføje en kode til din laser så 'ramt' meddelelsen sendes, når laseren rører din figur. Koden vil være den samme som den kode du tilføjede til din bold-sprite. 
 
-Du beøhver ikke tilføje mere kode til din figur - den ved allerede hvad den skal gøre, når den bliver ramt!
+Du behøver ikke tilføje mere kode til din figur - den ved allerede hvad den skal gøre, når den bliver ramt!
 
 + Afprøv dit spil for at se, om du kan komme forbi laserne. Ændr `vent` {.blockcontrol} tiderne i din kode, hvis laserne er for nemme eller for svære.
 
