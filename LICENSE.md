@@ -1,5 +1,5 @@
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+The contents of this repository are licensed as follows:
 
-https://www.codeclub.org.uk/terms-and-conditions
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-© Code Club World LTD. All rights reserved 2012–2015
+The contents of this repository are used to generate the Code Club projects seen on websites such as codeclubprojects.org and projects.codeclubworld.org. The terms of use related to Code Club projects is covered by our terms and conditions: https://www.codeclub.org.uk/terms-and-conditions
