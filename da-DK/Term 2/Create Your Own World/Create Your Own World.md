@@ -22,15 +22,15 @@ Lad os starte med at lave en spiller, som kan bevæge sig rundt i din verden.
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Til dette projekt bør du have en 'Projekt Ressourcer' mappe, som indeholder alle de billeder, du skal bruge. Sørg for at du kan finde denne mappe, og spørg din instruktør, hvis du ikke kan finde den.
 
-	![screenshot](world-resources.png)
+![screenshot](world-resources.png)
 
 + Tilføj 'room1.png' som din nye scenebaggrund, og billedet 'player.png' som en ny sprite. Hvis du ikke har disse billeder, så kan du selv tegne dem! Dit projekt bør se således ud: 
 
-	![screenshot](world-player.png)  
+![screenshot](world-player.png)  
 
 + Lad os bruge piletasterne til at bevæge spilleren rundt med. Når spilleren trykker på 'op' piletasten, så skal spilleren bevæge sig fremad ved at ændre dens y koordinat. Tilføj denne kode til din sprite (spilleren):
 
@@ -45,7 +45,7 @@ end
  
 + Afprøv din spiller ved at klikke på flaget og trykke på 'op' piletasten. Bevæger din spiller sig fremad?
 
-	![screenshot](world-up.png)
+![screenshot](world-up.png)
 
 + For at flytte spilleren til venstre, så skal du tilføje endnu en `hvis` {.blockcontrol} blok til din spiller, som ændrer x koordinatet:
 
@@ -68,7 +68,7 @@ Kan du tilføje noget mere kode til din spiller, så den kan bevæge sig opad, n
 
 + Afprøv din spiller igen - du vil nok lægge mærke til at den kan gå gennem de lysegrå vægge.
 
-	![screenshot](world-walls.png)
+![screenshot](world-walls.png)
 
 + For at løse dette, skal vi flytte spilleren, men derefter flytte den tilbage, hvis den rører en lysegrå væg. Du skal bruge denne kode:  
 
@@ -88,11 +88,11 @@ Læg mærke til at den nye `hvis`{.blockcontrol}`berører farven`{.blocksensing}
 
 + Afprøv denne nye kode ved at bevæge dig langs væggen - du bør ikke kunne gå opad og ind i den.  
 
-	![screenshot](world-walls-test.png)
+![screenshot](world-walls-test.png)
 
 + Lad os gøre det samme for venstre piletast og flytte spilleren tilbage, hvis den rører en væg. Din kode for din spiller bør indtil videre se sådan ud: 
 
-	![screenshot](world-wall-code.png)  
+![screenshot](world-wall-code.png)  
 
 ## Udfordring: Redigér din spillers bevægelse {.challenge}
 Tilføj en kode til din spiller, så du ikke kan gå gennem vægge i nogen som helst retning. Brug koden, som du allerede har lavet, til at hjælpe dig! 
@@ -107,11 +107,11 @@ Lad os give spilleren mulighed for at gå gennem døre, der fører ind til andre
 
 + Tilføj yderligere 2 baggrunde til din scene ('room2.png' og 'room3.png'), således at du har 3 baggrunde i alt. Sørg for at de er i den rigtige rækkefølge - dette vil være til gavn senere.
 
-	![screenshot](world-backdrops.png)
+![screenshot](world-backdrops.png)
 
 + Du får brug for en ny variabel, som vi kalder rum `rum` {.blockdata}, for at holde styr på hvilket rum spilleren befinder sig i.
 
-	![screenshot](world-room.png)
+![screenshot](world-room.png)
 
 + Når spilleren rører den orange dør i det første rum, så bør næste baggrund vises, og spilleren skal flytte tilbage til venstre side af scenen. Her er den kode, som du skal bruge - den skal ligge indeni spillerens `for evigt` {.blockcontrol} loop: 
 
@@ -133,7 +133,7 @@ Lad os give spilleren mulighed for at gå gennem døre, der fører ind til andre
  
 + Klik på flaget og flyt din spiller gennem den orange dør. Bevæger din spiller sig hen til den næste skærm? Ændrer `rum` {.blockdata} variablen sig til 2?
 
-	![screenshot](world-room-test.png)
+![screenshot](world-room-test.png)
 
 ## Udfordring: Gå til det forrige rum {.challenge}
 Kan du få din spiller til at gå til det forrige rum, når den rører en gul dør? Husk, denne kode ligner _meget_ den kode, som du allerede har tilføjet da du fik spilleren til at flytte sig til næste rum.   
@@ -148,7 +148,7 @@ Lad os tilføje nogle skilte til din verden for at guide din spiller på rejsen.
 
 + Upload billedet 'sign.svg' som en ny sprite, og omdøb den 'velkomstskilt'.
 
-	![screenshot](world-sign.png)  
+![screenshot](world-sign.png)  
 
 + Skiltet skal kun være synligt i rum 1, så lad os tilføje noget kode til skiltet, så vi er sikre på, at det er det, som er gældende:
 
@@ -165,7 +165,7 @@ end
  
 + Afprøv dit skilt ved at bevæge dig mellem de forskellige rum. Dit skilt bør kun være synligt i rum 1. 
  
-	![screenshot](world-sign-test.png)  
+![screenshot](world-sign-test.png)  
  
 + Et skilt er ikke til megen nytte, hvis den ikke afsender en besked! Lad os tilføje noget mere kode (i en anden blok) for at vise en meddelelse, hvis spilleren rører skiltet:  
 
@@ -181,12 +181,12 @@ end
 ```   
 + Afprøv dit skilt - du bør nu se en besked, når spilleren rører skiltet. 
 
-	![screenshot](world-sign-test2.png)  
+![screenshot](world-sign-test2.png)  
 
 ## Gem dit projekt { .save }
 
 ## Udfordring: Skat! {.challenge}
-Kan du tilføje en 'skattekiste' sprite ved at bruge billedet 'chest.svg'? Skattekisten bør være placeret i rum 3 og sige 'Godt gået!', når spilleren rører den.  
+Kan du tilføje en skattekiste-sprite ved at bruge billedet 'chest.svg'? Skattekisten bør være placeret i rum 3 og sige 'Godt gået!', når spilleren rører den.  
 
 ![screenshot](world-treasure.png)  
 
@@ -198,9 +198,9 @@ Lad os tilføje nogle andre folk til din verden, som din spiller kan interagere 
 
 ## Arbejdsliste { .check }
 
-+ Tilføj en ny 'person' sprite ved at bruge billedet 'person.png'.
++ Tilføj en ny person-sprite ved at bruge billedet 'person.png'.
 
-	![screenshot](world-person.png)  
+![screenshot](world-person.png)  
 
 + Tilføj denne kode, så personen taler til din spiller. Denne kode ligner meget den kode, som du føjede til dit skilt: 
 
@@ -229,20 +229,20 @@ Din person opfører sig forskelligt, afhængigt af om du placerer koden indeni `
 
 + Har du lagt mærke til at din person vender på hovedet? Stop dette ved at klikke på spritens informationsikon, og klik så på prikken for at ændre rotationsstilen.   
 
-	![screenshot](world-person-rotate.png)  
+![screenshot](world-person-rotate.png)  
 
 ## Udfordring: Forbedr din person {.challenge}
 Kan du tilføje noget kode til din nye person, så den kun vises i rum 1? Sørg for at afprøve din nye kode! 
 
 ## Gem dit projekt { .save }
 
-+ Du kan også tilføje nogle patruljerende fjender, som afslutter spillet, hvis spilleren rører dem. Tilføj en ny 'fjende' sprite, og ændr rotationsstilen, ligesom du gjorde med 'person' spriten. 
++ Du kan også tilføje nogle patruljerende fjender, som afslutter spillet, hvis spilleren rører dem. Tilføj en ny fjende-sprite, og ændr rotationsstilen, ligesom du gjorde med person-spriten. 
 
 + Tilføj noget kode til din fjende, så den kun viser sig i rum 2. 
 
 + Du skal også tilføje noget kode for at flytte fjenden og for at afslutte spillet, hvis fjenden rører spilleren. Det er lettets at gøre i seperate kodeblokke. Således bør koden til din fjende se ud: 
 
-	![screenshot](world-enemy-code.png)  
+![screenshot](world-enemy-code.png)  
 
 + Afprøv dit spil og sørg for at: 
 	+ Den kun er synlig i rum 2;
@@ -264,13 +264,13 @@ Kan du lave en anden fjende i rum 3, som patruljerer op og ned gennem hullet i v
 
 + Tilføj en ny variabel, som du kalder `mønter` {.blockdata} til dit projekt.
 
-+ Tilføj en ny 'mønt' sprite til dit projekt.
++ Tilføj en ny mønt-sprite til dit projekt.
 
 ![screenshot](world-coins.png)
 
 + Tilføj en kode til din mønt, så den kun vises i rum 1.
 
-+ Tilføj en kode til din 'mønt' sprite, så der tilføjes 1 til dine `mønter` {.blockdata} når de er blevet samlet op:
++ Tilføj en kode til din mønt-sprite, så der tilføjes 1 til dine `mønter` {.blockdata} når de er blevet samlet op:
 
 ```blocks 
 	når du klikker på ⚑ 
@@ -295,11 +295,11 @@ Kan du tilføje flere mønter til dit spil? De kan fx være i forskellige rum, o
 
 + Lav en ny sprite fra dit 'key-blue.svg' billede. Udskift din scene til baggrund 3, og placér nøglen et sted, hvor den er svær at nå hen til!  
 
- 	![screenshot](world-key.png)
+ ![screenshot](world-key.png)
 
 + Sørg for at din nøgle kun er synlig i rum 3.
 
-+ Lav en ny listevariabel, som du kalder for `lager` {.blockdata}. Det er her, hvor du så opbevarer alle de genstande, som din spiller samler ind.  
++ Lav en ny listevariabel, som du kalder for `lager` {.blockdata}. Det er så her, hvor du opbevarer alle de genstande, som din spiller samler ind.  
 
 + Koden til at opsamle nøglen ligner meget den kode, som du brugte til at samle mønter. Forskellen er, at det er nøglen du tilføjer til dit lager. 
 
@@ -348,11 +348,11 @@ Nu kan du fortsætte med at skabe din egen verden. Her er nogle idéer:
 
 + Benyt mønter til at lokke information ud af andre folk; 
 
-	![screenshot](world-bribe.png)  
+![screenshot](world-bribe.png)  
 
 + Du kan ovenikøbet tilføje nordlige og sydlige døre, sådan at spilleren kan bevæge sig rundt mellem rummene i alle 4 retninger. Forestil dig et 3x3 gitter, hvis du for eksempel har 9 rum. Du kan så tilføje 3 til rumnummeret for at bevæge dig 1 niveau ned.  
 
-	![screenshot](world-north-south.png)  
+![screenshot](world-north-south.png)  
 
 ## Gem dit projekt { .save }
 
