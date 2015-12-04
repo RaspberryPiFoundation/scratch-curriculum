@@ -26,11 +26,11 @@ Lad os lave et rumskib, som kan forsvare Jorden!
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Tilføj 'stars' baggrunden og 'Spaceship' spriten til dit projekt. Formindsk rumskibet og flyt det mod bunden af scenen.
++ Tilføj 'stars' baggrunden og 'Spaceship'-spriten til dit projekt. Formindsk rumskibet og flyt det mod bunden af scenen.
 
-	![screenshot](invaders-sprites.png)
+![screenshot](invaders-sprites.png)
 
 + Tilføj noget kode som flytter dit rumskib til venstre, når venstre piletast trykkes ned. Du skal bruge disse blokke: 
 
@@ -55,7 +55,7 @@ Lad os give rumskibet mulighed for at affyre lyn!
 
 ## Arbejdsliste { .check }
 
-+ Tilføj 'Lightning' spriten fra Scratch biblioteket. Klik på spritens kostume og vend lynet på hovedet. 
++ Tilføj 'Lightning'-spriten fra Scratch biblioteket. Klik på spritens kostume og vend lynet på hovedet. 
 
 	![screenshot](invaders-lightning.png)
 
@@ -77,7 +77,7 @@ Lad os give rumskibet mulighed for at affyre lyn!
 	end 
 ``` 
  
-+ Hver gang der laves en ny klon, så bør dens placering starte med at være samme sted som rumskibet, hvorefter den så bevæger sig opad på scenen, indtil den rører kanten. Tilføj følgende kode **til lynspriten**:
++ Hver gang der laves en ny klon, så bør dens placering starte med at være samme sted som rumskibet, hvorefter den så bevæger sig opad på scenen, indtil den rører kanten. Tilføj følgende kode **til lyn-spriten**:
 
 ```blocks 
 		når jeg starter som klon
@@ -89,7 +89,7 @@ Lad os give rumskibet mulighed for at affyre lyn!
 	slet denne klon 
 ```  
 
-Kommentar: Vi flytter den nye klon hen til rumskibet imens det stadig er skjult, og før vi så viser det. Det ser lidt bedre ud. 
+Kommentar: Vi flytter den nye klon hen til rumskibet imens det stadig er skjult, og før vi viser det. Det ser lidt bedre ud. 
 
 + Afprøv dine lyn ved at trykke på mellemrumstasten.
 
@@ -108,7 +108,7 @@ Lad os tilføje en masse flyvende rum-flodheste, som prøver på at ødelægge d
 
 + Lav en ny sprite ud fra 'Hippo1' billedet i Scratch biblioteket.
 
-	![screenshot](invaders-hippo.png)
+![screenshot](invaders-hippo.png)
 
 + Sæt dens rotation udelukkende mod ventre, og tilføj følgende kode for at skjule spriten, når vi starter spillet: 
 
@@ -119,11 +119,11 @@ Lad os tilføje en masse flyvende rum-flodheste, som prøver på at ødelægge d
 
 + Lav en ny sprite ved navn `fart` {.blockdata}, som er beregnet kun til flodhestespriten. 
 
-	![screenshot](invaders-var.png)
+![screenshot](invaders-var.png)
 
 Du ved når du har gjort det rigtigt, fordi navnet på variablen vil så vises ved siden af spriten på denne måde: 
 
-	![screenshot](invaders-var-test.png)
+![screenshot](invaders-var-test.png)
 
 + Følgende kode laver en ny flodhest med nogle sekunders mellemrum. **Scenen** er et godt sted at give liv til denne kode: 
 
@@ -135,7 +135,7 @@ Du ved når du har gjort det rigtigt, fordi navnet på variablen vil så vises v
 		end
 ```  
  
-+ Når en ny flodhesteklon begynder, så få den til at bevæge sig rundt på scenen (i tilfældig hastighed), indtil den bliver ramt af et lyn. Tilføj denne kode **til flodhest** spriten:
++ Når en ny flodhesteklon begynder, så få den til at bevæge sig rundt på scenen (i tilfældig hastighed), indtil den bliver ramt af et lyn. Tilføj denne kode **til flodhest-spriten:**
 
 ```blocks 
 		når jeg starter som klon
@@ -153,17 +153,17 @@ Du ved når du har gjort det rigtigt, fordi navnet på variablen vil så vises v
  
 + Afprøv koden til din flodhest. Du skulle gerne se en ny flodhest vise sig med nogle sekunders mellemrum, og at de hver især bevæger sig i deres eget tempo.
 
-	![screenshot](invaders-hippo-test.png) 
+![screenshot](invaders-hippo-test.png) 
 
 + Afprøv dine lyn. Forsinder flodhesten, hvis du rammer en af dem?
 
 + Vi skal få dit rumskib til at eksplodere, når en flodhest rører dit rumskib! Sørg først for at dit rumskib har 2 kostumer, henholdsvis et 'normal' og 'ramt' kostume.
 
-	![screenshot](invaders-spaceship-costumes.png)
+![screenshot](invaders-spaceship-costumes.png)
 
-	Rumskibets 'ramt' kostume kan laves ved at importere 'Sun' billedet fra Scratch biblioteket, og ved at bruge 'farvelæg en figur' redskabet til at ændre farven. 
+Rumskibets 'ramt' kostume kan laves ved at importere 'Sun' billedet fra Scratch biblioteket, og ved at bruge 'farvelæg en figur' redskabet til at ændre farven. 
 
-	![screenshot](invaders-sun.png)
+![screenshot](invaders-sun.png)
 
 + Tilføj denne kode til dit rumskib, så det skifter kostume, når det kolliderer med en flyvende flodhest: 
 
@@ -180,7 +180,7 @@ Du ved når du har gjort det rigtigt, fordi navnet på variablen vil så vises v
  
 + Har du lagt mærke til, at du har udsendt en 'ramt' meddelelse i ovenstående kode? Du kan bruge denne meddelelse til at få alle flodhestene til at forsvinde, når rumskibet bliver ramt. 
 
-	Tilføj denne kode til din flodhest:
+Tilføj denne kode til din flodhest:
 
 ```blocks 
 		når jeg modtager [ramt v]
@@ -189,7 +189,7 @@ Du ved når du har gjort det rigtigt, fordi navnet på variablen vil så vises v
  
 + Afprøv koden ved at starte et nyt spil, hvor du rammer ind i en flodhest. 
 
-	![screenshot](invaders-hippo-collide.png)
+![screenshot](invaders-hippo-collide.png)
 
 ## Gem dit projekt { .save }
 
@@ -204,19 +204,19 @@ Lad os lave en frugtflagermus, som smider appelsiner mod dit rumskib.
 
 ## Arbejdsliste { .check }
 
-+ Lav først en ny flagermussprite, som `går` {.blockmotion} henad scenen øverst oppe `for evigt` {.blockcontrol}. Husk at afprøve din kode.
++ Lav først en ny flagermus-sprite, som `går` {.blockmotion} henad scenen øverst oppe `for evigt` {.blockcontrol}. Husk at afprøve din kode.
 
-	![screenshot](invaders-bat.png)
+![screenshot](invaders-bat.png)
 
 + Hvis du kigger på flagermusens kostume, så vil du se, at den allerede har 2:
 
-	![screenshot](invaders-bat-costume.png)
+![screenshot](invaders-bat-costume.png)
 
-	Benyt `næste kostume` {.blocklooks} blokken for at få flagermusen til at flagre med sine vinger, når den bevæger sig.
+Benyt `næste kostume` {.blocklooks} blokken for at få flagermusen til at flagre med sine vinger, når den bevæger sig.
 
-+ Lav en ny 'Orange' sprite (appelsin) fra Scratch biblioteket.
++ Lav en ny appelsin-sprite fra Scratch biblioteket.
  
-	![screenshot](invaders-orange.png)
+![screenshot](invaders-orange.png)
  
 + Tilføj en kode til din flagermus, så den laver en ny appelsinklon med få sekunders mellemrum. 
 
@@ -228,7 +228,7 @@ Lad os lave en frugtflagermus, som smider appelsiner mod dit rumskib.
 		end
 ```  
  
-+ Klik på din appelsinsprite og tilføj denne kode for at få hver appelsinklon til at falde ned fra flagermusen mod rumskibet: 
++ Klik på din appelsin-sprite og tilføj denne kode for at få hver appelsinklon til at falde ned fra flagermusen mod rumskibet: 
 
 ```blocks 
 		når du klikker på ⚑
@@ -266,7 +266,7 @@ Lad os tilføje en 'game over' besked i slutningen af spillet.
 
 + Tegn en ny sprite ved navn 'Game Over' ved at bruge Tekst redskabet. 
 
-	![screenshot](invaders-game-over.png)
+![screenshot](invaders-game-over.png)
 
 + Udsend en `game over` {.blockevents} meddelelse på din scene, lige inden spillet slutter. 
 
@@ -274,7 +274,7 @@ Lad os tilføje en 'game over' besked i slutningen af spillet.
 		send [game over v] til alle og vent
 ``` 
 
-+ Tilføj denne kode til din 'Game Over' sprite, sådan at meddelelsen vises i slutningen af spillet: 
++ Tilføj denne kode til din Game Over-sprite, sådan at meddelelsen vises i slutningen af spillet: 
 
 ```blocks 
 		når du klikker på ⚑
@@ -284,7 +284,7 @@ Lad os tilføje en 'game over' besked i slutningen af spillet.
 		vis
 ```  
 
-Fordi du har brugt en `send [game over] og vent` {.blockevents} blok på din scene, så venter den med at afslutte spillet indtil 'Game Over' spriten er blevet vist. 
+Fordi du har brugt en `send [game over] og vent` {.blockevents} blok på din scene, så venter den med at afslutte spillet indtil Game Over-spriten er blevet vist. 
 
 + Afprøv dit spil. Hvor mange point kan du få? Kan du komme i tanker om nogle ting, som kan forbedre dit spil, hvis det enten er for nemt eller for svært?   
 
