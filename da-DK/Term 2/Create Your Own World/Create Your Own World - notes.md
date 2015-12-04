@@ -11,7 +11,7 @@ I dette projekt skal børnene lære, hvordan de laver deres eget __åben verden_
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline. 
 
-Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Project Materials', som indeholder:  
+Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Projektmateriale', som indeholder:  
 
 + CreateYourOwnWorld.sb2
 
@@ -38,8 +38,8 @@ Projekt ressourcer:
 
 #Udfordringer 
 + "Bevægelse i alle fire retninger" - tilføje op, ned, venstre og højre spillerkontroller;
-+ "Redigér din spillers bevægelse" - forhindr spilleren i at kunne gå gennem vægge; 
-+ "Gå til det forrige rum" - flyt 1 rum tilbage hvis du rører en gul dør;
++ "Redigér din spillers bevægelse" - forhindre spilleren i at kunne gå gennem vægge; 
++ "Gå til det forrige rum" - flytte 1 rum tilbage hvis du rører en gul dør;
 + "Skat!" - underbygge vores læring ved at tilføje objekter til verdenen;  
 + "Forbedr din person" - underbygge vores læring ved at tilføje objekter til verdenen;
 + "Flere fjender" - tilføje livsfarlige, bevægende objekter;
