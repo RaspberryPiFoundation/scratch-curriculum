@@ -23,7 +23,7 @@ Lad os starte med at lave en styreenhed (controller), som skal bruges til at sam
 
 ## Arbejdsliste { .check }
 
-+ Start et nyt Scratch projekt og slet kattespriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start et nyt Scratch projekt og slet katte-spriten, så dit projekt står tomt. Du kan finde Scratch redigeringsprogrammet online på <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Hvis din instruktør har givet dig en 'Ressourcer' mappe, så klik på 'Upload sprite fra fil' og tilføj 'controller.svg' billedet. Flyt spriten til midten af scenen.
 
@@ -60,7 +60,7 @@ Lad os tilføje nogle prikker, som spilleren skal samle sammen med deres styreen
 
 	![screenshot](dots-red.png)
 
-+ Tilføj dette script til din røde sprite prik for at lave en ny klon af din prik med få sekunders mellemrum:
++ Tilføj dette script til din røde sprite-prik for at lave en ny klon af din prik med få sekunders mellemrum:
 
 ```blocks 
 		når du klikker på ⚑
@@ -79,7 +79,7 @@ Til dette formål skal du først lave en ny listevariabel, som du kalder `start 
 
 ![screenshot](dots-list.png)
 
-+ Du kan bruge disse 2 listeemner til at vælge et tilfældigt hjørne af scenen. Tilføj denne kode til 'prik' spriten, således at hver ny klon bevæger sig til et tilfældigt hjørne, og dernæst bevæger sig langsomt mod styreenheden.
++ Du kan bruge disse 2 listeemner til at vælge et tilfældigt hjørne af scenen. Tilføj denne kode til prik-spriten, således at hver ny klon bevæger sig til et tilfældigt hjørne, og dernæst bevæger sig langsomt mod styreenheden.
 
 ```blocks 
 		når jeg starter som klon
@@ -127,11 +127,11 @@ Ovenstående kode vælger enten `-180` eller `180` for x _og_ y positionerne, hv
 ## Gem dit projekt { .save }
 
 ## Udfordring: Flere prikker {.challenge}
-Kopiér din sprite prik, 'rød', to gange, og døb de to nye sprites 'gul' og 'blå'. 
+Kopiér din røde sprite-prik to gange, og døb de to nye sprites 'gul' og 'blå'. 
 
 ![screenshot](dots-more-dots.png)
 
-Redigér dine sprites (inklusive deres kode), sådan at hver farvede prik skal matche deres tilsvarende farve på styreenheden. Husk at afprøve dit projekt, og sørg for at du får point og taber liv på de rigtige tidspunkter, og at dit spil hverken er for nemt eller for svært! 
+Redigér dine sprites (inklusive deres kode), sådan at hver farvede prik matcher deres tilsvarende farve på styreenheden. Husk at afprøve dit projekt, og sørg for at du får point og taber liv på de rigtige tidspunkter, og at dit spil hverken er for nemt eller for svært! 
 
 ![screenshot](dots-all-test.png)
 
@@ -156,7 +156,7 @@ Lad os lave spillet sværere jo længere spilleren overlever ved langsomt at red
 		end 
 ```  
  
-Læg mærke til at dette minder en del om, hvordan en timer virker!  
+Læg mærke til at dette minder en del om, hvordan et stopur virker!  
 
 + Du kan også bruge `forsinkelse` {.blockdata} variablen i scriptene til dine røde, gule og blå prikker. Fjern koden, som venter et tilfældigt antal sekunder mellem at lave kloner, og erstat den med din nye `forsinkelse` {.blockdata} variabel:
 
@@ -164,7 +164,7 @@ Læg mærke til at dette minder en del om, hvordan en timer virker!
 		vent (forsinkelse) sekunder
 ``` 
 
-+ Afprøv din nye `forsinkelse` {.blockdata} variabel, og læg mærke til om forsinkelserne mellem prikkerne langsomt reduceres. Virker dette for alle de 3 farvede prikker? Registrerer du at værdien af `forsinkelse` {.blockdata} variablen reduceres? 
++ Afprøv din nye `forsinkelse` {.blockdata} variabel, og hold øje med om forsinkelserne mellem prikkerne langsomt reduceres. Virker dette for alle de 3 farvede prikker? Registrerer du at værdien af `forsinkelse` {.blockdata} variablen reduceres? 
 
 ## Gem dit projekt { .save }
 
