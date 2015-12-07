@@ -189,7 +189,7 @@ Ahora que has conseguido que el personaje se mueva, vamos a añadir los balones 
 + Para terminar, ¡necesitarás código para cuando un balón toque al personaje! Añade este código al objeto balón:
 
 	```blocks
-		cuando comience como clon
+		al comenzar como clon
 		por siempre
 			si <¿tocando [Pico walking v]?> entonces
 				enviar [tocado v]

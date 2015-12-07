@@ -141,8 +141,8 @@ Vamos a añadir un montón de hipopótamos voladores que están tratando de dest
 
 	```blocks
 		al comenzar como clon
-		fijar [velocidad v] to (numero al azar entre (2) y (4))
-		ir a x: (numero al azar entre (-220) y (220)) y: (150)
+		fijar [velocidad v] a (número al azar entre (2) y (4))
+		ir a x: (número al azar entre (-220) y (220)) y: (150)
 		mostrar
 		repetir hasta que <¿tocando [lightning v] ?>
 			mover (velocidad) pasos
@@ -169,7 +169,7 @@ Vamos a añadir un montón de hipopótamos voladores que están tratando de dest
 + Añadir este código a la nave espacial para que se cambie de disfraz cada vez que choca con un hipopótamo volador:
 
 	```blocks
-		al presionar bandera
+		al presionar bandera verde
 		por siempre
 			cambiar disfraz a [normal v]
 			esperar hasta que <¿tocando [Hippo1 v]?>
@@ -223,9 +223,9 @@ Vamos a hacer un murciélago de la fruta que lanza naranjas a su nave espacial.
 + Añadir código al murciélago, de manera que se crea un nuevo clon de naranja cada pocos segundos.
 
 	```blocks
-		al presionar bandera
+		al presionar bandera verde
 		por siempre
-			esperar (numero al azar entre (5) y (10)) segundos
+			esperar (número al azar entre (5) y (10)) segundos
 			crear clon de [Naranja v]
 		fin
 	```
@@ -233,7 +233,7 @@ Vamos a hacer un murciélago de la fruta que lanza naranjas a su nave espacial.
 + Haga clic en el objeto naranja. Añadir este código para que cada clon de naranja caiga por el escenario desde el murciélago hacia la nave espacial:
 
 	```blocks
-		al presionar bandera
+		al presionar bandera verde
 		esconder
 
 		al comenzar como clon
@@ -251,8 +251,8 @@ Vamos a hacer un murciélago de la fruta que lanza naranjas a su nave espacial.
 + En el objeto nave espacial, modificar el código para que se destruya si se toca un hipopótamo o un naranja:
 
 	```blocks
-		esperar hasta que < ¿<tocando [Hippo1 v]?> o ¿<tocando [Naranja v]?>>
-	``` 
+		esperar hasta que <<¿tocando [Hippo1 v]?> o <¿tocando [Naranja v]?>>
+	```
 
 + Probar el juego. ¿Qué sucede si es golpeado por una caída de naranja?
 
@@ -279,7 +279,7 @@ Vamos a añadir un mensaje "Fin del Juego" al final del juego.
 + Añadir este código al objeto 'Fin del juego', para que el mensaje se muestre al final del juego:
 
 	```blocks
-		al presionar bandera
+		al presionar bandera verde
 		esconder
 
 		al recibir [Fin del juego v]
