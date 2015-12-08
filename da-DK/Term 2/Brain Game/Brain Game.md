@@ -192,7 +192,7 @@ I stedet for at din figur bare siger `ja! :)` eller `nej :(` til spilleren, så 
 
 Vælg din resultat-sprite og klik så på `Flere Brikker` {.blockmoreblocks} og dernæst `Skab en Brik`. Lav en ny funktion du kalder `animer` {.blockmoreblocks}.
 
-	![screenshot](brain-animate-function.png)  
+![screenshot](brain-animate-function.png)  
 
 + Nu kan du tilføje animationskoden til din nye animationsfunktion, og så bruge funktionen to gange: 
 
