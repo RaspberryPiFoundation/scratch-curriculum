@@ -186,3 +186,7 @@ Use o que você aprendeu neste projeto para fazer sua própria animação. Pode 
 ![screenshot](space-egs.png)
 
 ## Salve o seu projeto { .save }
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by Silvio Casagrande. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
