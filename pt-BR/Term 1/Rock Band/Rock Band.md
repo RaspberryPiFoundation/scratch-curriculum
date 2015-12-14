@@ -56,7 +56,7 @@ La __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida.
 
 ## Checklist do atividade { .check }
 
-+ No momento, o palco é branco e parece muito chato! Vamos adicionar um pano de fundo para o estrado, clicando 'Choose backdrop from library'.
++ No momento, o estrado é branco e parece muito chato! Vamos adicionar um pano de fundo para o estrado, clicando 'Choose backdrop from library'.
 
 	![screenshot](band-stage-choose.png)
 
@@ -64,7 +64,7 @@ La __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida.
 
 	![screenshot](band-backdrop.png)
 
-+ Your stage should now look like this:
++ Seu estrado deve agora olhar como este:
 
 	![screenshot](band-stage.png)
 
@@ -186,3 +186,4 @@ Se você tiver um microfone você pode gravar os seus próprios sons, ou mesmo u
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
 This project was translated by Silvio Casagrande. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+

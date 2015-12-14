@@ -18,7 +18,7 @@ materials: ["Club Leader Resources/*.*"]
 
 # Primer paso: Objetos { .activity }
 
-Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Scratch, estas “cosas” se llaman__objetos__. 
+Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Scratch, estas “cosas” se llaman __objetos__. 
 
 ## Lista de verificación de actividades { .check }
 
@@ -26,11 +26,11 @@ Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Sc
 
 	![screenshot](band-scratch.png)
 
-+ El objeto gato que puedes ver es la mascota de Scratch. Deshagámosnos de él haciendo clic en el botón derecho y luego haciendo clic en “eliminar”.
++ El objeto gato que puedes ver es la mascota de Scratch. Deshagámosnos de él haciendo clic en el botón derecho y luego haciendo clic en “borrar”.
 
 	![screenshot](band-delete.png)
 
-+ Luego, haz clic en “Elegir objeto de la biblioteca” para abrir una lista de todos los objetos de Scratch.
++ Luego, haz clic en “Selecciona un objeto de la biblioteca” para abrir una lista de todos los objetos de Scratch.
 
 	![screenshot](band-sprite-library.png)
 
@@ -38,7 +38,7 @@ Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Sc
 
 	![screenshot](band-sprite-drum.png)
 
-+ Haz clic en el ícono “encoger”, y luego haz clic en el tambor unas cuantas veces para hacerlo más pequeño.
++ Haz clic en el icono “encoger”, y luego haz clic en el tambor unas cuantas veces para hacerlo más pequeño.
 
 	![screenshot](band-shrink.png)
 
@@ -56,7 +56,7 @@ El __escenario__ es el área a la izquierda, y es donde tu proyecto cobra vida. 
 
 ## Lista de verificación de actividades { .check }
 
-+ ¡En estos momentos, el escenario es de color blanco y se ve bastante aburrido! Agreguemos un fondo al escenario haciendo clic en “Elegir fondo de la biblioteca”.
++ ¡En estos momentos, el escenario es de color blanco y se ve bastante aburrido! Agreguemos un fondo al escenario haciendo clic en “Selecciona un fondo de la biblioteca”.
 
 	![screenshot](band-stage-choose.png)
 
@@ -74,7 +74,7 @@ Codifiquemos tu tambor para que pueda sonar cuando se lo toca.
 
 ## Lista de verificación de actividades { .check }
 
-+ Puedes encontrar los bloques de código en la lengüeta “Secuencias de comandos” ¡y todas tienen códigos de color! 
++ Puedes encontrar los bloques de código en la lengüeta “Programas” ¡y todas tienen códigos de color! 
 
 	Haz clic en el objeto tambor y luego arrastra estos 2 bloques al área de código a la derecha, asegurándote de que estén conectados juntos (como los bloques de lego):
 
@@ -102,7 +102,7 @@ Codifiquemos tu tambor para que pueda sonar cuando se lo toca.
 
 	![screenshot](band-looks.png)
 
-	El bloque de código para cambiar el disfraz está en la sección “Vistas” {.blocklooks}.
+	El bloque de código para cambiar el disfraz está en la sección “Apariencia” {.blocklooks}.
 
 + Prueba tu tambor. ¡Cuando haces clic en el tambor, debería verse como que está siendo tocado!
 
@@ -136,11 +136,11 @@ Puedes copiar tu código existente haciendo clic en el código con el botón der
 
 	![screenshot](band-singer-mic.png)
 
-+ Antes de que puedas hacer que tu cantante cante, necesitarás agregar un sonido a tu objeto. Asegúrate de haber seleccionado tu cantante, y luego haz clic en la lengüeta “Sonidos” y haz clic en “Elegir sonido de la biblioteca”:
++ Antes de que puedas hacer que tu cantante cante, necesitarás agregar un sonido a tu objeto. Asegúrate de haber seleccionado tu cantante, y luego haz clic en la lengüeta “Sonidos” y haz clic en “Selecciona un sonido de la biblioteca”:
 
 	![screenshot](band-import-sound.png)
 
-+ Si haces clic en “Voces” en el lado izquierdo, podrás elegir sonidos apropiados para agregar a tu objeto.
++ Si haces clic en “Canto” en el lado izquierdo, podrás elegir sonidos apropiados para agregar a tu objeto.
 
 	![screenshot](band-choose-sound.png)
 
@@ -185,4 +185,4 @@ Puedes usar los objetos existentes y al mismo tiempo dibujar los tuyos propios.
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
-This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+This project was translated by María Alejandra Aguada from Translators Without Borders. Screenshots in Spanish were provided by Montse Verdaguer. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
