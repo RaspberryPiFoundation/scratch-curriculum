@@ -1,0 +1,69 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 3,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "boat",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "normal",
+					"baseLayerID": 1,
+					"baseLayerMD5": "bc94d08b8e0753eeff0f67c6e5abe107.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 183,
+					"rotationCenterY": 104
+				},
+				{
+					"costumeName": "hit",
+					"baseLayerID": 2,
+					"baseLayerMD5": "374978772d2ee8a08f5c8e920939a9a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 225,
+					"rotationCenterY": 121
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -190,
+			"scratchY": -150,
+			"scale": 0.20000000000000015,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 0,
+		"swfVersion": "v436",
+		"flashVersion": "MAC 17,0,0,157",
+		"spriteCount": 1,
+		"videoOn": false
+	}
+}
