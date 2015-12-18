@@ -1,0 +1,44 @@
+{
+    "description": "Code Kingdoms teaches Computer Science and programming in a way that’s fun for children. Children use real JavaScript code to design their own game worlds, and then challenge friends to complete them.",
+    "warning": "These projects are recommended by Code Club, as an additional opportunity for children of all abilities to learn to code. These projects have been produced by Code Kingdoms - please direct any questions to team@codekingdoms.com. It is recommended that you read the 'Dashboard Guide' and the 'Teacher Guide' (in the 'Extras' section below) before children undertake these projects.",
+    "id": "ck_01",
+    "language": "en-GB",
+    "number": 13,
+    "title": "Code Kingdoms",
+    "category": "cat-partner",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Puzzle Pack 1/Puzzle Pack 1.md",
+            "pdf": "Puzzle Pack 1/CK_PuzzlePack1.pdf"
+        },
+        {
+            "number":   2,
+            "filename": "Puzzle Pack 2/Puzzle Pack 2.md",
+            "pdf": "Puzzle Pack 2/CK_PuzzlePack2.pdf"
+        },
+        {
+            "number":   3,
+            "filename": "Puzzle Pack 3/Puzzle Pack 3.md",
+            "pdf": "Puzzle Pack 3/CK_PuzzlePack3.pdf"
+        }
+    ],
+     "extras": [
+		{
+            "name": "Dashboard Guide",
+            "note": "CK_DashboardGuide.pdf"
+        },
+        {
+            "name": "Teacher Guide",
+            "note": "CK_TeacherGuide.pdf"
+        },
+        {
+            "name": "Learning Guide: What, where, when and how",
+            "note": "CK_WhatWhereWhenHow.pdf"
+        },
+        {
+            "name": "Sandbox Guide",
+            "note": "CK_SandboxGuide.pdf"
+        }
+    ]
+}

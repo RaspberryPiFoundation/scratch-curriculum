@@ -1,0 +1,17 @@
+{
+    "description": false,
+    "warning": "Скрач курикулум се тренутно ажурира. Ако овде не можете да пронађете пројекат, можда је премештен у одељке 'Community Contributed Scratch Projects' или 'Archived Scratch Projects'.",
+    "id": "scratch_bonus",
+    "language": "sr-SP",
+    "number": 3,
+    "title": "Додатни Скрач пројекти",
+
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Балони/Балони.md",
+            "note": "Балони/Балони-упутство.md",
+            "pdf": "Балони/Балони.pdf"
+        }
+    ]
+}

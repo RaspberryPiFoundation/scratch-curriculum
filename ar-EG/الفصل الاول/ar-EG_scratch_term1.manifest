@@ -1,0 +1,20 @@
+{
+    "description": "",
+    "id": "scratch",
+    "language": "ar-EG",
+    "number": 1,
+    "title": "الفصل الاول",
+
+    "projects": [
+        {
+            "number": 1,
+            "title": "مفقود في الفضاء",
+            "filename": "مفقود في الفضاء/مفقود في الفضاء.pdf"
+        },
+        {
+            "number": 2,
+            "title": "الفرقة الموسيقية",
+            "filename": "الفرقة الموسيقية/الفرقة الموسيقية.pdf"
+        }
+    ]
+}

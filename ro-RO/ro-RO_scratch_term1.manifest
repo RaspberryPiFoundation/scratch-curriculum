@@ -1,0 +1,37 @@
+{
+    "id": "scratch-1",
+    "title": "Scratch 1",
+    "description": "",
+    "language": "ro-RO",
+    "number": 1,
+    "projects": [
+        {
+            "number": 1,
+            "beta": true,
+            "filename": "Rock Band/Rock Band.md"
+        },
+        {
+            "number": 2,
+            "beta": true,
+            "filename": "Lost in Space/Lost in Space.md"
+        },
+        {
+            "number": 3,
+            "beta": true,
+            "filename": "Ghostbusters/Ghostbusters.md"
+        },
+	    {
+            "number": 4,
+            "beta": true,
+            "filename": "ChatBot/ChatBot.md",
+  	        "note": "ChatBot/ChatBot - notes.md"
+        },
+        {
+            "number": 5,
+            "beta": true,
+            "filename": "Boat Race/Boat Race.md",
+  	        "note": "Boat Race/Boat Race - notes.md"
+        }      
+      
+    ]
+}

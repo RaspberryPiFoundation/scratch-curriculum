@@ -1,0 +1,30 @@
+{
+    "id": "scratch-2",
+    "title": "Scratch 2",
+    "description": "",
+    "language": "es-ES",
+    "number": 2,
+    "projects": [
+        {
+            "filename": "Memoria/Memoria.md",
+            "note": "Memoria/Memoria - notas.md",
+            "number": 1
+        },
+        {
+            "filename": "Balon Prisionero/Balon Prisionero.md",
+            "note": "Balon Prisionero/Balon Prisionero - notas.md",
+            "number": 2
+        },
+	    {
+            "filename": "Clone Wars/Clone Wars.md",
+            "note": "Clone Wars/Clone Wars - notas.md",
+            "number": 3 
+        },
+	    {
+            "filename": "Create Your Own World/Create Your Own World.md",
+            "note": "Create Your Own World/Create Your Own World - notes.md",
+            "number": 4 
+        }                 
+    ]
+}
+

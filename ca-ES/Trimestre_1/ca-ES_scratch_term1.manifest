@@ -1,0 +1,14 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "ca-ES",
+    "number": 1,
+    "title": "Scratch 1",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "01_Felix_i_Herbert/felix_i_herbert.md",
+            "note":     "01_Felix_i_Herbert/Notes_per_caps_de_club.md"
+        }
+    ]
+}

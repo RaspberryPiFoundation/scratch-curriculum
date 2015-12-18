@@ -1,0 +1,36 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "pl-PL",
+    "number": 1,
+    "title": "Scratch 1",
+    "category": "cat-scratch",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Kapela rockowa/Kapela rockowa.md",
+            "note":     "Kapela rockowa/Kapela rockowa - notatki.md"
+        },
+        {
+            "number":   2,
+            "filename": "Zagubiona w kosmosie/Zagubiona w kosmosie.md",
+            "note":     "Zagubiona w kosmosie/Zagubiona w kosmosie - notatki.md"
+        },
+        {
+            "number":   3,
+            "beta":     true,
+            "filename": "Pogromcy duchów/Pogromcy duchów.md",
+            "note":     "Pogromcy duchów/Pogromcy duchów - notatki.md"
+        },
+        {
+            "number":   4,
+            "filename": "Robot Gaduła/Robot Gaduła.md",
+            "note":     "Robot Gaduła/Robot Gaduła - notatki.md"
+        },
+        {
+            "number":   5,
+            "filename": "Kolorowe kredki/Kolorowe kredki.md",
+            "note":     "Kolorowe kredki/Kolorowe kredki - notatki.md"
+        }
+    ]
+}

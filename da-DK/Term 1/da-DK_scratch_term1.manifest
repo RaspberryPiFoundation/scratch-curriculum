@@ -1,0 +1,45 @@
+{
+    "id": "scratch-1",
+    "title": "Scratch 1",
+    "description": "",
+    "language": "da-DK",
+    "number": 1,
+    "projects": [
+        {
+            "number":   1,
+            "beta": true,
+            "filename": "Rock Band/Rock Band.md",
+            "note":     "Rock Band/Rock Band - noter.md"
+        },
+        {
+            "number":   2,
+            "beta": true,
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - noter.md"
+        },
+        {
+            "number":   3,
+            "beta": true,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "note":     "Ghostbusters/Ghostbusters - noter.md"
+        },
+        {
+            "number":   4,
+            "beta": true,
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - noter.md"
+        },       
+        {
+            "number":   5,
+            "beta": true,
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - noter.md"
+        },
+        {
+            "number":   6,
+            "beta": true,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - noter.md"
+        }       
+    ]
+}

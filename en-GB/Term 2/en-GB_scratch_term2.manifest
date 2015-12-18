@@ -1,0 +1,46 @@
+{
+    "description": false,
+    "id": "scratch_02",
+    "language": "en-GB",
+    "number": 2,
+    "title": "Scratch 2",
+    "category": "cat-scratch",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Memory/Memory.md",
+            "beta":     true,
+            "note":     "Memory/Memory - notes.md"
+        },
+        {
+            "number":   2,
+            "filename": "Dodgeball/Dodgeball.md",
+            "beta":     true,
+            "note":     "Dodgeball/Dodgeball - notes.md"
+        },
+        {
+            "number":   3,
+            "filename": "Brain Game/Brain Game.md",
+            "beta":     true,
+            "note":     "Brain Game/Brain Game - notes.md"
+        },
+        {
+            "number":   4,
+            "filename": "Catch the Dots/Catch the Dots.md",
+            "beta":     true,
+            "note":     "Catch the Dots/Catch the Dots - notes.md"
+        },
+        {
+            "number":   5,
+            "filename": "Clone Wars/Clone Wars.md",
+            "beta":     true,
+            "note":     "Clone Wars/Clone Wars - notes.md"
+        },
+        {
+            "number":   6,
+            "filename": "Create Your Own World/Create Your Own World.md",
+            "beta":     true,
+            "note":     "Create Your Own World/Create Your Own World - notes.md"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "description": "Te archiwalne projekty były wcześniej częścią programu zajęć Scratch. Choć są one wciąż dostępne, to nie są już dłużej wspierane i zalecamy aby zamiast nich używać projektów z sekcji 'Semestr 1'.",
+    "id": "scratch_archive",
+    "title":"Projekty archiwalne - Scratch 1",
+    "language": "pl-PL",
+    "category": "cat-archive",
+    "number": 1,
+
+
+    "projects": [
+        {
+            "number":   1,
+            "filename": "01 Feliks i Herbert/01 Feliks i Herbert.md",
+            "pdf":      "01 Feliks i Herbert/01 Feliks i Herbert.pdf",
+            "note":     "01 Feliks i Herbert/01 Feliks i Herbert - Informacje.md",
+            "note_pdf": "01 Feliks i Herbert/01 Feliks i Herbert - Informacje.pdf"
+
+        },
+        {
+            "number":   2,
+            "filename": "02 Pogromcy duchow/02 Pogromcy duchow.md",
+            "pdf":      "02 Pogromcy duchow/02 Pogromcy duchow.pdf",
+            "note":     "02 Pogromcy duchow/02 Pogromcy duchow - Informacje.md",
+            "note_pdf": "02 Pogromcy duchow/02 Pogromcy duchow - Informacje.pdf"
+        },
+        {
+            "number":   3,
+            "filename": "03 Fajerwerki/03 Fajerwerki.md",
+            "pdf":      "03 Fajerwerki/03 Fajerwerki.pdf",
+            "note":     "03 Fajerwerki/03 Fajerwerki - Informacje.md",
+            "note_pdf": "03 Fajerwerki/03 Fajerwerki - Informacje.pdf"
+        },
+        {
+            "number":   4,
+            "filename": "04 Jednoreki bandyta/04 Jednoreki bandyta.md",
+            "pdf":      "04 Jednoreki bandyta/04 Jednoreki bandyta.pdf",
+            "note":     "04 Jednoreki bandyta/04 Jednoreki bandyta - Informacje.md",
+            "note_pdf": "04 Jednoreki bandyta/04 Jednoreki bandyta - Informacje.pdf"
+        },
+        {
+            "number":   5,
+            "filename": "05 Glodna ryba/05 Glodna ryba.md",
+            "pdf":      "05 Glodna ryba/05 Glodna ryba.pdf",
+            "note":     "05 Glodna ryba/05 Glodna ryba - Informacje.md",
+            "note_pdf": "05 Glodna ryba/05 Glodna ryba - Informacje.pdf"
+        },
+        {
+            "number":   6,
+            "filename": "06 Pustynny wyscig/06 Pustynny wyscig.md",
+            "pdf":      "06 Pustynny wyscig/06 Pustynny wyscig.pdf",
+            "note":     "06 Pustynny wyscig/06 Pustynny wyscig - Informacje.md",
+            "note_pdf": "06 Pustynny wyscig/06 Pustynny wyscig - Informacje.pdf"
+        },
+        {
+            "number":   7,
+            "filename": "07 Co to jest/07 Co to jest.md",
+            "pdf":      "07 Co to jest/07 Co to jest.pdf",
+            "note":     "07 Co to jest/07 Co to jest - Informacje.md",
+            "note_pdf": "07 Co to jest/07 Co to jest - Informacje.pdf"
+        },
+        {
+            "number":   8,
+            "filename": "08 Kolorowe kredki/08 Kolorowe kredki.md",
+            "pdf":      "08 Kolorowe kredki/08 Kolorowe kredki.pdf",
+            "note":     "08 Kolorowe kredki/08 Kolorowe kredki - Informacje.md",
+            "note_pdf": "08 Kolorowe kredki/08 Kolorowe kredki - Informacje.pdf"
+        },
+        {
+            "number":   9,
+            "filename": "09 Stworz wlasna gre/09 Stworz wlasna gre.md",
+            "pdf":      "09 Stworz wlasna gre/09 Stworz wlasna gre.pdf",
+            "note":     "09 Stworz wlasna gre/09 Stworz wlasna gre - Informacje.md",
+            "note_pdf": "09 Stworz wlasna gre/09 Stworz wlasna gre - Informacje.pdf"
+        }
+    ]
+}
+
