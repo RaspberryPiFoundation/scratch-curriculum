@@ -1,28 +1,28 @@
 ---
 title: Brain Game — Notes for Club Leaders
-language: en-GB
+language: pt-BR
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to make a times table quiz game, in which the player has to answer as many questions correctly as they can in 30 seconds.
+#Introdução:
+Neste projeto, as crianças vão aprender a construir o jogo de quiz da tabuada, no qual o jogador tem que responder quantas questões corretamente ele conseguir dentro de 30 segundos.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Recursos
+Para este projeto, o Scratch 2 deve ser usado. Você pode usar tanto a versão online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode baixar de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usar offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/42225768/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Você pode encontrar uma versão feita e completa deste projeto em <a href="http://scratch.mit.edu/projects/42225768/#editor">online</a>, ou pode fazer o download dele clicando em "Recursos do Projeto", que contém:
 
 + BrainGame.sb2
 
-#Learning Objectives
-+ This project consolidates learning of previous programming skills learnt, and shows how broadcasts can be used to create a simple game menu system.
+#Objetios de aprendizagem
++ Este projeto consolida conceitos aprendidos anteriormente, e mostra como o enviar mensagem (broadcast) pode ser usado para criar um menu simples para o jogo. 
 
-#Challenges
-+ "Changing costumes" - changing how the game character looks in response to correct and incorrect answers;
-+ "Adding a score" - adding a point for every correct question answered;
-+ "Start screen" - changing the stage backdrop in response to the `start` {.blockevents} and `end` {.blockevents} broadcast messages, creating 2 game 'screens';
-+ "Improved animation" - using loops and effects to improve the correct/wrong graphics animation;
-+ "Sound and music" - consolidating learning of music loops and sound effects;
-+ "Race to 10 points" - changing the game logic to create a new game objective;
-+ "Instruction screen" - consolidating the use of broadcasts to create a game menu, by adding a new 'instructions' button and screen.
+#Desafios
++ "Trocando as fantasias" - Mudar a aparência do personagem de acordo com a resposta do jogador;
++ "Adicionando sistema de pontos" - Adicionar pontuação para cada pergunta certa respondida;
++ "Tela de início" - Mudar o pano de funda em resposta à mensagens `inicio` {.blockevents} e `fim` {.blockevents}, criar 2 telas para o jogo;
++ "Melhorando a animação" - Usando efeitos em repetição (loop) para melhorar os efeitos de quando a resposta está certa ou errada; 
++ "Efeitos sonoros e música" - Consolidar o aprendizado dos loops com música e efeitos sonoros; 
++ "COrrida até os 10 pontos" - Mudar a lógica do jogo para criar um novo objetivo;
++ "Tela de introdução" - Consolidar o uso de mensagens (broadcast) para criar um menu para o jogo, adicionar um botão 'Instruções' ao jogo.
 
