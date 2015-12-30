@@ -181,7 +181,7 @@ Vamos salvar a pontuação mais alta, assim os jogadores podem saber se estão i
 
 + Crie uma nova variável chamada `melhor pontuação` {.blockdata}.
 
-+ Clique no cenário, e cria um novo bloco personalizado chamado `Conferir melhor pontuação` {.blockmoreblocks}.
++ Clique no cenário, e cria um novo bloco personalizado chamado `conferir melhor pontuação` {.blockmoreblocks}.
 
 	![screenshot](dots-custom-1.png)
 
