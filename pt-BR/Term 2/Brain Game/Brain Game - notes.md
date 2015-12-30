@@ -1,5 +1,5 @@
 ---
-title: Brain Game — Notes for Club Leaders
+title: Jogo da Tabuada — guia para instrutores
 language: pt-BR
 embeds: "*.png"
 ...
