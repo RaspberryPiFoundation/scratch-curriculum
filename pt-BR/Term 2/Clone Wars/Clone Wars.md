@@ -140,7 +140,7 @@ Vamos adicionar vários hipopótamos espaciais que tentarão destruir a nossa na
 
 	```blocks
 		quando eu começar como clone
-		mude [speed v] para (escolha número entre (2) e (4))
+		mude [velocidade v] para (escolha número entre (2) e (4))
 		vá para x:(escolha número entre (-220) e (220)) y:(150)
 		mostre
 		repita até que <tocar em [raio v]?>
@@ -204,7 +204,7 @@ Vamos fazer um morcego fruteiro que atira laranjas na sua nave!
 
 ## Lista de atividades { .check }
 
-+ Primeiramente, faça um novo ator para o morcego (importe a imagem da biblioteca do Scratch) e que irá `mover-se` {.blockmotion} ao longo do topo do palco `sempre` {.blockcontrol}. Lembre-se de testar o seu código.
++ Primeiramente, faça um novo ator para o morcego (importe a imagem da biblioteca do Scratch, o nome dela é Bat1, morcego em inglês, caso não queira mudar o nome, fique atento às mudanças no código!) e que irá `mover-se` {.blockmotion} ao longo do topo do palco `sempre` {.blockcontrol}. Lembre-se de testar o seu código.
 
 	![screenshot](invaders-bat.png)
 
