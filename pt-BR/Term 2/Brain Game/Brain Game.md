@@ -1,5 +1,5 @@
 ---
-title: Brain Game
+title: Jogo da Tabuada
 level: Scratch 2
 language: pt-BR
 stylesheet: scratch
@@ -32,7 +32,7 @@ Vamos começar criando questões aleatórias para o nosso jogador responder.
 
 	![screenshot](brain-variables.png)
 
-+ Adicione o código para o seu personagem, assim você coloca um número `aleatório` {.blockoperators} entre 2 e 12 nas suas duas variáveis.
++ Adicione o código para o seu personagem, assim você coloca um número `aleatório` {.blockoperators} entre 2 e 12 nas suas duas variáveis. O bloco no Scratch pode estar como "número aleatório entre ( ) e ( )"
 
 	```blocks
 		quando clicar em ⚑
@@ -70,7 +70,7 @@ Você consegue mudar as fantasias do seu personagem para que eles reajam às res
 ![screenshot](brain-costume.png)
 
 ## Desafio: Adicionando pontos {.challenge}
-Você consegue adicionar um sistema de pontuação ao seu jogo? VocÇe pode adicionar um ponto a cada resposta certa. Se você estiver se sentindo meio malvadinho, você pode até zerar os pontos do jogador quando ele errar uma questão! 
+Você consegue adicionar um sistema de pontuação ao seu jogo? Você pode adicionar um ponto a cada resposta certa. Se você estiver se sentindo meio malvadinho, você pode até zerar os pontos do jogador quando ele errar uma questão! 
 
 ## Salve seu projeto { .save }
 
@@ -154,7 +154,7 @@ Vamos adicionar um botão de 'Jogar' ao seu jogo, então o seus jogadores poder�
 ## Salve seu projeto { .save }
 
 ## Desafio: Tela iniciar {.challenge}
-Você consegue adicionar outro pano de fundo ao seu palco, que seria a tela inicial do seu jogo? Você pode utilizar os blocos `quando receber [iniciar v]` {.blockevents} e `quando receber [fim v]` {.blockevents} para fazer a troca entre panos de fundo.
+Você consegue adicionar outro pano de fundo ao seu palco, que seria a tela inicial do seu jogo? Você pode utilizar os blocos `quando receber [iniciar v]` {.blockevents} e `quando receber [fim v]` {.blockevents} para fazer a troca entre panos de fundo. Faça uma tela bem mais bonita que a nossa!
 
 Você também pode mostrar ou esconder o seu personagem, ou mesmo mostrar ou não o contador usando esses blocos:
 
@@ -173,7 +173,7 @@ esconde variável [tempo v]
 
 Ao invés do seu personagem apenas dizer `Isso! :)` ou `não :(` ao jogador, vamos adicionar alguns efeitos gráficos que farão o jogador saber como eles estão indo.
 
-+ Crie um novo ator e chame-o de 'Resultado', ele deve possuir um sinal de certo e uma cruz que indique errado como fantasias.
++ Crie um novo ator e chame-o de 'Resultado', ele deve possuir um sinal de certo e uma cruz que indique errado como fantasias, escolha os nomes que quiser para as fantasias!
 
 	![screenshot](brain-result.png)
 
@@ -255,7 +255,7 @@ Para fazer isso, você precisará modificar o código do seu contaodor. Você co
 ## Salve seu projeto { .save }
 
 ## Desafio: Tela de instruções {.challenge}
-Você consegue adicionar uma tela de instruções para o seu jogo? Assim você pode explicar ao jogador como funciona o seu jogo e como ele deve fazer para ganhar? Você precisará de um botão para 'Instruções', e outro pano de fundo.
+Você consegue adicionar uma tela de instruções para o seu jogo? Assim você pode explicar ao jogador como funciona o seu jogo e como ele deve fazer para ganhar? Você precisará de um botão para o 'Tutorial', e outro pano de fundo.
 
 ![screenshot](brain-instructions.png)
 
