@@ -10,7 +10,7 @@ notes: "Catch the Dots - notes.md"
 In this project you'll learn how to create a game, in which you have to match up coloured dots with the correct part of the controller.
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
   <img src="images/dots-final.png">
 </div>
 
