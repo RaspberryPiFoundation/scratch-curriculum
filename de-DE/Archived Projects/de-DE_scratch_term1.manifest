@@ -1,0 +1,25 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "de-DE",
+    "number": 1,
+    "title": "Scratch 1",
+    "category": "",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - notes.md"
+        },
+        {
+            "number":   2,
+            "filename": "Rock Band/Rock Band.md",
+            "note":     "Rock Band/Rock Band - notes.md"
+        },
+        {
+            "number":   3,
+            "filename": "Balloons/Balloons.md",
+            "note":     "Balloons/Balloons - notes.md"
+        }
+    ]
+}
