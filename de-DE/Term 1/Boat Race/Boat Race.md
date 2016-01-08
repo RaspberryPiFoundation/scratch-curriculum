@@ -261,4 +261,4 @@ Kannst du weitere Bühnen erstellen und dem Spieler erlauben, einen Level auszuw
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
-This project was translated by Oleg Bascurov. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+This project was translated by Ilja Gendler and Oleg Bascurov. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
