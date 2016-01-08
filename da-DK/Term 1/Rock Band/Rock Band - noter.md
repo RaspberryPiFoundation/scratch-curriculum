@@ -6,12 +6,12 @@ materials: [""]
 ...
 
 #Introduktion:
-I dette projekt vil børnene lære, hvordan man tilføjer lyd og musik til deres projekter samt hvordan man ændrer og programmerer sprite kostumer.
+I dette projekt skal børnene lære, hvordan man tilføjer lyd og musik til deres projekter samt hvordan man ændrer og programmerer sprite-kostumer.
 
 #Ressourcer
 Du bør benytte Scratch 2 til dette projekt. Scratch 2 kan tilgås online via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) og kan også downloades fra  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) og bruges offline.
 
-Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Project Materials' under dette projekt, som indeholder: 
+Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, og det kan også downloades ved at klikke på linket 'Download Projektmateriale' under dette projekt, som indeholder: 
 
 + RockBand.sb2
 
