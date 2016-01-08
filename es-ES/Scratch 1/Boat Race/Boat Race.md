@@ -1,5 +1,5 @@
 ---
-title: Carrera de botes
+title: Carrera de barcos
 level: Scratch 1
 language: es-ES
 stylesheet: scratch
@@ -9,105 +9,105 @@ materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
 
 # Introducción { .intro }
 
-Vas a aprender cómo crear un juego en el cual usarás el ratón para navegar tu bote a una isla desierta.
+Vas a aprender cómo crear un juego en el que usarás el ratón para navegar con tu barco hasta una isla desierta.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
   <img src="boat-final.png">
 </div>
 
-# Primer paso: Cómo planificar el juego { .activity }
+# Paso 1: Cómo planificar el juego { .activity }
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Comienza un nuevo proyecto Scratch, y borra el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor en línea de Scratch en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crea un nuevo proyecto de Scratch, y elimina el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor en línea de Scratch en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Haz clic en el fondo de tu escenario y planifica tu nivel. Deberías agregar:
-	+ Madera que tu bote tiene que evitar;
-	+ Una isla desierta a la que tu bote tiene que llegar.
++ Haz clic en el fondo de tu escenario y planifica tu nivel. Deberías añadir:
+	+ Madera que tu barco tiene que evitar;
+	+ Una isla desierta a la que tu barco tiene que llegar.
 
-	Tu juego podría verse algo así:
+	Tu juego podría parecerse a éste:
 
 	![screenshot](boat-bg.png)
 
-# Segundo paso: Cómo controlar el bote { .activity }
+# Paso 2: Cómo controlar el barco { .activity }
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Si el líder de tu club te dio una carpeta de 'Recursos', haz clic en 'Cargar objeto del expediente' y agrega la imagen 'boat.png'. Deberías achicar el objeto y ubicarlo en la posición de comienzo.
++ Si el líder de tu club te ha dado una carpeta de 'Recursos', haz clic en 'Cargar objeto desde archivo' y añade la imagen 'boat.png'. Deberías encoger el objeto y colocarlo en la posición de inicio.
 
 	![screenshot](boat-boat.png)
 
-	Si no tienes la imagen boat.png, ¡puedes dibujar tu propio bote!
+	Si no tienes la imagen boat.png, ¡puedes dibujar tu propio barco!
 
-+ Vas a controlar el bote con tu ratón. Agrega este código a tu bote:
++ Para poder controlar el barco con el ratón, añade este código al barco:
 
 	```blocks
 		al presionar bandera verde
 		apuntar en dirección (0 v)
 		ir a x: (-190) y: (-150)
 		por siempre
-			apuntar hacia [puntero del mouse v]
+			apuntar hacia [puntero del ratón v]
 			mover (1) pasos
 		fin
 	```
 
-+ Prueba tu bote haciendo clic en la bandera y moviendo el ratón. ¿Navega el bote hacia el ratón?
++ Prueba tu barco haciendo clic en la bandera y moviendo el ratón. ¿Navega el barco hacia el ratón?
 
 	![screenshot](boat-mouse.png)
 
-+ ¿Qué sucede si el bote llega al apuntador del ratón?
++ ¿Qué ocurre si el barco llega al puntero del ratón?
 
-	Para que esto no suceda, necesitarás agregar un bloque 'si'{.blockcontrol} a tu código, para que el bote solo se mueva si está a más de 5 píxeles del ratón.
+	Para que esto no suceda, necesitarás añadir un bloque 'si'{.blockcontrol} a tu código, para que el barco sólo se mueva si está a más de 5 píxeles del ratón.
 
 	![screenshot](boat-pointer.png)
 
-+ Prueba tu bote una vez más para ver si el problema ha sido resuelto.
++ Prueba tu barco una vez más para ver si se ha solucionado el problema.
 
 ## Guarda tu proyecto { .save }
 
-# Tercer paso: ¡Choques! { .activity .new-page }
+# Paso 3: ¡Choques! { .activity .new-page }
 
-¡Tu bote puede navegar a través de barreras de madera! Arreglemos eso.
+¡Tu barco puede navegar a través de las barreras de madera! Vamos a arreglar eso.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Necesitarás 2 disfraces para tu bote, uno normal y otro para cuando el bote choca. Duplica el disfraz de tu bote y nómbralos 'normal' y 'chocado'.
++ Necesitarás 2 disfraces para tu barco, uno normal y otro para cuando el barco choque. Duplica el disfraz de tu barco y llámalos 'normal' y 'chocado'.
 
-+ Haz clic en tu disfraz 'chocado', y elige la herramienta 'Seleccionar' para tomar partecitas del bote y moverlas y rotarlas por todos lados. Haz que parezca que tu bote ha chocado.
++ Haz clic en el disfraz 'chocado', y elige la herramienta 'Seleccionar' para separar trocitos del barco y moverlos y rotarlos por todos lados. Haz que parezca que tu barco ha chocado.
 
 	![screenshot](boat-hit-costume.png)
 
-+ Agrega este código a tu bote, dentro del loop `por siempre` {.blockcontrol}, para que choque cuando toca cualquier trocito de madera marrón:
++ Añade este código a tu barco, dentro del bucle `por siempre` {.blockcontrol}, para que choque cuando toque cualquier trozo de madera marrón:
 
 	```blocks
 	si <¿tocando el color [#603C15]?> entonces
-   		cambiar disfraz a [hit v]
-   		decir [Noooooo!] por (1) segundos
+   		cambiar disfraz a [chocado v]
+   		decir [¡Noooooo!] por (1) segundos
    		cambiar disfraz a [normal v]
    		apuntar en dirección (0 v)
    		ir a x:(-215) y:(-160)
 	fin
 	```
 
-	Este código está dentro del loop `por siempre` {.blockcontrol}, para que tu código constantemente verifique si tu bote ha chocado.
+	Este código está dentro del bucle `por siempre` {.blockcontrol}, para que tu código constantemente verifique si tu barco ha chocado.
 
-+ También deberías asegurarte de que al comienzo tu bote siempre se vea 'normal'.
++ También deberías asegurarte de que tu barco al principio siempre parezca 'normal'.
 
-+ Ahora si tratas de navegar a través de una barrera de madera, deberías ver que tu bote choca y vuelve al inicio.
++ Ahora si intentas navegar a través de una barrera de madera, deberías ver cómo tu barco choca y vuelve al principio.
 
 	![screenshot](boat-crash.png)
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: ¡Ganar! {.challenge}
-¿Puedes agregar otra declaración `si` {.blockcontrol} al código de tu bote, para que el jugador gane cuando llegue a la isla desierta?
+¿Puedes añadir otra instrucción `si` {.blockcontrol} al código de tu barco, para que el jugador gane cuando llegue a la isla desierta?
 
-Cuando el bote llega a la isla desierta amarilla, debería decir 'YEAH!' y el juego debería terminar. Tendrás que usar este código:
+Cuando el barco llegue a la isla desierta amarilla, debería decir '¡Sí!' y el juego debería terminar. Tendrás que usar este código:
 
 ```bloques
-	decir [YEAH!] por (1) segundos
-	terminar [all v]
+	decir [¡Sí!] por (1) segundos
+	detener [todos v]
 ```
 
 ![screenshot](boat-win.png)
@@ -115,48 +115,48 @@ Cuando el bote llega a la isla desierta amarilla, debería decir 'YEAH!' y el ju
 ## Guarda tu proyecto { .save }
 
 ## Desafío: Efectos de sonido {.challenge}
-Puedes agregar efectos de sonido a tu juego para cuando el bote choca y para cuando llega a la isla al final del juego. Incluso puedes agregar música de fondo (si necesitas ayuda con esto mira el proyecto 'Banda de Rock' anterior).
+¿Puedes añadir efectos de sonido a tu juego para cuando el barco choca y para cuando llega a la isla al final del juego? Incluso podrías añadir música de fondo (si necesitas ayuda con esto, consulta el proyecto anterior 'Banda de Rock').
 
 ## Guarda tu proyecto { .save }
 
-# Cuarto paso: Prueba del cronómetro { .activity }
+# Paso 4: Prueba de tiempo { .activity }
 
-Agreguemos a tu juego un crnómetro, para que el jugador tenga que llegar a la isla lo más rápido posible.
+Vamos a añadir un cronómetro a tu juego para que el jugador tenga que llegar a la isla lo más rápido posible.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Agrega a tu escenario una nueva variable que se llame `tiempo` {.blockdata}. También puedes cambiar cómo se ve tu nueva variable. Si necesitas ayuda, mira el proyecto "Globos".
++ Añade a tu escenario una nueva variable que se llame `tiempo` {.blockdata}. También puedes cambiar la visualización de tu nueva variable. Si necesitas ayuda, echa un vistazo al proyecto "Globos".
 
 	![screenshot](boat-variable.png)
 
-+ Agrega este código a tu __escenario__, para que el cronómetro cuente hasta que el bote llega a la isla desierta:
++ Añade este código a tu __escenario__, para que el cronómetro cuente hasta que el barco alcance la isla desierta:
 
 	```blocks
 		al presionar bandera verde
-		fijar [time v] a [0]
+		fijar [tiempo v] a [0]
 		por siempre
 			esperar (0.1) segundos
-			cambiar [time v] por (0.1)
+			cambiar [tiempo v] por (0.1)
 		fin
 	```
 
-+ ¡Ya está! ¡Prueba tu juego para ver qué tan rápido puedes llegar a la isla desierta!
++ ¡Ya lo tienes! ¡Prueba tu juego para ver cómo de rápido puedes llegar a la isla desierta!
 
 	![screenshot](boat-variable-test.png)
 
 ## Guarda tu proyecto { .save }
 
-# Quinto paso: Obstáculos y fuentes de energía { .activity }
+# Paso 5: Obstáculos y fuentes de energía { .activity }
 
-Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesante.
+Este juego es _demasiado_ fácil – Vamos a añadir cosas para hacerlo más interesante.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Primero agreguemos algunos "estímulos" a tu juego, que harán que el bote navegue más rápido. Edita el fondo de tu scenario y agrega algunas flechas blancas de energía.
++ Primero vamos a incluir algunos "propulsores" a tu juego, que harán que el barco navegue más rápido. Edita el fondo de tu escenario y añade algunas flechas blancas propulsoras.
 
 	![screenshot](boat-boost.png)
 
-+ Ahora puedes agregar código al loop `por siempre` {.blockcontrol} de tu bote, para que se mueva 2 _pasos extra_ cada vez que toca una fuente de energía blanca.
++ A continuación puedes añadir código nuevo al bucle `por siempre` {.blockcontrol} de tu barco, para que avance 2 _pasos extra_ cada vez que toque un propulsor blanco.
 
 	```blocks
 	si <¿tocando el color [#FFFFFF]?> entonces
@@ -164,28 +164,28 @@ Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesa
 	fin
 	```
 
-+ También puedes agregar una puerta giratoria, que tu bote tiene que evitar. Agrega un nuevo objeto que se llame 'puerta', y que se vea así:
++ También puedes añadir una puerta giratoria, que tu barco tendrá que evitar. Añade un nuevo objeto con el nombre 'puerta', y que sea así:
 
 	![screenshot](boat-gate.png)
 
-	Asegúrate de que el color de la puerta sea igual al color de las otras barreras de madera.
+	Asegúrate de que el color de la puerta sea el mismo que el color de las otras barreras de madera.
 
 + Fija el centro del objeto puerta.
 
 	![screenshot](boat-center.png)
 
-+ Agrega código a tu puerta para hacerla que lentamente gire `por siempre` {.blockcontrol}.
++ Añade código a la puerta para hacer que gire lentamente `por siempre` {.blockcontrol}.
 
-+ Prueba tu juego. Ahora deberías tener una puerta giratoria que tienes que evitar.
++ Prueba tu juego. Ahora deberías de tener una puerta giratoria que tienes que evitar.
 
 	![screenshot](boat-gate-test.png)
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: ¡Más obstáculos! {.challenge .new-page}
-¿Puedes agregar más obstáculos a tu juego? Aquí te damos algunas ideas:
+¿Puedes añadir más obstáculos a tu juego? Aquí te damos algunas ideas:
 
-+ Podrías agregar cieno verde a tu scenario, lo que frena al jugador cuando lo toca. Para hacerlo puedes usar un bloque `espera` {.blockcontrol}:
++ Podrías añadir cieno verde a tu escenario, que haga que el jugador vaya más lento cuando lo toque. Para hacer esto, puedes usar un bloque `espera` {.blockcontrol}:
 
 	```blocks
 		esperar (0.01) segundos
@@ -193,7 +193,7 @@ Este juego es _demasiado_ fácil – agreguemos cosas para hacerlo más interesa
 
 ![screenshot](boat-algae.png)
 
-+ ¡Podrías agregar un objeto en movimiento, como un tronco o un tiburón!
++ ¡Podrías añadir un objeto en movimiento, como un tronco o un tiburón!
 
 ![screenshot](boat-obstacles.png)
 
@@ -204,40 +204,40 @@ Estos bloques pueden ayudarte:
 		rebotar si toca un borde
 	````
 
-Si tu nuevo objeto no es marrón, tendrás que agregar esto al código de tu bote:
+Si tu nuevo objeto no es marrón, tendrás que añadir lo siguiente al código de tu barco:
 	
 	```blocks
-	si <<¿tocando el color [#603C15]?> o <¿tocando [shark v]?>> entonces
+	si <<¿tocando el color [#603C15]?> o <¿tocando [tiburón v]?>> entonces
 	fin
 	```
 
 ## Guarda tu proyecto { .save }
 
-## Desafío: ¡Más botes! {.challenge .new-page}
+## Desafío: ¡Más barcos! {.challenge .new-page}
 ¿Puedes convertir tu juego en una carrera entre 2 jugadores?
 
-+ Duplica el bote, renómbralo 'Jugador 2' y cámbiale el color.
++ Duplica el barco, renómbralo 'Jugador 2' y cámbiale el color.
 
 ![screenshot](boat-p2.png)
 
-+ Cambia este código para cambiar la posición de comienzo del Jugador 2:
++ Cambia este código para modificar la posición de inicio del Jugador 2:
 
 	```blocks
 		ir a x: (-190) y: (-150)
 	```
 
-+ Borra el código que usa el ratón para controlar el bote:
++ Elimina el código que usa el ratón para controlar el barco:
 
 	```blocks
-		si < (distancia a [puntero del mouse v]) > [5] > entonces
-			apuntar hacia [apuntador del ratón v]
+		si < (distancia a [puntero del ratón v]) > [5] > entonces
+			apuntar hacia [puntero del ratón v]
 			mover (1) pasos
 		fin
 	```
 
-...y reemplázalo con código para controlar el bote usando las teclas de flechas.
+...y reemplázalo con código para controlar el barco usando las teclas de flechas.
 
-Este es el código que necesitas para mover el bote hacia adelante:
+Éste es el código que necesitarás para mover el barco hacia adelante:
 
 	```blocks
 		si <¿tecla [flecha arriba v] presionada?> entonces
@@ -245,12 +245,12 @@ Este es el código que necesitas para mover el bote hacia adelante:
 	fin
 	```
 
-También necesitarás un código para `doblar` {.blockmotion} el bote cuando se presionan las teclas de flechas izquierda y derecha.
+También necesitarás un código para `girar` {.blockmotion} el barco cuando se presionen las teclas de flecha izquierda y derecha.
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: ¡Más niveles! {.challenge .new-page}
-¿Puedes crear escenarios adicionales y permitirle al jugador que elija entre niveles?
+¿Puedes crear escenarios adicionales y permitir al jugador que elija entre niveles?
 
 	```blocks
 		al presionar tecla [espacio v]
