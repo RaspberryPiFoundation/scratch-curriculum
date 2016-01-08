@@ -240,7 +240,7 @@ Kan du tilføje noget kode til din nye person, så den kun vises i rum 1? Sørg 
 
 + Tilføj noget kode til din fjende, så den kun viser sig i rum 2. 
 
-+ Du skal også tilføje noget kode for at flytte fjenden og for at afslutte spillet, hvis fjenden rører spilleren. Det er lettets at gøre i seperate kodeblokke. Således bør koden til din fjende se ud: 
++ Du skal også tilføje noget kode for at flytte fjenden og for at afslutte spillet, hvis fjenden rører spilleren. Det er lettets at gøre i seperate kodeblokke. Koden til din fjende bør se således ud: 
 
 ![screenshot](world-enemy-code.png)  
 
