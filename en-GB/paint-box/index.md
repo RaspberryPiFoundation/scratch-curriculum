@@ -213,7 +213,7 @@ Let's allow the user to draw using a range of different pencil sizes.
 
 ## Activity Checklist { .check }
 
-+ First, add a new variable called 'width'. If you're not sure how to do this, the 'Balloons' project will help you.
++ First, add a new variable called 'width'. If you're not sure how to do this, the 'Ghostbusters' project will help you.
 
 + Add this line _inside_ the `forever` {.blockcontrol} loop of your pencil's code:
 
