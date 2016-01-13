@@ -174,7 +174,7 @@ Let's combine loops to make a shining star.
 
 	![screenshot](images/space-star.png)
 
-+ Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it's original size. These 2 loops are inside a `forever` {.blockcontrol} loop, so the animation keeps repeating.
++ Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to its original size. These 2 loops are inside a `forever` {.blockcontrol} loop, so the animation keeps repeating.
 
 ## Save your project { .save }
 
