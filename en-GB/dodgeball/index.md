@@ -16,7 +16,7 @@ In this project you'll learn how to create a platform game, in which you have to
 
 # Step 1: Character movement { .activity }
 
-Let's start by creating a character that can move left and right, as well as climb up poles.
+Let's start by creating a character that can move left and right, as well as climb up ladders.
 
 ## Activity Checklist { .check }
 
@@ -26,7 +26,7 @@ Let's start by creating a character that can move left and right, as well as cli
 
 	![screenshot](images/dodge-resources.png)
 
-+ Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the poles and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
++ Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the ladders and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
 
 	![screenshot](images/dodge-background.png)
 
@@ -53,22 +53,22 @@ Let's start by creating a character that can move left and right, as well as cli
 
 + To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
 
-+ To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
++ To climb a pink ladder, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
 
 	```blocks
-		if < <key [up arrow v] pressed?> and <touching color [#FFFF00]?> > then
+		if < <key [up arrow v] pressed?> and <touching color [#FF69B4]?> > then
 			change y by (4)
 		end
 	```
 
-+ Test your character - can you climb the yellow poles and get to the end of your level?
++ Test your character - can you climb the pink ladders and get to the end of your level?
 
 	![screenshot](images/dodge-test-character.png)
 
 ## Save your project { .save }
 
 ## Challenge: Completing the level {.challenge}
-Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the brown door?
+Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the green door?
 
 ![screenshot](images/dodge-win.png)
 
@@ -102,19 +102,19 @@ Let's make your character move more realistically, by adding gravity and allowin
 
 	![screenshot](images/dodge-gravity-drag.png)
 
-+ Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
++ Gravity shouldn't move your character through a platform or a ladder! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
 
 	```blocks
 		when flag clicked
 		set [gravity v] to [-4]
 		forever
-			if < not < <touching color [#0000FF]?> or <touching color [#FFFF00]?> > > then
+			if < not < <touching color [#0000FF]?> or <touching color [#FF69B4]?> > > then
 				change y by (gravity)
 			end
 		end
 	```
 
-+ Test the gravity again. Does your character stop when they are on a platform or a pole? Can you walk off the edge of platforms to the level below?
++ Test the gravity again. Does your character stop when they are on a platform or a ladder? Can you walk off the edge of platforms to the level below?
 
 	![screenshot](images/dodge-gravity-test.png)
 
@@ -247,7 +247,7 @@ Let's make your game a little harder to complete, by adding lasers!
 
 + Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be the same as the code you added to your ball sprite.
 
-	You don't need to add any more code to your character - they already know what to do when they get hit!
+	You don't need to add any more code to your character - it already knows what to do when it is hit!
 
 + Test out your game to see if you can get past the laser. Change the `wait` {.blockcontrol} times in your code if the lasers are too easy or too hard.
 
@@ -260,10 +260,10 @@ If you think your game is still too easy, you can add more obstacles to your lev
 
 ![screenshot](images/dodge-obstacles.png)
 
-You could even create more than one backdrop, and move to the next level when your character reaches the brown door:
+You could even create more than one backdrop, and move to the next level when your character reaches the green door:
 
 ```blocks
-	if <touching color [#714300]?> then
+	if <touching color [#00FF00]?> then
 		switch backdrop to [next backdrop v]
 		go to x: (-210) y: (-120)
 		wait (1) secs
@@ -273,7 +273,7 @@ You could even create more than one backdrop, and move to the next level when yo
 ## Save your project { .save }
 
 ## Challenge: Improved gravity {.challenge}
-There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
+There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a ladder and then moving to the left.
 
 ![screenshot](images/dodge-gravity-bug.png)
 
