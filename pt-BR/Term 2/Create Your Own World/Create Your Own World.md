@@ -28,7 +28,7 @@ Vamos começar criando um jogador que possa se movimentar pelo seu mundo.
 
 	![screenshot](world-resources.png)
 
-+ Adicione uma imagem 'room1.png' como o novo pano de fundo do cenário, e a imagem 'player.png' como um novo ator. If you don't have these images you can draw them yourself! Here's how your project should look:
++ Adicione uma imagem 'room1.png' como o novo pano de fundo do cenário, e a imagem 'player.png' como um novo ator. Se você não tiver essas imagens, você pode desenhá-las. É assim que seu projeto deve estar: 
 
 	![screenshot](world-player.png)
 
