@@ -1,0 +1,34 @@
+{
+    "description": false,
+    "id": "scratch_02”,
+    "language": "pt-BR",
+    "number": 2,
+    "title": "Scratch 1",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Memory/Memory.md",
+            "note":     "Memory/Memory - notes.md"
+        },	
+	{
+            "number":   2,
+            "filename": "Brain Game/Brain Game.md",
+            "note":     "Brain Game/Brain Game - notes.md"
+        },
+	{
+            "number":   3,
+            "filename": "Catch the Dots/Catch the Dots.md",
+            "note":     "Catch the Dots/Catch the Dots - notes.md"
+        }
+	{
+            "number":   4,
+            "filename": "Clone Wars/Clone Wars.md",
+            "note":     "Clone Wars/Clone Wars - notes.md"
+        },
+	{
+            "number":   5,
+            "filename": "Create Your Own World/Create Your Own World.md",
+            "note":     "Create Your Own World/Create Your Own World - notes.md"
+        }         
+	]
+}
