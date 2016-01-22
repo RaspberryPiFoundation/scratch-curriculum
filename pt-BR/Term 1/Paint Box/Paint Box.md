@@ -1,5 +1,5 @@
 ---
-title: Paint Box
+title: Lousa Mágica
 level: Scratch 1
 language: pt-BR
 stylesheet: scratch

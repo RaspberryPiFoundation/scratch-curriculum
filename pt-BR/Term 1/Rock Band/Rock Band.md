@@ -1,5 +1,5 @@
 ---
-title: Rock Band
+title: Banda de Rock
 level: Scratch 1
 language: pt-BR
 stylesheet: scratch

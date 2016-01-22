@@ -1,5 +1,5 @@
 ---
-title: ChatBot
+title: Robô Falante
 level: Scratch 1
 language: en-GB
 stylesheet: scratch

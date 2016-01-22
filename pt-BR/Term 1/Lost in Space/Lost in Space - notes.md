@@ -1,5 +1,5 @@
 ---
-title: Perdido no espaço — Notas para Club Leaders
+title: Perdido no espaço —  Notas para Líderes de Clubes
 language: pt-BR
 embeds: "*.png"
 ...

@@ -1,5 +1,5 @@
 ---
-title: Rock Band — Notes for Club Leaders
+title: Banda de Rock —  Nota para Líderes de Clubes
 language: pt-BR
 embeds: "*.png"
 materials: [""]
