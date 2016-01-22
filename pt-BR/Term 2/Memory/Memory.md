@@ -1,5 +1,5 @@
 ---
-title: Memory
+title: Jogo da Memória
 level: Scratch 2
 language: pt-BR
 stylesheet: scratch
