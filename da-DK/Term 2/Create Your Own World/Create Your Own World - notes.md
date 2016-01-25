@@ -15,7 +15,7 @@ Du kan finde en færdig version af dette projekt <a href="http://scratch.mit.edu
 
 + CreateYourOwnWorld.sb2
 
-Der findes også en version af dette projekt med tilhørende eksterne ressourcer, som er loadede i forvejen. Dette er tilgængeligt online via  [jumpto.cc/world-resources](http://jumpto.cc/world-resources), og kan også downloades via projektets klubleder materiale, som indeholder::
+Der findes også en version af dette projekt med tilhørende eksterne ressourcer, som er loadede i forvejen. Dette er tilgængeligt online via  [jumpto.cc/world-resources](http://jumpto.cc/world-resources), og kan også downloades via projektets klubleder materiale, som indeholder:
 
 + CreateYourOwnWorldResources.sb2 
 

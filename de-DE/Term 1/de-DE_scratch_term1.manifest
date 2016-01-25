@@ -20,6 +20,11 @@
             "number":   3,
             "filename": "Balloons/Balloons.md",
             "note":     "Balloons/Balloons - notes.md"
+        },
+        {
+            "number":   4,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 }
