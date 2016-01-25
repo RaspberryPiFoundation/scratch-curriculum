@@ -4,7 +4,7 @@ level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
+materials: ["Recursos para el líder del Club/*.*"]
 ...
 
 # Introducción { .intro }
@@ -16,52 +16,52 @@ materials: ["Club Leader Resources/*.*"]
   <img src="space-final.png">
 </div>
 
-# Primer paso: Animación de una nave espacial { .activity .new-page}
+# Paso 1: Animar una nave espacial { .activity .new-page}
 
-¡Hagamos una nave espacial que vuele hacia la Tierra!
+¡Vamos a hacer una nave espacial que vuele hacia la Tierra!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Comienza un nuevo proyecto Scratch, y elimina el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor de Scratch en línea en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crea un nuevo proyecto Scratch, y borra el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor de Scratch en línea en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Agrega los objetos “Nave especial” y “Tierra” al escenario. También deberías agregar las “Estrellas” en el fondo de tu escenario. Tu escenario debería verse así:
++ Añade los objetos “Spaceship" (Nave especial) y “Earth" (Tierra) al escenario. También tendrás que añadir el fondo “Stars" (Estrellas) a tu escenario. Tu escenario debería de parecerse a éste:
 
 	![screenshot](space-sprites.png)
 
-+ Haz clic en tu nuevo objeto nave especial, y haz clic en la lengüeta “Disfraces”.
++ Haz clic en el nuevo objeto de nave especial, y selecciona la pestaña “Disfraces”.
 
 	![screenshot](space-costume.png)
 
-+ Usa la herramienta de flechas para seleccionar la imagen. Luego haz clic en la manija rotatoria circular, y haz rotar la imagen hasta que esté de costado.
++ Usa la herramienta con la flecha para seleccionar la imagen. Luego haz clic en el mango giratorio circular, y haz girar la imagen hasta que esté de lado.
 
 	![screenshot](space-rotate.png)
 
-+ Agrega este código a tu objeto nave espacial:
++ Añade este código al objeto nave espacial:
 
 	![screenshot](space-animate.png)
 
-	Cambia los números en los bloques de código, para que el código sea exactamente igual que en la imagen anterior.
+	Cambia los números en los bloques de código, para que el código sea exactamente igual al de la imagen anterior.
 
-+ Si haces clic en los bloques de código para ejecutar el código, deberías ver que la nave especial habla, dobla y se mueve hacia el centro del escenario.
++ Si haces clic en los bloques de código para ejecutar el código, deberías de ver cómo la nave espacial habla, gira y se mueve hacia el centro del escenario.
 
 	![screenshot](space-animate-stage.png)
 
-	La posición de la pantalla `x:(0) y:(0)` {.blockmotion} es el centro del escenario. Una posición como `x:(-150) y:(-150)` {.blockmotion} está hacia la parte inferior izquierda del esenario, y una posición como `x:(150) y:(150)` {.blockmotion} está cerca de la parte superior derecha.
+	La posición de la pantalla `x:(0) y:(0)` {.blockmotion} es el centro del escenario. Una posición como `x:(-150) y:(-150)` {.blockmotion} está hacia la parte inferior izquierda del escenario, y una posición como `x:(150) y:(150)` {.blockmotion} está cerca de la parte superior derecha.
 
 	![screenshot](space-xy.png)
 
-	Si necesitas saber las coordinadas de una posición en el scenario, mueve el ratón a la posición para la cual deseas saber las coordinadas, que se despliegan abajo del escenario.
+	Si necesitas saber las coordenadas de una posición en el escenario, mueve el ratón a la posición que deseas saber y apunta las coordenadas que aparecen por debajo del escenario.
 
 	![screenshot](space-coordinates.png)
 
-+ Prueba tu animación haciendo clic en la bandera verde justo arriba del escenario.
++ Prueba tu animación haciendo clic en la bandera verde que encontrarás justo encima del escenario.
 
 	![screenshot](space-flag.png)
 
 ## Desafío: Mejora tu animación {.challenge}
-Puedes cambiar los números en el código de tu animación, para que:
-+ ¿La nave especial se mueva hasta tocar la Tierra?
-+ ¿La nave espacial se mueva más lentamente hacia la Tierra?
+¿Puedes cambiar los números en el código de tu animación, para que:
++ la nave espacial se mueva hasta tocar la Tierra?
++ la nave espacial se mueva más lentamente hacia la Tierra?
 
 Necesitarás cambiar los números en este bloque:
 
@@ -71,25 +71,25 @@ Necesitarás cambiar los números en este bloque:
 
 ## Guarda tu proyecto { .save }
 
-# Segundo paso: Animación mediante el uso de loops { .activity .new-page }
+# Paso 2: Animar usando bucles { .activity .new-page }
 
 Otra manera de animar la nave espacial es decirle que se mueva distancias pequeñas, muchas veces.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Elimina el bloque `deslizar` {.blockmotion} de tu código haciendo clic con el botón derecho y haciendo clic en “eliminar”. También puedes eliminar código arrastrándolo del área de secuencia de comandos, de nuevo al área de los bloques de código.
++ Elimina el bloque `deslizar` {.blockmotion} de tu código haciendo clic con el botón derecho en el bloque y seleccionando "borrar". También puedes borrar código arrastrándolo del área de Programas al área de los bloques de código.
 
 	![screenshot](space-delete-glide.png)
 
-+ Una vez que hayas eliminado tu código, agrega este código en su lugar:
++ Una vez hayas eliminado el código, añade este código en su lugar:
 
 	![screenshot](space-loop.png)
 
-	El bloque `repetir` {.blockcontrol} se usa para repetir algo muchas veces, y también se conoce como un __loop__.
+	El bloque `repetir` {.blockcontrol} se usa para repetir algo muchas veces, y también se conoce como un __bucle__.
 
 + Si haces clic en la bandera para probar este nuevo código, verás que hace casi lo mismo que antes.
 
-+ Puedes agregar más código a tu loop, para hacer cosas interesantes. Agrega el bloque `cambiar efecto de color por 25` {.blocklooks} en el loop (de la sección “Vistas”), para cambiar el color de la nave espacial repetidamente a medida que se mueve:
++ Puedes añadir más código a tu bucle, para hacer cosas interesantes. Añade al bucle el bloque `cambiar efecto color por 25` {.blocklooks} (de la sección "Apariencia"), para cambiar el color de la nave espacial repetidamente a medida que se mueve:
 
 	![screenshot](space-colour.png)
 
@@ -97,11 +97,11 @@ Otra manera de animar la nave espacial es decirle que se mueva distancias peque�
 
 	![screenshot](space-colour-test.png)
 
-+ También puedes hacer que tu nave especial se haga más pequeña a medida que se mueve hacia la Tierra.
++ También puedes hacer que tu nave espacial se haga más pequeña a medida que se mueve hacia la Tierra.
 
 	![screenshot](space-size.png)
 
-+ Prueba tu animación. ¿Qué sucede si haces clic en la bandera una segunda vez? ¿Tu nave espacial empieza con el tamaño correcto? Puedes usar este bloque para fijar tu animación:
++ Prueba tu animación. ¿Qué ocurre si haces clic en la bandera una segunda vez? ¿Tu nave espacial empieza con el tamaño correcto? Puedes usar este bloque para fijar tu animación:
 
 	```scratch
 	fijar tamaño a (100) %
@@ -109,21 +109,21 @@ Otra manera de animar la nave espacial es decirle que se mueva distancias peque�
 
 ## Guarda tu proyecto { .save }
 
-# Tercer paso: Mono que flota { .activity .new-page }
+# Paso 3: Mono flotante { .activity .new-page }
 
-Agreguemos un mono a tu animación, que está ¡perdido en el espacio!!
+Vamos a añadir un mono a tu animación, ¡que está perdido en el espacio!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Comienza agregando un objeto mono de la biblioteca.
++ Empieza añadiendo el objeto "Monkey" (mono) de la biblioteca.
 
 	![screenshot](space-monkey.png)
 
-+ Si haces clic en tu nuevo objeto mono y luego en “Disfraces”, puedes editar cómo se ve el mono. Haz clic en la herramienta “Elipse” y dibuja un casco espacial blanco alrededor de la cabeza del mono.
++ Si haces clic en tu nuevo objeto mono y después en “Disfraces”, podrás editar la apariencia del mono. Haz clic en la herramienta “Elipse” y dibuja un casco espacial blanco alrededor de la cabeza del mono.
 
 	![screenshot](space-monkey-edit.png)
 
-+ Ahora haz clic en “Secuancia de comandos”, y agrega este código a tu mono, para que gire lentamente en un círculo por siempre:
++ A continuación haz clic en “Programas”, y añade este código a tu mono, para que gire lentamente en círculos para siempre:
 
 	```blocks
 	al presionar bandera verde
@@ -132,23 +132,23 @@ Agreguemos un mono a tu animación, que está ¡perdido en el espacio!!
 	fin
 	```
 
-	El bloque `por siempre` {.blockcontrol} es otro loop, pero esta vez uno que nunca termina.
+	El bloque `por siempre` {.blockcontrol} es otro bucle, pero en este caso, uno que nunca termina.
 
 + Haz clic en la bandera para probar tu mono. Tendrás que hacer clic en el botón parar (al lado de la bandera) para terminar esta animación.
 
 	![screenshot](space-monkey-loop.png)
 
-# Cuarto paso: Asteroides que rebotan { .activity .new-page }
+# Paso 4: Asteroides que rebotan { .activity .new-page }
 
-Agreguemos a tu animación algunas rocas espaciales que flotan.
+Vamos a añadir a tu animación algunas rocas espaciales que floten.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Agrega un objeto “roca” a tu animación.
++ Añade el objeto “Rocks" (roca) a tu animación.
 
 	![screenshot](space-rock-sprite.png)
 
-+ Agrega este código a tu roca, para hacer que rebote por todo el escenario:
++ Añade este código a tu roca, para hacer que rebote por todo el escenario:
 
 	```scratch
 	al presionar bandera verde
@@ -156,33 +156,32 @@ Agreguemos a tu animación algunas rocas espaciales que flotan.
 	por siempre
 		mover (2) pasos
 		rebotar si toca un borde
-		if on edge, bounce
 	```
 
 + Haz clic en la bandera para probar tu roca. ¿Rebota por todo el escenario?
 
-# Quinto paso: Estrellas que brillan { .activity .new-page }
+# Paso 5: Estrellas que brillan { .activity .new-page }
 
-Combinemos loops para hacer una estrella que brilla.
+Vamos a combinar bucles para hacer una estrella que brille.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Agrega un objeto “Estrella” a tu animación
++ Añade el objeto “Star" (Estrella) a tu animación
 
 	![screenshot](space-star-sprite.png)
 
-+ Agrega este código a tu estrella:
++ Añade este código a tu estrella:
 
 	![screenshot](space-star.png)
 
-+ Haz clic en la bandera para probar esta animación de la estrella. ¿Qué hace este código? Bien, la estrella se hace un poquito más grande 20 veces, y luego se hace un poquito más pequeña 20 veces, hasta llegar a su tamaño original. Estos 2 loops están dentro de un loop `por siempre` {.blockcontrol}, para que la animación se continúe repitiendo.
++ Haz clic en la bandera para probar la animación de la estrella. ¿Qué hace este código? Pues la estrella se hace un poquito más grande 20 veces, y luego se hace un poquito más pequeña 20 veces, hasta llegar a su tamaño original. Estos 2 bucles están dentro de un bucle `por siempre` {.blockcontrol}, para que la animación se repita constantemente.
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: Crea tu propia animación {.challenge}
-Detén tu animación especial, haz clic en “Archivo” y luego en “Nuevo”, para comenzar un nuevo proyecto.
+Detén tu animación espacial, haz clic en “Archivo” y luego en “Nuevo”, para empezar un nuevo proyecto.
 
-Usa lo que aprendiste en este proyecto para crear tu propia animación. Puede ser cualquier cosa que quieras, pero trata de que la animación concuerde con el escenario. Aquí te damos algunos ejemplos:
+Usa lo que has aprendido en este proyecto para crear tu propia animación. Puede ser cualquier cosa que quieras, pero intenta que la animación concuerde con el escenario. Aquí te damos algunos ejemplos:
 
 ![screenshot](space-egs.png)
 
@@ -190,4 +189,4 @@ Usa lo que aprendiste en este proyecto para crear tu propia animación. Puede se
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
-This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+This project was translated by María Alejandra Aguada from Translators Without Borders. Screenshots in Spanish were provided by Montse Verdaguer. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.

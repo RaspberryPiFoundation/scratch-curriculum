@@ -1,10 +1,10 @@
 ---
-title: Caza fantasmas
+title: Cazafantasmas
 level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
+materials: ["Recursos para el líder del Club/*.*"]
 ...
 
 ## Nota: { .challenge .pdf-hidden }
@@ -12,24 +12,24 @@ El Proyecto “Globos” se ha movido a la sección [Proyectos Scratch Adicional
 
 # Introducción { .intro }
 
-¡Vas a crear un juego para cazar fantasmas!
+¡Vas a crear un juego para atrapar fantasmas!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
   <img src="ghost-final.png">
 </div>
 
-# Primer paso: Cómo animar un fantasma { .activity }
+# Paso 1: Animar un fantasma { .activity }
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Comienza un nuevo proyecto Scratch, y borra el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor en línea de Scratch en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crea un nuevo proyecto de Scratch, y borra el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor en línea de Scratch en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Agrega un nuevo objeto fantasma, y un escenario acorde.
++ Añade un nuevo objeto de un fantasma, y un escenario acorde.
 
 	![screenshot](ghost-ghost.png)
 
-+ Agrega este código a tu fantasma, para que continuamente aparezca y desaparezca:
++ Añade este código a tu fantasma, para que continuamente aparezca y desaparezca:
 
 	```blocks
 		al presionar bandera verde
@@ -45,13 +45,13 @@ El Proyecto “Globos” se ha movido a la sección [Proyectos Scratch Adicional
 
 ## Guarda tu proyecto { .save }
 
-# Segundo paso: Fantasmas aleatorios { .activity }
+# Paso 2: Fantasmas aleatorios { .activity }
 
-¡Tu fantasma es muy fácil de atrapar porque no se mueve!
+¡Tu fantasma es muy fácil de atrapar, porque no se mueve!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ En lugar de estar en la misma posición, puedes hacer que Scratch elija coordinadas x e y al azar. Agregar un bloque `ir a` {.blockmotion} al código de tu fantasma, para que se vea así:
++ En lugar de quedarse en la misma posición, puedes hacer que Scratch elija coordinadas x e y al azar. Añade un bloque `ir a` {.blockmotion} al código de tu fantasma, para que sea como éste:
 
 	```blocks
 		al presionar bandera verde
@@ -64,134 +64,134 @@ El Proyecto “Globos” se ha movido a la sección [Proyectos Scratch Adicional
 		fin
 	```
 
-+ Prueba tu fantasma una vez más. Deberías notar que cada vez aparece en un lugar distinto.
++ Vuelve a probar tu fantasma, y deberías de ver cómo aparece cada vez en una posición diferente.
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: Más aleatoriedad {.challenge}
-¿Puedes hacer que tu fantasma `espere` {.blockcontrol} una cantidad de tiempo al azar antes de aparecer? ¿Puedes usar el bloque `fijar tamaño ` {.blocklooks} para hacer que tu fantasma tenga un tamaño al azar cada vez que aparece?
+¿Puedes hacer que tu fantasma `espere` {.blockcontrol} un intervalo de tiempo al azar antes de aparecer? ¿Puedes usar el bloque `fijar tamaño ` {.blocklooks} para hacer que el tamaño de tu fantasma cambie al azar cada vez que aparezca?
 
 ## Guarda tu proyecto { .save }
 
-# Tercer paso: Cómo atrapar fantasmas { .activity }
+# Paso 3: Cazar fantasmas { .activity }
 
-¡Dejemos que el jugador pueda atrapar fantasmas!
+¡Vamos a hacer que el jugador pueda atrapar fantasmas!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Para permitirle al jugador que atrape un fantasma, agrega este código:
++ Para que el jugador pueda atrapar un fantasma, añade este código:
 
 	```blocks
 		al hacer clic en este objeto
 		esconder
 	```
 
-+ Prueba tu proyecto. ¿Puedes atrapar fantasmas cuando aparecen? Si te parece difícil atrapar fantasmas, puedes jugar el juego en el modo pantalla completa haciendo clic en este botón:
++ Prueba tu proyecto. ¿Puedes atrapar fantasmas cuando aparecen? Si te parece difícil cazarlos, puedes jugar al juego en modo pantalla completa haciendo clic en este botón:
 
 	![screenshot](ghost-fullscreen.png)
 
-## Desafío: Agregar un sonido { .challenge }
-¿Puedes hacer un sonido cada vez que se atrapa un fantasma?
+## Desafío: Añadir un sonido { .challenge }
+¿Puedes hacer que se oiga un sonido cada vez que se caza un fantasma?
 
 ## Guarda tu proyecto { .save }
 
-# Cuarto paso: Agregar un puntaje { .activity .new-page }
+# Paso 4: Añadir puntuación { .activity .new-page }
 
-Hagamos que las cosas sean más interesantes con un contador de puntos.
+Vamos a hacer las cosas más interesantes con un contador de puntos.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Para llevar un conteo de los puntos del jugador, necesitas un lugar para ubicarlo. Una __variable__ es un lugar para almacenar información que cambia, como un puntaje.
++ Para contar la puntuación del jugador, necesitas un sitio donde ponerla. Una __variable__ es un sitio para almacenar información que cambia, como la puntuación.
 
-	Para crear una nueva variable, haz clic en la lengüeta de “Secuencia de comandos”, selecciona `Información` {.blockdata} y luego haz clic en “Crear una Variable”.
+	Para crear una nueva variable, haz clic en la pestaña “Programas”, selecciona `Datos` {.blockdata} y a continuación haz clic en “Crear una Variable”.
 
 	![screenshot](ghost-score.png)
 
-	Ingresa “puntaje” como el nombre de la variable. Asegúrate de que esté disponible para todos los objetos, y haz clic en “OK” para crearla. Verás muchísimos bloques de código que pueden usarse con tu variable `puntaje` {.blockdata}.
+	Llama a la nueva variable “puntuación”. Asegúrate de que esté disponible para todos los objetos, y haz clic en “OK” para crearla. A continuación verás nuevos bloques de código que pueden usarse con tu variable `puntuación` {.blockdata}.
 
 	![screenshot](ghost-variable.png)
 
-	También verás el puntaje en la esquina superior izquierda del escenario.
+	También verás la puntuación en la parte superior izquierda del escenario.
 
 	![screenshot](ghost-stage-score.png)
 
-+ Cuando se inicia un nuevo juego (haciendo clic en la bandera), deberías hacer que el puntaje del jugador sea 0:
++ Cuando empieza un nuevo juego (haciendo clic en la bandera), deberías hacer que la puntuación del jugador sea 0:
 
 	```blocks
 	al presionar bandera verde
-	fijar [score v] a [0]
+	fijar [puntuación v] a [0]
 	```
 
-+ Siempre que se atrapa un fantasma, necesitas agregar 1 al puntaje del jugador:
++ Cuando el jugador atrape un fantasma, tendrás que añadir 1 su puntuación:
 
 	![screenshot](ghost-change-score.png)
 
-+ Ejecuta tu programa une vez más y atrapa algunos fantasmas. ¿Cambia tu puntaje?
++ Ejecuta tu programa de nuevo y atrapa algunos fantasmas. ¿Cambia tu puntuación?
 
 ## Guarda tu proyecto { .save }
 
-# Quinto paso: Cómo agregar un cronómetro { .activity }
+# Paso 5: Añadir un cronómetro { .activity }
 
-Puedes hacer tu juego más interesante, dándole al jugador solo 10 segundos para atrapar tantos fantasmas como le sea posible.
+Puedes hacer que tu juego sea más interesante dándole al jugador sólo 10 segundos para que atrape tantos fantasmas como le sea posible.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Puedes usar otra variable para almacenar el tiempo que queda. Haz clic en el escenario y crea una nueva variable denominada “tiempo”:
++ Puedes usar otra variable para mostrar el tiempo que queda. Haz clic en el escenario y crea una nueva variable que se llame “tiempo”:
 
 	![screenshot](ghost-time.png)
 
-+ Así es como debería funcionar el cronómetro:
++ Así es como debería de funcionar el cronómetro:
 
-	+ El cronómetro debería comenzar a 10 segundos;
-	+ El cronómetro debería contar cada segundo descendiente;
-	+ El juego debería detenerse cuando el cronómetro llega a 0.
+	+ El cronómetro debería de empezar en 10 segundos;
+	+ El cronómetro debería de contar hacia atrás cada segundo;
+	+ El juego debería de parar cuando el cronómetro llegue a 0.
 
-	Este es el código para hacerlo, que puedes agregar a tu __escenario__:
+	Éste es el código para hacerlo, y que puedes añadir a tu __escenario__:
 
 	```blocks
 		al presionar bandera verde
-		fijar [time v] a [10]
-		repetir hasta que <(time) = [0]>
+		fijar [tiempo v] a [10]
+		repetir hasta que <(tiempo) = [0]>
 			esperar (1) segundos
-			cambiar [time v] por (-1)
+			cambiar [tiempo v] por (-1)
 		fin
 		detener [todos v]
 	```
 
-	Así es como agregas el código `repetir hasta`{.blockcontrol}`tiempo`{.blockdata}`= 0`{.blockoperators}:
+	Así es como se añade el código `repetir hasta`{.blockcontrol}`tiempo`{.blockdata}`= 0`{.blockoperators}:
 
 	![screenshot](ghost-timer-help.png)
 
-+ Arrastra el visor de la variable “tiempo” al lado derecho del scenario. También puedes hacer clic con el botón derecho en el visor de la variable y elegir “lector grande” para cambiar cómo se muestra el tiempo.
++ Arrastra el visor de la variable “tiempo” al lado derecho del escenario. También puedes hacer clic con el botón derecho en el visor de la variable y elegir "tamaño grande” para cambiar el modo en el que se muestra el tiempo.
 
 	![screenshot](ghost-readout.png)
 
-+ Pídele a un amigo que pruebe tu juego. ¿Cuántos puntos pueden sumar? Si tu juego es demasiado fácil, puedes:
++ Pídele a un amigo que pruebe tu juego. ¿Cuántos puntos puede conseguir? Si tu juego es demasiado fácil, puedes:
 
 	+ Darle menos tiempo al jugador;
-	+ Hacer que los fantasmas no aparezcan tan seguido;
+	+ Hacer que los fantasmas no aparezcan tan a menudo;
 	+ Hacer que los fantasmas sean más pequeños.
 
-	Prueba tu juego algunas veces hasta que estés conforme con que tiene el nivel adecuado de dificultad.
+	Prueba tu juego algunas veces hasta que te parezca que tiene el nivel adecuado de dificultad.
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: Más objetos {.challenge}
-¿Puedes agregar otros objetos a tu juego?
+¿Puedes añadir otros objetos a tu juego?
 
 ![screenshot](ghost-final.png)
 
-Necesitas pensar sobre los objetos que agregas. Piensa acerca de:
+Tendrás que pensar sobre los objetos que añadas. Piensa en:
 
-+ ¿Qué tan grande es?
-+ ¿Aparecerá más o menos seguido que los fantasmas?
-+ ¿Cómo se verá/sonará cuando sea atrapado?
-+ ¿Cuántos puntos te dará (o quitará) si lo atrapas?
++ ¿Cómo es de grande?
++ ¿Aparecerá más o menos a menudo que los fantasmas?
++ ¿Cómo aparecerá/sonará cuando sea atrapado?
++ ¿Cuántos puntos conseguirás (o perderás) si lo atrapas?
 
-¡Si necesitas ayuda para agregar otro objeto, puedes volver a usar los pasos anteriores!
+Si necesitas ayuda para añadir otro objeto, ¡puedes volver a seguir los pasos anteriores!
 
 ## Guarda tu proyecto { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
-This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+This project was translated by María Alejandra Aguada from Translators Without Borders. Screenshots in Spanish were provided by Montse Verdaguer. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
