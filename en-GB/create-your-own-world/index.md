@@ -291,7 +291,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 
 ## Activity Checklist { .check }
 
-+ Create a new sprite from your 'key-blue.svg' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
++ Create a new key sprite from your 'key.svg' image, and edit the sprite's costume so that it's blue. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
 
  	![screenshot](images/world-key.png)
 
