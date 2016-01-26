@@ -1,5 +1,5 @@
 ---
-title: Memória — Notas para Club Leaders
+title: Jogo da Memória — Notas para Líderes de Clubes
 language: pt-BR
 embeds: "*.png"
 ...
