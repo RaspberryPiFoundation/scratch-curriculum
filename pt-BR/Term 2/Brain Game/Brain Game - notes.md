@@ -1,5 +1,5 @@
 ---
-title: Jogo da Tabuada — guia para instrutores
+title: Jogo da Tabuada — Guia para Líderes de Clubes
 language: pt-BR
 embeds: "*.png"
 ...

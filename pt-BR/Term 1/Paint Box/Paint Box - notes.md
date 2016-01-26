@@ -1,5 +1,5 @@
 ---
-title: Paint Box — Notes for Club Leaders
+title: Lousa Mágica —  Notas para Líderes de Clubes
 language: pt-BR
 embeds: "*.png"
 ...
