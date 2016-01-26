@@ -1,5 +1,5 @@
 ---
-title: ChatBot — Notes for Club Leaders
+title: Robô Falante —  Nota para Líderes de Clubes
 language: en-GB
 embeds: "*.png"
 ...

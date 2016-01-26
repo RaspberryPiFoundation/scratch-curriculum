@@ -1,5 +1,5 @@
 ---
-title: Capturando Bolinhas — Instruções para os líderes de clubes
+title: Capturando Bolinhas — Notas para líderes de clubes
 language: pt-BR
 embeds: "*.png"
 ...

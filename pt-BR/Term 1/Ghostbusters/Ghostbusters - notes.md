@@ -1,5 +1,5 @@
 ---
-title: Caça fantasmas — Nota para Líderes de Clubes
+title: Caça fantasmas — Notas para Líderes de Clubes
 language: pt-BR
 embeds: "*.png"
 ...
