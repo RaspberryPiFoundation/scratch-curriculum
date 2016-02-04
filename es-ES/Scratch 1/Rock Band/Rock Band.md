@@ -16,25 +16,25 @@ materials: ["Club Leader Resources/*.*"]
   <img src="band-final.png">
 </div>
 
-# Primer paso: Objetos { .activity }
+# Paso 1: Objetos { .activity }
 
-Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Scratch, estas “cosas” se llaman __objetos__. 
+Para poder empezar a animar, necesitas añadir una “cosa” que animar. En Scratch, estas “cosas” se llaman __objetos__. 
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Primero, abre el editor de Scratch. Puedes encontrar el editor en línea de Scratch editor en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Se ve así:
++ Para empezar, abre el editor de Scratch. Puedes encontrar el editor en línea de Scratch editor en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Éste es su aspecto:
 
 	![screenshot](band-scratch.png)
 
-+ El objeto gato que puedes ver es la mascota de Scratch. Deshagámosnos de él haciendo clic en el botón derecho y luego haciendo clic en “borrar”.
++ El objeto gato que ves es la mascota de Scratch. Deshagámosnos de él haciendo clic en el botón derecho y luego haciendo clic en “borrar”.
 
 	![screenshot](band-delete.png)
 
-+ Luego, haz clic en “Selecciona un objeto de la biblioteca” para abrir una lista de todos los objetos de Scratch.
++ Luego, haz clic en “Selecciona un objeto de la biblioteca” para abrir una lista con todos los objetos de Scratch.
 
 	![screenshot](band-sprite-library.png)
 
-+ Baja hasta encontrar un objeto de un tambor. Haz clic en un tambor, y haz clic en “OK” para agregarlo a tu proyecto.
++ Baja hasta encontrar el objeto de un tambor. Selecciona un tambor, y haz clic en “OK” para añadirlo a tu proyecto.
 
 	![screenshot](band-sprite-drum.png)
 
@@ -44,119 +44,119 @@ Antes de poder comenzar a animar, necesitas agregar “algo” que animar. En Sc
 
 ## Guarda tu proyecto { .save }
 
-Asigna un nombre a tu proyecto ingresándolo en la casilla de texto arriba del escenario.
+Dale un nombre a tu proyecto escribiéndolo en la casilla de texto de la parte superior del escenario.
 
-Después puedes hacer clic en “Archivo” y luego “Guardar ahora” para guardar tu proyecto.
+Después puedes hacer clic en “Archivo” y “Guardar ahora” para guardar tu proyecto.
 
 ![screenshot](band-save.png)
 
-# Segundo paso: El Escenario { .activity }
+# Paso 2: El Escenario { .activity }
 
-El __escenario__ es el área a la izquierda, y es donde tu proyecto cobra vida. Imagínate que es el área donde se hace la presentación, ¡como en un escenario real!
+El __escenario__ es el área que se encuentra a la izquierda, y es donde tu proyecto cobra vida. Imagínate que es el área donde se hace la presentación, ¡como en un escenario real!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ ¡En estos momentos, el escenario es de color blanco y se ve bastante aburrido! Agreguemos un fondo al escenario haciendo clic en “Selecciona un fondo de la biblioteca”.
++ ¡En estos momentos, el escenario es de color blanco y parece bastante aburrido! Vamos a añadir un fondo al escenario haciendo clic en “Selecciona un fondo de la biblioteca”.
 
 	![screenshot](band-stage-choose.png)
 
-+ Haz clic en “Interiores” en la izquierda y luego haz clic en un fondo de escenario y luego clic en “OK”.
++ Haz clic en “Interiores” en la parte izquierda, selecciona un fondo de escenario y luego haz clic en “OK”.
 
 	![screenshot](band-backdrop.png)
 
-+ Ahora tu escenario debería verse así:
++ Ahora tu escenario debería de parecerse a éste:
 
 	![screenshot](band-stage.png)
 
-# Tercer paso: Cómo crear un tambor { .activity }
+# Paso 3: Crear un tambor { .activity }
 
-Codifiquemos tu tambor para que pueda sonar cuando se lo toca.
+Vamos a codificar tu tambor para que suene cuando lo toquemos.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Puedes encontrar los bloques de código en la lengüeta “Programas” ¡y todas tienen códigos de color! 
++ Puedes encontrar los bloques de código en la pestaña “Programas” ¡y todas tienen códigos de color! 
 
-	Haz clic en el objeto tambor y luego arrastra estos 2 bloques al área de código a la derecha, asegurándote de que estén conectados juntos (como los bloques de lego):
+	Haz clic en el objeto tambor y luego arrastra estos 2 bloques al área de código de la derecha, asegurándote de que estén conectados juntos (como los bloques de lego):
 
 	![screenshot](band-code.png)
 
 + ¡Haz clic en el tambor para probar tu nuevo instrumento!
 
-+ También puedes cambiar cómo se ve tu tambor cuando le hacen clic, creando un nuevo disfraz. Haz clic en la lengüeta “Disfraces”, y verás la imagen del tambor.
++ También puedes cambiar el aspecto de tu tambor cuando le hacen clic, creando un nuevo disfraz. Haz clic en la pestaña “Disfraces”, y verás la imagen del tambor.
 
 	![screenshot](band-drum-costume.png)
 
-+ Haz clic con el botón derecho en el disfraz y haz clic en “duplicar” para crear una copia del disfraz.
++ Haz clic con el botón derecho en el disfraz y selecciona “duplicar” para crear una copia del disfraz.
 
 	![screenshot](band-drum-duplicate.png)
 
-+ Haz clic en el nuevo disfraz (que se llama “tambor 2”) y luego selecciona la herramienta de línea y dibuja líneas para que se vea como que el tambor está produciendo sonidos.
++ Haz clic en el nuevo disfraz (que se llama “tambor 2”), selecciona la herramienta de línea y dibuja líneas para que parezca que el tambor está haciendo sonidos.
 
 	![screenshot](band-drum-hit.png)
 
-+ En este momento los nombres de los disfraces no son muy útiles. Renombra los 2 disfraces a “sin tocar” y “tocado” ingresando el nuevo nombre para cada disfraz en la caja de texto.
++ En este momento los nombres de los disfraces no son muy útiles. Renombra los 2 disfraces a “sin tocar” y “tocado” escribiendo el nuevo nombre para cada disfraz en el cuadro de texto.
 
 	![screenshot](band-drum-name.png)
 
-+ ¡Ahora que ya tienes 2 disfraces diferentes para tu tambor, puedes elegir qué disfraz desplegar! Agrega estos 2 bloques a tu tambor:
++ ¡Ahora que ya tienes 2 disfraces diferentes para tu tambor, puedes elegir qué disfraz mostrar! Añade estos 2 bloques a tu tambor:
 
 	![screenshot](band-looks.png)
 
 	El bloque de código para cambiar el disfraz está en la sección “Apariencia” {.blocklooks}.
 
-+ Prueba tu tambor. ¡Cuando haces clic en el tambor, debería verse como que está siendo tocado!
++ Prueba tu tambor. ¡Cuando haces clic en el tambor, debería parecer que está siendo tocado!
 
 ## Guarda tu proyecto { .save }
 
-##Desafío: Mejora tu tambor { .challenge }
+##Desafío: Mejorar tu tambor { .challenge }
 
-+ ¿Puedes cambiar el sonido que hace tu tambor cuando se le hace clic? 
++ ¿Puedes cambiar el sonido que hace tu tambor cuando haces clic en él? 
 
 ![screenshot](band-drum-sound.png)
 
-+ ¿Puedes también hacer que el tambor haga un sonido cuando se presiona la barra espaciadora? Necesitarás utilizar este bloque “evento” {.blockevents}:
++ ¿Puedes hacer también que el tambor haga un sonido cuando se presiona la barra espaciadora? Necesitarás utilizar este bloque “Eventos” {.blockevents}:
 
 ```blocks
 	al presionar tecla [espacio v] 
 ```
 
-Puedes copiar tu código existente haciendo clic en el código con el botón derecho y haciendo clic en “duplicar”.
+Puedes copiar el código existente haciendo clic en el código con el botón derecho y seleccionando “duplicar”.
 
 ![screenshot](band-duplicate-code.png)
 
 ## Guarda tu proyecto { .save }
 
-# Cuarto paso: Crear un cantante { .activity .new-page }
+# Paso 4: Crear un cantante { .activity .new-page }
 
-¡Agreguemos un cantante a tu banda!
+¡Vamos a añadir un cantante a tu banda!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Agrega otros 2 objetos a tu escenario; un cantante y un micrófono.
++ Añade otros 2 objetos a tu escenario; un cantante y un micrófono.
 
 	![screenshot](band-singer-mic.png)
 
-+ Antes de que puedas hacer que tu cantante cante, necesitarás agregar un sonido a tu objeto. Asegúrate de haber seleccionado tu cantante, y luego haz clic en la lengüeta “Sonidos” y haz clic en “Selecciona un sonido de la biblioteca”:
++ Para hacer que tu cantante cante, necesitarás añadir un sonido a tu objeto. Asegúrate de haber seleccionado al cantante, haz clic en la pestaña “Sonidos” y haz clic en “Selecciona un sonido de la biblioteca”:
 
 	![screenshot](band-import-sound.png)
 
-+ Si haces clic en “Canto” en el lado izquierdo, podrás elegir sonidos apropiados para agregar a tu objeto.
++ Si haces clic en “Canto” en el lado izquierdo, podrás elegir un sonido adecuado para añadir a tu objeto.
 
 	![screenshot](band-choose-sound.png)
 
-+ Ahora que has agregado el sonido, puedes agregar este código a tu cantante:
++ Ahora que has añadido el sonido, puedes añadir este código a tu cantante:
 
 	```blocks
 		al hacer clic en este objeto
 		Tocar sonido [singer1 v] y esperar
 	```
 
-+ Haz clic en tu cantante, para asegurarte de que cante cuando le haces clic.
++ Prueba tu cantante, para asegurarte de que cante cuando le haces clic.
 
 ## Guarda tu proyecto { .save }
 
-##Desafío: Cómo cambiar el disfraz de tu cantante { .challenge }
-¿Puedes hacer que tu cantante se vea como que está cantando cuando le haces clic? Si necesitas ayuda, puedes usar las instrucciones anteriores para crear un tambor.
+##Desafío: Cambiar el disfraz de tu cantante { .challenge }
+¿Puedes hacer que parezca que tu cantante está cantando cuando le haces clic? Si necesitas ayuda, puedes usar las instrucciones anteriores para crear un tambor.
 
 ![screenshot](band-singer-final.png)
 
@@ -164,16 +164,16 @@ Puedes copiar tu código existente haciendo clic en el código con el botón der
 
 ## Guarda tu proyecto { .save }
 
-##Desafío: Crea tu propia banda { .challenge }
-¡Usa lo que aprendiste en este proyecto para crear tu propia banda! Puedes crear cualquier instrumento que desees, pero fíjate en los sonidos disponibles y en los instrumentos para tener algunas ideas.
+##Desafío: Crear tu propia banda { .challenge }
+¡Usa lo que has aprendido en este proyecto para crear tu propia banda! Puedes crear el instrumento que quieras, pero fíjate en los sonidos disponibles y en los instrumentos para tener algunas ideas.
 
 ![screenshot](band-ideas.png)
 
-Sin embargo, tus instrumentos no tienen que ser sensibles. Puedes, por ejemplo, crear un piano hecho de muffins!
+Pero tus instrumentos no tienen por qué ser lógicos. Por ejemplo, puedes crear un piano hecho de muffins!
 
 ![screenshot](band-piano.png)
 
-Puedes usar los objetos existentes y al mismo tiempo dibujar los tuyos propios.
+Puedes usar los objetos existentes y también dibujar los tuyos propios.
 
 ![screenshot](band-draw.png)
 
