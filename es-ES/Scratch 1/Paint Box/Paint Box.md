@@ -4,27 +4,27 @@ level: Scratch 1
 language: es-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+materials: ["Recursos para el líder del Club/*.*","Recursos del proyecto/*.*"]
 ...
 
 # Introducción { .intro }
 
-¡En este Proyecto, vas a crear tu propio programa para pintar!
+¡En este proyecto, vas a crear tu propio programa para pintar!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
   <img src="paint-final.png">
 </div>
 
-# Primer paso: Crear un lápiz { .activity }
+# Paso 1: Crear un lápiz { .activity }
 
-Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
+Empezaremos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Comienza un nuevo proyecto Scratch, y elimina el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor de Scratch en línea en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Empieza un nuevo proyecto de Scratch, y borra el objeto gato para que tu proyecto esté vacío. Puedes encontrar el editor de Scratch en línea en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Agrega el objeto lápiz a tu proyecto.
++ Añade el objeto lápiz a tu proyecto.
 
 	![screenshot](paint-pencil.png)
 
@@ -32,36 +32,36 @@ Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
 	![screenshot](paint-pencil-delete.png)
 
-+ Renombra tu disfraz “lápiz-azul”, y usa la herramienta “Colorear una forma” para hacer que el lápiz sea azul.
++ Cámbiale el nombre al disfraz por “lápiz-azul”, y usa la herramienta “Colorear una forma” para hacer que el lápiz sea azul.
 
 	![screenshot](paint-pencil-blue.png)
 
-+ Como vas a estar usando tu ratón para dibujar, querrás que tu lápiz siga al ratón “por siempre” {.blockcontrol}. Agrega este código a tu objeto lápiz:
++ Como vas a usar el ratón para dibujar, querrás que tu lápiz siga al ratón “por siempre” {.blockcontrol}. Añade este código a tu objeto lápiz:
 
 	```blocks
 		al presionar bandera verde
 		por siempre
-		  ir a [mouse pointer v]
+		  ir a [puntero del ratón v]
 		fin
 	```
 
-+ Prueba el código haciendo clic en la bandera y luego moviendo el ratón en el escenario. ¿Hace lo que esperabas que hiciera?
++ Prueba el código haciendo clic en la bandera y luego moviendo el ratón por el escenario. ¿Funciona como esperabas?
 
-+ ¿Te has dado cuenta de que es el centro del lápiz y no la punta, lo que sigue al apuntador del ratón?
++ ¿Te has dado cuenta de que es el centro del lápiz y no la punta, lo que sigue al puntero del ratón?
 
 	![screenshot](paint-center.png)
 
-	Para solucionarlo, haz clic en el disfraz “lápiz-azul” de tu objeto lápiz, y haz clic en “Establecer centro del disfraz”.
+	Para arreglar esto, haz clic en el disfraz “lápiz-azul” del objeto lápiz, y haz clic en Fijar el centro del disfraz”.
 
 	![screenshot](paint-center-icon.png)
 
-+ Deberías ver que aparece una cruz en el disfraz. Ahora puedes hacer clic justo debajo de la punta del lápiz, y establecerla esta punta como el centro del disfraz.
++ Deberías de ver una cruz que aparece en el disfraz. Ahora haz clic justo debajo de la punta del lápiz, para fijar este punto como el centro del disfraz.
 
 	![screenshot](paint-pencil-center.png)
 
-+ Haz clic en la lengüeta “Secuencias de comandos”, y luego prueba tu lápiz una vez más. ¿Funciona mejor que antes?
++ Haz clic en la pestaña “Programas”, y luego prueba tu lápiz una vez más. ¿Funciona mejor que antes?
 
-+ Ahora hagamos que tu lápiz dibuje `si` {.blockcontrol} se ha hecho clic en el ratón. Agrega este código a tu objeto lápiz:
++ Ahora haremos que el lápiz dibuje `si` {.blockcontrol} hacemos clic en el ratón. Añade este código al objeto lápiz:
 
 	![screenshot](paint-pencil-draw-code.png)
 
@@ -71,75 +71,75 @@ Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
 ## Guarda tu proyecto { .save }
 
-# Segundo paso: Lápices de colores { .activity }
+# Paso 2: Lápices de colores { .activity }
 
-¡Agreguemos distintos lápices de colores a tu proyecto, y permitámosle al usuario que pueda elegir entre ellos!
+¡Vamos a añadir lápices de colores diferentes a tu proyecto, y vamos a hacer que el usuario pueda elegir entre ellos!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Haz clic en tu objeto lápiz, haz clic en “disfraces” y duplica tu disfraz “lápiz-azul”.
++ Haz clic en el objeto lápiz, haz clic en “Disfraces” y duplica el disfraz “lápiz-azul”.
 
 	![screenshot](paint-blue-duplicate.png)
 
-+ Renombra tu nuevo disfraz “lápiz-verde”, y pinta el lápiz de color verde.
++ Renombra el nuevo disfraz “lápiz-verde”, y pinta el lápiz de color verde.
 
 	![screenshot](paint-pencil-green.png)
 
-+ Crea dos objetos nuevos, que usarás para seleccionar el lápiz azul o verde.
++ Crea dos objetos nuevos, que usarás para seleccionar el lápiz azul o el verde.
 
 	![screenshot](paint-selectors.png)
 
-+ Cuando se hace clic en el selector verde, necesitas `enviar` {.blockevents} un mensaje al objeto lápiz, diciéndole que tiene que cambiar su disfraz y color de lápiz.
++ Al hacer clic en el selector verde, necesitas `enviar` {.blockevents} un mensaje al objeto lápiz, diciéndole que tiene que cambiar su disfraz y color de lápiz.
 
-	Para hacerlo, primero agrega este código a tu ícono selector verde:
+	Para hacer esto, primero añade este código al objeto selector verde:
 
 	```blocks
 		al hacer clic en este objeto
-		enviar [green v]
+		enviar [Verde v]
 	```
 
 	Para crear el bloque `enviar` {.blockevents}, haz clic en la flecha hacia abajo y selecciona “nuevo mensaje…”.
 
 	![screenshot](paint-broadcast.png)
 
-	Luego puedes escribir “verde” para crear to nuevo mensaje.
+	Luego puedes escribir “Verde” para crear tu nuevo mensaje.
 
 	![screenshot](paint-green-message.png)
 
-+ Ahora necesitas decirle a tu objeto lápiz qué tiene que hacer cuando recibe el mensaje. Agrega este código a tu objeto lápiz:
++ Ahora necesitas decirle a tu objeto lápiz qué tiene que hacer cuando recibe el mensaje. Añade este código al objeto lápiz:
 
 	```blocks
-		al recibir [green v]
-		cambiar disfraz a [pencil-green v]
+		al recibir [Verde v]
+		cambiar disfraz a [lápiz-verde v]
 		fijar color de lápiz a [#00ff00]
 	```
 
-	Para fijar el color de lápiz a verde, haz clic en la caja con colores en el bloque `fijar color` {.blockpen}, y haz clic en el ícono selector verde para elegir verde como el color para tu lápiz.
+	Para hacer que el lápiz pinte de color verde, haz clic en el recuadro de color del bloque `fijar color` {.blockpen}, y haz clic en el icono selector verde para escoger el verde como el color para tu lápiz.
 
-+ Ahora puedes hacer lo mismo para el lápiz azul, agregando este código al objeto selector azul:
++ Ahora puedes hacer lo mismo para el lápiz azul, añadiendo este código al objeto selector azul:
 
 	```blocks
 		al hacer clic en este objeto
-		enviar [blue v]
+		enviar [Azul v]
 	```
 
-	...y agrega este código al objeto lápiz:
+	...y añade este código al objeto lápiz:
 
 	```blocks
-		al recibir [blue v]
-		cambiar disfraz a [pencil-blue v]
+		al recibir [Azul v]
+		cambiar disfraz a [lápiz-azul v]
 		fijar color de lápiz a [#0000ff]
 	```
 
-+ Por último, necesitas decirle a tu objeto lápiz qué disfraz y color de lápiz elegir, y limpiar la pantalla cuando comienza tu proyecto. Agrega este código al comienzo del código de tu lápiz {.blockevents} `cuando se hace clic en la bandera `  (antes de `por siempre` {.blockcontrol} loop):
++ Por último, necesitas decirle al objeto lápiz qué disfraz y color de lápiz elegir, y limpiar la pantalla cuando empieza tu proyecto. Añade este código al objeto lápiz, al principio del código {.blockevents} `al presionar bandera verde`  (antes del bucle `por siempre` {.blockcontrol}):
 
 	```blocks
 		borrar
-		cambiar disfraz a [blue-pencil v]
+		cambiar disfraz a [lápiz-azul v]
 		fijar color de lápiz a [#0000ff]
 	```
 
-	¡Si lo prefieres, puedes comenzar con un color de lápiz diferente!
+	Si lo prefieres, ¡puedes empezar con un color de lápiz diferente!
 
 + Prueba tu proyecto. ¿Puedes cambiar entre los lápices azul y verde?
 
@@ -147,17 +147,17 @@ Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
 ## Guarda tu proyecto { .save }
 
-# Tercer paso: Cuando se cometen errores { .activity .new-page }
+# Paso 3: Cometer errores { .activity .new-page }
 
-¡A veces se comenten errores, entonces agreguemos un botón “limpiar” y una goma a nuestro proyecto!
+¡A veces se comenten errores, asi que vamos a añadir un botón de “limpiar” y una goma a nuestro proyecto!
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Agreguemos un botón para limpiar el escenario. Para hacerlo, agrega el objeto letra 'X-block' al escenario, y píntalo de rojo.
++ Vamos a añadir un botón para limpiar el escenario. Para hacer esto, añade el objeto de la letra 'X-block' al escenario, y píntalo de rojo.
 
 	![screenshot](paint-x.png)
 
-+ Agrega código a tu nuevo botón cancelar para limpiar el escenario cuando se le hace clic.
++ Añade este código a tu nuevo botón de cancelar para limpiar el escenario al presionarlo.
 
 	```blocks
 		al hacer clic en este objeto
@@ -166,28 +166,28 @@ Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
 	¡Fíjate que no necesitas enviar un mensaje para limpiar el escenario, ya que cualquier objeto puede hacerlo!
 
-+ También puedes crear una goma. Si tu líder del club te dio una carpeta de “Recursos”, haz clic en “Cargar disfraz desde archivo” y agrega la imagen “eraser.svg”.
++ También puedes crear un borrador. Si el líder del club te ha dado una carpeta de “Recursos”, haz clic en “Cargar disfraz desde archivo” y añade la imagen “eraser.svg”.
 
 	![screenshot](paint-eraser-costume.png)
 
 	¡Si no tienes la imagen eraser.svg, crea en su lugar un nuevo lápiz blanco!
 
-+ También deberías agregar la imagen goma como un nuevo objeto selector. Así es como debería verse:
++ También deberías añadir la imagen del borrador como un nuevo objeto selector. Tu escenario debería de parecerse a éste:
 
 	![screenshot](paint-eraser-stage.png)
 
-+ Luego puedes agregar código al objeto selector goma, para decirle al lápiz que cambie a goma.
++ A continuación puedes añadir este código al objeto selector borrador, para decirle al lápiz que se convierta en borrador.
 
 	```blocks
 		al hacer clic en este objeto
-		enviar [eraser v]
+		enviar [borrador v]
 	```
 
-+ ¡Cuando el lápiz recibe este mensaje, puedes crear una goma cambiando el disfraz del lápiz al de goma, y cambiando el color del lápiz al mismo color del escenario!
++ ¡Cuando el lápiz recibe este mensaje, puedes crear un borrador haciendo que se cambie el disfraz del lápiz al de borrador, y cambiando el color del lápiz al mismo color del escenario!
 
 	```blocks
-		al recibir [eraser v]
-		cambiar disfraz a [eraser v]
+		al recibir [borrador v]
+		cambiar disfraz a [borrador v]
 		fijar color de lápiz a [#FFFFFF]
 	```
 
@@ -195,11 +195,11 @@ Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
 	![screenshot](paint-erase-test.png)
 
-+ Hay otro problema más con el lápiz – puedes dibujar en cualquier parte del escenario, ¡incluso cerca de los íconos selectores!
++ Hay otro problema con el lápiz – puedes dibujar en cualquier parte del escenario, ¡incluso cerca de los íconos selectores!
 
 	![screenshot](paint-draw-problem.png)
 
-	Para arreglar esto, tienes que decirle al lápiz que solo dibuje si se hace clic en el ratón _y_ si la posición y del ratón es mayor a -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Cambia la declaración `si` {.blockcontrol} de tu lápiz para que se vea así:
+	Para arreglar esto, tienes que decir al lápiz que sólo dibuje si se hace clic en el ratón _y_ si la posición y del ratón es mayor a -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Cambia la instrucción `si` {.blockcontrol} de tu lápiz para que sea como ésta:
 
 	![screenshot](pencil-gt-code.png)
 
@@ -209,39 +209,39 @@ Comencemos por crear un lápiz, que puedes usar para dibujar en el escenario.
 
 ## Guarda tu proyecto { .save }
 
-# Cuarto paso: Cambiar el ancho del lápiz { .activity .new-page }
+# Paso 4: Cambiar el grosor del lápiz { .activity .new-page }
 
-Permitámosle al usuario que pueda dibujar eligiendo distintos tamaños de lápices.
+Vamos a hacer que el usuario pueda dibujar utilizando diferentes tamaños de lápices.
 
-## Lista de verificación de actividades { .check }
+## Lista de tareas de la actividad { .check }
 
-+ Primero, agrega una nueva variable que se llame “ancho”. Si no estás seguro sobre como hacerlo, el Proyecto “Globos” puede ayudarte.
++ Primero, añade una nueva variable que se llame "grosor". Si no recuerdas cómo hacerlo, el Proyecto “Globos” te puede ayudar.
 
-+ Agrega esta línea_dentro_del loop del código `por siempre` {.blockcontrol} de tu lápiz:
++ Añade esta línea _dentro_ del bucle de código `por siempre` {.blockcontrol} de tu lápiz:
 
 	```blocks
-		fijar tamaño de lápiz a (width)
+		fijar tamaño de lápiz a (grosor)
 	```
 
-	El ancho de tu lápiz ahora se fijará repetidamente al valor de tu variable “ancho”.
+	Ahora el grosor de tu lápiz se fijará repetidamente al valor de la variable “grosor”.
 
-+ Puedes cambiar el número almacenado en esta variable haciendo clic en el botón derecho sobre tu variable (en el escenario) y haciendo clic en la “barra deslizable”.
++ Puedes cambiar el valor guardado en esta variable haciendo clic con el botón derecho sobre la variable (en el escenario) y seleccionando “deslizador”.
 
 	![screenshot](paint-slider.png)
 
-	Ahora puedes arrastrar la barra deslizadora por debajo de la variable para cambiar su valor.
+	Ahora puedes arrastrar el deslizador que hay debajo de la variable para cambiar su valor.
 
 	![screenshot](paint-slider-change.png)
 
-+ Prueba tu proyecto, y fíjate si puedes modificar el ancho de tu lápiz.
++ Prueba tu proyecto, y comprueba si puedes modificar el grosor de tu lápiz.
 
 	![screenshot](paint-width-test.png)
 
-	Si lo deseas, puedes fijar el valor mínimo y máximo del “ancho” permitido. Para hacerlo, haz clic con el botón derecho sobre tu variable y luego haz clic de nuevo en “fijar min y max para la barra deslizable”. Fija los valores mínimos y máximos para tu variable a algo un poco más coherente, como 1 y 20.
+	Si lo prefieres, puedes fijar el valor mínimo y máximo del “grosor” permitido. Para hacerlo, haz clic de nuevo con el botón derecho sobre la variable y selecciona “fijar rango del deslizador”. Fija los valores mínimos y máximos de tu variable a algo un poco más coherente, como 1 y 20.
 
 	![screenshot](paint-slider-max.png)
 
-	Continúa probando tu variable “ancho” hasta que estés conforme.
+	Sigue probando tu variable “grosor” hasta que estés conforme.
 
 ## Guarda tu proyecto { .save }
 
@@ -250,15 +250,15 @@ Permitámosle al usuario que pueda dibujar eligiendo distintos tamaños de lápi
 
 + a = Cambiar al lápiz azul
 + v = cambiar al lápiz verde
-+ g = cambiar a la goma
++ b = cambiar al borrador
 + l = limpiar pantalla
 
-¡Incluso podrías permitirle al usuario cambiar el ancho del lápiz con las teclas de flechas!
+¡Incluso podrías hacer que el usuario pudiese cambiar el ancho del lápiz con las teclas de flechas!
 
 ## Guarda tu proyecto { .save }
 
 ## Desafío: Más lápices { .challenge }
-¡Puedes agregar lápices de color rojo, amarillo y negro a tu programa para pintar? Encontrarás todas las imágenes que necesitas en la carpeta “Recursos”. ¡Recuerda agregar los accesos rápidos en el teclado para estos nuevos lápices!
+¿Puedes añadir lápices de color rojo, amarillo y negro a tu programa para pintar? Encontrarás todas las imágenes que necesitas en la carpeta “Recursos”. ¡Recuerda añadir los accesos directos en el teclado para estos nuevos lápices!
 
 ¿Puedes usar tus lápices para hacer un dibujo?
 
@@ -266,4 +266,4 @@ Permitámosle al usuario que pueda dibujar eligiendo distintos tamaños de lápi
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
-This project was translated by María Alejandra Aguada from Translators Without Borders. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+This project was translated by María Alejandra Aguada from Translators Without Borders. Screenshots in Spanish were provided by Montse Verdaguer. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
