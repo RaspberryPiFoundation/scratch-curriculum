@@ -204,7 +204,7 @@ Let's add other people to your world that your player can interact with.
 
 	```blocks
 		when flag clicked
-		go to x: (-200) y: (0)
+		go to x: (0) y: (-150)
 		forever
 			if < touching [player v]? > then
 				say [Did you know that you can go through orange and yellow doors?]
@@ -291,7 +291,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 
 ## Activity Checklist { .check }
 
-+ Create a new sprite from your 'key-blue.svg' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
++ Create a new key sprite from your 'key.svg' image, and edit the sprite's costume so that it's blue. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
 
  	![screenshot](images/world-key.png)
 
