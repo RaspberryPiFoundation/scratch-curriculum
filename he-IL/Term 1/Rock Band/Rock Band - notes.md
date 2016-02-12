@@ -1,36 +1,39 @@
 ---
-title: Rock Band — Notes for Club Leaders
-language: en-GB
+title: להקת רוק - דגשים למדריך
+language: he-IL
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to add sound and music to their projects, as well as changing and programming sprite costumes.
+#מבוא:
+בפרויקט זה ילדים ילמדו איך להשתמש בצלילים ולשנות תלבושות לדמויות
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#חומרי הלימוד
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+כדי לבצע את הפרויקט יש להשתמש בסקראצ' 2 או לעשות גרסה וובית כאן
+ [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on)
+כדי להתקין תוכנה למחשב ולהשתמש בלי אינטרנט:
+[jumpto.cc/scratch-off](http://jumpto.cc/scratch-off)
+
+גרסה מלאה של בפרויקט ניתן לראות 
+<a href="http://scratch.mit.edu/projects/26741186/#editor">באינטרנט</a>, או בלחיצה הורד חומרי לימוד
 
 + RockBand.sb2
 
-#Learning Objectives
-+ Sprites;
-+ Costumes;
-+ Sequential code blocks;
-+ Events;
-+ Sound and music.
+#תכני לימוד
++ דמויות;
++ תלבושות;
++ לוגיקה של הפעלת בלוקים של הקוד;
++ אירועים;
++ צלילים.
 
-#Challenges
-+ "Improving your drum" - Changing sprite sounds and adding events;
-+ "Changing your singer's costume" - adding and controlling sprite costumes;
-+ "Make your own band" - using the skills learnt to create new instruments.
+#אתגרים
++ "שדרג את התופים" - דרך שינוי תלבושות וצלילים;
++ "שדרג את הזמרת" - דרך הוספת תלבושות;
++ "תיצור להקה בשלך" - השתמש בכל מה שלמדת כדי ליצור להקה משלך.
 
-#Frequently Asked Questions
-+ When creating their own sprites, children may find that their sprite 'jumps' when it's clicked, as it changes costume. This is because the two costumes are't centered in the same place.
-
-	To fix this, click 'Set costume center' on _both_ sprites, and make sure they are centered at the same point in both costumes.
-
+#שאלות נפוצות
++ לעיתים כאשר משנים תלבושות הדמויות קופצות. זה קורה כי התלבושות לא מיושרות.
+    כדי לטפל בזה יש להגדיר מירכוז של התלבושת בכל הדמויות
 	![screenshot](band-center.png)
 
-+ On Linux, right-clicking to delete a sprite may not work. If this is the case, holding shift and left-clicking will bring up the menu to delete a sprite.
++ בלינוקס לחיצה ימנית יכולה לא לעבוד. ניתן לתפור זאת בלחיצה שמאלית ושיפט ארוך
