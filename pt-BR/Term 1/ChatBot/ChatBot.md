@@ -1,7 +1,7 @@
 ---
 title: Robô Falante
 level: Scratch 1
-language: en-GB
+language: pt-BR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
