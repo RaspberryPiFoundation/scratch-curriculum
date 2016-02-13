@@ -1,12 +1,11 @@
 {
-    "description": "Te archiwalne projekty były wcześniej częścią programu zajęć Scratch. Choć są one wciąż dostępne, to nie są już dłużej wspierane i zalecamy aby zamiast nich używać projektów z sekcji 'Semestr 1'.",
+    "description": false,
+    "warning": "Poniższe projekty były wcześniej częścią programu zajęć Scratch. Choć są one wciąż dostępne, to nie są już dłużej wspierane i zalecamy, aby zamiast nich używać projektów z sekcji 'Scratch 1'.",
     "id": "scratch_archive",
-    "title":"Projekty archiwalne - Scratch 1",
     "language": "pl-PL",
-    "category": "cat-archive",
-    "number": 1,
-
-
+    "number": 3,
+    "title": "Projekty archiwalne",
+    "category": "cat-scratch",
     "projects": [
         {
             "number":   1,
@@ -74,4 +73,3 @@
         }
     ]
 }
-
