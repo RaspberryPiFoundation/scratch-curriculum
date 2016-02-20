@@ -1,188 +1,174 @@
 ---
-title: Lost in Space
+title: נאבד בחלל
 level: Scratch 1
-language: en-GB
+language: he-IL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-# Introduction { .intro }
+# מבוא { .intro }
 
-You are going to learn how to program your own animation!
+בפרויקט זה נלמד איך לבנות את האנימציה משלנו
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe>
   <img src="space-final.png">
 </div>
 
-# Step 1: Animating a spaceship { .activity .new-page}
+# שלב 1: אנימציה של חללית { .activity .new-page}
 
-Let's make a spaceship that flies towards the Earth!
+בואו נגרום לחללית לטוס לכיוון של כדור הארץ
 
-## Activity Checklist { .check }
+## סדר פעולות { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ נתחיל פרויקט חדש ונמחק את החתןל
+<a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>
 
-+ Add 'Spaceship' and 'Earth' sprites to your stage. You should also add the 'Stars' backdrop to your stage. This is how your stage should look:
++ נוסיף 2 דמויות: חללית וכדור הארץ ורקע עם כוכבים. הפרויקט אמור להראות ככה
 
 	![screenshot](space-sprites.png)
 
-+ Click on your new spaceship sprite, and click the 'Costumes' tab.
++ נלחץ על חללית ואז על תלבושות
 
 	![screenshot](space-costume.png)
 
-+ Use the arrow tool to select the image. Then click on the circular rotate handle, and rotate the image until it is on its side.
-
++ נשתמש בחץ כדי לבחור את התמונה ואז נלחץ על עיגול מעל התמונה כדי לסובב אותה הצידה
+	
 	![screenshot](space-rotate.png)
 
-+ Add this code to your spaceship sprite:
++ נוסיף קוד לדמות
 
 	![screenshot](space-animate.png)
 
-	Change the numbers in the code blocks, so that the code is exactly the same as in the image above.
+	נשנה את המספרים בתוך הבלוק כדי שהם יהיו זהים לאלו שבתמונה
 
-+ If you click on the code blocks to run the code, you should see the spaceship speak, turn and move towards the centre of the stage.
++ נלחץ ונבקוד אם החללית זזה לכיוון המרכז
 
 	![screenshot](space-animate-stage.png)
-
-	The screen position `x:(0) y:(0)` {.blockmotion} is the center of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
+	
+	חשוב להכיר את מיקום הדמויות על הבמה. אם איקס ו-וואי שלישיים הדמות תהיה בפינה שמאלית תחתונה ואם הערכים חיוביים הדמות תהיה בפינה ימנית עליונה
 
 	![screenshot](space-xy.png)
 
-	If you need to know the coordinates of a position on the stage, move the mouse to the position you want and make a note of the coordinates, which are displayed below the stage.
+	אם אנחנו לא בטוחים לגבי המיקום תמיד אפשר לבדוק אותו במעבר העכבר על הבמה - בפינה ימנית תחתונה נראה את הקואורדינטות של העכבר
 
 	![screenshot](space-coordinates.png)
 
-+ Try out your animation, by clicking on the green flag just above the stage.
++ נלחץ על הדגל הירוק לבדוק את האנימציה
 
 	![screenshot](space-flag.png)
 
-## Challenge: Improving your animation {.challenge}
-Can you change the numbers in your animation code, so that:
-+ The spaceship moves until it touches the Earth?
-+ The spaceship moves more slowly towards the Earth?
+## אתגר: שדרוג אנימציה {.challenge}
+אפשר לשנות מספרים באנימציה 
++ אם החללית נוגעת בכדור הארץ
++ אם חללית זזה מהר מידי
 
-You'll need to change the numbers in this block:
+אפשר לשחק עם המספרים בבלוק זה
 
-```blocks
-	glide (1) secs to x:(0) y:(0)
-```
+  ![screenshot](space-glide.png)
 
-## Save your project { .save }
+## נשמור את הפרויקט { .save }
 
-# Step 2: Animating using loops { .activity .new-page }
+# שלב 2: אנימציה דרך לולאות { .activity .new-page }
 
-Another way of animating the spaceship is to tell it to move a small amount, lots of times.
+דרך נוספת להוסיף אנימציה היא בהוספת תנועה קטנה הרבה פעמים
 
-## Activity Checklist { .check }
+## סדר פעולות { .check }
 
-+ Delete the `glide` {.blockmotion} block from your code, by right-clicking on the block and clicking 'delete'. You can also delete code by dragging it off the script area, back into the code blocks area.
++ נמחק בלוק גלישה בלחיצה על כפתור ימני ובחירה במחק. אם למחוק את בלוקים בעזרת לגרירה לאיזור של תסריטים
 
 	![screenshot](space-delete-glide.png)
 
-+ Once you've removed your code, add this code instead:
++ נוסיף קוד חדש של לולאה
 
 	![screenshot](space-loop.png)
 
-	The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a __loop__.
+	בלוק חזור...פעמים משמש לחזרה על פעולה מסויימת הרבה פעמים - ידוע גם כלולאה
 
-+ If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before.
++ נלחץ על הדגל ונבדוק את הקוד
 
-+ You can add more code to your loop, to do interesting things. Add the `change color effect by 25` {.blocklooks} block into the loop (from the 'Looks' section), to repeatedly change the colour of the spaceship as it moves:
++ אפשר לשדרג את הלולאה בהוספה של שינוי צבע מתוך מראה
 
 	![screenshot](space-colour.png)
 
-+ Click the flag to see your new animation.
++ נלחץ על הדגל ונבדוק את הקוד
 
 	![screenshot](space-colour-test.png)
 
-+ You can also make your spaceship get smaller as it moves towards the Earth.
++ ועכשיו נוסיף שינוי גודל של חללית בדרך שלה לכדור הארץ
 
 	![screenshot](space-size.png)
 
-+ Test out your animation. What happens if you click the flag a second time? Does your spaceship start off the right size? Can you use this block to fix your animation:
++ נלחץ כמה פעמים על הדגל. החללית הפכה לקטנה מידי? זה הזמן להחזיר לה את הגודל המקורי
 
-	```scratch
-	set size to (100) %
-	```
+	![screenshot](space-size-100.png)
 
-## Save your project { .save }
+## נשמור את הפרויקט { .save }
 
-# Step 3: Floating Monkey { .activity .new-page }
+# שלב 3: סיבוב של הקוף { .activity .new-page }
 
-Let's add monkey to your animation, who's lost in space! 
+בואו נוסיף אנימציה לקוף שנאבד בחלל
 
-## Activity Checklist { .check }
+## סדר פעולות { .check }
 
-+ Start by adding in the monkey sprite from the library.
++ נוסיף דמות של הקוף
 
 	![screenshot](space-monkey.png)
 
-+ If you click on your new monkey sprite and then click 'Costumes', you can edit how the monkey looks. Click the 'Ellipse' tool, and draw a white space helmet around the monkey's head.
++ ניכנס לתלבושות ונערוך איך הקוף נראה. נלחץ על אליפסה ונוסיף עיגול סביב ראש הקוף
 
 	![screenshot](space-monkey-edit.png)
 
-+ Now click 'Scripts', and add this code to the monkey, so that it spins slowly in a circle forever:
++ נחזור לתסריטים ונגרום לקוף להסתובב סביב עצמו לעולמים
 
-	```blocks
-		when FLAG clicked
-		forever
-		    turn right (1) degrees
-		end
-	```
+	![screenshot](space-monkey-move.png)
 
-	The `forever` {.blockcontrol} block is another loop, but this time one that never ends.
+	לעולמים זו לולאה שפועלת ללא הפסקה עד סיום ההרצה
 
-+ Click the flag to test your monkey. You'll have to click the stop button (next to the flag) to end this animation.
++ נחלץ על הדגל כדי לבדוק את האנימציה. עצירה של אנימציה זו אפשרית בלחיצה על עצור
 
 	![screenshot](space-monkey-loop.png)
 
-# Step 4: Bouncing Asteroids { .activity .new-page }
+# שלב 4: התנגשות אסטרואידים { .activity .new-page }
 
-Let's add some floating space-rock to your animation.
+ועכשיו נתקדם לאנימציה של התנגשות
 
-## Activity Checklist { .check }
+## סדר פעולות { .check }
 
-+ Add a 'rock' sprite to your animation.
++ נוסיף אסטרואיד לבמה
 
 	![screenshot](space-rock-sprite.png)
 
-+ Add this code to your rock, to make it bounce around the stage:
++ ועכשיו הקוד של אסטרואיד
 
-	```scratch
-	when flag clicked
-	point towards [Earth v]
-	forever
-		move (2) steps
-		if on edge, bounce
-	```
+	![screenshot](space-brick-loop.png)
 
-+ Click the flag to test your rock. Does it bounce around the stage?
++ נלחץ על הדגל כדי לבדוק את הקוד. האם החללית מתנגשת בקצוות של הבמה
 
-# Step 5: Shining Stars { .activity .new-page }
+# שלב 5: כוכבים { .activity .new-page }
 
-Let's combine loops to make a shining star.
+ועכשיו נחבר כמה לולאות ביחד וניצור אנימציה לכוכבים
 
-## Activity Checklist { .check }
+## סדר פעולות { .check }
 
-+ Add a 'star' sprite to your animation
++ נוסיף כוכב לבמה
 
 	![screenshot](space-star-sprite.png)
 
-+ Add this code to your star:
++ נוסיף קוד לכוכב
 
-	![screenshot](space-star.png)
+	![screenshot](space-star-move.png)
 
-+ Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it's original size. These 2 loops are inside a `forever` {.blockcontrol} loop, so the animation keeps repeating.
++ נלחץ על הדגל כדי לבדוק את הקוד. מה הכוכב עושה? הוא גדל באיטיות ואז קטן באיטיות ועושה זאת כל הזמן
 
-## Save your project { .save }
+## נשמור את הפרויקט { .save }
 
-## Challenge: Make your own animation {.challenge}
-Stop your space animation, and click 'File' and then 'New', to start a new project.
+## אתגר: תעשה אנימציה משלך {.challenge}
+תעצור את האנימציה ותשמור את הפרויקט
 
-Use what you've learnt in this project to make your own animation. It can be anything you like, but try to make your animation match the setting. Here are some examples:
+השתמש במה שלמדת כדי ליצור אנימציה שלך
 
 ![screenshot](space-egs.png)
 
-## Save your project { .save }
+## נשמור את הפרויקט { .save }
