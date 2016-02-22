@@ -22,7 +22,7 @@ materials: ["Club Leader Resources/*"]
 
 ## סדר פעולות { .check }
 
-+ קודם כל נפתח אורך סקראצ' <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. זה נראה ככה:
++ קודם כל נפתח עורך סקראצ' <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. זה נראה ככה:
 
 	![screenshot](band-scratch.png)
 
