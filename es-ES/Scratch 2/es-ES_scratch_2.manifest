@@ -29,6 +29,11 @@
             "filename": "Brain Game/Brain Game.md",
             "note": "Brain Game/Brain Game - notes.md",
             "number": 5 
+        },
+	    {
+            "filename": “Catch the Dots/Catch the Dots.md",
+            "note": "Catch the Dots/Catch the Dots - notes.md",
+            "number": 6 
         }                     
     ]
 }

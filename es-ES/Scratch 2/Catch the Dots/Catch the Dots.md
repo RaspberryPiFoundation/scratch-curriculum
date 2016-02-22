@@ -213,3 +213,7 @@ Vamos a guardar la puntuación más alta, para que los jugadores vean qué tal l
 
 ## Desafío: Menú del juego {.challenge}
 ¿Puedes añadir un menú (con botones) a tu juego? Podrías añadir una pantalla de instrucciones, o una pantalla aparte para mostrar la puntuación más alta. Si necesitas ayuda con esto, el proyecto 'Juego de cálculo mental' puede ser útil.
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by Montse Verdaguer. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
