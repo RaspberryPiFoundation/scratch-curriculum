@@ -1,263 +1,266 @@
 ---
 title: Catch the Dots
 level: Scratch 2
-language: en-GB
+language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*.*", "Project Resources/*.*"]
 beta: true
 ...
 
-# Introduction { .intro }
+# Wstęp { .intro }
 
-In this project you'll learn how to create a game, in which you have to match up coloured dots with the correct part of the controller.
+Realizując ten projekt nauczysz się, jak stworzyć grę, w której musisz dopasować kolorowe kulki do odpowiedniej części pokrętła.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
 	<img src="dots-final.png">
 </div>
 
-# Step 1: Creating a controller { .activity }
+# Krok 1: Budowa pokrętła { .activity }
 
-Let's start by creating a controller, that will be used to collect dots.
+Zacznijmy od zbudowania pokrętła, które będzie używane do zbierania kulek.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.
 
-+ For this project, you should have a 'Project Resources' folder, containing the controller image you can use. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Aby wykonać ten projekt, powinieneś mieć katalog "Zasoby", w którym znajdziesz obrazek pokrętła, który możesz użyć. Upewnij się, że masz ten katalog, a jeśli nie zapytaj o niego prowadzącego.
 
 	![screenshot](dots-resources.png)
 
-+ From this 'Project Resources' folder, import 'controller.png' as a new sprite. If you don't have this image you can draw it yourself! You should also make the stage black. Here's how your stage should look:
++ Stwórz nowego duszka korzystając z pliku "controller.png", który znajdziesz w katalogu "Zasoby". Jeśli nie masz tego obrazka możesz narysować własny! Zmień nazwę duszka na "pokrętło". Pokoloruj też tło sceny na czarno. Całość powinna wyglądać mniej więćej tak:
 
 	![screenshot](dots-controller.png)
 
-+ You can move your controller really easily, by turning it left or right when the arrows are pressed:
++ Możesz poruszać pokrętłem w bardzo prosty sposób -- obracając je w lewo lub w prawo kiedy gracz naciska strzałki:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [left arrow v] pressed?> then
-				turn left (2) degrees
-			end
-			if <key [right arrow v] pressed?> then
-				turn right (2) degrees
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <klawisz [strzałka w lewo v] naciśnięty?> to
+				obróc w lewo o (2) stopni
+			koniec
+			jeżeli <klawisz [strzałka w prawo v] naciśnięty?> to
+				obróc w prawo o (2) stopni
+			koniec
+		koniec
 	```
-+ Test out your controller -- it should spin left and right.
 
-+ Although this code works, it would be much better if the controller sped up and slowed down gradually. To do this, delete the code you just created for your controller, and create a new variable called `controller speed` {.blockdata}.
++ Przetestuj swoje pokrętło -- powinno obracać się w lewo i w prawo.
 
-+ Add this code to your controller, to make it repeatedly use the `controller speed` {.blockdata} to move:
++ Pomimo tego, że ten kod działa, byłoby znacznie lepiej, gdyby porkętło stopniowo przyspieszało i zwalniało. Aby to zrobić, usuń kod pokrętła, który właśnie stworzyłeś i utwórz nową zmienną o nazwie `prędkość pokrętła` {.blockdata}.
+
++ Dodaj poniższy kod do swojego pokrętła, aby używało zmiennej "prędkość pokrętła" do poruszania nim:
 
 	```blocks
-		when flag clicked
-		set [controller speed v] to [0]
-		forever
-			turn right (controller speed) degrees
-		end
+		kiedy kliknięto zieloną flagę
+		ustaw [prędkość pokrętła v] na [0]
+		zawsze
+			obróc w prawo o (prędkość pokrętła) stopni
+		koniec
 	```
 
-+ At the moment, this code won't move the controller, as the speed has been set to 0! Create a separate script in your controller that increases the speed when the right arrow is pressed.
++ Na tą chwilę powyższy kod nie będzie ruszał pokrętłem, ponieważ prędkość została ustawiona na 0! Zbuduj osobny skrypt w swoim pokrętle, aby zwiększać prędkość, kiedy naciśnięto strzałkę w prawo.
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [right arrow v] pressed?> then
-				change [controller speed v] by (0.2)
-			else
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <klawisz [strzałka w prawo v] naciśnięty?> to
+				zmień [prędkość pokrętła v] o (0.2)
+			w przeciwnym razie
 
-			end
-		end
+			koniec
+		koniec
 	```
 
-+ Have you noticed that there's a gap in the code above? You will need to add some code to slow down the controller if the right arrow key isn't pressed. However, you only want to slow down the controller until the speed gets back down to 0, otherwise it'll start spinning backwards.
++ Czy zauważyłeś puste miejsce w powyższym kodzie? Będziesz musiał dodać pewien kod by spowolnić pokrętło jeśli strzałka w prawo nie jest naciśnięta. Pamiętaj jednak, że zwalniać chcesz tylko do momentu, gdy prędkość pokrętła osiągnie 0, w przeciwnym razie zacznie się kręcić w drugą stronę.
 
-	Here's the code you should add:
+	Powinieneś dodać taki kod:
 
 	```blocks
-	if <(controller speed) > [0.1]> then
-		change [controller speed v] by (-0.2)
-	end
+		jeżeli <(prędkość pokrętła) > [0.1]> to
+			zmień [prędkość pokrętła v] o (-0.2)
+		koniec
 	```
 
-	Here's how your controller code should look:
+	Pokrętło powinno wyglądać tak:
 
 	![screenshot](dots-right.png)
 
-+ Test your project again. If you hold down the right arrow key your controller should speed up. Let go of the key and your controller should gradually slow down.
++ Przetestuj ponownie swój projekt. Gdy trzymasz wciśnięty klawisz ze strzałką w prawo, twoje pokrętło powinno przyspieszać. Kiedy przestaniesz wciskać ten klawisz, pokrętło powinno stopniowo zwalniać.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Spinning left {.challenge}
-Duplicate the entire controller script for spinning to the right. Can you modify this duplicated code so that your controller spins to the left when the left arrow key is held down?
+## Wyzwanie: Obrót w lewo {.challenge}
+Zduplikuj cału skrypt pokrętła odpowiedzialny za obracanie go w prawo. Czy potrafisz zmodyfikować ten zduplikowany kod w taki sposób, by pokrętło obracało się w lewo, kiedy wciśniesz strzałkę w lewo?
 
-You'll need to change some of the numbers in the code! (Hint: the controller will spin to the left if the `controller speed` {.blockdata} variable has a negative value.)
+Będziesz musiał zmienić niektóre liczby w swoim kodzie! (Podpowiedź: pokrętło będzie obracać się w lewo jeśli zmienna `prędkość pokrętła` {.blockdata} będzie miała wartość ujemną).
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 2: Collecting dots { .activity }
+# Krok 2: Łapanie kropek { .activity }
 
-Let's add dots to the game that the player will collect with their controller.
+Dodajmy teraz do gry kropki, które gracz będzie musiał łapać obracając odpowiednio pokrętłem.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Create a new sprite called 'red'. This sprite should be a small red dot.
++ Stwórz nowego duszka i nazwij go "czerwony". Duszek ten powinien być małą czerwoną kropką.
 
 	![screenshot](dots-red.png)
 
-+ Add this script to your 'red' dot sprite, to create a new dot clone every few seconds:
++ Dodaj poniższy skrypt do czerwonej kropki, aby co kilka sekund powstawał nowy klon kropki:
 
 	```blocks
-		when flag clicked
-		wait (2) secs
-		forever
-			create clone of [myself v]
-			wait (pick random (5) to (10)) secs
-		end
+		kiedy kliknięto zieloną flagę
+		czekaj (2) s
+		zawsze
+			sklonuj [siebie v]
+			czekaj (losuj od (5) do (10)) s
+		koniec
 	```
 
-+ When each clone is created, you want it to appear in one of the 4 corners of the stage.
++ Każdy klon po stworzeniu powinien pojawić się w jednym z czterech narożników sceny.
 
 	![screenshot](dots-start.png)
 
-	To do this, first create a new list variable called `start positions` {.blockdata} and click the `(+)` to add in the values `-180` and `180`.
+	Aby to zrobić, najpierw utwórz nową listę i nazwij ją `pozycje startowe` {.blockdata}, następnie kliknij na `(+)` i dodaj do listy wartości `-180` i `180`.
 
 	![screenshot](dots-list.png)
 
-+ You can use these 2 list items to pick a random corner of the stage. Add this code to the 'dot' sprite, so that each new clone moves to a random corner and then slowly moves towards the controller.
++ Możesz użyć tych dwóch elementów listy do wybrania dowolnego narożnika sceny. Po dodaniu poniższego kodu do duszka-czerwonej kropki każdy klon pojawi się w losowym narożniku i będzie powoli leciał w kierunku pokrętła.
 
 	```blocks
-		when I start as a clone
-		go to x: (item (random v) of [start positions v]) y: (item (random v) of [start positions v])
-		point towards [controller v]
-		show
-		repeat until <touching [controller v]?>
-			move (1) steps
-		end
+		kiedy zaczynam jako klon
+		idź do x: (element (losowo v) z [pozycje startowe v]) y: (element (losowo v) z [pozycje startowe v])
+		ustaw w stronę [pokrętło v]
+		pokaż
+		powtarzaj aż <dotyka [pokrętło v]?>
+			przesuń o (1) kroków
+		koniec
 	```
 
-	The code above chooses either `-180` or `180` for the x _and_ y positions, meaning that each clone starts in one corner of the stage.
+	Powyższy kod wybiera "-180" albo "180" dla pozycji x _oraz_ y. To znaczy, że każdy klon będzie zaczynał w dowolnym narożniku sceny.
 
-+ Test your project. You should see lots of red dots appear in each corner of the screen, and move slowly towards the controller.
++ Przetestuj projekt. Powinieneś zobaczyć mnóstwo czerwonych kropek, które pojawiają się w rogach ekranu i powoli lecą w stronę pokrętła.
 
 	![screenshot](dots-red-test.png)
 
-+ Create 2 new variables called `lives` {.blockdata} and `score` {.blockdata}.
++ Stwórz dwie nowe zmienne i nazwij je `życia` {.blockdata} i `wynik` {.blockdata}.
 
-+ Add code to your stage to set the `lives` {.blockdata} to 3 and the `score` {.blockdata} to 0 at the start of the game.
++ Dodaj kod do sceny, który na początku gry ustawi `życia` {.blockdata} na 3, a `wynik` {.blockdata} na 0.
 
-+ You need to add code to the end of your red dot's `when I start as a clone` {.blockcontrol} code, so that either 1 is added to the player's `score` {.blockdata} if the colours match, or 1 is taken from the player's `lives` {.blockdata} if the colours don't match.
-
-	```blocks
-		move (5) steps
-		if <touching color [#FF0000]?> then
-			change [score v] by (1)
-			play sound [pop v]
-		else
-			change [lives v] by (-1)
-			play sound [laser1 v]
-		end
-		delete this clone
-	```
-
-+ Add this code to the end of your stage's script, so that the game ends when the player loses all of their lives:
++ Teraz musisz dodać kod do duszka-czerwonej kropki na końcu bloku `kiedy zaczynam jako klon` {.blockcontrol}, który będzie albo dodawał 1 do `wyniku` {.blockdata} jeśli kolory się zgdzają, albo odejmował 1 z `życ` {.blockdata} gracza, jeśli kolory się nie zgadzają.
 
 	```blocks
-		wait until <(lives) < [1]>
-		stop [all v]
+		przesuń o (5) kroków
+		jeżeli <dotyka koloru [#FF0000]?> to
+			zmień [wynik v] o (1)
+			zagraj dźwięk [pop v]
+		w przeciwnym razie
+			zmień [życia v] o (-1)
+			zagraj dźwięk [laser1 v]
+		koniec
+		usuń tego klona
 	```
 
-+ Test your game to make sure this code works as expected.
++ Po dodaniu tego kodu na końcu skryptu sceny gra zakończy się, kiedy gracz straci wszystkie życia:
 
-## Save your project { .save }
+	```blocks
+		czekaj aż <(życia) < [1]>
+		zatrzymaj [wszystko v]
+	```
 
-## Challenge: More dots {.challenge}
-Duplicate your 'red' dot sprite twice, and name the two new sprites 'yellow' and 'blue'.
++ Przetestuj swoją grę i upewnij się, że kod działa tak, jak się tego spodziewasz.
+
+## Zapisz swój projekt { .save }
+
+## Wyzwanie: Więcej kropek {.challenge}
+Zduplikuj duszka-czerwoną kropkę dwa razy i nazwij nowe duszki "żółty" i "niebieski".
 
 ![screenshot](dots-more-dots.png)
 
-Edit these sprites (including their code), so that each coloured dot has to match the correct colour on the controller. Remember to test your project, making sure you gain points and lose lives at the right times, and that your game isn't too easy or too hard!
+Zmień te duszki (pamiętaj też zmienić ich kod) w taki sposób, by każdy kolor kropki pasował do koloru na pokrętle. Pamiętaj, aby przetestować swój projekt i upewnić się, że zdobywasz punkty i tracisz życia w odpowiednim momencie. Sprawdź też, czy gra nie jest przypadkiem za prosta albo za trudna.
 
 ![screenshot](dots-all-test.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 3: Increasing the difficulty { .activity .new-page}
+# Krok 3: Zwiększanie trudności { .activity .new-page}
 
-Let's make the game get more difficult the longer the player survives, by slowly reducing the delay between dots appearing.
+Teraz sprawimy, by gra stawała się coraz trudniejsza w miarę upływu czasu. Zrobimy to zmiejszając opóźnienie z jakim pojawiają się kolejne kropki.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Create a new variable called `delay` {.blockdata}.
++ Swtórz nową zmienną i nazwij ją `opóźnienie` {.blockdata}.
 
-+ On your stage, create a new script that sets the delay to a high number, and then slowly reduces the delay time.
-
-	```blocks
-		when flag clicked
-		set [delay v] to (8)
-		repeat until < (delay) = (2)>
-			wait (10) secs
-			change [delay v] by (-0.5)
-		end
-	```
-
-	Notice that this is very similar to how a game timer works!
-
-+ Finally, you can use this `delay` {.blockdata} variable in your red, yellow and blue dots' scripts. Remove the code that waits a random number of seconds between creating clones, and replace it with your new `delay` {.blockdata} variable:
++ Dodaj nowy skrypt na scenie, który będzie ustawiał opóźnienie na wysoką liczbę, a później powoli ją zmniejszał.
 
 	```blocks
-		wait (delay) secs
+		kiedy kliknięto zieloną flagę
+		ustaw [opóźnienie v] na (8)
+		powtarzaj aż < (opóźnienie) = (2)>
+			czekaj (10) s
+			zmień [opóźnienie v] o (-0.5)
+		koniec
 	```
 
-+ Test your new `delay` {.blockdata} variable, and see whether the delay between dots reduces slowly. Does this work for all 3 coloured dots? Can you see the value of the `delay` {.blockdata} variable reducing?
+	Zauważ, że w podobny sposób działa stoper!
 
-## Save your project { .save }
++ Teraz możesz użyć zmiennej `opóźnienie` {.blockdata} w skryptach od czerwonej, żółtej i niebieskiej kropki. Usuń kod, który czeka losowy czas pomiędzy tworzeniem kolejnych klonów i zastą go twoją zmienną `opóźnienie` {.blockdata}:
 
-## Challenge: Faster moving dots {.challenge}
-Can you improve your game by adding a `speed` {.blockdata} variable, so that the dots start off moving 1 step at a time, and steadily get faster and faster? This will work in a very similar way to the `delay` {.blockdata} variable used above, and you can use this code to help you.
+	```blocks
+		czekaj (opóźnienie) s
+	```
 
-## Save your project { .save }
++ Przetestuj nową zmienną `opóźnienie` {.blockdata} i zobacz czy czas pomiędzy nowymi kropkami powoli spada. Czy działa to dla wszystkich trzech kolorów kropek? Widzisz, jak wartość `opóźnienia` {.blockdata} spada?
 
-# Step 4: High score { .activity }
+## Zapisz swój projekt { .save }
 
-Let's save the high score, so that players can see how well they're doing.
+## Wyzwanie: Szybsze kropki {.challenge}
+Możesz ulepszyć swoją grę dodając zmienną `prędkość` {.blockdata}, która sprawi, że na początku kropki będą ruszać się za każdym razem o jeden krok, ale później będą poruszać się coraz szybciej i szybciej. Będzie to działać bardzo podobnie do tego, jak działa `opóźnienie` {.blockdata}, którego przed chwilą użyliśmy.
 
-## Activity Checklist { .check }
 
-+ Create a new variable called `high score` {.blockdata}.
+## Zapisz swój projekt { .save }
 
-+ Click on your stage, and create a new custom block called `check high score` {.blockmoreblocks}.
+# Krok 4: Najlepszy wynik { .activity }
+
+Zapiszmy najlepszy wynik, by gracze mogli rywalizować.
+
+## Zadania do wykonania { .check }
+
++ Stwórz zmienną `najlepszy wynik` {.blockdata}.
+
++ Kliknij na scenę i utwórz nowy blok, który nazwij `sprawdź najlepszy wynik` {.blockmoreblocks}.
 
 	![screenshot](dots-custom-1.png)
 
-+ Just before the end of the game, add in your new custom block.
++ Tuż przed zakończeniem gry dodaj twój nowy blok.
 
 	![screenshot](dots-custom-2.png)
 
-+ Add code to your custom block to store the current `score` {.blockdata} as the `high score` {.blockdata} `if` {.blockcontrol} it's the highest score so far:
++ Dodaj poniższy kod do twojego bloku, aby zapisać aktualny `wynik` {.blockdata} jako `najlepszy wynik` {.blockdata} `jeżeli` {.blockcontrol} jest wyższy niż dotychczasowy:
 
 	```blocks
-		define [check high score]
-		if <(score) > (high score)> then
-			set [high score v] to (score)
-		end
+		definiuj [sprawdź najlepszy wynik]
+		jeżeli <(wynik) > (najlepszy wynik)> to
+			ustaw [najlepszy wynik v] na (wynik)
+		koniec
 	```
 
-+ Test the code you've added. Play your game to check whether the `high score` {.blockdata} is updated correctly.
++ Przetestuj kod, który właśnie dodałeś. Zagraj i sprawdź, czy `najlepszy wynik` {.blockdata} zapisuje się poprawnie.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Improve your game! {.challenge}
+## Wyzwanie: Ulepsz swoją grę! {.challenge}
 Can you think of ways to improve your game? For example, you could create special dots that:
+Masz pomysł jak można jeszcze bardziej ulepszyć grę? Możesz stworzyć na przykład specjalne kropki, które:
 
-+ double your score;
-+ slow down the dots;
-+ hide all the other dots on the screen!
++ dają dwa razy więcej punktów,
++ zwalniają kropki
++ ukrywają wszystkie inne kropki na ekranie!
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Game menu {.challenge}
-Can you add a menu (with buttons) to your game? You could add an instructions screen, or a separate screen for showing the high score. If you need help with this, the 'Brain Game' project will help you.
+## Wyzwanie: Game menu {.challenge}
+Możesz też dodać menu (z przyciskami) do swojej gry. Możesz dodać stronę z instrukcją i osobny ekran, gdzie wyświetlisz najlepszy wynik. Jeśli nie pamiętasz jak to zrobić zajrzyć do materiałów z projektu "Brain Game".

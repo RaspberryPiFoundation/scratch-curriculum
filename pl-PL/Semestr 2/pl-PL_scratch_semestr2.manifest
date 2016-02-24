@@ -23,6 +23,12 @@
             "filename": "Brain Game/Brain Game.md",
             "beta":     true,
             "note":     "Brain Game/Brain Game - notes.md"
+        },
+        {
+            "number":   3,
+            "filename": "Catch the Dots/Catch the Dots.md",
+            "beta":     true,
+            "note":     "Catch the Dots/Catch the Dots - notes.md"
         }
     ]
 }
