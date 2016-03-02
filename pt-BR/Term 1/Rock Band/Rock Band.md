@@ -30,7 +30,7 @@ Antes que você possa começar a animar, você precisa adicionar uma 'coisa' par
 
 	![screenshot](band-delete.png)
 
-+ Em seguida, clique 'Choose sprite from library' para abrir uma lista de todos os sprites de Scratch.
++ Em seguida, clique 'Escolher ator da biblioteca' para abrir uma lista de todos os sprites de Scratch.
 
 	![screenshot](band-sprite-library.png)
 
@@ -90,7 +90,7 @@ Vamos codificar seu tambor para fazer um som quando é atingido.
 
 	![screenshot](band-drum-duplicate.png)
 
-+ Clique no novo Fantasia (chamado 'drum2') e em seguida selecione a ferramenta de linha. E você pode desenhar linhas para fazer parecer que o tambor está fazendo um som.
++ Clique na nova Fantasia (chamado 'drum2') e em seguida selecione a ferramenta de linha. E você pode desenhar linhas para fazer parecer que o tambor está fazendo um som.
 
 	![screenshot](band-drum-hit.png)
 
