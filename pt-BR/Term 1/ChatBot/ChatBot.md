@@ -27,11 +27,11 @@ Você aprenderá a programar o seu próprio robô falante!
 
 + Crie um novo projeto no Scratch e delete o ator do gato, assim o seu projeto fica vazio. Você pode entrar no editor online do Scratch através do endereço <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Escolha para o ator um desses personagens abaixo, adicione ao seu projeto: 
++ Escolha como ator um desses personagens abaixo, adicione ao seu projeto: 
 
 	![screenshot](chatbot-characters.png)
 
-+ Escola um pano de fundo que combine com a personalidade do seu robô. Aqui temos um exemplo, mas o seu programa não precisa ser exatamente assim, sinta-se livre pra escolher outro!
++ Escolha um pano de fundo que combine com a personalidade do seu robô. Aqui temos um exemplo, mas o seu programa não precisa ser exatamente assim, sinta-se livre pra escolher outro!
 
 	![screenshot](chatbot-sprite.png)
 
@@ -68,7 +68,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 
 	![screenshot](chatbot-join.png)
 
-	Você pode mudar o texto `hello` que vem neste bloco para o que quiser, como fizemos com o `Olá`, e arrastar o bloco azul claro `resposta` {.blocksensing} (da secção de 'Sensores') para o lugar da palavra `world`.
+	Você pode mudar o texto `hello` que vem neste bloco para qualquer outro texto que você quiser, como fizemos com o `Olá`, e arrastar o bloco azul claro `resposta` {.blocksensing} (da secção de 'Sensores') para o lugar da palavra `world`.
 
 	![screenshot](chatbot-answer.png)
 
@@ -76,7 +76,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 
 + Pode ser que você queira guardar o nome do usuário em uma variável, então você poderia utilizar ele novamente em outro momento no seu programa. Crie uma nova variável chamada `nome` {.blockdata}. Se você tiver esquecido como fazer isso, dê uma olhada no projeto "Balões" para relembrar.
 
-+ A informação que você passa para o robô há está guardada nessa variável especial chamada `resposta` {.blocksensing}. Vá até o conjunto de blocos chamado Sensores e clique no bloco resposta, um marcador aparecerá. O valor atual em `resposta` {.blocksensing} deve então ser mostrado no canto superior esquerdo do palco. 
++ A última informação que você passa para o robô fica guardada nessa variável especial chamada `resposta` {.blocksensing}. Vá até o conjunto de blocos chamado Sensores e clique no bloco resposta, um marcador aparecerá. O valor atual em `resposta` {.blocksensing} deve então ser mostrado no canto superior esquerdo do palco. 
 
 + Uma vez que você tenha criado a nova variável, veja se o seu código para o robô está dessa forma: 
 
@@ -91,7 +91,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 
 	![screenshot](chatbot-variable.png)
 
-	Se você preferir não ver a variável no palco, você pode clicar em cima dela na aba 'Scripts' e desmarcar o sinal que está nela, assim ela não aparecerá mais.
+	Se você preferir não ver a variável no palco, você pode clicar em cima dela na aba 'Scripts' e desmarcar a caixa de seleção que fica ao lado do nome da variável, assim ela não aparecerá mais.
 
 ## Salve seu projeto { .save }
 
@@ -141,7 +141,7 @@ Você pode programar o seu robô para decidir o que fazer baseado na resposta do
 		end
 	```
 
-+ Se você testar o seu código, você verá que agora você vcai receber uma resposta de qualquer maneira, seja a sua resposta `sim` ou `não`. Seu robô deve responder com  `Que ótimo que esteja bem!` quando você responde `sim`, mas deve responder um `Que pena!`, se você digitar qualquer coisa que não seja um `sim` (`senão` {.blockcontrol} tem um significado como `qualquer coisa que não seja isso que eu falei`).
++ Se você testar o seu código, você verá que agora você vai receber uma resposta de qualquer maneira, seja a sua resposta `sim` ou `não`. Seu robô deve responder com  `Que ótimo que esteja bem!` quando você responde `sim`, mas deve responder um `Que pena!`, se você digitar qualquer coisa que não seja um `sim` (`senão` {.blockcontrol} tem um significado como `qualquer coisa que não seja isso que eu falei`).
 
 	![screenshot](chatbot-else.png)
 
@@ -188,17 +188,17 @@ Você também pode programar o seu robô para mudar o local onde ele está.
 		end
 	```
 
-+ Você também precisa ter certeza de que o robô está do lado de fora quando você começar a falar com ele. Adicione esse código ao topo do código do seu robô:
++ Você também precisa ter certeza de que o robô está no espaço, e não na Lua, quando você começar a falar com ele. Adicione esse código ao topo do código do seu robô:
 
 	![screenshot](chatbot-outside.png)
 
-+ Teste seu programa, e responda `sim` quando perguntado se quer acompanhar o seu robô até a Lua. Vôcê deve ver o local onde ele está mudar. 
++ Teste seu programa, e responda `sim` quando perguntado se quer acompanhar o seu robô até a Lua. se tudo ocorrer como esperado, você deverá ver o local onde ele está mudar.
 
 	![screenshot](chatbot-backdrop.png)
 
 + Seu robô muda de lugar se você digita `não`? E se você digitar `Eu não tenho certeza`?
 
-+ Você também pode adicionar esse código dentro do seu bloco `se` {.blockcontrol}, isso fará o seu robô pular de cima para baixo quatro vezes se a resposta for `sim`:
++ Você também pode adicionar esse código dentro do seu bloco `se` {.blockcontrol}, isso fará o seu robô dar quatro pulinhos se a resposta for `sim`:
 
 	```scratch
 		repita (4) vezes
