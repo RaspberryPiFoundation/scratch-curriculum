@@ -1,35 +1,35 @@
 ---
 title: Dodgeball — Notes for Club Leaders
-language: en-GB
+language: pt-BR
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to make a platform game, making use of Scratch concepts and skills that have been learnt in previous projects.
+#Introdução:
+Neste projeto, as crianças vão aprender como ele vai aprender como fazer um jogo de plataforma, fazendo uso de conceitos e habilidades de Scratch que foram aprendidas em projetos anteriores.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#recursos
+Para este projeto, Scratch 2 deve ser usado. Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Você pode encontrar uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, ou ele pode ser baixado clicando no ligação do projeto 'Download Project Materials'. Conteúdo:
 
 + Dodgeball.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/dodge-resources](http://jumpto.cc/dodge-resources), or in the downloadable project materials, which contains:
+Há também uma versão deste projecto com os recursos externos pré-carregado. Está disponível on-line no [jumpto.cc/dodge-resources](http://jumpto.cc/dodge-resources), ou nos materiais do projecto carregável, que contém:
 
 + DodgeballResources.sb2 
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+Este link também inclui uma pasta 'Project Resources', que contém imagens que as crianças precisam para completar projeto. Olhe para que cada criança tenha acesso a uma cópia desses recursos.
 
-Project resources:
+Os recursos do projeto:
 + background.png
 
-#Learning Objectives
-+ This project consolidates learning of previous programming skills learnt.
+#Objetivos de aprendizagem
++ Este projeto consolida a aprendizagem de habilidades de programação que foram aprendidas antes.
 
-#Challenges
-+ "Improved jumping" - using an additional `if` {.blockcontrol} block to fix a multiple-jump bug;
-+ "Random balls" - using the `random` {.blockoperators} block to vary the ball costume, size and delay between clones;
-+ "More obstacles" - adding additional sprites to the game;
-+ "Improved gravity" - using an additional `if` {.blockcontrol} block to fix a bug in the `gravity` {.blockdata};
-+ "More lives" - addition of a `lives` {.blockdata} variable.
+#Desafios
++ "Melhorar salto" (Improved jumping") - a utilização de um bloco adicional `if` {.blockcontrol}, e corrigir um erro de um salto multiplos;
++ "Esferas Aleatorias" (Random balls") - utilizando o bloco `random` {.blockoperators} para variar o traje da esfera, tamanho e delay entre clones;
++ "Mais obstáculos" ("More obstacles") - adicionando sprites adicionais para o jogo;
++ "Gravidade melhorada" ("Improved gravity") - a utilização de um bloco adicional `if` {.blockcontrol} e corrigir um erro en `gravity` {.blockdata};
++ "Mais vidas" ("More lives") - adicionando uma variável a `lives` {.blockdata}.
 

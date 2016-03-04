@@ -16,21 +16,21 @@ Neste projeto você vai aprender como codificar os seus próprios instrumentos m
   <img src="band-final.png">
 </div>
 
-# Passo 1: Sprites { .activity }
+# Passo 1: Sprites (Fantasias) { .activity }
 
-Antes que você possa começar a animar, você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__. 
+Antes que você possa começar a animar, você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__, ou __fantasias__. 
 
 ## Checklist do atividade { .check }
 
-+ Primeiro, abra o editor do Scratch. Você pode encontrar o editor Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. A aparência é como este:
++ Primeiro, abra o editor do Scratch. Você pode encontrar o editor Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. A aparência é como esta:
 
 	![screenshot](band-scratch.png)
 
-+ O sprite que você pode ver (um gato), é o mascote do Scratch. Vamos nos livrar dele, clicando com o botão direito e, em seguida, clicando em 'delete'.
++ O sprite que você pode ver (um gato), é o mascote do Scratch. Vamos nos livrar dele, clicando com o botão direito e, em seguida, clicando em 'apagar'.
 
 	![screenshot](band-delete.png)
 
-+ Em seguida, clique 'Choose sprite from library' para abrir uma lista de todos os sprites de Scratch.
++ Em seguida, clique 'Escolher ator da biblioteca' para abrir uma lista de todos os sprites de Scratch.
 
 	![screenshot](band-sprite-library.png)
 
@@ -38,7 +38,7 @@ Antes que você possa começar a animar, você precisa adicionar uma 'coisa' par
 
 	![screenshot](band-sprite-drum.png)
 
-+ Clique o ícone 'shrink', e em seguida, clique no tambor algumas vezes para reduzir o seu tamanho.
++ Clique no ícone 'reduzir', e em seguida, clique no tambor algumas vezes para reduzir o seu tamanho.
 
 	![screenshot](band-shrink.png)
 
@@ -46,25 +46,25 @@ Antes que você possa começar a animar, você precisa adicionar uma 'coisa' par
 
 Dê a seu programa um nome, digitando o nome na caixa de texto acima do 'stage'.
 
-Você pode, em seguida, clicar em "File" e depois "Save Now" para salvar seu projeto.
+Você pode, em seguida, clicar em "Arquivo" e depois "Salvar agora" para salvar seu projeto.
 
 ![screenshot](band-save.png)
 
 # Passo 2: área de Atuação { .activity }
 
-La __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um estrado ("stage")!
+O __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco ("stage")!
 
 ## Checklist do atividade { .check }
 
-+ No momento, o estrado é branco e parece muito chato! Vamos adicionar um pano de fundo para o estrado, clicando 'Choose backdrop from library'.
++ No momento, o palco é branco e parece muito chato! Vamos adicionar um pano de fundo para o palco, clicando 'Escolher pano de fundo da biblioteca'.
 
 	![screenshot](band-stage-choose.png)
 
-+ Clique 'Indoors' à esquerda, e em seguida, clique em uma cortina de fundo e clique 'OK'.
++ Clique em 'Interior' à esquerda, e em seguida, clique em uma cortina de fundo e clique 'OK'.
 
 	![screenshot](band-backdrop.png)
 
-+ Seu estrado deve agora olhar como este:
++ Seu palco deve agora estar parecido como este:
 
 	![screenshot](band-stage.png)
 
@@ -74,7 +74,7 @@ Vamos codificar seu tambor para fazer um som quando é atingido.
 
 ## Checklist do atividade { .check }
 
-+ Você pode encontrar os blocos de código em tab 'Scripts', e todos eles são codificados por cores! 
++ Você pode encontrar os blocos de código na aba 'Scripts', e todos eles são codificados por cores! 
 
 	Clique sprite no tambor, e em seguida arraste estes 2 blocos na área do código à direita. Verificar se eles estão ligados entre si (como blocos de Lego):
 
@@ -82,29 +82,29 @@ Vamos codificar seu tambor para fazer um som quando é atingido.
 
 + Clique no tambor para experimentar o seu novo instrumento!
 
-+ Você também pode alterar a forma como o tambor fica quando este é clicado, criando um novo Fantasia ('costume'). Clique no tab 'Costumes', e você verá a imagem do tambor.
++ Você também pode alterar a forma como o tambor fica quando este é clicado, criando uma nova Fantasia ('costume'). Clique na aba 'Fantasias', e você verá a imagem do tambor.
 
 	![screenshot](band-drum-costume.png)
 
-+ Clique com o botão direito do mouse sobre o Fantasia e clicar em 'duplicado' ('Duplicate') para criar uma cópia do Fantasia.
++ Clique com o botão direito do mouse sobre a Fantasia e clicar em 'duplicado' ('Duplicate') para criar uma cópia da Fantasia.
 
 	![screenshot](band-drum-duplicate.png)
 
-+ Clique no novo Fantasia (chamado 'drum2') e em seguida selecione a ferramenta de linha. E você pode desenhar linhas para fazer parecer que o tambor está fazendo um som.
++ Clique na nova Fantasia (chamado 'drum2') e em seguida selecione a ferramenta de linha. E você pode desenhar linhas para fazer parecer que o tambor está fazendo um som.
 
 	![screenshot](band-drum-hit.png)
 
-+ Os nomes dos Fantasias não são muito úteis no momento. Mude o nome os 2 Fantasias como 'não bater' ('not hit') e 'bater' ('hit'). você pode digitar o novo nome de cada Fantasia na caixa de texto.
++ Os nomes das Fantasias não são muito úteis no momento. Mude o nome das duas Fantasias para 'sem tocar' ('not hit') e 'tocando' ('hit'). você pode digitar o novo nome de cada Fantasia na caixa de texto.
 
 	![screenshot](band-drum-name.png)
 
-+ Agora que você tem 2 Fantasias diferentes para su tambor, você pode escolher qual Fantasia é exibido! Adicione 2 blocos para o seu tambor:
++ Agora que você tem duas Fantasias diferentes para seu tambor, você pode escolher qual Fantasia é exibido! Adicione dois blocos para o seu tambor:
 
 	![screenshot](band-looks.png)
 
-	O bloco de código para alterar o Fantasia é na secção `Looks` {.blocklooks}.
+	O bloco de código para alterar a Fantasia é na secção `Looks` {.blocklooks}.
 
-+ Teste o seu tambor. Quando clicado, o tambor deve agora olhar como se tivesse sido atingido!
++ Teste o seu tambor. Quando clicado, o tambor deve agora parecer como se tivesse sido atingido!
 
 ## Salve o seu projeto { .save }
 
@@ -155,7 +155,7 @@ Vamos adicionar um cantor a sua banda!
 
 ## Salve o seu projeto { .save }
 
-##Desafio: Mudando o Fantasia de seu cantor { .challenge }
+##Desafio: Mudando a Fantasia de seu cantor { .challenge }
 Você pode fazer o seu cantor parece que ela está cantando quando quando você clicar nele? Se você precisar de ajuda, você pode usar as instruções para a criação de um tambor acima.
 
 ![screenshot](band-singer-final.png)
@@ -173,7 +173,7 @@ Os seus instrumentos não tem que fazer sentido. Por exemplo, você poderia faze
 
 ![screenshot](band-piano.png)
 
-Bem como a utilização sprites existentes, você também pode tirar suas próprias sprites.
+Bem como a utilização de fantasias existentes, você também pode criar suas próprias fantasias.
 
 ![screenshot](band-draw.png)
 
