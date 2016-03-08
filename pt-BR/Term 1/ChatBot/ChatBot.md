@@ -27,7 +27,7 @@ Você aprenderá a programar o seu próprio robô falante!
 
 + Crie um novo projeto no Scratch e delete o ator do gato, assim o seu projeto fica vazio. Você pode entrar no editor online do Scratch através do endereço <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Escolha como ator um desses personagens abaixo, e adicione ao seu projeto: 
++ Escolha como ator um desses personagens abaixo e adicione ao seu projeto: 
 
 	![screenshot](chatbot-characters.png)
 
@@ -188,17 +188,17 @@ Você também pode programar o seu robô para mudar o local onde ele está.
 		end
 	```
 
-+ Você também precisa ter certeza de que o robô está no Espaço, e não na Lua, quando você começar a falar com ele. Adicione esse código ao topo do código do seu robô:
++ Você também precisa ter certeza de que o robô está no espaço e não na Lua quando você começar a falar com ele. Adicione esse código ao topo do código do seu robô:
 
 	![screenshot](chatbot-outside.png)
 
-+ Teste seu programa, e responda `sim` quando perguntado se quer acompanhar o seu robô até a Lua. Vôcê deve ver o local onde ele está mudar. 
++ Teste seu programa, e responda `sim` quando perguntado se quer acompanhar o seu robô até a Lua. se tudo ocorrer como esperado, você deverá ver o local onde ele está mudar.
 
 	![screenshot](chatbot-backdrop.png)
 
 + Seu robô muda de lugar se você digita `não`? E se você digitar `Eu não tenho certeza`?
 
-+ Você também pode adicionar esse código dentro do seu bloco `se` {.blockcontrol}, isso fará o seu robô pular de cima para baixo quatro vezes se a resposta for `sim`:
++ Você também pode adicionar esse código dentro do seu bloco `se` {.blockcontrol}, isso fará o seu robô dar quatro pulinhos se a resposta for `sim`:
 
 	```scratch
 		repita (4) vezes
