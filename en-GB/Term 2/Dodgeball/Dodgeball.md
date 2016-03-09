@@ -129,7 +129,7 @@ Let's make your character move more realistically, by adding gravity and allowin
 		end
 	```
 
-	As gravity is constantly pushing your character down by 4 pixels, you need to choose a number greated than 4 in your `change y by (4)` {.blockmotion} block. Change this number until you're happy with the height your character jumps.
+	As gravity is constantly pushing your character down by 4 pixels, you need to choose a number greater than 4 in your `change y by (4)` {.blockmotion} block. Change this number until you're happy with the height your character jumps.
 
 + If you test out this code, you'll notice that it works, but the movement isn't very smooth. To make jumping look smoother, you'll need to move your character by smaller and smaller amounts, until they're not jumping anymore.
 
