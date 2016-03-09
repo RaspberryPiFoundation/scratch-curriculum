@@ -124,7 +124,7 @@ Você pode copiar seu código existente clicando com o botão direito sobre ele 
 
 ![screenshot](band-duplicate-code.png)
 
-## Save your project { .save }
+## Salve o seu projeto { .save }
 
 # Passo 4: Fazendo um cantor { .activity .new-page }
 
@@ -136,11 +136,11 @@ Vamos adicionar um cantor a sua banda!
 
 	![screenshot](band-singer-mic.png)
 
-+ Antes que você pode fazer o seu cantor cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na tab 'Sounds', e clique 'Escolha o som da biblioteca' (Choose sound from library'):
++ Antes que você possa fazer o seu cantor cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons, e então clique em 'Escolha o som da biblioteca':
 
 	![screenshot](band-import-sound.png)
 
-+ Se você clicar 'Vocals' do lado esquerdo, então você vai ser capaz de escolher um som adequado para adicionar ao seu sprite.
++ Se você clicar 'Vocais' do lado esquerdo, então você vai ser capaz de escolher um som adequado para adicionar ao seu sprite.
 
 	![screenshot](band-choose-sound.png)
 
@@ -151,21 +151,21 @@ Vamos adicionar um cantor a sua banda!
         toca o som [singer1 v] até terminar
 	```
 
-+ Clique no seu cantor, para testar de que ela canta quando clicado.
++ Clique no seu cantor para testar se ela canta quando clicado.
 
 ## Salve o seu projeto { .save }
 
 ##Desafio: Mudando a Fantasia de seu cantor { .challenge }
-Você pode fazer o seu cantor parece que ela está cantando quando quando você clicar nele? Se você precisar de ajuda, você pode usar as instruções para a criação de um tambor acima.
+Você pode fazer com que seu cantor pareça que está cantando quando você clicar nele? Se você precisar de ajuda, você pode usar as instruções para a criação de um tambor acima.
 
 ![screenshot](band-singer-final.png)
 
-Lembre-se de testar se o novo código!
+Lembre-se de testar se o novo código funciona!
 
 ## Salve o seu projeto { .save }
 
 ##Desafio: Faça a sua própria banda { .challenge }
-Use o que você aprendeu neste projeto para fazer a sua própria banda! Você pode criar muitos instrumentos que você gosta, mas olhar para os sons e instrumentos para obter algumas idéias.
+Use o que você aprendeu neste projeto para fazer a sua própria banda! Você pode criar qualquer instrumentos que você gosta, mas ouça os sons e instrumentos para ter algumas idéias.
 
 ![screenshot](band-ideas.png)
 

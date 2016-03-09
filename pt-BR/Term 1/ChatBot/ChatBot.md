@@ -20,12 +20,12 @@ Você aprenderá a programar o seu próprio robô falante!
 
 ## Lista de atividades { .check }
 
-+ Antes de começar a fazer seu robô, você precisa decidir sobre a personalidade dele: 
++ Antes de começar a fazer seu robô você precisa decidir sobre a personalidade dele: 
 	+ Qual será seu nome?
 	+ Onde ele vive?
 	+ Ele é feliz? Sério? Divertido? Tímido? Amigável? 
 
-+ Crie um novo projeto no Scratch e delete o ator do gato, assim o seu projeto fica vazio. Você pode entrar no editor online do Scratch através do endereço <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crie um novo projeto no Scratch e delete o ator do gato, assim o seu projeto ficará vazio. Você pode entrar no editor online do Scratch através do endereço <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Escolha como ator um desses personagens abaixo e adicione ao seu projeto: 
 
@@ -43,7 +43,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 
 ## Lista de atividades { .check }
 
-+ Clique no ator que representa o seu robô, adicione este código: 
++ Clique no ator que representa o seu robô e adicione este código: 
 
 	```blocks
 		quando este ator for clicado
@@ -64,7 +64,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 
 	```
 
-	Para criar o último bloco, você precisará pegar um bloco verde `junte` {.blockoperators}, e arraste ele para dentro do bloco `diga` {.blocklooks}.
+	Para criar o último bloco você precisará pegar um bloco verde `junte` {.blockoperators}, e arraste ele para dentro do bloco `diga` {.blocklooks}.
 
 	![screenshot](chatbot-join.png)
 
@@ -87,7 +87,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 		diga <junte [Olá] com (nome)> por (2) segundos
 	```
 
-+ Se você testar o seu programa novamente, você irá notar que a resposta será guardada na variável `nome` {.blockdata}, e é mostrada no canto superior esquerdo do palco. A variável `nome` {.blockdata} deve agora conter o mesmo valor que a variável `resposta` {.blocksensing}.
++ Se você testar o seu programa novamente, você irá notar que a resposta será guardada na variável `nome` {.blockdata} e é mostrada no canto superior esquerdo do palco. A variável `nome` {.blockdata} deve agora conter o mesmo valor que a variável `resposta` {.blocksensing}.
 
 	![screenshot](chatbot-variable.png)
 
@@ -124,7 +124,7 @@ Você pode programar o seu robô para decidir o que fazer baseado na resposta do
 
 	Repare que agora que você guardou o nome do usuário em uma variável, você pode usá-la quantas vezes quiser e da forma que desejar! 
 
-+ Para testar o seu programa da maneira correta, você precisará testá-lo duas vezes - uma digitando `não` como resposta, e outra para o `sim`. Você deve apenas ouvir uma resposta do seu robô `se` {.blockcontrol} sua resposta for `sim`.
++ Para testar o seu programa da maneira correta, você precisará testá-lo duas vezes - uma digitando `não` como resposta e outra para o `sim`. Você deve apenas ouvir uma resposta do seu robô `se` {.blockcontrol} sua resposta for `sim`.
 
 + O problema com o seu robô agora é que ele não dá uma resposta quando o usuário responde `não`. Você pode arrumar isso, ao mudar o bloco `se` {.blockcontrol}  para um bloco `se/senão` {.blockcontrol}, então o seu código deve ficar assim: 
 

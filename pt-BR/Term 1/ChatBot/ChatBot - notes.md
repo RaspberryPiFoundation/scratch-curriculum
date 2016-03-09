@@ -1,26 +1,26 @@
 ---
 title: Robô Falante —  Nota para Líderes de Clubes
-language: en-GB
+language: pt-BR
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to use 'if' statements to make decisions in their programs.
+#Introdução:
+Neste projeto crianças vão aprender como usar a estrutura 'if' para tomar decisões em seus programas.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Recursos:
+Para este projeto Scratch 2 deve ser usado. Scratch 2 pode ser online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) para uso offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Você encontra uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, ou pode ser baixado clicando no link 'Download Project Materials' deste projeto onde contém:
 
 + ChatBot.sb2
 
-#Learning Objectives
-+ Text input;
-+ Decisions:
-	+ `if ... then` {.blockcontrol} statements;
-	+ `if ... then ... else` {.blockcontrol} statements.
+#Objetivos de estudo
++ Entrada de texto;
++ Decisões:
+	+ estruturas `if ... then` {.blockcontrol};
+	+ estruturas `if ... then ... else` {.blockcontrol}.
 
-#Challenges
-+ "More questions" - consolidating learning of input and the `answer` {.blocksensing} block;
-+ "More decisions" - using decisions;
-+ "Make your own chatbot" - consolidation of learning from this and past projects.
+#Desafios
++ "Mais questões" - consolidação da aprendizagem para entrada e o bloco `resposta` {.blocksensing} block;
++ "Mais questões" - usando decisões;
++ "Faça seu próprio robô" - consolidação da aprendizagem deste e de antigos projetos
