@@ -18,7 +18,7 @@ Neste projeto você vai aprender como codificar os seus próprios instrumentos m
 
 # Passo 1: Sprites (Fantasias) { .activity }
 
-Antes que você possa começar a animar, você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__, ou __fantasias__. 
+Antes que você possa começar a animar você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
 
 ## Checklist do atividade { .check }
 
@@ -34,7 +34,7 @@ Antes que você possa começar a animar, você precisa adicionar uma 'coisa' par
 
 	![screenshot](band-sprite-library.png)
 
-+ Role para baixo até ver um sprite com um tambor. Clique no tambor, e clique 'OK' para adicioná-lo ao seu projeto.
++ Role para baixo até ver um sprite com um tambor. Clique no tambor e clique 'OK' para adicioná-lo ao seu projeto.
 
 	![screenshot](band-sprite-drum.png)
 
@@ -70,23 +70,23 @@ O __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. 
 
 # Passo 3: Fazendo um tambor { .activity }
 
-Vamos codificar seu tambor para fazer um som quando é atingido.
+Vamos codificar seu tambor para fazer um som quando é batido.
 
 ## Checklist do atividade { .check }
 
-+ Você pode encontrar os blocos de código na aba 'Scripts', e todos eles são codificados por cores! 
++ Você pode encontrar os blocos de código na aba 'Scripts' e todos eles são codificados por cores! 
 
-	Clique sprite no tambor, e em seguida arraste estes 2 blocos na área do código à direita. Verificar se eles estão ligados entre si (como blocos de Lego):
+	Clique no sprite tambor e em seguida arraste estes 2 blocos na área do código à direita. Verificar se eles estão ligados entre si (como blocos de Lego):
 
 	![screenshot](band-code.png)
 
 + Clique no tambor para experimentar o seu novo instrumento!
 
-+ Você também pode alterar a forma como o tambor fica quando este é clicado, criando uma nova Fantasia ('costume'). Clique na aba 'Fantasias', e você verá a imagem do tambor.
++ Você também pode alterar a forma como o tambor fica quando este é clicado, criando uma nova Fantasia. Clique na aba 'Fantasias' e você verá a imagem do tambor.
 
 	![screenshot](band-drum-costume.png)
 
-+ Clique com o botão direito do mouse sobre a Fantasia e clicar em 'duplicado' ('Duplicate') para criar uma cópia da Fantasia.
++ Clique com o botão direito do mouse sobre a Fantasia e clicar em 'duplicar' para criar uma cópia da Fantasia.
 
 	![screenshot](band-drum-duplicate.png)
 
@@ -94,33 +94,33 @@ Vamos codificar seu tambor para fazer um som quando é atingido.
 
 	![screenshot](band-drum-hit.png)
 
-+ Os nomes das Fantasias não são muito úteis no momento. Mude o nome das duas Fantasias para 'sem tocar' ('not hit') e 'tocando' ('hit'). você pode digitar o novo nome de cada Fantasia na caixa de texto.
++ Os nomes das Fantasias não são muito úteis no momento. Mude o nome das duas Fantasias para 'sem tocar' e 'tocando'. você pode digitar o novo nome de cada Fantasia na caixa de texto.
 
 	![screenshot](band-drum-name.png)
 
-+ Agora que você tem duas Fantasias diferentes para seu tambor, você pode escolher qual Fantasia é exibido! Adicione dois blocos para o seu tambor:
++ Agora que você tem duas Fantasias diferentes para seu tambor, você pode escolher qual Fantasia será exibida! Adicione dois blocos para o seu tambor:
 
 	![screenshot](band-looks.png)
 
-	O bloco de código para alterar a Fantasia é na secção `Looks` {.blocklooks}.
+	O bloco de código para alterar a Fantasia é na secção `Aparência` {.blocklooks}.
 
-+ Teste o seu tambor. Quando clicado, o tambor deve agora parecer como se tivesse sido atingido!
++ Teste o seu tambor. Quando clicado, o tambor deve agora parecer como se tivesse sido tocado!
 
 ## Salve o seu projeto { .save }
 
 ##Desafio: Melhorar o seu tambor { .challenge }
 
-+ Você pode alterar o som do tambor que faz quando é clicado?
++ Você consegue alterar o som do tambor quando é clicado?
 
 ![screenshot](band-drum-sound.png)
 
-+ Você também pode fazer um som quando a barra de espaço é pressionada? Você vai precisar usar este bloco `event` {.blockevents}:
++ Você também pode fazer um som quando a barra de espaço é pressionada? Você vai precisar usar este bloco `Eventos` {.blockevents}:
 
 ```blocks
 	quando a tecla [espaço v] for pressionada
 ```
 
-Você pode copiar seu código existente clicando com o botão direito sobre ele e clique 'duplicado' ('duplicate').
+Você pode copiar seu código existente clicando com o botão direito sobre ele e clique 'duplicar'.
 
 ![screenshot](band-duplicate-code.png)
 
@@ -132,11 +132,11 @@ Vamos adicionar um cantor a sua banda!
 
 ## Checklist do atividade { .check }
 
-+ Adicionar mais 2 sprites para o seu estágio; um cantor e um microfone.
++ Adicionar mais 2 sprites para o seu stage; um cantor e um microfone.
 
 	![screenshot](band-singer-mic.png)
 
-+ Antes que você possa fazer o seu cantor cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons, e então clique em 'Escolha o som da biblioteca':
++ Antes que você possa fazer o seu cantor cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons e então clique em 'Escolha o som da biblioteca':
 
 	![screenshot](band-import-sound.png)
 
