@@ -8,8 +8,8 @@
 
     "projects": [
         {
-            "filename": "01 Félix y Herbert/félix_y_herbert.md",
-	    "note": "01 Félix y Herbert/notas para coordinadores.md",
+            "filename": "01 Felix y Herbert/felix_y_herbert.md",
+	    "note": "01 Felix y Herbert/notas para coordinadores.md",
             "number": 1
         },
         {
@@ -23,8 +23,8 @@
             "number": 3
         },
         {
-            "filename": "04 Máquina de frutas/máquina-de-frutas.md",
-	    "note": "04 Máquina de frutas/notas para coordinadores.md",
+            "filename": "04 Maquina de frutas/maquina-de-frutas.md",
+	    "note": "04 Maquina de frutas/notas para coordinadores.md",
             "number": 4
         },
  	{
@@ -39,8 +39,8 @@
             "number": 6
         },        
  	{
-            "filename": "07 Qué es eso/qué-es-eso.md",
-	    "note": "07 Qué es eso/notas para coordinadores.md",
+            "filename": "07 Que es eso/que-es-eso.md",
+	    "note": "07 Que es eso/notas para coordinadores.md",
             "number": 7
         },        
  	{
