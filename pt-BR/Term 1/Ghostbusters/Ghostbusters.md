@@ -58,7 +58,7 @@ Você fará um jogo de caça fantasmas!
 		sempre
 			esconda
 			espere (1) seg
-			vá para x:(escolha número entre (-150) e (150)) y:(escolha número entre (-150) e (150))
+			vá para x:(número aleatório entre (-150) e (150)) y:(número aleatório entre (-150) e (150))
 			mostre
 			espere (1) seg
 		end		
@@ -150,10 +150,10 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 
 	```blocks
 		quando clicar em ⚑
-		mude [time v] para [10]
-		repita até que <(time) = [0]>
+		mude [tempo v] para [10]
+		repita até que <(tempo) = [0]>
 			espere (1) seg
-			adicione a [time v] (-1)
+			adicione a [tempo v] (-1)
 		end
 		pare [todos v]
 	```
