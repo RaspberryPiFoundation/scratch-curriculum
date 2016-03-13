@@ -30,7 +30,7 @@ Zbudujmy statek kosmiczny, który będzie bronił Ziemi!
 
 + Do projektu dodaj tło 'stars' (gwiazdy) i duszka 'Spaceship' (statek kosmiczny). Zmiejsz statek kosmiczny i przesuń go na dół sceny.
 
-	![screenshot](invaders-sprites.png)
+  ![screenshot](invaders-sprites.png)
 
 + Dodaj kod, który przesunie statek w lewo, kiedy wciśniesz strzałkę w lewo. Będziesz do tego potrzebował takich bloków:
 
@@ -79,17 +79,17 @@ Dodajmy statkowi kosmicznemu możliwość strzelania błyskawicami!
 
 + Kiedy nowy klon zostanie stworzony powinien ustawić się w tym miejscu, gdzie znajduje się statek kosmiczny. Następnie powinien poruszać się w górę sceny dopóki nie dotknie krawędzi. Dodaj poniższy kod **do błyskawicy**:
 
-	```blocks
-		kiedy zaczynam jako klon
-        idź do [Spaceship v]
-        pokaż
-        powtarzaj aż <dotyka [krawędź v]?>
-           zmień y o (10)
-        koniec
-        usuń tego klona
-	```
+    ```blocks
+    	kiedy zaczynam jako klon
+          idź do [Spaceship v]
+          pokaż
+          powtarzaj aż <dotyka [krawędź v]?>
+             zmień y o (10)
+          koniec
+          usuń tego klona
+    ```
 
-  Uwaga: ustawiamy nowy klon błyskawicy na pozycję statku kosmicznego kiedy jeszcze błyskawica jest ukryta, przed jej pokazaniem. Dzięki temu gra będzie lepiej wyglądać.
+    Uwaga: ustawiamy nowy klon błyskawicy na pozycję statku kosmicznego kiedy jeszcze błyskawica jest ukryta, przed jej pokazaniem. Dzięki temu gra będzie lepiej wyglądać.
 
 + Przetestuj swoją błyskawicę naciskając spację.
 
@@ -119,11 +119,11 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 
 + Stwórz nową zmienną tylko dla tego duszka i nazwij ją `prędkość` {.blockdata}.
 
-	![screenshot](invaders-var.png)
+  	![screenshot](invaders-var.png)
 
-  Jeśli udało ci się to zrobić poprawnie twoja zmienna będzie miała nazwę duszka obok swojej nazwy, tak jak tutaj:
+    Jeśli udało ci się to zrobić poprawnie twoja zmienna będzie miała nazwę duszka obok swojej nazwy, tak jak tutaj:
 
-	![screenshot](invaders-var-test.png)
+    ![screenshot](invaders-var-test.png)
 
 + Poniższy kod utworzy nowego kosmo-hipcia co kilka sekund. Dodaj ten kod **do sceny**:
 
@@ -158,11 +158,11 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 
 + Kiedy kosmo-hipcio dotknie twojego statku kosmicznego, statek powinien eksplodować! Aby tak zrobić, najpierw musimy zmienić statek w taki sposób, aby miał dwa kostiumy: "normalny" i "trafiony".
 
-	![screenshot](invaders-spaceship-costumes.png)
+	 ![screenshot](invaders-spaceship-costumes.png)
 
-  Kostium "trafiony" można wykonać importując z biblioteki Scratcha obrazek "sun" (Słońce), a następnie używając narzędzia "Wypełnij kształt", aby zmienić jego kolor.
+   Kostium "trafiony" można wykonać importując z biblioteki Scratcha obrazek "sun" (Słońce), a następnie używając narzędzia "Wypełnij kształt", aby zmienić jego kolor.
 
-	![screenshot](invaders-sun.png)
+   ![screenshot](invaders-sun.png)
 
 + Dodaj ten kod do swojego statku, aby zmienił kostium kiedy tylko zostanie uderzony przez kosmo-hipcia:
 
@@ -179,12 +179,12 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 
 + Czy zauważyłeś, że wysyłasz wiadomość "trafiony" w kodzie powyżej? Możesz użyć tej wiadomości, aby ukryć wszystkie kosmo-hipcie, kiedy statek zostanie trafiony przez jednego z nich.
 
-	Dodaj poniższy kod do kosmo-hipcia:
+    Dodaj poniższy kod do kosmo-hipcia:
 
-	```blocks
-		kiedy otrzymam [trafiony v]
-        usuń tego klona
-	```
+    ```blocks
+    	kiedy otrzymam [trafiony v]
+          usuń tego klona
+    ```
 
 + Przetestuj ten kod - uruchom nową grę i pozwól, aby uderzył cię kosmo-hipcio.
 
@@ -209,9 +209,9 @@ Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój 
 
 + Jeśli spojrzysz na kostiumy nietoperza, to zobaczysz, że są tam już 2 kostiumy:
 
-	![screenshot](invaders-bat-costume.png)
+    ![screenshot](invaders-bat-costume.png)
 
-  Użyj bloku `następny kostium` {.blocklooks}, aby nietoperz machał skrzydłami kiedy lata.
+    Użyj bloku `następny kostium` {.blocklooks}, aby nietoperz machał skrzydłami kiedy lata.
 
 + Stwórz nowego duszka korzystając z 'Orange' (pomarańcza) z biblioteki Scratcha.
 
@@ -232,7 +232,7 @@ Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój 
 	```blocks
 		kiedy kliknięto zieloną flagę
         ukryj
-        
+
         kiedy zaczynam jako klon
         idź do [Bat1 v]
         pokaż
@@ -240,7 +240,7 @@ Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój 
            zmień y o (-4)
         koniec
         usuń tego klona
-        
+
         kiedy otrzymam [trafiony v]
         usuń tego klona
 	```
@@ -275,15 +275,15 @@ Dodajmy komunikat "Koniec gry".
 
 + Dodaj ten kod do duszka "Koniec gry", aby wiadomość pokazała się na końcu gry:
 
-	```blocks
-		kiedy kliknięto zieloną flagę
-        ukryj
-        
-        kiedy otrzymam [koniec gry v]
-        pokaż
-	```
+    ```blocks
+    	kiedy kliknięto zieloną flagę
+          ukryj
 
-  Ponieważ na scenie użyłeś bloku `nadaj [koniec gry] i czekaj` {.blockevents}, gra poczeka, aż pojawi się duszek "Koniec gry" zanim gra się naprawdę zakończy.
+          kiedy otrzymam [koniec gry v]
+          pokaż
+    ```
+
+    Ponieważ na scenie użyłeś bloku `nadaj [koniec gry] i czekaj` {.blockevents}, gra poczeka, aż pojawi się duszek "Koniec gry" zanim gra się naprawdę zakończy.
 
 + Przetestuj swoją grę. Ile punktów udało ci się zdobyć? Jak możesz udoskonalić grę, jeśli jest za prosta albo za trudna?
 

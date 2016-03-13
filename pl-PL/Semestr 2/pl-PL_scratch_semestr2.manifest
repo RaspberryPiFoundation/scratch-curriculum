@@ -29,6 +29,12 @@
             "filename": "Catch the Dots/Catch the Dots.md",
             "beta":     true,
             "note":     "Catch the Dots/Catch the Dots - notes.md"
+        },
+        {
+            "number":   3,
+            "filename": "Clone Wars/Clone Wars.md",
+            "beta":     true,
+            "note":     "Clone Wars/Clone Wars - notes.md"
         }
     ]
 }
