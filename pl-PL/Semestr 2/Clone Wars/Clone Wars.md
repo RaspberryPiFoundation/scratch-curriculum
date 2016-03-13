@@ -197,28 +197,27 @@ Czy potrafisz dodać `życia` {.blockdata}, `punkty` {.blockdata}, albo nawet `n
 
 ## Zapisz swój projekt {.save}
 
-# Step 4: Fruit Bats! { .activity }
+# Step 4: Owocowe nietoperze! { .activity }
 
-Let's make a fruit bat that throws oranges at your spaceship.
+Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój statek kosmiczny.
 
 ## Zadania do wykonania {.check}
 
-+ Firstly, make a new bat sprite that will `move` {.blockmotion} across the top of the stage `forever` {.blockcontrol}. Remember to test out your code.
++ Najpierw stwórz nowego duszka - nietoperza, który będzie `zawsze` {.blockcontrol} `przesuwał się` {.blockmotion} wzdłuż górnej krawędzi sceny. Pamiętaj, żeby przetestować swój kod.
 
 	![screenshot](invaders-bat.png)
 
-+ If you look at the bat's costumes, you'll see that it already has 2:
++ Jeśli spojrzysz na kostiumy nietoperza, to zobaczysz, że są tam już 2 kostiumy:
 
 	![screenshot](invaders-bat-costume.png)
 
-	Use the `next costume` {.blocklooks} block to make the bat flap its wings as it moves.
+  Użyj bloku `następny kostium` {.blocklooks}, aby nietoperz machał skrzydłami kiedy lata.
 
-+ Create a new 'Orange' sprite from the Scratch library
++ Stwórz nowego duszka korzystając z 'Orange' (pomarańcza) z biblioteki Scratcha.
 
 	![screenshot](invaders-orange.png)
 
-
-+ Add code to your bat, so that it creates a new orange clone every few seconds.
++ Do nietoperza dodaj kod, który utworzy nowy klon pomarańczy co kilka sekund.
 
 	```blocks
 		when flag clicked
@@ -228,7 +227,7 @@ Let's make a fruit bat that throws oranges at your spaceship.
 		end
 	```
 
-+ Click on your orange sprite and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
++ Kliknij na pomaranczę i dodaj ten kod, aby każdy klon spadał na scenie od nietoperza w kierunku statku kosmicznego:
 
 	```blocks
 		when flag clicked
@@ -246,13 +245,13 @@ Let's make a fruit bat that throws oranges at your spaceship.
 		delete this clone
 	```
 
-+ In your spaceship sprite, you'll need to modify your code so that you are hit if you touch a hippo or an orange:
++ Musisz teraz zmienić swój kod w statku kosmicznym, aby został trafiony, kiedy dotknie albo kosmo-hipcia albo pomarańczy:
 
 	```blocks
 		wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
 	```
 
-+ Test your game. What happens if you get hit by a falling orange?
++ Przetestuj swoją grę. Co się stanie kiedy w statek uderzy pomarańcza?
 
 ## Zapisz swój projekt {.save}
 
