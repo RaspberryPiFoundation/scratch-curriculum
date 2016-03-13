@@ -1,40 +1,41 @@
 ---
 title: Clone Wars
 level: Scratch 2
-language: en-GB
+language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
+materials: ["Club Leader Resources/*"]
 beta: true
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+## Projekt stworzony przez społeczność { .challenge .pdf-hidden }
+Ten projekt powstał przy współpracy z Erikiem. Jeśli także chcesz zamieścić swój projekt [skontaktuj się z nami na Githubie](https://github.com/CodeClub).
 
-# Introduction { .intro }
+# Wstęp { .intro }
 
-In this project you'll learn how to create a game, in which you have to save the Earth from space-monsters.
+Wykonując ten projekt nauczysz się, jak stworzyć grę, w której musisz uratować Ziemię przed potworami z kosmosu.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
-	<img src="invaders-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
+  <img src="invaders-final.png">
 </div>
 
-# Step 1: Making a Spaceship { .activity }
+# Krok 1: Budowanie statku kosmicznego {.activity}
 
-Let's make a spaceship, that will defend the Earth!
+Zbudujmy statek kosmiczny, który będzie bronił Ziemi!
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Utwórz w Scratchu nowy projekt i usuń duszka-kota tak, aby projekt był pusty. Możesz skorzystać ze Scratcha w wersji online, który znajduje się tutaj: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Add the 'stars' backdrop and the 'spaceship' sprite to your project. Shrink the spaceship and move it near the bottom of the screen.
++ Do projektu dodaj tło 'stars' (gwiazdy) i duszka 'Spaceship' (statek kosmiczny). Zmiejsz statek kosmiczny i przesuń go na dół sceny.
 
 	![screenshot](invaders-sprites.png)
 
-+ Add code to move your spaceship to the left when the left arrow key is pressed. You'll need to use these blocks:
++ Dodaj kod, który przesunie statek w lewo, kiedy wciśniesz strzałkę w lewo. Będziesz do tego potrzebował takich bloków:
 
 	```blocks
+		when flag clicked
 		forever
 			if <key [left arrow v] pressed?> then
 				change x by (-4)
@@ -42,31 +43,30 @@ Let's make a spaceship, that will defend the Earth!
 		end
 	```
 
-+ Add code to move your spaceship to the right when the right arrow key is pressed.
++ Dodaj kod, który przesunie statek w prawo, kiedy wciśniesz strzałkę w prawo.
 
-+ Test your project to see whether you can control your spaceship with the arrow keys.
++ Przetestuj swój projekt i sprawdź czy statek przesuwa się kiedy wciskasz strzałki na klawiaturze.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-# Step 2: Lightning bolts { .activity }
+# Krok 2: Błyskawice {.activity}
 
-Let's give the spaceship the ability to fire lightning bolts!
+Dodajmy statkowi kosmicznemu możliwość strzelania błyskawicami!
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ Add the 'Lightning' sprite from the Scratch library. Click the sprite's costume and turn the lightning upside-down.
++ Z biblioteki Scratcha dodaj duszka 'Lightning' (błyskawica). Kliknij na kostium duszka i obróc go do góry nogami.
 
 	![screenshot](invaders-lightning.png)
 
-+ When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.
++ Na początku gry błyskawica powinna być ukryta. Pokażemy ją dopiero wtedy, kiedy statek kosmiczny wystrzeli ze swoich laserowych działek.
 
 	```blocks
 		when flag clicked
 		hide
 	```
 
-+ Add the following code **to the spaceship** to create a new lightning bolt whenever the space key is pressed.
-
++ Dodaj poniższy kod **do statku kosmicznego**, by utworzyć nową błyskawicę za każdym razem, kiedy wciśnięta zostanie spacja.
 
 	```blocks
 		when flag clicked
@@ -77,7 +77,7 @@ Let's give the spaceship the ability to fire lightning bolts!
 		end
 	```
 
-+ Whenever a new clone is created, it should start in the same place as the spaceship, and then move up the stage until it touches the edge. Add the following code **to the Lightning sprite**:
++ Kiedy nowy klon zostanie stworzony powinien ustawić się w tym miejscu, gdzie znajduje się statek kosmiczny. Następnie powinien poruszać się w górę sceny dopóki nie dotknie krawędzi. Dodaj poniższy kod **do błyskawicy**:
 
 	```blocks
 		when I start as a clone
@@ -89,22 +89,22 @@ Let's give the spaceship the ability to fire lightning bolts!
 		delete this clone
 	```
 
-Note: We move the new clone to the spaceship while it is still hidden, before then showing it. This just looks nicer.
+  Uwaga: ustawiamy nowy klon błyskawicy na pozycję statku kosmicznego kiedy jeszcze błyskawica jest ukryta, przed jej pokazaniem. Dzięki temu gra będzie lepiej wyglądać.
 
-+ Test your lightning, by pressing the space key.
++ Przetestuj swoją błyskawicę naciskając spację.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-## Challenge: Fixing the lightning {.challenge}
-What happens if you keep the space key held down? Can you use a `wait` {.blockcontrol} block to fix this?
+## Wyzwanie: Naprawianie błyskawicy {.challenge}
+Co się dzieje, kiedy trzymasz wciśniętą spację? Użyj bloku `czekaj` {.blockcontrol}, aby to naprawić.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
 # Step 3: Flying Space-hippos { .activity }
 
 Let's add lots of flying hippos that are trying to destroy your spaceship.
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
 + Create a new sprite from the 'Hippo1' image in the Scratch library.
 
@@ -164,7 +164,7 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 
 	![screenshot](invaders-sun.png)
 
-+ Add this code to your spaceship, so that it switches costume whenever it collides with a flying hippo:
++ Add this code to your spaceship so that it switches costume whenever it collides with a flying hippo:
 
 	```blocks
 		when flag clicked
@@ -186,22 +186,22 @@ Let's add lots of flying hippos that are trying to destroy your spaceship.
 		delete this clone
 	```
 
-+ Test out this code by starting a new game and colliding with a hippo. 
++ Test out this code by starting a new game and colliding with a hippo.
 
 	![screenshot](invaders-hippo-collide.png)
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
 ## Challenge: Lives and Score {.challenge}
 Can you add a `lives` {.blockdata}, `score` {.blockdata} or even a `highscore` {.blockdata} to your game? You can use the 'Catch the Dots' project to help you.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
 # Step 4: Fruit Bats! { .activity }
 
-Let's make a fruit bat, that throws oranges at your spaceship.
+Let's make a fruit bat that throws oranges at your spaceship.
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
 + Firstly, make a new bat sprite that will `move` {.blockmotion} across the top of the stage `forever` {.blockcontrol}. Remember to test out your code.
 
@@ -228,7 +228,7 @@ Let's make a fruit bat, that throws oranges at your spaceship.
 		end
 	```
 
-+ Click on your orange sprite, and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
++ Click on your orange sprite and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
 
 	```blocks
 		when flag clicked
@@ -250,19 +250,19 @@ Let's make a fruit bat, that throws oranges at your spaceship.
 
 	```blocks
 		wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
-	``` 
+	```
 
 + Test your game. What happens if you get hit by a falling orange?
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
 # Step 5: Game over { .activity }
 
 Let's add a 'game over' message at the end of the game.
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives, and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
++ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
 
 + Draw a new sprite called 'Game Over', using the text tool.
 
@@ -288,7 +288,7 @@ Let's add a 'game over' message at the end of the game.
 
 + Test your game. How many points can you score? Can you think of ways to improve your game if it is too easy or too hard?
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
 ## Challenge: Improve your game {.challenge}
 What improvements can you make to your game? Here are some ideas:
@@ -297,7 +297,7 @@ What improvements can you make to your game? Here are some ideas:
 ![screenshot](invaders-aid.png)
 
 + Add floating rocks that your spaceship must avoid;
-	
+
 ![screenshot](invaders-rocks.png)
 
 + Make more enemies appear when your score gets to 100.
@@ -306,4 +306,4 @@ What improvements can you make to your game? Here are some ideas:
 	wait until <(score) = [100]>
 ```
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
