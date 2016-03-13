@@ -43,7 +43,7 @@ Você fará um jogo de caça fantasmas!
 
 + Teste seu código do fantasma clicando na bandeira verde.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 2: Fantasmas aleatórios { .activity }
 
@@ -66,12 +66,12 @@ Você fará um jogo de caça fantasmas!
 
 + Teste seu fantasma novamente, você deve notar que ele aparece cada vez em um lugar diferente.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Desafio: Mais aleatório {.challenge}
 Você consegue fazer que seu fantasma `espere` {.blockcontrol} por um intervalo de tempo aleatório antes de ele aparecer?  Você consegue usar um bloco `mude o tamanho` {.blocklooks} para fazer seu fantasma ter tamanhos aleatórios cada vez que ele aparece?
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Step 3: Pegando fantasmas { .activity }
 
@@ -93,7 +93,7 @@ Vamos permitir que o jogador pegue fantasmas!
 ## Desafio: Adicionando som { .challenge }
 Você consegue fazer um som cada vez que o fantasma é pego?
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Step 4: Acrescentando um placar { .activity .new-page }
 
@@ -128,7 +128,7 @@ Vamos deixar o jogo mais interessante mantendo um placar.
 
 + Rode seu programa novamente e pegue alguns fantasmas. Seu placar muda?
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Step 5: Acrescentando um tempo { .activity }
 
@@ -174,7 +174,7 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 
 	Teste seu jogo algumas vezes até que você esteja satisfeito com o nível de dificuldade.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Desafio: Mais obstáculos {.challenge}
 Você consegue acrescentar outros objetos ao seu jogo?
@@ -190,7 +190,7 @@ Você precisa pensar a respeito dos objetos que você está acrescentando. Pense
 
 Se você precisar de ajuda para acrescentar outros objetos, você pode reusar os passos acima!
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 

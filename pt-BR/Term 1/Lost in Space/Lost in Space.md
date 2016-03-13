@@ -69,7 +69,7 @@ Você precisará alterar os números neste bloco:
 	deslize por (1) sec até x:(0) y:(0)
 ```
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 2: Animando usando loops { .activity .new-page }
 
@@ -107,7 +107,7 @@ Outra maneira de animar a nave espacial é dizer para ela se mover uma pequena q
 	mude o tamanho para (100) %
 	```
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 3: Macaco flutuante{ .activity .new-page }
 
@@ -177,7 +177,7 @@ Vamos combinar loops para fazer uma estrela brilhante.
 
 + Clique na bandeira para testar esta animação. O que este código faz? Bem, a estrela é aumentada ligeiramente 20 vezes, e em seguida, é diminuida 20 vezes voltando ao seu tamanho original. Estes 2 loops estão dentro de um loop `sempre` {.blockcontrol} e então desta forma a animação fica se repetindo.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Desafio: Faça a sua própria animação {.challenge}
 Pare sua animação, e clique em 'Arquivo' e 'Novo' para começar um novo projeto.
@@ -186,7 +186,7 @@ Use o que você aprendeu neste projeto para fazer sua própria animação. Pode 
 
 ![screenshot](space-egs.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 

@@ -11,7 +11,7 @@ Neste projeto as crianças vão aprender como adicionar som e música em seus pr
 #Recursos
 Para este projeto o Scratch 2 deve ser usado. Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-Você pode encontrar uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, ou ele pode ser baixado clicando no ligação do projeto 'Download Project Materials'. Conteúdo:
+Você pode encontrar uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, ou ele pode ser baixado clicando no link 'Download Project Materials' deste projeto. Conteúdo:
 
 + RockBand.sb2
 

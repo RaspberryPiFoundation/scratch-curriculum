@@ -10,18 +10,18 @@ Neste projeto, as crianças vão aprender como combinar blocos de código para c
 #recursos
 Para este projeto, Scratch 2 deve ser usado. Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-Você pode encontrar uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, ou ele pode ser baixado clicando no ligação do projeto 'Download Project Materials'. Conteúdo:
+Você pode encontrar uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, ou ele pode ser baixado clicando no link 'Download Project Materials' deste projeto. Conteúdo:
 
 + LostInSpace.sb2
 
-Há também uma versão deste projeto com os recursos externos pré-carregado. Este está disponível online em [jumpto.cc/space-resources](http://jumpto.cc/space-resources), ou nos materiais do projecto para download, que contém:
+Há também uma versão deste projeto com os recursos externos pré-carregado. Este está disponível online em [jumpto.cc/space-resources](http://jumpto.cc/space-resources), ou nos materiais do projeto para download, que contém:
 
 + LostInSpaceResources.sb2 
 
 #Objetivos de aprendizagem
 + Loops:
 	+ `Repeat` {.blockcontrol} loops;
-	+ `Forever` {.blockcontrol} loops.
+	+ `Sempre` {.blockcontrol} loops.
 
 #Desafios
 + "Melhorar a sua animação" - alterando os números em um programa curto;

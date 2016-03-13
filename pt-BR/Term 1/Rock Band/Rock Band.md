@@ -42,7 +42,7 @@ Antes que você possa começar a animar você precisa adicionar uma 'coisa' para
 
 	![screenshot](band-shrink.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 Dê a seu programa um nome, digitando o nome na caixa de texto acima do 'stage'.
 
@@ -106,7 +106,7 @@ Vamos codificar seu tambor para fazer um som quando é batido.
 
 + Teste o seu tambor. Quando clicado, o tambor deve agora parecer como se tivesse sido tocado!
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ##Desafio: Melhorar o seu tambor { .challenge }
 
@@ -124,7 +124,7 @@ Você pode copiar seu código existente clicando com o botão direito sobre ele 
 
 ![screenshot](band-duplicate-code.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 4: Fazendo um cantor { .activity .new-page }
 
@@ -153,7 +153,7 @@ Vamos adicionar um cantor a sua banda!
 
 + Clique no seu cantor para testar se ela canta quando clicado.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ##Desafio: Mudando a Fantasia de seu cantor { .challenge }
 Você pode fazer com que seu cantor pareça que está cantando quando você clicar nele? Se você precisar de ajuda, você pode usar as instruções para a criação de um tambor acima.
@@ -162,7 +162,7 @@ Você pode fazer com que seu cantor pareça que está cantando quando você clic
 
 Lembre-se de testar se o novo código funciona!
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ##Desafio: Faça a sua própria banda { .challenge }
 Use o que você aprendeu neste projeto para fazer a sua própria banda! Você pode criar qualquer instrumentos que você gosta, mas ouça os sons e instrumentos para ter algumas idéias.
@@ -181,7 +181,7 @@ Se você tiver um microfone você pode gravar os seus próprios sons, ou mesmo u
 
 ![screenshot](band-io.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 

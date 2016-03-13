@@ -159,7 +159,7 @@ Você pode programar o seu robô para decidir o que fazer baseado na resposta do
 
 	![screenshot](chatbot-face.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Desafio: Mais decisões { .challenge }
 
