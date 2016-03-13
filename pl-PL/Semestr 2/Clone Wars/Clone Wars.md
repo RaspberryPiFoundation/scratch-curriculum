@@ -197,7 +197,7 @@ Czy potrafisz dodać `życia` {.blockdata}, `punkty` {.blockdata}, albo nawet `n
 
 ## Zapisz swój projekt {.save}
 
-# Step 4: Owocowe nietoperze! { .activity }
+# Krok 4: Owocowe nietoperze! { .activity }
 
 Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój statek kosmiczny.
 
@@ -255,25 +255,25 @@ Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój 
 
 ## Zapisz swój projekt {.save}
 
-# Step 5: Game over { .activity }
+# Krok 5: Koniec gry { .activity }
 
-Let's add a 'game over' message at the end of the game.
+Dodajmy komunikat "Koniec gry".
 
 ## Zadania do wykonania {.check}
 
-+ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
++ Jeśli nie zrobiłeś tego wcześniej dodaj nową zmienną i nazwij ją `życia` {.blockdata}. Twój statek kosmiczny powinien zaczynać z 3 życiami i tracić po jednym kiedy zostanie trafiony przez wroga. Gra powinna się zakończyć, kiedy skończą ci się życia. Jeśli potrzebujesz pomocy możesz użyć kodu z projektu "Catch the Dots".
 
-+ Draw a new sprite called 'Game Over', using the text tool.
++ Narysuj nowego duszka "Koniec gry" używając narzędzia do pisania tekstu.
 
 	![screenshot](invaders-game-over.png)
 
-+ On your stage, broadcast a `game over` {.blockevents} message just before the game ends.
++ Nadaj wiadomość `koniec gry` {.blockevents} na scenie zaraz przed końcem gry.
 
 	```blocks
 		broadcast [game over v] and wait
 	```
 
-+ Add this code to your 'Game Over' sprite, so that the message shows at the end of the game:
++ Dodaj ten kod do duszka "Koniec gry", aby wiadomość pokazała się na końcu gry:
 
 	```blocks
 		when flag clicked
@@ -283,23 +283,23 @@ Let's add a 'game over' message at the end of the game.
 		show
 	```
 
-	Because you've used a `broadcast [game over] and wait` {.blockevents} block on your stage, it will wait for the 'Game Over' sprite to be displayed before ending the game.
+  Ponieważ na scenie użyłeś bloku `nadaj [koniec gry] i czekaj` {.blockevents}, gra poczeka, aż pojawi się duszek "Koniec gry" zanim gra się naprawdę zakończy.
 
-+ Test your game. How many points can you score? Can you think of ways to improve your game if it is too easy or too hard?
++ Przetestuj swoją grę. Ile punktów udało ci się zdobyć? Jak możesz udoskonalić grę, jeśli jest za prosta albo za trudna?
 
 ## Zapisz swój projekt {.save}
 
-## Challenge: Improve your game {.challenge}
-What improvements can you make to your game? Here are some ideas:
-+ Add health packs that you can collect to gain extra lives;
+## Wyzwanie: Usprawnij swoją grę {.challenge}
+Jakie ulepszenia możesz dodać do swojej gry? Oto kilka pomysłów:
++ dodaj apteczki, które możesz zbierać, aby zdobyć dodatkowe życia;
 
 ![screenshot](invaders-aid.png)
 
-+ Add floating rocks that your spaceship must avoid;
++ Dodaj ruchome skały, które statek kosmiczny musi omijać;
 
 ![screenshot](invaders-rocks.png)
 
-+ Make more enemies appear when your score gets to 100.
++ Kiedy zdobędziesz 100 punktów niech pojawia się wtedy więcej przeciwników.
 
 ```blocks
 	wait until <(score) = [100]>
