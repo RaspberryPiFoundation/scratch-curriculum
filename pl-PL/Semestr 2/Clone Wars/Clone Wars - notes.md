@@ -1,23 +1,23 @@
 ---
-title: Clone Wars — Notes for Club Leaders
-language: en-GB
+title: Clone Wars — Informacje dla prowadzącego
+language: pl-PL
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project children will learn how to make a game, in which the player controls a spaceship that can fire lightning bolts at enemies.
+#Wstęp
+Ten projekt uczy dzieci jak stworzyć grę, w której gracz poruszając statkiem kosmicznym może strzelać do przeciwników błyskawicami.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Zasoby
+Projekt do wykonania w programie Scratch 2. Program dostępny jest w wersji [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) oraz [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off).
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/46018140/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Gotowa wersja tego projektu jest dostępna <a href="http://scratch.mit.edu/projects/46018140/#editor">online</a>. Można ją też pobrać klikając na link "Pobierz materiały", które zawierają:
 
 + CloneWars.sb2
 
-#Learning Objectives
-+ This project consolidates learning of previous programming skills learnt, and demonstrates how sprites can create clones of _other_ sprites, and how multiple clones can be used as projectiles.
+#Cele dydaktyczne
++ Ten projekt ugruntowuje umiejętności kodowania zdobyte wcześniej i pokazuje jak duszki mogą tworzyć klony _innych_ duszków oraz jak używać wielu klonów jako pociski.
 
-#Challenges
-+ "Fixing the lightning" - using a `wait` {.blockcontrol} block to reduce the frequency of the lightning;
-+ "Lives and score" - creating `lives` {.blockdata}, `score` {.blockdata} and `highscore` {.blockdata} variables;
-+ "Improve your game" - adding extra enemies, health packs, etc.
+#Wyzwania
++ "Naprawianie błyskawicy" - użycie bloku `czekaj` {.blockcontrol} do zmniejszenia częstotliwości tworzenia błyskawic;
++ "Życia i punkty" - tworzenie zmiennych `życia` {.blockdata}, `punkty` {.blockdata} i `najlepszy wynik` {.blockdata};
++ "Usprawnij swoją grę" - dodawanie kolejnych przeciwników, apteczek itp.
