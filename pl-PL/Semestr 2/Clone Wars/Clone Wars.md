@@ -35,12 +35,12 @@ Zbudujmy statek kosmiczny, który będzie bronił Ziemi!
 + Dodaj kod, który przesunie statek w lewo, kiedy wciśniesz strzałkę w lewo. Będziesz do tego potrzebował takich bloków:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [left arrow v] pressed?> then
-				change x by (-4)
-			end
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           jeżeli <klawisz [strzałka w lewo v] naciśnięty?> to
+              zmień x o (-4)
+           koniec
+        koniec
 	```
 
 + Dodaj kod, który przesunie statek w prawo, kiedy wciśniesz strzałkę w prawo.
@@ -62,31 +62,31 @@ Dodajmy statkowi kosmicznemu możliwość strzelania błyskawicami!
 + Na początku gry błyskawica powinna być ukryta. Pokażemy ją dopiero wtedy, kiedy statek kosmiczny wystrzeli ze swoich laserowych działek.
 
 	```blocks
-		when flag clicked
-		hide
+		kiedy kliknięto zieloną flagę
+        ukryj
 	```
 
 + Dodaj poniższy kod **do statku kosmicznego**, by utworzyć nową błyskawicę za każdym razem, kiedy wciśnięta zostanie spacja.
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [space v] pressed?> then
-				create clone of [Lightning v]
-			end
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           jeżeli <klawisz [spacja v] naciśnięty?> to
+              sklonuj [Lightning v]
+           koniec
+        koniec
 	```
 
 + Kiedy nowy klon zostanie stworzony powinien ustawić się w tym miejscu, gdzie znajduje się statek kosmiczny. Następnie powinien poruszać się w górę sceny dopóki nie dotknie krawędzi. Dodaj poniższy kod **do błyskawicy**:
 
 	```blocks
-		when I start as a clone
-		go to [Spaceship v]
-		show
-		repeat until <touching [edge v] ?>
-			change y by (10)
-		end
-		delete this clone
+		kiedy zaczynam jako klon
+        idź do [Spaceship v]
+        pokaż
+        powtarzaj aż <dotyka [krawędź v]?>
+           zmień y o (10)
+        koniec
+        usuń tego klona
 	```
 
   Uwaga: ustawiamy nowy klon błyskawicy na pozycję statku kosmicznego kiedy jeszcze błyskawica jest ukryta, przed jej pokazaniem. Dzięki temu gra będzie lepiej wyglądać.
@@ -113,8 +113,8 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 + Ustaw mu styl obrotów tak, aby obracał się tylko w prawo i w lewo. Dodaj mu też poniższy kod, aby ukryć go na początku gry:
 
 	```blocks
-		when flag clicked
-		hide
+		kiedy kliknięto zieloną flagę
+        ukryj
 	```
 
 + Stwórz nową zmienną tylko dla tego duszka i nazwij ją `prędkość` {.blockdata}.
@@ -128,29 +128,29 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 + Poniższy kod utworzy nowego kosmo-hipcia co kilka sekund. Dodaj ten kod **do sceny**:
 
 	```blocks
-		when flag clicked
-		forever
-			wait (pick random (2) to (4)) secs
-			create clone of [Hippo1 v]
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           czekaj (losuj od (2) do (4)) s
+           sklonuj [Hippo1 v]
+        koniec
 	```
 
 + Niech każdy nowy klon kosmo-hipcia na początku porusza się po scenie (z losową prędkością) tak długo, aż nie zostanie zestrzelony przez błyskawicę. Dodaj poniższy kod **do kosmo-hipcia**:
 
 	```blocks
-		when I start as a clone
-		set [speed v] to (pick random (2) to (4))
-		go to x: (pick random (-220) to (220)) y: (150)
-		show
-		repeat until <touching [lightning v] ?>
-			move (speed) steps
-			turn right (pick random (-10) to (10)) degrees
-			if on edge, bounce
-		end
-		delete this clone
+		kiedy zaczynam jako klon
+        ustaw [prędkość v] na (losuj od (2) do (4))
+        idź do x:(losuj od (-220) do (220)) y:(150)
+        pokaż
+        powtarzaj aż <dotyka [lightning v]?>
+           przesuń o (prędkość) kroków
+           obróć w prawo o (losuj od (-10) do (10)) stopni
+           jeżeli na brzegu, odbij się
+        koniec
+        usuń tego klona
 	```
 
-+ Przetestuj kod kosmo-hipcia. Co kilka sekund powinien pokazywać się nowy klon kosmo-hipcia, a każdy z nich powinien posuszać się ze swoją prędkością.
++ Przetestuj kod kosmo-hipcia. Co kilka sekund powinien pokazywać się nowy klon kosmo-hipcia, a każdy z nich powinien poruszać się ze swoją prędkością.
 
 	![screenshot](invaders-hippo-test.png)
 
@@ -160,21 +160,21 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 
 	![screenshot](invaders-spaceship-costumes.png)
 
-  Kostium "trafiony" można wykonać importując z biblioteki Scratcha obrazek "sun" (słońce), a następnie używając narzędzia "Wypełnij kształt", aby zmienić jego kolor.
+  Kostium "trafiony" można wykonać importując z biblioteki Scratcha obrazek "sun" (Słońce), a następnie używając narzędzia "Wypełnij kształt", aby zmienić jego kolor.
 
 	![screenshot](invaders-sun.png)
 
 + Dodaj ten kod do swojego statku, aby zmienił kostium kiedy tylko zostanie uderzony przez kosmo-hipcia:
 
 	```blocks
-		when flag clicked
-		forever
-			switch costume to [normal v]
-			wait until <touching [Hippo1 v]>?
-			switch costume to [hit v]
-			broadcast [hit v]
-			wait (1) secs
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           zmień kostium na [normalny v]
+           czekaj aż <dotyka [Hippo1 v]?>
+           zmień kostium na [trafiony v]
+           nadaj [trafiony v]
+           czekaj (1) s
+        koniec
 	```
 
 + Czy zauważyłeś, że wysyłasz wiadomość "trafiony" w kodzie powyżej? Możesz użyć tej wiadomości, aby ukryć wszystkie kosmo-hipcie, kiedy statek zostanie trafiony przez jednego z nich.
@@ -182,8 +182,8 @@ Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały znisz
 	Dodaj poniższy kod do kosmo-hipcia:
 
 	```blocks
-		when I receive [hit v]
-		delete this clone
+		kiedy otrzymam [trafiony v]
+        usuń tego klona
 	```
 
 + Przetestuj ten kod - uruchom nową grę i pozwól, aby uderzył cię kosmo-hipcio.
@@ -220,35 +220,35 @@ Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój 
 + Do nietoperza dodaj kod, który utworzy nowy klon pomarańczy co kilka sekund.
 
 	```blocks
-		when flag clicked
-		forever
-			wait (pick random (5) to (10)) secs
-			create clone of [Orange v]
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           czekaj (losuj od (5) do (10)) s
+           sklonuj [Orange v]
+        koniec
 	```
 
-+ Kliknij na pomaranczę i dodaj ten kod, aby każdy klon spadał na scenie od nietoperza w kierunku statku kosmicznego:
++ Kliknij na pomarańczę i dodaj ten kod, aby każdy klon spadał na scenie od nietoperza w kierunku statku kosmicznego:
 
 	```blocks
-		when flag clicked
-		hide
-
-		when I start as a clone
-		go to [Bat1 v]
-		show
-		repeat until <touching [edge v]?
-			change y by (-4)
-		end
-		delete this clone
-
-		when I receive [hit v]
-		delete this clone
+		kiedy kliknięto zieloną flagę
+        ukryj
+        
+        kiedy zaczynam jako klon
+        idź do [Bat1 v]
+        pokaż
+        powtarzaj aż <dotyka [krawędź v]?>
+           zmień y o (-4)
+        koniec
+        usuń tego klona
+        
+        kiedy otrzymam [trafiony v]
+        usuń tego klona
 	```
 
 + Musisz teraz zmienić swój kod w statku kosmicznym, aby został trafiony, kiedy dotknie albo kosmo-hipcia albo pomarańczy:
 
 	```blocks
-		wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
+		czekaj aż <<dotyka [Hippo1 v]?> lub <dotyka [Orange v]?>>
 	```
 
 + Przetestuj swoją grę. Co się stanie kiedy w statek uderzy pomarańcza?
@@ -270,17 +270,17 @@ Dodajmy komunikat "Koniec gry".
 + Nadaj wiadomość `koniec gry` {.blockevents} na scenie zaraz przed końcem gry.
 
 	```blocks
-		broadcast [game over v] and wait
+		nadaj [koniec gry v] i czekaj
 	```
 
 + Dodaj ten kod do duszka "Koniec gry", aby wiadomość pokazała się na końcu gry:
 
 	```blocks
-		when flag clicked
-		hide
-
-		when I receive [game over v]
-		show
+		kiedy kliknięto zieloną flagę
+        ukryj
+        
+        kiedy otrzymam [koniec gry v]
+        pokaż
 	```
 
   Ponieważ na scenie użyłeś bloku `nadaj [koniec gry] i czekaj` {.blockevents}, gra poczeka, aż pojawi się duszek "Koniec gry" zanim gra się naprawdę zakończy.
@@ -299,10 +299,10 @@ Jakie ulepszenia możesz dodać do swojej gry? Oto kilka pomysłów:
 
 ![screenshot](invaders-rocks.png)
 
-+ Kiedy zdobędziesz 100 punktów niech pojawia się wtedy więcej przeciwników.
++ Po zdobyciu 100 punktów niech pojawia się więcej przeciwników.
 
 ```blocks
-	wait until <(score) = [100]>
+	czekaj aż <(punkty) = [100]>
 ```
 
 ## Zapisz swój projekt {.save}
