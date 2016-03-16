@@ -5,7 +5,7 @@ embeds: "*.png"
 ...
 
 #Introdução:
-Neste projeto, as crianças aprenderão como transmitir mensagens entre atores.
+Neste projeto as crianças aprenderão como transmitir mensagens entre atores.
 
 #Recursos
 Para este projeto, o Scratch 2 deve ser usado. O Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.

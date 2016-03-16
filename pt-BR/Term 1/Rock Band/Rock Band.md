@@ -20,7 +20,7 @@ Neste projeto você vai aprender como codificar os seus próprios instrumentos m
 
 Antes que você possa começar a animar você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Primeiro, abra o editor do Scratch. Você pode encontrar o editor Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. A aparência é como esta:
 
@@ -54,7 +54,7 @@ Você pode, em seguida, clicar em "Arquivo" e depois "Salvar agora" para salvar 
 
 O __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco ("stage")!
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + No momento, o palco é branco e parece muito chato! Vamos adicionar um pano de fundo para o palco, clicando 'Escolher pano de fundo da biblioteca'.
 
@@ -72,7 +72,7 @@ O __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. 
 
 Vamos codificar seu tambor para fazer um som quando é batido.
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Você pode encontrar os blocos de código na aba 'Scripts' e todos eles são codificados por cores! 
 
@@ -130,7 +130,7 @@ Você pode copiar seu código existente clicando com o botão direito sobre ele 
 
 Vamos adicionar um cantor a sua banda!
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Adicionar mais 2 sprites para o seu stage; um cantor e um microfone.
 

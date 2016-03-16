@@ -20,7 +20,7 @@ Você vai aprender a programar sua própria animação!
 
 Vamos fazer uma nave espacial que voa em direção à Terra!
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Inicie um novo projecto Scratch e apague o sprite do gato para que seu projeto fique vazio. Você pode encontrar o editor do Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -75,7 +75,7 @@ Você precisará alterar os números neste bloco:
 
 Outra maneira de animar a nave espacial é dizer para ela se mover uma pequena quantidade, várias vezes.
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Apague o bloco `slide` {.blockmotion} do seu código, clicando com o botão direito sobre o bloco e 'apagar'. Você também pode apagar o código arrastando-o de volta para a área de blocos de código
 
@@ -113,7 +113,7 @@ Outra maneira de animar a nave espacial é dizer para ela se mover uma pequena q
 
 Vamos adicionar um macaco para sua animação que está perdido no espaço! 
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Comece adicionando o sprite de macaco da biblioteca.
 
@@ -142,7 +142,7 @@ Vamos adicionar um macaco para sua animação que está perdido no espaço!
 
 Vamos adicionar algumas pedras do espaço em sua animação.
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Adicione um sprite 'rock' para a sua animação.
 
@@ -165,7 +165,7 @@ Vamos adicionar algumas pedras do espaço em sua animação.
 
 Vamos combinar loops para fazer uma estrela brilhante.
 
-## Checklist do atividade { .check }
+## Lista de Atividades { .check }
 
 + Adicionar o sprite "Star" para a sua animação
 
