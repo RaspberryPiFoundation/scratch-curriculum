@@ -18,7 +18,7 @@ Você vai aprender a fazer um jogo, no qual você usará o mouse para navegar um
 
 # Passo 1: Planejando o seu jogo { .activity }
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Comece um novo projeto Scratch, e delete o ator gato para que seu projeto fique vazio. Você pode encontrar o editor online do Scratch clicando em Criar em <a href="http://scratch.mit.edu">scratch.mit.edu</a>. Caso o site não esteja em português, peça ajuda para o instrutor!
 
@@ -32,7 +32,7 @@ Você vai aprender a fazer um jogo, no qual você usará o mouse para navegar um
 
 # Passo 2: Controlando o barco { .activity .new-page}
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Se seu líder de clube lhe deu a pasta 'Recursos', clique em 'Carregar traje a partir de arquivo' e adicione a imagem 'barco.png'. Você deve encolher o ator e colocá-lo na sua posição inicial.
 
@@ -70,7 +70,7 @@ Você vai aprender a fazer um jogo, no qual você usará o mouse para navegar um
 
 Seu barco pode velejar através das barreiras de madeira! Vamos corrigir isso.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Você precisará de 2 fantasias para seu barco, uma fantasia normal, e uma para quando o barco colidir. Duplique a fantasia do seu barco, e as nomeie como 'normal' e 'atingido'.
 
@@ -123,7 +123,7 @@ Você pode adicionar efeitos sonoros para seu jogo, para quando o barco colidir,
 
 Vamos adicionar um cronômetro no seu jogo, de modo que o jogador tenha que chegar à ilha deserta o mais rápido possível.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Adicione uma nova variável chamada `tempo` {.blockdata} para seu palco. Você também pode mudar a exibição de sua nova variável. Se você precisar de ajuda, olhe o projeto 'Balões'.
 
@@ -150,7 +150,7 @@ Vamos adicionar um cronômetro no seu jogo, de modo que o jogador tenha que cheg
 
 Este jogo é de _longe_ muito fácil - vamos adicionar coisas para torná-lo mais interessante.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Primeiro vamos adicionar alguns 'aceleradores' no seu jogo, que irão aumentar a velocidade do barcos. Edite seu plano de fundo e adicione algumas flechas brancas, como se fossem correntes de água para impulsionar o seu barco.
 
@@ -263,3 +263,4 @@ Você pode criar cenários adicionais e permitir que o jogador escolha entre ní
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
 This project was translated by Leonardo Nerone and Luis Moneda. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+

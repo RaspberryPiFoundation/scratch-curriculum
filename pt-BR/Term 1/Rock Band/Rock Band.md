@@ -16,11 +16,11 @@ Neste projeto você vai aprender como codificar os seus próprios instrumentos m
   <img src="band-final.png">
 </div>
 
-# Passo 1: Sprites (Fantasias) { .activity }
+# Passo 1: Atores (Sprites) { .activity }
 
 Antes que você possa começar a animar você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Primeiro, abra o editor do Scratch. Você pode encontrar o editor Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. A aparência é como esta:
 
@@ -34,7 +34,7 @@ Antes que você possa começar a animar você precisa adicionar uma 'coisa' para
 
 	![screenshot](band-sprite-library.png)
 
-+ Role para baixo até ver um sprite com um tambor. Clique no tambor e clique 'OK' para adicioná-lo ao seu projeto.
++ Role para baixo até ver um tambor. Clique no tambor e em 'OK' para adicioná-lo ao seu projeto.
 
 	![screenshot](band-sprite-drum.png)
 
@@ -44,7 +44,7 @@ Antes que você possa começar a animar você precisa adicionar uma 'coisa' para
 
 ## Salve seu projeto { .save }
 
-Dê a seu programa um nome, digitando o nome na caixa de texto acima do 'stage'.
+Dê a seu programa um nome, digitando o nome na caixa de texto acima do 'cenário'.
 
 Você pode, em seguida, clicar em "Arquivo" e depois "Salvar agora" para salvar seu projeto.
 
@@ -52,9 +52,9 @@ Você pode, em seguida, clicar em "Arquivo" e depois "Salvar agora" para salvar 
 
 # Passo 2: área de Atuação { .activity }
 
-O __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco ("stage")!
+O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco ("stage")!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + No momento, o palco é branco e parece muito chato! Vamos adicionar um pano de fundo para o palco, clicando 'Escolher pano de fundo da biblioteca'.
 
@@ -72,11 +72,11 @@ O __stage__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. 
 
 Vamos codificar seu tambor para fazer um som quando é batido.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Você pode encontrar os blocos de código na aba 'Scripts' e todos eles são codificados por cores! 
 
-	Clique no sprite tambor e em seguida arraste estes 2 blocos na área do código à direita. Verificar se eles estão ligados entre si (como blocos de Lego):
+	Clique no tambor e em seguida arraste estes 2 blocos na área do código à direita. Verificar se eles estão ligados entre si (como blocos de Lego):
 
 	![screenshot](band-code.png)
 
@@ -117,7 +117,7 @@ Vamos codificar seu tambor para fazer um som quando é batido.
 + Você também pode fazer um som quando a barra de espaço é pressionada? Você vai precisar usar este bloco `Eventos` {.blockevents}:
 
 ```blocks
-	quando a tecla [espaço v] for pressionada
+	quando pressionar tecla [espaço v]
 ```
 
 Você pode copiar seu código existente clicando com o botão direito sobre ele e clique 'duplicar'.
@@ -130,7 +130,7 @@ Você pode copiar seu código existente clicando com o botão direito sobre ele 
 
 Vamos adicionar um cantor a sua banda!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Adicionar mais 2 sprites para o seu stage; um cantor e um microfone.
 
@@ -147,8 +147,8 @@ Vamos adicionar um cantor a sua banda!
 + Agora que foi adicionado o som, você pode adicionar este código ao seu cantor:
 
 	```blocks
-		Quando alguém clicar em ti
-        toca o som [singer1 v] até terminar
+		quando este ator for clicado
+		toque o som [singer 1v] até o fim
 	```
 
 + Clique no seu cantor para testar se ela canta quando clicado.

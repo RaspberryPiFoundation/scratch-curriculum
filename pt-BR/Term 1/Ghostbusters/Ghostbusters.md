@@ -21,7 +21,7 @@ Você fará um jogo de caça fantasmas!
 
 # Passo 1: Animando um fantasma { .activity }
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Comece um novo projeto Scratch, e delete o ator gato para que seu projeto fique vazio. Você pode encontrar o editor online do Scratch aqui <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -49,7 +49,7 @@ Você fará um jogo de caça fantasmas!
 
 É muito fácil pegar seu fantasma, porque ele não se move!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Ao invés de ficar na mesma posição, você pode deixar o Scratch escolher coordenadas x e y aleatoriamente. Acrescente um bloco `vá para` {.blockmotion} ao código do seu fantasma, ele vai ficar assim:
 
@@ -58,7 +58,7 @@ Você fará um jogo de caça fantasmas!
 		sempre
 			esconda
 			espere (1) seg
-			vá para x:(escolha número entre (-150) e (150)) y:(escolha número entre (-150) e (150))
+			vá para x:(número aleatório entre (-150) e (150)) y:(número aleatório entre (-150) e (150))
 			mostre
 			espere (1) seg
 		end		
@@ -99,7 +99,7 @@ Você consegue fazer um som cada vez que o fantasma é pego?
 
 Vamos deixar o jogo mais interessante mantendo um placar.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Para manter o placar dos jogadores, você precisa de um local para armazenar esta informação. Uma __variável__ é o local onde armazenamos dados que podem mudar, por exemplo, nosso placar.
 
@@ -150,10 +150,10 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 
 	```blocks
 		quando clicar em ⚑
-		mude [time v] para [10]
-		repita até que <(time) = [0]>
+		mude [tempo v] para [10]
+		repita até que <(tempo) = [0]>
 			espere (1) seg
-			adicione a [time v] (-1)
+			adicione a [tempo v] (-1)
 		end
 		pare [todos v]
 	```

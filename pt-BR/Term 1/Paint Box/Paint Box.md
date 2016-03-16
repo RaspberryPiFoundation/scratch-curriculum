@@ -20,7 +20,7 @@ Neste projeto, você irá fazer seu próprio programa de pintura!
 
 Vamos começar criando um lápis, que pode ser usado para desenhar no palco.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Comece um novo projeto Scratch, e delete o ator gato de forma que seu projeto fique vazio. Você pode encontrar o editor online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -75,7 +75,7 @@ Vamos começar criando um lápis, que pode ser usado para desenhar no palco.
 
 Vamos adicionar diferentes cores de lápis para seu projeto, e permitir que o usuário escolha entre elas!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Clique no ator lápis, clique em 'Fantasias' e duplique a fantasia 'lapis-azul'.
 
@@ -151,7 +151,7 @@ Vamos adicionar diferentes cores de lápis para seu projeto, e permitir que o us
 
 Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our project!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Let's add a button to clear the stage. To do this, add the 'X-block' letter sprite to the stage, and colour it in red.
 
@@ -212,7 +212,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 Vamos permitir o usuário desenhar usando diverso tamanhos diferentes de lápis.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Primeiro, adicione uma nova variável chamada 'largura'. Se você não tiver certeza de como fazer isso, o projeto 'Balloons' ajudará você.
 
