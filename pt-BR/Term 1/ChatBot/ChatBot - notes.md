@@ -8,9 +8,10 @@ embeds: "*.png"
 Neste projeto crianças vão aprender como usar a estrutura 'if' para tomar decisões em seus programas.
 
 #Recursos:
-Para este projeto Scratch 2 deve ser usado. Scratch 2 pode ser online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) para uso offline.
+Para este projeto, o Scratch 2 deve ser usado. O Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-Você encontra uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, ou pode ser baixado clicando no link 'Download Project Materials' deste projeto onde contém:
+Você encontra uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, ou pode ser baixado clicando no link 'Baixar materiais do projeto' deste projeto onde contém:
+
 
 + ChatBot.sb2
 

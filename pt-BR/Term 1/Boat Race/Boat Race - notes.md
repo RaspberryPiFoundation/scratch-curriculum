@@ -8,9 +8,9 @@ embeds: "*.png"
 Neste projeto, as crianças aprenderão como atores podem sentir o ambiente.
 
 #Recursos
-Para este projeto, o Scratch 2 deverá ser usado. O Scratch 2 também pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado em [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
+Para este projeto, o Scratch 2 deve ser usado. O Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-Você pode encontrar uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/63957956/#editor">online</a>, ou ele pode ser baixado clicando no link 'Download Project Materials' para este projeto, o qual contém:
+Você encontra uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/63957956/#editor">online</a>, ou pode ser baixado clicando no link 'Baixar materiais do projeto' deste projeto onde contém:
 
 + BoatRace.sb2
 

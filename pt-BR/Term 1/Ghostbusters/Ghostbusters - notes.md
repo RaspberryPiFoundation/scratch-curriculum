@@ -8,9 +8,9 @@ embeds: "*.png"
 Neste projeto as crianças vão aprender a usar variáveis para armazenar dados em seus programas.
 
 #Recursos
-Para este projeto, Scratch 2 deve ser usado. Scratch 2 pode ser usado online neste link [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado daqui [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
+Para este projeto, o Scratch 2 deve ser usado. O Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-Aqui você pode encontrar a versão final deste projeto  <a href="http://scratch.mit.edu/projects/60787262/#editor">online</a>, ou ele pode ser baixado clicando no link 'Download Project Materials' deste projeto, que conterá:
+Você encontra uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/60787262/#editor">online</a>, ou pode ser baixado clicando no link 'Baixar materiais do projeto' deste projeto onde contém:
 
 + Ghostbusters.sb2
 
