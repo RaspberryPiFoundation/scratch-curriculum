@@ -20,27 +20,27 @@ Naučíte se jak vytvořit hru, ve které budete používat myš k navigaci loď
 
 ## Seznam úkolů { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Vytovřte nový projekt a smažte kočičku, takže váš projekt bude prázdný. Online editor můžete nalézt zde: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Click on your stage backdrop and plan out your level. You should add:
-	+ Wood that your boat has to avoid;
-	+ A desert island that your boat has to get to.
++ Naplánujte si váš level hry. Klikněte na "Stage backdrop". Měli byste přidat:
+	+ Dřevo, kterému se bude loďka vyhýbat;
+	+ Opuštěný ostrov, na kterém má loďka přistát.
 
-	Here's how your game could look:
+	Tady je obrázek jak by měla vaše hra vypadat:
 
 	![screenshot](boat-bg.png) 
 
-# Step 2: Controlling the boat { .activity }
+# Step 2: Ovládání loďky { .activity }
 
 ## Activity Checklist { .check }
 
-+ If your club leader has given you a 'Resources' folder, click 'Upload sprite from file' and add the 'boat.png' image. You should shrink the sprite and put it in it's starting position.
++ Pokud vám dal vedoucí klubu adresář se soubory, klikněte na  'Upload sprite from file' a vyberte obrázek 'boat.png'. Měli byste zmenšit obrázek a vložit ho na startovní pozici.
 
 	![screenshot](boat-boat.png)
 
-	If you don't have the boat.png image, you can draw your own boat instead!
+	Pokud obrázek nemáte, můžete si loďku nakreslit!
 
-+ You are going to control the boat with your mouse. Add this code to your boat:
++ Abyste mohli ovládat loďku myší, přidejte tento kód:
 
 	```blocks
 		when flag clicked
@@ -52,13 +52,13 @@ Naučíte se jak vytvořit hru, ve které budete používat myš k navigaci loď
 		end
 	```
 
-+ Test out your boat, by clicking the flag and moving the mouse. Does the boat sail towards the mouse?
++ Otestujte loďku tak, že kliknete na zelenou vlaječku a hýbejte myší. Plave loďka za myší?
 
 	![screenshot](boat-mouse.png)
 
-+ What happens if the boat reaches the mouse pointer?
++ Co se stane, když loďka doplave ke kurzoru myši?
 
-	To stop this happening, you'll need to add an `if` {.blockcontrol} block to your code, so that the boat only moves if it is more than 5 pixels away from the mouse.
+	Abyste tomuto chování zabránili musíte přidat blok `if` {.blockcontrol} , tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
 
 	![screenshot](boat-pointer.png)	
 
