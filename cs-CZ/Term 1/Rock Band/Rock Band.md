@@ -18,7 +18,7 @@ V tomto projektu se naučíš jak naprogramovat vlastní hudební nástroje!
 
 # Step 1: Objekty - sprajty { .activity }
 
-Před tím, než začneš oživovat objekty, musíš nějaké přidat. Ve Scratchi se tyto objekty nazývaji __sprites__ (sprajty). 
+Před tím, než začneš oživovat objekty, musíš nějaké přidat. Ve Scratchi se tyto objekty nazývají __sprajty__ (sprites). 
 
 ## Seznam úkolů { .check }
 
@@ -98,19 +98,19 @@ Naprogramujeme buben aby vydával zvuk, když na něj klikneš.
 
 	![screenshot](band-drum-name.png)
 
-+ nyní máš pro buben dva různé kostýmy a můžeš s vybrat, který se zobrazí. Přidej tyto dva bloky kódu k bubnu:
++ Nyní máš pro buben dva různé kostýmy a můžeš s vybrat, který se zobrazí. Přidej tyto dva bloky kódu k bubnu:
 
 	![screenshot](band-looks.png)
 
 	Bloky pro změnu kostýmu najdeš v sekci `Looks` {.blocklooks} section.
 
-+ Vyzkoušej buben Test your drum. Po kliknutí by měl měnit vzhled a hrát.
++ Vyzkoušej buben. Po kliknutí by měl měnit vzhled a hrát.
 
 ## Ulož projekt { .save }
 
 ##Výzva: Vylepšení bubnu { .challenge }
 
-+ Zkusíš zmenit zvuk který buben vydává??
++ Zkusíš změnit zvuk který buben vydává??
 
 ![screenshot](band-drum-sound.png)
 
@@ -177,7 +177,7 @@ Tak jak používáš existující sprajty, můžes si nakreslit vlastní.
 
 ![screenshot](band-draw.png)
 
-Pokud máš mirkofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spoštění nástrojů!
+Pokud máš mirkofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spouštění nástrojů!
 
 ![screenshot](band-io.png)
 
