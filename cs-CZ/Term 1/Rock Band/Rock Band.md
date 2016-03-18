@@ -26,7 +26,7 @@ Před tím, než začneš oživovat objekty, musíš nějaké přidat. Ve Scratc
 
 	![screenshot](band-scratch.png)
 
-+ Postava kočky, kterou vidíš je maskot Scratche. Té se pro tentokrát zbavíš tak, že na ni klikneš pravým tlačítkem a klikneš na 'delete'.
++ Postava kočky, kterou vidíš je maskot Scratche. Té se pro tentokrát zbavíš tak, že na ni klikneš pravým tlačítkem a klikneš na 'smazat'.
 
 	![screenshot](band-delete.png)
 
