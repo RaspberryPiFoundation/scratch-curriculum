@@ -125,7 +125,7 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 
 ## Seznam úkolů { .check }
 
-+ Přidej proměnnou nazvanou `time` {.blockdata} na stage. Můžeš také změnit její vzhled, pokud chceš vědět jak, podívejte se na projekt 'Balónky'.
++ Přidej proměnnou nazvanou `time` {.blockdata} na stage. Můžeš také změnit její vzhled, pokud chceš vědět jak, podívejte se na projekt 'Lovci duchů'.
 
 	![screenshot](boat-variable.png)
 
