@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Úvod { .intro }
 
-Dnes se naučíě jak dělat svoje animace!
+Dnes se naučíš, jak dělat svoje animace!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe>
@@ -22,7 +22,7 @@ Pojďme udělat raketu, která letí k zemi!
 
 ## Seznam úkolů { .check }
 
-+ Vytvoř nový Scratch projekte a vymaž sprajt kočky tak, aby byl prázdný. Scratch Editor najdeš tady <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Vytvoř nový Scratch projekt a vymaž sprajt kočky tak, aby byl prázdný. Scratch Editor najdeš tady <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Přidej sprajty 'Spaceship' a 'Earth' na scénu. Také můžeš přidat kulisu hvězd - 'Stars'. Takhle by měla tvoje scéna vypadat:
 
@@ -54,7 +54,7 @@ Pojďme udělat raketu, která letí k zemi!
 
 	![screenshot](space-coordinates.png)
 
-+ Vyzkoušej si animaci kliknutímna zelenou vlajku.
++ Vyzkoušej si animaci kliknutím na zelenou vlajku.
 
 	![screenshot](space-flag.png)
 
@@ -73,7 +73,7 @@ Musíš změnit tato čísla v blocích:
 
 # Step 2: Animace pomocí cyklů { .activity .new-page }
 
-Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kouscích víckrát zasebou.
+Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kouscích víckrát za sebou.
 
 ## Seznam úkolů { .check }
 
@@ -101,7 +101,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 	![screenshot](space-size.png)
 
-+ Otestuj animaci.Co se stane, když klikneš na vlaječku podruhé? Startuje raketa ve správné velikosti? Použij tento blok abys to opravil(a):
++ Otestuj animaci. Co se stane, když klikneš na vlaječku podruhé? Startuje raketa ve správné velikosti? Použij tento blok abys to opravil(a):
 
 	```scratch
 	set size to (100) %
