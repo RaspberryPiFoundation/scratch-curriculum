@@ -1,7 +1,7 @@
 ---
 title: Balloons
 level: Scratch 1
-language: en-GB
+language: cs-CZ
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]

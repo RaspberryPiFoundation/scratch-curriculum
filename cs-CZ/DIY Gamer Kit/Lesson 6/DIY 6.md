@@ -1,7 +1,7 @@
 ---
 title: Create a character and make it move
 level: DIY Gamer Kit
-language: en-GB
+language: cs-CZ
 stylesheet: scratch
 embeds: ["*.png"]
 ...

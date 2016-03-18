@@ -1,6 +1,6 @@
 ---
 title: Lesson 2 - Notes for Club Leader
-language: en-GB
+language: cs-CZ
 embeds: ["*.png"]
 materials: [""]
 ...

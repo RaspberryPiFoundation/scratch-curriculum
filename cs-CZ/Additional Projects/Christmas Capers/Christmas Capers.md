@@ -1,7 +1,7 @@
 ---
 title: Christmas Capers
 level: Scratch +
-language: en-GB
+language: cs-CZs
 stylesheet: scratch
 embeds: "*.png"
 materials: ["*.sb2", "Resources/*"]

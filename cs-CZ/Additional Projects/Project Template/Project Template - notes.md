@@ -1,6 +1,6 @@
 ---
 title: Project Template — Notes for Club Leaders
-language: en-GB
+language: cs-CZ
 embeds: "*.png"
 ...
 

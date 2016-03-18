@@ -1,14 +1,14 @@
 ---
 title: Ghostbusters
 level: Scratch 1
-language: en-GB
+language: cs-CZ
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
 ## Note: { .challenge .pdf-hidden }
-The 'Balloons' project has been moved to the [Additional Scratch Projects](http://projects.codeclub.org.uk/en-GB/03_scratch_bonus/index.html) section.
+The 'Balloons' project has been moved to the [Additional Scratch Projects](http://projects.codeclub.org.uk/cs-CZ/03_scratch_bonus/index.html) section.
 
 # Introduction { .intro }
 

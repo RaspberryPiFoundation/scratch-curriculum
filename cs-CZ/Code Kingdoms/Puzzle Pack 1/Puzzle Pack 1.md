@@ -1,7 +1,7 @@
 ---
 title: Puzzle Pack 1
 level: Code Kingdoms
-language: en-GB
+language: cs-CZ
 stylesheet: scratch
 embeds: ["*.png", "CK_Help1.pdf"]
 ...

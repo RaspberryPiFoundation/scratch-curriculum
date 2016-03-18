@@ -1,6 +1,6 @@
 ---
 title: Brain Game — Notes for Club Leaders
-language: en-GB
+language: cs-CZ
 embeds: "*.png"
 ...
 

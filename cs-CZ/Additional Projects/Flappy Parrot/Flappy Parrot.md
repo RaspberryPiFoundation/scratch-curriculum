@@ -1,7 +1,7 @@
 ---
 title: Flappy Parrot
 level: Scratch +
-language: en-GB
+language: cs-CZ
 stylesheet: scratch
 embeds: "*.png"
 materials: "*.sb2"

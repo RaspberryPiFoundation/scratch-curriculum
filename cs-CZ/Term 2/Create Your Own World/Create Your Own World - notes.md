@@ -1,6 +1,6 @@
 ---
 title: Create Your Own World — Notes for Club Leaders
-language: en-GB
+language: cs-CZ
 embeds: "*.png"
 ...
 

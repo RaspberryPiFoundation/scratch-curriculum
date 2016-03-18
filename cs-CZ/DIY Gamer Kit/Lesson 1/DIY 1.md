@@ -1,7 +1,7 @@
 ---
 title: What is the DIY Gamer?
 level: DIY Gamer Kit
-language: en-GB
+language: cs-CZ
 stylesheet: scratch
 embeds: ["*.png"]
 ...

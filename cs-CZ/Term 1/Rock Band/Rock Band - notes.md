@@ -1,6 +1,6 @@
 ---
 title: Rock Band — Notes for Club Leaders
-language: en-GB
+language: cs-CZ
 embeds: "*.png"
 ...
 
