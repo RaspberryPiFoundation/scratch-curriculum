@@ -1,5 +1,5 @@
 ---
-title: Paint Box
+title: Kreslící program
 level: Scratch 1
 language: cs-CZ
 stylesheet: scratch
@@ -9,34 +9,34 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 # Introduction { .intro }
 
-In this project, you will be making your own paint program!
+V této lekci se naučíš vytvořit si vlastní kreslící program!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
   <img src="paint-final.png">
 </div>
 
-# Step 1: Making a pencil { .activity }
+# Krok 1: Tužka { .activity }
 
-Let's start by making a pencil, that can be used to draw on the stage.
+Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Vytvoř si nový projekt a smaž kočičku, takže tvůj projekt bude prázdný. Online editor můžeš nalézt zde: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Add the pencil sprite to your project.
++ Přidej sprajt s tužkou do projektu
 
 	![screenshot](paint-pencil.png) 
 
-+ Click 'Costumes', and delete the 'pencil-b' costume.
++ Klikni 'Costumes', a vymaž kostým 'pencil-b'.
 
 	![screenshot](paint-pencil-delete.png) 
 
-+ Rename your costume 'pencil-blue', and use the 'Color a shape' tool to make the pencil blue. 
++ Přejmenuj kostým na 'pencil-blue' a použij nástroj 'Color a shape' na vybarvení tužky na modro. 
 
 	![screenshot](paint-pencil-blue.png) 
 
-+ As you'll be using the mouse to draw, you'll want the pencil to follow the mouse `forever` {.blockcontrol}. Add this code to your pencil sprite:
++ Protože budeš používat myš na kreslení, chceš aby tužka následovala myš navždy = `forever` {.blockcontrol}. Přidej tento kód k tužce:
 
 	```blocks
 		when flag clicked
@@ -45,68 +45,68 @@ Let's start by making a pencil, that can be used to draw on the stage.
 		end
 	```
 
-+ Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?
++ Zkus kód kliknutím na zelenou vlakku a pohybováním myši na scéně. Funguje jak jsi čekal?
 
-+ Have you noticed that it's the centre of the pencil, and not the tip, that follows the mouse pointer?
++ Všiml sis, že myš nesleduje tuha ale střed tužky?
 
 	![screenshot](paint-center.png)
 
-	To fix this, click on the 'pencil-blue' costume of your pencil sprite, and click 'Set costume center'.
+	Abys to spravil, klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Set costume center'.
 
 	![screenshot](paint-center-icon.png)
 
-+ You should notice that a crosshair appears on the costume. You can now click just below the tip of the pencil, to set this point as the costume centre.
++ Všimni si kříže, který se objevil. Nyní klikni kousek pod tuhu, abys tento bod nastavil(a) jako střed.
 
 	![screenshot](paint-pencil-center.png)
 
-+ Click the 'Scripts' tab, and then test out your pencil again - does it work better than it did before?
++ Klikni na záložku 'Scripts' a otestuj tužku znovu - funguje lépe než předtím?
 
-+ Next, let's make your pencil draw `if` {.blockcontrol} the mouse has been clicked. Add this code to your pencil sprite:
++ Jako další, nech tužku kreslit jestliže - `if` {.blockcontrol} - je stisknuto tlačítko myši:
 
 	![screenshot](paint-pencil-draw-code.png)	
 
-+ Test your code again. This time, move the pencil around the stage and hold down the mouse button. Can you draw with your pencil?
++ Vyzkoušej program znovu. Tentokrát pohybuj tužkou po scéně a drž stisknuté tlačítko myši. Můžeš takto kreslit tužkou?
 
 	![screenshot](paint-draw.png)
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-# Step 2: Coloured pens { .activity }
+# Krok 2: Barevné tužky { .activity }
 
-Let's add different colour pens to your project, and allow the user to choose between them!
+Udělej různé barevné tužky a umožni jejich používání a možnost si je vybrat!
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ Click on your pencil sprite, click 'Costumes' and duplicate your 'pencil-blue' costume.
++ Klikni na sprajt tužky, klikny na 'Costumes' a zduplikuj kostým 'pencil-blue'.
 
 	![screenshot](paint-blue-duplicate.png)
 
-+ Rename your new costume 'pencil-green', and colour the pencil green.
++ Přejmenuj ho na  'pencil-green', a vybarvi na zeleno.
 
 	![screenshot](paint-pencil-green.png)
 
-+ Create two new sprites, which you will use to select the blue or green pencil.
++ Vytvoř dva nové sprajty, které ti umožní vybrat si barvu tužky.
 
 	![screenshot](paint-selectors.png)
 
-+ When the green selector icon is clicked, you need to `broadcast` {.blockevents} a message to the pencil sprite, telling it to change its costume and pencil colour.
++ Když je stisknuto zelené tlačítko, musíš vyslat - `broadcast` {.blockevents} zrpávu pro sprajt tužky, která řekne aby změnila kostým a barvu tužky.
 
-	To do this, first add this code to the green selector icon:
+	Abys toho dosáhl(a) přidej tento kód na zelená tlačítko:
 
 	```blocks
 		when this sprite clicked
 		broadcast [green v]
 	```
 
-	To create the `broadcast` {.blockevents} block, click the down arrow and select 'new message...'.
+	Abys vytvořil(a) blok pro vyslání zprávy - `broadcast` {.blockevents}, klikni na tlačítko dolů a vyber 'new message...'.
 
 	![screenshot](paint-broadcast.png)
 
-	You can then type 'green' to create your new message.
+	Napiš 'green' jako tvoji novou zprávu.
 
 	![screenshot](paint-green-message.png)
 
-+ You now need to tell your pencil sprite what to do when it receives the message. Add this code to your pencil sprite:
++ Nyní musíš říct tužce co má dělat, když dostane zprávu. Přidej tento kód do sprajtu tužky:
 
 	```blocks
 		when I receive [green v]
@@ -114,16 +114,16 @@ Let's add different colour pens to your project, and allow the user to choose be
 		set pen color to [#00ff00]
 	```
 
-	To set the pencil to colour to green, click the coloured box in the `set color` {.blockpen} block, and click on the green selector icon to choose green as your pencil colour.
+	Abys nastavil(a) barvu tuhy na zelenou klikni na barevný boxík `set color` {.blockpen}, a pak klikni na zelené tlačítko, aby se použila jeho barva.
 
-+ You can now do the same for the blue pencil icon, adding this code to the blue selector sprite:
++ To samé udělej nyní pro modré tlačítko, prřidáním následujícího kódu:
 
 	```blocks
 		when this sprite clicked
 		broadcast [blue v]
 	```
 
-	...and adding this code to the pencil sprite:
+	...a přidáním tohoto kódu pro sprajt tužky:
 
 	```blocks
 		when I receive [blue v]
@@ -131,7 +131,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 		set pen color to [#0000ff]
 	```
 
-+ Finally, you need to tell your pencil sprite what costume and pencil colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pencil's `when flag clicked` {.blockevents} code (before the `forever` {.blockcontrol} loop):
++ Nakonec potřebuješ říct tužce, jaký si má vybrat kostým a barvu tuhy při startu projektu (a smazat scénu). Přidej tento kód na začátek kódu pro tužku za `when flag clicked` {.blockevents} (před smyčku `forever` {.blockcontrol}):
 
 	```blocks
 		clear
@@ -139,51 +139,51 @@ Let's add different colour pens to your project, and allow the user to choose be
 		set pen color to [#0000ff]
 	```
 
-	If you prefer, you can start with a different colour pencil!
+	Múžeš si vybrat jinou barvu pro začátek!
 
-+ Test out your project. Can you switch between blue and green pens?
++ Vyzkoušej projekt. Funguje nyní přepínání mezi modrou a zelenou tužkou?
 
 	![screenshot](paint-pens-test.png)
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-# Step 3: Making mistakes { .activity .new-page }
+# Krok 3: Dělání chyb { .activity .new-page }
 
-Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our project!
+Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ Let's add a button to clear the stage. To do this, add the 'X-block' letter sprite to the stage, and colour it in red.
++ Přidej tlačítko pro smazání celé scény. Přidej sprajt (písmeno) 'X-block' na scénu a nabarvi ho na červeno.
 
 	![screenshot](paint-x.png)
 
-+ Add code to your new cancel button to clear the stage when it's clicked.
++ Přidej tento kód k tlačítku:
 
 	```blocks
 		when this sprite clicked
 		clear
 	```
 
-	Notice that you don't need to send a message to clear the stage, as any sprite can do it!
+	Všimni si, že tady neposíláme žádnu zpráv, protože na scéně není žádný sprajt, který by měl tuto činnost dělat.
 
-+ You can also create an eraser. If your club leader has given you a 'Resources' folder, click 'Upload costume from file' and add the 'eraser.svg' image.
++ Vytvoř gumu pro mazání. Pokud jsi od vedoucího dostal soubory se zdroji, klikni 'Upload costume from file' a přidej obrázek 'eraser.svg'.
 
 	![screenshot](paint-eraser-costume.png)
 	
-	If you don't have the eraser.svg image, just create a new white pen instead!
+	Pokud obrázek eraser.svg nemáš, nakresli si vlastní!
 
-+ You should also add the eraser image as a new selector sprite. This is how your stage shoud look:
++ Přidej obrázek gumy jako nové tlačítko. Takto by měla vypadat tvoje scéna:
 
 	![screenshot](paint-eraser-stage.png)
 
-+ You can then add code to the eraser selector sprite, to tell the pencil to switch to an eraser.
++ Nyní přidej kód k tlačitku gumy, abys řekl(a) tužce, že se má změnit na gumu.
 
 	```blocks
 		when this sprite clicked
 		broadcast [eraser v]
 	```
 
-+ When the pencil receives this message, you can create an eraser by switching the pencil costume to the eraser, and switching the pencil colour to the same colour as the stage!
++ Když tužka dostane zprávu, musí se změnit na gumu přepnutím kostýmu a nastavením barvy tuhy na stejnou, jakou barvu má scéna!
 
 	```blocks
 		when I receive [eraser v]
@@ -191,75 +191,75 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 		set pen color to [#FFFFFF]
 	```
 
-+ Test your project, to see if you can clear and erase on the stage.
++ Vyzkoušej projekt abys viděl, jestli guma maže.
 
 	![screenshot](paint-erase-test.png)
 
-+ There's one more problem with the pencil - you can draw anywhere on the stage, including near the selector icons!
++ Možná sis všiml problému, že múžes kreslit kdekoliv včetně blízkosti tlačítek na výběr!
 
 	![screenshot](paint-draw-problem.png)
 
-	To fix this, you have to tell the pencil only to draw if the mouse is clicked _and_ if the y-position of the mouse is greater than -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Change your pencil's `if` {.blockcontrol} statement to look like this:
+	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `if` {.blockcontrol} tužky takto:
 
 	![screenshot](pencil-gt-code.png)
 
-+ Test your project; you now shouldn't be able to draw near the selector blocks.
++ Vyzkoušej projekt; nyní bys nemělo výt možné kreslit blízko tlačítek.
 
 	![screenshot](paint-fixed.png)
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-# Step 4: Changing the pencil width { .activity .new-page }
+# Krok 4: Změna šírky tuhy { .activity .new-page }
 
-Let's allow the user to draw using a range of different pencil sizes.
+Dovol uživatelům kreslit různou velikostí tuhy.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ First, add a new variable called 'width'. If you're not sure how to do this, the 'Balloons' project will help you.
++ Jako první přidej novou proměnnu nazvanou 'width'. pokud nevíš jak, podívej se do projektu 'Lovci duchů'.
 
-+ Add this line _inside_ the `forever` {.blockcontrol} loop of your pencil's code:
++ Přidej tento řádek _dovnitř_ cyklu `forever` {.blockcontrol} v kódu tužky:
 
 	```blocks
 		set pen size to (width)
 	```
 
-	Your pencil width will now repeatedly be set to the value of your 'width' variable.
+	Šířka tuhy bude nyní opakovaně nastavována podle proměnné 'width'.
 
-+ You can change the number stored in this variable by right-clicking on your variable (on the stage) and clicking 'slider'.
++ Hodnotu uloženou v proměnná můžeš změnit kliknutim pravého talčítka myši na proměnné a (na scéně) a vybráním 'slider'.
 
 	![screenshot](paint-slider.png)
 
-	You can now drag the slider below the variable to change its value.
+	Nyní pohybuj posuvníkem pod proměnnou pro změnu hodnoty.
 
 	![screenshot](paint-slider-change.png)
 
-+ Test your project, and see if you can modify the pencil width.
++ Vyzkoušej projekt abys viděl zda jde měnit šířka tuhy.
 
 	![screenshot](paint-width-test.png)
 
-	If you prefer, you can set the minimum and maximum value of 'width' that's allowed. To do this, right-click on your variable again and click 'set slider min and max'. Set the minimum and maximum values of your variable to something more sensible, like 1 and 20.
+	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width'klikni pravým tlačítkem myši na proměnnou a vyber 'set slider min and max'. Nastav minimum a maximum na hodnoty 1 a 20.
 
 	![screenshot](paint-slider-max.png)
 
-	Keep testing your 'width' variable until you're happy.
+	Zkoušej proměnnou 'width' dokud nejsi spokojený(á).
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-## Challenge: Shortcuts { .challenge }
-Can you create keyboard shortcuts for your commands? For example:
+## Výzva: Zkratky { .challenge }
+Zkus přidat klávesová zkratky, například:
 
-+ b = Switch to blue pen
-+ g = switch to green pen
-+ e = switch to eraser
-+ c = clear screen
++ m = změní barvu na modrou
++ z = změní barvu na zelenou
++ g = změní tužku na gumu
++ s = smaže scénu
 
-You could even allow the user to change the pen width with the arrow keys!
+Také můžeš použít šipky na změnu šířky tuhy!
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-## Challenge: More pens { .challenge }
-Can you add red, yellow and black pens to your paint program? You'll find all of the images you need in your 'Resources' folder. Remember to add keyboard shortcuts for these new pens!
+## Výzva: Více tužek { .challenge }
+Zkus přidat červenou, žlutou a černou tužku. Obrázky najdeš ve složce 'Resources'. Nezapomeň přidat klávesové zkratky!
 
-Can you use your pens to draw a picture?
+Zkusíš teď nakreslit obrázek?
 
 ![screenshot](paint-final.png)
