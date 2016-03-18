@@ -47,11 +47,11 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 + Zkus kód kliknutím na zelenou vlakku a pohybováním myši na scéně. Funguje jak jsi čekal?
 
-+ Všiml sis, že myš nesleduje tuha ale střed tužky?
++ Všiml sis, že myš nesleduje tuha, ale střed tužky?
 
 	![screenshot](paint-center.png)
 
-	Abys to spravil, klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Set costume center'.
+	Abys to spravil(a), klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Set costume center'.
 
 	![screenshot](paint-center-icon.png)
 
@@ -164,7 +164,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 		clear
 	```
 
-	Všimni si, že tady neposíláme žádnu zpráv, protože na scéně není žádný sprajt, který by měl tuto činnost dělat.
+	Všimni si, že tady neposíláme žádnou zprávu, protože na scéně není žádný sprajt, který by měl tuto činnost dělat.
 
 + Vytvoř gumu pro mazání. Pokud jsi od vedoucího dostal soubory se zdroji, klikni 'Upload costume from file' a přidej obrázek 'eraser.svg'.
 
@@ -209,7 +209,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 ## Ulož projekt { .save }
 
-# Krok 4: Změna šírky tuhy { .activity .new-page }
+# Krok 4: Změna šířky tuhy { .activity .new-page }
 
 Dovol uživatelům kreslit různou velikostí tuhy.
 
@@ -237,7 +237,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	![screenshot](paint-width-test.png)
 
-	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width'klikni pravým tlačítkem myši na proměnnou a vyber 'set slider min and max'. Nastav minimum a maximum na hodnoty 1 a 20.
+	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'set slider min and max'. Nastav minimum a maximum na hodnoty 1 a 20.
 
 	![screenshot](paint-slider-max.png)
 
