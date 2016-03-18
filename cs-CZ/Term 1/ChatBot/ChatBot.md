@@ -67,7 +67,7 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 
 	![screenshot](chatbot-join.png)
 
-	Pak změn text `hello` na `Ahoj`, a přesuň světle modrý blok `answer` {.blocksensing} (se sekce 'Sensing') na text `world`.
+	Pak změn text `hello` na `Ahoj`, a přesuň světle modrý blok `answer` {.blocksensing} (ze sekce 'Sensing') na text `world`.
 
 	![screenshot](chatbot-answer.png)
 
@@ -96,7 +96,7 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 
 ## Výzva: Více otázek { .challenge }
 
-Naprogramuj robota tak aby se zeptal na více otázek. Dokáže uložit odpovědi do proměnných?
+Naprogramuj robota tak aby se zeptal na více otázek. Dokážeš uložit odpovědi do proměnných?
 
 ![screenshot](chatbot-question.png)
 
