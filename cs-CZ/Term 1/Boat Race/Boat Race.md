@@ -32,7 +32,7 @@ Naučíte se jak vytvořit hru, ve které budete používat myš k navigaci loď
 
 # Step 2: Ovládání loďky { .activity }
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
 + Pokud vám dal vedoucí klubu adresář se soubory, klikněte na  'Upload sprite from file' a vyberte obrázek 'boat.png'. Měli byste zmenšit obrázek a vložit ho na startovní pozici.
 
@@ -62,23 +62,23 @@ Naučíte se jak vytvořit hru, ve které budete používat myš k navigaci loď
 
 	![screenshot](boat-pointer.png)	
 
-+ Test out your boat again, to check whether the problem has been fixed.
++ Vyzkoušejte znovu vaši loďku, zda byl problém vyřešen.
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-# Step 3: Crashing! { .activity .new-page }
+# Step 3: Havárie! { .activity .new-page }
 
-Your boat can sail through the wooden barriers! Let's fix that.
+Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ You'll need 2 costumes for your boat, one normal costume, and one for when the boat crashes. Duplicate your boat costume, and name them 'normal' and 'hit'.
++ Budete potřebovat dva "kystýmy" pro vaši loďku, jeden normální, a jeden pro loďku po nárazu. Zduplikujte kostým vaší loďky a nazvěte je 'normal' (normální) a 'hit' (náraz).
 
-+ Click on your 'hit' costume, and choose the 'Select' tool to grab bits of the boat and move and rotate them around. Make your boat look as if it's crashed.
++ Klikněte na kostým 'hit' a vyberte nástroj 'Select' abyste loďku rozdělili na kousky a ty zrotovali. Upravte loďku tak, aby vypadala jako po nárazu.
 
 	![screenshot](boat-hit-costume.png)
 
-+ Add this code to your boat, inside the `forever` {.blockcontrol} loop, so that it crashes when it touches any brown wooden bits:
++ Přidjte tento kód k vaší loďce do bloku `forever` {.blockcontrol}, tak aby loďka narazila, jakmile se dotkne hnědého dřeva:
 
 	```blocks
 		if <touching color [#603C15]?> then
@@ -90,20 +90,20 @@ Your boat can sail through the wooden barriers! Let's fix that.
 		end
 	```
 
-	This code is inside the `forever` {.blockcontrol} loop, so that your code keeps checking if the boat has crashed.
+	Tento kód je ve smyčcce `forever` {.blockcontrol}, takže váš kód trvale kontroluje, zda nedochází k nárazu loďky.
 
-+ You should also make sure that your boat always starts looking like it's 'normal'.
++ Také musíte zajsitit, aby loďka začínala nenabouraná - kostým 'normal'.
 
-+ Now if you try to sail through a wooden barrier, you should see that your boat crashes and moves back to the start.
++ Nyní když loďka dopluje ke dřevu, měla by narazit a objevit se znovu na začátku.
 
 	![screenshot](boat-crash.png)
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-## Challenge: Winning! {.challenge}
-Can you add another `if` {.blockcontrol} statement to your boat's code, so that the player wins when they get to the desert island?
+## Výhra! {.challenge}
+Zkusíte pžidat další blok s podmínkou `if` {.blockcontrol} do kódu loďky tak, aby hráč vyhrál, když se dostane na ostrov?
 
-When the boat gets to the yellow desert island, it should say 'YEAH!' and then the game should stop. You'll need to use this code:
+Když se loďka dostane na žlutý ostrov měla by říci 'YEAH!' a hra se zastaví. K tomu potřebujete následující kód:
 
 ```blocks
 	say [YEAH!] for (1) secs
@@ -112,24 +112,24 @@ When the boat gets to the yellow desert island, it should say 'YEAH!' and then t
 
 ![screenshot](boat-win.png)
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-## Challenge: Sound effects {.challenge}
-Can you add sound effects to your game, for when the boat crashes, or reaches the island at the end. You could even add background music (see the previous 'Rock Band' project if you need help with this).
+## Zvukové efekty {.challenge}
+Nyní můžete přidat zvukové efekty pro náraz nebo pro konec hry. Stejně tak můžete přidat hudbu na pozadi. (v projektu 'Rock Band'se naučíte jak).
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-# Step 4: Time Trial { .activity }
+# Step 4: Závod na čas { .activity }
 
-Let's add a timer to your game, so that the player has to get to the desert island as fast as possible.
+Přidejte do hry časovač proto, aby se hráč snažil dostat do cíle co nejrychleji.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ Add a new variable called `time` {.blockdata} to your stage. You can also change the display of your new variable. If you need help, have a look at the 'Balloons' project.
++ Přidejte proměnnou nazvanou `time` {.blockdata} na stage. Můžete také změnit její vzhled, pokud chcete vědět jak podívejte se na projekt 'Balónky'.
 
 	![screenshot](boat-variable.png)
 
-+ Add this code to your __stage__, so that the timer counts up until the boat reaches the desert island:
++ Přidejte tento kód na vaši  __stage__, tak aby se počítal čas, dokud loďka nedopluje na ostrov:
 
 	```blocks
 		when flag clicked
@@ -140,23 +140,23 @@ Let's add a timer to your game, so that the player has to get to the desert isla
 		end
 	```
 
-+ That's it! Test out your game and see how quickly you can get to the desert island!
++ To je ono! Vyzkoušejte hru a uvidíte jak rychlí dokážete být!
 
 	![screenshot](boat-variable-test.png)
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-# Step 5: Obstacles and power-ups { .activity }
+# Step 5: Překážky a bonusy { .activity }
 
-This game is _far_ too easy - let's add things to make it more interesting.
+Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ First let's add some 'boosts' to your game, which will speed up the boat. Edit your stage backdrop and add in some white booster arrows.
++ Jako první přidáme 'zrycchlovače'. Nakreslete do vaší hry několik bílých šipek.
 
 	![screenshot](boat-boost.png)
 
-+ You can now add some code to your boat's `forever` {.blockcontrol} loop, so that it moves 2 _extra_ steps when touching a white booster.
++ Nyní je potřeba přidat do cyklu `forever` {.blockcontrol} pár říkazů tak, aby se lo%d posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
 
 	```blocks
 		if <touching color [#FFFFFF]?> then
@@ -164,28 +164,28 @@ This game is _far_ too easy - let's add things to make it more interesting.
 		end
 	```
 
-+ You can also add in a spinning gate, which your boat has to avoid. Add in a new sprite called 'gate', which looks like this:
++ Můžete také přidat otáčivou bránu, které se musí loďka vyhnout:
 
 	![screenshot](boat-gate.png)
 
-	Make sure that the colour of the gate is the same as the other wooden barriers.
+	Ujistěte se, že má stejnou barvu jako dřevěné bariéry.
 
-+ Set the center of the gate sprite.
++ Nastavte střed brány.
 
 	![screenshot](boat-center.png)
 
-+ Add code to your gate, to make it spin slowly `forever` {.blockcontrol}.
++ Přidejte kód k bráně tak aby so otáčela pomalu stále dokola v bloku `forever` {.blockcontrol}.
 
-+ Test out your game. You should now have a spinning gate that you must avoid.
++ Vyzkoušejte si hru. Nyní by se měla objevit brána která se otáčí a které se musíte vyhnout.
 
 	![screenshot](boat-gate-test.png)
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-## Challenge: More obstacles! {.challenge .new-page}
-Can you add more obstacles to your game? Here are some ideas:
+## Výzva: více překážek! {.challenge .new-page}
+Přidejte více překážek, tady je pár nápadů:
 
-+ You could add green slime to your backdrop, which slows the player down when they touch it. You can use a `wait` {.blockcontrol} block to do this:
++ Můžete přidat zelený sliz, který hráče zpomalí. Použijte blok `wait` {.blockcontrol}:
 
 ```blocks
 	wait (0.01) secs
@@ -193,40 +193,40 @@ Can you add more obstacles to your game? Here are some ideas:
 
 ![screenshot](boat-algae.png)
 
-+ You could add a moving object, like a log or a shark!
++ Přidejte pohyblivé objekty jako jsou plovoucí polena nebo žraloci!
 
 ![screenshot](boat-obstacles.png)
 
-These blocks may help you:
+Tyto bloky vám pomůžou:
 
 ```blocks
 	move (1) steps
 	if on edge, bounce
 ````
 
-If your new object isn't brown, you'll need to add to your boat code:
+Pokud není objekt hnědý musíte přidat následující kód k loďce:
 
 ```blocks
 	if <  <touching color [#603C15]?> or <touching [shark v]?> > then
 	end
 ```
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-## Challenge: More boats! {.challenge .new-page}
-Can you turn your game into a race between 2 players?
+## Výzva: Více lodí! {.challenge .new-page}
+Zkusíte změnit hru na závod mezi dvouma hráči?
 
-+ Duplicate the boat, rename it 'Player 2' and change its colour.
++ Zduplikujte loďku,přejmenujte ji na 'Player 2' a změnte barvu.
 
 ![screenshot](boat-p2.png)
 
-+ Change Player 2's starting position, by changing this code:
++ Změňte startovací pozici pro druhou loďku změnou kódu:
 
 ```blocks
 	go to x: (-190) y: (-150)
 ```
 
-+ Delete the code that uses the mouse to control the boat:
++ Smažte kód pro kontrolu loďky myší:
 
 ```blocks
 	if < (distance to [mouse-pointer v]) > [5] > then
@@ -235,9 +235,9 @@ Can you turn your game into a race between 2 players?
 	end
 ```
 
-...and replace it with code to control the boat using the arrow keys.
+...a nahraĎte ho kódem pro kontrolu pomocí šipek na klávesnici.
 
-This is the code you'll need to move the boat forward:
+Toto je kód pro posun loďky dopředu:
 
 ```blocks
 	if < key [up arrow v] pressed? > then
@@ -245,16 +245,16 @@ This is the code you'll need to move the boat forward:
 	end
 ```
 
-You'll also need code to `turn` {.blockmotion} the boat when the left and right arrow keys are pressed.
+Také budete potřebovat kód pro  otočení loďky - `turn` {.blockmotion} když stisknete levou a pravou šipku.
 
-## Save your project { .save }
+## Uložte projekt { .save }
 
-## Challenge: More levels! {.challenge .new-page}
-Can you create additional backdrops, and allow the player to choose between levels?
+## Více levelů! {.challenge .new-page}
+Zkuste přidat více kulis - backdrops, a umožněte hráči přepínat.
 
 ```blocks
 	when [space v] key pressed
 	next backdrop
 ```
 
-## Save your project { .save }
+## Uložte projekt { .save }
