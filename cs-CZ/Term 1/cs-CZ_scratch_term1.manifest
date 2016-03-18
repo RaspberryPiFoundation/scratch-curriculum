@@ -37,13 +37,6 @@
             "filename": "Boat Race/Boat Race.md",
             "note":     "Boat Race/Boat Race - notes.md"
         }
-    ],
-
-    "extras": [
-        {
-            "name": "Úvod do Scratche",
-            "note": "../Volunteer resources/scratch.md"
-        }
     ]
 
 }
