@@ -1,5 +1,5 @@
 ---
-title: Rock Band
+title: Rocková skupina
 level: Scratch 1
 language: cs-CZ
 stylesheet: scratch
@@ -7,178 +7,178 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-# Introduction { .intro }
+# Úvod { .intro }
 
-In this project you'll learn how to code your own musical instruments!
+V tomto projektu se naučíš jak naprogramovat vlastní hudební nástroje!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
   <img src="band-final.png">
 </div>
 
-# Step 1: Sprites { .activity }
+# Step 1: Objekty - sprajty { .activity }
 
-Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called __sprites__. 
+Před tím, než začneš oživovat objekty, musíš nějaké přidat. Ve Scratchi se tyto objekty nazývaji __sprites__ (sprajty). 
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It looks like this:
++ Jako první otevři Scratch editor. Online Scratch editor najdeš tady: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Vypadá nějak takto:
 
 	![screenshot](band-scratch.png)
 
-+ The cat sprite that you can see is the Scratch mascot. Let's get rid of it, by right-clicking and then clicking 'delete'.
++ Sprajt kočky, který vidíš je maskot Scratche. Té se pro tentokrát zbavíš tak, že na ni klikneš pravým tlačítkem a klikneš na 'delete'.
 
 	![screenshot](band-delete.png)
 
-+ Next, click 'Choose sprite from library' to open up a list of all the Scratch sprites.
++ Dále klikni na 'Choose sprite from library' aby se ti zobrazil seznam sprajtů.
 
 	![screenshot](band-sprite-library.png)
 
-+ Scroll down until you see a drum sprite. Click on a drum, and click 'OK' to add it to your project.
++ Skroluj dolů dokud nenajdeš sprajt s bubnem. Klikni na něj a dále klikni na 'OK', tím ho přidáš do projektu.
 
 	![screenshot](band-sprite-drum.png)
 
-+ Click the 'shrink' icon, and then click on the drum a few times to make it smaller.
++ Klikni na ikonku 'shrink', a pak několikrát na sprajt s bubnem, abys ho zmenšil(a).
 
 	![screenshot](band-shrink.png)
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-Give your program a name, by typing one into the text box in the top-left corner.
+Dej programu název vepsáním do textového pole vlevo nahoře.
 
-You can then click 'File' and then 'Save now' to save your project.
+Pak stiskni 'File' a potom 'Save now' pro uložení projektu.
 
 ![screenshot](band-save.png)
 
-# Step 2: The Stage { .activity }
+# Step 2: Scéna { .activity }
 
-The __stage__ is the area on the left, and is where your project comes to life. Think of it as a performance area, just like a real stage!
+Scéna - __stage__ je oblast nalevo, kde obživne tvůj projekt. Je to něco jako jeviště v divadle.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking 'Choose backdrop from library'.
++ V tento okamžik je scéna bílá a vypadá docela nudně. Přidáme proto 'kulisy' kliknutím na 'Choose backdrop from library'.
 
 	![screenshot](band-stage-choose.png)
 
-+ Click 'Indoors' on the left, and then click on a stage backdrop and click 'OK'.
++ Klikni na 'Indoors' nalevo, a potom klikněte na "Stage 1 backdrop" a 'OK'.
 
 	![screenshot](band-backdrop.png)
 
-+ Your stage should now look like this:
++ Tvoje scéna by nyní měla vypadat takto:
 
 	![screenshot](band-stage.png)
 
-# Step 3: Making a Drum { .activity }
+# Step 3: Tvorba bubnu { .activity }
 
-Let's code your drum to make a sound when it's hit.
+Naprogramujeme buben aby vydával zvuk, když na něj klikneš.
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ You can find the code blocks in the 'Scripts' tab, and they are all colour-coded! 
++ Na záložce 'Scripts' najdi bloky kódu, které jsou rozlišené podle barviček. 
 
-	Click on the drum sprite, and then drag these 2 blocks into the code area to the right, making sure that they are connected together (like Lego blocks):
+	Klikni na sprajt bubnu a potom přetáhni tyto dva bloky do oblasti pro kód vpravo, tak aby byly spojené dorhromady (jako Lego kostky):
 
 	![screenshot](band-code.png)
 
-+ Click the drum to try out your new instrument!
++ Klikni na buben, abys vyzkoušel(a) tvůj nový nástroj!
 
-+ You can also change how the drum looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the drum image.
++ Můžeš také změnit jak vypadá bubdem, když na něj klikneš, pomocí kostýmu. Klikni na záložku 'Costumes' a tam uvidíš obrázek bubnu.
 
 	![screenshot](band-drum-costume.png)
 
-+ Right-click on the costume and click 'duplicate' to create a copy of the costume.
++ Klikni pravým tlačítkem na kostým a vyber 'duplicate', abys vytvořil(a) kopii.
 
 	![screenshot](band-drum-duplicate.png)
 
-+ Click on the new costume (called 'drum2') and then select the line tool and draw lines to make it look like the drum is making a sound.
++ Klikni na nový kostým (nazvaný 'drum2') a vyber nástroj pro kreslení čara nakresli čáry, tak aby to vypadalo, že buben vydává zvuky.
 
 	![screenshot](band-drum-hit.png)
 
-+ The names of the costumes aren't very helpful at the moment. Rename the 2 costumes to 'not hit' and 'hit' by typing the new name of each costume into the text box.
++ Jména kostýmů pro sprajt bubnu nejsou nyní moc popisující, tak je přejmenuj na 'not hit' a 'hit' vepsáním jména do textového pole.
 
 	![screenshot](band-drum-name.png)
 
-+ Now that you have 2 different costumes for your drum, you can choose which costume is displayed! Add these 2 blocks to your drum:
++ nyní máš pro buben dva různé kostýmy a můžeš s vybrat, který se zobrazí. Přidej tyto dva bloky kódu k bubnu:
 
 	![screenshot](band-looks.png)
 
-	The code block for changing the costume is in the `Looks` {.blocklooks} section.
+	Bloky pro změnu kostýmu najdeš v sekci `Looks` {.blocklooks} section.
 
-+ Test your drum. When clicked, your drum should now look like it's been hit!
++ Vyzkoušej buben Test your drum. Po kliknutí by měl měnit vzhled a hrát.
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-##Challenge: Improving your drum { .challenge }
+##Výzva: Vylepšení bubnu { .challenge }
 
-+ Can you change the sound that the drum makes when it's clicked?
++ Zkusíš zmenit zvuk který buben vydává??
 
 ![screenshot](band-drum-sound.png)
 
-+ Can you also get the drum to make a sound when the spacebar is pressed? You'll need to use this `event` {.blockevents} block:
++ Zkusíš upravit buben tak, aby hrál při stisknutí mezerníku? Budeš potřebovat tento blok `event` {.blockevents}:
 
 ```blocks
 	when [space v] key pressed
 ```
 
-You can copy your existing code by right-clicking on it and clicking 'duplicate'.
+Existující kód můžeš zkopírovat tak, že klikneš pravým tlačítkem myši a vybereš 'duplicate'.
 
 ![screenshot](band-duplicate-code.png)
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-# Step 4: Making a Singer { .activity .new-page }
+# Step 4: Vytvoření zpěváka { .activity .new-page }
 
-Let's add a singer to your band!
+Přidej zpěváka do tvé skupiny!
 
-## Activity Checklist { .check }
+## Seznam úkolů { .check }
 
-+ Add another 2 sprites to your stage; a singer and a microphone.
++ Přidej na scénu další dva sprajty: zpěvačku a mikrofon.
 
 	![screenshot](band-singer-mic.png)
 
-+ Before you can make your singer sing, you need to add a sound to your sprite. Make sure that you have selected your singer, then click the 'Sounds' tab, and click 'Choose sound from library':
++ Před tím než naučíš zpěvačku zpívat, potřebuješ přidat zvuk do sprajtu. Ujisti se že máš vybranou zpěvačku, pak klikni na záložku 'Sounds' tab, a klikni na 'Choose sound from library':
 
 	![screenshot](band-import-sound.png)
 
-+ If you click 'Vocals' on the left hand side, you will then be able to choose a suitable sound to add to your sprite.
++ Když klikneš vlevo na 'Vocals', můžeš potom vybrat zvuk a přidat ho ke sprajtu.
 
 	![screenshot](band-choose-sound.png)
 
-+ Now that the sound has been added, you can add this code to your singer:
++ Nyní po přidání zvuku přidej následující kód ke zpevačce:
 
 	```blocks
 		when this sprite clicked
 		play sound [singer1 v] until done
 	```
 
-+ Click on your singer, to make sure that she sings when clicked.
++ Klikni na zpěvačku aby ses ujistil(a), že zpívá.
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-##Challenge: Changing your singer's costume { .challenge }
-Can you make your singer look like she is singing when clicked? If you need help, you can use the instructions for creating a drum above.
+##Vývza: Změň zpěvačce kostým { .challenge }
+Můžeš upravit zpěvačku tak, aby vypadala, že zpívá po kliknutí? Pokud nevíš jak, udělej to stejně jako u bubnu.
 
 ![screenshot](band-singer-final.png)
 
-Remember to test that your new code works!
+Nezapomeň vyzkoušet jestli tvůj nový kód funguje!
 
-## Save your project { .save }
+## Ulož projekt { .save }
 
-##Challenge: Make your own band { .challenge }
-Use what you've learnt in this project to make your own band! You can create any instruments you like, but look at the available sounds and instruments to get some ideas.
+##Výzva: Vytvoř si svoji hudební skupinu { .challenge }
+Pomocí toho co jsi se již naučil(a) si vytovř svoji skupinu! Můžeš vytvořit jakýkoliv nástroj - podívej se do galérie na dostupné sprajty a zvuky.
 
 ![screenshot](band-ideas.png)
 
-Your instruments don't have to be sensible though. For example, you could make a piano made out of muffins!
+Tvoje nástroje nemusí mít smysl. Například můžeš udělat piáno z mufinů!
 
 ![screenshot](band-piano.png)
 
-As well as using existing sprites, you can also draw your own.
+Tak jak používáš existující sprajty, můžes si nakreslit vlastní.
 
 ![screenshot](band-draw.png)
 
-If you have a microphone you can record your own sounds, or even use a webcam to hit your instruments!
+Pokud máš mirkofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spoštění nástrojů!
 
 ![screenshot](band-io.png)
 
-## Save your project { .save }
+## Ulož projekt { .save }
