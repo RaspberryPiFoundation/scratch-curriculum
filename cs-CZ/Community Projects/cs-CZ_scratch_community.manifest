@@ -1,7 +1,7 @@
 {
     "description": false,
     "id": "scratch_community",
-    "category" : "cat-scratch",
+    "category" : "Scratch",
     "language": "en-GB",
     "number": 4,
     "title": "Community Contributed Scratch Projects",
