@@ -92,7 +92,7 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 
 	Tento kód je ve smyčcce `forever` {.blockcontrol}, takže váš kód trvale kontroluje, zda nedochází k nárazu loďky.
 
-+ Také musíte zajsitit, aby loďka začínala nenabouraná - kostým 'normal'.
++ Také musíte zajistit, aby loďka začínala nenabouraná - kostým 'normal'.
 
 + Nyní když loďka dopluje ke dřevu, měla by narazit a objevit se znovu na začátku.
 
@@ -101,7 +101,7 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 ## Uložte projekt { .save }
 
 ## Výhra! {.challenge}
-Zkusíte pžidat další blok s podmínkou `if` {.blockcontrol} do kódu loďky tak, aby hráč vyhrál, když se dostane na ostrov?
+Přidejte další blok s podmínkou `if` {.blockcontrol} do kódu loďky tak, aby hráč vyhrál, když se dostane na ostrov.
 
 Když se loďka dostane na žlutý ostrov měla by říci 'YEAH!' a hra se zastaví. K tomu potřebujete následující kód:
 
@@ -115,7 +115,7 @@ Když se loďka dostane na žlutý ostrov měla by říci 'YEAH!' a hra se zasta
 ## Uložte projekt { .save }
 
 ## Zvukové efekty {.challenge}
-Nyní můžete přidat zvukové efekty pro náraz nebo pro konec hry. Stejně tak můžete přidat hudbu na pozadi. (v projektu 'Rock Band'se naučíte jak).
+Nyní můžete přidat zvukové efekty pro náraz nebo pro konec hry. Stejně tak můžete přidat hudbu na pozadi. (v projektu 'Rock Band' se naučíte jak).
 
 ## Uložte projekt { .save }
 
@@ -125,7 +125,7 @@ Přidejte do hry časovač proto, aby se hráč snažil dostat do cíle co nejry
 
 ## Seznam úkolů { .check }
 
-+ Přidejte proměnnou nazvanou `time` {.blockdata} na stage. Můžete také změnit její vzhled, pokud chcete vědět jak podívejte se na projekt 'Balónky'.
++ Přidejte proměnnou nazvanou `time` {.blockdata} na stage. Můžete také změnit její vzhled, pokud chcete vědět jak, podívejte se na projekt 'Balónky'.
 
 	![screenshot](boat-variable.png)
 
@@ -156,7 +156,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
 	![screenshot](boat-boost.png)
 
-+ Nyní je potřeba přidat do cyklu `forever` {.blockcontrol} pár říkazů tak, aby se lo%d posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
++ Nyní je potřeba přidat do cyklu `forever` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
 
 	```blocks
 		if <touching color [#FFFFFF]?> then
@@ -174,9 +174,9 @@ Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
 	![screenshot](boat-center.png)
 
-+ Přidejte kód k bráně tak aby so otáčela pomalu stále dokola v bloku `forever` {.blockcontrol}.
++ Přidejte kód k bráně tak, aby so otáčela pomalu stále dokola v bloku `forever` {.blockcontrol}.
 
-+ Vyzkoušejte si hru. Nyní by se měla objevit brána která se otáčí a které se musíte vyhnout.
++ Vyzkoušejte si hru. Nyní by se měla objevit brána, která se otáčí a které se musíte vyhnout.
 
 	![screenshot](boat-gate-test.png)
 
