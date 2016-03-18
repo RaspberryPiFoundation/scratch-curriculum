@@ -148,7 +148,7 @@ Přidej zpěvačku do tvé skupiny!
 
 	```blocks
 		po kliknutí na mě
-		přehraj zvuk [singer1 v] až do konce
+		hraj zvuk [singer1 v] až do konce
 	```
 
 + Klikni na zpěvačku aby ses ujistil(a), že zpívá.
