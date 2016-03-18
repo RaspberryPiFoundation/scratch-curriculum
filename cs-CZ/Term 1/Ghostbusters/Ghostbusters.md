@@ -132,7 +132,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 
 # Step 5: Přidání časovače { .activity }
 
-Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin na to, aby chytltolik duchů, kolik zvládne.
+Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin na to, aby chytl tolik duchů, kolik zvládne.
 
 ## Seznam úkolů { .check }
 
@@ -146,7 +146,7 @@ Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin 
 	+ Časovač by měl odpočítávat po vteřině;
 	+ Hra by se měla zastavit, když časovač dosáhne 0.
 
-	Tady je kód, který to udělá, ten přidejte do vaší __scény__:
+	Tady je kód, který to udělá, ten přidej do tvé __scény__:
 
 	```blocks
 		when flag clicked
