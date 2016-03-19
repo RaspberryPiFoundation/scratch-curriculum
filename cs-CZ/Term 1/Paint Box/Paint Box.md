@@ -24,11 +24,11 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 + Vytvoř si nový projekt a smaž kočičku, takže tvůj projekt bude prázdný. Online editor můžeš nalézt zde: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Přidej sprajt s tužkou do projektu
++ Přidej tužku do projektu
 
 	![screenshot](paint-pencil.png) 
 
-+ Klikni 'Costumes', a vymaž kostým 'pencil-b'.
++ Klikni na 'Kostýmy', a vymaž kostým 'pencil-b'.
 
 	![screenshot](paint-pencil-delete.png) 
 
