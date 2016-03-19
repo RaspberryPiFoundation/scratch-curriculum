@@ -108,9 +108,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 	![screenshot](ghost-score.png)
 
 	Napiš 'score' jako jméno proměnné, ujisti se že bude dostupná pro všechny sprajty (zaškrtnout 'Pro všechny postavy') a klikni 'OK'. Pak budeš mít možnost používat bloky pro práci s touto proměnnou - `score` {.blockdata}.
-
-	![screenshot](ghost-variable.png)
-
+	
 	Skóre uvidíš v levém horním rohu scény.
 
 	![screenshot](ghost-stage-score.png)
@@ -157,7 +155,7 @@ Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin 
 		po kliknutí na ⚑
 		nastav [time v] na [10]
 		opakuj dokud nenastane <(time) = [0]>
-			čekej (1) sekundy
+			čekej (1) sekund
 			změň [time v] o (-1)
 		end
 		zastav [všechno v]
