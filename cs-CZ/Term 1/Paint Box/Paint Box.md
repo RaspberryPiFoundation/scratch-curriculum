@@ -87,7 +87,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 ## Seznam úkolů { .check }
 
-+ Klikni na sprajt tužky, klikny na 'Costumes' a zduplikuj kostým 'pencil-blue'.
++ Klikni na sprajt tužky, klikny na 'Kostýmy' a zkopíruj kostým 'pencil-blue'.
 
 	![screenshot](paint-blue-duplicate.png)
 
@@ -95,17 +95,17 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 	![screenshot](paint-pencil-green.png)
 
-+ Vytvoř dva nové sprajty, které ti umožní vybrat si barvu tužky.
++ Vytvoř dva nové objekty (postavy), které ti umožní vybrat si barvu tužky.
 
 	![screenshot](paint-selectors.png)
 
-+ Když je stisknuto zelené tlačítko, musíš vyslat - `broadcast` {.blockevents} zrpávu pro sprajt tužky, která řekne aby změnila kostým a barvu tužky.
++ Když je stisknuto zelené tlačítko, musíš vyslat - `rozešli všem` {.blockevents} zprávu, na kterou zareaguje tužka, a změní kostým a barvu tuhy.
 
 	Abys toho dosáhl(a) přidej tento kód na zelená tlačítko:
 
 	```blocks
-		when this sprite clicked
-		broadcast [green v]
+		po kliknutí na mě
+		rozešli všem [green v]
 	```
 
 	Abys vytvořil(a) blok pro vyslání zprávy - `broadcast` {.blockevents}, klikni na tlačítko dolů a vyber 'new message...'.
@@ -119,34 +119,34 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 + Nyní musíš říct tužce co má dělat, když dostane zprávu. Přidej tento kód do sprajtu tužky:
 
 	```blocks
-		when I receive [green v]
-		switch costume to [pencil-green v]
-		set pen color to [#00ff00]
+		po obdržení zprávy [green v]
+		změň kostým na [pencil-green v]
+		nastav barvu pera na [#00ff00]
 	```
 
-	Abys nastavil(a) barvu tuhy na zelenou klikni na barevný boxík `set color` {.blockpen}, a pak klikni na zelené tlačítko, aby se použila jeho barva.
+	Abys nastavil(a) barvu tuhy na zelenou klikni na barevný boxík `nastav barvu pera na` {.blockpen}, a pak klikni na zelené tlačítko, aby se použila jeho barva.
 
 + To samé udělej nyní pro modré tlačítko, prřidáním následujícího kódu:
 
 	```blocks
-		when this sprite clicked
-		broadcast [blue v]
+		po kliknutí na mě
+		rozešli všem [blue v]
 	```
 
 	...a přidáním tohoto kódu pro sprajt tužky:
 
 	```blocks
-		when I receive [blue v]
-		switch costume to [pencil-blue v]
-		set pen color to [#0000ff]
+		po obdržení zprávy [blue v]
+		změň kostým na [pencil-blue v]
+		nastav barvu pera na [#0000ff]
 	```
 
-+ Nakonec potřebuješ říct tužce, jaký si má vybrat kostým a barvu tuhy při startu projektu (a smazat scénu). Přidej tento kód na začátek kódu pro tužku za `po kliknutí na ⚑` {.blockevents} (před smyčku `forever` {.blockcontrol}):
++ Nakonec potřebuješ říct tužce, jaký si má vybrat kostým a barvu tuhy při startu projektu (a smazat scénu). Přidej tento kód na začátek kódu pro tužku za `po kliknutí na ⚑` {.blockevents} (před smyčku `opakuj dokola` {.blockcontrol}):
 
 	```blocks
-		clear
-		switch costume to [blue-pencil v]
-		set pen color to [#0000ff]
+		smaž
+		změň kostým na [blue-pencil v]
+		nastav barvu pera na [#0000ff]
 	```
 
 	Múžeš si vybrat jinou barvu pro začátek!
@@ -170,11 +170,11 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 + Přidej tento kód k tlačítku:
 
 	```blocks
-		when this sprite clicked
-		clear
+		po kliknutí na mě
+		smaž
 	```
 
-	Všimni si, že tady neposíláme žádnou zprávu, protože na scéně není žádný sprajt, který by měl tuto činnost dělat.
+	Všimni si, že tady neposíláme žádnou zprávu, protože na scéně není žádný objekt, který by měl tuto činnost dělat.
 
 + Vytvoř gumu pro mazání. Pokud jsi od vedoucího dostal soubory se zdroji, klikni 'Upload costume from file' a přidej obrázek 'eraser.svg'.
 
@@ -189,17 +189,17 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 + Nyní přidej kód k tlačitku gumy, abys řekl(a) tužce, že se má změnit na gumu.
 
 	```blocks
-		when this sprite clicked
-		broadcast [eraser v]
+		po kliknutí na mě
+		rozešli všem [eraser v]
 	```
 
 + Když tužka dostane zprávu, musí se změnit na gumu přepnutím kostýmu a nastavením barvy tuhy na stejnou, jakou barvu má scéna!
 
 	```blocks
-		when I receive [eraser v]
-		switch costume to [eraser v]
-		set pen color to [#FFFFFF]
-	```
+		po obdržení zprávy [eraser v]
+		změň kostým na [eraser v]
+		nastav barvu pera na [#FFFFFF]
+	```  
 
 + Vyzkoušej projekt abys viděl, jestli guma maže.
 
@@ -227,10 +227,10 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 + Jako první přidej novou proměnnu nazvanou 'width'. pokud nevíš jak, podívej se do projektu 'Lovci duchů'.
 
-+ Přidej tento řádek _dovnitř_ cyklu `forever` {.blockcontrol} v kódu tužky:
++ Přidej tento řádek _dovnitř_ cyklu `opakuj dokola` {.blockcontrol} v kódu tužky:
 
 	```blocks
-		set pen size to (width)
+		nastav tloušťku pera na (width)
 	```
 
 	Šířka tuhy bude nyní opakovaně nastavována podle proměnné 'width'.
