@@ -125,7 +125,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 + Abys vyzkoušel program pořádně, pusť ho dvakrát a jednou odpověz `ne` a jednou `ano`. Odpověď od robota dostaneš jen když odpovíš `ano`.
 
-+ Problém je, že robot neodpoví když  je odpověď `ne`. To můžeš opravit tak, že změníš blok `if` {.blockcontrol} na blok `if/jinak` {.blockcontrol}:
++ Problém je, že robot neodpoví když  je odpověď `ne`. To můžeš opravit tak, že změníš blok `když` {.blockcontrol} na blok `když/jinak` {.blockcontrol}:
 
 	```blocks
 		po kliknutí na mě
@@ -144,7 +144,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 	![screenshot](chatbot-else.png)
 
-+ Do bloku `if` {.blockcontrol} nebo `jinak` {.blockcontrol} můžeš vložit cokoliv, nejen mluvení robota. Například můžeš změnit vzhled robota (kostým) aby odpovídal odpovědi.
++ Do bloku `když` {.blockcontrol} nebo `jinak` {.blockcontrol} můžeš vložit cokoliv, nejen mluvení robota. Například můžeš změnit vzhled robota (kostým) aby odpovídal odpovědi.
 
 	Pokud se podíváš na kostýmy robota, zjistíš, že jich je tam více než jeden. (Pokud ne, můžeš je přidat)
 
@@ -201,7 +201,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 
 + Změní se pozadí když o dpovíš `ne`? Co se stane, když odpovíš `Nejsem si jistý`?
 
-+ Pokud chceš, aby robot poskočil 4x, když odpovíš `ano`, přidej tento kód do bloku `if` {.blockcontrol}:
++ Pokud chceš, aby robot poskočil 4x, když odpovíš `ano`, přidej tento kód do bloku `když` {.blockcontrol}:
 
 	```scratch
 	opakuj (4) krát
