@@ -217,7 +217,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 		po kliknutí na ⚑
 		opakuj dokola
 		  go to [ukazatel myši v]
-          když ((myš stisknuta a souřadnice myši y) > -120) tak
+          když (((myš stisknuta) a (souřadnice myši y)) > [-120]) tak
             pero dolů
           jinak 
             pero nahoru
