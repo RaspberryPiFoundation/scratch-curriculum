@@ -22,7 +22,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 + Vytvoř si nový projekt a smaž kočičku, takže tvůj projekt bude prázdný. Online editor můžeš nalézt zde: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Naplánuj si tvůj level hry. Klikni na "Stage backdrop". Měl(a) bys přidat:
++ Naplánuj si tvůj level hry. Klikni na Scénu a na záložku "Pozadí". Měl(a) bys přidat:
 	+ Dřevo, kterému se bude loďka vyhýbat;
 	+ Opuštěný ostrov, na kterém má loďka přistát.
 
@@ -34,7 +34,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 ## Seznam úkolů { .check }
 
-+ Pokud ti dal vedoucí klubu adresář se soubory, klikni na  'Upload sprite from file' a vyber obrázek 'boat.png'. Měl bys zmenšit obrázek a vložit ho na startovní pozici.
++ Pokud ti dal vedoucí klubu adresář se soubory, klikni na 'Nahrát postavu ze souboru' a vyber obrázek 'boat.png'. Měl bys zmenšit obrázek a vložit ho na startovní pozici.
 
 	![screenshot](boat-boat.png)
 
@@ -43,12 +43,12 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 + Abys mohl(a) ovládat loďku myší, přidej tento kód:
 
 	```blocks
-		when flag clicked
-		point in direction (0 v)
-		go to x: (-190) y: (-150)
-		forever
-			point towards [mouse-pointer v]
-			move (1) steps
+		po kliknutí na ⚑
+		natoč se směrem (0 v)
+		skoč na pozici x: (-190) y: (-150)
+		opakuj dokola
+			natoč se k [ukazatel myši v]
+			posuň se o (1) kroků
 		end
 	```
 
@@ -58,9 +58,19 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 + Co se stane, když loďka doplave ke kurzoru myši?
 
-	Abys tomuto chování zabránil(a) musíš přidat blok `if` {.blockcontrol} , tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
+	Abys tomuto chování zabránil(a) musíš přidat blok `jestliže` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
 
-	![screenshot](boat-pointer.png)	
+    ```blocks
+		po kliknutí na ⚑
+		natoč se směrem (0 v)
+		skoč na pozici x: (-190) y: (-150)
+		opakuj dokola
+            když ((vzdálenost od [ukazatel myší v]) > [5]) tak
+                natoč se k [ukazatel myši v]
+                posuň se o (1) kroků
+            end
+		end
+	```
 
 + Vyzkoušej znovu tvoji loďku, zda byl problém vyřešen.
 
@@ -132,7 +142,7 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 + Přidej tento kód na tvoji  __stage__, tak aby se počítal čas, dokud loďka nedopluje na ostrov:
 
 	```blocks
-		when flag clicked
+		po kliknutí na ⚑
 		set [time v] to [0]
 		forever
 			wait (0.1) secs
