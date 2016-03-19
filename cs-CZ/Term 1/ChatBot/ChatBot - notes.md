@@ -17,8 +17,8 @@ Kompletní verzi projektu najdete <a href="http://scratch.mit.edu/projects/26762
 #Učební cíle
 + Textové vstupy;
 + Rozhodování:
-	+ `když ... tak` {.blockcontrol} statements;
-	+ `když ... tak ... jinak` {.blockcontrol} statements.
+	+ `když ... tak` {.blockcontrol};
+	+ `když ... tak ... jinak` {.blockcontrol}.
 
 #Výzvy
 + "Více otázek" - konsolidace znalostí vstupu (dotazu) a bloku `odpověd` {.blocksensing};
