@@ -32,7 +32,7 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 	![screenshot](paint-pencil-delete.png) 
 
-+ Přejmenuj kostým na 'pencil-blue' a použij nástroj 'Color a shape' na vybarvení tužky na modro. 
++ Přejmenuj kostým na 'pencil-blue' a použij nástroj 'Vybarvit předlohu' na vybarvení tužky na modro. 
 
 	![screenshot](paint-pencil-blue.png) 
 
