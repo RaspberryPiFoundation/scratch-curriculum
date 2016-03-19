@@ -209,7 +209,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	![screenshot](paint-draw-problem.png)
 
-	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `if` {.blockcontrol} tužky takto:
+	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `když` {.blockcontrol} tužky takto:
     
     ```blocks
 		po kliknutí na ⚑
@@ -245,7 +245,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	Šířka tuhy bude nyní opakovaně nastavována podle proměnné 'width'.
 
-+ Hodnotu uloženou v proměnná můžeš změnit kliknutim pravého talčítka myši na proměnné a (na scéně) a vybráním 'slider'.
++ Hodnotu uloženou v proměnná můžeš změnit kliknutim pravého talčítka myši na proměnné a (na scéně) a vybráním 'posuvník'.
 
 	![screenshot](paint-slider.png)
 
@@ -257,7 +257,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	![screenshot](paint-width-test.png)
 
-	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'set slider min and max'. Nastav minimum a maximum na hodnoty 1 a 20.
+	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'nastav u posuvníku min a max'. Nastav minimum a maximum na hodnoty 1 a 20.
 
 	![screenshot](paint-slider-max.png)
 
