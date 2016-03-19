@@ -125,7 +125,12 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 + Klikni na 'Scénáře', a přidej opici následující kód tak, aby se točila navždy pomalu v kruzích:
 	
-    ![screenshot](space-monkey-code.png)
+    ```blocks
+		po kliknutí na ⚑
+		opakuj dokola
+		    otoč se o @ (1) stupňů
+		end
+	```    
 
 	Blok `opakuj dokola` {.blockcontrol} je další smyčka, ale tentokrát nikdy nekončí.
 
