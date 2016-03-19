@@ -20,8 +20,8 @@ K dispozici je i verze projektu s externími zdroji. Je dostupná online na [jum
 
 #Učební cíle
 + Cykly:
-	+ `Opakuj [x] krát` {.blockcontrol} loops;
-	+ `Opakuj dokola` {.blockcontrol} loops.
+	+ Cyklus `Opakuj [x] krát` {.blockcontrol};
+	+ Cyklus `Opakuj dokola` {.blockcontrol}.
 
 #Výzvy
 + "Vylepšení animace" - změna číselných parametrů v krátkém programu;
