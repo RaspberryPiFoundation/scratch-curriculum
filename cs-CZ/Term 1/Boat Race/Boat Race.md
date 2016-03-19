@@ -195,7 +195,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 ## Výzva: více překážek! {.challenge .new-page}
 Přidej více překážek, tady je pár nápadů:
 
-+ Můžeš přidat zelený sliz, který hráče zpomalí. Použij blok `wait` {.blockcontrol}:
++ Můžeš přidat zelený sliz, který hráče zpomalí. Použij blok `čekej` {.blockcontrol}:
 
 ```blocks
 	čekej (0.01) sekund
@@ -210,14 +210,14 @@ Přidej více překážek, tady je pár nápadů:
 Tyto bloky ti pomůžou:
 
 ```blocks
-	move (1) steps
-	if on edge, bounce
+	posuň se o (1) kroků
+	když narazíš na okraj, odraž se
 ````
 
-Pokud není objekt hnědý musíš přidat následující kód k loďce:
+Pokud není objekt hnědý, musíš přidat následující kód k loďce:
 
 ```blocks
-	když <  <touching color [#603C15]?> or <touching [shark v]?> > tak
+	když <  <dotýká se barvy [#603C15]?> nebo <dotýká se [žralok v]?> > tak
 	end
 ```
 
@@ -233,15 +233,15 @@ Zkusíš změnit hru na závod mezi dvouma hráči?
 + Změň startovací pozici pro druhou loďku změnou kódu:
 
 ```blocks
-	go to x: (-190) y: (-150)
+	skoč na pozici x: (-190) y: (-150)
 ```
 
 + Smaž kód pro kontrolu loďky myší:
 
 ```blocks
 	když < (distance to [mouse-pointer v]) > [5] > tak
-		point towards [mouse-pointer v]
-		move (1) steps
+		natoč se k [mouse-pointer v]
+		posuň se o (1) kroků
 	end
 ```
 
@@ -251,20 +251,20 @@ Toto je kód pro posun loďky dopředu:
 
 ```blocks
 	když < key [up arrow v] pressed? > tak
-		move (1) steps
+		posuň se o (1) kroků
 	end
 ```
 
-Také budeš potřebovat kód pro  otočení loďky - `turn` {.blockmotion} když stiskneš levou a pravou šipku.
+Také budeš potřebovat kód pro otočení loďky - `otoč se` {.blockmotion} když stiskneš levou a pravou šipku.
 
 ## Ulož projekt { .save }
 
 ## Více levelů! {.challenge .new-page}
-Zkus přidat více kulis - backdrops, a umožni je hráči přepínat.
+Zkus přidat více pozadí, a umožni je hráči přepínat.
 
 ```blocks
-	when [space v] key pressed
-	next backdrop
+	klávesa [mezerník v] stisknuta
+	změn pozadí na [další pozadí v]
 ```
 
 ## Ulož projekt { .save }
