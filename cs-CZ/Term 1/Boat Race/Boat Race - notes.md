@@ -23,18 +23,18 @@ Tento odkaz obsahuje o adresář 'Project Resources', který obsahuje obrázky, 
 Projektové zdroje:
 + boat.png.
 
-#Co se naučíme
+#Učební cíle
 + Bloky pro interakci s prostředím:
-	+ `key ... pressed?` {.blocksensing};
-	+ `distance to mouse pointer` {.blocksensing};
-	+ `touching color ...` {.blocksensing}.
+	+ `klávesa ... stisknuta?` {.blocksensing};
+	+ `vzdálenost od [ukazatel myší]` {.blocksensing};
+	+ `dotýká se barvy ...` {.blocksensing}.
 
 #Výzvy
-+ "Výhra!" - použití bloku `touching color ...` {.blocksensing};
++ "Výhra!" - použití bloku `dotýká se barvy ...` {.blocksensing};
 + "Zvukové efekty" - přidání hudby a zvuků;
 + "Více překážek!" - upevnění znalostí bloků pro interakci s prostředím;
-+ "Více lodí!" - použití bloku `key ... pressed?` {.blocksensing};
-+ "Více úrovní!" - další hráčem kotnrolované kulisy (backdrops).
++ "Více lodí!" - použití bloku `klávesa ... stisknuta?` {.blocksensing};
++ "Více úrovní!" - další hráčem kotnrolované pozadí.
 
 #Časté dotazy
 + Toto je první projekt, kde je méně podrobných návodů. Použijte to k upevnění vědomostí z předchozích projektů. 

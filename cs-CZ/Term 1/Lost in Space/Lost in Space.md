@@ -58,7 +58,7 @@ Pojďme udělat raketu, která letí k zemi!
 
 	![screenshot](space-flag.png)
 
-## Výzva: vylepšení animace {.challenge}
+## Výzva: Vylepšení animace {.challenge}
 Změn parametry (čísla) v kódu tak:
 + aby se raketa pohybovala dokud se nedotkne země
 + aby se raketa pohybovala pomaleji blíže k zemi

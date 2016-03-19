@@ -4,33 +4,33 @@ language: cs-CZ
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to broadcast messages between sprites.
+#Úvod
+V tomto projektu se děti naučí jak posílt zprávy mezi objekty.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Zdroje
+Pro tento projekt použijte Scratch 2. Scratch 2 můžete najít online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro použití offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Kompletní verzi projektu najdete <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, nebo stáhnete kliknutím na 'Stáhnout materiály k projektu' a tyto materiály obsahují:
 
 + PaintBox.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources), or in the downloadable project materials, which contains:
+K dispozici je i verze projektu s externími zdroji. Je dostupná online na [jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources), nebo v materiálech ke stažení a obsahuje:
 
-+ PaintBoxResources.sb2 
++ PaintBoxResources.sb2
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+Tento odkaz obsahuje o adresář 'Project Resources', který obsahuje obrázky, zajistěte aby každé dítě mělo přístup k těmto obrázkům.
 
-Project resources:
+Projektové zdroje:
 + eraser.svg
 
-#Learning Objectives
-+ Importing images;
-+ Relational and boolean operators (`>` {.blockoperators} & `and` {.blockoperators});
-+ Broadcasting between sprites.
+#Učební cíle
++ Import obrázků;
++ Relační a logické operátory (`>` {.blockoperators} & `a` {.blockoperators});
++ Zprávy mezi objekty.
 
-#Challenges
-+ "Shortcuts" - Using `key press` {.blocksensing} events to broadcast messages;
-+ "More pens" - Adding more pen colours, to consolidate the learning of broadcasting messages.
+#Výzvy
++ "Zkratky" - použití událostí `klávesa stisknuta` {.blocksensing} pro posílání zpráv;
++ "Více tužek" - přidání více barev tužek, pro konsolidaci znalostí o posílání zpráv.
 
-#Frequently Asked Questions
-+ Changes in a sprite's 'costume center' isn't registered until another tab is clicked. Children should click on another costume, or on the 'Scripts' tab to finalise changes to the costume center.
+#Časté dotazy
++ Změny v nastavení středu kostýmu se neprojeví dokud neklikete na jinou záložku. Děti by měly kliknout na jiný kostým nebo na záložku 'Scénáře' aby se změna projevila.

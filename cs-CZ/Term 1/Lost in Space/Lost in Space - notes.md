@@ -4,44 +4,44 @@ language: cs-CZ
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to combine code blocks to create a simple animation.
+#Úvod
+V tomto projektu se děti naučí jak nakombinovat bloky kódu pro vytvoření jednoduché animace.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Zdroje
+Pro tento projekt použijte Scratch 2. Scratch 2 můžete najít online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro použití offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Kompletní verzi projektu najdete <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, nebo stáhnete kliknutím na 'Stáhnout materiály k projektu' a tyto materiály obsahují:
 
 + LostInSpace.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/space-resources](http://jumpto.cc/space-resources), or in the downloadable project materials, which contains:
+K dispozici je i verze projektu s externími zdroji. Je dostupná online na [jumpto.cc/space-resources](http://jumpto.cc/space-resources), nebo v materiálech ke stažení a obsahuje:
 
 + LostInSpaceResources.sb2 
 
-#Learning Objectives
-+ Loops:
-	+ `Repeat` {.blockcontrol} loops;
-	+ `Forever` {.blockcontrol} loops.
+#Učební cíle
++ Cykly:
+	+ `Opakuj [x] krát` {.blockcontrol} loops;
+	+ `Opakuj dokola` {.blockcontrol} loops.
 
-#Challenges
-+ "Improving your animation" - altering the numbers in a short program;
-+ "Make your own animation" - applying the learning to make a new animation.
+#Výzvy
++ "Vylepšení animace" - změna číselných parametrů v krátkém programu;
++ "Udělej si vlastní animaci" - aplikace vědomostí pro vytvoření nové animace.
 
-#Frequently Asked Questions
-+ Children may need reminding to 'reset' a sprite's position, size and other effects at the start of their animation. This can be easily achieved by adding some of the following blocks to the start of their animations:
+#Časté dotazy
++ Dětem je nutné připomínat aby provedli 'reset' velikosti, pozice, a jiných efektu postav na začátku jejich animace. To dosáhnou použitím následujících bloků kódu na začátku animace:
 
 ```blocks
-	go to x:(0) y:(0)
+	skoč na pozici x:(0) y:(0)
 ```
 
 ```blocks
-	set size to (100)%
+	nastav velikost na (100)%
 ```
 
 ```blocks
-	clear graphic effects
+	zruš grafické efekty
 ```
 
-+ The 'spaceship' sprite will move sideways unless it is rotated 90 degrees clockwise. Rotating the spaceship is part of the project instructions, but another sprite can be substituted for the spaceship if this is causing problems.
++ Raketa se pohybuje bokem, pokud není natočena o 90 stupňů. Rotace je popsána v instrukcích projektu, ale je možné použít i jiný objekt.
 
 	![screenshot](space-rotate.png)

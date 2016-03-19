@@ -4,23 +4,23 @@ language: cs-CZ
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to use 'if' statements to make decisions in their programs.
+#Úvod
+V tomto projektu se děti naučí použití bloků 'když' pro rozhodování v programu.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Zdroje
+Pro tento projekt použijte Scratch 2. Scratch 2 můžete najít online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro použití offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Kompletní verzi projektu najdete <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, nebo stáhnete kliknutím na 'Stáhnout materiály k projektu' a tyto materiály obsahují:
 
 + ChatBot.sb2
 
-#Learning Objectives
-+ Text input;
-+ Decisions:
-	+ `if ... then` {.blockcontrol} statements;
-	+ `if ... then ... else` {.blockcontrol} statements.
+#Učební cíle
++ Textové vstupy;
++ Rozhodování:
+	+ `když ... tak` {.blockcontrol} statements;
+	+ `když ... tak ... jinak` {.blockcontrol} statements.
 
-#Challenges
-+ "More questions" - consolidating learning of input and the `answer` {.blocksensing} block;
-+ "More decisions" - using decisions;
-+ "Make your own chatbot" - consolidation of learning from this and past projects.
+#Výzvy
++ "Více otázek" - konsolidace znalostí vstupu (dotazu) a bloku `odpověd` {.blocksensing};
++ "Více rozhodování" - použití podmínek;
++ "Vytvoř si svého vlastního robota" - konsolidace znalostí z tohoto a minulých projektů.

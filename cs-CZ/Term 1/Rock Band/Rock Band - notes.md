@@ -4,7 +4,7 @@ language: cs-CZ
 embeds: "*.png"
 ...
 
-#Úvod:
+#Úvod
 V tomto projektu se děti naučí jak přidat hudbu do projektu a jak naprogramovat kostýmy u postav.
 
 #Zdroje
