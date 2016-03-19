@@ -28,7 +28,7 @@ Pojďme udělat raketu, která letí k zemi!
 
 	![screenshot](space-sprites.png)
 
-+ Klikni na sprajt rakety a pak na záložku 'Costumes'.
++ Klikni na sprajt rakety a pak na záložku 'Kostýmy'.
 
 	![screenshot](space-costume.png)
 
@@ -66,7 +66,7 @@ Změn parametry (čísla) v kódu tak:
 Musíš změnit tato čísla v blocích:
 
 ```blocks
-	glide (1) secs to x:(0) y:(0)
+	klouzej (1) sekund na x:(0) y:(0)
 ```
 
 ## Ulož projekt { .save }
@@ -77,7 +77,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 ## Seznam úkolů { .check }
 
-+ Smaž blok `glide` {.blockmotion}, klikni praváým tlačítkem myši a vyber 'delete'. Blok můžeš smazat tak, že ho přesuneš mimo oblast pro kód, zpět do oblasti pro bloky.
++ Smaž blok `klouzej` {.blockmotion}, klikni praváým tlačítkem myši a vyber 'smazat'. Blok můžeš smazat tak, že ho přesuneš mimo oblast pro kód, zpět do oblasti pro bloky.
 
 	![screenshot](space-delete-glide.png)
 
@@ -85,11 +85,11 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 	![screenshot](space-loop.png)
 
-	Blok `repeat` {.blockcontrol} (opakuj) se používá pro opakování a nazývá se __smyčka__ (loop).
+	Blok `opakuj` {.blockcontrol} se používá pro opakování a nazývá se __smyčka__.
 
 + Když klikneš na vlaječku, uvidíš, že raketa se pohybuje stejně jako před tím.
 
-+ Do smyčky múžeš přidat více bloků a dělat zajímavé věci. Přidej blok `change color effect by 25` {.blocklooks}do smyčky (ze sekce 'Looks'), aby se opakovaně menila barva rakety během pohybu:
++ Do smyčky múžeš přidat více bloků a dělat zajímavé věci. Přidej blok `změň efekt barva o 25` {.blocklooks}do smyčky (ze sekce 'Looks'), aby se opakovaně menila barva rakety během pohybu:
 
 	![screenshot](space-colour.png)
 
@@ -104,7 +104,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 + Otestuj animaci. Co se stane, když klikneš na vlaječku podruhé? Startuje raketa ve správné velikosti? Použij tento blok abys to opravil(a):
 
 	```scratch
-	set size to (100) %
+	nastav velikost na (100) %
 	```
 
 ## Ulož projekt { .save }
@@ -126,9 +126,9 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 + Klikni na 'Scripts', a přidej opici následující kód tak, aby se točila navždy pomalu v kruzích:
 
 	```blocks
-		when FLAG clicked
-		forever
-		    turn right (1) degrees
+		po kliknutí na FLAG
+		opakuj dokola
+		    otoč se vpravo (1) štupňů
 		end
 	```
 
