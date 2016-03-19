@@ -210,17 +210,17 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 	![screenshot](paint-draw-problem.png)
 
 	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `if` {.blockcontrol} tužky takto:
-
-     ```blocks
+    
+    ```blocks
 		po kliknutí na ⚑
 		opakuj dokola
-		  go to [ukazatel myši v]
-          když (((myš stisknuta) a (souřadnice myši y)) > [-120]) tak
-            pero dolů
-          jinak 
-            pero nahoru
-          end
-		end
+            go to [ukazatel myši v]
+            když (((myš stisknuta) a (souřadnice myši y)) > [-120]) tak          
+                pero dolů
+            jinak 
+                pero nahoru
+            end
+        end
 	```
 
 + Vyzkoušej projekt; nyní bys nemělo výt možné kreslit blízko tlačítek.
