@@ -126,9 +126,9 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 + Klikni na 'Scripts', a přidej opici následující kód tak, aby se točila navždy pomalu v kruzích:
 
 	```blocks
-		po kliknutí na FLAG
+		po kliknutí na VLAJKA
 		opakuj dokola
-		    otoč se vpravo (1) štupňů
+		    otoč se vpravo (1) stupňů
 		end
 	```
 
