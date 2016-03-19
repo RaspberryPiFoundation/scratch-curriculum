@@ -115,7 +115,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 		ptej se [Ahoj! Jak se jmenuješ?] a čekej
 		nastav [name v] na (answer)
 		říkej <spoj [Ahoj ] (name)> příštích (2) sekund
-		ptej se <join [Máš se dobře? ] (name)> and wait
+		ptej se <join [Máš se dobře? ] (name)> a čekej
 		když ((answer)=[ano]) tak
 			říkej [To rád slyším!] příštích (2) sekund
 		end
@@ -132,7 +132,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 		ptej se [Ahoj! Jak se jmenuješ?] a čekej
 		nastav [name v] na (answer)
 		říkej <spoj [Ahoj ] (name)> příštích (2) sekund
-		ask <join [Máš se dobře ] (name)> and wait
+		ptej se <join [Máš se dobře? ] (name)> a čekej
 		když ((answer)=[ano]) tak
 			říkej [To rád slyším!] příštích (2) sekund
 		jinak
@@ -142,7 +142,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 + Když vyzkoušíš svůj kód, zjistíš, že robot odpovídá jak na `ano` tak na `ne`. Robot odpoví `To rád slyším!` na tvoji odpověd `ano`, ale odpověď `Ale neee!` když zadáš cokoliv jiného než `ano` (blok `jinak` {.blockcontrol} znamená 'jinak').
 
-	![screenshot](chatbot-jinak.png)
+	![screenshot](chatbot-else.png)
 
 + Do bloku `if` {.blockcontrol} nebo `jinak` {.blockcontrol} můžeš vložit cokoliv, nejen mluvení robota. Například můžeš změnit vzhled robota (kostým) aby odpovídal odpovědi.
 
@@ -181,9 +181,9 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 + Naprogramuj robota pomocí následujícího kódu:
 
 	```blocks
-		ask [Letím na měsíc, chceš jít se mnou?] and wait
-		if ((answer) = [ano]) then
-			switch backdrop to [moon v]
+		ptej se [Letím na měsíc, chceš jít se mnou?] a čekej
+		když ((answer) = [ano]) pak
+			změň pozadí na [moon v]
 		end
 	```
 
@@ -200,15 +200,27 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 + Pokud chceš, aby robot poskočil 4x, když odpovíš `ano`, přidej tento kód do bloku `if` {.blockcontrol}:
 
 	```scratch
-	repeat (4)
-		change y by (10)
-		wait (0.1) secs
-		change y by (-10)
-		wait (0.1) secs
+	opakuj (4)
+		změň y o (10)
+		čekej (0.1) sekund
+		změň y o (-10)
+		čekej (0.1) sekund
 	end
 	```
-
-	![screenshot](chatbot-loop.png)
+    takto 
+    
+    ```blocks
+		ptej se [Letím na měsíc, chceš jít se mnou?] a čekej
+		když ((answer) = [ano]) pak
+            změň pozadí na [moon v]
+                opakuj (4)
+                změň y o (10)
+                čekej (0.1) sekund
+                změň y o (-10)
+                čekej (0.1) sekund
+	        end
+		end
+	```	
 
 + Vyzkoušej svůj program znovu. Skáče robot nahoru a dolů při odpovědi `ano`?
 
