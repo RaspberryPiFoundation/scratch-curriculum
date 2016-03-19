@@ -146,7 +146,7 @@ Přidej několik letících vesmírných kamenů do animace.
 + Přidej následující kód ke kamenu, aby se na kraji scény odrazil:
 
 	```scratch
-	when flag clicked
+	po kliknutí na ⚑
 	natoč se k [Earth v]
 	opakuj dokola
 		posuň se o (2) kroků
