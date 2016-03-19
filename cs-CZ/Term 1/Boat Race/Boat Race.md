@@ -58,7 +58,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 + Co se stane, když loďka doplave ke kurzoru myši?
 
-	Abys tomuto chování zabránil(a) musíš přidat blok `jestliže` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
+	Abys tomuto chování zabránil(a) musíš přidat blok `když` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
 
     ```blocks
 		po kliknutí na ⚑
@@ -88,19 +88,19 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 
 	![screenshot](boat-hit-costume.png)
 
-+ Přidej tento kód k tvojí loďce do bloku `forever` {.blockcontrol}, tak aby loďka narazila, jakmile se dotkne hnědého dřeva:
++ Přidej tento kód k tvojí loďce do bloku `opakuj dokola` {.blockcontrol}, tak aby loďka narazila, jakmile se dotkne hnědého dřeva:
 
 	```blocks
-		if <touching color [#603C15]?> then
-			switch costume to [hit v]
-			say [Noooooo!] for (1) secs
-			switch costume to [normal v]
-			point in direction (0 v)
-			go to x: (-215) y: (-160)
+		když <dotýká se barvy [#603C15]?> tak
+			změň kostým na [hit v]
+			říkej [Neeee!] příštích (1) sekund
+			změň kostým na [normal v]
+			natoč se směrem (0 v)
+			skoč na pozici x: (-215) y: (-160)
 		end
 	```
 
-	Tento kód je ve smyčcce `forever` {.blockcontrol}, takže tvůj kód trvale kontroluje, zda nedochází k nárazu loďky.
+	Tento kód je ve smyčcce `opaku dokola` {.blockcontrol}, takže tvůj kód trvale kontroluje, zda nedochází k nárazu loďky.
 
 + Také musíš zajistit, aby loďka začínala nenabouraná - kostým 'normal'.
 
@@ -111,13 +111,13 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 ## Ulož projekt { .save }
 
 ## Výhra! {.challenge}
-Přidej další blok s podmínkou `if` {.blockcontrol} do kódu loďky tak, aby hráč vyhrál, když se dostane na ostrov.
+Přidej další blok s podmínkou `když` {.blockcontrol} do kódu loďky tak, aby hráč vyhrál, když se dostane na ostrov.
 
 Když se loďka dostane na žlutý ostrov měla by říci 'YEAH!' a hra se zastaví. K tomu potřebuješ následující kód:
 
 ```blocks
-	say [YEAH!] for (1) secs
-	stop [all v]
+	říkej [YEAH!] příštích (1) sekund
+	zastav [vše v]
 ```
 
 ![screenshot](boat-win.png)
@@ -143,10 +143,10 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 
 	```blocks
 		po kliknutí na ⚑
-		set [time v] to [0]
-		forever
-			wait (0.1) secs
-			change [time v] by (0.1)
+		nastav [time v] na [0]
+		opakuj dokola
+			čekej (0.1) sekund
+			změň [time v] o (0.1)
 		end
 	```
 
@@ -166,11 +166,11 @@ Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
 	![screenshot](boat-boost.png)
 
-+ Nyní je potřeba přidat do cyklu `forever` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
++ Nyní je potřeba přidat do cyklu `opakuj dokola` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
 
 	```blocks
-		if <touching color [#FFFFFF]?> then
-			move (3) steps
+		když <dotýká se barvy [#FFFFFF]?> tak
+			posuň se o (3) kroků
 		end
 	```
 
@@ -184,7 +184,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
 	![screenshot](boat-center.png)
 
-+ Přidej kód k bráně tak, aby so otáčela pomalu stále dokola v bloku `forever` {.blockcontrol}.
++ Přidej kód k bráně tak, aby so otáčela pomalu stále dokola v bloku `opakuj dokola` {.blockcontrol}.
 
 + Vyzkoušej si hru. Nyní by se měla objevit brána, která se otáčí a které se musíš vyhnout.
 
@@ -198,7 +198,7 @@ Přidej více překážek, tady je pár nápadů:
 + Můžeš přidat zelený sliz, který hráče zpomalí. Použij blok `wait` {.blockcontrol}:
 
 ```blocks
-	wait (0.01) secs
+	čekej (0.01) sekund
 ````
 
 ![screenshot](boat-algae.png)
@@ -217,7 +217,7 @@ Tyto bloky ti pomůžou:
 Pokud není objekt hnědý musíš přidat následující kód k loďce:
 
 ```blocks
-	if <  <touching color [#603C15]?> or <touching [shark v]?> > then
+	když <  <touching color [#603C15]?> or <touching [shark v]?> > tak
 	end
 ```
 
@@ -239,7 +239,7 @@ Zkusíš změnit hru na závod mezi dvouma hráči?
 + Smaž kód pro kontrolu loďky myší:
 
 ```blocks
-	if < (distance to [mouse-pointer v]) > [5] > then
+	když < (distance to [mouse-pointer v]) > [5] > tak
 		point towards [mouse-pointer v]
 		move (1) steps
 	end
@@ -250,7 +250,7 @@ Zkusíš změnit hru na závod mezi dvouma hráči?
 Toto je kód pro posun loďky dopředu:
 
 ```blocks
-	if < key [up arrow v] pressed? > then
+	když < key [up arrow v] pressed? > tak
 		move (1) steps
 	end
 ```
