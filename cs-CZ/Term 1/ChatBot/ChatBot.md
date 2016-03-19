@@ -182,7 +182,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 
 	```blocks
 		ptej se [Letím na měsíc, chceš jít se mnou?] a čekej
-		když ((answer) = [ano]) pak
+		když ((answer) = [ano]) tak
 			změň pozadí na [moon v]
 		end
 	```
@@ -211,14 +211,14 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
     
     ```blocks
 		ptej se [Letím na měsíc, chceš jít se mnou?] a čekej
-		když ((answer) = [ano]) pak
+		když ((answer) = [ano]) tak
             změň pozadí na [moon v]
-                opakuj (4)
+            opakuj (4) krát
                 změň y o (10)
                 čekej (0.1) sekund
                 změň y o (-10)
                 čekej (0.1) sekund
-	        end
+            end
 		end
 	```	
 
