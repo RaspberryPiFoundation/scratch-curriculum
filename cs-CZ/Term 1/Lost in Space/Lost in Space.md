@@ -134,7 +134,7 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 	Blok `opakuj dokola` {.blockcontrol} je další smyčka, ale tentokrát nikdy nekončí.
 
-+ Klikni na vlajku pro vyzkoušení opice. Abys animaci ukončil(a) musíš kliknout na červené tlačítko.
++ Klikni na vlajku pro vyzkoušení opice. Aby animace skončila, musíš kliknout na červené tlačítko.
 
 	![screenshot](space-monkey-loop.png)
 
