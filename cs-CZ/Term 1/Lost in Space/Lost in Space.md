@@ -139,7 +139,7 @@ Přidej několik letících vesmírných kamenů do animace.
 
 ## Seznam úkolů { .check }
 
-+ Přidej sprjt 'rock'.
++ Přidej postavu kámen - 'rock'.
 
 	![screenshot](space-rock-sprite.png)
 
@@ -147,10 +147,10 @@ Přidej několik letících vesmírných kamenů do animace.
 
 	```scratch
 	when flag clicked
-	point towards [Earth v]
-	forever
-		move (2) steps
-		if on edge, bounce
+	natoč se k [Earth v]
+	opakuj dokola
+		posuň se o (2) kroků
+		když narazíš na okraj, odraž se
 	```
 
 + Otestuj asteroid. Odráží se?
