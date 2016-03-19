@@ -67,7 +67,7 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 		po kliknutí na ⚑
 		opakuj dokola
 		  go to [ukazatel myši v]
-          když (myš stiskunta) pak
+          když (myš stisknuta) pak
             pero dolů
           jinak 
             pero nahoru
