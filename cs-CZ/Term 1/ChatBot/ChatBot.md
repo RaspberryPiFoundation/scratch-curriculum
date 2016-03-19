@@ -187,9 +187,13 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 		end
 	```
 
-+ Také potřebuješ přidat kód který zajistí, aby robot začínal ve správných kulisách:
++ Také potřebuješ přidat kód který zajistí, aby robot začínal ve správných kulisách (a se správným kostýmem):
 
-	![screenshot](chatbot-outside.png)
+	```blocks
+		po kliknutí na mě
+		změň pozadí na [space v]
+        změň kostým na [nano-b v]
+	```
 
 + Otestuj program a odpověz `ano` když se robot zeptá na cestu na měsíc. Měl(a) bys vidět, že se pozadí změní.
 
@@ -200,7 +204,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 + Pokud chceš, aby robot poskočil 4x, když odpovíš `ano`, přidej tento kód do bloku `if` {.blockcontrol}:
 
 	```scratch
-	opakuj (4)
+	opakuj (4) krát
 		změň y o (10)
 		čekej (0.1) sekund
 		změň y o (-10)
