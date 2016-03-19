@@ -1,5 +1,5 @@
 ---
-title: Lost in Space — Notes for Club Leaders
+title: Ztraceni ve vesmíru — Poznámky pro vedoucí klubu
 language: cs-CZ                         
 embeds: "*.png"
 ...

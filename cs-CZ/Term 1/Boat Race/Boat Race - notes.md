@@ -4,13 +4,13 @@ language: cs-CZ
 embeds: "*.png"
 ...
 
-#Úvod:
+#Úvod
 V tomto projektu s děti naučí jak mohou sprajty reagovat s prostředím.
 
 #Zdroje
-Pro tento projekt použijte Scratch 2. Můžete použít online verzi [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro offline použití.
+Pro tento projekt použijte Scratch 2. Scratch 2 můžete najít online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro použití offline.
 
-K dispozici je kompletní verze projektu <a href="http://scratch.mit.edu/projects/63957956/#editor">online</a>, nebo si ji stáhněte kliknutím na 'Stáhnout materiály k projektu', které obsahují:
+Kompletní verzi projektu najdete <a href="http://scratch.mit.edu/projects/63957956/#editor">online</a>, nebo stáhnete kliknutím na 'Stáhnout materiály k projektu' a tyto materiály obsahují:
 
 + BoatRace.sb2
 
@@ -18,7 +18,7 @@ K dispozici je i verze projektu s externími zdroji. Je dostupná online na [jum
 
 + BoatRaceResources.sb2 
 
-Tento odkaz obsahuje o adresář  'Project Resources', který obsahuje obrázky, zajistěte aby každé dítě mělo přístup k těmto obrázkům.
+Tento odkaz obsahuje o adresář 'Project Resources', který obsahuje obrázky, zajistěte aby každé dítě mělo přístup k těmto obrázkům.
 
 Projektové zdroje:
 + boat.png.
@@ -37,6 +37,6 @@ Projektové zdroje:
 + "Více úrovní!" - další hráčem kotnrolované kulisy (backdrops).
 
 #Časté dotazy
-+ This is the first project in which much less step-by-step guidance is given. Use this as an opportunity to consolidate learning, and to start drawing on knowledge learnt in this and previous projects. 
++ Toto je první projekt, kde je méně podrobných návodů. Použijte to k upevnění vědomostí z předchozích projektů. 
 
-	For example, if children need help adding sound effects and music to their game, remind them of the work they did in the 'Rock Band' project. Encourage children to go back and look at the previous project notes for guidance.
+	Například když děti potřebují přidat zvuky, odkažte je na projekt 'Rocková skupina'. Doporučte dětem, ať se vrátí k předchozím projektům a poznámkám k nim.

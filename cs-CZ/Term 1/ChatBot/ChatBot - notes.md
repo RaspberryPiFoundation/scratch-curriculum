@@ -1,5 +1,5 @@
 ---
-title: ChatBot — Notes for Club Leaders
+title: ChatBot - Povídací robot — Poznámky pro vedoucí klubu
 language: cs-CZ
 embeds: "*.png"
 ...

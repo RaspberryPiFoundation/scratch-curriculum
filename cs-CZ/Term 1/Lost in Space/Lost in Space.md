@@ -1,5 +1,5 @@
 ---
-title: Ztracen ve vesmíru
+title: Ztraceni ve vesmíru
 level: Scratch 1
 language: cs-CZ
 stylesheet: scratch

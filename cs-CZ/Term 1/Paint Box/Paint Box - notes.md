@@ -1,5 +1,5 @@
 ---
-title: Paint Box — Notes for Club Leaders
+title: Kreslící program — Poznámky pro vedoucí klubu
 language: cs-CZ
 embeds: "*.png"
 ...
