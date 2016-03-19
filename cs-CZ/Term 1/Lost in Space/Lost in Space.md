@@ -22,13 +22,13 @@ Pojďme udělat raketu, která letí k zemi!
 
 ## Seznam úkolů { .check }
 
-+ Vytvoř nový Scratch projekt a vymaž sprajt kočky tak, aby byl prázdný. Scratch Editor najdeš tady <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Vytvoř nový Scratch projekt a vymaž postavu kočky tak, aby byl prázdný. Scratch Editor najdeš tady <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Přidej sprajty 'Spaceship' a 'Earth' na scénu. Také můžeš přidat kulisu hvězd - 'Stars'. Takhle by měla tvoje scéna vypadat:
++ Přidej postavy 'Spaceship' a 'Earth' na scénu. Také můžeš přidat kulisu hvězd - 'Stars'. Takhle by měla tvoje scéna vypadat:
 
 	![screenshot](space-sprites.png)
 
-+ Klikni na sprajt rakety a pak na záložku 'Kostýmy'.
++ Klikni na postavu rakety a pak na záložku 'Kostýmy'.
 
 	![screenshot](space-costume.png)
 
@@ -115,22 +115,17 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 ## Seznam úkolů { .check }
 
-+ Začni přidáním opice z knihovny sprajtů.
++ Začni přidáním opice z knihovny postav.
 
 	![screenshot](space-monkey.png)
 
-+ Když klikneš na tvůj nový sprajt s opicí a klikneš na záložku 'Costumes', můžeš uravit jak vypadá. Klikni na nástroj 'Ellipsa' a nakresli bílou helmu okolo hlavy opice.
++ Když klikneš na tvůj novou postavu s opicí a klikneš na záložku 'Kostýmy', můžeš uravit jak vypadá. Klikni na nástroj 'Elipsa' a nakresli bílou helmu okolo hlavy opice.
 
 	![screenshot](space-monkey-edit.png)
 
-+ Klikni na 'Scripts', a přidej opici následující kód tak, aby se točila navždy pomalu v kruzích:
-
-	```blocks
-		po kliknutí na VLAJKU
-		opakuj dokola
-		    otoč se vpravo o (1) stupňů
-		end
-	```
++ Klikni na 'Scénáře', a přidej opici následující kód tak, aby se točila navždy pomalu v kruzích:
+	
+    ![screenshot](space-monkey-code.png)
 
 	Blok `opakuj dokola` {.blockcontrol} je další smyčka, ale tentokrát nikdy nekončí.
 
@@ -166,7 +161,7 @@ Nakombinuj cykly a vytvoř svítící hvězdy.
 
 ## Seznam úkolů { .check }
 
-+ Přidej sprajt 'star'
++ Přidej postavu 'star'
 
 	![screenshot](space-star-sprite.png)
 
