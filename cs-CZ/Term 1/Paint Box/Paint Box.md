@@ -108,7 +108,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 		rozešli všem [green v]
 	```
 
-	Abys vytvořil(a) blok pro vyslání zprávy - `broadcast` {.blockevents}, klikni na tlačítko dolů a vyber 'new message...'.
+	Abys vytvořil(a) blok pro vyslání zprávy - `rozeslat všem` {.blockevents}, klikni na tlačítko dolů a vyber 'nová zpráva...'.
 
 	![screenshot](paint-broadcast.png)
 
@@ -116,7 +116,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 	![screenshot](paint-green-message.png)
 
-+ Nyní musíš říct tužce co má dělat, když dostane zprávu. Přidej tento kód do sprajtu tužky:
++ Nyní musíš říct tužce, co má dělat, když dostane zprávu. Přidej tento kód do objektu tužky:
 
 	```blocks
 		po obdržení zprávy [green v]
@@ -176,7 +176,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	Všimni si, že tady neposíláme žádnou zprávu, protože na scéně není žádný objekt, který by měl tuto činnost dělat.
 
-+ Vytvoř gumu pro mazání. Pokud jsi od vedoucího dostal soubory se zdroji, klikni 'Upload costume from file' a přidej obrázek 'eraser.svg'.
++ Vytvoř gumu pro mazání. Pokud jsi od vedoucího dostal soubory se zdroji, klikni 'Nahrát kostým ze souboru' a přidej obrázek 'eraser.svg'.
 
 	![screenshot](paint-eraser-costume.png)
 	
@@ -212,6 +212,18 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `if` {.blockcontrol} tužky takto:
 
 	![screenshot](pencil-gt-code.png)
+    
+     ```blocks
+		po kliknutí na ⚑
+		opakuj dokola
+		  go to [ukazatel myši v]
+          když ((myš stisknuta a souřadnice myši y) > -120) tak
+            pero dolů
+          jinak 
+            pero nahoru
+          end
+		end
+	```
 
 + Vyzkoušej projekt; nyní bys nemělo výt možné kreslit blízko tlačítek.
 
