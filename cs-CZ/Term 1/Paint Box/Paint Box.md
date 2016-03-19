@@ -36,12 +36,12 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 	![screenshot](paint-pencil-blue.png) 
 
-+ Protože budeš používat myš na kreslení, chceš aby tužka následovala myš navždy = `forever` {.blockcontrol}. Přidej tento kód k tužce:
++ Protože budeš používat myš na kreslení, chceš aby tužka následovala myš navždy = `opakuj dokola` {.blockcontrol}. Přidej tento kód k tužce:
 
 	```blocks
-		when flag clicked
-		forever
-		  go to [mouse pointer v]
+		po kliknutí na ⚑
+		opakuj dokola
+		  go to [ukazatel myši v]
 		end
 	```
 
@@ -51,7 +51,7 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 	![screenshot](paint-center.png)
 
-	Abys to spravil(a), klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Set costume center'.
+	Abys to spravil(a), klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Nastav střed kostýmu'.
 
 	![screenshot](paint-center-icon.png)
 
@@ -61,9 +61,19 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 + Klikni na záložku 'Scripts' a otestuj tužku znovu - funguje lépe než předtím?
 
-+ Jako další, nech tužku kreslit jestliže - `if` {.blockcontrol} - je stisknuto tlačítko myši:
++ Jako další, nech tužku kreslit `jestliže` {.blockcontrol} - je stisknuto tlačítko myši:
 
-	![screenshot](paint-pencil-draw-code.png)	
+    ```blocks
+		po kliknutí na ⚑
+		opakuj dokola
+		  go to [ukazatel myši v]
+          když (myš stiskunta) pak
+            pero dolů
+          jinak 
+            pero nahoru
+          end
+		end
+	```
 
 + Vyzkoušej program znovu. Tentokrát pohybuj tužkou po scéně a drž stisknuté tlačítko myši. Můžeš takto kreslit tužkou?
 
@@ -131,7 +141,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 		set pen color to [#0000ff]
 	```
 
-+ Nakonec potřebuješ říct tužce, jaký si má vybrat kostým a barvu tuhy při startu projektu (a smazat scénu). Přidej tento kód na začátek kódu pro tužku za `when flag clicked` {.blockevents} (před smyčku `forever` {.blockcontrol}):
++ Nakonec potřebuješ říct tužce, jaký si má vybrat kostým a barvu tuhy při startu projektu (a smazat scénu). Přidej tento kód na začátek kódu pro tužku za `po kliknutí na ⚑` {.blockevents} (před smyčku `forever` {.blockcontrol}):
 
 	```blocks
 		clear
