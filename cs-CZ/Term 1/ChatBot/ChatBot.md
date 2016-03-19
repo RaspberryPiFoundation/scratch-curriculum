@@ -31,7 +31,7 @@ V této lekci se naučíš, jak naprogramovat mluvícího robota!
 
 	![screenshot](chatbot-characters.png)
 
-+ Vyber si kulisy, které podpoří osobnost robota. Tady je příklad, jak by mohla (ale nemusí) scéna vypadat:
++ Vyber si pozadí, které podpoří osobnost robota. Tady je příklad, jak by mohla (ale nemusí) scéna vypadat:
 
 	![screenshot](chatbot-sprite.png)
 
@@ -46,8 +46,8 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 + Klikni na robota a přidej kód:
 
 	```blocks
-		when this sprite clicked
-		ask [Hey! Jak se jmenuješ?] and wait
+		po kliknutí na mě
+		ptej se [Ahoj! Jak se jmenuješ?] a čekej
 		say [To je krásné jméno!] for (2) secs
 	```
 
@@ -58,16 +58,16 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 + Robot odpoví pokaždé jen `To je krásné jméno!`. Teď uprav robotovu odpověď tak, aby použil jméno, které napíšeš. Změn robotův kód takto:
 
 	```blocks
-		when this sprite clicked
-		ask [Hey! Jak se jmenuješ?] and wait
-		say <join [Ahoj] (answer)> for (2) secs
+		po kliknutí na mě
+		ptej se [Ahoj! Jak se jmenuješ?] a čekej
+		říkej <spoj [Ahoj] (answer)> příštích (2) sekund
 	```
 
-	Abys vytvořil poslední blok, musíš přesunout zelený blok `join` {.blockoperators} na fialový blok `say` {.blocklooks}.
+	Abys vytvořil poslední blok, musíš přesunout zelený blok `spoj` {.blockoperators} na fialový blok `říkej` {.blocklooks}.
 
 	![screenshot](chatbot-join.png)
 
-	Pak změn text `hello` na `Ahoj`, a přesuň světle modrý blok `answer` {.blocksensing} (ze sekce 'Sensing') na text `world`.
+	Pak změn text `hello` na `Ahoj`, a přesuň světle modrý blok `answer` {.blocksensing} (ze sekce 'Vnímání') na text `world`.
 
 	![screenshot](chatbot-answer.png)
 
@@ -80,10 +80,10 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 + Jakmile vytvoříte novou proměnnou, upravte kód robota takto:
 
 	```blocks
-		when this sprite clicked
-		ask [Hey! Jak se jmenuješ?] and wait
-		set [name v] to (answer)
-		say <join [Ahoj ] (name)> for (2) secs
+		po kliknutí na mě
+		ptej se [Ahoj! Jak se jmenuješ?] a čekej
+		nastav [name v] na (answer)
+		říkej <spoj [Ahoj ] (name)> příštích (2) sekund
 	```
 
 + Pokud vyzkoušíš znovu svůj program, zjsitíš, že je hodnota odpovědi uložena v proměnné `name` {.blockdata} a ukazuje se v levém horním rohu scény. Proměnná `name` {.blockdata} bude obsahovat stejnou hodnotu jako proměnná `answer` {.blocksensing}.
@@ -104,20 +104,20 @@ Naprogramuj robota tak aby se zeptal na více otázek. Dokážeš uložit odpov�
 
 # Step 3: Rozhodování { .activity }
 
-Robota můžeš naprohramovat tak, aby se rozhodoval co dále bude dělat na základě odpovědi.
+Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na základě odpovědi.
 
 ## Seznam úkolů { .check }
 
 + Nech se robota zeptat na otázky na které jde odpovědět `ano` nebo `ne`. Tady je příklad:
 
 	```blocks
-		when this sprite clicked
-		ask [Hey! Jak se jmenuješ?] and wait
-		set [name v] to (answer)
-		say <join [Ahoj ] (name)> for (2) secs
-		ask <join [Máš se dobře ] (name)> and wait
-		if ((answer)=[ano]) then
-			say [To rád slyším!] for (2) secs
+		po kliknutí na mě
+		ptej se [Ahoj! Jak se jmenuješ?] a čekej
+		nastav [name v] na (answer)
+		říkej <spoj [Ahoj ] (name)> příštích (2) sekund
+		ptej se <join [Máš se dobře? ] (name)> and wait
+		když ((answer)=[ano]) tak
+			říkej [To rád slyším!] příštích (2) sekund
 		end
 	```
 
@@ -125,26 +125,26 @@ Robota můžeš naprohramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 + Abys vyzkoušel program pořádně, pusť ho dvakrát a jednou odpověz `ne` a jednou `ano`. Odpověď od robota dostaneš jen když odpovíš `ano`.
 
-+ Problém je, že robot neodpoví když  je odpověď `ne`. To můžeš opravit tak, že změníš blok `if` {.blockcontrol} na blok `if/else` {.blockcontrol}:
++ Problém je, že robot neodpoví když  je odpověď `ne`. To můžeš opravit tak, že změníš blok `if` {.blockcontrol} na blok `if/jinak` {.blockcontrol}:
 
 	```blocks
-		when this sprite clicked
-		ask [Hey! Jak se jmenuješ?] and wait
-		set [name v] to (answer)
-		say <join [Ahoj ] (name)> for (2) secs
+		po kliknutí na mě
+		ptej se [Ahoj! Jak se jmenuješ?] a čekej
+		nastav [name v] na (answer)
+		říkej <spoj [Ahoj ] (name)> příštích (2) sekund
 		ask <join [Máš se dobře ] (name)> and wait
-		if ((answer)=[ano]) then
-			say [To rád slyším!] for (2) secs
-		else
-			say [Ale neee!] for (2) secs
+		když ((answer)=[ano]) tak
+			říkej [To rád slyším!] příštích (2) sekund
+		jinak
+			říkej [Ale neee!] příštích (2) sekund
 		end
 	```
 
-+ Když vyzkoušíš svůj kód, zjistíš, že robot odpovídá jak na `ano` tak na `ne`. Robot odpoví `To rád slyším!` na tvoji odpověd `ano`, ale odpověď `Ale neee!` když zadáš cokoliv jiného než `ano` (blok `else` {.blockcontrol} znamená 'jinak').
++ Když vyzkoušíš svůj kód, zjistíš, že robot odpovídá jak na `ano` tak na `ne`. Robot odpoví `To rád slyším!` na tvoji odpověd `ano`, ale odpověď `Ale neee!` když zadáš cokoliv jiného než `ano` (blok `jinak` {.blockcontrol} znamená 'jinak').
 
-	![screenshot](chatbot-else.png)
+	![screenshot](chatbot-jinak.png)
 
-+ Do bloku `if` {.blockcontrol} nebo `else` {.blockcontrol} můžeš vložit cokoliv, nejen mluvení robota. Například můžeš změnit vzhled robota (kostým) aby odpovídal odpovědi.
++ Do bloku `if` {.blockcontrol} nebo `jinak` {.blockcontrol} můžeš vložit cokoliv, nejen mluvení robota. Například můžeš změnit vzhled robota (kostým) aby odpovídal odpovědi.
 
 	Pokud se podíváš na kostýmy robota, zjistíš, že jich je tam více než jeden. (Pokud ne, můžeš je přidat)
 
