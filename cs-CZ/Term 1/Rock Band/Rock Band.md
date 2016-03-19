@@ -117,7 +117,7 @@ Naprogramujeme buben aby vydával zvuk, když na něj klikneš.
 + Zkus upravit buben tak, aby hrál při stisknutí mezerníku. Budeš potřebovat tento blok `událost` {.blockevents}:
 
 ```blocks
-	when [space v] key pressed
+	po stisku klávesy [space v]
 ```
 
 Existující kód můžeš zkopírovat tak, že klikneš pravým tlačítkem myši a vybereš 'duplicate'.
