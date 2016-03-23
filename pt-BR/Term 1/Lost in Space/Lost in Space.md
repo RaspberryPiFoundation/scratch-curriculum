@@ -24,7 +24,7 @@ Vamos fazer uma nave espacial que voa em direção à Terra!
 
 + Inicie um novo projecto Scratch e apague o sprite do gato para que seu projeto fique vazio. Você pode encontrar o editor do Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Adicione os sprites 'Spaceship' e 'Earth' para seu stage. Você também deve adicionar o pano de fundo 'Stars'. Isto é como seu stage deve ficar:
++ Adicione os sprites 'Spaceship' e 'Earth' para seu palco. Você também deve adicionar o pano de fundo 'Stars'. É assim como seu palco deverá ficar:
 
 	![screenshot](space-sprites.png)
 
@@ -40,21 +40,21 @@ Vamos fazer uma nave espacial que voa em direção à Terra!
 
 	![screenshot](space-animate.png)
 
-	Alterar os números nos blocos de código, de modo que o código fique exatamente igual a imagem acima.
+	Altere os números nos blocos de código, de modo que o código fique exatamente igual a imagem acima.
 
-+ Se você clicar sobre os blocos de código para executar o código, você deve ver a nave espacial falar, girar e mover-se em direção ao centro do stage.
++ Se você clicar sobre os blocos de código para executar o código, você deve ver a nave espacial falar, girar e mover-se em direção ao centro do palco.
 
 	![screenshot](space-animate-stage.png)
 
-	A posição da tela `x:(0) y:(0)` {.blockmotion} é o centro do stage. Uma posição como `x:(-150) y:(-150)` {.blockmotion} está localizado na parte inferior esquerda do stage, e uma posição como `x:(150) y:(150)` {.blockmotion} está localizado na parte superior-direita.
+	A posição da tela `x:(0) y:(0)` {.blockmotion} é o centro do palco. Uma posição como `x:(-150) y:(-150)` {.blockmotion} está localizado na parte inferior esquerda do palco, e uma posição como `x:(150) y:(150)` {.blockmotion} está localizado na parte superior-direita.
 
 	![screenshot](space-xy.png)
 
-	Se você precisar saber as coordenadas de uma posição no palco, mova o mouse para a posição desejada e anote as coordenadas que serão exibidas abaixo do stage.
+	Se você precisar saber as coordenadas de uma posição no palco, mova o mouse para a posição desejada e anote as coordenadas que serão exibidas abaixo do palco.
 
 	![screenshot](space-coordinates.png)
 
-+ Experimente a sua animação, clicando na bandeira verde logo acima do stage.
++ Experimente a sua animação, clicando na bandeira verde logo acima do palco.
 
 	![screenshot](space-flag.png)
 
@@ -71,7 +71,7 @@ Você precisará alterar os números neste bloco:
 
 ## Salve seu projeto { .save }
 
-# Passo 2: Animando usando loops { .activity .new-page }
+# Passo 2: Animando usando repetições { .activity .new-page }
 
 Outra maneira de animar a nave espacial é dizer para ela se mover uma pequena quantidade, várias vezes.
 
@@ -89,7 +89,7 @@ Outra maneira de animar a nave espacial é dizer para ela se mover uma pequena q
 
 + Se você clicar na bandeira para experimentar este novo código, você verá que ele faz praticamente a mesma coisa que antes.
 
-+ Você pode adicionar mais código ao seu loop para fazer coisas interessantes. Adicione o bloco de código `mude o efeito cor para para 25` {.blocklooks} no loop (a partir da seção 'Aparência'), para alterar repetidamente a cor da nave espacial conforme ela se move:
++ Você pode adicionar mais código ao seu __loop__ para fazer coisas interessantes. Adicione o bloco de código `mude o efeito cor para para 25` {.blocklooks} no __repetição__ (a partir da seção 'Aparência'), para alterar repetidamente a cor da nave espacial conforme ela se move:
 
 	![screenshot](space-colour.png)
 
@@ -119,7 +119,7 @@ Vamos adicionar um macaco para sua animação que está perdido no espaço!
 
 	![screenshot](space-monkey.png)
 
-+ Se você clicar sobre o seu novo sprite de macaco e, em seguida, clique em 'Fantasias', você pode editar a aparência do macaco. Clique na ferramenta 'Círculo' e desenhe um capacete branco de espaço ao redor da cabeça do macaco.
++ Se você clicar sobre o seu novo sprite de macaco e, em seguida, clicar em 'Fantasias', você pode editar a aparência do macaco. Clique na ferramenta 'Círculo' e desenhe um capacete de astronauta branco na cabeça do macaco.
 
 	![screenshot](space-monkey-edit.png)
 
@@ -132,7 +132,7 @@ Vamos adicionar um macaco para sua animação que está perdido no espaço!
 		fim
 	```
 
-	O bloco de código `sempre` {.blockcontrol} é outro loop, mas que nunca termina.
+	O bloco de código `sempre` {.blockcontrol} é outro comando de repetição (__loop__), mas que nunca termina.
 
 + Clique na bandeira para testar seu macaco. Você terá que clicar no botão stop (ao lado da bandeira) para acabar com essa animação.
 
@@ -140,7 +140,7 @@ Vamos adicionar um macaco para sua animação que está perdido no espaço!
 
 # Passo 4: Saltando asteróides { .activity .new-page }
 
-Vamos adicionar algumas pedras do espaço em sua animação.
+Vamos adicionar alguns asteróides em sua animação.
 
 ## Lista de atividades { .check }
 
@@ -159,7 +159,7 @@ Vamos adicionar algumas pedras do espaço em sua animação.
 	fim
 	```
 
-+ Clique na bandeira para testar seu pedra. Será que bate na borda do stage?
++ Clique na bandeira para testar sua pedra. Será que bate na borda do palco?
 
 # Passo 5: Estrelas que brilham { .activity .new-page }
 

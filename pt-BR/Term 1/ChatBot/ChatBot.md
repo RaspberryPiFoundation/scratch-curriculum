@@ -68,7 +68,7 @@ Agora que você tem um robô com personalidade, vamos programá-lo para conversa
 
 	![screenshot](chatbot-join.png)
 
-	Você pode mudar o texto `hello` que vem neste bloco para qualquer outro texto que você quiser, como fizemos com o `Olá`, e arrastar o bloco azul claro `resposta` {.blocksensing} (da secção de 'Sensores') para o lugar da palavra `world`.
+	Você pode mudar o texto `hello` que vem neste bloco para qualquer outro texto que você quiser, como fizemos com o `Olá`, e arrastar o bloco azul claro `resposta` {.blocksensing} (da seção de 'Sensores') para o lugar da palavra `world`.
 
 	![screenshot](chatbot-answer.png)
 
@@ -101,7 +101,7 @@ Programe o seu robô para fazer outra pergunta. Você consegue guardar a nova re
 
 ![screenshot](chatbot-question.png)
 
-## Salve seu projeto { .save }
+## Salve seu projeto { .save .new-page}
 
 # Passo 3: Tomando decisões { .activity }
 

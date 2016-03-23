@@ -18,7 +18,7 @@ Neste projeto você vai aprender como codificar os seus próprios instrumentos m
 
 # Passo 1: Atores (Sprites) { .activity }
 
-Antes que você possa começar a animar você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
+Antes que você possa começar a animar, é preciso adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
 
 ## Lista de atividades { .check }
 
@@ -52,7 +52,7 @@ Você pode, em seguida, clicar em "Arquivo" e depois "Salvar agora" para salvar 
 
 # Passo 2: área de Atuação { .activity }
 
-O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco ("stage")!
+O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco!
 
 ## Lista de atividades { .check }
 
@@ -60,7 +60,7 @@ O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vid
 
 	![screenshot](band-stage-choose.png)
 
-+ Clique em 'Interior' à esquerda, e em seguida, clique em uma cortina de fundo e clique 'OK'.
++ Clique em 'Interior' à esquerda, e em seguida, em uma cortina de fundo e clique 'OK'.
 
 	![screenshot](band-backdrop.png)
 
@@ -132,11 +132,11 @@ Vamos adicionar um cantor a sua banda!
 
 ## Lista de atividades { .check }
 
-+ Adicionar mais 2 sprites para o seu stage; um cantor e um microfone.
++ Adicionar mais 2 sprites para o seu palco; um cantor e um microfone.
 
 	![screenshot](band-singer-mic.png)
 
-+ Antes que você possa fazer o seu cantor cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons e então clique em 'Escolha o som da biblioteca':
++ Antes que você possa faze-lo cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons e então clique em 'Escolha o som da biblioteca':
 
 	![screenshot](band-import-sound.png)
 

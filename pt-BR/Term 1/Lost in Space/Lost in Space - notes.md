@@ -20,7 +20,7 @@ Há também uma versão deste projeto com os recursos externos pré-carregado. E
 
 #Objetivos de aprendizagem
 + Loops:
-	+ `Repeat` {.blockcontrol} loops;
+	+ `Repita` {.blockcontrol} loops;
 	+ `Sempre` {.blockcontrol} loops.
 
 #Desafios

@@ -95,7 +95,7 @@ Você consegue fazer um som cada vez que o fantasma é pego?
 
 ## Salve seu projeto { .save }
 
-# Step 4: Acrescentando um placar { .activity .new-page }
+# Step 4: Acrescentando um placar { .activity }
 
 Vamos deixar o jogo mais interessante mantendo um placar.
 
@@ -103,11 +103,11 @@ Vamos deixar o jogo mais interessante mantendo um placar.
 
 + Para manter o placar dos jogadores, você precisa de um local para armazenar esta informação. Uma __variável__ é o local onde armazenamos dados que podem mudar, por exemplo, nosso placar.
 
-	Para criar uma nova variável, clique na aba 'Scripts', selecione `Variáveis` {.blockdata} e entao clique em 'Criar uma variável'.
+	Para criar uma nova variável, clique na aba 'Scripts', selecione `Variáveis` {.blockdata} e então clique em 'Criar uma variável'.
 
 	![screenshot](ghost-score.png)
 
-	Digite 'placar' que será o nome da variável, tenha certeza que ela estará disponível para todos os atores e clique em 'OK' para criá-la. Você verá vários blocos de código que podem ser usados com sua variável `placar` {.blockdata}.
+	Digite 'placar', que será o nome da variável, tenha certeza que ela estará disponível para todos os atores e clique em 'OK' para criá-la. Você verá vários blocos de código que podem ser usados com sua variável `placar` {.blockdata}.
 
 	![screenshot](ghost-variable.png)
 
@@ -146,7 +146,7 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 	+ O temporizador deve diminuir o valor a cada segundo;
 	+ O jogo deve terminar quando o temporizador chegar em 0.
 
-	Aqui está o código que faz isto e ele pode ser acrescentado ao seu  __stage__:
+	Aqui está o código que faz isto e ele pode ser acrescentado ao seu  __palco__:
 
 	```blocks
 		quando clicar em ⚑
@@ -166,7 +166,7 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 
 	![screenshot](ghost-readout.png)
 
-+ Peça a um amigo para testar seu jogo. Quantos pontos eles fizeram? Se seu jogo estiver muito fácil, você pode:
++ Peça a amigos para testar seu jogo. Quantos pontos eles fizeram? Se seu jogo estiver muito fácil, você pode:
 
 	+ Dar menos tempo ao jogador;
 	+ Fazer com que os fantasmas apareçam com uma frequência menor;
