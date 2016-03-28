@@ -25,7 +25,7 @@ Vamos começar criando o controle, que será usado para capturar as bolinhas.
 
 + Comece um novo projeto no Scratch, apague o ator do gato, assim o seu projeto ficará vazio. Você pode encontrar uma versão online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Se o instrutor do seu clube tiver dado para você uma pasta chamada 'Recursos', clique em 'Carregar ator a partir de arquivo' e adicione a imagem 'controller.svg'. Você deve colocar seu controle no meio do cenário. 
++ Se o instrutor do seu clube tiver dado para você uma pasta chamada 'Recursos', clique em 'Carregar ator a partir de arquivo' e adicione a imagem 'controle.svg'. Você deve colocar seu controle no meio do cenário. 
 
 	![screenshot](dots-controller.png)
 	
@@ -164,7 +164,7 @@ Vamos fazer com que o jogo fique mais difícil de acordo com a sobrevivência do
 		espere (atraso) seg
 	```
 
-+ Teste a sua nova variável `atraso` {.blockdata}, e veha se o atraso entre a criação das bolinhas diminui lentamente. Está funcionando para as 3 cores de volinhas? Você pode ver o valor do `atraso` {.blockdata} diminuindo?
++ Teste a sua nova variável `atraso` {.blockdata}, e veja se o atraso entre a criação das bolinhas diminui lentamente. Está funcionando para as 3 cores de bolinhas? Você pode ver o valor do `atraso` {.blockdata} diminuindo?
 
 ## Salve seu projeto { .save }
 
@@ -173,9 +173,9 @@ Você consegue melhorar o seu jogo adicionando uma variável `velocidade` {.bloc
 
 ## Salve seu projeto { .save }
 
-# Passo 4: Pontuação alta score { .activity }
+# Passo 4: Melhor pontuação { .activity }
 
-Vamos salvar a pontuação mais alta, assim os jogadores podem saber se estão indo bem. 
+Vamos salvar a melhor pontuação, assim os jogadores podem saber se estão indo bem. 
 
 ## Lista de atividades { .check }
 
@@ -192,8 +192,8 @@ Vamos salvar a pontuação mais alta, assim os jogadores podem saber se estão i
 + Adicione este código ao seu bloco personalizado para guardar a `pontuação` {.blockdata} atual como a `melhor pontuação` {.blockdata} `se` {.blockcontrol} ela for a maior pontuação até então:
 
 	```blocks
-		defina [object Object]
-		se <(pontuação) > (high score)> então
+		defina [conferir melhor pontuação]
+		se <(pontuação) > (melhor pontuação)> então
 		   mude [melhor pontuação v] para (pontuação)
 		end
 	```
@@ -203,7 +203,8 @@ Vamos salvar a pontuação mais alta, assim os jogadores podem saber se estão i
 ## Salve seu projeto { .save }
 
 ## Desafio: Melhore o seu jogo! {.challenge}
-CVocê acha que consegue melhorar seu jogo? Por exemplo, você poderia criar bolinhas especias que:
+
+Você acha que consegue melhorar seu jogo? Por exemplo, você poderia criar bolinhas especias que:
 
 + dobram sua pontuação;
 + diminuem a velocidade das bolinhas;
@@ -212,4 +213,4 @@ CVocê acha que consegue melhorar seu jogo? Por exemplo, você poderia criar bol
 ## Salve seu projeto { .save }
 
 ## Desafio: Menu do jogo {.challenge}
-Você consegue adicionar um menu (com botões) ao seu jogo? Você conseguiri adicionar uma tela de instrulçoes, ou uma tela separada para mostrar a pontuação mais alta? Se precisar de ajuda com essa parte, o projeto do jogo da tabuada poderá te ajudar!
+Você consegue adicionar um menu (com botões) ao seu jogo? Você conseguiria adicionar uma tela de instruções, ou uma tela separada para mostrar a pontuação mais alta? Se precisar de ajuda com essa parte, o projeto do jogo da tabuada poderá te ajudar!
