@@ -20,7 +20,7 @@ Neste projeto, você irá fazer seu próprio programa de pintura!
 
 Vamos começar criando um lápis, que pode ser usado para desenhar no palco.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Comece um novo projeto Scratch, e delete o ator gato de forma que seu projeto fique vazio. Você pode encontrar o editor online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -32,11 +32,11 @@ Vamos começar criando um lápis, que pode ser usado para desenhar no palco.
 
 	![screenshot](paint-pencil-delete.png)
 
-+ Renomeie sua fantasua para 'lapis-azul', e use a ferramente 'Color a shape' para deixar o lápis azul.
++ Renomeie sua fantasia para 'lapis-azul', e use a ferramente 'Colorir uma forma' para deixar o lápis azul.
 
 	![screenshot](paint-pencil-blue.png)
 
-+ Como você usará o mouse para desenhar, que irpa querer que o lápis siga o mouse `sempre` {.blockcontrol}. Adicione este código para o lápis:
++ Como você usará o mouse para desenhar, você irá querer que o lápis siga o mouse `sempre` {.blockcontrol}. Adicione este código para o lápis:
 
 	```blocks
 		quando clicar em ⚑
@@ -47,11 +47,11 @@ Vamos começar criando um lápis, que pode ser usado para desenhar no palco.
 
 + Teste esse código clicando na bandeira e então mova o mouse em volta do palco. Funcionou como esperado?
 
-+ Você notou que é o centro da lápis, e não o tip, que segue o ponteiro do mouse?
++ Você notou que é o centro da lápis, e não a ponta, que segue o ponteiro do mouse?
 
 	![screenshot](paint-center.png)
 
-	Para arrumar isso, clique na fantasia 'lapis-azul' do ator lápis, e clique em 'Set costume center'.
+	Para arrumar isso, clique na fantasia 'lapis-azul' do ator lápis, e clique em 'Especificar centro de fantasia'.
 
 	![screenshot](paint-center-icon.png)
 
@@ -89,7 +89,7 @@ Vamos adicionar diferentes cores de lápis para seu projeto, e permitir que o us
 
 	![screenshot](paint-selectors.png)
 
-+ Quando o o seletor verde é clicado, you precisa `enviar` {.blockevents} uma mensagem para o ator lápis, dizendo para ele mudar sua fantasia e a cor do lápis.
++ Quando o o seletor verde é clicado, você precisa `enviar` {.blockevents} uma mensagem para o ator lápis, dizendo para ele mudar sua fantasia e a cor do lápis.
 
 	Para fazer isso, primeiro adicione este código para o ícone do seletor verde:
 
@@ -98,7 +98,7 @@ Vamos adicionar diferentes cores de lápis para seu projeto, e permitir que o us
 		envie [verde v] a todos
 	```
 
-	Para criar o bloco `broadcast` {.blockevents}, clique na seta para baixo e selecione 'new message...'.
+	Para criar o bloco `envie` {.blockevents}, clique na seta para baixo e selecione 'nova mensagem...'.
 
 	![screenshot](paint-broadcast.png)
 
@@ -151,7 +151,7 @@ Vamos adicionar diferentes cores de lápis para seu projeto, e permitir que o us
 
 Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our project!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Let's add a button to clear the stage. To do this, add the 'X-block' letter sprite to the stage, and colour it in red.
 
@@ -212,7 +212,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to our pr
 
 Vamos permitir o usuário desenhar usando diverso tamanhos diferentes de lápis.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Primeiro, adicione uma nova variável chamada 'largura'. Se você não tiver certeza de como fazer isso, o projeto 'Balloons' ajudará você.
 

@@ -9,7 +9,7 @@ beta: true
 ...
 
 ## Projeto elaborado pela Comunidade! { .challenge .pdf-hidden }
-Este projeto foi criado com o Erik. Se você gostaria de contribuir com um projeto feito por você, então [visite o nosso repositório no Github](https://github.com/CodeClub).
+Este projeto foi criado com o Erik. Se você quiser contribuir com um projeto feito por você, então [visite o nosso repositório no Github](https://github.com/CodeClub).
 
 # Introdução { .intro }
 
@@ -28,7 +28,7 @@ Vamos construir a nave que defenderá a Terra!
 
 + Comece um novo projeto no Scratch e apague o ator do gato, assim o seu projeto estará vazio. Você pode encontrar o editor do Scratch online em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Adicione o pano de fundo das 'stars' (estrelas) e o ator 'Spaceship' (nave) ao seu projeto. Reduza o tamanho da nave e coloque-a na parte de baixo do cenário. 
++ Adicione o pano de fundo 'stars' (estrelas) e o ator 'Spaceship' (nave) ao seu projeto. Reduza o tamanho da nave e coloque-a na parte de baixo do cenário. 
 
 	![screenshot](invaders-sprites.png)
 
@@ -47,7 +47,7 @@ Vamos construir a nave que defenderá a Terra!
 
 + Teste seu projeto para ver se o controle da sua nava está funcionando corretamente com as setas direcionais. 
 
-## Salveu seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 2: Descargas elétricas { .activity }
 
@@ -82,7 +82,7 @@ Vamos dar à nossa nave a habilidade de disparar raios elétricos!
 
 	```blocks
 		quando eu começar como clone
-		vá para [nave v]
+		go to [nave v]
 		mostre
 		repita até que <tocar em [borda v]?>
 		   adicione (10) a y
@@ -97,7 +97,8 @@ Perceba que nós movemos o novo clone até a nave enquanto ele continua escondid
 ## Salve seu projeto { .save }
 
 ## Desafio: Arrumando os raios {.challenge}
-O que acontece se você segurar a tecla espaço pressionada? Você pode usar o bloco `espere` {.blockcontrol} para arrumar isso?
+
+O que acontece se você manter a tecla espaço pressionada? Você pode usar o bloco `espere` {.blockcontrol} para arrumar isso?
 
 ## Salve seu projeto { .save }
 
@@ -131,7 +132,7 @@ Vamos adicionar vários hipopótamos espaciais que tentarão destruir a nossa na
 	```blocks
 		quando clicar em ⚑
 		sempre
-		   espere (escolha número entre (2) e (4)) seg
+		   espere (número aleatório entre (2) e (4)) seg
 		   crie clone de [hipopo v]
 		end
 	```
@@ -140,18 +141,18 @@ Vamos adicionar vários hipopótamos espaciais que tentarão destruir a nossa na
 
 	```blocks
 		quando eu começar como clone
-		mude [velocidade v] para (escolha número entre (2) e (4))
-		vá para x:(escolha número entre (-220) e (220)) y:(150)
+		mude [velocidade v] para (número aleatório entre (2) e (4))
+		vá para x:(número aleatório entre (-220) e (220)) y:(150)
 		mostre
 		repita até que <tocar em [raio v]?>
 		   mova (velocidade) passos
-		   gire ↻ (escolha número entre (-10) e (10)) graus
+		   gire ↻ (número aleatório entre (-10) e (10)) graus
 		   se tocar na borda, volte
 		end
 		apague este clone
 	```
 
-+ Teste o código do seu hipopótamo. Você deve ver um novo clone dele aparecer a em intervalos de alguns segundos, cada um se movendo com uma velocidade diferente. 
++ Teste o código do seu hipopótamo. Você deve ver um novo clone dele aparecer em intervalos de alguns segundos, cada um se movendo com uma velocidade diferente. 
 
 	![screenshot](invaders-hippo-test.png)
 

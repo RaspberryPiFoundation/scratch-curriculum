@@ -10,7 +10,7 @@ Neste projeto as crianças irão aprender como fazer um jogo, no qual o jogador 
 #Recursos
 Para este projeto, o Scratch 2 deve ser usadi. O Scratch pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado em [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e utilizado offline.
 
-Você pode encontrar uma versão completa deste projeto em <a href="http://scratch.mit.edu/projects/46018140/#editor">online</a>, ou pode baixá-lo clicando no link de 'Download Project Materials' (Download dos recursos do projeto) para este projeto, que contém:
+Você pode encontrar uma versão completa deste projeto em <a href="http://scratch.mit.edu/projects/46018140/#editor">online</a>, ou pode baixá-lo clicando no link de 'Baixar materiais do projeto' para este projeto, que contém:
 
 + CloneWars.sb2
 

@@ -5,12 +5,13 @@ embeds: "*.png"
 ...
 
 #Introdução:
-Neste projeto, as crianças aprenderão como transmitir mensagens entre atores.
+Neste projeto as crianças aprenderão como transmitir mensagens entre atores.
 
 #Recursos
 Para este projeto, o Scratch 2 deve ser usado. O Scratch 2 pode ser usado online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode ser baixado de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usado offline.
 
-Você pode achar a versão completa deste projeto <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, ou pode baixá-lo clicando em 'Download Project Materials' para este projeto, o qual contém:
+Você encontra uma versão completa deste projeto <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, ou pode ser baixado clicando no link 'Baixar materiais do projeto' deste projeto onde contém:
+
 
 + PaintBox.sb2
 

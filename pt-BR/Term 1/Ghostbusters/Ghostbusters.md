@@ -21,7 +21,7 @@ Você fará um jogo de caça fantasmas!
 
 # Passo 1: Animando um fantasma { .activity }
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Comece um novo projeto Scratch, e delete o ator gato para que seu projeto fique vazio. Você pode encontrar o editor online do Scratch aqui <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -43,13 +43,13 @@ Você fará um jogo de caça fantasmas!
 
 + Teste seu código do fantasma clicando na bandeira verde.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 2: Fantasmas aleatórios { .activity }
 
 É muito fácil pegar seu fantasma, porque ele não se move!
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Ao invés de ficar na mesma posição, você pode deixar o Scratch escolher coordenadas x e y aleatoriamente. Acrescente um bloco `vá para` {.blockmotion} ao código do seu fantasma, ele vai ficar assim:
 
@@ -66,12 +66,12 @@ Você fará um jogo de caça fantasmas!
 
 + Teste seu fantasma novamente, você deve notar que ele aparece cada vez em um lugar diferente.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Desafio: Mais aleatório {.challenge}
 Você consegue fazer que seu fantasma `espere` {.blockcontrol} por um intervalo de tempo aleatório antes de ele aparecer?  Você consegue usar um bloco `mude o tamanho` {.blocklooks} para fazer seu fantasma ter tamanhos aleatórios cada vez que ele aparece?
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Step 3: Pegando fantasmas { .activity }
 
@@ -93,21 +93,21 @@ Vamos permitir que o jogador pegue fantasmas!
 ## Desafio: Adicionando som { .challenge }
 Você consegue fazer um som cada vez que o fantasma é pego?
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
-# Step 4: Acrescentando um placar { .activity .new-page }
+# Step 4: Acrescentando um placar { .activity }
 
 Vamos deixar o jogo mais interessante mantendo um placar.
 
-## Lista de Atividades { .check }
+## Lista de atividades { .check }
 
 + Para manter o placar dos jogadores, você precisa de um local para armazenar esta informação. Uma __variável__ é o local onde armazenamos dados que podem mudar, por exemplo, nosso placar.
 
-	Para criar uma nova variável, clique na aba 'Scripts', selecione `Variáveis` {.blockdata} e entao clique em 'Criar uma variável'.
+	Para criar uma nova variável, clique na aba 'Scripts', selecione `Variáveis` {.blockdata} e então clique em 'Criar uma variável'.
 
 	![screenshot](ghost-score.png)
 
-	Digite 'placar' que será o nome da variável, tenha certeza que ela estará disponível para todos os atores e clique em 'OK' para criá-la. Você verá vários blocos de código que podem ser usados com sua variável `placar` {.blockdata}.
+	Digite 'placar', que será o nome da variável, tenha certeza que ela estará disponível para todos os atores e clique em 'OK' para criá-la. Você verá vários blocos de código que podem ser usados com sua variável `placar` {.blockdata}.
 
 	![screenshot](ghost-variable.png)
 
@@ -128,7 +128,7 @@ Vamos deixar o jogo mais interessante mantendo um placar.
 
 + Rode seu programa novamente e pegue alguns fantasmas. Seu placar muda?
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Step 5: Acrescentando um tempo { .activity }
 
@@ -146,7 +146,7 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 	+ O temporizador deve diminuir o valor a cada segundo;
 	+ O jogo deve terminar quando o temporizador chegar em 0.
 
-	Aqui está o código que faz isto e ele pode ser acrescentado ao seu  __stage__:
+	Aqui está o código que faz isto e ele pode ser acrescentado ao seu  __palco__:
 
 	```blocks
 		quando clicar em ⚑
@@ -166,7 +166,7 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 
 	![screenshot](ghost-readout.png)
 
-+ Peça a um amigo para testar seu jogo. Quantos pontos eles fizeram? Se seu jogo estiver muito fácil, você pode:
++ Peça a amigos para testar seu jogo. Quantos pontos eles fizeram? Se seu jogo estiver muito fácil, você pode:
 
 	+ Dar menos tempo ao jogador;
 	+ Fazer com que os fantasmas apareçam com uma frequência menor;
@@ -174,7 +174,7 @@ Você pode tornar o jogo mais interessante, dando apenas 10 segundos para o joga
 
 	Teste seu jogo algumas vezes até que você esteja satisfeito com o nível de dificuldade.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Desafio: Mais obstáculos {.challenge}
 Você consegue acrescentar outros objetos ao seu jogo?
@@ -190,7 +190,7 @@ Você precisa pensar a respeito dos objetos que você está acrescentando. Pense
 
 Se você precisar de ajuda para acrescentar outros objetos, você pode reusar os passos acima!
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 

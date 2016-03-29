@@ -1,5 +1,5 @@
 ---
-title: Capturando Bolinhas — Notas para líderes de clubes
+title: Capturando Bolinhas — Notas para o líder do clube
 language: pt-BR
 embeds: "*.png"
 ...
@@ -10,7 +10,7 @@ Neste projeto as crianças vão aprender a fazer um jogo, no qual o jogador tem 
 #Recursos
 Para este projeto, o Scratch 2 deve ser usado, você pode encontrá-lo online em [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou pode baixá-lo em [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usá-lo offline.
 
-Você encontra uma versão completa deste projeto online em <a href="http://scratch.mit.edu/projects/44942820/#editor">online</a>, ou pode baixá0lo ao clicar em "Recursos do projeto", que contém: 
+Você encontra uma versão completa deste projeto online em <a href="http://scratch.mit.edu/projects/44942820/#editor">online</a>, ou pode baixá-lo ao clicar em "Recursos do projeto", que contém: 
 
 + CatchTheDots.sb2
 
@@ -21,7 +21,7 @@ Há também uma versão desse projeto com os recursos externos pré carregados, 
 Esse link também possui sua própria pasta 'Recursos do projeto', que contém imagens que as crianças irão precisar para completar esse projeto. Certifique-se de que cada criança tem uma cópia desses recursos na hora de realizar o projeto. 
 
 Recursos do projeto:
-+ controller.svg;
++ controle.svg;
 
 #Objetivos de aprendizagem
 + Este projeto consolida o aprendizado de técnicas de programação aprendidas anteriormente. 

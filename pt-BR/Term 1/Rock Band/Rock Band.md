@@ -18,7 +18,7 @@ Neste projeto você vai aprender como codificar os seus próprios instrumentos m
 
 # Passo 1: Atores (Sprites) { .activity }
 
-Antes que você possa começar a animar você precisa adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
+Antes que você possa começar a animar, é preciso adicionar uma 'coisa' para animar. No Scratch, estas "coisas" são chamados __sprites__ ou __fantasias__. 
 
 ## Lista de atividades { .check }
 
@@ -42,7 +42,7 @@ Antes que você possa começar a animar você precisa adicionar uma 'coisa' para
 
 	![screenshot](band-shrink.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 Dê a seu programa um nome, digitando o nome na caixa de texto acima do 'cenário'.
 
@@ -52,7 +52,7 @@ Você pode, em seguida, clicar em "Arquivo" e depois "Salvar agora" para salvar 
 
 # Passo 2: área de Atuação { .activity }
 
-O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco ("stage")!
+O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vida. Pense nisso como uma área de atuação, assim como um palco!
 
 ## Lista de atividades { .check }
 
@@ -60,7 +60,7 @@ O __cenário__ é a área à esquerda, e é o lugar onde o seu projeto ganha vid
 
 	![screenshot](band-stage-choose.png)
 
-+ Clique em 'Interior' à esquerda, e em seguida, clique em uma cortina de fundo e clique 'OK'.
++ Clique em 'Interior' à esquerda, e em seguida, em uma cortina de fundo e clique 'OK'.
 
 	![screenshot](band-backdrop.png)
 
@@ -106,7 +106,7 @@ Vamos codificar seu tambor para fazer um som quando é batido.
 
 + Teste o seu tambor. Quando clicado, o tambor deve agora parecer como se tivesse sido tocado!
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ##Desafio: Melhorar o seu tambor { .challenge }
 
@@ -124,7 +124,7 @@ Você pode copiar seu código existente clicando com o botão direito sobre ele 
 
 ![screenshot](band-duplicate-code.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 # Passo 4: Fazendo um cantor { .activity .new-page }
 
@@ -132,11 +132,11 @@ Vamos adicionar um cantor a sua banda!
 
 ## Lista de atividades { .check }
 
-+ Adicionar mais 2 sprites para o seu stage; um cantor e um microfone.
++ Adicionar mais 2 sprites para o seu palco; um cantor e um microfone.
 
 	![screenshot](band-singer-mic.png)
 
-+ Antes que você possa fazer o seu cantor cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons e então clique em 'Escolha o som da biblioteca':
++ Antes que você possa faze-lo cantar, você precisa adicionar um som para seu sprite. Certifique-se de que você selecionou o seu cantor, em seguida, clique na aba Sons e então clique em 'Escolha o som da biblioteca':
 
 	![screenshot](band-import-sound.png)
 
@@ -153,7 +153,7 @@ Vamos adicionar um cantor a sua banda!
 
 + Clique no seu cantor para testar se ela canta quando clicado.
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ##Desafio: Mudando a Fantasia de seu cantor { .challenge }
 Você pode fazer com que seu cantor pareça que está cantando quando você clicar nele? Se você precisar de ajuda, você pode usar as instruções para a criação de um tambor acima.
@@ -162,7 +162,7 @@ Você pode fazer com que seu cantor pareça que está cantando quando você clic
 
 Lembre-se de testar se o novo código funciona!
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ##Desafio: Faça a sua própria banda { .challenge }
 Use o que você aprendeu neste projeto para fazer a sua própria banda! Você pode criar qualquer instrumentos que você gosta, mas ouça os sons e instrumentos para ter algumas idéias.
@@ -181,7 +181,7 @@ Se você tiver um microfone você pode gravar os seus próprios sons, ou mesmo u
 
 ![screenshot](band-io.png)
 
-## Salve o seu projeto { .save }
+## Salve seu projeto { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
