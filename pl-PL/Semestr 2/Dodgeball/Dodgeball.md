@@ -24,7 +24,7 @@ Zacznijmy od stworzenia postaci, którą będzie można poruszać w lewo i w pra
 
 + Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.
 
-+ Aby wykonać ten projekt, powinieneś mieć katalog "Zasoby", w którym znajdziesz obrazek tła, którego będziesz potrzebować. Upewnij się, że masz ten katalog, a jeśli nie zapytaj o niego prowadzącego.
++ Aby wykonać ten projekt, powinieneś mieć katalog "Zasoby", w którym znajdziesz obrazek tła, którego będziesz potrzebować. Upewnij się, że masz ten katalog, a jeśli nie, zapytaj o niego prowadzącego.
 
 	![screenshot](dodge-resources.png)
 
@@ -104,7 +104,7 @@ Sprawmy, by postać poruszała się bardziej realistycznie. W tym celu dodamy gr
 
 	![screenshot](dodge-gravity-drag.png)
 
-+ Grawitacja nie powinna przesuwać twojej postaci, kiedy znajduje się ona na platformie albo na słupie! Dodaj blok `jeżeli` {.blockcontrol} do twojego kodu w ten sposób, by grawitacja działałą tylko, gdy postać jest w powietrzu. Kod grawitacji powinien wyglądać tak:
++ Grawitacja nie powinna przesuwać twojej postaci, kiedy znajduje się ona na platformie albo na słupie! Dodaj blok `jeżeli` {.blockcontrol} do twojego kodu w ten sposób, by grawitacja działała tylko, gdy postać jest w powietrzu. Kod grawitacji powinien wyglądać tak:
 
 	```blocks
 		kiedy kliknięto zieloną flagę
@@ -131,7 +131,7 @@ Sprawmy, by postać poruszała się bardziej realistycznie. W tym celu dodamy gr
 
 	Ponieważ grawitacja nieustannie ciągnie postać w dół o 4 piksele, musisz wybrać liczbę większą od 4 w bloku `zmień y o (4)` {.blockmotion}. Zmieniaj tę liczbę tak długo, aż wysokość skoku będzie dla ciebie zadowalająca.
 
-+ Kiedy będziesz testować ten kod zobaczysz, że działa, ale ruch twojej postaci nie jest zbyt płynny. By sprawić, że skoki są bardziej naturalne, powinieneś przesuwać postać w górę o coraz mniejszą wartość.
++ Kiedy będziesz testować ten kod, zobaczysz, że działa, ale ruch twojej postaci nie jest zbyt płynny. By sprawić, że skoki są bardziej naturalne, powinieneś przesuwać postać w górę o coraz mniejszą wartość.
 
 + Aby to zrobić, stwórz kolejną zmienną i nazwij ją `wysokość skoku` {.blockdata}. Możesz ukryć tą zmienną jeśli chcesz, tak jak poprzednio.
 
@@ -295,7 +295,7 @@ na taki:
 	< czy kolor [#00FF00] dotyka [#0000FF]? >
 ```
 
-Pamiętaj, żeby przetestować to usparwnienie i sprawdzić czy udało się naprawić błąd!
+Pamiętaj, żeby przetestować to usprawnienie i sprawdzić czy udało się naprawić błąd!
 
 ## Zapisz swój projekt { .save }
 
