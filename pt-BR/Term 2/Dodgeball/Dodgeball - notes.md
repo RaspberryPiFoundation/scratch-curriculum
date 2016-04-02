@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: EsquivaBol — Notas para o Lídere do Clube
+=======
+title: Dodgeball — Notas para o Lídere do Clube
+>>>>>>> f9d74fd507938e25e3485a628b396d42e0c1d865
 language: pt-BR
 embeds: "*.png"
 ...
