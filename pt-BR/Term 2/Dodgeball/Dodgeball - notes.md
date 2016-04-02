@@ -1,5 +1,5 @@
 ---
-title: Dodgeball — Notas para o Lídere do Clube
+title: EsquivaBol — Notas para o Lídere do Clube
 language: pt-BR
 embeds: "*.png"
 ...
