@@ -25,9 +25,9 @@ Primeiro vamos criar um personagem que possa mudar de cor seguindo uma sequênci
 
 ## Lista de Atividades { .check }
 
-+ Comece um novo projeto Scratch. Delete o ator gato para ter um projeto vazio. Você encontra o editor online do Scratch aqui <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crie um novo projeto Scratch. Delete o ator gato para ter um projeto vazio. Você pode encontrar o editor online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>
 
-+ Escolha um ator e um plano de fundo. Seu ator não precisa ser uma pessoa, mas ele tem que poder mudar de cor.
++ Escolha um ator e um pano de fundo. Seu ator não precisa ser uma pessoa, mas ele tem que poder mudar de cor.
 
 	![screenshot](colour-sprite.png)
 
@@ -42,7 +42,7 @@ Primeiro vamos criar um personagem que possa mudar de cor seguindo uma sequênci
 
 	![screenshot](colour-costume.png)
 
-+ Para criar uma sequência aleatória, you precisa criar uma __lista__. A lista é apenas uma variável que armazena vários dados __em ordem__. Crie uma nova lista chamada `sequencia` {.blockdata}. Já que apenas seu ator precisa ver a lista, podemos selecionar 'Para este ator apenas'.
++ Para criar uma sequência aleatória, você precisa criar uma __lista__. Uma lista é apenas uma variável que armazena vários dados __em ordem__. Crie uma nova lista chamada `sequencia` {.blockdata}. Já que apenas seu ator precisa ver a lista, podemos selecionar 'Para este ator apenas'.
 
 	![screenshot](colour-list.png)
 
@@ -50,28 +50,29 @@ Primeiro vamos criar um personagem que possa mudar de cor seguindo uma sequênci
 
 	![screenshot](colour-list-blocks.png)
 
-+ Adicione este código ao seu ator para acrescentar um número aleatório a sua lista (e mostrar a fantasia correta) 5 vezes:
++ Adicione este código ao seu ator, para inserir um número aleatório a sua lista (e mostrar a respectiva fantasia) 5 vezes:
 
 	```blocks
 		quando clicar em ⚑
-		apague (todos v) de [sequence v]
+		apague (todos v) de [sequencia v]
 		repita (5) vezes
-			insira (escolha número entre (1) e (4)) a [sequence v]
-			mude para a fantasia (item (last v) de [sequence v])
+			insira (escolha número entre (1) e (4)) a [sequencia v]
+			mude para a fantasia (item (ultimo v) de [sequencia v])
 			espere (1) seg
 		end
 	```
 
 	Note que você também acrescentou código para limpar a lista no início.
 
-## Challenge: Acrescentando som {.challenge}
-teste seu projeto algumas vezes. Você perceberá que as vezes o mesmo número é escolhido duas vezes (ou mais) seguidamente, tornando a sequência mais difícil de memorizar. Você consegue fazer um som de tambor cada vez que  o ator muda de fantasia?
+## Desafio: Acrescentando som {.challenge}
 
-Você consegue fazer um som de tambor diferente dependendo do número aleatório gerado? Será um código _muito_ parecido com o código que muda a fantasia.
+Teste seu projeto algumas vezes. Você perceberá que as vezes o mesmo número é escolhido duas vezes (ou mais) seguidamente, tornando a sequência mais difícil de memorizar. Você consegue fazer um som de tambor cada vez que  o ator muda de fantasia?
 
-## Save your project { .save }
+Você consegue tocar um som de tambor diferente dependendo do número aleatório gerado? Será um código _muito_ parecido com o código que muda a fantasia.
 
-# Step 2: Repetindo a sequência { .activity }
+## Salve seu projeto { .save }
+
+# Passo 2: Repetindo a sequência { .activity }
 
 Vamos adicionar 4 botões, para que o jogador repita a sequência que ele tentou memorizar.
 
@@ -87,15 +88,13 @@ Vamos adicionar 4 botões, para que o jogador repita a sequência que ele tentou
 		quando este ator for clicado
 		envie [vermelho v] a todos
 	```
-
-	![screenshot](colour-message.png)
 	
-+ quando o ator receber a mensagem, ele deve verificar se o número 1 está no início da lista (o que significa que vermelho é a próxima cor na sequencia). Se for, você pode remover este número da lista, já que ele foi memorizado corretamente. Caso contrário será fim de jogo!
++ Quando o ator receber a mensagem, ele deve verificar se o número 1 está no início da lista (o que significa que vermelho é a próxima cor na sequência). Se for, você pode remover este número da lista, já que ele foi memorizado corretamente. Caso contrário, será fim de jogo!
 
 	```blocks
-	quando eu receber [vermelho v]
-	se <(item (1 v) de [sequence v]) = [1]> então
-		apague (1 v) de [sequence v]
+	quando receber [vermelho v]
+	se <(item (1 v) de [sequencia v]) = [1]> então
+		apague (1 v) de [sequencia v]
 	senão
 		diga [Fim de jogo!] por (1) segundos
 		pare [todos v]
@@ -105,11 +104,11 @@ Vamos adicionar 4 botões, para que o jogador repita a sequência que ele tentou
 + Você pode mostrar luzes piscantes quando a lista estiver vazia, já que isto significa que a sequência toda foi memorizada corretamente. Acrescente este código no final do código `quando clicar em ⚑` {.blockevents} do seu ator:
 
 	```blocks
-		espere até <(tamanho de [sequence v]) = [0]>
+		espere até <(tamanho de [sequencia v]) = [0]>
 		envie [venceu v] a todos e espere
 	```
 
-+ Clique no seu cenário, e acrescente este código para fazer com que o backdrop mude de cor quando o jogador ganhar.
++ Clique no seu palco, e acrescente este código para fazer com que o pano de fundo mude de cor quando o jogador ganhar.
 
 	```blocks
 		quando eu receber [venceu v]
@@ -121,7 +120,7 @@ Vamos adicionar 4 botões, para que o jogador repita a sequência que ele tentou
 		apague os efeitos gráficos
 	```
 
-## Challenge: Criando 4 botões {.challenge}
+## Desafio: Criando 4 botões {.challenge}
 Repita os passos acima para os seus botões azul, verde e amarelo. Que código permanecerá igual? E qual código mudará para cada botão?
 
 Você também pode acrescentar sons quando os botões forem pressionados.
@@ -130,23 +129,23 @@ Lembre de testar o código que você acrescentou! Você consegue memorizar a seq
 
 ## Salve seu projeto { .save }
 
-# Step 3: Múltiplos níveis { .activity .new-page }
+# Passo 3: Múltiplos níveis { .activity .new-page }
 
 Até o momento, o jogador tem apenas 5 cores para memorizar. Vamos melhorar seu jogo, de modo que o tamanho da sequência aumente.
 
-## Activity Checklist { .check }
+## Lista de atividades { .check }
 
 + Crie uma nova variável chamada `placar` {.blockdata}.
 
 	![screenshot](colour-score.png)
 
-+ Este `placar` {.blockdata} será usada para decidir o tamanho da sequência que o jogador deverá memorizar. Para começar, o placar será 3. Acrescente este bloco de código ao início do código `quando clicar em ⚑` {.blockevents} do seu ator:
++ A variável `placar` {.blockdata} será usada para decidir o tamanho da sequência que o jogador deverá memorizar. Para começar, o placar será 3. Acrescente este bloco de código ao início do código `quando clicar em ⚑` {.blockevents} do seu ator:
 
 	```blocks
 		mude [placar v] para [3]
 	```
 
-+ Ao invés de sempre criar uma sequência de 5 cores, queremos que o `placar` {.blockdata} determine o tamanho da sequência. Mude o bloco `repeat` {.blockcontrol} do seu ator (para criar a sequência) para:
++ Ao invés de sempre criar uma sequência de 5 cores, queremos que o `placar` {.blockdata} determine o tamanho da sequência. Mude o bloco `repita` {.blockcontrol} do seu ator (para criar a sequência) para:
 
 	```blocks
 		repita (placar) vezes
@@ -163,17 +162,17 @@ Até o momento, o jogador tem apenas 5 cores para memorizar. Vamos melhorar seu 
 
 	```blocks
 		quando clicar em ⚑
-		mude [score v] para [3]
+		mude [placer v] para [3]
 		sempre
-			apague (todos v) de [sequence v]
-			repita (score) vezes
-				adiciona (escolha número entre (1) e (4)) a [sequence v]
-				mude para a fantasia (item (last v) de [sequence v])
+			apague (todos v) de [sequencia v]
+			repita (placer) vezes
+				adiciona (escolha número entre (1) e (4)) a [sequencia v]
+				mude para a fantasia (item (ultimo v) de [sequencia v])
 				espere (1) seg
 			end
-			espere até <(tamanho de [sequence v]) = [0]>
-			envie [won v] a todos e espere
-			adicione a [score v] (1)
+			espere até <(tamanho de [sequencia v]) = [0]>
+			envie [venceu v] a todos e espere
+			adicione a [placer v] (1)
 		end
 	```
 
@@ -181,7 +180,7 @@ Até o momento, o jogador tem apenas 5 cores para memorizar. Vamos melhorar seu 
 
 ## Salve seu projeto { .save }
 
-# Step 4: Maior Placar { .activity }
+# Passo 4: Maior Placar { .activity }
 
 Vamos salvar o maior placar, assim você pode jogar contra seus amigos.
 
@@ -189,16 +188,16 @@ Vamos salvar o maior placar, assim você pode jogar contra seus amigos.
 
 + Acrescente 2 novas variáveis ao seu projeto, chamada `maior placar` {.blockdata} e `nome` {.blockdata}.
 
-+ Se por algum motivo o jogo terminar (porque um botão errado foi pressionado), você precisa verificar se o placar do jogador atual é maior que o placar mais alto até o momento. Se for, você precisa salvar o placar como maior placar, e armazenar o nome do jogador. Aqui está como o código do botão vermelho deve ficar:
++ Quando o jogo terminar (porque um botão errado foi pressionado), você precisa verificar se o placar do jogador atual é maior que o placar mais alto até o momento. Se for, você precisa salvar o placar como maior placar, e armazenar o nome do jogador. Aqui está como o código do botão vermelho deve ficar:
 
 	```blocks
 		quando receber [vermelho v]
-		se <(item (1 v) de [sequence v]) = [1]> então
-			apague (1 v) de [sequence v]
+		se <(item (1 v) de [sequencia v]) = [1]> então
+			apague (1 v) de [sequencia v]
 		senão
 			diga [Fim de jogo!] por (1) segundos
-			se <(score) > (high score)> então
-				mude [high score v] para (score)
+			se <(placar) > (maior placar)> então
+				mude [maior placar v] para (placar)
 				pergunte [Placar mais alto! Qual seu nome?] e espere a resposta
 				mude [name v] para (resposta)
 			end
@@ -210,13 +209,13 @@ Vamos salvar o maior placar, assim você pode jogar contra seus amigos.
 
 	![screenshot](colour-same.png)
 
-+ Se você tiver que mudar qualquer coisa neste código, como acrescentar um som ou mudar a mensagem 'Fim de jogo!', você tem que mudar 4 vezes! Isso pode ser irritante, e gasta muito tempo.
++ Se você tiver que mudar qualquer coisa neste código, como acrescentar um som ou mudar a mensagem 'Fim de jogo!', você terá que mudar 4 vezes! Isso pode ser irritante, e gasta muito tempo.
 
-	Ao invés disto, você pode definir seus próprios blocos, e reusá-los em seu projeto! Para fazer isto, clique em `mais blocos` {.blockmoreblocks}, e em seguida em 'Make a block'. Chame este novo bloce de 'Fim de jogo'.
+	Ao invés disto, você pode definir seus próprios blocos, e reusá-los em seu projeto! Para fazer isto, clique em `mais blocos` {.blockmoreblocks}, e em seguida em 'Criar um bloco'. Chame este novo bloco de 'Fim de jogo'.
 
 	![screenshot](colour-more.png)
 
-+ Adicione o código a partir to `senao` {.blockcontrol}. Pegando do botão vermelho e passando para o novo bloco, o código parecerá com isto:
++ Adicione o código a partir do `senao` {.blockcontrol}. Pegando do botão vermelho e passando para o novo bloco, o código se parecerá com isto:
 
 	![screenshot](colour-make-block.png)
 
@@ -224,20 +223,20 @@ Vamos salvar o maior placar, assim você pode jogar contra seus amigos.
 
 	![screenshot](colour-use-block.png)
 
-+ Agora acrescente um som para quando o botão errado for pressionado. Você precisa acrescentar esse código apenas __uma vez__ em no bloco `Fim de jogo` {.blockmoreblocks} que você fez, e não 4 vezes!
++ Agora acrescente um som para quando o botão errado for pressionado. Você precisa acrescentar esse código apenas __uma vez__ no bloco `Fim de jogo` {.blockmoreblocks} que você fez, e não 4 vezes!
 
 	![screenshot](colour-cough.png)
 
-## Challenge: Criando mais blocos {.challenge}
+## Desafio: Criando mais blocos {.challenge}
 Você consegue perceber qualquer outro código que é igual para todos os 4 botões?
 
 ![screenshot](colour-more-blocks.png)
 
-Você consegue cirar outro bloco customizado, que possa ser usado em cada um dos botões?
+Você consegue criar outro bloco customizado, que possa ser usado em cada um dos botões?
 
 ## Salve seu projeto { .save }
 
-## Challenge: Outra fantasia costume {.challenge}
+## Desafio: Outra fantasia costume {.challenge}
 Você percebeu que seu jogo começa com o ator mostrando uma das 4 cores, e que ele sempre mostra a última cor da sequência enquanto o jogador repete a sequência?
 
 Você consegue acrescentar uma fantasia branca para seu ator, que será mostrada no começo do jogo e quando o jogador está tentando digitar a sequência?
@@ -249,6 +248,6 @@ Você consegue acrescentar uma fantasia branca para seu ator, que será mostrada
 ## Desafio: Nível de dificuldade {.challenge}
 Você consegue permitir que o jogador escolha entre 'modo fácil' (em que será usado apenas os tambores vermelho e azul) e 'modo normal' (que usará os 4 tambores)?
 
-Você até acrescentar um 'modo difícil' , que utilizará um quinto tambor!
+Você pode até acrescentar um 'modo difícil', que utilizará um quinto tambor!
 
 ## Salve seu projeto { .save }
