@@ -22,28 +22,28 @@ Vamos começar criando um jogador que possa se movimentar pelo seu mundo.
 
 ## Lista de atividades { .check }
 
-+ Crie um novo projeto, delete o ator do gato e o seu projeto estará vazio. Você consegue achar o editor online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crie um novo projeto Scratch. Delete o ator gato para ter um projeto vazio. Você pode encontrar o editor online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Para este projeto, você deve receber uma pasta chamada 'Recursos do projeto', contendo todas as images que você precisará. Veja se você consegue encontrar essa pasta, peça ajuda ao instrutor do Clube, caso não consiga encontrá-la. 
++ Para este projeto, você deve receber uma pasta chamada 'Recursos do projeto', contendo todas as images que você precisará. Veja se você consegue encontrar essa pasta, peça ajuda ao instrutor, caso não consiga encontrá-la. 
 
 	![screenshot](world-resources.png)
 
-+ Adicione uma imagem 'room1.png' como o novo pano de fundo do cenário, e a imagem 'player.png' como um novo ator. Se você não tiver essas imagens, você pode desenhá-las. É assim que seu projeto deve estar: 
++ Adicione a imagem 'room1.png' como o novo pano de fundo do palco, e a imagem 'player.png' como um novo ator. Se você não tiver essas imagens, você pode desenhá-las. É assim que seu projeto deve ser: 
 
 	![screenshot](world-player.png)
 
-+ Vamos usar as setas direcionais para movimentar o jogador. QUando o jogador pressiona a seta para cima, nós queremos que o personagem vá para cima, fazendo com que a coordenada y mude. Adicione esse código ao seu ator: 
++ Vamos usar as setas direcionais para movimentar o jogador. Quando o jogador pressiona a seta para cima, nós queremos que o personagem vá para cima, fazendo com que a coordenada y mude. Adicione esse código ao seu ator: 
 
 	```blocks
 		quando clicar em ⚑
 		sempre
-		   se <tecla [seta acima v] pressionada?> então
+		   se <tecla [seta para acima v] pressionada?> então
 		      adicione (2) a y
 		   end
 		end
 	```
 
-+ Teste o seu jogador clicando na bandeira verde e depois pressioando o direcionar para cima. O personagem se move para cima? 
++ Teste o seu jogador clicando na bandeira verde e depois pressionando a seta para cima. O personagem se move para cima? 
 
 	![screenshot](world-up.png)
 
@@ -66,7 +66,7 @@ Vamos lá, adicione mais código ao seu personagem para fazê-lo movimentar-se p
 
 ## Salve seu projeto { .save }
 
-+ Teste o seu personagem novamente, você irá verá que ele tem consegue atravessar as paredes cinzas. 
++ Teste o seu personagem novamente, você verá que ele consegue atravessar as paredes cinzas. 
 
 	![screenshot](world-walls.png)
 
@@ -95,13 +95,13 @@ Vamos lá, adicione mais código ao seu personagem para fazê-lo movimentar-se p
 	![screenshot](world-wall-code.png)
 
 ## Desafio: Arrumando a movimentação do jogador {.challenge}
-Adicione todo o código necessário para o seu personagem não conseguir atravessar as paredes em nenhuma das direções. Use o código que você já escreveu para te ajudar nisso! 
+Adicione todo o código necessário para o seu personagem não consiga atravessar as paredes em nenhuma das direções. Use o código que você já escreveu para te ajudar nisso! 
 
 ## Salve seu projeto { .save }
 
 # Passo 2: Codificando o seu mundo { .activity }
 
-Vamos agora fazer com que o personagem possa passar por porta e entrar em outras salas! 
+Vamos agora fazer com que o personagem possa atravessar portas e entrar em outras salas! 
 
 ## Lista de atividades { .check }
 
@@ -109,21 +109,21 @@ Vamos agora fazer com que o personagem possa passar por porta e entrar em outras
 
 	![screenshot](world-backdrops.png)
 
-+ Vocẽ precisará de uma nova variável chamada `sala` {.blockdata}, para manter registro de qual sala o personagem está. 
++ Você precisará de uma nova variável chamada `sala` {.blockdata}, para manter registro de qual sala o personagem está. 
 
 	![screenshot](world-room.png)
 
-+ QUando o personagem tocar a porta laranja na primeira sala, o próximo pano de fundo tem que ser mostrado, e o jogador deve ser reposicionado para a parte esquerda do cenário. Aqui está o código que você precisará, ele deverá estar nos scripts do personagem e dentro do bloco de loop `sempre` {.blockcontrol}:
++ Quando o personagem tocar a porta laranja na primeira sala, o próximo pano de fundo tem que ser mostrado, e o jogador deve ser reposicionado para a parte esquerda do cenário. Aqui está o código que você precisará, ele deverá estar nos scripts do personagem e dentro do bloco de loop `sempre` {.blockcontrol}:
 
 	```blocks
-		se <tocou na cor [#F2A24A]?> então
+		se <tocando na cor [#F2A24A]?> então
 		   mude para o pano de fundo [próximo pano de fundo v]
 		   vá para x:(-200) y:(0)
 		   adicione a [sala v] (1)
 		end
 	```
 
-+ Adicione esse código ao _inicio_ do código do seu personagem (antes do bloco de loop `sempre` {.blockcontrol}) para ter certeza de que tudo será reiniciando quando a bandeira é clicada: 
++ Adicione esse código ao _inicio_ do código do seu personagem (antes do bloco de loop `sempre` {.blockcontrol}) para ter certeza de que tudo será reiniciando quando a bandeira verde é clicada: 
 
 	```blocks
 		mude [sala v] para (1)
@@ -131,12 +131,12 @@ Vamos agora fazer com que o personagem possa passar por porta e entrar em outras
 		mude para o pano de fundo [room1 v]
 	```
 
-+ Clique na bandeira e movimente o personagem até a porta laranja. Seu personagem vai para a próxima tela? A variável `sala` {.blockdata} muda para 2?
++ Clique na bandeira verde e movimente o personagem com as setas até a porta laranja. Seu personagem vai para a próxima tela? A variável `sala` {.blockdata} muda para 2?
 
 	![screenshot](world-room-test.png)
 
 ## Desafio: Movendo-se para a sala anterior {.challenge}
-Você consegue fazer o personagem voltar pra outra sala quando ele toca a porta amarela? Lembre-se que esse código será _muito_ parecido com aquele que você fez para o personagem ir para a próxima sala, a da porta laranja. 
+Você consegue fazer o personagem voltar para a sala anterior quando ele toca a porta amarela? Lembre-se que esse código será _muito_ parecido com aquele que você fez para o personagem ir para a próxima sala, a da porta laranja. 
 
 ## Salve seu projeto { .save }
 
@@ -146,11 +146,11 @@ Vamos adicionar pistas ao seu mundo, elas guiarão o jogador ao longo da jornada
 
 ## Lista de atividades { .check }
 
-+ Carregue a imagem 'sign.svg' como um novo ator, dê como nome 'boas vindas'.
++ Carregue a imagem 'sign.svg' como um novo ator, dê como nome 'sinalização'.
 
 	![screenshot](world-sign.png)
 
-+ Essa sinalização será visível na sala 1, então vamos adicionar um pouco de código às boas vindas pra que isso aconteça: 
++ Essa sinalização será visível apenas na sala 1, então vamos adicionar um pouco de código às 'sinalição' pra que isso aconteça: 
 
 	```blocks
 		quando clicar em ⚑
@@ -167,12 +167,12 @@ Vamos adicionar pistas ao seu mundo, elas guiarão o jogador ao longo da jornada
 
 	![screenshot](world-sign-test.png)
 
-+ Uma sinalização não significa muito se ela não disser nada! Vamos adicionar código (em um bloco separado) para mostrar uma mensagem se o eventureiro encostar na sinalização:
++ Uma sinalização não ajuda muito se ela não disser nada! Vamos adicionar código (em um bloco separado) para mostrar uma mensagem se o aventureiro encostar na sinalização:
 
 	```blocks
 		quando clicar em ⚑
 		sempre
-		   se <tocar em [jogador v]?> então
+		   se <tocando em [jogador v]?> então
 		      diga [Bem-vindo! Você consegue encontrar o tesouro?]
 		   senão
 		      diga []
@@ -186,7 +186,7 @@ Vamos adicionar pistas ao seu mundo, elas guiarão o jogador ao longo da jornada
 ## Salve seu projeto { .save }
 
 ## Desafio: Tesouro! {.challenge}
-Você consegue adicionar um ator para um baú de tesouro, usando a imagem 'chest.svg'. Este tesouro deve ser colocado na sala 3 e quando o jogador encostar nela deve aparecer a mensagem "Parabéns!".
+Você pode adicionar um ator para um baú de tesouro, usando a imagem 'chest.svg'. Este tesouro deve ser colocado na sala 3 e quando o jogador encostar nela deve aparecer a mensagem "Muito bem!".
 
 ![screenshot](world-treasure.png)
 
@@ -194,7 +194,7 @@ Você consegue adicionar um ator para um baú de tesouro, usando a imagem 'chest
 
 # Passo 4: Pessoas { .activity }
 
-Vamos adicionar outras pessoas ao mundo para que o jogador interaja. 
+Vamos adicionar outras pessoas ao mundo para que o jogador interaja com elas. 
 
 ## Lista de atividades { .check }
 
@@ -208,7 +208,7 @@ Vamos adicionar outras pessoas ao mundo para que o jogador interaja.
 		quando clicar em ⚑
 		vá para x:(-200) y:(0)
 		sempre
-		   se <tocar em [jogador v]?> então
+		   se <tocando em [jogador v]?> então
 		      diga [Você sabia que pode entrar pelas portas amarela e laranja?]
 		   senão
 		      diga []
@@ -236,11 +236,11 @@ Você consegue arrumar o código para que a pessoa apareça apenas na sala 1? Le
 
 ## Salve seu projeto { .save }
 
-+ Você também pode adicionar patrulheiros inimigos, que fazem com que o jogo termine se o jogador encosta neles. Adicione um novo ator, mude o seu estilo de rotação da mesma forma que você fez com o ator 'pessoa'.
++ Você também pode adicionar patrulheiros inimigos, que fazem com que o jogo termine se o jogador encostar neles. Adicione um novo ator, mude o seu estilo de rotação da mesma forma que você fez com o ator 'pessoa'.
 
 + Adicione código para o inimigo para que ele apareça somente na sala 2. 
 
-+ Você também terá que adicionar código para que o inimigo se mova, e para que o jogo termine se o jogador encostar no inimigo. É mais fácil fazer isso tudo em blocões de código separados. O código para o inimigo deve parecer com isso: 
++ Você também terá que adicionar código para que o inimigo se mova, e para que o jogo termine se o jogador encostar no inimigo. É mais fácil fazer isso tudo em blocos de código separados. O código para o inimigo deve se parecer com este: 
 
 	![screenshot](world-enemy-code.png)
 
@@ -252,7 +252,7 @@ Você consegue arrumar o código para que a pessoa apareça apenas na sala 1? Le
 ## Salve seu projeto { .save }
 
 ## Desafio: Mais inimigos {.challenge}
-Você consegue criar mais um inimigo para a a sala 3, que patrulha pra cima e pra baixo e pelo vão da parede? 
+Você consegue criar mais um inimigo para a sala 3, que patrulha pra cima e pra baixo e pelo vão da parede? 
 
 ![screenshot](world-enemy2.png)
 
@@ -270,11 +270,11 @@ Você consegue criar mais um inimigo para a a sala 3, que patrulha pra cima e pr
 
 + Adicione código para a sua moeda, assim ela apareça apenas na sala 1. 
 
-+ Adicione ao ator da moeda, para que seja adicionado 1 à variável `moedas` {.blockdata} toda vez que elas tiverem sido coletadas:
++ Adicione o código abaixo ao ator moeda, para que seja adicionado 1 à variável `moedas` {.blockdata} toda vez que elas tiverem sido coletadas:
 
 	```blocks
 		quando clicar em ⚑
-		espere até <tocar em [jogador v]?>
+		espere até <tocando em [jogador v]?>
 		adicione a [moedas v] (1)
 		pare [outros scripts do ator v]
 		esconda
@@ -297,21 +297,21 @@ Você consegue adicionar mais moedas ao seu jogo? Elas podem estar em salas dife
 
  	![screenshot](world-key.png)
 
-+ Veja se a sua chave é visível apenas na sala 3. 
++ Certifique-se que sua chave é visível apenas na sala 3. 
 
-+ Crie uma nova lista de variáveis chamada `inventário` {.blockdata}. Essa lista irá guardar os itens que o jogador for coletar. 
++ Crie uma nova lista chamada `inventário` {.blockdata}. Essa lista irá guardar os itens que o jogador coletar. 
 
 + O código para coletar a chave é bem parecido com aquele para coletar as moedas. A diferença é que você precisa adicionar a chave ao seu inventário. 
 
 	```blocks
 		quando clicar em ⚑
-		espere até <tocar em [player v]?>
+		espere até <tocando em [player v]?>
 		adiciona [chave azul] a [inventário v]
 		pare [outros scripts do ator v]
 		esconda
 	```
 
-+ Teste a sua chave, veja se consegue coletá-la e ela aparece em seu inventário. Lembre-se de adicionar código ao seu cenário para que o invetário esteja vazio quando a partida começar. 
++ Teste a sua chave, veja se consegue coletá-la e ela aparece em seu inventário. Lembre-se de adicionar código ao seu palco para que o inventário esteja vazio quando a partida começar. 
 
 	```blocks
 		apague (todos v) de [inventário v]
@@ -325,7 +325,7 @@ Você consegue adicionar mais moedas ao seu jogo? Elas podem estar em salas dife
 
 + Adicione código para a sua porta, assim ela será visível apenas na sala 3. 
 
-+ Você precisará esconder a sua porta azul para que ela apareça apenas quando o jogador tiver pegado a chave azul e ela estiver em seu invetário. 
++ Você precisará esconder a sua porta azul para que ela apareça apenas quando o jogador tiver pegado a chave azul e ela estiver em seu inventário. 
 
 	```blocks
 		quando clicar em ⚑
@@ -339,9 +339,9 @@ Você consegue adicionar mais moedas ao seu jogo? Elas podem estar em salas dife
 ## Salve seu projeto { .save }
 
 ## Desafio: Crie seu pŕoprio mundo {.challenge}
-YVocê agora pode continuar criando o seu mundo, aqui vão algumas idéias: 
+Você agora pode continuar criando o seu mundo. Aqui vão algumas ideias: 
 
-+ Modifique o cenário do seu jogo, imagens usadas, seus gráficos; 
++ Modifique o cenário do seu jogo, as imagens usadas e os seus gráficos; 
 + Adicione sons e música ao seu jogo;
 + Adicione mais personagens, inimigos, sinalizações e moedas;
 + Adicione portas vermelhas e amarelas, que precisam de chaves próprias para serem abertas;
@@ -351,7 +351,7 @@ YVocê agora pode continuar criando o seu mundo, aqui vão algumas idéias:
 
 	![screenshot](world-bribe.png)
 
-+ Você poderia adicionar uma porta no norte e outra ao sul, então o jogador pode ir em salas que estejam nas quatro direções. Por exemplo, se você tiver 9 salas, você pode pensar nelas como um tabuleiro 3x3 (como um jogo da velha). Você então poderia adicionar 3 ao número da sala para saber qual fica na parte de baixo. 
++ Você poderia adicionar uma porta no norte e outra ao sul, então o jogador pode ir em salas que estejam nas quatro direções. Por exemplo, se você tiver 9 salas, você pode pensar nelas como um tabuleiro 3x3 (como um jogo da velha). Você então poderia adicionar 3 ao número da sala para ir para outra sala na parte de baixo. 
 
 	![screenshot](world-north-south.png)
 
