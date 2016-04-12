@@ -129,7 +129,6 @@ Vamos adicionar um macaco para sua animação que está perdido no espaço!
 	quando clicar em ⚑
 		sempre
 		    gire ↻ (1) graus
-		fim
 	```
 
 	O bloco de código `sempre` {.blockcontrol} é outro comando de repetição (__loop__), mas que nunca termina.
@@ -156,7 +155,6 @@ Vamos adicionar alguns asteróides em sua animação.
 	sempre
 		mova (2) passos
 		se tocar na borda, volte
-	fim
 	```
 
 + Clique na bandeira para testar sua pedra. Será que bate na borda do palco?
