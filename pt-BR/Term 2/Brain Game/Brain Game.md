@@ -22,7 +22,7 @@ Vamos começar criando questões aleatórias para o nosso jogador responder.
 
 ## Lista de atividades { .check }
 
-+ Como um novo projeto no Scratch, delete o ator do gato para que ele fique vazio. Você pode acessar o editar online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Crie um novo projeto Scratch. Delete o ator gato para ter um projeto vazio. Você pode encontrar o editor online do Scratch em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Escolha um personagem e um pano de fundo para o seu jogo. Você pode escolher qualquer um que goste, aqui temos um exemplo:
 
@@ -32,7 +32,7 @@ Vamos começar criando questões aleatórias para o nosso jogador responder.
 
 	![screenshot](brain-variables.png)
 
-+ Adicione o código para o seu personagem, assim você coloca um número `aleatório` {.blockoperators} entre 2 e 12 nas suas duas variáveis. O bloco no Scratch pode estar como "número aleatório entre ( ) e ( )"
++ Adicione o código para o seu personagem, assim você coloca um número `aleatório` {.blockoperators} entre 2 e 12 nas suas duas variáveis.
 
 	```blocks
 		quando clicar em ⚑
@@ -70,7 +70,7 @@ Você consegue mudar as fantasias do seu personagem para que eles reajam às res
 ![screenshot](brain-costume.png)
 
 ## Desafio: Adicionando pontos {.challenge}
-Você consegue adicionar um sistema de pontuação ao seu jogo? Você pode adicionar um ponto a cada resposta certa. Se você estiver se sentindo meio malvadinho, você pode até zerar os pontos do jogador quando ele errar uma questão! 
+Você consegue adicionar um placar ao seu jogo? Você pode adicionar um ponto a cada resposta certa. Para deixar mais difícil, você pode até zerar os pontos do jogador quando ele errar uma questão! 
 
 ## Salve seu projeto { .save }
 
@@ -84,7 +84,7 @@ Vamos adicionar um botão de 'Jogar' ao seu jogo, então o seus jogadores poder�
 
 	![screenshot](brain-play.png)
 
-+ Adicione esse código ao novo botão-.
++ Adicione esse código ao novo botão.
 
 	```blocks
 		quando clicar em ⚑
@@ -92,14 +92,14 @@ Vamos adicionar um botão de 'Jogar' ao seu jogo, então o seus jogadores poder�
 
 		quando este ator for clicado
 		esconda
-		envie [iniciar v] a todos
+		envie [inicio v] a todos
 	```
 
-	Esse botão mostra o botão de "Jogar" assim que o seu projeto é iniciado. Quando o botão é clicado, ele é escondido e envia uma mensagem que irá fazer o jogo iniciar. 
+	Esse código mostra o botão "Jogar" assim que o seu projeto é iniciado. Quando o botão é clicado, ele é escondido e envia uma mensagem que irá fazer o jogo iniciar. 
 	
-+ Você precisará editar o código do seu personagem, assim o jogo irá começar quando receber a mensagem `iniciar` {.blockevents}, e não quando a bandeira verde é clicada.
++ Você precisará editar o código do seu personagem, assim o jogo irá começar quando receber a mensagem `inicio` {.blockevents}, e não quando a bandeira verde é clicada.
 
-	Substitua o `quando clicar em ⚑` {.blockevents} para `quando receber [iniciar v]` {.blockevents}.
+	Substitua o código `quando clicar em ⚑` {.blockevents} por `quando receber [inicio v]` {.blockevents}.
 
 	![screenshot](brain-start.png)
 
@@ -118,14 +118,14 @@ Vamos adicionar um botão de 'Jogar' ao seu jogo, então o seus jogadores poder�
 + Você pode adicionar o seguinte código ao seu botão, assim ele aparece novamente ao final do jogo e o jogador pode recomeçar a partida. 
 
 	```blocks
-		quando eu ouvir [fim v]
+		quando receber [fim v]
 		mostre
 	```
 
 + Você também precisa fazer com o que o seu personagem pare de fazer questões quando cada partida terminar: 
 
 	```blocks
-		quando eu ouvir [fim v]
+		quando receber [fim v]
 		pare [outros scripts do ator v]
 	```
 
@@ -153,8 +153,8 @@ Vamos adicionar um botão de 'Jogar' ao seu jogo, então o seus jogadores poder�
 
 ## Salve seu projeto { .save }
 
-## Desafio: Tela iniciar {.challenge}
-Você consegue adicionar outro pano de fundo ao seu palco, que seria a tela inicial do seu jogo? Você pode utilizar os blocos `quando receber [iniciar v]` {.blockevents} e `quando receber [fim v]` {.blockevents} para fazer a troca entre panos de fundo. Faça uma tela bem mais bonita que a nossa!
+## Desafio: Tela inicial {.challenge}
+Você consegue adicionar outro pano de fundo ao seu palco, que seria a tela inicial do seu jogo? Você pode utilizar os blocos `quando receber [inicio v]` {.blockevents} e `quando receber [fim v]` {.blockevents} para fazer a troca entre panos de fundo. Faça uma tela bem mais bonita que a nossa!
 
 Você também pode mostrar ou esconder o seu personagem, ou mesmo mostrar ou não o contador usando esses blocos:
 
@@ -171,9 +171,9 @@ esconde variável [tempo v]
 
 # Passo 3: Adicionando gráficos { .activity .new-page}
 
-Ao invés do seu personagem apenas dizer `Isso! :)` ou `não :(` ao jogador, vamos adicionar alguns efeitos gráficos que farão o jogador saber como eles estão indo.
+Ao invés do seu personagem apenas dizer `Isso! :)` ou `não :(` ao jogador, vamos adicionar alguns efeitos gráficos que farão o jogador saber como ele está indo.
 
-+ Crie um novo ator e chame-o de 'Resultado', ele deve possuir um sinal de certo e uma cruz que indique errado como fantasias, escolha os nomes que quiser para as fantasias!
++ Crie um novo ator e chame-o de 'Resultado', ele deve possuir um sinal de certo e um xis que indique errado como fantasias, escolha os nomes que quiser para as fantasias!
 
 	![screenshot](brain-result.png)
 
@@ -185,11 +185,11 @@ Ao invés do seu personagem apenas dizer `Isso! :)` ou `não :(` ao jogador, vam
 
 	![screenshot](brain-show-answer.png)	
 
-+ TTeste o se jogo novamente, você deverá ver a o sinal de correto nos casos de resposta certa e a cruz quando a resposta estiver errada. 
++ Teste o seu jogo novamente. Você deverá ver o sinal de correto nos casos de resposta certa e o xis quando a resposta estiver errada. 
 
 	![screenshot](brain-test-answer.png)
 
-+ Você notou que o código para a mensagem `quando receber [correto v]` {.blockevents} e `quando receber [erradi v]` {.blockevents} é quase identico? Vamos criar uma função para facilitar as mudanças que você faz no seu código. 
++ Você notou que os códigos para as mensagens `quando receber [correto v]` {.blockevents} e `quando receber [errado v]` {.blockevents} é quase idênticos? Vamos criar uma função para facilitar as mudanças que você faz no seu código. 
 
 	No seu ator 'Resultado', clique em `Mais Blocos` {.blockmoreblocks}, então em 'Criar um bloco'. Crie uma nova função chamada `animar` {.blockmoreblocks}.
 
@@ -225,7 +225,7 @@ Você consegue melhorar a animação dos seus gráficos? Você pode tentar fazer
 ## Desafio: Som e música {.challenge}
 Você consegue adicionar efeitos sonoros e música ao seu jogo? Por exemplo: 
 
-+ Tocando um determinado som quando o jogador acerta ou erra uma questão;
++ Tocar um determinado som quando o jogador acerta ou erra uma questão;
 + Adicionar um som ao contador para cada segundo que ele decresce;
 + Tocar um aviso quando o tempo tiver esgotado;
 
@@ -240,10 +240,10 @@ Você consegue adicionar efeitos sonoros e música ao seu jogo? Por exemplo:
 ## Desafio: Corrida até os 10 pontos {.challenge}
 Você pode modificar o seu jogo para que ao invés de responder quantas questões forem possíveis em 30 segundos o jogador possa ver quanto tempo ele leva para acertar 10 questões? 
 
-Para fazer isso, você precisará modificar o código do seu contaodor. Você consegue descobrir o que precisa ser mudado? 
+Para fazer isso, você precisará modificar o código do seu contador. Você consegue descobrir o que precisa ser mudado? 
 
 ```blocks
-	quando eu ouvir [inicio v]
+	quando receber [inicio v]
 	mude [tempo v] para (30)
 	repita até que <(tempo) = [0]>
 	   espere (1) seg
@@ -255,7 +255,7 @@ Para fazer isso, você precisará modificar o código do seu contaodor. Você co
 ## Salve seu projeto { .save }
 
 ## Desafio: Tela de instruções {.challenge}
-Você consegue adicionar uma tela de instruções para o seu jogo? Assim você pode explicar ao jogador como funciona o seu jogo e como ele deve fazer para ganhar? Você precisará de um botão para o 'Tutorial', e outro pano de fundo.
+Você consegue adicionar uma tela de instruções para explicar ao jogador como funciona o seu jogo? Você precisará de um botão para o 'Tutorial', e outro pano de fundo.
 
 ![screenshot](brain-instructions.png)
 
