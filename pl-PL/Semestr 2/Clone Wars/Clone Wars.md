@@ -1,309 +1,308 @@
 ---
 title: Clone Wars
 level: Scratch 2
-language: en-GB
+language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
+materials: ["Club Leader Resources/*"]
 beta: true
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+## Projekt stworzony przez społeczność { .challenge .pdf-hidden }
+Ten projekt powstał przy współpracy z Erikiem. Jeśli także chcesz zamieścić swój projekt [skontaktuj się z nami na Githubie](https://github.com/CodeClub).
 
-# Introduction { .intro }
+# Wstęp { .intro }
 
-In this project you'll learn how to create a game, in which you have to save the Earth from space-monsters.
+Wykonując ten projekt nauczysz się, jak stworzyć grę, w której musisz uratować Ziemię przed potworami z kosmosu.
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
-	<img src="invaders-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
+  <img src="invaders-final.png">
 </div>
 
-# Step 1: Making a Spaceship { .activity }
+# Krok 1: Budowanie statku kosmicznego {.activity}
 
-Let's make a spaceship, that will defend the Earth!
+Zbudujmy statek kosmiczny, który będzie bronił Ziemi!
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Utwórz w Scratchu nowy projekt i usuń duszka-kota tak, aby projekt był pusty. Możesz skorzystać ze Scratcha w wersji online, który znajduje się tutaj: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Add the 'stars' backdrop and the 'spaceship' sprite to your project. Shrink the spaceship and move it near the bottom of the screen.
++ Do projektu dodaj tło 'stars' (gwiazdy) i duszka 'Spaceship' (statek kosmiczny). Zmiejsz statek kosmiczny i przesuń go na dół sceny.
 
-	![screenshot](invaders-sprites.png)
+  ![screenshot](invaders-sprites.png)
 
-+ Add code to move your spaceship to the left when the left arrow key is pressed. You'll need to use these blocks:
++ Dodaj kod, który przesunie statek w lewo, kiedy wciśniesz strzałkę w lewo. Będziesz do tego potrzebował takich bloków:
 
 	```blocks
-		forever
-			if <key [left arrow v] pressed?> then
-				change x by (-4)
-			end
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           jeżeli <klawisz [strzałka w lewo v] naciśnięty?> to
+              zmień x o (-4)
+           koniec
+        koniec
 	```
 
-+ Add code to move your spaceship to the right when the right arrow key is pressed.
++ Dodaj kod, który przesunie statek w prawo, kiedy wciśniesz strzałkę w prawo.
 
-+ Test your project to see whether you can control your spaceship with the arrow keys.
++ Przetestuj swój projekt i sprawdź czy statek przesuwa się kiedy wciskasz strzałki na klawiaturze.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-# Step 2: Lightning bolts { .activity }
+# Krok 2: Błyskawice {.activity}
 
-Let's give the spaceship the ability to fire lightning bolts!
+Dodajmy statkowi kosmicznemu możliwość strzelania błyskawicami!
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ Add the 'Lightning' sprite from the Scratch library. Click the sprite's costume and turn the lightning upside-down.
++ Z biblioteki Scratcha dodaj duszka 'Lightning' (błyskawica). Kliknij na kostium duszka i obróc go do góry nogami.
 
 	![screenshot](invaders-lightning.png)
 
-+ When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.
++ Na początku gry błyskawica powinna być ukryta. Pokażemy ją dopiero wtedy, kiedy statek kosmiczny wystrzeli ze swoich laserowych działek.
 
 	```blocks
-		when flag clicked
-		hide
+		kiedy kliknięto zieloną flagę
+        ukryj
 	```
 
-+ Add the following code **to the spaceship** to create a new lightning bolt whenever the space key is pressed.
-
++ Dodaj poniższy kod **do statku kosmicznego**, by utworzyć nową błyskawicę za każdym razem, kiedy wciśnięta zostanie spacja.
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [space v] pressed?> then
-				create clone of [Lightning v]
-			end
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           jeżeli <klawisz [spacja v] naciśnięty?> to
+              sklonuj [Lightning v]
+           koniec
+        koniec
 	```
 
-+ Whenever a new clone is created, it should start in the same place as the spaceship, and then move up the stage until it touches the edge. Add the following code **to the Lightning sprite**:
++ Kiedy nowy klon zostanie stworzony powinien ustawić się w tym miejscu, gdzie znajduje się statek kosmiczny. Następnie powinien poruszać się w górę sceny dopóki nie dotknie krawędzi. Dodaj poniższy kod **do błyskawicy**:
 
-	```blocks
-		when I start as a clone
-		go to [Spaceship v]
-		show
-		repeat until <touching [edge v] ?>
-			change y by (10)
-		end
-		delete this clone
-	```
+    ```blocks
+    	kiedy zaczynam jako klon
+          idź do [Spaceship v]
+          pokaż
+          powtarzaj aż <dotyka [krawędź v]?>
+             zmień y o (10)
+          koniec
+          usuń tego klona
+    ```
 
-Note: We move the new clone to the spaceship while it is still hidden, before then showing it. This just looks nicer.
+    Uwaga: ustawiamy nowy klon błyskawicy na pozycję statku kosmicznego kiedy jeszcze błyskawica jest ukryta, przed jej pokazaniem. Dzięki temu gra będzie lepiej wyglądać.
 
-+ Test your lightning, by pressing the space key.
++ Przetestuj swoją błyskawicę naciskając spację.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-## Challenge: Fixing the lightning {.challenge}
-What happens if you keep the space key held down? Can you use a `wait` {.blockcontrol} block to fix this?
+## Wyzwanie: Naprawianie błyskawicy {.challenge}
+Co się dzieje, kiedy trzymasz wciśniętą spację? Użyj bloku `czekaj` {.blockcontrol}, aby to naprawić.
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-# Step 3: Flying Space-hippos { .activity }
+# Krok 3: Latające kosmo-hipcie { .activity }
 
-Let's add lots of flying hippos that are trying to destroy your spaceship.
+Dodajmy teraz mnóstwo latających hipopotamów, które będą próbowały zniszczyć statek kosmiczny.
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ Create a new sprite from the 'Hippo1' image in the Scratch library.
++ Stwórz nowego duszka wykorzystując 'Hippo1' z biblioteki Scracha.
 
 	![screenshot](invaders-hippo.png)
 
-+ Set its rotation style to be left-right only, and add the following code to hide the sprite when the game starts:
++ Ustaw mu styl obrotów tak, aby obracał się tylko w prawo i w lewo. Dodaj mu też poniższy kod, aby ukryć go na początku gry:
 
 	```blocks
-		when flag clicked
-		hide
+		kiedy kliknięto zieloną flagę
+        ukryj
 	```
 
-+ Create a new variable called `speed` {.blockdata}, that is for the hippo sprite only.
++ Stwórz nową zmienną tylko dla tego duszka i nazwij ją `prędkość` {.blockdata}.
 
-	![screenshot](invaders-var.png)
+  	![screenshot](invaders-var.png)
 
-	You'll know if you've done this correctly because the variable will have the name of the sprite next to it, like this:
+    Jeśli udało ci się to zrobić poprawnie twoja zmienna będzie miała nazwę duszka obok swojej nazwy, tak jak tutaj:
 
-	![screenshot](invaders-var-test.png)
+    ![screenshot](invaders-var-test.png)
 
-+ The following code will create a new hippo every few seconds. **The Stage** is a good place for this code to live:
++ Poniższy kod utworzy nowego kosmo-hipcia co kilka sekund. Dodaj ten kod **do sceny**:
 
 	```blocks
-		when flag clicked
-		forever
-			wait (pick random (2) to (4)) secs
-			create clone of [Hippo1 v]
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           czekaj (losuj od (2) do (4)) s
+           sklonuj [Hippo1 v]
+        koniec
 	```
 
-+ When each hippo clone starts, make it move around the stage (at a random speed) until it gets hit by the lightning. Add this code **to the hippo** sprite:
++ Niech każdy nowy klon kosmo-hipcia na początku porusza się po scenie (z losową prędkością) tak długo, aż nie zostanie zestrzelony przez błyskawicę. Dodaj poniższy kod **do kosmo-hipcia**:
 
 	```blocks
-		when I start as a clone
-		set [speed v] to (pick random (2) to (4))
-		go to x: (pick random (-220) to (220)) y: (150)
-		show
-		repeat until <touching [lightning v] ?>
-			move (speed) steps
-			turn right (pick random (-10) to (10)) degrees
-			if on edge, bounce
-		end
-		delete this clone
+		kiedy zaczynam jako klon
+        ustaw [prędkość v] na (losuj od (2) do (4))
+        idź do x:(losuj od (-220) do (220)) y:(150)
+        pokaż
+        powtarzaj aż <dotyka [lightning v]?>
+           przesuń o (prędkość) kroków
+           obróć w prawo o (losuj od (-10) do (10)) stopni
+           jeżeli na brzegu, odbij się
+        koniec
+        usuń tego klona
 	```
 
-+ Test out your hippo code. You should see a new hippo clone appear every few seconds, each moving at its own speed.
++ Przetestuj kod kosmo-hipcia. Co kilka sekund powinien pokazywać się nowy klon kosmo-hipcia, a każdy z nich powinien poruszać się ze swoją prędkością.
 
 	![screenshot](invaders-hippo-test.png)
 
-+ Test your laser cannon. If you hit a hippo, does it vanish?
++ Przetestuj działka laserowe. Czy trafiony błyskawicą kosmo-hipcio znika?
 
-+ When a hippo touches your spaceship, we need to make the spaceship explode! To do this, first make sure that your spaceship has 2 costumes called 'normal' and 'hit'.
++ Kiedy kosmo-hipcio dotknie twojego statku kosmicznego, statek powinien eksplodować! Aby tak zrobić, najpierw musimy zmienić statek w taki sposób, aby miał dwa kostiumy: "normalny" i "trafiony".
 
-	![screenshot](invaders-spaceship-costumes.png)
+	 ![screenshot](invaders-spaceship-costumes.png)
 
-	The spaceship's 'hit' costume can be made by importing the 'Sun' image from the Scratch library, and using the 'Color a shape' tool to change its colour.
+   Kostium "trafiony" można wykonać importując z biblioteki Scratcha obrazek "sun" (Słońce), a następnie używając narzędzia "Wypełnij kształt", aby zmienić jego kolor.
 
-	![screenshot](invaders-sun.png)
+   ![screenshot](invaders-sun.png)
 
-+ Add this code to your spaceship, so that it switches costume whenever it collides with a flying hippo:
-
-	```blocks
-		when flag clicked
-		forever
-			switch costume to [normal v]
-			wait until <touching [Hippo1 v]>?
-			switch costume to [hit v]
-			broadcast [hit v]
-			wait (1) secs
-		end
-	```
-
-+ Did you notice that you have broadcast a 'hit' message in the code above? You can use this message to make all of the hippos disappear when the spaceship is hit.
-
-	Add this code to your hippo:
++ Dodaj ten kod do swojego statku, aby zmienił kostium kiedy tylko zostanie uderzony przez kosmo-hipcia:
 
 	```blocks
-		when I receive [hit v]
-		delete this clone
+		kiedy kliknięto zieloną flagę
+        zawsze
+           zmień kostium na [normalny v]
+           czekaj aż <dotyka [Hippo1 v]?>
+           zmień kostium na [trafiony v]
+           nadaj [trafiony v]
+           czekaj (1) s
+        koniec
 	```
 
-+ Test out this code by starting a new game and colliding with a hippo. 
++ Czy zauważyłeś, że wysyłasz wiadomość "trafiony" w kodzie powyżej? Możesz użyć tej wiadomości, aby ukryć wszystkie kosmo-hipcie, kiedy statek zostanie trafiony przez jednego z nich.
+
+    Dodaj poniższy kod do kosmo-hipcia:
+
+    ```blocks
+    	kiedy otrzymam [trafiony v]
+          usuń tego klona
+    ```
+
++ Przetestuj ten kod - uruchom nową grę i pozwól, aby uderzył cię kosmo-hipcio.
 
 	![screenshot](invaders-hippo-collide.png)
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-## Challenge: Lives and Score {.challenge}
-Can you add a `lives` {.blockdata}, `score` {.blockdata} or even a `highscore` {.blockdata} to your game? You can use the 'Catch the Dots' project to help you.
+## Wyzwanie: Życia i punkty {.challenge}
+Czy potrafisz dodać `życia` {.blockdata}, `punkty` {.blockdata}, albo nawet `najlepszy wynik` {.blockdata} do swojej gry? Pomocy szukaj w projekcie "Catch the Dots".
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-# Step 4: Fruit Bats! { .activity }
+# Krok 4: Owocowe nietoperze! { .activity }
 
-Let's make a fruit bat, that throws oranges at your spaceship.
+Stworzymy teraz owocowe nietoperze, które będą rzucać pomarańczami w twój statek kosmiczny.
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ Firstly, make a new bat sprite that will `move` {.blockmotion} across the top of the stage `forever` {.blockcontrol}. Remember to test out your code.
++ Najpierw stwórz nowego duszka - nietoperza, który będzie `zawsze` {.blockcontrol} `przesuwał się` {.blockmotion} wzdłuż górnej krawędzi sceny. Pamiętaj, żeby przetestować swój kod.
 
 	![screenshot](invaders-bat.png)
 
-+ If you look at the bat's costumes, you'll see that it already has 2:
++ Jeśli spojrzysz na kostiumy nietoperza, to zobaczysz, że są tam już 2 kostiumy:
 
-	![screenshot](invaders-bat-costume.png)
+    ![screenshot](invaders-bat-costume.png)
 
-	Use the `next costume` {.blocklooks} block to make the bat flap its wings as it moves.
+    Użyj bloku `następny kostium` {.blocklooks}, aby nietoperz machał skrzydłami kiedy lata.
 
-+ Create a new 'Orange' sprite from the Scratch library
++ Stwórz nowego duszka korzystając z 'Orange' (pomarańcza) z biblioteki Scratcha.
 
 	![screenshot](invaders-orange.png)
 
-
-+ Add code to your bat, so that it creates a new orange clone every few seconds.
++ Do nietoperza dodaj kod, który utworzy nowy klon pomarańczy co kilka sekund.
 
 	```blocks
-		when flag clicked
-		forever
-			wait (pick random (5) to (10)) secs
-			create clone of [Orange v]
-		end
+		kiedy kliknięto zieloną flagę
+        zawsze
+           czekaj (losuj od (5) do (10)) s
+           sklonuj [Orange v]
+        koniec
 	```
 
-+ Click on your orange sprite, and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
++ Kliknij na pomarańczę i dodaj ten kod, aby każdy klon spadał na scenie od nietoperza w kierunku statku kosmicznego:
 
 	```blocks
-		when flag clicked
-		hide
+		kiedy kliknięto zieloną flagę
+        ukryj
 
-		when I start as a clone
-		go to [Bat1 v]
-		show
-		repeat until <touching [edge v]?
-			change y by (-4)
-		end
-		delete this clone
+        kiedy zaczynam jako klon
+        idź do [Bat1 v]
+        pokaż
+        powtarzaj aż <dotyka [krawędź v]?>
+           zmień y o (-4)
+        koniec
+        usuń tego klona
 
-		when I receive [hit v]
-		delete this clone
+        kiedy otrzymam [trafiony v]
+        usuń tego klona
 	```
 
-+ In your spaceship sprite, you'll need to modify your code so that you are hit if you touch a hippo or an orange:
++ Musisz teraz zmienić swój kod w statku kosmicznym, aby został trafiony, kiedy dotknie albo kosmo-hipcia albo pomarańczy:
 
 	```blocks
-		wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
-	``` 
+		czekaj aż <<dotyka [Hippo1 v]?> lub <dotyka [Orange v]?>>
+	```
 
-+ Test your game. What happens if you get hit by a falling orange?
++ Przetestuj swoją grę. Co się stanie kiedy w statek uderzy pomarańcza?
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-# Step 5: Game over { .activity }
+# Krok 5: Koniec gry { .activity }
 
-Let's add a 'game over' message at the end of the game.
+Dodajmy komunikat "Koniec gry".
 
-## Activity Checklist { .check }
+## Zadania do wykonania {.check}
 
-+ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives, and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
++ Jeśli nie zrobiłeś tego wcześniej dodaj nową zmienną i nazwij ją `życia` {.blockdata}. Twój statek kosmiczny powinien zaczynać z 3 życiami i tracić po jednym kiedy zostanie trafiony przez wroga. Gra powinna się zakończyć, kiedy skończą ci się życia. Jeśli potrzebujesz pomocy możesz użyć kodu z projektu "Catch the Dots".
 
-+ Draw a new sprite called 'Game Over', using the text tool.
++ Narysuj nowego duszka "Koniec gry" używając narzędzia do pisania tekstu.
 
 	![screenshot](invaders-game-over.png)
 
-+ On your stage, broadcast a `game over` {.blockevents} message just before the game ends.
++ Nadaj wiadomość `koniec gry` {.blockevents} na scenie zaraz przed końcem gry.
 
 	```blocks
-		broadcast [game over v] and wait
+		nadaj [koniec gry v] i czekaj
 	```
 
-+ Add this code to your 'Game Over' sprite, so that the message shows at the end of the game:
++ Dodaj ten kod do duszka "Koniec gry", aby wiadomość pokazała się na końcu gry:
 
-	```blocks
-		when flag clicked
-		hide
+    ```blocks
+    	kiedy kliknięto zieloną flagę
+          ukryj
 
-		when I receive [game over v]
-		show
-	```
+          kiedy otrzymam [koniec gry v]
+          pokaż
+    ```
 
-	Because you've used a `broadcast [game over] and wait` {.blockevents} block on your stage, it will wait for the 'Game Over' sprite to be displayed before ending the game.
+    Ponieważ na scenie użyłeś bloku `nadaj [koniec gry] i czekaj` {.blockevents}, gra poczeka, aż pojawi się duszek "Koniec gry" zanim gra się naprawdę zakończy.
 
-+ Test your game. How many points can you score? Can you think of ways to improve your game if it is too easy or too hard?
++ Przetestuj swoją grę. Ile punktów udało ci się zdobyć? Jak możesz udoskonalić grę, jeśli jest za prosta albo za trudna?
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
 
-## Challenge: Improve your game {.challenge}
-What improvements can you make to your game? Here are some ideas:
-+ Add health packs that you can collect to gain extra lives;
+## Wyzwanie: Usprawnij swoją grę {.challenge}
+Jakie ulepszenia możesz dodać do swojej gry? Oto kilka pomysłów:
++ dodaj apteczki, które możesz zbierać, aby zdobyć dodatkowe życia;
 
 ![screenshot](invaders-aid.png)
 
-+ Add floating rocks that your spaceship must avoid;
-	
++ Dodaj ruchome skały, które statek kosmiczny musi omijać;
+
 ![screenshot](invaders-rocks.png)
 
-+ Make more enemies appear when your score gets to 100.
++ Po zdobyciu 100 punktów niech pojawia się więcej przeciwników.
 
 ```blocks
-	wait until <(score) = [100]>
+	czekaj aż <(punkty) = [100]>
 ```
 
-## Save your project { .save }
+## Zapisz swój projekt {.save}
