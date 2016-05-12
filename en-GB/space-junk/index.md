@@ -2,6 +2,7 @@
 title: Space Junk
 description: Help the Scratch mascot avoid the space junk and return safely back to Earth!
 layout: project
+project-type: sample
 notes: "Space Junk - notes.md"
 ---
 
