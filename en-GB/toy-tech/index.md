@@ -105,7 +105,7 @@ Let's use the arrow keys to fly your helicopter.
 
 + If you test your code, you'll see that your helicopter's __y__ position (up/down) changes whenever the up arrow is pressed.
 
-+ If you want your helicopter to move more smoothly, you can instead add code to move upwards to your helicopter's `forever` {.blockcontrol} loop.
++ If you want your helicopter to move more smoothly, you can instead add code to move upwards inside your helicopter's `forever` {.blockcontrol} loop.
 
 	![screenshot](images/toys-helicopter-up-loop.png)
 
