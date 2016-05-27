@@ -53,7 +53,7 @@ Let's start by making a pencil, that can be used to draw on the stage.
 
 	![screenshot](images/paint-center-icon.png)
 
-+ You should notice that a crosshair appears on the costume. You can now click just below the tip of the pencil, to set this point as the costume centre.
++ You should notice that a crosshair appears on the costume. You can now click **just below** the tip of the pencil, to set this point as the costume centre.
 
 	![screenshot](images/paint-pencil-center.png)
 
@@ -66,6 +66,9 @@ Let's start by making a pencil, that can be used to draw on the stage.
 + Test your code again. This time, move the pencil around the stage and hold down the mouse button. Can you draw with your pencil?
 
 	![screenshot](images/paint-draw.png)
+	
+	If not, check that you placed the crosshair **just below** the tip of the pencil, *not* on the tip of the pencil. 
+
 
 ## Save your project { .save }
 

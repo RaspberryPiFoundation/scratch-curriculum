@@ -39,3 +39,4 @@ For club members that aren't able to access these project resources, there is a 
 
 #Frequently Asked Questions
 + Changes in a sprite's 'costume center' isn't registered until another tab is clicked. Children should click on another costume, or on the 'Scripts' tab to finalise changes to the costume center.
++ The crosshair for the pencil must be placed **just below** the tip of the pencil, not on the tip of the pencil. If the crosshair is on the pencil then Scratch just thinks you are moving the sprite around in the editor. If the pencil doesn't draw correctly then then crosshair has probably been placed on the tip of the pencil (which does seem logical) and needs to be moved just below the pencil.  
