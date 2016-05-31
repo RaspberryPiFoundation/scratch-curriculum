@@ -20,7 +20,7 @@ materials: ["Club Leader Resources/*"]
 
 ## 动作清单 { .check }
 
-+ Before you start making your chatbot, you need to decide on their personality.在开始编程之前，我们需要先定义机器人的属性。
++ 在开始编程之前，我们需要先定义机器人的属性。
 	+ 机器人叫什么
 	+ 住在哪里
 	+ 他们是开心的？严肃的？搞笑的？害羞的？还是有好的？
@@ -45,10 +45,11 @@ materials: ["Club Leader Resources/*"]
 
 + 点击机器人角色，添加下面的代码：
 
-	```blocks
-		when this sprite clicked
-		ask [Hey! What's your name?] and wait
-		say [What a lovely name!] for (2) secs
+	```模块：
+
+		当角色被点击时
+		询问 [Hey! What's your name?] 并等待
+		说 [What a lovely name!] (2) 秒
 	```
 
 + 测试上面的代码，当被问到姓名，将名字打入下面的文本框中。
@@ -57,10 +58,11 @@ materials: ["Club Leader Resources/*"]
 
 + 你的机器人每次都会简单的回复 `What a lovely name!`。你可以个性化机器人的答复，比如用你输入的名字，改变下面的代码：
 
-	```blocks
-		when this sprite clicked
-		ask [Hey! What's your name?] and wait
-		say <join [Hi] (answer)> for (2) secs
+	```模块：
+
+		当角色被点击时
+		询问 [Hey! What's your name?] 并等待
+		说 <连接 [Hi] (回答)> (2) 秒
 	```
 
 	我们需要将`连接`{.blockoperators}和`说`{.blocklooks}两个代码块连起来。
@@ -75,15 +77,17 @@ materials: ["Club Leader Resources/*"]
 
 + 也许你想把刚才的名字保存在一个变量中，以便在后面的程序中使用这个变量。新建一个变量 `名字` {.blockdata}。
 
-+ The information that you entered is already stored in a special variable called `answer` {.blocksensing}. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in `answer` {.blocksensing} should then be shown on the top-left of the stage.我们的名字信息已经被保存到了叫 `回答` {.blocksensing}特殊变量中了。点击侦测模块，点击回答，一个勾选框会出现。`回答` {.blocksensing}的值会显示在舞台左上角。
++ 我们的名字信息已经被保存到了叫 `回答` {.blocksensing}特殊变量中了。点击侦测模块，点击回答，一个勾选框会出现。`回答` {.blocksensing}的值会显示在舞台左上角。
 
 + 一旦你添加了新变量，改变下面的代码，将`回答` {.blocksensing}保存到新变量中：
 
-	```blocks
-		when this sprite clicked
-		ask [Hey! What's your name?] and wait
-		set [name v] to (answer)
-		say <join [Hi ] (name)> for (2) secs
+	```模块：
+
+		当角色被点击时
+		询问 [Hey! What's your name?] 并等待
+		将变量 [name v] 的值设定为 (回答)
+		说 <连接 [Hi] (name)> (2) 秒
+
 	```
 
 + 再次运行程序，我们会看到变量`名字` {.blockdata}和 `回答` {.blocksensing}的值一样的。
@@ -110,15 +114,17 @@ materials: ["Club Leader Resources/*"]
 
 + 我们让机器人问个是非问题，这样答案会是`是`或者`不是`，下面是个例子，当然我们可以改变问题：
 
-	```blocks
-		when this sprite clicked
-		ask [Hey! What's your name?] and wait
-		set [name v] to (answer)
-		say <join [Hi ] (name)> for (2) secs
-		ask <join [Are you OK ] (name)> and wait
-		if ((answer)=[yes]) then
-			say [That's great to hear!] for (2) secs
-		end
+	```模块：
+
+		当角色被点击时
+		询问 [Hey! What's your name?] 并等待
+		将变量 [name v] 的值设定为 (回答)
+		说 <连接 [Hi] (name)> (2) 秒
+		询问 <连接 [Are you OK] (name)> 并等待
+		如果 ((回答) = [yes]) 那么
+		   说 [That's great to hear!] (2) 秒
+		结束
+
 	```
 
 	注意我们已经将名字保存到了一个变量，可以在后面随时使用。
@@ -127,20 +133,22 @@ materials: ["Club Leader Resources/*"]
 
 + 问题在于输入不是的时候机器人没有反应。我们需要添加下面的代码来让它有反应：
 
-	```blocks
-		when this sprite clicked
-		ask [Hey! What's your name?] and wait
-		set [name v] to (answer)
-		say <join [Hi ] (name)> for (2) secs
-		ask <join [Are you OK ] (name)> and wait
-		if ((answer)=[yes]) then
-			say [That's great to hear!] for (2) secs
-		else
-			say [Oh no!] for (2) secs
-		end
+	```模块：
+
+		当角色被点击时
+		询问 [Hey! What's your name?] 并等待
+		将变量 [name v] 的值设定为 (回答)
+		说 <连接 [Hi] (name)> (2) 秒
+		询问 <连接 [Are you OK] (name)> 并等待
+		如果 ((回答) = [yes]) 那么
+		   说 [That's great to hear!] (2) 秒
+		否则
+		   说 [Oh no!] (2) 秒
+		结束
+
 	```
 
-+ If you test your code, you'll now see that you get a response when you answer `yes` or `no`. Your chatbot should reply with `That's great to hear!` when you answer `yes`, but will reply with `Oh no!` if you type anything other than `yes` (`else` {.blockcontrol} means 'otherwise').现在再次测试程序，是不是两个回答，机器人都能做出反应了呢？
++ 现在再次测试程序，是不是两个回答，机器人都能做出反应了呢？
 
 	![screenshot](chatbot-else.png)
 
@@ -180,11 +188,12 @@ You can also program your chatbot to change its location.我们可以编程是�
 
 + 你现在可以编程改变机器人位置：
 
-	```blocks
-		ask [I'm going to the moon. Do you want to come with me?] and wait
-		if ((answer) = [yes]) then
-			switch backdrop to [moon v]
-		end
+	```模块：
+
+		询问 [I'm going to the moon. Do you want to come with me?] 并等待
+		如果 ((回答) = [yes]) 那么
+		   将背景切换为 [moon v]
+		结束
 	```
 
 + 添加下面的代码，确保开始和机器人对话时，机器人一直在外太空的背景：
@@ -199,13 +208,13 @@ You can also program your chatbot to change its location.我们可以编程是�
 
 + 你也可以添加下面的代码，当你回答是的时候，让机器人上下跳动四次。
 
-	```scratch
-	repeat (4)
-		change y by (10)
-		wait (0.1) secs
-		change y by (-10)
-		wait (0.1) secs
-	end
+	```模块：
+		重复执行 (4) 次
+		   将y坐标增加 (10)
+		   等待 (0.1) 秒
+		   将y坐标增加 (-10)
+		   等待 (0.1) 秒
+		结束
 	```
 
 	![screenshot](chatbot-loop.png)
