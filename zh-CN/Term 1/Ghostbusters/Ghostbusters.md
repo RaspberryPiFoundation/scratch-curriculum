@@ -31,14 +31,15 @@ materials: ["Club Leader Resources/*"]
 
 + 添加下面的代码，让幽灵时隐时现。
 
-	```blocks
-		when flag clicked
-		forever
-			hide
-			wait (1) secs
-			show
-			wait (1) secs
-		end
+	```模块：
+
+		点击绿旗时
+		重复执行
+		   隐藏
+		   等待 (1) 秒
+		   显示
+		   等待 (1) 秒
+		结束
 	```
 
 + 测试程序
@@ -53,15 +54,16 @@ materials: ["Club Leader Resources/*"]
 
 + 你可以让幽灵，随机出现在舞台，使用下面的代码：
 
-	```blocks
-		when flag clicked
-		forever
-			hide
-			wait (1) secs
-			go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
-			show
-			wait (1) secs
-		end
+	```模块：
+		
+		点击绿旗时
+		重复执行
+		   隐藏
+		   等待 (1) 秒
+		   移到 x:(在 (-150) 到 (150) 间随机选一个数) y:(在 (-150) 到 (150) 间随机选一个数)
+		   显示
+		   等待 (1) 秒
+		结束
 	```
 
 + 测试程序，现在幽灵每次出现的位置都不一样了。
@@ -82,9 +84,10 @@ materials: ["Club Leader Resources/*"]
 
 + 添加下面的代码：
 
-	```blocks
-		when this sprite clicked
-		hide
+	```模块：
+
+		当角色被点击时
+		隐藏
 	```
 
 + 测试程序，你是否能抓到幽灵？如果你觉得困难，我们可以点击下面的按钮，进行全屏幕游戏。
@@ -119,9 +122,9 @@ materials: ["Club Leader Resources/*"]
 
 + 当新游戏开始，我们需要将分数设置为0
 
-	```blocks
-	when flag clicked
-	set [score v] to [0]
+	```模块：
+	点击绿旗时
+	将变量 [score v] 的值设定为 [0]
 	```
 
 + 当幽灵被抓到，分数加1
@@ -150,14 +153,14 @@ materials: ["Club Leader Resources/*"]
 
 	我们可以在舞台脚本中添加下面的代码。
 
-	```blocks
-		when flag clicked
-		set [time v] to [10]
-		repeat until <(time) = [0]>
-			wait (1) secs
-			change [time v] by (-1)
-		end
-		stop [all v]
+	```模块：
+		点击绿旗时
+		将变量 [time v] 的值设定为 [10]
+		重复执行直到 <(time) = [0]>
+		   等待 (1) 秒
+		   将变量 [time v] 的值增加 (-1)
+		结束
+		停止 [全部 v]
 	```
 
 	![screenshot](ghost-timer-help.png)
@@ -172,7 +175,7 @@ materials: ["Club Leader Resources/*"]
 	+ 让幽灵减少显示时间;
 	+ 让幽灵变小点。
 
-	Test your game a few times until you're happy that it's the right level of difficulty.
+	你可以根据自己的喜好来调试程序的难度。
 
 ## 保存项目 { .save }
 
