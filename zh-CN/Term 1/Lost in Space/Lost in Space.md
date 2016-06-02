@@ -66,7 +66,7 @@ materials: ["Club Leader Resources/*"]
 你需要改变下面代码中的数字。
 
 ```blocks
-	glide (1) secs to x:(0) y:(0)
+	在 (1) 秒内滑行到 x:(0) y:(0)
 ```
 
 ## 保存项目 { .save }
@@ -103,8 +103,8 @@ materials: ["Club Leader Resources/*"]
 
 + 多次测试程序，是不是发现了问题，用下面这个代码来解决问题吧。
 
-	```scratch
-	set size to (100) %
+	```blocks
+	将角色的大小设定为 (100)
 	```
 
 ## 保存项目 { .save }
@@ -126,10 +126,10 @@ materials: ["Club Leader Resources/*"]
 + 点击猴子的脚本，添加下面代码，让他在太空不停地旋转。
 
 	```blocks
-		when FLAG clicked
-		forever
-		    turn right (1) degrees
-		end
+		点击绿旗时
+		重复执行
+		   转动CW (1) 度
+		结束
 	```
 
 	这里的 `forever` {.blockcontrol} 是另外一种循环，这个循环不会停止。
@@ -150,12 +150,13 @@ materials: ["Club Leader Resources/*"]
 
 + 添加下面的代码，让陨石在太空里弹来弹去。
 
-	```scratch
-	when flag clicked
-	point towards [Earth v]
-	forever
-		move (2) steps
-		if on edge, bounce
+	```blocks
+		点击绿旗时
+		面向 [Earth v]
+		重复执行
+		   移动 (2) 步
+		   碰到边缘就反弹
+		结束
 	```
 
 + 测试程序，看看陨石是不是在舞台弹来弹去？

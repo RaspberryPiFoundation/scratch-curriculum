@@ -42,16 +42,8 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 + 添加下面的代码，你就能控制小船了:
 
-	```blocks
-		when flag clicked
-		point in direction (0 v)
-		go to x: (-190) y: (-150)
-		forever
-			point towards [mouse-pointer v]
-			move (1) steps
-		end
-	```
-
+	![screenshot](boat-code1.png)
+	
 + 测试本段程序，看看小船是否跟着鼠标移动。
 
 	![screenshot](boat-mouse.png)
@@ -80,17 +72,9 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 + 添加下面的代码，让小船碰到棕色障碍物就被撞毁：
 
-	```blocks
-		if <touching color [#603C15]?> then
-			switch costume to [hit v]
-			say [Noooooo!] for (1) secs
-			switch costume to [normal v]
-			point in direction (0 v)
-			go to x: (-215) y: (-160)
-		end
-	```
+	![screenshot](boat-code2.png)
 
-	这段代码在“一直”这个循环中，所以程序会一直检查，小船是不是碰到障碍物，是否被撞坏。
+	这段代码在“重复执行”这个循环中，所以程序会一直检查，小船是不是碰到障碍物，是否被撞坏。
 
 + 因为我们的小船有两个造型，所以我们在开始的时候要确保，小船看过去是好的。
 
@@ -106,10 +90,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 当小船地抵达小岛，显示一个“胜利”
 
-```blocks
-	say [YEAH!] for (1) secs
-	stop [all v]
-```
+![screenshot](boat-code3.png)
 
 ![screenshot](boat-win.png)
 
@@ -133,14 +114,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 + 添加下面的代码到背景脚本中，计时器将会从游戏开始时计时直到游戏结束。
 
-	```blocks
-		when flag clicked
-		set [time v] to [0]
-		forever
-			wait (0.1) secs
-			change [time v] by (0.1)
-		end
-	```
+	![screenshot](boat-code4.png)
 
 + 再次测试，看看，多快能完成游戏。
 
@@ -160,11 +134,8 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 + 我们可以添加下面的代码到小船的脚本，让小船碰到奖励的时候，快速前进。
 
-	```blocks
-		if <touching color [#FFFFFF]?> then
-			move (3) steps
-		end
-	```
+	![screenshot](boat-code5.png)
+		
 
 + 我们也可以添加一个旋转门。
 
@@ -191,8 +162,8 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 + 你可以增加绿色的障碍物，让小船碰到时候慢下来。
 
 ```blocks
-	wait (0.01) secs
-````
+	等待 (0.01) 秒
+```
 
 ![screenshot](boat-algae.png)
 
@@ -203,15 +174,15 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 下面的代码可能帮助到你：
 
 ```blocks
-	move (1) steps
-	if on edge, bounce
+	移动 (1) 步
+	碰到边缘就反弹
 ````
 
 如果你新的障碍不是棕色的，那么你要添加下面的代码：
 
 ```blocks
-	if <  <touching color [#603C15]?> or <touching [shark v]?> > then
-	end
+	如果 <<碰到颜色 [#603C15]> 或 <碰到 [shark v]>> 那么
+	结束
 ```
 
 ## 保存项目 { .save }
@@ -227,16 +198,16 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 + 用下面的代码，改变玩家2的初始位置。
 
 ```blocks
-	go to x: (-190) y: (-150)
+	移到 x:(-190) y:(-150)
 ```
 
 + 删除用鼠标控制小船的代码。
 
 ```blocks
-	if < (distance to [mouse-pointer v]) > [5] > then
-		point towards [mouse-pointer v]
-		move (1) steps
-	end
+	如果 <(到 [鼠标指针 v] 的距离) > [5]> 那么
+	   面向 [鼠标指针 v]
+	   移动 (1) 步
+	结束
 ```
 
 并用键盘控制小船的代码也取代原来的。
@@ -244,9 +215,9 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 下面的代码可以帮助你用键盘控制小船。
 
 ```blocks
-	if < key [up arrow v] pressed? > then
-		move (1) steps
-	end
+	如果 <按键 [上移键 v] 是否按下？> 那么
+	   移动 (1) 步
+	结束
 ```
 
 同理，还要为左右键编写相应的代码。
@@ -257,8 +228,8 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 你能否制作更多的关卡，让游戏者在不同的关卡中进行选择？
 
 ```blocks
-	when [space v] key pressed
-	next backdrop
+	当按下 [空格键 v]
+	下一个背景
 ```
 
 ## 保存项目 { .save }
