@@ -117,7 +117,7 @@ Let's add a timer, so that the player has to score as many goals as they can in 
 
 	![screenshot](images/goalie-timer-change.png)
 
-+ Once the timer has reached 0, you should play the 'cheer' sound and then stop the game.
++ Once the timer has reached 0, you should play the 'whistle' sound and then stop the game.
 
 	![screenshot](images/goalie-timer-end.png)
 
@@ -127,7 +127,7 @@ Let's add a timer, so that the player has to score as many goals as they can in 
 
 	You can change your timer to start at 10 if you don't want to wait for 30 seconds!
 
-+ You only have the chance to score 1 goal! To have more than 1 attempt, add a `forever` {.blockcontrol} block around your __football__ sprite. You can also add a `wait` {.blockcontrol} block between attempts.
++ You only have the chance to score 1 goal! To have more than 1 chance, add a `forever` {.blockcontrol} block around your __football__ sprite. You can also add a `wait` {.blockcontrol} block between attempts.
 
 	![screenshot](images/goalie-football-forever-code.png)
 
@@ -145,7 +145,7 @@ Here's the code you'll need:
 
 ## Save your project { .save }
 
-# Step 5: Control the goalie { .activity }
+# Step 4: Control the goalie { .activity }
 
 It's far too easy to score a goal! Let's allow a second player to try and save goals.
 
@@ -153,24 +153,24 @@ It's far too easy to score a goal! Let's allow a second player to try and save g
 
 + Click on your __Goalie__ sprite and add this code to change the goalie's x position when the left arrow is pressed.
 
-![screenshot](images/goalie-move-left-code.png)
+	![screenshot](images/goalie-move-left-code.png)
 
 + Press the left arrow to test your new code. Your goalie should move to the left.
 
-![screenshot](images/goalie-move-left-test.png)
+	![screenshot](images/goalie-move-left-test.png)
 
-+ Have you noticed that your goalie doesn't move very smoothly? If you want smoother movement, you can use this code instead.
++ Have you noticed that your goalie doesn't move very smoothly? If you want smoother movement, you can use this code __instead of the code you just added__.
 
-![screenshot](images/goalie-move-left-smooth.png)
+	![screenshot](images/goalie-move-left-smooth.png)
 
-+ Test your code again, this time by clicking the green flag and then holding the left arrow key. Does your goalie more more smoothly than before?
++ Test your code again, this time by __clicking the green flag and then holding the left arrow key__. Does your goalie move more smoothly?
 
 ## Save your project { .save }
 
 ##Challenge: More controls { .challenge }
 Can you code your goalie to move to the right when the right arrow key is pressed? You can use either of the 2 ways above.
 
-You could even use this code to make your goalie jump when the up arrow key is pressed:
+You could even use this code (in a separate script) to make your goalie jump when the up arrow key is pressed:
 
 ```blocks
 repeat (10)

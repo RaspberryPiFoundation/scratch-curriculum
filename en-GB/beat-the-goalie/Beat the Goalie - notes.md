@@ -37,3 +37,8 @@ Make sure that each child has access to a copy of these resources.
 + "Adding a score" - Creating and using a `score` {.blockdata} variable;
 + "More controls" - Adding code to control the goalie;
 + "Manual control" - Adding keyboard controls for the football.
+
+#Frequently Asked Questions
++ If the football's direction has been changed, it may bounce around the screen instead of just moving left and right. This can be fixed by setting the direction in the sprite properties, or by adding a `point in direction` {.blockmotion} block to the start of the football's code.
+
+	![screenshot](images/goalie-direction.png)
