@@ -30,6 +30,11 @@
         {
             "number":   5,
             "filename": "Christmas Capers/Christmas Capers.md"
+        },
+        {
+            "number":   6,
+            "filename": "Beat the Goalie/Beat the Goalie.md",
+            "note": "Beat the Goalie/Beat the Goalie - notes.md"
         }
     ]
 }
