@@ -72,7 +72,7 @@ Let's add some dots for the player to collect with their controller.
 
 	![screenshot](images/dots-start.png)
 
-	To do this, first create a new list variable called `start positions` {.blockdata} and click the `(+)` to add in the values `-180` and `180`.
+	To do this, first create a new __list__ called `start positions` {.blockdata} and click the `(+)` to add in the values `-180` and `180`.
 
 	![screenshot](images/dots-list.png)
 
