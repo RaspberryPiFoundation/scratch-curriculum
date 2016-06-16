@@ -22,7 +22,7 @@ Tip: You can click on the red stop button to stop the music playing!
 
 In synchronised swimming a team of swimmers perform a coordinated routine of moves to music. 
 
-Let's start by getting one Scratch the cat swimming. 
+Let's start by getting one cat swimming. 
 
 ## Activity Checklist { .check }
 
@@ -36,7 +36,7 @@ Let's start by getting one Scratch the cat swimming.
 
 	![screenshot](images/swim-fill.png)
 
-+ You're going to use a different Scratch the cat sprite so right-click on the walking cat to delete it. 
++ You're going to use a different cat sprite so right-click on the walking cat to delete it. 
 
 	![screenshot](images/swim-delete.png)
 
@@ -57,7 +57,6 @@ Let's start by getting one Scratch the cat swimming.
 	
 	![screenshot](images/swim-rotate.png)
 	
-	Tip: Make sure you have clicked on the cat sprite not the Stage!
 	
 + Test your code by pressing the left and right arrow keys on the keyboard.
 
@@ -73,7 +72,7 @@ Let's start by getting one Scratch the cat swimming.
 
 # Step 2: Changing costume { .activity }
 
-Hmm, this would look better if the Scratch sprite changed direction when it turns left. 
+Hmm, this would look better if the cat sprite changed direction when it turns left. 
 
 ## Activity Checklist { .check }
 
@@ -106,9 +105,9 @@ Hmm, this would look better if the Scratch sprite changed direction when it turn
 
 ## Save your project { .save }
 
-# Step 3: Lots of swimming cats! { .activity .new-page }
+# Step 3: Create the team { .activity .new-page }
 
-Synchronised swimming needs more than one cat! We can use `create clone of` {.blockcontrol} in Scratch to create copies that behave in the same way. 
+Synchronised swimming needs more than one cat! We can use `create clone of` {.blockcontrol} to create copies that behave in the same way. 
 
 ## Activity Checklist { .check }
 

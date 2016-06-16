@@ -5,10 +5,15 @@ title: Synchronised Swimming — Volunteer Notes
 #Introduction:
 In this project, children will learn how to use loops and cloning to create a fun synchronised swimming routine. 
 
+This project uses sound. If you don't have access to sound then Step 4 can be skipped without affecting the rest of the project. 
+
 #2016 Summer Olympics
 This project has been created to celebrate the 2016 Summer Olympics in Rio. 
 
 #Resources
+
+The instructions for this project can be found at [jumpto.cc/swim](http://jumpto.cc/swim). 
+
 For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
 The 'Project Materials' link for this project contains the following resources:
