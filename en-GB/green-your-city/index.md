@@ -50,7 +50,7 @@ Let's code your helicopter to move across the stage.
 
  	Notice that the blocks you need to use are `set x` {.blockmotion} and `change y` {.blockmotion}.
 
-+ Finally, you need to repeat this movement until your helicopter is at the bottom of the screen (it's y position is less than -90).
++ Finally, you need to repeat this movement until your helicopter is at the bottom of the screen (its y position is less than -90).
 
  	![screenshot](images/flowers-helicopter-repeat.png)
 
