@@ -20,8 +20,8 @@ There is also a version of this project with the external resources pre-loaded. 
 
 #Learning Objectives
 + Loops:
-	+ `Repeat` {.blockcontrol} loops;
-	+ `Forever` {.blockcontrol} loops.
+  + `Repeat` {.blockcontrol} loops;
+  + `Forever` {.blockcontrol} loops.
 
 #Challenges
 + "Improving your animation" - altering the numbers in a short program;
@@ -31,17 +31,17 @@ There is also a version of this project with the external resources pre-loaded. 
 + Children may need reminding to 'reset' a sprite's position, size and other effects at the start of their animation. This can be easily achieved by adding some of the following blocks to the start of their animations:
 
 ```blocks
-	go to x:(0) y:(0)
+  go to x:(0) y:(0)
 ```
 
 ```blocks
-	set size to (100)%
+  set size to (100)%
 ```
 
 ```blocks
-	clear graphic effects
+  clear graphic effects
 ```
 
 + The 'spaceship' sprite will move sideways unless it is rotated 90 degrees clockwise. Rotating the spaceship is part of the project instructions, but another sprite can be substituted for the spaceship if this is causing problems.
 
-	![screenshot](space-rotate.png)
+  ![screenshot](space-rotate.png)

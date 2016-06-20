@@ -1,0 +1,15 @@
+{
+    "description": false,
+    "id": "scratch_additional",
+    "language": "de-DE",
+    "number": 3,
+    "title": "Scratch 2",
+    "category": "",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Balloons/Balloons.md",
+            "note":     "Balloons/Balloons - notes.md"
+        }
+    ]
+}
