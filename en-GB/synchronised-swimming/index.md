@@ -1,5 +1,5 @@
 ---
-title: Olympics Synchronised Swimming
+title: Synchronised Swimming
 description: Celebrate the Olympics by programming a synchronised swimming routine. 
 layout: project
 notes: "SynchronisedSwimming - notes.md"
