@@ -13,7 +13,7 @@ In this project you will learn how to make an uncrackable code to send short mes
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/114265027/?autostart=true" frameborder="0"></iframe>
-  <img src="secretagents-final.png">
+  <img src="images/secretagents-final.png">
 </div>
 
 # Step 1: Load the starting project { .activity }
