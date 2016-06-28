@@ -251,6 +251,6 @@ Du könntest sogar einen "Schwierig-Modus" hinzufügen, wo eine fünfte Trommel 
 
 ## Speichere Dein Projekt { .save }
 
-## Durch die Community beigetragene Übersetzung { .challenge .pdf-hidden }
+## Community Contributed Translation { .challenge .pdf-hidden }
 
-Dieses Projekt wurde übersetzt von Anastasia Heilmann und Cat Handleigh. Unsere tollen freiwilligen Übersetzer helfen uns dabei, Kindern auf der ganzen Welt die Möglichkeit zu geben coden zu lernen. Auch Du kannst uns dabei helfen mehr Kinder auf der ganzen Welt zu erreichen, indem Du ein Code Club Projekt via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) übersetzt oder mit uns über hello@codeclubworld.org in Kontakt trittst.
+This project was translated by Anastasia Heilmann and Cat Handleigh. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
