@@ -1,5 +1,5 @@
 ---
-title: Speicher
+title: Gedächtnis
 level: Scratch 2
 language: de-DE
 stylesheet: scratch
@@ -7,12 +7,12 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-## Gemeinschafts Beitrag Projekt { .challenge .pdf-hidden }
-Dieses Projekt wurde mit Erik und seiner Tochter Ruth erstellt. Wenn sie um ein Projekt des eigenen Beitrag möchten, dann [müssen sie uns kontaktieren an Github](https://github.com/CodeClub).
+## Gemeinschaftsprojekt { .challenge .pdf-hidden }
+Dieses Projekt wurde gemeinsam mit Erik und seiner Tochter Ruth entwickelt. Wenn Du ebenfalls zu einem Projekt beitragen möchtest, [trete gern mit uns über Github in Kontakt](https://github.com/CodeClub).
 
 # Einführung { .intro }
 
-In dieses Projekt, finden Sie eine Speicher-spiel wo Sie eine Sequenz von zufällige Farben merken und wiederholen erstellen müssen!
+In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
@@ -21,96 +21,97 @@ In dieses Projekt, finden Sie eine Speicher-spiel wo Sie eine Sequenz von zufäl
 
 # Schritt 1: Zufällige Farben { .aktivität}
 
-Zuerst erstellen wir ein Zeichen, das in eine zufällige Reihenfolge der Farben für den Player ändern können, um zu merken.
-## Aktivität Kontrollliste { .kontrolle }
+Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an unterscheidlichen Farben annehmen kann, die sich der Spieler merken muss.
 
-+ Starten Sie ein neues Scratch projekt und löschen Sie die katze sprite, so dass ihr projekt leer ist.Sie können der Online Scratch Editor hier <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a> finden.
+## Arbeitsschritte { .kontrolle }
 
-+ Wählen Sie einen Charakter und eine Kulisse. Dein Charakter muss nicht eine Person sein, aber es muss in der Lage, um verschiedene Farben zu zeigen.
++ Starte ein neues Scratch-Projekt und lösche die Katzenfigur, so dass Dein Projekt leer ist. Du findest das Scratch-Bearbeitungsprogramm online auf jumpto.cc/scratch-new.
+
++ Füge eine neue Figur, sowie den passeden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben annehmen können.
 
 	![screenshot](colour-sprite.png)
 
-+ Im Spiel werden Sie eine andere Nummber verwenden, um jede Farbe darzustellen:
++ Du wirst im Spiel unterschiedliche Zahlen für die jeweiligen Farben benutzen:
 
-	+ 1 = rot;
-	+ 2 = blau;
-	+ 3 = grün;
-	+ 4 = gelb.
+	+ 1 = rot
+	+ 2 = blau
+	+ 3 = grün
+	+ 4 = gelb
 
-	Geben Sie ihren Charakter 4 verschiedenen Farbkostüme,eine für jede der 4 Farben oberhalb. Stellen Sie sicher, dass Ihre farbigen Kostüme in der richtigen Reihenfolge sind.
+	Gib Deinem Charakter vier unterschiedlich farbige Kostüme in den obigen Farben. Stelle sicher, dass die Farben der Kostüme richtig geordnet sind.
 
 	![screenshot](colour-costume.png)
 
-+ Um eine Zufallfolge zuerstellen müssen Sie eine__Liste__ erstellen. Eine Liste ist nur eine Variable die vielen Daten __in Ordnung__ gespeichert werden. Erstellen Sie eine neue Liste namens `sequenz` {.blockdata}. Da nur deinen Charakter die Liste sehen muss, können wir auch auf 'Nur für dieses Sprite' klicken. 
++ Um eine zufällige Reihenfolge zu erstellen, benötigst Du eine __Liste__. Eine Liste ist lediglich eine Variable, die viele Daten __in Reihenfolge__ speichert. Erstelle unter 'Daten'  eine neue Liste namens `Sequenz` {.blockdata}. Da nur Dein Charakter die Liste sehen muss, können wir auf 'Nur für diese Figur' klicken.
 
 	![screenshot](colour-list.png)
 
-	Sie sollten ihre leere Liste in der oberen linken Ecke ihrer Buhne jetzt sehen und auch viele neue Bausteine für die Verwendung von Listen.
+	Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne sehen, als auch eine Menge neuer Bausteine für die Verwendung der Liste.
 
 	![screenshot](colour-list-blocks.png)
 
-+ Fügen sie diesen code, um ihren Charakter um eine Zufallszahl zu Ihrer Liste hinzufügen (und die richtige Kunen) 5-mal zeigen:
++ Füge diesen Code hinzu, um der Liste 5 Mal nacheinander eine zufällige Nummer zu vergeben (und so das entsprechende Kostüm anzuzeigen):
 
 	```blocks
 Wenn die grüne Flagge angeklickt
-lösche (alles v) aus [sequence v]
+lösche (alles v) aus [Sequenz v]
 wiederhole (5) mal
-   füge (Zufallszahl von (1) bis (4)) zu [sequence v] hinzu
-   wechsle zu Kostüm (Element (last v) von [sequence v])
+   füge (Zufallszahl von (1) bis (4)) zu [Sequenz v] hinzu
+   wechsle zu Kostüm (Element (last v) von [Sequenz v])
    warte (1) Sek.
 Ende
 	```
 
-	Beachten sie, dass sie auch die Liste zu beginnen geleert haben.
+	Beachte, dass Du die Anfangsliste leerst, um zu beginnen.
 
-## Herausforderung: Hinzufügen von Sound {.herausforderung}
-Testen Sie ihr Projekt ein paar mal. Stellen Sie möglicherweise fest , dass manchmal die gleiche Zahl zweimal (oder mehr) in einer Reihe ausgewählt machen die Folge schwerer zu merken. Können Sie es machen dass jedes Mal dass Zeichen ändert Kostüm einen Drum-Sound spielt? 
+## Herausforderung: Geräusche hinzufügen {.herausforderung}
+Teste Dein Projekt einige Male. Du stellst möglicherweise fest, dass manchmal die gleiche Zahl zweimal (oder mehrmals) nacheinander ausgewählt wird, was es schwieriger macht sich die Reihenfolge zu merken. Kannst Du jedes Mal, wenn das Kostüm wechselt ein Trommel-Geräusch spielen?
 
-Können Sie ein anderes Drum-Sound spielen abhängig von der Zufallszahl ausgewählt? Dies wird _sehr_ ähnlich wie der Code, um den Charakter der Kostüm ändern werden sein.
+Kannst Du jeweils ein anderes Trommel-Geräusch machen, abhängig von der Zufallszahl, die ausgewählt wird? Dies wird _sehr_ ähnlich zu dem Code sein, der für das Verändern des Kostüms des Charakters verantwortlich ist.
 
-## Speichern Sie Ihr Projekt { .save }
+## Speichere Dein Projekt { .save }
 
-# Schritt 2: Wiederholen der Sequenz { .activity }
+# Schritt 2: Reihenfolge wiederholen { .activity }
 
-Fügen wir 4 Tasten , für den Spieler , um die Sequenz erinnerten sie habe wiederholen.
+Lass uns vier Tasten hinzufügen, damit man die gemerkte Reihenfolge der Farben abspielen kann.
 
-## Aktivität Kontrollliste { .check }
+## Arbeitsschritte { .check }
 
-+ Hinzufügen 4 Sprites , um Ihr Projekt , die Tasten werden wird. Bearbeiten Sie Ihre 4 -Sprites , so dass es 1 für jede der 4 Farben.
++ Füge Deinem Projekt vier Figuren hinzu, die die Tasten darstellen werden. Bearbeite Deine Figuren so, dass jeweils eine Taste eine der vier Farben repräsentiert.
 
 	![screenshot](colour-drums.png)
 
-+ Wenn die rote Trommel angeklickt  wird, müssen Sie eine Nachricht an deinen Charakter zu übertragen, sie wissen zu lassen, dass die rote Schaltfläche angeklickt  wurde. Fügen Sie diesen Code auf Ihre rote Trommel:
++ Wenn die rote Taste angeklickt  wird, musst Du Deinem Charakter mitteilen, dass die rote Taste gedrückt wurde. Füge diesen Code Deiner roten Trommel hinzu:
 
 	```blocks
 Wenn ich angeklickt werde
-sende [red v] an alle
+sende [rot v] an alle
 	```
 
-+ Wenn dein Charakter diese Nachricht empfängt, sollten sie prüfen, ob die Nummer 1 ist am Anfang der Liste (was bedeutet, dass Rot die nächste Farbe in der Reihenfolge). Wenn ja, können Sie die Nummer aus der Liste zu entfernen, wie es richtig erraten worden. Ansonsten ist das Spiel vorbei!
++ Wenn dein Charakter diese Nachricht empfängt, sollte er prüfen, ob die Nummer 1 am Anfang der Liste steht (was bedeutet, dass Rot die nächste Farbe in der Reihenfolge ist). Wenn ja, kann die Nummer aus der Liste entfernt werden, da sie richtig erraten worden ist. Ansonsten ist das Spiel vorbei!
 
 	```blocks
-Wenn ich [red v] empfange
-falls <(Element (1 v) von [sequence v]) = [1]> dann
-   lösche (1 v) aus [sequence v]
+Wenn ich [rot v] empfange
+falls <(Element (1 v) von [Sequenz v]) = [1]> dann
+   lösche (1 v) aus [Sequenz v]
 sonst
    sage [Game over!] für (1) Sek.
    stoppe [alles v]
 Ende
 	```
 
-+ Sie könnten auch ein paar blinkende Lichter an, sobald die Liste leer ist, da es die gesamte Sequenz bedeutet, richtig erraten wurde . Fügen Sie diesen Code an das Ende deines Charakters `wenn Fahne geklickt` {.blockevents} Skript: 
++ Du kannst auch ein paar blinkende Lichter anzeigen, sobald die Liste leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist. Fügen diesen Code an das Ende des `wenn Fahne geklickt` {.blockevents}-Skripts Deines Charakters hinzu:
 
 	```blocks
-warte bis <(Länge von [sequence v]) = [0]>
-sende [won v] an alle und warte
+warte bis <(Länge von [Sequenz v]) = [0]>
+sende [gewonnen v] an alle und warte
 	```
 
-+ Klicken Sie auf Ihre Bühne, und diesen Code hinzufügen, um die Kulisse die Farbe wechseln lassen, sobald der Spieler gewonnen hat.
++ Klicke auf die Bühne und füge diesen Code hinzu, um die Farbe des Hintergrundes wechseln zu lassen, sobald der Spieler gewonnen hat.
 
 	```blocks
-Wenn ich [won v] empfange
-spiele Klang [drum machine v]
+Wenn ich [gewonnen v] empfange
+spiele Klang [cheer v]
 wiederhole (50) mal
    ändere [Farbe v]-Effekt um (25)
    warte (0.1) Sek.
@@ -118,138 +119,138 @@ Ende
 schalte Grafikeffekte aus
 	```
 
-## Herausforderung: Erstellen von 4 Tasten {.challenge}
-Wiederholen Sie diese Schritte für Ihre blauen, grünen und gelben Tasten. Welcher Code wird gleich bleiben, und die für jede Schaltfläche ändern wird ?
+## Herausforderung: Vier Tasten erstellen {.challenge}
+Wiederhole die oben beschriebenen Schritte für Deine blauen, grünen und gelben Tasten. Welcher Code bleibt gleich, und welcher Code verändert sich für jede der Tasten?
 
-Sie können auch Geräusche, wenn die Tasten gedrückt werden hinzuzufügen.
+Du kannst auch Geräusche hinzufügen, wenn die Tasten gedrückt werden.
 
-Denken Sie daran, den Code, den Sie hinzugefügt haben, zu testen! Können Sie eine Folge von 5 Farben zu merken ? ist die Sequenz jedes Mal anders ?
+Denke daran, den Code, den Du hinzugefügt hast, zu testen! Kannst Du Dir eine Folge von 5 Farben merken? Ist die Reihenfolge jedes Mal anders?
 
-## Speichern Sie Ihr Projekt { .save }
+## Speichere Dein Projekt { .save }
 
 # Schritt 3: Mehrere Ebenen { .activity .new-page }
 
-Bisher hat der Spieler nur zu 5 Farben erinnern. Lassen Sie Ihr Spiel zu verbessern, so dass die Länge der Folge erhöht .
+Bisher muss sich der Spieler nur 5 Farben merken. Lass uns Dein Spiel verbessern, so dass die Länge der Farbenfolge erhöht wird.
 
-## Aktivität Kontrollliste { .check }
+## Arbeitsschritte { .check }
 
-+ Erstellen Sie eine neue Variable namens `Punktzahl` {.blockdata}.
++ Erstelle eine neue Variable namens `Punktzahl` {.blockdata}.
 
 	![screenshot](colour-score.png)
 
-+ Diese `Punktzahl` {.blockdata} wird verwendet, um auf der Länge der Folge hat der Spieler zu merken zu entscheiden. Also, um mit der Partitur (und die Sequenzlänge) beträgt 3 beginnen. Fügen Sie diese Code-Block an den Anfang Ihres `wenn Fahne geklickt` Zeichencode
++ Diese `Punktzahl` {.blockdata} wird dafür verwendet, um über die Länge Sequenz zu entscheiden, die sich der Spieler merken muss. Um mit der Punktzahl (und der Länge der Sequenz) zu beginnen, setze diese auf 3. Füge diesen Code an das Ende des `wenn Fahne geklickt` {.blockevents}-Skripts Deines Charakters hinzu:
 
 	```blocks
-setze [score v] auf [3]
+setze [Punktzahl v] auf [3]
 	```
 
-+ Anstatt immer die Schaffung einer Sequenz von 5 Farben, die Sie wollen nun die `Punktzahl` {.blockdata}, um die Sequenzlänge zu bestimmen. Ändern deines Charakters `wiederholen` {.blockcontrol} Schleife (für die Erstellung der Sequenz) , um: 
++ Anstatt immer eine Folge von 5 Farben zu haben, möchtest Du, dass nun die `Punktzahl` {.blockdata}, die Sequenzlänge bestimmt. Ändere die `wiederholen` {.blockcontrol}-Schleife deines Charakters (für die Erstellung der Sequenz) zu:
 
 	```blocks
-wiederhole (score) mal
+wiederhole (Punktzahl) mal
 Ende
 	```
 
-+ Wird die Reihenfolge richtig geraten , sollten Sie 1 zur Partitur hinzufügen , um die Länge der Sequenz zu erhöhen.
++ Wird die Reihenfolge der Farben richtig wiedergegeben, solltest Du 1 zu der Punktzahl hinzufügen, um die Länge der Sequenz zu erhöhen.
 
 	```blocks
-ändere [score v] um (1)
+ändere [Punktzahl v] um (1)
 	```
 
-+ Schließlich müssen Sie eine `auf ewig` {.blockcontrol} Schleife um den Code hinzufügen , um die Sequenz zu erzeugen , so dass eine neue Sequenz wird für jede Ebene erstellt. Dies ist, wie Sie Ihre Zeichencode aussehen sollte:
++ Schließlich musst Du eine `auf ewig` {.blockcontrol}-Schleife dem Code hinzufügen, so dass eine neue Sequenz für jede Spiel-Stufe erstellt wird. So sollte der Code Deines Charakters aussehen:
 
 	```blocks
 Wenn die grüne Flagge angeklickt
-setze [score v] auf [3]
+setze [Punktzahl v] auf [3]
 wiederhole fortlaufend
-   lösche (alles v) aus [sequence v]
-   wiederhole (score) mal
-      füge (Zufallszahl von (1) bis (4)) zu [sequence v] hinzu
-      wechsle zu Kostüm (Element (last v) von [sequence v])
+   lösche (alles v) aus [Sequenz v]
+   wiederhole (Punktzahl) mal
+      füge (Zufallszahl von (1) bis (4)) zu [Sequenz v] hinzu
+      wechsle zu Kostüm (Element (letztes v) von [Sequenz v])
       warte (1) Sek.
    Ende
-   warte bis <(Länge von [sequence v]) = [0]>
-   sende [won v] an alle und warte
-   ändere [score v] um (1)
+   warte bis <(Länge von [Sequenz v]) = [0]>
+   sende [gewonnen v] an alle und warte
+   ändere [Punktzahl v] um (1)
 Ende
 	```
 
-+ Holen Sie sich Ihren Freunden zu testen Sie Ihr Spiel. Denken Sie daran , um die `sequenz` {.blockdata} Liste auszublenden, bevor sie es zu spielen! 
++ Lass Deine Familie oder Freunde das Spiel testen. Denke daran die `Sequenz` {.blockdata}-Liste auszublenden, bevor sie das Spiel starten!
 
-## Speichern Sie Ihr Projekt { .save }
+## Speichere Dein Projekt { .save }
 
-# Schritt 4: High Score { .activity }
+# Schritt 4: Höchstpunktestand { .activity }
 
-Speichern wir die hohe Punktzahl, so dass Sie gegen Ihre Freunde spielen kann.
+Lass uns den Höchstpunktestand bzw. High score speichern, damit Du gegen Deine Freunde antreten kannst.
 
-## Aktivität Kontrollliste { .check }
+## Arbeitsschritte { .check }
 
-+ Hinzufügen 2 neue Variablen zu Ihrem Projekt, genannt `High Score` {.blockdata} und `Namen` {.blockdata}. 
++ Füge Deinem Projekt die 2 neuen Variablen `High score` {.blockdata} und `Name` {.blockdata} hinzu.
 
-+ Wenn jemals das Spiel (durch Drücken der falschen Knopf) endet, müssen Sie prüfen, ob das Ergebnis des Spielers höher ist als die aktuelle High Score. Ist dies der Fall , müssen Sie die Punktzahl als die High Score zu speichern, und speichern Sie den Namen des Spielers. Hier ist, wie Sie Ihre roten Knopf aussehen sollte:
++ Wann immer das Spiel beendet wird (durch Drücken des falschen Knopfes), musst Du prüfen, ob das Ergebnis des Spielers höher ist als der aktuelle Höchstpunktestand. Ist dies der Fall, musst Du sowohl die Punktzahl des neuen High scores, als auch den Namen des Spielers speichern. So sollte der Code Deines roten Knopfes aussehen:
 
 	```blocks
-Wenn ich [red v] empfange
-falls <(Element (1 v) von [sequence v]) = [1]> dann
-   lösche (1 v) aus [sequence v]
+Wenn ich [rot v] empfange
+falls <(Element (1 v) von [Sequenz v]) = [1]> dann
+   lösche (1 v) aus [Sequenz v]
 sonst
    sage [Game over!] für (1) Sek.
-   falls <(score) > (high score)> dann
-      setze [high score v] auf (score)
-      frage [High score! What is your name?] und warte
-      setze [name v] auf (Antwort)
+   falls <(Punktzahl) > (High score)> dann
+      setze [High score v] auf (Punktzahl)
+      frage [High score! Wie ist Dein Name?] und warte
+      setze [Name v] auf (Antwort)
    Ende
    stoppe [alles v]
 Ende
 	```
 
-+ Sie müssen diese neuen Code zu den anderen 3 Tasten zu schreiben! Haben Sie bemerkt, dass die 'Game over' Code in jedem der vier Tasten ist genau das gleiche?
++ Du musst diesen neuen Code zu den anderen 3 Tasten hinzufügen! Ist Dir aufgefallen, dass der 'Game over'-Code in jeder der vier Tasten genau der selbe ist?
 
 	![screenshot](colour-same.png)
 
-+ Wenn Sie überhaupt benötigen eines dieser Code zu ändern, wie zum Beispiel das Hinzufügen eines Ton oder die Änderung der 'Game over!' Nachricht, würden Sie es 4 mal ändern müssen! Das könnte nervig werden, und viel Zeit verschwenden. 
++ Wenn Du jemals einen dieser Codes ändern musst, zum Beispiel um ein Geräusch hinzuzufügen oder die 'Game over'´-Nachricht zu ändern, müsstest Du ganze 4 Mal die gleiche Änderung vornehmen! Das könnte lästig werden und viel Zeit verschwenden.
 
-+ Stattdessen können Sie eigene Bausteine zu definieren, und wiederverwenden, in Ihrem Projekt! Um dies zu tun, klicken `mehr Blöcke` {.blockmoreblocks}, und dann 'machen einen Block'. Namen Sie diese neuen Block 'Game over'.
++ Stattdessen kannst Du Deine eigenen Bausteine definieren, und diese in Deinem Projekt wiederverwenden! Um dies zu tun, klicke auf `Weitere Blöcke` {.blockmoreblocks} und dann 'Neuer Block'. Benenne diesen neuen Block 'Game over'.
 
 	![screenshot](colour-more.png)
 
-+ Fügen Sie den Code aus dem `else` {.blockcontrol} Block von der roten Taste, um den neuen Block, das angezeigt wird: 
++ Füge den Code aus dem `sonst` {.blockcontrol}-Block von der roten Taste zu dem neu erschienen Block hinzu:
 
 	![screenshot](colour-make-block.png)
 
-+ Sie haben nun eine neue _funktion_ namens `Game over` {.blockmoreblocks}, die Sie überall Sie verwenden können, hergestellt. Ziehen Sie Ihr neues `Game over` {.blockmoreblocks} Block auf die 4 -Skripte für die Schaltflächen .
++ Du hast nun eine neue _Funktion_ namens `Game over` {.blockmoreblocks} erstellt, die Du überall verwenden kannst. Ziehe Deinen neuen `Game over` {.blockmoreblocks}-Block auf die 4 Skripte der Tasten.
 
 	![screenshot](colour-use-block.png)
 
-+ Nun fügen Sie einen Sound für , wenn die falsche Taste gedrückt wird. Sie müssen diesen Code nur  _einmal_ im `Game over` {.blockmoreblocks} Block hinzufügen, die Sie gemacht , und nicht 4 separate mal schreiben!
++ Füge als Nächstes ein Geräusch hinzu, wenn die falsche Taste gedrückt wird. Du musst diesen Code nur _einmal_ im `Game over` {.blockmoreblocks}-Block hinzufügen, anstatt 4 Mal für jede einzelne Farbe! Praktisch, oder?
 
 	![screenshot](colour-cough.png)
 
-## Herausforderung: Machen mehr Blöcke {.challenge}
-Bemerken Sie einen anderen Code , der das gleiche für alle vier Tasten ist?
+## Herausforderung: Erstelle mehr Blöcke {.challenge}
+Ist Dir ein anderer Code aufgefallen, der für alle vier Tasten gleich ist?
 
 ![screenshot](colour-more-blocks.png)
 
-Können Sie eine andere benutzerdefinierte Block machen, die durch jede Taste verwendet wird?
+Kannst Du einen anderen benutzerdefinierten Block erstellen, der von jeder Taste verwendet wird?
 
-## Speichern Sie Ihr Projekt { .save }
+## Speichere Dein Projekt { .save }
 
 ## Herausforderung: Ein weiteres Kostüm {.challenge}
-Haben Sie bemerkt, dass Ihr Spiel beginnt mit deinem Charakter, die eine der 4 Farben zeigt, und dass sie die letzte Farbe angezeigt werden immer in der Reihenfolge, während der Player der Sequenz Wiederholen?
+Hast Du bemerkt, dass das Spiel damit beginnt, dass Dein Charakter eine der 4 Farben zeigt, und dass das Kostüm immer die letzte Farbe anzeigt, die in der Reihenfolge auftaucht, während der Spieler die Farben wiederholt?
 
-Können Sie ein anderes einfaches weißes Kostüm, um deinen Charakter hinzufügen, die zu Beginn des Spiels angezeigt wird, und wenn der Spieler versucht, die Sequenz zu kopieren?
+Kannst Du dem Charakter ein anderes komplett weißes Kostüm geben, welches zu Beginn des Spiels angezeigt wird, und wenn der Spieler versucht, die Sequenz zu wiederholen?
 
 ![screenshot](colour-white.png)
 
-## Speichern Sie Ihr Projekt { .save }
+## Speichere Dein Projekt { .save }
 
 ## Herausforderung: Schwierigkeitsgrad {.challenge}
-Können Sie damit Ihre Spieler zwischen " Easy-Modus " ( mit nur die roten und blauen Schlagzeug) und " Normalbetrieb " (die alle 4 Trommeln verwendet ) wählen?
+Kannst Du dem Spieler die Möglichkeit geben zwischen einem "Einfach-Modus " (mit nur der roten und der blauen Trommel) und einem "Normal-Modus" (alle vier 4 Trommeln) wählen zu lassen?
 
-Man könnte sogar eine "harte" Modus hinzufügen, die Verwendung eines fünften Trommel macht!
+Du könntest sogar einen "Schwierig-Modus" hinzufügen, wo eine fünfte Trommel verwendet wird!
 
-## Speichern Sie Ihr Projekt { .save }
+## Speichere Dein Projekt { .save }
 
-## Community Contributed Translation { .challenge .pdf-hidden }
+## Durch die Community beigetragene Übersetzung { .challenge .pdf-hidden }
 
-This project was translated by Cat Handleigh. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+Dieses Projekt wurde übersetzt von Anastasia Heilmann und Cat Handleigh. Unsere tollen freiwilligen Übersetzer helfen uns dabei, Kindern auf der ganzen Welt die Möglichkeit zu geben coden zu lernen. Auch Du kannst uns dabei helfen mehr Kinder auf der ganzen Welt zu erreichen, indem Du ein Code Club Projekt via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) übersetzt oder mit uns über hello@codeclubworld.org in Kontakt trittst.

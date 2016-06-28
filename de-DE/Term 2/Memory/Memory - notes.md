@@ -1,26 +1,26 @@
 ---
-title: Memory — Notes for Club Leaders
-language: en-GB
+title: Gedächtnis — Notizen für Club Leaders
+language: de-DE
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to use list variables to store data, as well as how simple custom blocks (functions) can be used to simplify their programs.
+#Einführung:
+In diesem Projekt lernen die Kinder es sowohl Listen-Variablen zu benutzen, um Daten zu speichern, als auch wie einfach es ist benutzerdefinierte Blöcke (Funktionen) zu erstellen, um die Programme zu vereinfachen.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Ressourcen
+Für dieses Projekt sollte Scratch 2 entweder online unter [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) verwendet oder hier [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) heruntergeladen und offline benutzt werden.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Eine vollständige Version des Projektes kann hier eingesehen <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a> oder unter dem 'Download Project Materials'-Link, der folgendes enthält, heruntergeladen werden:
 
-+ Memory.sb2
++ Gedächtnis.sb2
 
-#Learning Objectives
-+ Lists;
-+ Simple functions.
+#Lernziele
++ Listen
++ Einfache Funktionen
 
-#Challenges
-+ "Adding sound" - improving the usability of the game;
-+ "Creating 4 buttons" - manipulating lists;
-+ "Making more blocks" - creating custom blocks;
-+ "Another costume" - improving the usability of the game;
-+ "Difficulty level" - modifying the data stored in a list.
+#Herausforderungen
++ "Geräusche hinzufügen" - Benutzerfreundlichkeit des Spieles verbessern;
++ "4 tasten erstellen" - Listen manipulieren;
++ "Mehr Blöcke erstellen" - benutzerdefinierte Blöcke erstellen;
++ "Anderes Kostüm" - Benutzerfreundlichkeit des Spieles verbessern;
++ "Schwierigkeitsgrad" - in einer Liste gespeicherten Daten modifizieren.
