@@ -245,7 +245,7 @@ Let's make your game a little harder to complete, by adding lasers!
 
 	If you prefer, you can `wait` {.blockcontrol} a `random` {.blockoperators} amount of time between costume changes.
 
-+ Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be the same as the code you added to your ball sprite.
++ Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be very similar to the code you added to your ball sprite.
 
 	You don't need to add any more code to your character - it already knows what to do when it is hit!
 
