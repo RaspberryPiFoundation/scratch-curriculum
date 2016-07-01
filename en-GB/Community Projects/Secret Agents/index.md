@@ -110,10 +110,15 @@ A variable contains one piece of information which you can change. They are like
 	![screenshot](images/secretagents-var2.png)
 
 	__code__ is to encode and decode one letter of the message
+
 	__letter__ is to hold one letter of the message
+
 	__letter number__ is to hold the number of the letter in the __letter__ variable (e.g. "e" = 5)
+
 	__line__ is to _point_ to a line in the alphabet list
+
 	__message__ is to hold the original message written by Alex
+
 	__pointer__ is to _point_ to a letter in a message
 
 	When I say _point_ this means it contains a number, not a letter. So if message was "hello" and pointer was 2, then this is pointing to "e".
@@ -142,11 +147,11 @@ It is called a one-time-pad because you use it __only once__ - you __never__ use
 
 ## Activity Checklist { .check }
 
-# Run the program.
++ Run the program.
 
-# Does the otp list contain 10 numbers between 1 and 26? 
++ Does the otp list contain 10 numbers between 1 and 26? 
 
-# Run it again and you will get a different set of numbers - they are random so each otp is different.
++ Run it again and you will get a different set of numbers - they are random so each otp is different.
 
 ## Challenge: Coding a short message { .challenge }
 
@@ -195,9 +200,9 @@ Imagine you are a secret agent and have received this message "__englandexpectst
 
 ## Activity Checklist { .check }
 
-# What the words in this message - remember spaces are not allowed?
++ What the words in this message - remember spaces are not allowed?
 
-# This is a famous message sent in 1805. Do you know where?
++ This is a famous message sent in 1805. Do you know where?
 
 # Step 7: Turn your Message into Letters { .activity }
 
@@ -441,9 +446,9 @@ As I said at the start an otp code is impossible to crack, which means you can n
 
 ## Activity Checklist { .check }
 
-# You are a secret agent working in an enemy country. You have hidden your radio and your otp. If the enemy capture your radio, does this matter? 
++ You are a secret agent working in an enemy country. You have hidden your radio and your otp. If the enemy capture your radio, does this matter? 
 
-# What about if they find the otp?
++ What about if they find the otp?
 
 __Hint__ What do you need to decode the message?
 
@@ -655,9 +660,9 @@ An earlier challenge asked how you can have message longer than 10 letters. Now 
 
 ## Activity Checklist { .check }
 
-# Change the program so that it allows a message of up to __26__ letters, so you can use the alphabet as a test message (which has 26 letters).
++ Change the program so that it allows a message of up to __26__ letters, so you can use the alphabet as a test message (which has 26 letters).
 
 __Hint__ You only need to make __one__ change to the program to be able to do this (apart from changing what the __ask__ block says).
 
-# Test the program using the message "__abcdefghijklmnopqrstuvwxyz__" and make sure the coded list looks random and the decoded list is the same as the original message.
++ Test the program using the message "__abcdefghijklmnopqrstuvwxyz__" and make sure the coded list looks random and the decoded list is the same as the original message.
 
