@@ -145,11 +145,7 @@ It is called a one-time-pad because you use it __only once__ - you __never__ use
 
 ## Test your project { .flag }
 
-## Activity Checklist { .check }
-
-+ Run the program.
-
-+ Does the otp list contain 10 numbers between 1 and 26? 
++ Run the program. Does the otp list contain 10 numbers between 1 and 26? 
 
 + Run it again and you will get a different set of numbers - they are random so each otp is different.
 
@@ -200,7 +196,7 @@ Imagine you are a secret agent and have received this message "__englandexpectst
 
 ## Activity Checklist { .check }
 
-+ What the words in this message - remember spaces are not allowed?
++ What are the words in this message - remember spaces are not allowed?
 
 + This is a famous message sent in 1805. Do you know where?
 
@@ -248,8 +244,6 @@ The __OTP__ code encodes each letter of the message one at a time. This step is 
 ## Save your project { .save }
 
 ## Test your project { .flag }
-
-## Activity Checklist { .check }
 
 + Run the program by clicking the green flag.
 
@@ -346,8 +340,6 @@ Both Alex and Dee need to do this, so you will write this part so that both spri
 
 ## Test your project { .flag }
 
-## Activity Checklist { .check }
-
 + Type in the message __abcde__ and check that Alex says __1__, __2__, __3__, __4__, __5__.
 
 + Type in a short message of your choice and see if you agree with the numbers Alex is saying. Remember that a=1, z=26, e=5 etc.
@@ -430,8 +422,6 @@ The way that the otp code works is by each letter in your message having some nu
 
 ## Test your project { .flag }
 
-## Activity Checklist { .check }
-
 + Run the program and enter the message __abcde__ as you did before.
 
 + Check that the __coded__ list in the centre of the stage shows 5 letters which are "gibberish". This is the coded message which Alex would send to Dee and need to decode back to __abcde__.
@@ -513,8 +503,6 @@ __Hint__ What do you need to decode the message?
 
 ## Test your project { .flag }
 
-## Activity Checklist { .check }
-
 + Run the program by clicking the green flag.
 
 + Check that Alex says the encoded message (the gibberish) as shown in the __coded__ list.
@@ -584,8 +572,6 @@ Decoding is the process of turning the received message, which looks like gibber
 ## Test your project { .flag }
 
 The program is complete. Now you need to run it and see if all the bits work.
-
-## Activity Checklist { .check }
 
 + Click the green flag to start the program.
 
