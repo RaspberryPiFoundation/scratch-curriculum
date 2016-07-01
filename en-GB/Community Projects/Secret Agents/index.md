@@ -60,11 +60,11 @@ For this project, you will need to add three more lists to the Alex sprite.
 
 	The __decoded__ list will contain the message after Dee has decoded what he was sent.
 
-+ Check that you have three lists defined and set like this:
++ Check that you have the three lists and alphabet defined and set like this:
 
 	![screenshot](images/secretagents-lists3.png)
 
-+ You will see that there is a tick next to the three new lists, but not the alphabet, because we want to see these on the stage.
+	You will see that there is a tick next to the three new lists, but not the alphabet, because we want to see these on the stage.
 
 + Move the three lists so that they are laid out on the stage something like this, make them as narrow as you can.
 
