@@ -155,23 +155,23 @@ Alphabet: __A B C D E F G H I J K L M N O P Q R S T U V W X Y Z__
 
 Suppose I want to send the message __at__ and the first two lines of the otp are 8 and 11.
 
-Take the letter __a__ and move along the alphabet 8 letters. I have put the alphabet above to make this a little easier for you. Then __a__ -> b, c, d, e, f, g, h, __i__. So Alex would write down __i__ as the first letter of the coded message (__at__).
++ Take the letter __a__ and move along the alphabet 8 letters. I have put the alphabet above to make this a little easier for you. Then __a__ -> b, c, d, e, f, g, h, __i__. So Alex would write down __i__ as the first letter of the coded message (__at__).
 
-Take the second letter __t__ and move along the alphabet 11 letters. Hang on, I have got to z! Just go back to a and continue counting so __t__ -> u, v, w, x, y, z, a, b, c, d, __e__. So Alex would write down __e__.
++ Take the second letter __t__ and move along the alphabet 11 letters. Hang on, I have got to z! Just go back to a and continue counting so __t__ -> u, v, w, x, y, z, a, b, c, d, __e__. So Alex would write down __e__.
 
-The message __at__ would be sent in code as __ie__.
++ The message __at__ would be sent in code as __ie__.
 
-Don't worry, Scratch will do these sums for you but you need to know roughly how it works so you can make sure that it is doing it right!
+Don't worry, Scratch will do these sums for you but it is useful to know what it is supposed to do.
 
 ## Challenge: How do you decode the gibberish? { .challenge }
 
 Both Alex and Dee must have the __same__ one-time-pad (otp). Dee needs to decode the encoded message, which looks like gibberish, and turn it back into the original message. All he has apart from this is the otp (he has no idea what the message says).
 
-Using my example above, the otp says 8 and 11 and the "gibberish" received is __ie__. How do you get back to __at__?
++ Using my example above, the otp says 8 and 11 and the "gibberish" received is __ie__. How do you get back to __at__?
 
 __Hint__ it is very similar to how the message was coded in the first place.
 
-Don't worry, Scratch will do these sums for you but you need to know roughly how it works so you can make sure that it is doing it right!
+Don't worry, Scratch will do these sums for you.
 
 # Step 6: Create a Message { .activity }
 
@@ -193,8 +193,6 @@ So if Alex wanted to say hello to Dee then the message would be "__hellodee__" a
 ## Challenge: Making sense of received messages { .challenge }
 
 Imagine you are a secret agent and have received this message "__englandexpectsthateverymanwilldohisduty__".
-
-## Activity Checklist { .check }
 
 + What are the words in this message - remember spaces are not allowed?
 
@@ -434,8 +432,6 @@ The way that the otp code works is by each letter in your message having some nu
 
 As I said at the start an otp code is impossible to crack, which means you can not work out what the letters in the original message are if you only have the encoded version. Only the two people with the otp can decode it because the contents are random.
 
-## Activity Checklist { .check }
-
 + You are a secret agent working in an enemy country. You have hidden your radio and your otp. If the enemy capture your radio, does this matter? 
 
 + What about if they find the otp?
@@ -443,8 +439,6 @@ As I said at the start an otp code is impossible to crack, which means you can n
 __Hint__ What do you need to decode the message?
 
 ## Challenge: More than 10 letters in a message? { .challenge }
-
-## Activity Checklist { .check }
 
 + Run the program and type in a message which is longer than 10 letters, I suggest __abcdefghijkl__ which is 12 letters long.
 
@@ -643,8 +637,6 @@ __Dee Sprite__:
 ## Challenge: Allow longer messages { .challenge }
 
 An earlier challenge asked how you can have message longer than 10 letters. Now you can try and do it!
-
-## Activity Checklist { .check }
 
 + Change the program so that it allows a message of up to __26__ letters, so you can use the alphabet as a test message (which has 26 letters).
 
