@@ -287,6 +287,7 @@ Let's add a 'game over' message at the end of the game.
 
 ## Challenge: Improve your game {.challenge}
 What improvements can you make to your game? Here are some ideas:
+
 + Add health packs that you can collect to gain extra lives;
 
 ![screenshot](images/invaders-aid.png)

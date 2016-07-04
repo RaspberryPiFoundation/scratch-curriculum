@@ -210,7 +210,7 @@ __Click the green flag__, does the player score points for flying Flappy through
 
 ## Challenge 1: add a high score { .challenge}
 
-+ Make a new variable and tick the `Cloud variable (stored on server)` {.blockgrey} box. Call the variable `hi-score` {.blockorange}
++ Make a new variable called `hi-score` {.blockorange}
 + when the game is over check if you need to set a new high score:
 ```blocks
     when I receive [GameOver v]
