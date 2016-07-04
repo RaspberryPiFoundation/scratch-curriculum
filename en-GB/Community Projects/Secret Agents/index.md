@@ -1,6 +1,6 @@
 ---
 title: Secret Agents
-description: Code and decode short messages using a one-time-pad
+description: Encode and decode short messages using a one-time-pad
 layout: project
 notes: "notes.md"
 new: true
@@ -9,9 +9,15 @@ project-type: community
 
 # Introduction { .intro }
 
-In this project you will learn how to make an uncrackable code to send short messages between two secret agents! You will learn how to make the code known as a __one-time-pad__, how to encode a short message so that it looks like gibberish to any spy looking at it, and how to decode the message at the other end.
+In this project you will learn how to make an uncrackable code to send short messages between two secret agents! You will learn how to make the code known as a __one-time-pad__, how to __encode__ a short message so that it looks like gibberish, how to turn the encoded message into __Morse Code__, and how to __decode__ the message at the other end.
 
-This is not a simple project so should only be attempted once you have made several simpler Scratch projects.
+The image below shows the __Morse Code__, which was invented by Samuel Morse in 1832 to send messages on telegraph lines, which existed before telephones were invented and which only allowed a simple tone to be sent (like a piano with only one key). The Morse Code defined a pattern of beeps which could be understood at both ends of the line by skilled people. It includes both letters and numbers, but our __otp__ code will only be using letters.
+
+![screenshot](images/secretagents-morse.png)
+
+The Morse Code is not secret, like our One Time Pad code, but used internationally to turn letters into a series of dots and dashes. A dot is a short "dit" and a dash a longer "d a h". In our project, the encoded message can be sent using Morse Code because even if someone else picks it up it doesn't make sense. 
+
+Warships still Morse Code today to transmit messages using a bright light over short distances. Radio amateurs also use it to communicate over very long distances with each other - even when very faint and crackly the morse code beeps can still be picked out. The distress call made from the sinking __RMS Titanic__ in 1912 was sent by radio using Morse Code.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/114265027/?autostart=true" frameborder="0"></iframe>
@@ -28,11 +34,15 @@ There is a starting project to save you a little time getting started.
 
 	![screenshot](images/secretagents-start.png)
 
-+ There are two Sprites: __Alex__ on the left who works in London and __Dee__ on the right who is a secret agent in another country.
++ There are two Sprites on the stage: __Alex__ on the left who works in London and __Dee__ on the right who is a secret agent in another country.
 
-+ You will also see an __alphabet__ list in the centre of the stage. This contains the letters a to z and will be used to convert a letter into a number. You will need to scroll it up if you want to check all the letters. For example, __a = 1__, __z = 26__, __e = 5__.
++ You will also see a third Sprite called __Radio__ which has a lightning symbol. You can't see this on the stage because we will only use it to write some blocks in.
 
-+ We don't need to see the alphabet list as it won't change. Go to the 'Data blocks' { .blockdata } in the centre of the screen and you will see the alphabet list with a tick next to it. Click on the tick to turn it __off__ and this will hide the alphabet list on the stage.
++ There is an __alphabet__ list on the stage. This contains the letters a to z and will be used to convert a letter into a number. You will need to scroll it up and down if you want to check all the letters. For example, __a = 1__, __z = 26__, and __e = 5__.
+
++ Next to this is a __morse__ list. This contains the __Morse Code__ for each letter, for example the first letter (a) is **._** a short "dit" followed by a "dah".
+
++ We don't need to see either of these two lists as they won't change. Go to the 'Data blocks' { .blockdata } in the centre of the screen and you will see the two lists with a tick next to them. Click on the tick to turn each one __off__ and this will them on the stage.
 
 	![screenshot](images/secretagents-hide.png)
 
@@ -40,7 +50,7 @@ There is a starting project to save you a little time getting started.
 
 # Step 2: Create Lists { .activity }
 
-You have already looked at one list, the __alphabet list__. A list is used to store multiple pieces of information together, so the alphabet list has 26 pieces of information which are the 26 letters of the alphabet.
+You have already looked at two lists, the __alphabet list__ and the __morse list__. A __list__ is used to store multiple pieces of information together, so the alphabet list has 26 pieces of information which are the 26 letters of the alphabet, and the morse list the 26 letters of the Morse Code.
 
 For this project, you will need to add three more lists to the Alex sprite.
 
@@ -56,15 +66,15 @@ For this project, you will need to add three more lists to the Alex sprite.
 
 + Add two more lists called __coded__ and __decoded__ in the same way.
 
-	The __coded__ list will contain the message after Alex has encoded it (into gibberish).
+	The __coded__ list will contain the message after Alex has encoded it (into gibberish) and which can be safely transmitted to Dee in Morse Code.
 
 	The __decoded__ list will contain the message after Dee has decoded what he was sent.
 
-+ Check that you have the three lists and alphabet defined and set like this:
++ Check that you have the three new lists plus alphabet and morse set like this:
 
 	![screenshot](images/secretagents-lists3.png)
 
-	You will see that there is a tick next to the three new lists, but not the alphabet, because we want to see these on the stage.
+	You will see that there is a tick next to the three new lists because we want to see these on the stage - but not alphabet and morse.
 
 + Move the three lists so that they are laid out on the stage something like this, make them as narrow as you can.
 
@@ -74,7 +84,7 @@ For this project, you will need to add three more lists to the Alex sprite.
 
 # Step 3: Make Sure the Three New Lists are Empty { .activity }
 
-This step is to make sure that when you run the program you can be sure that the three lists (__otp__, __coded__, and __decoded__) are empty.
+This step is to make sure that when you run the program you can be sure that the three lists (__otp__, __coded__, and __decoded__) are empty. 
 
 ## Activity Checklist { .check }
 
@@ -87,7 +97,7 @@ This step is to make sure that when you run the program you can be sure that the
 		delete (all v) of [decoded v]
 	```
 
-	Be careful __not__ to empty the alphabet list as well ;-)
+	Be careful __not__ to empty the alphabet or morse lists as well ;-)
 
 ## Save your project { .save }
 
@@ -103,13 +113,15 @@ A variable contains one piece of information which you can change. They are like
 
 	![screenshot](images/secretagents-var.png)
 
-+ Add five more variables in the same way: __letter__, __letter number__, __line__, __message__, and __pointer__.
++ Add five more variables in the same way: __dotdash__, __letter__, __letter number__, __line__, __message__, and __pointer__.
 
-+ Check that you can see these six variables and hide them by removing the ticks, like you did for the alphabet list.
++ Check that you can see these seven variables then hide them by removing the ticks, like you did for the alphabet list.
 
 	![screenshot](images/secretagents-var2.png)
 
 	__code__ is to encode and decode one letter of the message
+
+	__dotdash__ is to hold the morse code for one letter of the encoded message
 
 	__letter__ is to hold one letter of the message
 
@@ -127,9 +139,11 @@ A variable contains one piece of information which you can change. They are like
 
 # Step 5: Make the One-Time-Pad (OTP) { .activity }
 
-The one-time-pad tells you how much to add to each letter of your message to turn it into code which looks like gibberish. For instance, if you add 1 to the letter _a_, this would be coded as _b_ and if you add 8 to the letter _m_, this would be coded as _u_.
+Alphabet: __a b c d e f g h i j k l m n o p q r s t u v w x y z__
 
-It is called a one-time-pad because you use it __only once__ - you __never__ use the same code again. Provided that your enemy does not have the otp, they will not be able to make sense of your coded message.
+The one-time-pad tells you how much to add to each letter of your message to encode it so it looks like gibberish. For instance, if you add 1 to the letter _a_ this would be coded as _b_. If you add 8 to the letter _m_, this would be coded as _u_.
+
+It is called a one-time-pad because you use it __only once__ - you __never__ use the same code again. Provided that your enemy does not have the otp, they will not be able to make sense of your encoded message.
 
 ## Activity Checklist { .check }
 
@@ -149,58 +163,52 @@ It is called a one-time-pad because you use it __only once__ - you __never__ use
 
 + Run it again and you will get a different set of numbers - they are random so each otp is different.
 
-## Challenge: Coding a short message { .challenge }
+## Challenge: Encoding a Short Message { .challenge }
 
-Alphabet: __A B C D E F G H I J K L M N O P Q R S T U V W X Y Z__
+Alphabet: __a b c d e f g h i j k l m n o p q r s t u v w x y z__
 
 Suppose I want to send the message __at__ and the first two lines of the otp are 8 and 11.
 
 + Take the letter __a__ and move along the alphabet 8 letters. I have put the alphabet above to make this a little easier for you. Then __a__ -> b, c, d, e, f, g, h, __i__. So Alex would write down __i__ as the first letter of the coded message (__at__).
 
-+ Take the second letter __t__ and move along the alphabet 11 letters. Hang on, I have got to z! Just go back to a and continue counting so __t__ -> u, v, w, x, y, z, a, b, c, d, __e__. So Alex would write down __e__.
++ Take the second letter __t__ and move along the alphabet 11 letters. Hang on, I have got to z! Just go back to a and continue counting so __t__ -> u, v, w, x, y, z, a, b, c, d, __e__. So Alex would write down __e__. Therefore The message __at__ would be sent in code as __ie__.
 
-+ The message __at__ would be sent in code as __ie__.
+## Challenge: How do you Decode the Gibberish? { .challenge }
 
-Don't worry, Scratch will do these sums for you but it is useful to know what it is supposed to do.
-
-## Challenge: How do you decode the gibberish? { .challenge }
-
-Both Alex and Dee must have the __same__ one-time-pad (otp). Dee needs to decode the encoded message, which looks like gibberish, and turn it back into the original message. All he has apart from this is the otp (he has no idea what the message says).
+Both Alex and Dee must have the __same__ one-time-pad (otp). Dee needs to decode the message, which looks like gibberish, and turn it back into what Alex wrote. All he has apart from this is the otp (he has no idea what the message says).
 
 + Using my example above, the otp says 8 and 11 and the "gibberish" received is __ie__. How do you get back to __at__?
 
 __Hint__ it is very similar to how the message was coded in the first place.
 
-Don't worry, Scratch will do these sums for you.
+Don't worry, Scratch will do these sums for you!
 
 # Step 6: Create a Message { .activity }
 
-This step will ask you to type in the message you want to send. It will need to include a '_prompt_' to remind you what is allowed.
+This step will ask you to type in the message you want to send.
 
-Your message can only be up to 10 letters __a-z__. This means you __can't__ use numbers, except by spelling them out (_one_, _two_, etc.) or any symbols include spaces. 
-
-So if Alex wanted to say hello to Dee then the message would be "__hellodee__" and Dee has to use his common sense to work out where the spaces are.
+Your message can only be up to 10 letters __a-z__. This means you __can't__ use numbers, except by spelling them out (_one_, _two_, etc.) or any symbols include spaces. So if Alex wanted to say hello to Dee then the message would be "__hellodee__" and Dee has to use his common sense to work out where the spaces are.
 
 ## Activity Checklist { .check }
 
 + Add these blocks to the Alex sprite to ask what message Alex needs to send and put it into the __message__ variable (join it to what you have written already):
 
 	```blocks
-		ask [What is your message (max 10 letters a-z, no spaces, no symbols)?] and wait
+		ask [What is your message?] and wait
 		set [message v] to (answer)
 	```
 
-## Challenge: Making sense of received messages { .challenge }
+## Challenge: Making Sense of Decoded Messages { .challenge }
 
-Imagine you are a secret agent and have received this message "__englandexpectsthateverymanwilldohisduty__".
+Imagine you are a secret agent and have received a message which you decoded to be "__englandexpectsthateverymanwilldohisduty__".
 
-+ What are the words in this message - remember spaces are not allowed?
++ What are the __words__ in this message - remember spaces are not allowed?
 
-+ This is a famous message sent in 1805. Do you know where?
++ This is a famous message sent in 1805. Do you know where and/or by whom?
 
 # Step 7: Turn your Message into Letters { .activity }
 
-The __OTP__ code encodes each letter of the message one at a time. This step is to find what each letter in your message is.
+The __OTP__ code encodes one letter of the message at a time. This step is to get each letter of your message.
 
 ## Activity Checklist { .check }
 
@@ -216,8 +224,10 @@ The __OTP__ code encodes each letter of the message one at a time. This step is 
 	```
 
 	See how the __repeat__ is used to run the same blocks as many times as the length of the message. e.g. "hello" has a length of 5 so the repeat would be done 5 times for this message.
+
 	The __pointer__ variable points at each letter so has to be set to 1 at the start then have 1 added to it each time.
-	The __say__ is there so you can test if it is working.
+
+	The __say__ is only there so you can test if it is working.
 
 + Check your program looks like this so far:
 
@@ -229,7 +239,7 @@ The __OTP__ code encodes each letter of the message one at a time. This step is 
 		repeat (10) 
 		  	add (pick random (1) to (26)) to [otp v]
 		end
-		ask [What is your message (max 10 letters a-z, no spaces, no symbols)?] and wait
+		ask [What is your message?] and wait
 		set [message v] to (answer)
 		set [pointer v] to [1]
 		repeat (length of (message)) 
@@ -251,11 +261,7 @@ The __OTP__ code encodes each letter of the message one at a time. This step is 
 
 # Step 8: Turn a Letter into its Number in the Alphabet { .activity }
 
-You can probably make sense of what I mean by _a + 3 = d_, but a computer doesn't!
-
-This step is to turn each letter into its number in the __alphabet list__. e.g. a -> 1, d -> 4 etc.
-
-Both Alex and Dee need to do this, so you will write this part so that both sprites can use it.
+You can probably make sense of what I mean by _a + 3 = d_, but a computer doesn't! This step is to turn each letter into its number in the __alphabet list__. e.g. a -> 1, d -> 4 etc. Both Alex and Dee need to do this, so you will write this part so that both sprites can use it.
 
 ## Activity Checklist { .check }
 
@@ -304,6 +310,8 @@ Both Alex and Dee need to do this, so you will write this part so that both spri
 
 	This will "kick off" your other set of blocks. You have to wait until this is finished (otherwise the __letter number__ variable will not be set yet).
 
+	Be careful to use the block with __wait__ on it.
+
 + Check that Alex's code looks like this so far:
 
 	```blocks
@@ -314,7 +322,7 @@ Both Alex and Dee need to do this, so you will write this part so that both spri
 		repeat (10) 
 		  	add (pick random (1) to (26)) to [otp v]
 		end
-		ask [What is your message (max 10 letters a-z, no spaces, no symbols)?] and wait
+		ask [What is your message?] and wait
 		set [message v] to (answer)
 		set [pointer v] to [1]
 		repeat (length of (message)) 
@@ -344,7 +352,7 @@ Both Alex and Dee need to do this, so you will write this part so that both spri
 
 # Step 10 Remove the Say Block { .activity }
 
-The __say__ block was put in only to help with testing. Now that you know it works, it is no longer needed.
+Go back to the second set of blocks. The __say__ block was only there to help with testing so can now be taken out.
 
 ## Activity Checklist { .check }
 
@@ -361,9 +369,9 @@ The __say__ block was put in only to help with testing. Now that you know it wor
 		set [line v] to [1]
 		repeat (26) 
 		  	if <(item (line) of [alphabet v] :: list) = (letter)> then 
-		    	set [letter number v] to (line)
-		  end
-		  change [line v] by (1)
+		    		set [letter number v] to (line)
+		  	end
+		  	change [line v] by (1)
 		end
 	```
 
@@ -371,11 +379,11 @@ The __say__ block was put in only to help with testing. Now that you know it wor
 
 # Step 11 Code One Letter { .activity }
 
-The way that the otp code works is by each letter in your message having some number added to it. What to add to each letter is what each line of the __otp__ list tells you. If my message is "help" then I will add the first number of the otp to "h", the second number to "e" and so on. Unless you know what the otp says you cannot decode this message.
+The way that the otp code works is by each letter in your message having some number added to it. If my message is "help" then I will add the first number of the otp to "h", the second number to "e" and so on. Unless you have the otp you __cannot__ decode the message.
 
 ## Activity Checklist { .check }
 
-+ Put these blocks by themselves on the Alex sprite:
++ Put these blocks by themselves on the Alex sprite - beware that when you add the __broadcast__ block you will need to define a new message __transmit__.
 
 	```blocks
 		set [code v] to ((item (pointer) of [otp v] :: list) + (letter number))
@@ -383,11 +391,15 @@ The way that the otp code works is by each letter in your message having some nu
 			set [code v] to ((code) - (26))
 		end
 		add (item (code) of [alphabet v] :: list) to [coded v]
+	  	say (coded :: list)
+  		broadcast [transmit v] and wait
 	```
 
-	First __code__ is set to letter number + the otp code.
-	If you have gone past z then you take 26 off (to go back to a).
-	Now the new number can be changed back into a letter of the alphabet.
+	First __code__ is set to letter number + the otp code. If you have gone past z then you take 26 off (to go back to a).
+
+	Now the new number can be changed back into a letter of the alphabet and added to the encoded message.
+
+	Alex says the encoded message so far then broadcasts a transmit message and waits. This broadcast doesn't do anything __yet__.
 
 + Put this new group into the '__repeat__ block' { .blockcontrol }. I have shown where to add it by the spaces but you need to join the program up.
 
@@ -399,7 +411,7 @@ The way that the otp code works is by each letter in your message having some nu
 		repeat (10) 
 			add (pick random (1) to (26)) to [otp v]
 		end
-		ask [What is your message (max 10 letters a-z, no spaces, no symbols)?] and wait
+		ask [What is your message?] and wait
 		set [message v] to (answer)
 		set [pointer v] to [1]
 		repeat (length of (message)) 
@@ -411,6 +423,8 @@ The way that the otp code works is by each letter in your message having some nu
 				set [code v] to ((code) - (26))
 			end
 			add (item (code) of [alphabet v] :: list) to [coded v]
+	  		say (coded :: list)
+  			broadcast [transmit v] and wait
 
 			change [pointer v] by (1)
 		end
@@ -428,9 +442,9 @@ The way that the otp code works is by each letter in your message having some nu
 
 + Run the program again and type in your own message and check what the __coded__ message looks like.
 
-## Challenge: Security of a One Time Pad code { .challenge }
+## Challenge: Security of a One Time Pad Code { .challenge }
 
-As I said at the start an otp code is impossible to crack, which means you can not work out what the letters in the original message are if you only have the encoded version. Only the two people with the otp can decode it because the contents are random.
+An otp code is impossible to crack, which means you cannot work out what the letters in the original message are if you only have the encoded version. Only the two people with the otp can decode it because the contents are random.
 
 + You are a secret agent working in an enemy country. You have hidden your radio and your otp. If the enemy capture your radio, does this matter? 
 
@@ -438,22 +452,15 @@ As I said at the start an otp code is impossible to crack, which means you can n
 
 __Hint__ What do you need to decode the message?
 
-## Challenge: More than 10 letters in a message? { .challenge }
-
-+ Run the program and type in a message which is longer than 10 letters, I suggest __abcdefghijkl__ which is 12 letters long.
-
-+ Check the __coded__ list and it should look like gibberish, but what about the last two letters? You should find these are __kl__ so have not been changed.
-
-+ What __single__ change do you need to make to allow for a message of up to 12 letters so that __abcdefghijkl__ is encoded properly?
-
 # Step 12 Finish Alex's program { .activity }
+
+When Alex finishes encoding a message and sending it, she needs to tell Dee it is finished so he can start decoding it.
 
 ## Activity Checklist { .check }
 
-+ Add these two blocks to the end of the main program
++ Add this block to the end of the main program
 
 	```blocks
-		say (coded :: list)
 		broadcast [message1 v]
 	```
 
@@ -467,7 +474,7 @@ __Hint__ What do you need to decode the message?
 		repeat (10) 
 		  	add (pick random (1) to (26)) to [otp v]
 		end
-		ask [What is your message (max 10 letters a-z, no spaces, no symbols)?] and wait
+		ask [What is your message?] and wait
 		set [message v] to (answer)
 		set [pointer v] to [1]
 		repeat (length of (message)) 
@@ -478,9 +485,10 @@ __Hint__ What do you need to decode the message?
 		    		set [code v] to ((code) - (26))
 		  	end
 		  	add (item (code) of [alphabet v] :: list) to [coded v]
+		  	say (coded :: list)
+	  		broadcast [transmit v] and wait
 		  	change [pointer v] by (1)
 		end
-		say (coded :: list)
 		broadcast [message1 v]
 
 		when I receive [get letter number v]
@@ -495,11 +503,11 @@ __Hint__ What do you need to decode the message?
 
 ## Save your project { .save }
 
-## Test your project { .flag }
+## Challenge: More than 10 Letters in a Message? { .challenge }
 
-+ Run the program by clicking the green flag.
++ Run the program and type in a message which is longer than 10 letters, I suggest __abcdefghijkl__ which is 12 letters long.
 
-+ Check that Alex says the encoded message (the gibberish) as shown in the __coded__ list.
++ Check the __coded__ list and it should look like gibberish, but what about the last two letters? You should find these are __kl__ so have not been changed. What __single__ change would you need to make to allow for a message of up to 12 letters so that __abcdefghijkl__ is encoded properly?
 
 # Step 13 Decode the Message { .activity }
 
@@ -519,7 +527,9 @@ Decoding is the process of turning the received message, which looks like gibber
 	```
 
 	Note that these blocks will start when Alex transmits "message1".
+
 	__pointer__ is used to get each letter of the message received.
+
 	The __repeat__ block is run as many times as the length of the received message. At the moment there is nothing inside it.
 
 + Make these blocks by themselves which do the actual decoding:
@@ -536,8 +546,11 @@ Decoding is the process of turning the received message, which looks like gibber
 	```
 
 	__letter__ holds the current coded letter
-	The second line turns this into a number reusing the code who wrote for Alex.
+
+	The second line turns this into a number reusing the code you wrote for Alex.
+
 	__code__ is calculated now by subtracting the otp value then adding 26 if it has gone past a.
+
 	Finally the decoded letter is added to the decoded list.
 
 + When you are sure that these two sections are correct, put the second one inside the "jaws" of the '__repeat__ block' { .blockcontrol }. I have left a space to show where it needs to go, you need to join it all up.
@@ -565,7 +578,7 @@ Decoding is the process of turning the received message, which looks like gibber
 
 ## Test your project { .flag }
 
-The program is complete. Now you need to run it and see if all the bits work.
+The main parts of the program are complete. Now you need to run it and see if all the bits work.
 
 + Click the green flag to start the program.
 
@@ -587,7 +600,7 @@ __Alex Sprite__:
 		repeat (10) 
 		  	add (pick random (1) to (26)) to [otp v]
 		end
-		ask [What is your message (max 10 letters a-z, no spaces, no symbols)?] and wait
+		ask [What is your message?] and wait
 		set [message v] to (answer)
 		set [pointer v] to [1]
 		repeat (length of (message)) 
@@ -598,9 +611,10 @@ __Alex Sprite__:
 		    		set [code v] to ((code) - (26))
 		  	end
 		  	add (item (code) of [alphabet v] :: list) to [coded v]
+		  	say (coded :: list)
+	  		broadcast [transmit v] and wait
 		  	change [pointer v] by (1)
 		end
-		say (coded :: list)
 		broadcast [message1 v]
 
 		when I receive [get letter number v]
@@ -634,13 +648,74 @@ __Dee Sprite__:
 
 + Run the program again and try it with messages of your own and check that it is decoded by Dee. Be careful to make sure that you type in a message which is __allowed__ - 10 letters a-z maximum, no spaces or symbols.
 
-## Challenge: Allow longer messages { .challenge }
+# Step 14 Transmit the Message using Morse Code { .activity }
 
-An earlier challenge asked how you can have message longer than 10 letters. Now you can try and do it!
+The encoding and decoding works while Alex and Dee are next to each other. But when Dee is in another country, Alex needs to send the encoded message to him by radio using Morse Code.
 
-+ Change the program so that it allows a message of up to __26__ letters, so you can use the alphabet as a test message (which has 26 letters).
+## Activity Checklist { .check }
 
-__Hint__ You only need to make __one__ change to the program to be able to do this (apart from changing what the __ask__ block says).
++ Add these blocks to the __Radio__ sprite:
 
-+ Test the program using the message "__abcdefghijklmnopqrstuvwxyz__" and make sure the coded list looks random and the decoded list is the same as the original message.
+	```blocks
+		when I receive [transmit v]
+		set [letter v] to (item (code) of [alphabet v] :: list)
+		broadcast [get letter number v] and wait
+		set [code v] to (item (letter number) of [morse v] :: list)
+		set [letter v] to [1]
+		repeat (length of (code)) 
+		  set [dotdash v] to (letter (letter) of (code))
+		  if <(dotdash) = [.]> then 
+		    play note (72 v) for (0.1) beats
+		  else 
+		    play note (72 v) for (0.3) beats
+		  end
+		  rest for (0.1) beats
+		  change [letter v] by (1)
+		end
+		rest for (0.3) beats
+	```
 
+	These blocks will start when Alex broadcasts the message "transmit". 
+
+	First Alex needs to get the current letter of the message and turn it into a letter number, which is then turned into a Morse Code letter (which contains dots and dashes). 
+
+	Because there are multiple dots and dashes, these have to be looked at one at a time so that a short tone can be played for a dot (0.1 beats) and a longer one for a dash (0.3 beats). 
+
+	Between each dot and dash there needs to be a slight gap (0.1 beats), and between each complete letter a longer gap (0.3 beats).
+
+## Save your project { .save }
+
+## Test your project { .flag }
+
+Check to see if the morse code part works. As Alex encodes each letter, the morse code for the encoded letter can be heard before Dee starts to decode it.
+
++ Click the green flag to start the program.
+
++ Type in the message __abcde__ and press ENTER.
+
++ As each letter is encoded and appears in the coded list, you should hear the morse code of the __encoded__ letter for each one. Check a few of these with the Morse Code table below and check they are correct.
+
+![screenshot](images/secretagents-morse.png)
+
++ If it doesn't work or is giving the wrong answers, check the blocks for the Radio sprite below. Correct any mistakes you find and do the test again.
+
+	```blocks
+		when I receive [transmit v]
+		set [letter v] to (item (code) of [alphabet v] :: list)
+		broadcast [get letter number v] and wait
+		set [code v] to (item (letter number) of [morse v] :: list)
+		set [letter v] to [1]
+		repeat (length of (code)) 
+		  set [dotdash v] to (letter (letter) of (code))
+		  if <(dotdash) = [.]> then 
+		    play note (72 v) for (0.1) beats
+		  else 
+		    play note (72 v) for (0.3) beats
+		  end
+		  rest for (0.1) beats
+		  change [letter v] by (1)
+		end
+		rest for (0.3) beats
+	```
+
++ I have picked a note for the Morse Code "beeps" but you can change this to a different sound if you wish (but the same note should be used for both dots and dashes).

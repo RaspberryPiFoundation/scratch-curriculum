@@ -21,10 +21,21 @@ Project resources:
 + Variables;
 + Lists;
 + Random numbers;
++ Loops;
++ Counters;
 + Subroutines (using broadcast messages).
 
 #Challenges
-+ "Challenge name" - explain the aim of each challenge - what skills will be used, and what is the outcome?
+
++ "Encoding a Short Message" - A discussion about how to encode a few letters using the one time pad by hand.
+
++ "How do you Decode the Gibberish?" - A thought about the decoding will work.
+
++ "Making Sense of Decoded Messages" - As spaces and symbols are not allowed, the decoded message needs to be split into words.
+
++ "Security of a One Time Pad Code" - Which of these matters if they are found by the enemy? The radio or the One-Time-Pad?
+
++ "More than 10 Letters in a Message?" - What happens when you type a message more than 10 letters long. How can you allow for larger messages?
 
 #Frequently Asked Questions
-You can also add answers to common questions here. This will help club leaders when undertaking your new project with children. This section can be removed if it is not necessary.
+None at the moment.
