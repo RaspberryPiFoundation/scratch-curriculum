@@ -71,7 +71,7 @@ Let's move the finish line when the arrow keys are pressed.
 
 	![screenshot](images/sprint-left-press.png)
 
-+ Click the green flag to test your project. You should see that the finish line gets bigger when the left arrow is pressed, but doesn't move towards you.
++ Click the green flag to test your project. You should see that the finish line gets bigger when the left arrow is pressed, but doesn't move along the track.
 
 	![screenshot](images/sprint-line-bug.png)
 
