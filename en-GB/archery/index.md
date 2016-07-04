@@ -55,7 +55,7 @@ Let's code your arrow to shoot when the space bar is pressed.
 
 	![screenshot](images/archery-stop.png)
 
-+ Test your project again. This time, your arrow should move __until you press the space bar__.
++ Test your project again. This time, your arrow should stop moving __when the space bar is pressed__.
 
 + Animate your arrow, so that it looks like it's moving towards the target.
 
