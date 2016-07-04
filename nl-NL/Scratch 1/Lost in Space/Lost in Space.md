@@ -66,7 +66,7 @@ Kan je de getallen in jouw animatieprogramma veranderen, zodat:
 Hiervoor moet je de getallen in dit blok veranderen:
 
 ```blocks
-	glide (1) secs to x:(0) y:(0)
+	schuif in (1) sec. naar x:(0) y:(0)
 ```
 
 
@@ -105,7 +105,7 @@ Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stu
 + Test jouw animatie. What gebeurd er als je een tweede keer op de vlag klikt? Heeft jouw ruimteschip de juiste grootte in het begin? Kan je het volgende blok gebruiken om de animatie te herstellen?:
 
 	```scratch
-	set size to (100) %
+	maak grootte (100) %
 	```
 
 ## Sla jouw project op { .save }
@@ -127,10 +127,10 @@ Laten we een aap aan de animatie toevoegen, die in de ruimte verdwaald is!
 + Klik nu op de 'Scripts' tab, en voeg het volgende programma toe aan de monkey-sprite, zodat deze langzaam blijft ronddraaien:
 
 	```blocks
-		when FLAG clicked
-		forever
-		    turn right (1) degrees
-		end
+		wanneer vlag wordt aangeklikt
+		herhaal
+		    draai rechts (1) graden
+		einde
 	```
 
 	Het `herhaal` {.blockcontrol} blok is ook een 'loop', maar deze keer een die nooit stopt.
@@ -152,11 +152,11 @@ Laten we wat zwevende ruimte stenen toevoegen aan jouw animatie.
 + Voeg het volgende programma toe aan jouw steen, zodat het rond jouw speelveld botst:
 
 	```scratch
-	when flag clicked
-	point towards [Earth v]
-	forever
-		move (2) steps
-		if on edge, bounce
+	wanneer vlag wordt aangeklikt
+	richt naar [Earth v]
+	herhaal
+		neem (2) stappen
+		keer om aan de rand
 	```
 
 + Klik op de vlag om jouw rots te testen. Botst het rond jouw speelveld?
@@ -180,6 +180,7 @@ Laten we meerdere 'loops' combineren eem een schitterende ster te maken.
 ## Sla jouw project op { .save }
 
 ## Uitdaging: Maak jouw eigen animatie {.challenge}
+
 Stop jouw ruimte animatie en klik op het 'Bestand' menu en dan op 'Nieuw', om een nieuw project te beginnen.
 
 Gebruik wat je in dit project geleerd hebt om jouw eigen animatie te maken. Dat kan alles zijn wat jij wilt, maar probeer wel jouw animatie aan te passen aan zijn omgeving. Hier volgen een paar voorbeelden:
@@ -187,7 +188,3 @@ Gebruik wat je in dit project geleerd hebt om jouw eigen animatie te maken. Dat 
 ![screenshot](space-egs.png)
 
 ## Sla jouw project op { .save }
-
-## Community Contributed Translation { .challenge .pdf-hidden }
-
-This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.

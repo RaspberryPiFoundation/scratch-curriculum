@@ -20,8 +20,8 @@ Er is ook een versie van dit project beschikbaar waarin externe bronnen reeds zi
 
 #Leerdoelen
 + Loops:
-	+ `Repeat` {.blockcontrol} loops;
-	+ `Forever` {.blockcontrol} loops.
+	+ `herhaal  (10)  keer` {.blockcontrol} loops;
+	+ `herhaal` {.blockcontrol} loops.
 
 #Uitdagingen
 + "Verbeter jouw animatie" - wijzig de getallen in een klein programma;
@@ -32,15 +32,15 @@ Er is ook een versie van dit project beschikbaar waarin externe bronnen reeds zi
 + Mogelijk moeten kinderen geholpen worden aan de hoe zij een een sprite's positie, grootte en andere effecten kunnen resetten aan het begin van hun animatie. Dit is eenvoudig te regelen door middel van het toevoegen van de volgende blokken aan het begin van hun animaties:
 
 ```blocks
-	go to x:(0) y:(0)
+	ga naar x:(0) y:(0)
 ```
 
 ```blocks
-	set size to (100)%
+	maak grootte (100)%
 ```
 
 ```blocks
-	clear graphic effects
+	zet alle effecten uit
 ```
 
 + De 'spaceship' sprite zal zijwaarts bewegen, tenzij hij 90 graden met de klok mee geroteerd is. Het roteren van het ruimteschip is onderdeel van de project instructies, maar een andere sprite kan het ruimteschip vervangen als dit een probleem opleverd.
