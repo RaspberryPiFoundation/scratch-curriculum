@@ -16,6 +16,12 @@
             "beta": true,
             "filename": "Lost in Space/Lost in Space.md",
             "note":     "Lost in Space/Lost in Space - notes.md"
+        },
+        {
+            "number":   3,
+            "beta": true,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "note":     "Ghostbusters/Ghostbusters - notes.md"
         }      
     ]
 }
