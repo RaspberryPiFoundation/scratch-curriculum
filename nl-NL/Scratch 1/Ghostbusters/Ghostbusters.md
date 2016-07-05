@@ -29,13 +29,13 @@ Je gaat vandaag een spellentje maken waarin je spoken moet vangen!
 + Voeg het volgende programmma toe an jouw spook, zodat deze herhaaldelijk verschijnt en verdwijnt:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
 			verdwijn
 			wacht (1) sec.
 			verschijn
 			wacht (1) sec.
-		eind
+		einde
 	```
 
 + Test het programma van jouw spook door op de groene vlag te klikken.
@@ -51,7 +51,7 @@ Jouw spook is makkelijk te vangen, omdat hij niet beweegt!
 + in plaats van op dezelfde plaats te blijven, kan je Scratch in plaats daarvan willekeurige x and y coordinaten laten kiezen. Voeg een `ga naar` {.blockmotion} blok toe aan jouw spook programma, zodat het er als volgt uitziet:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
 			verdwijn
 			wacht (1) sec.
@@ -117,7 +117,7 @@ Laten we het spelletje nog interessanter maken door de score bij te gaan houden.
 + Wanneer een nieuw spel gestart wordt (door op de vlag te klikken), moet je de score van de speler op 0 moeten zetten:
 
 	```blocks
-	wanneer vlag wordt aangeklikt
+	wanneer ⚑ wordt aangeklikt
 	maak [score v] [0]
 	```
 
@@ -148,7 +148,7 @@ Je kan jouw spelletje nog interessanter maken door een speler slecht 10 seconds 
 	Hier volgt het programma om dit uit te voeren. Je kan dit toevoegen aan jouw __speelveld__:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		maak [time v] [10]
 		herhaal tot <(time) = [0]>
 			wacht (1) sec.
