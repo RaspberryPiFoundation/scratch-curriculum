@@ -22,7 +22,7 @@ Je gaat vandaag een spellentje maken waarin je spoken moet vangen!
 
 + Start een nieuw Scratch project en verwijder de kat-sprite zodat je een leeg project hebt. Je vind de online Scratch editor hier <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+Voeg een nieuwe sprite van een spook toe en zoek een bijpassende achtergrond.
++ Voeg een nieuwe sprite van een spook toe en zoek een bijpassende achtergrond.
 
 	![screenshot](ghost-ghost.png)
 
