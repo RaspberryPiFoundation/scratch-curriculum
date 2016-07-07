@@ -3,7 +3,6 @@ title: Ada's Poetry Generator
 description: Celebrate Ada Lovelace Day, by learning how to program your own poetry generator!
 layout: project
 notes: "PoetryGenerator - notes.md"
-project-type: sample
 new: true
 ---
 

@@ -8,8 +8,6 @@ In this project, children will learn how to use variables and lists to make thei
 #Ada Lovelace Day
 This project has been created to celebrate Ada Lovalace Day. If you're a teacher, you can download a School Resource Pack containing which also contains an an assembly plan ([downloads.codeclub.org.uk/ada.zip](http://downloads.codeclub.org.uk/ada.zip)), to introduce children to Ada and her revolutionary ideas.
 
-We’d love to view and share a selection of the best Ada projects and poems. If children would like the chance to see their work shared on our social media sites, those with a Scratch account can upload their creations to the Scratch website, and tag them with ‘ALD15’. You can also share your children's creations with us directly on Twitter by tweeting us ([@CodeClub](https://twitter.com/CodeClub)).
-
 #Resources
 For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
