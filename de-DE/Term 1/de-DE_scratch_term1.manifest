@@ -25,6 +25,11 @@
             "number":   4,
             "filename": "Boat Race/Boat Race.md",
             "note":     "Boat Race/Boat Race - notes.md"
+        },
+        {
+            "number":   5,
+            "filename": "SprechBot/SprechBot.md",
+            "note":     "SprechBot/SprechBot - notes.md"
         }
     ]
 }
