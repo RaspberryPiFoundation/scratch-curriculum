@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-# Introduction { .intro }
+# Introductie { .intro }
 
 Je gaat leren hoe je jouw eigen animatie kan programmeren!
 
@@ -20,11 +20,11 @@ Je gaat leren hoe je jouw eigen animatie kan programmeren!
 
 Laten wij een ruimteschip maken, dat naar de aarde toe vliegt!
 
-## Activity Checklist { .check }
+## Activiteiten Checklist { .check }
 
-+ Start een nieuw Scratch project en verwijder de sprite van de kat zodat je een leeg project hebt. Hier vind je de online versie van de Scratch editor <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start een nieuw Scratch project en verwijder de sprite van de kat zodat je een leeg project hebt. Hier vind je de online versie van de Scratch editor: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Voeg de 'Spaceship' en 'Earth' sprites toe aan jouw speelveld. Je moet ook de 'Stars' achtergrond voor je speelveld gebruiken. Je speelveld zou er nu zo uit moeten zien:
++ Voeg de 'Spaceship' en 'Earth' sprites toe aan jouw speelveld. Je moet ook de 'Stars' achtergrond voor je speelveld gebruiken. Je speelveld zou er nu ongeveer zo uit moeten zien:
 
 	![screenshot](space-sprites.png)
 
@@ -32,7 +32,7 @@ Laten wij een ruimteschip maken, dat naar de aarde toe vliegt!
 
 	![screenshot](space-costume.png)
 
-+ Gebruik de selecteer gereedschap om de tekening te selecteren. Klik daarna op de ronde draaipuntbediening en draai de tekening tot deze op zijn zij ligt.
++ Gebruik het selecteer gereedschap om de tekening te selecteren. Klik daarna op de ronde draaipuntbediening en draai de tekening tot deze op zijn zij ligt.
 
 	![screenshot](space-rotate.png)
 
@@ -40,9 +40,9 @@ Laten wij een ruimteschip maken, dat naar de aarde toe vliegt!
 
 	![screenshot](space-animate.png)
 
-	Verander de nummers in de blokken, zodat de het programma er precies zo uitziet als in de bovenstaande afbeelding.
+	Verander de nummers in de blokken, zodat het programma er precies zo uitziet als in de bovenstaande afbeelding.
 
-+ Als je op de programmablokken klikt om het programma te starten, zou je het het ruimteschip moeten zien spreken, omdraaien en zien bewegen naar het midden van het speelveld.
++ Als je op de programmablokken klikt om het programma te starten, zou je het ruimteschip moeten zien spreken, omdraaien en zien bewegen naar het midden van het speelveld.
 
 	![screenshot](space-animate-stage.png)
 
@@ -86,11 +86,11 @@ Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stu
 
 	![screenshot](space-loop.png)
 
-	Het `herhaal [10] keer` {.blockcontrol} blok wordt gebruikt om iets vaak te herhalen, en is ook bekend als een __'loop'__.
+	Het `herhaal (10) keer` {.blockcontrol} blok wordt gebruikt om iets vaak te herhalen, en is ook bekend als een __'loop'__ (spreek uit als loep.).
 
 + Zodra je nu op de vlag klikt om het nieuwe programma uit te proberen, zal je zien dat het programma ongeveer hetzelfde doet.
 
-+ Je kan meer programmablokken aan jouw loop toevoegen, zodat er interessante dingen gebeuren. Voeg het `verander kleur-effect met 25` {.blocklooks} blok toe aan de loop (vanuit het 'Uiterlijken' gedeelte), om herhaaldelijk de kleur van het ruimteschip te veranderen als het beweegt:
++ Je kan meer programmablokken aan jouw loop toevoegen, zodat er interessante dingen gebeuren. Voeg het `verander kleur-effect met (25)` {.blocklooks} blok toe aan de loop (vanuit het 'Uiterlijken' gedeelte), om herhaaldelijk de kleur van het ruimteschip te veranderen als het beweegt:
 
 	![screenshot](space-colour.png)
 
@@ -102,7 +102,7 @@ Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stu
 
 	![screenshot](space-size.png)
 
-+ Test jouw animatie. What gebeurd er als je een tweede keer op de vlag klikt? Heeft jouw ruimteschip de juiste grootte in het begin? Kan je het volgende blok gebruiken om de animatie te herstellen?:
++ Test jouw animatie. Wat gebeurt er als je een tweede keer op de vlag klikt? Heeft jouw ruimteschip de juiste grootte in het begin? Kan je het volgende blok gebruiken om de animatie te herstellen?:
 
 	```scratch
 	maak grootte (100) %
@@ -112,11 +112,11 @@ Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stu
 
 # Stap 3: Zwevende Aap { .activity .new-page }
 
-Laten we een aap aan de animatie toevoegen, die in de ruimte verdwaald is! 
+Laten we een aap, die in de ruimte verdwaald is, aan de animatie toevoegen! 
 
 ## Activiteiten Checklist { .check }
 
-+ Start door de monkey sprite toe te voegen vanuit de bibliotheek.
++ Begin met de monkey1 sprite, vanuit de bibliotheek, toe te voegen.
 
 	![screenshot](space-monkey.png)
 
@@ -129,8 +129,8 @@ Laten we een aap aan de animatie toevoegen, die in de ruimte verdwaald is!
 	```blocks
 		wanneer vlag wordt aangeklikt
 		herhaal
-		    draai rechts (1) graden
-		einde
+			draai rechts (1) graden
+		eind
 	```
 
 	Het `herhaal` {.blockcontrol} blok is ook een 'loop', maar deze keer een die nooit stopt.
@@ -143,7 +143,7 @@ Laten we een aap aan de animatie toevoegen, die in de ruimte verdwaald is!
 
 Laten we wat zwevende ruimte stenen toevoegen aan jouw animatie.
 
-## Activiteieten Checklist { .check }
+## Activiteiten Checklist { .check }
 
 + Voeg een 'rock' sprite toe aan jouw animatie.
 
@@ -151,19 +151,20 @@ Laten we wat zwevende ruimte stenen toevoegen aan jouw animatie.
 
 + Voeg het volgende programma toe aan jouw steen, zodat het rond jouw speelveld botst:
 
-	```scratch
-	wanneer vlag wordt aangeklikt
-	richt naar [Earth v]
-	herhaal
-		neem (2) stappen
-		keer om aan de rand
+	```blocks
+		wanneer vlag wordt aangeklikt
+		richt naar [Earth v]
+		herhaal
+			neem (2) stappen
+			keer om aan de rand
+		eind
 	```
 
 + Klik op de vlag om jouw rots te testen. Botst het rond jouw speelveld?
 
 # Stap 5: Schitterende Sterren { .activity .new-page }
 
-Laten we meerdere 'loops' combineren eem een schitterende ster te maken.
+Laten we meerdere 'loops' combineren om een schitterende ster te maken.
 
 ## Activiteiten Checklist { .check }
 
@@ -188,7 +189,3 @@ Gebruik wat je in dit project geleerd hebt om jouw eigen animatie te maken. Dat 
 ![screenshot](space-egs.png)
 
 ## Sla jouw project op { .save }
-
-## Community Contributed Translation { .challenge .pdf-hidden }
-
-This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.org.
