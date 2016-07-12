@@ -18,24 +18,24 @@ Je gaat vandaag een spellentje maken waarin je spoken moet vangen!
 
 # Stap 1: Animatie van een spook { .activity }
 
-## Activiteieten Checklist { .check }
+## Activiteiten Checklist { .check }
 
 + Start een nieuw Scratch project en verwijder de kat-sprite zodat je een leeg project hebt. Je vind de online Scratch editor hier <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Voeg een nieuwe sprite van een spook toe en zoek een bijpassende achtergrond.
++Voeg een nieuwe sprite van een spook toe en zoek een bijpassende achtergrond.
 
 	![screenshot](ghost-ghost.png)
 
-+ Voeg het volgende programmma toe an jouw spook, zodat deze herhaaldelijk verschijnt en verdwijnt:
++ Voeg het volgende programmma toe aan jouw spook, zodat deze herhaaldelijk verschijnt en verdwijnt:
 
 	```blocks
-		wanneer ⚑ wordt aangeklikt
+		wanneer vlag wordt aangeklikt
 		herhaal
 			verdwijn
 			wacht (1) sec.
 			verschijn
 			wacht (1) sec.
-		einde
+		eind
 	```
 
 + Test het programma van jouw spook door op de groene vlag te klikken.
@@ -51,14 +51,14 @@ Jouw spook is makkelijk te vangen, omdat hij niet beweegt!
 + in plaats van op dezelfde plaats te blijven, kan je Scratch in plaats daarvan willekeurige x and y coordinaten laten kiezen. Voeg een `ga naar` {.blockmotion} blok toe aan jouw spook programma, zodat het er als volgt uitziet:
 
 	```blocks
-		wanneer ⚑ wordt aangeklikt
+		wanneer vlag wordt aangeklikt
 		herhaal
 			verdwijn
 			wacht (1) sec.
 			ga naar  x:(willekeurig getal tussen (-150) en (150)) y:(willekeurig getal tussen (-150) en (150))
 			verschijn
 			wacht (1) sec.
-		end
+		eind
 	```
 
 + Test jouw programma van het spook nog een keer en je zou moeten zien dat het spook verdwijnt en verschijnt op verschillende plaatsen.
@@ -84,7 +84,7 @@ De speler toestaan de spoken te vangen!
 		verdwijn
 	```
 
-+ Probeer jouw project. Kan je spoken vangen zodra ze verschijnen? Als je het moeilijk vind de spoken te vangen, kan je het spel spelen op het volledige scherm door op deze knop te klikken:
++ Probeer jouw project uit. Kan je spoken vangen zodra ze verschijnen? Als je het moeilijk vind de spoken te vangen, kan je het spel spelen op het volledige scherm door op deze knop te klikken:
 
 	![screenshot](ghost-fullscreen.png)
 
@@ -106,7 +106,7 @@ Laten we het spelletje nog interessanter maken door de score bij te gaan houden.
 
 	![screenshot](ghost-score.png)
 
-	Typ 'score' in als naam voor de variabele, zorg ervoor dat het bereikbaar is voor alle sprites, and klik op 'OK' om hem te maken. Je zal heel veel programma blokken tegenkomen, welke gebruik kunnen maken van jouw `score` {.blockdata} variabele.
+	Typ 'score' in als naam voor de variabele, zorg ervoor dat het bereikbaar is voor alle sprites, en klik op 'OK' om hem te maken. Je zal heel veel programma blokken tegenkomen, welke gebruik kunnen maken van jouw `score` {.blockdata} variabele.
 
 	![screenshot](ghost-variable.png)
 
@@ -117,7 +117,7 @@ Laten we het spelletje nog interessanter maken door de score bij te gaan houden.
 + Wanneer een nieuw spel gestart wordt (door op de vlag te klikken), moet je de score van de speler op 0 moeten zetten:
 
 	```blocks
-	wanneer ⚑ wordt aangeklikt
+	wanneer vlag wordt aangeklikt
 	maak [score v] [0]
 	```
 
@@ -125,7 +125,7 @@ Laten we het spelletje nog interessanter maken door de score bij te gaan houden.
 
 	![screenshot](ghost-change-score.png)
 
-+ Voer jouw programma weer uit en vang een paar spoken. Veranderd jouw score?
++ Voer jouw programma weer uit en vang een paar spoken. Verandert jouw score?
 
 ## Sla jouw project op { .save }
 
@@ -148,7 +148,7 @@ Je kan jouw spelletje nog interessanter maken door een speler slecht 10 seconds 
 	Hier volgt het programma om dit uit te voeren. Je kan dit toevoegen aan jouw __speelveld__:
 
 	```blocks
-		wanneer ⚑ wordt aangeklikt
+		wanneer vlag wordt aangeklikt
 		maak [time v] [10]
 		herhaal tot <(time) = [0]>
 			wacht (1) sec.
@@ -193,4 +193,4 @@ Als je nog een voorwerp wilt toevoegen, kan je bovenstaande stappen nogmaals vol
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
-This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.org. 
+This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
