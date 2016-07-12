@@ -7,7 +7,7 @@ embeds: "*.png"
 #Introductie:
 In dit project gaan wij kinderen leren hoe zij programmablokken kunnen combineren om eenvoudige animaties te maken.
 
-#Resources
+#Bronnen
 Voor dit project wordt Scratch 2 gebruikt. Scratch 2 kan online gebruikt worden via de volgende link [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) of je kan de offline versie downloaden via [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off).
 
 Je kan een reeds gemaakte versie van dit project vinden via <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, of kan gedownload worden door op de 'Download Project Materials' link voor dit project te klikken, wat het volgende bevat:

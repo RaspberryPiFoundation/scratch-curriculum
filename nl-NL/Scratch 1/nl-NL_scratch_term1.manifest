@@ -22,6 +22,12 @@
             "beta": true,
             "filename": "Ghostbusters/Ghostbusters.md",
             "note":     "Ghostbusters/Ghostbusters - notes.md"
+        },
+        {
+            "number":   4,
+            "beta": true,
+            "filename": "Chatbot/Chatbot.md",
+            "note":     "Chatbot/Chatbot - notes.md"
         }      
     ]
 }
