@@ -22,9 +22,14 @@
             "note":     "Gespensterjagd/Gespensterjagd - Notizen.md"
         },
         {
-            "number":   4,
+            "number":   3,
             "filename": "Boat Race/Boat Race.md",
             "note":     "Boat Race/Boat Race - notes.md"
+        },
+        {
+            "number":   5,
+            "filename": "Chatbot/Chatbot.md",
+            "note":     "Chatbot/Chatbot - notes.md"
         }
     ]
 }
