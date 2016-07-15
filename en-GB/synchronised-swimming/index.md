@@ -178,7 +178,7 @@ Would you like to be able to perfect a routine and easily repeat it?
 
 ## Challenge: Code your own routine {.challenge}
 
-Can you write your own sychronised swimming routine to be performed when you press the space key or another key?
+Can you write your own synchronised swimming routine to be performed when you press the space key or another key?
 
 Try working out a routine using the arrow keys first. 
 
