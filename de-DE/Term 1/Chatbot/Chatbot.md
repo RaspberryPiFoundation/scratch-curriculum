@@ -222,3 +222,7 @@ Nutze, was Du bisher gelernt hast, um die Programmierung Deines interaktiven Spr
 Sobald Du Deinen SprechBot fertiggestellt hast, lass Deine Freunde oder Familie ein Gespräch mit ihm führen. Mögen sie Deinen Roboter? Haben Sie irgendwelche Probleme festgestellt? Sind sie überrascht, dass der SprechBot sprechen kann?
 
 ## Speichere Dein Projekt { .save }
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by Anastasia Heilmann. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
