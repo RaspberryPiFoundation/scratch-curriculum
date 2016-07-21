@@ -1,5 +1,5 @@
 ---
-title: Sprint - Materials
+title: Sprint! - Materials
 layout: project-materials
 project-resources:
   - url: http://jumpto.cc/sprint-resources

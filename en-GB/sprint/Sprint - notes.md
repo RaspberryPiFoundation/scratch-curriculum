@@ -1,5 +1,5 @@
 ---
-title: Sprint — Volunteer Notes
+title: Sprint! — Volunteer Notes
 ---
 
 #Introduction:

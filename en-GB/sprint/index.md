@@ -1,5 +1,5 @@
 ---
-title: Sprint
+title: Sprint!
 description: Use the arrow keys to get to the finish line as quickly as you can.
 layout: project
 notes: "Sprint - notes.md"
