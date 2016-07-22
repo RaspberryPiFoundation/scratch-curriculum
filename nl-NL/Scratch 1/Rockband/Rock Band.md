@@ -76,7 +76,7 @@ Laten we nu jouw trommel programmeren, zodat deze geluid maakt als erop wordt ge
 
 ## Activiteiten Checklist { .check }
 
-+ Je kan de programmablokken vinden in de 'Scripts' tab. Ze hebben allenmaal een kleurcode! 
++ Je kan de programmablokken vinden in de 'Scripts' tab. Ze hebben allemaal een kleurcode! 
 
 	Klik op de drum sprite, daarna zoek en sleep je de volgende twee programma blokken naar het rechter vlak, het programma vlak. Zorg ervoor dat ze op elkaar aansluiten. (zoals lego-steentjes):
 
@@ -116,7 +116,7 @@ Laten we nu jouw trommel programmeren, zodat deze geluid maakt als erop wordt ge
 
 ![screenshot](band-drum-soundNL.png)
 
-+ Kan je de trommel ook geluid laten maken door op de spatiebalk te drukken.? Hiervoor zal je deze 'gebeurtenis' moeten gebruiken: {.blockevents} 
++ Kan je de trommel ook geluid laten maken door op de spatiebalk te drukken.? Hiervoor zal je deze 'gebeurtenis' moeten gebruiken: 
 
 ```blocks
 	Wanneer [spatiebalk] wordt ingedrukt
@@ -189,4 +189,3 @@ Als je een microfoon hebt, kan je jouw eigen geluiden opnemen, of zelfs een webc
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
 This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
-

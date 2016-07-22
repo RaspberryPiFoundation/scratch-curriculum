@@ -127,10 +127,10 @@ Laten we een aap, die in de ruimte verdwaald is, aan de animatie toevoegen!
 + Klik nu op de 'Scripts' tab, en voeg het volgende programma toe aan de monkey-sprite, zodat deze langzaam blijft ronddraaien:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
-			draai rechts (1) graden
-		eind
+			draai ↻ (1) graden
+		einde
 	```
 
 	Het `herhaal` {.blockcontrol} blok is ook een 'loop', maar deze keer een die nooit stopt.
@@ -152,12 +152,12 @@ Laten we wat zwevende ruimte stenen toevoegen aan jouw animatie.
 + Voeg het volgende programma toe aan jouw steen, zodat het rond jouw speelveld botst:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		richt naar [Earth v]
 		herhaal
 			neem (2) stappen
 			keer om aan de rand
-		eind
+		einde
 	```
 
 + Klik op de vlag om jouw rots te testen. Botst het rond jouw speelveld?

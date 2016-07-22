@@ -28,6 +28,18 @@
             "beta": true,
             "filename": "Chatbot/ChatBot.md",
             "note":     "Chatbot/ChatBot - notes.md"
-        }      
+        },
+        {
+            "number":   5,
+            "beta": true,
+            "filename": "Paintbox/Paintbox.md",
+            "note":     "Paintbox/Paintbox - notes.md"
+        },
+        {
+            "number":   6,
+            "beta": true,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
+        }       
     ]
 }
