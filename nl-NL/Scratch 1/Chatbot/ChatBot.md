@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Introductie { .intro }
 
-Dit keer ga je leren, hoe je een 'chatbot' programmeerd!
+Dit keer ga je leren, hoe je een 'chatbot' programmeerd! blah
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
@@ -164,7 +164,7 @@ Je kan jouw chatbot programmeren zodat deze kan kiezen wat het gaat doen, gebase
 
 Programmeer jouw chatbot zodat hij nog een vraag stelt - Iets met een `ja` of `nee` antwoord. Kan je jouw chatbot laten reageren op het antwoord?
 
-![screenshot](chatbot-joke.png)
+    ![screenshot](chatbot-joke.png)
 
 ## Sla jouw project op { .save }
 
