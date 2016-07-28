@@ -26,8 +26,25 @@
         {
             "number":   4,
             "beta": true,
+<<<<<<< 634996cc7e80c0415a84342a28bf0c87e0731cef
             "filename": "Chatbot/ChatBot.md",
             "note":     "Chatbot/ChatBot - notes.md"
+=======
+            "filename": "Chatbot/Chatbot.md",
+            "note":     "Chatbot/Chatbot - notes.md"
+	    },
+        {
+            "number":   5,
+            "beta": true,
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - notes.md"
+        },
+        {
+            "number":   6,
+            "beta": true,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
+>>>>>>> [nl-NL]Added Brain Game and Paint Box and changed md files for all others
         }      
     ]
 }
