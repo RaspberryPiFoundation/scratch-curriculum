@@ -4,7 +4,7 @@ level: Scratch 1
 language: nl-NL
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*"]
+materiaal: ["Club Leader Resources/*"]
 ...
 
 # Introductie { .intro }
@@ -26,29 +26,29 @@ Voordat je iets kan animeren of wel laten bewegen, moet je eerst een 'ding' toev
 
 	![screenshot](band-scratchNL.png)
 
-+ De kat sprite die je ziet is de Scratch mascotte. Die gaan we verwijderen, klik met de rechter muistoets en klik dan op 'verwijderen'.
++ De kat sprite die je ziet is de Scratch mascotte. Die gaan we verwijderen; klik op de kat met de rechter muistoets op en klik dan op 'verwijderen'.
 
 	![screenshot](band-deleteNL.png)
 
-+ Vervolgens klik je bij Nieuwe Sprite 'Kies sprite uit de bibliotheek' Dit opent de verzameling van alle Scratch sprites.
++ Vervolgens klik je bij Nieuwe Sprite 'Kies sprite uit bibliotheek' Dit opent de verzameling van alle Scratch sprites.
     
 	![screenshot](band-new-spriteNL.png)
 	
 	![screenshot](band-sprite-bibliotheekNL.png)
 
-+ Scroll naar beneden totdat je de drum1 sprite ziet. Klik op de trommel, en klik op 'OK' om hem aan jouw project toe te voegen.
++ Scroll naar beneden totdat je de drum1 sprite ziet. Klik op de trommel en klik op 'OK' om hem aan jouw project toe te voegen.
 
 	![screenshot](band-sprite-drumNL.png)
 
-+ Klik op het 'kleiner maken' icoontje, en klik daarna een paar keer op de drum om deze te laten krimpen.
++ Klik op het 'kleiner maken' icoontje, en klik daarna een paar keer op de trommel om deze te laten krimpen.
 
 	![screenshot](band-shrinkNL.png)
 
-## Opslaan van jouw project { .save }
+## Sla jouw project op  { .save }
 
-Geef jouw programma een naam, door er een in het tekstveld in de linker bovenhoek te typen.
+Geef jouw programma een naam, door er een naam in het tekstveld in de linker bovenhoek te typen.
 
-Daarna klik je op het menu 'bestand' en daarna op 'Nu opslaan' om jouw project op te slaan.
+Daarna klik je op het menu 'Bestand' en daarna op 'Nu opslaan' om jouw project op te slaan.
 
 ![screenshot](band-saveNL.png)
 
@@ -66,23 +66,23 @@ Het speelveld is het veld links. Dat is het veld waar jouw project tot leven kom
 
 	![screenshot](band-backdropNL.png)
 
-+ Jouw toneel zou er zo uit moeten zien:
++ Jouw toneel zou er ongeveer zo uit moeten zien:
 
 	![screenshot](band-stageNL.png)
 
 # Stap 3: Een Trommel maken { .activity }
 
-Laten we nu jouw trommel programmeren, zodat deze geluid maakt als erop wordt geslagen.
+Laten we nu jouw trommel programmeren, zodat deze geluid maakt als erop wordt 'geslagen'.
 
 ## Activiteiten Checklist { .check }
 
-+ Je kan de programmablokken vinden in de 'Scripts' tab. Ze hebben allenmaal een kleurcode! 
++ Je kan de programmablokken vinden in de 'Scripts' tab. Ze hebben allemaal een kleurcode! 
 
-	Klik op de drum sprite, daarna zoek en sleep je de volgende twee programma blokken naar het rechter vlak, het programma vlak. Zorg ervoor dat ze op elkaar aansluiten. (zoals lego-steentjes):
++ Klik op de drum sprite, daarna zoek en sleep je de volgende twee programma blokken naar het rechter vlak, het programma vlak. Zorg ervoor dat ze op elkaar aansluiten. (zoals lego-steentjes):
 
 	![screenshot](band-codeNL.png)
 
-+ Klik op de trommel op het toneel om het nieuwe instrument uit te proberen!
++ Klik op de trommel op het toneel om het nieuwe instrument uit te proberen.
 
 + Je kan ook het uiterlijk van de trommel veranderen als erop wordt geklikt, door een nieuw uiterlijk te maken. Klik op de 'Uiterlijken' tab en je zal de trommel zien.
 
@@ -116,19 +116,19 @@ Laten we nu jouw trommel programmeren, zodat deze geluid maakt als erop wordt ge
 
 ![screenshot](band-drum-soundNL.png)
 
-+ Kan je de trommel ook geluid laten maken door op de spatiebalk te drukken.? Hiervoor zal je deze 'gebeurtenis' moeten gebruiken: {.blockevents} 
++ Kan je de trommel ook geluid laten maken door op de spatiebalk te drukken.? Hiervoor zal je deze 'gebeurtenis' {.blockevents} moeten gebruiken: 
 
 ```blocks
 	Wanneer [spatiebalk] wordt ingedrukt
 ```
 
-Je kan een bestaand programma kopieren door er met de rechter muistoets op te klikken en te klikken op 'kopie maken'.
+Je kan een bestaand programma kopiëren door er met de rechter muistoets op te klikken en te klikken op 'kopie maken'.
 
 ![screenshot](band-duplicate-codeNL.png)
 
 ## Sla jouw project op { .save }
 
-# Stap 4: Maak een zangeres { .activity .new-page }
+# Stap 4: Een zangeres toevoegen { .activity .new-page }
 
 Laten we een zangeres toevoegen aan jouw band!
 
@@ -146,18 +146,18 @@ Laten we een zangeres toevoegen aan jouw band!
 
 	![screenshot](band-choose-soundNL.png)
 
-+ Nu we het geluid hebben toegevoegd , kunnen we de volgende code aan jouw zangeres toevoegen:
++ Nu we het geluid hebben toegevoegd , kunnen we het volgende programma aan jouw zangeres toevoegen:
 
 	```blocks
 		wanneer op deze sprite wordt geklikt
 		start geluid [singer1] en wacht
 	```
 
-+ Klik op jouw zangeres om er zeker van te zijn dat ze zingt, wanneer er op haar geklikt wordt.
++ Klik op jouw zangeres om er zeker van te zijn dat ze zingt, zodra er op haar geklikt wordt.
 
 ## Sla jouw project op { .save }
 
-##Uitdaging: Verander het uiterlijk van jouw zangeres. { .challenge }
+## Uitdaging: Verander het uiterlijk van jouw zangeres. { .challenge }
 
 Kan je jouw zangeres er laten uitzien alsof ze zingt, nadat er op haar is geklikt? Als je hulp nodig hebt, kan je gebruik maken van de instructies voor de trommel hierboven.
 
@@ -167,7 +167,7 @@ Denk eraan dat je jouw nieuwe programma test om te zien of het werkt!
 
 ## Sla jouw  project op { .save }
 
-##Uitdaging: Ontwerp jouw eigen band { .challenge }
+## Uitdaging: Ontwerp jouw eigen band { .challenge }
 Gebruik wat je hebt geleerd in dit project om jouw eigen band te maken! Je kan elk instrument maken wat je wilt, maar kijk naar de beschikbare geluiden en instrumenten om wat ideeën op te doen.
 
 ![screenshot](band-ideasNL.png)
@@ -185,8 +185,4 @@ Als je een microfoon hebt, kan je jouw eigen geluiden opnemen, of zelfs een webc
 ![screenshot](band-ioNL.png)
 
 ## Sla jouw project op { .save }
-
-## Community Contributed Translation { .challenge .pdf-hidden }
-
-This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
 

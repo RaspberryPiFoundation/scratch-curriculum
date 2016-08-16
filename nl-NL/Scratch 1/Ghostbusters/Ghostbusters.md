@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Introductie { .intro }
 
-Je gaat vandaag een spellentje maken waarin je spoken moet vangen!
+Je gaat vandaag een spelletje maken waarin je spoken moet vangen!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
@@ -29,13 +29,13 @@ Je gaat vandaag een spellentje maken waarin je spoken moet vangen!
 + Voeg het volgende programmma toe aan jouw spook, zodat deze herhaaldelijk verschijnt en verdwijnt:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
 			verdwijn
 			wacht (1) sec.
 			verschijn
 			wacht (1) sec.
-		eind
+		einde
 	```
 
 + Test het programma van jouw spook door op de groene vlag te klikken.
@@ -51,14 +51,14 @@ Jouw spook is makkelijk te vangen, omdat hij niet beweegt!
 + in plaats van op dezelfde plaats te blijven, kan je Scratch in plaats daarvan willekeurige x and y coordinaten laten kiezen. Voeg een `ga naar` {.blockmotion} blok toe aan jouw spook programma, zodat het er als volgt uitziet:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
 			verdwijn
 			wacht (1) sec.
-			ga naar  x:(willekeurig getal tussen (-150) en (150)) y:(willekeurig getal tussen (-150) en (150))
+			ga naar x:(willekeurig getal tussen (-150) en (150)) y:(willekeurig getal tussen (-150) en (150))
 			verschijn
 			wacht (1) sec.
-		eind
+		einde		
 	```
 
 + Test jouw programma van het spook nog een keer en je zou moeten zien dat het spook verdwijnt en verschijnt op verschillende plaatsen.
@@ -117,8 +117,8 @@ Laten we het spelletje nog interessanter maken door de score bij te gaan houden.
 + Wanneer een nieuw spel gestart wordt (door op de vlag te klikken), moet je de score van de speler op 0 moeten zetten:
 
 	```blocks
-	wanneer vlag wordt aangeklikt
-	maak [score v] [0]
+		wanneer ⚑ wordt aangeklikt
+		maak [score v] [0]
 	```
 
 + Wanneer een spook gevangen wordt, moet je 1 optellen bij de score van de speler:
@@ -131,7 +131,7 @@ Laten we het spelletje nog interessanter maken door de score bij te gaan houden.
 
 # Stap 5: Een timer toevoegen { .activity }
 
-Je kan jouw spelletje nog interessanter maken door een speler slecht 10 seconds de tijd te geven om zoveel mogelijk spoken te vangen.
+Je kan jouw spelletje nog interessanter maken door een speler slechts 10 seconden de tijd te geven om zoveel mogelijk spoken te vangen.
 
 ## Activiteiten Checklist { .check }
 
@@ -148,12 +148,12 @@ Je kan jouw spelletje nog interessanter maken door een speler slecht 10 seconds 
 	Hier volgt het programma om dit uit te voeren. Je kan dit toevoegen aan jouw __speelveld__:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		maak [time v] [10]
 		herhaal tot <(time) = [0]>
 			wacht (1) sec.
 			verander [time v] met (-1)
-		end
+		einde
 		stop [alle v]
 	```
 
@@ -190,7 +190,3 @@ Je moet wel even nadenken over de dingen die je toevoegt. Denk daarbij aan:
 Als je nog een voorwerp wilt toevoegen, kan je bovenstaande stappen nogmaals volgen!
 
 ## Sla jouw project op { .save }
-
-## Community Contributed Translation { .challenge .pdf-hidden }
-
-This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.

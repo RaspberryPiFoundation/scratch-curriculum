@@ -32,7 +32,7 @@ Laten wij een ruimteschip maken, dat naar de aarde toe vliegt!
 
 	![screenshot](space-costume.png)
 
-+ Gebruik het selecteer gereedschap om de tekening te selecteren. Klik daarna op de ronde draaipuntbediening en draai de tekening tot deze op zijn zij ligt.
++ Gebruik het selecteer gereedschap om de afbeelding te selecteren. Klik daarna op de ronde draaipuntbediening en draai de tekening tot deze op zijn zij ligt.
 
 	![screenshot](space-rotate.png)
 
@@ -72,7 +72,7 @@ Hiervoor moet je de getallen in dit blok veranderen:
 
 ## Sla jouw project op { .save }
 
-# Stap 2: beweging door middel van 'loops' { .activity .new-page }
+# Stap 2: beweging door middel van loops { .activity .new-page }
 
 Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stukje te laten bewegen, maar dan vaak achter elkaar.
 
@@ -86,11 +86,11 @@ Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stu
 
 	![screenshot](space-loop.png)
 
-	Het `herhaal (10) keer` {.blockcontrol} blok wordt gebruikt om iets vaak te herhalen, en is ook bekend als een __'loop'__ (spreek uit als loep.).
+	Het `herhaal (10) keer` {.blockcontrol} blok wordt gebruikt om iets vaak te herhalen, en is ook bekend als een __'lus'__ . Meestal wordt hiervoor de term 'loop' (spreek uit als loep) gebruikt.
 
 + Zodra je nu op de vlag klikt om het nieuwe programma uit te proberen, zal je zien dat het programma ongeveer hetzelfde doet.
 
-+ Je kan meer programmablokken aan jouw loop toevoegen, zodat er interessante dingen gebeuren. Voeg het `verander kleur-effect met (25)` {.blocklooks} blok toe aan de loop (vanuit het 'Uiterlijken' gedeelte), om herhaaldelijk de kleur van het ruimteschip te veranderen als het beweegt:
++ Je kan meer programmablokken aan jouw lus toevoegen, zodat er meer interessante dingen gebeuren. Voeg het `verander kleur-effect met (25)` {.blocklooks} blok toe aan de lus (vanuit het 'Uiterlijken' gedeelte), om herhaaldelijk de kleur van het ruimteschip te veranderen als het beweegt:
 
 	![screenshot](space-colour.png)
 
@@ -98,7 +98,7 @@ Een andere manier om jouw ruimteschip te laten bewegen is door het een klein stu
 
 	![screenshot](space-colour-test.png)
 
-+ Je kan jouw ruimteschip kleiner later worden naarmate deze richting de aarde beweegt.
++ Je kan jouw ruimteschip ook kleiner later worden naarmate deze richting de aarde beweegt.
 
 	![screenshot](space-size.png)
 
@@ -127,10 +127,10 @@ Laten we een aap, die in de ruimte verdwaald is, aan de animatie toevoegen!
 + Klik nu op de 'Scripts' tab, en voeg het volgende programma toe aan de monkey-sprite, zodat deze langzaam blijft ronddraaien:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
-			draai rechts (1) graden
-		eind
+			draai ↻ (1) graden
+		einde
 	```
 
 	Het `herhaal` {.blockcontrol} blok is ook een 'loop', maar deze keer een die nooit stopt.
@@ -152,12 +152,12 @@ Laten we wat zwevende ruimte stenen toevoegen aan jouw animatie.
 + Voeg het volgende programma toe aan jouw steen, zodat het rond jouw speelveld botst:
 
 	```blocks
-		wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		richt naar [Earth v]
 		herhaal
 			neem (2) stappen
 			keer om aan de rand
-		eind
+		einde
 	```
 
 + Klik op de vlag om jouw rots te testen. Botst het rond jouw speelveld?
@@ -189,7 +189,3 @@ Gebruik wat je in dit project geleerd hebt om jouw eigen animatie te maken. Dat 
 ![screenshot](space-egs.png)
 
 ## Sla jouw project op { .save }
-
-## Community Contributed Translation { .challenge .pdf-hidden }
-
-This project was translated by Jeroen Dekker. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
