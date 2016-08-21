@@ -30,6 +30,11 @@
             "number":   5,
             "filename": "SprechBot/SprechBot.md",
             "note":     "SprechBot/SprechBot - notes.md"
+        },
+        {
+            "number":   6,
+            "filename": "Farbkasten/Farbkasten.md",
+            "note":     "Farbkasten/Farbkasten - notes.md"
         }
     ]
 }

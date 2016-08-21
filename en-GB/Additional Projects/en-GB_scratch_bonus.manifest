@@ -35,6 +35,21 @@
             "number":   6,
             "filename": "Beat the Goalie/Beat the Goalie.md",
             "note": "Beat the Goalie/Beat the Goalie - notes.md"
+        },
+        {
+            "number":   7,
+            "filename": "Synchronised Swimming/Swimming.md",
+            "note": "Synchronised Swimming/Swimming - notes.md"
+        },
+        {
+            "number":   8,
+            "filename": "Archery/Archery.md",
+            "note": "Archery/Archery - notes.md"
+        },
+        {
+            "number":   9,
+            "filename": "Sprint/Sprint.md",
+            "note": "Sprint/Sprint - notes.md"
         }
     ]
 }

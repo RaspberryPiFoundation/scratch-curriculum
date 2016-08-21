@@ -192,3 +192,7 @@ Zunächst musst Du über die Figuren nachdenken, die Du hinzufügen möchtest:
 Wenn Du eine neue Figur hinzufügen möchtest, gehe einfach die Schritte von oben noch einmal durch!
 
 ## Speichere Dein Projekt { .save }
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by Anastasia Heilmann. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.

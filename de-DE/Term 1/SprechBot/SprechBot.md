@@ -82,8 +82,13 @@ Du kannst dann den Text `hello` zu, sagen wir mal, `Hallo` ändern, und den hell
 	```blocks
 		Wenn ich angeklickt werde
 		frage [Hey! Wie heißt Du?] und warte
+<<<<<<< HEAD
 		setze [Name v] zu (Antwort)
 		sage <verbinde [Hi ] (Name)> for (2) secs
+=======
+		setze [name v] auf (Antwort)
+		sage <verbinde [Hi] (name)> für (2) Sek.
+>>>>>>> CodeClub/master
 	```
 
 + Wenn Du Dein Programm nochmals testest, wirst Du feststellen, dass die Antwort in der `Name` {.blockdata}-Variable gespeichert worden ist und in der oberen linken Ecke der Bühne angezeigt wird. Die `Name` {.blockdata}-Variable sollte nun den gleichen Wert enthalten wie die `Antwort` {.blocksensing}-Variable.
@@ -113,10 +118,17 @@ Du kannst Deinen SprechBot so programmieren, dass er eine Entscheidung basierend
 	```blocks
 		Wenn ich angeklickt werde
 		frage [Hey! Wie heißt Du?] und warte
+<<<<<<< HEAD
 		setze [Name v] zu (Antwort)
 		sage <verbinde [Hallo ] (Name)> für (2) Sek.
 		frage <verbinde [Geht es Dir gut?] (Name)> und warte
 		wenn ((Antwort)=[ja]) dann
+=======
+		setze [name v] auf (Antwort)
+		sage <verbinde [Hallo ] (Name)> für (2) Sek.
+		frage <verbinde [Geht es Dir gut?] (Name)> und warte
+		falls ((Antwort) = [ja]) dann
+>>>>>>> CodeClub/master
 			sage [Juhu! Das freut mich zu hören!] für (2) Sek.
 		end
 	```
@@ -130,10 +142,17 @@ Du kannst Deinen SprechBot so programmieren, dass er eine Entscheidung basierend
 	```blocks
 		Wenn ich angeklickt werde
 		frage [Hey! Wie heißt Du?] und warte
+<<<<<<< HEAD
 		setze [Name v] zu (Antwort)
 		sage <verbinde [Hallo ] (Name)> für (2) Sek.
 		frage <verbinde (Name) [, geht es Dir gut?]> und warte
 		wenn ((Antwort)=[ja]) dann
+=======
+		setze [name v] auf (Antwort)
+		sage <verbinde [Hallo ] (Name)> für (2) Sek.
+		frage <verbinde (Name) [, geht es Dir gut?]> und warte
+		falls ((Antwort)=[ja]) dann
+>>>>>>> CodeClub/master
 			sage [Juhu! Das freut mich zu hören!] für (2) Sek.
 		sonst
 			sage [Oh!] für (2) Sek.
@@ -222,3 +241,10 @@ Nutze, was Du bisher gelernt hast, um die Programmierung Deines interaktiven Spr
 Sobald Du Deinen SprechBot fertiggestellt hast, lass Deine Freunde oder Familie ein Gespräch mit ihm führen. Mögen sie Deinen Roboter? Haben Sie irgendwelche Probleme festgestellt? Sind sie überrascht, dass der SprechBot sprechen kann?
 
 ## Speichere Dein Projekt { .save }
+<<<<<<< HEAD
+=======
+
+## Community Contributed Translation { .challenge .pdf-hidden }
+
+This project was translated by Anastasia Heilmann. Our amazing translation volunteers help us give children around the world the chance to learn to code.  You can help us reach more children by translating a Code Club project via [Github](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md) or by getting in touch with us at hello@codeclubworld.
+>>>>>>> CodeClub/master
