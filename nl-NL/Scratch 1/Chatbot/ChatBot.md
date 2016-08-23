@@ -117,7 +117,7 @@ Je kan jouw robot programmeren zodat deze kan kiezen wat het gaat doen, gebaseer
 		zeg <voeg [Hoi ] en (naam) samen> (2) sec.
 		vraag <voeg [Gaat het goed met jou, ] en (naam) samen> en wacht
 		als ((antwoord)=[ja]) dan
-			zeg [Dat is fijn om te horen!] (2) secs
+			zeg [Dat is fijn om te horen!] (2) sec.
 		einde
 	```
 
@@ -134,7 +134,7 @@ Je kan jouw robot programmeren zodat deze kan kiezen wat het gaat doen, gebaseer
 		zeg <voeg [Hoi ] en (naam) samen> (2) sec.
 		vraag <voeg [Gaat het goed met jou, ] en (naam) samen> en wacht
 		als ((antwoord)=[ja]) dan
-			zeg [Dat is fijn om te horen!] (2) secs
+			zeg [Dat is fijn om te horen!] (2) sec.
 		anders
 			zeg [Ach nee!] (2) sec.
 		einde
