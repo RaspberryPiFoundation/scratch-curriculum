@@ -16,6 +16,11 @@
             "beta":     true,
             "filename": "Toby/Toby.md",
             "note":     "Toby/Toby - Notes.md"
+        },
+        {
+            "number":   3,
+            "filename": "Devs and Testers/Devs and Testers.md",
+            "note":     "Devs and Testers/Devs and Testers - notes.md"
         }
     ]
 }
