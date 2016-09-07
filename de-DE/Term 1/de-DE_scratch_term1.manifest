@@ -28,6 +28,11 @@
         },
         {
             "number":   5,
+            "filename": "Farbkasten/Farbkasten.md",
+            "note":     "Farbkasten/Farbkasten - Notizen.md"
+        },        
+        {
+            "number":   5,
             "filename": "Boat Race/Boat Race.md",
             "note":     "Boat Race/Boat Race - notes.md"
         }
