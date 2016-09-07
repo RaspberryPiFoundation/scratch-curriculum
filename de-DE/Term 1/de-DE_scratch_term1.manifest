@@ -23,13 +23,13 @@
         },
         {
             "number":   4,
-            "filename": "Boat Race/Boat Race.md",
-            "note":     "Boat Race/Boat Race - notes.md"
+            "filename": "SprechBot/SprechBot.md",
+            "note":     "SprechBot/SprechBot - notes.md"
         },
         {
             "number":   5,
-            "filename": "SprechBot/SprechBot.md",
-            "note":     "SprechBot/SprechBot - notes.md"
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 }
