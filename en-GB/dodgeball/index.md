@@ -57,7 +57,7 @@ Let's start by creating a character that can move left and right, as well as cli
 
 	![screenshot](images/dodge-upside-down.png)
 
-	If so, youcan fix this bug by clicking the `(i)` {.blocksensing} icon on your character sprite, and then clicking the left-right arrow.
+	If so, you can fix this bug by clicking the `(i)` {.blocksensing} icon on your character sprite, and then clicking the left-right arrow.
 
 	![screenshot](images/dodge-left-right.png)
 
