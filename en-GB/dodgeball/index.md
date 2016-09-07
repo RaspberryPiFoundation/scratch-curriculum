@@ -51,7 +51,21 @@ Let's start by creating a character that can move left and right, as well as cli
 
 	![screenshot](images/dodge-walking.png)
 
-+ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
++ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left.
+
++ Test your new code to make sure that it works. Does your character turn upside-down when walking to the left?
+
+	![screenshot](images/dodge-upside-down.png)
+
+	If so, youcan fix this bug by clicking the `(i)` {.blocksensing} icon on your character sprite, and then clicking the left-right arrow.
+
+	![screenshot](images/dodge-left-right.png)
+
+	Or, if you prefer you can add this block to the start of your character's script:
+
+	```scratch
+	set rotation style [left-right v]
+	```
 
 + To climb a pink ladder, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
 
