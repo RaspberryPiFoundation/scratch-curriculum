@@ -1,0 +1,15 @@
+{
+    "id": "scratch-2",
+    "title": "Scratch 2",
+    "description": "",
+    "language": "nl-NL",
+    "number": 2,
+    "projects": [
+        {
+            "number":   1,
+            "beta": true,
+            "filename": "Memory/Memory.md",
+            "note":     "Memory/Memory - notes.md"
+        }
+    ]
+}
