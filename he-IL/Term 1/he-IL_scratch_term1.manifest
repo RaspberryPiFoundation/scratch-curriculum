@@ -1,10 +1,10 @@
-{
+﻿{
     "description": false,
     "id": "scratch_01",
     "language": "he-IL",
     "number": 1,
-    "title": "Scratch 1",
-    "category": "cat-scratch",
+    "title": "סקראצ' 1",
+    "category": "סקראצ'",
     "projects": [
         {
             "number":   1,
@@ -21,6 +21,11 @@
             "beta": true,
             "filename": "Ghostbusters/Ghostbusters.md",
             "note": "Ghostbusters/Ghostbusters - notes.md"
+        },
+        {
+            "number":   4,
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - notes.md"
         }
     ]
 

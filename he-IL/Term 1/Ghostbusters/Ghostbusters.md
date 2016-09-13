@@ -1,6 +1,6 @@
 ﻿---
 title: מכסחי השדים
-level: Scratch 1
+level: סקראצ' 1
 language: he-IL
 stylesheet: scratch
 embeds: "*.png"
