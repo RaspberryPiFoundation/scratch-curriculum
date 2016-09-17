@@ -8,7 +8,7 @@ embeds: "*.png"
 בפרויקט זה, הילדים ילמדו איך להשתמש במשפטי 'אם' כדי לבצע החלטות בתכנית שלהם.
 
 #חומרי הלימוד
-לפרויקט זה, יש להשתמש ב- סקראטצ' 2. ניתן להשתמש בסקראטצ' 2 בין אם באון ליין בכתובת [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ובין אם אוף ליין בהורדה מהכתובת [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off).
+לפרויקט זה, יש להשתמש ב- סקראצ' 2. ניתן להשתמש בסקראצ' 2 בין אם באון ליין בכתובת [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ובין אם אוף ליין בהורדה מהכתובת [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off).
 
 אתה יכול למצוא גרסה מלאה של הפרויקט <a href="http://scratch.mit.edu/projects/26762091/#editor">און ליין</a>, או להוריד אותה על ידי לחיצה על הקישור "הורד חומרי פרויקט" לפרויקט זה, אשר מכיל:
 

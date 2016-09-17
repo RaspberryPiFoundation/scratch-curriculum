@@ -8,7 +8,7 @@ materials: ["Club Leader Resources/*"]
 ...
 
 ## הערה: { .challenge .pdf-hidden }
-פרויקט "הבלונים"הועבר לקטגוריה [פרויקטים נוספים בסקרטצ'](http://projects.codeclubworld.org/he-IL/03_scratch_bonus/index.html).
+פרויקט "הבלונים"הועבר לקטגוריה [פרויקטים נוספים בסקראצ'](http://projects.codeclubworld.org/he-IL/03_scratch_bonus/index.html).
 
 # הקדמה { .intro }
 
@@ -23,7 +23,7 @@ materials: ["Club Leader Resources/*"]
 
 ## רשימת פעולות { .check }
 
-+ התחל פרויקט סקראטצ' חדש, ומחק את דמות החתול כך שהפרויקט יהיה ריק. אתה יכול למצוא את עורך הסקראטצ' און ליין בכתובת <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ התחל פרויקט סקראצ' חדש, ומחק את דמות החתול כך שהפרויקט יהיה ריק. אתה יכול למצוא את עורך הסקראצ' און ליין בכתובת <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + הוסף דמות של רוח חדשה, ותפאורת רקע מתאימה.
 
@@ -43,7 +43,7 @@ materials: ["Club Leader Resources/*"]
 
 ## רשימת פעולות { .check }
 
-+ במקום להישאר באותו המקום, אתה יכול לתת לסראטצ' לבחור נקודות X ו- Y אקראיים. הוסף בלוק `קפוץ אל` {.blockmotion} לקוד של הרוח שלך, כך שזה יראה כך:
++ במקום להישאר באותו המקום, אתה יכול לתת לסקראצ' לבחור נקודות X ו- Y אקראיים. הוסף בלוק `קפוץ אל` {.blockmotion} לקוד של הרוח שלך, כך שזה יראה כך:
 
 	![screenshot](ghost-code-block-2.png)
 

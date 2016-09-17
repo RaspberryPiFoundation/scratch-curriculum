@@ -26,6 +26,11 @@
             "number":   4,
             "filename": "ChatBot/ChatBot.md",
             "note":     "ChatBot/ChatBot - notes.md"
+        },
+        {
+            "number":   5,
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - notes.md"
         }
     ]
 
