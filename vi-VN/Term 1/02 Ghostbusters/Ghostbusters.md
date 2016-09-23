@@ -31,11 +31,11 @@ Biến speed điều khiển tốc độ di chuyển của con ma. Chúng ta dù
 +Chúng ta muốn con ma bắt đầu di chuyển khi trò chơi bắt đầu, nên __viếts cript như sau__:
 
 ```blocks
-
-    when FLAG clicked
-    set [speed v] to [5]
-    forever
-        move (speed) steps
+khi nhấn vào @
+đặt [speed v] là [5]
+lặp mãi mãi
+   di chuyển (speed) bước
+end
 ```
         
 ##Kiểm tra lại { .flag}
@@ -46,12 +46,12 @@ __Ấn vào lá cờ màu xanh__ và xem hoạt động của con ma. Tại sao 
 + Để ngừng việc con mà bị kẹt, chúng ta cần khiến nó quay trở lại lối vào khác từ rìa màn hình. Chỉnh sửa bản script cũ của bạn bằng việc thêm hộp “If on edge, bounce’ dưới ‘move’, ‘speed’ và ‘step’.
 
 ```blocks
-
-    when FLAG clicked
-    set [speed v] to [5]
-    forever
-        move (speed) steps
-        if on edge, bounce
+khi nhấn vào @
+đặt [speed v] là [5]
+lặp mãi mãi
+   di chuyển (speed) bước
+   nếu chạm biên, bật lại
+end
 ```
 + Để ngừng việc con ma quay ngược đầu, ấn vào ‘rotation style: left-right’ ở phần Sprite Summary.
 
@@ -78,14 +78,13 @@ Bạn sẽ có thêm nhiều mẹo trong quá trình làm dự án này)
 __Tạo bản script này cho con ma:__
 
 ```blocks
-
-    when FLAG clicked
-    forever
-        hide
-        wait (pick random (2) to (5)) secs
-        show
-        wait (pick random (3) to (5)) secs
-
+khi nhấn vào @
+lặp mãi mãi
+   ẩn
+   đợi (lấy ngẫu nhiên trong khoảng (2) tới (5)) giây
+   hiện
+   đợi (lấy ngẫu nhiên trong khoảng (3) tới (5)) giây
+end
 ```
 ##Kiểm tra lại { .flag}
 __Ấn vào biểu tượng lá cờ màu xanh__ 
@@ -108,10 +107,9 @@ Con ma có di chuyển qua lại và biến mất rồi xuất hiện ngẫu nhi
 + __Thêm phần script này cho con ma:__
 
 ```blocks
-
-    when this sprite clicked
-    hide
-    play sound [Fairydust v]
+khi hình họa này được nhấn vào
+ẩn
+chơi âm thanh [Fairydust v]
 ```
 ##Kiểm tra lại { .flag}
 __Ấn vào biểu tượng lá cờ màu xanh.__ 
@@ -132,26 +130,24 @@ Chúng ta đã có con ma, nhưng giờ chúng ta muốn tạo trò chơi! Chún
 
 
 ```blocks
-
-    when this sprite clicked
-    hide
-    play sound [Fairydust v]
-    change [score v] by (1)
+khi hình họa này được nhấn vào
+ẩn
+chơi âm thanh [Fairydust v]
+thay đổi [score v] một lượng (1)
 ```
 
 +Chuyển sang __Stage__ và tạo __Biến mới__ gọi là __timer__. Thêm script để lập thời gian là __30__ và khởi động lại score về __0__. Sau đó, dùng ‘repeat until’ rồi giảm ‘timer’ 1 (change timer by -1). Việc này cần lặp đi lặp lại cho đến khi timer bằng 0. Tại thời điểm này, dùng ‘stop all’ để dừng trò chơi.
 
 
 ```blocks
-
-    when FLAG clicked
-    set [timer v] to (30)
-    set [score v] to (0)
-    repeat until <(timer) = [0]>
-        wait (1) secs
-        change [timer v] by (-1)
-    
-    stop [all v]
+khi nhấn vào @
+đặt [đồng hồ bấm giờ v] là (30)
+đặt [score v] là (0)
+lặp cho tới khi <(đồng hồ bấm giờ) = [0]>
+   đợi (1) giây
+   thay đổi [đồng hồ bấm giờ v] một lượng (-1)
+   ngừng [tất cả v]
+end
 ```
 
 
