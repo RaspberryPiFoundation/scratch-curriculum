@@ -1,5 +1,5 @@
 ---
-title: ChatBot 1.4
+title: ChatBot
 description: Learn how to program your own talking robot!
 layout: project
 notes: "ChatBot - notes.md"
@@ -66,11 +66,11 @@ Now that you have a chatbot with a personality, let's program it to talk to you.
 
 + Once you've created your new variable, make sure that your chatbot's code looks like this:
 
-![screenshot](images/chatbot-blocks.png)
+	![screenshot](images/chatbot-blocks.png)
 
 + If you test your program again, you'll notice that the answer is stored in the `name` {.blockdata} variable, and is shown in the top-left of the stage. The `name` {.blockdata} variable should now contain the same value as the `answer` {.blocksensing} variable.
 
-![screenshot](images/chatbot-variable.png)
+	![screenshot](images/chatbot-variable.png)
 
 	If you'd rather not see the variables on your stage, you can click the tick next to the variable names in the 'Scripts' tab to hide them.
 
@@ -92,7 +92,7 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 + Let's get your chatbot to ask the user a question which has a `yes` or `no` answer. Here's an example, but you can change the question if you like:
 
-![screenshot](images/chatbot-okay.png)
+	![screenshot](images/chatbot-okay.png)
 
 	Notice that now you've stored the user's name in a variable, you can use it as much as you like.
 
@@ -100,7 +100,7 @@ You can program your chatbot to decide what to do, based on the user's responses
 
 + The trouble with your chatbot is that it doesn't give a reply if the user answers `no`. You can fix this, by changing the `if` {.blockcontrol} block to an `if/else` {.blockcontrol} block, so that your code now looks like this:
 
-![screenshot](images/chatbot-oh-no.png)
+	![screenshot](images/chatbot-oh-no.png)
 
 + If you test your code, you'll now see that you get a response when you answer `yes` or `no`. Your chatbot should reply with `That's great to hear!` when you answer `yes`, but will reply with `Oh no!` if you type anything other than `yes` (`else` {.blockcontrol} means 'otherwise').
 
@@ -142,12 +142,7 @@ You can also program your chatbot to change its location.
 
 + You can now program your chatbot to change location, by adding this code to your chatbot:
 
-	```blocks
-		ask [I'm going to the beach. Do you want to come with me?] and wait
-		if ((answer) = [yes]) then
-			switch backdrop to [beach]
-		end
-	```
+	![screenshot](images/chatbot-change-location.png)
 
 + You also need to make sure that your chatbot is outside when you start talking to it. Add this block to the top of your chatbot code:
 
@@ -160,15 +155,6 @@ You can also program your chatbot to change its location.
 + Does your chatbot change location if you type `no`? What about if you type `I'm not sure`?
 
 + You can also add this code inside your `if` {.blockcontrol} block, to make your chatbot jump up and down 4 times if the answer is `yes`:
-
-	```blocks
-	repeat (4)
-		change y by (10)
-		wait (0.1) secs
-		change y by (-10)
-		wait (0.1) secs
-	end
-	```
 
 	![screenshot](images/chatbot-loop.png)
 

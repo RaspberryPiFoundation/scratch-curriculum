@@ -1,5 +1,5 @@
 ---
-title: Paint Box 1.4
+title: Paint Box
 description: Learn how to make your own paint program.
 layout: project
 notes: "Paint Box - notes.md"
@@ -128,7 +128,10 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to your p
 
 + Add code to your new cancel button to clear the stage when it's clicked.
 
-	![screenshot](images/paint-clear-code.png)
+	```blocks
+		when this sprite clicked
+		clear
+	```
 
 	Notice that you don't need to send a message to clear the stage, as any sprite can do it!
 

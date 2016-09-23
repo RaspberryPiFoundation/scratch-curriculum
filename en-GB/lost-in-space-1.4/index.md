@@ -1,5 +1,5 @@
 ---
-title: Lost in Space 1.4
+title: Lost in Space
 description: Learn how to program your own animation!
 layout: project
 notes: "Lost in Space - notes.md"
@@ -28,7 +28,7 @@ Let's make a spaceship that flies towards the Earth!
 
 + Go to the resources folder and select 'Spaceship'.
 
-+ Add a second sprice named 'Earth'.
++ Add a second sprite named 'Earth'.
 
 + Import a stars background by selecting the stage then clicking 'Import' from the 'Backgrounds' tab.
 
@@ -38,9 +38,9 @@ Let's make a spaceship that flies towards the Earth!
 
 	![screenshot](images/space-stage.png)
 
-+ Double-click on the spaceship sprice to bring up the Paint Editor.
++ Double-click on the spaceship sprite to bring up the Paint Editor.
 
-+ Click the 'rotate clockwise' button until the spaceship is on its side:
++ Click the 'rotate clockwise' button until the spaceship is on its side.
 
 	![screenshot](images/space-rotate.png)
 
@@ -132,12 +132,7 @@ Let's add monkey to your animation, who's lost in space!
 
 + Now click 'Scripts', and add this code to the monkey, so that it spins slowly in a circle forever:
 
-	```blocks
-		when FLAG clicked
-		forever
-		    turn right (1) degrees
-		end
-	```
+	![screenshot](images/space-monkey-rotate.png)
 
 	The `forever` {.blockcontrol} block is another loop, but this time one that never ends.
 
@@ -157,14 +152,7 @@ Let's add some floating space-rock to your animation.
 
 + Add this code to your rock, to make it bounce around the stage:
 
-	```blocks
-		when flag clicked
-		point towards [Earth v]
-		forever
-			move (2) steps
-			if on edge, bounce
-		end
-	```
+	![screenshot](images/space-rock-bounce.png)
 
 + Click the flag to test your rock. Does it bounce around the stage?
 

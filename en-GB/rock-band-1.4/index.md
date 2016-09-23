@@ -1,5 +1,5 @@
 ---
-title: Rock Band 1.4
+title: Rock Band
 description: Learn how to code your own musical instruments!
 layout: project
 notes: "Rock Band - notes.md"
@@ -60,7 +60,7 @@ The __stage__ is the area on the right, and is where your project comes to life.
 
 ## Activity Checklist { .check }
 
-+ At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking on 'Stage' then 'Edit' from the 'Backgrounds tab.
++ At the moment, the stage is white, and looks pretty boring! Let's add a backdrop to the stage, by clicking on 'Stage' then 'Edit' from the 'Backgrounds' tab.
 
 	![screenshot](images/band-stage-choose.png)
 
@@ -130,7 +130,10 @@ Let's add a singer to your band!
 
 + Now that the sound has been added, you can add this code to your singer:
 
-	![screenshot](images/band-singer-code.png)
+	```blocks
+		when Singer clicked
+		play sound [Singer] until done
+	```
 
 + Click on your singer, to make sure that she sings when clicked.
 
@@ -146,7 +149,7 @@ Let's make your drum look like it's being hit!
 
 	![screenshot](images/band-drum-costume.png)
 
-+ Click the 'Copy' button to create a copy of the costume then click Edit.
++ Click the 'Copy' button to create a copy of the costume then click 'Edit'.
 
 	![screenshot](images/band-drum-duplicate.png)
 

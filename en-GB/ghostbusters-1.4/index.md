@@ -1,5 +1,5 @@
 ---
-title: Ghostbusters 1.4
+title: Ghostbusters
 description: Learn how to make a ghost-catching game!
 layout: project
 notes: "Ghostbusters - notes.md"
@@ -23,15 +23,7 @@ You are going to make a ghost-catching game!
 
 + Add this code to your ghost, so that it repeatedly appears and disappears:
 
-	```blocks
-		when flag clicked
-		forever
-			hide
-			wait (1) secs
-			show
-			wait (1) secs
-		end
-	```
+	![screenshot](images/ghost-appear-disappear.png)
 
 + Test out your ghost's code, by clicking the green flag.
 
@@ -45,16 +37,7 @@ Your ghost is really easy to catch, because it doesn't move!
 
 + Instead of staying in the same position, you can let Scratch choose random x and y coordinates instead. Add a `go to` {.blockmotion} block to your ghost's code, so that it looks like this:
 
-	```blocks
-		when flag clicked
-		forever
-			hide
-			wait (1) secs
-			go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
-			show
-			wait (1) secs
-		end
-	```
+	![screenshot](images/ghost-random-coordinates.png)
 
 + Test our your ghost again, and you should notice that it appears in a different place each time.
 
@@ -106,10 +89,7 @@ Let's make things more interesting by keeping score.
 
 + When a new game is started (by clicking the flag), you should set the player's score to 0:
 
-	```blocks
-	when flag clicked
-	set [score v] to [0]
-	```
+	![screenshot](images/ghost-set-score-to-0.png)
 
 + Whenever a ghost is caught, you need to add 1 to the player's score:
 

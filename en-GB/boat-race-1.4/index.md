@@ -1,5 +1,5 @@
 ---
-title: Boat Race 1.4
+title: Boat Race
 description: Make a game, in which you'll navigate a boat to a desert island.
 layout: project
 notes: "Boat Race - notes.md"
@@ -37,15 +37,7 @@ You are going to learn how to make a game, in which you'll use the mouse to navi
 
 + You are going to control the boat with your mouse. Add this code to your boat:
 
-	```blocks
-		when flag clicked
-		point in direction (0 v)
-		go to x: (-190) y: (-150)
-		forever
-			point towards [mouse-pointer v]
-			move (1) steps
-		end
-	```
+	![screenshot](images/boat-control-with-mouse.png)
 
 + Test out your boat, by clicking the flag and moving the mouse. Does the boat sail towards the mouse?
 
@@ -118,14 +110,7 @@ Let's add a timer to your game, so that the player has to get to the desert isla
 
 + Add this code to your __stage__, so that the timer counts up until the boat reaches the desert island:
 
-	```blocks
-		when flag clicked
-		set [time v] to [0]
-		forever
-			wait (0.1) secs
-			change [time v] by (0.1)
-		end
-	```
+	![screenshot](images/boat-timer-counts-up.png)
 
 + That's it! Test out your game and see how quickly you can get to the desert island!
 
@@ -145,11 +130,7 @@ This game is _far_ too easy - let's add things to make it more interesting.
 
 + You can now add some code to your boat's `forever` {.blockcontrol} loop, so that it moves 3 _extra_ steps when touching a white booster.
 
-	```blocks
-		if <touching color [#FFFFFF]?> then
-			move (3) steps
-		end
-	```
+	![screenshot](images/boat-touching-colour-move.png)
 
 + You can also add in a spinning gate, which your boat has to avoid. Add in a new sprite called 'gate', which looks like this:
 
