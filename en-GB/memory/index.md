@@ -102,7 +102,7 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		broadcast [won v] and wait
 	```
 
-+ Click on your stage, and add this code to make the backdrop change colour once the player has won.
++ Click on your stage, and add this code to play __any__ sound and make the backdrop change colour once the player has won.
 
 	```blocks
 		when I receive [won v]
