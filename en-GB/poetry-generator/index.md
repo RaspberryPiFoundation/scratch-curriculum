@@ -4,6 +4,7 @@ description: Celebrate Ada Lovelace Day, by learning how to program your own poe
 layout: project
 notes: "PoetryGenerator - notes.md"
 new: true
+project-type: sample
 ---
 
 # Introduction { .intro }
