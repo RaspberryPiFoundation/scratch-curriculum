@@ -14,29 +14,22 @@ You are going to learn how to make a game, in which you'll use the mouse to navi
   <img src="images/boat-final.png">
 </div>
 
-# Step 1: Planning your game { .activity }
+# Step 1: Getting started { .activity }
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Open the 'Boat Race' Scratch project online at <a href="http://jumpto.cc/boat-go" target="_blank">jumpto.cc/boat-go</a> or download from <a href="http://jumpto.cc/boat-get" target="_blank">jumpto.cc/boat-get</a> and then open if you are using the offline editor.
 
-+ Click on your stage backdrop and plan out your level. You should add:
++ The project includes a boat sprite and a course backdrop with:
+
 	+ Wood that your boat has to avoid;
 	+ A desert island that your boat has to get to.
 
-	Here's how your game could look:
-
-	![screenshot](images/boat-bg.png) 
+	![screenshot](images/boat-starter.png) 
 
 # Step 2: Controlling the boat { .activity }
 
 ## Activity Checklist { .check }
-
-+ If your club leader has given you a 'Resources' folder, click 'Upload sprite from file' and add the 'boat.png' image. You should shrink the sprite and put it in it's starting position.
-
-	![screenshot](images/boat-boat.png)
-
-	If you don't have the boat.png image, you can draw your own boat instead!
 
 + You are going to control the boat with your mouse. Add this code to your boat:
 

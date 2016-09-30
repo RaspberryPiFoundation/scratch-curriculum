@@ -20,17 +20,11 @@ Let's start by creating a player that can move around your world.
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Open the 'Create Your Own World' Scratch project online at <a href="http://jumpto.cc/world-go" target="_blank">jumpto.cc/world-go</a> or download from <a href="http://jumpto.cc/world-get" target="_blank">jumpto.cc/world-get</a> and then open if you are using the offline editor.
 
-+ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
+	![screenshot](images/world-starter.png)
 
-	![screenshot](images/world-resources.png)
-
-+ Add the image 'room1.png' as a new stage backdrop, and the image 'player.png' as a new sprite. If you don't have these images you can draw them yourself! Here's how your project should look:
-
-	![screenshot](images/world-player.png)
-
-+ Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the player sprite:
++ Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the `player` sprite:
 
 	```blocks
 		when flag clicked
@@ -103,11 +97,11 @@ Let's allow the player to walk through doors into other rooms!
 
 ## Activity Checklist { .check }
 
-+ Add 2 more backdrops to your stage ('room2.png' and 'room3.png'), so that you have 3 backdrops in total. Make sure that they are in the right order - this will help you later.
++ Your project contains backdrops for additional rooms:
 
 	![screenshot](images/world-backdrops.png)
 
-+ You'll need a new variable called `room` {.blockdata}, to keep track of what room the player is in.
++ You'll need a new 'for all sprites' variable called `room` {.blockdata}, to keep track of what room the player is in. 
 
 	![screenshot](images/world-room.png)
 
@@ -144,7 +138,7 @@ Let's add signs to your world, to guide your player on their journey.
 
 ## Activity Checklist { .check }
 
-+ Upload the image 'sign.svg' as a new sprite, and rename the sprite 'welcome sign'.
++ Your project includes a welcome sign sprite:
 
 	![screenshot](images/world-sign.png)
 
@@ -184,7 +178,10 @@ Let's add signs to your world, to guide your player on their journey.
 ## Save your project { .save }
 
 ## Challenge: Treasure! {.challenge}
-Can you add a new treasure chest sprite, using the image 'chest.svg'. This treasure chest should be placed in room 3, and should say 'Well done!' when the player touches it.
+Right-click on the treasure chest sprite and choose 'show'. 
+
+Can you make the treasure chest sprite appear only in room 3 and say 'Well done!' when the player touches it.
+
 
 ![screenshot](images/world-treasure.png)
 
@@ -196,11 +193,7 @@ Let's add other people to your world that your player can interact with.
 
 ## Activity Checklist { .check }
 
-+ Add in a new person sprite, using the image 'person.png'.
-
-	![screenshot](images/world-person.png)
-
-+ Add in this code, so that the person talks to your player. This code is very similar to the code you added to your sign:
++ Add this code to the person sprite, so that the person talks to your player. This code is very similar to the code you added to your sign:
 
 	```blocks
 		when flag clicked
@@ -262,7 +255,7 @@ Can you create another enemy in room 3, that patrols up and down through the gap
 
 + Add a new variable valled `coins` {.blockdata} to your project.
 
-+ Add a new 'coin' sprite to your project.
++ Right-click on the 'coin' sprite and choose 'show'. 
 
 ![screenshot](images/world-coins.png)
 
@@ -291,7 +284,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 
 ## Activity Checklist { .check }
 
-+ Create a new key sprite from your 'key.svg' image, and edit the sprite's costume so that it's blue. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
++ Edit the key sprite's costume so that it's blue. Right-click the key sprite and choose 'show' so that it appears on the stage. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
 
  	![screenshot](images/world-key.png)
 
@@ -315,7 +308,7 @@ Can you add more coins to your game? They can be in different rooms, and some co
 		delete (all v) of [inventory v]
 	```
 
-+ Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the two walls.
++ Place your blue door sprite across the gap in the two walls.
 
 	![screenshot](images/world-door.png)
 

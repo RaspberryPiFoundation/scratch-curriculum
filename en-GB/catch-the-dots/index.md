@@ -20,13 +20,12 @@ Let's start by creating a controller, that will be used to collect dots.
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Open the 'Catch the Dots' Scratch project online at <a href="http://jumpto.cc/dots-go" target="_blank">jumpto.cc/dots-go</a> or download from <a href="http://jumpto.cc/dots-get" target="_blank">jumpto.cc/dots-get</a> and then open if you are using the offline editor.
 
-+ If your club leader has given you a 'Resources' folder, click 'Upload sprite from file' and add the 'controller.svg' image. You should move this sprite to the center of the stage.
+	You should see a Controller sprite:
 
 	![screenshot](images/dots-controller.png)
 	
-	If you don't have this image, you can draw it yourself!
 	
 + Turn your controller to the right when the right arrow key is pressed:
 

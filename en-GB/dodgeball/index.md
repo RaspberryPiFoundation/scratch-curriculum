@@ -20,13 +20,9 @@ Let's start by creating a character that can move left and right, as well as cli
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Open the 'Dodgeball' Scratch project online at <a href="http://jumpto.cc/dodge-go" target="_blank">jumpto.cc/dodge-go</a> or download from <a href="http://jumpto.cc/dodge-get" target="_blank">jumpto.cc/dodge-get</a> and then open if you are using the offline editor.
 
-+ For this project, you should have a 'Project Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
-
-	![screenshot](images/dodge-resources.png)
-
-+ Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the ladders and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
+	The project contains a background with platforms:
 
 	![screenshot](images/dodge-background.png)
 

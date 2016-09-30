@@ -16,23 +16,15 @@ In this project, you will be making your own paint program!
 
 # Step 1: Making a pencil { .activity }
 
-Let's start by making a pencil, that can be used to draw on the stage.
+Let's start by making a pencil that can be used to draw on the stage.
 
 ## Activity Checklist { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Open the 'Paintbox' Scratch project online at <a href="http://jumpto.cc/paint-go" target="_blank">jumpto.cc/paint-go</a> or download from <a href="http://jumpto.cc/paint-get" target="_blank">jumpto.cc/paint-get</a> and then open if you are using the offline editor.
 
-+ Add the pencil sprite to your project.
+	You will see pencil and eraser sprites:
 
-	![screenshot](images/paint-pencil.png) 
-
-+ Click 'Costumes', and delete the 'pencil-b' costume.
-
-	![screenshot](images/paint-pencil-delete.png) 
-
-+ Rename your costume 'pencil-blue', and use the 'Color a shape' tool to make the pencil blue. 
-
-	![screenshot](images/paint-pencil-blue.png) 
+	![screenshot](images/paint-starter.png)	
 
 + As you'll be using the mouse to draw, you'll want the pencil to follow the mouse `forever` {.blockcontrol}. Add this code to your pencil sprite:
 
@@ -43,21 +35,7 @@ Let's start by making a pencil, that can be used to draw on the stage.
 		end
 	```
 
-+ Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?
-
-+ Have you noticed that it's the centre of the pencil, and not the tip, that follows the mouse pointer?
-
-	![screenshot](images/paint-center.png)
-
-	To fix this, click on the 'pencil-blue' costume of your pencil sprite, and click 'Set costume center'.
-
-	![screenshot](images/paint-center-icon.png)
-
-+ You should notice that a crosshair appears on the costume. You can now click **just below** the tip of the pencil, to set this point as the costume centre.
-
-	![screenshot](images/paint-pencil-center.png)
-
-+ Click the 'Scripts' tab, and then test out your pencil again - does it work better than it did before?
++ Test out this code by clicking the flag and then moving the mouse around the stage. 
 
 + Next, let's make your pencil draw `if` {.blockcontrol} the mouse has been clicked. Add this code to your pencil sprite:
 
@@ -67,8 +45,6 @@ Let's start by making a pencil, that can be used to draw on the stage.
 
 	![screenshot](images/paint-draw.png)
 	
-	If not, check that you placed the crosshair **just below** the tip of the pencil, *not* on the tip of the pencil. 
-
 
 ## Save your project { .save }
 
@@ -167,13 +143,12 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to your p
 
 	Notice that you don't need to send a message to clear the stage, as any sprite can do it!
 
-+ You can also create an eraser. If your club leader has given you a 'Resources' folder, click 'Upload costume from file' and add the 'eraser.svg' image.
++ You have probably noticed that your pencil sprite includes an eraser costume:
 
 	![screenshot](images/paint-eraser-costume.png)
 	
-	If you don't have the eraser.svg image, just create a new white pen instead!
 
-+ You should also add the eraser image as a new selector sprite. This is how your stage shoud look:
++ Your project also includes an eraser selector sprite, right click on it and choose 'show'. This is how your stage should look:
 
 	![screenshot](images/paint-eraser-stage.png)
 

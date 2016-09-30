@@ -21,7 +21,7 @@ In 1842, Ada Lovelace wrote about using a machine called the 'Analytical Engine'
 
 ## Activity Checklist { .check }
 
-+ Open the 'Poetry Generator' Scratch project. Your club leader will give you a copy of this project, or you can open it online at <a href="http://jumpto.cc/poetry-resources" target="_blank">jumpto.cc/poetry-resources</a>.
++ Open the 'Poetry Generator' Scratch project online at <a href="http://jumpto.cc/poetry-go" target="_blank">jumpto.cc/poetry-go</a> or download from <a href="http://jumpto.cc/poetry-get" target="_blank">jumpto.cc/poetry-get</a> and then open if you are using the offline editor.
 
 + Click on your 'Ada' sprite, and click the `Events` {.blockevents} tab in the 'Scripts' coding section. Drag the `when this sprite clicked` {.blockevents} block onto the coding area on the right.
 
