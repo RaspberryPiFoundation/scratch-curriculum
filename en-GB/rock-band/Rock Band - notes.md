@@ -21,7 +21,7 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 
 #Challenges
 + "Improving your drum" - Changing sprite sounds and adding events;
-+ "Changing your singer's costume" - adding and controlling sprite costumes;
++ "Changing your drum's costume" - adding and controlling sprite costumes;
 + "Make your own band" - using the skills learnt to create new instruments.
 
 #Frequently Asked Questions

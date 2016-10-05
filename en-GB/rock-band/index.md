@@ -134,38 +134,38 @@ Let's add a singer to your band!
 
 # Step 5: Costumes { .activity .new-page }
 
-Let's make your drum look like it's being hit!
+Let's make your singer look like she's singing!
 
 ## Activity Checklist { .check }
 
-+ You can also change how the drum looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the drum image.
++ You can also change how your singer sprite looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the singer image.
 
-	![screenshot](images/band-drum-costume.png)
+	![screenshot](images/band-singer-costume.png)
 
 + Right-click on the costume and click 'duplicate' to create a copy of the costume.
 
-	![screenshot](images/band-drum-duplicate.png)
+	![screenshot](images/band-singer-duplicate.png)
 
-+ Click on the new costume (called 'drum2') and then select the line tool and draw lines to make it look like the drum is making a sound.
++ Click on the new costume (called 'Singer2') and then select the line tool and draw lines to make it look like your singer is making a sound.
 
-	![screenshot](images/band-drum-hit.png)
+	![screenshot](images/band-singer-click.png)
 
-+ The names of the costumes aren't very helpful at the moment. Rename the 2 costumes to 'not hit' and 'hit' by typing the new name of each costume into the text box.
++ The names of the costumes aren't very helpful at the moment. Rename the 2 costumes to 'not singing' and 'singing' by typing the new name of each costume into the text box.
 
-	![screenshot](images/band-drum-name.png)
+	![screenshot](images/band-singer-name.png)
 
-+ Now that you have 2 different costumes for your drum, you can choose which costume is displayed! Add these 2 blocks to your drum:
++ Now that you have 2 different costumes for your singer, you can choose which costume is displayed! Add these 2 blocks to your singer:
 
 	![screenshot](images/band-looks.png)
 
 	The code block for changing the costume is in the `Looks` {.blocklooks} section.
 
-+ Test your drum. When clicked, your drum should now look like it's been hit!
++ Test your singer. When clicked, your singer should now look like she is singing!
 
-##Challenge: Changing your singer's costume { .challenge }
-Can you make your singer look like she is singing when clicked? If you need help, you can use the instructions for creating a drum above.
+##Challenge: Changing your drum's costume { .challenge }
+Can you make your drum look like it's being hit? If you need help, you can use the instructions for changing your singer's costume above.
 
-![screenshot](images/band-singer-final.png)
+![screenshot](images/band-drum-final.png)
 
 Remember to test that your new code works!
 
