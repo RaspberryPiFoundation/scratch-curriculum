@@ -140,7 +140,7 @@ Let's add a singer to your band!
 
 	![screenshot](band-import-sound.png)
 
-+ If you click 'Vocals' on the left hand side, you will then be able to choose a suitable sound to add to your sprite.
++ If you click 'Vocals' on the left-hand side, you will then be able to choose a suitable sound to add to your sprite.
 
 	![screenshot](band-choose-sound.png)
 
