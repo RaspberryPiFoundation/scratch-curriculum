@@ -46,7 +46,7 @@ Let's make a spaceship that flies towards the Earth!
 
 	![screenshot](space-animate-stage.png)
 	
-	The screen position `x:(0) y:(0)` {.blockmotion} is the center of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
+	The screen position `x:(0) y:(0)` {.blockmotion} is the centre of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
 	
 	![screenshot](space-xy.png)
 	
