@@ -49,16 +49,15 @@ Let's give the spaceship the ability to fire lightning bolts!
 
 ## Activity Checklist { .check }
 
-+ Add the 'Lightning' sprite from the Scratch library. Click the sprite's costume and turn the lightning upside-down.
-
-	![screenshot](images/invaders-lightning.png)
-
-+ When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.
++ Add the 'Lightning' sprite from the Scratch library.  When the game is started, the lightning should be hidden until the spaceship fires its laser cannons. The sprite needs to be much smaller and upside down. Add the following code to the Lightning' sprite.
 
 	```blocks
-		when flag clicked
+		when green flag clicked
 		hide
+		set size to (25) %
+		point in direction (-90 v)	
 	```
+
 
 + Add the following code **to the Spaceship** to create a new lightning bolt whenever the space key is pressed.
 
