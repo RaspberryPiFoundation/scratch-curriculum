@@ -17,10 +17,6 @@ This material is openly available for everyone to use and contribute to. Right n
 
 Instructions on how to contribute to our curriculum can be found [here](https://github.com/CodeClub/curriculum_documentation/blob/master/contributing.md).
 
-## Discuss
-Ask questions and share your experiences with other Code Clube World local teams in our community:
-https://plus.google.com/communities/107429287353708601653
-
 ## Generating the language packs
 
 Install dependencies
