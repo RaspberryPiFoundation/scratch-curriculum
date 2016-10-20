@@ -15,8 +15,8 @@ The 'Balloons' project has been moved to the [Additional Scratch Projects](http:
 You are going to make a ghost-catching game!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
-  <img src="ghost-final.png">
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
+	<img src="ghost-final.png">
 </div>
 
 # Step 1: Animating a ghost { .activity }
@@ -34,10 +34,10 @@ You are going to make a ghost-catching game!
 	```blocks
 		when flag clicked
 		forever
-			hide
-			wait (1) secs
-			show
-			wait (1) secs
+		hide
+		wait (1) secs
+		show
+		wait (1) secs
 		end
 	```
 
@@ -104,22 +104,22 @@ Let's make things more interesting by keeping score.
 + To keep the player's score, you need a place to put it. A __variable__ is a place to store data that can change, like a score.
 
 	To create a new variable, click on the 'Scripts' tab, select `Data` {.blockdata} and then click 'Make a Variable'.
-
+	
 	![screenshot](ghost-score.png)
-
+	
 	Type 'score' as the name of the variable, make sure that it is available for all sprites, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockdata} variable.
-
+	
 	![screenshot](ghost-variable.png)
-
+	
 	You'll also see the score in the top-left of the stage.
-
+	
 	![screenshot](ghost-stage-score.png)
 
 + When a new game is started (by clicking the flag), you should set the player's score to 0:
 
 	```blocks
-	when flag clicked
-	set [score v] to [0]
+		when flag clicked
+		set [score v] to [0]
 	```
 
 + Whenever a ghost is caught, you need to add 1 to the player's score:
@@ -171,7 +171,7 @@ You can make your game more interesting, by only giving your player 10 seconds t
 	+ Give the player less time;
 	+ Make the ghosts appear less often;
 	+ Make the ghosts smaller.
-
+	
 	Test your game a few times until you're happy that it's the right level of difficulty.
 
 ## Save your project { .save }

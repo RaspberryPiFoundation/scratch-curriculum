@@ -12,17 +12,17 @@ materials: ["Club Leader Resources/*"]
 In this project you'll learn how to code your own musical instruments!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
-  <img src="band-final.png">
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
+	<img src="band-final.png">
 </div>
 
 # Step 1: Sprites { .activity }
 
-Before you can start animating, you'll need to add in a 'thing' to animate. In Scratch, these 'things' are called __sprites__. 
+Before you can start coding, you'll need to add in a 'thing' to code. In Scratch, these 'things' are called __sprites__. 
 
 ## Activity Checklist { .check }
 
-+ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. It looks like this:
++ First, open up the Scratch editor. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>. It looks like this:
 
 	![screenshot](band-scratch.png)
 
@@ -49,6 +49,8 @@ Give your program a name, by typing one into the text box in the top-left corner
 You can then click 'File' and then 'Save now' to save your project.
 
 ![screenshot](band-save.png)
+
+(If you don't have a Scratch account, you can save a copy of your project by clicking 'Download to your computer' instead).
 
 # Step 2: The Stage { .activity }
 
@@ -81,30 +83,6 @@ Let's code your drum to make a sound when it's hit.
 	![screenshot](band-code.png)
 
 + Click the drum to try out your new instrument!
-
-+ You can also change how the drum looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the drum image.
-
-	![screenshot](band-drum-costume.png)
-
-+ Right-click on the costume and click 'duplicate' to create a copy of the costume.
-
-	![screenshot](band-drum-duplicate.png)
-
-+ Click on the new costume (called 'drum2') and then select the line tool and draw lines to make it look like the drum is making a sound.
-
-	![screenshot](band-drum-hit.png)
-
-+ The names of the costumes aren't very helpful at the moment. Rename the 2 costumes to 'not hit' and 'hit' by typing the new name of each costume into the text box.
-
-	![screenshot](band-drum-name.png)
-
-+ Now that you have 2 different costumes for your drum, you can choose which costume is displayed! Add these 2 blocks to your drum:
-
-	![screenshot](band-looks.png)
-
-	The code block for changing the costume is in the `Looks` {.blocklooks} section.
-
-+ Test your drum. When clicked, your drum should now look like it's been hit!
 
 ## Save your project { .save }
 
@@ -155,10 +133,40 @@ Let's add a singer to your band!
 
 ## Save your project { .save }
 
-##Challenge: Changing your singer's costume { .challenge }
-Can you make your singer look like she is singing when clicked? If you need help, you can use the instructions for creating a drum above.
+# Step 5: Costumes { .activity .new-page }
 
-![screenshot](band-singer-final.png)
+Let's make your singer look like she's singing!
+
+## Activity Checklist { .check }
+
++ You can also change how your singer sprite looks when it's clicked, by creating a new costume. Click the 'Costumes' tab, and you'll see the singer image.
+
+	![screenshot](band-singer-costume.png)
+
++ Right-click on the costume and click 'duplicate' to create a copy of the costume.
+
+	![screenshot](band-singer-duplicate.png)
+
++ Click on the new costume (called 'Singer2') and then select the line tool and draw lines to make it look like your singer is making a sound.
+
+	![screenshot](band-singer-click.png)
+
++ The names of the costumes aren't very helpful at the moment. Rename the 2 costumes to 'not singing' and 'singing' by typing the new name of each costume into the text box.
+
+	![screenshot](band-singer-name.png)
+
++ Now that you have 2 different costumes for your singer, you can choose which costume is displayed! Add these 2 blocks to your singer:
+
+	![screenshot](band-looks.png)
+
+	The code block for changing the costume is in the `Looks` {.blocklooks} section.
+
++ Test your singer. When clicked, your singer should now look like she is singing!
+
+##Challenge: Changing your drum's costume { .challenge }
+Can you make your drum look like it's being hit? If you need help, you can use the instructions for changing your singer's costume above.
+
+![screenshot](band-drum-final.png)
 
 Remember to test that your new code works!
 
@@ -182,3 +190,4 @@ If you have a microphone you can record your own sounds, or even use a webcam to
 ![screenshot](band-io.png)
 
 ## Save your project { .save }
+

@@ -1,6 +1,6 @@
 ---
 title: Balloons
-level: Scratch 1
+level: Scratch +
 language: en-GB
 stylesheet: scratch
 embeds: "*.png"

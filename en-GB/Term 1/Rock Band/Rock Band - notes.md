@@ -29,8 +29,8 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 #Frequently Asked Questions
 + When creating their own sprites, children may find that their sprite 'jumps' when it's clicked, as it changes costume. This is because the two costumes are't centered in the same place.
 
-	To fix this, click 'Set costume center' on _both_ sprites, and make sure they are centered at the same point in both costumes.
+  To fix this, click 'Set costume center' on _both_ sprites, and make sure they are centered at the same point in both costumes.
 
-	![screenshot](band-center.png)
+  ![screenshot](band-center.png)
 
 + On Linux, right-clicking to delete a sprite may not work. If this is the case, holding shift and left-clicking will bring up the menu to delete a sprite.

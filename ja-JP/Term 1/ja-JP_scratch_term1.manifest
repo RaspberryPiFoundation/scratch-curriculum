@@ -1,0 +1,17 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "ja-JP",
+    "number": 1,
+    "title": "Scratch 1",
+    "category": "cat-scratch",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Rock Band/Rock Band.md",
+            "note":     "Rock Band/Rock Band - notes.md"
+        }
+        
+    ]
+
+}

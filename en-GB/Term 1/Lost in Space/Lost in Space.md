@@ -12,8 +12,8 @@ materials: ["Club Leader Resources/*"]
 You are going to learn how to program your own animation!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe>
-  <img src="space-final.png">
+	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe>
+	<img src="space-final.png">
 </div>
 
 # Step 1: Animating a spaceship { .activity .new-page}
@@ -25,7 +25,7 @@ Let's make a spaceship that flies towards the Earth!
 + Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Add 'Spaceship' and 'Earth' sprites to your stage. You should also add the 'Stars' backdrop to your stage. This is how your stage should look:
-
+  
 	![screenshot](space-sprites.png)
 
 + Click on your new spaceship sprite, and click the 'Costumes' tab.
@@ -39,19 +39,19 @@ Let's make a spaceship that flies towards the Earth!
 + Add this code to your spaceship sprite:
 
 	![screenshot](space-animate.png)
-
+	
 	Change the numbers in the code blocks, so that the code is exactly the same as in the image above.
 
 + If you click on the code blocks to run the code, you should see the spaceship speak, turn and move towards the centre of the stage.
 
 	![screenshot](space-animate-stage.png)
-
-	The screen position `x:(0) y:(0)` {.blockmotion} is the center of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
-
+	
+	The screen position `x:(0) y:(0)` {.blockmotion} is the centre of the stage. A position like `x:(-150) y:(-150)` {.blockmotion} is towards the bottom-left of the stage, and a position like `x:(150) y:(150)` {.blockmotion} is near the top-right.
+	
 	![screenshot](space-xy.png)
-
+	
 	If you need to know the coordinates of a position on the stage, move the mouse to the position you want and make a note of the coordinates, which are displayed below the stage.
-
+	
 	![screenshot](space-coordinates.png)
 
 + Try out your animation, by clicking on the green flag just above the stage.
@@ -84,7 +84,7 @@ Another way of animating the spaceship is to tell it to move a small amount, lot
 + Once you've removed your code, add this code instead:
 
 	![screenshot](space-loop.png)
-
+	
 	The `repeat` {.blockcontrol} block is used to repeat something lots of times, and is also known as a __loop__.
 
 + If you click the flag to try out this new code, you'll see that it does pretty much the same thing as before.
@@ -104,7 +104,7 @@ Another way of animating the spaceship is to tell it to move a small amount, lot
 + Test out your animation. What happens if you click the flag a second time? Does your spaceship start off the right size? Can you use this block to fix your animation:
 
 	```scratch
-	set size to (100) %
+		set size to (100) %
 	```
 
 ## Save your project { .save }
@@ -128,7 +128,7 @@ Let's add monkey to your animation, who's lost in space!
 	```blocks
 		when FLAG clicked
 		forever
-		    turn right (1) degrees
+		turn right (1) degrees
 		end
 	```
 
@@ -151,9 +151,9 @@ Let's add some floating space-rock to your animation.
 + Add this code to your rock, to make it bounce around the stage:
 
 	```scratch
-	when flag clicked
-	point towards [Earth v]
-	forever
+		when flag clicked
+		point towards [Earth v]
+		forever
 		move (2) steps
 		if on edge, bounce
 	```

@@ -8,21 +8,31 @@
     "projects": [
         {
             "number":   1,
-            "filename": "Lost in Space/Lost in Space.md",
-            "note":     "Lost in Space/Lost in Space - notes.md"
-        },
-        {
-            "number":   2,
             "filename": "Rock Band/Rock Band.md",
             "note":     "Rock Band/Rock Band - notes.md"
         },
         {
+            "number":   2,
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - notes.md"
+        },
+        {
             "number":   3,
-            "filename": "Balloons/Balloons.md",
-            "note":     "Balloons/Balloons - notes.md"
+            "filename": "Gespensterjagd/Gespensterjagd.md",
+            "note":     "Gespensterjagd/Gespensterjagd - Notizen.md"
         },
         {
             "number":   4,
+            "filename": "SprechBot/SprechBot.md",
+            "note":     "SprechBot/SprechBot - notes.md"
+        },
+        {
+            "number":   5,
+            "filename": "Farbkasten/Farbkasten.md",
+            "note":     "Farbkasten/Farbkasten - Notizen.md"
+        },        
+        {
+            "number":   5,
             "filename": "Boat Race/Boat Race.md",
             "note":     "Boat Race/Boat Race - notes.md"
         }

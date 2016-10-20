@@ -56,6 +56,10 @@ You are going to learn how to make a game, in which you'll use the mouse to navi
 
 	![screenshot](boat-mouse.png)
 
+	__Note: There is currently a bug in Scratch which means your boat may not move towards the mouse pointer. If this happens, click the arrow on the `point towards` {.blockmotion} block and re-select 'mouse-pointer'.__
+
+	![screenshot](images/boat-bug.png) 
+
 + What happens if the boat reaches the mouse pointer?
 
 	To stop this happening, you'll need to add an `if` {.blockcontrol} block to your code, so that the boat only moves if it is more than 5 pixels away from the mouse.
@@ -125,7 +129,7 @@ Let's add a timer to your game, so that the player has to get to the desert isla
 
 ## Activity Checklist { .check }
 
-+ Add a new variable called `time` {.blockdata} to your stage. You can also change the display of your new variable. If you need help, have a look at the 'Balloons' project.
++ Add a new variable called `time` {.blockdata} to your stage. You can also change the display of your new variable. If you need help, have a look at the 'Ghostbusters' project.
 
 	![screenshot](boat-variable.png)
 
