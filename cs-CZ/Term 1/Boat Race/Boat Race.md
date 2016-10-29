@@ -58,7 +58,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 + Co se stane, když loďka doplave ke kurzoru myši?
 
-	Abys tomuto chování zabránil(a) musíš přidat blok `když` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
+	Abys tomuto chování zabránil(a), musíš přidat blok `když` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
 
     ```blocks
 		po kliknutí na ⚑
