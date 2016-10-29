@@ -144,7 +144,7 @@ Přidej zpěvačku do tvé skupiny!
 
 	![screenshot](band-choose-sound.png)
 
-+ Nyní po přidání zvuku přidej následující kód ke zpevačce:
++ Nyní po přidání zvuku přidej následující kód ke zpěvačce:
 
 	```blocks
 		po kliknutí na mě
@@ -155,7 +155,7 @@ Přidej zpěvačku do tvé skupiny!
 
 ## Ulož projekt { .save }
 
-##Vývza: Změň zpěvačce kostým { .challenge }
+##Výzva: Změň zpěvačce kostým { .challenge }
 Můžeš upravit zpěvačku tak, aby vypadala, že zpívá po kliknutí? Pokud nevíš jak, udělej to stejně jako u bubnu.
 
 ![screenshot](band-singer-final.png)
@@ -165,7 +165,7 @@ Nezapomeň vyzkoušet jestli tvůj nový kód funguje!
 ## Ulož projekt { .save }
 
 ##Výzva: Vytvoř si svoji hudební skupinu { .challenge }
-Pomocí toho co jsi se již naučil(a) si vytovř svoji skupinu! Můžeš vytvořit jakýkoliv nástroj - podívej se do galérie na dostupné postavy a zvuky.
+Pomocí toho co jsi se již naučil(a) si vytvoř svoji skupinu! Můžeš vytvořit jakýkoliv nástroj - podívej se do galérie na dostupné postavy a zvuky.
 
 ![screenshot](band-ideas.png)
 
@@ -177,7 +177,7 @@ Tak jak používáš existující postavy, můžes si nakreslit vlastní.
 
 ![screenshot](band-draw.png)
 
-Pokud máš mirkofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spouštění nástrojů!
+Pokud máš mikrofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spouštění nástrojů!
 
 ![screenshot](band-io.png)
 
