@@ -76,7 +76,7 @@ Naprogramujeme buben aby vydával zvuk, když na něj klikneš.
 
 + Na záložce 'Scénáře' najdi bloky kódu, které jsou rozlišené podle barviček. 
 
-	Klikni na postavu bubnu a potom přetáhni tyto dva bloky do oblasti pro kód vpravo, tak aby byly spojené dorhromady (jako Lego kostky):
+	Klikni na postavu bubnu a potom přetáhni tyto dva bloky do oblasti pro kód vpravo, tak aby byly spojené dohromady (jako Lego kostky):
 
 	![screenshot](band-code.png)
 
