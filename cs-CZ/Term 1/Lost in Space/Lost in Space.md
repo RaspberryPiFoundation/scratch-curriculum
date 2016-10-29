@@ -32,7 +32,7 @@ Pojďme udělat raketu, která letí k zemi!
 
 	![screenshot](space-costume.png)
 
-+ Použij nástroj 'šipka' abys vybral obrázek. Potom klikni na kruhovou rukojeť a posouvej ji tak aby jsi otočil(a) raketu na stranu.
++ Použij nástroj 'šipka' abys vybral obrázek. Potom klikni na kruhovou rukojeť a posouvej ji tak, abys otočil(a) raketu na stranu.
 
 	![screenshot](space-rotate.png)
 
