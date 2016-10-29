@@ -136,7 +136,7 @@ Přidej zpěvačku do tvé skupiny!
 
 	![screenshot](band-singer-mic.png)
 
-+ Před tím než naučíš zpěvačku zpívat, potřebuješ přidat zvuk k postavě. Ujisti se že máš vybranou zpěvačku, pak klikni na záložku 'Zvuky' a klikni na 'Vybrat zvuk z knihovny':
++ Před tím, než naučíš zpěvačku zpívat, potřebuješ přidat zvuk k postavě. Ujisti se že máš vybranou zpěvačku, pak klikni na záložku 'Zvuky' a klikni na 'Vybrat zvuk z knihovny':
 
 	![screenshot](band-import-sound.png)
 
