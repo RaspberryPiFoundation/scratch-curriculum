@@ -82,7 +82,7 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 
 ## Seznam úkolů { .check }
 
-+ Budeš potřebovat dva "kystýmy" pro tvoji loďku, jeden normální, a jeden pro loďku po nárazu. Zduplikuj kostým tvojí loďky a nazvi je 'normal' (normální) a 'hit' (náraz).
++ Budeš potřebovat dva "kostýmy" pro tvoji loďku, jeden normální, a jeden pro loďku po nárazu. Zduplikuj kostým tvojí loďky a nazvi je 'normal' (normální) a 'hit' (náraz).
 
 + Klikni na kostým 'hit' a vyber nástroj 'Select' abys loďku rozdělil(a) na kousky a ty různě natoč. Upravt loďku tak, aby vypadala jako po nárazu.
 
