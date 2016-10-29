@@ -101,7 +101,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 + Když je stisknuto zelené tlačítko, musíš vyslat - `rozešli všem` {.blockevents} zprávu, na kterou zareaguje tužka, a změní kostým a barvu tuhy.
 
-	Abys toho dosáhl(a) přidej tento kód na zelená tlačítko:
+	Abys toho dosáhl(a) přidej tento kód na zelenou tužku:
 
 	```blocks
 		po kliknutí na mě
