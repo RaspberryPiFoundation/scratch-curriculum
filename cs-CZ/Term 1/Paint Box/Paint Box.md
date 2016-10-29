@@ -41,13 +41,13 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 	```blocks
 		po kliknutí na ⚑
 		opakuj dokola
-		  go to [ukazatel myši v]
+		  jdi na [ukazatel myši v]
 		end
 	```
 
 + Zkus kód kliknutím na zelenou vlakku a pohybováním myši na scéně. Funguje jak jsi čekal?
 
-+ Všiml sis, že myš nesleduje tuha, ale střed tužky?
++ Všiml sis, že myš nesleduje tuhu, ale střed tužky?
 
 	![screenshot](paint-center.png)
 
@@ -66,7 +66,7 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
     ```blocks
 		po kliknutí na ⚑
 		opakuj dokola
-		  go to [ukazatel myši v]
+		  jdi na [ukazatel myši v]
           když (myš stisknuta) tak
             pero dolů
           jinak 
