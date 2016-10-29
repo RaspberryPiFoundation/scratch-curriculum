@@ -37,7 +37,7 @@ V této lekci se naučíš, jak naprogramovat mluvícího robota!
 
 ## Ulož projekt { .save }
 
-# Step 2: Mluvící robot { .activity }
+# Krok 2: Mluvící robot { .activity }
 
 Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 
@@ -102,7 +102,7 @@ Naprogramuj robota tak aby se zeptal na více otázek. Dokážeš uložit odpov�
 
 ## Ulož projekt { .save }
 
-# Step 3: Rozhodování { .activity }
+# Krok 3: Rozhodování { .activity }
 
 Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na základě odpovědi.
 
@@ -168,7 +168,7 @@ Naprogramuj robota tak, aby se ptal více otázek - tak aby odpovědi byly `ano`
 
 ## Ulož projekt { .save }
 
-# Step 4: Změna místa { .activity }
+# Krok 4: Změna místa { .activity }
 
 Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 
