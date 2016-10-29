@@ -26,7 +26,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 	+ Dřevo, kterému se bude loďka vyhýbat;
 	+ Opuštěný ostrov, na kterém má loďka přistát.
 
-	Tady je obrázek jak by měla tvoje hra vypadat:
+	Tady je obrázek, jak by měla tvoje hra vypadat:
 
 	![screenshot](boat-bg.png) 
 
