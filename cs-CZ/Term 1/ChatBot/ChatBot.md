@@ -48,7 +48,7 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 	```blocks
 		po kliknutí na mě
 		ptej se [Ahoj! Jak se jmenuješ?] a čekej
-		say [To je krásné jméno!] for (2) secs
+		říkej [To je krásné jméno!] příštích (2) sekund
 	```
 
 + Klikni na robota, abys ho vyzkoušel(a). Po té co se zeptá na jména, napiš ho do boxíku, který se objeví.
