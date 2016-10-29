@@ -158,7 +158,7 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 
 # Krok 5: Překážky a bonusy { .activity }
 
-Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
+Nyní je hra moc jednoduchá - přidáme pár věcí, aby byla zajímavější.
 
 ## Seznam úkolů { .check }
 
