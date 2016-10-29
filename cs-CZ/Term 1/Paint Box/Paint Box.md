@@ -61,7 +61,7 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 + Klikni na záložku 'Scripts' a otestuj tužku znovu - funguje lépe než předtím?
 
-+ Jako další, nech tužku kreslit `jestliže` {.blockcontrol} - je stisknuto tlačítko myši:
++ Jako další - nech tužku kreslit `jestliže` {.blockcontrol} - je stisknuto tlačítko myši:
 
     ```blocks
 		po kliknutí na ⚑
