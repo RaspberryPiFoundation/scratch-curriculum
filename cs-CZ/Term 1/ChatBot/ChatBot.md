@@ -23,7 +23,7 @@ V této lekci se naučíš, jak naprogramovat mluvícího robota!
 + Předtím než začneš dělat mluvícího robota, musíš se rozhodnout jakou bude mít osobnost.
 	+ Jaké je jeho jméno?
 	+ Kde bydlí?
-	+ Je štastný? vážný? veselý? přátelský? stydí se?
+	+ Je štastný? Vážný? Veselý? Přátelský? Stydí se?
 
 + Vytvoř si nový projekt a smaž kočičku, takže tvůj projekt bude prázdný. Online editor můžeš nalézt zde: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
