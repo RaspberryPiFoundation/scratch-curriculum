@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*","Project Resources/*"]
 ...
 
-# Introduction { .intro }
+# Úvod { .intro }
 
 V této lekci se naučíš vytvořit si vlastní kreslící program!
 
