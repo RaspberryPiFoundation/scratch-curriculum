@@ -89,7 +89,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 + Když klikneš na vlaječku, uvidíš, že raketa se pohybuje stejně jako předtím.
 
-+ Do smyčky múžeš přidat více bloků a dělat zajímavé věci. Přidej blok `změň efekt barva o 25` {.blocklooks}do smyčky (ze sekce 'Looks'), aby se opakovaně menila barva rakety během pohybu:
++ Do smyčky můžeš přidat více bloků a dělat zajímavé věci. Přidej blok `změň efekt barva o 25` {.blocklooks} do smyčky (ze sekce 'Looks'), aby se opakovaně měnila barva rakety během pohybu:
 
 	![screenshot](space-colour.png)
 
@@ -119,7 +119,7 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 	![screenshot](space-monkey.png)
 
-+ Když klikneš na tvůj novou postavu s opicí a klikneš na záložku 'Kostýmy', můžeš uravit jak vypadá. Klikni na nástroj 'Elipsa' a nakresli bílou helmu okolo hlavy opice.
++ Když klikneš na tvůj novou postavu s opicí a klikneš na záložku 'Kostýmy', můžeš upravit jak vypadá. Klikni na nástroj 'Elipsa' a nakresli bílou helmu okolo hlavy opice.
 
 	![screenshot](space-monkey-edit.png)
 
