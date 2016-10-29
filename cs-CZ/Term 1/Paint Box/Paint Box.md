@@ -223,7 +223,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
         end
 	```
 
-+ Vyzkoušej projekt; nyní bys nemělo výt možné kreslit blízko tlačítek.
++ Vyzkoušej projekt; nyní bys nemělo být možné kreslit blízko tlačítek.
 
 	![screenshot](paint-fixed.png)
 
