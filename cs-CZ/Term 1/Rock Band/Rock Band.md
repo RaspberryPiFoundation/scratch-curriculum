@@ -30,7 +30,7 @@ Před tím, než začneš oživovat objekty, musíš nějaké přidat. Ve Scratc
 
 	![screenshot](band-delete.png)
 
-+ Dále klikni na 'Vybrat postavu z knihovny' aby se ti zobrazil seznam postav.
++ Dále klikni na 'Vybrat postavu z knihovny', aby se ti zobrazil seznam postav.
 
 	![screenshot](band-sprite-library.png)
 
