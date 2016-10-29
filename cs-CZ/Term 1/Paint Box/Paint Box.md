@@ -126,7 +126,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 	Abys nastavil(a) barvu tuhy na zelenou klikni na barevný boxík `nastav barvu pera na` {.blockpen}, a pak klikni na zelené tlačítko, aby se použila jeho barva.
 
-+ To samé udělej nyní pro modré tlačítko, prřidáním následujícího kódu:
++ To samé udělej nyní pro modré tlačítko, přidáním následujícího kódu:
 
 	```blocks
 		po kliknutí na mě
