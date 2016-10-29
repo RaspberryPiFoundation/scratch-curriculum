@@ -16,7 +16,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
   <img src="boat-final.png">
 </div>
 
-# Step 1: Naplánování hry { .activity }
+# Krok 1: Naplánování hry { .activity }
 
 ## Seznam úkolů { .check }
 
@@ -30,7 +30,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 	![screenshot](boat-bg.png) 
 
-# Step 2: Ovládání loďky { .activity }
+# Krok 2: Ovládání loďky { .activity }
 
 ## Seznam úkolů { .check }
 
@@ -76,7 +76,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 ## Ulož projekt { .save }
 
-# Step 3: Havárie! { .activity .new-page }
+# Krok 3: Havárie! { .activity .new-page }
 
 Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit.
 
@@ -129,7 +129,7 @@ Nyní můžeš přidat zvukové efekty pro náraz nebo pro konec hry. Stejně ta
 
 ## Ulož projekt { .save }
 
-# Step 4: Závod na čas { .activity }
+# Krok 4: Závod na čas { .activity }
 
 Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrychleji.
 
@@ -156,7 +156,7 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 
 ## Ulož projekt { .save }
 
-# Step 5: Překážky a bonusy { .activity }
+# Krok 5: Překážky a bonusy { .activity }
 
 Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
