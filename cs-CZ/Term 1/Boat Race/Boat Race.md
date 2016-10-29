@@ -226,7 +226,7 @@ Pokud není objekt hnědý, musíš přidat následující kód k loďce:
 ## Výzva: Více lodí! {.challenge .new-page}
 Zkusíš změnit hru na závod mezi dvěma hráči?
 
-+ Zduplikuj loďku, přejmenuj ji na 'Player 2' a změň barvu.
++ Zduplikuj loďku, přejmenuj ji na 'Hráč 2' a změň barvu.
 
 ![screenshot](boat-p2.png)
 
