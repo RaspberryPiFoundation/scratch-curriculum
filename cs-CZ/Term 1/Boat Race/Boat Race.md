@@ -239,8 +239,8 @@ Zkusíš změnit hru na závod mezi dvěma hráči?
 + Smaž kód pro kontrolu loďky myší:
 
 ```blocks
-	když < (vzdálenost od [mouse-pointer v]) > [5] > tak
-		natoč se k [mouse-pointer v]
+	když < (vzdálenost od [ukazatel myši v]) > [5] > tak
+		natoč se k [ukazatel myši v]
 		posuň se o (1) kroků
 	end
 ```
