@@ -174,14 +174,14 @@ Nakombinuj cykly a vytvoř svítící hvězdy.
 
 	![screenshot](space-star.png)
 
-+ Otestuj animaci. Co tento kód dělá? Správně, hvězda se dvacetkrát zvětší a zase změnší. Jsou tam dvě smyčky uvnitř smyčky `opakuj dokola` {.blockcontrol} aby se animace nezastavila.
++ Otestuj animaci. Co tento kód dělá? Správně - hvězda se dvacetkrát zvětší a zase změnší. Jsou tam dvě smyčky uvnitř smyčky `opakuj dokola` {.blockcontrol}, aby se animace nezastavila.
 
 ## Ulož projekt { .save }
 
 ## Výzva: Udělej si vlastní animaci {.challenge}
 Zastav animaci a klikni na 'Soubor' potom na 'Nový', pro vytvoření nového projektu.
 
-Použij co jsi se naučil(a) pro vytvoření vlastní animace. Může to být cokoliv. Tady máš pár příkladů:
+Použij, co jsi se naučil(a) pro vytvoření vlastní animace. Může to být cokoliv. Tady máš pár příkladů:
 
 ![screenshot](space-egs.png)
 
