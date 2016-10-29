@@ -257,7 +257,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	![screenshot](paint-width-test.png)
 
-	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'nastav u posuvníku min a max'. Nastav minimum a maximum na hodnoty 1 a 20.
+	Pokud chceš omezit minimální a maximální hodnotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'nastav u posuvníku min a max'. Nastav minimum a maximum na hodnoty 1 a 20.
 
 	![screenshot](paint-slider-max.png)
 
@@ -266,7 +266,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 ## Ulož projekt { .save }
 
 ## Výzva: Zkratky { .challenge }
-Zkus přidat klávesová zkratky, například:
+Zkus přidat klávesové zkratky, například:
 
 + m = změní barvu na modrou
 + z = změní barvu na zelenou
