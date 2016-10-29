@@ -250,7 +250,7 @@ Zkusíš změnit hru na závod mezi dvěma hráči?
 Toto je kód pro posun loďky dopředu:
 
 ```blocks
-	když < key [up arrow v] pressed? > tak
+	když < klávesa [šipka nahoru v] stisknuta? > tak
 		posuň se o (1) kroků
 	end
 ```
