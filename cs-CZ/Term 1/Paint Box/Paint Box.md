@@ -245,7 +245,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	Šířka tuhy bude nyní opakovaně nastavována podle proměnné 'width'.
 
-+ Hodnotu uloženou v proměnná můžeš změnit kliknutim pravého talčítka myši na proměnné a (na scéně) a vybráním 'posuvník'.
++ Hodnotu uloženou v proměnné můžeš změnit kliknutím pravého talčítka myši na proměnné a (na scéně) a vybráním 'posuvník'.
 
 	![screenshot](paint-slider.png)
 
