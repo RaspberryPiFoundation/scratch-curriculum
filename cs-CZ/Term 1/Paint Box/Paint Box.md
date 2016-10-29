@@ -253,7 +253,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	![screenshot](paint-slider-change.png)
 
-+ Vyzkoušej projekt abys viděl zda jde měnit šířka tuhy.
++ Vyzkoušej projekt, abys viděl, zda jde měnit šířka tuhy.
 
 	![screenshot](paint-width-test.png)
 
