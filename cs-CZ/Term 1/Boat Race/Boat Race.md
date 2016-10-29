@@ -166,7 +166,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí, aby byla zajímavější.
 
 	![screenshot](boat-boost.png)
 
-+ Nyní je potřeba přidat do cyklu `opakuj dokola` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
++ Nyní je potřeba přidat do cyklu `opakuj dokola` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zrychlovač.
 
 	```blocks
 		když <dotýká se barvy [#FFFFFF]?> tak
@@ -180,7 +180,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí, aby byla zajímavější.
 
 	Ujisti se, že má stejnou barvu jako dřevěné bariéry.
 
-+ Nastavt střed brány.
++ Nastav střed brány.
 
 	![screenshot](boat-center.png)
 
