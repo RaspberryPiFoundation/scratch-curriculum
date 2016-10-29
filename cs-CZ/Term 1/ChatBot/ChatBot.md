@@ -108,7 +108,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 ## Seznam úkolů { .check }
 
-+ Nech se robota zeptat na otázky na které jde odpovědět `ano` nebo `ne`. Tady je příklad:
++ Nech robota se zeptat na otázky, na které jde odpovědět `ano` nebo `ne`. Tady je příklad:
 
 	```blocks
 		po kliknutí na mě
