@@ -51,7 +51,7 @@ Chytit tohoto ducha je velmi lehké, protože se nepohybuje!
 
 ## Seznam úkolů { .check }
 
-+ Místo zústáváni ve stejné pozici, můžeš nechat Scratch vybírat náhodnou pozici koordinátů x a y. Přidej blok `go to` {.blockmotion} k duchovi tak, aby to vypadalo následovně:
++ Místo zústáváni ve stejné pozici, můžeš nechat Scratch vybírat náhodnou pozici koordinátů x a y. Přidej blok `skoč na pozici` {.blockmotion} k duchovi tak, aby to vypadalo následovně:
 
 	```blocks
 		po kliknutí na ⚑
