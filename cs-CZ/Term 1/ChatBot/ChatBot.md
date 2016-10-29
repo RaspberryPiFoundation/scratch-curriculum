@@ -75,7 +75,7 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 
 + Pro případ, že bys chtěl zadané jméno použít dále v kódu, musíš ho uložit do proměnné. Vytoř proměnnou nazvanou `name` {.blockdata}. Pokud jsi zapomněl(a) jak se to dělá, podívej se do projektu 'Lovci duchů'.
 
-+ Informace, kterou jsi zadal je uložená do speciální proměnné `answer` {.blocksensing}. Jdi do skupiny Sensing klikni na block answer aby se vedle něj objevilo zatržítko. Hodnota uložená v `answer` {.blocksensing} se objeví v levém horním rohu scény.
++ Informace, kterou jsi zadal je uložená do speciální proměnné `odpověď` {.blocksensing}. Jdi do skupiny Vnímání; klikni na blok `odpověď` {.blocksensing}, aby se vedle něj objevilo zatržítko. Hodnota uložená v `odpověď` {.blocksensing} se objeví v levém horním rohu scény.
 
 + Jakmile vytvoříte novou proměnnou, upravte kód robota takto:
 
