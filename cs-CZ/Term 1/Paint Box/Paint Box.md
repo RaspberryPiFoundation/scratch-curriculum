@@ -64,15 +64,15 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 + Jako další - nech tužku kreslit `když` {.blockcontrol} - je stisknuto tlačítko myši:
 
     ```blocks
-		po kliknutí na ⚑
-		opakuj dokola
-		  jdi na [ukazatel myši v]
-          když (myš stisknuta) tak
-            pero dolů
-          jinak 
-            pero nahoru
+          po kliknutí na ⚑
+          opakuj dokola
+            jdi na [ukazatel myši v]
+            když (myš stisknuta) tak
+              pero dolů
+            jinak 
+              pero nahoru
+            end
           end
-		end
 	```
 
 + Vyzkoušej program znovu. Tentokrát pohybuj tužkou po scéně a drž stisknuté tlačítko myši. Můžeš takto kreslit tužkou?
