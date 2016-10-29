@@ -186,7 +186,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	![screenshot](paint-eraser-stage.png)
 
-+ Nyní přidej kód k tlačitku gumy, abys řekl(a) tužce, že se má změnit na gumu.
++ Nyní přidej kód k tlačítku gumy, abys řekl(a) tužce, že se má změnit na gumu.
 
 	```blocks
 		po kliknutí na mě
