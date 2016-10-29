@@ -120,7 +120,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 	nastav [score v] na [0]
 	```
 
-+ Jakmile chytneš ducha je potřeba svednout skóre o jeden bod:
++ Jakmile chytneš ducha je potřeba zvednout skóre o jeden bod:
 
 	```blocks
 		po kliknutí na mě
@@ -135,7 +135,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 
 # Step 5: Přidání časovače { .activity }
 
-Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin na to, aby chytl tolik duchů, kolik zvládne.
+Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin na to, aby chytil tolik duchů, kolik zvládne.
 
 ## Seznam úkolů { .check }
 
