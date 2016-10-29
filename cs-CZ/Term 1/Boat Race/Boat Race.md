@@ -184,7 +184,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí, aby byla zajímavější.
 
 	![screenshot](boat-center.png)
 
-+ Přidej kód k bráně tak, aby so otáčela pomalu stále dokola v bloku `opakuj dokola` {.blockcontrol}.
++ Přidej kód k bráně tak, aby se otáčela pomalu stále dokola v bloku `opakuj dokola` {.blockcontrol}.
 
 + Vyzkoušej si hru. Nyní by se měla objevit brána, která se otáčí a které se musíš vyhnout.
 
@@ -224,7 +224,7 @@ Pokud není objekt hnědý, musíš přidat následující kód k loďce:
 ## Ulož projekt { .save }
 
 ## Výzva: Více lodí! {.challenge .new-page}
-Zkusíš změnit hru na závod mezi dvouma hráči?
+Zkusíš změnit hru na závod mezi dvěma hráči?
 
 + Zduplikuj loďku, přejmenuj ji na 'Player 2' a změň barvu.
 
