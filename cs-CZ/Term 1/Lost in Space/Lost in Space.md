@@ -87,7 +87,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 	Blok `opakuj` {.blockcontrol} se používá pro opakování a nazývá se __smyčka__.
 
-+ Když klikneš na vlaječku, uvidíš, že raketa se pohybuje stejně jako před tím.
++ Když klikneš na vlaječku, uvidíš, že raketa se pohybuje stejně jako předtím.
 
 + Do smyčky múžeš přidat více bloků a dělat zajímavé věci. Přidej blok `změň efekt barva o 25` {.blocklooks}do smyčky (ze sekce 'Looks'), aby se opakovaně menila barva rakety během pohybu:
 
