@@ -205,7 +205,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	![screenshot](paint-erase-test.png)
 
-+ Možná sis všiml problému, že múžes kreslit kdekoliv včetně blízkosti tlačítek na výběr!
++ Možná sis všiml problému, že můžeš kreslit kdekoliv včetně blízkosti tlačítek na výběr!
 
 	![screenshot](paint-draw-problem.png)
 
