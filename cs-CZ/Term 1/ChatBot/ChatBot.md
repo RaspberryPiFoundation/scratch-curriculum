@@ -125,7 +125,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 + Abys vyzkoušel program pořádně, pusť ho dvakrát a jednou odpověz `ne` a jednou `ano`. Odpověď od robota dostaneš jen když odpovíš `ano`.
 
-+ Problém je, že robot neodpoví když  je odpověď `ne`. To můžeš opravit tak, že změníš blok `když` {.blockcontrol} na blok `když/jinak` {.blockcontrol}:
++ Problém je, že robot neodpoví, když je odpověď `ne`. To můžeš opravit tak, že změníš blok `když` {.blockcontrol} na blok `když/jinak` {.blockcontrol}:
 
 	```blocks
 		po kliknutí na mě
@@ -187,7 +187,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 		end
 	```
 
-+ Také potřebuješ přidat kód který zajistí, aby robot začínal ve správných kulisách (a se správným kostýmem):
++ Také potřebuješ přidat kódi, který zajistí, aby robot začínal ve správných kulisách (a se správným kostýmem):
 
 	```blocks
 		po kliknutí na mě
@@ -195,11 +195,11 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
         změň kostým na [nano-b v]
 	```
 
-+ Otestuj program a odpověz `ano` když se robot zeptá na cestu na měsíc. Měl(a) bys vidět, že se pozadí změní.
++ Otestuj program a odpověz `ano`, když se robot zeptá na cestu na měsíc. Měl(a) bys vidět, že se pozadí změní.
 
 	![screenshot](chatbot-backdrop.png)
 
-+ Změní se pozadí když o dpovíš `ne`? Co se stane, když odpovíš `Nejsem si jistý`?
++ Změní se pozadí, když odpovíš `ne`? Co se stane, když odpovíš `Nejsem si jistý`?
 
 + Pokud chceš, aby robot poskočil 4x, když odpovíš `ano`, přidej tento kód do bloku `když` {.blockcontrol}:
 
@@ -215,7 +215,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
     
     ```blocks
 		ptej se [Letím na měsíc, chceš jít se mnou?] a čekej
-		když ((answer) = [ano]) tak
+		když ((odpověď) = [ano]) tak
             změň pozadí na [moon v]
             opakuj (4) krát
                 změň y o (10)
@@ -231,7 +231,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 ## Ulož projekt { .save }
 
 ## Výzva: Vytvoř si svého vlastního robota {.challenge}
-Použij to co ses naučil(a), abys dokončil robota. Tady je pár nápadů:
+Použiji, to co ses naučil(a), abys dokončil robota. Tady je pár nápadů:
 
 ![screenshot](chatbot-ideas.png)
 
