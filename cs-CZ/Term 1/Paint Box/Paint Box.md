@@ -209,7 +209,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	![screenshot](paint-draw-problem.png)
 
-	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `když` {.blockcontrol} tužky takto:
+	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když je y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `když` {.blockcontrol} tužky takto:
     
     ```blocks
 		po kliknutí na ⚑
