@@ -107,7 +107,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 
 	![screenshot](ghost-score.png)
 
-	Napiš 'score' jako jméno proměnné, ujisti se že bude dostupná pro všechny sprajty (zaškrtnout 'Pro všechny postavy') a klikni 'OK'. Pak budeš mít možnost používat bloky pro práci s touto proměnnou - `score` {.blockdata}.
+	Napiš 'score' jako jméno proměnné, ujisti se že bude dostupná pro všechny postavy (zaškrtnout 'Pro všechny postavy') a klikni 'OK'. Pak budeš mít možnost používat bloky pro práci s touto proměnnou - `score` {.blockdata}.
 	
 	Skóre uvidíš v levém horním rohu scény.
 

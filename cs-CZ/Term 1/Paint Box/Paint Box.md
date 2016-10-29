@@ -51,7 +51,7 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 	![screenshot](paint-center.png)
 
-	Abys to spravil(a), klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Nastav střed kostýmu'.
+	Abys to spravil(a), klikni na kostým 'pencil-blue' v postavě tužky a klikni na 'Nastav střed kostýmu'.
 
 	![screenshot](paint-center-icon.png)
 
@@ -87,7 +87,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 ## Seznam úkolů { .check }
 
-+ Klikni na sprajt tužky, klikny na 'Kostýmy' a zkopíruj kostým 'pencil-blue'.
++ Klikni na postavu tužky, klikni na 'Kostýmy' a zkopíruj postavu 'pencil-blue'.
 
 	![screenshot](paint-blue-duplicate.png)
 
@@ -133,7 +133,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 		rozešli všem [blue v]
 	```
 
-	...a přidáním tohoto kódu pro sprajt tužky:
+	...a přidáním tohoto kódu pro postavu tužky:
 
 	```blocks
 		po obdržení zprávy [blue v]
@@ -163,7 +163,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 ## Seznam úkolů { .check }
 
-+ Přidej tlačítko pro smazání celé scény. Přidej sprajt (písmeno) 'X-block' na scénu a nabarvi ho na červeno.
++ Přidej tlačítko pro smazání celé scény. Přidej postavu (písmeno) 'X-block' na scénu a nabarvi ho na červeno.
 
 	![screenshot](paint-x.png)
 
