@@ -77,7 +77,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 ## Seznam úkolů { .check }
 
-+ Smaž blok `klouzej` {.blockmotion}, klikni praváým tlačítkem myši a vyber 'smazat'. Blok můžeš smazat tak, že ho přesuneš mimo oblast pro kód, zpět do oblasti pro bloky.
++ Smaž blok `klouzej` {.blockmotion}, klikni pravým tlačítkem myši a vyber 'smazat'. Blok můžeš smazat tak, že ho přesuneš mimo oblast pro kód, zpět do oblasti pro bloky.
 
 	![screenshot](space-delete-glide.png)
 
