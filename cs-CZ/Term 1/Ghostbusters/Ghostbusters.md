@@ -165,7 +165,7 @@ Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin 
 
 	![screenshot](ghost-timer-help.png)
 
-+ Přesuň proměnnou 'time' do pravého rohu scény. Můžeš kliknout pravým tlačítkem myši na proměnnou a vybrat 'large readout' abys změnil(a), jak bude proměnná s časem vypadat.
++ Přesuň proměnnou 'time' do pravého rohu scény. Můžeš kliknout pravým tlačítkem myši na proměnnou a vybrat 'zvětšené zobrazení', abys změnil(a), jak bude proměnná s časem vypadat.
 
 	![screenshot](ghost-readout.png)
 
