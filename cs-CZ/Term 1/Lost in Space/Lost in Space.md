@@ -16,7 +16,7 @@ Dnes se naučíš, jak dělat svoje animace!
   <img src="space-final.png">
 </div>
 
-# Step 1: Animace vesmírné lodi { .activity .new-page}
+# Krok 1: Animace vesmírné lodi { .activity .new-page}
 
 Pojďme udělat raketu, která letí k zemi!
 
@@ -71,7 +71,7 @@ Musíš změnit tato čísla v blocích:
 
 ## Ulož projekt { .save }
 
-# Step 2: Animace pomocí cyklů { .activity .new-page }
+# Krok 2: Animace pomocí cyklů { .activity .new-page }
 
 Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kouscích víckrát za sebou.
 
@@ -109,7 +109,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 ## Ulož projekt { .save }
 
-# Step 3: Létající opice { .activity .new-page }
+# Krok 3: Létající opice { .activity .new-page }
 
 Přidej do animace opici, která je ztracená ve vesmíru! 
 
@@ -138,7 +138,7 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 	![screenshot](space-monkey-loop.png)
 
-# Step 4: Odrážející se asteroidy { .activity .new-page }
+# Krok 4: Odrážející se asteroidy { .activity .new-page }
 
 Přidej několik letících vesmírných kamenů do animace.
 
@@ -160,7 +160,7 @@ Přidej několik letících vesmírných kamenů do animace.
 
 + Otestuj asteroid. Odráží se?
 
-# Step 5: Svítící hvězdy { .activity .new-page }
+# Krok 5: Svítící hvězdy { .activity .new-page }
 
 Nakombinuj cykly a vytvoř svítící hvězdy.
 
