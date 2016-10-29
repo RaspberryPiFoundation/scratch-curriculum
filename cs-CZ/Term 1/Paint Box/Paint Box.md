@@ -91,7 +91,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 	![screenshot](paint-blue-duplicate.png)
 
-+ Přejmenuj ho na  'pencil-green', a vybarvi na zeleno.
++ Přejmenuj ho na  'pencil-green', a vybarvi jej zeleně.
 
 	![screenshot](paint-pencil-green.png)
 
