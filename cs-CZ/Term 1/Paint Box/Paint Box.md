@@ -149,7 +149,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 		nastav barvu pera na [#0000ff]
 	```
 
-	Múžeš si vybrat jinou barvu pro začátek!
+	Můžeš si vybrat jinou barvu pro začátek!
 
 + Vyzkoušej projekt. Funguje nyní přepínání mezi modrou a zelenou tužkou?
 
