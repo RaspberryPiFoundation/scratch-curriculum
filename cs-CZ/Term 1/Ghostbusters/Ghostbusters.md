@@ -69,7 +69,7 @@ Chytit tohoto ducha je velmi lehké, protože se nepohybuje!
 ## Ulož projekt { .save }
 
 ## Výzva: Více náhody {.challenge}
-Zkus nastavit ducha tak, aby čekal pomocí bloku `čekej` {.blockcontrol} náhodnou dobu před objevením. Použij blok `nastav velikost na` {.blocklooks} , aby měl duch pokaždé jinou velikost.
+Zkus nastavit ducha tak, aby čekal pomocí bloku `čekej` {.blockcontrol} náhodnou dobu před objevením. Použij blok `nastav velikost na` {.blocklooks}, aby měl duch pokaždé jinou velikost.
 
 ## Ulož projekt { .save }
 
