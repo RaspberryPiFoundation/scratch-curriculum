@@ -163,7 +163,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 ## Seznam úkolů { .check }
 
-+ Přidej tlačítko pro smazání celé scény. Přidej postavu (písmeno) 'X-block' na scénu a nabarvi ho na červeno.
++ Přidej tlačítko pro smazání celé scény. Přidej postavu (písmeno) 'X-block' na scénu a nabarvi ji na červeno.
 
 	![screenshot](paint-x.png)
 
