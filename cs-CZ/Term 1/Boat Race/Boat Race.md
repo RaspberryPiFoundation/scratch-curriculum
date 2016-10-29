@@ -104,7 +104,7 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 
 + Také musíš zajistit, aby loďka začínala nenabouraná - kostým 'normal'.
 
-+ Nyní když loďka dopluje ke dřevu, měla by narazit a objevit se znovu na začátku.
++ Nyní, když loďka dopluje ke dřevu, měla by narazit a objevit se znovu na začátku.
 
 	![screenshot](boat-crash.png)
 
@@ -135,11 +135,11 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 
 ## Seznam úkolů { .check }
 
-+ Přidej proměnnou nazvanou `time` {.blockdata} na stage. Můžeš také změnit její vzhled, pokud chceš vědět jak, podívejte se na projekt 'Lovci duchů'.
++ Přidej proměnnou nazvanou `time` {.blockdata} na scénu. Můžeš také změnit její vzhled, pokud chceš vědět jak, podívejte se na projekt 'Lovci duchů'.
 
 	![screenshot](boat-variable.png)
 
-+ Přidej tento kód na tvoji  __stage__, tak aby se počítal čas, dokud loďka nedopluje na ostrov:
++ Přidej tento kód na tvoji  __scénu__, tak aby se počítal čas, dokud loďka nedopluje na ostrov:
 
 	```blocks
 		po kliknutí na ⚑
