@@ -162,7 +162,7 @@ Nyní je hra moc jednoduchá - přidáme pár věcí, aby byla zajímavější.
 
 ## Seznam úkolů { .check }
 
-+ Jako první přidáme 'zrycchlovače'. Nakresli do tvojí hry několik bílých šipek.
++ Jako první přidáme 'zrychlovače'. Nakresli do tvojí hry několik bílých šipek.
 
 	![screenshot](boat-boost.png)
 
