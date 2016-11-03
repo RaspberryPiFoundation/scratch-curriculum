@@ -41,3 +41,9 @@ Project resources:
 + This is the first project in which much less step-by-step guidance is given. Use this as an opportunity to consolidate learning, and to start drawing on knowledge learnt in this and previous projects. 
 
 	For example, if children need help adding sound effects and music to their game, remind them of the work they did in the 'Rock Band' project. Encourage children to go back and look at the previous project notes for guidance.
+
++ There is currently a bug in Scratch which causes the boat to travel in a straight line, rather than towards the mouse pointer.
+
+	This can be fixed by re-selecting the 'mouse-pointer' option in the `point towards` {.blockmotion} block.
+
+	![screenshot](images/boat-bug.png) 
