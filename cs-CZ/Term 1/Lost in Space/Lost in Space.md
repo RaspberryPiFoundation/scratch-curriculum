@@ -16,7 +16,7 @@ Dnes se naučíš, jak dělat svoje animace!
   <img src="space-final.png">
 </div>
 
-# Step 1: Animace vesmírné lodi { .activity .new-page}
+# Krok 1: Animace vesmírné lodi { .activity .new-page}
 
 Pojďme udělat raketu, která letí k zemi!
 
@@ -32,7 +32,7 @@ Pojďme udělat raketu, která letí k zemi!
 
 	![screenshot](space-costume.png)
 
-+ Použij nástroj 'šipka' abys vybral obrázek. Potom klikni na kruhovou rukojeť a posouvej ji tak aby jsi otočil(a) raketu na stranu.
++ Použij nástroj 'šipka' abys vybral obrázek. Potom klikni na kruhovou rukojeť a posouvej ji tak, abys otočil(a) raketu na stranu.
 
 	![screenshot](space-rotate.png)
 
@@ -71,13 +71,13 @@ Musíš změnit tato čísla v blocích:
 
 ## Ulož projekt { .save }
 
-# Step 2: Animace pomocí cyklů { .activity .new-page }
+# Krok 2: Animace pomocí cyklů { .activity .new-page }
 
 Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kouscích víckrát za sebou.
 
 ## Seznam úkolů { .check }
 
-+ Smaž blok `klouzej` {.blockmotion}, klikni praváým tlačítkem myši a vyber 'smazat'. Blok můžeš smazat tak, že ho přesuneš mimo oblast pro kód, zpět do oblasti pro bloky.
++ Smaž blok `klouzej` {.blockmotion}, klikni pravým tlačítkem myši a vyber 'smazat'. Blok můžeš smazat tak, že ho přesuneš mimo oblast pro kód, zpět do oblasti pro bloky.
 
 	![screenshot](space-delete-glide.png)
 
@@ -87,9 +87,9 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 	Blok `opakuj` {.blockcontrol} se používá pro opakování a nazývá se __smyčka__.
 
-+ Když klikneš na vlaječku, uvidíš, že raketa se pohybuje stejně jako před tím.
++ Když klikneš na vlaječku, uvidíš, že raketa se pohybuje stejně jako předtím.
 
-+ Do smyčky múžeš přidat více bloků a dělat zajímavé věci. Přidej blok `změň efekt barva o 25` {.blocklooks}do smyčky (ze sekce 'Looks'), aby se opakovaně menila barva rakety během pohybu:
++ Do smyčky můžeš přidat více bloků a dělat zajímavé věci. Přidej blok `změň efekt barva o 25` {.blocklooks} do smyčky (ze sekce 'Looks'), aby se opakovaně měnila barva rakety během pohybu:
 
 	![screenshot](space-colour.png)
 
@@ -109,7 +109,7 @@ Jiný způsob jak animovat raketu je ten, že se bude pohybovat po malých kousc
 
 ## Ulož projekt { .save }
 
-# Step 3: Létající opice { .activity .new-page }
+# Krok 3: Létající opice { .activity .new-page }
 
 Přidej do animace opici, která je ztracená ve vesmíru! 
 
@@ -119,7 +119,7 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 	![screenshot](space-monkey.png)
 
-+ Když klikneš na tvůj novou postavu s opicí a klikneš na záložku 'Kostýmy', můžeš uravit jak vypadá. Klikni na nástroj 'Elipsa' a nakresli bílou helmu okolo hlavy opice.
++ Když klikneš na tvůj novou postavu s opicí a klikneš na záložku 'Kostýmy', můžeš upravit jak vypadá. Klikni na nástroj 'Elipsa' a nakresli bílou helmu okolo hlavy opice.
 
 	![screenshot](space-monkey-edit.png)
 
@@ -138,7 +138,7 @@ Přidej do animace opici, která je ztracená ve vesmíru!
 
 	![screenshot](space-monkey-loop.png)
 
-# Step 4: Odrážející se asteroidy { .activity .new-page }
+# Krok 4: Odrážející se asteroidy { .activity .new-page }
 
 Přidej několik letících vesmírných kamenů do animace.
 
@@ -160,7 +160,7 @@ Přidej několik letících vesmírných kamenů do animace.
 
 + Otestuj asteroid. Odráží se?
 
-# Step 5: Svítící hvězdy { .activity .new-page }
+# Krok 5: Svítící hvězdy { .activity .new-page }
 
 Nakombinuj cykly a vytvoř svítící hvězdy.
 
@@ -174,14 +174,14 @@ Nakombinuj cykly a vytvoř svítící hvězdy.
 
 	![screenshot](space-star.png)
 
-+ Otestuj animaci. Co tento kód dělá? Správně, hvězda se dvacetkrát zvětší a zase změnší. Jsou tam dvě smyčky uvnitř smyčky `opakuj dokola` {.blockcontrol} aby se animace nezastavila.
++ Otestuj animaci. Co tento kód dělá? Správně - hvězda se dvacetkrát zvětší a zase změnší. Jsou tam dvě smyčky uvnitř smyčky `opakuj dokola` {.blockcontrol}, aby se animace nezastavila.
 
 ## Ulož projekt { .save }
 
 ## Výzva: Udělej si vlastní animaci {.challenge}
 Zastav animaci a klikni na 'Soubor' potom na 'Nový', pro vytvoření nového projektu.
 
-Použij co jsi se naučil(a) pro vytvoření vlastní animace. Může to být cokoliv. Tady máš pár příkladů:
+Použij, co jsi se naučil(a) pro vytvoření vlastní animace. Může to být cokoliv. Tady máš pár příkladů:
 
 ![screenshot](space-egs.png)
 
