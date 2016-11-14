@@ -28,13 +28,12 @@ Bây giờ chúng ta cần tạo một tên lửa di chuyển về phía con tr�
 + Thêm một khối điểu khiển `when space key pressed` và ở đó làm cho tên lửa xuất hiện và lướt về phía con trỏ chuột.
 
 ```blocks
+khi nhấn vào @
+ẩn
 
-    when FLAG clicked
-    hide
-
-    when [space v] key pressed
-    show
-    glide (1) secs to x: (mouse x) y: (mouse y)
+khi nhấn phím [phím cách v]
+hiện
+lướt tới x:(x của chuột) y:(y của chuột) trong (1) giây
 ```
 
 ##Chạy thử dự án của bạn { .flag}
@@ -48,14 +47,13 @@ Chuyện gì sẽ xảy ra khi ta không di chuyển chuột và nhấn vào kho
 + Pháo hoa không bay từ bên này sang bên kia, do đó đảm bảo rằng nó luôn lướt về phía con trỏ chuột từ phía dưới màn hình. Trước khi chúng ta cho hiển thị tên lửa, dùng khối `go to block` để giúp nó di chuyển tới đáy màn hình nhưng giữ nguyên vị trí theo chiều dọc.
 
 ```blocks
+khi nhấn vào @
+ẩn
 
-    when FLAG clicked
-    hide
-
-    when [space v] key pressed
-    go to x: (mouse x) y: (-200)
-    show
-    glide (1) secs to x: (mouse x) y: (mouse y)
+khi nhấn phím [phím cách v]
+nhảy tới x:(x của chuột) y:(-200)
+hiện
+lướt tới x:(x của chuột) y:(y của chuột) trong (1) giây
 ```
 
 ##Chạy thử dự án của bạn { .flag}
@@ -68,14 +66,15 @@ Tên lửa có bay về phía trỏ chuột từ dưới màn hình? Chuyện g�
 Sau đó hoán đổi khối __when space key pressed__ (khi ấn chuột) bằng khối __when flag clicked__ (khi click vào lá cờ) và hãy chắc chắn rằng tên lửa được ẩn đi khi mọi thứ khởi động.
 
 ```blocks
-
-    when FLAG clicked
-    hide
-    forever
-        if <mouse down?> then
-            go to x: (mouse x) y: (-200)
-            show
-            glide (1) secs to x: (mouse x) y: (mouse y)
+khi nhấn vào @
+ẩn
+lặp mãi mãi
+   nếu <chuột đã nhấn?> thì
+      nhảy tới x:(x của chuột) y:(-200)
+      hiện
+      lướt tới x:(x của chuột) y:(y của chuột) trong (1) giây
+   end
+end
 ```
 ##Chạy thử dự án của bạn { .flag}
 __Click vài lá cờ màu xanh lá, sau đó nhấn chuột trên sân khấu. Click một lần nữa tại một điểm khác.__
@@ -93,31 +92,33 @@ __Click vài lá cờ màu xanh lá, sau đó nhấn chuột trên sân khấu. 
 + Bước đầu tiên để làm cho tên lửa phát nổ là làm nó tạo ra một tiếng nổ __Resources/bang.wav__ trước khi nó bắt đầu di chuyển, sau đó ẩn đi khi nó tới vị trí con trỏ chuột. Nhập một đoạn âm thanh vào thẻ Sounds (âm thanh) và click nút `Upload sound from file` {.blockgrey} (Tải âm thanh từ file).
 
 ```blocks
-
-    when FLAG clicked
-    hide
-    forever
-        if <mouse down?> then
-            go to x: (mouse x) y: (-200)
-            play sound [bang v]
-            show
-            glide (1) secs to x: (mouse x) y: (mouse y)
-            hide
+khi nhấn vào @
+ẩn
+lặp mãi mãi
+   nếu <chuột đã nhấn?> thì
+      nhảy tới x:(x của chuột) y:(-200)
+      chơi âm thanh [bang v]
+      hiện
+      lướt tới x:(x của chuột) y:(y của chuột) trong (1) giây
+      ẩn
+   end
+end
 ```
 + Bước tiếp theo, làm cho tên lửa truyền một thông điệp mới khi nó phát nổ. Chúng ta sẽ nghe thông điệp này sau.
 
 ```blocks
-
-    when FLAG clicked
-    hide
-    forever
-        if <mouse down?> then
-            go to x: (mouse x) y: (-200)
-            play sound [bang v]
-            show
-            glide (1) secs to x: (mouse x) y: (mouse y)
-            hide
-            broadcast [explode v]
+khi nhấn vào @
+ẩn
+lặp mãi mãi
+   nếu <chuột đã nhấn?> thì
+      nhảy tới x:(x của chuột) y:(-200)
+      chơi âm thanh [bang v]
+      hiện
+      lướt tới x:(x của chuột) y:(y của chuột) trong (1) giây
+      ẩn
+      thông báo [explode v]
+   end
+end
 ```
 ##Chạy thử dự án của bạn { .flag}
 __Click vào lá cờ màu xanh.__
@@ -129,13 +130,12 @@ Hãy chắc chắn rằng tên lửa phát ra âm thanh và ẩn khi tới vị 
 + Khi nhận được thông điệp về vụ nổ, nó sẽ tự ẩn đi và di chuyển tới vị trí quả tên lửa, sử dụng khối `go to`, tự hiện ra và lại biến mất sau một giây.
 
 ```blocks
-
-    when I receive [explode v]
-    hide
-    go to [rocket v]
-    show
-    wait (1) secs
-    hide
+khi tôi nhận được thông báo [explode v]
+ẩn
+nhảy tới [rocket v]
+hiện
+đợi (1) giây
+ẩn
 ```
 ##Chạy thử dự án của bạn { .flag}
 __Bắn một quả tên lửa khác.__
@@ -150,15 +150,13 @@ Chuyện gì sẽ xảy ra khi bạn giữ chuột trong lúc di chuyển nó? (
 + Bây giờ chúng ta làm cho mỗi vụ nộ trở nên độc đáo hơn bằng cách sử dụng lệnh `set color effect` {.blockpurple}, và chọn một màu sắc bất kì trong khoảng từ  __1__ tới __200__ trước khi hiển thị chúng.
 
 ```blocks
-
-    when I receive [explode v]
-    hide
-    set [color v] effect to (pick random (1) to (200))
-    go to [rocket v]
-    show
-    wait (1) secs
-    hide
-
+khi tôi nhận được thông báo [explode v]
+ẩn
+đặt hiệu ứng [màu v] là (lấy ngẫu nhiên trong khoảng (1) tới (200))
+nhảy tới [rocket v]
+hiện
+đợi (1) giây
+ẩn
 ```
 
 ##Chạy thử dự án của bạn { .flag}
@@ -180,18 +178,16 @@ Mỗi tên lửa có một hình ảnh vụ nổ khác nhau không?
 + Cuối cùng, hãy làm cho vụ nổ lớn hơn sau khi tên lửa phát nổ! Thay vì chờ trong một giây, đặt kích thước của sprite __5%__ trước khi hiển thị nó, và sau khi nó đã được thể hiện, tăng kích thước __2 fifty times__, sử dụng lệnh `repeat` {.blockorange}.
 
 ```blocks
-
-    when I receive [explode v]
-    hide
-    set [color v] effect to (pick random (1) to (200))
-    go to [rocket v]
-    show
-    set size to (5) %
-    repeat (50)
-        change size by (2)
-    end
-    hide
-
+khi tôi nhận được thông báo [explode v]
+ẩn
+đặt hiệu ứng [màu v] là (lấy ngẫu nhiên trong khoảng (1) tới (200))
+nhảy tới [rocket v]
+hiện
+đặt kích thước là (5)%
+lặp lại (50) lần
+   thay đổi kích thước một lượng (2)
+end
+ẩn
 ```
 ##Chạy thử dự án của bạn { .flag}
 __Click vào lá cờ màu xanh lá.__
@@ -213,18 +209,18 @@ Vấn đề này xuất hiện bởi khi tên lửa phát thông tin vụ nổ c
 + Để sửa lỗi này, chúng ta có thể thay thế các khối truyền phát bằng một khối truyền và chờ. Bằng cách này, vòng lặp sẽ không lặp lại tới khi vụ nổ kết thúc.
 
 ```blocks
-
-    when FLAG clicked
-    hide
-    forever
-        if <mouse down?> then
-            go to x: (mouse x) y: (-200)
-            play sound [bang v]
-            show
-            glide (1) secs to x: (mouse x) y: (mouse y)
-            hide
-            broadcast [explode v] and wait
-
+khi nhấn vào @
+ẩn
+lặp mãi mãi
+   nếu <chuột đã nhấn?> thì
+      nhảy tới x:(x của chuột) y:(-200)
+      chơi âm thanh [bang v]
+      hiện
+      lướt tới x:(x của chuột) y:(y của chuột) trong (1) giây
+      ẩn
+      thông báo [explode v] và đợi
+   end
+end
 ```
 ##Chạy thử dự án của bạn { .flag}
 __Click vào lá cờ màu xanh lá, giữ chuột và di chuyển quanh sân khấu.__

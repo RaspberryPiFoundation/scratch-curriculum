@@ -8,13 +8,13 @@
     "projects": [
         {
             "number":   1,
-            "filename": "Lost in Space/Lost in Space.md",
-            "note":     "Lost in Space/Lost in Space - notes.md"
+            "filename": "Rock Band/Rock Band.md",
+            "note":     "Rock Band/Rock Band - notes.md"
         },
         {
             "number":   2,
-            "filename": "Rock Band/Rock Band.md",
-            "note":     "Rock Band/Rock Band - notes.md"
+            "filename": "Lost in Space/Lost in Space.md",
+            "note":     "Lost in Space/Lost in Space - notes.md"
         },
         {
             "number":   3,
@@ -23,13 +23,18 @@
         },
         {
             "number":   4,
-            "filename": "Boat Race/Boat Race.md",
-            "note":     "Boat Race/Boat Race - notes.md"
+            "filename": "SprechBot/SprechBot.md",
+            "note":     "SprechBot/SprechBot - notes.md"
         },
         {
             "number":   5,
-            "filename": "SprechBot/SprechBot.md",
-            "note":     "SprechBot/SprechBot - notes.md"
+            "filename": "Farbkasten/Farbkasten.md",
+            "note":     "Farbkasten/Farbkasten - Notizen.md"
+        },        
+        {
+            "number":   5,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 }

@@ -1,9 +1,10 @@
-{
-    "description": "",
+﻿{
+    "description": false,
     "id": "scratch_01",
     "language": "he-IL",
     "number": 1,
-    "title": "Scratch 1",
+    "title": "סקראצ' 1",
+    "category": "סקראצ'",
     "projects": [
         {
             "number":   1,
@@ -14,6 +15,27 @@
             "number":   2,
             "filename": "Lost in Space/Lost in Space.md",
             "note": "Lost in Space/Lost in Space - notes.md"
+        },
+        {
+            "number":   3,
+            "beta": true,
+            "filename": "Ghostbusters/Ghostbusters.md",
+            "note": "Ghostbusters/Ghostbusters - notes.md"
+        },
+        {
+            "number":   4,
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - notes.md"
+        },
+        {
+            "number":   5,
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - notes.md"
+        },
+        {
+            "number":   6,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
         }
     ]
 

@@ -1,0 +1,21 @@
+{
+    "id": "scratch-2",
+    "title": "Scratch 2",
+    "description": "",
+    "language": "nl-NL",
+    "number": 2,
+    "projects": [
+        {
+            "number":   1,
+            "beta": true,
+            "filename": "Memory/Memory.md",
+            "note":     "Memory/Memory - notes.md"
+        },
+        {
+            "number":   2,
+            "beta": true,
+            "filename": "Vang de stippen/vang de stippen.md",
+            "note":     "Vang de stippen/vang de stippen notas.md"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "description": false,
+    "id": "scratch_02",
+    "language": "he-IL",
+    "number": 2,
+    "title": "סקראצ' 2",
+    "category": "סקראצ'",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Memory/Memory.md",
+            "beta":     true,
+            "note":     "Memory/Memory - notes.md"
+        }
+    ]
+}
