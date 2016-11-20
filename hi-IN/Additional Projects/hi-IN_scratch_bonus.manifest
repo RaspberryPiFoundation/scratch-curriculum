@@ -1,0 +1,55 @@
+{
+    "description": false,
+    "warning": "The Scratch curriculum is currently being updated. If you can't find a project here, it may have been moved to the 'Community Contributed Scratch Projects' or 'Archived Scratch Projects' sections.",
+    "id": "scratch_bonus",
+    "category" : "cat-scratch",
+    "language": "hi-IN",
+    "number": 3,
+    "title": "Additional Scratch Projects",
+
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Balloons/Balloons.md",
+            "note": "Balloons/Balloons - notes.md"
+        },
+        {
+            "number": 2,
+            "beta": true,
+            "filename": "Space Junk/Space Junk.md",
+            "note": "Space Junk/Space Junk - notes.md"
+        },
+        {
+            "number":   3,
+            "filename": "Flappy Parrot/Flappy Parrot.md"
+        },
+        {
+            "number":   4,
+            "filename": "Snowball Fight/Snowball Fight.md"
+        },
+        {
+            "number":   5,
+            "filename": "Christmas Capers/Christmas Capers.md"
+        },
+        {
+            "number":   6,
+            "filename": "Beat the Goalie/Beat the Goalie.md",
+            "note": "Beat the Goalie/Beat the Goalie - notes.md"
+        },
+        {
+            "number":   7,
+            "filename": "Synchronised Swimming/Swimming.md",
+            "note": "Synchronised Swimming/Swimming - notes.md"
+        },
+        {
+            "number":   8,
+            "filename": "Archery/Archery.md",
+            "note": "Archery/Archery - notes.md"
+        },
+        {
+            "number":   9,
+            "filename": "Sprint/Sprint.md",
+            "note": "Sprint/Sprint - notes.md"
+        }
+    ]
+}
