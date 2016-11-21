@@ -283,7 +283,7 @@ You could even create more than one backdrop, and move to the next level when yo
 ## Save your project { .save }
 
 ## Challenge: Improved gravity {.challenge}
-There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a ladder and then moving to the left.
+There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even its head! You can test this out by climbing most of the way up a ladder and then moving to the left.
 
 ![screenshot](images/dodge-gravity-bug.png)
 
