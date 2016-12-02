@@ -1,8 +1,8 @@
 ---
-title: Toy Tech
+title: Tech Toys
 description: Learn how to code your own tech toys!
 layout: project
-notes: "Toy Tech - notes.md"
+notes: "Tech Toys - notes.md"
 project-type: sample
 new: true
 ---
@@ -38,9 +38,11 @@ Let's code a bowtie that spins when clicked.
 
 	![screenshot](images/toys-bowtie-test.png)
 
-+ Click the `point in direction` {.blockmotion} block to point the bowtie back to it's starting position.
++ Find the `point in direction` {.blockmotion} block and, _without dragging it_, click it to set the bowtie back to its starting position.
 
 	![screenshot](images/toys-bowtie-direction.png)
+	
+	Tip: In Scratch you can click on a block to run it straight away. You don't even need to drag it onto the scripts area first!
 
 + To make the bowtie do 1 complete spin, the numbers in your code need to add up to 360 degrees. Change your code so that the bowtie turns 36 degrees 10 times (36 x 10 = 360).
 
@@ -69,17 +71,21 @@ Let's code your helicopter to start up when your laptop is clicked.
 
 ## Activity Checklist { .check }
 
-+ Let's start by broadcasting a `start` {.blockevents} message when the laptop is clicked.
++ Let's start by broadcasting a `start` {.blockevents} message when the laptop is clicked. You'll need to create a `new message` called `start`.
+
+	![screenshot](images/toys-laptop-1.png)
+
++ Your code should look like this:  
 
 	![screenshot](images/toys-laptop.png)
 
-+ This code broadcasts a message to all other sprites. If you test this code, you'll see that nothing happens yet! This is because you've not coded the helicopter to respond to the message.
+	This code broadcasts a message to all other sprites. If you test this code, you'll see that nothing happens yet! This is because you've not coded the helicopter to respond to the message.
 
-+ Click on your Helicopter sprite and add a `When I receive` {.blockevents} block. Any code attached to this block will be run when it receives the 'start' message from the laptop.
++ Click on your helicopter sprite and add a `When I receive` {.blockevents} block. Any code attached to this block will be run when it receives the 'start' message from the laptop.
 
 	![screenshot](images/toys-helicopter-receive.png)
 
-+ If you click your helicopter's 'Costumes' tab, you'll notice that it has 2 costumes with slighly different propellers.
++ If you click your helicopter's 'Costumes' tab, you'll notice that it has 2 costumes with slightly different propellers.
 
 	![screenshot](images/toys-helicopter-costumes.png)
 
@@ -103,7 +109,7 @@ Let's use the arrow keys to fly your helicopter.
 
 	![screenshot](images/toys-helicopter-up.png)
 
-+ If you test your code, you'll see that your helicopter's __y__ position (up/down) changes whenever the up arrow is pressed.
++ Test your code and you'll see that your helicopter's __y__ position (up/down) changes whenever the up arrow is pressed.
 
 + If you want your helicopter to move more smoothly, you can instead add code to move upwards inside your helicopter's `forever` {.blockcontrol} loop.
 
@@ -152,7 +158,7 @@ Let's code your helicopter to do a 360 degree spin.
 
 ## Save your project { .save }
 
-##Challenge: Create your own toy tech! { .challenge }
+##Challenge: Create your own tech toy! { .challenge }
 Can you create your own tech toy?
 
 You could make the antennae move whenever they're clicked? Here's the code blocks you will need to use:
