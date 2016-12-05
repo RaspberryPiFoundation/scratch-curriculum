@@ -22,7 +22,7 @@ In this project you'll learn how to code your own tech toys!
   <img src="images/toys-final.png">
 </div>
 
-# Step 1: Spinning Bow Tie { .activity }
+# Step 1: Spinning Bow Tie { .activity .new-page }
 
 Let's code a bow tie that spins when clicked.
 
@@ -56,7 +56,7 @@ Let's code a bow tie that spins when clicked.
 
 ## Save your project { .save }
 
-##Challenge: Colour-changing sunglasses { .challenge .new-page }
+##Challenge: Colour-changing sunglasses { .challenge }
 Can you use the following code to make your sunglasses change colour when clicked?
 
 ![screenshot](images/toys-sunglasses-code.png)
