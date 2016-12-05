@@ -28,7 +28,7 @@ Let's code a bowtie that spins when clicked.
 
 ## Activity Checklist { .check }
 
-+ Open the 'Tech Toys' Scratch project. Your club leader will give you a copy of this project, or you can open it online at <a href="http://jumpto.cc/toys-resources" target="_blank">jumpto.cc/toys-resources</a>.
++ Open the 'Tech Toys' Scratch project. Your club leader will give you a copy of this project, or you can open it online at <a href="http://jumpto.cc/toys-go" target="_blank">jumpto.cc/toys-go</a>.
 
 + Click on the 'Bowtie' sprite and add this code:
 

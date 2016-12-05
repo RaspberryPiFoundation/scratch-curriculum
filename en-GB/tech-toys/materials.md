@@ -1,16 +1,16 @@
 ---
-title: Toy Tech - Materials
+title: Tech Toys - Materials
 layout: project-materials
 project-resources:
-  - url: http://jumpto.cc/toys-resources
+  - url: http://jumpto.cc/toys-go
     type: link
-    title: jumpto.cc/tech-resources
+    title: jumpto.cc/toys-go
     description: Online Scratch 2 project containing external resources
-  - url: ToyTechResources.sb2
+  - url: TechToysResources.sb2
     type: file
     description: Downloadable Scratch 2 project containing external resources
 volunteer-resources:
-  - url: ToyTech.sb2
+  - url: TechToys.sb2
     description: Downloadable completed Scratch 2 project
   - url: http://scratch.mit.edu/projects/109510044/#editor
     type: link
