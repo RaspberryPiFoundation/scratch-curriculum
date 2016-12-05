@@ -11,7 +11,7 @@ new: true
 
 In this project you'll learn how to code your own tech toys!
 
-+ Click the bowtie to see it spin;
++ Click the bow tie to see it spin;
 + Click the sunglasses to see them change colour;
 + Click the laptop to power up the helicopter;
 + Press the arrow keys to fly the helicopter;
@@ -22,35 +22,35 @@ In this project you'll learn how to code your own tech toys!
   <img src="images/toys-final.png">
 </div>
 
-# Step 1: Spinning Bowtie { .activity }
+# Step 1: Spinning Bow Tie { .activity }
 
-Let's code a bowtie that spins when clicked.
+Let's code a bow tie that spins when clicked.
 
 ## Activity Checklist { .check }
 
 + Open the 'Tech Toys' Scratch project. Your club leader will give you a copy of this project, or you can open it online at <a href="http://jumpto.cc/toys-go" target="_blank">jumpto.cc/toys-go</a>.
 
-+ Click on the 'Bowtie' sprite and add this code:
++ Click on the 'Bow Tie' sprite and add this code:
 
 	![screenshot](images/toys-bowtie.png)
 
-+ Click the bowtie to run your code. You should see that your bowtie turns 15 degrees clockwise 10 times, turning 150 degrees in total.
++ Click the bow tie to run your code. You should see that your bow tie turns 15 degrees clockwise 10 times, turning 150 degrees in total.
 
 	![screenshot](images/toys-bowtie-test.png)
 
-+ Find the `point in direction` {.blockmotion} block and, _without dragging it_, click it to set the bowtie back to its starting position.
++ Find the `point in direction` {.blockmotion} block and, _without dragging it_, click it to set the bow tie back to its starting position.
 
 	![screenshot](images/toys-bowtie-direction.png)
 	
 	Tip: In Scratch you can click on a block to run it straight away. You don't even need to drag it onto the scripts area first!
 
-+ To make the bowtie do 1 complete spin, the numbers in your code need to add up to 360 degrees. Change your code so that the bowtie turns 36 degrees 10 times (36 x 10 = 360).
++ To make the bow tie do 1 complete spin, the numbers in your code need to add up to 360 degrees. Change your code so that the bow tie turns 36 degrees 10 times (36 x 10 = 360).
 
 	![screenshot](images/toys-bowtie-360.png)
 
-+ Test your code again. This time, your bowtie should do 1 complete 360 degree spin and end up where it started.
++ Test your code again. This time, your bow tie should do 1 complete 360 degree spin and end up where it started.
 
-+ If you want your bowtie to do 4 complete spins, you can change the number in the `repeat` {.blockcontrol} block from 10 to 40.
++ If you want your bow tie to do 4 complete spins, you can change the number in the `repeat` {.blockcontrol} block from 10 to 40.
 
 	![screenshot](images/toys-bowtie-4.png)
 
