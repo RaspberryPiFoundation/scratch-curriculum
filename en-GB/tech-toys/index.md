@@ -56,7 +56,7 @@ Let's code a bow tie that spins when clicked.
 
 ## Save your project { .save }
 
-##Challenge: Colour-changing sunglasses { .challenge }
+##Challenge: Colour-changing sunglasses { .challenge .new-page }
 Can you use the following code to make your sunglasses change colour when clicked?
 
 ![screenshot](images/toys-sunglasses-code.png)
