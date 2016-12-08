@@ -2,6 +2,7 @@
 title: Snowball Fight
 description: Make a game in which you have to throw snowballs at a target.
 layout: project
+project-type: sample
 ---
 
 # Introduction { .intro }
