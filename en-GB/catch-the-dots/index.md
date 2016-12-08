@@ -22,7 +22,7 @@ Let's start by creating a controller, that will be used to collect dots.
 
 + Open the 'Catch the Dots' Scratch project online at <a href="http://jumpto.cc/dots-go" target="_blank">jumpto.cc/dots-go</a> or download from <a href="http://jumpto.cc/dots-get" target="_blank">jumpto.cc/dots-get</a> and then open if you are using the offline editor.
 
-	You should see a Controller sprite:
+	You should see a controller sprite:
 
 	![screenshot](images/dots-controller.png)
 	
@@ -60,6 +60,7 @@ Let's add some dots for the player to collect with their controller.
 
 	```blocks
 		when flag clicked
+		hide
 		wait (2) secs
 		forever
 			create clone of [myself v]
