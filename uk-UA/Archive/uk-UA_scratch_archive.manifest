@@ -1,9 +1,9 @@
 {
-    "id": "scratch_01",
-    "title":"Scratch 1",
+    "id": "scratch_archive",
+    "title":"Scratch Archive Projects",
     "description":false,
     "language": "uk-UA",
-    "number": 1,
+    "number": 3,
     "category": "cat-scratch",
 
     "projects": [
