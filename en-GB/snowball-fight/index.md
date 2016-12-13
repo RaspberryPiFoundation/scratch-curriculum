@@ -20,17 +20,9 @@ Let's make a snowball, that you can throw around your stage.
 
 ## Activity Checklist { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Open the ‘Snowball Fight’ Scratch project online at [jumpto.cc/snowball-go](http://jumpto.cc/snowball-go) or download from [jumpto.cc/snowball-get](http://jumpto.cc/snowball-get) and then open if you are using the offline editor.
 
-+ For this project, you should have a 'Resources' folder, containing the snowball sprite that you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
-
-	![screenshot](images/snow-resources.png)
-
-+ Click 'Upload sprite from file', and select the file 'Snowball.sprite2' in your resources folder.
-
-	![screenshot](images/snow-sprite.png)
-
-	The sprite contains 2 costumes, a normal costume, and one that shows which direction the snowball is facing.
++ The 'Snowball' sprite contains 2 costumes, a normal costume, and one that shows which direction the snowball is facing.
 
 	![screenshot](images/snow-costume.png)
 
