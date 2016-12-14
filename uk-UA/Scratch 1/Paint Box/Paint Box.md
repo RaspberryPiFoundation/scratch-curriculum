@@ -1,13 +1,19 @@
-* * *
-
-назва: Коробка Малювання рівень: Scratch 1 мова: uk стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*","Засоби проекту/*"]...
+---
+title: Коробка Малювання
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Засоби керівників клубу/*","Засоби проекту/*"]
+...
 
 # Передмова {.intro}
 
 В цьому проекті ви будете створювати свої власні програми малювання!
 
 <div class="scratch-preview">
-  crwMD_Iframe_0 <img src="paint-final.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
+  <img src="chatbot-final.png">
 </div>
 
 # Крок 1: Створення олівця {.activity}
