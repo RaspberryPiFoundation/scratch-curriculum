@@ -16,6 +16,12 @@
             "beta": true,
             "filename": "Vang de stippen/vang de stippen.md",
             "note":     "Vang de stippen/vang de stippen notas.md"
-        }
+        },
+        {
+            "number":   3,
+            "beta": true,
+            "filename": "Dodgeball/Dodgeball.md",
+            "note":     "Dodgeball/Dodgeball - notes.md"
+        }, 
     ]
 }
