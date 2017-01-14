@@ -10,6 +10,12 @@
             "filename": "Memory/Memory.md",
             "beta":     true,
             "note":     "Memory/Memory - notes.md"
+        },
+        {
+            "number":   1,
+            "filename": "Treffball/Treffball.md",
+            "beta":     true,
+            "note":     "Treffball/Treffball - Notizen.md"
         }
     ]
 }

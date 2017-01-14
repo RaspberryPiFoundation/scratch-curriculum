@@ -119,7 +119,7 @@ When the boat gets to the yellow desert island, it should say 'YEAH!' and then t
 ## Save your project { .save }
 
 ## Challenge: Sound effects {.challenge}
-Can you add sound effects to your game, for when the boat crashes, or reaches the island at the end. You could even add background music (see the previous 'Rock Band' project if you need help with this).
+Can you add sound effects to your game, for when the boat crashes, or reaches the island at the end? You could even add background music (see the previous 'Rock Band' project if you need help with this).
 
 ## Save your project { .save }
 
@@ -174,7 +174,7 @@ This game is _far_ too easy - let's add things to make it more interesting.
 
 	Make sure that the colour of the gate is the same as the other wooden barriers.
 
-+ Set the center of the gate sprite.
++ Set the centre of the gate sprite.
 
 	![screenshot](boat-center.png)
 
