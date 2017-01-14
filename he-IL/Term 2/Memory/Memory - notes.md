@@ -1,26 +1,26 @@
 ---
-title: זיכרון - הערות למדריכי המועדון
+title: Memory — Notes for Club Leaders
 language: en-GB
 embeds: "*.png"
 ...
 
-#הקדמה:
-בפרויקט זה, הילדים ילמדו להשתמש במשתנה רשימה לאחסון מידע, ואיך פונקציות יכולות לפשט את התוכנה שלהם.
+#Introduction:
+In this project, children will learn how to use list variables to store data, as well as how simple custom blocks (functions) can be used to simplify their programs.
 
-#חומרי הלימוד
-בפרויקט זה, יש להתמש ב-סקראצ׳ 2. ניתן להשתמש בסקראצ׳ 2 באופן מקוון בכתובת  [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) או באמצעות הורדה מהכתובת [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off).
+#Resources
+For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
 
-ניתן למצוא גרסא מלאה של הפרויקט <a href="http://scratch.mit.edu/projects/34874510/#editor">כאן</a>, או להוריד אותו באמצעות לחיצה על  ״הורדת חומרי פרויקט״ בדף הפרויקט. הפרויקט מכיל את הקובץ:
+You can find a completed version of this project <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
 
 + Memory.sb2
 
-#תכני הלימוד
-+ רישמות;
-+ פונקציות פשוטות.
+#Learning Objectives
++ Lists;
++ Simple functions.
 
-#אתגרים
-# "הוספת צלילים" - שיפור השימושיות במשחק;
-# "יצירת ארבעה כפתורים" - ביצוע פעולות על רשימות;
-# "יצירת בלוקים נוספים" - יצירת בלוקים מותאמים אישית;
-# "תלבושת נוספת" - שיפור השימושיות במשחק;
-# "דרגות קושי" - שינוי המידע המאוחסן ברשימות;
+#Challenges
++ "Adding sound" - improving the usability of the game;
++ "Creating 4 buttons" - manipulating lists;
++ "Making more blocks" - creating custom blocks;
++ "Another costume" - improving the usability of the game;
++ "Difficulty level" - modifying the data stored in a list.

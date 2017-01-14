@@ -53,19 +53,7 @@ Let's start by creating a character that can move left and right, as well as cli
 
 	![screenshot](dodge-walking.png)
 
-+ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works! If your player turns upside down when moving left, add a `set rotation style` {.blockcontrol} block above the `forever` {.blockcontrol} loop:
-
-	```blocks
-		when flag clicked
-		set rotation style [left-right v]
-		forever
-			if <key [right arrow v] pressed? > then
-				point in direction (90 v)
-				move (3) steps
-				next costume
-			end
-		end
-	```
++ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
 
 + To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
 
@@ -287,7 +275,7 @@ You could even create more than one backdrop, and move to the next level when yo
 ## Save your project { .save }
 
 ## Challenge: Improved gravity {.challenge}
-There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even its head! You can test this out by climbing most of the way up a pole and then moving to the left.
+There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
 
 ![screenshot](dodge-gravity-bug.png)
 

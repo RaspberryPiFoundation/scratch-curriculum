@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*","Project Resources/*"]
 ...
 
-# Úvod { .intro }
+# Introduction { .intro }
 
 V této lekci se naučíš vytvořit si vlastní kreslící program!
 
@@ -41,17 +41,17 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 	```blocks
 		po kliknutí na ⚑
 		opakuj dokola
-		  jdi na [ukazatel myši v]
+		  go to [ukazatel myši v]
 		end
 	```
 
 + Zkus kód kliknutím na zelenou vlakku a pohybováním myši na scéně. Funguje jak jsi čekal?
 
-+ Všiml sis, že myš nesleduje tuhu, ale střed tužky?
++ Všiml sis, že myš nesleduje tuha, ale střed tužky?
 
 	![screenshot](paint-center.png)
 
-	Abys to spravil(a), klikni na kostým 'pencil-blue' v postavě tužky a klikni na 'Nastav střed kostýmu'.
+	Abys to spravil(a), klikni na kostým 'pencil-blue' ve sprajtu tužky a klikni na 'Nastav střed kostýmu'.
 
 	![screenshot](paint-center-icon.png)
 
@@ -61,18 +61,18 @@ Začnema vytvořením tužky, kterou můžeš kreslit na scénu.
 
 + Klikni na záložku 'Scripts' a otestuj tužku znovu - funguje lépe než předtím?
 
-+ Jako další - nech tužku kreslit `když` {.blockcontrol} - je stisknuto tlačítko myši:
++ Jako další, nech tužku kreslit `jestliže` {.blockcontrol} - je stisknuto tlačítko myši:
 
     ```blocks
-          po kliknutí na ⚑
-          opakuj dokola
-            jdi na [ukazatel myši v]
-            když (myš stisknuta) tak
-              pero dolů
-            jinak 
-              pero nahoru
-            end
+		po kliknutí na ⚑
+		opakuj dokola
+		  go to [ukazatel myši v]
+          když (myš stisknuta) tak
+            pero dolů
+          jinak 
+            pero nahoru
           end
+		end
 	```
 
 + Vyzkoušej program znovu. Tentokrát pohybuj tužkou po scéně a drž stisknuté tlačítko myši. Můžeš takto kreslit tužkou?
@@ -87,11 +87,11 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 ## Seznam úkolů { .check }
 
-+ Klikni na postavu tužky, klikni na 'Kostýmy' a zkopíruj postavu 'pencil-blue'.
++ Klikni na sprajt tužky, klikny na 'Kostýmy' a zkopíruj kostým 'pencil-blue'.
 
 	![screenshot](paint-blue-duplicate.png)
 
-+ Přejmenuj ho na  'pencil-green', a vybarvi jej zeleně.
++ Přejmenuj ho na  'pencil-green', a vybarvi na zeleno.
 
 	![screenshot](paint-pencil-green.png)
 
@@ -101,7 +101,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 + Když je stisknuto zelené tlačítko, musíš vyslat - `rozešli všem` {.blockevents} zprávu, na kterou zareaguje tužka, a změní kostým a barvu tuhy.
 
-	Abys toho dosáhl(a) přidej tento kód na zelenou tužku:
+	Abys toho dosáhl(a) přidej tento kód na zelená tlačítko:
 
 	```blocks
 		po kliknutí na mě
@@ -126,14 +126,14 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 
 	Abys nastavil(a) barvu tuhy na zelenou klikni na barevný boxík `nastav barvu pera na` {.blockpen}, a pak klikni na zelené tlačítko, aby se použila jeho barva.
 
-+ To samé udělej nyní pro modré tlačítko, přidáním následujícího kódu:
++ To samé udělej nyní pro modré tlačítko, prřidáním následujícího kódu:
 
 	```blocks
 		po kliknutí na mě
 		rozešli všem [blue v]
 	```
 
-	...a přidáním tohoto kódu pro postavu tužky:
+	...a přidáním tohoto kódu pro sprajt tužky:
 
 	```blocks
 		po obdržení zprávy [blue v]
@@ -149,7 +149,7 @@ Udělej různé barevné tužky a umožni jejich používání a možnost si je 
 		nastav barvu pera na [#0000ff]
 	```
 
-	Můžeš si vybrat jinou barvu pro začátek!
+	Múžeš si vybrat jinou barvu pro začátek!
 
 + Vyzkoušej projekt. Funguje nyní přepínání mezi modrou a zelenou tužkou?
 
@@ -163,7 +163,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 ## Seznam úkolů { .check }
 
-+ Přidej tlačítko pro smazání celé scény. Přidej postavu (písmeno) 'X-block' na scénu a nabarvi ji na červeno.
++ Přidej tlačítko pro smazání celé scény. Přidej sprajt (písmeno) 'X-block' na scénu a nabarvi ho na červeno.
 
 	![screenshot](paint-x.png)
 
@@ -186,7 +186,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	![screenshot](paint-eraser-stage.png)
 
-+ Nyní přidej kód k tlačítku gumy, abys řekl(a) tužce, že se má změnit na gumu.
++ Nyní přidej kód k tlačitku gumy, abys řekl(a) tužce, že se má změnit na gumu.
 
 	```blocks
 		po kliknutí na mě
@@ -205,16 +205,16 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
 
 	![screenshot](paint-erase-test.png)
 
-+ Možná sis všiml problému, že můžeš kreslit kdekoliv včetně blízkosti tlačítek na výběr!
++ Možná sis všiml problému, že múžes kreslit kdekoliv včetně blízkosti tlačítek na výběr!
 
 	![screenshot](paint-draw-problem.png)
 
-	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když je y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `když` {.blockcontrol} tužky takto:
+	Abys to opravil musíš tužce říct, že má kreslit jen když je stisknuté tlačítko myši _a_ když y-pozice myši větší než -110 (`souřadnice myši y`{.blocksensing}`> -120` {.blockoperators}). Změň blok `když` {.blockcontrol} tužky takto:
     
     ```blocks
 		po kliknutí na ⚑
 		opakuj dokola
-            jdi na [ukazatel myši v]
+            go to [ukazatel myši v]
             když (((myš stisknuta) a (souřadnice myši y)) > [-120]) tak          
                 pero dolů
             jinak 
@@ -223,7 +223,7 @@ Občas se stane chyba a proto přidáme tlačítko 'smazat' a gumu do projektu.
         end
 	```
 
-+ Vyzkoušej projekt; nyní bys nemělo být možné kreslit blízko tlačítek.
++ Vyzkoušej projekt; nyní bys nemělo výt možné kreslit blízko tlačítek.
 
 	![screenshot](paint-fixed.png)
 
@@ -245,7 +245,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	Šířka tuhy bude nyní opakovaně nastavována podle proměnné 'width'.
 
-+ Hodnotu uloženou v proměnné můžeš změnit kliknutím pravého talčítka myši na proměnné a (na scéně) a vybráním 'posuvník'.
++ Hodnotu uloženou v proměnná můžeš změnit kliknutim pravého talčítka myši na proměnné a (na scéně) a vybráním 'posuvník'.
 
 	![screenshot](paint-slider.png)
 
@@ -253,11 +253,11 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 
 	![screenshot](paint-slider-change.png)
 
-+ Vyzkoušej projekt, abys viděl, zda jde měnit šířka tuhy.
++ Vyzkoušej projekt abys viděl zda jde měnit šířka tuhy.
 
 	![screenshot](paint-width-test.png)
 
-	Pokud chceš omezit minimální a maximální hodnotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'nastav u posuvníku min a max'. Nastav minimum a maximum na hodnoty 1 a 20.
+	Pokud chceš omezit minimální a maximální hdonotu proměnné 'width' klikni pravým tlačítkem myši na proměnnou a vyber 'nastav u posuvníku min a max'. Nastav minimum a maximum na hodnoty 1 a 20.
 
 	![screenshot](paint-slider-max.png)
 
@@ -266,7 +266,7 @@ Dovol uživatelům kreslit různou velikostí tuhy.
 ## Ulož projekt { .save }
 
 ## Výzva: Zkratky { .challenge }
-Zkus přidat klávesové zkratky, například:
+Zkus přidat klávesová zkratky, například:
 
 + m = změní barvu na modrou
 + z = změní barvu na zelenou

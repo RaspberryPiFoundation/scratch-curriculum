@@ -5,7 +5,7 @@ embeds: "*.png"
 ...
 
 #Úvod
-V tomto projektu s děti naučí jak mohou postavy reagovat s prostředím.
+V tomto projektu s děti naučí jak mohou sprajty reagovat s prostředím.
 
 #Zdroje
 Pro tento projekt použijte Scratch 2. Scratch 2 můžete najít online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro použití offline.

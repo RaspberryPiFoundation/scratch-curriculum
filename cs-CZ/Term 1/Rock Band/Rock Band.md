@@ -30,7 +30,7 @@ Před tím, než začneš oživovat objekty, musíš nějaké přidat. Ve Scratc
 
 	![screenshot](band-delete.png)
 
-+ Dále klikni na 'Vybrat postavu z knihovny', aby se ti zobrazil seznam postav.
++ Dále klikni na 'Vybrat postavu z knihovny' aby se ti zobrazil seznam postav.
 
 	![screenshot](band-sprite-library.png)
 
@@ -76,7 +76,7 @@ Naprogramujeme buben aby vydával zvuk, když na něj klikneš.
 
 + Na záložce 'Scénáře' najdi bloky kódu, které jsou rozlišené podle barviček. 
 
-	Klikni na postavu bubnu a potom přetáhni tyto dva bloky do oblasti pro kód vpravo, tak aby byly spojené dohromady (jako Lego kostky):
+	Klikni na postavu bubnu a potom přetáhni tyto dva bloky do oblasti pro kód vpravo, tak aby byly spojené dorhromady (jako Lego kostky):
 
 	![screenshot](band-code.png)
 
@@ -136,7 +136,7 @@ Přidej zpěvačku do tvé skupiny!
 
 	![screenshot](band-singer-mic.png)
 
-+ Před tím, než naučíš zpěvačku zpívat, potřebuješ přidat zvuk k postavě. Ujisti se že máš vybranou zpěvačku, pak klikni na záložku 'Zvuky' a klikni na 'Vybrat zvuk z knihovny':
++ Před tím než naučíš zpěvačku zpívat, potřebuješ přidat zvuk k postavě. Ujisti se že máš vybranou zpěvačku, pak klikni na záložku 'Zvuky' a klikni na 'Vybrat zvuk z knihovny':
 
 	![screenshot](band-import-sound.png)
 
@@ -144,7 +144,7 @@ Přidej zpěvačku do tvé skupiny!
 
 	![screenshot](band-choose-sound.png)
 
-+ Nyní po přidání zvuku přidej následující kód ke zpěvačce:
++ Nyní po přidání zvuku přidej následující kód ke zpevačce:
 
 	```blocks
 		po kliknutí na mě
@@ -155,7 +155,7 @@ Přidej zpěvačku do tvé skupiny!
 
 ## Ulož projekt { .save }
 
-##Výzva: Změň zpěvačce kostým { .challenge }
+##Vývza: Změň zpěvačce kostým { .challenge }
 Můžeš upravit zpěvačku tak, aby vypadala, že zpívá po kliknutí? Pokud nevíš jak, udělej to stejně jako u bubnu.
 
 ![screenshot](band-singer-final.png)
@@ -165,7 +165,7 @@ Nezapomeň vyzkoušet jestli tvůj nový kód funguje!
 ## Ulož projekt { .save }
 
 ##Výzva: Vytvoř si svoji hudební skupinu { .challenge }
-Pomocí toho co jsi se již naučil(a) si vytvoř svoji skupinu! Můžeš vytvořit jakýkoliv nástroj - podívej se do galérie na dostupné postavy a zvuky.
+Pomocí toho co jsi se již naučil(a) si vytovř svoji skupinu! Můžeš vytvořit jakýkoliv nástroj - podívej se do galérie na dostupné postavy a zvuky.
 
 ![screenshot](band-ideas.png)
 
@@ -177,7 +177,7 @@ Tak jak používáš existující postavy, můžes si nakreslit vlastní.
 
 ![screenshot](band-draw.png)
 
-Pokud máš mikrofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spouštění nástrojů!
+Pokud máš mirkofon, tak si nahraj vlastní zvuk, nebo můžeš použít kameru na spouštění nástrojů!
 
 ![screenshot](band-io.png)
 

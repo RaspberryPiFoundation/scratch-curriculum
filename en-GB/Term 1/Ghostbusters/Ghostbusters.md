@@ -75,7 +75,7 @@ Can you make your ghost `wait` {.blockcontrol} a random amount of time before ap
 
 # Step 3: Catching ghosts { .activity }
 
-Let's allow the player to catch ghosts!
+Lets allow the player to catch ghosts!
 
 ## Activity Checklist { .check }
 
