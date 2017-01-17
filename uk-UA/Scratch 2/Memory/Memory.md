@@ -1,14 +1,14 @@
 * * *
 
-назва: Память рівень: Scratch 1 мова: українська стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*"]...
+назва: Память рівень: Scratch 1 мова: uk стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*"]...
 
 ## Проект за сприяння спільноти {.challenge.pdf-hidden}
 
-This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+Цей проект був стіорений Еріком і його донькою Рут. Якщо ви хочете долучитися і створити власний проект, будь ласка, [контактуйте з нами на Github](https://github.com/CodeClub).
 
 # Передмова {.intro}
 
-In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
+В цьому проекті ми створимо гру пам'яті, де вам треба буде запам'ятати і повторити послідовність випадкових кольорів!
 
 <div class="scratch-preview">
   crwMD_Iframe_0 <img src="colour-final.png" />
@@ -16,36 +16,36 @@ In this project, you will create a memory game where you have to memorise and re
 
 # Крок 1: Випадкові кольори {.activity}
 
-First, let's create a character that can change to a random sequence of colours for the player to memorise.
+Спочатку, створімо персонажа, який буде змінювати випадкову послідовність кольорів, щоб гравець міг запам'ятати.
 
 ## Завдання для виконання {.check}
 
-+ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
++ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор знаходиться за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
 
-+ Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
++ Виберіть персонажа і фон. Ваш персонаж не обов'язково має бути людиною, але він мусить вміти показувати кольори.
     
     ![screenshot](colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ Ви будете використовувати різні числа, що відповідають кольорам:
     
-    + 1 = red;
-    + 2 = blue;
-    + 3 = green;
-    + 4 = yellow.
+    + 1 = червоний;
+    + 2 = блакитний;
+    + 3 = зелений;
+    + 4 = жовтий.
     
-    Give your character 4 different colour costumes, one for each of the 4 colours above. Make sure that your coloured costumes are in the right order.
+    Дайте своєму персонажу 4 різні образи, кожен різного кольору, з тих, що зазначені вище. Переконайтесь, що кольорові костюми в правильному порядку.
     
     ![screenshot](colour-costume.png)
 
-+ To create a random sequence, you need to create a **list**. A list is just a variable that stores lots of data **in order**. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
++ Щоб створити випадкову послідовність, вам треба створити **список**. Список - це просто змінна, що містить багато данних розташованих ** по порядку**. Створіть новий список під назвою `послідовність`{.blockdata}. Як тільки персонажу потрібно буде побачити список, ми можемо натиснути "Тільки для цього спрайту".
     
     ![screenshot](colour-list.png)
     
-    You should now see your empty list in the top-left of your stage, as well as lots of new blocks for using lists.
+    Тепер ви повинні бачити порожній список у верхньому лівому кутку сцени, разом з багатьма іншими блоками для використання списків.
     
     ![screenshot](colour-list-blocks.png)
 
-+ Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
++ Щоб додати випадкове число до свого списку (і показати відповідний образ) 5 разів, додайте цей код до свого персонажу:
     
     ```blocks
     коли натиснуто ⚑
@@ -57,34 +57,34 @@ First, let's create a character that can change to a random sequence of colours 
     end
 ```
 
-Notice that you have also emptied the list to begin with.
+Зверніть увагу, що ви починали з порожнього списку.
 
 ## Виклик: Додаємо звук {.challenge}
 
-Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume?
+Перевірте свій проект кілька разів. Ви можете помітити, що одне і те ж число вибране два (або більше) рази підряд, ускладнюють запамятовування послідовності. Чи можемо додати відтворення звуку кожного разу, як персонаж змінює образ?
 
-Can you make a different drum sound play depending on the random number chosen? This will be *very* similar to your code to change the character's costume.
+Чи можемо додати різний звук залежно від випадково вибраного числа? Це буде *дуже* схоже до коду, який змінює обрах персонажу.
 
 ## Збережіть свій проект {.save}
 
-# Step 2: Repeating the sequence {.activity}
+# Крок 2: Створюємо послідовність {.activity}
 
-Let's add 4 buttons, for the player to repeat the sequence they've remembered.
+Додамо 4 кнопки, щоб гравець міг повторити послідовність, яку запам'ятав.
 
 ## Завдання для виконання {.check}
 
-+ Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
++ Додамо до проекту 4 спрайти, що потім стануть кнопками. Відредагуйте свої 4 спрайти, по одному для всіх 4 кольорів.
     
     ![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
++ Коли натиснуто на червоний барабан, потрібно буде передати повідомлення своєму персонажу, щоб сповістити, що нажато червону кнопку. Додайте цей код до червоного барабану:
     
     ```blocks
     коли спрайт натиснуто
     оповістити [red v]
 ```
 
-+ When your character receives this message, they should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, you can remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
++ Коли персонаж отримає повідомлення, він повинен перевірити, чи номер 1 - це початок списку (тобто, що червоний колір - наступний в послідовності). Якщо це так, можете видалити номер зі списку, так як ви вгадали правильно. В іншому випадку - ця гра закінчилась!
     
     ```blocks
     коли одержую [red v]
@@ -96,14 +96,14 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
     end
 ```
 
-+ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
++ Також можете показати спалахи, тоді коли список пустий, так як це означає, що всю послідовність було вгадано правильно. Додайте цей код в кінець скріпта свого персонажу `коли натиснуто ⚑` {.blockevents}:
     
     ```blocks
     wait until < (довжина [sequence v]) = [0] >
     оповістити [won v] і чекати
 ```
 
-+ Click on your stage, and add this code to make the backdrop change colour once the player has won.
++ Натисніть на сцені і додайте цей код, для того щоб фон змінював колір, коли гравець виграє.
     
     ```blocks
     коли одержую [won v]
@@ -117,44 +117,44 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
 ## Виклик: Додаємо 4 кнопки {.challenge}
 
-Repeat the steps above for your blue, green and yellow buttons. Which code will stay the same, and which code will change for each button?
+Повторіть всі вказані вище кроки для блакитної, зеленої і жовтої кнопок. Який код не зміниться, а який зміниться для кожної з кнопок?
 
-You can also add sounds for when the buttons are pressed.
+Також можете додати звук при нажатті кожної з кнопок.
 
-Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
+Не забуватей перевіряти код, який ви додали! Чи можете ви запам'ятати послідовність з 5 кольорів? Чи послідовність змінюється кожного разу?
 
 ## Збережіть свій проект {.save}
 
-# Step 3: Multiple levels {.activity.new-page}
+# Крок 3: Багаторазові рівні {.activity.new-page}
 
-So far, the player only has to remember 5 colours. Let's improve your game, so that the length of the sequence increases.
+Поки що гравцю треба було запам'ятати тільки 5 кольорів. Ускладнимо гру так, щоб довжина послідовності зросла.
 
 ## Завдання для виконання {.check}
 
-+ Create a new variable called `score` {.blockdata}.
++ Створіть нову змінну `рахунок` {.blockdata}.
     
     ![screenshot](colour-score.png)
 
-+ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
++ Ця змінна `рахунок` {.blockdata} буде використовуватись, щоб визначити довжину послідовності, яку повинен запам'ятати гравець. Отже, розпочнемо з рахунку і довжини послідовності, яка рівна 3. Додайте цей код на початок скріпта свого персонажу `коли натиснуто ⚑` {.blockevents}:
     
     ```blocks
     встановити [score v] в [3]
 ```
 
-+ Instead of always creating a sequence of 5 colours, you now want the `score` {.blockdata} to determine the sequence length. Change your character's `repeat` {.blockcontrol} loop (for creating the sequence) to:
++ Замість того, щоб завжди створювати послідовність з 5 кольорів, тепер вам треба, щоб `рахунок` {.blockdata} визначав довжину послідовності. Для того, щоб створити послідовність, змініть цикл вашого персонажу `повторити` {.blockcontrol} на:
     
     ```blocks
     повторити (score)
     end
 ```
 
-+ If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence.
++ Якщо послідовність вгадано правильно, додайте 1 до рахунку, щоб збільшити довжину посідовності.
     
     ```blocks
     змінити [score v] на (1)
 ```
 
-+ Finally, you need to add a `forever` {.blockcontrol} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
++ Завершуючи, вам треба додати цикл `завжди` {.blockcontrol} навколо коду, щоб створити послідовність для кожного рівня. Саме так повинен виглядати код вашого персонажу:
     
     ```blocks
     коли натиснуто ⚑
@@ -172,19 +172,19 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
     end
 ```
 
-+ Get your friends to test out your game. Remember to hide the `sequence` {.blockdata} list before they play it!
++ Запросіть своїх друзів спробувати зіграти. Памятайте, що треба приховати список `послідовність` {.blockdata} перед початком гри!
 
 ## Збережіть свій проект {.save}
 
 # Крок 4: Найкращий рахунок {.activity}
 
-Let's save the high score, so that you can play against your friends.
+Збережімо найкращий рахунок, щоб ви могли грати проти своїх друзів.
 
 ## Завдання для виконання {.check}
 
-+ Add 2 new variables to your project, called `high score` {.blockdata} and `name` {.blockdata}.
++ Створіть у проекті 2 нові змінні під назвою `найкращий рахунок`{.blockdata} і `ім'я`{.blockdata}.
 
-+ If ever the game ends (by pressing the wrong button), you need to check whether the player's score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player. Here's how your red button should look:
++ Якщо гра раптово закінчується (при нажатті не правильної кнопки), вам потрібно перевірити чи рахунок гравця вищий за найвищий рахунок в грі. Якщо це так, треба зберегти рахунок як найвищий і записати ім'я гравця. Нижче показано, як має виглядати червона кнопка:
     
     ```blocks
     коли одержую [red v]
@@ -201,52 +201,52 @@ Let's save the high score, so that you can play against your friends.
     end
 ```
 
-+ You'll need to add this new code to the other 3 buttons too! Have you noticed that the 'Game over' code in each of the 4 buttons is exactly the same?
++ Додатково, потрібно додати цей новий код до всіх 3 кнопок! Чи помітили ви, що код "Гру закінченно" для кожної з 4 кнопок виглядає однаково?
     
     ![screenshot](colour-same.png)
 
-+ If ever you need to change any of this code, such as adding a sound or changing the 'Game over!' message, you'd have to change it 4 times! That could get annoying, and waste a lot of time.
++ Якщо в майбутньому треба буде змінити цей код, наприклад додати звук, або змінити напис "Гру закінчено", вам треба буде змінити його 4 рази! На це може піти багато часу і енергії.
     
-    Instead, you can define your own blocks, and reuse them in your project! To do this, click `more blocks` {.blockmoreblocks}, and then 'Make a block'. Call this new block 'Game over'.
+    Натомість, ви можете створювати власні блоки і перевикористовувати їх в проекті! Щоб це зробити, натисніть `більше блоків` {.blockmoreblocks}, і потім "Створити блок". Назвіть цей блок "Гру закінчено".
     
     ![screenshot](colour-more.png)
 
-+ Add the code from the `else` {.blockcontrol} block from the red button to the new block that appears:
++ Додайте код `інакше` {.blockcontrol} з блоку червоної кнопки до нового блоку, що виглядає так:
     
     ![screenshot](colour-make-block.png)
 
-+ You've now made a new *function* called `Game over` {.blockmoreblocks}, which you can use anywhere you like. Drag your new `Game over` {.blockmoreblocks} block onto the 4 scripts for the buttons.
++ Тепер ви зробили нову *функцію* під назвою `Гру закінчено` {.blockmoreblocks}, яку можете використовувати де завгодно. Перетягніть новий блок `Game over` {.blockmoreblocks} на 4 скріпти для кнопок.
     
     ![screenshot](colour-use-block.png)
 
-+ Now add a sound for when the wrong button is pressed. You only need to add this code *once* in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
++ Тепер додайте звук, коли нажато не ту кнопка. Потрібно лише *один раз* додати наступний код до блоку `Гру завершено` {.blockmoreblocks}, який ви тільки що створили, а не 4 окремі рази!
     
     ![screenshot](colour-cough.png)
 
 ## Виклик: Ще більше блоків {.challenge}
 
-Do you notice any other code that is the same for all 4 buttons?
+Чи помітили ви ще будь-який код, що залишається тим самим для всіх 4 кнопок?
 
 ![screenshot](colour-more-blocks.png)
 
-Can you make another custom block, that is used by each button?
+Чи можемо зробити будь-який інший настроюваний блок, що буде використовуватись кожною кнопкою?
 
 ## Збережіть свій проект {.save}
 
-## Challenge: Another costume {.challenge}
+## Виклик: Ще один вигляд персонажу {.challenge}
 
-Have you noticed that your game starts with your character showing one of the 4 colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+Чи помітили ви, що ваша гра починається з того, що персонаж показує один з чотирьох кольорів і він завжди показує останній колір в послідовності, в той час як гравець повторює послідовність?
 
-Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
+Чи можемо додати ще один пустий вигляд для персонажу, який буде показуватись на початку гри і тоді, коли гравець пробує повторити послідовність?
 
 ![screenshot](colour-white.png)
 
 ## Збережіть свій проект {.save}
 
-## Challenge: Difficulty level {.challenge}
+## Виклик: Збільшення складності {.challenge}
 
-Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all 4 drums)?
+Чи можемо дозволити гравцю вибирати між "простим режимом" (використовуючи тільки червоні і блікитні барабани) і "звичайним режимом" (який використовує всі 4 барабани)?
 
-You could even add a 'hard' mode, which makes use of a 5th drum!
+Можете навіть додати "складний" режим, який використовує 5-ий барабан!
 
 ## Збережіть свій проект {.save}
