@@ -1,0 +1,40 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "hr-HR",
+    "number": 1,
+    "title": "Scratch 1",
+    "category": "",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Rock grupa.md",
+            "note":     "Rock grupa - notes.md"
+        },
+        {
+            "number":   2,
+            "filename": "Izgubljeni u svemiru.md",
+            "note":     "Izgubljeni u svemiru - biljeske.md"
+        },
+        {
+            "number":   3,
+            "filename": "Istjerivaci duhova.md",
+            "note":     "Istjerivaüi duhova-biljeske.md"
+        },
+        {
+            "number":   4,
+            "filename": "Robot koji razgovara.md",
+            "note":     "Robot koji razgovara - biljeÁke.md"
+        },
+        {
+            "number":   5,
+            "filename": "Program za crtanje.md",
+            "note":     "Program za crtanje - biljeÁke.md"
+        },        
+        {
+            "number":   6,
+            "filename": "Utrka brodova.md",
+            "note":     "Utrka brodova - biljeÁke.md"
+        }
+    ]
+}
