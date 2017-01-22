@@ -23,7 +23,7 @@ V této lekci se naučíš, jak naprogramovat mluvícího robota!
 + Předtím než začneš dělat mluvícího robota, musíš se rozhodnout jakou bude mít osobnost.
 	+ Jaké je jeho jméno?
 	+ Kde bydlí?
-	+ Je štastný? vážný? veselý? přátelský? stydí se?
+	+ Je štastný? Vážný? Veselý? Přátelský? Stydí se?
 
 + Vytvoř si nový projekt a smaž kočičku, takže tvůj projekt bude prázdný. Online editor můžeš nalézt zde: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -37,7 +37,7 @@ V této lekci se naučíš, jak naprogramovat mluvícího robota!
 
 ## Ulož projekt { .save }
 
-# Step 2: Mluvící robot { .activity }
+# Krok 2: Mluvící robot { .activity }
 
 Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 
@@ -48,7 +48,7 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 	```blocks
 		po kliknutí na mě
 		ptej se [Ahoj! Jak se jmenuješ?] a čekej
-		say [To je krásné jméno!] for (2) secs
+		říkej [To je krásné jméno!] příštích (2) sekund
 	```
 
 + Klikni na robota, abys ho vyzkoušel(a). Po té co se zeptá na jména, napiš ho do boxíku, který se objeví.
@@ -75,7 +75,7 @@ Nyní když máš robota s osobností, naprogramuj ho, aby mluvil
 
 + Pro případ, že bys chtěl zadané jméno použít dále v kódu, musíš ho uložit do proměnné. Vytoř proměnnou nazvanou `name` {.blockdata}. Pokud jsi zapomněl(a) jak se to dělá, podívej se do projektu 'Lovci duchů'.
 
-+ Informace, kterou jsi zadal je uložená do speciální proměnné `answer` {.blocksensing}. Jdi do skupiny Sensing klikni na block answer aby se vedle něj objevilo zatržítko. Hodnota uložená v `answer` {.blocksensing} se objeví v levém horním rohu scény.
++ Informace, kterou jsi zadal je uložená do speciální proměnné `odpověď` {.blocksensing}. Jdi do skupiny Vnímání; klikni na blok `odpověď` {.blocksensing}, aby se vedle něj objevilo zatržítko. Hodnota uložená v `odpověď` {.blocksensing} se objeví v levém horním rohu scény.
 
 + Jakmile vytvoříte novou proměnnou, upravte kód robota takto:
 
@@ -102,13 +102,13 @@ Naprogramuj robota tak aby se zeptal na více otázek. Dokážeš uložit odpov�
 
 ## Ulož projekt { .save }
 
-# Step 3: Rozhodování { .activity }
+# Krok 3: Rozhodování { .activity }
 
 Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na základě odpovědi.
 
 ## Seznam úkolů { .check }
 
-+ Nech se robota zeptat na otázky na které jde odpovědět `ano` nebo `ne`. Tady je příklad:
++ Nech robota se zeptat na otázky, na které jde odpovědět `ano` nebo `ne`. Tady je příklad:
 
 	```blocks
 		po kliknutí na mě
@@ -125,7 +125,7 @@ Robota můžeš naprogramovat tak, aby se rozhodoval co dále bude dělat na zá
 
 + Abys vyzkoušel program pořádně, pusť ho dvakrát a jednou odpověz `ne` a jednou `ano`. Odpověď od robota dostaneš jen když odpovíš `ano`.
 
-+ Problém je, že robot neodpoví když  je odpověď `ne`. To můžeš opravit tak, že změníš blok `když` {.blockcontrol} na blok `když/jinak` {.blockcontrol}:
++ Problém je, že robot neodpoví, když je odpověď `ne`. To můžeš opravit tak, že změníš blok `když` {.blockcontrol} na blok `když/jinak` {.blockcontrol}:
 
 	```blocks
 		po kliknutí na mě
@@ -168,7 +168,7 @@ Naprogramuj robota tak, aby se ptal více otázek - tak aby odpovědi byly `ano`
 
 ## Ulož projekt { .save }
 
-# Step 4: Změna místa { .activity }
+# Krok 4: Změna místa { .activity }
 
 Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 
@@ -187,7 +187,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 		end
 	```
 
-+ Také potřebuješ přidat kód který zajistí, aby robot začínal ve správných kulisách (a se správným kostýmem):
++ Také potřebuješ přidat kódi, který zajistí, aby robot začínal ve správných kulisách (a se správným kostýmem):
 
 	```blocks
 		po kliknutí na mě
@@ -195,11 +195,11 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
         změň kostým na [nano-b v]
 	```
 
-+ Otestuj program a odpověz `ano` když se robot zeptá na cestu na měsíc. Měl(a) bys vidět, že se pozadí změní.
++ Otestuj program a odpověz `ano`, když se robot zeptá na cestu na měsíc. Měl(a) bys vidět, že se pozadí změní.
 
 	![screenshot](chatbot-backdrop.png)
 
-+ Změní se pozadí když o dpovíš `ne`? Co se stane, když odpovíš `Nejsem si jistý`?
++ Změní se pozadí, když odpovíš `ne`? Co se stane, když odpovíš `Nejsem si jistý`?
 
 + Pokud chceš, aby robot poskočil 4x, když odpovíš `ano`, přidej tento kód do bloku `když` {.blockcontrol}:
 
@@ -215,7 +215,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
     
     ```blocks
 		ptej se [Letím na měsíc, chceš jít se mnou?] a čekej
-		když ((answer) = [ano]) tak
+		když ((odpověď) = [ano]) tak
             změň pozadí na [moon v]
             opakuj (4) krát
                 změň y o (10)
@@ -231,7 +231,7 @@ Robota můžeš naprogramovat tak, aby měnil místo, kde se nachází.
 ## Ulož projekt { .save }
 
 ## Výzva: Vytvoř si svého vlastního robota {.challenge}
-Použij to co ses naučil(a), abys dokončil robota. Tady je pár nápadů:
+Použiji, to co ses naučil(a), abys dokončil robota. Tady je pár nápadů:
 
 ![screenshot](chatbot-ideas.png)
 

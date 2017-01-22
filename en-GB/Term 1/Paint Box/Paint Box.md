@@ -114,7 +114,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 		set pen color to [#00ff00]
 	```
 
-	To set the pencil to colour to green, click the coloured box in the `set color` {.blockpen} block, and click on the green selector icon to choose green as your pencil colour.
+	To set the pencil colour to green, click the coloured box in the `set color` {.blockpen} block, and click on the green selector icon to choose green as your pencil colour.
 
 + You can now do the same for the blue pencil icon, adding this code to the blue selector sprite:
 
@@ -141,7 +141,7 @@ Let's add different colour pens to your project, and allow the user to choose be
 
 	If you prefer, you can start with a different colour pencil!
 
-+ Test out your project. Can you switch between blue and green pens?
++ Test out your project. Can you switch between the blue and green pens?
 
 	![screenshot](paint-pens-test.png)
 
@@ -248,7 +248,7 @@ Let's allow the user to draw using a range of different pencil sizes.
 ## Challenge: Shortcuts { .challenge }
 Can you create keyboard shortcuts for your commands? For example:
 
-+ b = Switch to blue pen
++ b = switch to blue pen
 + g = switch to green pen
 + e = switch to eraser
 + c = clear screen

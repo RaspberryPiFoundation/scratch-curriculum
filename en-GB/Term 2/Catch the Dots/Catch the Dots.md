@@ -64,6 +64,7 @@ Let's add some dots for the player to collect with their controller.
 
 	```blocks
 		when flag clicked
+		hide
 		wait (2) secs
 		forever
 			create clone of [myself v]
