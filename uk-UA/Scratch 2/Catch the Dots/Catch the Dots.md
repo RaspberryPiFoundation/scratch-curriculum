@@ -1,10 +1,10 @@
 * * *
 
-title: Упіймай цяточки level: Scratch 2 language: uk-UA stylesheet: scratch embeds: "*.png" materials: ["Club Leader Resources/*"]
+title: Ловець Точок level: Scratch 2 language: uk-UA stylesheet: scratch embeds: "*.png" materials: ["Club Leader Resources/*"]
 
 # Передмова {.intro}
 
-При реалізації цього проекту, ви навчитеся створювати гру, в якій потрібно буде ловити кольорові кульки такою ж стороною контролера-колеса.
+При реалізації цього проекту, ви навчитеся створювати гру, в якій потрібно буде ловити кольорові кульки стороною контролера-колеса такого ж кольору.
 
 <div class="scratch-preview">
   crwMD_Iframe_0 <img src="dots-final.png" />
@@ -16,7 +16,7 @@ title: Упіймай цяточки level: Scratch 2 language: uk-UA stylesheet
 
 ## Завдання для виконання {.check}
 
-+ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
++ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор знаходиться за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
 
 + Якщо тренер клубу дав вам доступ до папки "Ресурси", натисніть на кнопку "Завантажити спрайт з файлу" і додайте малюнок "controller.svg". Цей спрайт потрібно розмістити в центрі сцени.
     

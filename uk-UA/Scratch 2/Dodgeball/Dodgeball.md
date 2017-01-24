@@ -12,11 +12,11 @@ title: Викидайли level: Scratch 2 language: uk-UA stylesheet: scratch e
 
 # Крок 1: Рух персонажа {.activity}
 
-Давайте почнемо зі створення персонажа, який зможе рухатись ліворуч й праворуч, а також підніматися вгору по стовпах.
+Почнімо зі створення персонажа, який зможе переміщатися ліворуч й праворуч, а також підніматися вгору по стовпах.
 
 ## Завдання для виконання {.check}
 
-+ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
++ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор знаходиться за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
 
 + Для цього проекту вам необхідна тека "Ресурси проекту", яка містить усі зображення, що можуть знадобитися. Переконайтеся, що ви знайшли цю теку, а якщо ні — запитайте вчителя.
     
@@ -43,13 +43,13 @@ title: Викидайли level: Scratch 2 language: uk-UA stylesheet: scratch e
     end
 ```
 
-+ Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does your character look like they are walking?
++ Перевірте свого персонажа, натиснувши на прапор і утримуючи клавішу зі стрілкою вправо. Ваш гравець рухається праворуч? Чи виглядає, що ваш персонаж іде?
     
     ![screenshot](dodge-walking.png)
 
-+ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
++ Щоб перемістити персонажа ліворуч, потрібно додати ще один блок `Якщо` {.blockcontrol} всередині циклу `завжди` {.blockcontrol}, він перемістить вашого персонажа ліворуч. Не забудьте перевірити, чи працює ваш новий код!
 
-+ To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
++ Щоб піднятися на стовп, ваш персонаж має повільно рухатись вверх, кожного разу при натисканні клавіші зі стрікою вверх, а також торкатися правильного кольору. Додайте цей код до циклу вашого персонажа `назавжди` {.blockcontrol}:
     
     ```blocks
     if < <key [стрілка вгору v] pressed?> and <touching color [#FFFF00] ?> > then
@@ -57,7 +57,7 @@ title: Викидайли level: Scratch 2 language: uk-UA stylesheet: scratch e
     end
 ```
 
-+ Test your character - can you climb the yellow poles and get to the end of your level?
++ Перевірте свого персонажа - чи можете ви дістатися до жовтих стовпів і дійти до кінця рівня?
     
     ![screenshot](dodge-test-character.png)
 
@@ -65,7 +65,7 @@ title: Викидайли level: Scratch 2 language: uk-UA stylesheet: scratch e
 
 ## Виклик: Завершення рівня {.challenge}
 
-Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the brown door?
+Додаймо більше коду до вашого персонажа, щоб він щось говорив `якщо` {.blockcontrol} він потрапляє до коричневих дверей?
 
 ![screenshot](dodge-win.png)
 
@@ -77,15 +77,15 @@ Can you add more code to your character, so that they say something `if` {.block
 
 ## Завдання для виконання {.check}
 
-+ You may have noticed that your character can walk off a platform into mid-air. Try to walk off of a platform and see what happens.
++ Ви могли помітити, що ваш персонаж може виходити з платформи в повітря. Спробуйте вийти з платформи і подивитися, що відбудеться.
     
     ![screenshot](dodge-no-gravity.png)
 
-+ To fix this, let's add gravity to your game. Create a new variable called `gravity` {.blockdata}. You can hide this variable from your stage if you want to.
++ Щоб це виправити додаймо гравітацію до гри. Створіть нову змінну під назвою `gravity` {.blockdata}. Якщо ви захочете то можете приховати цю змінну з вашої сцени.
     
     ![screenshot](dodge-gravity.png)
 
-+ Add this new code block, which sets the gravity to a negative number, and then uses this to repeatedly change your character's y-coordinate.
++ Додати цей новий блок коду, який встановлює гравітацію до від'ємного числа, а потім використовує його, щоб постійно змінювати Y-координату для вашому персонажу.
     
     ```blocks
     коли натиснуто ⚑
@@ -95,11 +95,11 @@ Can you add more code to your character, so that they say something `if` {.block
     end
 ```
 
-+ Click the flag, and then drag your character to the top of the stage. What happens? Does the gravity work as you expected?
++ Клацніть на прапор і перетягніть персонажа до верхньої частини сцени. Що відбувається? Гравітація працює як ви очікували?
     
     ![screenshot](dodge-gravity-drag.png)
 
-+ Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
++ Гравітація не повинна пересувати персонажа через платформу, або стовп! Додайте блок `Якщо` {.blockcontrol} до коду, щоб гравітація могла працювати тільки коли ваш персонаж знаходиться в повітрі. Код гравітації тепер має виглядати наступним чином:
     
     ```blocks
     коли натиснуто ⚑
@@ -111,11 +111,11 @@ Can you add more code to your character, so that they say something `if` {.block
     end
 ```
 
-+ Test the gravity again. Does your character stop when they are on a platform or a pole? Can you walk off the edge of platforms to the level below?
++ Перевірте гравітацію ще раз. Чи зупиняється ваш персонаж, коли він попадає на платформу, або стовп? Ви можете вийти за межі платформ до рівня нижче?
     
     ![screenshot](dodge-gravity-test.png)
 
-+ Let's also make your character jump when the player presses the space bar. One very easy way to do this is to move your character up a few times, using this code:
++ Також зробімо, щоб персонаж стрибав, коли ви натискаєте клавшу пробілу. Один дуже простий спосіб зробити це, полягає в переміщенні вашого персонажа вверх кілька разів, за допомогою цього коду:
     
     ```blocks
     коли натиснуто клавішу [пропуск v]
@@ -124,13 +124,13 @@ Can you add more code to your character, so that they say something `if` {.block
     end
 ```
 
-As gravity is constantly pushing your character down by 4 pixels, you need to choose a number greater than 4 in your `change y by (4)` {.blockmotion} block. Change this number until you're happy with the height your character jumps.
+Так як гравітація постійно штовхає персонажа вниз на 4 пікселі, вам потрібно вибрати число більше ніж 4 у блоці `змінити y (4)` {.blockmotion}. Змінюйте цю цифру допоки не станете задоволені висотоб на яку персонаж стрибає.
 
-+ If you test out this code, you'll notice that it works, but the movement isn't very smooth. To make jumping look smoother, you'll need to move your character by smaller and smaller amounts, until they're not jumping anymore.
++ Коли ви перевірите цей код, ви помітите, що все працює, але рухи не надто гладкі. Щоб стрибки стали рівномірнішими, вам потрібно перемістити персонаж на менші і менші кількості цифр, до того моменту, поки персонаж взагалі перестане стрибати.
 
-+ To do this, create another variable called `jump height` {.blockdata}. Again, you can hide this variable if you prefer.
++ Для цього створіть ще одну змінну з ім'ям `висота стрибка` {.blockdata}. Знову ж таки, можете приховати цю змінну, якщо забажаєте.
 
-+ Delete the jumping code you added to your character, and replace it with this code:
++ Видаліть код стрибків, який ви додали до персонажа і замініть його на цей код:
     
     ```blocks
     коли натиснуто клавішу [пропуск v]
@@ -141,47 +141,47 @@ As gravity is constantly pushing your character down by 4 pixels, you need to ch
     end
 ```
 
-This code moves your character up by 8 pixels, then 7.5 pixels, then 7 pixels, and so on, until your character has finished jumping. This makes jumping look much smoother.
+Цей код переміщає персонажа на 8 пікселів, а потім на 7,5 пікселів, потім на 7 пікселів і так далі, поки ваш персонаж не завершить стрибки. Це робить стрибки більш рівномірними.
 
-+ Change the starting value of your `jump height` {.blockdata} variable and test it until you're happy with the height your character jumps.
++ Змініть початкове значення змінної `висота стрибка` {.blockdata} і перевіряйте її до тих пір, не будете задоволені висотою на яку стрибає персонаж.
 
 ## Збережіть свій проект {.save}
 
 ## Виклик: Реалістичніші стрибки {.challenge}
 
-Your character is able to jump whenever the spacebar is pressed, even if they're already in mid-air. You can test this by just holding down the spacebar. Can you fix this, so that your character can only jump `if` {.blockcontrol} they're touching a blue platform?
+Ваш персонаж може стрибати кожного разу, коли ви натискаєте пробіл, навіть якщо він вже у повітрі. Ви можете це перевірити, просто утримуючи клавішу пробілу. Чи можемо це виправити, таким чином, що персонаж зміг стрибати тільки в тому випадку, `Якщо` {.blockcontrol} він торкається синьої платформи?
 
 ## Збережіть свій проект {.save}
 
 # Крок 3: Уникнення куль {.activity.new-page}
 
-Now that you've got your character moving around, let's add some balls for your character to avoid.
+Тепер, коли у вас є персонаж, що вміє рухатись, додаймо кілька м'ячів, які він буде уникати.
 
 ## Завдання для виконання {.check}
 
-+ Create a new ball sprite. You can choose any type of ball you like.
++ Створіть новий спрайт м'яча. Ви можете вибрати будь-який м'яч, який вам сподобається.
     
     ![screenshot](dodge-balls.png)
 
-+ Resize your ball, so that your character can jump over it. Try jumping over the ball to test it.
++ Змініть розмір м'яча, так щоб персонаж міг через нього перестрибнути. 
     
     ![screenshot](dodge-ball-resize.png)
 
-+ Add this code to your ball:
++ Додайте цей код до вашого м'яча:
     
     ![screenshot](dodge-ball-motion.png)
     
-    This code creates a new ball clone every 3 seconds. Each new clone moves along the top platform.
+    Цей код створює кожні три секунди новий клон м'яча. Кожен новий клон рухається уздовж верхньої платформи.
 
-+ Click the flag to test this out.
++ Натисніть на прапорець, щоб перевірити це.
     
     ![screenshot](dodge-ball-test.png)
 
-+ Add more code to your ball sprite, so that they move across all 3 platforms.
++ Допишіть код вашого м'яча, так щоб вони переміщалися через усі три платформи.
     
     ![screenshot](dodge-ball-more-motion.png)
 
-+ Finally, you'll need code for when your character gets hit by a ball! Add this code to your ball sprite:
++ І, нарешті, вам знадобиться код для випадку, коли персонаж стикається з м'ячем. Додайте цей код до спрайту м'яча:
     
     ```blocks
     коли я починаю як клон
@@ -192,7 +192,7 @@ Now that you've got your character moving around, let's add some balls for your 
     end
 ```
 
-+ You'll also need to add code to your character, to move back to the start when they're hit:
++ Також потрібно додати код до персонажа для його повернення на початок гри після зіткнення:
     
     ```blocks
     коли одержую [hit v]
@@ -200,17 +200,17 @@ Now that you've got your character moving around, let's add some balls for your 
     перемістити в x:(-210) y:(-120)
 ```
 
-+ Test out your character and see if they go back to the start when they've been hit by a ball.
++ Перевірте свого персонажа і подивіться, чи він повертається на початок, коли вдаряється з м'ячем.
 
 ## Збережіть свій проект {.save}
 
 ## Виклик: Випадкові кулі {.challenge}
 
-The balls your character has to dodge all look the same, and always appear every 3 seconds. Can you improve them, so that they:
+Усі м'ячі, які персонаж має уникати, виглядають однаково і завжди з'являються кожні три секунди. Чи можете ви вдосконалити їх, так щоб вони:
 
-+ don't all look the same?
-+ appear after a random amount of time?
-+ are a random size?
++ не виглядали однаково?
++ з'являлися після випадкового проміжку часу?
++ були випадкового розміру?
 
 ![screenshot](dodge-ball-random.png)
 
@@ -218,19 +218,19 @@ The balls your character has to dodge all look the same, and always appear every
 
 # Крок 4: Лазери! {.activity.new-page}
 
-Let's make your game a little harder to complete, by adding lasers!
+Зробімо вашу гру трохи складнішою, додавши лазери!
 
 ## Завдання для виконання {.check}
 
-+ Add a new sprite to your game, called 'Laser'. It should have 2 costumes, called 'on' and 'off'.
++ Додайте новий спрайт до вашої гри, і назвіть його "Лазер". Він повинен містити два образи: "вимкнений" та "ввімкнений".
     
     ![screenshot](dodge-lasers-costume.png)
 
-+ Place your new laser anywhere you like, between 2 platforms.
++ Розмістіть свій новий лазер де завгодно, між 2 платформами.
     
     ![screenshot](dodge-lasers-position.png)
 
-+ Add code to your laser, to make it switch between the 2 costumes.
++ Додайте код до лазера, щоб зробити перемикання між 2 костюмами.
     
     ```blocks
     коли натиснуто ⚑
@@ -242,25 +242,25 @@ Let's make your game a little harder to complete, by adding lasers!
     end
 ```
 
-If you prefer, you can `wait` {.blockcontrol} a `random` {.blockoperators} amount of time between costume changes.
+Якщо ви бажаєте, ви можете `чекати` {.blockcontrol} `випадковий` {.blockoperators} проміжок часу між зміною костюмів.
 
-+ Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be the same as the code you added to your ball sprite.
++ Нарешті, додайте код до лазера, так щоб виводило 'hit' повідомлення, якщо лазер торкнеться вашого персонажа. Цей код буде таким же, як код, що ви додали до спрайта з м'ячем.
     
-    You don't need to add any more code to your character - they already know what to do when they get hit!
+    Вам не потрібно додавати більше коду для вашого персонажа - він вже знає, що робити, коли він отримав удар!
 
-+ Test out your game to see if you can get past the laser. Change the `wait` {.blockcontrol} times in your code if the lasers are too easy or too hard.
++ Перевірте вашу гру, подивившись чи ви можете отримувати минулі лазери. Змінити `чекати` {.blockcontrol} разів у вашому коді, якщо з лазерами занадто легко, або занадто складно.
 
 ## Виклик: Більше перешкод {.challenge}
 
-If you think your game is still too easy, you can add more obstacles to your level. You can add anything you like, but here are some ideas:
+Якщо ви думаєте, що ваша гра все ще занадто легка, ви можете додати більше перешкод до вашого рівня. Ви можете додати все що завгодно, але ось деякі ідеї:
 
-+ A flying killer butterfly;
-+ Platforms that appear and disappear;
-+ Falling tennis balls that must be avoided.
++ Літаючий метелик-вбивця;
++ Платформи, які з'являються і зникають;
++ Падіння тенісних м'ячів, яких слід уникати.
 
 ![screenshot](dodge-obstacles.png)
 
-You could even create more than one backdrop, and move to the next level when your character reaches the brown door:
+Можна навіть створити більше одного фону і переходити на наступний рівень, коли ваш персонаж досягне коричневих дверей:
 
 ```blocks
     if <touching color [#714300] ?> then
@@ -274,36 +274,36 @@ You could even create more than one backdrop, and move to the next level when yo
 
 ## Виклик: Вдосконалюємо гравітацію {.challenge}
 
-There's one other small bug in your game: gravity doesn't pull your character downwards if *any* part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
+Існує одна невелика помилка у вашій грі: гравітація не гальмує вашого персонажа, якщо *будь-яку* частиною торкається синьої платформи - навіть головою! Ви можете перевірити, забравшись на більшу частину стовпа а потім рухатися вліво.
 
 ![screenshot](dodge-gravity-bug.png)
 
-Can you fix this bug? To do this, you need to give your character different coloured trousers (on *all* costumes)...
+Ви можете виправити цю помилку? Для цього вам потрібно дати вашому персонажу різні кольорові брюки (на *всі* костюми)...
 
 ![screenshot](dodge-trousers.png)
 
-...and then replace the code:
+.. а потім замінити код:
 
 ```blocks
     < touching color [#0000FF]? >
 ```
 
-with:
+з:
 
 ```blocks
     < color [#00FF00] is touching [#0000FF]? >
 ```
 
-Remember to test your improvements to make sure you've fixed the bug!
+Не забудьте перевірити досягнення, переконайтеся, що ви вже виправили помилку!
 
 ## Збережіть свій проект {.save}
 
 ## Виклик: Більше життів {.challenge}
 
-Can you give your player 3 `lives` {.blockdata}, instead of just sending them back to the beginning each time? Here's how your game could work:
+Ви можете давати вашому гравцю `життя` {.blockdata}, а не просто відправляти назад на початок кожного разу? Нижче описано, як ваша гра може працювати.
 
-+ Your player starts with 3 lives;
-+ Whenever your player gets hit, one life is lost and they go back to the start;
-+ If there are no lives left, the game ends.
++ Ваш гравець починає з 3 життя;
++ Кожного разу, коли ваш гравець отримує удар, одне життя втрачається, і він повертається на початок;
++ Якщо вже немає життів, гра закінчується.
 
 ## Збережіть свій проект {.save}
