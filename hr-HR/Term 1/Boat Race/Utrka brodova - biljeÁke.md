@@ -1,6 +1,6 @@
 ---
-naslov: Utrka brodovima — Upute za vođe klubova
-jezik: en-GB
+title: Utrka brodovima — Upute za vođe klubova
+language: hr-HR
 embeds: "*.png"
 ...
 

@@ -1,6 +1,6 @@
 ﻿---
-제목: 채팅 로봇 — Notes for Club Leaders
-언어: ko-KR
+title: 채팅 로봇 — Notes for Club Leaders
+language: ko-KR
 embeds: "*.png"
 ...
 

@@ -2,10 +2,8 @@
 title: Rock Bend
 level: Scratch 1
 language: hr-HR
-
 stylesheet: scratch
 embeds: "*.png"
-
 materials: ["Club Leader Resources/*"]
 ...
 

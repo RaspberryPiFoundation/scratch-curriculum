@@ -1,6 +1,6 @@
 ﻿---
-제목: 페인트 박스 — 클럽 리더를 위한 노트
-언어: ko-KR
+title: 페인트 박스 — 클럽 리더를 위한 노트
+language: ko-KR
 embeds: "*.png" 
 ...
 

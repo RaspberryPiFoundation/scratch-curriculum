@@ -1,7 +1,7 @@
 ---
-제목: 보트 레이스 
-난이도: Scratch 1
-언어: ko-KR
+title: 보트 레이스 
+level: Scratch 1
+language: ko-KR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*","Project Resources/*"]

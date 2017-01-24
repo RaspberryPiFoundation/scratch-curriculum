@@ -1,6 +1,6 @@
 ---
-Naslov: Istjerivači duhova — upute za voditelje radionica 
-jezik: hr-HR
+title: Istjerivači duhova — upute za voditelje radionica 
+level: hr-HR
 embeds: "*.png"
 ...
 

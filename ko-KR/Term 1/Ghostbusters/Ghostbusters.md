@@ -1,7 +1,7 @@
 ---
-제목: 고스트버스터즈
-난이도: Scratch 1 
-언어: ko-KR
+title: 고스트버스터즈
+level: Scratch 1 
+language: ko-KR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]

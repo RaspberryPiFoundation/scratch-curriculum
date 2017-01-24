@@ -1,6 +1,6 @@
 ﻿---
-제목: 락 밴드 — 클럽 리더를 위한 노트
-언어: ko-KR
+title: 락 밴드 — 클럽 리더를 위한 노트
+language: ko-KR
 embeds: "*.png" 
 ...
 

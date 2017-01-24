@@ -1,10 +1,10 @@
 ---
-naslov: Utrka brodovima
-razina: Scratch 1
-jezik: hr-HR
+title: Utrka brodovima
+level: Scratch 1
+language: hr-HR
 stylesheet: scratch
 embeds: "*.png"
-materijali: ["Club Leader Resources/*","Project Resources/*"]
+materials: ["Club Leader Resources/*","Project Resources/*"]
 ...
 
 # Uvod { .intro }

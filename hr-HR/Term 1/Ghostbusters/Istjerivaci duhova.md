@@ -1,7 +1,7 @@
 ---
-Naslov: Istjerivači duhova
-Level: Scratch 1
-Jezik: hr-HR
+title: Istjerivači duhova
+level: Scratch 1
+language: hr-HR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
