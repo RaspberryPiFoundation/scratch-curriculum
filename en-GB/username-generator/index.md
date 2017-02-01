@@ -4,6 +4,7 @@ description: Generate awesome usernames that you can use online.
 layout: project
 notes: "Username Generator - notes.md"
 new: true
+project-type: sample
 ---
 
 # Introduction { .intro }
