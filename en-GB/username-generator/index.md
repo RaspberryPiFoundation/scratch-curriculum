@@ -32,7 +32,7 @@ As you can see, it’s important to choose your username carefully. Let's create
 
 ## Activity Checklist { .check }
 
-+ Open the 'Username Generator' Scratch project. Your club leader will give you a copy of this project, or you can open it online at <a href="http://jumpto.cc/usernames-go" target="_blank">jumpto.cc/usernames-go</a>.
++ Open the 'Username Generator' Scratch project. Your club leader will give you a copy of this project, or you can open it online at <a href="http://jumpto.cc/username-go" target="_blank">jumpto.cc/username-go</a>.
 
 + You should see two lists on the stage: `adjectives` and `nouns`:
 
@@ -60,7 +60,7 @@ As you can see, it’s important to choose your username carefully. Let's create
 
 	![screenshot](images/usernames-clicked.png)
 	
-+ You need to combine an adjective and a noun. Add a join block inside your set block:
++ You need to combine an adjective and a noun. Add a `join` {.blockoperator} block inside your set block:
 
 	![screenshot](images/usernames-join.png)
 	
