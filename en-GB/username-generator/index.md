@@ -12,6 +12,7 @@ project-type: sample
 It’s important not to use your real name or any personal information in your online username. In this project you’ll generate usernames that you can use on websites like Scratch. 
 
 To try out the finished project:
+
 + Click the girl to generate a new username;
 + When you find a username you like click on the tick to add it to the list;
 + Right-click on the username list to save your list of usernames to a file. 
@@ -153,11 +154,11 @@ Your new usernames should have numbers on the end:
 
 ##Challenge: Create your profile picture { .challenge }
 
-Can you use the costume painting tool in Scratch to create your own profile picture to go with a username? 
+Can you use the costume paint tool in Scratch to create your own profile picture to go with a username? 
 
 ![screenshot](images/usernames-paint.png)
 
-If you want to try drawing using shapes that you can move around then switch to vector mode:
+If you want to try drawing using shapes that you can move around then switch to vector mode by clicking the button on the bottom right:
 
 ![screenshot](images/usernames-vector.png)
 
