@@ -102,7 +102,7 @@ Remember to hide the lists from the stage when testing your project.
 
 ## Save your project { .save }
 
-# Step 2: Saving Your Favourite Usernams { .activity }
+# Step 2: Saving Your Favourite Usernames { .activity }
 
 You probably want to consider a few different usernames. Let’s add usernames that you like to a list. 
 
