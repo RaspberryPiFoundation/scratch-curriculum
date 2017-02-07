@@ -206,7 +206,7 @@ Let's add other people to your world that your player can interact with.
 
 	```blocks
 		when flag clicked
-		go to x: (-200) y: (0)
+		go to x: (0) y: (-150)
 		forever
 			if < touching [player v]? > then
 				say [Did you know that you can go through orange and yellow doors?]
