@@ -20,9 +20,9 @@
 
 ## Завдання для виконання {.check}
 
-+ Почніть новий Scratch проект і видаліть спрайт кота так щоб ваш проект став пустий. Ви можете знайти онлайн Scratch-редактор на jumpto.cc/scratch-new.
++ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор знаходиться за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
 
-+ Додайте задник 'stars' (зірки) і спрайт 'Spaceship' (космічний корабель) до вашого проекту. Зменшіть корабель та пересуньте його до низу екрану.
++ Додайте фон 'stars' (зірки) і спрайт 'Spaceship' (космічний корабель) до вашого проекту. Зменшіть корабель та пересуньте його до низу екрану.
     
     ![screenshot](invaders-sprites.png)
 
@@ -97,30 +97,30 @@
 
 # Крок 3: Літаючі Космічні бегемоти {.activity}
 
-Давайте додамо безліч літаючих бегемотів, які намагаються знищити ваш корабель.
+Додамо безліч літаючих бегемотів, які намагаються знищити ваш корабель.
 
 ## Завдання для виконання {.check}
 
-+ Create a new sprite from the 'Hippo1' image in the Scratch library.
++ Створіть новий спрайт з зображенням 'Hippo1' в бібліотеці Scratch.
     
     ![screenshot](invaders-hippo.png)
 
-+ Set its rotation style to be left-right only, and add the following code to hide the sprite when the game starts:
++ Зробіть так, щоб він обертався тільки зліва направо, і додайте наступний код, щоб приховати спрайт, коли гра починається:
     
     ```blocks
     коли натиснуто ⚑
     сховати
 ```
 
-+ Create a new variable called `speed` {.blockdata}, that is for the hippo sprite only.
++ Створіть нову змінну з назвою `speed` {.blockdata}, це тільки для спрайту з бегемотом.
     
     ![screenshot](invaders-var.png)
     
-    You'll know if you've done this correctly because the variable will have the name of the sprite next to it, like this:
+    Відразу буде зрозуміло, що ви все зробили правильно, так як змінна матиме біля себе ім'я спрайту, наприклад:
     
     ![screenshot](invaders-var-test.png)
 
-+ The following code will create a new hippo every few seconds. **The Stage** is a good place for this code to live:
++ Наступний код буде створювати нових бегемотів кожні декілька секунд. **Сцена** є хорошим місцем для цього коду:
     
     ```blocks
     коли натиснуто ⚑
@@ -130,7 +130,7 @@
     end
 ```
 
-+ When each hippo clone starts, make it move around the stage (at a random speed) until it gets hit by the lightning. Add this code **to the hippo** sprite:
++ Коли кожен клонований бегемот почне рухатись, примусіть їх рухатись навколо сцени (з випадковою швидкістю), допоки вони не постраждають від блискавки. Додай цей код **до спрайту бегемота**:
     
     ```blocks
     коли я починаю як клон
@@ -145,21 +145,21 @@
     вилучити цей клон
 ```
 
-+ Test out your hippo code. You should see a new hippo clone appear every few seconds, each moving at its own speed.
++ Перевірте свій код. Ти повинен побачити, що клоновані бегемоти з'являються кожні кілька секунд, і кожен рухається із своєю власною швидкістю.
     
     ![screenshot](invaders-hippo-test.png)
 
-+ Test your laser cannon. If you hit a hippo, does it vanish?
++ Перевір свою лазерну зброю. Якщо влучити в бегемота він зникає?
 
-+ When a hippo touches your spaceship, we need to make the spaceship explode! To do this, first make sure that your spaceship has 2 costumes called 'normal' and 'hit'.
++ Коли бегемот торкається космічного корабля, ми повинні зробити так, щоб космічний корабель вибухнув. Перед тим як це зробити переконайся, що космічний корабель має 2 вигляди, під назвами "звичайний" і "поранений".
     
     ![screenshot](invaders-spaceship-costumes.png)
     
-    The spaceship's 'hit' costume can be made by importing the 'Sun' image from the Scratch library, and using the 'Color a shape' tool to change its colour.
+    Вигляд космічного корабля "поранений" ви можете зробити за допомогою завантаження картинки "Сонце" з бібліотеки Скретчу, а також за допомогою інструменту "розмалюй форму" (Color a shape) змінити його колір.
     
     ![screenshot](invaders-sun.png)
 
-+ Add this code to your spaceship so that it switches costume whenever it collides with a flying hippo:
++ Додайте цей код до космічного корабля, щоб він змінював вигляд кожного, разу коли стикається з літаючим бегемотом:
     
     ```blocks
     коли натиснуто ⚑
@@ -172,16 +172,16 @@
     end
 ```
 
-+ Did you notice that you have broadcast a 'hit' message in the code above? You can use this message to make all of the hippos disappear when the spaceship is hit.
++ Чи помітили ви, що ви записали повідомлення" вдарити" в коді вище? Ви можете використовувати це повідомлення, щоб всі бегемоти зникли, коли корабель вдаряється.
     
-    Add this code to your hippo:
+    Додайте цей код до бегемота:
     
     ```blocks
     коли одержую [hit v]
     вилучити цей клон
 ```
 
-+ Test out this code by starting a new game and colliding with a hippo.
++ Перевірте цей код розпочавши нову гру і стикаючись з бегемотами.
     
     ![screenshot](invaders-hippo-collide.png)
 
@@ -189,31 +189,31 @@
 
 ## Виклик: Життя та Рахунок {.challenge}
 
-Can you add a `lives` {.blockdata}, `score` {.blockdata} or even a `highscore` {.blockdata} to your game? You can use the 'Catch the Dots' project to help you.
+Чи зможете ви додати `життя` {.blockdata}, `рахунок` {.blockdata}, або навіть `високий бал` {.blockdata} до гри? Ви можете користуватись проектом "Зловити крапки", якщо потрібна буде допомога.
 
 ## Збережіть свій проект {.save}
 
-# Step 4: Fruit Bats! {.activity}
+# Крок 4: Фруктові кажани! {.activity}
 
-Let's make a fruit bat that throws oranges at your spaceship.
+Давайте зробимо фруктових кажанів, які кидають апельсини в космічний корабель.
 
 ## Завдання для виконання {.check}
 
-+ Firstly, make a new bat sprite that will `move` {.blockmotion} across the top of the stage `forever` {.blockcontrol}. Remember to test out your code.
++ По-перше, потрібно зробити новий спрайт кажана, який `завжди` {.blockcontrol} буде `рухатися` {.blockmotion} через верхню частину сцени. Не забудьте перевірити ваш код.
     
     ![screenshot](invaders-bat.png)
 
-+ If you look at the bat's costumes, you'll see that it already has 2:
++ Якщо ви подивитеся на виляди кажана, ви побачите, що їх вже 2:
     
     ![screenshot](invaders-bat-costume.png)
     
-    Use the `next costume` {.blocklooks} block to make the bat flap its wings as it moves.
+    Використовуйте блок `наступний вигляд` {.blocklooks}, щоб кажан махав крилами коли летить.
 
-+ Create a new 'Orange' sprite from the Scratch library
++ Створіть новий спрайт «Апельсини» в бібліотеці Скретчу
     
     ![screenshot](invaders-orange.png)
 
-+ Add code to your bat, so that it creates a new orange clone every few seconds.
++ Додайте код до кажана, так щоб він створював нові апельсини кожні кілька секунд.
     
     ```blocks
     коли натиснуто ⚑
@@ -223,7 +223,7 @@ Let's make a fruit bat that throws oranges at your spaceship.
     end
 ```
 
-+ Click on your orange sprite and add this code to make each orange clone drop down the stage from the bat towards the spaceship:
++ Натисніть на спрайт апельсину і додайте цей код, щоб кожна клонована апельсина падала вниз до сцени, в напрямку космічного корабля:
     
     ```blocks
     коли натиснуто ⚑
@@ -241,35 +241,35 @@ Let's make a fruit bat that throws oranges at your spaceship.
     вилучити цей клон
 ```
 
-+ In your spaceship sprite, you'll need to modify your code so that you are hit if you touch a hippo or an orange:
++ У спрайті космічного корабля потрібно буде змінити код, таким чином, щоб коли ви торкаєтесь бегемота або апельсини - вас вдаряло:
     
     ```blocks
-    wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
+    почекати поки < <touching [Hippo1 v]?> або <touching [Orange v]?>>
 ```
 
-+ Test your game. What happens if you get hit by a falling orange?
++ Перевірте свою гру. Що станеться, якщо ви торкнетесь падаючої апельсини?
 
 ## Збережіть свій проект {.save}
 
-# Step 5: Game over {.activity}
+# Крок 5: Гру закінчено {.activity}
 
-Let's add a 'game over' message at the end of the game.
+Давайте додамо повідомлення "гру закінчено" в кінці гри.
 
 ## Завдання для виконання {.check}
 
-+ If you haven't already, create a new variable called `lives` {.blockdata}. Your spaceship should start with 3 lives and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the 'Catch the Dots' project to help you.
++ Якщо ви ще не зробили цього, створіть нову змінну з назвою `життя` {.blockdata}. Ваш космічний корабель повиннен почати з 3 життів і втрачати по одному життю, коли він стикається з ворогом. Ваша гра повинна також зупинитися, коли ви вичерпаєте всі життя. Якщо вам потрібна допомога, ви можете використовувати проект 'Зловити крапки'.
 
-+ Draw a new sprite called 'Game Over', using the text tool.
++ Намалюйте новий спрайт, з назвою "Гра закінчена", використовуючи інструмент "текст".
     
     ![screenshot](invaders-game-over.png)
 
-+ On your stage, broadcast a `game over` {.blockevents} message just before the game ends.
++ На сцені, передавати `гра закінчена` {.blockevents} повідомлення, перед тим як гра закінчиться.
     
     ```blocks
     оповістити [game over v] і чекати
 ```
 
-+ Add this code to your 'Game Over' sprite, so that the message shows at the end of the game:
++ Додайте цей код на вашого спрайту "Гра закінчена", для відображення повідомлення в кінці гри:
     
     ```blocks
     коли натиснуто ⚑
@@ -279,26 +279,26 @@ Let's add a 'game over' message at the end of the game.
     показати
 ```
 
-Because you've used a `broadcast [game over] and wait` {.blockevents} block on your stage, it will wait for the 'Game Over' sprite to be displayed before ending the game.
+Тому, що ви використовували `трансляції [гра закінчена] і чекати` {.blockevents} блок на вашій сцені, він буде чекати на спрайт "Гра закінчена" і відобразиться перед закінченням гри.
 
-+ Test your game. How many points can you score? Can you think of ways to improve your game if it is too easy or too hard?
++ Перевірте свою гру. Скільки очок ви можете набрати? Чи можете ви назвати способи, щоб поліпшити свою гру, якщо це занадто легко, або занадто складно?
 
 ## Збережіть свій проект {.save}
 
-## Challenge: Improve your game {.challenge}
+## Виклик: Вдоскональ свою гру! {.challenge}
 
-What improvements can you make to your game? Here are some ideas: + Add health packs that you can collect to gain extra lives;
+Які випробування ви можете зробити для вашої гри? Ось деякі ідеї: + додати пакети здоров'я, які можна збирати, щоб отримати додаткові життя;
 
 ![screenshot](invaders-aid.png)
 
-+ Add floating rocks that your spaceship must avoid;
++ Додати плаваючий камінь, який космічний корабель повиннен уникати;
 
 ![screenshot](invaders-rocks.png)
 
-+ Make more enemies appear when your score gets to 100.
++ Зробити більше ворогів, які з'являються, коли ваш рахунок 100.
 
 ```blocks
-    wait until <(score) = [100]>
+    чекати, поки < (рахунок) = [100] >
 ```
 
 ## Збережіть свій проект {.save}

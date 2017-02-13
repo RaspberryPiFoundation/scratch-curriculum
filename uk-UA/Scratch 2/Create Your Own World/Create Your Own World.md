@@ -16,7 +16,7 @@
 
 ## Список завдань {.check}
 
-+ Створи новий проект Scratch та видали стартовий графічний об'єкт, так що твій проект буде пустим. Онлайн Scratch-редактор за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
++ Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор знаходиться за посиланням [jumpto.cc/scratch-new](http://jumpto.cc/scratch-new).
 
 + Для цього проекту ти повинен мати теку "Засоби проекту", що містить всі зображення, які тобі знадобляться. Переконайся, що можеш знайти цю теку, або запитай керівника свого клубу, якщо не можеш цього зробити.
     
@@ -46,13 +46,13 @@
     ```blocks
     коли натиснуто ⚑
     завжди
-        if <key [стрілка вгору v] pressed? > then
+        якщо < клавиша [стрілка вгору v] натиснута? > тоді
             змінити y на (2)
-        end
-        if <key [стрілка вліво v] pressed? > then
+        кінець
+        якщо < клавиша [стрілка вліво v] натиснута? > тоді
             змінити x на (-2)
-        end
-    end
+        кінець
+    кінець
 ```
 
 ## Виклик: Переміщення у всі чотири сторони {.challenge}
@@ -72,11 +72,11 @@
     завжди
         if <key [стрілка вгору v] pressed? > then
             змінити y на (2)
-            if < touching color [#BABABA]? > then
+            if < touching color [#BABABA]? > тоді 
                 змінити y на (-2)
-            end
-        end
-    end
+            кінець
+        кінець
+    кінець
 ```
 
 Зверни увагу, що новий блок `if`{.blockcontrol}`touching color`{.blocksensing} знаходиться всередині блоку `if`{.blockcontrol}`key [up arrow]`{.blocksensing}.
@@ -302,9 +302,9 @@
 
 + Переконайтесь, що ключ видно тільки в кімнаті номер 3.
 
-+ Create a new list variable called `inventory` {.blockdata}. This will be where you store all of the items your player collects.
++ Створить новий список змінних з ім'ям {.blockdata} `інвентаризація`. В ньому будуть зберігатися всі елементи, які збирає ваш гравець.
 
-+ The code for collecting the key is very similar to the code for collecting coins. The difference is that you add the key to your inventory.
++ Код для збору ключів дуже схожий на код для збору монет. Різниця полягає в тому, що ви додаєте ключ до вашого складу.
     
     ```blocks
     коли натиснуто ⚑
@@ -314,19 +314,19 @@
     сховати
 ```
 
-+ Test out your key, to see if you can collect it, and add it to your inventory. Remember to add code to your stage to empty your inventory at the start.
++ Перевірте ключ, щоб впевнитися, що ви можете взяти його та додати його до вашого складу. Не забудьте додати код, щоб очистити ваш склад на початку гри.
     
     ```blocks
     вилучити (все v) з [inventory v]
 ```
 
-+ Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the two walls.
++ Створити новий спрайт з вашого зображення 'двері-blue.png' і ромістіть двері синього кольору у розриві двох стін.
     
     ![screenshot](world-door.png)
 
-+ Add code to your door, so that it is only visible in room 3.
++ Додай код до дверей так, щоб вони були видимими лише в кімнаті 3.
 
-+ You'll need to hide your blue door to allow your player to pass once you have the blue key in your inventory.
++ Потрібно приховати двері синього кольору, щоб гравець пройшов повз них після того, як ключ синього кольору буде на вашому складі.
     
     ```blocks
     коли натиснуто ⚑
@@ -335,26 +335,26 @@
     сховати
 ```
 
-+ Test out your project, and see if you can collect the blue key to open the door!
++ Протестуйте свію програму, щоб впевнитися, що ви можете збирати ключі синього кольору для відкривання дверей!
 
 ## Збережіть свій проект {.save}
 
-## Challenge: Create your own world {.challenge}
+## Завдання: Створи свій власний світ {.challenge}
 
-You can now continue creating your own world. Here are some ideas:
+Тепер можете продовжувати створення власного світу. Нижче наводиться кілька ідей:
 
-+ Change the setting of your game, and your game graphics;
-+ Add sound and music to your game;
-+ Add more people, enemies, signs and coins;
-+ Add red and yellow doors, that need their own keys to open them;
-+ Add more rooms to your world;
-+ Add other useful items to your game;
++ Змініть налаштування гри та ігрову графіку;
++ Додайте до гри звукові ефекти та музику;
++ Додайте більше людей, ворогів, знаків та монет;
++ Додайте червоні та жовті двері, до яких потрібно створити власні ключі для відкривання;
++ Додайте більше кімнат до вашого світу;
++ Додайте інші корисні елементи до вашої гри;
 
-+ Use coins to get information from other people;
++ Використовуйте монети для отримання інформації від інших людей;
     
     ![screenshot](world-bribe.png)
 
-+ You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
++ Можна також додати Північні та Південні двері, щоб гравець міг переміщатися між кімнатами у всіх чотирьох напрямках. Наприклад, якщо буед 9 кімнат, ви можете уявити їх у вигляді майданчика розміром 3x3 кімнати. Потім ви можете додати цифру 3 до номеру кімнати, щоб перейти на один рівень нижче.
     
     ![screenshot](world-north-south.png)
 

@@ -4,22 +4,22 @@
 
 # Вступ:
 
-In this project children will learn how to make a game, in which the player controls a spaceship that can fire lightning bolts at enemies.
+В цьому проекті діти будуть вчитися робити гру, в якій гравець управляє космічним кораблем, що може стріляти блискавками в ворогів.
 
 # Ресурси
 
 Для цього проекту слід використовувати Scratch 2. Scratch 2 можна використовувати онлайн за посиланням [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on), або завантажити з [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) та використовувати в автономному режимі.
 
-You can find a completed version of this project [online](http://scratch.mit.edu/projects/46018140/#editor), or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Завершену версію цього проекту можна знайти за посиланням [online](http://scratch.mit.edu/projects/46018140/#editor), або завантажити, натиснувши на посилання "Завантажити Проектні Матеріали", яке містить такі документи:
 
 + CloneWars.sb2
 
 # Навчальні цілі
 
-+ This project consolidates learning of previous programming skills learnt, and demonstrates how sprites can create clones of *other* sprites, and how multiple clones can be used as projectiles.
++ Цей проект закріплює вивчені раніше навички програмування і показує, як спрайти можуть клонувати *інші* спрайти, і як чисельні клони можуть бути використані замість вогнепальної зброї.
 
 # Виклики
 
-+ "Fixing the lightning" - using a `wait` {.blockcontrol} block to reduce the frequency of the lightning;
-+ "Lives and score" - creating `lives` {.blockdata}, `score` {.blockdata} and `highscore` {.blockdata} variables;
-+ "Improve your game" - adding extra enemies, health packs, etc.
++ «Прикріпіть блискавку» — використовуючи блок `чекати` {.blockcontrol} для зменшення частоти ударів блискавки;
++ «Життя та бали» - створення `життя` {.blockdata}, `бали` {.blockdata} і `високий бал` {.blockdata} змінні;
++ "Поліпшіть свою гру" - додаванням додаткових ворогів, пакетів здоров'я тощо.

@@ -1,7 +1,7 @@
 ---
-제목: 락 밴드
-난이도: Scratch 1
-언어: ko-KR
+title: 락 밴드
+level: Scratch 1
+language: ko-KR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]

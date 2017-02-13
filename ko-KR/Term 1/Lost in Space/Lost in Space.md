@@ -1,7 +1,7 @@
 ---
-제목: 우주에서 길을 잃다 
-난이도: Scratch 1
-언어: ko-KR
+title: 우주에서 길을 잃다 
+level: Scratch 1
+language: ko-KR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
