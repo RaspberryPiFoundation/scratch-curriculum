@@ -110,7 +110,7 @@ Sada ćemo programirati bubanj tako da proizvede zvuk svaki puta kada ga se udar
 + Isprobaj svoj bubanj. Kada se na njega klikne, trebao bi izgledati kao da je udaren!
 
 
-## Spremi promjene napravljene u projektu { .save }
+## Spremi promjene u projektu { .save }
 
 
 ##Izazov: Poboljšaj svoj bubanj. { .challenge }
@@ -176,7 +176,7 @@ sviraj zvuk [singer1 v] do kraja
 Sjeti se testirati kako tvoj novi kod radi!
 
 
-## Spremi svoj projekt { .save }
+## Spremi promjene u projektu { .save }
 
 
 ##Izazov: Napravi svoj vlastiti bend { .challenge }
@@ -197,4 +197,4 @@ Imaš li mikrofon, možeš snimiti svoje vlastite zvukove. Također možeš kori
 ![screenshot](band-io.png)
 
 
-## Spremi svoj projekt { .save }
+## Spremi projekt { .save }
