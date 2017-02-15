@@ -50,7 +50,7 @@ Prije samog dodavanja naredbi potrebno je dodati objekt na koji će se one odnos
 	![screenshot](band-shrink.png)
 
 
-## Spremanje projekta. { .save }
+## Spremi projekt { .save }
 
 Daj svom programu ime tako što ćeš ga upisati u okvir za tekst u gornjem lijevom kutu. Zatim iz izbornika 'Datoteka' odaberi naredbu 'Spremi'.
 
