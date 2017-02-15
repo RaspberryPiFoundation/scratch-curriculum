@@ -78,7 +78,7 @@ Možeš li napraviti promjene u naredbi `čekaj` {.blockcontrol} tako da duh če
 
 Dopustimo igraču da hvata duhove!
 
-## Lista aktivnosti { .check }
+## Zadatci { .check }
 
 + Kako bi dopustili igraču da uhvati duha, dodaj sljedeći kod:
 
@@ -130,7 +130,7 @@ postavi [rezultat v] na [0]
 
 	![screenshot](ghost-change-score.png)
 
-+ PPokreni program i hvataj duhove. Mijenja li se rezultat?
++ Pokreni program i hvataj duhove. Mijenja li se rezultat?
 
 ## Spremi promjene u projektu. { .save }
 
