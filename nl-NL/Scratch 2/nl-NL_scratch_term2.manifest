@@ -14,14 +14,20 @@
         {
             "number":   2,
             "beta": true,
-            "filename": "Vang de stippen/vang de stippen.md",
-            "note":     "Vang de stippen/vang de stippen notas.md"
+            "filename": "Dodgeball/Dodgeball.md",
+            "note":     "Dodgeball/Dodgeball - notes.md"
         },
         {
             "number":   3,
             "beta": true,
-            "filename": "Dodgeball/Dodgeball.md",
-            "note":     "Dodgeball/Dodgeball - notes.md"
+            "filename": "Braingame/Braingame.md",
+            "note":     "Braingame/Braingame - notes.md"
+        },
+{
+            "number":   4,
+            "beta": true,
+            "filename": "Vang de stippen/vang de stippen.md",
+            "note":     "Vang de stippen/vang de stippen notas.md"
         }
     ]
 }
