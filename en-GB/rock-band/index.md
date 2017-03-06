@@ -6,6 +6,10 @@ notes: "Rock Band - notes.md"
 project-type: sample
 ---
 
+<script>
+  if (Math.floor(Math.random() * 10) === 1) { window.location.replace('http://beta.codeclubprojects.org.uk/') }
+</script>
+
 # Introduction { .intro }
 
 In this project you'll learn how to code your own musical instruments!
@@ -17,7 +21,7 @@ In this project you'll learn how to code your own musical instruments!
 
 # Step 1: Sprites { .activity }
 
-Before you can start coding, you'll need to add in a 'thing' to code. In Scratch, these 'things' are called __sprites__. 
+Before you can start coding, you'll need to add in a 'thing' to code. In Scratch, these 'things' are called __sprites__.
 
 ## Activity Checklist { .check }
 
@@ -75,7 +79,7 @@ Let's code your drum to make a sound when it's hit.
 
 ## Activity Checklist { .check }
 
-+ You can find the code blocks in the 'Scripts' tab, and they are all colour-coded! 
++ You can find the code blocks in the 'Scripts' tab, and they are all colour-coded!
 
 	Click on the drum sprite, and then drag these 2 blocks into the code area to the right, making sure that they are connected together (like Lego blocks):
 
