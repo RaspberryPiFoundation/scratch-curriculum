@@ -175,7 +175,7 @@ Sometimes mistakes happen, so let's add a 'clear' button and an eraser to your p
 
 	![screenshot](images/paint-draw-problem.png)
 
-	To fix this, you have to tell the pencil only to draw if the mouse is clicked _and_ if the y-position of the mouse is greater than -110 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Change your pencil's `if` {.blockcontrol} statement to look like this:
+	To fix this, you have to tell the pencil only to draw if the mouse is clicked _and_ if the y-position of the mouse is greater than -120 (`mouse y`{.blocksensing}`> -120` {.blockoperators}). Change your pencil's `if` {.blockcontrol} statement to look like this:
 
 	![screenshot](images/pencil-gt-code.png)
 
