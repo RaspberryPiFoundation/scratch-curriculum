@@ -21,7 +21,7 @@ Press the space bar to flap and try to navigate through the gaps in the pipes!
 
 + Start a new Scratch project. Delete the cat by right-clicking it and selecting Delete
 + Replace the background with an outdoor landscape. **desert** is a good choice.
-+ Add the Flappy character. You'll need a sprite with costumes for wings up and wings down. **parrot** is a good choice.
++ Add the Flappy character. You'll need a sprite with costumes for wings up and wings down. **Parrot** is a good choice.
 + Change the name of your sprite to __Flappy__.
 + Give Flappy the following script:
 ```blocks
@@ -33,7 +33,7 @@ Press the space bar to flap and try to navigate through the gaps in the pipes!
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does Flappy start in the middle of the screen and then fall to the bottom?
+__Click the green flag.__ Does Flappy start in the middle of the screen and then fall to the bottom?
 
 ## Save your project { .save}
 
@@ -59,7 +59,7 @@ Next, we want Flappy to flap upwards when you press the space bar.
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, are you able to control Flappy with the space bar? Do you notice that sometimes you press the space bar but Flappy doesn't move? We'll fix that next...
+__Click the green flag.__ Are you able to control Flappy with the space bar? Do you notice that sometimes you press the space bar but Flappy doesn't move? We'll fix that next...
 
 ## Save your project { .save }
 
@@ -71,7 +71,7 @@ We'd like Flappy to respond every time we press the space bar. But when we push 
 
 + Disconnect the blocks under the `when space key pressed` {.blockbrown} and put them to the side (we'll use them in a few moments.)
 + Make a new variable `For this sprite only` {.blockgrey} and call it `flaps` {.blockorange}.
-+ Add the following script by draging in the blocks you put aside:
++ Add the following script by dragging in the blocks you put aside:
 ```blocks
     when FLAG clicked
         set [flaps v] to [0]
@@ -96,7 +96,7 @@ We'd like Flappy to respond every time we press the space bar. But when we push 
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does Flappy now flap once for each time you press the space bar?
+__Click the green flag.__ Does Flappy now flap once for each time you press the space bar?
 
 ## Save your project { .save}
 
@@ -147,7 +147,7 @@ Next we'll make the pipes move and arrange them randomly to provide an obstacle 
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, do pipes appear with gaps to fly through at different heights? If you find it difficult to navigate Flappy through the pipes without touching them, you can make the gap bigger in the **pipe** sprite by editing the costume.
+__Click the green flag.__ Do pipes appear with gaps to fly through at different heights? If you find it difficult to navigate Flappy through the pipes without touching them, you can make the gap bigger in the **pipe** sprite by editing the costume.
 
 ## Save your project { .save}
 
@@ -178,7 +178,7 @@ To make the game a challenge, the player needs to guide Flappy through the gaps 
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does the game end when Flappy touches a pipe or the edge of the screen?
+__Click the green flag.__ Does the game end when Flappy touches a pipe or the edge of the screen?
 
 ## Save your project { .save}
 
@@ -202,19 +202,19 @@ The player should score a point every time Flappy makes it though a pipe. Let's 
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does the player score points for flying Flappy through the pipes?
+__Click the green flag.__ Does the player score points for flying Flappy through the pipes?
 
 ## Save your project { .save}
 
 ## Things to try { .try}
 
 + __How many ways can you make this game easier or harder?__
-+ __Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
++ __Well done - you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!__
 
 ## Challenge 1: add a high score { .challenge}
 
 + Make a new variable and tick the `Cloud variable (stored on server)` {.blockgrey} box. Call the variable `hi-score` {.blockorange}
-+ when the game is over check if you need to set a new high score:
++ When the game is over check if you need to set a new high score:
 ```blocks
     when I receive [GameOver v]
         if <(score) > (hi-score)> then
@@ -225,7 +225,7 @@ __Click the green flag__, does the player score points for flying Flappy through
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does your score update the `hi-score`?
+__Click the green flag.__ Does your score update the `hi-score`?
 
 ## Save your project { .save}
 
@@ -260,13 +260,13 @@ When something falls under gravity it doesn't usually fall at a fixed rate. For 
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does Flappy now accelerate when falling and flapping?
+__Click the green flag.__ Does Flappy now accelerate when falling and flapping?
 
 ## Save your project { .save}
 
 ## Challenge 3: fall off screen { .challenge}
 
-When the player loses make Flappy fall off the bottom of the screen before ending the game.
+When the player loses, make Flappy fall off the bottom of the screen before ending the game.
 
 + Replace the `broadcast GameOver` {.blockbrown}  block with `broadcast Fall` {.blockbrown}
 + Now add the following scripts:
@@ -287,10 +287,10 @@ When the player loses make Flappy fall off the bottom of the screen before endin
 
 ## Test Your Project { .flag}
 
-__Click the green flag__, does Flappy now fall off the screen after hitting a pipe? Does Flappy reappear in the correct orientation when restarting the game.
+__Click the green flag.__ Does Flappy now fall off the screen after hitting a pipe? Does Flappy reappear in the correct orientation when restarting the game?
 
 ## Save your project { .save}
 
-Well done, you’ve finished! Now you can enjoy your game!
+Well done - you’ve finished! Now you can enjoy your game!
 
 Don’t forget you can share your game with all your friends and family by clicking on **Share** on the menu bar!
