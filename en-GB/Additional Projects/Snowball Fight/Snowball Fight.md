@@ -18,7 +18,7 @@ In this project you're going to make a game in which you have to throw snowballs
 
 # Step 1: Making a snowball { .activity }
 
-Let's make a snowball, that you can throw around your stage.
+Let's make a snowball that you can throw around your stage.
 
 ## Activity Checklist { .check }
 
@@ -32,7 +32,7 @@ Let's make a snowball, that you can throw around your stage.
 
 	![screenshot](snow-sprite.png)
 
-	The sprite contains 2 costumes, a normal costume, and one that shows which direction the snowball is facing.
+	The sprite contains two costumes, a normal costume, and one that shows which direction the snowball is facing.
 
 	![screenshot](snow-costume.png)
 
@@ -53,7 +53,7 @@ Let's make a snowball, that you can throw around your stage.
 
 	![screenshot](snow-mouse.png)
 
-+ Let's also allow the player to deicde on how powerful the snowball should be thrown. Create a new variable called `power` {.blockdata}.
++ Let's also allow the player to decide on how powerfully the snowball should be thrown. Create a new variable called `power` {.blockdata}.
 
 	![screenshot](snow-power.png)
 
@@ -96,6 +96,7 @@ Let's make a snowball, that you can throw around your stage.
 
 	```blocks
 		when flag clicked
+        set [power v] to (0)
 		wait (0.5) secs
 		go to x:(-200) y:(-130)
 		point in direction (90 v)
@@ -110,7 +111,7 @@ Let's make a snowball, that you can throw around your stage.
 		broadcast [throw v] and wait
 	```
 
-+ Add this script to your snowball, to move until it reaches the edge of the stage:
++ Add this script to your snowball, so it moves until it reaches the edge of the stage:
 
 	```blocks
 		when I receive [throw v]
@@ -158,7 +159,7 @@ You now have a snowball, but let's make it move a bit more realistically.
 
 	![screenshot](snow-minmax.png)
 
-+ You can also slow down the snowball, by reducing the power slightly as it flies through the air. Add this code block to your snowball's `when I receive [throw]` {.blockevents} code:
++ You can also slow down the snowball by reducing the power slightly as it flies through the air. Add this code block to your snowball's `when I receive [throw]` {.blockevents} code:
 
 	```blocks
 		change [power v] by (-0.25)
@@ -191,7 +192,7 @@ Let's add in a target for your snowballs!
 
 ## Activity Checklist { .check }
 
-+ Add in another sprite to your project.
++ Add another sprite to your project.
 
 	![screenshot](snow-bear.png)
 
@@ -231,7 +232,7 @@ Let's add in a target for your snowballs!
 
 	![screenshot](snow-rock.png)
 
-+ You can now change your snowball code, to stop when it touches the edge of the screen _or_ when it touches the rock. Here's how your snowball code should look:
++ You can now change your snowball code to stop when it touches the edge of the screen _or_ when it touches the rock. Here's how your snowball code should look:
 
 	![screenshot](snow-ball.png)
 
@@ -242,7 +243,7 @@ Let's add in a target for your snowballs!
 ##Challenge: Improve this game! {.challenge}
 Now that you've made the basic game, see what you can do to improve it. Here are some ideas, but feel free to use your own ideas too.
 
-+ Change the numbers in your code, to make the snowball move faster, higher or further;
++ Change the numbers in your code to make the snowball move faster, higher or further;
 + Change the graphics;
 + Add music and sound effects;
 + Change sprite costumes when the target is hit;
@@ -251,4 +252,4 @@ Now that you've made the basic game, see what you can do to improve it. Here are
 + The bear could move around so that it's harder to hit;
 + You could add snowflakes or birds that stop the snowball;
 
-+ You could add a second player, so that you could both throw snowballs at the bear... or eachother!
++ You could add a second player, so that you could both throw snowballs at the bear... or each other!
