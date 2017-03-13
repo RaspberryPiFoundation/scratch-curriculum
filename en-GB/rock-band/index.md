@@ -7,9 +7,9 @@ project-type: sample
 ---
 
 <script>
-  if (window.location.search.substring(1) != "redirect=false") {
+  if (!window.location.search.match(/redirect=false/)) {
     if (Math.floor(Math.random() * 10) === 1) { window.location.replace('http://beta.codeclubprojects.org.uk/') }
-  }
+   }
 </script>
 
 # Introduction { .intro }
