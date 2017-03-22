@@ -22,13 +22,13 @@ Vamos fazer uma nave espacial que voa em direção à Terra!
 
 ## Lista de atividades { .check }
 
-+ Inicie um novo projecto Scratch e apague o sprite do gato para que seu projeto fique vazio. Você pode encontrar o editor do Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Inicie um novo projeto Scratch e apague o gato para que seu projeto fique vazio. Você pode encontrar o editor do Scratch on-line em <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Adicione os sprites 'Spaceship' e 'Earth' para seu palco. Você também deve adicionar o pano de fundo 'Stars'. É assim como seu palco deverá ficar:
++ Adicione os sprites 'Spaceship' e 'Earth' no seu palco. Você também deve adicionar o pano de fundo 'Stars'. O seu palco deverá ficar assim:
 
 	![screenshot](space-sprites.png)
 
-+ Clique no seu novo sprite de nave espacial, e clique na aba 'Fantasias'.
++ Clique no ator da nave espacial, e clique na aba 'Fantasias'.
 
 	![screenshot](space-costume.png)
 
@@ -36,13 +36,13 @@ Vamos fazer uma nave espacial que voa em direção à Terra!
 
 	![screenshot](space-rotate.png)
 
-+ Adicione este código ao seu sprite de nave espacial:
++ Adicione este código ao seu ator de nave espacial:
 
 	![screenshot](space-animate.png)
 
-	Altere os números nos blocos de código, de modo que o código fique exatamente igual a imagem acima.
+	Altere os números nos blocos de código, de modo que o código fique exatamente igual à imagem acima.
 
-+ Se você clicar sobre os blocos de código para executar o código, você deve ver a nave espacial falar, girar e mover-se em direção ao centro do palco.
++ Se você clicar sobre os blocos de código, você vai ver a nave espacial falar, girar e mover-se em direção ao centro do palco.
 
 	![screenshot](space-animate-stage.png)
 
@@ -77,7 +77,7 @@ Outra maneira de animar a nave espacial é dizer para ela se mover uma pequena q
 
 ## Lista de atividades { .check }
 
-+ Apague o bloco `slide` {.blockmotion} do seu código, clicando com o botão direito sobre o bloco e 'apagar'. Você também pode apagar o código arrastando-o de volta para a área de blocos de código
++ Apague o bloco `deslize` {.blockmotion} do seu código, clicando com o botão direito sobre o bloco e 'apagar'. Você também pode apagar o código arrastando-o de volta para a área de blocos de código
 
 	![screenshot](space-delete-glide.png)
 
