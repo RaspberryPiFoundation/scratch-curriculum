@@ -1,0 +1,15 @@
+{
+    "description": "",
+    "id": "scratch_01",
+    "language": "ar-DZ",
+    "number": 1,
+    "title": "الفصل الاول",
+
+    "projects": [
+        {
+            "number": 1,
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - notes.md"
+        }
+    ]
+}
