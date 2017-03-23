@@ -31,6 +31,10 @@ Make sure that each child has access to a copy of these resources.
 + Broadcasting;
 + Selection.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Colour-changing sunglasses" - code a pair of sunglasses to repeatedly change colour when clicked;
 + "More controls" - coding a helicopter to change its x and y coordinates when the right and down arrow keys are pressed;

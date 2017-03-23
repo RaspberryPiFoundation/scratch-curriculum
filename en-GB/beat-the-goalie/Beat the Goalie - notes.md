@@ -32,6 +32,10 @@ Make sure that each child has access to a copy of these resources.
 + Broadcasting;
 + Variables.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Goal!" - Creating a broadcast message for when a goal is scored;
 + "Adding a score" - Creating and using a `score` {.blockdata} variable;

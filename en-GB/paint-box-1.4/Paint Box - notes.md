@@ -21,6 +21,10 @@ You can find a completed version of this project by clicking the 'Project Materi
 + Relational and boolean operators (`>` {.blockoperators} & `and` {.blockoperators});
 + Broadcasting between sprites.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Shortcuts" - Using `key press` {.blocksensing} events to broadcast messages;
 + "More pens" - Adding more pen colours, to consolidate the learning of broadcasting messages.

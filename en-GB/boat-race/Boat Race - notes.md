@@ -34,6 +34,10 @@ For club members that aren't able to access these project resources, there is a 
 	+ `distance to mouse pointer` {.blocksensing};
 	+ `touching color ...` {.blocksensing}.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Winning!" - use of `touching color ...` {.blocksensing} block;
 + "Sound effects" - adding sound and music to the game;

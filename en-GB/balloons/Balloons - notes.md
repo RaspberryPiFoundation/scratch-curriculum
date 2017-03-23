@@ -17,6 +17,10 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + Random numbers;
 + Cloning sprites.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
+
 #Challenges
 + "More randomness" - using random numbers;
 + "More objects" - applying skills to create another game object.

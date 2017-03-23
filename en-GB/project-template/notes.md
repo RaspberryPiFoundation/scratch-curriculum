@@ -19,6 +19,7 @@ Project resources:
 
 #Learning Objectives
 List the skills taught in this project, for example:
+Link to the Raspberry Pi [Digital Making Curriculum](http:..rpf.io/curriculum).
 
 + Variables;
 + Use of sounds.

@@ -32,6 +32,10 @@ Make sure that each child has access to a copy of these resources.
 + Lists and random list items;
 + Repetition (the `repeat` {.blockcontrol} block).
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
+
 #Challenges
 + "Code Ada to introduce herself" - Changing the text in a `say` {.blocklooks} code block;
 + "Personalise your poem" - Using a variable within a `say` {.blocklooks} block;

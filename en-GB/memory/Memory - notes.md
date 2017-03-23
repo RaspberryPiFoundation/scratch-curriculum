@@ -16,6 +16,10 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 + Lists;
 + Simple functions.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Adding sound" - improving the usability of the game;
 + "Creating 4 buttons" - manipulating lists;

@@ -27,5 +27,9 @@ Make sure that each child has access to a copy of these resources.
 #Learning Objectives
 + Repetition (the `repeat until` {.blockcontrol} block).
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Add a spectator" - Create a spectator that moves towards the player until they've sprinted 100 meters.

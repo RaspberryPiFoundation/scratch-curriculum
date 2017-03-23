@@ -15,6 +15,10 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 #Learning Objectives
 + This project consolidates learning of previous programming skills learnt, and shows how broadcasts can be used to create a simple game menu system.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Changing costumes" - changing how the game character looks in response to correct and incorrect answers;
 + "Adding a score" - adding a point for every correct question answered;

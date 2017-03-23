@@ -18,6 +18,10 @@ You can find a completed version of this project by clicking the 'Project Materi
 	+ `if ... then` {.blockcontrol} statements;
 	+ `if ... then ... else` {.blockcontrol} statements.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
+
 #Challenges
 + "More questions" - consolidating learning of input and the `answer` {.blocksensing} block;
 + "More decisions" - using decisions;

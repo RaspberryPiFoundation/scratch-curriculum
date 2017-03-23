@@ -27,6 +27,10 @@ Make sure that each child has access to a copy of these resources.
 #Learning Objectives
 + This project consolidates learning of previous programming skills learnt.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Animate your helicopter" - use a `next costume` {.blocklooks} block to animate the helicopter;
 + "Too much water" - using `wait` {.blockcontrol} blocks to slow down the rate that water is dropped;

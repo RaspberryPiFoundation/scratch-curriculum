@@ -33,6 +33,10 @@ at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from
 #Learning Objectives
 + Repetition (the `repeat` {.blockcontrol} block).
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
+
 #Challenges
 + "Code your own routine" - Use `repeat` {.blockcontrol} code blocks to program a swimming routine;
 + "Change the team" - Change the number of swimmers in the team by changing the number and position of the clones that are created. 

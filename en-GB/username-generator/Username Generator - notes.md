@@ -30,6 +30,10 @@ Make sure that each child has access to a copy of these resources.
 + Exporting text files and images from Scratch;
 + Importance of not sharing personal information online.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Add more variety" - Add more variety to the usernames by adding items to the lists;
 + "Add a number" - Add a random number to the end of generated usernames;

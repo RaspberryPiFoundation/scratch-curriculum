@@ -31,6 +31,10 @@ For club members that aren't able to access these project resources, there is a 
 #Learning Objectives
 + This project consolidates learning of previous programming skills learnt.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Spinning left" - creating code to move the controller;
 + "More dots" - creating more coloured dots that need to match the correct part of the controller';

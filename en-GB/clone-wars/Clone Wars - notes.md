@@ -15,6 +15,10 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 #Learning Objectives
 + This project consolidates learning of previous programming skills learnt, and demonstrates how sprites can create clones of _other_ sprites, and how multiple clones can be used as projectiles.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
 #Challenges
 + "Fixing the lightning" - using a `wait` {.blockcontrol} block to reduce the frequency of the lightning;
 + "Lives and score" - creating `lives` {.blockdata}, `score` {.blockdata} and `highscore` {.blockdata} variables;

@@ -17,6 +17,10 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 	+ `Repeat` {.blockcontrol} loops;
 	+ `Forever` {.blockcontrol} loops.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
+
 #Challenges
 + "Improving your animation" - altering the numbers in a short program;
 + "Make your own animation" - applying the learning to make a new animation.

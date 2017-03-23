@@ -27,5 +27,9 @@ Make sure that each child has access to a copy of these resources.
 #Learning Objectives
 + Selection.
 
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
+
 #Challenges
 + "Different scores" - Adding more `if` {.blockcontrol} blocks so that hitting different parts of the target gives a different score. 
