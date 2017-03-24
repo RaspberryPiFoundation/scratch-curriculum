@@ -1,4 +1,4 @@
----
+﻿---
 title: Rock Band
 level: Scratch 1
 language: it-IT
@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-# Introduction { .intro }
+# Introduzione { .intro }
 
 In questo progetto imparerai come programmare il tuo strumento musicale!
 
@@ -72,13 +72,13 @@ Lo __stage__ è l'area sulla sinistra, ed è lì che il tuo progetto prende vita
 
 # Passo 3: Creare un Tamburo { .activity }
 
-Programmiamo il tamburo perchè suoni quando viene colpito.
+Programmiamo il tamburo perché suoni quando viene colpito.
 
 ## Lista delle Attività { .check }
 
 + Puoi trovare i blocchi di codice nel pannello 'Scripts', e sono di vari colori a seconda del tipo!
 
-	Fai click col mouse sullo sprite del tamburo e trascina i due blocchi che vedi nell'immagine all'intarno dell'area dedicata al codice che si trova sulla destra, verifica che siano collegati tra loro (come dei mattoncini Lego).
+	Fai click col mouse sullo sprite del tamburo e trascina i due blocchi che vedi nell'immagine all'interno dell'area dedicata al codice che si trova sulla destra, verifica che siano collegati tra loro (come dei mattoncini Lego).
 
 	![screenshot](band-code.png)
 
@@ -137,7 +137,7 @@ Aggiungiamo un cantante alla tua band!
 
 Facciamo in modo che la cantante sembri cantare!
 
-## Activity Checklist { .check }
+## Lista delle Attività { .check }
 
 + Creando un nuovo costume puoi cambiare l'aspetto della cantante quando viene cliccata. Seleziona il pannello 'Costumi' e vedrai l'immagine della cantante.
 
