@@ -1,9 +1,9 @@
 {
     "description": "Scratch e' un modo semplice e divertente per programmare usando dei blocchi standard simili a dei mattoncini Lego. In base a come unisci i blocchi insieme ottieni diversi comportamenti e funzionalita' del tuo programma.",
-    "id": "scratch_01",
+    "id": "scratch_archive",
     "language": "it-IT",
-    "number": 11,
-    "title": "Scratch per principianti",
+    "number": 2,
+    "title": "Archive Scratch",
 
     "projects": [
         {

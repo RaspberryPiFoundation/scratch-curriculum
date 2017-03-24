@@ -1,0 +1,15 @@
+{
+    "description": "Scratch e' un modo semplice e divertente per programmare usando dei blocchi standard simili a dei mattoncini Lego. In base a come unisci i blocchi insieme ottieni diversi comportamenti e funzionalita' del tuo programma.",
+    "id": "scratch_archive",
+    "language": "it-IT",
+    "number": 1,
+    "title": "Scratch 1",
+
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Rock Band/Rock Band.md",
+            "note":     "Rock Band/Rock Band - notes.md"
+        }
+    ]
+}
