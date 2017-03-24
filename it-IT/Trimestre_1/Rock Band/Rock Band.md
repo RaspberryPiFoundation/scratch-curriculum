@@ -126,7 +126,7 @@ Aggiungiamo un cantante alla tua band!
 
 	```blocks
 		quando si clicca questo sprite
-		produci suono [singer1 v] until done
+		produci suono [singer1 v] e attendi la fine
 	```
 
 + Clicca sulla cantante per assicurarti che canti quando viene premuta.
