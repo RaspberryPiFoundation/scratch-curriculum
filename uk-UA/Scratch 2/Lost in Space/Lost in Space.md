@@ -1,6 +1,11 @@
-* * *
-
-назва: Заблукалий у космосі рівень: Scratch 1 мова: uk-UA-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби кервників клубу/*"] ...
+---
+title: Заблукалий у космосі
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*"]
+...
 
 # Передмова {.intro}
 

@@ -1,6 +1,11 @@
-* * *
-
-назва: Гра розуму рівень: Scratch 2 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*"] ...
+---
+title: Гра розуму
+level: Scratch 2
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*"]
+...
 
 # Передмова {.intro}
 

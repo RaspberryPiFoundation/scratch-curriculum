@@ -1,6 +1,11 @@
-* * *
-
-назва: Створи свій власний світ рівень: Scratch 2 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*","Засоби проекту/*"]...
+---
+title: Створи свій власний світ
+level: Scratch 2
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*","Project Resources/*"]
+...
 
 # Вступ {.intro}
 

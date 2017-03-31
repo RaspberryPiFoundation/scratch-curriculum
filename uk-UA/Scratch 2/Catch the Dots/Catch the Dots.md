@@ -1,6 +1,12 @@
-* * *
-
-назва: Спіймай крапки рівень: Scratch 2 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*","Засоби проекту/*"]...
+---
+title: Спіймай крапки
+level: Scratch 2
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*", "Project Resources/*"]
+beta: true
+...
 
 # Передмова {.intro}
 

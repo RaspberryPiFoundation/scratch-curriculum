@@ -1,6 +1,11 @@
-* * *
-
-назва: Набір для Малювання рівень: Scratch 1 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*","Засоби проекту/*"]...
+---
+title: Набір для Малювання
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*","Project Resources/*"]
+...
 
 # Передмова {.intro}
 

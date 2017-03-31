@@ -1,6 +1,11 @@
-* * *
-
-назва: Викидайли рівень: Scratch 2 мова: uk-UA-UA стиль: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/</em>","Засоби проекту/*"]...
+---
+title: Викидайли
+level: Scratch 2
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*","Project Resources/*"]
+...
 
 # Передмова {.intro}
 

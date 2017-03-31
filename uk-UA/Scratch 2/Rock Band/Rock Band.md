@@ -1,6 +1,11 @@
-* * *
-
-назва: Рок-гурт рівень: Scratch 2 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*","Засоби проекту/*"]...
+---
+title: Рок-гурт
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*"]
+...
 
 # Передмова {.intro}
 

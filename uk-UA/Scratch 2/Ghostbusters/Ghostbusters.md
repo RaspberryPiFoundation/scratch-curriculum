@@ -1,6 +1,11 @@
-* * *
-
-назва: Мисливці за привидами рівень: Scratch 1 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*"]...
+---
+title: Мисливці за привидами
+level: Scratch 1
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*"]
+...
 
 ## Примітка: {.challenge.pdf-hidden}
 

@@ -1,6 +1,12 @@
-* * *
-
-назва: Війни Клонів рівень: Scratch 2 мова: uk-UA стильове оформлення: scratch додатки: "*.png" матеріали: ["Засоби керівників клубу/*"] тестова версія: підтвердженно ...
+---
+title: Війни Клонів
+level: Scratch 2
+language: uk-UA
+stylesheet: scratch
+embeds: "*.png"
+materials: ["Club Leader Resources/*"]
+beta: true
+...
 
 ## Проект за сприяння спільноти {.challenge.pdf-hidden}
 
