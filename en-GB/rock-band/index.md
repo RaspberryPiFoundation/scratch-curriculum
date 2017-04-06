@@ -8,7 +8,7 @@ project-type: sample
 
 <script>
   if (!window.location.search.match(/redirect=false/)) {
-    if (Math.floor(Math.random() * 10) === 1) { window.location.replace('https://beta.codeclubprojects.org/') }
+    if (Math.floor(Math.random() * 2) === 1) { window.location.replace('https://beta.codeclubprojects.org/') }
    }
 </script>
 
