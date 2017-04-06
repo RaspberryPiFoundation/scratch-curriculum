@@ -48,16 +48,7 @@ Your ghost is really easy to catch, because it doesn't move!
 
 + Instead of staying in the same position, you can let Scratch choose random x and y coordinates instead. Add a `go to` {.blockmotion} block to your ghost's code, so that it looks like this:
 
-	```blocks
-		when flag clicked
-		forever
-			hide
-			wait (1) secs
-			go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
-			show
-			wait (1) secs
-		end
-	```
+	![screenshot](images/ghost-random.png)
 
 + Test our your ghost again, and you should notice that it appears in a different place each time.
 
