@@ -13,7 +13,7 @@ Vous pouvez trouver une version complétée de ce projet <a href="http://scratch
 
 Il y a aussi une version de ce projet avec les ressources externes préchargées. Ceci est disponible en ligne à [jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources), ou dans les matériels téléchargeables de projet, qui contiennent :
 
-+ PaintBoxResources.sb2 
++ PaintBoxResources.sb2
 
 Ce lien inclut aussi un dossier de 'Ressources de Projet' , qui contient des images que les enfants devront compléter. Assurez-vous que chaque enfant a l'accès à une copie de ces ressources.
 

@@ -15,7 +15,7 @@ Vous pouvez trouver une version complétée de ce projet <a href="http://scratch
 
 Il y a aussi une version de ce projet avec les ressources externes préchargées. Ceci est disponible en ligne à [jumpto.cc/dots-resources](http://jumpto.cc/dots-resources), Ou dans les matériels téléchargeables du projet, qui contiennent :
 
-+ CreateYourOwnWorldResources.sb2 
++ CreateYourOwnWorldResources.sb2
 
 Ce lien inclut aussi un dossier de ' les Ressources du Projet ', qui contient des images que les enfants devront compléter pour ce projet. Assurez-vous que chaque enfant a l'accès à une copie de ces ressources.
 

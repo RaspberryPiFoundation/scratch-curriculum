@@ -14,14 +14,14 @@ Vous pouvez trouver une version complétée de ce projet un href = "http: // scr
 
 Il y a aussi une version de ce projet avec les ressources externes préchargées. Ceci est disponible en ligne [à jumpto.cc/dodge-resources] (http: // jumpto.cc/dodge-resources), ou dans les matériels téléchargeables du projet, qui contiennent :
 
-+ DodgeballResources.sb2 
++ DodgeballResources.sb2
 
 Ce lien inclut aussi un dossier de ' les Ressources du Projet ', qui contient des images que les enfants devront compléter pour ce projet. Assurez-vous que chaque enfant a l'accès à une copie de ces ressources.
 
 Ressources de projet :
 + background.png
 
-#Les objectifs d'apprentissage 
+#Les objectifs d'apprentissage
 + Ce projet consolident l'apprentissage de compétences de programmation précédement apprises.
 
 #Défis
@@ -30,4 +30,3 @@ Ressources de projet :
 + "Plus d'obstacles" - ajout de lutins supplémentaires au jeu;
 + "La gravité Améliorée" - l'utilisation d'un 'si' {.blockcontrol} supplémentaire pour corriger un bogue dans 'gravité' {.blockdata};
 + "Plus de vies" - Ajoutez des variable de 'vies' {.blockdata}.
-

@@ -18,4 +18,3 @@ volunteer-resources:
   - url: BoatRace.sb2
     description: Downloadable completed Scratch 2 project
 ---
-

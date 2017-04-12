@@ -23,4 +23,3 @@ Vous pouvez trouver une version complétée de ce projet <a href="http://scratch
 + "Son et musique" - Consolider l'apprentissage des boucles de musique et d'effets sonores;
 + "La course à 10 points" - Le changement de la logique de jeu pour créer un nouvel objectif de jeu;
 + "Écran d'Instruction" - La consolidation de l'utilisation des méssages pour créer un menu de jeu, en ajoutant un nouveau bouton 'd'instructions' et un écran.
-

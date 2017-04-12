@@ -14,7 +14,7 @@ Vous pouvez trouver une version complétée de ce projet <a href="http://scratch
 
 Il y a aussi une version de ce projet avec les ressources externes préchargées. Ceci est disponible en ligne à [jumpto.cc/dots-resources](http://jumpto.cc/dots-resources), Ou il peut être téléchargé en cliquant sur le lien ' Télécharger les Matériels du Projet' pour ce projet, qui contient :
 
-+ CatchTheDotsResources.sb2 
++ CatchTheDotsResources.sb2
 
 Ce lien inclut aussi un dossier de ' les Ressources de Projet ' qui contient des images que les enfants devront compléter. Assurez-vous que chaque enfant a l'accès à une copie de ces ressources.
 
