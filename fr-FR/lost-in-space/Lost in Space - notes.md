@@ -1,6 +1,5 @@
 ---
-title: Lost in Space — Notes for Club Leaders
-materials: [""]
+title: Lost in Space — Volunteer Notes
 ---
 
 #Introduction:
@@ -43,4 +42,4 @@ You can find a completed version of this project <a href="http://scratch.mit.edu
 
 + The 'spaceship' sprite will move sideways unless it is rotated 90 degrees clockwise. Rotating the spaceship is part of the project instructions, but another sprite can be substituted for the spaceship if this is causing problems.
 
-	![screenshot](space-rotate.png)
+	![screenshot](images/space-rotate.png)
