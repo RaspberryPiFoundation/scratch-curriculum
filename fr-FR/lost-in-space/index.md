@@ -1,9 +1,9 @@
 ---
-title: Perdu dans l'espace
-materials: ["Club Leader Resources/*.*"]
-base: https://github.com/CodeClub/scratch-curriculum/blob/7f103592928e9ff0251c401fd6cfe78596737494/en-GB/Term%201/Lost%20in%20Space/Lost%20in%20Space.md
-notes: "Lost in Space - notes.md"
+title: Lost in Space
+description: Apprend à programmer ta propre animation!
 layout: project
+notes: "Lost in Space - notes.md"
+project-type: sample
 ---
 
 # Introduction { .intro }
@@ -11,8 +11,8 @@ layout: project
 Tu vas apprendre à programmer ta propre animation !
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=true" frameborder="0"></iframe>
-	<img src="space-final.png">
+ <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=true" frameborder="0"></iframe>
+ <img src="images/space-final.png">
 </div>
 
 # Étape 1 : Les lutins { .activity }
@@ -21,56 +21,56 @@ Tu vas apprendre à programmer ta propre animation !
 
 + Tout d'abord, assure-toi d'avoir ouvert l'éditeur Scratch. Tu peux le trouver en ligne à l'adresse <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>. Il devrait ressembler à ceci :
 
-	![screenshot](space-scratch.png)
+	![screenshot](images/space-scratch.png)
 
 + Avant de pouvoir coder ton animation, il te faut un 'objet' à animer. Dans Scratch, ces 'objets' sont appelés 'lutins'. Le chat que tu peux voir est un lutin nommé Félix. C'est la mascotte de Scratch, mais débarrassons-nous de lui pour l'instant. Clique sur Felix avec le bouton droit de la souris, puis choisis 'supprimer'.
 
-	![screenshot](space-delete.png)
+	![screenshot](images/space-delete.png)
 
 + Clique ensuite sur l'icône 'Choisir un lutin dans la bibliothèque' pour voir tous les lutins qui sont fournis avec Scratch.
 
-	![screenshot](space-sprite-library.png)
+	![screenshot](images/space-sprite-library.png)
 
 + Fais défiler les images jusqu'à ce que tu trouves un vaisseau spatial. Clique dessus pour le sélectionner, puis clique sur 'OK' pour l'ajouter à ton animation.
 
-	![screenshot](space-sprite-spaceship.png)
+	![screenshot](images/space-sprite-spaceship.png)
 
 + Clique sur ton nouveau vaisseau spatial dans la zone 'Lutins' en bas à gauche, puis va dans l'onglet 'Costumes' à droite.
 
-	![screenshot](space-costume.png)
+	![screenshot](images/space-costume.png)
 
 + Utilise l'outil flèche pour sélectionner toute l'image. Puis clique et tire sur la poignée de rotation pour faire tourner la fusée sur ​​le côté.
 
-	![screenshot](space-rotate.png)
+	![screenshot](images/space-rotate.png)
 
 + Tu devrais maintenant avoir un grand vaisseau spatial sur ta 'scène'. La 'scène' est la zone en haut à gauche. C'est là que ton animation va se dérouler, c'est comme une vraie scène de théatre ! Tu peux faire glisser le vaisseau spatial autour de la scène pour le déplacer.
 
 	Pour l'instant, ta scène est blanche et bien ennuyeuse ! Ajoutes-y une toile de fond : Va dans l'onglet​ 'Arrière-plans' de la scène, puis clique sur l'icône 'Choisir un arrière-plan dans la bibliothèque'.
 
-	![screenshot](space-stage.png)
+	![screenshot](images/space-stage.png)
 
 + Clique sur la catégorie 'Espace' à gauche, puis choisis l'arrière-plan étoilé qui s'appelle 'stars'. Clique sur 'OK' pour l'ajouter à ta scène.
 
-	![screenshot](space-backdrop.png)
+	![screenshot](images/images/space-backdrop.png)
 
 	Ta scène devrait maintenant ressembler à cela :
 
-	![screenshot](space-step1.png)
+	![screenshot](images/space-step1.png)
 
 ## Défi : Ajoute un autre lutin { .challenge }
 Peux-tu ajouter un nouveau lutin (la Terre) à ta scène, pour que ça ressemble à ceci ?
 
-![screenshot](space-earth.png)
+![screenshot](images/space-earth.png)
 
 ## Enregistre ton projet { .save }
 
 Pour ne pas perdre ton travail, tu dois l'enregistrer régulièrement. Tout d'abord, donne un nom à ton animation : tape-le dans le champ texte au dessus de la scène. Tu peux ensuite cliquer sur 'Fichier' puis 'Sauvegarder maintenant' pour enregistrer ton projet.
 
-![screenshot](space-save.png)
+![screenshot](images/space-save.png)
 
 Si tu utilises Scratch en ligne, tout ce que tu sauvegardes est ajouté à tes 'projets'. C'est un dossier en ligne auquel tu peux accéder de n'importe où, même de chez toi. Tu peux accéder à ce dossier en cliquant sur 'Fichier', puis 'Aller à mes projets'.
 
-![screenshot](space-stuff.png)
+![screenshot](images/space-stuff.png)
 
 Ceci te donne la liste de tous tes projets. Clique sur 'Voir à l'intérieur' pour continuer de programmer ton animation.
 
@@ -84,7 +84,7 @@ Maintenant que tu as quelques lutins, nous allons ajouter du code pour les anime
 
 + Créons un script pour le vaisseau spatial, en utilisant des blocs de code. Tu peux trouver ces blocs dans l'onglet 'Scripts'. Ils ont tous un code couleur ! Fais glisser les 2 blocs suivants dans la zone de code à droite, en t'assurant qu'ils sont bien attachés ensemble (comme des blocs Lego).
 
-	![screenshot](space-animate.png)
+	![screenshot](images/space-animate.png)
 
 	Modifie les chiffres dans les blocs de code, de façon à ce que le code soit exactement le même que dans l'image ci-dessus. Voici le code que tu dois ajouter :
 
@@ -96,19 +96,19 @@ Maintenant que tu as quelques lutins, nous allons ajouter du code pour les anime
 
 	Pour coder `s'orienter vers Earth` {.blockmotion}, tu dois d'abord glisser et déposer le bloc de code, puis cliquer sur la petite flèche vers le bas pour choisir le lutin 'Earth'.
 
-	![screenshot](space-select.png)
+	![screenshot](images/space-select.png)
 
 + Si tu cliques sur ces blocs, le code sera exécuté : Tu devrais voir le vaisseau spatial tourner et se déplacer vers le centre de la scène.
 
-	![screenshot](space-animate-stage.png)
+	![screenshot](images/space-animate-stage.png)
 
 	La position sur l'écran `x:(0) y:(0)` {.blockmotion} est le centre de la scène. Une position comme `x:(-150) y:(-150)` {.blockmotion} est située presque tout en bas et à gauche de la scène. Et une position comme `x:(150) y:(150)` {.blockmotion} est près du haut droit de la scène.
 
-	![screenshot](space-xy.png)
+	![screenshot](images/space-xy.png)
 
 	Si tu veux connaître les coordonnées d'un endroit sur la scène, alors mets la souris à la position souhaitée, puis note les coordonnées qui sont affichées sous la scène.
 
-	![screenshot](space-coordinates.png)
+	![screenshot](images/space-coordinates.png)
 
 + Si tu essaies de cliquer à nouveau sur le code pour l'exécuter une seconde fois, rien ne se passe ! C'est parce que le vaisseau est déjà arrivé là où on lui a dit d'aller. Améliorons ton animation : Demandons au vaisseau de toujours commencer en bas à gauche de la scène, et faisons-le pointer vers le haut.
 
@@ -128,7 +128,7 @@ Maintenant que tu as quelques lutins, nous allons ajouter du code pour les anime
 
 + Tu peux également attacher tes blocs de code à un 'événement'. Cela signifie que le code s'exécutera lorsque quelque chose se passe : par exemple quand tu cliques sur le drapeau vert, quand on appuie sur une touche ou quand on clique sur un lutin.
 
-	![screenshot](space-events.png)
+	![screenshot](images/space-events.png)
 
 	Fais glisser un événement tout au début de ton code, pour que l'animation démarre lorsque tu cliques sur le drapeau vert. Ton code devrait ressembler à ceci:
 
@@ -144,7 +144,7 @@ Maintenant que tu as quelques lutins, nous allons ajouter du code pour les anime
 
 + Essaie ton animation à plusieurs reprises, en cliquant sur le drapeau vert juste au-dessus de la scène.
 
-	![screenshot](space-flag.png)
+	![screenshot](images/space-flag.png)
 
 ## Défi : Améliore ton animation {.challenge}
 Peux-tu modifier les chiffres dans le code de ton animation, pour que :
@@ -219,11 +219,11 @@ Tu vas devoir changer les chiffres de ce bloc :
 
 + Ajoutons maintenant un singe, perdu dans l'espace, à l'animation ! Commence par choisir un lutin singe dans la bibliothèque.
 
-	![screenshot](space-monkey.png)
+	![screenshot](images/space-monkey.png)
 
 + Si tu cliques sur ton nouveau lutin singe, puis sur l'onglet 'Costumes', tu peux modifier le look de ton singe. Clique sur l'outil cercle (nommé ici 'Ellipse') et dessine un casque blanc autour de la tête du singe.
 
-	![screenshot](space-monkey-edit.png)
+	![screenshot](images/space-monkey-edit.png)
 
 + Maintenant clique sur l'onglet 'Scripts' et ajoute du code pour que le singe tourne lentement et indéfiniment en rond :
 
@@ -233,7 +233,7 @@ Tu vas devoir changer les chiffres de ce bloc :
 		   tourner ↻ de (1) degrés
 	```
 
-	![screenshot](space-monkey-loop.png)
+	![screenshot](images/space-monkey-loop.png)
 
 	Le bloc `répèter indéfiniment` {.blockcontrol} est une boucle qui se répète sans fin. Tu vas devoir l'arrêter en cliquant sur le bouton stop rouge à côté du drapeau vert.
 
@@ -250,7 +250,7 @@ Tu vas devoir changer les chiffres de ce bloc :
 			end
 	```
 
-	![screenshot](space-star.png)
+	![screenshot](images/space-star.png)
 
 + Clique sur le drapeau pour tester l'animation de ton étoile. Que fait ce code ? Il fait légèrement grossir l'étoile 20 fois, puis rétrécir 20 fois pour revenir à la taille du début. Et pour que cette animation recommence tout le temps, on met ces deux boucles dans une troisième boucle `répèter indéfiniment`{.blockcontrol}.
 
@@ -259,10 +259,10 @@ Tu vas devoir changer les chiffres de ce bloc :
 ## Défi : Crée ta propre animation {.challenge}
 Arrête ton animation de l'espace, et clique sur 'Fichier' puis 'Nouveau', pour démarrer un nouveau projet. Utilise ce que tu as appris dans ce projet pour faire ta propre animation. Tu peux faire ce que tu veux, mais essaie de rester dans le cadre défini. Voici quelques exemples :
 
-![screenshot](space-egs.png)
+![screenshot](images/space-egs.png)
 
 ## Enregistre ton projet { .save }
 
 Bravo ! Tu as maintenant terminé ton premier projet Scratch. Si tu utilises l'éditeur en ligne, tu peux laisser les autres voir ton animation en cliquant sur 'Partager' en haut à droite de l'éditeur Scratch !
 
-![screenshot](space-share.png)
+![screenshot](images/space-share.png)
