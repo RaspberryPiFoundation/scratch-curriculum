@@ -34,12 +34,12 @@ Laten we eerst een controller maken waarmee je de stippen kan vangen.
 + Draai je controller naar rechts als het rechterpijltje wordt ingedrukt:
 
 	```blocks
-		Wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		herhaal
-			als <toets [pijltje rechts v] ingedrukt?> dan
-				draai (3) graden
-			end
-		end
+		   als <toets [pijltje naar rechts v] ingedrukt?> dan
+		      draai ↻ (3) graden
+		   einde
+		einde
 	```
 + Test nu je controller, deze moet naar rechts draaien.
 
@@ -63,12 +63,13 @@ We zullen nu wat stippen toevoegen die de speler met de controller kan verzamele
 + Voeg deze code toe om je rode stip na enkele seconden steeds opnieuw te verschijnen:
 
 	```blocks
-		Wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
+		verdwijn
 		wacht (2) sec.
 		herhaal
-			maak kloon van [mijzelf v]
-			wacht (pick random (5) tot (10)) sec.
-		end
+		   maak kloon van [mijzelf v]
+		   wacht (willekeurig getal tussen (5) en (10)) sec.
+		einde
 	```
 
 + Wanneer een kloon is gemaakt, wil je dat deze in een van de vier hoeken verschijnt.
@@ -148,12 +149,12 @@ Laat ons nu de moeilijkheidsgraad verhogen naarmate de speler langer speelt, doo
 + Maak een nieuw script op je speelscherm dat start van een hoge tijdsinterval en dan langzaamaan de tussenliggende tijd verlaagt.
 
 	```blocks
-		Wanneer vlag wordt aangeklikt
+		wanneer ⚑ wordt aangeklikt
 		maak [delay v] (8)
-		herhaal tot < (delay) = (2)>
-			wacht (10) sec.
-			verander [delay v] met (-0.5)
-		end
+		herhaal tot <(delay) = (2)>
+		   wacht (10) sec.
+		   verander [delay v] met (-0.5)
+		einde
 	```
 
 	Je merkt dat dit zeer gelijk loopt met de werking van een 'game timer'!
@@ -203,7 +204,7 @@ We gaan nu de hoogste score opslaan zodat de spelers zien hoe goed ze het doen.
 ## Sla je project op { .save }
 
 ## Uitdaging: Verbeter je spel! {.challenge}
-Kan je iets bedenken dat je spel ka verbeteren? Je zou bijvoorbeeld stippen kunnen bedenken die:
+Kan je iets bedenken dat je spel kan verbeteren? Je zou bijvoorbeeld stippen kunnen bedenken die:
 
 + je score verdubbelen;
 + de stippen vertragen;
