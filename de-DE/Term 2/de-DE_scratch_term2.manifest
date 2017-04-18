@@ -16,6 +16,12 @@
             "filename": "Treffball/Treffball.md",
             "beta":     true,
             "note":     "Treffball/Treffball - Notizen.md"
+        },
+        {
+            "number":   1,
+            "filename": "Gehirnjogging/Gehirnjogging.md",
+            "beta":     true,
+            "note":     "Gehirnjogging/Gehirnjogging - Notizen.md"
         }
     ]
 }
