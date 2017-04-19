@@ -9,14 +9,14 @@ materials: ["Club Leader Resources/*"]
 
 # Uvod { .intro }
 
-U ovom projektu naučit ćeš kako programirati svog vlastitiog robota koji razgovara s korisnikom!
+U ovom projektu naučit ćeš kako programirati robota koji razgovara s korisnikom!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
   <img src="chatbot-final.png">
 </div>
 
-# Korak 1: Tvoj robot koji razgovara { .activity }
+# Korak 1: Tvoj robot { .activity }
 
 ## Zadaci { .check }
 
@@ -41,7 +41,7 @@ U ovom projektu naučit ćeš kako programirati svog vlastitiog robota koji razg
 
 ## Spremi projekt { .save }
 
-# Korak 2: Robot koji govori { .activity }
+# Korak 2: Robot koji razgovara { .activity }
 
 Sada kada imamo robota, programirajmo ga da govori.
 
