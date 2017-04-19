@@ -130,13 +130,12 @@ Dodajmo u animaciju majmuna koji se izgubio u Svemiru!
 
 + Odaberi karticu 'Skripte' i dodaj liku majmuna sljedeće naredbe kako bi se on zauvijek sporo vrtio u krug:
 
-```blocks
-
-kada je ⚑ kliknut
-ponavljaj
-   skreni ↻ (1) stupnjeva
-end
-```
+	```blocks
+		kada je ⚑ kliknut
+		ponavljaj
+ 				skreni ↻ (1) stupnjeva
+		end
+	```
 
 	Naredba `Ponavljaj` {.blockcontrol} je još jedna petlja, ali ona nikada ne završava.
 

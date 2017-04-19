@@ -43,13 +43,13 @@ U ovom projektu naučit ćeš napraviti igricu u kojoj ćeš mišem dovesti brod
 + Brodom ćeš upravljati pomoću miša. Dodaj mu sljedeće naredbe:
 
 	```blocks
-		kada je ⚑ kliknut
-okreni se u smjeru (0 v)
-idi na x:(-190) y:(-150)
-ponavljaj
-   okreni se k [strelica miša v]
-   idi (1) koraka
-end
+			kada je ⚑ kliknut
+			okreni se u smjeru (0 v)
+ 			idi na x:(-190) y:(-150)
+ 			ponavljaj
+   					okreni se k [strelica miša v]
+    				idi (1) koraka
+ 			end
 
 	```
 
@@ -82,15 +82,14 @@ Za sada brod može ploviti kroz drvene prepreke. Popravimo to!
 + Unutar bloka `ponavljaj` {.blockcontrol} dodaj sljedeće naredbe, tako da se sudari kada dotakne prepreku:
 
 	```blocks
-ako <dodiruje boju [#603C15]?> onda
-   promijeni kostim u [udaren v]
-   govori [Neeeeeeee!] (1) sekundi
-   promijeni kostim u [normalan v]
-   okreni se u smjeru (0 v)
-   idi na x:(-200) y:(-160)
-end
-```
-
+			ako <dodiruje boju [#603C15]?> onda
+    		promijeni kostim u [udaren v]
+    		govori [Neeeeeeee!] (1) sekundi
+    		promijeni kostim u [normalan v]
+    		okreni se u smjeru (0 v)
+    		idi na x:(-200) y:(-160)
+ 			end
+ 	```
 
 	Kako se ove naredbe nalaze unutar bloka `ponavljaj` {.blockcontrol}, stalno će se provjeravati je li se brod sudario.
 
@@ -106,13 +105,10 @@ end
 
 Možeš li brodu dodati još jednu `ako ... onda` {.blockcontrol} naredbu, tako da igrač pobjedi kada dođe do napuštenog otoka?
 
-Kada brod dođe do žutog napuštenog otoka, trabao bi reći 'Toooo!' i tada igra završava. Koristi naredbe:
-
-```blocks
-govori [Toooo!] (1) sekundi
-zaustavi [sve v]
-
-```
+	```blocks
+ 			govori [Toooo!] (1) sekundi
+ 			zaustavi [sve v]
+	```
 
 ![screenshot](boat-win.png)
 
@@ -134,17 +130,16 @@ Dodajmo vremensko ograničenje u ovu igru tako da igrač treba doći do pustog o
 
 	![screenshot](boat-variable.png)
 
-+ Dodaj sljedeće naredbena __pozornicu__, tako da brojač odbrojava vrijeme dok brod ne stigne do pustog otoka:
++ Dodaj sljedeće naredbe na __pozornicu__, tako da brojač odbrojava vrijeme dok brod ne stigne do pustog otoka:
 
 	```blocks
-
-kada je ⚑ kliknut
-postavi [vrijeme v] na [0]
-ponavljaj
-   čekaj (0.1) sekundi
-   promijeni [vrijeme v] za (0.1)
-end
-```
+			kada je ⚑ kliknut
+			postavi [vrijeme v] na [0]
+ 			ponavljaj
+    		čekaj (0.1) sekundi
+    		promijeni [vrijeme v] za (0.1)
+ 		end
+ 	```
 
 
 + To je to! Isprobaj svoju igru i vidi koliko brzo možeš doći do pustog otoka!
@@ -166,10 +161,10 @@ Ova igra je prelagana - dodajmo nešto da bude zanimljivija.
 + Sada možeš dodati nekoliko naredbi u blok `ponavljaj` {.blockcontrol}, tako da se brod pomakne za 2 _dodatna_ koraka kada  dotakne bijelu strelicu.
 
 	```blocks
-ako <dodiruje boju [#FFFFFF]?> onda
-   idi (3) koraka
-end
-```
+			ako <dodiruje boju [#FFFFFF]?> onda
+    			idi (3) koraka
+ 			end
+ 	```
 
 + Možeš dodati i vrata koja se okreću i koja brod treba izbjeći. Dodaj novi lik 'vrata' koji izgleda ovako:
 
@@ -195,10 +190,9 @@ Možeš li dodati više prepreka u ovu igru? Evo nekoliko ideja:
 
 + Možeš dodati zeleni mulj u pozadinu, koji će usporiti igrača kada ga dodirne. Za to ćeš trebati naredbu `čekaj` {.blockcontrol}:
 
-```blocks
-čekaj (0.01) sekundi
-````
-
+	```blocks
+			čekaj (0.01) sekundi
+	```
 
 ![screenshot](boat-algae.png)
 
@@ -206,20 +200,19 @@ Možeš li dodati više prepreka u ovu igru? Evo nekoliko ideja:
 
 ![screenshot](boat-obstacles.png)
 
-Ovi blokovi ti mogu pomoći:
++ Ovi blokovi ti mogu pomoći:
 
-```blocks
-idi (1) koraka
-ako si na rubu, okreni se
-````
-
+	```blocks
+ 			idi (1) koraka
+ 			ako si na rubu, okreni se
+ 	```
 
 Ako tvoj novi objekt nije smeđe boje, morat ćeš dodati novu naredbu:
 
-```blocks
-ako <<dodiruje boju [#603C15]?> ili <dodiruje [morski pas v]?>> onda
-end
-```
+	```blocks
+ 			ako <<dodiruje boju [#603C15]?> ili <dodiruje [morski pas v]?>> onda
+ 			end
+ 	```
 
 
 ## Spremi promjene u projektu{ .save }
@@ -234,29 +227,29 @@ Možeš li pretvoriti svoju igru u utrku između dva igrača?
 
 + Promijeni početnu poziciju drugog igrača izmjenom sljedećeg kôda:
 
-```blocks
-	go to x: (-190) y: (-150)
-```
+	```blocks
+ 		go to x: (-190) y: (-150)
+ 	```
 
 + Obriši naredbe koje koriste miša za kretanje broda:
 
-```blocks
-	ako <(daljina do [strelica miša v]) > [5]> onda
-   okreni se k [strelica miša v]
-   idi (1) koraka
-end
-
-```
+	```blocks
+ 			ako <(daljina do [strelica miša v]) > [5]> onda
+  					okreni se k [strelica miša v]
+    				idi (1) koraka
+			end
+ 	```
 
 ...i zamijeni ga s naredbama kojima će se kretanje broda kontrolirati strelicama.
 
-Ovo su naredbe kojima će se brod kretati naprijed:
++ Ovo su naredbe kojima će se brod kretati naprijed:
 
-```blocks
-ako <tipka [strelica gore v] pritisnuta?> onda
-   idi (1) koraka
-end
-```
+	```blocks
+ 			ako <tipka [strelica gore v] pritisnuta?> onda
+    			idi (1) koraka
+			end
+ 	```
+
 
 
 Također ćeš trebati kod za `okretanje` {.blockmotion} broda kada se pritisne lijeva ili desnu strelica.
@@ -264,12 +257,10 @@ Također ćeš trebati kod za `okretanje` {.blockmotion} broda kada se pritisne 
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više razina! {.challenge .new-page}
-Možeš li napraviti dodatne pozadine tako da igrač može birati različite nivoe igre?
 
-```blocks
++ Možeš li napraviti dodatne pozadine tako da igrač može birati različite nivoe igre?
 
-kada je tipka [razmaknica v] pritisnuta
-sljedeća pozadina
-```
-
-## Spremi promjene u projektu{ .save }
+	```blocks
+ 			kada je tipka [razmaknica v] pritisnuta
+ 			sljedeća pozadina
+ 	```
