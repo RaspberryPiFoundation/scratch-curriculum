@@ -12,13 +12,13 @@
             "note":     "Memory/Memory - notes.md"
         },
         {
-            "number":   1,
+            "number":   2,
             "filename": "Treffball/Treffball.md",
             "beta":     true,
             "note":     "Treffball/Treffball - Notizen.md"
         },
         {
-            "number":   1,
+            "number":   3,
             "filename": "Gehirnjogging/Gehirnjogging.md",
             "beta":     true,
             "note":     "Gehirnjogging/Gehirnjogging - Notizen.md"
