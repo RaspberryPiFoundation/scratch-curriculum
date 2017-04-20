@@ -10,6 +10,24 @@
             "beta": true,
             "filename": "Memory/Memory.md",
             "note":     "Memory/Memory - notes.md"
+        },
+        {
+            "number":   2,
+            "beta": true,
+            "filename": "Dodgeball/Dodgeball.md",
+            "note":     "Dodgeball/Dodgeball - notes.md"
+        },
+        {
+            "number":   3,
+            "beta": true,
+            "filename": "Brain Game/Brain Game.md",
+            "note":     "Brain Game/Brain Game - notes.md"
+        },
+{
+            "number":   4,
+            "beta": true,
+            "filename": "Vang de stippen/vang de stippen.md",
+            "note":     "Vang de stippen/vang de stippen notas.md"
         }
     ]
 }

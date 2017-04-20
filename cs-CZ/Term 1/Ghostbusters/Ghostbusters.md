@@ -51,7 +51,7 @@ Chytit tohoto ducha je velmi lehké, protože se nepohybuje!
 
 ## Seznam úkolů { .check }
 
-+ Místo zústáváni ve stejné pozici, můžeš nechat Scratch vybírat náhodnou pozici koordinátů x a y. Přidej blok `go to` {.blockmotion} k duchovi tak, aby to vypadalo následovně:
++ Místo zústáváni ve stejné pozici, můžeš nechat Scratch vybírat náhodnou pozici koordinátů x a y. Přidej blok `skoč na pozici` {.blockmotion} k duchovi tak, aby to vypadalo následovně:
 
 	```blocks
 		po kliknutí na ⚑
@@ -69,7 +69,7 @@ Chytit tohoto ducha je velmi lehké, protože se nepohybuje!
 ## Ulož projekt { .save }
 
 ## Výzva: Více náhody {.challenge}
-Zkus nastavit ducha tak, aby čekal pomocí bloku `čekej` {.blockcontrol} náhodnou dobu před objevením. Použij blok `nastav velikost na` {.blocklooks} , aby měl duch pokaždé jinou velikost.
+Zkus nastavit ducha tak, aby čekal pomocí bloku `čekej` {.blockcontrol} náhodnou dobu před objevením. Použij blok `nastav velikost na` {.blocklooks}, aby měl duch pokaždé jinou velikost.
 
 ## Ulož projekt { .save }
 
@@ -107,7 +107,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 
 	![screenshot](ghost-score.png)
 
-	Napiš 'score' jako jméno proměnné, ujisti se že bude dostupná pro všechny sprajty (zaškrtnout 'Pro všechny postavy') a klikni 'OK'. Pak budeš mít možnost používat bloky pro práci s touto proměnnou - `score` {.blockdata}.
+	Napiš 'score' jako jméno proměnné, ujisti se že bude dostupná pro všechny postavy (zaškrtnout 'Pro všechny postavy') a klikni 'OK'. Pak budeš mít možnost používat bloky pro práci s touto proměnnou - `score` {.blockdata}.
 	
 	Skóre uvidíš v levém horním rohu scény.
 
@@ -120,7 +120,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 	nastav [score v] na [0]
 	```
 
-+ Jakmile chytneš ducha je potřeba svednout skóre o jeden bod:
++ Jakmile chytneš ducha je potřeba zvednout skóre o jeden bod:
 
 	```blocks
 		po kliknutí na mě
@@ -135,7 +135,7 @@ Udělejme to zajímavějším přidáním počítání skóre.
 
 # Step 5: Přidání časovače { .activity }
 
-Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin na to, aby chytl tolik duchů, kolik zvládne.
+Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin na to, aby chytil tolik duchů, kolik zvládne.
 
 ## Seznam úkolů { .check }
 
@@ -165,7 +165,7 @@ Hru můžeš udělat mnohem zajímavější, když dáš hráči jen 10 vteřin 
 
 	![screenshot](ghost-timer-help.png)
 
-+ Přesuň proměnnou 'time' do pravého rohu scény. Můžeš kliknout pravým tlačítkem myši na proměnnou a vybrat 'large readout' abys změnil(a), jak bude proměnná s časem vypadat.
++ Přesuň proměnnou 'time' do pravého rohu scény. Můžeš kliknout pravým tlačítkem myši na proměnnou a vybrat 'zvětšené zobrazení', abys změnil(a), jak bude proměnná s časem vypadat.
 
 	![screenshot](ghost-readout.png)
 

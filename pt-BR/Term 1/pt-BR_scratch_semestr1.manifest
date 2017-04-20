@@ -4,6 +4,7 @@
     "language": "pt-BR",
     "number": 1,
     "title": "Scratch 1",
+    "category": "cat-scratch",
     "projects": [
         {
             "number":   1,

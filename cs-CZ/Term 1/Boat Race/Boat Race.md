@@ -16,7 +16,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
   <img src="boat-final.png">
 </div>
 
-# Step 1: Naplánování hry { .activity }
+# Krok 1: Naplánování hry { .activity }
 
 ## Seznam úkolů { .check }
 
@@ -26,11 +26,11 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 	+ Dřevo, kterému se bude loďka vyhýbat;
 	+ Opuštěný ostrov, na kterém má loďka přistát.
 
-	Tady je obrázek jak by měla tvoje hra vypadat:
+	Tady je obrázek, jak by měla tvoje hra vypadat:
 
 	![screenshot](boat-bg.png) 
 
-# Step 2: Ovládání loďky { .activity }
+# Krok 2: Ovládání loďky { .activity }
 
 ## Seznam úkolů { .check }
 
@@ -58,7 +58,7 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 + Co se stane, když loďka doplave ke kurzoru myši?
 
-	Abys tomuto chování zabránil(a) musíš přidat blok `když` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
+	Abys tomuto chování zabránil(a), musíš přidat blok `když` {.blockcontrol} tak, aby se loďka pohybovala jen když je dále než 5 pixelů od myši.
 
     ```blocks
 		po kliknutí na ⚑
@@ -76,13 +76,13 @@ Naučíš se jak vytvořit hru, ve které budeš používat myš k navigaci loď
 
 ## Ulož projekt { .save }
 
-# Step 3: Havárie! { .activity .new-page }
+# Krok 3: Havárie! { .activity .new-page }
 
 Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit.
 
 ## Seznam úkolů { .check }
 
-+ Budeš potřebovat dva "kystýmy" pro tvoji loďku, jeden normální, a jeden pro loďku po nárazu. Zduplikuj kostým tvojí loďky a nazvi je 'normal' (normální) a 'hit' (náraz).
++ Budeš potřebovat dva "kostýmy" pro tvoji loďku, jeden normální, a jeden pro loďku po nárazu. Zduplikuj kostým tvojí loďky a nazvi je 'normal' (normální) a 'hit' (náraz).
 
 + Klikni na kostým 'hit' a vyber nástroj 'Select' abys loďku rozdělil(a) na kousky a ty různě natoč. Upravt loďku tak, aby vypadala jako po nárazu.
 
@@ -104,7 +104,7 @@ Nyní může vaše loďka proplouvat dřevěnýma bariérama! Pojďme to opravit
 
 + Také musíš zajistit, aby loďka začínala nenabouraná - kostým 'normal'.
 
-+ Nyní když loďka dopluje ke dřevu, měla by narazit a objevit se znovu na začátku.
++ Nyní, když loďka dopluje ke dřevu, měla by narazit a objevit se znovu na začátku.
 
 	![screenshot](boat-crash.png)
 
@@ -129,17 +129,17 @@ Nyní můžeš přidat zvukové efekty pro náraz nebo pro konec hry. Stejně ta
 
 ## Ulož projekt { .save }
 
-# Step 4: Závod na čas { .activity }
+# Krok 4: Závod na čas { .activity }
 
 Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrychleji.
 
 ## Seznam úkolů { .check }
 
-+ Přidej proměnnou nazvanou `time` {.blockdata} na stage. Můžeš také změnit její vzhled, pokud chceš vědět jak, podívejte se na projekt 'Lovci duchů'.
++ Přidej proměnnou nazvanou `time` {.blockdata} na scénu. Můžeš také změnit její vzhled, pokud chceš vědět jak, podívejte se na projekt 'Lovci duchů'.
 
 	![screenshot](boat-variable.png)
 
-+ Přidej tento kód na tvoji  __stage__, tak aby se počítal čas, dokud loďka nedopluje na ostrov:
++ Přidej tento kód na tvoji  __scénu__, tak aby se počítal čas, dokud loďka nedopluje na ostrov:
 
 	```blocks
 		po kliknutí na ⚑
@@ -156,17 +156,17 @@ Přidej do hry časovač proto, aby se hráč snažil dostat do cíle co nejrych
 
 ## Ulož projekt { .save }
 
-# Step 5: Překážky a bonusy { .activity }
+# Krok 5: Překážky a bonusy { .activity }
 
-Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
+Nyní je hra moc jednoduchá - přidáme pár věcí, aby byla zajímavější.
 
 ## Seznam úkolů { .check }
 
-+ Jako první přidáme 'zrycchlovače'. Nakresli do tvojí hry několik bílých šipek.
++ Jako první přidáme 'zrychlovače'. Nakresli do tvojí hry několik bílých šipek.
 
 	![screenshot](boat-boost.png)
 
-+ Nyní je potřeba přidat do cyklu `opakuj dokola` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zryychlovač.
++ Nyní je potřeba přidat do cyklu `opakuj dokola` {.blockcontrol} pár říkazů tak, aby se loďka posunula rychleji o 2 _extra_ kroky, když najede na zrychlovač.
 
 	```blocks
 		když <dotýká se barvy [#FFFFFF]?> tak
@@ -180,11 +180,11 @@ Nyní je hra moc jednoduchá - přidáme pár věcí aby byla zajímavější.
 
 	Ujisti se, že má stejnou barvu jako dřevěné bariéry.
 
-+ Nastavt střed brány.
++ Nastav střed brány.
 
 	![screenshot](boat-center.png)
 
-+ Přidej kód k bráně tak, aby so otáčela pomalu stále dokola v bloku `opakuj dokola` {.blockcontrol}.
++ Přidej kód k bráně tak, aby se otáčela pomalu stále dokola v bloku `opakuj dokola` {.blockcontrol}.
 
 + Vyzkoušej si hru. Nyní by se měla objevit brána, která se otáčí a které se musíš vyhnout.
 
@@ -224,9 +224,9 @@ Pokud není objekt hnědý, musíš přidat následující kód k loďce:
 ## Ulož projekt { .save }
 
 ## Výzva: Více lodí! {.challenge .new-page}
-Zkusíš změnit hru na závod mezi dvouma hráči?
+Zkusíš změnit hru na závod mezi dvěma hráči?
 
-+ Zduplikuj loďku, přejmenuj ji na 'Player 2' a změň barvu.
++ Zduplikuj loďku, přejmenuj ji na 'Hráč 2' a změň barvu.
 
 ![screenshot](boat-p2.png)
 
@@ -239,8 +239,8 @@ Zkusíš změnit hru na závod mezi dvouma hráči?
 + Smaž kód pro kontrolu loďky myší:
 
 ```blocks
-	když < (distance to [mouse-pointer v]) > [5] > tak
-		natoč se k [mouse-pointer v]
+	když < (vzdálenost od [ukazatel myši v]) > [5] > tak
+		natoč se k [ukazatel myši v]
 		posuň se o (1) kroků
 	end
 ```
@@ -250,7 +250,7 @@ Zkusíš změnit hru na závod mezi dvouma hráči?
 Toto je kód pro posun loďky dopředu:
 
 ```blocks
-	když < key [up arrow v] pressed? > tak
+	když < klávesa [šipka nahoru v] stisknuta? > tak
 		posuň se o (1) kroků
 	end
 ```
