@@ -10,7 +10,7 @@ notes: "Catch the Dots - notes.md"
 Dans ce projet, vous apprendrez à faire un jeu, dans lequel le joueur doit rassembler des points colorés avec la partie correspondante du contrôleur.
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
  <img src="images/dots-final.png">
 </div>
 

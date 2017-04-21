@@ -10,7 +10,7 @@ notes: "Paint Box - notes.md"
 Dans ce projet, vous ferez votre propre programme de peinture!
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
  <img src="images/paint-final.png">
 </div>
 

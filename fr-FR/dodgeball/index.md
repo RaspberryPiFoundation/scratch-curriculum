@@ -11,7 +11,7 @@ Dans ce projet vous apprendrez à créer un jeu de plate-forme, dans lequel vous
 
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
  <img src="images/dodge-final.png">
 </div>
 

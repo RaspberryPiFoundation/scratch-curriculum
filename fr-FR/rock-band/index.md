@@ -11,7 +11,7 @@ project-type: sample
 Dans ce projet vous apprendrez à coder vos propres instruments de musique!
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
  <img src="images/band-final.png">
 </div>
 
