@@ -51,7 +51,7 @@ Tu vas apprendre à programmer ta propre animation !
 
 + Clique sur la catégorie 'Espace' à gauche, puis choisis l'arrière-plan étoilé qui s'appelle 'stars'. Clique sur 'OK' pour l'ajouter à ta scène.
 
-	![screenshot](images/images/space-backdrop.png)
+	![screenshot](images/space-backdrop.png)
 
 	Ta scène devrait maintenant ressembler à cela :
 
