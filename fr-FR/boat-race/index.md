@@ -125,7 +125,7 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arriver à l'île déserte
 
 + Ajoutez une nouvelle variable appelée `temps` {.blockdata} à votre scène. Vous pouvez aussi changer la présentation de votre nouvelle variable. Si vous avez besoin d'aide, regardez le projet 'Ballon'.
 
-	![screenshot](images/boat-variable.png)
+	![screenshot](images/boat-variable-test.png)
 
 + Ajoutez ce code à votre scène , pour que le minuteur compte jusqu'a ce que le bateau atteignent l'île déserte :
 
