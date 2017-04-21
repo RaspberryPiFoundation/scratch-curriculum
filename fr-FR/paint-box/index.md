@@ -85,7 +85,7 @@ Ajoutons des stylos de différents couleur à votre projet et permettons à l'ut
 
 + Créez deux nouveaux lutins, que vous utiliserez pour choisir le crayon bleu ou vert.
 
-	![screenshot](paint-selectors.png)
+	![screenshot](images/paint-selectors.png)
 
 + Quand l'icône de sélecteur verte est cliquée, vous avez besoin de `envoyer à tous` {.blockevents} un message au lutin de crayon, lui disant de changer son costume et la couleur de crayon.
 
