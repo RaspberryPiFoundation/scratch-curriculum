@@ -20,7 +20,7 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 
 + Commencez un nouveau projet de scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver le logicel scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+Clic sur votre scène et arrière-plan de votre niveau. Vous devriez ajouter :
++ Clic sur votre scène et arrière-plan de votre niveau. Vous devriez ajouter :
 	 + le Bois que votre bateau doit éviter;
 	 + une île déserte vers laquelle votre bateau doit ce rendre.
 
