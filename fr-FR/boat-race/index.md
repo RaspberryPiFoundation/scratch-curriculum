@@ -10,8 +10,8 @@ notes: "Boat Race - notes.md"
 Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour faire naviguer un bateau vers une île déserte.
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
- <img src="images/boat-final.png">
+<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
+<img src="images/boat-final.png">
 </div>
 
 # Étape 1: Planifier votre jeu { .activity }
@@ -26,7 +26,7 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 
 	Voici à quoi votre jeu pourrait ressembler :
 
-	![screenshot](boat-bg.png)
+	![screenshot](images/boat-bg.png)
 
 # Étape 2 : Direction du bateau { .activity }
 
