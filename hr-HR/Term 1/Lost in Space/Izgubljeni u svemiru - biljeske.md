@@ -1,5 +1,5 @@
 ---
-title: Izgubljeni u Svemiru — Bilješke za voditelje radionica
+title: Izgubljeni u Svemiru — upute za voditelje radionica
 language: hr-HR
 embeds: "*.png"
 ...
@@ -7,14 +7,14 @@ embeds: "*.png"
 #Uvod:
 U ovom projektu djeca će naučiti kako kombinirati naredbe tako da naprave jednostavne animacije.
 
-#Resursi
+#Izvori
 Za ovaj projekt koristite Scratch 2. Možete ga koristiti online na adresi [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti s adrese [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu.
 
-Riješenu verziju ovog projekta pronaći ćete <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, a možete ju preuzeti i s poveznice 'Preuzmi materijale za projekt' koja sadrži:
+Riješenu verziju ovog projekta pronaći ćete na <a href="http://scratch.mit.edu/projects/26818098/#editor">online</a>, a možete ju preuzeti i s poveznice 'Download Project Materials' koja sadrži:
 
 + LostInSpace.sb2
 
-Također postoji verzija ovog projekta sa vanjskim resursima već učitanim. Ovo je također dostupno online [jumpto.cc/space-resources](http://jumpto.cc/space-resources), ili u projektnim materijalima koji se mogu skinuti. Oni sadrže:
+Možete pronaći gotovu online verziju ovog projekta [jumpto.cc/space-resources](http://jumpto.cc/space-resources), ili je možete preuzeti u materijalima. Oni sadrže:
 
 + LostInSpaceResources.sb2 
 

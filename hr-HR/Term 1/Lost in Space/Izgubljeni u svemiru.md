@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Uvod { .intro }
 
-U ovom projektu naučit ćete programirati svoje animacije!
+U ovom projektu naučit ćeš programirati svoje animacije!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe>
@@ -131,10 +131,11 @@ Dodajmo u animaciju majmuna koji se izgubio u Svemiru!
 + Odaberi karticu 'Skripte' i dodaj liku majmuna sljedeće naredbe kako bi se on zauvijek sporo vrtio u krug:
 
 	```blocks
-		kada je ⚑ kliknut
-		ponavljaj
- 				skreni ↻ (1) stupnjeva
-		end
+
+	kada je ⚑ kliknut
+	ponavljaj
+   		skreni ↻ (1) stupnjeva
+	end
 	```
 
 	Naredba `Ponavljaj` {.blockcontrol} je još jedna petlja, ali ona nikada ne završava.
