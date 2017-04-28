@@ -13,12 +13,12 @@
         {
             "number":   2,
             "filename": "Lost in Space/Izgubljeni u svemiru.md",
-            "note":     "Lost in Space/Izgubljeni u svemiru - biljeske.md"
+            "note":     "Lost in Space/Izgubljeni u svemiru - biljesk.md"
         },
         {
             "number":   3,
             "filename": "Ghostbusters/Istjerivaci duhova.md",
-            "note":     "Ghostbusters/Istjerivaüi duhova-biljeske.md"
+            "note":     "Ghostbusters/Istjerivači duhova-biljeske.md"
         },
         {
             "number":   4,
@@ -29,7 +29,7 @@
             "number":   5,
             "filename": "Paint Box/Program za crtanje.md",
             "note":     "Paint Box/Program za crtanje - biljeske.md"
-        },        
+        },
         {
             "number":   6,
             "filename": "Boat Race/Utrka brodova.md",
