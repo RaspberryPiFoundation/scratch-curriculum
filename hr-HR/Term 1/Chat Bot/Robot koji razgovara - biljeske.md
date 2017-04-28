@@ -5,12 +5,12 @@ embeds: "*.png"
 ...
 
 #Uvod:
-U ovom projektu djeca će naučiti kako koristiti naredbu 'ako ... onda 'da bi mogli donositi odluke.
+U ovom projektu djeca će naučiti kako koristiti naredbu 'ako ... onda' da bi mogli donositi odluke.
 
 #Izvori
 Za ovaj projekt koristite Scratch 2. Možete ga koristiti online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti sa [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu.
 
-Potpuna online verzija ovog projekta nalazi se <a href="http://scratch.mit.edu/projects/26762091/#editor">ovdje</a>. Također možete preuzeti kompletne materijale na linku 'Preuzmite materijale za projekt'. Materijali sadrže:
+Potpuna online verzija ovog projekta nalazi se <a href="http://scratch.mit.edu/projects/26762091/#editor">ovdje</a>. Također možete preuzeti kompletne materijale na linku 'Download Project Materials'. Materijali sadrže datoteku:
 
 + ChatBot.sb2
 

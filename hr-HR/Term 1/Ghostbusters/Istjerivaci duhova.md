@@ -19,7 +19,7 @@ U ovom projektu napravit ćeš svoju prvu igru! To će biti igra hvatanja duhova
   <img src="ghost-final.png">
 </div>
 
-# Korak: Animacija duha. { .activity }
+# Korak 1: Animacija duha. { .activity }
 
 ## Zadatci { .check }
 
@@ -31,15 +31,15 @@ U ovom projektu napravit ćeš svoju prvu igru! To će biti igra hvatanja duhova
 
 + Zatim dodaj sljedeće naredbe liku duha tako da se on neprestano pojavljuje i nestaje.
 
-	```blocks
-		kada je ⚑ kliknut
-		ponavljaj
-    	sakrij
-    	čekaj (1) sekundi
-    	prikaži
-    	čekaj (1) sekundi
- 		end
- 	```
+```blocks
+	kada je ⚑ kliknut
+	ponavljaj
+   	sakrij
+   	čekaj (1) sekundi
+   	prikaži
+   	čekaj (1) sekundi
+	end
+```
 
 + Testiraj program klikom na zelenu zastavicu.
 
@@ -53,16 +53,16 @@ Ovog duha je jako lako uhvatiti jer je nepomičan.
 
 + Umjesto stajanja na istom mjestu, dopustit ćemo da Scratch sam odabere naumične koordinate x i y na kojima će se pojavljivati lik duha. Duhu dodaj 'idi na' { .blockmotion } naredbu, tako da blok naredbi izgleda ovako:
 
-	```blocks
- 		kada je ⚑ kliknut
- 		ponavljaj
-    			sakrij
-    			čekaj (1) sekundi
-    			idi na x:(slučajni broj od (-150) do (150)) y:(slučajni broj od (-150) do (150))
-    			prikaži
-    			čekaj (1) sekundi
- 		end
-	```
+```blocks
+	kada je ⚑ kliknut
+	ponavljaj
+   		sakrij
+   		čekaj (1) sekundi
+   		idi na x:(slučajni broj od (-150) do (150)) y:(slučajni broj od (-150) do (150))
+   		prikaži
+   		čekaj (1) sekundi
+	end
+```
 
 + Provjeri rezultat klikom na zastavicu. Sada se svaki puta pojavljuje na drugačijem mjestu.
 
@@ -77,14 +77,14 @@ Možeš li napraviti promjene u naredbi `čekaj` {.blockcontrol} tako da duh če
 
 Dopustimo igraču da hvata duhove!
 
-## Lista aktivnosti { .check }
+## Zadatci { .check }
 
 + Kako bi dopustili igraču da uhvati duha, dodaj sljedeći kod:
 
-	```blocks
- 		kada je lik kliknut
- 		sakrij
-	```
+```blocks
+	kada je lik kliknut
+	sakrij
+```
 
 + Provjeri rezultat. Možeš li uhvatiti duha kada se pojavi? Ako ti je teško hvatati duhove možeš igrati igru na cijelom zaslonu klikom na ovaj gumb:
 
@@ -119,16 +119,16 @@ Napravimo igru zanimljivijom tako što ćemo dodati rezultat.
 
 + Sada je potrebno postaviti rezultat na nulu svaki puta kada program krene od početka:
 
-	```blocks
-		kada je ⚑ kliknut
-		postavi [rezultat v] na [0]
-	```
+```blocks
+	kada je ⚑ kliknut
+	postavi [rezultat v] na [0]
+```
 
 + Svaki puta kada je duh uhvaćen, potrebno je povećati rezultat za jedan bod:
 
 	![screenshot](ghost-change-score.png)
 
-+ PPokreni program i hvataj duhove. Mijenja li se rezultat?
++ Pokreni program i hvataj duhove. Mijenja li se rezultat?
 
 ## Spremi promjene u projektu. { .save }
 
@@ -153,11 +153,12 @@ Igra može biti još zanimljivija ograničavanjem vremena u kojem igrač može h
 	```blocks
 		kada je ⚑ kliknut
 		postavi [vrijeme v] na [10]
- 		ponavljaj dok nije <(vrijeme) = [0]>
-    	čekaj (1) sekundi
-    	promijeni [vrijeme v] za (-1)
- 		zaustavi [sve v]
-  	```
+		ponavljaj dok nije <(vrijeme) = [0]>
+   		čekaj (1) sekundi
+   		promijeni [vrijeme v] za (-1)
+		zaustavi [sve v]
+	```
+
 	Ovako ćeš dodati  `ponavljaj do`{.blockcontrol}`vremena`{.blockdata}`= 0`{.blockoperators} kôd:
 
 	![screenshot](ghost-timer-help.png)

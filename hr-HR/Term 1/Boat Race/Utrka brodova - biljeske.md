@@ -1,16 +1,16 @@
 ---
-title: Utrka brodovima — Upute za vođe klubova
+title: Utrka brodovima — Upute za voditelje radionica
 language: hr-HR
 embeds: "*.png"
 ...
 
 #Uvod:
-U ovom projektu djeca će naučiti kako likovi mogu reagirati na okolinu.
+U ovom projektu djeca će naučiti na koji način likovi mogu reagirati na okolinu.
 
 #Izvori
 Za ovaj projekt trebali bi koristiti Scratch 2. Možete ga pronaći online na adresi [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti s adrese [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu.
 
-Cjelovit projekt pronađite  <a href="http://scratch.mit.edu/projects/63957956/#editor">ovdje</a> ili ga preuzmite klikom na link 'Preuzmi materijale za projekt'. On sadrži:
+Cjelovit projekt pronađite  <a href="http://scratch.mit.edu/projects/63957956/#editor">ovdje</a> ili ga preuzmite klikom na link 'PDownload Project Materials'. On sadrži datoteku:
 
 + BoatRace.sb2
 
