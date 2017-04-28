@@ -1,56 +1,56 @@
 ---
 title: Memory
 level: Scratch 2
-language: en-GB
+language: zh-CN
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+## 社区贡献项目 { .challenge .pdf-hidden }
+本项目由Erik和他的女儿Ruth共同创建。 如果您也想贡献您自己的项目，那么请 [通过Github联系我们](https://github.com/CodeClub)。
 
-# Introduction { .intro }
+# 简介 { .intro }
 
-In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
+在本项目中，你将创建一个记忆游戏，你需要记住随机出现的颜色，并将他们按顺序重复出来！
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
   <img src="colour-final.png">
 </div>
 
-# Step 1: Random colours { .activity }
+# 第1步: 随机颜色 { .activity }
 
-First, let's create a character that can change to a random sequence of colours for the player to memorise.
+首先，让我们创建一个能够随机变换颜色的角色来让玩家记忆颜色。
 
-## Activity Checklist { .check }
+## 行动清单 { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ 新建一个Scratch项目，删除默认的小猫精灵，让项目变成一个空白项目。你可以在这里 <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>找到在线Scratch编辑器。
 
-+ Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
++ 选择一个角色和一个背景。角色不一定非要是人物，但是要能够显示不同颜色。
 
 	![screenshot](colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ 在游戏中，你需要用不同的数字代表每一种颜色：
 
 	+ 1 = red;
 	+ 2 = blue;
 	+ 3 = green;
 	+ 4 = yellow.
 
-	Give your character 4 different colour costumes, one for each of the 4 colours above. Make sure that your coloured costumes are in the right order.
+	按照上面的颜色，给你的角色4套不同颜色的服装。要确保服装的颜色跟上面的顺序是一致的。 
 
 	![screenshot](colour-costume.png)
 
-+ To create a random sequence, you need to create a __list__. A list is just a variable that stores lots of data __in order__. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
++ 要创建一个随机序列，你需要创建一个 __列表__ 。 列表就是一个能够 __按顺序__ 存储很多数据的变量。新建一个名叫 `sequence` {.blockdata} 的列表。因为只有你的角色需要看到这个列表，我们可以点击选择'For this sprite only'选项。
 
 	![screenshot](colour-list.png)
 
-	You should now see your empty list in the top-left of your stage, as well as lots of new blocks for using lists.
+	现在你应该能够看到在你的舞台左上方有一个空列表，还有很多操作列表的新模块。
 
 	![screenshot](colour-list-blocks.png)
 
-+ Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
++ 为你的角色添加如下代码，重复执行5此，每次向列表中添加1个随机数（并且显示对应的服装）：
 
 	```blocks
 		when flag clicked
@@ -62,33 +62,33 @@ First, let's create a character that can change to a random sequence of colours 
 		end
 	```
 
-	Notice that you have also emptied the list to begin with.
+	注意，一定要在开始时清空列表。
 
-## Challenge: Adding sound {.challenge}
-Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume?
+## 挑战：添加声音 {.challenge}
+测试几次你的项目，你会发现有时相同的数字会连续出现看次（或更多），这让颜色序列难以记忆。你能在每次角色变换服装时播放鼓声吗？
 
-Can you make a different drum sound play depending on the random number chosen? This will be _very_ similar to your code to change the character's costume.
+你能根据随机选择的数字不同播放不同的鼓声吗？这个功能与你变换角色服装的代码 _非常_ 的相似。 
 
-## Save your project { .save }
+## 保存你的项目 { .save }
 
-# Step 2: Repeating the sequence { .activity }
+# 第2步： 重复序列 { .activity }
 
-Let's add 4 buttons, for the player to repeat the sequence they've remembered.
+让我们添加4个按钮好让玩家能够重复出他们记忆的颜色序列。
 
-## Activity Checklist { .check }
+## 行动清单 { .check }
 
-+ Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
++ 向项目中添加4个精灵来充当按钮。编辑这4个精灵让他们每个拥有四种颜色中的一种。
 
 	![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
++ 当红色的鼓被点击时，你需要向你的角色广播一条消息，让它知道红色按钮被点击了。为你的红鼓添加如下代码：
 
 	```blocks
 		when this sprite clicked
 		broadcast [red v]
 	```
 
-+ When your character receives this message, they should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, you can remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
++ 当你的角色收到了这条消息，它就要检测数字1是否在列表的起始位置（起始位置表示序列中的下一个颜色）。 如果是，你可以将数字从列表中移除，表示猜对了。否则游戏结束！
 
 	```blocks
 		when I receive [red v]
@@ -100,14 +100,14 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		end
 	```
 
-+ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
++ 一旦列表为空，你也可以展示一些闪烁的灯光，表示整个序列都猜对了。在角色的 `when flag clicked` {.blockevents} 脚本末尾添加如下代码：
 
 	```blocks
 		wait until < (length of [sequence v]) = [0]>
 		broadcast [won v] and wait
 	```
 
-+ Click on your stage, and add this code to make the backdrop change colour once the player has won.
++ 点击你的舞台，添加如下代码，当玩家赢了时让背景变换颜色。
 
 	```blocks
 		when I receive [won v]
@@ -119,45 +119,46 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		clear graphic effects
 	```
 
-## Challenge: Creating 4 buttons {.challenge}
-Repeat the steps above for your blue, green and yellow buttons. Which code will stay the same, and which code will change for each button?
+## 挑战：创建4个按钮 {.challenge}
 
-You can also add sounds for when the buttons are pressed.
+重复上面步骤创建蓝色、绿色和黄色按钮，那么按钮的哪处代码需要修改呢？
 
-Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
+当按钮按下时你一样也可以添加声音。
 
-## Save your project { .save }
+记得测试你添加的代码！你能记住5个颜色的序列吗？这些序列每次都不同吗？
 
-# Step 3: Multiple levels { .activity .new-page }
+## 保存你的项目 { .save }
 
-So far, the player only has to remember 5 colours. Let's improve your game, so that the length of the sequence increases.
+# 第3步：多难度等级 { .activity .new-page }
 
-## Activity Checklist { .check }
+目前为止，玩家只能记忆5个颜色。让我们改进一下你的游戏让序列长度变长。
 
-+ Create a new variable called `score` {.blockdata}.
+## 行动清单 { .check }
+
++ 新建一个名叫 `score` {.blockdata} 的变量。
 
 	![screenshot](colour-score.png)
 
-+ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
++ 这个 `score` {.blockdata} 用来决定玩家需要记忆的序列的长度。设score的初始值（序列的长度）为3。将下面的代码添加到角色 `when flag clicked` {.blockevents} 代码的开头：
 
 	```blocks
 		set [score v] to [3]
 	```
 
-+ Instead of always creating a sequence of 5 colours, you now want the `score` {.blockdata} to determine the sequence length. Change your character's `repeat` {.blockcontrol} loop (for creating the sequence) to:
++ 为了不让序列永远都生成5个颜色，现在你想用 `score` {.blockdata} 来控制序列的长度。 修改角色的 `repeat` {.blockcontrol} 循环（用于生成序列）为如下代码:
 
 	```blocks
 		repeat (score)
 		end
 	```
 
-+ If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence.
++ 序列被猜对了一次，score的值就加1，来增加序列的长度。
 
 	```blocks
 		change [score v] by (1)
 	```
 
-+ Finally, you need to add a `forever` {.blockcontrol} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
++ 最后，你需要在代码的最外层添加 `forever` {.blockcontrol} 循环来确保每个等级生成一个新的序列。下面是你的角色的完整代码：
 
 	```blocks
 		when flag clicked
@@ -175,19 +176,19 @@ So far, the player only has to remember 5 colours. Let's improve your game, so t
 		end
 	```
 
-+ Get your friends to test out your game. Remember to hide the `sequence` {.blockdata} list before they play it!
++ 召集你的朋友来测试你的游戏吧。在他们玩之前记得要隐藏 `sequence` {.blockdata} 列表！
 
-## Save your project { .save }
+## 保存你的项目 { .save }
 
-# Step 4: High score { .activity }
+# 第4步：最高分 { .activity }
 
-Let's save the high score, so that you can play against your friends.
+让我们保存最高分，这样你就可以和朋友进行比赛了。
 
-## Activity Checklist { .check }
+## 行动清单 { .check }
 
-+ Add 2 new variables to your project, called `high score` {.blockdata} and `name` {.blockdata}.
++ 在你的项目中添加2个新变量，一个叫 `high score` {.blockdata}，另一个叫 `name` {.blockdata}。
 
-+ If ever the game ends (by pressing the wrong button), you need to check whether the player's score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player. Here's how your red button should look:
++ 每当游戏结束时（点击了错误的按钮），你需要判断玩家的分数是否比当前的最高分高。如果高于当前最高分，你需要将玩家分数记录为最高位，并且保存该玩家的名字。下面是红色按钮的代码：
 
 	```blocks
 		when I receive [red v]
@@ -204,49 +205,53 @@ Let's save the high score, so that you can play against your friends.
 		end
 	```
 
-+ You'll need to add this new code to the other 3 buttons too! Have you noticed that the 'Game over' code in each of the 4 buttons is exactly the same?
++ 你需要将此代码添加到其他3个按钮！你注意到了吗？4个按钮的“Game over” 代码是完全一样的。
 
 	![screenshot](colour-same.png)
 
-+ If ever you need to change any of this code, such as adding a sound or changing the 'Game over!' message, you'd have to change it 4 times! That could get annoying, and waste a lot of time.
++ 如果你要修改此处代码，比如添加声音或修改'Game over!' 信息，你必须修改4次！ you'd have to change it 4 times! 这太烦人了，并且还浪费了不少时间。
 
-	Instead, you can define your own blocks, and reuse them in your project! To do this, click `more blocks` {.blockmoreblocks}, and then 'Make a block'. Call this new block 'Game over'.
+	一个解决方案是，定义你自己的模块并在项目中复用！ 要自定义模块，请点击 `more blocks` {.blockmoreblocks}，然后点击 'Make a block'。给模块起个名字，比如'Game over'。
 
 	![screenshot](colour-more.png)
 
-+ Add the code from the `else` {.blockcontrol} block from the red button to the new block that appears:
++ 将红色按钮 `else` {.blockcontrol} 模块中的代码添加到新模块中，如下图：
 
 	![screenshot](colour-make-block.png)
 
-+ You've now made a new _function_ called `Game over` {.blockmoreblocks}, which you can use anywhere you like. Drag your new `Game over` {.blockmoreblocks} block onto the 4 scripts for the buttons.
++ 现在你创建了一个新的 _函数_ 名叫 `Game over` {.blockmoreblocks}，这个函数可以用来任何地方。将你的新建的 `Game over` {.blockmoreblocks} 模块拖到4个按钮的脚本中
 
 	![screenshot](colour-use-block.png)
 
-+ Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
++ 现在当按错按钮时添加一个声音。你只需要在 `Game over` {.blockmoreblocks} 模块中添加一次代码即可，不需要分别添加4次！
 
 	![screenshot](colour-cough.png)
 
-## Challenge: Making more blocks {.challenge}
-Do you notice any other code that is the same for all 4 buttons?
+## 挑战：创建更多模块 {.challenge}
+
+你注意到4个按钮中其他相同的代码了吗？
 
 ![screenshot](colour-more-blocks.png)
 
-Can you make another custom block, that is used by each button?
+你能构建自定义模块让每个按钮都能使用吗？
 
-## Save your project { .save }
+## 保存你的项目 { .save }
 
-## Challenge: Another costume {.challenge}
-Have you noticed that your game starts with your character showing one of the 4 colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+## 挑战： Another costume {.challenge}
 
-Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
+你注意到了吗？每当游戏开始时角色总是显示颜色序列中最后一个颜色。
+
+你可以为角色添加一套白色服装吗？当游戏开始或者玩家开始尝试重复序列时显示白色服装。
 
 ![screenshot](colour-white.png)
 
-## Save your project { .save }
+## 保存你的项目 { .save }
 
-## Challenge: Difficulty level {.challenge}
-Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all 4 drums)?
+## 挑战：难度等级 {.challenge}
+你能让你的玩家在“简单模式”（只用红色和蓝色鼓）和“正常模式”（用所有4个鼓）中挑选难度等级吗？
 
-You could even add a 'hard' mode, which makes use of a 5th drum!
+你甚至可以加入“复杂模式”，用5个鼓！
 
-## Save your project { .save }
+## 保存你的项目 { .save }
+
+
