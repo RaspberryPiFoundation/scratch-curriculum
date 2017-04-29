@@ -10,7 +10,7 @@ embeds: "*.png"
 #资源
 本项目需要用到Scratch 2。 Scratch 2 可以通过 [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) 在线使用，也可以通过 [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) 下载安装离线版本离线使用。
 
-您可以在 <a href="http://scratch.mit.edu/projects/63957956/#editor">这里</a>找到该项目的完整资源，也可以点击该项目的“下载项目资料” 链接下载。该项目资源包括:
+您可以在 <a href="http://scratch.mit.edu/projects/63957956/#editor">这里</a>找到该项目的完整版，也可以点击该项目的“下载项目资料”链接下载，项目文件名:
 
 + BoatRace.sb2
 

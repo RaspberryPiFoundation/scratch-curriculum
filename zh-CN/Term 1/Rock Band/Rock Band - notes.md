@@ -1,36 +1,37 @@
 ---
-title: Rock Band — Notes for Club Leaders
-language: en-GB
+title: 摇滚乐队 — 社团负责人笔记
+language: zh-CN
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to add sound and music to their projects, as well as changing and programming sprite costumes.
+#简介：
+通过本项目，孩子们将学习如何为他们的项目添加声音和音乐，同时还将学习如何编程改变精灵的造型。
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#资源
+本项目需要用到Scratch 2。 Scratch 2 可以通过 [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) 在线使用，也可以通过 [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) 下载安装离线版本离线使用。
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+您可以在 <a href="http://scratch.mit.edu/projects/26741186/#editor">这里</a>找到该项目的完整版，也可以点击该项目的“下载项目资料”链接下载，项目文件名:
 
 + RockBand.sb2
 
-#Learning Objectives
-+ Sprites;
-+ Costumes;
-+ Sequential code blocks;
-+ Events;
-+ Sound and music.
+#学习目标
++ 精灵;
++ 造型;
++ 顺序代码块;
++ 事件;
++ 声音和音乐.
 
-#Challenges
-+ "Improving your drum" - Changing sprite sounds and adding events;
-+ "Changing your singer's costume" - adding and controlling sprite costumes;
-+ "Make your own band" - using the skills learnt to create new instruments.
+#挑战
++ "优化鼓声" - 修改精灵的声音并添加时间；
++ "改变歌手的造型" - 添加并控制精灵造型；
++ "打造你自己的乐队" - 利用所学技能创造新的乐器。
 
-#Frequently Asked Questions
-+ When creating their own sprites, children may find that their sprite 'jumps' when it's clicked, as it changes costume. This is because the two costumes are't centered in the same place.
+#常见问题
++ 当孩子们创建自己的精灵时，他们可能会发现当点击精灵时，精灵变换造型时会“跳一下”。这是因为两个造型的中心不在同一个位置。
 
-	To fix this, click 'Set costume center' on _both_ sprites, and make sure they are centered at the same point in both costumes.
+	要修复这个问题，请对 _两个_ 精灵都点击'Set costume center'按钮，确保两个造型的中心点在同一点上。
 
 	![screenshot](band-center.png)
 
-+ On Linux, right-clicking to delete a sprite may not work. If this is the case, holding shift and left-clicking will bring up the menu to delete a sprite.
++ 在Linux系统中，右键点击删除精灵可能无效。如果出现这种情况，按住shift键点击左键会弹出菜单，通过菜单删除精灵。
+
