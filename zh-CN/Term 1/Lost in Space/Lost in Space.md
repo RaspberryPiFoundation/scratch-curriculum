@@ -1,5 +1,5 @@
 ---
-title: Lost in Space
+title: 太空迷航
 level: Scratch 1
 language: zh-CN
 stylesheet: scratch
@@ -60,7 +60,7 @@ materials: ["Club Leader Resources/*"]
 
 ## 挑战: 增强你的动画 {.challenge}
 你能改变代码中的数字吗？
-+ 让航天飞机一直飞行知道碰到地球？?
++ 让航天飞机一直飞行直到碰到地球？?
 + 航天飞机离地球越近飞得越慢?
 
 你需要改变下面代码中的数字。
@@ -186,3 +186,5 @@ materials: ["Club Leader Resources/*"]
 ![screenshot](space-egs.png)
 
 ## 保存项目 { .save }
+
+
