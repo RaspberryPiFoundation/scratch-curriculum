@@ -1,26 +1,27 @@
 ---
-title: ChatBot — Notes for Club Leaders
-language: en-GB
+title: 聊天机器人 — 社区负责人笔记
+language: zh-CN
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to use 'if' statements to make decisions in their programs.
+#简介：
+在这个项目中，孩子们将学习如何在程序中用'if'语句做判断。
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#资源
+本项目需要用到Scratch 2。 Scratch 2 可以通过 [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) 在线使用，也可以通过 [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) 下载安装离线版本离线使用。
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/26762091/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+您可以在 <a href="http://scratch.mit.edu/projects/26762091/#editor">这里</a>找到该项目的完整版，也可以点击该项目的“下载项目资料”链接下载，项目文件名：
 
 + ChatBot.sb2
 
-#Learning Objectives
-+ Text input;
-+ Decisions:
-	+ `if ... then` {.blockcontrol} statements;
-	+ `if ... then ... else` {.blockcontrol} statements.
+#学习目标
++ 文本输入
++ 判断:
+	+ `if ... then` {.blockcontrol} 语句
+	+ `if ... then ... else` {.blockcontrol} 语句
 
-#Challenges
-+ "More questions" - consolidating learning of input and the `answer` {.blocksensing} block;
-+ "More decisions" - using decisions;
-+ "Make your own chatbot" - consolidation of learning from this and past projects.
+#挑战
++ "更多问题" - 巩固输入和 `answer` {.blocksensing} 模块的学习;
++ "更多判断" - 使用判断;
++ "构建你自己的聊天机器人" - 巩固本项目和之前项目学到的知识。
+
