@@ -69,7 +69,7 @@ materials: ["Club Leader Resources/*"]
 
 你能根据随机选择的数字不同播放不同的鼓声吗？这个功能与你变换角色服装的代码 _非常_ 的相似。 
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 # 第2步： 重复序列 { .activity }
 
@@ -127,7 +127,7 @@ materials: ["Club Leader Resources/*"]
 
 记得测试你添加的代码！你能记住5个颜色的序列吗？这些序列每次都不同吗？
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 # 第3步：多难度等级 { .activity .new-page }
 
@@ -235,7 +235,7 @@ materials: ["Club Leader Resources/*"]
 
 你能构建自定义模块让每个按钮都能使用吗？
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 ## 挑战： Another costume {.challenge}
 
@@ -245,13 +245,13 @@ materials: ["Club Leader Resources/*"]
 
 ![screenshot](colour-white.png)
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 ## 挑战：难度等级 {.challenge}
 你能让你的玩家在“简单模式”（只用红色和蓝色鼓）和“正常模式”（用所有4个鼓）中挑选难度等级吗？
 
 你甚至可以加入“复杂模式”，用5个鼓！
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 
