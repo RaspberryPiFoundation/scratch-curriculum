@@ -22,7 +22,7 @@ materials: ["Club Leader Resources/*"]
 
 ## 行动列表 { .check }
 
-+ 新建一个Scratch项目，删除默认的小猫精灵，让工程变成一个空白工程。您可以在 <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a> 找到在线Scratch编辑器。
++ 新建一个Scratch项目，删除默认的小猫精灵，让项目变成一个空白项目。您可以在 <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a> 找到在线Scratch编辑器。
 
 + 为你的游戏选择一个角色和一个背景。你可以选择任何你喜欢的角色和背景！下面是个例子：
 
