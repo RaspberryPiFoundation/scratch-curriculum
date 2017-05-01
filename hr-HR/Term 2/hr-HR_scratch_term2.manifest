@@ -1,0 +1,46 @@
+{
+    "description": false,
+    "id": "scratch_02",
+    "language": "hr-HR",
+    "number": 2,
+    "title": "Scratch 2",
+    "category": "cat-scratch",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Memory/Memory.md",
+            "beta":     true,
+            "note":     "Memory/Memory - biljeske.md"
+        },
+        {
+            "number":   2,
+            "filename": "Dodgeball/Preskakanje lopti.md",
+            "beta":     true,
+            "note":     "Dodgeball/Preskakanje lopti - biljeske.md"
+        },
+        {
+            "number":   3,
+            "filename": "Brain Game/Mozgalica.md",
+            "beta":     true,
+            "note":     "Brain Game/Mozgalica - biljeske.md"
+        },
+        {
+            "number":   4,
+            "filename": "Catch the Dots/Uhvati tocke.md",
+            "beta":     true,
+            "note":     "Catch the Dots/Uhvati tocke - biljeske.md"
+        },
+        {
+            "number":   5,
+            "filename": "Clone Wars/Ratovi klonova.md",
+            "beta":     true,
+            "note":     "Clone Wars/Ratovi klonova - biljeske.md"
+        },
+        {
+            "number":   6,
+            "filename": "Create Your Own World/Kreiraj vlastiti svijet.md",
+            "beta":     true,
+            "note":     "Create Your Own World/Kreiraj vlastiti svijet - biljeske.md"
+        }
+    ]
+}
