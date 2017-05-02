@@ -1,5 +1,5 @@
 ---
-title: 幽灵破坏者
+title: 捉鬼敢死队
 level: Scratch 1
 language: zh-CN
 stylesheet: scratch
@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*"]
 
 # 简介 { .intro }
 
-我们要制作一个不抓幽灵的游戏。
+我们要制作一个捕捉幽灵的游戏。
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
@@ -192,3 +192,5 @@ materials: ["Club Leader Resources/*"]
 增加其他角色的也可以重复上面步骤。
 
 ## 保存项目 { .save }
+
+

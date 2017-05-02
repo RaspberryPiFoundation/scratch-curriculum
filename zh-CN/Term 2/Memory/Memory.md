@@ -53,13 +53,13 @@ materials: ["Club Leader Resources/*"]
 + 为你的角色添加如下代码，重复执行5此，每次向列表中添加1个随机数（并且显示对应的服装）：
 
 	```blocks
-		when flag clicked
-		delete (all v) of [sequence v]
-		repeat (5)
-			add (pick random (1) to (4)) to [sequence v]
-			switch costume to (item (last v) of [sequence v]
-			wait (1) secs
-		end
+	   点击绿旗时
+	   删除链表 (全部 v) 的第 [sequence v] 项
+	   重复执行 (5) 次
+	       将 (在 (1) 到 (4) 间随机选一个数) 加入链表 [sequence v]
+	       将造型切换为 (链表 (last v) 的第 [sequence v] 项)
+	       等待 (1) 秒
+	   结束
 	```
 
 	注意，一定要在开始时清空列表。
@@ -69,7 +69,7 @@ materials: ["Club Leader Resources/*"]
 
 你能根据随机选择的数字不同播放不同的鼓声吗？这个功能与你变换角色服装的代码 _非常_ 的相似。 
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 # 第2步： 重复序列 { .activity }
 
@@ -84,39 +84,39 @@ materials: ["Club Leader Resources/*"]
 + 当红色的鼓被点击时，你需要向你的角色广播一条消息，让它知道红色按钮被点击了。为你的红鼓添加如下代码：
 
 	```blocks
-		when this sprite clicked
-		broadcast [red v]
+	   当角色被点击时
+	   广播 [red v]
 	```
 
 + 当你的角色收到了这条消息，它就要检测数字1是否在列表的起始位置（起始位置表示序列中的下一个颜色）。 如果是，你可以将数字从列表中移除，表示猜对了。否则游戏结束！
 
 	```blocks
-		when I receive [red v]
-		if <(item (1 v) of [sequence v])=[1]> then
-			delete (1 v) of [sequence v]
-		else
-			say [Game over!] for (1) secs
-			stop [all v]
-		end
+		当接收到 [red v]
+		如果 <(链表 (1 v) 的第 [sequence v] 项) = [1]> 那么
+		  删除链表 (1 v) 的第 [sequence v] 项
+		否则
+		  说 [Game over!] (1) 秒
+		  停止 [全部 v]
+		结束
 	```
 
 + 一旦列表为空，你也可以展示一些闪烁的灯光，表示整个序列都猜对了。在角色的 `when flag clicked` {.blockevents} 脚本末尾添加如下代码：
 
 	```blocks
-		wait until < (length of [sequence v]) = [0]>
-		broadcast [won v] and wait
+		在 <(链表 [sequence v] 的长度) = [0]> 之前一直等待
+		广播 [won v] 并等待
 	```
 
 + 点击你的舞台，添加如下代码，当玩家赢了时让背景变换颜色。
 
 	```blocks
-		when I receive [won v]
-		play sound [drum machine v]
-		repeat (50)
-			change [color v] effect by (25)
-			wait (0.1) secs
-		end
-		clear graphic effects
+		当接收到 [won v]
+		播放声音 [drum machine v]
+		重复执行 (50) 次
+		  将 [颜色 v] 特效增加 (25)
+		  等待 (0.1) 秒
+		结束
+		清除所有图形特效
 	```
 
 ## 挑战：创建4个按钮 {.challenge}
@@ -127,7 +127,7 @@ materials: ["Club Leader Resources/*"]
 
 记得测试你添加的代码！你能记住5个颜色的序列吗？这些序列每次都不同吗？
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 # 第3步：多难度等级 { .activity .new-page }
 
@@ -142,38 +142,38 @@ materials: ["Club Leader Resources/*"]
 + 这个 `score` {.blockdata} 用来决定玩家需要记忆的序列的长度。设score的初始值（序列的长度）为3。将下面的代码添加到角色 `when flag clicked` {.blockevents} 代码的开头：
 
 	```blocks
-		set [score v] to [3]
+		将变量 [score v] 的值设定为 [3]
 	```
 
 + 为了不让序列永远都生成5个颜色，现在你想用 `score` {.blockdata} 来控制序列的长度。 修改角色的 `repeat` {.blockcontrol} 循环（用于生成序列）为如下代码:
 
 	```blocks
-		repeat (score)
-		end
+		重复执行 (score) 次
+		结束
 	```
 
 + 序列被猜对了一次，score的值就加1，来增加序列的长度。
 
 	```blocks
-		change [score v] by (1)
+		将变量 [score v] 的值增加 (1)
 	```
 
 + 最后，你需要在代码的最外层添加 `forever` {.blockcontrol} 循环来确保每个等级生成一个新的序列。下面是你的角色的完整代码：
 
 	```blocks
-		when flag clicked
-		set [score v] to [3]
-		forever
-			delete (all v) of [sequence v]
-			repeat (score)
-				add (pick random (1) to (4)) to [sequence v]
-				switch costume to (item (last v) of [sequence v]
-				wait (1) secs
-			end
-			wait until < (length of [sequence v]) = [0]>
-			broadcast [won v] and wait
-			change [score v] by (1)
-		end
+		点击绿旗时
+		将变量 [score v] 的值设定为 [3]
+		重复执行
+		  删除链表 (全部 v) 的第 [sequence v] 项
+		  重复执行 (score) 次
+		      将 (在 (1) 到 (4) 间随机选一个数) 加入链表 [sequence v]
+		      将造型切换为 (链表 (last v) 的第 [sequence v] 项)
+		      等待 (1) 秒
+		  结束
+		  在 <(链表 [sequence v] 的长度) = [0]> 之前一直等待
+		  广播 [won v] 并等待
+		  将变量 [score v] 的值增加 (1)
+		结束
 	```
 
 + 召集你的朋友来测试你的游戏吧。在他们玩之前记得要隐藏 `sequence` {.blockdata} 列表！
@@ -191,18 +191,18 @@ materials: ["Club Leader Resources/*"]
 + 每当游戏结束时（点击了错误的按钮），你需要判断玩家的分数是否比当前的最高分高。如果高于当前最高分，你需要将玩家分数记录为最高位，并且保存该玩家的名字。下面是红色按钮的代码：
 
 	```blocks
-		when I receive [red v]
-		if <(item (1 v) of [sequence v])=[1]> then
-			delete (1 v) of [sequence v]
-		else
-			say [Game over!] for (1) secs
-			if < (score) > (high score) > then
-				set [high score v] to (score)
-				ask [High score! What is your name?] and wait
-				set [name v] to (answer)
-			end
-			stop [all v]
-		end
+		当接收到 [red v]
+		如果 <(链表 (1 v) 的第 [sequence v] 项) = [1]> 那么
+		  删除链表 (1 v) 的第 [sequence v] 项
+		否则
+		  说 [Game over!] (1) 秒
+		  如果 <(score) > (high score)> 那么
+		      将变量 [high score v] 的值设定为 (score)
+		      询问 [High score! What is your name?] 并等待
+		      将变量 [name v] 的值设定为 (回答)
+		  结束
+		  停止 [全部 v]
+		结束
 	```
 
 + 你需要将此代码添加到其他3个按钮！你注意到了吗？4个按钮的“Game over” 代码是完全一样的。
@@ -235,7 +235,7 @@ materials: ["Club Leader Resources/*"]
 
 你能构建自定义模块让每个按钮都能使用吗？
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 ## 挑战： Another costume {.challenge}
 
@@ -245,13 +245,13 @@ materials: ["Club Leader Resources/*"]
 
 ![screenshot](colour-white.png)
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 ## 挑战：难度等级 {.challenge}
 你能让你的玩家在“简单模式”（只用红色和蓝色鼓）和“正常模式”（用所有4个鼓）中挑选难度等级吗？
 
 你甚至可以加入“复杂模式”，用5个鼓！
 
-## 保存你的项目 { .save }
+## 保存项目 { .save }
 
 
