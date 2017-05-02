@@ -1,6 +1,7 @@
 ﻿---
-title: Rock Band — Bilješke za voditelje radionica
+title: Rock grupa — Bilješke za voditelje radionica
 language: hr-HR
+
 embeds: "*.png"
 ...
 
@@ -10,7 +11,7 @@ U ovom projektu djeca će naučiti kako dodati zvuk i glazbu svojim projektima, 
 
 
 #Izvori 
-Za ovaj projekt koristite Scratch 2. Možete ga koristiti online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on)  ili preuzeti s adrese [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu. Završenu verzija projekta može se pronaći <a href="http://scratch.mit.edu/projects/26741186/#editor"> online</a> ili preuzeti s linka 'Preuzmi materijale za projekt'.Materijali sadrže:
+Za ovaj projekt koristite Scratch 2. Možete ga koristiti online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on)  ili preuzeti s adrese [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu. Završenu verzija projekta može se pronaći <a href="http://scratch.mit.edu/projects/26741186/#editor"> online</a> ili preuzeti s linka 'Download Project Materials'.Materijali sadrže datoteku:
 
 + RockBand.sb2
 

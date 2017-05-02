@@ -1,20 +1,20 @@
 ---
-title: Program za bojanje — bilješke za voditelje
+title: Program za bojanje — bilješke za voditelje radionice
 language: hr-HR
 embeds: "*.png"
 ...
 
 #Uvod:
-U ovom će projektu učenici naučiti kako prenijeti poruku između likova.
+U ovom će projektu djeca naučiti kako prenijeti poruku između likova.
 
 #Izvori
 Za ovaj projekt porteban je Scratch 2. Možete ga koristiti online na adresi[jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti s adrese [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu.
 
-Kompletnu verziju projekta možete pronaći  <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, ili preuzeti klikom na link 'Preuzmite materijale za projekt'. Materijali sadrže: 
+Kompletnu verziju projekta možete pronaći  <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, ili preuzeti klikom na link 'Download Project Materials'. Materijali sadrže: 
 
 + PaintBox.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources), or in the downloadable project materials, which contains:
+Postoji i verzija projekta s već uključenim vanjskim izvorima. Dostupna je online na  [jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources), ili se može preuzeti u projektnim materijalima. Ona sadrži datoteku: 
 
 + PaintBoxResources.sb2 
 

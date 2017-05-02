@@ -2,15 +2,17 @@
 title: Rock Bend
 level: Scratch 1
 language: hr-HR
+
 stylesheet: scratch
 embeds: "*.png"
+
 materials: ["Club Leader Resources/*"]
 ...
 
 
 # Uvod { .intro }
 
-U ovom projektu naučiti ćeš kako programirati vlastite glazbene instrumente!
+U ovom projektu naučit ćeš kako programirati vlastite glazbene instrumente!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
@@ -48,7 +50,7 @@ Prije samog dodavanja naredbi potrebno je dodati objekt na koji će se one odnos
 	![screenshot](band-shrink.png)
 
 
-## Spremanje projekta { .save }
+## Spremi projekt { .save }
 
 Daj svom programu ime tako što ćeš ga upisati u okvir za tekst u gornjem lijevom kutu. Zatim iz izbornika 'Datoteka' odaberi naredbu 'Spremi'.
 
@@ -108,7 +110,7 @@ Sada ćemo programirati bubanj tako da proizvede zvuk svaki puta kada ga se udar
 + Isprobaj svoj bubanj. Kada se na njega klikne, trebao bi izgledati kao da je udaren!
 
 
-## Spremi promjene napravljene u projektu { .save }
+## Spremi promjene u projektu { .save }
 
 
 ##Izazov: Poboljšaj svoj bubanj. { .challenge }
@@ -152,11 +154,10 @@ Dodajmo bendu i pjevačicu!
 
 + Nakon dodavanja zvuka na kartici 'Skripte' dodaj sljedeći kôd:
 
-	```blocks
-		kada je lik kliknut
-		sviraj zvuk [singer1 v] do kraja
-
-	```
+```blocks
+	kada je lik kliknut
+	sviraj zvuk [singer1 v] do kraja
+```
 
 + Klikni na pjevačicu i provjeri pjeva li.
 
@@ -174,7 +175,7 @@ Dodajmo bendu i pjevačicu!
 Sjeti se testirati kako tvoj novi kod radi!
 
 
-## Spremi svoj projekt { .save }
+## Spremi promjene u projektu { .save }
 
 
 ##Izazov: Napravi svoj vlastiti bend { .challenge }
@@ -195,4 +196,4 @@ Imaš li mikrofon, možeš snimiti svoje vlastite zvukove. Također možeš kori
 ![screenshot](band-io.png)
 
 
-## Spremi svoj projekt { .save }
+## Spremi projekt { .save }

@@ -36,13 +36,13 @@ Počnimo izradom olovke koju ćemo kasnije koristiti za crtanje na pozornici.
 
 	![screenshot](paint-pencil-blue.png) 
 
-+ Kako ćemo za crtanje koristiti miša, porebno je isprogramirati olovku da slijedi kretanje strelice miša. Za to ćemo koristiti blok  `ponavljaj` {.blockcontrol}. Dodaj ove naredbe liku olovke:
++ Kako ćemo za crtanje koristiti miša, potrebno je isprogramirati olovku da slijedi kretanje strelice miša. Za to ćemo koristiti blok  `ponavljaj` {.blockcontrol}. Dodaj ove naredbe liku olovke:
 
 	```blocks
-		kada je ⚑ kliknut
-		ponavljaj
-   			idi do [strelica miša v]
-		end
+	kada je ⚑ kliknut
+	ponavljaj
+	   idi do [strelica miša v]
+	end
 	```
 
 + Isprobaj program. Klikni zastavicu i pomiči miša po pozornici. Radi li kako smo zamislili? 
@@ -61,7 +61,7 @@ Počnimo izradom olovke koju ćemo kasnije koristiti za crtanje na pozornici.
 
 + Odaberi karticu 'Scripte' i provjeri još jednom svoj program - radi li sada bolje nego ranije?
 
-+ Isprogramirajmo sada olovku dako da ona crta `ako` {.blockcontrol} je tipka miša pritisnuta. Dodaj u program sljedeće naredbe: 
++ Isprogramirajmo sada olovku tako da ona crta `ako` {.blockcontrol} je tipka miša pritisnuta. Dodaj u program sljedeće naredbe: 
 
 	![screenshot](paint-pencil-draw-code.png)	
 
@@ -127,8 +127,8 @@ Dodajmo sada olovke različitih boja u projekt i dopustimo korisniku da odabere 
 
 	```blocks
 		kada primim [plava v]
-promijeni kostim u [olovka-plava v]
-postavi boju olovke na [#0000ff]
+		promijeni kostim u [olovka-plava v]
+		postavi boju olovke na [#0000ff]
 	```
 
 + Na kraju, potrebno je odrediti početni kostim i boju olovke, te očistiti zaslon kako bi dobili čistu pozadinu kada pokrenemo program. Dodaj ove naredbe na početak bloka `kada je zastavica kliknuta` {.blockevents} (prije petlje `ponavljaj` {.blockcontrol}):
@@ -191,7 +191,7 @@ Ponekad u crtanju pogriješimo, pa nam treba gumica. Dodajmo gumb za brisanje i 
 		postavi boju olovke na [#FFFFFF]
 	```
 
-+ Isprobaj projekk i provjeri možeš li brisati. 
++ Isprobaj projekt i provjeri možeš li brisati. 
 
 	![screenshot](paint-erase-test.png)
 
@@ -209,7 +209,7 @@ Ponekad u crtanju pogriješimo, pa nam treba gumica. Dodajmo gumb za brisanje i 
 
 ## Spremi promjene u projektu { .save }
 
-# Korak 4 4: Promjena debljine linije { .activity .new-page }
+# Korak 4: Promjena debljine linije { .activity .new-page }
 
 Dopustimo korisniku da crta olovkama različitih debljina.
 
@@ -233,7 +233,7 @@ Dopustimo korisniku da crta olovkama različitih debljina.
 
 	![screenshot](paint-slider-change.png)
 
-+ Pokreni program i provjeri možeš li mijenjati debljinu olobke. 
++ Pokreni program i provjeri možeš li mijenjati debljinu olovke. 
 
 	![screenshot](paint-width-test.png)
 
@@ -258,7 +258,7 @@ Omogući korisniku da mijenja debljinu olovke strelicama!
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više olovaka { .challenge }
-Dodaj crvenu, žutu i crnu olovku u svoj program za crtanje. Sve slike koje trebaš pronađi u mapi 'Resources'. Sjeti se  dodati i tipkovničke kratice za nove boje. 
+Dodaj crvenu, žutu i crnu olovku u svoj program za crtanje. Sjeti se  dodati i tipkovničke kratice za nove boje. 
 
 Nacrtaj sliku u svom novom programu za bojanje!
 

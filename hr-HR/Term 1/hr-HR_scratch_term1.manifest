@@ -8,7 +8,7 @@
         {
             "number":   1,
             "filename": "Rock Band/Rock grupa.md",
-            "note":     "Rock Band/Rock grupa - notes.md"
+            "note":     "Rock Band/Rock grupa - biljeske.md"
         },
         {
             "number":   2,
@@ -18,22 +18,22 @@
         {
             "number":   3,
             "filename": "Ghostbusters/Istjerivaci duhova.md",
-            "note":     "Ghostbusters/Istjerivaüi duhova-biljeske.md"
+            "note":     "Ghostbusters/Istjerivači duhova-biljeske.md"
         },
         {
             "number":   4,
             "filename": "Chat Bot/Robot koji razgovara.md",
-            "note":     "Chat Bot/Robot koji razgovara - biljeÁke.md"
+            "note":     "Chat Bot/Robot koji razgovara - biljeske.md"
         },
         {
             "number":   5,
             "filename": "Paint Box/Program za crtanje.md",
-            "note":     "Paint Box/Program za crtanje - biljeÁke.md"
-        },        
+            "note":     "Paint Box/Program za crtanje - biljeske.md"
+        },
         {
             "number":   6,
             "filename": "Boat Race/Utrka brodova.md",
-            "note":     "Boat Race/Utrka brodova - biljeÁke.md"
+            "note":     "Boat Race/Utrka brodova - biljeske.md"
         }
     ]
 }
