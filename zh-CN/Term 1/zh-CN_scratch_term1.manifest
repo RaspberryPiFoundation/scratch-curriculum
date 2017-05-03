@@ -40,7 +40,7 @@
 
     "extras": [
         {
-            "name": "Introduction to Scratch",
+            "name": "Scratch简介",
             "note": "../Volunteer resources/scratch.md"
         }
     ]
