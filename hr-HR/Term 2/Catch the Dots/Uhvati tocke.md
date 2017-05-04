@@ -84,7 +84,7 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 
 	```blocks
 		kada krećem kao klon
-		idi na x:(element (random v) iz [početak v]) y:(element (random v) iz [početak v])
+		idi na x:(element (nasumično v) iz [početak v]) y:(element (nasumično v) iz [početak v])
 		okreni se k [controller v]
 		prikaži
 		ponavljaj dok nije <dodiruje [controller v]?>
