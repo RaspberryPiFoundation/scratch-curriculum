@@ -16,15 +16,15 @@ Vous allez créer un jeu pour attraper des phantômes !
 
 # Étape 1: Animer un fantôme { .activity }
 
-## Activity Checklist { .check }
+## Liste de contrôle d'Activité { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Démarrer un nouveau projet Scratch , et supprimer le lutin "chat" pour que votre projet soit vide. Vous pouvez trouver l'éditeur Scratch en ligne via <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
 
-+ Add in a new ghost sprite, and a suitable stage backdrop.
++ Ajouter un nouveau lutin"phantôme" et un arrière-plan approprié.
 
 	![screenshot](images/ghost-ghost.png)
 
-+ Add this code to your ghost, so that it repeatedly appears and disappears:
++ Ajouter ce code pour le phantôme, il va apparaître et disparaître en boucle :
 
 	```blocks
 		when flag clicked
@@ -36,103 +36,103 @@ Vous allez créer un jeu pour attraper des phantômes !
 		end
 	```
 
-+ Test out your ghost's code, by clicking the green flag.
++ Tester le code de votre phantôme, en appuyant sur le drapeau vert.
 
 ## Sauvegarder votre projet { .save }
 
-# Step 2: Random ghosts { .activity }
+# Étape 2: Phantômes aléatoires { .activity }
 
-Your ghost is really easy to catch, because it doesn't move!
+Votre phantôme est vraiment trop facile à attraper, car il ne bouge pas !
 
-## Activity Checklist { .check }
+## Liste de contrôle d'Activité { .check }
 
-+ Instead of staying in the same position, you can let Scratch choose random x and y coordinates instead. Add a `go to` {.blockmotion} block to your ghost's code, so that it looks like this:
++ Au lieu de rester au même endroit, Scratch peut choisir les coordonnées x et y de façon aléatoire. Ajouter un bloc `go to` {.blockmotion} [en français : `aller à`] au code du phantôme pour que ça ressemble à :
 
 	![screenshot](images/ghost-random.png)
 
-+ Test our your ghost again, and you should notice that it appears in a different place each time.
++ Tester votre phantôme de nouveau, et vous devrez remarquer qu'il apparaisse chaque fois à un endroit différent.
 
 ## Sauvegarder votre projet { .save }
 
-## Challenge: More randomness {.challenge}
-Can you make your ghost `wait` {.blockcontrol} a random amount of time before appearing? Can you use the `set size` {.blocklooks} block to make your ghost a random size each time it appears?
+## Challenge: Plus aléatoire {.challenge}
+Pouvez-vous faire [en français : `attendre`] `wait` {.blockcontrol} votre phantôme pendant une durée aléatoire avant de réapparaître ?  Pouvez-vous utiliser le bloc [en français : `mettre à de la taille initiale`] `set size` {.blocklooks} pour donner une taille alétoire à votre phantôme chaque fois qu'il apparaît ?
 
 ## Sauvegarder votre projet { .save }
 
-# Step 3: Catching ghosts { .activity }
+# Étape 3: Attraper des phantômes { .activity }
 
-Lets allow the player to catch ghosts!
+Donnons la possibilité au joueur d'attraper les phantômes !
 
-## Activity Checklist { .check }
+## Liste de contrôle d'Activité { .check }
 
-+ To allow the player to catch a ghost, add this code:
++ Pour permettre au joueur d'attraper un phantôme, ajouter ce code :
 
 	```blocks
 		when this sprite clicked
 		hide
 	```
 
-+ Test out your project. Can you catch ghosts as they appear? If you find it difficult to catch the ghosts, you can play the game in fullscreen mode by clicking this button:
++ Tester votre projet. Pouvez-vous attraper les phantômes quand qu'ils apparaissent ? Si vous avez du mal à les attraper, vous pouvez jouer en plein écran en cliquant sur le bouton suivant :
 
 	![screenshot](images/ghost-fullscreen.png)
 
-## Challenge: Adding a sound { .challenge }
-Can you make a sound each time a ghost is caught?
+## Challenge: Ajouter du son { .challenge }
+Pouvez-vous ajouter un bruitage chaque fois qu'on attrape un phantôme ?
 
 ## Sauvegarder votre projet { .save }
 
-# Step 4: Adding a score { .activity .new-page }
+# Étape 4: Ajouter le score { .activity .new-page }
 
-Let's make things more interesting by keeping score.
+Rendons les choses plus intéressantes en gardant le score.
 
-## Activity Checklist { .check }
+## Liste de contrôle d'Activité { .check }
 
-+ To keep the player's score, you need a place to put it. A __variable__ is a place to store data that can change, like a score.
++ Pour garder le score du joueur, il faut le stocker quelque part.Une __variable__ est un endroit pour garder des données qui peuvent changer, commme un score.
 
-	To create a new variable, click on the 'Scripts' tab, select `Data` {.blockdata} and then click 'Make a Variable'.
+	Pour créer une variable, cliquer sur l'onglet 'Scripts', selectionnner `Données` {.blockdata} puis cliquer sur 'Créer une variable'.
 
 	![screenshot](images/ghost-score.png)
 
-	Type 'score' as the name of the variable, make sure that it is available for all sprites, and click 'OK' to create it. You'll then see lots of code blocks that can be used with your `score` {.blockdata} variable.
+	Taper 'score' comme nom de variable, vérifier qu'elle est disponible pour tous les lutins, et cliquer sur 'OK' pour la créer. Vous allez ensuite voir un nombre de blocs de code qui peuvent être utilisés avec votre variable `score` {.blockdata}.
 
 	![screenshot](images/ghost-variable.png)
 
-	You'll also see the score in the top-left of the stage.
+	Vous allez aussi voir le score en haut à gauche de la scène.
 
 	![screenshot](images/ghost-stage-score.png)
 
-+ When a new game is started (by clicking the flag), you should set the player's score to 0:
++ Quand nous lançons un nouveau jeu (en cliquant sur le drapeau), vous devez remettre le score à 0 :
 
 	```blocks
 	when flag clicked
 	set [score v] to [0]
 	```
 
-+ Whenever a ghost is caught, you need to add 1 to the player's score:
++ Quand on attrape un phantôme, vous devez ajouter 1 au score :
 
 	![screenshot](images/ghost-change-score.png)
 
-+ Run your program again and catch some ghosts. Does your score change?
++ Executer votre programme de nouveau et attraper quelques phantômes. Est-ce que votre score change ?
 
 ## Sauvegarder votre projet { .save }
 
-# Step 5: Adding a timer { .activity }
+# Étape 5: Ajouter un compte à rebours { .activity }
 
-You can make your game more interesting, by only giving your player 10 seconds to catch as many ghosts as possible.
+Vous pouvez rendre votre jeu encore plus intéressant, en limitant votre jeu à 10 secondes pour attraper autant de phantômes que possible.
 
-## Activity Checklist { .check }
+## Liste de contrôle d'Activité { .check }
 
-+ You can use another variable to store the remaining time left. Click on the stage, and create a new variable called 'time':
++ Vous pouvez utiliser une autre variable pour stocker le temps qui vous reste. Cliquer sur la scène, et créer une nouvelle variable nommée 'time' :
 
 	![screenshot](images/ghost-time.png)
 
-+ This is how the timer should work:
++ Le compte à rebours devrait fonctionner ainsi :
 
-	+ The timer should start at 10 seconds;
-	+ The timer should count down every second;
-	+ The game should stop when the timer gets to 0.
+	+ Le compte à rebours devrait commencer à 10 secondes ;
+	+ Le compte à rebours devrait décompter chaque seconde ;
+	+ Le jeu devrait s'arreter quand le compte à rebours arrive à 0.
 
-	Here's the code to do this, which you can add to your __stage__:
+	Voici tout le code afin de réaliser ceci, ce que vous pouvez ajouter à votre __scène__ :
 
 	```blocks
 		when flag clicked
@@ -144,21 +144,21 @@ You can make your game more interesting, by only giving your player 10 seconds t
 		stop [all v]
 	```
 
-	This is how you add the `repeat until`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} code:
+	Voilà comment ajouter le code de `repeat until`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} :
 
 	![screenshot](images/ghost-timer-help.png)
 
-+ Drag your 'time' variable display to the right side of the stage. You can also right-click on the variable display and choose 'large readout' to change how the time is displayed.
++ Tirer votre variable 'time' vers la droite de votre scène. Vous pouvez aussi faire clique-droit sur l'affichage de la variable et choisir 'grande lecture' afin de changer comment le temps est présenté.
 
 	![screenshot](images/ghost-readout.png)
 
-+ Ask a friend to test your game. How many points can they score? If your game is too easy, you can:
++ Demander à un ami de tester votre jeu. Il peut marquer combien de points ? Si votre jeu est trop facile, vous pouvez :
 
-	+ Give the player less time;
-	+ Make the ghosts appear less often;
-	+ Make the ghosts smaller.
+	+ Donner moins de temps au joueur ;
+	+ Faire en sorte que les phantômes apparaissent moins souvent ;
+	+ Réduire la taille des phantômes.
 
-	Test your game a few times until you're happy that it's the right level of difficulty.
+	Tester votre jeu à quelques reprises jusqu'à vous êtes satisfait qu'il correspond au bon niveau de difficulté.
 
 ## Sauvegarder votre projet { .save }
 
@@ -167,13 +167,13 @@ Pouvez-vous ajouter d'autres objets à votre jeu ?
 
 ![screenshot](images/ghost-final.png)
 
-You'll need to think about the objects you're adding. Think about:
+Vous devrez penser aux objets que vous alles ajouter. Réfléchir à :
 
-+ How big is it?
-+ Will it appear more or less often than the ghosts?
-+ What will it look/sound like when it has been caught?
-+ How many points will you score (or lose) for catching it?
++ Sa taille ?
++ Apparait-il plus ou moins souvent que les phantômes ?
++ A quoi correspond-il au niveau image et son quand on l'attrape ?
++ Combien de points devrait-on gagner (ou perdre) quand on l'attrape ?
 
-If you need help adding another object, you can reuse the steps above!
+Si vous avez besoin d'aide en ajoutant un autre objet, vous pouvez suivre de nouveau les étapes ci-dessus !
 
 ## Sauvegarder votre projet { .save }

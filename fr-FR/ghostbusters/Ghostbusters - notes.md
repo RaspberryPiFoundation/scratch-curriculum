@@ -1,31 +1,31 @@
 ---
-title: Ghostbusters — Volunteer Notes
+title: SOS Fantômes — Notes pour l'animateur
 ---
 
-#Introduction:
-In this project, children will learn how to use variables to store data in their programs.
+# Introduction:
+Dans ce projet, les enfants vont apprendre à utiliser des variables pour stocker des données dans leurs programmes.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+# Ressources
+Pour ce projet, on recommande d'utiliser Scratch 2. Scratch 2 peut être utilisé soit en ligne à [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou on peut le télécharger via [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) puis l'utiliser hors-ligne.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/60787262/#editor">online</a>, or it can be downloaded by clicking the 'Project Materials' link for this project, which contains:
+Vous pouvez trouver une version finalisée du projet <a href="http://scratch.mit.edu/projects/60787262/#editor">en ligne</a>, ou on peut la télécharger en cliquant sur le lien 'Supports de Projet' pour ce projet, qui continent :
 
 + Ghostbusters.sb2
 
-#Learning Objectives
+# Objectives pédagogiques
 + Variables;
-+ Random numbers.
++ Chiffres aléatoires.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Ce projet couvre des éléments correspondant aux fils suivants du [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator)
 
-#Challenges
-+ "More randomness" - using random numbers;
-+ "Adding a sound" - consolidating the learning of sounds;
-+ "More objects" - applying skills to create another game object.
+# Challenges
++ "Plus aléatoire" - utilisation de chiffres au hasard ;
++ "Ajouter du son" - consolidation dans l'apprentissage des sons ;
++ "Plus d'objets" - appliquer des connaissances pour créer d'autres objets dans le jeu.
 
-#Frequently Asked Questions
-+ If children find it difficult to click the ghosts without dragging them around, they can play the game in fullscreen mode, in which ghosts aren't draggable.
+# Foire aux Questions
++ Si les enfants le trouvent difficile à cliquer les phantômes sans les tirer, ils peuvent jouer en mode plein écran dans lequel nous ne pouvons pas déplacer les phantômes.
 
 ![screenshot](images/ghost-fullscreen.png)

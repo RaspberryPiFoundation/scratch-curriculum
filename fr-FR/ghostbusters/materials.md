@@ -1,11 +1,11 @@
 ---
-title: Ghostbusters - Materials
+title: SOS Fantômes - Supports
 layout: project-materials
 project-resources:
 volunteer-resources:
   - url: Ghostbusters.sb2
-    description: Downloadable completed Scratch 2 project
+    description: Projet Scratch 2 finalisé téléchargeable
   - url: http://scratch.mit.edu/projects/60787262/#editor
     type: link
-    description: Online completed Scratch 2 project 
+    description: Online completed Projet Scratch 2 finalisé en ligne 
 ---
