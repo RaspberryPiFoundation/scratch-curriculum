@@ -50,7 +50,7 @@ Your ghost is really easy to catch, because it doesn't move!
 
 	![screenshot](images/ghost-random.png)
 
-+ Test our your ghost again, and you should notice that it appears in a different place each time.
++ Test out your ghost again, and you should notice that it appears in a different place each time.
 
 ## Save your project { .save }
 
