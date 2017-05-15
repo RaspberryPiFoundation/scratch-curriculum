@@ -84,7 +84,7 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 
 	```blocks
 		kada krećem kao klon
-		idi na x:(element (random v) iz [početak v]) y:(element (random v) iz [početak v])
+		idi na x:(element (nasumično v) iz [početak v]) y:(element (nasumično v) iz [početak v])
 		okreni se k [controller v]
 		prikaži
 		ponavljaj dok nije <dodiruje [controller v]?>
@@ -139,7 +139,7 @@ Uredi te likove (uključujući i njihov kôd), tako da svaka točka odgovara boj
 
 ## Spremi promjene u projektu { .save }
 
-# Korak 3: Povećavanje težine { .activity .new-page}
+# Korak 3: Povećavanje težine igre { .activity .new-page}
 
 Napravimo da igrica postaje sve teža što dulje ju igrač igra, polako smanjujući razmak između točaka koje se pojavljuju.
 
@@ -215,4 +215,4 @@ Možeš li smisliti načine na koje ćeš poboljšati svoju igru? Na primjer, mo
 ## Spremi projekt { .save }
 
 ## Izazov: Izbornik {.challenge}
-Možeš li igri dodati izbornik (sa gumbima)? Trebaš dodati ekran s uputama ili odvojeni ekran koji će pokazivati najbolji rezultat. Ako trebaš pomoć s time, projekt 'Mozgalica' će ti pomoći.
+Možeš li igri dodati izbornik (s gumbima)? Trebaš dodati ekran s uputama ili odvojeni ekran koji će pokazivati najbolji rezultat. Ako trebaš pomoć s time, projekt 'Mozgalica' će ti pomoći.
