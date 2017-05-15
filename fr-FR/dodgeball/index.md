@@ -1,6 +1,6 @@
 ---
 title: Dodgeball
-description: Apprend à programmer ton propre jeu de plateforme!
+description: "Apprend à programmer ton propre jeu de plateforme!"
 layout: project
 notes: "Dodgeball - notes.md"
 ---

@@ -1,6 +1,6 @@
 ---
 title: Lost in Space
-description: Apprend à programmer ta propre animation!
+description: "Apprend à programmer ta propre animation!"
 layout: project
 notes: "Lost in Space - notes.md"
 project-type: sample

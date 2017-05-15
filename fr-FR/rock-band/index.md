@@ -1,6 +1,6 @@
 ---
 title: Rock Band
-description: Apprend à programmer ton propre groupe de musique!
+description: "Apprend à programmer ton propre groupe de musique!"
 layout: project
 notes: "Rock Band - notes.md"
 project-type: sample

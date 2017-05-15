@@ -1,6 +1,6 @@
 ---
 title: Brain Game
-description: Apprend à programmer ton propre quiz.
+description: "Apprend à programmer ton propre quiz."
 layout: project
 notes: "Brain Game - notes.md"
 ---

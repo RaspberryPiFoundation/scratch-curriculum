@@ -1,6 +1,6 @@
 ---
 title: Create Your Own World
-description: Apprend à programmer ton propre jeu sur un monde ouvert.
+description: "Apprend à programmer ton propre jeu sur un monde ouvert."
 layout: project
 notes: "Create Your Own World - notes.md"
 ---

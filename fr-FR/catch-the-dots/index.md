@@ -1,6 +1,6 @@
 ---
 title: Catch the Dots
-description: Apprend à programmer un jeu ou il faut attraper des boules!
+description: "Apprend à programmer un jeu ou il faut attraper des boules!"
 layout: project
 notes: "Catch the Dots - notes.md"
 ---

@@ -1,6 +1,6 @@
 ---
 title: Clone Wars
-description: Apprend à programmer ton propre jeu de bataille spatial.
+description: "Apprend à programmer ton propre jeu de bataille spatial."
 layout: project
 notes: "Clone Wars - notes.md"
 ---

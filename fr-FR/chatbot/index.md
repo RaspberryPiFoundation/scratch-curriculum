@@ -1,6 +1,6 @@
 ---
 title: ChatBot
-description: Apprend à programmer ton propre robot qui parle!
+description: "Apprend à programmer ton propre robot qui parle!"
 layout: project
 notes: "ChatBot - notes.md"
 ---

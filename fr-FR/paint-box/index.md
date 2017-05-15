@@ -1,6 +1,6 @@
 ---
 title: Peint Box
-description: Apprend à programmer ton propre programme de dessin!
+description: "Apprend à programmer ton propre programme de dessin!"
 layout: project
 notes: "Paint Box - notes.md"
 ---
