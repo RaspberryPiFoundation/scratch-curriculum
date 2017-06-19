@@ -8,7 +8,7 @@ project-type: sample
 
 <script>
   if (!window.location.search.match(/redirect=false/)) {
-    window.location.replace('https://beta.codeclubprojects.org/en/projects/rock-band');
+    window.location.replace('https://projects.raspberrypi.org/en/projects/rock-band');
    }
 </script>
 
