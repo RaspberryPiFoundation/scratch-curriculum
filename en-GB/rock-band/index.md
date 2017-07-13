@@ -6,12 +6,6 @@ notes: "Rock Band - notes.md"
 project-type: sample
 ---
 
-<script>
-  if (!window.location.search.match(/redirect=false/)) {
-    window.location.replace('https://projects.raspberrypi.org/en/projects/rock-band');
-   }
-</script>
-
 # Introduction { .intro }
 
 In this project you'll learn how to code your own musical instruments!
