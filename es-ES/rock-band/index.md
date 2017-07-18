@@ -1,11 +1,9 @@
 ---
 title: Banda de Rock
-level: Scratch 1
-language: es-ES
-stylesheet: scratch
-embeds: "*.png"
-materials: ["Club Leader Resources/*.*"]
-...
+description: Para poder empezar a animar, necesitas añadir una “cosa” que animar
+layout: project
+notes: "Rock Band - notes.md"
+---
 
 # Introducción { .intro }
 
