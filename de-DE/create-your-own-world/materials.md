@@ -4,14 +4,14 @@ layout: project-materials
 Projekt-Ressourcen:
   - url: world-project-resources.zip 
     type: file
-    description: .zip Datei, die alle Projekt-Ressourcen enth‰lt
+    description: .zip Datei, die alle Projekt-Ressourcen enth√§lt
   - url: http://jumpto.cc/world-resources
     type: link
     title: jumpto.cc/world-resources
-    description: Online Scratch 2 Projekt, das externe Ressourcen enth‰lt
+    description: Online Scratch 2 Projekt, das externe Ressourcen enth√§lt
   - url: CreateYourOwnWorldResources.sb2
     type: file
-    description: Scratch 2 Projekt zum Herunterladen, das externe Ressourcen enth‰lt
+    description: Scratch 2 Projekt zum Herunterladen, das externe Ressourcen enth√§lt
   - url: chest.svg
     type: image
   - url: coin.svg
