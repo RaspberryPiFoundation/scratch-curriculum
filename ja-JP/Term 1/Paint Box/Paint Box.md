@@ -33,7 +33,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 	```blocks
 		⚑ がクリックされたとき
 		ずっと
-   			[mouse pointer v] へ行く
+   			[マウスのポインター v] へ行く
 		end
 	```
 
