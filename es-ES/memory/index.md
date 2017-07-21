@@ -1,6 +1,6 @@
 ---
 title: Memoria
-description: Create a memory game, where you have to memorise and repeat a sequence of random colours!
+description: ¡Crea un juego de memoria en el que tengas que memorizar y repetir una secuencia de colores aleatorios!
 layout: project
 notes: "Memory - notes.md"
 ---

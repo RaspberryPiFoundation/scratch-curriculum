@@ -1,6 +1,6 @@
 ---
 title: Cazafantasmas
-description: Learn how to make a ghost-catching game!
+description: ¡Aprende a crear un juego caza-fantasmas!
 layout: project
 notes: "Ghostbusters - notes.md"
 ---

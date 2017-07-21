@@ -1,6 +1,6 @@
 ---
 title: Crea Tu Propio Mundo
-description: Learn how to create your own open world adventure game.
+description: Aprende a crear tu propio juego de aventura mundial.
 layout: project
 notes: "Create Your Own World - notes.md"
 ---

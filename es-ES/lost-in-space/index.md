@@ -1,6 +1,6 @@
 ---
 title: Perdidos en el Espacio
-description: Learn how to program your own animation!
+description: ¡Aprende a programar tu propia animación!
 layout: project
 notes: "Lost in Space - notes.md"
 project-type: sample

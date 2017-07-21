@@ -1,6 +1,6 @@
 ---
 title: Atrapa los Puntos
-description: Learn how to make a dot-catching game.
+description: Aprende a crear un juego de unir puntos. 
 layout: project
 notes: "Catch the Dots - notes.md"
 ---

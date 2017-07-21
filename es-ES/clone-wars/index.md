@@ -1,6 +1,6 @@
 ---
 title: Guerras de Clones
-description: Create a game in which you have to save the Earth from space monsters.
+description: Crea un juego en que cual tengas que salvar la Tierra de monstruos espaciales.
 layout: project
 notes: "Clone Wars - notes.md"
 ---

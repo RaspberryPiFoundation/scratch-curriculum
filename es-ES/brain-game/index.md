@@ -1,6 +1,6 @@
 ---
 title: Juego de Cálculo Mental
-description: Learn how to create a quiz.
+description: Aprende a crear un concurso de preguntas y respuestas.
 layout: project
 notes: "Brain Game - notes.md"
 ---
