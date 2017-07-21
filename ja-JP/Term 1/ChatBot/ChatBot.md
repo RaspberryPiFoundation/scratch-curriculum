@@ -16,7 +16,7 @@ materials: ["Club Leader Resources/*"]
   <img src="chatbot-final.png">
 </div>
 
-# ステップ1：チャットボット { .activity }
+# ステップ１：チャットボット { .activity }
 
 ## チェックリスト { .check }
 
