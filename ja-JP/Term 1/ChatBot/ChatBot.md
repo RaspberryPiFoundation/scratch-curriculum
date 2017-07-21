@@ -16,7 +16,7 @@ materials: ["Club Leader Resources/*"]
   <img src="chatbot-final.png">
 </div>
 
-# ステップ1:　チャットボット { .activity }
+# ステップ1:チャットボット { .activity }
 
 ## チェックリスト { .check }
 
@@ -25,7 +25,7 @@ materials: ["Club Leader Resources/*"]
 	+ 住んでいる場所は?
 	+ 明るい？まじめ？楽しい？おとなしい？やさしい？
 
-+ 新しいスクラッチのプロジェクトを開いたら、まずネコのキャラクターを消してプロジェクトをからっぽにしましょう。オンラインのエディターはここから開きます： <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ 新しいスクラッチのプロジェクトを開いたら、まずネコのキャラクターを消してプロジェクトをからっぽにしましょう。オンラインのエディターはここから開きます： <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>。
 
 + キャラクターの絵をえらんで、プロジェクト内におきましょう。
 
@@ -37,7 +37,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-# ステップ２: おしゃべりチャットボット { .activity }
+# ステップ２:おしゃべりチャットボット { .activity }
 
 さてチャットボットのキャラクターが決まったので、おしゃべりができるようにプログラムしましょう。
 
@@ -67,7 +67,7 @@ materials: ["Club Leader Resources/*"]
 
 	![screenshot](chatbot-join.png)
 
-	`hello`のところを`こんにちは`にかえて、`答え`{.blocksensing}ブロック(「調べる」というカテゴリーの中にあります)をドラッグして 「world」のところにおきます。
+	`hello`のところを`こんにちは`にかえて、`答え`{.blocksensing}ブロック（「調べる」というカテゴリーの中にありますをドラッグして `world`のところにおきます。
 
 	![screenshot](chatbot-answer.png)
 
@@ -94,7 +94,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-## チャレンジ: <ruby>質問<rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>をふやす { .challenge }
+## チャレンジ:<ruby>質問<rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>をふやす { .challenge }
 
 チャットボットがもう一つ他のことを聞いてくるようにプログラムしてみましょう。 答えを<ruby>変数<rp>(</rp><rt>へんすう</rt><rp>)</rp></ruby>に入れられるでしょうか?
 
@@ -160,7 +160,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください  { .save }
 
-## チャレンジ：　もっといろいろな答え { .challenge }
+## チャレンジ：もっといろいろな答え { .challenge }
 
 チャットボットが他のことも聞くようにプログラムしてみましょう。`はい`か`いいえ`で答えられるようにしましょう。あなたのチャットボットはきちんと答えられるでしょうか？
 
@@ -168,7 +168,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください  { .save }
 
-# ステップ４： <ruby>背景<rp>(</rp><rt>はいけい</rt><rp>)</rp></ruby>をかえる { .activity }
+# ステップ４：<ruby>背景<rp>(</rp><rt>はいけい</rt><rp>)</rp></ruby>をかえる { .activity }
 
 チャットボットのいるところの<ruby>背景<rp>(</rp><rt>はいけい</rt><rp>)</rp></ruby>をかえることができます。
 
@@ -214,7 +214,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-## チャレンジ：　自分のチャットボット {.challenge}
+## チャレンジ：自分のチャットボット {.challenge}
 これまでに学んだことを使って、おしゃべりチャットボットを作り上げましょう。ここにいくつかのアイデアがあります。
 
 ![screenshot](chatbot-ideas.png)
