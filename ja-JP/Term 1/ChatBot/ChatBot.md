@@ -16,7 +16,7 @@ materials: ["Club Leader Resources/*"]
   <img src="chatbot-final.png">
 </div>
 
-# ステップ1:チャットボット { .activity }
+# ステップ1：チャットボット { .activity }
 
 ## チェックリスト { .check }
 
@@ -37,7 +37,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-# ステップ２:おしゃべりチャットボット { .activity }
+# ステップ２：おしゃべりチャットボット { .activity }
 
 さてチャットボットのキャラクターが決まったので、おしゃべりができるようにプログラムしましょう。
 
@@ -94,7 +94,7 @@ materials: ["Club Leader Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-## チャレンジ:<ruby>質問<rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>をふやす { .challenge }
+## チャレンジ：<ruby>質問<rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>をふやす { .challenge }
 
 チャットボットがもう一つ他のことを聞いてくるようにプログラムしてみましょう。 答えを<ruby>変数<rp>(</rp><rt>へんすう</rt><rp>)</rp></ruby>に入れられるでしょうか?
 
