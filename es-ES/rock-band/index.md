@@ -1,6 +1,6 @@
 ---
 title: Banda de Rock
-description: Para poder empezar a animar, necesitas añadir una “cosa” que animar
+description: ¡Aprende a codificar tus propios instrumentos musicales!
 layout: project
 notes: "Rock Band - notes.md"
 ---

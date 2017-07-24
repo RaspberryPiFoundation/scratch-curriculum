@@ -1,6 +1,6 @@
 ---
 title: Caja de Lápices
-description: Learn how to make your own paint program.
+description: Aprende a crear tu propio programa de pintura.
 layout: project
 notes: "Paint Box - notes.md"
 ---

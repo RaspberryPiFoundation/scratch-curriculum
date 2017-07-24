@@ -1,6 +1,6 @@
 ---
 title: Carrera de Barcos
-description: Make a game, in which you'll navigate a boat to a desert island.
+description: Crea un juego en el que navegues por barco a una isla desierta.
 layout: project
 notes: "Boat Race - notes.md"
 ---

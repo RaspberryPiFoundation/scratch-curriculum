@@ -1,6 +1,6 @@
 ---
 title: Robot Parlanchín
-description: Learn how to program your own talking robot!
+description: ¡Aprende a programar tu propio robot parlante!
 layout: project
 notes: "ChatBot - notes.md"
 ---

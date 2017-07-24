@@ -1,6 +1,6 @@
 ---
-title: alón Prisionero
-description: Create a platform game, in which you have to dodge the moving balls and reach the end of the level.
+title: Alón Prisionero
+description: Crea un juego de plataforma en el que tengas que esquivar pelotas y llegar al final del nivel.
 layout: project
 notes: "Dodgeball - notes.md"
 ---
