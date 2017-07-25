@@ -1,5 +1,5 @@
 ---
-title: ロスト・イン・スペース（<ruby>宇宙<rp>（</rp><rt>うちゅう</rt><rp>）</rp></ruby>で<ruby>迷子<rp>（</rp><rt>まいご</rt><rp>）</rp></ruby>）
+title: ロスト・イン・スペース/ 宇宙(うちゅう)で迷子(まいご)
 level: Scratch 1
 language: ja-JP
 stylesheet: スクラッチ
