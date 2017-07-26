@@ -1,0 +1,21 @@
+{
+    "description": false,
+    "id": "scratch_02",
+    "language": "pt-PR",
+    "number": 2,
+    "title": "Scratch 2",
+    "category": "cat-scratch",
+    "projects": [
+
+        {
+            "number":   1,
+            "filename": "Brain Game.md",
+            "note":     "Brain Game - notes.md"
+        },
+        {
+            "number":   2,
+            "filename": "Catch the Dots.md",
+            "note":     "Catch the Dots - notes.md"
+        }, 
+    ]
+}
