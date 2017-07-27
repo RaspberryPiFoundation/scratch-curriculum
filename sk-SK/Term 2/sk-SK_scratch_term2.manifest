@@ -5,13 +5,11 @@
     "number": 1,
     "title": "Scratch 1",
     "category": "cat-scratch",
-    "projects": [
-        
+    "projects": [   
         {
             "number":   1,
             "filename": "Catch the Dots.md",
             "note":     "Catch the Dots - notes.md"
         }
-    ],
-
+    ]
 }
