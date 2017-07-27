@@ -6,14 +6,15 @@ stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
-﻿## פרויקט שנתרם על ידי הקהילה. { .challenge .pdf-hidden }
+
+## פרויקט שנתרם על ידי הקהילה. { .challenge .pdf-hidden }
 פרויקט זה נתרם על ידי אריק ובתו רות. אם תרצו לתרום פרויקט משלכם, חפשו אותנו ב[גיטהאב](https://github.com/CodeClub)
 
 
 # מבוא { .intro }
 
 
-בפרויקט זה תצרו משחק זכרון, בו תצטרכו לחזור על רצף אקראי של צבעים.
+בפרויקט זה תצרו משחק זכרון, בו עליכם לחזור על רצף אקראי של צבעים.
 
 
 <div class="scratch-preview">
@@ -27,7 +28,7 @@ materials: ["Club Leader Resources/*"]
 
 
 ## סדר פעולות { .check }
-+ התחילו פרויקט סקראצ חדש, ומחקו את דמות החתול כל שהפרויקט יהיה ריק. תוכלו למצוא עורך סקראצ מקוון ב-<a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>
++ התחילו פרויקט סקראצ חדש, ומחקו את דמות החתול כך שהפרויקט יהיה ריק. תוכלו למצוא עורך סקראצ מקוון ב-<a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>
 + בחרו דמות ורקע. הדמות לא חייבת להיות בן-אדם, אבל היא צריכה להיות מסוגלת להציג את הצבעים השונים.
 
 
