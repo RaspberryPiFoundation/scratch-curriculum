@@ -9,13 +9,13 @@
 
         {
             "number":   1,
-            "filename": "ChatBot.md",
-            "note":     "ChatBot - notes.md"
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - notes.md"
         },
         {
             "number":   2,
-            "filename": "Paint Box.md",
-            "note":     "Paint Box - notes.md"
-        }, 
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - notes.md"
+        }
     ]
 }
