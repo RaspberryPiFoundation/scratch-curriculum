@@ -4,7 +4,7 @@ level: Scratch 2
 language: pt-PT
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Recursos Clube Líder/*","Recursos do Projeto/*"]
+materials: ["Club Leader Resources/*","Project Resources/*"]
 beta: true
 ...
 
