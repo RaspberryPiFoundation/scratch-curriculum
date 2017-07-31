@@ -37,7 +37,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 		end
 	```
 
-+ フラグボタンをクリックすると、プログラムを動かすことができるので、ステージの中でマウスをぐるぐる動かしてみましょう。
++ フラグ(⚑)ボタンをクリックすると、プログラムを動かすことができるので、ステージの中でマウスをぐるぐる動かしてみましょう。
 
 + 次に、`もし`{.blockcontrol}マウスが押された<ruby>状態<rp>（</rp><rt>じょうたい</rt><rp>）</rp></ruby>であればえんぴつで線を書けるようにしてみましょう。えんぴつスプライトにこのコードを足しましょう。
 
@@ -135,7 +135,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 	![screenshot](paint-x.png)
 
-+ クリックしたときにステージを「消す」ように、×ボタンにコードをこのようにしましょう。
++ クリックしたときにステージを「消す」ように、「×」ボタンにコードをこのようにしましょう。
 
 	```blocks
 		このスプライトがクリックされたとき
@@ -155,15 +155,15 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 + 消しゴムボタンをクリックした時に切りかわるようにするには、まず「消しゴム」メッセージを送ります。消しゴムスプライトにコードを足しましょう
 
 	```blocks
-		when this sprite clicked
-		broadcast [消しゴム v]
+		このスプライトがクリックされたとき
+		[消しゴム v] を送る
 	```
 
-+ えんぴつがこのメッセージを受け取ったとき、コスチュームを消しゴム（eraser）にかえて、ステージをなぞったときの色を白にしてしまえば、消しゴムのできあがりです！
++ えんぴつがこのメッセージを受け取ったとき、コスチュームを消しゴムにかえて、ステージをなぞったときの色を白にしてしまえば、消しゴムのできあがりです！
 
 	```blocks
 		[消しゴム v] を受け取ったとき
-		コスチュームを [eraser v] にする
+		コスチュームを [消しゴム v] にする
 		ペンの色を [#FFFFFF] にする
 	```
 
@@ -175,7 +175,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 	![screenshot](paint-draw-problem.png)
 
-	これをうまく直すためには、えんぴつのYの<ruby>位置<rp>（</rp><rt>いち</rt><rp>）</rp></ruby>が-120以上(`マウスのy<ruby>座票<rp>（</rp><rt>ざひょう</rt><rp>）</rp></ruby>`{.blocksensing}`> -120`{.blockoperators})のときだけ書けるようにすればよいのです。えんぴつの`もし`{.blockcontrol}ブロックをこのようにかえましょう。
+	これをうまく直すためには、えんぴつのYの`<ruby>位置<rp>（</rp><rt>いち</rt><rp>）</rp></ruby>`が-120以上(`マウスのy<ruby>座票<rp>（</rp><rt>ざひょう</rt><rp>）</rp></ruby>`{.blocksensing}`> -120`{.blockoperators})のときだけ書けるようにすればよいのです。えんぴつの`もし`{.blockcontrol}ブロックをこのようにかえましょう。
 
 	![screenshot](pencil-gt-code.png)
 
