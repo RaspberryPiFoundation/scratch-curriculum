@@ -8,8 +8,8 @@
     "projects": [   
         {
             "number":   1,
-            "filename": "Catch the Dots.md",
-            "note":     "Catch the Dots - notes.md"
+            "filename": "Catch the Dots/Catch the Dots.md",
+            "note":     "Catch the Dots/Catch the Dots - notes.md"
         }
     ]
 }
