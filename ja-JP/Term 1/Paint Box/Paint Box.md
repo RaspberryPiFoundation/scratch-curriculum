@@ -175,7 +175,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 	![screenshot](paint-draw-problem.png)
 
-	これをうまく直すためには、えんぴつのYの`<ruby>位置<rp>（</rp><rt>いち</rt><rp>）</rp></ruby>`が-120以上(`マウスのy<ruby>座票<rp>（</rp><rt>ざひょう</rt><rp>）</rp></ruby>`{.blocksensing}`> -120`{.blockoperators})のときだけ書けるようにすればよいのです。えんぴつの`もし`{.blockcontrol}ブロックをこのようにかえましょう。
+	これをうまく直すためには、えんぴつのYの<ruby>位置<rp>（</rp><rt>いち</rt><rp>）</rp></ruby>が-120以上(`マウスのy座票`{.blocksensing}`> -120`{.blockoperators})のときだけ書けるようにすればよいのです。えんぴつの`もし`{.blockcontrol}ブロックをこのようにかえましょう。
 
 	![screenshot](pencil-gt-code.png)
 
