@@ -20,7 +20,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 まず、ステージでお絵かきをするえんぴつを作ります。
 
-## Activity Checklist { .check }
+## チェックリスト { .check }
 
 + 「お絵かきの箱」という名前のスクラッチ・プロジェクトを開きます。オンラインで開く場合はこちら<a href="http://jumpto.cc/paint-go">jumpto.cc/paint-go</a>から、オフラインエディターを使う場合はこちら<a href="http://jumpto.cc/paint-get">jumpto.cc/paint-get</a>からダウンロードして、プロジェクトを開きます。
 	
@@ -53,7 +53,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 色えんぴつをプロジェクトの中に作って、好きな色をえらべるようにしましょう！
 
-## Activity Checklist { .check }
+## チェックリスト { .check }
 
 + まず、えんぴつスプライトをクリックし、「コスチューム」のところから「pencil-a」のところを「青えんぴつ」にかえます。「青えんぴつ」コスチュームで右クリックし、「<ruby>複製<rp>（</rp><rt>ふくせい</rt><rp>）</rp></ruby>」をえらびます。
 
@@ -221,7 +221,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-## チャレンジ: ショートカット { .challenge }
+## チャレンジ：ショートカット { .challenge }
 キーボードショートカットを作れますか？ 例をいくつか示します。
 
 + b = 青えんぴつを使う
