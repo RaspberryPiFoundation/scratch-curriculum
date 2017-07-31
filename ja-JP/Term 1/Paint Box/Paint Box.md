@@ -221,21 +221,21 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-## Challenge: Shortcuts { .challenge }
-Can you create keyboard shortcuts for your commands? For example:
+## チャレンジ: ショートカット { .challenge }
+キーボードショートカットを作れますか？ 例をいくつか示します。
 
-+ b = Switch to blue pen
-+ g = switch to green pen
-+ e = switch to eraser
-+ c = clear screen
++ b = 青えんぴつを使う
++ g = 緑えんぴつを使う
++ e = 消しゴムを使う
++ c = 画面をクリアする
 
-You could even allow the user to change the pen width with the arrow keys!
+方向キーでえんぴつの太さを変えるショートカットも作れます！
 
 ## プロジェクトを保存してください { .save }
 
-## Challenge: More pens { .challenge }
-Can you add red, yellow and black pens to your paint program? You'll find all of the images you need in your 'Resources' folder. Remember to add keyboard shortcuts for these new pens!
+## チャレンジ：えんぴつの<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby> { .challenge }
+赤えんぴつ、黄色えんぴつ、黒えんぴつを追加できますか？ わからなくなったら、「ステップ２」を見てみましょう。<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>したえんぴつのキーボードショートカットも作りましょう。
 
-Can you use your pens to draw a picture?
+<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>したえんぴつでお絵かきできますか？
 
 ![screenshot](paint-final.png)
