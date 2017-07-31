@@ -1,43 +1,38 @@
 ---
-title: Boat Race — Notes for Club Leaders
-language: en-GB
+title: ボートレース — リーダー用ノート
+language: ja-JP
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how sprites can sense their environment.
+#イントロダクション:
+このプロジェクトでは、ゲームを作成するための、スプライトと環境（ステージ）の組み合わせ方を学びます。
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#資料
+このプロジェクトではスクラッチ２を使用してください。スクラッチ２はオンラインで使用することができます（jumpto.cc/scratch-on）。また、こちらからダウンロードしてオフラインで使用することも可能です（jumpto.cc/scratch-off）。
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/63957956/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+このプロジェクトの完成版は<a href="http://scratch.mit.edu/projects/63957956/#editor">こちら</a>から確認できます。また、「プロジェクト資料のダウンロード」をクリックしてダウンロードすることもできます。中身は下記の通りです。
 
 + BoatRace.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/boatrace-resources](http://jumpto.cc/boatrace-resources), or in the downloadable project materials, which contains:
+また、外部素材を組込済みのバージョンもあります。こちらから [jumpto.cc/boatrace-resources](http://jumpto.cc/boatrace-resources)、もしくは「プロジェクト資料」(Project Resources)より入手できます。中身は下記の通りです。
 
 + BoatRaceResources.sb2 
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+もし外部素材を組込済みのバージョンを使わない場合、「プロジェクト資料」(Project Resources)フォルダーの中にある画像はプロジェクトを完成するために必要となります。子供達が画像にアクセスできるように準備してください。
 
-Project resources:
+プロジェクト資料:
 + background.png;
 + boat.png.
 
-#Learning Objectives
-+ Sensing blocks:
-	+ `key ... pressed?` {.blocksensing};
-	+ `distance to mouse pointer` {.blocksensing};
-	+ `touching color ...` {.blocksensing}.
+#学習のねらい
++ 「調べる」コードブロック:
+	+ `...キーが押された` {.blocksensing};
+	+ `マウスポインターまでの距離` {.blocksensing};
+	+ `...色に触れた` {.blocksensing}.
 
-#Challenges
-+ "Winning!" - use of `touching color ...` {.blocksensing} block;
-+ "Sound effects" - adding sound and music to the game;
-+ "More obstacles!" - consolidating learning of sensing blocks;
-+ "More boats!" - use of `key ... pressed?` {.blocksensing} blocks;
-+ "More levels!" - additional player-controlled backdrops.
-
-#Frequently Asked Questions
-+ This is the first project in which much less step-by-step guidance is given. Use this as an opportunity to consolidate learning, and to start drawing on knowledge learnt in this and previous projects. 
-
-	For example, if children need help adding sound effects and music to their game, remind them of the work they did in the 'Rock Band' project. Encourage children to go back and look at the previous project notes for guidance.
+#チャレンジ
++ "ゴール!" - `...色に触れた` {.blocksensing}の使い方を学ぶ。
++ "音をならす" - 音や音楽をゲームに足す。
++ "<ruby>障害物<rp>（</rp><rt>しょうがいぶつ</rt><rp>）</rp></ruby>の<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>！" - 「調べる」コードブロックの使い方をより深く学ぶ。
++ "ボートの<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>！" - `...キーが押された` {.blocksensing}を使う。
++ "レベルの<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>！" - プレーヤーの選択しを増やす.
