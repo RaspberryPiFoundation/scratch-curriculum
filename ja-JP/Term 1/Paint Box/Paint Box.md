@@ -20,7 +20,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 まず、ステージでお絵かきをするえんぴつを作ります。
 
-## Activity Checklist { .check }
+## チェックリスト { .check }
 
 + 「お絵かきの箱」という名前のスクラッチ・プロジェクトを開きます。オンラインで開く場合はこちら<a href="http://jumpto.cc/paint-go">jumpto.cc/paint-go</a>から、オフラインエディターを使う場合はこちら<a href="http://jumpto.cc/paint-get">jumpto.cc/paint-get</a>からダウンロードして、プロジェクトを開きます。
 	
@@ -37,7 +37,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 		end
 	```
 
-+ フラグボタンをクリックすると、プログラムを動かすことができるので、ステージの中でマウスをぐるぐる動かしてみましょう。
++ フラグ(⚑)ボタンをクリックすると、プログラムを動かすことができるので、ステージの中でマウスをぐるぐる動かしてみましょう。
 
 + 次に、`もし`{.blockcontrol}マウスが押された<ruby>状態<rp>（</rp><rt>じょうたい</rt><rp>）</rp></ruby>であればえんぴつで線を書けるようにしてみましょう。えんぴつスプライトにこのコードを足しましょう。
 
@@ -53,7 +53,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 色えんぴつをプロジェクトの中に作って、好きな色をえらべるようにしましょう！
 
-## Activity Checklist { .check }
+## チェックリスト { .check }
 
 + まず、えんぴつスプライトをクリックし、「コスチューム」のところから「pencil-a」のところを「青えんぴつ」にかえます。「青えんぴつ」コスチュームで右クリックし、「<ruby>複製<rp>（</rp><rt>ふくせい</rt><rp>）</rp></ruby>」をえらびます。
 
@@ -135,7 +135,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 	![screenshot](paint-x.png)
 
-+ クリックしたときにステージを「消す」ように、×ボタンにコードをこのようにしましょう。
++ クリックしたときにステージを「消す」ように、「×」ボタンにコードをこのようにしましょう。
 
 	```blocks
 		このスプライトがクリックされたとき
@@ -155,15 +155,15 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 + 消しゴムボタンをクリックした時に切りかわるようにするには、まず「消しゴム」メッセージを送ります。消しゴムスプライトにコードを足しましょう
 
 	```blocks
-		when this sprite clicked
-		broadcast [消しゴム v]
+		このスプライトがクリックされたとき
+		[消しゴム v] を送る
 	```
 
-+ えんぴつがこのメッセージを受け取ったとき、コスチュームを消しゴム（eraser）にかえて、ステージをなぞったときの色を白にしてしまえば、消しゴムのできあがりです！
++ えんぴつがこのメッセージを受け取ったとき、コスチュームを消しゴムにかえて、ステージをなぞったときの色を白にしてしまえば、消しゴムのできあがりです！
 
 	```blocks
 		[消しゴム v] を受け取ったとき
-		コスチュームを [eraser v] にする
+		コスチュームを [消しゴム v] にする
 		ペンの色を [#FFFFFF] にする
 	```
 
@@ -175,7 +175,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 	![screenshot](paint-draw-problem.png)
 
-	これをうまく直すためには、えんぴつのYの<ruby>位置<rp>（</rp><rt>いち</rt><rp>）</rp></ruby>が-120以上(`マウスのy<ruby>座票<rp>（</rp><rt>ざひょう</rt><rp>）</rp></ruby>`{.blocksensing}`> -120`{.blockoperators})のときだけ書けるようにすればよいのです。えんぴつの`もし`{.blockcontrol}ブロックをこのようにかえましょう。
+	これをうまく直すためには、えんぴつのYの<ruby>位置<rp>（</rp><rt>いち</rt><rp>）</rp></ruby>が-120以上(`マウスのy座票`{.blocksensing}`> -120`{.blockoperators})のときだけ書けるようにすればよいのです。えんぴつの`もし`{.blockcontrol}ブロックをこのようにかえましょう。
 
 	![screenshot](pencil-gt-code.png)
 
@@ -221,21 +221,21 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 ## プロジェクトを保存してください { .save }
 
-## Challenge: Shortcuts { .challenge }
-Can you create keyboard shortcuts for your commands? For example:
+## チャレンジ：ショートカット { .challenge }
+キーボードショートカットを作れますか？ 例をいくつか示します。
 
-+ b = Switch to blue pen
-+ g = switch to green pen
-+ e = switch to eraser
-+ c = clear screen
++ b = 青えんぴつを使う
++ g = 緑えんぴつを使う
++ e = 消しゴムを使う
++ c = 画面をクリアする
 
-You could even allow the user to change the pen width with the arrow keys!
+方向キーでえんぴつの太さを変えるショートカットも作れます！
 
 ## プロジェクトを保存してください { .save }
 
-## Challenge: More pens { .challenge }
-Can you add red, yellow and black pens to your paint program? You'll find all of the images you need in your 'Resources' folder. Remember to add keyboard shortcuts for these new pens!
+## チャレンジ：えんぴつの<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby> { .challenge }
+赤えんぴつ、黄色えんぴつ、黒えんぴつを追加できますか？ わからなくなったら、「ステップ２」を見てみましょう。<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>したえんぴつのキーボードショートカットも作りましょう。
 
-Can you use your pens to draw a picture?
+<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>したえんぴつでお絵かきできますか？
 
 ![screenshot](paint-final.png)
