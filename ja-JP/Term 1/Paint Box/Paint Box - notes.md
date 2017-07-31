@@ -1,36 +1,34 @@
 ---
-title: Paint Box — Notes for Club Leaders
-language: en-GB
+title: お絵かきの箱　— リーダー用ノート
+language: ja-JP
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to broadcast messages between sprites.
+#イントロダクション:
+このプロジェクトでは、お絵かきができるプログラムを作ります！スプライトにメッセージを送るやり方を学びます。
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#資料
+このプロジェクトではスクラッチ２を使用してください。スクラッチ２はオンラインで使用することができます（[jumpto.cc/scratch-on](http://jumpto.cc/scratch-on)）。また、こちらからダウンロードしてオフラインで使用することも可能です（[jumpto.cc/scratch-off](http://jumpto.cc/scratch-off)）。
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/63473366/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+このプロジェクトの完成版は <a href="http://scratch.mit.edu/projects/26762091/#editor">こちら</a>から確認できます。また、「プロジェクト資料のダウンロード」をクリックしてダウンロードすることもできます。中身は下記の通りです。
 
 + PaintBox.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources), or in the downloadable project materials, which contains:
+資料が準備されているプロジェクトはこちらから使用可能です
+([jumpto.cc/paintbox-resources](http://jumpto.cc/paintbox-resources))。また、'Project Resources'フォルダーの中にあるファイルはオフライン使用のためです。
 
 + PaintBoxResources.sb2 
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+もし資料が準備されているプロジェクトを使わない場合、'Project Resources'フォルダーの中にある画像はプロジェクトを完成するために必要となります。子供達が画像にアクセスできるように準備してください。
 
-Project resources:
+プロジェクト資料:
 + eraser.svg
 
-#Learning Objectives
-+ Importing images;
-+ Relational and boolean operators (`>` {.blockoperators} & `and` {.blockoperators});
-+ Broadcasting between sprites.
+#学習のねらい
++ 関係演算子とブーリアン演算 (`>` {.blockoperators} & `and` {.blockoperators})。
++ スプライトにメッセージを送るやり方。
++ 画像のアップロード (資料が準備されているプロジェクトを使わない場合)
 
-#Challenges
-+ "Shortcuts" - Using `key press` {.blocksensing} events to broadcast messages;
-+ "More pens" - Adding more pen colours, to consolidate the learning of broadcasting messages.
-
-#Frequently Asked Questions
-+ Changes in a sprite's 'costume center' isn't registered until another tab is clicked. Children should click on another costume, or on the 'Scripts' tab to finalise changes to the costume center.
+#チャレンジ
++ "ショートカット" - `...キーが押されたとき` {.blocksensing} ブロックを使い、スプライトにメッセージを送るやり方を学ぶ。
++ "えんぴつの<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>" - えんぴつ・スプライトを<ruby>追加<rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>する。
