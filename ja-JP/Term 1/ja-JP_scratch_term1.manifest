@@ -16,6 +16,21 @@
             "filename": "Lost in Space/Lost in Space.md",
             "note":     "Lost in Space/Lost in Space - notes.md"
         }
+        {
+            "number":   3,
+            "filename": "ChatBot/ChatBot.md",
+            "note":     "ChatBot/ChatBot - notes.md"
+        }
+        {
+            "number":   4,
+            "filename": "Paint Box/Paint Box.md",
+            "note":     "Paint Box/Paint Box - notes.md"
+        }
+        {
+            "number":   5,
+            "filename": "Boat Race/Boat Race.md",
+            "note":     "Boat Race/Boat Race - notes.md"
+        }
         
     ]
 
