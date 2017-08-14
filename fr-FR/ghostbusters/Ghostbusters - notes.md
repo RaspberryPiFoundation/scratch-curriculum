@@ -1,4 +1,5 @@
 ---
+title: SOS Fantômes — Notes du volontaire
 ---
 
 # Introduction:
