@@ -1,5 +1,4 @@
 ---
-title: SOS Fantômes — Notes pour l'animateur
 ---
 
 # Introduction:
