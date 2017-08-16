@@ -1,6 +1,6 @@
 ---
 title: ChatBot
-description: "Apprend à programmer ton propre robot qui parle!"
+description: "Apprends à programmer ton propre robot qui parle!"
 layout: project
 notes: "ChatBot - notes.md"
 ---
@@ -19,11 +19,11 @@ Vous allez apprendre à programmer votre propre robot parlant!
 ## Liste de contrôle d'Activité { .check }
 
 + Avant que vous ne commenciez à faire votre chatbot, vous devez choisir leur personnalité.
-	 + Quels sont leur prénoms ?                                                                                                 
+	 + Quel sont leur prénom ?                                                                                                 
 	 + Où habitent-ils ?
 	 + Est-ce qu'ils sont heureux ? Sérieux ? Drôles ? Timides ? Amicaux ?
 
-+ Commencez un nouveau projet de scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Commencez un nouveau projet de Scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Choisissez un de ces lutins et ajoutez-le à votre projet :
 
@@ -39,7 +39,7 @@ Vous allez apprendre à programmer votre propre robot parlant!
 
 Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour qu'il puisse vous parler.
 
-## Liste de contrôle d'Activité { .check }
+## Liste de contrôle d'activité { .check }
 
 + Cliquez sur votre personnage chatbot et ajoutez ce code :
 
@@ -49,11 +49,11 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 		dire [Quel charmant nom!] pendant (2) secondes
 	```
 
-+ Cliquez sur votre chatbot pour le tester. Après que l'on vous demande votre nom, tapez-le dans la boîte de dialogue en bas de l'étape.
++ Cliquez sur votre chatbot pour le tester. Lorsque l'on vous demande votre nom, tapez-le dans la boîte de dialogue en bas de l'étape.
 
 	![screenshot](images/chatbot-text.png)
 
-+  Votre chatbot répond simplement `Quel nom charmant !` à chaque fois. Vous pouvez personnaliser la réponse de votre chatbot, en vous servant de la réponse de l'utilisateur. Changez le code du chatbots, comme ceci :
++  Votre chatbot répond simplement `Quel nom charmant !` à chaque fois. Vous pouvez personnaliser la réponse de votre chatbot, en vous servant de la réponse de l'utilisateur. Changez le code du chatbot, comme ceci :
 
 	```blocks
 		quand ce lutin est cliqué
@@ -61,11 +61,11 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 		dire <regroupe [salut] (Réponse)> pendant (2) secondes
 	```
 
-	Pour créer le dernier bloc, vous devrez d'abord ajouter un bloc vert `regroupe` {.blockoperators} et traîner celui-ci sur le bloc `dire` {.blocklooks}.
+	Pour créer le dernier bloc, vous devrez d'abord ajouter un bloc vert `regroupe` {.blockoperators} et déplacer celui-ci sur le bloc `dire` {.blocklooks}.
 
 	![screenshot](images/chatbot-join.png)
 
-	Vous pouvez alors changer le texte `bonjour` et dire `salut`, et traîner le bloc bleu clair `réponse` {.blocksensing} ( dans la section 'capteur') sur le texte `Monde`.
+	Vous pouvez alors changer le texte `bonjour` et dire `salut`, et déplacer le bloc bleu clair `réponse` {.blocksensing} ( dans la section 'capteur') sur le texte `Monde`.
 
 	![screenshot](images/chatbot-answer.png)
 
