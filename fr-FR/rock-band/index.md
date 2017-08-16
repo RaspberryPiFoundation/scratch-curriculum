@@ -33,7 +33,7 @@ D'abord, créons un tambour qui fait un son quand il est frappé.
 
 	```blocks
 		quand ce lutin est cliqué
-		jouer tambour (1 v) pendant (0.25) temps
+		jouer du tambour (1 v) pendant (0.25) temps
 	```
 
 + Cliquez sur le tambour pour essayer votre nouvel instrument!
@@ -57,13 +57,14 @@ D'abord, créons un tambour qui fait un son quand il est frappé.
 + Maintenant que vous avez 2 costumes différents pour votre tambour, vous pouvez choisir quel costume est affiché! Ajoutez ce code à votre tambour :
 
 	```blocks
-		quand le drapeau pressé
-		basculer sur costume [not hit v]
+		quand ⚑ cliqué
+		basculer sur le costume [not hit v]
 
 		quand ce lutin est cliqué
 		basculer sur costume [hit v]
-		jouer tambour (1 v) pendant (0.25) temps
+		jouer du tambour (1 v) pendant (0.25) temps
 		basculer sur costume [not hit v]
+
 	```
 
 	Le bloc de code pour changer le costume est dans la section `Apparences` {.blocklooks}.
@@ -81,7 +82,7 @@ D'abord, créons un tambour qui fait un son quand il est frappé.
 + Pouvez-vous aussi faire un son quand la barre d'espace est appuyée ? Vous devrez utiliser les blocs `Événement` {.blockevents}:
 
 ```blocks
-	quand [space v] est pressé
+	quand [espace v] est pressé
 ```
 
  Vous pouvez copier votre code existant en y faisant un clic droit et en cliquant sur 'dupliquer'.
@@ -112,7 +113,7 @@ Ajoutons un chanteur à votre orchestre!
 
 	```blocks
 		quand ce lutin est cliqué
-		jouer le son [singer1 v] jusqu'au bout
+		jouer le son [singer 1 v] jusqu'au bout
 	```
 
 + Cliqué sur votre chanteur, pour s'assurer qu'il chante quand vous cliqué.
