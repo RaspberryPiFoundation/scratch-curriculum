@@ -29,7 +29,7 @@ D'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 
 	Si vous n'êtes pas sûr de comment faire cela, le projet ' Lost in space ' vous aidera!
 
-+ Programmons le tambour pour jouer un son lorsqu'il est cliqué. Assurez-vous que le lutin de tambour soit choisi et ajoutez ce code :
++ Programmons le tambour pour qu'il joue un son lorsqu'il est cliqué. Assurez-vous que le lutin de tambour soit choisi et ajoutez ce code :
 
 	```blocks
 		quand ce lutin est cliqué
@@ -50,7 +50,7 @@ D'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 
 	![screenshot](images/band-drum-hit.png)
 
-+ Les noms des costumes ne sont pas très utiles à l'heure actuelle. Renommez les 2 costumes à 'not hit' et 'hit' en tapant le nouveau nom de chaque costume dans la boîte de texte.
++ Les noms des costumes ne sont pas très utiles à l'heure actuelle. Renommez les 2 costumes à 'not hit' et 'hit' en écrivant le nouveau nom de chaque costume dans la boîte de texte.
 
 	![screenshot](images/band-drum-name.png)
 
@@ -108,7 +108,7 @@ Ajoutons un chanteur à votre orchestre!
 
 	![screenshot](images/band-choose-sound.png)
 
-+ Maintenant que le son a bien été ajouté, vous pouvez ajouter ce code à votre chanteur :
++ Maintenant que le son a bien été installé, vous pouvez ajouter ce code à votre chanteur :
 
 	```blocks
 		quand ce lutin est cliqué
@@ -133,11 +133,11 @@ L'utilisation que vous avez appris dans ce projet de faire votre propre orchestr
 
 ![screenshot](images/band-ideas.png)
 
-Vos instruments ne doivent pas être raisonnables quoi que ce soit. Par exemple, vous pourriez faire un piano fait de muffins!
+Vos instruments peuvent être farfelus ou créatifs. Par exemple, vous pourriez faire un piano fait de muffins!
 
 ![screenshot](images/band-piano.png)
 
-Si vous avez un microphone, vous pouvez enregistrer vos propres sons, ou même utiliser une web cam pour frapper vos instruments!
+Si vous avez un microphone, vous pouvez enregistrer vos propres sons, ou même utiliser une web cam pour taper sur vos instruments!
 
 ![screenshot](images/band-io.png)
 
