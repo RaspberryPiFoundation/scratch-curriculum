@@ -87,7 +87,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 
 	![screenshot](images/paint-selectors.png)
 
-+ Quand l'icône de sélecteur verte est cliquée, vous aurez besoin de `envoyer à tous` {.blockevents} un message au lutin de crayons, lui disant de changer son costume et la couleur de crayon.
++ Quand l'icône de sélecteur verte est cliquée, vous devrez `envoyer à tous` {.blockevents} un message au lutin de crayons, lui disant de changer son costume et la couleur de crayon.
 
 	Ajoutez d'abord ce code à l'icône de sélecteur verte:
 
@@ -129,7 +129,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 		choisir la couleur [#0000ff] pour le stylo
 	```
 
-+ Quand votre projet est commencé, ajoutez ce code au début du crayon `Quand le drapeau pressé ` {.blockevents} (avant la boucle 'répéter indéfiniment' {.blockcontrol}):
++ Quand votre projet est commencé, ajoutez ce code au début du crayon `Quand le drapeau pressé` {.blockevents} (avant la boucle 'répéter indéfiniment' {.blockcontrol}):
 
 	```blocks
 		effacer tout
@@ -151,7 +151,7 @@ Parfois les erreurs arrivent, donc ajoutons le boutton 'Nettoyer' et une gomme p
 
 ## Liste de contrôle d'activité { .check }
 
-+ Ajoutons un bouton pour annuler l'étape. Pour faire ceci, ajoutez le lutin 'X-block' à l'étape et coloriez-le en rouge.
++ Ajoutons un bouton pour annuler l'étape. Pour faire cela, ajoutez le lutin 'X-block' à l'étape et coloriez-le en rouge.
 
 	![screenshot](images/paint-x.png)
 
