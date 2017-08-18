@@ -5,16 +5,13 @@ layout: project
 notes: "Ghostbusters - notes.md"
 ---
 
-## Notiz: { .challenge .pdf-hidden }
-Das 'Ballons'-Projekt wurde in den Bereich [Additional Scratch Projects](http://projects.codeclub.org.uk/en-GB/03_scratch_bonus/index.html) verschoben.
-
 # Einführung { .intro }
 
 Du wirst ein Gespensterjagd-Spiel machen!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
-  <img src="ghost-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
+  <img src="images/ghost-final.png">
 </div>
 
 # Schritt 1: Ein Gespenst bewegen { .activity }
