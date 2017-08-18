@@ -16,7 +16,7 @@ Dans ce projet, vous ferez votre propre programme de peinture!
 
 # Étape 1 : Fabrication d'un crayon { .activity }
 
-Commençons par créer un crayon qui peut être utilisé pour déssiner sur la scène.
+Commençons par créer un crayon qui peut être utilisé pour dessiner sur la scène.
 
 ## Liste de contrôle d'activité { .check }
 
