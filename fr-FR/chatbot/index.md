@@ -19,7 +19,7 @@ Vous allez apprendre à programmer votre propre robot parlant!
 ## Liste de contrôle d'Activité { .check }
 
 + Avant que vous ne commenciez à faire votre chatbot, vous devez choisir leur personnalité.
-	 + Quel sont leur prénom ?                                                                                                 
+	 + Quels sont leurs prénoms ?                                                                                                 
 	 + Où habitent-ils ?
 	 + Est-ce qu'ils sont heureux ? Sérieux ? Drôles ? Timides ? Amicaux ?
 
@@ -46,7 +46,8 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 	```blocks
 		quand ce lutin est cliqué
 		demander [Hé! Comment vous appelez-vous ?] et attendre
-		dire [Quel charmant nom!] pendant (2) secondes
+		dire [Quel charmant 
+		!] pendant (2) secondes
 	```
 
 + Cliquez sur votre chatbot pour le tester. Lorsque l'on vous demande votre nom, tapez-le dans la boîte de dialogue en bas de l'étape.
@@ -106,7 +107,7 @@ Vous pouvez programmer votre chatbot pour décider que faire, en fonction des r�
 
 ## Liste de contrôle d'activité { .check }
 
-+ Faisons poser une question à votre chatbot et l'utilisateur qui répond `oui` ou `non`. Voici un exemple, mais vous pouvez changer la question si vous voulez:
++ Posons une question à votre chatbot et l'utilisateur qui répond `oui` ou `non`. Voici un exemple, mais vous pouvez changer la question si vous voulez:
 
 	```blocks
 		quaand ce lutin est cliqué
@@ -168,7 +169,7 @@ Vous pouvez programmer votre chatbot pour décider que faire, en fonction des r�
 
 ## Défi : Plus de décisions { .challenge }
 
-Programmez votre chatbot pour poser une autre question - quelque chose avec un 'oui' ou 'aucune' réponse. Pouvez-vous faire répondre votre chatbot à la question?
+Programmez votre chatbot pour lui poser une autre question - quelque chose avec un 'oui' ou 'aucune' réponse. Votre chatbot peut-il répondre à la question?
 
 ![screenshot](images/chatbot-joke.png)
 
@@ -200,7 +201,7 @@ Vous pouvez aussi programmer votre chatbot pour changer son emplacement.
 
 	![screenshot](images/chatbot-backdrop.png)
 
-+ Votre chatbot change-t-il l'emplacement si vous ne tapez pas ? Qu'en est-il de si vous tapez ` je ne suis pas sûr ` ?
++ Votre chatbot change-t-il d'emplacement si vous ne tapez pas ? Qu'arrive-t-il lorsque vous tapez ` je ne suis pas sûr ` ?
 
 ## Sauvegarder votre projet { .save }
 
