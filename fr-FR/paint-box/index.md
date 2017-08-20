@@ -147,7 +147,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 
 # Étapes 3: Erreurs de fabrication { .activity .new-page }
 
-Parfois les erreurs arrivent, donc ajoutons le boutton 'Nettoyer' et une gomme à effacer à notre projet!
+Parfois, les erreurs arrivent. Ajoutons le boutton 'Nettoyer' et une gomme à effacer à notre projet!
 
 ## Liste de contrôle d'activité { .check }
 
