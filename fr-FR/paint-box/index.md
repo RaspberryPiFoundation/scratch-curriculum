@@ -30,7 +30,7 @@ Commençons par créer un crayon qui peut être utilisé pour dessiner sur la sc
 
 	![screenshot](images/paint-pencil-delete.png)
 
-+  Renommez votre costume 'crayon bleu' et utiliser l'outil 'Colorier une forme' pour faire le crayon bleu.
++  Renommez votre costume 'crayon bleu' et utilisez l'outil 'Colorier une forme' pour faire le crayon bleu.
 
 	![screenshot](images/paint-pencil-blue.png)
 
@@ -43,9 +43,9 @@ Commençons par créer un crayon qui peut être utilisé pour dessiner sur la sc
 		end
 	```
 
-+ Testez ce code en cliquant du drapeau et déplacer ensuite la souris autour de l'étape. Marche-t-il comme vous le souhaitez ?
++ Testez ce code en cliquant du drapeau et déplacez ensuite la souris autour de l'étape. Marche-t-il comme vous le souhaitez ?
 
-+ Avez-vous remarqué que c'est le centre du crayon et non la point qui suit l'indicateur de souris ?
++ Avez-vous remarqué que c'est le centre du crayon et non la pointe qui suit l'indicateur de souris ?
 
 	![screenshot](images/paint-center.png)
 
@@ -71,7 +71,7 @@ Commençons par créer un crayon qui peut être utilisé pour dessiner sur la sc
 
 # Étape 2 : stylos colorés { .activity }
 
-Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'utilisateur de choisir!
+Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'utilisateur de choisir entre ceux-ci!
 
 ## Liste de contrôle d'activité { .check }
 
@@ -83,20 +83,20 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 
 	![screenshot](images/paint-pencil-green.png)
 
-+ Créez deux nouveaux lutins que vous utiliserez pour choisir le crayon bleu ou vert.
++ Créez deux nouveaux lutins que vous utiliserez pour sélectionner le crayon bleu ou vert.
 
 	![screenshot](images/paint-selectors.png)
 
-+ Quand l'icône de sélecteur verte est cliquée, vous devrez `envoyer à tous` {.blockevents} un message au lutin de crayons, lui disant de changer son costume et la couleur de crayon.
++ Quand l'icône de sélecteur verte est cliquée, vous devrez `envoyer à tous` {.blockevents} un message au lutin de crayon en lui disant de changer son costume et la couleur du crayon.
 
-	Ajoutez d'abord ce code à l'icône de sélecteur verte:
+	Pour faire cela, ajoutez ce code à l'icône de sélecteur verte:
 
 	```blocks
 		quand ce lutin est cliqué
 		envoyer à tous [green v]
 	```
 
-	Créer le bloc `envoyer à tous` {.blockevents}, cliquez sur la flèche vers le bas et séléctionnez ' nouveau message ... '.
+	Afin de créer le bloc `envoyer à tous` {.blockevents}, cliquez sur la flèche du bas et séléctionnez ' nouveau message ... '.
 
 	![screenshot](images/paint-broadcast.png)
 
@@ -104,7 +104,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 
 	![screenshot](images/paint-green-message.png)
 
-+ Vous devez maintenant dire à votre lutin de crayons quoi faire quand il reçoit le message. Ajoutez ce code à votre lutin de crayons:
++ Vous devez maintenant dire à votre lutin de crayon quoi faire lorsqu'il reçoit le message. Ajoutez ce code à votre lutin de crayon:
 
 	```blocks
 		quand je reçois [green v]
@@ -137,7 +137,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 		choisir la couleur [#0000ff] pour le stylo
 	```
 
-	Si vous préférez, vous pouvez commencer par un crayon différent!
+	Si vous préférez, vous pouvez commencer par un crayon de couleur différente!
 
 + Testez votre projet. Pouvez-vous changer entre des stylos bleus et verts ?
 
@@ -147,7 +147,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 
 # Étapes 3: Erreurs de fabrication { .activity .new-page }
 
-Parfois les erreurs arrivent, donc ajoutons le boutton 'Nettoyer' et une gomme pour effacer à notre projet!
+Parfois les erreurs arrivent, donc ajoutons le boutton 'Nettoyer' et une gomme à effacer à notre projet!
 
 ## Liste de contrôle d'activité { .check }
 
@@ -155,22 +155,22 @@ Parfois les erreurs arrivent, donc ajoutons le boutton 'Nettoyer' et une gomme p
 
 	![screenshot](images/paint-x.png)
 
-+ Ajoutez ce code à votre nouveau bouton pour annuler l'étape quand il est cliqué.
++ Ajoutez ce code à votre nouveau bouton pour annuler l'étape lorsqu'il est cliqué.
 
 	```blocks
 		quand ce lutin est cliqué
 		effacer tout
 	```
 
-	Remarquez que vous ne devez pas envoyer un message pour approuver l'étape, comme pour n'importe quel lutin!
+	Remarquez que vous ne devez pas envoyer un message pour approuver l'étape comme pour n'importe quel lutin!
 
-+ Vous pouvez aussi créer une gomme. Si votre leader de club vous a donné une 'Ressource', cliquez 'importer le lutin depuis un fichier' et ajoutez l'image.
++ Vous pouvez aussi créer une gomme à effacer. Si votre leader de club vous a donné une 'Ressource', cliquez 'importer le lutin depuis un fichier' et ajoutez l'image.
 
 	![screenshot](images/paint-eraser-costume.png)
 
 	Si vous n'avez pas l'image de gomme, vous devez simplement créer un nouveau stylo blanc!
 
-	+ Vous devriez aussi ajouter l'image de gomme comme un nouveau lutin de séléction. Votre étape sera comme suit :
+	+ Vous devriez aussi ajouter l'image de la gomme comme nouveau lutin de séléction. Votre étape sera comme suit :
 
 	![screenshot](images/paint-eraser-stage.png)
 
@@ -181,7 +181,7 @@ Parfois les erreurs arrivent, donc ajoutons le boutton 'Nettoyer' et une gomme p
 		envoyer à tous  [eraser v]
 	```
 
-+ Quand le crayon reçoit ce message, vous pouvez créer une gomme à effacer en changeant le costume de crayon à la gomme et changez la couleur de crayon à la même couleur que l'étape (blanc)!
++ Quand le crayon reçoit ce message, vous pouvez créer une gomme à effacer en changeant le costume de crayon à la gomme et en changeant la couleur de crayon à la même couleur que l'étape (blanc)!
 
 	```blocks
 		quand je reçois [eraser v]
@@ -231,7 +231,7 @@ Vous pouvez maintenant bouger le curseur au-dessous de la variable pour changer 
 
 	![screenshot](images/paint-slider-change.png)
 
-+ Testez votre projet et regardez si vous pouvez modifier la largeur de crayon.
++ Testez votre projet et regardez si vous pouvez modifier la largeur de votre crayon.
 
 	![screenshot](images/paint-width-test.png)
 
@@ -255,7 +255,7 @@ Vous pourriez même permettre à l'utilisateur de changer la largeur de stylo av
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Plus de stylos { .challenge }
-Pouvez-vous ajouter des stylos rouges, jaunes et noirs à votre programme de peinture ? Vous trouverez toutes les images dont vous avez besoin dans votre dossier 'de Ressources' afin d'ajouter des raccourcis claviers pour ces nouveaux stylos!
+Pouvez-vous ajouter des stylos rouges, jaunes et noirs à votre programme de peinture ? Vous trouverez toutes les images dont vous avez besoin dans votre dossier 'de Ressources' afin d'ajouter des raccourcis sur le clavier pour ces nouveaux stylos!
 
 Pouvez-vous utiliser vos stylos pour faire un dessin ?
 
