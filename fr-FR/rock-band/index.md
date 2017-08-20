@@ -100,7 +100,7 @@ Ajoutons un chanteur à votre orchestre!
 
 	![screenshot](images/band-singer-mic.png)
 
-+ Avant que vous ne puissiez faire chanter votre chanteur, vous devez ajouter un son à votre lutin. Assurez-vous que vous avez choisi votre chanteur, cliquez ensuite sur l'onglet 'Sons' et cliquer sur ' Choisir un son dans la bibliothèque ' :
++ Avant que vous ne puissiez faire chanter votre chanteur, vous devez ajouter un son à votre lutin. Assurez-vous que vous avez bien selectionné votre chanteur, cliquez sur l'onglet 'Sons' et cliquez sur ' Choisir un son dans la bibliothèque ' :
 
 	![screenshot](images/band-import-sound.png)
 
