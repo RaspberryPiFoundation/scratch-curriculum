@@ -1,6 +1,6 @@
 ---
 title: Clone Wars
-description: "Apprend à programmer ton propre jeu de bataille spatial."
+description: "Apprends à programmer ton propre jeu de bataille spatiale."
 layout: project
 notes: "Clone Wars - notes.md"
 ---
@@ -10,7 +10,7 @@ Ce projet a été créé avec Eric. Si vous voudriez contribuer à un projet, vo
 
 # Introduction { .intro }
 
-Dans ce projet vous apprendrez à créer un jeu dans lequel vous devez sauver la Terre de monstres spatiaux.
+Dans ce projet, vous apprendrez à créer un jeu dans lequel vous devez sauver la Terre des monstres spatiaux.
 
 <div class="scratch-preview">
  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
@@ -19,17 +19,17 @@ Dans ce projet vous apprendrez à créer un jeu dans lequel vous devez sauver la
 
 # Étape 1 : Fabrication d'un Vaisseau spatial { .activity }
 
-Faisons un vaisseau spatial qui défendra la Terre!
+Créons un vaisseau spatial qui défendra la Terre!
 
 ##liste de contrôle d'activité { .check }
 
-+ Commencez un nouveau projet scratch et supprime le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur de scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Commencez un nouveau projet Scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur de scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Ajoutez le fond 'stars' et le lutin 'Spaceship' à votre projet. Faites rétrécir le vaisseau spatial et déplacez-le près du bas de l'écran.
 
 	![screenshot](images/invaders-sprites.png)
 
-+Ajoutez le code pour déplacer votre vaisseau spatial à gauche quand la touche de direction gauche est appuyée. Vous devrez utiliser ces blocs :
++Ajoutez le code pour déplacer votre vaisseau spatial à gauche lorsque la touche de direction gauche est appuyée. Vous devrez utiliser ces blocs :
 
 	```blocks
 		quand le drapeau prressé
@@ -48,11 +48,11 @@ Faisons un vaisseau spatial qui défendra la Terre!
 
 # Etapes 2: Coup de tonnerre { .activity }
 
-Donnons au vaisseau spatial la capacité de renvoyer des Coups de tonnerre!
+Donnons au vaisseau spatial la capacité de renvoyer des coups de tonnerre!
 
 ## Liste de contrôle d'activité { .check }
 
-+ Ajoutez le lutin 'Lightning' de la bibliothèque de scratch. Cliquez sur le lutin et tournez la foudre à l'envers.
++ Ajoutez le lutin 'Lightning' en utilisant la bibliothèque de Scratch. Cliquez sur le lutin et tournez la foudre à l'envers.
 
 	![screenshot](images/invaders-lightning.png)
 
@@ -63,7 +63,7 @@ Donnons au vaisseau spatial la capacité de renvoyer des Coups de tonnerre!
 		cacher
 	```
 
-+ Ajoutez le code suivant au vaisseau spatial pour créer un nouveau coup de foudre quand la touche espace est appuyée.
++ Ajoutez le code suivant au vaisseau spatial pour créer un nouveau coup de foudre quand la barre d'espace est appuyée.
 
 
 	```blocks
@@ -75,7 +75,7 @@ Donnons au vaisseau spatial la capacité de renvoyer des Coups de tonnerre!
 		end
 	```
 
-+ Quand un nouveau clone est créé, il devrait commencer en même endroit que le vaisseau spatial et avancer ensuite sur l'étape jusqu'à ce qu'il touche le bord. Ajoutez le code suivant au lutin de Foudre :
++ Quand un nouveau clone est créé, il devrait commencer au même endroit que le vaisseau spatial et avancer ensuite sur l'étape jusqu'à ce qu'il touche le bord. Ajoutez le code suivant au lutin de foudre :
 
 	```blocks
 		quand je commence comme un clone
@@ -87,20 +87,20 @@ Donnons au vaisseau spatial la capacité de renvoyer des Coups de tonnerre!
 		supprimer ce clone
 	```
 
-Notez : Nous déplaçons le nouveau clone vers le vaisseau spatial tandis qu'il est toujours caché, le montrant avant cela. Ceci a juste l'air plus agréable.
+À noter : Nous déplaçons le nouveau clone vers le vaisseau spatial lorsqu'il est toujours caché, avant de le montrer ainsi. Cela a l'air plus adéquat.
 
 + Testez votre foudre, en tapant la touche spatiale.
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Réparation de la foudre {.challenge}
-Ce qui arrive si vous gardez la touche spatiale maintenue ? Pouvez vous utiliser le bloc 'attendre'{.blockcontrol} pour réparer ceci ?
+Qu'arrive-t-il si vous gardez la touche spatiale maintenue ? Pouvez vous utiliser le bloc 'attendre'{.blockcontrol} pour réparer cela ?
 
 ## Sauvegarder votre projet { .save }
 
 # Étape 3 : Hippopotames spatiaux { .activity }
 
-Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spatial.
+Ajoutons des hippopotames volants qui essaient de détruire votre vaisseau spatial.
 
 ## Liste de contrôle d'Activité { .check }
 
@@ -108,7 +108,7 @@ Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spati
 
 	![screenshot](images/invaders-hippo.png)
 
-+ Faites que sa rotation soit seulement de gauche à droite et ajouter le code suivant pour cacher le lutin quand le jeu commence :
++ Ajuster sa rotation pour qu'elle soit de gauche à droite seulement et puis ajouter le code suivant pour cacher le lutin lorsque le jeu commencera :
 
 	```blocks
 		quand le drapeau pressé
@@ -119,11 +119,11 @@ Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spati
 
 	![screenshot](images/invaders-var.png)
 
-	Vous saurez si vous l'avez fait correctement car la variable aura le nom du lutin à côté de son nom à elle, comme ceci:
+	Vous saurez immédiatement si vous l'avez fait correctement car la variable aura le nom du lutin à côté de son nom, comme ceci:
 
 	![screenshot](images/invaders-var-test.png)
 
-+ Le code suivant créera un nouvel hippopotame toutes les X secondes. La scène est un bon endroit pour ce code :
++ Le code suivant créera un nouvel hippopotame a quelques secondes d'intervalle. La scène est un bon endroit pour ce code :
 
 	```blocks
 		quand le drapeau pressé
@@ -133,7 +133,7 @@ Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spati
 		end
 	```
 
-+Quand chaque clone d'hippopotame démarre, faites-le ce déplacer sur la scène (à une vitesse aléatoire) jusqu'à ce qu'il soit frappé par la foudre. Ajoutez ce code :
++Lorsque chaque clone d'hippopotame démarrera, déplacez-le autour de la scène (à une vitesse aléatoire) jusqu'à ce qu'il soit frappé par la foudre. Ajoutez ce code au clone d'hippopotame :
 
 	```blocks
 		quand je commence comme un clone
@@ -148,21 +148,21 @@ Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spati
 		supprimer ce clone
 	```
 
-+ Testez votre code d'hippopotame. Vous devriez voir qu'un nouveau clone d'hippopotame apparaît toutes les quelques secondes, chaque déplacement à sa propre vitesse.
++ Testez votre code d'hippopotame. Vous devriez voir qu'un nouveau clone d'hippopotame apparaît à quelques secondes d'intervalle, chacun de déplaçant à sa propre vitesse.
 
 	![screenshot](images/invaders-hippo-test.png)
 
-+ Testez votre canon laser. Si vous frappez un hippopotame, disparaît-il ?
++ Testez votre canon laser. Si vous frappez un hippopotame, disparaît-t-il ?
 
-+ Quand un hippopotame touche votre vaisseau spatial, nous devons faire éclater le vaisseau spatial! Pour ceci , assurez vous d'abord que votre vaisseau spatial a 2 costumes appelés 'normal' et 'hit'.
++ Lorsqu'un hippopotame touche votre vaisseau spatial, nous devons faire éclater le vaisseau spatial! Pour faire cela, vous devez vous assurer que votre vaisseau spatial a 2 costumes appelés 'normal' et 'hit'.
 
 	![screenshot](images/invaders-spaceship-costumes.png)
 
-	Le costume du vaisseau spatial 'hit' peut être fait en important 'sun' l'image de la bibliothèque de Scratch et en utilisant l'outil 'colorier une forme' pour changer sa couleur.
+	Le costume du vaisseau spatial 'hit' peut être fait en important l'image 'soleil' de la bibliothèque de Scratch et en utilisant l'outil 'colorier une forme' afin de changer sa couleur.
 
 	![screenshot](images/invaders-sun.png)
 
-+ Ajoutez ce code à votre vaisseau spatial pour qu'il change de costume quand il entre en collision avec un hippopotame volant :
++ Ajoutez ce code à votre vaisseau spatial pour qu'il change de costume a chaque fois qu'il entre en collision avec un hippopotame volant :
 
 	```blocks
 		quand le drapeau pressé
@@ -175,7 +175,7 @@ Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spati
 		end
 	```
 
-+ Avez-vous remarqué que vous avez l'émission du message 'hit' dans le code ci-dessus ? Vous pouvez utiliser ce message pour faire disparaître tous les hippopotames quand le vaisseau spatial est touché.
++ Avez-vous remarqué que vous avez l'émission du message 'hit' dans le code ci-dessus ? Vous pouvez utiliser ce message pour faire disparaître tous les hippopotames lorsque le vaisseau spatial est touché.
 
 	Ajoutez ce code à votre hippopotame :
 
@@ -184,39 +184,39 @@ Ajoutons des hippopotames volants qui essayent de détruire votre vaisseau spati
 		supprimer ce clone
 	```
 
-+ Testez ce code en commençant un nouveau jeu et entrant en collision avec un hippopotame.
++ Testez ce code en commençant un nouveau jeu et en entrant en collision avec un hippopotame.
 
 	![screenshot](images/invaders-hippo-collide.png)
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Vies et Score {.challenge}
-Pouvez vous ajouter 'vies' {.blockdata}, `score` {.blockdata} Ou même a `meilleur score` {.blockdata} À votre jeu ? Le projet 'Catch the Dots' permettra de vous aider.
+Pouvez-vous ajouter 'vies' {.blockdata}, `score` {.blockdata} ou même un `meilleur score` {.blockdata} à votre jeu ? Le projet 'Catch the Dots' permettra de vous aider.
 
 ## Sauvegarder votre projet  { .save }
 
 # Étape 4 : Une chauve-souris !{ .activity }
 
-Faisons une chauve-souris qui jette des oranges à votre vaisseau spatial.
+Créons une chauve-souris qui jette des oranges à votre vaisseau spatial.
 
 ## Liste de contrôle d'activité { .check }
 
-+ Premièrement, faites un nouveau lutin de chauve-souris qui 'se déplacera' {.blockmotion} À travers le sommet de la scène 'indéfiniment'{.blockcontrol}. Rappelez-vous tester votre code.
++ Premièrement, créer un nouveau lutin de chauve-souris qui 'se déplacera' {.blockmotion} à travers le sommet de la scène 'indéfiniment'{.blockcontrol}. Rappelez-vous de tester votre code.
 
 	![screenshot](images/invaders-bat.png)
 
-+ Si vous regardez les costumes de la chauve-souris, vous verrez qu'il a déjà 2 :
++ Si vous regardez les costumes de la chauve-souris, vous verrez qu'il en a déjà 2 :
 
 	![screenshot](images/invaders-bat-costume.png)
 
-	Utilisez le bloc costume suivant {.blocklooks} pour faire volet la chauve-souris.
+	Utilisez le bloc 'costume suivant' {.blocklooks} pour faire bouger les ailes de la chauve-souris lorsqu'elle se déplace.
 
-+ Créez un nouvel lutin 'Orange' de la bibliothèque de Scratch
++ Créez un nouveau lutin 'Orange' de la bibliothèque de Scratch
 
 	![screenshot](images/invaders-orange.png)
 
 
-+ Ajoutez le code à votre chauve-souris, pour qu'il crée une nouvelle orange toutes les quelques secondes.
++ Ajoutez le code à votre chauve-souris, pour qu'il créé une nouvelle orange à quelques secondes d'intervalle.
 
 	```blocks
 		quand le drapeau pressé
@@ -226,7 +226,7 @@ Faisons une chauve-souris qui jette des oranges à votre vaisseau spatial.
 		end
 	```
 
-+ Cliquez sur votre lutin 'orange' et ajouter ce code pour faire tomber chaque clone de 'orange' en bas de la scène de la chauve-souris vers le vaisseau spatial :
++ Cliquez sur votre lutin orange et ajoutez ce code pour faire tomber chaque clone 'orange' en bas de la scène, de la chauve-souris vers le vaisseau spatial :
 
 	```blocks
 		quand le drapeau pressé
@@ -250,19 +250,19 @@ Faisons une chauve-souris qui jette des oranges à votre vaisseau spatial.
 		attendre jusqu'à < <touché [Hippo1 v]?> ou <touché [Orange v]?>>
 	```
 
-+ Testez votre jeu. Qu'est ce qui arrive si vous êtes frappés par une orange tombante ?
++ Testez votre jeu. Qu'arrive-t-il si vous êtes frappés par une orange?
 
 ## Sauvegarder votre projet { .save }
 
 # Étape 5 : Fin du jeu { .activity }
 
-Ajoutons un message 'Game Over' a la fin du jeu.
+Ajoutons un message 'Game Over' à la fin du jeu.
 
 ## Liste d'activité de contrôle { .check }
 
-+ Si vous n'avez pas déjà, créez une nouvelle variable appelée 'vies' {.blockdata}. Votre vaisseau spatial devrait commencer par 3 vies et perdre une vie quand il entre en collision avec un ennemi. Votre jeu devrait aussi s'arrêter quand vous êtes à court de vies. Si vous avez besoin d'aide, vous pouvez utiliser le projet 'Catch the dots' pour vous aider.
++ Créez une nouvelle variable appelée 'vies' {.blockdata} si ce n'est pas déjà fait. Votre vaisseau spatial devrait commencer avec 3 vies et devrait perdre une vie lorsqu'il entre en collision avec un ennemi. Votre jeu devrait aussi s'arrêter lorsque vous perdez toutes vos vies. Si vous avez besoin d'aide, vous pouvez utiliser le projet 'Catch the dots' pour vous aider.
 
-+ Dessinez un nouvel lutin appelé 'Fin du jeu', en utilisant l'outil de texte.
++ Dessinez un nouveau lutin appelé 'Fin du jeu', en utilisant l'outil de texte.
 
 	![screenshot](images/invaders-game-over.png)
 
@@ -272,7 +272,7 @@ Ajoutons un message 'Game Over' a la fin du jeu.
 		envoyer à tous [game over v] et attendre
 	```
 
-+ Ajoutez ce code à votre lutin 'Game Over', pour que le message montre à la fin du jeu :
++ Ajoutez ce code à votre lutin 'Game Over' pour que le message puisse apparaître à la fin du jeu :
 
 	```blocks
 		quand le drapeau pressé
@@ -282,16 +282,16 @@ Ajoutons un message 'Game Over' a la fin du jeu.
 		montrer
 	```
 
-	Parce que vous avez utilisé ` envoyer à tous [le jeu sur] et attendre `{.blockevents} sur votre scène, il attendra que le lutin 'Game Over' soit montré avant la fin du jeu.
+	A  cause du bloc `envoyer à tous [le jeu sur] et attendre `{.blockevents} que vous avez utilisé sur votre scène, il attendra que le lutin 'Game Over' soit montré avant de finir la partie.
 
-+ Testez votre jeu. Combien de points vous pouvez marquer ? Pensez aux façons d'améliorer votre jeu si c'est trop facile ou trop dur ?
++ Testez votre jeu. Combien de points pouvez-vous marquer ? Pensez aux façons d'améliorer votre jeu si c'est trop facile ou trop difficile ?
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Améliorez votre jeu {.challenge}
 Quelles améliorations pouvez-vous faire à votre jeu ? Voici quelques idées :
 
-+ Ajouter des paquets de santé que vous pouvez ramasser pour gagner des vies supplémentaires;
++ Ajoutez des paquets de santé que vous pouvez ramasser pour gagner des vies supplémentaires;
 
 ![screenshot](images/invaders-aid.png)
 
@@ -299,7 +299,7 @@ Quelles améliorations pouvez-vous faire à votre jeu ? Voici quelques idées :
 
 ![screenshot](images/invaders-rocks.png)
 
-+ Faites apparaître plus d'ennemis quand votre score arrive à 100.
++ Faites apparaître plus d'ennemis lorsque votre score arrive à 100.
 
 ```blocks
 	attendre jusqu'à <(score) = [100]>
