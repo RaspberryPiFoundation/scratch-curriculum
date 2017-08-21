@@ -35,7 +35,7 @@ Vous allez apprendre à programmer votre propre robot parlant!
 
 ## Sauvegarder votre projet { .save }
 
-# Étape 2: un chatbot parlant { .activity }
+# Étape 2: Un chatbot parlant { .activity }
 
 Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour qu'il puisse vous parler.
 
@@ -62,17 +62,17 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 		dire <regroupe [salut] (Réponse)> pendant (2) secondes
 	```
 
-	Pour créer le dernier bloc, vous devrez d'abord ajouter un bloc vert `regroupe` {.blockoperators} et déplacer celui-ci sur le bloc `dire` {.blocklooks}.
+	Pour créer le dernier bloc, vous devrez ajouter un bloc vert `regroupe` {.blockoperators} et déplacer celui-ci sur le bloc `dire` {.blocklooks}.
 
 	![screenshot](images/chatbot-join.png)
 
-	Vous pouvez alors changer le texte `bonjour` et dire `salut`, et déplacer le bloc bleu clair `réponse` {.blocksensing} ( dans la section 'capteur') sur le texte `Monde`.
+	Vous pouvez alors changer le texte `bonjour` et dire `salut`, et puis déplacer le bloc bleu clair `réponse` {.blocksensing} ( dans la section 'capteur') sur le texte `Monde`.
 
 	![screenshot](images/chatbot-answer.png)
 
 + Testez ce nouveau programme. Est-ce qu'il marche comme vous le voulez ? Pouvez-vous réparer les problèmes que vous pouvez voir ? (PS: vous pouvez essayer d'ajouter un espace quelque part !)
 
-+ Peut être que vous voulez stocker le nom de l'utilisateur dans une variable, pour que vous puissiez l'utiliser de nouveau plus tard. Créez une nouvelle variable appelée `nom` {.blockdata}. Si vous avez oublié comment faire ceci, le projet 'Ballons' vous aidera.
++ Peut-être que vous voulez stocker le nom de l'utilisateur dans une variable pour que vous puissiez l'utiliser de nouveau plus tard. Créez une nouvelle variable appelée `nom` {.blockdata}. Si vous avez oublié comment faire ceci, le projet 'Ballons' vous aidera.
 
 + Les informations que vous avez entrées sont déjà stockées dans une variable spéciale appelée `réponse` {.blocksensing}. Allez dans le groupe de blocs 'capteur' et cliquez sur le bloc de réponse pour qu'une case cochante apparaisse. La valeur actuelle dans `réponse` {.blocksensing} devrait alors s'afficher en haut à gauche de l'étape.
 
@@ -85,11 +85,11 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 		dire <regroupe [Sava] (nom)> pendant (2) secondes
 	```
 
-+ Si vous testez votre programme de nouveau, vous remarquerez que la réponse est stockée dans le `nom` {.blockdata} On montre la variable en haut à gauche de l'étape. La variable `nom` {.blockdata} devrait maintenant contenir la même valeur que la variable `réponse` {.blocksensing}.
++ Si vous testez votre programme de nouveau, vous remarquerez que la réponse est stockée dans le `nom` {.blockdata} en montrant la variable en haut à gauche de l'étape. La variable `nom` {.blockdata} devrait maintenant contenir la même valeur que la variable `réponse` {.blocksensing}.
 
 	![screenshot](images/chatbot-variable.png)
 
-	Si vous ne désirez pas voir les variables sur cette étape, vous pouvez decocher à côté des noms de variables dans les onglets pour les cacher.
+	Si vous ne désirez pas voir les variables sur cette étape, vous pouvez décocher à côté des noms de variables dans les onglets pour les cacher.
 
 ## Sauvegarder votre projet{ .save }
 
@@ -210,6 +210,6 @@ Utilisez ce que vous avez appris pour finir de créer votre chatbot intéractif.
 
 ![screenshot](images/chatbot-ideas.png)
 
-Une fois que vous avez complété votre chatbot, dites à vos amis d'avoir une conversation avec lui! Aiment-ils votre personnage ? Ont-ils découvert des problèmes ?
+Une fois que vous avez complété votre chatbot, demandez à vos amis d'avoir une conversation avec lui! Aiment-ils votre personnage ? Ont-ils découvert des problèmes ?
 
 ## Sauvegader votre projet { .save }
