@@ -17,7 +17,7 @@ Dans ce projet vous apprendrez à coder vos propres instruments de musique!
 
 # Étape 1 : Fabrication d'un Tambour { .activity }
 
-D'abord, créons un tambour qui produit un son lorsqu'il est frappé.
+Tout d'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 
 ## Liste de contrôle d'Activité { .check }
 
@@ -29,7 +29,7 @@ D'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 
 	Si vous n'êtes pas sûr de comment faire cela, le projet ' Lost in space ' vous aidera!
 
-+ Programmons le tambour pour qu'il joue un son lorsqu'il est cliqué. Assurez-vous que le lutin de tambour soit choisi et ajoutez ce code :
++ Programmons le tambour pour qu'il joue un son lorsqu'il est cliqué. Assurez-vous que le lutin de tambour soit sélectionné et ajoutez ce code :
 
 	```blocks
 		quand ce lutin est cliqué
@@ -42,15 +42,15 @@ D'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 
 	![screenshot](images/band-drum-costume.png)
 
-+ Faites un clic droit sur le costume et peser sur 'dupliquer' afin de créer une copie du costume.
++ Faites un clic droit sur le costume et cliquez sur 'dupliquer' afin de créer une copie du costume.
 
 	![screenshot](images/band-drum-duplicate.png)
 
-+ Faites un clic sur le nouveau costume (appelé 'drum2') et choisissez l'outil de ligne. Ensuite, vous devez tracer des lignes pour donner l'impression que le tambour joue un son.
++ Cliquez sur le nouveau costume (appelé 'drum2') et sélectionnez l'outil de ligne. Ensuite, vous devez tracer des lignes pour donner l'impression que le tambour joue un son.
 
 	![screenshot](images/band-drum-hit.png)
 
-+ Les noms des costumes ne sont pas très utiles à l'heure actuelle. Renommez les 2 costumes à 'not hit' et 'hit' en écrivant le nouveau nom de chaque costume dans la boîte de texte.
++ Les noms des costumes ne sont pas très utiles à l'heure actuelle. Renommez les 2 costumes 'not hit' et 'hit' en écrivant le nouveau nom de chaque costume dans la boîte de texte.
 
 	![screenshot](images/band-drum-name.png)
 
@@ -115,7 +115,7 @@ Ajoutons un chanteur à votre orchestre!
 		jouer le son [singer1 v] jusqu'au bout
 	```
 
-+ Cliquez sur votre chanteur pour bien s'assurer qu'il chante.
++ Cliquez sur votre chanteur pour vous assurer qu'il chante.
 
 ## Sauvegarder votre projet { .save }
 
@@ -124,16 +124,16 @@ Pouvez-vous faire  semblant  que votre chanteur chante lorsque vous cliqué ? Si
 
 ![screenshot](images/band-singer-final.png)
 
-Rappelez-vous de tester votre nouveau code !
+N'oubliez pas de tester votre nouveau code !
 
 ## Sauvegardez votre projet { .save }
 
 ## Défi : Faites votre propre orchestre { .challenge }
-L'utilisation que vous avez appris dans ce projet de faire votre propre orchestre! Vous pouvez maintenant créer n'importe quel instrument que vous aimez, mais vérifiez les sons qui sont disponibles et les instruments afin d'obtenir quelques idées pour votre création.
+L'utilisation que vous avez appris dans ce projet de faire votre propre orchestre! Vous pouvez maintenant créer n'importe quel instrument que vous aimez, mais vérifiez les sons qui sont disponibles afin d'obtenir quelques idées pour votre création.
 
 ![screenshot](images/band-ideas.png)
 
-Vos instruments peuvent être farfelus ou créatifs. Par exemple, vous pourriez faire un piano fait de muffins!
+Vos instruments peuvent être farfelus et créatifs. Par exemple, vous pourriez faire un piano fait de muffins!
 
 ![screenshot](images/band-piano.png)
 
