@@ -1,13 +1,13 @@
 ---
 title: Dodgeball
-description: "Apprend à programmer ton propre jeu de plateforme!"
+description: "Apprends à programmer ton propre jeu de plateforme!"
 layout: project
 notes: "Dodgeball - notes.md"
 ---
 
 # Introduction { .intro }
 
-Dans ce projet vous apprendrez à créer un jeu de plate-forme, dans lequel vous devez esquiver les balles qui se déplace et atteindre la fin du niveau.
+Dans ce projet vous apprendrez à créer un jeu de plateforme, dans lequel vous devez esquiver les balles qui se déplacent et atteindre la fin du niveau.
 
 
 <div class="scratch-preview">
@@ -15,9 +15,9 @@ Dans ce projet vous apprendrez à créer un jeu de plate-forme, dans lequel vous
  <img src="images/dodge-final.png">
 </div>
 
-# Etape 1 : mouvement de personnage  { .activity }
+# Étape 1 : Mouvement du personnage  { .activity }
 
-Commençons en créant un personnage qui peut se déplacer gauche et droit, aussi bien que monter aux poteaux.
+Commençons par créer un personnage qui peut se déplacer à gauche et à droite et monter sur des échelles.
 
 ## Liste de contrôle d'activité { .check }
 
