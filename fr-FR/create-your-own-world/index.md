@@ -14,7 +14,7 @@ Ce projet vous permettra d'apprendre comment créer votre propre monde pour un j
  <img src="images/world-final.png">
 </div>
 
-# Première étape : Codez votre joueur { .activity }
+# Première étape : Coder votre joueur { .activity }
 
 Commençons par créer un personnage qui pourra se déplacer dans votre monde. 
 
@@ -59,10 +59,10 @@ Commençons par créer un personnage qui pourra se déplacer dans votre monde.
 	fin
 	```
 
-## Défi : Bougez dans toutes les directions {.challenge}
+## Défi : Bouger dans toutes les directions {.challenge}
 Pouvez-vous ajouter du codage supplémentaire à votre joueur pour qu'il puisse se déplacer vers le haut, le bas, la gauche et la droite? Utilisez le code que l'on vous a donné pour faciliter la tâche!
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 
 + Testez votre joueur de nouveau et vous verrez qu'il aura la capacité de marcher à travers les murs gris clairs.
@@ -92,12 +92,12 @@ Pouvez-vous ajouter du codage supplémentaire à votre joueur pour qu'il puisse 
 
 	![screenshot](images/world-wall-code.png)
 
-## Défi : Réglez les mouvements de votre joueur {.challenge}
+## Défi : Régler les mouvements de votre joueur {.challenge}
 Ajoutez du codage à votre joueur pour qu'il ne puisse plus marcher à travers les murs dans chaque direction. Utilisez le code que vous avez déjà pour faciliter la tâche!
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
-# Deuxième étape : Codez votre monde { .activity }
+# Deuxième étape : Coder votre monde { .activity }
 
 Faisons en sorte que votre joueur puisse passer à travers les portes et dans d'autres salles!
 
@@ -133,10 +133,10 @@ Faisons en sorte que votre joueur puisse passer à travers les portes et dans d'
 
 	![screenshot](images/world-room-test.png)
 
-## Défi : Vous déplacez dans la pièce précédente {.challenge}
+## Défi : Vous déplacer dans la pièce précédente {.challenge}
 Pouvez-vous déplacer votre joueur dans la pièce précédente lorsqu'il touche la porte jaune? Rappellez-vous que ce code sera _très_ similaire à celui que vous avez déjà ajouté pour le faire déplacer dans la pièce suivante.
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 # Troisième étape : Signalisations { .activity }
 
@@ -181,14 +181,14 @@ Ajoutons des panneaux à votre monde pour guider votre joueur dans son voyage.
 
 	![screenshot](images/world-sign-test2.png)
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 ## Défi : Trésor ! {.challenge}
 Faites un clic droit sur le lutin de coffre à trésor et choissez 'show'. Pouvez-vous faire apparaître un coffre à trésor uniquement dans la salle 3 et avoir un message qui affiche 'Bravo !' lorsque le joueur le touche?
 
 ![screenshot](images/world-treasure.png)
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 # Quatrième étape : Les gens { .activity }
 
@@ -229,10 +229,10 @@ Ajoutons d'autres lutins à votre monde pour que votre joueur puisse interagir a
 
 	![screenshot](images/world-person-rotate.png)
 
-## Défi : Améliorez votre lutin {.challenge}
+## Défi : Améliorer votre lutin {.challenge}
 Pouvez-vous ajouter du codage à votre nouveau personnage pour qu'il n'apparaisse que dans la première salle ? Attention : n'oubliez pas de tester votre nouveau code !
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 + Vous pouvez également ajouter des ennemis qui feront la patrouille dans votre monde. Lorsque votre joueur les touchera, la partie se terminera. Ajoutez un ennemi et changez les paramètres de rotation, comme vous l'avez déjà fait pour le lutin.
 
@@ -247,16 +247,16 @@ Pouvez-vous ajouter du codage à votre nouveau personnage pour qu'il n'apparaiss
 	+ Qu'il effectue la patrouille dans la salle
 	+ Que la partie se termine si le joueur le touche
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 ## Défi : Plus d'ennemis {.challenge}
 Pouvez-vous créer un ennemi dans la salle 3 qui fait la patrouille du haut en bas en passant par l'ouverture dans le mur ?
 
 ![screenshot](images/world-enemy2.png)
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
-# Cinquième étape : Collectez des pièces { .activity }
+# Cinquième étape : Collecter des pièces { .activity }
 
 ## Liste d'action pour cette activité { .check }
 
@@ -332,9 +332,9 @@ Pouvez-vous ajouter plus de pièces dans votre jeu ? Elles peuvent se trouver da
 
 + Testez votre projet et regardez si vous pouvez collecter la clé bleue afin d'ouvrir la porte!
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
-## Défi : Créez votre propre monde {.challenge}
+## Défi : Créer votre propre monde {.challenge}
 Vous pouvez maintenant continuer de créer votre propre monde. Quelques idées :
 
 + Changez les paramètres de votre jeu et de vos images ;
@@ -351,7 +351,7 @@ Vous pouvez maintenant continuer de créer votre propre monde. Quelques idées :
 
 	![screenshot](images/world-north-south.png)
 
-## Sauvegardez votre projet { .save }
+## Sauvegarder votre projet { .save }
 
 ## Community Contributed Translation { .challenge .pdf-hidden }
 
