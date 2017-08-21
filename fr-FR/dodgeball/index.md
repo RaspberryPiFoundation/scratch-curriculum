@@ -7,7 +7,7 @@ notes: "Dodgeball - notes.md"
 
 # Introduction { .intro }
 
-Dans ce projet vous apprendrez à créer un jeu de plateforme, dans lequel vous devez esquiver les balles qui se déplacent et atteindre la fin du niveau.
+Dans ce projet vous apprendrez à créer un jeu de plateforme dans lequel vous devez esquiver les balles qui se déplacent et atteindre la fin du niveau.
 
 
 <div class="scratch-preview">
