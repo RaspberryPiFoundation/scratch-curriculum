@@ -136,7 +136,7 @@ Faisons en sorte que votre joueur puisse passer à travers les portes et dans d'
 ## Défi : Vous déplacez dans la pièce précédente {.challenge}
 Pouvez-vous déplacer votre joueur dans la pièce précédente lorsqu'il touche la porte jaune? Rappellez-vous que ce code sera _très_ similaire à celui que vous avez déjà ajouté pour le faire déplacer dans la pièce suivante.
 
-## Sauvegardez ton projet { .save }
+## Sauvegardez votre projet { .save }
 
 # Troisième étape : Signalisations { .activity }
 
