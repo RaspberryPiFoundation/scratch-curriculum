@@ -20,7 +20,7 @@ Commençons par créer un personnage qui pourra se déplacer dans votre monde.
 
 ## Liste d'action pour l'activité { .check }
 
-+ Lancez un nouveau project Scratch et effacez l'image du lutin Félix le chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur scratch en ligne sur  <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Lancez un nouveau project Scratch et effacez l'image de Félix le chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur scratch en ligne sur  <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Pour ce projet, vous devriez trouver un dossier "ressources projet" contenant toutes les images dont vous aurez besoin. Assurez-vous de bien l'avoir et contactez le leader de votre club si vous ne le trouvez pas.
 
