@@ -8,14 +8,14 @@ project-type: sample
 
 # Introduction { .intro }
 
-Dans ce projet vous apprendrez à coder vos propres instruments de musique!
+Dans ce projet, vous apprendrez à coder vos propres instruments de musique!
 
 <div class="scratch-preview">
  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
  <img src="images/band-final.png">
 </div>
 
-# Étape 1 : Fabrication d'un Tambour { .activity }
+# Étape 1 : Fabrication d'un tambour { .activity }
 
 Tout d'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 
