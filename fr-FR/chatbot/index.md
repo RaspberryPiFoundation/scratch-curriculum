@@ -1,5 +1,5 @@
 ---
-title: ChatBot
+title: Robot parlant
 description: "Apprends à programmer ton propre robot qui parle!"
 layout: project
 notes: "ChatBot - notes.md"
