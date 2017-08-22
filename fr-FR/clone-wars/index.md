@@ -1,5 +1,5 @@
 ---
-title: La Guerre des Clones
+title: La guerre des clones
 description: "Apprends à programmer ton propre jeu de bataille spatiale."
 layout: project
 notes: "Clone Wars - notes.md"
