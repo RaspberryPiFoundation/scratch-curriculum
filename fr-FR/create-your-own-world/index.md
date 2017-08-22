@@ -1,5 +1,5 @@
 ---
-title: Crées ton Propre Monde
+title: Crées ton propre monde
 description: "Apprends à programmer ton propre monde pour un jeu d'aventure."
 layout: project
 notes: "Create Your Own World - notes.md"
