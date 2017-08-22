@@ -1,5 +1,5 @@
 ---
-title: Dodgeball
+title: Ballon chasseur
 description: "Apprends à programmer ton propre jeu de plateforme!"
 layout: project
 notes: "Dodgeball - notes.md"
