@@ -1,5 +1,5 @@
 ---
-title: Rock Band
+title: Groupe de rock
 description: "Apprends à programmer ton propre groupe de musique!"
 layout: project
 notes: "Rock Band - notes.md"
