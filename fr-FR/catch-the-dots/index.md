@@ -1,5 +1,5 @@
 ---
-title: Attrape les points
+title: Attrapes les points
 description: "Apprends à programmer un jeu où il faut attraper des points!"
 layout: project
 notes: "Catch the Dots - notes.md"
