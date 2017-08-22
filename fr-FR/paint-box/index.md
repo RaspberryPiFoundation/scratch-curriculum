@@ -1,5 +1,5 @@
 ---
-title: Paint Box
+title: Boîte à couleurs
 description: "Apprends à programmer ton propre programme de dessin!"
 layout: project
 notes: "Paint Box - notes.md"
