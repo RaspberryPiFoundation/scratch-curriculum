@@ -1,5 +1,5 @@
 ---
-title: Clone Wars
+title: La Guerre des Clones
 description: "Apprends à programmer ton propre jeu de bataille spatiale."
 layout: project
 notes: "Clone Wars - notes.md"
@@ -17,7 +17,7 @@ Dans ce projet, vous apprendrez à créer un jeu dans lequel vous devez sauver l
  <img src="images/invaders-final.png">
 </div>
 
-# Étape 1 : Fabrication d'un Vaisseau spatial { .activity }
+# Étape 1 : Fabrication d'un vaisseau spatial { .activity }
 
 Créons un vaisseau spatial qui défendra la Terre!
 
