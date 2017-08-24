@@ -1,5 +1,5 @@
 ---
-title: Clone Wars
+title: Klonkriege
 description: Erstelle ein Spiel in dem du den Planet Erde vor den Weltraummonstern retten musst.
 layout: project
 notes: "Clone Wars - notes.md"
@@ -28,13 +28,13 @@ Lass uns als erstes ein Raumschiff bauen, das die Erde verteidigen wird!
 
 + Füge den Code hinzu, um dein Raumschiff nach links zu bewegen, wenn die linke Pfeiltaste betätigt wird. Du musst diese Blöcke hierfür benutzen:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn <[linker Pfeil V] Taste gedrückt wurde?> dann
-				x um (-4) ändern
-			beenden
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		wiederhole fortlaufend
+  			 falls <Taste [Pfeil nach links v] gedrückt?> dann
+     			 ändere x um (-4)
+   			Ende
+		Ende
 	```
 
 + Füge den Code hinzu, um dein Raumschiff nach rechts zu bewegen wenn die rechte Pfeiltaste gedrückt wird.
@@ -51,36 +51,36 @@ Lass uns dem Raumschiff die Fähigkeit verleihen, Blitze abzufeuern!
 
 + Füge das 'Lightning' (Blitze) Sprite von der Scratch Bibliothek hinzu.  Wenn das Spiel beginnt, sollten die Blitze erstmal versteckt bleiben bis das Raumschiff seine Laser-Kanonen feuert. Das Sprite muss viel kleiner und kopfüber sein. Füge den folgenden Code zum 'Lightning' (Blitze) Sprite hinzu.
 
-	```Blöcke
-		wenn grüne Flagge geklickt wurde
-		verstecken
-		Größe auf (25) % einstellen
-		in Richtung (-90 V) zeigen	
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		verstecke dich
+		setze Größe auf (25)%
+		setze Richtung auf (-90 v)	
 	```
 
 
 + Füge den folgenden Code **to the Spaceship** (zum Raumschiff hinzu), um einen neuen Blitz zu erzeugen, wannimmer die Leertaste gedrückt wird.
 
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn < [Leertaste V] Schlüssel gedrückt wird?> dann
-				Klon von [Blitz V] erstellen
-			beenden
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		wiederhole fortlaufend
+   			falls <Taste [Leertaste v] gedrückt?> dann
+      			erzeuge Klon von [Lightning v]
+   		Ende
+	Ende
 	```
 
 + Wannimmer ein neuer Klon erstellt wird, sollte er am gleichen Ort wie das Raumschiff beginnen und dann das Stadium hoch gehen bis er die Kante berührt. Füge den folgenden Code **to the Lightning sprite** (zum Blitze-Sprite hinzu):
 
-	```Blöcke
-		wenn ich als Klon beginne
-		gehe zu [Raumschiff V]
-		zeigen
-		wiederholen bis < [Kante V] berührt wird ?>
-			y um (10) ändern 
-		beenden
-		diesen Klon löschen
+	```blocks
+		Wenn ich als Klon entstehe
+		gehe zu [Spaceship v]
+		zeige dich
+		wiederhole bis <wird [Rand v] berührt?>
+   			ändere y um (10)
+		Ende
+		lösche diesen Klon
 	```
 
 Hinweis: Wir bewegen den neuen Klon zum Raumschiff hin, während es immer noch versteckt ist, ehe wir es dann zeigen. Das sieht schöner aus.
@@ -106,9 +106,9 @@ Lass uns jetzt ganz viele, fliegende Weltraum-Nilpferde, die versuchen, dein Rau
 
 + Stelle dessen Rotationsstil so ein, dass es sich nur links-rechts drehen kann und füge den folgenden Code hinzu, um das Sprite zu verstecken, wenn das Spiel beginnt:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		verstecken
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		verstecke dich
 	```
 
 + Erstelle eine neue Variable namens `speed` {.blockdata} (Geschwindigkeit), die nur für das Nilpferd- Sprite gedacht ist.
@@ -121,27 +121,27 @@ Lass uns jetzt ganz viele, fliegende Weltraum-Nilpferde, die versuchen, dein Rau
 
 + Der folgende Code erzeugt alle paar Sekunden ein neues Nilpferd. **The Stage** (Das Stadium) ist ein guter Platz zur Aufbewahrung dieses Codes:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			warten (zufällig (2) bis (4) Sek. wählen)
-			Klon von [Nilpferd1 V] erstellen
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		wiederhole fortlaufend
+  			warte (Zufallszahl von (2) bis (4)) Sek.
+   			erzeuge Klon von [Hippo1 v]
+		Ende
 	```
 
 + Wenn jeder Nilpferd-Klon beginnt, lasse ihn sich (bei zufällig ausgewählter Geschwindigkeit) rund herum um das Stadium bewegen bis das Nilpferd vom Blitz getroffen wird. Füge diesen Code **to the hippo**  (zum Nilpferd) Sprite hinzu:
 
-	```Blöcke
-		wenn ich als Klon beginne
-		[Geschwindigkeit V] auf (zufällig (2) bis (4) wählen) einstellen
-		gehe zu x: (zufällig (-220) bis (220) wählen) y: (150)
-		zeigen
-		wiederholen bis < [Blitz V] berührt ?>
-			(Geschwindigkeit) Schritte bewegen
-			nach rechts gehen (zufällig (-10) bis (10) Grad wählen) 
-			wenn an der Kante, abprallen
-		beenden
-		diesen Klon löschen
+	```blocks
+		Wenn ich als Klon entstehe
+		setze [speed v] auf (Zufallszahl von (2) bis (4))
+		gehe zu x:(Zufallszahl von (-220) bis (220)) y:(150)
+		zeige dich
+		wiederhole bis <wird [lightning v] berührt?>
+   			gehe (speed) er-Schritt
+   			drehe dich nach rechts um (Zufallszahl von (-10) bis (10)) Grad
+  			 pralle vom Rand ab
+		Ende
+		lösche diesen Klon
 	```
 
 + Teste deinen Nilpferd-Code. Du solltest alle paar Sekunden einen neuen Nilpferd-Klon sehen können, jeder davon bewegt sich zu seiner eigenen Geschwindigkeit.
@@ -160,24 +160,24 @@ Lass uns jetzt ganz viele, fliegende Weltraum-Nilpferde, die versuchen, dein Rau
 
 + Füge diesen Code zu deinem Raumschiff hinzu, damit  es jedes Mal, wenn es mit einem fliegenden Nilpferd zusammenstößt, sein Kostüm ändert:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			Kostüm ändern zu [Normal V]
-			warten bis < [Nilpferd1 V] berührt>?
-			Kostüm ändern zu [wurde getroffen V]
-			[wurde getroffen V] senden
-			(1) Sek. warten
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		wiederhole fortlaufend
+   			wechsle zu Kostüm [normal v]
+   			warte bis <wird [Hippo1 v] berührt?>
+   			wechsle zu Kostüm [hit v]
+   			sende [hit v] an alle
+   			warte (1) Sek.
+		Ende
 	```
 
 + Hast du bemerkt, dass du in dem o.g. Code eine 'hit' (wurde getroffen) Meldung gesendet hast? Du kannst diese Meldung benutzen, um alle Nilpferde verschwinden zu lassen, wenn das Raumschiff getroffen wurde.
 
 	Füge diesen Code zu deinem Nilpferd hinzu:
 
-	```Blöcke
-		wenn ich [wurde getroffen V] erhalten habe
-		diesen Klon löschen
+	```blocks
+		Wenn ich [hit v] empfange
+		lösche diesen Klon
 	```
 
 + Teste diesen Code, indem du ein neues Spiel beginnst und mit einem Nilpferd kollidierst. 
@@ -214,36 +214,36 @@ Lass uns einen Flughund kreieren, der Orangen auf dein Raumschiff wirft.
 
 + Füge den Code für deine Fledermaus hinzu, damit sie alle paar Sekunden einen neuen, orange-farbenen Klon herstellt.
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			warten (zufällig (5) bis (10) Sek. wählen)
-			Klon von [Orange V] herstellen
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		wiederhole fortlaufend
+  			warte (Zufallszahl von (5) bis (10)) Sek.
+   			erzeuge Klon von [Orange v]
+		Ende
 	```
 
 + Klicke auf dein orange-farbenes Sprite und füge diesen Code hinzu, damit jeder orange-farbene Klon das Stadium von der Fledermaus zum Raumschiff hin hinunterfällt:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		verstecken
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		verstecke dich
 
-		wenn ich als Klon beginne
-		gehe zu [Fledermaus1 V]
-		zeigen
-		wiederholen bis <[Kante V] berührt?
-			y um (-4) ändern
-		beenden
-		diesen Klon löschen
+		Wenn ich als Klon entstehe
+		gehe zu [Bat1 v]
+		zeige dich
+		wiederhole bis <wird [Rand v] berührt?>
+  			ändere y um (-4)
+		Ende
+		lösche diesen Klon
 
-		wenn ich [wurde getroffen V] erhalten habe
-		diesen Klon löschen
+		Wenn ich [hit v] empfange
+		lösche diesen Klon
 	```
 
 + In deinem Raumschiff-Sprite musst du deinen Code modifizieren, damit du getroffen wirst, wenn du ein Nilpferd oder eine Orange berührst:
 
-	```Blöcke
-		warten bis < <[Nilpferd1 V] berührt?> oder <[Orange V] berührt?>>
+	```blocks
+		warte bis <<wird [Hippo1 v] berührt?> oder <wird [Orange v] berührt?>>
 	``` 
 
 + Teste dein  Spiel. Was passiert, wenn du von einer herabfallenden Orange getroffen wirst?
@@ -264,18 +264,18 @@ Lass uns eine 'game over' (Spiel-Ende) Meldung zum Ende des Spiel hinzufügen.
 
 + Sende eine `game over` {.blockevents} Meldung in deinem Stadium kurz bevor das Spiel aus ist.
 
-	```Blöcke
-		[ Game Over V] senden und warten
+	```blocks
+		sende [game over v] an alle und warte
 	```
 
 + Füge diesen Code zu deinem 'Game Over' Sprite hinzu, damit die Meldung bei Spiel-Ende angezeigt wird:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		verstecken
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		verstecke dich
 
-		wenn ich [ Game Over V] erhalte
-		zeigen
+		Wenn ich [game over v] empfange
+		zeige dich
 	```
 
 	Weil du einen Block mit `broadcast [ Game over] and wait` {.blockevents} (Game Over und Warten Meldung) in deinem Stadium benutzt hast, wird es darauf warten, dass das 'Game Over' Sprite angezeigt wird, ehe das Spiel beendet wird.
@@ -297,8 +297,8 @@ Welche Verbesserungen kannst du bei deinem Spiel vornehmen? Hier sind ein paar I
 
 + Lass noch mehr Feinde erscheinen, wenn deine Punktzahl auf 100 ansteigt.
 
-```Blöcke
-	warten bis <(Punktzahl) = [100]>
+```blocks
+	warte bis <(score) = [100]>
 ```
 
 ## Projekt speichern { .save }

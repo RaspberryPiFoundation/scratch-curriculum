@@ -5,16 +5,13 @@ layout: project
 notes: "Memory - notes.md"
 ---
 
-## Gemeinschaftsprojekt { .challenge .pdf-hidden }
-Dieses Projekt wurde gemeinsam mit Erik und seiner Tochter Ruth entwickelt. Wenn Du ebenfalls zu einem Projekt beitragen möchtest, [trete gern mit uns über Github in Kontakt](https://github.com/CodeClub).
-
 # Einführung { .intro }
 
 In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
+  <img src="images/colour-final.png">
 </div>
 
 # Schritt 1: Zufällige Farben { .aktivität}

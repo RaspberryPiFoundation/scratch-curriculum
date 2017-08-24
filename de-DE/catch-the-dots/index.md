@@ -29,13 +29,13 @@ Lass uns damit beginnen, einen Controller herzustellen, der dazu benutzt wird, u
 	
 + Drehe deinen Controller nach rechts, wenn die rechte Pfeiltaste gedrückt wird:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn <Schlüssel [rechter Pfeil V] gedrückt?> dann
-				um (3) Grad nach rechts drehen 
-			beenden
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		wiederhole fortlaufend
+  			 falls <Taste [Pfeil nach rechts v] gedrückt?> dann
+      			drehe dich nach rechts um (3) Grad
+   			Ende
+		Ende
 	```
 + Teste deinen Controller: Er sollte sich nach rechts drehen.
 
@@ -58,14 +58,14 @@ Lass uns ein paar Punkte hinzufügen, die der Spieler mit dem Controller einsamm
 
 + Füge dieses Script zu deinem 'red' roten Punkt Sprite hinzu, um alle paar Sekunden einen neuen Punkt-Klon zu erstellen:
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		verstecken
-		(2) Sek. warten
-		für immer
-			erstelle einen Klon von [mir selbst V]
-			(zufällig auswählen(5) bis (10)) Sek. warten
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		verstecke dich
+		warte (2) Sek.
+		wiederhole fortlaufend
+  			 erzeuge Klon von [mir selbst v]
+  			 warte (Zufallszahl von (5) bis (10)) Sek.
+		Ende
 	```
 
 + Wenn jeder Klon erstellt wurde, willst du, dass er in einer der 4 Ecken des Stadiums erscheint.
@@ -78,14 +78,14 @@ Lass uns ein paar Punkte hinzufügen, die der Spieler mit dem Controller einsamm
 
 + Du kannst diese 2 Listen-Artikel benutzen, um eine zufällige Ecke des Stadiums auszuwählen. Füge diesen Code zum 'dot' (Punkt) Sprite hinzu, sodass jeder neue Klon sich in eine zufällig ausgewählte Ecke bewegt und sich dann langsam auf den Controller zubewegt.
 
-	```Blöcke
-		wenn ich als Klon starte
-		gehe zu x: (Artikel (zufällig ausgewählte V) der [Startpositionen V]) y: (Artikel (zufällig ausgewählte V) der [Startpositionen V]) 
-		zeigt zum [Controller V]
-		zeigen
-		wiederholen bis <Berührung von [Controller V]?>
-			um (1) Schritt bewegen
-		beenden
+	```blocks
+		Wenn ich als Klon entstehe
+		gehe zu x:(Element (random v) von [start positions v]) y:(Element (random v) von [start positions v])
+		drehe dich zu [controller v]
+		zeige dich
+		wiederhole bis <wird [controller v] berührt?>
+   			gehe (1) er-Schritt
+		Ende
 	```
 
 	Der o.g. Code wählt entweder `-180` oder `180` für die x _und_ y Positionen, was bedeutet, dass jeder Klon in einer Ecke des Stadiums beginnt.
@@ -100,23 +100,23 @@ Lass uns ein paar Punkte hinzufügen, die der Spieler mit dem Controller einsamm
 
 + Du musst den Code zum Ende deines roten `when I start as a clone` {.blockcontrol} (wenn ich als Klon beginne) Punkt-Codes hinzufügen, damit entweder 1 zur `score` {.blockdata} (Punktzahl) des Spielers hinzugefügt wird, wenn die Farben zueinander passen oder 1 vom `lives` {.blockdata} Leben des Spielers abgezogen wird, wenn die Farben nicht zueinander passen.
 
-	```Blöcke
-		um (5) Schritt bewegen
-		wenn <Farbe berühren [#FF0000]?> dann
-			[Punktzahl V] um (1) ändern
-			Sound [Pop V] spielen
-		oder
-			[Leben V] um (-1) ändern
-			Sound [Laser1 V] spielen
-		beenden
-		diesen Klon löschen
+	```blocks
+		gehe (5) er-Schritt
+		falls <wird Farbe [#FF0000] berührt?> dann
+   			ändere [score v] um (1)
+   			spiele Klang [pop v]
+		sonst
+  			ändere [lives v] um (-1)
+   			spiele Klang [laser1 v]
+		Ende
+		lösche diesen Klon
 	```
 
 + Füge diesen Code zum Ende deines Stadion-Scripts hinzu, damit das Spiel beendet wird, wenn der Spieler alle seine Leben verloren hat:
 
-	```Blöcke
-		warten bis <(Leben) < [1]>
-		[alle V] stoppen
+	```blocks
+		warte bis <(lives) < [1]>
+		stoppe [alles v]
 	```
 
 + Teste dein Spiel, um zu gewährleisten, dass dieser Code wie erwartet funktioniert.
@@ -144,21 +144,21 @@ Lass uns das Spiel noch schwieriger gestalten, je länger der Spieler am Leben b
 
 + Erstelle nun in deinem Stadium ein neues Script, welches die Verzögerung auf eine hohe Zahl einstellt und dann langsam diese Verzögerungszeit drosselt.
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		[Verzögerung V] auf (8) einstellen
-		wiederholen bis < (Verzögerung) = (2)>
-			(10) Sek. warten
-			[Verzögerung V] um (-0.5) ändern
-		beenden
+	```blocks
+		Wenn die grüne Flagge angeklickt
+		setze [delay v] auf (8)
+		wiederhole bis <(delay) = (2)>
+  			 warte (10) Sek.
+  			 ändere [delay v] um (-0.5)
+		Ende
 	```
 
 	Merkst du, dass dies sehr ähnlich wie eine Spielzeituhr funktioniert?
 
 + Abschließend kannst du diese `delay` {.blockdata} (Verzögerung) Variable in deinen roten, gelben und blauen Punkten Scripts benutzen. Entferne den Code, der eine zufällig ausgewählte Zahl an Sekunden zwischen dem Erstellen von Klonen wartet und ersetze ihn mit deiner neuen `delay` {.blockdata} (Verzögerung) Variable:
 
-	```Blöcke
-		(Verzögerung) Sek. warten
+	```blocks
+		warte (delay) Sek.
 	```
 
 + Teste deine neue `delay` {.blockdata} (Verzögerung) Variable und schau, ob die Verzögerung zwischen den einzelnen Punkten langsam gesenkt wird. Funktioniert dies bei allen 3 der bunten Punkte? Kannst du den Wert der `delay` {.blockdata} (Verzögerung) Variable sehen, wie er sich senkt?
@@ -188,11 +188,11 @@ Lass uns die hohe Punktzahl speichern, damit der Spieler sehen kann, wie gut sei
 
 + Füge den Code zu deinem speziell angefertigten Block hinzu, um die aktuelle `score` {.blockdata}  (Punktzahl) als `high score` {.blockdata} (hohe Punktzahl) zu speichern`if` {.blockcontrol} (wenn) sie bis dahin die höchste Punktzahl ist:
 
-	```Blöcke
-		[hohe Punktzahl prüfen] definieren
-		wenn <(Punktzahl) > (hohe Punktzahl)> dann
-			[hohe Punktzahl V] auf (Punktzahl) einstellen
-		beenden
+	```blocks
+		Definiere [object Object]
+		falls <(score) > (high score)> dann
+   			setze [high score v] auf (score)
+		Ende
 	```
 
 + Teste den Code, den du hinzugefügt hast. Spiele dein Spiel, um zu prüfen, ob die `high score` {.blockdata} (hohe Punktzahl) korrekt aktualisiert wurde.

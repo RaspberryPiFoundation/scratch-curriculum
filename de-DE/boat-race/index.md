@@ -10,8 +10,8 @@ notes: "Boat Race - notes.md"
 Du wirst lernen ein Spiel zu programmieren, in dem du mit der Maus ein Boot zur einer Insel steuerst.
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
-  <img src="boat-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
+  <img src="images/boat-final.png">
 </div>
 
 # Schritt 1: Plane dein Spiel { .activity }
@@ -41,13 +41,13 @@ Du wirst lernen ein Spiel zu programmieren, in dem du mit der Maus ein Boot zur 
 + Du wirst das Boot mit deiner Maus Steuern. Füge diesen code zu deinem boot hinzu:
 
 	```blocks
-		when flag clicked
-		point in direction (0 v)
-		go to x: (-190) y: (-150)
+		Wenn die grüne Flagge angeklickt
+		setze Richtung auf (0 v)
+		gehe zu x:(-190) y:(-150)
 		wiederhole fortlaufend
-			point towards [mouse-pointer v]
-			move (1) steps
-		end
+			drehe dich zu [Mauszeiger v]
+   			gehe (1) er-Schritt
+   		Ende
 	```
 
 + Teste dein Boot, indem du die Flagge anklickst und die Maus bewegst. Segelt das Boot in Richtung der Maus?
@@ -79,13 +79,13 @@ Dein Boot kann durch die braunen Holzbalken hindurch segeln! Das ändern wir jet
 + Füge diesen Code zu deinem Boot hinzu, innerhalb der `wiederhole fortlaufend` {.blockcontrol} Schleife. Damit baut dein Boot jedes mal einen Unfall, wenn es einen der braunen Holzbalken berührt:
 
 	```blocks
-		if <touching color [#603C15]?> then
-			switch costume to [Kaputt v]
-			say [Oh Nein!] for (1) secs
-			switch costume to [Normal v]
-			point in direction (0 v)
-			go to x: (-215) y: (-160)
-		end
+		falls <wird Farbe [#603C15] berührt?> dann
+   			wechsle zu Kostüm [hit v]
+   			sage [Oh nein!] für (1) Sek.
+  			wechsle zu Kostüm [normal v]
+  			setze Richtung auf (0 v)
+   			gehe zu x:(-215) y:(-160)
+		Ende
 	```
 
 	Dieser Code gehöhrt in die `wiederhole fortlaufend` {.blockcontrol} Schleife, sodass dein Code immer prüft, ob das Boot einen Unfall gebaut hat oder nicht.
@@ -104,8 +104,8 @@ Kannst du noch ein `falls` {.blockcontrol} Skript zu dem Code deines Bootes, sod
 Wenn das Boot zur gelben Wüsteninsel kommt, soll es 'JA-A-A!' sagen und das Spiel soll anhalten. Du wirst diesen Code benötigen:
 
 ```blocks
-	say [JA-A-A!] for (1) secs
-	stop [all v]
+	sage [JA-A-A!] für (1) Sek.
+	stoppe [alles v]
 ```
 
 ![screenshot](images/boat-win.png)
@@ -130,12 +130,12 @@ Lass uns einen Timer zum Spiel hinzufügen. Damit soll der Spieler versuchen, so
 + Füge diesen Code zu deiner __Bühne__ hinzu, sodass der Timer läuft bis das Boot an der Wüsteninsel ankommt:
 
 	```blocks
-		when flag clicked
-		set [time v] to [0]
-		forever
-			wait (0.1) secs
-			change [time v] by (0.1)
-		end
+		Wenn die grüne Flagge angeklickt
+		setze [time v] auf [0]
+		wiederhole fortlaufend
+   			warte (0.1) Sek.
+  			ändere [time v] um (0.1)
+		Ende
 	```
 
 + Das war's! Teste dein Spiel und versuch, so schnell wie möglich zur Wüsteninsel zu kommen.
@@ -157,9 +157,9 @@ Dieses Spiel ist _viel_ zu leicht - Lass uns ein paar Dinge hinzufügen, um es s
 + Füge jetzt einen anderen Code zu deiner `wiederhole fortlaufend` {.blockcontrol} Schleife hinzu, sodass es 2 _extra_ Schritte macht, wenn es über einen Schubpfeil fährt.
 
 	```blocks
-		if <touching color [#FFFFFF]?> then
-			move (3) steps
-		end
+		falls <wird Farbe [#FFFFFF] berührt?> dann
+   			gehe (3) er-Schritt
+		Ende
 	```
 
 + Du kannst ein drehendes Tor erstellen, das dein Boot meiden soll. Füge ein neues Kostüm dazu und nenne es 'Tor'. So soll es aussehen:
@@ -186,7 +186,7 @@ Kannst Du noch mehr Hindernisse in dein Spiel einbauen? Hier sind ein paar Ideen
 + Du kannst einen Schlammgebiet ins Bühnenbild einfügen, das das Boot verlangsamt, wenn es in den Schlamm reinsegelt. Nutze dafür das `warte` {.blockcontrol} Skript:
 
 ```blocks
-	wait (0.01) secs
+	warte (0.01) Sek.
 ````
 
 ![screenshot](images/boat-algae.png)
@@ -198,15 +198,15 @@ Kannst Du noch mehr Hindernisse in dein Spiel einbauen? Hier sind ein paar Ideen
 Diese Skripte können dir helfen:
 
 ```blocks
-	move (1) steps
-	if on edge, bounce
+	gehe (1) er-Schritt
+	pralle vom Rand ab
 ````
 
 Wenn das neue Objekt ist nicht braun, denke dran, seine Farbe im Code aufzunehmen:
 
 ```blocks
-	if <  <touching color [#603C15]?> or <touching [shark v]?> > then
-	end
+	falls <<wird Farbe [#603C15] berührt?> oder <wird [shark v] berührt?>> dann
+	Ende
 ```
 
 ## Speichere dein Projekt { .save }
@@ -221,16 +221,16 @@ Kannst du das Spiel so ausbauen, dass zwei Spieler das gleichzeitig spielen kön
 + Ändere die Startposition des Spieler 2, indem du diesen Code änderst:
 
 ```blocks
-	go to x: (-190) y: (-150)
+	gehe zu x:(-190) y:(-150)
 ```
 
 + Lösche den Code für die Maussteuerung:
 
 ```blocks
-	if < (distance to [mouse-pointer v]) > [5] > then
-		point towards [mouse-pointer v]
-		move (1) steps
-	end
+	falls <(Entfernung von [Mauszeiger v]) > [5]> dann
+   		drehe dich zu [Mauszeiger v]
+   		gehe (1) er-Schritt
+	Ende
 ```
 
 ...und ersetze ihn mit dem Code für die Tastatursteuerung mit den Pfeiltasten.
@@ -238,9 +238,9 @@ Kannst du das Spiel so ausbauen, dass zwei Spieler das gleichzeitig spielen kön
 Mit diesem Code wird das Boot vorwärts bewegt:
 
 ```blocks
-	if < key [up arrow v] pressed? > then
-		move (1) steps
-	end
+	falls <Taste [Pfeil nach oben v] gedrückt?> dann
+   		gehe (1) er-Schritt
+	Ende
 ```
 
 Du brauchst auch den Code zum `drehen` {.blockmotion} des Boots, wenn der Spieler auf die Pfeiltasten 'Links' oder 'Rechts' drückt.
@@ -251,8 +251,8 @@ Du brauchst auch den Code zum `drehen` {.blockmotion} des Boots, wenn der Spiele
 Kannst du weitere Bühnen erstellen und dem Spieler erlauben, einen Level auszuwählen?
 
 ```blocks
-	when [space v] key pressed
-	next backdrop
+	Wenn Taste [Leertaste v] gedrückt
+	nächstes Bühnenbild
 ```
 
 ## Speichere dein Projekt { .save }

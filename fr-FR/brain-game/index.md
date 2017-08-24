@@ -193,7 +193,8 @@ Afin que votre personnage ne dise pas seulement ` oui! :) ` ou ` non `, ajoutons
 
 	![screenshot](images/brain-animate-function.png)
 
-+Vous pouvez alors ajouter le code d'animation dans votre nouvelle fonction d'animation et utiliser la fonction deux fois:
++ Vous pouvez alors ajouter le code d'animation dans votre nouvelle fonction d'animation et utiliser ensuite la fonction deux fois:
+
 
 	![screenshot](brain-use-function.png)
 
