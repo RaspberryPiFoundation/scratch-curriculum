@@ -1,5 +1,5 @@
 ---
-title: Gehirntraining: Materialien
+title: "Gehirntraining: Materialien"
 layout: project-materials
 Projekt-Ressourcen: 
 Helfer-Ressourcen:
