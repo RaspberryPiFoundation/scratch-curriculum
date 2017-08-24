@@ -1,5 +1,5 @@
 ---
-title: Gehirntraining â€” Volunteer Notes
+title: Gehirntraining - Volunteer Notes
 ---
 
 #Einführung:
