@@ -1,6 +1,6 @@
 ---
-title: Boat Race
-description: "Apprend à programmer un jeu de bateau!"
+title: Course de bateaux 
+description: "Apprends à programmer un jeu de bateau!"
 layout: project
 notes: "Boat Race - notes.md"
 ---
@@ -20,9 +20,9 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 
 + Commencez un nouveau projet de scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver le logicel scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Clic sur votre scène et arrière-plan de votre niveau. Vous devriez ajouter :
-	 + le Bois que votre bateau doit éviter;
-	 + une île déserte vers laquelle votre bateau doit ce rendre.
++ Cliquez sur votre scène et arrière-plan de votre niveau. Vous devriez ajouter :
+	 + Le bois que votre bateau doit éviter;
+	 + Une île déserte vers laquelle votre bateau doit se rendre.
 
 	Voici à quoi votre jeu pourrait ressembler :
 
@@ -41,7 +41,7 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 + Vous allez contrôler le bateau avec votre souris. Ajoutez ce code à votre bateau:
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau cliqué
 		s'orienter vers (0 v)
 		aller à x: (-190) y: (-150)
 		répéter indéfiniment
@@ -54,13 +54,13 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 
 	![screenshot](images/boat-mouse.png)
 
-+ Qu'est ce qui arrive si le bateau atteint l'indicateur de souris ?
++ Qu'est ce qui arrive si le bateau atteint le curseur de souris ?
 
 	Pour arrêter cet événement, vous devrez ajouter le block 'si' {.blockcontrol} à votre code, pour que le bateau se déplace seulement si votre souris est à plus de 5 pixels.
 
 	![screenshot](images/boat-pointer.png)
 
-+ Testez votre bateau de nouveau, vérifier si le problème a été résolut.
++ Testez votre bateau de nouveau, vérifiez si le problème a été résolut.
 
 ## Sauvegarder votre projet { .save }
 
@@ -70,7 +70,7 @@ Votre bateau peut naviguer à travers les barrières en bois!
 
 ## liste de contrôle d'activté { .check }
 
-+ Vous aurez besoin de 2 costumes pour votre bateau, un costume normal et un pour quand le bateau explose. Dupliquez de votre costume de bateau et nommez-les 'normal' et 'coup'.
++ Vous aurez besoin de 2 costumes pour votre bateau, un costume normal et un pour quand le bateau explose. Dupliquez votre costume de bateau et nommez-les 'normal' et 'coup'.
 
 + Cliquez sur le costume 'coup' choisissez ' Sélectionner' l'outil pour saisir et déplacer les morceaux du bateau  et les faire tourner autour. Faites semblant que votre bateau est explosé.
 
@@ -99,7 +99,7 @@ Votre bateau peut naviguer à travers les barrières en bois!
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Victoire! {.challenge}
-Pouvez vous ajouter un autre block `si` {.blockcontrol} au code de votre bateau, pour que le joueur gagne quand ils arrivent à l'île déserte ?
+Pouvez vous ajouter un autre bloc `si` {.blockcontrol} au code de votre bateau, pour que le joueur gagne quand ils arrivent à l'île déserte ?
 
 Quand le bateau arrive à l'île déserte, il devrait dire ' Oui! ' Et ensuite le jeu devrait s'arrêter. Vous devrez utiliser ce code :
 
@@ -119,7 +119,7 @@ Pouvez vous ajouter des effets sonores à votre jeu, si le bateau explose, ou at
 
 # Étape 4 : Course contre la montre { .activity }
 
-Ajoutons un minuteur à votre jeu, pour que le joueur arriver à l'île déserte aussi vite que possible.
+Ajoutons un minuteur à votre jeu, pour que le joueur arrive à l'île déserte le plus rapidement possible.
 
 ## Liste de contrôle d'Activité { .check }
 
@@ -127,7 +127,7 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arriver à l'île déserte
 
 	![screenshot](images/boat-variable-test.png)
 
-+ Ajoutez ce code à votre scène , pour que le minuteur compte jusqu'a ce que le bateau atteignent l'île déserte :
++ Ajoutez ce code à votre scène, pour que le minuteur compte jusqu'a ce que le bateau atteigne l'île déserte :
 
 	```blocks
 		quand le drapeau cliqué
@@ -138,7 +138,7 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arriver à l'île déserte
 		end
 	```
 
-+ C'est ça! Testez votre jeu et essayer d'aller le plus rapidement possible à l'île déserte!
++ C'est ça! Testez votre jeu et essayez d'aller le plus rapidement possible à l'île déserte!
 
 	![screenshot](images/boat-variable-test.png)
 
@@ -146,15 +146,15 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arriver à l'île déserte
 
 # Étape 5 : Obstacles et difficulté  { .activity }
 
-Ce jeu est trop facile ajoutons des choses pour le rendre plus intéressant.
+Ce jeu est trop facile, ajoutons des choses pour le rendre plus intéressant.
 
 ## Liste de contrôle d'activité { .check }
 
-+ D'abord ajoutons quelques 'boosts' à votre jeu, qui accélérera le bateau. Éditez votre scène et ajoutez quelques flèches blanches de rappel.
++ D'abord ajoutons quelques 'boosts' à votre jeu, qui accélérera le bateau. Modifiez votre scène et ajoutez quelques flèches blanches de rappel.
 
 	![screenshot](images/boat-boost.png)
 
-+ Vous pouvez maintenant ajouter un code à votre bateau la boucle `repeter indefiniement` {.blockcontrol}, pour qu'il ce déplace 2x plus vite en touchant un booster blanc.
++ Vous pouvez maintenant ajouter un code à votre bateau, la boucle `repeter indefiniement` {.blockcontrol}, pour qu'il se déplace 2x plus vite en touchant un booster blanc.
 
 	```blocks
 		si < couleur[#FFFFFF] touché?> alors
@@ -166,13 +166,13 @@ Ce jeu est trop facile ajoutons des choses pour le rendre plus intéressant.
 
 	![screenshot](images/boat-gate.png)
 
-	Assurez-vous que la porte est la même couleur que les autres barrières en bois.
+	Assurez-vous que la porte est de la même couleur que les autres barrières en bois.
 
-+ Mettez le centre du lutin 'porte'.
++ Fixez le centre du lutin 'porte'.
 
 	![screenshot](images/boat-center.png)
 
-+ Ajoutez le code à votre porte pour le faire tourner lentement dans le block 'répéter indéfiniment' {.blockcontrol}.
++ Ajoutez le code à votre porte pour le faire tourner lentement dans le bloc 'répéter indéfiniment' {.blockcontrol}.
 
 + Testez votre jeu. Vous devriez maintenant avoir une porte tournante que vous devez éviter.
 
@@ -183,7 +183,7 @@ Ce jeu est trop facile ajoutons des choses pour le rendre plus intéressant.
 ## Défi : Plus d'obstacles! {.challenge .new-page}
 Pouvez-vous ajouter plus d'obstacles pour votre jeu ? Voici quelques idées :
 
-+ Vous pourriez ajouter des marais vert à votre scène, qui ralentirait le joueur quand il les touchent. Vous pouvez utiliser le bloc `attendre` {.blockcontrol}pour faire ceci :
++ Vous pourriez ajouter des marais verts à votre scène, qui ralentiraient le joueur quand il les touche. Vous pouvez utiliser le bloc `attendre` {.blockcontrol}pour faire ceci :
 
 ```blocks
 	attendre (0.01) secondes
@@ -191,7 +191,7 @@ Pouvez-vous ajouter plus d'obstacles pour votre jeu ? Voici quelques idées :
 
 ![screenshot](images/boat-algae.png)
 
-+ Vous pourriez ajouter un objet qui se déplace, comme un rondin ou un requin!
++ Vous pourriez ajouter un objet qui se déplace, comme un tronc ou un requin!
 
 ![screenshot](images/boat-obstacles.png)
 
@@ -214,11 +214,11 @@ Si votre nouvel objet n'est pas brun, vous devrez ajouter à votre code de batea
 ## Défi : Plus de bateaux! {.challenge .new-page}
 Pouvez-vous transformer votre jeu en course entre 2 joueurs ?
 
-+ Dupliquez du bateau, rebaptisez le 'Joueur 2' et changez sa couleur.
++ Dupliquez le bateau, renommez le 'Joueur 2' et changez sa couleur.
 
 ![screenshot](images/boat-p2.png)
 
-+ Changez le Joueur 2 la position de départ, en changeant ce code:
++ Changez la position de départ du Joueur 2, en changeant ce code:
 
 ```blocks
 	aller à x: (-190) y: (-150)
@@ -235,7 +235,7 @@ Pouvez-vous transformer votre jeu en course entre 2 joueurs ?
 
 ...Et remplacez le code pour contrôler le bateau en utilisant les touches de direction.
 
-Ceci est le code pour faire avancer le bateau avec les fleches :
+Ceci est le code pour faire avancer le bateau avec les flèches :
 
 ```blocks
 	si < touche [up arrow v] pressé? > alors
@@ -243,12 +243,12 @@ Ceci est le code pour faire avancer le bateau avec les fleches :
 	end
 ```
 
-Vous aurez aussi besoin du block `tourner` {.blockmotion} pour que le bateau tourne quand les touches de direction gauches et droites sont appuyées.
+Vous aurez aussi besoin du bloc `tourner` {.blockmotion} pour que le bateau tourne quand les touches de direction gauches et droites sont appuyées.
 
 ## Sauvegarder votre projet{ .save }
 
 ## Défi : Plus de niveaux! {.challenge .new-page}
-Pouvez-vous créer des fonds supplémentaires et permettre au joueur de choisir entre les niveaux ?
+Pouvez-vous créer des scènes supplémentaires et permettre au joueur de choisir entre les niveaux ?
 
 ```blocks
 	quand [space v] est pressé

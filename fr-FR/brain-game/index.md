@@ -1,20 +1,20 @@
 ---
-title: Brain Game
-description: "Apprend à programmer ton propre quiz."
+title: Jeu d'ingéniosité 
+description: "Apprends à programmer ton propre quiz."
 layout: project
 notes: "Brain Game - notes.md"
 ---
 
 # Introduction { .intro }
 
-Dans ce projet vous apprendrez à créer un questionnaire sur les tables de multiplication, dans lequel vous devez obtenir autant de réponses corrects que vous pouvez en 30 secondes.
+Dans ce projet, vous apprendrez à créer un questionnaire sur les tables de multiplication, dans lequel vous devez obtenir autant de bonnes réponses que vous le pouvez en 30 secondes.
 
 <div class="scratch-preview">
  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
  <img src="images/brain-final.png">
 </div>
 
-# Étape 1 : Création de questions { .activity }
+# Étape 1 : Création des questions { .activity }
 
 Commençons en créant des questions aléatoires pour le joueur.
 
@@ -22,7 +22,7 @@ Commençons en créant des questions aléatoires pour le joueur.
 
 + Commencez un nouveau projet Scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur Scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Choisissez un personnage et un fond pour votre jeu. Vous pouvez choisir ce que vous aimez! Voici un exemple :
++ Choisissez un personnage et un arrière-plan pour votre jeu. Vous pouvez choisir ce que vous aimez! Voici un exemple :
 
 	![screenshot](images/brain-setting.png)
 
@@ -30,7 +30,7 @@ Commençons en créant des questions aléatoires pour le joueur.
 
 	![screenshot](images/brain-variables.png)
 
-+ Ajoutez le code à votre personnage, mettre ces deux variables 'nombre aléatoire entre' {.blockoperators} 2 et 12.
++ Ajoutez le code à votre personnage afin de mettre ces deux variables à un 'nombre aléatoire entre' {.blockoperators} 2 et 12.
 
 	```blocks
 		quand le drapeau pressé
@@ -38,7 +38,7 @@ Commençons en créant des questions aléatoires pour le joueur.
 		ajouter [numéro 2 v] au (nombre aléatoire (2) à (12))
 	```
 
-+ Vous pouvez alors demander au joueur la réponse et le laisser savoir si c'étaient vrais ou faux.
++ Vous pouvez alors demander la réponse au joueur et lui indiquer si c'était vrai ou faux. 
 
 	```blocks
 		quand le drapeau pressé
@@ -51,35 +51,35 @@ Commençons en créant des questions aléatoires pour le joueur.
 		end
 	```
 
-+ Testez votre projet entièrement, en répondant une fois correctement et une fois avec une mauvaise réponse.
++ Testez votre projet entièrement en répondant une fois avec une bonne réponse et une fois avec une mauvaise réponse.
 
-+Ajoutez la boucle 'répéter indéfiniment' {.blockcontrol} autour de ce code, pour que le joueur ai une infinie de questions.
++Ajoutez la boucle 'répéter indéfiniment' {.blockcontrol} autour de ce code, afin que plusieurs questions soient posées au joueur.
 
-+ Créez un minuteur sur l'étape, utilisant une variable appelée 'temps' {.blockdata}. Le projet 'GhostBuster' possède des instructions pour faire un minuteur (dans l'étape 6) si vous avez besoin d'aide!
++ Créez une minuterie sur la scène en utilisant une variable appelée 'temps' {.blockdata}. Si vous avez besoind d'aide, le projet 'GhostBuster' possède des instructions sur comment créer une minuterie (dans l'étape 6).
 
-+ Testez votre projet de nouveau , vous devriez pouvoir continuer à poser des questions jusqu'à ce que le temps s'écouler.
++ Testez votre projet de nouveau, vous devriez pouvoir continuer à poser des questions jusqu'à ce que le temps soit écoulé.
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Changement de costumes{.challenge}
 
-Pouvez-vous changer les costumes de votre personnage, pour qu'ils ressemble à la réponse du joueur ?
+Pouvez-vous changer les costumes de votre personnage afin qu'il ressemble à la réponse du joueur ?
 
 ![screenshot](images/brain-costume.png)
 
-## Défi : Ajout d'un score {.challenge}
+## Défi : Ajout d'un pointage {.challenge}
 
-Pouvez-vous ajouter un score à votre jeu? Vous pouvez ajouter un point pour chaque réponse correcte. Si vous vous sentez moyens, vous pourriez même remettre le score du joueur à 0 s'ils obtiennent une question fausse!
+Pouvez-vous ajouter un pointage à votre jeu? Vous pouvez ajouter un point pour chaque bonne réponse. Si vous vous sentez malin, vous pourriez même remettre le pointage du joueur à 0 s'il obtient une mauvaise réponse!
 
 ## Sauvegarder votre projet { .save }
 
 # Étape 2 : jeux multiples{ .activity .new-page}
 
-Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer longtemps.
+Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer plusieurs fois.
 
-## Liste de contrôle d'Activité { .check }
+## Liste de contrôle d'activité { .check }
 
-+ Créez un nouvel lutin de bouton 'Jouer', sur lequel votre joueur cliquera pour commencer un nouveau jeu. Vous pouvez le dessiner vous-même, ou éditer un lutin de la bibliothèque de scratch.
++ Créez un nouveau lutin du bouton 'Jouer', sur lequel votre joueur cliquera pour commencer un nouveau jeu. Vous pouvez le dessiner vous-même, ou modifier un lutin de la bibliothèque de Scratch.
 
 	![screenshot](images/brain-play.png)
 
@@ -94,27 +94,27 @@ Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer longtemps.
 		envoyer à tous [début v]
 	```
 
-	Ce code montre le bouton de jeu quand votre projet est commencé. Quand le bouton est cliqué, il est caché et émet ensuite un message qui commencera le jeu.
+	Ce code montre le bouton de jeu lorsque votre projet est commencé. Quand le bouton est cliqué, il est caché et diffuse ensuite un message qui commencera le jeu.
 
-+ Vous devrez éditer le code de votre personnage, pour que le jeu commence quand ils reçoivent le message 'début' {.blockevents} et pas quand le drapeau est cliqué.
++ Vous devrez modifier le code de votre personnage afin que le jeu débute lorsqu'il recevra le message 'début'{.blockevents} et non pas quand le drapeau est cliqué.
 
 	Remplacez le code ` quand le drapeau cliqué ` {.blockevents} par ` quand je reçois le début `{.blockevents}.
 
 	![screenshot](images/brain-start.png)
 
-+ Cliquez sur le drapeau vert et cliquez ensuite sur votre nouveau bouton de jeu pour le tester. Vous devriez voir que le jeu ne commence pas si le bouton n'est cliqué.
++ Cliquez sur le drapeau vert et cliquez ensuite sur votre nouveau bouton de jeu pour le tester. Vous devriez voir que le jeu ne débute pas tant que vous ne cliquez pas sur le bouton.
 
-+ Avez-vous remarqué que le minuteur commence quand le drapeau vert est cliqué et pas quand le jeu commence ?
++ Avez-vous remarqué que la minuterie commence lorsque le drapeau vert est cliqué et non quand le jeu commence?
 
 	![screenshot](images/brain-timer-bug.png)
 
 	Pouvez-vous réparer ce problème ?
 
-+ Le clic sur l'étape et remplace le bloc 'arrêter tout'  {.blockcontrol} avec un message 'fin' {.blockevents}.
++ Cliquez sur la scène et remplacez le bloc 'arrêter tout'  {.blockcontrol} avec le message 'fin' {.blockevents}.
 
 	![screenshot](images/brain-end.png)
 
-+ Vous pouvez maintenant ajouter ce code à votre bouton, pour le montrer de nouveau à la fin de chaque jeu.
++ Vous pouvez maintenant ajouter ce code à votre bouton pour le montrer de nouveau à la fin de chaque jeu.
 
 	```blocks
 		quand je reçois [end v]
@@ -128,13 +128,13 @@ Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer longtemps.
 		stop [D'autres scénarios dans lutin v]
 	```
 
-+ Testez votre bouton de jeu en jouant deux ou trois fois. Vous devriez remarquer que le bouton de jeu apparaît après chaque jeu. Pour tester plus facilement, vous pouvez raccourcir chaque jeu, pour qu'il dure seulement quelques secondes.
++ Testez votre bouton de jeu en jouant deux ou trois fois. Vous devriez remarquer que le bouton de jeu apparaît après chaque jeu. Pour le tester plus facilement, vous pouvez raccourcir chaque jeu afin qu'il ne dure seulement que quelques secondes.
 
 	```blocks
 		mettre [time v] à [10]
 	```
 
-+ Vous pouvez même changer l'apparence du bouton quand la souris passe dessus.
++ Vous pouvez même changer l'apparence du bouton lorsque la souris le survole.
 
 	```blocks
 		quand le drapeau pressé
@@ -150,12 +150,12 @@ Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer longtemps.
 
 	![screenshot](images/brain-fisheye.png)
 
-## sauvegarder votre projet { .save }
+## Sauvegarder votre projet { .save }
 
-## Défi : écran de début{.challenge}
-Pouvez-vous ajouter un autre fond à votre étape, qui deviendra l'écran de début de votre jeu ? Vous pouvez utiliser les blocs ` quand je reçois début ` {.blockevents} et ` quand je reçois fin` {.blockevents} pour commuter entre des fonds.
+## Défi : Écran du début{.challenge}
+Pouvez-vous ajouter un autre arrière-plan à votre scène? Il deviendra l'écran d'accueil de votre jeu. Vous pouvez utiliser les blocs ` quand je reçois début ` {.blockevents} et ` quand je reçois fin` {.blockevents} pour passer d'un arrière-plan à l'autre. 
 
-Vous pouvez aussi montrer et cacher votre personnage votre minuteur en utilisant ces blocs :
+Vous pouvez aussi montrer et cacher votre personnage ainsi que votre minuterie, en utilisant ces blocs :
 ```blocks
 montrer la variable [time v]
 ```
@@ -169,37 +169,38 @@ cacher la variable [time v]
 
 # Étape 3 : Ajout de graphisme { .activity .new-page}
 
-Au lieu de votre personnage disant juste ` oui! :) ` ou ` non ` , ajoutons un graphisme qui permet au joueur de savoir si la réponse est correct ou non.
+Afin que votre personnage ne dise pas seulement ` oui! :) ` ou ` non `, ajoutons un graphisme qui permettra au joueur de savoir si la réponse est bonne ou mauvaise.
 
-+ Créez un nouvel lutin appelé 'le Résultat', contenant les costumes 'coché' et ' croix '.
++ Créez un nouveau lutin appelé 'le Résultat', qui contient les costumes 'coché' et ' croix '.
 
 	![screenshot](images/brain-result.png)
 
-+ Changez le code de votre personnage, pour qu'au lieu de dire `oui` et `non`, cela émette les messages 'correct'{.blockevents} et 'mal' {.blockevents}.
++ Changez le code de votre personnage afin qu'il diffuse les messages 'correct'{.blockevents} et 'mal' {.blockevents} au lieu de dire `oui` et `non`.
 
 	![screenshot](images/brain-broadcast-answer.png)
 
-+ Vous pouvez maintenant utiliser ces messages pour montrer 'coché' ou ' croix '. Ajoutez ce code à votre nouveau lutin 'résultat' :
++ Vous pouvez maintenant utiliser ces messages afin de montrer le costume 'coché' ou ' croix '. Ajoutez ce code à votre nouveau lutin 'résultat' :
 
 	![screenshot](images/brain-show-answer.png)
 
-+ Testez votre jeu de nouveau. Vous devriez voir un coché quand vous obtenez une question correcte et une croix quand vous avez une mauvaise réponse!
++ Testez votre jeu de nouveau. Vous devriez voir un crochet quand vous obtenez une bonne question et une croix quand vous obtenez une mauvaise réponse!
 
 	![screenshot](images/brain-test-answer.png)
 
 + Avez-vous remarquer que le code ` quand je reçois correct ` {.blockevents} et ` quand je reçois mal ` {.blockevents} est presque identique ? Créons une fonction pour rendre la modifiation du code plus facile.
 
-	Sur votre lutin 'Résultat', cliquez sur ` Ajouter blocs ` {.blockmoreblocks}, Et ensuite ' Créer un Bloc '. Créez une nouvelle fonction appelée 'animée' {.blockmoreblocks}.
+	Sur votre lutin 'Résultat', cliquez sur ` Ajouter blocs ` {.blockmoreblocks} et cliquez ensuite sur ' Créer un Bloc '. Créez une nouvelle fonction appelée 'animée' {.blockmoreblocks}.
 
 	![screenshot](images/brain-animate-function.png)
 
 + Vous pouvez alors ajouter le code d'animation dans votre nouvelle fonction d'animation et utiliser ensuite la fonction deux fois:
 
+
 	![screenshot](brain-use-function.png)
 
-+ Maintenant, si vous voulez montrer l'animation plus longtemps, vous devez seulement faire un changement à votre fonction. Essayez!
++ Maintenant, si vous voulez montrer l'animation plus longtemps, vous devez faire un seul changement à votre fonction. Essayez-le!
 
-+ Au lieu de juste montrer et cacher le coche et la croix, vous pourriez changer votre fonction d'animation, pour que le graphisme fasse apparaître en fondu..
++ Plutôt que de simplement afficher et cacher le crochet et la croix, vous pourriez changer votre fonction d'animation afin que le graphisme apparaisse en fondu. 
 
 	```blocks
 		definir [animé]
@@ -213,9 +214,9 @@ Au lieu de votre personnage disant juste ` oui! :) ` ou ` non ` , ajoutons un gr
 
 ## Sauvegarder votre projet { .save }
 
-## Défi : animation Améliorée {.challenge}
+## Défi : Animation améliorée {.challenge}
 
-Pouvez-vous améliorer l'animation de votre graphisme? Vous pourriez coder le coche et la croix pour qu'ils fassent disparaître en fondu aussi bien que fassent apparaître en fondu. Ou, vous pourriez utiliser d'autres effets:
+Pouvez-vous améliorer l'animation de votre graphisme? Vous pourriez coder le crochet et la croix afin qu'ils disparaissent en fondu. Sinon, vous pourriez utiliser d'autres effets:
 
 ![screenshot](images/brain-effects.png)
 
@@ -225,23 +226,23 @@ Pouvez-vous améliorer l'animation de votre graphisme? Vous pourriez coder le co
 
 Pouvez-vous ajouter des effets sonores et de la musique à votre jeu ? Par exemple :
 
-+ Jouer un son quand le joueur obtient une réponse vrai ou faux;
-+ Ajouter un son coché a votre minuteur;
-+ Jouer un son quand le temps est fini;
++ Jouer un son quand le joueur obtient une bonne ou mauvaise réponse;
++ Ajouter un son coché a votre minuterie;
++ Jouer un son lorsque le temps est fini;
 
 	```blocks
 		jouer du tambour (10 v) pendant (0.1) temps
 	```
 
-+ Vous pourriez aussi passer de la musique en boucle (si vous n'êtes pas sûrs comment le faire, l'étape 4 du projet de 'Rock Band' vous aidera.
++ Vous pourriez aussi jouer de la musique en boucle (si vous n'êtes pas certains comment le faire, l'étape 4 du projet de 'Rock Band' vous aidera).
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Course à 10 points {.challenge}
 
-Pouvez-vous changer votre jeu, pour qu'au lieu de répondre à autant de questions qu'ils peuvent en 30 secondes, le joueur doit rapidement obtenir 10 questions correctes ?
+Au lieu de répondre au plus grand nombre de réponses possibles en 30 secondes, pouvez-vous changer votre jeu afin qu'il demande au joueur d'obtenir 10 bonnes réponses le plus rapidement possible?  
 
-Pour ceci faire, vous devrez seulement changer votre code de minuteur. Pouvez-vous voir ce qui doit être changé ?
+Pour ce faire, vous devrez seulement changer votre code de minuterie. Pouvez-vous voir quoi doit être modifié?
 
 ```blocks
 	quand je reçois [début v]
@@ -255,13 +256,13 @@ Pour ceci faire, vous devrez seulement changer votre code de minuteur. Pouvez-vo
 
 ## Sauvegarder votre projet { .save }
 
-## Défi : écran d'instruction{.challenge}
+## Défi : Écran d'instruction{.challenge}
 
-Pouvez-vous ajouter un écran d'instructions à votre jeu, disant a votre joueur comment jouer au jeu ? Vous aurez besoin d'un bouton 'Instructions' et une autre image de fond.
+Pouvez-vous ajouter un écran d'instructions à votre jeu qui dira à votre joueur comment jouer au jeu? Vous aurez besoin d'un bouton 'Instructions' et une autre image de fond.
 
 ![screenshot](images/brain-instructions.png)
 
-Vous pouvez aussi avoir besoin d'un bouton 'retour' pour vous rendre au menu principal.
+Vous aurez peut-être besoin d'un bouton 'retour' pour vous rendre au menu principal.
 
 ```blocks
 	envoyer à tous [menu principal v]
