@@ -1,349 +1,266 @@
 ---
-title: Create Your Own World 
-description: Lerne, wie du dein eigenes Open-World Abenteuerspiel erstellen kannst.
+title: Gehirntraining
+description: Lerne, wie man ein Quiz produziert.
 layout: project
-notes: "Create Your Own World - notes.md"
+notes: "Brain Game - notes.md"
 ---
 
-# Einführung { .intro }
+# Einf�hrung { .intro }
 
-In diesem Projekt lernst du, wie du dein eigenes Open-World Abenteuerspiel anfertigen kannst.
+In diesem Projekt lernst du, wie man ein Multiplikations-Quiz produziert, in dem man so viele Fragen wie m�glich innerhalb von 30 Sekunden richtig beantworten musss.
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
-  <img src="images/world-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
+  <img src="images/brain-final.png">
 </div>
 
-# Schritt 1: Programmiere deinen Spieler { .activity }
+# Schritt 1: Fragen zusammenstellen { .activity }
 
-Lass uns damit beginnen, einen Spieler zu erstellen, der sich rund um deine Welt bewegen kann.
+Lass uns damit beginnen, ein paar beliebig ausgew�hlte Fragen zusammenzustellen, die der Spieler beantworten muss.
 
-## Aktivitäts-Checkliste { .check }
+## Aktivit�ts-Checkliste { .check }
 
-+ Öffne das 'Create Your Own World' (Erstelle deine eigene Welt) Scratch Projekt online unter <a href="http://jumpto.cc/world-go" target="_blank">jumpto.cc/world-go</a> oder lade es von <a href="http://jumpto.cc/world-get" target="_blank">jumpto.cc/world-get</a> herunter und öffne es dann, wenn du den offline Editor benutzt.
++ Starte ein neues Scratch Projekt und l�sche das Katzen-Sprite, damit dein Projekt leer ist. Du findest den online Scratch Editor unter <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
 
-	![screenshot](images/world-starter.png)
++ W�hle eine Spielfigur und einen Hintergrund f�r dein Spiel aus. Du kannst dir aussuchen, was du m�chtest! Hier ist ein Beispiel:
 
-+ Lass uns die Pfeiltasten benutzen, um den Spieler rund ums Spielfeld zu bewegen. Wenn der Spieler die Pfeil-hoch-Taste drückt, dann willst du, dass der Spieler nach oben geht, indem wir dessen y-Koordinaten ändern. Füge diesen Code zum `player` (Spieler) Sprite hinzu:
+	![screenshot](images/brain-setting.png)
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn <Schlüssel [Pfeil hoch V] gedrückt wurde? > dann
-				y um (2) ändern
-			beenden
-		beenden
++ Erstelle 2 neue Variablen namens `number 1` {.blockdata} (Zahl 1) und `number 2` {.blockdata} (Zahl 2). Diese Variablen speichern die beiden Zahlen, die miteinander multipliziert werden sollen.
+
+	![screenshot](images/brain-variables.png)
+
++ F�ge den Code zu deiner Spielfigur hinzu, um beide diese Variablen auf eine Zufallszahl `random` {.blockoperators} zwischen 2 und 12 einzustellen.
+
+	```blocks
+		Wenn die gr�ne Flagge angeklickt
+		setze [number 1 v] auf (Zufallszahl von (2) bis (12))
+		setze [number 2 v] auf (Zufallszahl von (2) bis (12))
 	```
 
-+ Teste deinen Spieler, indem du auf die Flagge klickst und dann die Pfeil-hoch-Taste gedrückt hältst. Bewegt sich dein Spieler nach oben?
++ Du kannst dann den Spieler nach der Antwort fragen und ihn wissen lassen, ob er richtig oder falsch geantwortet hat.
 
-	![screenshot](images/world-up.png)
-
-+ Um den Spieler nach links zu bewegen, musst du einen weiteren `if` {.blockcontrol} (wenn) Block zu deinem Spieler hinzufügen, welcher dann die x-Koordinaten ändert:
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn <Schlüssel [Pfeil hoch V] gedrückt wurde? > dann
-				y um (2) ändern
-			beenden
-			wenn <Schlüssel [linker Pfeil V] gedrückt wurde? > dann
-				x um (-2) ändern
-			beenden
-		beenden
+	```blocks
+		Wenn die gr�ne Flagge angeklickt
+		setze [number 1 v] auf (Zufallszahl von (2) bis (12))
+		setze [number 2 v] auf (Zufallszahl von (2) bis (12))
+		frage (verbinde (number 1) (verbinde [x] (number 2))) und warte
+		falls <(Antwort) = ((number 1) * (number 2))> dann
+  			sage [Ja! :)] f�r (2) Sek.
+		sonst
+   			sage [Nein :(] f�r (2) Sek.
+		Ende
 	```
 
-## Aufgabe: Sich in alle vier Richtungen bewegen {.challenge}
-Kannst du noch mehr Code zu deinem Spieler hinzufügen, damit er sich nach oben, nach unten, nach links oder nach rechts bewegen kann. Benutze den Code, den du bereits hast, um dir hierbei zu helfen!
++ Teste dein Projekt vollst�ndig, indem du eine Frage richtig und eine Frage falsch beantwortest.
+
++ F�ge eine `forever` {.blockcontrol} (f�r immer) Schleife um diesen Code herum hinzu, damit dem Spieler viele Fragen gestellt werden.
+
++ Erstelle einen Countdown-Z�hler in diesem Stadium, der eine Variable namens `time` {.blockdata} (Zeit) benutzt. Das 'Ghostbusters' Projekt beinhaltet Anweisungen dar�ber, wie man einen Z�hler herstellt (in Schritt 5), falls du Hilfestellung ben�tigst!
+
++ Teste dein Projekt erneut: Du solltest jetzt in der Lage sein, weitere Fragen zu stellen, bis die Zeit abgelaufen ist.
 
 ## Projekt speichern { .save }
 
-+ Teste deinen Spieler erneut und du wirst sehen, dass er die Fähigkeit hat, durch die hellgrauen Wände durchzugehen.
+## Aufgabe: Kost�m �ndern {.challenge}
+Kannst du das Kost�m deiner Spielfigur �ndern, sodass sie auf die Antwort des Spielers reagiert?
 
-	![screenshot](images/world-walls.png)
+![screenshot](images/brain-costume.png)
 
-+ Um dieses Problem zu beheben, musst du den Spieler bewegen, aber ihn dann zurück bewegen, wenn er eine hellgraue Wand berührt. Hier ist der Code den du brauchst:
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn <Schlüssel [Pfeil hoch V] gedrückt wurde? > dann
-				y um (2) ändern
-				wenn < Farbe berührt [#BABABA]? > dann
-					y um (-2) ändern
-				beenden
-			beenden
-		beenden
-	```
-
-	Hast du gemerkt, dass der neue `if`{.blockcontrol} (wenn) `touching color`{.blocksensing} (Farbe berührt) Block sich _innerhalb_ des `if`{.blockcontrol} (wenn) `key [up arrow]`{.blocksensing} (Schlüssel [Pfeil hoch]) Blocks befindet?
-
-+ Teste diesen neuen Code, indem du unter die Wand gehst (du solltest nicht in der Lage sein, in die Wand hoch zu gehen).
-
-	![screenshot](images/world-walls-test.png)
-
-+ Lass uns das Gleiche für die linke Pfeiltaste tun, gehe zurück, wenn der Spieler eine Wand berührt. Hier ist, wie der Code für deinen Spieler bislang aussehen sollte:
-
-	![screenshot](images/world-wall-code.png)
-
-## Aufgabe: Repariere die Bewegung deines Spielers {.challenge}
-Füge Code zu deinem Spieler hinzu, damit er nicht in jede Richtung durch die Wand laufen kann. Benutze den Code, den du bereits hast, um dir hierbei zu helfen!
+## Aufgabe: Eine Punktzahl hinzuf�gen {.challenge}
+Kannst du deinem Spiel eine Punktzahl hinzuf�gen? Du kannst einen Punkt f�r jede korrekt beantwortete Frage hinzuf�gen. Wenn du gemein bist, k�nntest du auch die Punktzahl des Spielers wieder zur�ck auf 0 stellen, falls er eine Frage falsch beantwortet hat!
 
 ## Projekt speichern { .save }
 
-# Schritt 2: Programmiere deine Welt { .activity }
+# Schritt 2: Mehrfache Spiele { .activity .new-page}
 
-Lass uns jetzt ermöglichen, dass der Spieler durch die Türen in ein anderes Zimmer gelangen kann!
+Lass uns eine 'play' (spielen) Taste zu deinem Spiel hinzuf�gen, damit du es mehrmals spielen kannst.
 
-## Aktivitäts-Checkliste { .check }
+## Aktivit�ts-Checkliste { .check }
 
-+ Dein Projekt enthält bereits den Hintergrund für weitere Zimmer:
++ Erstelle ein neues 'Play' Sprite als Taste, welche dein Spieler klicken muss, um ein neues Spiel zu beginnen. Du kannst es entweder selbst zeichnen oder ein Sprite aus der Scratch Bibliothek bearbeiten.
 
-	![screenshot](images/world-backdrops.png)
+	![screenshot](images/brain-play.png)
 
-+ Du brauchst eine neue 'for all sprites' (für alle Sprites) Variable namens `room` {.blockdata} (Zimmer), um mitverfolgen zu können, in welchem Zimmer sich der Spieler gerade aufhält. 
++ F�ge diesen Code zu deiner neuen Taste hinzu.
 
-	![screenshot](images/world-room.png)
+	```blocks
+		wenn die Flagge geklickt wird
+		zeigen
 
-+ Wenn der Spieler die orange-farbene Tür im ersten Zimmer berührt, sollte der nächste Hintergrund angezeigt werden und der Spieler sollte sich zurück zur linken Seite des Stadiums bewegen. Hier ist der Code, den du hierfür brauchst: Er sollte innerhalb der `forever` {.blockcontrol} (für immer) Schleife des Spielers eingefügt werden:
-
-	```Blöcke
-		wenn < Farbe berührt [#F2A24A] > dann
-			Hintergrund zu [nächster Hintergrund V] verändern
-			gehe zu x: (-200) y: (0)
-			[Zimmer V] um (1) ändern
-		beenden
-	```
-
-+ Füge diesen Code zum _Start_ deines Spieler-Codes hinzu, (vor der `forever` {.blockcontrol} (für immer) Schleife), um zu gewährleisten, dass alles wieder auf Null gestellt wird, wenn die Flagge angeklickt wird:
-
-	```Blöcke
-		[Zimmer V] zu (1) einstellen
-		gehe zu x: (-200) y: (0)
-		Hintergrund zu [Zimmer1 V] ändern
-	```
-
-+ Klicke die Flagge und bewege deinen Spieler über die orange-farbene Tür. Geht dein Spieler zum nächsten Bildschirm hinüber? Ändert sich die `room` {.blockdata} Zimmer-Variable zu 2?
-
-	![screenshot](images/world-room-test.png)
-
-## Aufgabe: Ins vorherige Zimmer gehen {.challenge}
-Kannst du deinen Spieler ins vorherige Zimmer bewegen, wenn er eine gelbe Tür berührt? Denke daran, dass dieser Code _sehr_ ähnlich sein wird wie der Code, den du bereits hinzugefügt hast, um ins nächste Zimmer zu gelangen.
-
-## Projekt speichern { .save }
-
-# Schritt 3: Schilder { .activity }
-
-Lass uns Schilder zu deiner Welt hinzufügen, um eine Wegweisung für deinen Spieler auf seiner Reise zu bereiten.
-
-## Aktivitäts-Checkliste { .check }
-
-+ Dein Projekt beinhaltet ein Willkommens- Schild Sprite:
-
-	![screenshot](images/world-sign.png)
-
-+ Dieses Schild ist nur in Zimmer 1 sichtbar, lass uns jetzt noch weiteren Code zum Schild hinzufügen, um zu gewährleisten, dass dies passiert:
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn < (Zimmer) = [1] > dann
-				zeigen
-			oder
-				verstecken
-			beenden
-		beenden
-	```
-
-+ Teste dein Schild, indem du zwischen den Zimmern hin- und hergehst. Dein Schild sollte nur in Zimmer 1 sichtbar sein.
-
-	![screenshot](images/world-sign-test.png)
-
-+ Ein Schild nützt aber nicht viel, wenn nichts darauf steht! Lass uns weiteren Code (in einem separaten Block) hinzufügen, um eine Meldung anzuzeigen, wenn das Schild den Spieler berührt:
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		für immer
-			wenn < [Spieler V] berührt? > dann
-				[Willkommen! Kannst du den Schatz finden?] sagen
-			oder
-				[] sagen
-			beenden
-		beenden
-	```
-+ Teste dein Schild und du solltest eine Meldung sehen können, wenn der Spieler es berührt.
-
-	![screenshot](images/world-sign-test2.png)
-
-## Projekt speichern { .save }
-
-## Aufgabe: Schatz gefunden! {.challenge}
-Klicke mit der rechten Maustaste auf das Schatzkisten-Sprite und wähle 'show' (zeigen). 
-
-Kannst du es veranlassen, dass das Schatzkisten-Sprite nur in Zimmer 3 erscheint und dann 'Well done!' (Gut gemacht!) sagen, wenn der Spieler die Kiste berührt?
-
-
-![screenshot](images/world-treasure.png)
-
-## Projekt speichern { .save }
-
-# Schritt 4: Leute { .activity }
-
-Lass uns weitere Leute zu deiner Welt hinzufügen zu denen dein Spieler Umgang hat.
-
-## Aktivitäts-Checkliste { .check }
-
-+ Füge diesen Code zum Personen-Sprite hinzu, sodass diese Person mit deinem Spieler spricht. Dieser Code ist sehr ähnlich zu dem Code, den du bereits zu deinem Schild hinzugefügt hast:
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		gehe zu x: (0) y: (-150)
-		für immer
-			wenn < [Spieler V] berührt? > dann
-				[Wusstest du, dass du durch orange-farbene und gelb-farbene Türen gehen kannst?] sagen
-			oder
-				[] sagen
-			beenden
-		beenden
-	```
-
-+ Du könntest deiner Person auch erlauben, sich zu bewegen, indem du diese beiden Blöcke benutzt:
-
-	```Blöcke
-		(1) Schritt gehen
-		wenn an der Kante, abprallen
-	```
-
-	Deine Person wird anders handeln, je nachdem, ob du diesen Code in der `forever` {.blockcontrol} (für immer)Schleife oder in dem `if` {.blockcontrol} (wenn) Block platzierst. Probier beides mal aus, um zu sehen, welches davon dir besser gefällt.
-
-	![screenshot](images/world-person-test.png)
-
-+ Hast du bemerkt, dass deine Person sich kopfüber dreht? Um dies zu stoppen, klicke auf das Informationssymbol (`i`{.blockmotion}) des Sprites und klicke auf den Punkt, um den Drehungsstil zu reparieren.
-
-	![screenshot](images/world-person-rotate.png)
-
-## Aufgabe: Verbessere deine Person {.challenge}
-Kannst du weiteren Code zu deiner neuen Person hinzufügen, sodass sie nur in Zimmer 1 erscheint? Achte darauf, dass du deinen neuen Code testest!
-
-## Projekt speichern { .save }
-
-+ Du kannst auch ein paar patroullierende Feinde hinzufügen, die das Spiel automatisch beenden, wenn der Spieler sie berührt. Füge ein neues Feind-Sprite hinzu und ändere den Drehungsstil, genau so, wie du es mit dem 'person' Sprite getan hast.
-
-+ Füge den Code zu deinem Feind hinzu, damit er nur in Zimmer 2 erscheint.
-
-+ Du wirst auch Code hinzufügen müssen, um den Feind bewegen zu können und um das Spiel zu beenden, wenn der Feind den Spieler berührt. Es ist leichter, dies in separaten Code-Blöcken zu tun. Hier ist, wie dein Feind-Code aussehen sollte:
-
-	![screenshot](images/world-enemy-code.png)
-
-+ Teste deinen Feind, um sicher zu stellen, dass:
-	+ er nur in Zimmer 2 sichtbar ist;
-	+ er das Zimmer patroulliert;
-	+ das Spiel endet, wenn der Spieler berührt wurde.
-
-## Projekt speichern { .save }
-
-## Aufgabe: Noch mehr Feinde {.challenge}
-Kannst du einen weiteren Feind in Zimmer 3 hinzufügen, der durch die Spalte in der Wand auf- und ab marschiert?
-
-![screenshot](images/world-enemy2.png)
-
-## Projekt speichern { .save }
-
-# Schritt 5: Münzen sammeln { .activity }
-
-## Aktivitäts-Checkliste { .check }
-
-+ Füge eine neue Variable namens `coins` {.blockdata} (Münzen) zu deinem Projekt hinzu.
-
-+ Klicke mit der rechten Maustaste auf das 'coin' (Münzen) Sprite und wähle 'show' (zeigen). 
-
-![screenshot](images/world-coins.png)
-
-+ Füge den Code zu deiner Münze hinzu, sodass sie nur in Zimmer 1 erscheint.
-
-+ Füge Code zu deinem Münzen-Sprite hinzu, um 1 zu deinen `coins` {.blockdata} (Münzen) hinzuzufügen, nachdem eine Münze eingesammelt wurde:
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		warten bis < [Spieler V] berührt?>
-		[Münzen V] um (1) ändern
-		[andere Scripts in Sprite V] stoppen
+		wenn dieses Sprite geklickt wird
 		verstecken
+		[Start V] senden
 	```
 
-	Der Code `stop other scripts in Sprite` {.blockcontrol} (andere Scripts in Sprite stoppen) wird benötigt, damit die Münze nicht länger in Zimmer 1 angezeigt wird, nachdem sie eingesammelt worden ist.
+	Dieser Code zeigt die �Spiel� Taste, wenn dein Projekt gestartet wird. Wenn die Taste geklickt wird, wird sie versteckt und sendet dann eine Meldung, die das Spiel starten wird.
 
-+ Du musst auch Code hinzufügen, um deine `coins` {.blockdata} (Münzen) Variable bei Spielbeginn auf 0 einzustellen.
++ Du musst den Code deiner Spielfigur bearbeiten, damit das Spiel beginnt, wenn die Figur die `start` {.blockevents} Startmeldung erh�lt und nicht erst wenn die Flagge geklickt wird.
 
-+ Teste dein Projekt: Das Sammeln deiner Münzen sollte deine Punktzahl zu 1 ändern.
+	Ersetze den Code `when flag clicked` {.blockevents} (wenn Flagge geklickt wird) mit `when I receive start` {.blockevents} (wenn ich den Start erhalte).
 
-## Aufgabe: Weitere Münzen {.challenge}
-Kannst du noch mehr Münzen zu deinem Spiel hinzufügen? Sie können in einem anderen Zimmer platziert werden und manche Münzen könnten sogar von den patroullierenden Feinden bewacht werden.
+	![screenshot](images/brain-start.png)
 
-# Schritt 6: Türen und Schlüssel { .activity }
++ Klicke die gr�ne Flagge und klicke auf deine neue Spieltaste, um es zu testen. Du solltest sehen k�nnen, dass das Spiel nicht startet, bis die Taste geklickt wird.
 
-## Aktivitäts-Checkliste { .check }
++ Hast du gemerkt, dass die Zeituhr erst startet, wenn die gr�ne Flagge geklickt wird und nicht, wenn das Spiel beginnt?
 
-+ Bearbeite das Kostüm des Schlüssel-Sprites, damit es blau ist. Klicke mit der rechten Maustaste auf das Schlüssel-Sprite und wähle 'show' (zeigen), damit es im Stadium erscheint. Schalte dein Stadium zu Hintergrund 3 und platziere den Schlüssel irgendwo hin, wo er schwierig zu erreichen ist!
+	![screenshot](images/brain-timer-bug.png)
 
- 	![screenshot](images/world-key.png)
+	Kannst du dieses Problem beheben?
 
-+ Achte darauf, dass dein Schlüssel nur in Zimmer 3 sichtbar ist.
++ Klicke auf das Stadium und ersetze den `stop all` {.blockcontrol} (alles stoppen) Block mit einer `end` {.blockevents} (beenden) Meldung.
 
-+ Erstelle eine neue Listenvariable namens `inventory` {.blockdata} (Inventar). Dies wird der Ort sein, an dem du all die Gegenstände, die dein Spieler einsammelt, aufbewahrst, bzw. speicherst.
+	![screenshot](images/brain-end.png)
 
-+ Der Code zum Einsammeln des Schlüssels ist sehr ähnlich wie der Code zum Einsammeln der Münzen. Der Unterschied ist, dass du den Schlüssel zu deinem Inventar hinzufügst.
++ Du kannst jetzt den Code zu deiner Taste hinzuf�gen, um sie bei Spielende erneut zu zeigen.
 
-	```Blöcke
-		wenn Flagge geklickt wurde
-		warten bis < [Spieler V] berührt?>
-		[blauen Schlüssel] zu [Inventar V] hinzufügen
-		[andere Scripts in Sprite V] stoppen
-		verstecken
+	```blocks
+		Wenn ich [Ende v] empfange
+		zeige dich
 	```
 
-+ Teste deinen Schlüssel, um zu sehen, ob du ihn einsammeln kannst und ob du ihn zu deinem Inventar hinzufügen kannst. Denke daran, den Code zu deinem Stadium hinzuzufügen und dein Inventar bei Spielbeginn zu leeren.
++ Du musst auch deine Spielfigur beenden, damit sie keine weiteren Fragen bei Spielende stellt:
 
-	```Blöcke
-		(alle V) von [Inventar V] löschen
+	```blocks
+		Wenn ich [Ende v] empfange
+		stoppe [andere Skripte der Figur v]
 	```
 
-+ Platziere dein blaues Tür-Sprite quer über der Spalte in den beiden Wänden.
++ Teste deine Spieltaste, indem du ein paar Spiele spielst. Du solltest jetzt merken k�nnen, dass die Spieltaste nach jedem Spiel angezeigt wird. Um das Testen leichter zu machen, kannst du jedes Spiel abk�rzen, damit es nur ein paar Sekunden dauert.
 
-	![screenshot](images/world-door.png)
-
-+ Füge Code zu deiner Tür hinzu, damit sie nur in Zimmer 3 sichtbar ist.
-
-+ Du wirst auch deine blaue Tür verstecken müssen, damit dein Spieler daran vorbei gehen kann, nachdem du den blauen Schlüssel in deinem Inventar hast.
-
-	```Blöcke
-		wenn Flagge geklickt wurde
-		warten bis <[Inventar V] [blauen Schlüssel] enthält>
-		[andere Scripts in Sprite V] stoppen
-		verstecken
+	```blocks
+		setze [time v] auf [10]
 	```
 
-+ Teste dein Projekt und schau, ob du den blauen Schlüssel einsammeln kannst, um die Tür zu öffnen!
++ Du kannst auch �ndern, wie die Taste aussieht, wenn die Maus dar�ber gleitet.
+
+	```blocks
+		Wenn die gr�ne Flagge angeklickt
+		zeige dich
+		wiederhole fortlaufend
+   		falls <wird [Mauszeiger v] ber�hrt?> dann
+      		setze [Fischauge v]-Effekt auf (30)
+   		sonst
+      		setze [Fischauge v]-Effekt auf (0)
+   		Ende
+	Ende
+	```
+
+	![screenshot](images/brain-fisheye.png)
 
 ## Projekt speichern { .save }
 
-## Aufgabe: Erstelle deine eigene Welt {.challenge}
-Du kannst jetzt fortfahren, deine eigene Welt zu erstellen. Hier sind ein paar Vorschläge:
+## Aufgabe: Start-Bildschirm {.challenge}
+Kannst du einen weiteren Hintergrund zu deinem Stadium hinzuf�gen, welcher der Start-Bildschirm deines Spiels sein wird? Du kannst die `when I receive start` {.blockevents} (wenn ich den Start-Block erhalte) und `when I receive end` {.blockevents} (wenn ich den Beenden-Block erhalte) benutzen, um zwischen dem Hintergund hin- und herzuschalten.
 
-+ Ändere dein Spielumfeld und deine Spielgrafik;
-+ Füge Sound und Musik zu deinem Spiel hinzu;
-+ Füge weitere Leute, sowie Feinde, Schilder und Münzen hinzu;
-+ Füge rote und gelbe Türen hinzu, die ihre eigenen Schlüssel zum Öffnen benötigen;
-+ Füge weitere Zimmer zu deiner Welt hinzu;
-+ Füge andere, nützliche Gegenstände zu deinem Spiel hinzu;
+Mit Hilfe dieser Bl�cke kannst du deine Spielfigur entweder zeigen oder auch verstecken und sogar die Zeituhr entweder zeigen oder auch verstecken:
 
-+ Benutze Münzen, um Informationen von anderen Leuten zu erhalten;
+```blocks
+zeige Variable [time v]
+```
+```blocks
+verstecke Variable [time v]
+```
 
-	![screenshot](images/world-bribe.png)
-
-+ Du könntest auch Türen im Norden und Süden hinzufügen, damit der Spieler in allen 4 Richtungen zwischen den Zimmern hin- und hergehen kann. Zum Beispiel: Wenn du 9 Zimmer hättest, könntest du sie als ein 3 x 3 Raster betrachten. Du kannst dann die Nummer 3 zur Zimmerzahl hinzufügen, um dich 1 Stufe herunter zu bewegen.
-
-	![screenshot](images/world-north-south.png)
+![screenshot](images/brain-startscreen.png)
 
 ## Projekt speichern { .save }
 
+# Schritt 3: Grafik hinzuf�gen { .activity .new-page}
+
+Anstatt, dass deine Spielfigur nur `yes! :)` (Ja!) oder `nope :(` (Nein) zum Spieler sagt, k�nnen wir jetzt Grafik hinzuf�gen, damit der Spieler wei�, wie es um ihn bestellt ist.
+
++ Erstelle ein neues Sprite namens 'Result' (Ergebnis), das Kost�me mit entweder einem 'tick' (H�kchen) oder einem 'cross' (Kreuz) enth�lt.
+
+	![screenshot](images/brain-result.png)
+
++ �ndere den Code deiner Spielfigur, damit du, statt nur dem Spieler mitzuteilen, welchen Punktestand er erreicht hat, ihm statt dessen auch die entsprechenden `correct` {.blockevents} (richtig) und `wrong` {.blockevents} (falsch) Meldungen senden kannst.
+
+	![screenshot](images/brain-broadcast-answer.png)
+
++ Du kannst jetzt diese Meldungen dazu benutzen, um entweder das 'tick' (H�kchen) oder das 'cross' (Kreuz) Kost�m anzuzeigen. F�ge diesen Code zu deinem neuen 'Result' (Ergebnis) Sprite hinzu:
+
+	![screenshot](images/brain-show-answer.png)
+
++ Teste dein Spiel erneut. Du solltest ein H�kchen sehen k�nnen, wannimmer du eine Frage richtig beantwortet hast und ein Kreuz, wannimer du eine Frage falsch beantwortet hast.
+
+	![screenshot](images/brain-test-answer.png)
+
++ Hast du gemerkt, dass der Code f�r die `when I receive correct` {.blockevents} (wenn ich richtig geantwortet habe) und `when I receive wrong` {.blockevents} (wenn ich falsch geantwortet habe) Bl�cke nahezu identisch ist? Lass uns eine Funktion erstellen, damit es leichter f�r dich ist, �nderungen an deinem Code vorzunehmen.
+
+	Klicke `More Blocks` {.blockmoreblocks} (weitere Bl�cke) auf deinem 'Result' (Ergebnis) Sprite und 'Make a Block' (Block herstellen), stelle dann einen weiteren Block her. Erstelle eine neue Funktion namens `animate` {.blockmoreblocks} (animieren).
+
+	![screenshot](images/brain-animate-function.png)
+
++ Du kannst dann den Animationscode zu deiner neuen Animationsfunktion hinzuf�gen und dann die Funktion zweimal benutzen:
+
+	![screenshot](images/brain-use-function.png)
+
++ Jetzt brauchst du dann nur eine Ver�nderung an deinem Code vorzunehmen, wenn du das H�kchen oder das Kreuz f�r l�ngere, bzw. k�rzere Zeit anzeigen m�chtest. Probier es mal!
+
++ Anstatt das H�kchen und das Kreuz entweder nur zu zeigen oder zu verstecken, kannst du auch die Animationsfunktion �ndern, damit die Grafik eingeblendet wird.
+
+	```blocks
+		Definiere [object Object]
+		setze [Durchsichtigkeit v]-Effekt auf (100)
+		zeige dich
+		wiederhole (25) mal
+  		�ndere [Durchsichtigkeit v]-Effekt um (-4)
+		Ende
+		verstecke dich
+	```
+
+## Projekt speichern { .save }
+
+## Aufgabe: Verbesserte Animation {.challenge}
+Kannst du die Animation deiner Grafik verbessern? Du k�nntest das H�kchen und das Kreuz so programmieren, dass sie ein- oder ausblenden. Oder du k�nntest andere coole Effekte benutzen:
+
+![screenshot](images/brain-effects.png)
+
+## Projekt speichern { .save }
+
+## Aufgabe: Sound und Musik {.challenge}
+Kannst du Sound-Effekte und Musik zu deinem Spiel hinzuf�gen? Zum Beispiel:
+
++ Du k�nntest einen Sound spielen, wenn der Spieler eine Frage entweder richtig oder falsch beantwortet;
++ Du k�nntest einen tickenden-Uhr-Sound zu deinem Countdown-Z�hler hinzuf�gen;
++ Du k�nntest einen Sound spielen, wenn die Zeit abgelaufen ist;
+
+	```blocks
+		spiele Schlaginstrument (10 v) f�r (0.1) Schl�ge
+	```
+
++ Du kannst auch konstant Musik in einer Schleife spielen (wenn du nicht mehr genau wei�t, wie das geht, wird dir Schritt 4 des 'Rock Band' Projekts hierbei als Erinnerungshilfe dienen).
+
+## Projekt speichern { .save }
+
+## Aufgabe: Wettrennen zu 10 Punkten {.challenge}
+Kannst du dein Spiel �ndern, damit (statt so viele Fragen wie m�glich innerhalb von 30 Sekunden richtig zu beantworten) der Spieler sehen kann, wie schnell er 10 Fragen richtig beantworten kann?
+
+Um dies zu tun brauchst du nur den Code deiner Zeituhr zu �ndern. Kannst du sehen, was ge�ndert werden muss?
+
+```blocks
+	Wenn ich [start v] empfange
+	setze [time v] auf (30)
+	wiederhole bis <(time) = [0]>
+   		warte (1) Sek.
+   		�ndere [time v] um (-1)
+	Ende
+	sende [Ende v] an alle
+```
+
+## Projekt speichern { .save }
+
+## Aufgabe: Anweisungsbildschirm {.challenge}
+Kannst du einen Anweisungsbildschirm zu deinem Spiel hinzuf�gen und deinem Spieler mitteilen, wie das Spiel gespielt wird? Du brauchst eine 'Instructions' (Anweisungen) Taste und einen weiteren Stadium Hintergrund.
+
+![screenshot](images/brain-instructions.png)
+
+Du wirst eventuell auch eine 'Back' (Zur�ck) Taste ben�tigen, um wieder zum Hauptmen� zur�ckzugelangen.
+
+```blocks
+	sende [main menu v] an alle
+```
+
+## Projekt speichern { .save }

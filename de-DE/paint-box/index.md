@@ -10,8 +10,8 @@ notes: "Paint Box - notes.md"
 In diesem Projekt wirst Du Dein eigenes Zeichen-Programm entwickeln!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
-  <img src="paint-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe>
+  <img src="images/paint-final.png">
 </div>
 
 # Schritt 1: Einen Bleistift entwerfen { .activity }

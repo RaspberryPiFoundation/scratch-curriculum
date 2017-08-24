@@ -10,8 +10,8 @@ notes: "ChatBot - notes.md"
 In diesem Projekt wirst Du lernen, wie Du Deinen eigenen sprechenden Roboter programmieren kannst!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
-  <img src="chatbot-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
+  <img src="images/chatbot-final.png">
 </div>
 
 # Schritt 1: Dein SprechBot { .activity }
