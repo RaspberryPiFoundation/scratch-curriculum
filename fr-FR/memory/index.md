@@ -1,5 +1,5 @@
-Défi ---
-title: Mémoire
+---
+title: "Mémoire"
 description: Créer un jeu de mémoire, où vous devez mémoriser et répéter une séquence aléatoire de couleurs !
 layout: project
 notes: "Memory - notes.md"
