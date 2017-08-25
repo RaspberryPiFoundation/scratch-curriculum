@@ -57,7 +57,7 @@ Tout d'abord, créons un tambour qui produit un son lorsqu'il est frappé.
 + Maintenant que vous avez 2 costumes différents pour votre tambour, vous pouvez choisir quel costume est affiché! Ajoutez ce code à votre tambour :
 
 	```blocks
-		quand ⚑ cliqué
+		quand le drapeau vert pressé
 		basculer sur le costume [not hit v]
 
 		quand ce lutin est cliqué
