@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 # Introduction { .intro }
 
-In this project you'll learn how to create a platform game, in which you have to dodge the moving balls and reach the end of the level.
+V tomto projektu se naučíš jak vytvořit plošinovku, kde se musíš vyhnout pohybujicí se kouli a dostat se až na konec levelu.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
