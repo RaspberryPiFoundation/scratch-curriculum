@@ -1,13 +1,13 @@
 ---
 title: SOS Fantômes
-description: Apprendre à créer un jeu pour attraper des phantômes !
+description: Apprends à créer un jeu pour attraper des fantômes !
 layout: project
 notes: "Ghostbusters - notes.md"
 ---
 
 # Introduction { .intro }
 
-Vous allez créer un jeu pour attraper des phantômes !
+Vous allez créer un jeu pour attraper des fantômes !
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/60787262/?autostart=false" frameborder="0"></iframe>
@@ -18,13 +18,13 @@ Vous allez créer un jeu pour attraper des phantômes !
 
 ## Liste de contrôle d'Activité { .check }
 
-+ Démarrer un nouveau projet Scratch , et supprimer le lutin "chat" pour que votre projet soit vide. Vous pouvez trouver l'éditeur Scratch en ligne via <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
++ Démarrez un nouveau projet de Scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver l'éditeur scratch en ligne à <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
 
-+ Ajouter un nouveau lutin"phantôme" et un arrière-plan approprié.
++ Ajoutez un nouveau lutin de fantôme et un arrière-plan approprié.
 
 	![screenshot](images/ghost-ghost.png)
 
-+ Ajouter ce code pour le phantôme, il va apparaître et disparaître en boucle :
++ Ajoutez ce code au fantôme pour qu'il apparaisse et disparaisse constamment :
 
 	```blocks
 		when flag clicked
@@ -36,64 +36,64 @@ Vous allez créer un jeu pour attraper des phantômes !
 		end
 	```
 
-+ Tester le code de votre phantôme, en appuyant sur le drapeau vert.
++ Testez le code de votre fantôme en appuyant sur le drapeau vert.
 
 ## Sauvegarder votre projet { .save }
 
-# Étape 2: Phantômes aléatoires { .activity }
+# Étape 2: Fantômes aléatoires { .activity }
 
-Votre phantôme est vraiment trop facile à attraper, car il ne bouge pas !
+Votre fantôme est trop facile à attraper parce qu'il ne bouge pas !
 
 ## Liste de contrôle d'Activité { .check }
 
-+ Au lieu de rester au même endroit, Scratch peut choisir les coordonnées x et y de façon aléatoire. Ajouter un bloc `go to` {.blockmotion} [en français : `aller à`] au code du phantôme pour que ça ressemble à :
++ Au lieu de rester au même endroit, Scratch peut choisir les coordonnées x et y de façon aléatoire. Ajouter un bloc `go to` {.blockmotion} [en français : `aller à`] au code du fantôme pour que ça ressemble à ceci :
 
 	![screenshot](images/ghost-random.png)
 
-+ Tester votre phantôme de nouveau, et vous devrez remarquer qu'il apparaisse chaque fois à un endroit différent.
++ Testez votre fantôme de nouveau et vous devriez remarquer qu'il apparaît dans un endroit différent à chaque fois.
 
 ## Sauvegarder votre projet { .save }
 
-## Challenge: Plus aléatoire {.challenge}
-Pouvez-vous faire [en français : `attendre`] `wait` {.blockcontrol} votre phantôme pendant une durée aléatoire avant de réapparaître ?  Pouvez-vous utiliser le bloc [en français : `mettre à de la taille initiale`] `set size` {.blocklooks} pour donner une taille alétoire à votre phantôme chaque fois qu'il apparaît ?
+## Défi: Plus aléatoire {.challenge}
+Pouvez-vous faire [en français : `attendre`] `wait` {.blockcontrol} votre fantôme pendant une durée de temps aléatoire avant de réapparaître ?  Pouvez-vous utiliser le bloc [en français : `mettre à de la taille initiale`] `set size` {.blocklooks} pour donner une taille aléatoire à votre fantôme à chaque fois qu'il apparaît ?
 
 ## Sauvegarder votre projet { .save }
 
-# Étape 3: Attraper des phantômes { .activity }
+# Étape 3: Attraper des fantômes { .activity }
 
-Donnons la possibilité au joueur d'attraper les phantômes !
+Donnons la possibilité au joueur d'attraper les fantômes !
 
 ## Liste de contrôle d'Activité { .check }
 
-+ Pour permettre au joueur d'attraper un phantôme, ajouter ce code :
++ Pour permettre au joueur d'attraper un fantôme, ajoutez ce code :
 
 	```blocks
 		when this sprite clicked
 		hide
 	```
 
-+ Tester votre projet. Pouvez-vous attraper les phantômes quand qu'ils apparaissent ? Si vous avez du mal à les attraper, vous pouvez jouer en plein écran en cliquant sur le bouton suivant :
++ Testez votre projet. Pouvez-vous attraper les fantômes lorsqu'ils apparaissent ? Si vous avez du mal à les attraper, vous pouvez jouer avec un plein écran en cliquant sur le bouton suivant :
 
 	![screenshot](images/ghost-fullscreen.png)
 
-## Challenge: Ajouter du son { .challenge }
-Pouvez-vous ajouter un bruitage chaque fois qu'on attrape un phantôme ?
+## Défi: Ajouter du son { .challenge }
+Pouvez-vous ajouter un bruit à chaque fois qu'un fantôme est attrapé ?
 
 ## Sauvegarder votre projet { .save }
 
 # Étape 4: Ajouter le score { .activity .new-page }
 
-Rendons les choses plus intéressantes en gardant le score.
+Rendons les choses plus intéressantes en gardant le compte du score.
 
 ## Liste de contrôle d'Activité { .check }
 
-+ Pour garder le score du joueur, il faut le stocker quelque part.Une __variable__ est un endroit pour garder des données qui peuvent changer, commme un score.
++ Pour garder le compte de score du joueur, il faut le stocker quelque part. Une __variable__ est un endroit pour garder des données qui peuvent changer, commme un score.
 
-	Pour créer une variable, cliquer sur l'onglet 'Scripts', selectionnner `Données` {.blockdata} puis cliquer sur 'Créer une variable'.
+	Pour créer une variable, cliquez sur l'onglet 'Scripts', sélectionnez `Données` {.blockdata}, puis cliquez sur 'Créer une variable'.
 
 	![screenshot](images/ghost-score.png)
 
-	Taper 'score' comme nom de variable, vérifier qu'elle est disponible pour tous les lutins, et cliquer sur 'OK' pour la créer. Vous allez ensuite voir un nombre de blocs de code qui peuvent être utilisés avec votre variable `score` {.blockdata}.
+	Tapez 'score' comme nom de variable, vérifiez si ce nom est disponible pour tous les lutins et cliquez sur 'OK' pour créer la variable. Vous allez ensuite voir plusieurs blocs de code qui peuvent être utilisés avec votre variable `score` {.blockdata}.
 
 	![screenshot](images/ghost-variable.png)
 
@@ -101,28 +101,28 @@ Rendons les choses plus intéressantes en gardant le score.
 
 	![screenshot](images/ghost-stage-score.png)
 
-+ Quand nous lançons un nouveau jeu (en cliquant sur le drapeau), vous devez remettre le score à 0 :
++ Lorsque vous commencez un nouveau jeu (en cliquant sur le drapeau), vous devez remettre le score à 0 :
 
 	```blocks
 	when flag clicked
 	set [score v] to [0]
 	```
 
-+ Quand on attrape un phantôme, vous devez ajouter 1 au score :
++ Vous devrez ajouter 1 au score à chaque fois qu'un fantôme sera attrapé :
 
 	![screenshot](images/ghost-change-score.png)
 
-+ Executer votre programme de nouveau et attraper quelques phantômes. Est-ce que votre score change ?
++ Exécutez votre programme de nouveau et attrapez quelques fantômes. Votre score change-t-il ?
 
 ## Sauvegarder votre projet { .save }
 
 # Étape 5: Ajouter un compte à rebours { .activity }
 
-Vous pouvez rendre votre jeu encore plus intéressant, en limitant votre jeu à 10 secondes pour attraper autant de phantômes que possible.
+Vous pouvez rendre votre jeu encore plus intéressant en limitant chaque partie à 10 secondes pour attraper le plus de fantômes possible.
 
 ## Liste de contrôle d'Activité { .check }
 
-+ Vous pouvez utiliser une autre variable pour stocker le temps qui vous reste. Cliquer sur la scène, et créer une nouvelle variable nommée 'time' :
++ Vous pouvez utiliser une autre variable pour stocker le temps qui vous reste. Cliquez sur la scène et créez une nouvelle variable nommée 'time' :
 
 	![screenshot](images/ghost-time.png)
 
@@ -130,9 +130,9 @@ Vous pouvez rendre votre jeu encore plus intéressant, en limitant votre jeu à 
 
 	+ Le compte à rebours devrait commencer à 10 secondes ;
 	+ Le compte à rebours devrait décompter chaque seconde ;
-	+ Le jeu devrait s'arreter quand le compte à rebours arrive à 0.
+	+ Le jeu devrait s'arrêter lorsque le compte à rebours arrive à 0.
 
-	Voici tout le code afin de réaliser ceci, ce que vous pouvez ajouter à votre __scène__ :
+	Voici le code qui vous permettra de réaliser cela. Vous pouvez ajouter celui-ci à votre __scène__ :
 
 	```blocks
 		when flag clicked
@@ -144,36 +144,36 @@ Vous pouvez rendre votre jeu encore plus intéressant, en limitant votre jeu à 
 		stop [all v]
 	```
 
-	Voilà comment ajouter le code de `repeat until`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} :
+	Voici comment vous pouvez ajouter le code `repeat until`{.blockcontrol}`time`{.blockdata}`= 0`{.blockoperators} :
 
 	![screenshot](images/ghost-timer-help.png)
 
-+ Tirer votre variable 'time' vers la droite de votre scène. Vous pouvez aussi faire clique-droit sur l'affichage de la variable et choisir 'grande lecture' afin de changer comment le temps est présenté.
++ Déplacez votre variable 'time' vers le côté droit de votre scène. Vous pouvez aussi faire un clic droit sur l'affichage de la variable et choisir 'grande lecture' afin de changer la présentation du temps.
 
 	![screenshot](images/ghost-readout.png)
 
-+ Demander à un ami de tester votre jeu. Il peut marquer combien de points ? Si votre jeu est trop facile, vous pouvez :
++ Demandez à un ami de tester votre jeu. Combiens de points peut-il marquer ? Si votre jeu est trop facile, vous pouvez :
 
 	+ Donner moins de temps au joueur ;
-	+ Faire en sorte que les phantômes apparaissent moins souvent ;
-	+ Réduire la taille des phantômes.
+	+ Faire en sorte que les fantômes apparaissent moins souvent ;
+	+ Réduire la taille des fantômes.
 
-	Tester votre jeu à quelques reprises jusqu'à vous êtes satisfait qu'il correspond au bon niveau de difficulté.
+	Testez votre jeu à quelques reprises jusqu'à ce que vous soyez satisfaits du niveau de difficulté.
 
 ## Sauvegarder votre projet { .save }
 
-## Challenge: Plus d'objets {.challenge}
+## Défi: Plus d'objets {.challenge}
 Pouvez-vous ajouter d'autres objets à votre jeu ?
 
 ![screenshot](images/ghost-final.png)
 
-Vous devrez penser aux objets que vous alles ajouter. Réfléchir à :
+Vous devrez penser aux objets que vous allez ajouter. Pensez à ces questions :
 
-+ Sa taille ?
-+ Apparait-il plus ou moins souvent que les phantômes ?
-+ A quoi correspond-il au niveau image et son quand on l'attrape ?
-+ Combien de points devrait-on gagner (ou perdre) quand on l'attrape ?
++ Quelle sera sa taille ?
++ Apparaîtra-t-il plus ou moins souvent que les fantômes ?
++ À quoi correspond-il au niveau de l'image et du son lorsqu'on l'attrape ?
++ Combien de points devrait-on gagner (ou perdre) lorsqu'on l'attrape ?
 
-Si vous avez besoin d'aide en ajoutant un autre objet, vous pouvez suivre de nouveau les étapes ci-dessus !
+Si vous avez besoin d'aide pour ajouter un autre objet, vous pouvez suivre de nouveau les étapes ci-dessus !
 
 ## Sauvegarder votre projet { .save }
