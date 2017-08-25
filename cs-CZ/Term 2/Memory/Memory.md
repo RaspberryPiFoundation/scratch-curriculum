@@ -12,37 +12,37 @@ Tento projekt vytvořil Erik se svou dcerou Ruth. Budeme rádi, když přispěje
 
 # Úvod { .intro }
 
-In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
+V tomto projektu vytvoříš hru, kdy si musíš zapamatovat a zopakovat řadu náhodných barev!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
   <img src="colour-final.png">
 </div>
 
-# Step 1: Random colours { .activity }
+# Krok 1: Náhodné barvy { .activity }
 
-First, let's create a character that can change to a random sequence of colours for the player to memorise.
+Vytvořme postavičku, která bude měnit barvy. Tyto si hráč snaží zapamatovat.
 
-## Activity Checklist { .check }
+## Postup { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Vytvoř nový projekt ve Scratchi a smaž kočičí sprite tak, aby byl projekt prázndý. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Choose a character and a backdrop. Your character doesn't have to be a person, but it needs to be able to show different colours.
++ Vyber si postavičku a pozadí _backdrop_. Postavička nemusí být člověk, ale musí být schopná měnit barvy.
 
 	![screenshot](colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ V této hře budeš používat čísla zastupující jednotlivé barvy:
 
-	+ 1 = red;
-	+ 2 = blue;
-	+ 3 = green;
-	+ 4 = yellow.
+	+ 1 = červená;
+	+ 2 = modrá;
+	+ 3 = zelená;
+	+ 4 = žlutá.
 
-	Give your character 4 different colour costumes, one for each of the 4 colours above. Make sure that your coloured costumes are in the right order.
+	Dej svojí postavičce 4 různě barevné oblečky, pro kažou zmíněnou barvu jeden. Zkontroluj, že jsou barvy oblečků ve správném pořadí.
 
 	![screenshot](colour-costume.png)
 
-+ To create a random sequence, you need to create a __list__. A list is just a variable that stores lots of data __in order__. Create a new list called `sequence` {.blockdata}. As only your character needs to see the list, we can also click 'For this sprite only'.
++ Pro náhodnou sekvenci budeš potřebovat  __seznam__. Seznam je jednoduše proměnná, která si pamatuje více hodnot __v určitém pořadí__. Vytvoř nový seznam, který se bude jmenovat `sekvence` {.blockdata}. Seznam bude potřeba pouze pro sprite postavičky, zaklikni také 'Pouze pro tento sprite'.
 
 	![screenshot](colour-list.png)
 
