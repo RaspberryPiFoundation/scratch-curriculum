@@ -1,5 +1,5 @@
 ---
-title: Memory
+title: Paměť
 level: Scratch 2
 language: cs-CZ
 stylesheet: scratch
@@ -7,10 +7,10 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+## Komunitní projekt { .challenge .pdf-hidden }
+Tento projekt vytvořil Erik se svou dcerou Ruth. Budeme rádi, když přispějete i vy svým nápadem, všechen [kód najdete na  Githubu](https://github.com/CodeClub).
 
-# Introduction { .intro }
+# Úvod { .intro }
 
 In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
 
