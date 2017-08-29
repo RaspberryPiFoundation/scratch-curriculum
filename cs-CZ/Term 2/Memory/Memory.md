@@ -27,7 +27,7 @@ Vytvořme postavičku, která bude měnit barvy. Tyto si hráč snaží zapamato
 
 + Vytvoř nový projekt ve Scratchi a smaž kočičí sprite tak, aby byl projekt prázndý. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Vyber si postavičku a pozadí _backdrop_. Postavička nemusí být člověk, ale musí být jednoduché ji přemalovat na jinou barvu.
++ Vyber si postavičku a pozadí scény. Postavička nemusí být člověk, ale musí být jednoduché ji přemalovat na jinou barvu (mít kostýmy).
 
 	![screenshot](colour-sprite.png)
 
@@ -38,7 +38,7 @@ Vytvořme postavičku, která bude měnit barvy. Tyto si hráč snaží zapamato
 	+ 3 = zelená;
 	+ 4 = žlutá.
 
-	Dej svojí postavičce 4 různě barevné kostýmy, pro kažou zmíněnou barvu jeden (zkopíruj první kostým a v editoru změň barvu). Zkontroluj, že jsou barvy oblečků ve správném pořadí.
+	Dej svojí postavičce 4 různě barevné kostýmy, pro kažou zmíněnou barvu jeden (zkopíruj kostým a/nebo v editoru změň barvu). Zkontroluj, že jsou barvy oblečků ve správném pořadí.
 
 	![screenshot](colour-costume.png)
 
