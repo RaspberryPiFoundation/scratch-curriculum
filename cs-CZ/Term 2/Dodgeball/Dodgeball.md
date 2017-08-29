@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*","Project Resources/*"]
 ...
 
-# Introduction { .intro }
+# Úvod { .intro }
 
 V tomto projektu se naučíš jak vytvořit plošinovku, kde se musíš vyhnout pohybujicí se kouli a dostat se až na konec levelu.
 
@@ -16,27 +16,26 @@ V tomto projektu se naučíš jak vytvořit plošinovku, kde se musíš vyhnout 
   <img src="dodge-final.png">
 </div>
 
-# Step 1: Character movement { .activity }
+# Krok 1: Pohyb postavičky { .activity }
 
-Let's start by creating a character that can move left and right, as well as climb up poles.
+Nejdřiv vytvoříme postaviču která se může pohybovat doleva a doprava, a taky šplhat po tyčce.
 
-## Activity Checklist { .check }
+## Postup { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
-
-+ For this project, you should have a 'Project Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Vytvoř nový projekt ve Scratchi a smaž kočičí sprite tak, aby byl projekt prázndý. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Pro tento projekt bys měl mít složku 'Project Resources', kde bude obrázek s pozadím, který budeš chtít. Přesvědč si že víš kde ta složka je, a pokud ne zeptej se tvého vedoucího týmu.
 
 	![screenshot](dodge-resources.png)
 
-+ Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the poles and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
++ Přidej obrázek 'background.png' jako nový pozadí scény, nebo si nakresli vlastní! pPokuid budeš kreslit vlastní úroveň, ujisti se ze tyče a podlahy mají jiné barvy, a že tam jsou dveře (nebo něco jiného) kam musíš se svou postavičkou dojít. Takhle nějak by měl tvůj obrázek vypadat:
 
 	![screenshot](dodge-background.png)
 
-+ Add a new sprite, which will be your character. It's better if you choose a sprite with multiple costumes, so that you can make it look as though it's walking.
++ Přidej nový sprite, který bude tvou postavičkou. Vyber si raději sprite s více kostýmy, aby jsi mohl udělat jako že postavička chodí.
 
 	![screenshot](dodge-characters.png)
 
-+ Let's use the arrow keys to move your character around. When the player presses the right arrow, you want your character to point right, move a few steps and change to the next costume:
++  Budeme používat šípky aby jsi pohyboval postavičkou. Když hráč zmáčkne pravou šipku, chceš aby tvoje postavička se otočila doprava, udělala několik kroků a vyměnila do dalšího kostýmu:
 
 	```blocks
 		when flag clicked
@@ -48,8 +47,7 @@ Let's start by creating a character that can move left and right, as well as cli
 			end
 		end
 	```
-
-+ Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does your character look like they are walking?
++ Vyzkoušej pohyb své postavičky kliknutím na tyčku a pak podržením šipky doprava. Hybe se tvoje postavička doprava? Vypadá tvoje postavička jako že chodí?
 
 	![screenshot](dodge-walking.png)
 
