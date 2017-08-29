@@ -33,22 +33,23 @@ Commençons en créant des questions aléatoires pour le joueur.
 + Ajoutez le code à votre personnage afin de mettre ces deux variables à un 'nombre aléatoire entre' {.blockoperators} 2 et 12.
 
 	```blocks
-		quand le drapeau pressé
-		ajouter [numéro 1 v] au (nombre aléatoire (2) à (12))
-		ajouter [numéro 2 v] au (nombre aléatoire (2) à (12))
+		quand le drapeau vert pressé
+		[number 1 v] prend la valeur (nombre aléatoire entre (2) et (12))
+	[number 2 v] prend la valeur (nombre aléatoire entre (2) et (12))
 	```
 
 + Vous pouvez alors demander la réponse au joueur et lui indiquer si c'était vrai ou faux. 
 
 	```blocks
-		quand le drapeau pressé
-		ajouter [numéro 2 v] à (nombre aléatoire (2) à (12))
-		demander (regroupe (numéro 1)(regroupe [ x ] (numéro 2))) et attendre
-		si <(réponse) = ((numéro 1)*(numéro 2))> alors
-			dire [oui! :)] pendant (2) secondes
+		quand le drapeau vert pressé
+		[number 1 v] prend la valeur (nombre aléatoire entre (2) et (12))
+		[number 2 v] prend la valeur (nombre aléatoire entre (2) et (12))
+		demander (regroupe (number 1) (regroupe [x] (number 2))) et attendre
+		si <(réponse) = ((number 1) * (number 2))> alors
+   			dire [oui! :)] pendant (2) secondes
 		sinon
-			dire [non :(] pendant (2) secondes
-		end
+   			dire [non :(] pendant (2) secondes
+		fin
 	```
 
 + Testez votre projet entièrement en répondant une fois avec une bonne réponse et une fois avec une mauvaise réponse.
@@ -86,10 +87,10 @@ Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer plusieurs fo
 + Ajoutez ce code à votre nouveau bouton.
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		montrer
 
-		quand le drapeau pressé
+		quand ce lutin est cliqué
 		cacher
 		envoyer à tous [début v]
 	```
@@ -131,21 +132,21 @@ Ajoutons un bouton 'jeu' à votre jeu, pour que vous puissiez jouer plusieurs fo
 + Testez votre bouton de jeu en jouant deux ou trois fois. Vous devriez remarquer que le bouton de jeu apparaît après chaque jeu. Pour le tester plus facilement, vous pouvez raccourcir chaque jeu afin qu'il ne dure seulement que quelques secondes.
 
 	```blocks
-		mettre [time v] à [10]
+		[time v] prend la valeur [10]
 	```
 
 + Vous pouvez même changer l'apparence du bouton lorsque la souris le survole.
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		montrer
 		répéter indéfiniment
-		si <touché [pointeure de souris v]?> alors
-			mettre l'effet [oeil de poisson v] à (30)
-		else
-			mettre l'effet [oeil de poisson v] à (0)
-		end
-		end
+   		si <[pointeur de souris v] touché?> alors
+      		choisir l'effet [oeil de poisson v] pour (30)
+   		sinon
+      		choisir l'effet [oeil de poisson v] pour (0)
+   		fin
+		fin
 	```
 
 	![screenshot](images/brain-fisheye.png)
@@ -203,12 +204,12 @@ Afin que votre personnage ne dise pas seulement ` oui! :) ` ou ` non `, ajoutons
 + Plutôt que de simplement afficher et cacher le crochet et la croix, vous pourriez changer votre fonction d'animation afin que le graphisme apparaisse en fondu. 
 
 	```blocks
-		definir [animé]
-		mettre l'effet [fantôme v] à (100)		
+		définir [animate]
+		choisir l'effet [fantôme v] pour (100)
 		montrer
-		répéter (25)
-			ajouter à l'effet [fantôme v] (-4)
-		end
+		répéter (25) fois
+   			ajouter à l'effet [fantôme v] (-4)
+		fin
 		cacher
 	```
 
@@ -245,12 +246,12 @@ Au lieu de répondre au plus grand nombre de réponses possibles en 30 secondes,
 Pour ce faire, vous devrez seulement changer votre code de minuterie. Pouvez-vous voir quoi doit être modifié?
 
 ```blocks
-	quand je reçois [début v]
-	mettre [temps v] à (30)
-	répéter jusqu'à <(temps) = [0]>
-		attendre (1) secondes
-		ajouter à [temps v] (-1)
-	end
+	quand je reçois [start v]
+	[time v] prend la valeur (30)
+	répéter jusqu’à <(time) = [0]>
+   		attendre (1) secondes
+   		ajouter à [time v] (-1)
+	fin
 	envoyer à tous [fin v]
 ```
 
