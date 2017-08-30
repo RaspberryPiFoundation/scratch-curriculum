@@ -5,9 +5,6 @@ layout: project
 notes: "Clone Wars - notes.md"
 ---
 
-## La communauté a contribué pour le projet { .challenge .pdf-hidden }
-Ce projet a été créé avec Eric. Si vous voudriez contribuer à un projet, vous devez vous mettre en contact avec nous sur Github(https://github.com/CodeClub).
-
 # Introduction { .intro }
 
 Dans ce projet, vous apprendrez à créer un jeu dans lequel vous devez sauver la Terre des monstres spatiaux.
@@ -32,12 +29,12 @@ Créons un vaisseau spatial qui défendra la Terre!
 +Ajoutez le code pour déplacer votre vaisseau spatial à gauche lorsque la touche de direction gauche est appuyée. Vous devrez utiliser ces blocs :
 
 	```blocks
-		quand le drapeau prressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			Si <touche [Flèche gauche v] pressé?> alors
-				ajouter (-4) à x
-			end
-		end
+   			si <touche [flèche gauche v] pressée?> alors
+      			ajouter (-4) à x
+   			fin
+		fin
 	```
 
 + Ajoutez le code pour déplacer votre vaisseau spatial à droite quand la touche de direction droite est appuyée.
@@ -59,7 +56,7 @@ Donnons au vaisseau spatial la capacité de renvoyer des coups de tonnerre!
 + Quand le jeu est commencé, la foudre devrait être cachée jusqu'à ce que le vaisseau spatial ne tire ses coups de canon laser.
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		cacher
 	```
 
@@ -67,23 +64,23 @@ Donnons au vaisseau spatial la capacité de renvoyer des coups de tonnerre!
 
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			Si <touche [Espace v] pressé?> alors
-				créer un clone de [Foudre v]
-			end
-		end
+			si <touche [espace v] pressée?> alors
+      			créer un clone de [Lightning v]
+			fin
+		fin
 	```
 
 + Quand un nouveau clone est créé, il devrait commencer au même endroit que le vaisseau spatial et avancer ensuite sur l'étape jusqu'à ce qu'il touche le bord. Ajoutez le code suivant au lutin de foudre :
 
 	```blocks
 		quand je commence comme un clone
-		aller à [Vaisseau spatial v]
+		aller à [Spaceship v]
 		montrer
-		répéter jusqu'à <touché [Bord v] ?>
-			ajouter (10) à y
-		end
+		répéter jusqu’à <[bord v] touché?>
+   			ajouter (10) à y
+		fin
 		supprimer ce clone
 	```
 
@@ -111,7 +108,7 @@ Ajoutons des hippopotames volants qui essaient de détruire votre vaisseau spati
 + Ajuster sa rotation pour qu'elle soit de gauche à droite seulement et puis ajouter le code suivant pour cacher le lutin lorsque le jeu commencera :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		cacher
 	```
 
@@ -126,25 +123,25 @@ Ajoutons des hippopotames volants qui essaient de détruire votre vaisseau spati
 + Le code suivant créera un nouvel hippopotame a quelques secondes d'intervalle. La scène est un bon endroit pour ce code :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			attendre (nombre aléatoires (2) à (4)) secondes
-			créer un clone de [Hippo1 v]
-		end
+   			attendre (nombre aléatoire entre (2) et (4)) secondes
+   			créer un clone de [Hippo1 v]
+		fin
 	```
 
 +Lorsque chaque clone d'hippopotame démarrera, déplacez-le autour de la scène (à une vitesse aléatoire) jusqu'à ce qu'il soit frappé par la foudre. Ajoutez ce code au clone d'hippopotame :
 
 	```blocks
 		quand je commence comme un clone
-		mettre [vitesse v] à (nombre aléatoire (2) à (4))
-		aller à x: (nombre aléatoire (-220) à (220)) y: (150)
+		[speed v] prend la valeur (nombre aléatoire entre (2) et (4))
+		aller à x:(nombre aléatoire entre (-220) et (220)) y:(150)
 		montrer
-		répéter jusqu'à <touché [Foudre v] ?>
-			s'orienter vers (vitesse)
-			tourner à droite (nombre aléatoire  (-10) à (10)) degrés
-			rebondir si le bord est atteint
-		end
+		répéter jusqu’à <[lightning v] touché?>
+   			avancer de (speed)
+   			tourner droite de (nombre aléatoire entre (-10) et (10)) degrés
+   			rebondir si le bord est atteint
+		fin
 		supprimer ce clone
 	```
 
@@ -165,14 +162,14 @@ Ajoutons des hippopotames volants qui essaient de détruire votre vaisseau spati
 + Ajoutez ce code à votre vaisseau spatial pour qu'il change de costume a chaque fois qu'il entre en collision avec un hippopotame volant :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			basculer sur costume [normal v]
-			attendre jusqu'à <touché [Hippo1 v]>?
-			basculer sur costume [coup v]
-			envoyer à tous [coup v]
-			attendre (1) secondes
-		end
+   			basculer sur costume [normal v]
+   			attendre jusqu’à <[Hippo1 v] touché?>
+   			basculer sur costume [hit v]
+   			envoyer à tous [hit v]
+   			attendre (1) secondes
+		fin
 	```
 
 + Avez-vous remarqué que vous avez l'émission du message 'hit' dans le code ci-dessus ? Vous pouvez utiliser ce message pour faire disparaître tous les hippopotames lorsque le vaisseau spatial est touché.
@@ -219,35 +216,35 @@ Créons une chauve-souris qui jette des oranges à votre vaisseau spatial.
 + Ajoutez le code à votre chauve-souris, pour qu'il créé une nouvelle orange à quelques secondes d'intervalle.
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			attendre (nombre aléatoires (5) et (10)) secondes
-			créer un clone de [Orange v]
-		end
+   			attendre (nombre aléatoire entre (5) et (10)) secondes
+   			créer un clone de [Orange v]
+		fin
 	```
 
 + Cliquez sur votre lutin orange et ajoutez ce code pour faire tomber chaque clone 'orange' en bas de la scène, de la chauve-souris vers le vaisseau spatial :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		cacher
 
 		quand je commence comme un clone
-		aller à [chauvesouris1 v]
+		aller à [Bat1 v]
 		montrer
-		répéter jusqu'à <touché [Bord v]?
-			ajouter (-4) à y
-		end
+		répéter jusqu’à <[bord v] touché?>
+   			ajouter (-4) à y
+		fin
 		supprimer ce clone
 
-		quand je reçois [coup v]
+		quand je reçois [hit v]
 		supprimer ce clone
 	```
 
 + Dans votre lutin de vaisseau spatial, vous devrez modifier votre code pour que vous soyez frappés si vous touchez un hippopotame ou une orange :
 
 	```blocks
-		attendre jusqu'à < <touché [Hippo1 v]?> ou <touché [Orange v]?>>
+		attendre jusqu’à <<[Hippo1 v] touché?> ou <[Orange v] touché?>>
 	```
 
 + Testez votre jeu. Qu'arrive-t-il si vous êtes frappés par une orange?
@@ -275,7 +272,7 @@ Ajoutons un message 'Game Over' à la fin du jeu.
 + Ajoutez ce code à votre lutin 'Game Over' pour que le message puisse apparaître à la fin du jeu :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		cacher
 
 		quand je reçois [game over v]
@@ -302,7 +299,7 @@ Quelles améliorations pouvez-vous faire à votre jeu ? Voici quelques idées :
 + Faites apparaître plus d'ennemis lorsque votre score arrive à 100.
 
 ```blocks
-	attendre jusqu'à <(score) = [100]>
+	attendre jusqu’à <(score) = [100]>
 ```
 
 ## Sauvegarder votre projet { .save }
