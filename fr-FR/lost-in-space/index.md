@@ -230,7 +230,7 @@ Vous devrez changer les chiffres de ce bloc :
 	```blocks
 		quand le drapeau vert pressé
 		répéter indéfiniment
-		   tourner ↻ de (1) degrés
+		   tourner droite de (1) degrés
 	```
 
 	![screenshot](images/space-monkey-loop.png)

@@ -85,12 +85,12 @@ Lass uns eine 'play' (spielen) Taste zu deinem Spiel hinzufügen, damit du es me
 + Füge diesen Code zu deiner neuen Taste hinzu.
 
 	```blocks
-		wenn die Flagge geklickt wird
-		zeigen
+		Wenn die grüne Flagge angeklickt
+		zeige dich
 
-		wenn dieses Sprite geklickt wird
-		verstecken
-		[Start V] senden
+		Wenn ich angeklickt werde
+		verstecke dich
+		sende [start v] an alle
 	```
 
 	Dieser Code zeigt die „Spiel“ Taste, wenn dein Projekt gestartet wird. Wenn die Taste geklickt wird, wird sie versteckt und sendet dann eine Meldung, die das Spiel starten wird.

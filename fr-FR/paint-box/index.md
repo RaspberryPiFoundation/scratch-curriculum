@@ -37,7 +37,7 @@ Commençons par créer un crayon qui peut être utilisé pour dessiner sur la sc
 + Comme vous utiliserez la souris pour dessiner, vous voudrez que le crayon suive la souris `répéter indéfiniment` {.blockcontrol}. Ajoutez ce code à votre lutin de crayons :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répeter indéfiniment
 		  aller à [mouse pointer v]
 		end
@@ -109,7 +109,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 	```blocks
 		quand je reçois [green v]
 		basculer sur costume [pencil-green v]
-		choisir la couleur [#00ff00] pour le stylo
+		mettre la couleur du stylo à [#00ff00]
 	```
 
 	Pour faire colorier le crayon en vert, cliquez sur la boîte colorée dans le bloc `choisir la couleur` {.blockpen}, cliquez sur l'icône de sélecteur verte pour choisir vert comme couleur de crayon.
@@ -126,7 +126,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 	```blocks
 		quand je reçois [blue v]
 		basculer sur costume [pencil-blue v]
-		choisir la couleur [#0000ff] pour le stylo
+		mettre la couleur du stylo à [#0000ff]
 	```
 
 + Quand votre projet est commencé, ajoutez ce code au début du crayon `Quand le drapeau pressé` {.blockevents} (avant la boucle 'répéter indéfiniment' {.blockcontrol}):
@@ -134,7 +134,7 @@ Ajoutons des stylos de différentes couleurs à votre projet et permettons à l'
 	```blocks
 		effacer tout
 		basculer sur costume [blue-pencil v]
-		choisir la couleur [#0000ff] pour le stylo
+		mettre la couleur du stylo à [#0000ff]
 	```
 
 	Si vous préférez, vous pouvez commencer par un crayon de couleur différente!
@@ -186,7 +186,7 @@ Parfois, les erreurs arrivent. Ajoutons le boutton 'Nettoyer' et une gomme à ef
 	```blocks
 		quand je reçois [eraser v]
 		basculer sur costume [eraser v]
-		choisir la couleur [#FFFFFF] pour le stylo
+		mettre la couleur du stylo à [#FFFFFF]
 	```
 
 + Testez votre projet, regardez si vous pouvez annuler et effacer sur l'étape.
@@ -218,10 +218,10 @@ Permettons à l'utilisateur de dessiner grâce à l'utilisation d'une gamme de t
 + Ajoutez cette ligne à l'intérieur de la boucle `répéter indéfiniment` {.blockcontrol} du code de votre crayon :
 
 	```blocks
-		Taille de stylo d'ensemble à (largeur)
+		choisir la taille (width) pour le stylo
 	```
 
-	Votre largeur de crayon sera maintenant mise à la valeur de votre variable 'Largeur' à plusieurs reprises.
+	Votre largeur de crayon sera maintenant mise à la valeur de votre variable 'width' à plusieurs reprises.
 
 + Vous pouvez changer le nombre stocké dans cette variable en cochant votre variable (dans le scripts) et avec un clic droit, choisissez 'potentiomètre'.
 

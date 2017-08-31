@@ -46,8 +46,7 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 	```blocks
 		quand ce lutin est cliqué
 		demander [Hé! Comment vous appelez-vous ?] et attendre
-		dire [Quel charmant 
-		!] pendant (2) secondes
+		dire [Quel charmant!] pendant (2) secondes
 	```
 
 + Cliquez sur votre chatbot pour le tester. Lorsque l'on vous demande votre nom, tapez-le dans la boîte de dialogue en bas de l'étape.
@@ -59,7 +58,7 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 	```blocks
 		quand ce lutin est cliqué
 		demander [Hey! Comment vous appelez-vous?] et attendre
-		dire <regroupe [salut] (Réponse)> pendant (2) secondes
+		dire <regroupe [Salut] (Réponse)> pendant (2) secondes
 	```
 
 	Pour créer le dernier bloc, vous devrez ajouter un bloc vert `regroupe` {.blockoperators} et déplacer celui-ci sur le bloc `dire` {.blocklooks}.
@@ -80,9 +79,9 @@ Maintenant que vous avez un chatbot avec une personnalité, programmons-le pour 
 
 	```blocks
 		quand ce lutin est cliqué
-		demander [Hey! Comment t'appelles-tu?
-		mettre [nom v] à (réponse)
-		dire <regroupe [Sava] (nom)> pendant (2) secondes
+		demander [Hey! Comment t'appelles-tu?] et attendre
+		[nom v] prend la valeur (réponse)
+		dire <regroupe [Salut] (nom)> pendant (2) secondes
 	```
 
 + Si vous testez votre programme de nouveau, vous remarquerez que la réponse est stockée dans le `nom` {.blockdata} en montrant la variable en haut à gauche de l'étape. La variable `nom` {.blockdata} devrait maintenant contenir la même valeur que la variable `réponse` {.blocksensing}.
@@ -110,14 +109,14 @@ Vous pouvez programmer votre chatbot pour décider que faire, en fonction des r�
 + Posons une question à votre chatbot et l'utilisateur qui répond `oui` ou `non`. Voici un exemple, mais vous pouvez changer la question si vous voulez:
 
 	```blocks
-		quaand ce lutin est cliqué
+		quand ce lutin est cliqué
 		demander [Hey! Comment t'appelles-tu?] et attendre
-		mettre [nom v] à (réponse)
-		dire <regroupe [Hi ] (nom)> pendant (2) secondes
-		demander <regroupe [Tu vas bien?] (nom)> et attendre
-		si ((réponse)=[oui]) alors
-			dire [ C'est super ] pendant (2) secondes
-		end
+		[nom v] prend la valeur (réponse)
+		dire <regroupe [Salut] (nom)> pendant (2) secondes
+		demander <regroupe [Tu vas bien] (name)> et attendre
+		si ((réponse) = [oui]) alors
+   			dire [C'est super!] pendant (2) secondes
+		fin
 	```
 
 + Pour tester ce programme correctement, vous devrez le tester deux fois - une fois en tapant "non" et une fois en tapant 'oui'. Vous devriez seulement obtenir une réponse de votre chatbot `if` {.blockcontrol} vous répondez `oui`.
@@ -126,11 +125,11 @@ Vous pouvez programmer votre chatbot pour décider que faire, en fonction des r�
 	```blocks
 		quand ce lutin est cliqué
 		demander [Hey! Comment vous appelez-vous ?] et attendre
-		mettre [nom v] à (réponse)
-		dire <regroupe [Hi ] (nom)> pendant (2) secondes
-		demander <regroupe [Vous allez bien? ] (nom)> et attendre
+		[nom v] prend la valeur (réponse)
+		dire <regroupe [Salut] (nom)> pendant (2) secondes
+		demander <regroupe [Vous allez bien?] (nom)> et attendre
 		si ((réponse)=[oui]) alors
-			dire [C'est super !] pendant (2) secondes
+			dire [C'est super!] pendant (2) secondes
 		sinon
 			dire [Oh non!] pendant (2) secondes
 		end
@@ -151,10 +150,10 @@ Vous pouvez programmer votre chatbot pour décider que faire, en fonction des r�
 		quand ce lutin est cliqué
 		basculer sur costume [nano-a v]
 		demander [Hey! Comment vous appelez-vous ?] et attendre
-		mettre [nom v] à (réponse)
-		dire <regroupe [Sava ] (nom)> pendant (2) secondes
+		[nom v] prend la valeur (réponse)
+		dire <regroupe [Salut] (nom)> pendant (2) secondes
 		demander <regroupe [Vous allez bien?] (nom)> et attendre
-		si ((réponse)=[youi]) alors
+		si ((réponse)=[oui]) alors
 			basculer sur costume [nano-c v]
 			dire [C'est super pour entendre!] pendant (2) secondes
 		sinon
@@ -188,7 +187,7 @@ Vous pouvez aussi programmer votre chatbot pour changer son emplacement.
 + Vous pouvez maintenant programmer votre chatbot pour changer l'emplacement en ajoutant ce code à votre chatbot :
 
 	```blocks
-		 demander [je vais à la lune. Voulez-vous venir avec moi ?] et attendre
+		 demander [Je vais à la lune. Voulez-vous venir avec moi ?] et attendre
 		si ((réponse) = [oui]) alors
 			basculer sur l'arrière-plan [lune v]
 		end

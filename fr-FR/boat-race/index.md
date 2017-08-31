@@ -41,13 +41,13 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 + Vous allez contrôler le bateau avec votre souris. Ajoutez ce code à votre bateau:
 
 	```blocks
-		quand le drapeau cliqué
-		s'orienter vers (0 v)
-		aller à x: (-190) y: (-150)
+		quand le drapeau vert pressé
+		s'orienter à (0 v)
+		aller à x:(-190) y:(-150)
 		répéter indéfiniment
-			s'orienter vers [mouse-pointer v]
-			avancer de (1)
-		end
+   			s'orienter vers [pointeur de souris v]
+   			avancer de (1)
+		fin
 	```
 
 + Testez votre jeu, en cliquant sur le drapeau et en déplaçant la souris. Le bateau navigue-t-il vers la souris ?
@@ -79,13 +79,13 @@ Votre bateau peut naviguer à travers les barrières en bois!
 + Ajoutez ce code à votre bateau, à l'intérieur de la boucle 'répéter indéfiniment' {.blockcontrol}, pour qu'il s'effondre quand il touche des morceaux en bois :
 
 	```blocks
-		si <couleur [#603C15] touché?> alors
-			basculer sur costume [hit v]
-			dire [Noooooon!] pendant (1) secondes
-			basculer sur costume [normal v]
-			s'orienter vers (0 v)
-			aller à x: (-215) y: (-160)
-		end
+		si <couleur [#603C15] touchée?> alors
+   			basculer sur costume [hit v]
+  			dire [Noooooon!] pendant (1) secondes
+   			basculer sur costume [normal v]
+   			s'orienter à (0 v)
+   			aller à x:(-215) y:(-160)
+		fin
 	```
 
 	Ce code est à l'intérieur de la boucle 'répéter indéfiniment' {.blockcontrol}, pour que votre code continue de vérifier si le bateau est explosé.
@@ -130,12 +130,12 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arrive à l'île déserte 
 + Ajoutez ce code à votre scène, pour que le minuteur compte jusqu'a ce que le bateau atteigne l'île déserte :
 
 	```blocks
-		quand le drapeau cliqué
-		mettre [time v] à [0]
+		quand le drapeau vert pressé
+		[time v] prend la valeur [0]
 		répéter indéfiniment
-			attendre (0.1) secondes
-			mettre [time v] à (0.1)
-		end
+   			attendre (0.1) secondes
+   			ajouter à [time v] (0.1)
+		fin
 	```
 
 + C'est ça! Testez votre jeu et essayez d'aller le plus rapidement possible à l'île déserte!
@@ -227,10 +227,10 @@ Pouvez-vous transformer votre jeu en course entre 2 joueurs ?
 + Supprimez le code qui utilise la souris pour contrôler le bateau :
 
 ```blocks
-	si < (distance de [mouse-pointer v]) > [5] > alors
-		s'orienter vers [mouse-pointer v]
-		avancer de (1)
-	end
+	si <(distance de [pointeur de souris v]) > [5]> alors
+   		s'orienter vers [pointeur de souris v]
+   		avancer de (1)
+	fin
 ```
 
 ...Et remplacez le code pour contrôler le bateau en utilisant les touches de direction.
@@ -238,9 +238,9 @@ Pouvez-vous transformer votre jeu en course entre 2 joueurs ?
 Ceci est le code pour faire avancer le bateau avec les flèches :
 
 ```blocks
-	si < touche [up arrow v] pressé? > alors
-		avancer de (1)
-	end
+	si <touche [flèche haut v] pressée?> alors
+   		avancer de (1)
+	fin
 ```
 
 Vous aurez aussi besoin du bloc `tourner` {.blockmotion} pour que le bateau tourne quand les touches de direction gauches et droites sont appuyées.

@@ -38,13 +38,14 @@ Commençons par créer un personnage qui peut se déplacer à gauche et à droit
 + Utilisons les touches de direction pour déplacer votre personnage. Quand le joueur appuie sur la flèche droite, vous voulez que votre personnage pointe à droite, se déplace de quelques pas et change de costume:
 
 	```blocks
-		quand le drapeau cliqué
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			si <touche [right arrow v] pressée? > alors
-				avancer de (3)
-				costume suivant
-			end
-		end
+   			si <touche [flèche droite v] pressée?> alors
+     			s'orienter à (90 v)
+      			avancer de (3)
+      			costume suivant
+   			fin
+		fin
 	```
 
 + Testez votre personnage en cliquant sur le drapeau et maintenez la touche de direction droite. Votre joueur se déplace-t-il à droite ? Votre personnage marche-t-il ?
@@ -56,9 +57,9 @@ Commençons par créer un personnage qui peut se déplacer à gauche et à droit
 + Pour monter une échelle rose, votre personnage devrait avancer légèrement en haut quand la flèche du haut est appuyée et qu'il touche la bonne couleur. Ajoutez ce code à l'intérieur de la boucle `répéter indéfiniment` {.blockcontrol} de votre personnage :
 
 	```blocks
-		Si < <touche [up arrow v] pressé?> et <couleur touche [#FFFF00]?> > alors
-			ajouter (4) à y
-		end
+		si <<touche [flèche haut v] pressée?> et <couleur [#FFFF00] touchée?>> alors
+   			ajouter (4) à y
+		fin
 	```
 
 + Testez votre personnage - pouvez-vous monter sur les échelles roses et arriver à la fin de votre niveau ?
@@ -91,11 +92,11 @@ Déplaçons votre personnage plus réellement en ajoutant de la gravité et en l
 + Ajoutez ce nouveau bloc de code ce qui ajuste la gravité à un nombre négatif. Celui-ci sera ensuite utilisé à plusieurs reprises pour changer la coordonnée Y de votre personnage.
 
 	```blocks
-		quand le drapeau pressé
-		mettre [gravity v] à [-4]
-		répeter indéfiniment
-			ajouter y par (gravity)
-		end
+		quand le drapeau vert pressé
+		[gravity v] prend la valeur [-4]
+		répéter indéfiniment
+   			ajouter (gravity) à y
+		fin
 	```
 
 + Cliquez sur le drapeau et traînez ensuite votre personnage au sommet de la scène. Qu'est-ce qui arrive ? La gravité marche-t-elle ?
@@ -105,13 +106,13 @@ Déplaçons votre personnage plus réellement en ajoutant de la gravité et en l
 + La gravité ne devrait pas déplacer votre personnage à travers une plateforme ou une échelle! Ajoutez un bloc `si ` {.blockcontrol} à votre code pour que la gravité puisse marcher seulement quand votre personnage est dans les airs. Le code de gravité devrait maintenant ressembler à ceci :
 
 	```blocks
-		quand le drapeau est pressé
-		mettre [gravity v] à [-4]
+		quand le drapeau vert pressé
+		[gravity v] prend la valeur [-4]
 		répéter indéfiniment
-			Si < non < <couleur [#0000FF] touchée?> ou <couleur [#FFFF00] touchée?> > > alors
-				ajouter y par (gravity)
-			end
-		end
+  			si <non <<couleur [#FFFF00] touchée?> ou <couleur [#FF69B4] touchée?>>> alors
+      			ajouter (gravity) à y
+   			fin
+		fin
 	```
 
 + Testez la gravité de nouveau. Votre personnage s'arrête-t-il quand il est sur une plateforme ou une échelle ? Pouvez-vous vous éloignez du bord des plateformes et atterir sur le niveau ci-dessous ?
@@ -137,12 +138,12 @@ Déplaçons votre personnage plus réellement en ajoutant de la gravité et en l
 + Supprimez le premier code de saut que vous avez ajouté à votre personnage et remplacez-le par ce code :
 
 	```blocks
-		quand [space v] est pressé
-		mettre [hauteur saut v] à [8]
-		répéter jusqu'à < (hauteur saut) = [0] >
-			ajouter (hauteur saut) à y
-			ajouter [hauteur saut v] à (-0.5)
-		end
+		quand [espace v] est pressé
+		[jump height v] prend la valeur [8]
+		répéter jusqu’à <(jump height) = [0]>
+   			ajouter (jump height) à y
+   			ajouter à [jump height v] (-0.5)
+		fin
 	```
 
 	Ce code déplace votre personnage vers le haut par 8 pixels, 7.5 pixels, 7 pixels, etc... jusqu'à ce que votre personnage ait fini de sauter.
@@ -189,18 +190,18 @@ Maintenant que vous avez votre déplacement de personnage, ajoutons quelques bal
 	```blocks
 		quand je commence comme un clone
 		répéter indéfiniment
-			Si < touché [Pico walking v]? > alors
-				envoyer à tous [hit v]
-			end
-		end
+   			si <[Pico walking v] touché?> alors
+      			envoyer à tous [hit v]
+   			fin
+		fin
 	```
 
 + Vous devrez aussi ajouter ce code à votre personnage afin qu'il retourne à la position initiale lorsqu'il est frappé:
 
 	```blocks
-		quand je recois [hit v]
-		s'orienter à  (90 v)
-		aller à x: (-210) y: (-120)
+		quand je reçois [hit v]
+		s'orienter à (90 v)
+		aller à x:(-210) y:(-120)
 	```
 
 + Testez votre personnage et vérifiez s'il retourne au début lorsqu'il est frappé par une balle.
@@ -235,7 +236,7 @@ Rendez votre jeu un peu plus compliqué en ajoutant des lasers!
 + Ajoutez le code à votre laser pour qu'il puisse changer entre les 2 costumes.
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
 			basculer sur costume [on v]
 			attendre (2) secondes
@@ -291,7 +292,7 @@ Pouvez-vous corriger ce bogue ? Pour faire cela, vous devez changer la couleur d
 avec:
 
 ```blocks
-	< couleur [#00FF00] touchée [#0000FF]? >
+	< couleur [#00FF00] touche [#0000FF]? >
 ```
 
 N'oubliez pas de tester vos améliorations pour vous assurer que vous avez corrigé le bogue!

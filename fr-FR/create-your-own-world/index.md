@@ -33,12 +33,12 @@ Commençons par créer un personnage qui pourra se déplacer dans votre monde.
 + Utilisons les touches directionnelles pour faire bouger le joueur. Lorsque le joueur appuie sur le flèche du haut, le personnage doit monter. Cela se fait en changeant les coordonnées Y. Ajoutez ce code au joueur:
 
 	```blocks
-	quand ⚑ pressé
-	répéter indéfiniment
- 	si <touche [flèche haut v] pressée?> alors
-      	ajouter (2) à y
-  	fin
-	fin
+		quand le drapeau vert pressé
+		répéter indéfiniment
+ 			si <touche [flèche haut v] pressée?> alors
+      			ajouter (2) à y
+  			fin
+		fin
 	```
 
 + Testez votre joueur en cliquant le drapeau et en maintenant la flèche du haut. Votre joueur monte-t-il?
@@ -48,15 +48,15 @@ Commençons par créer un personnage qui pourra se déplacer dans votre monde.
 + Pour que votre joueur puisse bouger vers la gauche, vous devez ajouter un nouveau code `if` {.blockcontrol}, ce qui modifiera la coordonnée X:
 
 	```blocks
-	quand ⚑ pressé
-	répéter indéfiniment
- 	  si <touche [flèche haut v] pressée?> alors
-      	ajouter (2) à y
-   	fin
-   	si <touche [flèche gauche v] pressée?> alors
-      	ajouter (-2) à x
-   	fin
-	fin
+		quand le drapeau vert pressé
+		répéter indéfiniment
+ 	  		si <touche [flèche haut v] pressée?> alors
+      			ajouter (2) à y
+   			fin
+   			si <touche [flèche gauche v] pressée?> alors
+      			ajouter (-2) à x
+   			fin
+		fin
 	```
 
 ## Défi : Bouger dans toutes les directions {.challenge}
@@ -71,15 +71,15 @@ Pouvez-vous ajouter du codage supplémentaire à votre joueur pour qu'il puisse 
 + Pour remédier à ce problème, vous devez bouger le joueur et le faire revenir sur ses pas s'il touche un mur gris clair. Voici le code qui vous permettra d'y parvenir :
 
 	```blocks
-	quand ⚑ pressé
-	répéter indéfiniment
- 	si <touche [flèche haut v] pressée?> alors
-      	ajouter (2) à y
-      	si <couleur [#BABABA] touchée?> alors
-         ajouter (-2) à y
-     	fin
-   	fin
-	fin
+		quand le drapeau vert pressé
+		répéter indéfiniment
+   			si <touche [flèche haut v] pressée?> alors
+     			ajouter (2) à y
+      			si <couleur [#BABABA] touchée?> alors
+         			ajouter (-2) à y
+      			fin
+   			fin
+		fin
 	```
 
 	Remarquez que le nouveau code `if`{.blockcontrol}`touching color`{.blocksensing} est situé dans le code `if`{.blockcontrol}`key [up arrow]`{.blocksensing}
@@ -150,14 +150,14 @@ Ajoutons des panneaux à votre monde pour guider votre joueur dans son voyage.
 + Ce panneau devrait uniquement être visible dans la première salle, alors ajoutons donc quelques lignes de code pour s'en assurer:
 
 	```blocks
-	quand ⚑ pressé
-	répéter indéfiniment
-   	si <(room) = [1]> alors
-      	montrer
-   	sinon
-      	cacher
-   	fin
-	fin
+		quand le drapeau vert pressé
+		répéter indéfiniment
+   			si <(room) = [1]> alors
+      			montrer
+   			sinon
+      			cacher
+  			fin
+		fin
 	```
 
 + Testez votre panneau en vous déplaçant entre les salles. Le panneau ne devrait être visible que dans la première salle.
@@ -167,14 +167,14 @@ Ajoutons des panneaux à votre monde pour guider votre joueur dans son voyage.
 + Un panneau n'est pas très utile s'il n'y a rien d'écrit dessus! Ajoutons quelques lignes de code (dans un block différent) pour afficher un message lorsque la panneau touche au joueur.
 
 	```blocks
-	quand ⚑ pressé
-	répéter indéfiniment
-   	si <[player v] touché?> alors
-      	dire [Bienvenue ! Peux tu trouver le trésor ?]
-   	sinon
-      	dire []
-   	fin
-	fin
+		quand le drapeau vert pressé
+		répéter indéfiniment
+   			si <[player v] touché?> alors
+      			dire [Bienvenue ! Peux tu trouver le trésor ?]
+   			sinon
+      			dire []
+   			fin
+		fin
 	```
 
 + Testez votre panneau, vous devriez voir le message lorsque votre joueur le touche.
@@ -203,22 +203,22 @@ Ajoutons d'autres lutins à votre monde pour que votre joueur puisse interagir a
 + Ajoutez ce code pour que le lutin puisse parler à votre joueur. Ce code est très similaire à celui que vous avez écrit pour votre panneau :
 
 	```blocks
-	quand ⚑ pressé
-	aller à x:(-200) y:(0)
-	répéter indéfiniment
-   	si <[player v] touché?> alors
-      	dire [Savais-tu que tu peux traverser les portes jaunes et organges ?]
-   	sinon
-     	dire []
-   	fin
-	fin
+		quand le drapeau vert pressé
+		aller à x:(200) y:(0)
+		répéter indéfiniment
+   			si <[player v] touché?> alors
+      			dire [Savais-tu que tu peux traverser les portes jaunes et organges ?]
+  			sinon
+      			dire []
+   			fin
+		fin
 	```
 
 + Vous pouvez également permettre à ce lutin de bouger en utilisant ces deux blocs :
 
 	```blocks
-	avancer de (1)
-	rebondir si le bord est atteint
+		avancer de (1)
+		rebondir si le bord est atteint
 	```
 
 	Le lutin se déplacera d'une façon différente selon l'endroit où vous placerez votre code : au sein de la boucle`forever` {.blockcontrol} ou dans le bloc `if` {.blockcontrol} . Essayez les deux et choisissez celui que vous préférez.
@@ -271,11 +271,11 @@ Pouvez-vous créer un ennemi dans la salle 3 qui fait la patrouille du haut en b
 + Ajoutez du codage à votre 'lutin' de pièce pour ajouter '1' a votre nombre de pièces {.blockdata} dès que la pièce a été collectée :
 
 	```blocks
-	quand ⚑ pressé
-	attendre jusqu’à <[player v] touché?>
-	ajouter à [coins v] (1)
-	stop [autres scripts du lutin v]
-	cacher
+		quand le drapeau vert pressé
+		attendre jusqu’à <[player v] touché?>
+		ajouter à [coins v] (1)
+		stop [autres scripts du lutin v]
+		cacher
 	```
 
 	Le code `stop other scripts in sprite` {.blockcontrol} est nécessaire pour que la pièce n'apparaisse plus dans la première salle lorsqu'elle a été collectée.
@@ -302,11 +302,11 @@ Pouvez-vous ajouter plus de pièces dans votre jeu ? Elles peuvent se trouver da
 + Le code pour collecter la clé est très similaire à celui pour collecter les pièces. La différence est que vous devez ajouter la clé à votre inventaire.
 
 	```blocks
-	quand ⚑ pressé
-	attendre jusqu’à <[player v] touché?>
-	ajouter [clef bleue] à [inventaire v]
-	stop [autres scripts du lutin v]
-	cacher
+		quand le drapeau vert pressé
+		attendre jusqu’à <[player v] touché?>
+		ajouter [blue key] à [inventory v]
+		stop [autres scripts du lutin v]
+		cacher
 	```
 
 + Testez votre clé, essayez de la collecter et de l'ajouter dans votre inventaire. N'oubliez pas d'ajouter le code pour vider votre inventaire au début de la partie.  
@@ -324,10 +324,10 @@ Pouvez-vous ajouter plus de pièces dans votre jeu ? Elles peuvent se trouver da
 + Il faut que la porte bleue disparaisse pour que votre joueur puisse passer lorsque vous avez la clé bleue dans votre inventaire.
 
 	```blocks
-	quand ⚑ pressé
-	attendre jusqu’à <[Inventaire v] contient [clef bleue]>
-	stop [autres scripts du lutin v]
-	cacher
+		quand le drapeau vert pressé
+		attendre jusqu’à <[inventory v] contient [clef bleue]>
+		stop [autres scripts du lutin v]
+		cacher
 	```
 
 + Testez votre projet et regardez si vous pouvez collecter la clé bleue afin d'ouvrir la porte!
