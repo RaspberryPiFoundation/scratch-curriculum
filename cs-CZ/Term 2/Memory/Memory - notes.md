@@ -1,26 +1,26 @@
 ---
-title: Memory — Notes for Club Leaders
+title: Memory — Poznámky pro vedoucí klubu
 language: cs-CZ
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to use list variables to store data, as well as how simple custom blocks (functions) can be used to simplify their programs.
+#Úvod:
+V tomto projektu se děti naučí, jak používat proměnnou typu seznam, pro uložení dat, a také, jak použít vlastní bloky (funkce) ke zjednodušení svých programů.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Zdroje
+Pro tento projekt byste měli použít Scratch verze 2. Scratch 2 se dá spustit on-line na  [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo se dá stáhnout na  [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) a spustit bez připojení k internetu.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Hotový projekt (zdrojový kód) najdete <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a>, nebo si jej můžete stáhnout kliknutím na odkaz 'Stáhnout materiály k projektu', které obsahují:
 
 + Memory.sb2
 
-#Learning Objectives
-+ Lists;
-+ Simple functions.
+#Cíle
++ Seznamy;
++ Jednoduché funkce.
 
-#Challenges
-+ "Adding sound" - improving the usability of the game;
-+ "Creating 4 buttons" - manipulating lists;
-+ "Making more blocks" - creating custom blocks;
-+ "Another costume" - improving the usability of the game;
-+ "Difficulty level" - modifying the data stored in a list.
+#Výzvy
++ "Přidání zvuku" - zlepšení hratelnosti;
++ "Vytvoření 4 tlačítek" - práce se seznamem;
++ "Vytvoření více bloků" - vytváření vlastních bloků;
++ "Jiný kostým" - zlepšení hratelnosti;
++ "Obtížnost" - změna dat uložených v seznamu.
