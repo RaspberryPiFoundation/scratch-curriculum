@@ -37,41 +37,41 @@ Nejdřiv vytvoříme postavu která se může pohybovat doleva a doprava, a taky
 
 +  Budeme používat šípky aby jsi pohyboval postavou. Když hráč zmáčkne pravou šipku, chceš aby tvoje postava se otočila doprava, udělala několik kroků a vyměnila do dalšího kostýmu:
 
-	```blocks
-		when flag clicked
-		forever
-			if <key [right arrow v] pressed? > then
-				point in direction (90 v)
-				move (3) steps
-				next costume
-			end
-		end
-	```
+```blocks
+  po kliknutí na ⚑
+  opakuj dokola
+    když <klávesa [šipka vpravo v] stisknuta?> tak
+      natoč se směrem (90 v)
+      posuň se o (3) kroků
+      další kostým
+    end
+  end
+```
 + Vyzkoušej pohyb své postavy kliknutím na tyčku a pak podržením šipky doprava. Hýbe se tvoje postava doprava? Vypadá tvoje postava jako že chodí?
 
 	![screenshot](dodge-walking.png)
 
-+ Na pohyb postavy doleva, budeme potřebovat další `když` {.blockcontrol} blok uvnitř tvého cyklu `opakuj stále` {.blockcontrol}, který bude hýbat postavou doleva. Nezapomeň vyzkoušet svůj nový kód, aby jsi ujistil že funguje! Pokud se tvoje postava otočí vzhůru nohama ve chvíli, když chodí doleva, přidej blok `nastav způsob otáčení` {.blockcontrol} nad blokem `opakuj stále` {.blockcontrol}:
++ Na pohyb postavy doleva, budeme potřebovat další `když` {.blockcontrol} blok uvnitř tvého cyklu `opakuj dokola` {.blockcontrol}, který bude hýbat postavou doleva. Nezapomeň vyzkoušet svůj nový kód, aby jsi ujistil že funguje! Pokud se tvoje postava otočí vzhůru nohama ve chvíli, když chodí doleva, přidej blok `nastav způsob otáčení` {.blockcontrol} nad blokem `opakuj dokola` {.blockcontrol}:
 
-	```blocks
-		when flag clicked
-		set rotation style [left-right v]
-		forever
-			if <key [right arrow v] pressed? > then
-				point in direction (90 v)
-				move (3) steps
-				next costume
-			end
-		end
-	```
+```blocks
+  po kliknutí na ⚑
+  nastav způsob otáčení na [jen vlevo-vpravo v]
+  opakuj dokola
+    když <klávesa [šipka vpravo v] stisknuta?> tak
+      natoč se směrem (90 v)
+      posuň se o (3) kroků
+      další kostým
+    end
+  end
+```
 
-+ Na šplhání po tyčí, tvoje postava se musí pohnout maličko nahoru když je zmáčknuta šipka nahoru a postava se dokýká správné barvy. Přidej tento kód dovnitř bloku `opakuj stále` {.blockcontrol}:
++ Na šplhání po tyčí, tvoje postava se musí pohnout maličko nahoru když je zmáčknuta šipka nahoru a postava se dokýká správné barvy. Přidej tento kód dovnitř bloku `opakuj dokola` {.blockcontrol}:
 
-	```blocks
-		if < <key [up arrow v] pressed?> and <touching color [#FFFF00]?> > then
-			change y by (4)
-		end
-	```
+```blocks
+  když <<klávesa [šipka nahoru v] stisknuta?> a <dotýká se barvy [#FFFF00] ?>> tak
+    změň y o (4)
+  end
+```
 + Vyzkoušej svojí postavu - můžeš vyšplhat po žlutých tyčích a dostat se na konec úrovně?
 
 	![screenshot](dodge-test-character.png)
@@ -91,39 +91,39 @@ Uděláme pohyb postavy vice reální, když přidáme přitažlivost a umožní
 
 ## Postup { .check }
 
-+ Možná sis všiml že tvoje postava může chodit i mimo podlah a zůstat ve vzduchu. Zkus vyjít stranou z podlahy a pozoruj co se stane.
++ Možná sis všiml že tvoje postava může chodit i mimo podlahy a zůstat ve vzduchu. Zkus vyjít stranou z podlahy a pozoruj co se stane.
 
 	![screenshot](dodge-no-gravity.png)
 
-+ Aby jsme toto napravili, přidáme do hry přitažlivost. Vytvoř novou proměnnou nazvanou `gravitace` {.blockdata}. Můžeš tuto proměnnou schovt ze scény, pokud budeš chtít.
++ Aby jsme toto napravili, přidáme do hry přitažlivost. Vytvoř novou proměnnou nazvanou `gravitace` {.blockdata}. Můžeš tuto proměnnou skrýt ze scény, pokud budeš chtít.
 
 	![screenshot](dodge-gravity.png)
 
 + Přidej tento nový blok kódu, který nastaví gravitace na zápornou hodnotu, a pak použije tuto na změnu y-pozice tvé postavy.
 
-	```blocks
-		when flag clicked
-		set [gravity v] to [-4]
-		forever
-			change y by (gravity)
-		end
-	```
+```blocks
+  po kliknutí na ⚑
+  nastav [gravitace v] na [-4]
+  opakuj dokola
+    změň y o (gravitace)
+  end
+```
 
 + Klikni na vlajku, a pak přetáhni svou postavu na vršek tvé scény. Co se stane? Funguje přitažlivost jak jsi očekával?
 
 	![screenshot](dodge-gravity-drag.png)
 
-+ Přitažlivost by neměla hýbat postavou skrz podlahu nebo tyč! Přidej blok `jestli` {.blockcontrol} do tvého kódu, aby přitažlivost fungovala jen pokud bude postava ve vzduchu. Kód pro přitažlivost by měl vypadat asi takto:
++ Přitažlivost by neměla hýbat postavou skrz podlahu nebo tyč! Přidej blok `když` {.blockcontrol} do tvého kódu, aby přitažlivost fungovala jen pokud bude postava ve vzduchu. Kód pro přitažlivost by měl vypadat asi takto:
 
-	```blocks
-		when flag clicked
-		set [gravity v] to [-4]
-		forever
-			if < not < <touching color [#0000FF]?> or <touching color [#FFFF00]?> > > then
-				change y by (gravity)
-			end
-		end
-	```
+```blocks
+  po kliknutí na ⚑
+  nastav [gravitace v] na [-4]
+  opakuj dokola
+    když <není <<dotýká se barvy [#0000FF] ?> nebo <dotýká se barvy [#FFFF00] ?>>> tak
+      změň y o (gravitace)
+    end
+  end
+```
 
 + Vyzkoušej přitažlivost znovu. Zastaví se pád postavy když stoji na podlaze nebo se drží tyče? Můžeš spadnout z kraje podlahy a dopadnout na podlahu níže?
 
@@ -131,29 +131,29 @@ Uděláme pohyb postavy vice reální, když přidáme přitažlivost a umožní
 
 + Pojďme taky zařídit aby postava skočila když hráč zmáčkne mezerník. Velmi jednoduchý způsob jak toto zařídit je pohnout postavou nahoru nekolikrát, pomocí tohoto kódu:
 
-	```blocks
-		when [space v] key pressed
-		repeat (10)
-			change y by (4)
-		end
-	```
+```blocks
+  po stisku klávesy [mezerník v]
+  opakuj (10) krát
+    změň y o (4)
+  end
+```
 
-  Protože přitažlivost stále tlačí postavu dolů o 4 pixelů, musíš zvolit číslo větší než 4 ve tvém bloku `změn y o (4)` {.blockmotion}. Změň toto čislo tak aby jsi byl spokojený s tím, jak tvoje postava skáče.
+  Protože přitažlivost stále tlačí postavu dolů o 4 pixelů, musíš zvolit číslo větší než 4 ve tvém bloku `změň y o (4)` {.blockmotion}. Změň toto čislo tak aby jsi byl spokojený s tím, jak tvoje postava skáče.
 
 + Až budeš tento kód zkoušet, všimni si že pohyb postavy není moc plynulý. Aby bylo skákání plynulejší, budeš muset hýbat postavou o čím dále mensí počet pixelů, dokud se její pohyb nahoru zastaví.
 
-+ Na to vytvoříme další proměnnou `výška skoku` {.blockdata}. Můžeš tuto proměnnou opět schovat, pokud budeš chtít.
++ Na to vytvoříme další proměnnou `výška skoku` {.blockdata}. Můžeš tuto proměnnou opět skrýt, pokud budeš chtít.
 
 + Smaž kód skákání který jsme přidali k postavě, a nahraď tímto kódem:
 
-	```blocks
-		when [space v] key pressed
-		set [jump height v] to [8]
-		repeat until < (jump height) = [0] >
-			change y by (jump height)
-			change [jump height v] by (-0.5)
-		end
-	```
+```blocks
+  po stisku klávesy [mezerník v]
+  nastav [výška skoku v] na [8]
+  opakuj dokud nenastane <(výška skoku) = [0]>
+    změň y o (výška skoku)
+    změň [výška skoku v] o (-0.5)
+  end
+```
 
   Tento kód hýbe postavou o 8 pixelů, poté o 7,5 pixelů, poté 7 pixelů a tak dále, dokud postava neskončí skok. Toto pomůže aby byly skoky o hodně plynulejší.
 
@@ -196,22 +196,22 @@ Teď když už tvoje postava chodí, přidáme nějaké míče, kterým se bude 
 
 + Nakonec budeš potřebovat taky kód pro případ že byla tvoje postava zasažena míčem! Přidej tento kód ke spritu tvého míče:
 
-	```blocks
-		when I start as a clone
-		forever
-			if < touching [Pico walking v]? > then
-				broadcast [hit v]
-			end
-		end
-	```
+```blocks
+  když startuji jako klon
+  opakuj dokola
+    když <dotýká se [Pico walking v] ?> tak
+      rozešli všem [zásah v]
+    end
+  end
+```
 
 + Taky budeš potřebovat přidat kód ke tvé postavě, aby se vrátila na začátek, když je zasažena:
 
-	```blocks
-		when I receive [hit v]
-		point in direction (90 v)
-		go to x: (-210) y: (-120)
-	```
+```blocks
+  po obdržení zprávy [zásah v]
+  natoč se směrem (90 v)
+  skoč na pozici x: (-210) y: (-120)
+```
 
 + Vyzkoušej svojí postavu a ujisti se ze se vrátí na začátek když je zasažena míčem.
 
@@ -234,7 +234,7 @@ Uděláme hru trochu tězší, když přidáme lasery!
 
 ## Postup { .check }
 
-+ Pridej nový sprite do hry, který se bude jmenovat 'Laser'. Měl by mít 2 kosttýmy, který nazveme 'on' (zapnuto) a 'off' (vypnuto)
++ Pridej nový sprite do hry, který se bude jmenovat 'Laser'. Měl by mít 2 kosttýmy, který nazveme 'zapnuto' a 'vypnuto'.
 
 	![screenshot](dodge-lasers-costume.png)
 
@@ -244,17 +244,17 @@ Uděláme hru trochu tězší, když přidáme lasery!
 
 + Přidej kód ke tvému laseru, aby měnil mezi oba kostýmy.
 
-	```blocks
-		when flag clicked
-		forever
-			switch costume to [on v]
-			wait (2) secs
-			switch costume to [off v]
-			wait (2) secs
-		end
-	```
+```blocks
+  po kliknutí na ⚑
+  opakuj dokola
+    změň kostým na [zapnuto v]
+    čekej (2) sekund
+    změň kostým na [vypnuto v]
+    čekej (2) sekund
+  end
+```
 
-  Pokud budeš chtít, můžeš `čekej` {.blockcontrol} a `náhodné` {.blockoperators} čas mezi výměnou kostýmu.
+  Pokud budeš chtít, můžeš `čekej` {.blockcontrol} a `náhodné číslo` {.blockoperators} čas mezi výměnou kostýmu.
 
 + A na konec přidej kód ke tvému laseru, aby se odeslala zpráva 'zasaženo' byla poslána když se laser dotkne postavy. Tento kód bude tentýž kód jaký jsi přidal ke spritu míče.
 
@@ -274,11 +274,11 @@ Pokud si stále myslíš že je hra příliš jednoduchá, můžeš přidat dal�
 Můžes dokonce vytvořit více než jedno pozadí, a přesunout se do další úrovně když postava dojde ke hnědým dveřím:
 
 ```blocks
-	if <touching color [#714300]?> then
-		switch backdrop to [next backdrop v]
-		go to x: (-210) y: (-120)
-		wait (1) secs
-	end
+  když <dotýká se barvy [#714300] ?> tak
+    změň pozadí na [next backdrop v]
+    skoč na pozici x: (-210) y: (-120)
+    čekej (1) sekund
+  end
 ```
 
 ## Ulož svůj projekt { .save }
@@ -296,13 +296,13 @@ Uměl by jsi tuto chybu opravit? Aby to bylo možné, musíš dát tvé postavě
 ...a poté nahradit kód:
 
 ```blocks
-	< touching color [#0000FF]? >
+  <dotýká se barvy [#0000FF] ?>
 ```
 
 kódem:
 
 ```blocks
-	< color [#00FF00] is touching [#0000FF]? >
+  <barva [#00FF00] se dotýká barvy [#0000FF] ?>
 ```
 
 Nezapomeň otestovat svojí opravu aby jsi byl jist že jsi opravila chybu!
