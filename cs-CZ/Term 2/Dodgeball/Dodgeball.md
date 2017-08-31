@@ -16,9 +16,9 @@ V tomto projektu se naučíš jak vytvořit plošinovku, kde se musíš vyhnout 
   <img src="dodge-final.png">
 </div>
 
-# Krok 1: Pohyb postavičky { .activity }
+# Krok 1: Pohyb postavy { .activity }
 
-Nejdřiv vytvoříme postaviču která se může pohybovat doleva a doprava, a taky šplhat po tyčce.
+Nejdřiv vytvoříme postavu která se může pohybovat doleva a doprava, a taky šplhat po tyčích.
 
 ## Postup { .check }
 
@@ -27,15 +27,15 @@ Nejdřiv vytvoříme postaviču která se může pohybovat doleva a doprava, a t
 
 	![screenshot](dodge-resources.png)
 
-+ Přidej obrázek 'background.png' jako nový pozadí scény, nebo si nakresli vlastní! pPokuid budeš kreslit vlastní úroveň, ujisti se ze tyče a podlahy mají jiné barvy, a že tam jsou dveře (nebo něco jiného) kam musíš se svou postavičkou dojít. Takhle nějak by měl tvůj obrázek vypadat:
++ Přidej obrázek 'background.png' jako nový pozadí scény, nebo si nakresli vlastní! Pokud budeš kreslit vlastní úroveň, ujisti se ze tyče a podlahy mají jiné barvy, a že tam jsou dveře (nebo něco jiného) kam musíš se svou postavičkou dojít. Takhle nějak by měl tvůj obrázek vypadat:
 
 	![screenshot](dodge-background.png)
 
-+ Přidej nový sprite, který bude tvou postavičkou. Vyber si raději sprite s více kostýmy, aby jsi mohl udělat jako že postavička chodí.
++ Přidej nový sprite, který bude tvou postavou. Vyber si raději sprite s více kostýmy, aby jsi mohl udělat jako že postava chodí.
 
 	![screenshot](dodge-characters.png)
 
-+  Budeme používat šípky aby jsi pohyboval postavičkou. Když hráč zmáčkne pravou šipku, chceš aby tvoje postavička se otočila doprava, udělala několik kroků a vyměnila do dalšího kostýmu:
++  Budeme používat šípky aby jsi pohyboval postavou. Když hráč zmáčkne pravou šipku, chceš aby tvoje postava se otočila doprava, udělala několik kroků a vyměnila do dalšího kostýmu:
 
 	```blocks
 		when flag clicked
@@ -47,11 +47,11 @@ Nejdřiv vytvoříme postaviču která se může pohybovat doleva a doprava, a t
 			end
 		end
 	```
-+ Vyzkoušej pohyb své postavičky kliknutím na tyčku a pak podržením šipky doprava. Hybe se tvoje postavička doprava? Vypadá tvoje postavička jako že chodí?
++ Vyzkoušej pohyb své postavy kliknutím na tyčku a pak podržením šipky doprava. Hýbe se tvoje postava doprava? Vypadá tvoje postava jako že chodí?
 
 	![screenshot](dodge-walking.png)
 
-+ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works! If your player turns upside down when moving left, add a `set rotation style` {.blockcontrol} block above the `forever` {.blockcontrol} loop:
++ Na pohyb postavy doleva, budeme potřebovat další `když` {.blockcontrol} blok uvnitř tvého cyklu `opakuj stále` {.blockcontrol}, který bude hýbat postavou doleva. Nezapomeň vyzkoušet svůj nový kód, aby jsi ujistil že funguje! Pokud se tvoje postava otočí vzhůru nohama ve chvíli, když chodí doleva, přidej blok `nastav způsob otáčení` {.blockcontrol} nad blokem `opakuj stále` {.blockcontrol}:
 
 	```blocks
 		when flag clicked
@@ -65,42 +65,41 @@ Nejdřiv vytvoříme postaviču která se může pohybovat doleva a doprava, a t
 		end
 	```
 
-+ To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
++ Na šplhání po tyčí, tvoje postava se musí pohnout maličko nahoru když je zmáčknuta šipka nahoru a postava se dokýká správné barvy. Přidej tento kód dovnitř bloku `opakuj stále` {.blockcontrol}:
 
 	```blocks
 		if < <key [up arrow v] pressed?> and <touching color [#FFFF00]?> > then
 			change y by (4)
 		end
 	```
-
-+ Test your character - can you climb the yellow poles and get to the end of your level?
++ Vyzkoušej svojí postavu - můžeš vyšplhat po žlutých tyčích a dostat se na konec úrovně?
 
 	![screenshot](dodge-test-character.png)
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-## Challenge: Completing the level {.challenge}
-Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the brown door?
+## Výzva: Dokončení úrovně {.challenge}
+Dokážeš přidat kód ke tvé postavy, aby nečo řekla `když` {.blockcontrol} se dostane ke hnědým dveřím?
 
 ![screenshot](dodge-win.png)
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-# Step 2: Gravity and jumping { .activity }
+# Krok 2: Přitažlivost a skákání { .activity }
 
-Let's make your character move more realistically, by adding gravity and allowing them to jump.
+Uděláme pohyb postavy vice reální, když přidáme přitažlivost a umožníme postavě skákat.
 
-## Activity Checklist { .check }
+## Postup { .check }
 
-+ You may have noticed that your character can walk off a platform into mid-air. Try to walk off of a platform and see what happens.
++ Možná sis všiml že tvoje postava může chodit i mimo podlah a zůstat ve vzduchu. Zkus vyjít stranou z podlahy a pozoruj co se stane.
 
 	![screenshot](dodge-no-gravity.png)
 
-+ To fix this, let's add gravity to your game. Create a new variable called `gravity` {.blockdata}. You can hide this variable from your stage if you want to.
++ Aby jsme toto napravili, přidáme do hry přitažlivost. Vytvoř novou proměnnou nazvanou `gravitace` {.blockdata}. Můžeš tuto proměnnou schovt ze scény, pokud budeš chtít.
 
 	![screenshot](dodge-gravity.png)
 
-+ Add this new code block, which sets the gravity to a negative number, and then uses this to repeatedly change your character's y-coordinate.
++ Přidej tento nový blok kódu, který nastaví gravitace na zápornou hodnotu, a pak použije tuto na změnu y-pozice tvé postavy.
 
 	```blocks
 		when flag clicked
@@ -110,11 +109,11 @@ Let's make your character move more realistically, by adding gravity and allowin
 		end
 	```
 
-+ Click the flag, and then drag your character to the top of the stage. What happens? Does the gravity work as you expected?
++ Klikni na vlajku, a pak přetáhni svou postavu na vršek tvé scény. Co se stane? Funguje přitažlivost jak jsi očekával?
 
 	![screenshot](dodge-gravity-drag.png)
 
-+ Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
++ Přitažlivost by neměla hýbat postavou skrz podlahu nebo tyč! Přidej blok `jestli` {.blockcontrol} do tvého kódu, aby přitažlivost fungovala jen pokud bude postava ve vzduchu. Kód pro přitažlivost by měl vypadat asi takto:
 
 	```blocks
 		when flag clicked
@@ -126,11 +125,11 @@ Let's make your character move more realistically, by adding gravity and allowin
 		end
 	```
 
-+ Test the gravity again. Does your character stop when they are on a platform or a pole? Can you walk off the edge of platforms to the level below?
++ Vyzkoušej přitažlivost znovu. Zastaví se pád postavy když stoji na podlaze nebo se drží tyče? Můžeš spadnout z kraje podlahy a dopadnout na podlahu níže?
 
 	![screenshot](dodge-gravity-test.png)
 
-+  Let's also make your character jump when the player presses the space bar. One very easy way to do this is to move your character up a few times, using this code:
++ Pojďme taky zařídit aby postava skočila když hráč zmáčkne mezerník. Velmi jednoduchý způsob jak toto zařídit je pohnout postavou nahoru nekolikrát, pomocí tohoto kódu:
 
 	```blocks
 		when [space v] key pressed
@@ -139,13 +138,13 @@ Let's make your character move more realistically, by adding gravity and allowin
 		end
 	```
 
-	As gravity is constantly pushing your character down by 4 pixels, you need to choose a number greater than 4 in your `change y by (4)` {.blockmotion} block. Change this number until you're happy with the height your character jumps.
+  Protože přitažlivost stále tlačí postavu dolů o 4 pixelů, musíš zvolit číslo větší než 4 ve tvém bloku `změn y o (4)` {.blockmotion}. Změň toto čislo tak aby jsi byl spokojený s tím, jak tvoje postava skáče.
 
-+ If you test out this code, you'll notice that it works, but the movement isn't very smooth. To make jumping look smoother, you'll need to move your character by smaller and smaller amounts, until they're not jumping anymore.
++ Až budeš tento kód zkoušet, všimni si že pohyb postavy není moc plynulý. Aby bylo skákání plynulejší, budeš muset hýbat postavou o čím dále mensí počet pixelů, dokud se její pohyb nahoru zastaví.
 
-+ To do this, create another variable called `jump height` {.blockdata}. Again, you can hide this variable if you prefer.
++ Na to vytvoříme další proměnnou `výška skoku` {.blockdata}. Můžeš tuto proměnnou opět schovat, pokud budeš chtít.
 
-+ Delete the jumping code you added to your character, and replace it with this code:
++ Smaž kód skákání který jsme přidali k postavě, a nahraď tímto kódem:
 
 	```blocks
 		when [space v] key pressed
@@ -156,16 +155,16 @@ Let's make your character move more realistically, by adding gravity and allowin
 		end
 	```
 
-	This code moves your character up by 8 pixels, then 7.5 pixels, then 7 pixels, and so on, until your character has finished jumping. This makes jumping look much smoother.
+  Tento kód hýbe postavou o 8 pixelů, poté o 7,5 pixelů, poté 7 pixelů a tak dále, dokud postava neskončí skok. Toto pomůže aby byly skoky o hodně plynulejší.
 
-+ Change the starting value of your `jump height` {.blockdata} variable and test it until you're happy with the height your character jumps.
++ Změň počáteční hodnotu tvé proměnné `výška skoku` {.blockdata} a vyzkoušej program tak, aby jsi byl spokojen s výškou skoku tvé postavy.
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-## Challenge: Improved jumping {.challenge}
-Your character is able to jump whenever the spacebar is pressed, even if they're already in mid-air. You can test this by just holding down the spacebar. Can you fix this, so that your character can only jump `if` {.blockcontrol} they're touching a blue platform?
+## Výzva: vylepšené skákání {.challenge}
+Tvoje postava může skočit kdykoliv je zmáčknutý mezerník, i když je postavička ve vzduchu. Můžeš toto vyzkoušet podržením mezerníku. Můžes toto opravit tak aby postava mohla skočit pouze `jestli` {.blockcontrol} se dotýká modré podlahy?
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
 # Step 3: Dodging balls { .activity .new-page}
 
