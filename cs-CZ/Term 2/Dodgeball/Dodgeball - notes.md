@@ -1,34 +1,35 @@
 ---
-title: Dodgeball — Notes for Club Leaders
+title: Dodgeball — Poznámky pro vedoucí klubu
 language: cs-CZ
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to make a platform game, making use of Scratch concepts and skills that have been learnt in previous projects.
+#Uvod:
+ V tomto projektu s děti naučí jak mohou vytvořit plošinovku, a tak použiji koncepty a dovednosti které se naučily v předchozích projektech.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Zdroje:
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Pro tento projekt použijte Scratch 2. Scratch 2 můžete najít online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) nebo stáhnout z [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pro použití offline.
+
+Kompletní verzi projektu najdete <a href="http://scratch.mit.edu/projects/39740618/#editor">online</a>, nebo stáhnete kliknutím na 'Stáhnout materiály k projektu' a tyto materiály obsahují:
 
 + Dodgeball.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/dodge-resources](http://jumpto.cc/dodge-resources), or in the downloadable project materials, which contains:
+K dispozici je i verze projektu s externími zdroji. Je dostupná online na [jumpto.cc/dodge-resources](http://jumpto.cc/dodge-resources), nebo v materiálech ke stažení a obsahuje:
 
 + DodgeballResources.sb2
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+Tento odkaz obsahuje i adresář 'Project Resources', který obsahuje obrázky, zajistěte aby každé dítě mělo přístup k těmto obrázkům.
 
 Project resources:
 + background.png
 
-#Learning Objectives
-+ This project consolidates learning of previous programming skills learnt.
+# Učební cíle
++ Tento projekt zceluje dovednosti naučené v předchozích úlohách.
 
-#Challenges
-+ "Improved jumping" - using an additional `if` {.blockcontrol} block to fix a multiple-jump bug;
-+ "Random balls" - using the `random` {.blockoperators} block to vary the ball costume, size and delay between clones;
-+ "More obstacles" - adding additional sprites to the game;
-+ "Improved gravity" - using an additional `if` {.blockcontrol} block to fix a bug in the `gravity` {.blockdata};
-+ "More lives" - addition of a `lives` {.blockdata} variable.
+# Výzvy
++ "Vylepšené skákání" - použitím dalšího bloku `pokud` {.blockcontrol} na opravu chyby s vícenásobným skokem;
++ "Náhodné míče" - použití bloku `náhodné číslo` {.blockoperators} pro nastavení různých kostýmů, velikostí a prodlevy pro klony míče;
++ "Více překážek" - Přidání dalších spritů do hry;
++ "Vylepšená přitžlivost" - použitím dalšího bloku `pokud` {.blockcontrol} k napravení chyby v `gravitace` {.blockdata};
++ "Více životů" - přidání proměnné `životy` {.blockdata}.
