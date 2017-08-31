@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 # Úvod { .intro }
 
-V tomto projektu se naučíš jak vytvořit plošinovku, kde se musíš vyhnout pohybujicí se kouli a dostat se až na konec levelu.
+V tomto projektu se naučíš jak vytvořit plošinovku, kde se musíš vyhnout pohybujicích se míčů a dostat se až na konec levelu.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
@@ -166,35 +166,35 @@ Tvoje postava může skočit kdykoliv je zmáčknutý mezerník, i když je post
 
 ## Ulož svůj projekt { .save }
 
-# Step 3: Dodging balls { .activity .new-page}
+# Krok 3: Uhýbání míčů { .activity .new-page}
 
-Now that you've got your character moving around, let's add some balls for your character to avoid.
+Teď když už tvoje postava chodí, přidáme nějaké míče, kterým se bude muset tvoje postava vyhnout.
 
-## Activity Checklist { .check }
+## Postup { .check }
 
-+ Create a new ball sprite. You can choose any type of ball you like.
++ Vytvoř nový sprite míče. Můžeš použít jakýkoliv typ míče který se ti bude líbit
 
 	![screenshot](dodge-balls.png)
 
-+ Resize your ball, so that your character can jump over it. Try jumping over the ball to test it.
++ Změň velikost tvého míče, tak aby tvoje postava mohla skočit přes něj. Zkus míč přeskočit aby jsi vyzkoušel že to jde.
 
 	![screenshot](dodge-ball-resize.png)
 
-+ Add this code to your ball:
++ Přidej tento kód ke tvému míči:
 
 	![screenshot](dodge-ball-motion.png)
 
-	This code creates a new ball clone every 3 seconds. Each new clone moves along the top platform.
+  tento kód vytvoří nový klon míče každé 3 vteřiny. Každý nový klon se pohybuje po vrchní podlaží.
 
-+ Click the flag to test this out.
++ Klikni na vlajku aby jsi toto vyzkoušel.
 
 	![screenshot](dodge-ball-test.png)
 
-+ Add more code to your ball sprite, so that they move across all 3 platforms.
++Přidej další kód do spritu tvého míče, aby se mohl pohybovat přes všechny 3 podlaží.
 
 	![screenshot](dodge-ball-more-motion.png)
 
-+ Finally, you'll need code for when your character gets hit by a ball! Add this code to your ball sprite:
++ Nakonec budeš potřebovat taky kód pro případ že byla tvoje postava zasažena míčem! Přidej tento kód ke spritu tvého míče:
 
 	```blocks
 		when I start as a clone
@@ -205,7 +205,7 @@ Now that you've got your character moving around, let's add some balls for your 
 		end
 	```
 
-+ You'll also need to add code to your character, to move back to the start when they're hit:
++ Taky budeš potřebovat přidat kód ke tvé postavě, aby se vrátila na začátek, když je zasažena:
 
 	```blocks
 		when I receive [hit v]
@@ -213,36 +213,36 @@ Now that you've got your character moving around, let's add some balls for your 
 		go to x: (-210) y: (-120)
 	```
 
-+ Test out your character and see if they go back to the start when they've been hit by a ball.
++ Vyzkoušej svojí postavu a ujisti se ze se vrátí na začátek když je zasažena míčem.
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-## Challenge: Random balls {.challenge}
-The balls your character has to dodge all look the same, and always appear every 3 seconds. Can you improve them, so that they:
+## Výzva: náhodné míče {.challenge}
+Všechny míče kterým se musí tvoje postava vyhnout vypadají stejně a objevují se pravidelně kazdých 3 sekund. Mohl bys toto vylepsit, tak aby:
 
-+ don't all look the same?
-+ appear after a random amount of time?
-+ are a random size?
++ Nevypadaly všechny stejně?
++ Objevovaly se po uplynutí různé doby?
++ Měli náhodné velikosti?
 
 ![screenshot](dodge-ball-random.png)
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-# Step 4: Lasers! { .activity .new-page}
+# Krok 4: Lasery! { .activity .new-page}
 
-Let's make your game a little harder to complete, by adding lasers!
+Uděláme hru trochu tězší, když přidáme lasery!
 
-## Activity Checklist { .check }
+## Postup { .check }
 
-+ Add a new sprite to your game, called 'Laser'. It should have 2 costumes, called 'on' and 'off'.
++ Pridej nový sprite do hry, který se bude jmenovat 'Laser'. Měl by mít 2 kosttýmy, který nazveme 'on' (zapnuto) a 'off' (vypnuto)
 
 	![screenshot](dodge-lasers-costume.png)
 
-+ Place your new laser anywhere you like, between 2 platforms.
++ Dej tvůj nový laser kdekoliv se ti bude líbit, mezi 2 podlahy.
 
 	![screenshot](dodge-lasers-position.png)
 
-+ Add code to your laser, to make it switch between the 2 costumes.
++ Přidej kód ke tvému laseru, aby měnil mezi oba kostýmy.
 
 	```blocks
 		when flag clicked
@@ -254,24 +254,24 @@ Let's make your game a little harder to complete, by adding lasers!
 		end
 	```
 
-	If you prefer, you can `wait` {.blockcontrol} a `random` {.blockoperators} amount of time between costume changes.
+  Pokud budeš chtít, můžeš `čekej` {.blockcontrol} a `náhodné` {.blockoperators} čas mezi výměnou kostýmu.
 
-+ Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be the same as the code you added to your ball sprite.
++ A na konec přidej kód ke tvému laseru, aby se odeslala zpráva 'zasaženo' byla poslána když se laser dotkne postavy. Tento kód bude tentýž kód jaký jsi přidal ke spritu míče.
 
-	You don't need to add any more code to your character - they already know what to do when they get hit!
+  Nemusíš přidat další kód ke tvé postavě - ona již ví co má dělat pokud je zasažena!
 
-+ Test out your game to see if you can get past the laser. Change the `wait` {.blockcontrol} times in your code if the lasers are too easy or too hard.
++ Vyzkoušej svou hru aby jsi byl jist že se můžeš dostat přes laser. Změň počet u `čekej` ve tvém kódu pokud je dosatt se přes lasery moc jednoduchý nebo moc obtižný.
 
-## Challenge: More obstacles {.challenge}
-If you think your game is still too easy, you can add more obstacles to your level. You can add anything you like, but here are some ideas:
+## Výzva: více překážek {.challenge}
+Pokud si stále myslíš že je hra příliš jednoduchá, můžeš přidat další překážky do tvé úrovně. Můžeš přidat cokoliv budeš chtít, ale tady je několik nápadů:
 
-+ A flying killer butterfly;
-+ Platforms that appear and disappear;
-+ Falling tennis balls that must be avoided.
++ Létající smrtící motýl;
++ Podlahy které se objevují a mizí;
++ Padající tenisové míčky kterým musíš uhnout.
 
 ![screenshot](dodge-obstacles.png)
 
-You could even create more than one backdrop, and move to the next level when your character reaches the brown door:
+Můžes dokonce vytvořit více než jedno pozadí, a přesunout se do další úrovně když postava dojde ke hnědým dveřím:
 
 ```blocks
 	if <touching color [#714300]?> then
@@ -281,38 +281,39 @@ You could even create more than one backdrop, and move to the next level when yo
 	end
 ```
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-## Challenge: Improved gravity {.challenge}
-There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even its head! You can test this out by climbing most of the way up a pole and then moving to the left.
+## Výzva: vylepšená přitažlivost {.challenge}
+
+Tvoje hra má ještě jednu malou chybičku: přitažlivost nemá vliv na postavu pokud _jakákoliv_ její část se dotýká modré podlahy - dokonce i hlava! Můžeš toto vyzkoušet když vyšplháš skoro až nahoru po tyčí a pak pohybem doleva.
 
 ![screenshot](dodge-gravity-bug.png)
 
-Can you fix this bug? To do this, you need to give your character different coloured trousers (on _all_ costumes)...
+Uměl by jsi tuto chybu opravit? Aby to bylo možné, musíš dát tvé postavě jinak barevné kalhoty (ve _všech_ kostýmech)...
 
 ![screenshot](dodge-trousers.png)
 
-...and then replace the code:
+...a poté nahradit kód:
 
 ```blocks
 	< touching color [#0000FF]? >
 ```
 
-with:
+kódem:
 
 ```blocks
 	< color [#00FF00] is touching [#0000FF]? >
 ```
 
-Remember to test your improvements to make sure you've fixed the bug!
+Nezapomeň otestovat svojí opravu aby jsi byl jist že jsi opravila chybu!
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
 
-## Challenge: More lives {.challenge}
-Can you give your player 3 `lives` {.blockdata}, instead of just sending them back to the beginning each time? Here's how your game could work:
+## Výzva: více životů {.challenge}
+Uměl by jsi dát hráči 3 `životy` {.blockdata}, namísto pouhého odesíání na začátek pokaždý? Takhle by mohla hra fungovat:
 
-+ Your player starts with 3 lives;
-+ Whenever your player gets hit, one life is lost and they go back to the start;
-+ If there are no lives left, the game ends.
++ Na začátku má hráč 3 životy;
++ Po každém zásahu se odečte jeden život, a poté se vrátí postava na začátek;
++ Pokud již nejsou k dispozici žádné další životy, hra končí.
 
-## Save your project { .save }
+## Ulož svůj projekt { .save }
