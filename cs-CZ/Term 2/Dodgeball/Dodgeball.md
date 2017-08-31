@@ -22,8 +22,8 @@ Nejdřiv vytvoříme postavu která se může pohybovat doleva a doprava, a taky
 
 ## Postup { .check }
 
-+ Vytvoř nový projekt ve Scratchi a smaž kočičí sprite tak, aby byl projekt prázndý. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
-+ Pro tento projekt bys měl mít složku 'Project Resources', kde bude obrázek s pozadím, který budeš chtít. Přesvědč si že víš kde ta složka je, a pokud ne zeptej se tvého vedoucího týmu.
++ Vytvoř si nový projekt a smaž kočičku, takže tvůj projekt bude prázndý. Webový editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Pro tento projekt bys měl mít složku 'Project Resources', kde bude obrázek s pozadím, který použiješ. Přesvědč si že víš kde tato složka je, a pokud ne zeptej se tvého vedoucího týmu.
 
 	![screenshot](dodge-resources.png)
 
