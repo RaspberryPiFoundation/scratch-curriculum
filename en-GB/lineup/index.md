@@ -15,5 +15,5 @@ Here's an example of the game you will make:
 
 <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/170916029/?autostart=false" frameborder="0" allowfullscreen></iframe>
 
-[Click here to start the project](https://projects.raspberrypi.org/en/projects/lineup)
-[Project pdf](lineup.pdf).
++ [Click here to start the project](https://projects.raspberrypi.org/en/projects/lineup)
++ [Project pdf](lineup.pdf).

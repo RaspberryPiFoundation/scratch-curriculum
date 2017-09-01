@@ -17,5 +17,5 @@ Click and drag with the mouse to draw a line with the pencil. Your objective is 
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/59279346/?autostart=false" frameborder="0"></iframe>
 </div>
 
-[Click here to start the project](https://projects.raspberrypi.org/en/projects/cats)
-[Project pdf](cats.pdf).
++ [Click here to start the project](https://projects.raspberrypi.org/en/projects/cats)
++ [Project pdf](cats.pdf).

@@ -18,5 +18,5 @@ Press the space bar to flap and try to navigate through the gaps in the pipes!
   <img src="images/flappy_screenshot.png">
 </div>
 
-[Click here to start the project](https://projects.raspberrypi.org/en/projects/flappy-parrot)
-[Project pdf](flappy-parrot.pdf).
++ [Click here to start the project](https://projects.raspberrypi.org/en/projects/flappy-parrot)
++ [Project pdf](flappy-parrot.pdf).

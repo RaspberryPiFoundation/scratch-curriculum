@@ -17,5 +17,5 @@ Click on the flag belonging to the country for which you are being asked.
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/171279525/?autostart=false" frameborder="0"></iframe>
 </div>
 
-[Click here to start the project](https://projects.raspberrypi.org/en/projects/guess-the-flag)
-[Project pdf](guess-the-flag.pdf).
++ [Click here to start the project](https://projects.raspberrypi.org/en/projects/guess-the-flag)
++ [Project pdf](guess-the-flag.pdf).

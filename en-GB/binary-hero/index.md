@@ -17,5 +17,5 @@ Click the green flag to play. Use z, x, c and v to play the correct notes when t
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/169972197/?autostart=false" frameborder="0"></iframe>
 </div>
 
-[Click here to start the project](https://projects.raspberrypi.org/en/projects/binary-hero)
-[Project pdf](binary-hero.pdf).
++ [Click here to start the project](https://projects.raspberrypi.org/en/projects/binary-hero)
++ [Project pdf](binary-hero.pdf).
