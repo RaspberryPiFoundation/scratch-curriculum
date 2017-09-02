@@ -3,12 +3,12 @@ title: Mémoire — Notes du volontaire
 ---
 
 # Introduction :
-Dans ce projet, les enfants vont apprendre comment utiliser des listes de variables pour stocker des données, ainsi que d'apprendre à simplifier leurs programmes en utilisant des simples blocs personalisés (fonctions).
+Dans ce projet, les enfants vont apprendre comment utiliser des listes de variables pour stocker des données, ainsi qu'apprendre à simplifier leurs programmes en utilisant des simples blocs personnalisés (fonctions).
 
 # Ressources
 Pour ce projet, on devrait utiliser Scratch 2. Scratch 2 peut être utilisé soit en ligne via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou en téléchargeant à partir de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pour une utilisation hors-connexion.
 
-Vous trouverez une version finalisée du projet <a href="http://scratch.mit.edu/projects/34874510/#editor">en ligne</a>, ou vous pouvez la télécharger en cliquant sur le lien 'Matériaux du Projet', qui contient :
+Vous trouverez une version finalisée du projet <a href="https://scratch.mit.edu/projects/172305882/#editor">en ligne</a>, ou vous pouvez la télécharger en cliquant sur le lien 'Matériaux du Projet' qui contient :
 
 + Memory.sb2
 
@@ -21,8 +21,8 @@ Ce projet couvre des éléments des parcours suivants du cursus de créativité 
 + [Combiner des structures de programmation afin de résoudre des problèmes.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 # Défis
-+ "Ajouter du son" - améliorer la simplicité d'utilisation du jeu ;
-+ "Créer 4 boutons" - manipuler des listes ;
-+ "Créer d'autres blocs" - créer des blocs personalisés ;
-+ "Un autre costume" - améliorer la simplicité d'utilisation du jeu ;
++ "Ajouter du son" - améliorer la simplicité d'utilisation du jeu;
++ "Créer 4 boutons" - manipuler des listes;
++ "Créer d'autres blocs" - créer des blocs personnalisés;
++ "Un autre costume" - améliorer la simplicité d'utilisation du jeu;
 + "Niveau de difficulté" - modifier les données stockées dans une liste.
