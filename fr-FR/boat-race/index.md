@@ -42,7 +42,7 @@ Vous allez apprendre à faire un jeu dans lequel vous utiliserez la souris pour 
 
 	```blocks
 		quand ⚑ cliqué
-		s'orienter vers (0 v)
+		s'orienter à (0 v)
 		aller à x:(-190) y:(-150)
 		répéter indéfiniment
 		   s'orienter vers [pointeur de souris v]
@@ -83,7 +83,7 @@ Votre bateau peut naviguer à travers les barrières en bois! Arrangeons cela.
 		   basculer sur costume [bateau détruit v]
 		   dire [Noooooon!] pendant (1) secondes
 		   basculer sur costume [bateau v]
-		   s'orienter vers (0 v)
+		   s'orienter à (0 v)
 		   aller à x:(-215) y:(-160)
 		fin
 	```
