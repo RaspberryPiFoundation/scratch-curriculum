@@ -1,6 +1,6 @@
 ---
 title: Course de bateaux
-description: "Apprend à programmer un jeu de bateau!"
+description: "Apprends à programmer un jeu de bateau!"
 layout: project
 notes: "Boat Race - notes.md"
 ---
