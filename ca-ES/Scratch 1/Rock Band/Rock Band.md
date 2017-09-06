@@ -116,8 +116,8 @@ En aquest pas, programarem el teu tambor perquè soni quan el toquis.
 
 + Pots fer que el tambor soni també quan es premi la tecla "espai"? necessitaràs aquest bloc del menú "Esdeveniments" {.blockevents}:
 
-```scratch
-	quan la tecla espai es premi
+```blocks
+	en prémer tecla [espai v]
 ```
 
 Pots copiar el programa que ja tens fent clic sobre seu amb el botó dret del ratolí i seleccionant "duplica".
@@ -146,9 +146,9 @@ Afegim una cantant al teu grup!
 
 + Ara que ja has afegit el so, pots afegir el codi següent a la teva cantant:
 
-	```scratch
+	```blocks
 		quan es cliqui aquest personatge
-		toca el so singer1 fins que acabi
+        toca el so [singer1 v] fins que acabi
 	```
 
 + Prova la teva cantant per assegurar-te de que canta quan li fas clic a sobre.
