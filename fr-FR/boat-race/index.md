@@ -1,5 +1,5 @@
 ---
-title: Course de bateaux 
+title: Course de bateaux
 description: "Apprends à programmer un jeu de bateau!"
 layout: project
 notes: "Boat Race - notes.md"
@@ -7,7 +7,7 @@ notes: "Boat Race - notes.md"
 
 # Introduction { .intro }
 
-Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour faire naviguer un bateau vers une île déserte.
+Vous allez apprendre à faire un jeu dans lequel vous utiliserez la souris pour faire naviguer un bateau vers une île déserte.
 
 <div class="scratch-preview">
 <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
@@ -18,7 +18,7 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 
 ## Liste de contrôle d'activité { .check }
 
-+ Commencez un nouveau projet de scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver le logicel scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Commencez un nouveau projet de scratch et supprimez le lutin de chat pour que votre projet soit vide. Vous pouvez trouver le logiciel scratch en ligne à <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Cliquez sur votre scène et arrière-plan de votre niveau. Vous devriez ajouter :
 	 + Le bois que votre bateau doit éviter;
@@ -30,9 +30,9 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 
 # Étape 2 : Direction du bateau { .activity }
 
-## Liste de contrôle d'Activité { .check }
+## Liste de contrôle d'activité { .check }
 
-+ Si votre leader de club vous a donné un dossier 'Ressources', cliquez 'importer un lutin depuis un fichier' et ajouter l'image 'boat.png'. Vous devriez faire rétrécir le lutin et y mettre la position de départ.
++ Si votre leader de club vous a donné un dossier 'Ressources', cliquez 'importer un lutin depuis un fichier' et ajouter l'image 'boat.png'. Vous devriez faire rétrécir le lutin et y définir la position de départ.
 
 	![screenshot](images/boat-boat.png)
 
@@ -41,71 +41,71 @@ Vous allez apprendre à faire un jeu, dans lequel vous utiliserez la souris pour
 + Vous allez contrôler le bateau avec votre souris. Ajoutez ce code à votre bateau:
 
 	```blocks
-		quand le drapeau vert pressé
+		quand ⚑ cliqué
 		s'orienter à (0 v)
 		aller à x:(-190) y:(-150)
 		répéter indéfiniment
-   			s'orienter vers [pointeur de souris v]
-   			avancer de (1)
+		   s'orienter vers [pointeur de souris v]
+		   avancer de (1)
 		fin
 	```
 
-+ Testez votre jeu, en cliquant sur le drapeau et en déplaçant la souris. Le bateau navigue-t-il vers la souris ?
++ Testez votre jeu en cliquant sur le drapeau et en déplaçant la souris. Le bateau navigue-t-il vers la souris?
 
 	![screenshot](images/boat-mouse.png)
 
-+ Qu'est ce qui arrive si le bateau atteint le curseur de souris ?
++ Qu'est-ce qui arrive si le bateau atteint le curseur de souris?
 
-	Pour arrêter cet événement, vous devrez ajouter le block 'si' {.blockcontrol} à votre code, pour que le bateau se déplace seulement si votre souris est à plus de 5 pixels.
+	Pour arrêter ce comportement, vous devrez ajouter le bloc 'si' {.blockcontrol} à votre code pour que le bateau se déplace seulement si votre souris est à plus de 5 pixels.
 
 	![screenshot](images/boat-pointer.png)
 
-+ Testez votre bateau de nouveau, vérifiez si le problème a été résolut.
++ Testez votre bateau de nouveau, vérifiez si le problème a été résolu.
 
 ## Sauvegarder votre projet { .save }
 
-# Étape 3 : Effondrement! { .activity .new-page }
+# Étape 3 : Collision! { .activity .new-page }
 
-Votre bateau peut naviguer à travers les barrières en bois!
+Votre bateau peut naviguer à travers les barrières en bois! Arrangeons cela.
 
-## liste de contrôle d'activté { .check }
+## liste de contrôle d'activité { .check }
 
-+ Vous aurez besoin de 2 costumes pour votre bateau, un costume normal et un pour quand le bateau explose. Dupliquez votre costume de bateau et nommez-les 'normal' et 'coup'.
++ Vous aurez besoin de 2 costumes pour votre bateau, un costume normal et un pour quand le bateau est détruit. Dupliquez votre costume de bateau et nommez-les 'bateau' et 'bateau détruit'.
 
-+ Cliquez sur le costume 'coup' choisissez ' Sélectionner' l'outil pour saisir et déplacer les morceaux du bateau  et les faire tourner autour. Faites semblant que votre bateau est explosé.
++ Cliquez sur le costume 'bateau détruit' et choisissez l'outil 'Sélectionner' pour saisir et déplacer les morceaux du bateau et les faire tourner autour. Faites semblant que votre bateau est détruit.
 
 	![screenshot](images/boat-hit-costume.png)
 
-+ Ajoutez ce code à votre bateau, à l'intérieur de la boucle 'répéter indéfiniment' {.blockcontrol}, pour qu'il s'effondre quand il touche des morceaux en bois :
++ Ajoutez ce code à votre bateau, à l'intérieur de la boucle 'répéter indéfiniment' {.blockcontrol}, pour qu'il se détruise lorsqu'il touche des morceaux en bois :
 
 	```blocks
 		si <couleur [#603C15] touchée?> alors
-   			basculer sur costume [hit v]
-  			dire [Noooooon!] pendant (1) secondes
-   			basculer sur costume [normal v]
-   			s'orienter à (0 v)
-   			aller à x:(-215) y:(-160)
+		   basculer sur costume [bateau détruit v]
+		   dire [Noooooon!] pendant (1) secondes
+		   basculer sur costume [bateau v]
+		   s'orienter à (0 v)
+		   aller à x:(-215) y:(-160)
 		fin
 	```
 
-	Ce code est à l'intérieur de la boucle 'répéter indéfiniment' {.blockcontrol}, pour que votre code continue de vérifier si le bateau est explosé.
+	Ce code est à l'intérieur de la boucle 'répéter indéfiniment' {.blockcontrol} pour que votre code vérifie continuellement si le bateau entre en collision.
 
-+ Vous devriez aussi vous assurer que votre bateau commence toujours sur le costume 'normal'.
++ Vous devriez aussi vous assurer que votre bateau commence toujours sur le costume 'bateau'.
 
-+ Maintenant si vous essayez de naviguer par une barrière en bois, vous devriez voir que votre bateau explose et revient au début.
++ Maintenant si vous essayez d'entrer en collision avec une barrière en bois, vous devriez voir que votre bateau se détruit puis revient au début.
 
 	![screenshot](images/boat-crash.png)
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Victoire! {.challenge}
-Pouvez vous ajouter un autre bloc `si` {.blockcontrol} au code de votre bateau, pour que le joueur gagne quand ils arrivent à l'île déserte ?
+Pouvez vous ajouter un autre bloc `si` {.blockcontrol} au code de votre bateau pour que le joueur gagne quand il arrive à l'île déserte?
 
-Quand le bateau arrive à l'île déserte, il devrait dire ' Oui! ' Et ensuite le jeu devrait s'arrêter. Vous devrez utiliser ce code :
+Quand le bateau arrive à l'île déserte, il devrait dire 'Oui!' et ensuite le jeu devrait s'arrêter. Vous devrez utiliser ce code :
 
 ```blocks
-	dire [Ouii!] pendant (1) secondes
-	stop [all v]
+		dire [Oui!] pendant (1) secondes
+		stop [tout v]
 ```
 
 ![screenshot](images/boat-win.png)
@@ -113,7 +113,7 @@ Quand le bateau arrive à l'île déserte, il devrait dire ' Oui! ' Et ensuite l
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Effets sonores{.challenge}
-Pouvez vous ajouter des effets sonores à votre jeu, si le bateau explose, ou atteint l'île à la fin. Vous pourriez même ajouter la musique de fond (voir le projet 'groupe rock' précédent si vous avez besoin d'aide).
+Pouvez vous ajouter des effets sonores à votre jeu si le bateau entre en collision ou atteint l'île à la fin. Vous pourriez même ajouter une musique de fond (voir le projet 'Groupe de rock' précédent si vous avez besoin d'aide).
 
 ## Sauvegarder votre projet{ .save }
 
@@ -123,18 +123,18 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arrive à l'île déserte 
 
 ## Liste de contrôle d'Activité { .check }
 
-+ Ajoutez une nouvelle variable appelée `temps` {.blockdata} à votre scène. Vous pouvez aussi changer la présentation de votre nouvelle variable. Si vous avez besoin d'aide, regardez le projet 'Ballon'.
++ Ajoutez une nouvelle variable appelée `temps` {.blockdata} à votre scène. Vous pouvez aussi changer la présentation de votre nouvelle variable. Si vous avez besoin d'aide, regardez le projet 'SOS Fantômes'.
 
-	![screenshot](images/boat-variable-test.png)
+	![screenshot](images/boat-variable.png)
 
-+ Ajoutez ce code à votre scène, pour que le minuteur compte jusqu'a ce que le bateau atteigne l'île déserte :
++ Ajoutez ce code à votre scène pour que le minuteur compte jusqu'à-ce que le bateau atteigne l'île déserte :
 
 	```blocks
-		quand le drapeau vert pressé
-		[time v] prend la valeur [0]
+		quand ⚑ cliqué
+		[temps v] prend la valeur [0]
 		répéter indéfiniment
-   			attendre (0.1) secondes
-   			ajouter à [time v] (0.1)
+		   attendre (0.1) secondes
+		   [temps v] prend la valeur (0.1)
 		fin
 	```
 
@@ -150,29 +150,29 @@ Ce jeu est trop facile, ajoutons des choses pour le rendre plus intéressant.
 
 ## Liste de contrôle d'activité { .check }
 
-+ D'abord ajoutons quelques 'boosts' à votre jeu, qui accélérera le bateau. Modifiez votre scène et ajoutez quelques flèches blanches de rappel.
++ D'abord, ajoutons quelques zones d'accélération à votre jeu qui accéléreront le bateau lorsqu'il les traversera. Modifiez votre scène et ajoutez quelques flèches blanches.
 
 	![screenshot](images/boat-boost.png)
 
-+ Vous pouvez maintenant ajouter un code à votre bateau, la boucle `repeter indefiniement` {.blockcontrol}, pour qu'il se déplace 2x plus vite en touchant un booster blanc.
++ Vous pouvez maintenant ajouter du code à la boucle `répéter indéfiniement` {.blockcontrol} de votre bateau pour qu'il se déplace de trois pixels supplémentaires en touchant une flèche blanche.
 
 	```blocks
-		si < couleur[#FFFFFF] touché?> alors
-			avancer de (3)
-		end
+		si <couleur [#FFFFFF] touchée?> alors
+		   avancer de (3)
+		fin
 	```
 
-+ Vous pouvez aussi ajouter une porte tournante, que votre bateau doit éviter. Ajoutez un nouveau lutin appelé 'porte', qui ressemble à ceci :
++ Vous pouvez aussi ajouter une porte tournante que votre bateau doit éviter. Ajoutez un nouveau lutin appelé 'porte' qui ressemble à ceci :
 
 	![screenshot](images/boat-gate.png)
 
 	Assurez-vous que la porte est de la même couleur que les autres barrières en bois.
 
-+ Fixez le centre du lutin 'porte'.
++ Définissez le centre du lutin 'porte'.
 
 	![screenshot](images/boat-center.png)
 
-+ Ajoutez le code à votre porte pour le faire tourner lentement dans le bloc 'répéter indéfiniment' {.blockcontrol}.
++ Ajoutez le code à votre porte pour la faire tourner lentement dans le bloc 'répéter indéfiniment' {.blockcontrol}.
 
 + Testez votre jeu. Vous devriez maintenant avoir une porte tournante que vous devez éviter.
 
@@ -181,13 +181,13 @@ Ce jeu est trop facile, ajoutons des choses pour le rendre plus intéressant.
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Plus d'obstacles! {.challenge .new-page}
-Pouvez-vous ajouter plus d'obstacles pour votre jeu ? Voici quelques idées :
+Pouvez-vous ajouter plus d'obstacles à votre jeu? Voici quelques idées :
 
-+ Vous pourriez ajouter des marais verts à votre scène, qui ralentiraient le joueur quand il les touche. Vous pouvez utiliser le bloc `attendre` {.blockcontrol}pour faire ceci :
++ Vous pourriez ajouter des marais verts à votre scène qui ralentiraient le joueur quand il les touche. Vous pouvez utiliser le bloc `attendre` {.blockcontrol} pour faire celà :
 
 ```blocks
 	attendre (0.01) secondes
-````
+```
 
 ![screenshot](images/boat-algae.png)
 
@@ -200,19 +200,19 @@ Ces blocs peuvent vous aider :
 ```blocks
 	avancer de (1)
 	rebondir si le bord est atteint
-````
+```
 
 Si votre nouvel objet n'est pas brun, vous devrez ajouter à votre code de bateau :
 
 ```blocks
-	si <  <couleur [#603C15] touchée?> ou <touché [shark v]?> > alors
-	end
+	si <<couleur [#603C15] touchée?> ou <[requin v] touché?>> alors
+	fin
 ```
 
 ## Sauvegarder votre projet { .save }
 
 ## Défi : Plus de bateaux! {.challenge .new-page}
-Pouvez-vous transformer votre jeu en course entre 2 joueurs ?
+Pouvez-vous transformer votre jeu en course entre 2 joueurs?
 
 + Dupliquez le bateau, renommez le 'Joueur 2' et changez sa couleur.
 
@@ -221,16 +221,16 @@ Pouvez-vous transformer votre jeu en course entre 2 joueurs ?
 + Changez la position de départ du Joueur 2, en changeant ce code:
 
 ```blocks
-	aller à x: (-190) y: (-150)
+	aller à x:(-190) y:(-150)
 ```
 
 + Supprimez le code qui utilise la souris pour contrôler le bateau :
 
 ```blocks
-	si <(distance de [pointeur de souris v]) > [5]> alors
-   		s'orienter vers [pointeur de souris v]
-   		avancer de (1)
-	fin
+		si <(distance de [pointeur de souris v]) > [5]> alors
+		   s'orienter vers [pointeur de souris v]
+		   avancer de (1)
+		fin
 ```
 
 ...Et remplacez le code pour contrôler le bateau en utilisant les touches de direction.
@@ -239,7 +239,7 @@ Ceci est le code pour faire avancer le bateau avec les flèches :
 
 ```blocks
 	si <touche [flèche haut v] pressée?> alors
-   		avancer de (1)
+   	avancer de (1)
 	fin
 ```
 
@@ -248,10 +248,10 @@ Vous aurez aussi besoin du bloc `tourner` {.blockmotion} pour que le bateau tour
 ## Sauvegarder votre projet{ .save }
 
 ## Défi : Plus de niveaux! {.challenge .new-page}
-Pouvez-vous créer des scènes supplémentaires et permettre au joueur de choisir entre les niveaux ?
+Pouvez-vous créer des scènes supplémentaires et permettre au joueur de choisir entre les niveaux?
 
 ```blocks
-	quand [space v] est pressé
+	quand [espace v] est pressé
 	arrière-plan suivant
 ```
 
