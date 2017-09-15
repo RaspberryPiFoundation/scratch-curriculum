@@ -27,13 +27,13 @@ Vous allez créer un jeu pour attraper des fantômes!
 + Ajoutez ce code au fantôme pour qu'il apparaisse et disparaisse constamment :
 
 	```blocks
-    quand ⚑ cliqué
-    répéter indéfiniment
-       cacher
-       attendre (1) secondes
-       montrer
-       attendre (1) secondes
-    fin
+    	quand le drapeau vert pressé
+    	répéter indéfiniment
+       		cacher
+       		attendre (1) secondes
+       		montrer
+       		attendre (1) secondes
+    	fin
 	```
 
 + Testez le code de votre fantôme en appuyant sur le drapeau vert.
@@ -135,13 +135,13 @@ Vous pouvez rendre votre jeu encore plus intéressant en limitant chaque partie 
 	Voici le code qui vous permettra de réaliser cela. Vous pouvez ajouter celui-ci à votre __scène__ :
 
 	```blocks
-    quand ⚑ cliqué
-    [temps v] prend la valeur [10]
-    répéter jusqu’à <(temps) = [0]>
-       attendre (1) secondes
-       ajouter à [temps v] (-1)
-    fin
-    stop [tout v]
+    	quand le drapeau vert pressé
+    	[temps v] prend la valeur [10]
+    	répéter jusqu’à <(temps) = [0]>
+       		attendre (1) secondes
+       		ajouter à [temps v] (-1)
+    	fin
+    	stop [tout v]
 	```
 
 	Voici comment vous pouvez ajouter le code `répéter jusqu’à`{.blockcontrol}`temps`{.blockdata}`= 0`{.blockoperators} :

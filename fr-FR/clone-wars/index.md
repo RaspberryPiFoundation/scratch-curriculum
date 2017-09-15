@@ -26,7 +26,7 @@ Créons un vaisseau spatial qui défendra la Terre!
 
 	![screenshot](images/invaders-sprites.png)
 
-+Ajoutez le code pour déplacer votre vaisseau spatial à gauche lorsque la touche de direction gauche est appuyée. Vous devrez utiliser ces blocs :
++ Ajoutez le code pour déplacer votre vaisseau spatial à gauche lorsque la touche de direction gauche est appuyée. Vous devrez utiliser ces blocs :
 
 	```blocks
 		quand le drapeau vert pressé
@@ -130,7 +130,7 @@ Ajoutons des hippopotames volants qui essaient de détruire votre vaisseau spati
 		fin
 	```
 
-+Lorsque chaque clone d'hippopotame démarrera, déplacez-le autour de la scène (à une vitesse aléatoire) jusqu'à ce qu'il soit frappé par la foudre. Ajoutez ce code au clone d'hippopotame :
++ Lorsque chaque clone d'hippopotame démarrera, déplacez-le autour de la scène (à une vitesse aléatoire) jusqu'à ce qu'il soit frappé par la foudre. Ajoutez ce code au clone d'hippopotame :
 
 	```blocks
 		quand je commence comme un clone

@@ -41,7 +41,7 @@ Vous allez apprendre à faire un jeu dans lequel vous utiliserez la souris pour 
 + Vous allez contrôler le bateau avec votre souris. Ajoutez ce code à votre bateau:
 
 	```blocks
-		quand ⚑ cliqué
+		quand le drapeau vert pressé
 		s'orienter à (0 v)
 		aller à x:(-190) y:(-150)
 		répéter indéfiniment
@@ -130,7 +130,7 @@ Ajoutons un minuteur à votre jeu, pour que le joueur arrive à l'île déserte 
 + Ajoutez ce code à votre scène pour que le minuteur compte jusqu'à-ce que le bateau atteigne l'île déserte :
 
 	```blocks
-		quand ⚑ cliqué
+		quand le drapeau vert pressé
 		[temps v] prend la valeur [0]
 		répéter indéfiniment
 		   attendre (0.1) secondes
