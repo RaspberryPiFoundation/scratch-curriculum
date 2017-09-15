@@ -48,7 +48,7 @@ Créons un personnage qui peut se transformer dans une séquence aléatoire de c
 + Ajoutez ce code à votre personnage afin d'ajouter un chiffre aléatoire à votre liste (et montrer le bon costume) 5 fois :
 
 	```blocks
-    quand ⚑ cliqué
+    quand le drapeau vert pressé
     supprimer l'élément (tout v) de la liste [séquence v]
     répéter (5) fois
        ajouter (nombre aléatoire entre (1) et (4)) à [séquence v]
@@ -155,7 +155,7 @@ Jusqu'à maintenant, le joueur n'a qu'à se souvenir de 5 couleurs. Nous allons 
 + Enfin, vous aurez besoin d'ajouter une boucle `répéter indéfiniment` {.blockcontrol} autour du code qui génère la séquence afin de créer une nouvelle séquence pour chaque niveau. Le code de votre lutin devrait apparaître comme suit :
 
 	```blocks
-    quand ⚑ cliqué
+    quand le drapeau vert pressé
     [pointage v] prend la valeur [3]
     répéter indéfiniment
        supprimer l'élément (tout v) de la liste [séquence v]

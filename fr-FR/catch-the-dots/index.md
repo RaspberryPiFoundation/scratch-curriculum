@@ -24,24 +24,21 @@ Commençons par créer un contrôleur qui sera utilisé pour rassembler des poin
 
 + Pour ce projet, vous devriez avoir un dossier 'Ressources du projet', contenant l'image du contrôleur que vous pouvez utiliser. Assurez-vous de pouvoir trouver ce dossier et demandez à votre leader de club si vous ne le trouvez pas.
 
-	![screenshot](dots-resources.png)
+	![screenshot](images/dots-resources.png)
 
 + À partir du dossier des Ressources du projet, importez 'controller.png ' comme nouveau lutin. Si vous n'avez pas cette image, vous pouvez le dessiner vous-même! Vous devriez aussi mettre l'arrière-plan noir. Voici le résultat que vous devriez obtenir :
 
-	![screenshot](dots-controller.png)
+	![screenshot](images/dots-controller.png)
 
 + Vous pouvez déplacer votre contrôleur facilement, en le tournant à gauche ou à droite lorsque vous appuyez sur les flèches:
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
 		répéter indéfiniment
-			si <touche [Flèche gauche v] pressé?> alors
+			si <touche [flèche droite v] pressée?> alors
 				tourner gauche de (2) degrés
-			end
-			si <touche [Flèche droite v] pressé?> alors
-				tourner droite de (2) degrés
-			end
-		end
+			fin
+		fin
 	```
 + Testez votre contrôleur - il devrait tourner à gauche et à droite.
 
@@ -50,8 +47,8 @@ Commençons par créer un contrôleur qui sera utilisé pour rassembler des poin
 + Ajoutez ce code à votre contrôleur :
 
 	```blocks
-		quand le drapeau pressé
-		mettre [vitesse de contrôleur v] à [0]
+		quand le drapeau vert pressé
+		ajouter [vitesse de contrôleur v] à [0]
 		répéter indéfiniment
 			tourner droite de (Vitesse de contrôleur) degrés
 		end
@@ -60,12 +57,11 @@ Commençons par créer un contrôleur qui sera utilisé pour rassembler des poin
 + Pour le moment, ce code ne déplacera pas le contrôleur puisque la vitesse a été mise à 0! Créez un script séparé dans votre contrôleur, qui augmentera la vitesse lorsque la flèche sera appuyée.
 
 	```blocks
-		quand le drapeau
+		quand le drapeau vert pressé
 		répéter indéfiniment
 			si <touche [Flèche droite v] pressé?> alors
 				ajouter [Vitesse de contrôleur v] par (0.2)
-			sinon
-
+				sinon
 			end
 		end
 	```
@@ -82,7 +78,7 @@ Commençons par créer un contrôleur qui sera utilisé pour rassembler des poin
 
 	Voici comment votre code de contrôleur devrait être :
 
-	![screenshot](dots-right.png)
+	![screenshot](images/dots-right.png)
 
 + Testez votre projet à nouveau. Si vous maintenez la touche de direction droite, votre contrôleur devrait accélérer. Si vous lâchez la touche, votre contrôleur devrait ralentir progressivement.
 
@@ -103,44 +99,45 @@ Ajoutons des points au jeu, que le joueur rassemblera avec son contrôleur.
 
 + Créez un nouveau lutin nommé 'rouge'. Ce lutin devrait être un petit point rouge.
 
-	![screenshot](dots-red.png)
+	![screenshot](images/dots-red.png)
 
 + Ajoutez ce script à votre lutin 'rouge', afin de créer un nouveau point dupliqué toutes les quelques secondes :
 
 	```blocks
-		quand le drapeau pressé
+		quand le drapeau vert pressé
+		cacher
 		attendre (2) secondes
 		répéter indéfiniment
-			créer un clone de [Moi même v]
-			attendre (nombre aléatoire (5) et (10)) secondes
-		end
+   			créer un clone de [moi-même v]
+   			attendre (nombre aléatoire entre (5) et (10)) secondes
+		fin
 	```
 
 + Lorsqu'un clone est créé, vous devez le faire apparaître dans l'un des quatre coins de l'étape. 
 
-	![screenshot](dots-start.png)
+	![screenshot](images/dots-start.png)
 
 	Pour ce faire, créez d'abord une nouvelle liste appelée ` position début `{.blockdata} et cliquez sur ` (+) ` pour ajouter les valeurs '-180' et '180'.
 
-	![screenshot](dots-list.png)
+	![screenshot](images/dots-list.png)
 
 + Vous pouvez utiliser ces 2 articles de liste afin de choisir un coin aléatoire dans l'étape. Ajoutez ce code au lutin 'pointé', pour que chaque nouveau clone se déplace vers un coin aléatoire et se déplace ensuite lentement vers le contrôleur.
 
 	```blocks
 		quand je commence comme un clone
-		aller à x: (élément (nombre aléatoire v) de [Positions du début v]) y: (élément (nombre aléatoire v) de [Positions du début v])
-		s'orienter vers [contrôleur v]
+		aller à x:(élément (random v) de [start positions v]) y:(élément (random v) de [start positions v])
+		s'orienter vers [controller v]
 		montrer
-		répéter jusqu'à <touché [contrôleur v]?>
-			avancer de (1)
-		end
+		répéter jusqu’à <[controller v] touché?>
+  			avancer de (1)
+		fin
 	```
 
 	Le code ci-dessus choisit '-180' ou '180' pour les positions x et le y. Ceci signifie que chaque clone commence dans un coin de l'étape.
 
 + Testez votre projet. Vous devriez voir que beaucoup de points rouges apparaissent dans chaque coin de l'écran et se déplacent lentement vers le contrôleur.
 
-	![screenshot](dots-red-test.png)
+	![screenshot](images/dots-red-test.png)
 
 + Créez 2 nouvelles variables appelées 'vies' {.blockdata} et `score` {.blockdata}.
 
@@ -149,21 +146,21 @@ Ajoutons des points au jeu, que le joueur rassemblera avec son contrôleur.
 + Vous devez ajouter du code à la fin du code ` quand je commence comme un clone ` {.blockcontrol} de votre point rouge, afin que 1 soit soit ajouté au 'score' du joueur {.blockdata} si la couleur correspond, ou que 1 soit retiré des `vies` {.blockdata} du joueur si les couleurs ne correspondent pas.
 
 	```blocks
-		avancer de  (5)
-		Si <couleur [#FF0000] touchée?> alors
-			mettre [score v] à (1)
-			jouer le son [pop v]
+		avancer de (5)
+		si <couleur [#FF0000] touchée?> alors
+   			ajouter à [score v] (1)
+   			jouer le son [pop v]
 		sinon
-			mettre [vies v] à (-1)
-			jouer le son [laser1 v]
-		end
+  			ajouter à [lives v] (-1)
+   			jouer le son [laser1 v]
+		fin
 		supprimer ce clone
 	```
 
 + Ajoutez ce code à la fin du script de votre étape pour que le jeu se termine lorsque le joueur perd toutes ses vies :
 
 	```blocks
-		attendre jusqu'à <(vies) < [1]>
+		attendre jusqu’à <(lives) < [1]>
 		stop [tout v]
 	```
 
@@ -174,11 +171,11 @@ Ajoutons des points au jeu, que le joueur rassemblera avec son contrôleur.
 ## Défi : Plus de points {.challenge}
 Dupliquez votre lutin pointé 'rouge' deux fois et nommez les deux nouveaux lutins 'jaune' et 'bleu'.
 
-![screenshot](dots-more-dots.png)
+![screenshot](images/dots-more-dots.png)
 
 Éditez ces lutins (incluant leur code), afin que chaque point coloré corresponde à la couleur sur le contrôleur. Souvenez-vous de tester votre projet, en vous assurant que vous gagniez des points et que vous perdiez des vies aux bons moments et que votre jeu n'est pas trop facile ou trop difficile!
 
-![screenshot](dots-all-test.png)
+![screenshot](images/dots-all-test.png)
 
 ## Sauvegarder votre projet { .save }
 
@@ -193,12 +190,12 @@ Créons un jeu qui devient de plus en plus difficile quand joueur survit plus lo
 + Sur votre étape, créez un nouveau script qui rend l'écart à un chiffre élevé et qui réduit ensuite lentement le temps d'écart.
 
 	```blocks
-		quand le drapeau pressé
-		ajouter [Retard v] à (8)
-		répéter jusqu'à < (Retard) = (2)>
-			attendre (10) secondes
-			mettre [Retard v] à (-0.5)
-		end
+		quand le drapeau vert pressé
+		[delay v] prend la valeur (8)
+		répéter jusqu’à <(delay) = (2)>
+   			attendre (10) secondes
+   			ajouter à [delay v] (-0.5)
+		fin
 	```
 
 	Remarquez que c'est semblable au fonctionnement d'une minuterie !
@@ -228,11 +225,11 @@ Sauvegardons le meilleur score afin que les joueurs puissent voir comment ils/el
 
 + Cliquez sur votre étape et créez un nouveau bloc personnalisé appelé ` contrôle meilleur score ` {.blockmoreblocks}.
 
-	![screenshot](dots-custom-1.png)
+	![screenshot](images/dots-custom-1.png)
 
 + Juste avant la fin du jeu, ajoutez votre nouveau bloc personnalisé.
 
-	![screenshot](dots-custom-2.png)
+	![screenshot](images/dots-custom-2.png)
 
 + Ajoutez le code à votre bloc personnalisé pour stocker le 'score' actuel{.blockdata} dans 'meilleur score' {.blockdata} `si` {.blockcontrol} c'est le score le plus élevé jusqu'à maintenant :
 
