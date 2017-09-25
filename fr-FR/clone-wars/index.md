@@ -134,7 +134,7 @@ Ajoutons des hippopotames volants qui essaient de détruire votre vaisseau spati
 
 	```blocks
 		quand je commence comme un clone
-		[speed v] prend la valeur (nombre aléatoire entre (2) et (4))
+		mettre [speed v] à (nombre aléatoire entre (2) et (4))
 		aller à x:(nombre aléatoire entre (-220) et (220)) y:(150)
 		montrer
 		répéter jusqu’à <[lightning v] touché?>

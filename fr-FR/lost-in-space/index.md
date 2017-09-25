@@ -198,7 +198,7 @@ Vous devrez changer les chiffres de ce bloc :
 
 	```blocks
 		quand le drapeau vert pressé
-		mettre à (100) _de la taille initiale
+		mettre à (100) de la taille initiale
 		s'orienter à (0 v)
 		aller à x:(-150) y:(-150)
 		attendre (1) secondes
