@@ -35,6 +35,12 @@
             "filename": "Clone Wars/Clone Wars.md",
             "beta":     true,
             "note":     "Clone Wars/Clone Wars - notes.md"
+        },
+        {
+            "number":   6,
+            "filename": "Clone Wars/Stwórz Własny Świat.md",
+            "beta":     true,
+            "note":     "Clone Wars/Stwórz Własny Świat - notatki.md"
         }
     ]
 }
