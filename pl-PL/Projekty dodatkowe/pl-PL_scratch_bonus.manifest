@@ -1,0 +1,17 @@
+{
+    "description": false,
+    "warning": "Curriculum Scratcha jest obecnie w trakcie aktualizacji. Jeżeli nie możesz znaleźć projektu tutaj, może został on przeniesiony do 'Projektów społeczności Scratch' albo 'Projektów archiwalnych'.",
+    "id": "scratch_bonus",
+    "category" : "cat-scratch",
+    "language": "pl-PL",
+    "number": 3,
+    "title": "Projekty dodatkowe Scratch",
+
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Balony/Balony.md",
+            "note": "Balony/Balony - notatki.md"
+        }
+    ]
+}
