@@ -24,6 +24,6 @@ Kompletną wersję tego projektu możesz znaleźć <a href="http://scratch.mit.e
 + "Więcej obiektów" - używanie zdobytych umiejętności przy tworzeniu kolejnych obiektów.
 
 #Często zadawane pytania
-+ Jeżeli dzieci będą miały problemy z przebijaniem balonów bez przesuwania ich, mogą zagrać w grę w trybie pełnoekranowym, w którym to balonów nie da się przesuwać.
++ Jeżeli dzieci będą miały problemy z przebijaniem balonów bez przesuwania ich, mogą zagrać w grę w trybie pełnoekranowym, w którym to duszków nie da się przesuwać.
 
 ![screenshot](balloons-fullscreen.png)

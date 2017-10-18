@@ -33,20 +33,21 @@ Za chwilę stworzysz grę w przebijanie balonów!
 		idź do x:(0) y:(0)
 		ustaw kierunek na (45 v)
 		zawsze
-			move (1) Kroks
+			przesuń o (1) kroków
 			jeżeli na brzegu, odbij się
 		koniec
 	```
 
 + Przetestuj swojego duszka. Czy nie porusza się za wolno? Zmień nieco liczby w Twoim kodzie, aby go przyspieszyć.
 
-+ Czy zauważyłeś, że balon się obraca w locie?
++ Czy zauważyłeś, że balon obraca się w locie po zmianie kierunkuk?
 
 	![screenshot](balloons-flip.png)
 
-	Balony nie poruszają się w ten sposób! Poprawmyto, kliknij na duszka, następnie na niebieską ikonkę `i` {.blockmotion}.
+	Balony nie poruszają się w ten sposób! Poprawmy to, kliknij na duszka, następnie na niebieską ikonkę `i` {.blockmotion}.
 
 	![screenshot](balloons-info.png)
+
 	W sekcji 'styl obrotu', kliknij na kropkę, aby zapobiec obrotom balona.
 
 	![screenshot](balloons-lock.png)
@@ -61,24 +62,24 @@ Za chwilę stworzysz grę w przebijanie balonów!
 
 + Obecnie Twoj balon będzie zawsze startował w tej samej pozycji i poruszał się tą samą ściezką. Kliknij na zieloną flagę kilka razy, a przekonasz się, że gra przebiega zawsze w ten sam sposób.
 
-+ Zamiast używać tych samych wartości dla pozycji startowych x i y, pozwólmy Scratchowi wybrać losowe liczby. Zmień kod duszka-balona, tak aby wyglądał w ten sposób:
++ Zamiast używać tych samych wartości dla pozycji startowych `x` i `y`, pozwólmy Scratchowi wybrać losowe liczby. Zmień kod duszka-balona, tak aby wyglądał w ten sposób:
 
 	```blocks
 		kiedy kliknięto zieloną flagę
 		idź do x:(losuj od (-150) do (150)) y:(losuj od (-150) do (150))
 		ustaw kierunek na (45 v)
 		zawsze
-			move (1) Kroks
+			przesuń o (1) kroków
 			jeżeli na brzegu, odbij się
 		koniec
 	```
 
 + Jeśli klikniesz na zieloną flagę kilka razy, powinieneś zauważyć, że balon startuje z różnych miejsc.
 
-+ Możesz także użyć losowych liczb aby zmienić kolog balona:
++ Możesz także użyć losowych liczb aby zmienić kolor balona:
 
 	```blocks
-		zmień efekt [colour v] o (losuj od (0) do (200))
+		zmień efekt [kolor v] o (losuj od (0) do (200))
 	```
 
 	![screenshot](balloons-colour.png)
@@ -98,7 +99,7 @@ Pozwólmy graczom przebijać balony!
 
 ## Zadania do wykonania { .check }
 
-+ Kliknij na duszka-balona, przejdź do zakładki "Kostium". Możesz usunąć wszystkie inne kostiumy, zostaw tylko pierwszy z nich. Dodaj onowy kostium klikając na "Narysuj nowy kostoium" i utwórz kostium o nazwie 'rozerwany'.
++ Kliknij na duszka-balona, przejdź do zakładki "Kostium". Możesz usunąć wszystkie inne kostiumy, zostaw tylko pierwszy z nich. Dodaj nowy kostium klikając na "Narysuj nowy kostium" i utwórz kostium o nazwie 'rozerwany'.
 
 	![screenshot](balloons-costume.png)
 
@@ -111,7 +112,7 @@ Pozwólmy graczom przebijać balony!
 		idź do x:(losuj od (-150) do (150)) y:(losuj od (-150) do (150))
 		zmień efekt [kolor v] o (losuj od (0) do (200))
 		zawsze
-			move (1) Kroks
+			przesuń o (1) kroków
 			jeżeli na brzegu, odbij się
 		koniec
 	```
@@ -158,7 +159,7 @@ Dodajmy punktację, aby uczynić grę bardziej emocjonującą.
 
 	![screenshot](balloons-variable.png)
 
-	Powinieneś takż zobaczyć punkty w lewym górnym rogu sceny.
+	Powinieneś także zobaczyć punkty w lewym górnym rogu sceny.
 
 	![screenshot](balloons-stage-score.png)
 
@@ -191,7 +192,7 @@ Prostym sposobem na dodanie wielu balonóœ jest kliknięciu prawym przyciskiem 
 
 ## Zadania do wykonania { .check }
 
-+ Dużo lepszym sposobem jest _konowanie_ duszka-balona.
++ Dużo lepszym sposobem jest _klonowanie_ duszka-balona.
 
 	Przeciągnij część skryptu znajdującego się po `kiedy kliknięto zieloną flagę` {.blockevents} (za wyjątkiem kodu dotyczącego punktacji) kawałek dalej (nie usuwaj go), a zamiast niego dodaj kod tworzący 20 klonów duszka.
 
@@ -201,7 +202,7 @@ Prostym sposobem na dodanie wielu balonóœ jest kliknięciu prawym przyciskiem 
 
 	![screenshot](balloons-clone.png)
 
-+ Przetestuj swóə projekt! Teraz, kiedy zielona flaga zostanie kliknięta, głowny duszek zostanie ukryty i sklonowany 20 razy. Kiedy każdy z klonów zostanie dodany do gry, będzie latał po scenie losowo, tak jak robił to duszek. Sprawdź, czy możesz przebić 20 blonów.
++ Przetestuj swój projekt! Teraz, kiedy zielona flaga zostanie kliknięta, główny duszek zostanie ukryty i sklonowany 20 razy. Kiedy każdy z klonów zostanie dodany do gry, będzie latał po scenie losowo, tak jak robił to duszek-balon. Sprawdź, czy możesz przebić 20 balonów.
 
 ## Zapisz swój projekt { .save }
 
@@ -221,7 +222,6 @@ Możesz sprawić, że gra będzie bardziej interesująca poprzez dodanie ogranic
 	+ Co sekundę powinieneś odejmować 1 od pozostałego czasu.
 	+ Gra powinna się zatrzymać, kiedy sekundnik osiągnie 0.
 
-	
 	Oto kod, który Ci to umożliwi, musisz go dodać do _sceny_:
 
 	```blocks
@@ -253,11 +253,11 @@ Możesz sprawić, że gra będzie bardziej interesująca poprzez dodanie ogranic
 	+ Sprawić, aby balony poruszały się szybciej.
 	+ Zmniejszyć balony.
 
-	Przetestuj grę kilka razy, aż uznasz, że jest poziom trudności jest odpowiedni.
+	Przetestuj grę kilka razy, aż uznasz, że poziom trudności jest odpowiedni.
 
 ## Zapisz swój projekt { .save }
 
-## Challenge: Więcej obiektów {.challenge}
+## Wyzwanie: Więcej obiektów {.challenge}
 Czy potrafisz dodać inne obiekty do gry? Możesz dodać obiekty, dzięki którym zdobędziesz wiele punktów, jak pączki, albo takie, jak nietoperze, przez które będziesz tracił punkty po kliknięciu.
 
 ![screenshot](balloons-objects.png)
@@ -268,7 +268,7 @@ Będziesz musiał przemyśleć kilka kwestii dotyczących obiektów, które doda
 + Jak duże powinny być? Jak powinny się poruszać?
 + Ile punktów stracisz lub zyskasz po kliknięciu na nowe obiekty?
 + Czy będa poruszać się szybciej czy wolniej niż balony?
-+ Jak będą wyglądać i brzemić, kiedy zostaną kliknięte?
++ Jak będą wyglądać i brzmieć, kiedy zostaną kliknięte?
 
 Jeśli potrzebujesz pomocy przy dodawaniu kolejnych obiektów, możesz skorzystać z wcześniejszych instrukcji.
 
