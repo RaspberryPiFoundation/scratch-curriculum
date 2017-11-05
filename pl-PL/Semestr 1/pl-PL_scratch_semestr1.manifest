@@ -31,6 +31,11 @@
             "number":   5,
             "filename": "Kolorowe kredki/Kolorowe kredki.md",
             "note":     "Kolorowe kredki/Kolorowe kredki - notatki.md"
+        },
+        {
+            "number":   6,
+            "filename": "Wyścig Łodzi/Wyścig Łodzi.md",
+            "note":     "Wyścig Łodzi/Wyścig Łodzi - notatki.md"
         }
     ]
 }

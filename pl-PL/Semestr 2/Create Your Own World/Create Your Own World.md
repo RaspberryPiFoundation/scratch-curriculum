@@ -1,358 +1,359 @@
 ---
-title: Create Your Own World
+title: Stwórz Własny Świat
 level: Scratch 2
-language: en-GB
+language: pl-PL
 stylesheet: scratch
 embeds: "*.png"
-materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+materials: ["Zasoby Lidera Klubu/*.*","Zasoby Projektu/*.*"]
 ...
 
-# Introduction { .intro }
+# Wprowadzenie { .intro }
 
-In this project you'll learn how to create your own open-world adventure game.
+W tym projekcie nauczysz się jak stworzyć własną grę przygodową z otwartym światem.
 
 <div class="scratch-preview">
 	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=true" frameborder="0"></iframe>
 	<img src="world-final.png">
 </div>
 
-# Step 1: Coding your player { .activity }
+# Krok 1: Gracz { .activity }
 
-Let's start by creating a player, that can move around your world.
+Zacznijmy od utworzenia gracza, który będzie mógł poruszać się po świecie gry.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Start a new project, and delete the cat sprite, so that your project is empty.
++ Utwórz nowy projekt i usuń duszka-kota.
 
-+ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Do tego projektu będziesz potrzebował 'Zasobów Projektu', które zawierają wszystkie niezbędne grafiki. Upewnij się, że posiadasz ten folder, zapytaj Twojego Lidera Klubu jeśli nie możesz go znaleźć.
 
 	![screenshot](world-resources.png)
 
-+ Add the image 'room1.png' as a new stage backdrop, and the image 'player.png' as a new sprite. If you don't have these images you can draw them yourself! Here's how your project should look:
++ Dodaj grafikę 'pokój1.png' jako tło sceny oraz grafikę 'gracz.png' jako nowego duszka. Jeżeli nie posiadasz tych grafik, możesz je narysować własnoręcznie. Oto jak powinien wyglądać obecnie Twoj projekt:
 
 	![screenshot](world-player.png)
 
-+ Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing it's y-coordinate. Add this code to the player sprite:
++ Użyjemy strzałek do kierowania duszkiem gracza. Kiedy gracz naciśnie strzałkę w górę, duszek powinien przemieścić się do góry, zmieniając swoją pozycję w osi Y. Dodaj taki kod dla duszka-gracza:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [up arrow v] pressed? > then
-				change y by (2)
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <klawisz [strzałka w górę v] naciśnięty?> to
+				zmień y o (2)
+			koniec
+		koniec
 	```
 
-+ Test out your player by clicking the flag and then holding down the up arrow. Does your player move up?
++ Przetestuj zachowanie duszka-gracza klikająć na zieloną flagę i wciskając strzałkę w górę. Czy duszek porusza się do góry?
 
 	![screenshot](world-up.png)
 
-+ To move the player to the left, you need to add another `if` {.blockcontrol} block to your player, which changes the x-coordinate:
++ Aby poruszyć duszka w lewo, musisz dodać kolejny blok `jeżeli` {.blockcontrol} do skryptu duszka-gracza, dzięki któremu zmieni on położenie w osi X:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [up arrow v] pressed? > then
-				change y by (2)
-			end
-			if <key [left arrow v] pressed? > then
-				change x by (-2)
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <klawisz [strzałka w górę v] naciśnięty?> to
+				zmień y o (2)
+			koniec
+			jeżeli <klawisz [strzałka w lewo v] naciśnięty?> to
+				zmień x o (-2)
+			koniec
+		koniec
 	```
 
-## Challenge: Moving in all four directions {.challenge}
-Can you add more code to your player, so that they can move up, down, left and right. Use the code you already have to help you!
+## Wyzwanie: Poruszanie się we wszystkich kierunkach {.challenge}
+Potrafisz dodać więcej kodu dla duszka-gracza, który umożliwi mu poruszanie się w dół i w prawo? Użyj kodu, który już stworzyłeś.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-+ Test out your player again, and you'll see they have the ability to walk through the light-grey walls.
++ Przetestuj swoją grę ponownie. Zobacz, że gracz może przejść przez ściany.
 
 	![screenshot](world-walls.png)
 
-+ To fix this, you need to move the player, but then move them back if they're touching a light-grey wall. Here's the code you'll need:
++ Aby to naprawić, po wciśnięciu strzałki musisz przesunąć duszka, a następnie cofnąć jego ruch, jeśli dotyka jasnoszarej ściany. Oto kod, którego będziesz potrzebował:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [up arrow v] pressed? > then
-				change y by (2)
-				if < touching color [#BABABA]? > then
-					change y by (-2)
-				end
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <klawisz [strzałka w górę v] naciśnięty?> to
+				zmień y o (2)
+				jeżeli <dotyka koloru [#BABABA]?> to
+					zmień y o (-2)
+				koniec
+			koniec
+		koniec
 	```
 
-	Notice that the new `if`{.blockcontrol}`touching color`{.blocksensing} block is _inside_ the `if`{.blockcontrol}`key [up arrow]`{.blocksensing} block.
+	Zwróć uwagę, że nowy blok `jeżeli`{.blockcontrol}`dotyka koloru`{.blocksensing} jest wewnątrz bloku `jeżeli`{.blockcontrol}`klawisz [strzałka w górę]`{.blocksensing}
 
-+ Test this new code, by moving below the wall - you shouldn't be able to move up into it.
++ Przetestuj nowy kod, nie powinieneś móc przekroczyć ściany poruszając się w górę.
 
 	![screenshot](world-walls-test.png)
 
-+ Let's do the same for the left arrow, moving back if the player is touching a wall. This is how your player code should look so far:
++ Zróbmy to samo dla klawisza lewej strzałki. Jeżeli gracz dotyka ściany po ruchu, powinien cofnąć się o krok. Oto jak teraz powinien wyglądać kod dla duszka-gracza:
 
 	![screenshot](world-wall-code.png)
 
-## Challenge: Fixing your player's movement {.challenge}
-Add code to your player, so that you can't walk through walls in any direction. Use the code you already have to help you!
+## Wyzwanie: Naprawienie ruchów gracza {.challenge}
+Dodaj kod dla duszka-gracza, dzięki któremu nie będzie mógł przejść przez ścianę niezależnie od tego, w jakim porusza się kierunku. Do pomocy użyj kodu, któru już posiadasz.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 2: Coding your world { .activity }
+# Krok 2: Zakoduj swój świat { .activity }
 
-Let's allow the player to walk through doors into other rooms!
+Sprawmy, żeby gracz mógł przejść do innego pokoju używając drzwi.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Add 2 more backdrops to your stage ('room2.png' and 'room3.png'), so that you have 3 backdrops in total. Make sure that they are in the right order - this will help you later.
++ Dodaj dwa dodatkowe tła dla sceny ('pokój2.png' i 'pokój3.png'). Scena powinna teraz mieć w sumie trzy tła. Upewnij się, że są one ułożone we właściwej kolejności, to będzie pmocne w przyszłości.
 
 	![screenshot](world-backdrops.png)
 
-+ You'll need a new variable called `room` {.blockdata}, to keep track of what room the player is in.
++ Dodaj nową zmienną `pokój` {.blockdata}, w której będziesz przechowywał informację o tym, w którym pokoju obecnie znajduje się gracz.
 
 	![screenshot](world-room.png)
 
-+ When the player touches the orange door in the first room, the next backdrop should be displayed, and the player should move back to the left side of the stage. Here's the code you'll need - it should go inside the player's `forever` {.blockcontrol} loop:
++ Kiedy gracz dotknie pomarańczowych drzwi w pierwszym pokoju, powinieneś wyświetlić kolejne tło sceny, a gracz powinien wrócić na pozycję startową po lewej stronie planszy. Oto kod, którego bedziesz potrzebował, powinien się znaleźć wewnątrz bloku `zawsze` {.blockcontrol}:
 
 	```blocks
-		if < touching color [#F2A24A] > then
-			switch backdrop to [next backdrop v]
-			go to x: (-200) y: (0)
-			change [room v] by (1)
-		end
+		jeżeli <dotyka koloru [#F2A24A]?> to
+			zmień tło na [następne tło v]
+			idź do x:(-200) y:(0)
+			zmień [room v] o (1)
+		koniec
 	```
 
-+ Add this code to the _start_ of your player code (before the `forever` {.blockcontrol} loop, to make sure that everything is reset when the flag is clicked:
++ Dodaj ten kod na początek kody dla duszka-gracza (przed pętle `zawsze` {.blockcontrol}), aby wszystko (pozycja gracza, plansza) zostało zresetowane na początku gry:
 
 	```blocks
-		set [room v] to (1)
-		go to x: (-200) y: (0)
-		switch backdrop to [room1 v]
+		ustaw [room v] na (1)
+		idź do x:(-200) y:(0)
+		zmień tło na [room1 v]
 	```
 
-+ Click the flag and move your player over the orange door. Does your player move to the next screen? Does the `room` {.blockdata} variable change to 2?
++ Kliknij zieloną flagę i przemieść gracza do pomarańczowych drzwi. Czy przeszedł on do następnej planszy? Czy zmienna `pokój` zmieniła swoją wartość na `2`?
 
 	![screenshot](world-room-test.png)
 
-## Challenge: Moving to the previous room {.challenge}
-Can you make your player move to the previous room when they touch a yellow door? Remember that this code will be _very_ similar to the code you've already added for moving to the next room.
+## Wyzwanie: Przejście do poprzedniego pokoju {.challenge}
+Czy potrafisz wrócić swoim graczem do poprzedniego pokoju, kiedy dotknie on żółtych drzwi? Pamiętaj, że ten skrypt powinien być bardzo podobny do kodu, dzięki któremu gracz może przejść do następnego pokoju.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 3: Signs { .activity }
+# Krok 3: Znaki { .activity }
 
-Let's add signs to your world, to guide your player on their journey.
+Dodajmy znaki, które będą prowadzić Twojego gracza podczas jego podróży.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Upload the image 'sign.png' as a new sprite, and rename the sprite 'welcome sign'.
++ Dodaj nowego duszka z pliku 'znak.png' i nazwij go 'znak - powitanie'.
 
 	![screenshot](world-sign.png)
 
-+ This sign will only be visible in room 1, so let's add some code to the sign to make sure that this happens:
++ Ten znak będzie widoczny tylko w pokoju numer 1, więc dodajmy skrypt, który to spowoduje:
 
 	```blocks
-		when flag clicked
-		forever
-			if < (room) = [1] > then
-				show
-			else
-				hide
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <(room) = [1]> to
+				pokaż
+			w przeciwnym razie
+				ukryj
+			koniec
+		koniec
 	```
 
-+ Test your sign by moving between rooms. Your sign should only be visible in room 1.
++ Przetestuj swój znak przemieszczając się między pokojami. Powinien być widoczny tylko, kiedy jesteś w pokoju numer 1.
 
-	![screenshot](world-sign-test.png)
+	![screenshot](world-sign-test-1.png)
+	![screenshot](world-sign-test-2.png)
 
-+ A sign isn't much good if it doesn't say anything! Let's add some more code (in another separate block) to display a message if the sign is touching the player:
++ Znak nie jest zbyt przydatny, jeśli niczego nie mówi. Dodajmy trochę kodu dla duszka-znaku, aby wyświetlić wiadomości jeśli gracz go dotyka:
 
 	```blocks
-		when flag clicked
-		forever
-			if < touching [player v]? > then
-				say [Welcome! Can you get to the treasure?]
-			else
-				say []
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		zawsze
+			jeżeli <dotyka [player v]?> to
+				powiedz [Cześć! Czy potrafisz dotrzeć do skarbu?]
+			w przeciwnym razie
+				powiedz []
+			koniec
+		koniec
 	```
-+ Test out your sign, and you should see a message when the player touches it.
++ Przetestuj swój znak, powinieneś zobaczyć wiadomość, kiedy gracz go dotknie.
 
-	![screenshot](world-sign-test2.png)
+	![screenshot](world-sign-test-3.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Treasure! {.challenge}
-Can you add a new treasure chest sprite, using the image 'chest.png'. This treasure chest should be placed in room 3, and should say 'Well done!' when the player touches it.
+## Wyzwanie: Skarb! {.challenge}
+Czy potrafisz dodać skrzynię ze skarbami, używając pliku 'skrzynia.png'? Skrzynia powinna znaleźć się w pokoju numer 3, i powinna powiedzieć "Dobra robota!", kiedy gracz jej dotknie.
 
 ![screenshot](world-treasure.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 4: People { .activity }
+# Krok 4: Postacie { .activity }
 
-Let's add other people to your world, that your player can interact with.
+Dodajmy inne postacie do Twojego świata, z którymi będziesz mógł wchodzić w interakcje.
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Add in a new person sprite, using the image 'person.png'.
++ Dodaj nowego duszka z pliku. Użyj grafiki 'postac.png'.
 
 	![screenshot](world-person.png)
 
-+ Add in this code, so that the person talks to your player. This code is very similar to the code you added to your sign:
++ Dodaj poniższy kod dla nowego duszka, dzięki czemu postać będzie mogła rozmawiać z graczem. Ten kod jest bardzo podobny do tego, którego dodałeś dla znaku i skrzyni:
 
 	```blocks
-		when flag clicked
-		go to x: (-200) y: (0)
-		forever
-			if < touching [player v]? > then
-				say [Did you know that you can go through orange and yellow doors?]
-			else
-				say []
-			end
-		end
+		kiedy kliknięto zieloną flagę
+		idź do x:(-200) y:(0)
+			zawsze
+			jeżeli <dotyka [player v]?> to
+				powiedz [Czy wiesz, że możesz przejść przez pomarańczowe i żołte drzwi?]
+			w przeciwnym razie
+				powiedz []
+			koniec
+		koniec
 	```
 
-+ You could also allow your player to move, by using these two blocks:
++ Powinieneś równiez umożliwić postaci poruszanie się, używając poniższych bloków:
 
 	```blocks
-		move (1) steps
-		if on edge, bounce
+		przesuń o (1) kroków
+		jeżeli na brzegu, odbij się
 	```
 
-	Your player will act differently, depending on whether you place this code inside the `forever` {.blockcontrol} loop or the `if` {.blockcontrol} block. Try both and see which you prefer.
+	Twoja postać zachowa się różnie, zaleznie od tego czy umieścisz kod wewnątrz pętli `zawsze` {.blockcontrol} czy w bloku `jeżeli` {.blockcontrol}. Spróbuj obu rozwiązań i zobacz, które bardziej Ci się podoba.
 
 	![screenshot](world-person-test.png)
 
-+ Have you noticed that your person flips upside-down. To stop this, click the sprite's information icon (`i`{.blockmotion}), and click the dot to fix to rotation style.
++ Zauważyłeś, że postać obraca się do góry nogami? Aby temu zapobiec, kliknij na ikonę informacji o duszku (`i` {.blockmotion}) i wybierz kropkę aby naprawić problem z obrotem.
 
 	![screenshot](world-person-rotate.png)
 
-## Challenge: Improving your person {.challenge}
-Can you add code to your new person, so that they only appear in room 1? Make sure you test out your new code!
+## Wyzwanie: Ulepszanie postaci {.challenge}
+Czy potrafisz dodać dla Twoich postaci kod, dzięki któremu będą pojawiać się tylko w pokoju numer 1? Upewnij się, że dobrze przetestowałeś swój nowy skrypt.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-+ You can also add in patrolling enemies, who end the game if the player touches them. Add in a new enemy sprite, and change the rotation style, just like you did with the 'person' sprite.
++ Możesz także dodać wrogów patrolujacych okolicę. Jeśli gracz dotknie któregoś z nich - gra się skończy. Dodaj nowego duszka-wroga, zmień sposób jego rotacji tak jak zrobiłeś to dla duszka-postaci.
 
-+ Add code to your enemy, so that they only appear in room 2.
++ Dodaj kod dla wrogów, który sprawi, że będą pojawiać się tylko w pokoju numer 2.
 
-+ You'll also need to add code to move the enemy, and to end the game if the enemy touches the player. It's easier to do this in separate code blocks. Here's how your enemy code should look:
++ Będziesz musiał dodać trochę nowego skryptu dla wrógow, żeby gra kończyła się, kiedy gracz dotknie któregoś z nich. Będzie łatwiej, jeśli zrobisz to w osobnym bloku kodu. Oto jak powinien wyglądać skrypt dla duszka-wroga:
 
 	![screenshot](world-enemy-code.png)
 
-+ Test out your enemy, to make sure that:
-	+ It's only visible in room 2;
-	+ It patrols the room;
-	+ The game ends if the player touches it.
++ Przetestuj swoich wrogów, upewnij się, że:
+	+ Są widoczni tylko w pokoju numer 2.
+	+ Poruszają się patrolując planszę.
+	+ Gra kończy się, kiedy dotkniesz jednego z nich.
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: More enemies {.challenge}
-Can you create another enemy in room 3, that patrols up and down through the gap in the wall?
+## Wyzwanie: Więcej wrogów {.challenge}
+Czy potrafisz dodać więcej wrogów w pokoju numer 3, którzy będą patrolowali planszę poruszając się w górę i w dół poprzez szczeliny w ścianie?
 
 ![screenshot](world-enemy2.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-# Step 5: Collecting coins { .activity }
+# Krok 5: Zbieranie monet { .activity }
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Add a new variable valled `coins` {.blockdata} to your project.
++ Dodaj nową zmienną `monety` {.blockdata} do projektu.
 
-+ Add a new 'coin' sprite to your project.
++ Dodaj nowego duszka z pliku 'moneta.png'.
 
 ![screenshot](world-coins.png)
 
-+ Add code to your coins, so that they only appear in room 1.
++ Dodaj kod do duszka-monety, dzięki któremu pojawi się on w pokoju numer 1.
 
-+ Add code to your coin sprite, to add 3 to your `coins` {.blockdata} once they've been picked up:
++ Stwórz kolejną porcję kodu, który sprawi, że dodasz 3 do zmiennej `monety` {.blockdata}, kiedy gracz podniesie monetę:
 
 	```blocks
-		when flag clicked
-		wait until <touching [player v]?>
-		change [coins v] by (3)
-		stop [other scripts in sprite v]
-		hide
+		kiedy kliknięto zieloną flagę
+		czekaj aż <dotyka [player v]?>
+		zmień [coins v] o (3)
+		zatrzymaj [inne skrypty duszka v]
+		ukryj
 	```
 
-	The code `stop other scripts in sprite` {.blockcontrol} is needed so that the coins stop being displayed in room 1 once they've been collected.
+	Kod `zatrzymaj inne skrypty duszka` {.blockcontrol} jest potrzebny, aby monety przestały się wyświetlać w pokoju numer 1, kiedy już zostaną zebrane.
 
-+ You'll also need to add code to set your `coins` {.blockdata} variable to 0 at the start of your game.
++ Powinieneś dodać kod, który ustawi zmienną `monety` {.blockdata} na 0 przy starcie gry.
 
-+ Test your project - collecting your coins should change your score to 3
++ Przetestuj swój projekt - zebranie monety powinno zwiększyć licznik punktów o 3.
 
-## Challenge: More coins {.challenge}
-Can you add more coins to your game? They can be in different rooms, and some coins could even be guarded by patroling enemies.
+## Wyzwanie: Więcej monet {.challenge}
+Czy potrafisz dodać więcej monet do gry? Mogą one się znaleźć w innym pokoju, a niektóre z nich mogą być chronione przez wrógów patrolujących planszę.
 
-# Step 6: Doors and keys { .activity }
+# Krok 6: Drzwi i klucze { .activity }
 
-## Activity Checklist { .check }
+## Zadania do wykonania { .check }
 
-+ Create a new sprite from your 'key-blue.png' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
++ Dodaj nowego duszka z pliku 'niebieski-klucz.png'. Zmień tło sceny na tło numer 3 i umieść klucz w trudno dostępnym miejscu.
 
  	![screenshot](world-key.png)
 
-+ Make sure that your key is only visible in room 3.
++ Upewnij się, że klucz jest widoczny tylko w pokoju numer 3.
 
-+ Create a new list variable called `inventory` {.blockdata}. This will be where you store all of the items your player collects.
++ Utwórz nową listę i nazwij ją `inwentarz` {.blockdata}. To będzie magazyn wszystkich przedmiotów, które zbierze Twój gracz.
 
-+ The code for collecting the key is very similar to the code for collecting coins. The difference is that you add the key to your inventory.
-
-	```blocks
-		when flag clicked
-		wait until <touching [player v]?>
-		add [blue key] to [inventory v]
-		stop [other scripts in sprite v]
-		hide
-	```
-
-+ Test out your key, to see if you can collect it, and add it to your inventory. Remember to add code to your stage to empty your inventory at the start.
++ Kod do zbierania klucza jest bardzo podobny do kodu zbierania monet. Różnica jest taka, że teraz będziesz dodawał klucz do inwentarza zamiast dodawać punkty do zmiennej `monety`.
 
 	```blocks
-		delete (all v) of [inventory v]
+		kiedy kliknięto zieloną flagę
+		czekaj aż <dotyka [player v]?>
+		dodaj [blue key] do [inwentarz v]
+		zatrzymaj [inne skrypty duszka v]
+		ukryj
 	```
 
-+ Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the 2 walls.
++ Przetestuj działanie skryptów dla kluczy, sprawdź czy możesz je zebrać i dodać do inwentarza. Pamiętaj, aby dodać kod dla sceny, który sprawi, że inwentarz będzie pusty po starcie gry.
+
+	```blocks
+		usuń (wszystko v) z [inwentarz v]
+	```
+
++ Utwó©z nowego duszka z pliku 'niebieskie-drzwi.png' i umieść go w luce w murze.
 
 	![screenshot](world-door.png)
 
-+ Add code to your door, so that it is only visible in room 3.
++ Dodaj kod dla drzwi, aby były widoczne tylko w pokoju numer 3.
 
-+ You'll need to hide your blue door to allow your player to pass once you have the blue key in your inventory.
++ Będziesz musiał schować niebieskie drzwi w momencie, gdy niebieski klucz znajdzie się w inwentarzu gracza.
 
 	```blocks
-		when flag clicked
-		wait until <[inventory v] contains [blue key]>
-		stop [other scripts in sprite v]
-		hide
+		kiedy kliknięto zieloną flagę
+		czekaj aż <[inventory v] zawiera [blue key]>
+		zatrzymaj [inne skrypty duszka v]
+		ukryj
 	```
 
-+ Test out your project, and see if you can collect the blue key to open the door!
++ Przetestuj swój projekt i zobacz czy potrafisz zebrać niebieski klucz aby otworzyć niebieskie drzwi. 
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 
-## Challenge: Create your own world {.challenge}
-You can now continue creating your own world. Here are some ideas:
+## Wyzwanie: Stwórz własny świat {.challenge}
+Możesz teraz kontynuować tworzenie własnego świata. Oto kilka pomysłów:
 
-+ Change the setting of your game, and your game graphics;
-+ Add sound and music to your game;
-+ Add more people, enemies, signs and coins;
-+ Add red and yellow doors, that need their own keys to open them;
-+ Add more rooms to your world;
-+ Add other useful items to your game;
++ Zmień niektóre ustawienia gry, dodaj unikatowe grafiki.
++ Dodaj efekty dźwiękowe i muzykę.
++ Dodaj więcej postaci, wrogów, znaków i monet.
++ Dodaj czerwone i żółte drzwi oraz klucze, ktorych będziesz potrzebował, aby je otworzyć.
++ Dodaj więcej pomieszczeń.
++ Dodaj inne użyteczne przedmioty, np. magiczne buty, dzięki którym gracz będzie mógł przemieszczać się szybciej, albo tarczę, która ochroni go na pewien czas przed kontaktem z wrogami.
 
-+ Use coins to get information from other people;
++ Użyj monet, aby dostać informację od postaci napotkanych w grze.
 
 	![screenshot](world-bribe.png)
 
-+ You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
++ Możesz dodać północne i południowe drzwi, dzięki którym Twój gracza będzie mógł się przemieszczać między pomieszczeniami we wszystkich czterech kierunkach. Na przykład jeśli będziesz miał 9 plansz, możesz je ułożyć według siatki 3x3. Dodaj 3 do numeru aktualnego pokoju, aby przejść jeden poziom niżej.
 
 	![screenshot](world-north-south.png)
 
-## Save your project { .save }
+## Zapisz swój projekt { .save }
 

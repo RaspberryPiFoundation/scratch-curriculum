@@ -1,45 +1,45 @@
 ---
-title: Create Your Own World — Notes for Club Leaders
-language: en-GB
+title: Stwórz Własny Świat — Notatki dla lidera klubu
+language: pl-PL
 embeds: "*.png"
 materials: [""]
 ...
 
-#Introduction:
-In this project, children will learn how to make their own open-world game, making use of all Scratch concepts and skills that have been learnt in previous projects.
+#Wprowadzenie
+W tym projekcie, dzieci nauczą się jak stworzyć grę z otwartym światem, używając wszystkich umiejętności związanych ze Scratchem, jakie zdobyły podczas poprzednich lekcji.
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used <a href="http://scratch.mit.edu/projects/editor/">online</a> or <a href="http://scratch.mit.edu/scratch2download/">offline</a>.
+#Zasoby
+Do projektu powinien być używany Scratch 2. Scratch 2 jest dostępny online pod adresem [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) lub może być pobrany ze strony [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i używany offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Kompletną wersję tego projektu możesz znaleźć <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, lub pobrać klikając na link 'Pobierz materiały' przy projekcie. Materiały zawierają:
 
 + CreateYourOwnWorld.sb2
 
-There is also a version of this project with the <a href="http://scratch.mit.edu/projects/37836116/#editor">external resources pre-loaded</a>:
+Istnieje także wersja projektu z załączonymi zasobami. Możesz ją zobaczyć online pod adresem [http://scratch.mit.edu/projects/37836116/#editor](http://scratch.mit.edu/projects/37836116/#editor), albo w 'Zasobach do projektu', które zawierają:
 
-+ CreateYourOwnWorldResources.sb2 
++ BoatRaceResources.sb2 
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+Ten projekt zawiera 'Zasoby do projektu' z grafikami, których dzieci będą potrzebowały do jego ukończenia. Upewnij się, że wszystkie dzieci mają dostęp do tych zasobów.
 
-Project resources:
-+ player.png;
-+ room1/2/3.png;
-+ sign.png;
-+ chest.png;
-+ person.png;
-+ enemy.png;
-+ coins.png;
-+ door-blue/key-blue.png.
+Zasoby do projektu:
++ gracz.png
++ pokój1/2/3.png
++ znak.png
++ skrzynia.png
++ osoba.png
++ wróg.png
++ monety.png
++ niebieskie-drzwi/niebieski-klucz.png
 
 
-#Learning Objectives
-+ This project consolidates learning of all programming skills learnt.
+#Cele projektu
++ Projekt utrwala wszystkie zdobyte dotychczas umiejętności programowania w Scratchu.
 
-#Challenges
-+ "Moving in all four directions" - adding up, down, left and right player controls;
-+ "Fixing your player's movement" - not allowing the player to move through walls;
-+ "Moving to the previous room" - move back 1 room if touching a yellow door;
-+ "Treasure!" - consolidation of adding objects to the world;
-+ "Improving your person" - consolidation of adding objects to the world;
-+ "More enemies" - adding deadly moving objects;
-+ "Create your own world" - open-ended consolidation task.
+#Wyzwania
++ "Poruszanie się we wszystkich kierunkach" - dodanie możliwości poruszania się gracza w górę, dół, lewo i prawo
++ "Naprawienie ruchów gracza" - uniemożliwienie graczowi przejście przez ściany
++ "Powrót do poprzedniego pokoju" - przenieś się do porpzedniego pomieszczenia, jeśli gracz dotknął żołtych drzwi
++ "Skarb!" - utrwalenie umiejętności dodawania przedmiotów do świata gry
++ "Ulepszanie postaci" - utrwalenie umiejętności dodawania przedmiotów do świata gry
++ "Więcej wrogów" - dodanie obiektów, które mogą zabić gracza
++ "Stwórz własny świat" - rozwinięcie gry o dodatkowe elementy, takie jak efekty dźwiękowe, dodatkowe postacie i przedmioty
