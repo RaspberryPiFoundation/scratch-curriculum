@@ -8,7 +8,7 @@ materials: ["Club Leader Resources/*"]
 ...
 
 ## Komunitní projekt { .challenge .pdf-hidden }
-Tento projekt vytvořil Erik se svou dcerou Ruth. Budeme rádi, když přispějete i vy svým nápadem, všechen [kód najdete na  Githubu](https://github.com/CodeClub).
+Tento projekt vytvořil Erik se svou dcerou Ruth. Pokud chcete přispět svým nápadem, [přidejte se k nám na Githubu](https://github.com/CodeClub).
 
 # Úvod { .intro }
 
@@ -27,7 +27,7 @@ Nejdřív je třeba vytvořit postavu, která bude měnit barvy.
 
 + Vytvoř nový projekt ve Scratchi a smaž kocoura tak, aby byl projekt prázndý. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Vyber si postavu pozadí scény. Postava nemusí být člověk, ale musí být jednoduché ji přemalovat na jinou barvu (musí mít kostýmy).
++ Vyber si pozadí scény a postavu. Postava nemusí být člověk, ale musí ji být jednoduché přemalovat na jinou barvu (musí mít kostýmy).
 
 	![screenshot](colour-sprite.png)
 
@@ -62,7 +62,7 @@ Nejdřív je třeba vytvořit postavu, která bude měnit barvy.
     end
 	```
 
-	Všimni si, že jsme seznam na začátku vyprázdnili.
+	Všimni si, že se začne tím, že se seznam vyprázdní.
 
 ## Výzva: Přidej zvuk {.challenge}
 Spusť projekt několikrát za sebou. Všimni si, že se občas stane, že to samé číslo je vybrané dvakrát (nebo víckrát) za sebou, takže je těžší si to správně zapamatovat. Dokážeš zahrát zvuk bubnu pokaždé, když se postavě změní kostým?
@@ -77,7 +77,7 @@ Přidejme 4 tlačítka, která bude hráč mačkat, aby zopakoval sekvenci, kter
 
 ## Postup { .check }
 
-+ Přidej do projektu 4 "postavy" bubnů, které budou sloužit, jako tlačítka. Nastav jim naše 4 barvy.
++ Přidej do projektu 4 "postavy" bubnů, které budou sloužit, jako tlačítka. Nastav každému z nich jednu z našich 4 barev.
 
 	![screenshot](colour-drums.png)
 
@@ -88,19 +88,19 @@ Přidejme 4 tlačítka, která bude hráč mačkat, aby zopakoval sekvenci, kter
     rozešli všem [červená v]
 	```
 
-+ Když tvá postava zprávu obdrží, musí zkontrolovat, že je na prvním místě v seznamu číslo 1 (to znamená, že je to červená). Pokud ano, odstraní ze seznamu první prvek, protože hráč uhádl správně. Pokud ne, tak game over!
++ Když postava zprávu obdrží, musí zkontrolovat, že je na prvním místě v seznamu číslo 1 (to znamená, že je to červená). Pokud ano, odstraní ze seznamu první prvek, protože hráč uhádl správně. Pokud ne, tak je konec hry!
 
 	```blocks
     po obdržení zprávy [červená v]
     když <(prvek (1 v) z [sekvence v]) = [1]> tak
        zruš (1 v) z [sekvence v]
     jinak
-       říkej [Game over!] příštích (1) sekund
+       říkej [Konec hry!] příštích (1) sekund
        zastav [všechno v]
     end
 	```
 
-+ Také můžeš přidat efekt zablikáním světel, když je seznam prázdný, to znamená, že všechno bylo uhodnuto správně. Přidej tento blok kódu na konec skriptu `when flag clicked` {.blockevents} u postavy:
++ Teď můžeš přidat efekt zablikáním světel, když je seznam prázdný, to znamená, že všechno bylo uhodnuto správně. Přidej tento blok kódu na konec skriptu `when flag clicked` {.blockevents} u postavy:
 
 	```blocks
     čekej dokud nenastane <(délka [sekvence v]) = [0]>
@@ -128,50 +128,50 @@ Nezapomeň pokažé úpravě kód spustit a otestovat! Dokážeš si zapamatovat
 
 ## Ulož svůj projekt { .save }
 
-# Část 3: Více levelů { .activity .new-page }
+# Část 3: Obtížnost { .activity .new-page }
 
-Doteď si hráč musel zapamatovat 5 po sobě jdoucích barev. Pojďme hru vylepšit tak, že se bude zvětšovat počet barev k zapamatování v sekvenci.
+Doteď si hráč musel zapamatovat 5 po sobě jdoucích barev. Pojďme hru vylepšit tak, že se bude zvyšovat počet barev k zapamatování.
 
 ## Postup { .check }
 
-+ Vytvoř novou proměnnou `score` {.blockdata}.
++ Vytvoř novou proměnnou `body` {.blockdata}.
 
 	![screenshot](colour-score.png)
 
-+ Toto `score` {.blockdata} bude použité k určení délky sekvence, kterou si hráč musí zapamatovat. Na začátek nastavíme skóre (a tím déklu sekvence) na hodnotu 3. Přidej tento kód na začátek bloku `po kliknutí na ⚑` {.blockevents} u tvé postavy:
++ Hodnotu `body` {.blockdata} použijeme k určení délky sekvence, kterou si hráč musí zapamatovat. Na začátek nastavíme body (a tím déklu sekvence) na hodnotu 3. Přidej tento kód na začátek bloku `po kliknutí na ⚑` {.blockevents} u tvé postavy:
 
 	```blocks
-    nastav [score v] na [3]
+    nastav [body v] na [3]
 	```
 
-+ Místo současné neměnné délky 5 teď chceme, aby `score` {.blockdata} určovalo déklu sekvence. Změň smyčku `opakuj` {.blockcontrol} u své postavy (vytváření sekvence) na:
++ Místo současné neměnné délky 5 teď chceme, aby `body` {.blockdata} určovaly déklu sekvence. Změň smyčku `opakuj` {.blockcontrol} u své postavy (vytváření sekvence) na:
 
 	```blocks
-    opakuj (score) krát
+    opakuj (body) krát
     end
 	```
 
-+ Pokud budou všechny barvy uhodnuty správně, přidáme ke skóre 1, tím prodloužíme sekvenci.
++ Pokud budou všechny barvy uhodnuty správně, přidáme jeden bod, tím prodloužíme sekvenci.
 
 	```blocks
-    změň [score v] o (1)
+    změň [body v] o (1)
 	```
 
-+ Nakonec musíš přidat nekonečnou smyčku `opakuj dokola` {.blockcontrol} kolem kódu pro generování sekvence, tak aby se vytvořila sekvence pro každý level. Takhle by měl vypadat tvůj kód u postavy:
++ Ještě musíš přidat nekonečnou smyčku `opakuj dokola` {.blockcontrol} kolem kódu pro generování sekvence, tak aby se vytvořila sekvence pro každou úroveň obtížnosti. Takhle by měl vypadat tvůj kód u postavy:
 
 	```blocks
     po kliknutí na ⚑
-    nastav [score v] na [3]
+    nastav [body v] na [3]
     opakuj dokola
        zruš (všechno v) z [sekvence v]
-       opakuj (score) krát
+       opakuj (body) krát
           přidej (náhodné číslo od (1) do (4)) k [sekvence v]
           změň kostým na (prvek (poslední v) z [sekvence v])
           čekej (1) sekund
        end
        čekej dokud nenastane <(délka [sekvence v]) = [0]>
        rozešli všem [výhra v] a čekej
-       změň [score v] o (1)
+       změň [body v] o (1)
     end
 	```
 
@@ -179,38 +179,38 @@ Doteď si hráč musel zapamatovat 5 po sobě jdoucích barev. Pojďme hru vylep
 
 ## Ulož svůj projekt { .save }
 
-# Část 4: High score { .activity }
+# Část 4: Bodový rekord { .activity }
 
-Pojďme ukládat skóre, abys mohl soutěžit s kamarády.
+Pojďme body ukládat, abys mohl soutěžit s jinými hráči.
 
 ## Postup { .check }
 
-+ Do projektu přidej 2 proměnné, nazveme je `high score` {.blockdata} a `jméno` {.blockdata}.
++ Do projektu přidej 2 proměnné, nazveme je `rekord` {.blockdata} a `jméno` {.blockdata}.
 
-+ Pokaždé, když hra skončí (hráč zmáčknul špatné tlačítko), zkontrolujeme, jestli právě nahrané skóre není vyšší, než to, které máme uložené. Pokud ano, uložíme si score jako high score a uložíme si jméno hráče. Tady je, jak by měl vypadat skript u tvého červeného tlačítka:
++ Pokaždé, když hra skončí (hráč zmáčknul špatné tlačítko), zkontroluj, jestli nahrané body nejsou vyšší, než to, co máme uložené. Pokud ano, ulož body jako rekord a ulož také jméno hráče. Tady je, jak by měl vypadat skript u tvého červeného tlačítka:
 
 	```blocks
     po obdržení zprávy [červená v]
     když <(prvek (1 v) z [sekvence v]) = [1]> tak
        zruš (1 v) z [sekvence v]
     jinak
-       říkej [Game over!] příštích (1) sekund
-       když <(score) > (high score)> tak
-          nastav [high score v] na (score)
-          ptej se [High score! Jak se jmenuješ?] a čekej
+       říkej [Konec hry!] příštích (1) sekund
+       když <(body) > (rekord)> tak
+          nastav [rekord v] na (body)
+          ptej se [Rekord! Jak se jmenuješ?] a čekej
           nastav [name v] na (odpověď)
        end
        zastav [všechno v]
     end
 	```
 
-+ Tento kód musíš také vložit ke zbývajícím 3 tlačítkům! Všimnul(a) sis, že kód pro 'Game over' je stejný u všech 4 tlačítek?
++ Tento kód musíš také vložit ke zbývajícím 3 tlačítkům! Všimnul(a) sis, že kód pro 'Konec hry' je stejný u všech 4 tlačítek?
 
 	![screenshot](colour-same.png)
 
-+ Když se rozhodneš upravit část kódu, jako třeba zvuk nebo nápis 'Game over', budeš to muset udělat 4-krát! To může být otrava a ztráta zpousty času.
++ Když se rozhodneš upravit část kódu, jako třeba zvuk nebo nápis 'Konec hry', budeš to muset udělat 4-krát! To může být otrava a ztráta spousty času.
 
-	Místo toho si raději zadefinujeme vlastní blok a použijeme ho v našem projektu. Klikni na `Nové bloky` {.blockmoreblocks} a potom 'Vytvořit blok'. Tento nový blok nazveme 'Game over'.
+	Místo toho si raději vytvoříme vlastní blok a použijeme ho v našem projektu. Klikni na `Nové bloky` {.blockmoreblocks} a potom 'Vytvořit blok'. Tento nový blok nazveme 'Konec hry'.
 
 	![screenshot](colour-more.png)
 
@@ -218,11 +218,11 @@ Pojďme ukládat skóre, abys mohl soutěžit s kamarády.
 
 	![screenshot](colour-make-block.png)
 
-+ Právě jsi vytvořil(a) novou _funkci_ nazvanou `Game over` {.blockmoreblocks}, Kterou můžeš použít, kdekoliv budeš potřebovat. Přetáhni nový blok `Game over` {.blockmoreblocks} do kódu všech 4 tlačítek.
++ Právě jsi vytvořil(a) novou _funkci_ nazvanou `Konec hry` {.blockmoreblocks}, Kterou můžeš použít, kdekoliv budeš potřebovat. Přetáhni nový blok `Konec hry` {.blockmoreblocks} do kódu všech 4 tlačítek.
 
 	![screenshot](colour-use-block.png)
 
-+ Teď přidej zvuk, který zazní, když se zmáčkne špatné tlačítko. Tentokrát stačí přidat kód _pouze jednou_ do bloku `Game over` {.blockmoreblocks} a už ne 4-krát samostatně, hurá!
++ Teď přidej zvuk, který zazní, když se zmáčkne špatné tlačítko. Tentokrát stačí přidat kód _pouze jednou_ do bloku `Konec hry` {.blockmoreblocks} a už ne 4-krát samostatně, hurá!
 
 	![screenshot](colour-cough.png)
 
