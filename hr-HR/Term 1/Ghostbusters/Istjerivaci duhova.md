@@ -51,7 +51,7 @@ Ovog duha je jako lako uhvatiti jer je nepomičan.
 
 ## Zadatci { .check }
 
-+ Umjesto stajanja na istom mjestu, dopustit ćemo da Scratch sam odabere naumične koordinate x i y na kojima će se pojavljivati lik duha. Duhu dodaj 'idi na' { .blockmotion } naredbu, tako da blok naredbi izgleda ovako:
++ Umjesto stajanja na istom mjestu, dopustit ćemo da Scratch sam odabere naumične koordinate x i y na kojima će se pojavljivati lik duha. Duhu dodaj `idi na` { .blockmotion } naredbu, tako da blok naredbi izgleda ovako:
 
 ```blocks
 	kada je ⚑ kliknut
@@ -109,7 +109,7 @@ Napravimo igru zanimljivijom tako što ćemo dodati rezultat.
 
 	Upiši 'Rezultat' kao ime varijable, odaberi da je varijabla dostupna svim likovima i klikni 'OK' kako bi se varijabla kreirala.
 	
-	Uoči kako se pojavilo nekoliko novih naredbi u skupini Podaci.'Rezultat' {.blockdata}.
+	Uoči kako se pojavilo nekoliko novih naredbi u skupini Podaci.`Rezultat` {.blockdata}.
 
 	![screenshot](ghost-variable.png)
 
