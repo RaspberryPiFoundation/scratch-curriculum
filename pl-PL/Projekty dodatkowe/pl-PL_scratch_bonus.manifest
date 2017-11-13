@@ -12,6 +12,11 @@
             "number":   1,
             "filename": "Balony/Balony.md",
             "note": "Balony/Balony - notatki.md"
+        },
+        {
+            "number":   2,
+            "filename": "Łucznik/Łucznik.md",
+            "note": "Łucznik/Łucznik - notatki.md"
         }
     ]
 }
