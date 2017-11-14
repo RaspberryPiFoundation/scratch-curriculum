@@ -4,7 +4,7 @@ language: cs-CZ
 embeds: "*.png"
 ...
 
-#Úvod:
+#Úvod
 V tomto projektu se děti naučí, jak používat proměnnou typu seznam, pro uložení dat, a také, jak použít vlastní bloky (funkce) ke zjednodušení svých programů.
 
 #Zdroje

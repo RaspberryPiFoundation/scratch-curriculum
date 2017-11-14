@@ -25,7 +25,7 @@ Nejdřív je třeba vytvořit postavu, která bude měnit barvy.
 
 ## Postup { .check }
 
-+ Vytvoř nový projekt ve Scratchi a smaž kocoura tak, aby byl projekt prázndý. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Vytvoř nový projekt ve Scratchi a smaž kocoura tak, aby byl projekt prázdný. Webový scratch editor najdeš na <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Vyber si pozadí scény a postavu. Postava nemusí být člověk, ale musí ji být jednoduché přemalovat na jinou barvu (musí mít kostýmy).
 
