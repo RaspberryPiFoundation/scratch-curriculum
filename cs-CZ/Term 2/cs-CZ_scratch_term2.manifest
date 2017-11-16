@@ -1,0 +1,22 @@
+{
+    "description": false,
+    "id": "scratch_02",
+    "language": "cs-CZ",
+    "number": 2,
+    "title": "Scratch 2",
+    "category": "cat-scratch",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Memory/Memory.md",
+            "beta":     true,
+            "note":     "Memory/Memory - notes.md"
+        },
+        {
+            "number":   2,
+            "filename": "Dodgeball/Dodgeball.md",
+            "beta":     true,
+            "note":     "Dodgeball/Dodgeball - notes.md"
+        }
+    ]
+}
