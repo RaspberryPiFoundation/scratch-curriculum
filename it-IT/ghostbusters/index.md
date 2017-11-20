@@ -16,7 +16,7 @@ Imparerai a creare un gioco di acchiappa fantasmi!
 
 # Passo 1: Animare un fantasma { .activity }
 
-## Lista di controllo delle attivit‡ { .check }
+## Lista di controllo delle attivit√† { .check }
 
 + Avvia un nuovo progetto Scratch e cancella lo sprite del gatto, in modo che il tuo progetto sia vuoto. Puoi trovare l'editore Scratch online a <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
 
@@ -42,11 +42,11 @@ Imparerai a creare un gioco di acchiappa fantasmi!
 
 # Passo 2: Fantasmi a caso { .activity }
 
-» facilissimo acchiappare il tuo fantasma perchÈ non si muove!
+√à facilissimo acchiappare il tuo fantasma perch√© non si muove!
 
-## Lista di controllo delle attivit‡ { .check }
+## Lista di controllo delle attivit√† { .check }
 
-+ Invece di restare nella stessa posizione, puoi fare in modo che Scratch scelga a caso le coordinate x e y. Aggiungi un blocco `vai a` {.blockmotion} al codice del tuo fantasma, in modo che appaia cosÏ:
++ Invece di restare nella stessa posizione, puoi fare in modo che Scratch scelga a caso le coordinate x e y. Aggiungi un blocco `vai a` {.blockmotion} al codice del tuo fantasma, in modo che appaia cos√¨:
 
 	![screenshot](images/ghost-random.png)
 
@@ -54,7 +54,7 @@ Imparerai a creare un gioco di acchiappa fantasmi!
 
 ## Salva il progetto {.save}
 
-## Sfida: Ancora casualit‡ {.challenge}
+## Sfida: Ancora casualit√† {.challenge}
 Puoi fare in modo che il tuo fantasma `attendi` {.blockcontrol} un periodo di tempo casuale prima di apparire? Puoi usare il blocco `porta dimensione` {.blocklooks} per dare al tuo fantasma una misura casuale ogni volta che appare?
 
 ## Salva il progetto {.save}
@@ -63,7 +63,7 @@ Puoi fare in modo che il tuo fantasma `attendi` {.blockcontrol} un periodo di te
 
 Facciamo in modo che il giocatore acchiappi i fantasmi!
 
-## Lista di controllo delle attivit‡ { .check }
+## Lista di controllo delle attivit√† { .check }
 
 + Per permettere al giocatore di acchiappare i fantasmi, aggiungi questo codice:
 
@@ -72,7 +72,7 @@ Facciamo in modo che il giocatore acchiappi i fantasmi!
 		nascondi
 	```
 
-+ Prova il tuo progetto. Puoi acchiappare fantasmi man mano che compaiono? Se trovi difficile acchiappare i fantasmi, puoi giocare in modalit‡ schermo intero cliccando questo tasto:
++ Prova il tuo progetto. Puoi acchiappare fantasmi man mano che compaiono? Se trovi difficile acchiappare i fantasmi, puoi giocare in modalit√† schermo intero cliccando questo tasto:
 
 	[screenshot](images/ghost-fullscreen.png)
 
@@ -83,11 +83,11 @@ Puoi riprodurre un suono ogni volta che un fantasma viene acchiappato?
 
 # Passo 4: Aggiungi un punteggio { .activity .new-page }
 
-Rendiamo il gioco pi˘ interessante tenendo il punteggio.
+Rendiamo il gioco pi√π interessante tenendo il punteggio.
 
-## Lista di controllo delle attivit‡ { .check }
+## Lista di controllo delle attivit√† { .check }
 
-+ Per tenere il punteggio del giocatore, ti serve un posto dove collocarlo. Una_variabile_Ë un posto dove conservare i dati che possono cambiare, proprio come un punteggio.
++ Per tenere il punteggio del giocatore, ti serve un posto dove collocarlo. Una_variabile_√® un posto dove conservare i dati che possono cambiare, proprio come un punteggio.
 
 	Per creare una nuova variabile, clicca sulla scheda 'Scripts', seleziona 'Variabili e liste' {.blockdata} e poi clicca 'Crea una Variabile'.
 
@@ -118,21 +118,21 @@ Rendiamo il gioco pi˘ interessante tenendo il punteggio.
 
 # Passo 5: Aggiungere un timer { .activity }
 
-Puoi rendere il gioco pi˘ interessante, dando solo 10 secondi al tuo giocatore per acchiappare pi˘ fantasmi possibili.
+Puoi rendere il gioco pi√π interessante, dando solo 10 secondi al tuo giocatore per acchiappare pi√π fantasmi possibili.
 
-## Lista di controllo delle attivit‡ { .check }
+## Lista di controllo delle attivit√† { .check }
 
 + Puoi usare un'altra variabile per conservare il tempo rimasto. Clicca sul quadro e crea una nuova variabile chiamata 'tempo':
 
 	![screenshot](images/ghost-time.png)
 
-+ Il timer dovrebbe funzionare cosÏ:
++ Il timer dovrebbe funzionare cos√¨:
 
 	+ Il timer dovrebbe iniziare a 10 secondi;
 	+ Il timer dovrebbe contare alla rovescia ogni secondo;
 	+ Il gioco dovrebbe interrompersi quando il timer raggiunge lo 0.
 
-	Per fare ciÚ, questo Ë il codice, che puoi aggiungere al tuo_quadro_.
+	Per fare ci√≤, questo √® il codice, che puoi aggiungere al tuo_quadro_.
 
 	```blocks
 		quando si clicca sulla bandiera verde
@@ -144,7 +144,7 @@ Puoi rendere il gioco pi˘ interessante, dando solo 10 secondi al tuo giocatore p
 		ferma [tutto v]	
 	```
 
-	Il codice `ripeti fino a quando`{.blockcontrol}`tempo`{.blockdata}`= 0`{.blockoperators} si aggiunge cosÏ:
+	Il codice `ripeti fino a quando`{.blockcontrol}`tempo`{.blockdata}`= 0`{.blockoperators} si aggiunge cos√¨:
 
 	![screenshot](images/ghost-timer-help.png)
 
@@ -152,13 +152,13 @@ Puoi rendere il gioco pi˘ interessante, dando solo 10 secondi al tuo giocatore p
 
 	![screenshot](images/ghost-readout.png)
 
-+ Chiedi a un amico di provare il gioco. Quanti punti riesce a guadagnare? + Se il gioco Ë troppo facile, puoi:
++ Chiedi a un amico di provare il gioco. Quanti punti riesce a guadagnare? + Se il gioco √® troppo facile, puoi:
 
 	+ Dare al giocatore meno tempo;
 	+ Ridurre la frequenza con cui i fantasmi appaiono;
 	+ Rimpicciolire i fantasmi.
 
-	Prova alcune volte il gioco finchÈ sei soddisfatto con il livello di difficolt‡.
+	Prova alcune volte il gioco finch√© sei soddisfatto con il livello di difficolt√†.
 
 ## Salva il progetto {.save}
 
@@ -169,9 +169,9 @@ Puoi aggiungere altri oggetti al gioco?
 
 Rifletti sull'oggetto da aggiungere. Pensa a:
 
-+ Quanto Ë grande?
-+ Apparir‡ pi˘ o meno spesso rispetto ai fantasmi?
-+ Che costume/suono avr‡ quando verr‡ acchiappato?
++ Quanto √® grande?
++ Apparir√† pi√π o meno spesso rispetto ai fantasmi?
++ Che costume/suono avr√† quando verr√† acchiappato?
 + Quanti punti guadagnerai (o perderai) per averlo acchiappato?
 
 Se hai bisogno di aiuto per aggiungere un altro oggetto, riutilizza i passi qui sopra!
