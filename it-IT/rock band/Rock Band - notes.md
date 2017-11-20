@@ -1,14 +1,14 @@
 ---
-title: Banda Rock – Note per i Volontari
+title: Banda Rock â€“ Note per i Volontari
 ---
 
 #Introduzione:
-In questo progetto, i bambini impareranno ad aggiungere suoni e musica ai loro progetti, così come cambiare e programmare gli aspetti degli sprite.
+In questo progetto, i bambini impareranno ad aggiungere suoni e musica ai loro progetti, cosÃ¬ come cambiare e programmare gli aspetti degli sprite.
 
 #Risorse
-Per questo progetto, andrebbe usato Scratch 2. Scratch 2 può essere usato online a [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) o può essere scaricato da [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usato offline.
+Per questo progetto, andrebbe usato Scratch 2. Scratch 2 puÃ² essere usato online a [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) o puÃ² essere scaricato da [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) e usato offline.
 
-Una versione completa di questo progetto può essere trovata a <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, o può essere scaricata cliccando il link 'Project Materials' per questo progetto, che contiene:
+Una versione completa di questo progetto puÃ² essere trovata a <a href="http://scratch.mit.edu/projects/26741186/#editor">online</a>, o puÃ² essere scaricata cliccando il link 'Project Materials' per questo progetto, che contiene:
 
 + RockBand.sb2
 
@@ -29,10 +29,10 @@ Questo progetto copre elementi contenuti nei seguenti filoni di [Raspberry Pi Di
 + "Crea la tua banda" - usare le tecniche apprese per creare nuovi strumenti.
 
 #Domande frequenti
-+ Quando creano i loro sprite, i bambini potrebbero notare che il loro sprite 'jumps' ('salta') quando viene cliccato, mentre cambia aspetto. Questo avviene perché i due aspetti non sono centrati nello stesso posto.
++ Quando creano i loro sprite, i bambini potrebbero notare che il loro sprite 'jumps' ('salta') quando viene cliccato, mentre cambia aspetto. Questo avviene perchÃ© i due aspetti non sono centrati nello stesso posto.
 
 	Per risolverlo, clicca 'Imposta centro aspetto' su_entrambi_gli sprite, e assicurati che siano centrati nello stesso punto per entrambi gli aspetti.
 
 	![screenshot](images/band-center.png)
 
-+ In Linux, cliccare col tasto destro per cancellare uno sprite potrebbe non funzionare. Se questo è il caso, tenendo premuto il tasto maiuscolo e cliccando col sinistro solleverà il menu per cancellare uno sprite.
++ In Linux, cliccare col tasto destro per cancellare uno sprite potrebbe non funzionare. Se questo Ã¨ il caso, tenendo premuto il tasto maiuscolo e cliccando col sinistro solleverÃ  il menu per cancellare uno sprite.

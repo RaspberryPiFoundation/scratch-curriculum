@@ -1,4 +1,4 @@
-﻿---
+---
 title: Rock Band
 description: In questo progetto imparerai come programmare il tuo strumento musicale!
 layout: project
