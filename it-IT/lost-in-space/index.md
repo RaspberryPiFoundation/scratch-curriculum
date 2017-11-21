@@ -1,6 +1,6 @@
 ---
 title: Perduto nello Spazio
-description: Impara a programmare la tua animazione!
+description: "Impara a programmare la tua animazione!"
 layout: project
 notes: "Lost in Space - notes.md"
 project-type: sample
@@ -110,7 +110,7 @@ Un'altra maniera per animare l'astronave è di dirle di muoversi in piccole quan
 
 # Passo 3: Scimmie Fluttuanti { .activity .new-page }
 
-Aggiungiamo alla tua animazione delle scimmie che si sono perdute nello spazio! 
+Aggiungiamo alla tua animazione delle scimmie che si sono perdute nello spazio!
 
 ## Lista delle attività { .check}
 
@@ -126,7 +126,7 @@ Aggiungiamo alla tua animazione delle scimmie che si sono perdute nello spazio!
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			ruota in senso orario di (1) gradi
 		end
 	```
@@ -152,7 +152,7 @@ Aggiungiamo all'animazione delle rocce spaziali fluttuanti.
 	```blocks
 		quando si clicca sulla bandiera verde
 		punta verso [Earth v]
-		per sempre 
+		per sempre
   			fai (2) passi
   			rimbalza quando tocchi il bordo
 		end

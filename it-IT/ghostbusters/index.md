@@ -1,6 +1,6 @@
 ---
 title: Ghostbusters
-description: Impara a creare un gioco di acchiappa fantasmi!
+description: "Impara a creare un gioco di acchiappa fantasmi!"
 layout: project
 notes: "Ghostbusters - notes.md"
 ---
@@ -28,7 +28,7 @@ Imparerai a creare un gioco di acchiappa fantasmi!
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			nascondi
   			attendi (1) secondi
   			mostra
@@ -137,11 +137,11 @@ Puoi rendere il gioco più interessante, dando solo 10 secondi al tuo giocatore 
 	```blocks
 		quando si clicca sulla bandiera verde
 		porta [tempo v] a [10]
-		ripeti fino a quando <(tempo) = [0]> 
+		ripeti fino a quando <(tempo) = [0]>
   			attendi (1) secondi
   			cambia [ora v] di (-1)
 		end
-		ferma [tutto v]	
+		ferma [tutto v]
 	```
 
 	Il codice `ripeti fino a quando`{.blockcontrol}`tempo`{.blockdata}`= 0`{.blockoperators} si aggiunge così:

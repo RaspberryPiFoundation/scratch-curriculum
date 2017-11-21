@@ -1,6 +1,6 @@
 ---
 title: ChatterBot
-description: Impara a programmare il tuo robot parlante!
+description: "Impara a programmare il tuo robot parlante!"
 layout: project
 notes: "ChatBot - notes.md"
 ---
@@ -114,7 +114,7 @@ Puoi programmare il tuo chatterbot a decidere cosa fare, a seconda delle rispost
 		porta [nome v] a (risposta)
 		dire (unione di [Ciao ] e (nome)) per (2) secondi
 		chiedi (unione di [Stai bene ] e (nome)) e attendi
-		se ((risposta) = [si]) allora 
+		se ((risposta) = [si]) allora
   			dire [Mi fa piacere!] per (2) secondi
 		end
 	```
@@ -131,10 +131,10 @@ Puoi programmare il tuo chatterbot a decidere cosa fare, a seconda delle rispost
 		porta [nome v] a (risposta)
 		dire (unione di [Ciao ] e (nome)) per (2) secondi
 		chiedi (unione di [Stai bene ] e (nome)) e attendi
-		se ((risposta) = [si]) allora 
+		se ((risposta) = [si]) allora
   			dire [Mi fa piacere!] per (2) secondi
   		altrimenti
-  			dire [Oh no!] per (2) secondi	
+  			dire [Oh no!] per (2) secondi
 		end
 	```
 
@@ -180,7 +180,7 @@ Puoi anche programmare il tuo chatterbot a cambiare la sua posizione.
 
 	```blocks
 		chiedi [Vado sulla luna. Vuoi venire con me?] e attendi
-		se ((risposta) = [si]) allora 
+		se ((risposta) = [si]) allora
   			passa allo sfondo [moon v]
 		end
 	```
@@ -198,7 +198,7 @@ Devi anche assicurarti che il tuo chatterbot sia fuori quando inizi a parlarci. 
 + Puoi anche aggiungere questo codice dentro il blocco 'se' {.blockcontrol}, per far saltare il tuo chatterbot su e giù per 4 volte se la risposta è 'sì':
 
 	```blocks
-	ripeti (4) volte 
+	ripeti (4) volte
   		cambia y di (10)
   		attendi (0.1) secondi
   		cambia y di (-10)

@@ -1,6 +1,6 @@
 ---
 title: Rock Band
-description: In questo progetto imparerai come programmare il tuo strumento musicale!
+description: "In questo progetto imparerai come programmare il tuo strumento musicale!"
 layout: project
 notes: "Rock Band - notes.md"
 project-type: sample

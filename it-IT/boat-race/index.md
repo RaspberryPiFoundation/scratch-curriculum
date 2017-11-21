@@ -1,6 +1,6 @@
 ---
 title: Regata
-description: Crea un gioco in cui condurrai una barca verso un'isola deserta.
+description: "Crea un gioco in cui condurrai una barca verso un'isola deserta."
 layout: project
 notes: "Boat Race - notes.md"
 ---
@@ -18,14 +18,14 @@ Imparerai come creare un gioco in cui userai il mouse per navigare la barca vers
 
 ## Lista delle attività { .check}
 
-+ Apri il progetto Scratch online 'Regata' a <a href="http://jumpto.cc/boat-go" target="_blank">jumpto.cc/boat-go</a> o scaricalo da <a href="http://jumpto.cc/boat-get" target="_blank">jumpto.cc/boat-get</a> e poi apri se stai usando l'editore offline. 
++ Apri il progetto Scratch online 'Regata' a <a href="http://jumpto.cc/boat-go" target="_blank">jumpto.cc/boat-go</a> o scaricalo da <a href="http://jumpto.cc/boat-get" target="_blank">jumpto.cc/boat-get</a> e poi apri se stai usando l'editore offline.
 
 + Questo progetto include uno sprite di barca e uno scenario di corso con:
 
 	+ Legno che la tua barca deve evitare;
 	+ Un'isola deserta che la tua barca deve raggiungere.
 
-	![screenshot](images/boat-starter.png) 
+	![screenshot](images/boat-starter.png)
 
 # Passo 2: Controllare la barca { .activity }
 
@@ -37,7 +37,7 @@ Imparerai come creare un gioco in cui userai il mouse per navigare la barca vers
 		quando si clicca sulla bandiera verde
 		punta in direzione (0 v)
 		vai a x: (-190) y: (-150)
-		per sempre 
+		per sempre
   			punta verso [puntatore del mouse v]
   			fai (1) passi
 		end
@@ -49,13 +49,13 @@ Imparerai come creare un gioco in cui userai il mouse per navigare la barca vers
 
 	__Note: + Attualmente c'è un bug in Scratch a causa del quale la tua barca non riesce a muoversi in direzione del cursore del mouse. Se questo succede, clicca la freccia sul blocco 'punta verso' {.blockmotion} e riseleziona 'cursore-mouse'.
 
-	![screenshot](images/boat-bug.png) 
+	![screenshot](images/boat-bug.png)
 
 + Che succede se la barca raggiunge il cursore del mouse?
 
-	Per evitare che questo succeda, dovrai aggiungere un blocco 'if' {.blockcontrol} al tuo codice, in modo che la barca si muova solo se si trova a più di 5 pixel dal mouse. 
+	Per evitare che questo succeda, dovrai aggiungere un blocco 'if' {.blockcontrol} al tuo codice, in modo che la barca si muova solo se si trova a più di 5 pixel dal mouse.
 
-	![screenshot](images/boat-pointer.png)	
+	![screenshot](images/boat-pointer.png)
 
 + Prova di nuovo la tua barca per controllare se il problema è stato risolto.
 
@@ -76,7 +76,7 @@ La tua barca può viaggiare attraverso le barriere di legno! Risolviamolo.
 + Aggiungi questo codice alla tua barca, dentro il loop 'per sempre' {.blockcontrol}, in modo che si schianti quando tocca qualsiasi pezzo di legno marrone:
 
 	```blocks
-		se <sta toccando il colore [#603C15]> allora 
+		se <sta toccando il colore [#603C15]> allora
   			passa al costume [colpito v]
   			dire [Noooooo!] per (1) secondi
   			passa al costume [normale v]
@@ -116,7 +116,7 @@ Puoi aggiungere un effetto sonoro al tuo gioco per quando la barca si schianta o
 
 # Passo 4: Tempo di Prova { .activity }
 
-Ora aggiungiamo un timer al tuo gioco, in modo che il giocatore debba raggiungere l'isola deserta il più velocemente possibile. 
+Ora aggiungiamo un timer al tuo gioco, in modo che il giocatore debba raggiungere l'isola deserta il più velocemente possibile.
 
 ## Lista delle attività { .check}
 
@@ -129,7 +129,7 @@ Ora aggiungiamo un timer al tuo gioco, in modo che il giocatore debba raggiunger
 	```blocks
 		quando si clicca sulla bandiera verde
 		porta [tempo v] a [0]
-		per sempre 
+		per sempre
   			attendi (0.1) secondi
   			cambia [tempo v] di (0.1)
 		end
@@ -154,7 +154,7 @@ Questo gioco è _davvero_troppo facile - rendiamolo più interessante.
 + Ora puoi aggiungere dei codici al loop 'per sempre' della tua barca {.blockcontrol}, in modo che possa avanzare altri 3 passi quando tocca un booster bianco.
 
 	```blocks
-		se <sta toccando il colore [#FFFFFF]> allora 
+		se <sta toccando il colore [#FFFFFF]> allora
   			fai (3) passi
 		end
 	```
@@ -235,7 +235,7 @@ Puoi trasformare il tuo gioco in una regata tra 2 giocatori?
 Questo è il codice che dovrai usare per fare avanzare la barca:
 
 ```blocks
-	se <tasto [freccia su v] premuto> allora 
+	se <tasto [freccia su v] premuto> allora
   		fai (1) passi
 	end
 ```

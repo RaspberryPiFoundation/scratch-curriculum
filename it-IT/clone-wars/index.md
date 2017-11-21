@@ -1,6 +1,6 @@
 ---
 title: Guerre dei Cloni
-description: Crea un gioco in cui dovrai salvare la Terra dai mostri dello spazio.
+description: "Crea un gioco in cui dovrai salvare la Terra dai mostri dello spazio."
 layout: project
 notes: "Clone Wars - notes.md"
 ---
@@ -30,8 +30,8 @@ Creiamo un'astronave che difenderà la Terra!
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
-  			se <tasto [freccia sinistra v] premuto> allora 
+		per sempre
+  			se <tasto [freccia sinistra v] premuto> allora
     			cambia x di (-4)
   			end
 		end
@@ -55,7 +55,7 @@ Diamo all'astronave la possibilità di sparare fulmini!
 		quando si clicca sulla bandiera verde
 		nascondi
 		porta dimensione al (25) %
-		punta in direzione (-90 v)	
+		punta in direzione (-90 v)
 	```
 
 
@@ -64,8 +64,8 @@ Diamo all'astronave la possibilità di sparare fulmini!
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
-  			se <tasto [spazio v] premuto> allora 
+		per sempre
+  			se <tasto [spazio v] premuto> allora
     			crea clone di [Fulmine v]
   			end
 		end
@@ -77,7 +77,7 @@ Diamo all'astronave la possibilità di sparare fulmini!
 		quando vengo clonato
 		raggiungi [Astronave v]
 		mostra
-		ripeti fino a quando <sta toccando [bordo v]> 
+		ripeti fino a quando <sta toccando [bordo v]>
   			cambia y di (10)
 		end
 		elimina questo clone
@@ -123,7 +123,7 @@ Aggiungiamo un mucchio di ippopotami volanti che cercano di distruggere la tua a
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			attendi (numero a caso tra (2) e (4)) secondi
   			crea clone di [Ippopotamo1 v]
 		end
@@ -136,7 +136,7 @@ Aggiungiamo un mucchio di ippopotami volanti che cercano di distruggere la tua a
 		porta [velocità  v] a (numero a caso tra (2) e (4))
 		vai a x: (numero a caso tra (-220) e (220)) y: (150)
 		mostra
-		ripeti fino a quando <sta toccando [fulmine v]> 
+		ripeti fino a quando <sta toccando [fulmine v]>
   			fai (velocità) passi
   			ruota in senso orario di (numero a caso tra (-10) e (10)) gradi
   			rimbalza quando tocchi il bordo
@@ -162,7 +162,7 @@ Aggiungiamo un mucchio di ippopotami volanti che cercano di distruggere la tua a
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			passa al costume [normale v]
   			attendi fino a quando <sta toccando [Ippopotamo1 v]>
   			passa al costume [colpito v]
@@ -180,7 +180,7 @@ Aggiungiamo un mucchio di ippopotami volanti che cercano di distruggere la tua a
 		elimina questo clone
 	```
 
-+ Prova questo codice iniziando una nuova partita e scontrandoti con un ippopotamo. 
++ Prova questo codice iniziando una nuova partita e scontrandoti con un ippopotamo.
 
 	![screenshot](images/invaders-hippo-collide.png)
 
@@ -216,7 +216,7 @@ Creiamo ora un pipistrello della frutta che getta arance alla tua astronave.
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			attendi (numero a caso tra (5) e (10)) secondi
   			crea clone di [Arancia v]
 		end
@@ -231,7 +231,7 @@ Creiamo ora un pipistrello della frutta che getta arance alla tua astronave.
 		quando vengo clonato
 		raggiungi [Pipistrello1 v]
 		mostra
-		ripeti fino a quando <sta toccando [bordo v]> 
+		ripeti fino a quando <sta toccando [bordo v]>
   			cambia y di (-4)
 		end
 		elimina questo clone
@@ -244,7 +244,7 @@ Creiamo ora un pipistrello della frutta che getta arance alla tua astronave.
 
 	```blocks
 		attendi fino a quando <<sta toccando [Ippopotamo1 v]> o <sta toccando [Arancia v]>>
-	``` 
+	```
 
 + Prova il tuo gioco. Che succede se vieni colpito da un'arancia in caduta?
 
@@ -278,7 +278,7 @@ Aggiungiamo un messaggio 'game over' alla fine del gioco.
 		mostra
 	```
 
-	Siccome hai usato sul quadro un blocco `invia a tutti [game over v] e attendi` {.blockevents}, aspetterà che lo sprite 'Game Over' sia visualizzato prima di terminare la partita. 
+	Siccome hai usato sul quadro un blocco `invia a tutti [game over v] e attendi` {.blockevents}, aspetterà che lo sprite 'Game Over' sia visualizzato prima di terminare la partita.
 
 + Prova il tuo gioco. Quanti punti puoi accumulare? Hai qualche idea per migliorare il tuo gioco se è troppo facile o troppo difficile?
 
@@ -292,7 +292,7 @@ Che miglioramenti puoi apportare al tuo gioco? Ecco alcune idee:
 ![screenshot](images/invaders-aid.png)
 
 + Aggiungi delle rocce fluttuanti che la tua astronave deve evitare;
-	
+
 ![screenshot](images/invaders-rocks.png)
 
 + fai apparire altri nemici quando raggiungi il punteggio di 100.

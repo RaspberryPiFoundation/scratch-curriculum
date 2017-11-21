@@ -1,6 +1,6 @@
 ---
-title: Dodgeball 
-description: Crea un gioco a piattaforme in cui dovrai schivare le palle in movimento e raggiungere la fine del livello.
+title: Dodgeball
+description: "Crea un gioco a piattaforme in cui dovrai schivare le palle in movimento e raggiungere la fine del livello."
 layout: project
 notes: "Dodgeball - notes.md"
 ---
@@ -34,8 +34,8 @@ Iniziamo creando un personaggio che può muoversi a destra e a sinistra, e anche
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
-  			se <tasto [freccia destra v] premuto> allora 
+		per sempre
+  			se <tasto [freccia destra v] premuto> allora
    				punta in direzione (90 v)
     			fai (3) passi
     			passa al costum.e seguente
@@ -66,7 +66,7 @@ Iniziamo creando un personaggio che può muoversi a destra e a sinistra, e anche
 + Per salire una scala rosa, il tuo personaggio dovrebbe muoversi leggermente verso l'alto ogni volta che la freccia in su è premuta e sta toccando il colore corretto. Aggiungi questo codice dentro il loop 'per sempre' {.blockcontrol} del tuo personaggio:
 
 	```blocks
-		se <<tasto [freccia su v] premuto> e <sta toccando il colore [#FF69B4]>> allora 
+		se <<tasto [freccia su v] premuto> e <sta toccando il colore [#FF69B4]>> allora
   			cambia y di (4)
 		end
 	```
@@ -103,7 +103,7 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 	```blocks
 		quando si clicca sulla bandiera verde
 		porta [gravità v] a [-4]
-		per sempre 
+		per sempre
   			cambia y di (gravità)
 		end
 	```
@@ -117,8 +117,8 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 	```blocks
 		quando si clicca sulla bandiera verde
 		porta [gravità v] a [-4]
-		per sempre 
-  			se <non <<sta toccando il colore [#0000FF]> o <sta toccando il colore [#FF69B4]>>> allora 
+		per sempre
+  			se <non <<sta toccando il colore [#0000FF]> o <sta toccando il colore [#FF69B4]>>> allora
     			cambia y di (gravità)
   			end
 		end
@@ -132,7 +132,7 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 
 	```blocks
 		quando si preme il tasto [spazio v]
-		ripeti (10) volte 
+		ripeti (10) volte
   			cambia y di (4)
 		end
 	```
@@ -148,7 +148,7 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 	```blocks
 		quando si preme il tasto [spazio v]
 		porta [altezza salto v] a [8]
-		ripeti fino a quando <(altezza salto) = [0]> 
+		ripeti fino a quando <(altezza salto) = [0]>
   			cambia y di (altezza salto)
   			cambia [altezza salto v] di (-0.5)
 		end
@@ -175,7 +175,7 @@ Adesso che sei riuscito a far muovere il tuo personaggio, aggiungiamo delle pall
 
 	![screenshot](images/dodge-balls.png)
 
-+ Ridimensiona la palla in modo che il tuo personaggio possa saltare oltre essa. Prova a saltare oltre la palla per vedere se funziona. 
++ Ridimensiona la palla in modo che il tuo personaggio possa saltare oltre essa. Prova a saltare oltre la palla per vedere se funziona.
 
 	![screenshot](images/dodge-ball-resize.png)
 
@@ -197,8 +197,8 @@ Adesso che sei riuscito a far muovere il tuo personaggio, aggiungiamo delle pall
 
 	```blocks
 		quando vengo clonato
-		per sempre 
-  			se <sta toccando [Pico walking v]> allora 
+		per sempre
+  			se <sta toccando [Pico walking v]> allora
     			invia a tutti [hit v]
   			end
 		end
@@ -210,7 +210,7 @@ Adesso che sei riuscito a far muovere il tuo personaggio, aggiungiamo delle pall
 		quando ricevo [hit v]
 		punta in direzione (90 v)
 		vai a x: (-210) y: (-120)
-	```	
+	```
 
 + Prova il tuo personaggio e vedi se ritorna all'inizio quando viene colpito da una palla.
 
@@ -245,7 +245,7 @@ Rendiamo il gioco un po' più difficile aggiungendo dei laser!
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			passa al costume [accendi v]
   			attendi (2) secondi
   			passa al costume [spegni v]
@@ -273,7 +273,7 @@ Se credi che il gioco sia troppo facile, puoi aggiungere altri ostacoli al tuo l
 Puoi perfino creare più di uno scenario, e avanzare al livello seguente quando il personaggio raggiunge la porta verde:
 
 ```blocks
-	se <sta toccando il colore [#00FF00]> allora 
+	se <sta toccando il colore [#00FF00]> allora
   		passa allo sfondo [prossimo scenario v]
   		vai a x: (-210) y: (-120)
   		attendi (1) secondi
@@ -287,11 +287,11 @@ Nel tuo gioco c'è un altro piccolo bug: la gravità non spinge in basso il pers
 
 ![screenshot](images/dodge-gravity-bug.png)
 
-Puoi risolvere questo bug? Per farlo, dovrai dare al personaggio dei pantaloni di colore diverso (su_tutti_gli costumi)... 
+Puoi risolvere questo bug? Per farlo, dovrai dare al personaggio dei pantaloni di colore diverso (su_tutti_gli costumi)...
 
 ![screenshot](images/dodge-trousers.png)
 
-...e poi sostituisci il codice: 
+...e poi sostituisci il codice:
 
 ```blocks
 	<sta toccando il colore [#0000FF]>

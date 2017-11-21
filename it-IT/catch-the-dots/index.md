@@ -1,6 +1,6 @@
 ---
 title: Acchiappa Puntini
-description: Impara a creare un gioco acchiappa-puntini.
+description: "Impara a creare un gioco acchiappa-puntini."
 layout: project
 notes: "Catch the Dots - notes.md"
 ---
@@ -25,14 +25,14 @@ Iniziamo con il creare un controller che può essere usato per raccogliere i pun
 	Dovresti vedere lo sprite di un controller:
 
 	![screenshot](images/dots-controller.png)
-	
-	
+
+
 + Gira il controller a destra quando la freccia destra è premuta:
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
-  			se <tasto [freccia destra v] premuto> allora 
+		per sempre
+  			se <tasto [freccia destra v] premuto> allora
    				ruota in senso orario di (3) gradi
   			end
 		end
@@ -62,7 +62,7 @@ Aggiungiamo dei puntini che il giocatore dovrà raccogliere con il suo controlle
 		quando si clicca sulla bandiera verde
 		nascondi
 		attendi (2) secondi
-		per sempre 
+		per sempre
  			crea clone di [me stesso v]
   			attendi (numero a caso tra (5) e (10)) secondi
 		end
@@ -83,7 +83,7 @@ Aggiungiamo dei puntini che il giocatore dovrà raccogliere con il suo controlle
 		vai a x: (elemento (a caso v) di [posizione iniziale v] :: list) y: (elemento (a caso v) di [posizione iniziale v] :: list)
 		punta verso [controller v]
 		mostra
-		ripeti fino a quando <sta toccando [controller v]> 
+		ripeti fino a quando <sta toccando [controller v]>
   			fai (1) passi
 		end
 	```
@@ -147,7 +147,7 @@ Aumentiamo la difficoltà del gioco man mano che il giocatore continua a  soprav
 	```blocks
 		quando si clicca sulla bandiera verde
 		porta [ritardo v] a (8)
-		ripeti fino a quando <(ritardo) = (2)> 
+		ripeti fino a quando <(ritardo) = (2)>
   			attendi (10) secondi
   			cambia [ritardo v] di (-0.5)
 		end
@@ -190,7 +190,7 @@ Salviamo il punteggio alto, in modo che i giocatori possano vedere come stanno a
 
 	```blocks
 		definisci (controlla punteggio alto)
-		se <(punteggio) > (punteggio alto)> allora 
+		se <(punteggio) > (punteggio alto)> allora
   			porta [punteggio alto v] a (punteggio)
 		end
 	```
@@ -210,4 +210,3 @@ Hai in mente come puoi migliorare il tuo gioco? Per esempio, potresti creare pun
 
 ## Sfida: Menu partita {.challenge}
 Puoi aggiungere un menu (con tasti) al gioco? Puoi aggiungere una schermata di istruzioni, o uno schermo separato per visualizzare il punteggio alto. Se hai bisogno di aiuto, il progetto 'Giochi di Mente' può esserti utile.
-

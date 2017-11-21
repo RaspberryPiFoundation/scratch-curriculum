@@ -1,6 +1,6 @@
 ---
-title: Crea il Tuo Mondo 
-description: Impara a creare il tuo gioco di avventura open world.
+title: Crea il Tuo Mondo
+description: "Impara a creare il tuo gioco di avventura open world."
 layout: project
 notes: "Create Your Own World - notes.md"
 ---
@@ -101,7 +101,7 @@ Facciamo in modo che il giocatore possa entrare nelle altre stanze camminando at
 
 	![screenshot](images/world-backdrops.png)
 
-+ Avrai bisogno di una nuova variabile 'per tutti gli sprite' chiamata 'stanza' {.blockdata}, per tenere traccia della stanza in cui si trova il giocatore. 
++ Avrai bisogno di una nuova variabile 'per tutti gli sprite' chiamata 'stanza' {.blockdata}, per tenere traccia della stanza in cui si trova il giocatore.
 
 	![screenshot](images/world-room.png)
 
@@ -178,7 +178,7 @@ Aggiungiamo ora dei segnali al tuo mondo, che guideranno il giocatore nel suo vi
 ## Salva il progetto {.save}
 
 ## Sfida: Tesoro! {.challenge}
-Fai clic col pulsante destro sullo sprite del forziere e scegli 'mostra'. 
+Fai clic col pulsante destro sullo sprite del forziere e scegli 'mostra'.
 
 Puoi fare apparire lo sprite del forziere solo nella stanza 3 e dire 'Ottimo lavoro!' quando il giocatore lo tocca?
 
@@ -255,7 +255,7 @@ Puoi creare un altro nemico nella stanza 3 che vada avanti e indietro attraverso
 
 + Aggiungi al tuo progetto una nuova variabile chiamata 'monete' {.blockdata}.
 
-+ Fai clic col pulsante destro sullo sprite della 'moneta' e scegli 'mostra'. 
++ Fai clic col pulsante destro sullo sprite della 'moneta' e scegli 'mostra'.
 
 ![screenshot](images/world-coins.png)
 
@@ -346,4 +346,3 @@ Ora puoi continuare a creare il tuo mondo. Ecco alcune idee:
 	![screenshot](images/world-north-south.png)
 
 ## Salva il progetto {.save}
-

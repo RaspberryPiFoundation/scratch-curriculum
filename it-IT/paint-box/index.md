@@ -1,6 +1,6 @@
 ---
 title: Scatola dei Colori
-description: Impara a creare il tuo programma per pitturare.
+description: "Impara a creare il tuo programma per pitturare."
 layout: project
 notes: "Paint Box - notes.md"
 ---
@@ -24,27 +24,27 @@ Iniziamo a creare una matita che può essere usata per disegnare sul quadro.
 
 	Vedrai gli sprite della matita e della gomma:
 
-	![screenshot](images/paint-starter.png)	
+	![screenshot](images/paint-starter.png)
 
 + Siccome userai il mouse per disegnare, vorrai che la matita segua il mouse 'per sempre' {.blockcontrol}. Aggiungi questo codice allo sprite della tua matita:
 
 	```blocks
 		quando si clicca sulla bandiera verde
-		per sempre 
+		per sempre
   			raggiungi [mouse pointer v]
 		end
 	```
 
-+ Prova questo codice cliccando la bandiera e muovendo poi il mouse attorno al quadro. 
++ Prova questo codice cliccando la bandiera e muovendo poi il mouse attorno al quadro.
 
 + Poi, facciamo in modo che la tua matita disegni 'se' {.blockcontrol} il mouse è stato cliccato. Aggiungi questo codice allo sprite della tua matita:
 
-	![screenshot](images/paint-pencil-draw-code.png)	
+	![screenshot](images/paint-pencil-draw-code.png)
 
 + Prova di nuovo il codice. Questa volta, muovi la matita attorno al quadro e tieni premuto il tasto del mouse. Puoi disegnare con la matita?
 
 	![screenshot](images/paint-draw.png)
-	
+
 
 ## Salva il progetto { .save }
 
@@ -91,7 +91,7 @@ Aggiungiamo diverse penne colorate al tuo progetto, e permettiamo all'utente di 
 		usa penna di colore [#00ff00]
 	```
 
-	Per fare in modo che la matita colori verde, clicca la casella colorata nel blocco 'imposta colore'  {.blockpen}, e clicca sull'icona verde per scegliere il verde come colore della matita. 
+	Per fare in modo che la matita colori verde, clicca la casella colorata nel blocco 'imposta colore'  {.blockpen}, e clicca sull'icona verde per scegliere il verde come colore della matita.
 
 + Ora puoi fare la stessa cosa per l'icona della matita blu, aggiungendo questo codice allo sprite selezionatore blu:
 
@@ -145,7 +145,7 @@ A volte si può sbagliare, dunque aggiungiamo al tuo progetto il tasto 'ripulisc
 + Avrai probabilmente notato che lo sprite della matita include un costume da gomma:
 
 	![screenshot](images/paint-eraser-costume.png)
-	
+
 
 + Il tuo progetto include anche uno sprite per selezionare la gomma, cliccalo col tasto destro e scegli 'mostra'. Il tuo quadro dovrebbe essere così:
 

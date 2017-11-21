@@ -1,6 +1,6 @@
 ---
 title: Memoria
-description: Crea un gioco di memoria, dove devi memorizzare e ripetere una sequenza di colori a caso!
+description: "Crea un gioco di memoria, dove devi memorizzare e ripetere una sequenza di colori a caso!"
 layout: project
 notes: "Memory - notes.md"
 ---
@@ -16,7 +16,7 @@ In questo progetto, creerai un gioco di memoria, dove devi memorizzare e ripeter
 
 # Passo 1: Colori a caso { .activity }
 
-Per prima cosa, creiamo un personaggio che può cambiare in una sequenza di colori che il giocatore deve memorizzare. 
+Per prima cosa, creiamo un personaggio che può cambiare in una sequenza di colori che il giocatore deve memorizzare.
 
 ## Lista delle attività { .check}
 
@@ -50,7 +50,7 @@ Per prima cosa, creiamo un personaggio che può cambiare in una sequenza di colo
 	```blocks
 		quando si clicca sulla bandiera verde
 		cancella (tutto v) da [sequenza v]
-		ripeti (5) volte 
+		ripeti (5) volte
   			aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
   			passa al costume (elemento (last v) di [sequenza v] :: list)
   			attendi (1) secondi
@@ -87,7 +87,7 @@ Aggiungi 4 sprite al tuo progetto, che diventeranno tasti. Modifica i tuoi 4 spr
 
 	```blocks
 		quando ricevo [rosso v]
-		se <(item (1 v) of [sequenza v] :: list) = [1]> allora 
+		se <(item (1 v) of [sequenza v] :: list) = [1]> allora
   			cancella (1 v) da [sequenza v]
   		altrimenti
   			dire [Game over!] per (1) secondi
@@ -107,7 +107,7 @@ Aggiungi 4 sprite al tuo progetto, che diventeranno tasti. Modifica i tuoi 4 spr
 	```blocks
 		quando ricevo [won v]
 		produci suono [drum machine v]
-		ripeti (50) volte 
+		ripeti (50) volte
   			cambia effetto [colore v] di (25)
   			attendi (0.1) secondi
 		end
@@ -157,9 +157,9 @@ Invece di creare sempre una sequenza di 5 colori, ora vuoi che il 'punteggio' {.
 	```blocchi
 		quando si clicca sulla bandiera verde
 		porta [punteggio v] a [3]
-		per sempre 
+		per sempre
   			cancella (tutto v) da [sequenza v]
-  			ripeti (score) volte 
+  			ripeti (score) volte
     			aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
     			passa al costume (elemento (ultimo v) di [sequenza v] :: list)
     			attendi (1) secondi
@@ -170,7 +170,7 @@ Invece di creare sempre una sequenza di 5 colori, ora vuoi che il 'punteggio' {.
 		end
 	```
 
-+ Fai provare il gioco ai tuoi amici. Ricordati di nascondere la lista 'sequenza' {.blockdata} prima che inizino a giocare! 
++ Fai provare il gioco ai tuoi amici. Ricordati di nascondere la lista 'sequenza' {.blockdata} prima che inizino a giocare!
 
 ## Salva il progetto {.save}
 
@@ -186,11 +186,11 @@ Salviamo il punteggio alto, in modo che tu possa giocare contro i tuoi amici.
 
 	```blocks
 		quando ricevo [rosso v]
-		se <(item (1 v) of [sequenza v] :: list) = [1]> allora 
+		se <(item (1 v) of [sequenza v] :: list) = [1]> allora
   			cancella (1 v) da [sequenza v]
 		altrimenti
   			dire [Game over!] per (1) secondi
-  			se <(punteggio) > (punteggio alto)> allora 
+  			se <(punteggio) > (punteggio alto)> allora
     			porta [punteggio alto v] a (punteggio)
     			chiedi [Punteggio alto! Come ti chiami?] e attendi
     			porta [nome v] a (risposta)

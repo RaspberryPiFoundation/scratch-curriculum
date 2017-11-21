@@ -1,6 +1,6 @@
 ---
 title: Giochi di Mente
-description: Impara a creare un quiz.
+description: "Impara a creare un quiz."
 layout: project
 notes: "Giochi di Mente - note.md"
 ---
@@ -45,7 +45,7 @@ Iniziamo a creare domande a caso per il giocatore.
 		porta [numero 1 v] a (numero a caso tra (2) e (12))
 		porta [numero 2 v] a (numero a caso tra (2) e (12))
 		chiedi (unione di (number 1) e (unione di [ x ] e (number 2))) e attendi
-		se <(answer) = ((number 1) * (number 2))> allora 
+		se <(answer) = ((number 1) * (number 2))> allora
   			dire [sì! :)] per (2) secondi
   		altrimenti
   			dire [no :(] per (2) secondi
@@ -54,7 +54,7 @@ Iniziamo a creare domande a caso per il giocatore.
 
 + Prova il tuo intero progetto, rispondendo correttamente e dando una risposta errata.
 
-+ Aggiungi un loop `per sempre` {.blockcontrol} attorno a questo codice, così che il giocatore possa ricevere tante domande. 
++ Aggiungi un loop `per sempre` {.blockcontrol} attorno a questo codice, così che il giocatore possa ricevere tante domande.
 
 + Crea un timer con conto alla rovescia su questa fase, usando una variabile chiamata 'tempo' {.blockdata}. Se hai bisogno di aiuto, il progetto 'Ghostbusters' possiede le istruzioni per creare un timer (al passo 5).
 
@@ -138,8 +138,8 @@ Aggiungiamo il tasto 'gioca', così che puoi giocare tante volte.
 	```blocks
 		quando si clicca sulla bandiera verde
 		mostra
-		per sempre 
-  		se <sta toccando [puntatore del mouse v]> allora 
+		per sempre
+  		se <sta toccando [puntatore del mouse v]> allora
     		porta effetto [fish-eye v] a (30)
   		altrimenti
     		porta effetto [fish-eye v] a (0)
@@ -205,7 +205,7 @@ Invece di far dire solo 'sì' al tuo personaggio! :)` o `no :(` al giocatore, ag
 		definisci (animare)
 		porta effetto [fantasma v] a (100)
 		mostra
-		ripeti (25) volte 
+		ripeti (25) volte
   			cambia effetto [fantasma v] di (-4)
 		end
 		nascondi
@@ -243,7 +243,7 @@ Per fare ciò, dovrai solo cambiare il codice del tuo timer. Vedi cosa deve esse
 ```blocks
 	quando ricevo [inizio v]
 	porta [tempo v] a (30)
-	ripeti fino a quando <(tempo) = [0]> 
+	ripeti fino a quando <(tempo) = [0]>
   		attendi (1) secondi
   		cambia [tempo v] di (-1)
 	end
