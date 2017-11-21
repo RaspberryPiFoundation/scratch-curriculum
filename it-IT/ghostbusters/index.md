@@ -74,7 +74,7 @@ Facciamo in modo che il giocatore acchiappi i fantasmi!
 
 + Prova il tuo progetto. Puoi acchiappare fantasmi man mano che compaiono? Se trovi difficile acchiappare i fantasmi, puoi giocare in modalità schermo intero cliccando questo tasto:
 
-	[screenshot](images/ghost-fullscreen.png)
+	![screenshot](images/ghost-fullscreen.png)
 
 ## Sfida: Aggiungere un suono { .challenge }
 Puoi riprodurre un suono ogni volta che un fantasma viene acchiappato?
@@ -87,13 +87,13 @@ Rendiamo il gioco più interessante tenendo il punteggio.
 
 ## Lista di controllo delle attività { .check }
 
-+ Per tenere il punteggio del giocatore, ti serve un posto dove collocarlo. Una_variabile_è un posto dove conservare i dati che possono cambiare, proprio come un punteggio.
++ Per tenere il punteggio del giocatore, ti serve un posto dove collocarlo. Una __variabile__ è un posto dove conservare i dati che possono cambiare, proprio come un punteggio.
 
-	Per creare una nuova variabile, clicca sulla scheda 'Scripts', seleziona 'Variabili e liste' {.blockdata} e poi clicca 'Crea una Variabile'.
+	Per creare una nuova variabile, clicca sulla scheda 'Scripts', seleziona `Variabili e liste` {.blockdata} e poi clicca 'Crea una Variabile'.
 
 	![screenshot](images/ghost-score.png)
 
-	Digita 'punteggio' nel nome della variabile, assicurati che sia disponibile per tutti gli sprite e clicca 'OK' per crearla. Vedrai dunque tanti blocchi di codici che possono esere usati con la tua variabile 'punteggio' {.blockdata}.
+	Digita 'punteggio' nel nome della variabile, assicurati che sia disponibile per tutti gli sprite e clicca 'OK' per crearla. Vedrai dunque tanti blocchi di codici che possono esere usati con la tua variabile `punteggio` {.blockdata}.
 
 	![screenshot](images/ghost-variable.png)
 
@@ -132,7 +132,7 @@ Puoi rendere il gioco più interessante, dando solo 10 secondi al tuo giocatore 
 	+ Il timer dovrebbe contare alla rovescia ogni secondo;
 	+ Il gioco dovrebbe interrompersi quando il timer raggiunge lo 0.
 
-	Per fare ciò, questo è il codice, che puoi aggiungere al tuo_quadro_.
+	Per fare ciò, questo è il codice, che puoi aggiungere al tuo __quadro__.
 
 	```blocks
 		quando si clicca sulla bandiera verde
@@ -152,7 +152,7 @@ Puoi rendere il gioco più interessante, dando solo 10 secondi al tuo giocatore 
 
 	![screenshot](images/ghost-readout.png)
 
-+ Chiedi a un amico di provare il gioco. Quanti punti riesce a guadagnare? + Se il gioco è troppo facile, puoi:
++ Chiedi a un amico di provare il gioco. Quanti punti riesce a guadagnare? Se il gioco è troppo facile, puoi:
 
 	+ Dare al giocatore meno tempo;
 	+ Ridurre la frequenza con cui i fantasmi appaiono;

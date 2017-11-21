@@ -26,7 +26,7 @@ Iniziamo a creare una matita che può essere usata per disegnare sul quadro.
 
 	![screenshot](images/paint-starter.png)
 
-+ Siccome userai il mouse per disegnare, vorrai che la matita segua il mouse 'per sempre' {.blockcontrol}. Aggiungi questo codice allo sprite della tua matita:
++ Siccome userai il mouse per disegnare, vorrai che la matita segua il mouse `per sempre` {.blockcontrol}. Aggiungi questo codice allo sprite della tua matita:
 
 	```blocks
 		quando si clicca sulla bandiera verde
@@ -37,7 +37,7 @@ Iniziamo a creare una matita che può essere usata per disegnare sul quadro.
 
 + Prova questo codice cliccando la bandiera e muovendo poi il mouse attorno al quadro.
 
-+ Poi, facciamo in modo che la tua matita disegni 'se' {.blockcontrol} il mouse è stato cliccato. Aggiungi questo codice allo sprite della tua matita:
++ Poi, facciamo in modo che la tua matita disegni `se` {.blockcontrol} il mouse è stato cliccato. Aggiungi questo codice allo sprite della tua matita:
 
 	![screenshot](images/paint-pencil-draw-code.png)
 
@@ -66,7 +66,7 @@ Aggiungiamo diverse penne colorate al tuo progetto, e permettiamo all'utente di 
 
 	![screenshot](images/paint-selectors.png)
 
-+ Quando l'icona verde è cliccata, dovrai 'invia a tutti'  {.blockevents} un messaggio allo sprite della matita, dicendo di cambiare costume e colore di matita.
++ Quando l'icona verde è cliccata, dovrai `invia a tutti`  {.blockevents} un messaggio allo sprite della matita, dicendo di cambiare costume e colore di matita.
 
 	Per fare ciò, aggiungi prima questo codice all'icona verde.
 
@@ -75,7 +75,7 @@ Aggiungiamo diverse penne colorate al tuo progetto, e permettiamo all'utente di 
 		invia a tutti [verde v]
 	```
 
-	Per creare il blocco 'trasmetti' {.blockevents}, clicca la freccia in basso e seleziona 'nuovo messaggio...'.
+	Per creare il blocco `invia a tutti` {.blockevents}, clicca la freccia in basso e seleziona 'nuovo messaggio...'.
 
 	![screenshot](images/paint-broadcast.png)
 
@@ -91,7 +91,7 @@ Aggiungiamo diverse penne colorate al tuo progetto, e permettiamo all'utente di 
 		usa penna di colore [#00ff00]
 	```
 
-	Per fare in modo che la matita colori verde, clicca la casella colorata nel blocco 'imposta colore'  {.blockpen}, e clicca sull'icona verde per scegliere il verde come colore della matita.
+	Per fare in modo che la matita colori verde, clicca la casella colorata nel blocco `imposta colore`  {.blockpen}, e clicca sull'icona verde per scegliere il verde come colore della matita.
 
 + Ora puoi fare la stessa cosa per l'icona della matita blu, aggiungendo questo codice allo sprite selezionatore blu:
 
@@ -108,7 +108,7 @@ Aggiungiamo diverse penne colorate al tuo progetto, e permettiamo all'utente di 
 		usa penna di colore [#0000ff]
 	```
 
-+ Infine, dovrai dire allo sprite della tua matita quale costume e quale colore di matita scegliere quando il progetto è iniziato, e anche di ripulire la schermata. Aggiungi questo codice all'inizio del codice della matita 'quando si clicca la bandiera' {.blockevents} (prima del loop 'per sempre' {.blockcontrol}:
++ Infine, dovrai dire allo sprite della tua matita quale costume e quale colore di matita scegliere quando il progetto è iniziato, e anche di ripulire la schermata. Aggiungi questo codice all'inizio del codice della matita 'quando si clicca la bandiera' {.blockevents} (prima del loop `per sempre` {.blockcontrol}:
 
 	```blocks
 		pulisci
@@ -129,7 +129,7 @@ A volte si può sbagliare, dunque aggiungiamo al tuo progetto il tasto 'ripulisc
 
 ## Lista delle attività { .check}
 
-+ Aggiungiamo un tasto per ripulire il quadro. Per fare ciò, aggiungi al quadro lo sprite della lettera 'blocco-X' e coloralo in rosso.
++ Aggiungiamo un tasto per ripulire il quadro. Per fare ciò, aggiungi al quadro lo sprite della lettera 'X-block' e coloralo in rosso.
 
 	![screenshot](images/paint-x.png)
 
@@ -174,7 +174,7 @@ A volte si può sbagliare, dunque aggiungiamo al tuo progetto il tasto 'ripulisc
 
 	![screenshot](images/paint-draw-problem.png)
 
-	Per risolverlo, devi comunicare alla matita di disegnare solo se il mouse è cliccato_e_se la posizione y del mouse è maggiore di -120 ('mouse y' {.blocksensing}'> -120' {.blockoperators}). Cambia l'affermazione 'se' {.blockcontrol} della matita per farla diventare così:
+	Per risolverlo, devi comunicare alla matita di disegnare solo se il mouse è cliccato_e_se la posizione y del mouse è maggiore di -120 (`mouse y` {.blocksensing}`> -120' {.blockoperators}). Cambia l'affermazione `se` {.blockcontrol} della matita per farla diventare così:
 
 	![screenshot](images/pencil-gt-code.png)
 
@@ -192,7 +192,7 @@ Facciamo in modo che l'utente possa disegnare usando una varietà di misure di m
 
 + Per prima cosa, aggiungiamo una nuova variabile chiamata 'larghezza'. Se non sai come si fa, il progetto 'Ghostbusters' ti sarà utile.
 
-+ Aggiungi questa linea_dentro_il loop 'per sempre' {.blockcontrol} del codice della matita:
++ Aggiungi questa linea_dentro_il loop `per sempre` {.blockcontrol} del codice della matita:
 
 	```blocks
 		usa penna di dimensione (larghezza)

@@ -76,7 +76,7 @@ Un'altra maniera per animare l'astronave è di dirle di muoversi in piccole quan
 
 ## Lista delle attività { .check}
 
-+ Cancella il blocco 'scivola' {.blockmotion} dal tuo codice, facendo clic col pulsante destro sul blocco e cliccando 'cancella'. Puoi anche cancellare il codice trascinandolo fuori dall'area del testo fino all'area dei blocchi di codici.
++ Cancella il blocco `scivola` {.blockmotion} dal tuo codice, facendo clic col pulsante destro sul blocco e cliccando 'cancella'. Puoi anche cancellare il codice trascinandolo fuori dall'area del testo fino all'area dei blocchi di codici.
 
 	![screenshot](images/space-delete-glide.png)
 
@@ -84,11 +84,11 @@ Un'altra maniera per animare l'astronave è di dirle di muoversi in piccole quan
 
 	![screenshot](images/space-loop.png)
 
-	Il blocco 'ripeti' {.blockcontrol} è usato per ripetere tante volte qualcosa, ed è noto anche come_loop_.
+	Il blocco `ripeti` {.blockcontrol} è usato per ripetere tante volte qualcosa, ed è noto anche come_loop_.
 
 + Se clicchi la bandiera per provare questo nuovo codice, vedrai che fa più o meno la stessa cosa di prima.
 
-+ Puoi aggiungere un altro codice al tuo loop per fare cose interessanti. Aggiungi nel loop il blocco 'cambia effetto colore di 25' {.blocklooks} (dalla sezione 'Apparenze'), per cambiare ripetutamente il colore dell'astronave mentre si muove:
++ Puoi aggiungere un altro codice al tuo loop per fare cose interessanti. Aggiungi nel loop il blocco `cambia effetto colore di 25` {.blocklooks} (dalla sezione 'Apparenze'), per cambiare ripetutamente il colore dell'astronave mentre si muove:
 
 	![screenshot](images/space-colour.png)
 

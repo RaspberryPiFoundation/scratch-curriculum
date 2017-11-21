@@ -88,7 +88,7 @@ Aggiungiamo dei puntini che il giocatore dovrà raccogliere con il suo controlle
 		end
 	```
 
-	Il codice di cui sopra sceglie '-180' o '180' per le posizioni x_e_y, il che significa che ogni clone inizia in un angolo del quadro.
+	Il codice di cui sopra sceglie `-180` o `180` per le posizioni x _e_ y, il che significa che ogni clone inizia in un angolo del quadro.
 
 + Metti alla prova il tuo progetto. Dovresti vedere apparire tanti puntini rossi in ogni angolo dello schermo, e muoversi lentamente verso il controller.
 
@@ -96,9 +96,9 @@ Aggiungiamo dei puntini che il giocatore dovrà raccogliere con il suo controlle
 
 + Crea 2 nuove variabili chiamate `vite` {.blockdata} e `punteggio` {.blockdata}.
 
-+ Aggiungi un codice al tuo quadro per impostare le 'vite' {.blockdata} a 3 e il 'punteggio' {.blockdata} a 0 all'inizio della partita.
++ Aggiungi un codice al tuo quadro per impostare le `vite` {.blockdata} a 3 e il `punteggio` {.blockdata} a 0 all'inizio della partita.
 
-+ Dovrai aggiungere un codice alla fine del tuo codice 'quando vengo clonato' {.blockcontrol} dei puntini rossi, così che 1 viene aggiunto al 'punteggio'  {.blockdata} del giocatore se i colori corrispondono, o 1 viene detratto dalle 'vite' {.blockdata} del giocatore se i colori non corrispondono.
++ Dovrai aggiungere un codice alla fine del tuo codice `quando vengo clonato` {.blockcontrol} dei puntini rossi, così che 1 viene aggiunto al `punteggio`  {.blockdata} del giocatore se i colori corrispondono, o 1 viene detratto dalle `vite` {.blockdata} del giocatore se i colori non corrispondono.
 
 	```blocks
 		fai (5) passi
@@ -178,7 +178,7 @@ Salviamo il punteggio alto, in modo che i giocatori possano vedere come stanno a
 
 + Crea una nuova variabile chiamata `punteggio alto` {.blockdata}.
 
-+ Clicca sul tuo quadro, e crea un nuovo blocco personalizzato chiamato 'controlla punteggio alto' {.blockmoreblocks}.
++ Clicca sul tuo quadro, e crea un nuovo blocco personalizzato chiamato `controlla punteggio alto` {.blockmoreblocks}.
 
 	![screenshot](images/dots-custom-1.png)
 
@@ -186,7 +186,7 @@ Salviamo il punteggio alto, in modo che i giocatori possano vedere come stanno a
 
 	![screenshot](images/dots-custom-2.png)
 
-+ Aggiungi un codice al tuo blocco personalizzato per salvare il 'punteggio' {.blockdata} attuale come `punteggio alto` {.blockdata} `se` {.blockcontrol} è il punteggio più alto fino ad ora.
++ Aggiungi un codice al tuo blocco personalizzato per salvare il `punteggio` {.blockdata} attuale come `punteggio alto` {.blockdata} `se` {.blockcontrol} è il punteggio più alto fino ad ora.
 
 	```blocks
 		definisci (controlla punteggio alto)
@@ -195,7 +195,7 @@ Salviamo il punteggio alto, in modo che i giocatori possano vedere come stanno a
 		end
 	```
 
-+ Prova il codice che hai aggiunto. Gioca la tua partita per controllare se il 'punteggio alto' {.blockdata} si è aggiornato correttamente.
++ Prova il codice che hai aggiunto. Gioca la tua partita per controllare se il `punteggio alto` {.blockdata} si è aggiornato correttamente.
 
 ## Salva il progetto {.save}
 

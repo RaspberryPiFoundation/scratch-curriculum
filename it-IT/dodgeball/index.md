@@ -47,13 +47,13 @@ Iniziamo creando un personaggio che può muoversi a destra e a sinistra, e anche
 
 	![screenshot](images/dodge-walking.png)
 
-+ Per muovere il tuo personaggio a sinistra, dovrai aggiungere un altro blocco 'se' {.blockcontrol} dentro il loop 'per sempre' {.blockcontrol}, che muove il tuo personaggio a sinistra.
++ Per muovere il tuo personaggio a sinistra, dovrai aggiungere un altro blocco `se` {.blockcontrol} dentro il loop `per sempre` {.blockcontrol}, che muove il tuo personaggio a sinistra.
 
 + Prova il tuo nuovo codice per assicurarti che funzioni. Il tuo personaggio si capovolge quando cammina a sinistra?
 
 	![screenshot](images/dodge-upside-down.png)
 
-	In quel caso, puoi risolvere questo bug cliccando l'icona '(i)' {.blocksensing} sullo sprite del personaggio, e poi clicca le frecce dstra-sinistra.
+	In quel caso, puoi risolvere questo bug cliccando l'icona `(i)` {.blocksensing} sullo sprite del personaggio, e poi clicca le frecce dstra-sinistra.
 
 	![screenshot](images/dodge-left-right.png)
 
@@ -63,7 +63,7 @@ Iniziamo creando un personaggio che può muoversi a destra e a sinistra, e anche
 	porta stile rotazione a [sinistra-destra v]
 	```
 
-+ Per salire una scala rosa, il tuo personaggio dovrebbe muoversi leggermente verso l'alto ogni volta che la freccia in su è premuta e sta toccando il colore corretto. Aggiungi questo codice dentro il loop 'per sempre' {.blockcontrol} del tuo personaggio:
++ Per salire una scala rosa, il tuo personaggio dovrebbe muoversi leggermente verso l'alto ogni volta che la freccia in su è premuta e sta toccando il colore corretto. Aggiungi questo codice dentro il loop `per sempre` {.blockcontrol} del tuo personaggio:
 
 	```blocks
 		se <<tasto [freccia su v] premuto> e <sta toccando il colore [#FF69B4]>> allora
@@ -78,7 +78,7 @@ Iniziamo creando un personaggio che può muoversi a destra e a sinistra, e anche
 ## Salva il progetto {.save}
 
 ## Sfida: Completare il livello {.challenge}
-Puoi aggiungere un altro codice al tuo personaggio, in modo che dica qualcosa 'se' {.blockcontrol} raggiunge la porta verde?
+Puoi aggiungere un altro codice al tuo personaggio, in modo che dica qualcosa `se` {.blockcontrol} raggiunge la porta verde?
 
 ![screenshot](images/dodge-win.png)
 
@@ -112,7 +112,7 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 
 	![screenshot](images/dodge-gravity-drag.png)
 
-+ La gravità non dovrebbe muovere il tuo personaggio attraverso una piattaforma o una scala! Aggiungi un blocco 'se' {.blockcontrol} al tuo codice, in modo che la gravità funzioni solo quando il personaggio si trova a mezz'aria. Il codice della gravità ora dovrebbe apparire così:
++ La gravità non dovrebbe muovere il tuo personaggio attraverso una piattaforma o una scala! Aggiungi un blocco `se` {.blockcontrol} al tuo codice, in modo che la gravità funzioni solo quando il personaggio si trova a mezz'aria. Il codice della gravità ora dovrebbe apparire così:
 
 	```blocks
 		quando si clicca sulla bandiera verde
@@ -137,11 +137,11 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 		end
 	```
 
-	Siccome la gravità continua a spingere il personaggio verso il basso di 4 pixel, dovrai scegliere un numero maggiore di 4 nel tuo blocco 'cambia y di (4)' {.blockmotion}. Cambia questo numero fino ad arrivare all'altezza desiderata dei salti.
+	Siccome la gravità continua a spingere il personaggio verso il basso di 4 pixel, dovrai scegliere un numero maggiore di 4 nel tuo blocco `cambia y di (4)` {.blockmotion}. Cambia questo numero fino ad arrivare all'altezza desiderata dei salti.
 
 + Se provi questo codice, noterai che funziona, ma che il movimento non è molto naturale. Per rendere il salto più naturale, dovrai muovere il personaggio in quantità sempre più piccole, finché non salta più.
 
-+ Per fare ciò, crea un'altra variabile chiamata 'altezza salto' {.blockdata}. Come prima, puoi nascondere questa variabile se preferisci.
++ Per fare ciò, crea un'altra variabile chiamata `altezza salto` {.blockdata}. Come prima, puoi nascondere questa variabile se preferisci.
 
 + Cancella il codice del salto che hai aggiunto al personaggio, e sostituiscilo con questo codice:
 
@@ -156,12 +156,12 @@ Facciamo muovere il perosnaggio in maniera più realistica, aggiungendo la gravi
 
 	Questo codice fa salire il tuo personaggio di 8 pixel, poi 7,5, poi 7, e così via, finché il personaggio smette di saltare. Questo rende il salto molto più naturale.
 
-+ Cambia il valore iniziale della variabile 'altezza salto' {.blockdata} e provalo finché raggiungi l'altezza desiderata.
++ Cambia il valore iniziale della variabile `altezza salto` {.blockdata} e provalo finché raggiungi l'altezza desiderata.
 
 ## Salva il progetto {.save}
 
 ## Sfida: Salto migliorato {.challenge}
-Il tuo personaggio è in grado di saltare ogni volta che si preme la barra spaziatrice, anche se si trova già a mezz'aria. Puoi provare tenendo premuta la barra spaziatrice. Puoi fare in modo che il personaggio salti solo 'se' {.blockcontrol} sta toccando una piattaforma blu?
+Il tuo personaggio è in grado di saltare ogni volta che si preme la barra spaziatrice, anche se si trova già a mezz'aria. Puoi provare tenendo premuta la barra spaziatrice. Puoi fare in modo che il personaggio salti solo `se` {.blockcontrol} sta toccando una piattaforma blu?
 
 ## Salva il progetto {.save}
 
@@ -193,7 +193,7 @@ Adesso che sei riuscito a far muovere il tuo personaggio, aggiungiamo delle pall
 
 	![screenshot](images/dodge-ball-more-motion.png)
 
-+ Infine, ti servirà un codice per quando il personaggio viene colpito ('hit') da una palla! + Aggiungi questo codice allo sprite della palla:
++ Infine, ti servirà un codice per quando il personaggio viene colpito ('hit') da una palla! Aggiungi questo codice allo sprite della palla:
 
 	```blocks
 		quando vengo clonato
@@ -253,13 +253,13 @@ Rendiamo il gioco un po' più difficile aggiungendo dei laser!
 		end
 	```
 
-	Se preferisci, puoi 'attendi' {.blockcontrol} un periodo di tempo `a caso` {.blockoperators} tra il cambio da un costume all'altro.
+	Se preferisci, puoi `attendi` {.blockcontrol} un periodo di tempo `a caso` {.blockoperators} tra il cambio da un costume all'altro.
 
 + Infine, aggiungi un codice al tuo laser, in modo che venga trasmesso il messaggio 'colpito' quando il laser tocca il personaggio. Questo codice sarà molto simile a quello che hai aggiunto allo sprite della palla.
 
 	Non dovrai aggiungere altri codici al tuo personaggio - sa già cosa fare quando viene colpito!
 
-+ Prova il tuo gioco per vedere se riesci a superare il laser. Cambia i tempi di 'attendi' {.blockcontrol} nel tuo codice se i laser sono troppo facili o troppo difficili.
++ Prova il tuo gioco per vedere se riesci a superare il laser. Cambia i tempi di `attendi` {.blockcontrol} nel tuo codice se i laser sono troppo facili o troppo difficili.
 
 ## Sfida: Altri ostacoli {.challenge}
 Se credi che il gioco sia troppo facile, puoi aggiungere altri ostacoli al tuo livello. Puoi aggiungere quello che vuoi, ma ecco qualche idea:
@@ -287,7 +287,7 @@ Nel tuo gioco c'è un altro piccolo bug: la gravità non spinge in basso il pers
 
 ![screenshot](images/dodge-gravity-bug.png)
 
-Puoi risolvere questo bug? Per farlo, dovrai dare al personaggio dei pantaloni di colore diverso (su_tutti_gli costumi)...
+Puoi risolvere questo bug? Per farlo, dovrai dare al personaggio dei pantaloni di colore diverso (su _tutti_ gli costumi)...
 
 ![screenshot](images/dodge-trousers.png)
 

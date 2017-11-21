@@ -11,8 +11,8 @@ project-type: sample
 In questo progetto imparerai come programmare il tuo strumento musicale!
 
 <div class="scratch-preview">
-	<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
-	<img src="band-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
+  <img src="images/band-final.png">
 </div>
 
 # Passo 1: Sprites { .activity }

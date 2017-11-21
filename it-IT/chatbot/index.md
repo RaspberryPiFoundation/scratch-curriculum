@@ -53,7 +53,7 @@ Adesso che hai un chatterbot con la sua personalità, programmiamolo per farlo p
 
 	![screenshot](images/chatbot-text.png)
 
-+ Il tuo chatterbot risponderà semplicemente 'Che bel nome!' ogni volta. + Puoi personalizzare la risposta del chatterbot, usando le risposte dell'utente. Cambia il codice del chatterbot, in modo che sia così:
++ Il tuo chatterbot risponderà semplicemente 'Che bel nome!' ogni volta. Puoi personalizzare la risposta del chatterbot, usando le risposte dell'utente. Cambia il codice del chatterbot, in modo che sia così:
 
 	```blocks
 		quando si clicca questo sprite
@@ -61,11 +61,11 @@ Adesso che hai un chatterbot con la sua personalità, programmiamolo per farlo p
 		dire (unione di [Ciao] e (risposta)) per (2) secondi
 	```
 
-	Per creare l'ultimo blocco, dovrai prima trascinare un blocco 'unisci' verde {.blockoperators}, e poi trascinarlo sul blocco 'dici' {.blocklooks}.
+	Per creare l'ultimo blocco, dovrai prima trascinare un blocco `unione` verde {.blockoperators}, e poi trascinarlo sul blocco `dire` {.blocklooks}.
 
 	![screenshot](images/chatbot-join.png)
 
-	Poi, puoi cambiare il testo 'hello' per dire 'Ciao', e trascinare il blocco azzurro 'risposta' {.blocksensing} (dalla sezione 'Sensori') sul testo 'world'.
+	Poi, puoi cambiare il testo 'hello' per dire 'Ciao', e trascinare il blocco azzurro `risposta` {.blocksensing} (dalla sezione 'Sensori') sul testo 'world'.
 
 	![screenshot](images/chatbot-answer.png)
 
@@ -73,7 +73,7 @@ Adesso che hai un chatterbot con la sua personalità, programmiamolo per farlo p
 
 + Puoi anche volere salvare il nome dell'utente in una variabile, in modo che tu possa usarlo di nuovo. + Crea una nuova variabile chiamata `nome` {.blockdata}. Se non ti ricordi come si fa, il progetto 'Ghostbusters' ti aiuterà.
 
-+ L'informazione che hai inserito è già salvata in una variabile speciale chiamata 'risposta' {.blocksensing}.  Vai al gruppo di blocchi Sensori e clicca il blocco di risposta in modo da far apparire una spunta. L'attuale valore in 'risposta' {.blocksensing} dovrebbe essere visualizzato in alto a sinistra del quadro.
++ L'informazione che hai inserito è già salvata in una variabile speciale chiamata `risposta` {.blocksensing}.  Vai al gruppo di blocchi Sensori e clicca il blocco di risposta in modo da far apparire una spunta. L'attuale valore in 'risposta' {.blocksensing} dovrebbe essere visualizzato in alto a sinistra del quadro.
 
 + Una volta creata la tua nuova variabile, assicurati che il codice del tuo chatterbot sia così:
 
@@ -84,7 +84,7 @@ Adesso che hai un chatterbot con la sua personalità, programmiamolo per farlo p
 		dire (unione di [Ciao ] e (nome)) per (2) secondi
 	```
 
-+ Se testi di nuovo il programma, noterai che la risposta è salvata nella variabile 'nome' {.blockdata}, ed è visualizzata in alto a sinistra del quadro.  La variabile 'nome' {.blockdata} adesso dovrebbe contenere lo stesso valore della variabile 'risposta' {.blocksensing}.
++ Se testi di nuovo il programma, noterai che la risposta è salvata nella variabile `nome` {.blockdata}, ed è visualizzata in alto a sinistra del quadro.  La variabile `nome` {.blockdata} adesso dovrebbe contenere lo stesso valore della variabile `risposta` {.blocksensing}.
 
 	![screenshot](images/chatbot-variable.png)
 
@@ -121,9 +121,9 @@ Puoi programmare il tuo chatterbot a decidere cosa fare, a seconda delle rispost
 
 	Nota che hai ora salvato il nome dell'utente in una variabile, e puoi usarlo ogni volta che vorrai.
 
-+ Per testare correttamente questo programma, dovrai provarlo due volte - una volta digitando 'no' come risposta, e un'altra volta digitando 'sì'. Otterrai una reazione dal tuo chatterbot 'se' {.blockcontrol} rispondi 'sì'.
++ Per testare correttamente questo programma, dovrai provarlo due volte - una volta digitando 'no' come risposta, e un'altra volta digitando 'sì'. Otterrai una reazione dal tuo chatterbot `se` {.blockcontrol} rispondi 'sì'.
 
-+ Il problema del chatterbot è che non dà una risposta se l'utente risponde 'no'. Puoi risolvere questo problema cambiando il blocco 'se' {.blockcontrol} a un blocco 'se/altrimenti' {.blockcontrol}, in modo che il tuo codice adesso sia così:
++ Il problema del chatterbot è che non dà una risposta se l'utente risponde 'no'. Puoi risolvere questo problema cambiando il blocco 'se' {.blockcontrol} a un blocco `se/altrimenti` {.blockcontrol}, in modo che il tuo codice adesso sia così:
 
 	```blocks
 		quando si clicca questo sprite
@@ -138,11 +138,11 @@ Puoi programmare il tuo chatterbot a decidere cosa fare, a seconda delle rispost
 		end
 	```
 
-+ Se provi il tuo codice, vedrai che avrai una reazione quando rispondi 'sì' o 'no'. Il tuo chatterbot risponderà 'Mi fa piacere!' quando tu rispondi 'sì', ma risponderà 'Oh no!' se digiti qualsiasi altra risposta ('altrimenti' {.blockcontrol} significa 'diversamente').
++ Se provi il tuo codice, vedrai che avrai una reazione quando rispondi 'sì' o 'no'. Il tuo chatterbot risponderà 'Mi fa piacere!' quando tu rispondi 'sì', ma risponderà 'Oh no!' se digiti qualsiasi altra risposta (`altrimenti` {.blockcontrol} significa 'diversamente').
 
 	![screenshot](images/chatbot-else.png)
 
-+ Dentro un blocco 'se' {.blockcontrol} o 'altrimenti' {.blockcontrol} puoi mettere qualsiasi codice, e non solo il codice che fa parlare il tuo chatterbot. Per esempio, puoi cambiare il costume del chatterbot er farlo combaciare con la risposta.
++ Dentro un blocco `se` {.blockcontrol} o `altrimenti` {.blockcontrol} puoi mettere qualsiasi codice, e non solo il codice che fa parlare il tuo chatterbot. Per esempio, puoi cambiare il costume del chatterbot er farlo combaciare con la risposta.
 
 	Se dai un'occhiata agli costummi del chatterbot, noterai che ce ne sono più di uno. (Se non ci sono, puoi sempre aggiungerli tu!)
 
@@ -185,7 +185,7 @@ Puoi anche programmare il tuo chatterbot a cambiare la sua posizione.
 		end
 	```
 
-Devi anche assicurarti che il tuo chatterbot sia fuori quando inizi a parlarci. Aggiungi questo blocco in cima al codice chatterbot:
++ Devi anche assicurarti che il tuo chatterbot sia fuori quando inizi a parlarci. Aggiungi questo blocco in cima al codice chatterbot:
 
 	![screenshot](images/chatbot-outside.png)
 
