@@ -56,7 +56,7 @@ Iniziamo a creare domande a caso per il giocatore.
 
 + Aggiungi un loop `per sempre` {.blockcontrol} attorno a questo codice, così che il giocatore possa ricevere tante domande.
 
-+ Crea un timer con conto alla rovescia su questa fase, usando una variabile chiamata 'tempo' {.blockdata}. Se hai bisogno di aiuto, il progetto 'Ghostbusters' possiede le istruzioni per creare un timer (al passo 5).
++ Crea un timer con conto alla rovescia su questa fase, usando una variabile chiamata `tempo` {.blockdata}. Se hai bisogno di aiuto, il progetto 'Ghostbusters' possiede le istruzioni per creare un timer (al passo 5).
 
 + Prova di nuovo il tuo progetto - dovresti essere in grado di fare altre domande finché scadrà il tempo.
 
@@ -109,7 +109,7 @@ Aggiungiamo il tasto 'gioca', così che puoi giocare tante volte.
 
 	Puoi risolvere il problema?
 
-+ Clicca sulla fase e sostituisci il blocco 'ferma tutto' {.blockcontrol} con un messaggio 'fine' {.blockevents}.
++ Clicca sulla fase e sostituisci il blocco 'ferma tutto' {.blockcontrol} con un messaggio `fine` {.blockevents}.
 
 	![screenshot](images/brain-end.png)
 
@@ -152,7 +152,7 @@ Aggiungiamo il tasto 'gioca', così che puoi giocare tante volte.
 ## Salva il progetto {.save}
 
 ## Sfida: Inizia schermata {.challenge}
-Puoi aggiungere un altro scenario alla tua fase, che diventerà la schermata iniziale del tuo gioco? Puoi usare i blocchi 'quando ricevo inizio' {.blockevents} e 'quando ricevo fine' {.blockevents} per passare da uno scenario all'altro.
+Puoi aggiungere un altro scenario alla tua fase, che diventerà la schermata iniziale del tuo gioco? Puoi usare i blocchi `quando ricevo inizio` {.blockevents} e 'quando ricevo fine' {.blockevents} per passare da uno scenario all'altro.
 
 Puoi anche mostrare e nascondere il tuo personaggio, e perfino mostrare e nascondere il tuo timer usando questi blocchi:
 
@@ -169,17 +169,17 @@ nascondi la variabile [tempo v]
 
 # Passo 3: Aggiungi grafiche { .activity .new-page}
 
-Invece di far dire solo 'sì' al tuo personaggio! :)` o `no :(` al giocatore, aggiungiamo alcune grafiche che informeranno i giocatori come stanno andando.
+Invece di far dire solo `sì :)` o `no :(` al giocatore, aggiungiamo alcune grafiche che informeranno i giocatori come stanno andando.
 
 + Crea un nuovo sprite chiamato 'Risultato', contenente un costume 'spunta' e 'croce'.
 
 	![screenshot](images/brain-result.png)
 
-+ Cambia il codice del tuo personaggio, così che invece di dire al giocatore come è andata, trasmette i messaggi 'corretto' {.blockevents} ed 'errato' {.blockevents}.
++ Cambia il codice del tuo personaggio, così che invece di dire al giocatore come è andata, trasmette i messaggi `corretto` {.blockevents} ed `errato` {.blockevents}.
 
 	![screenshot](images/brain-broadcast-answer.png)
 
-+ Puoi ora usare questi messaggi per mostrare il costume 'spunta' o 'croce'. + Aggiungi questo codice al tuo nuovo sprite 'Risultato':
++ Puoi ora usare questi messaggi per mostrare il costume 'spunta' o 'croce'. Aggiungi questo codice al tuo nuovo sprite 'Risultato':
 
 	![screenshot](images/brain-show-answer.png)
 
@@ -187,9 +187,9 @@ Invece di far dire solo 'sì' al tuo personaggio! :)` o `no :(` al giocatore, ag
 
 	![screenshot](images/brain-test-answer.png)
 
-+ Hai notato che il codice per 'quando ricevo corretto' {.blockevents} e quello per 'quando ricevo errato' {.blockevents} sono quasi identici? Creiamo ora una funzione per facilitare il modo di cambiare il tuo codice.
++ Hai notato che il codice per `quando ricevo corretto` {.blockevents} e quello per `quando ricevo errato` {.blockevents} sono quasi identici? Creiamo ora una funzione per facilitare il modo di cambiare il tuo codice.
 
-	Sul tuo sprite 'Risultato' , clicca 'Altri Blocchi' {.blockmoreblocks}, e poi 'Crea un Blocco'. Crea una nuova funzione chiamata 'animare' {.blockmoreblocks}.
+	Sul tuo sprite 'Risultato' , clicca `Altri Blocchi` {.blockmoreblocks}, e poi 'Crea un Blocco'. Crea una nuova funzione chiamata `animare` {.blockmoreblocks}.
 
 	![screenshot](images/brain-animate-function.png)
 

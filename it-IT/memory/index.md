@@ -37,7 +37,7 @@ Per prima cosa, creiamo un personaggio che può cambiare in una sequenza di colo
 
 	![screenshot](images/colour-costume.png)
 
-+ Per creare una sequenza a caso, dovrai creare una __lista__. Una lista è solo una variabile che immagazzina tanti dati __in ordine__. + Crea una nuova lista chiamata `sequenza` {.blockdata}. Dato che solo il tuo personaggio ha bisogno di vedere la lista, possiamo anche cliccare 'Solo per questo sprite'.
++ Per creare una sequenza a caso, dovrai creare una __lista__. Una lista è solo una variabile che immagazzina tanti dati __in ordine__. Crea una nuova lista chiamata `sequenza` {.blockdata}. Dato che solo il tuo personaggio ha bisogno di vedere la lista, possiamo anche cliccare 'Solo per questo sprite'.
 
 	![screenshot](images/colour-list.png)
 
@@ -72,7 +72,7 @@ Aggiungiamo 4 tasti che il giocatore può usare per ripetere la sequenza che ric
 
 ## Lista delle attività { .check}
 
-Aggiungi 4 sprite al tuo progetto, che diventeranno tasti. Modifica i tuoi 4 sprite in modo che ce ne sia 1 per ognuno dei 4 colori.
++ Aggiungi 4 sprite al tuo progetto, che diventeranno tasti. Modifica i tuoi 4 sprite in modo che ce ne sia 1 per ognuno dei 4 colori.
 
 	![screenshot](images/colour-drums.png)
 
@@ -95,14 +95,14 @@ Aggiungi 4 sprite al tuo progetto, che diventeranno tasti. Modifica i tuoi 4 spr
 		end
 	```
 
-+ Puoi anche visualizzare delle luci lampeggianti una volta che la lista è vuota, perché significa che l'intera sequenza è stata indovinata correttamente. Aggiungi questo codice alla fine del testo 'quando si clicca sulla bandiera verde' {.blockevents}.
++ Puoi anche visualizzare delle luci lampeggianti una volta che la lista è vuota, perché significa che l'intera sequenza è stata indovinata correttamente. Aggiungi questo codice alla fine del testo `quando si clicca sulla bandiera verde` {.blockevents}.
 
 	```blocks
 		attendi fino a quando <(length of [sequenza v] :: list) = [0]>
 		invia a tutti [won v] e attendi
 	```
 
-+ Clicca sul tuo quadro e aggiungi questo codice per riprodurre_qualsiasi_suono e fare in modo che lo scenario cambi colore una volta che il giocatore ha vinto.
++ Clicca sul tuo quadro e aggiungi questo codice per riprodurre __qualsiasi__ suono e fare in modo che lo scenario cambi colore una volta che il giocatore ha vinto.
 
 	```blocks
 		quando ricevo [won v]
@@ -133,13 +133,13 @@ Fino ad ora, il giocatore deve ricordare solo 5 colori. Miglioriamo il tuo gioco
 
 	![screenshot](images/colour-score.png)
 
-+ Questo 'punteggio' {.blockdata} verrà usato per decidere la lunghezza della sequenza che il giocatore deve memorizzare.  Dunque, fin dall'inizio il punteggio (e la lunghezza della sequenza) è 3. Aggiungi questo codice all'inizio del codice 'quando si clicca la bandiera' {.blockevents}:
++ Questo `punteggio` {.blockdata} verrà usato per decidere la lunghezza della sequenza che il giocatore deve memorizzare.  Dunque, fin dall'inizio il punteggio (e la lunghezza della sequenza) è 3. Aggiungi questo codice all'inizio del codice `quando si clicca la bandiera` {.blockevents}:
 
 	```blocks
 		porta [punteggio v] a [3]
 	```
 
-Invece di creare sempre una sequenza di 5 colori, ora vuoi che il 'punteggio' {.blockdata} determini la lunghezza della sequenza. Cambia il loop 'ripeti' {.blockcontrol} del tuo personaggio (per creare la sequenza) a:
+Invece di creare sempre una sequenza di 5 colori, ora vuoi che il `punteggio` {.blockdata} determini la lunghezza della sequenza. Cambia il loop `ripeti` {.blockcontrol} del tuo personaggio (per creare la sequenza) a:
 
 	```blocks
 		ripeti (punteggio) volte
@@ -152,9 +152,9 @@ Invece di creare sempre una sequenza di 5 colori, ora vuoi che il 'punteggio' {.
 		cambia [punteggio v] di (1)
 	```
 
-+ Infine, dovrai aggiungere un loop 'per sempre' {.blockcontrol} attorno al codice per generare la sequenza, in modo che venga creata una nuova sequenza per ogni livello. Il codice del tuo personaggio dovrebbe essere così:
++ Infine, dovrai aggiungere un loop `per sempre` {.blockcontrol} attorno al codice per generare la sequenza, in modo che venga creata una nuova sequenza per ogni livello. Il codice del tuo personaggio dovrebbe essere così:
 
-	```blocchi
+	```blocks
 		quando si clicca sulla bandiera verde
 		porta [punteggio v] a [3]
 		per sempre
@@ -170,7 +170,7 @@ Invece di creare sempre una sequenza di 5 colori, ora vuoi che il 'punteggio' {.
 		end
 	```
 
-+ Fai provare il gioco ai tuoi amici. Ricordati di nascondere la lista 'sequenza' {.blockdata} prima che inizino a giocare!
++ Fai provare il gioco ai tuoi amici. Ricordati di nascondere la lista `sequenza` {.blockdata} prima che inizino a giocare!
 
 ## Salva il progetto {.save}
 
@@ -180,7 +180,7 @@ Salviamo il punteggio alto, in modo che tu possa giocare contro i tuoi amici.
 
 ## Lista delle attività { .check}
 
-+ Aggiungi al progetto 2 nuovi variabili chiamate 'punteggio alto' {.blockdata} e 'nome' {.blockdata}.
++ Aggiungi al progetto 2 nuovi variabili chiamate `punteggio alto` {.blockdata} e `nome` {.blockdata}.
 
 + Se il gioco dovesse finire (premendo il tasto sbagliato), dovrai controllare se il punteggio del giocatore è più alto del punteggio massimo attuale. Se lo è, dovrai salvare il punteggio come punteggio alto, e salvare il nome del giocatore. Il tuo tasto rosso sarà così:
 
@@ -205,19 +205,19 @@ Salviamo il punteggio alto, in modo che tu possa giocare contro i tuoi amici.
 
 + Se dovessi avere bisogno di cambiare qualsiasi cosa di questo codice, come aggiungere un suono o cambiare il messaggio 'Game over!', dovrai cambiarlo 4 volte! Ciò potrebbe essere fastidioso e risultare in una perdita di tempo.
 
-	Invece, puoi definire i tuoi blocchi e riutilizzarli nel tuo progetto! Per fare ciò, clicca 'Altri Blocchi' {.blockmoreblocks}, e poi 'Crea un Blocco'. Chiama questo nuovo blocco 'Game over'.
+	Invece, puoi definire i tuoi blocchi e riutilizzarli nel tuo progetto! Per fare ciò, clicca `Altri Blocchi` {.blockmoreblocks}, e poi 'Crea un Blocco'. Chiama questo nuovo blocco 'Game over'.
 
 	![screenshot](images/colour-more.png)
 
-+ Aggiungi questo codice dal blocco 'altrimenti' {.blockcontrol} dal tasto rosso fino al nuovo blocco che compare:
++ Aggiungi questo codice dal blocco `altrimenti` {.blockcontrol} dal tasto rosso fino al nuovo blocco che compare:
 
 	![screenshot](images/colour-make-block.png)
 
-+ hai creato ora una nuova_funzione_chiamata Game over' {.blockmoreblocks}, che puoi usare ogni volta che vorrai. Trascina il tuo nuovo blocco 'Game over' {.blockmoreblocks} sulle 4 scritte dei tasti.
++ Ora hai creato ora una nuova _funzione_ chiamata `Game over` {.blockmoreblocks}, che puoi usare ogni volta che vorrai. Trascina il tuo nuovo blocco `Game over` {.blockmoreblocks} sulle 4 scritte dei tasti.
 
 	![screenshot](images/colour-use-block.png)
 
-+ Adesso aggiungi un suono per quando viene premuto il tasto sbagliato. Questo codice dovrà essere aggiunto_una volta_ nel blocco 'Game over' {.blockmoreblocks} che hai creato, e non 4 volte separate!
++ Adesso aggiungi un suono per quando viene premuto il tasto sbagliato. Questo codice dovrà essere aggiunto_una volta_ nel blocco `Game over` {.blockmoreblocks} che hai creato, e non 4 volte separate!
 
 	![screenshot](images/colour-cough.png)
 

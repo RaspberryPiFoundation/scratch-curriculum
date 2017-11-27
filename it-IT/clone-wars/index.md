@@ -71,7 +71,7 @@ Diamo all'astronave la possibilità di sparare fulmini!
 		end
 	```
 
-+ Ogni volta che viene creato un nuovo clone, dovrebbe iniziare nello stesso posto dell'astronave, e poi muoversi in alto dello schermo finché tocca il bordo. Aggiungi il seguente codice allo *sprite Fulmine**:
++ Ogni volta che viene creato un nuovo clone, dovrebbe iniziare nello stesso posto dell'astronave, e poi muoversi in alto dello schermo finché tocca il bordo. Aggiungi il seguente codice allo **sprite Fulmine**:
 
 	```blocks
 		quando vengo clonato
@@ -111,7 +111,7 @@ Aggiungiamo un mucchio di ippopotami volanti che cercano di distruggere la tua a
 		nascondi
 	```
 
-+ Crea una nuova variabile chiamata 'velocità' {.blockdata}, che è solo per lo sprite dell'ippopotamo.
++ Crea una nuova variabile chiamata `velocità` {.blockdata}, che è solo per lo sprite dell'ippopotamo.
 
 	![screenshot](images/invaders-var.png)
 
@@ -187,7 +187,7 @@ Aggiungiamo un mucchio di ippopotami volanti che cercano di distruggere la tua a
 ## Salva il progetto {.save}
 
 ## Sfida: Vite e Punteggio {.challenge}
-Puoi aggiungere al tuo gioco un blocco 'vite' {.blockdata}, `punteggio` {.blockdata} o perfino `punteggio alto` {.blockdata}? Per aiutarti, puoi usare il progetto 'Acchiappa i Puntini'.
+Puoi aggiungere al tuo gioco un blocco `vite` {.blockdata}, `punteggio` {.blockdata} o perfino `punteggio alto` {.blockdata}? Per aiutarti, puoi usare il progetto 'Acchiappa i Puntini'.
 
 ## Salva il progetto {.save}
 
@@ -205,7 +205,7 @@ Creiamo ora un pipistrello della frutta che getta arance alla tua astronave.
 
 	![screenshot](images/invaders-bat-costume.png)
 
-	Usa il blocco 'passa al costume seguente' {.blocklooks} per far sbattere le ali al pipistrello mentre si muove.
+	Usa il blocco `passa al costume seguente` {.blocklooks} per far sbattere le ali al pipistrello mentre si muove.
 
 + Crea un nuovo sprite 'Arancia' dalla libreria Scratch.
 
@@ -262,7 +262,7 @@ Aggiungiamo un messaggio 'game over' alla fine del gioco.
 
 	![screenshot](images/invaders-game-over.png)
 
-+ Sul tuo quadro, trasmetti un messaggio 'game over' {.blockevents} appena prima che la partita finisca.
++ Sul tuo quadro, trasmetti un messaggio `game over` {.blockevents} appena prima che la partita finisca.
 
 	```blocks
 		invia a tutti [game over v] e attendi
