@@ -1,0 +1,291 @@
+
+
+LENTÄMINEN-kortit  
+
+Valitse hahmo ja aloita lentäminen 
+
+ 
+
+ 
+
+LENTÄMINEN
+
+ 
+
+Käytä tätä korttia seuraavassa
+järjestyksessä
+
+ 
+
+ 
+
+ 
+
+Valitse hahmoAloita
+lentäminenVaihda
+asusteita Liikuta
+hahmoa Liikkuvat
+pilvetLentävät
+sydämetPistelasku
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+VALITSE HAHMO
+
+ 
+
+Valitse hahmo joka lentää
+
+ 
+
+Valitse Tausta
+
+ 
+
+Valitse Hahmokirjastosta Lentävä hahmo
+
+ 
+
+Lisää seuraava koodi
+
+ 
+
+Kokeile
+
+ 
+
+Klikkaa vihreää lippua aloittaaksesi 
+
+ 
+
+ALOITA LENTÄMINEN
+
+ 
+
+Liikuta taustamaisemaa jolloin näyttää siltä, että hahmosi lentää
+
+ 
+
+Valmiina?
+
+ 
+
+Valitse hahmo, jonka haluat liikkuvan taustalla (esim.Rakennukset)
+
+ 
+
+Lisää seuraava koodi
+
+ 
+
+Asettaa hahmon näyttämön oikean reunaan
+
+ 
+
+Negatiivinen numero siirtää hahmoa vasemmalle näyttämöllä
+
+ 
+
+VAIHDA ASUSTETTA
+
+ 
+
+Lisää vaihtelua taustalle
+
+ 
+
+Valmiina?
+
+ 
+
+Klikkaa ja valitse Rakennus hahmo
+
+ 
+
+Seuraavaksi, klikkaa Asusteet välilehteä nähdäksesi hahmon ulkoasut
+
+ 
+
+Klikkaa Skriptit välilehteä 
+
+ 
+
+Lisää tämä koodipalikka vaihtaaksesi hahmon ulkoasuja
+
+ 
+
+ 
+
+Kokeile
+
+ 
+
+Klikkaa vihreää lippua 
+
+ 
+
+ 
+
+TEE OHJELMASTA INTERAKTIIVINEN
+
+ 
+
+Laita hahmosi liikkumaan haluamaasi suuntaan
+
+ 
+
+Tee ohjelmasta interaktiivinen 
+
+ 
+
+Valmiina?
+
+ 
+
+Klikkaa ja valitse hahmo
+
+ 
+
+Lisää seuraava koodi
+
+ 
+
+Kokeile 
+
+ 
+
+ 
+
+LIIKKUVAT PILVET
+
+ 
+
+Laita pilvet liikkumaan taivalla 
+
+ 
+
+Valmiina?
+
+ 
+
+Valitse Pilvet Hahmokirjastosta(Asiat)
+
+ 
+
+Raahaa Valitse satunaisluku-koodipalikka Aseta Y:lle arvo-koodipalikan
+loppuun 
+
+ 
+
+Kirjoita arvoksi 180 jolloin Pilvet ovat puolivälissä näyttämöä
+
+ 
+
+Y akseli tarkoittaa sijainteja näyttämön ylhäältä alas
+
+ 
+
+ 
+
+LENTÄVÄT SYDÄMET
+
+ 
+
+Lisää peliin Sydän tai joku muu objekti, jota voi kerätä
+
+ 
+
+Valitse Hahmo, esim. Sydän
+
+ 
+
+Valitse Alasvetovalikosta Random Position
+
+ 
+
+TEE PELIIN PISTELASKU
+
+ 
+
+Laskuri lisää yhden pisteen aina kun kosketat Sydäntä
+
+ 
+
+Valitse Tieto 
+
+ 
+
+Klikkaa Tee Muuttuja nappia
+
+ 
+
+Nimeä muuttuja Pisteet
+
+ 
+
+Valitse lentävä hahmosi
+
+ 
+
+Asettaa pistelaskurin nollaaan
+
+ 
+
+Valitse Sydän alasvetovalikosta
+
+ 
+
+Lisää pisteen 
+
+ 
+
+Kokeile 
+
+ 
+
+Klikkaa vihreää lippua aloitttaaksesi
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
