@@ -1,0 +1,18 @@
+{
+    "description": false,
+    "id": "scratch_01",
+    "language": "fi-FI",
+    "number": 1,
+    "title": "Scratch 1",
+    "category": "cat-scratch",
+    "projects": [
+        {
+            "number":   1,
+            "filename": "Bandi/Bandi.md",
+            "note":     "Bandi/Bandi - huomiot.md"
+        }
+    ]
+
+
+
+}
