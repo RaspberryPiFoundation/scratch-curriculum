@@ -23,7 +23,7 @@ Laten we eerst een controller maken waarmee je de stippen kan vangen.
 
 ## Stappenplan { .check }
 
-+ Start een nieuw Scratch project en verwijder de kat-sprite zodat je een leeg project hebt. Je can de online versie van Scratch hier vinden: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Start een nieuw Scratch project en verwijder de kat-sprite zodat je een leeg project hebt. Je kan de online versie van Scratch hier vinden: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Als je van de clubleider een 'resources'-map hebt gekregen, klik je op 'Upload sprite' en voeg je de 'controller.svg' afbeelding toe. Zet deze sprite in het midden van het speelveld.
 
