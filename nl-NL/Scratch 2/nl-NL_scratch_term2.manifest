@@ -23,11 +23,17 @@
             "filename": "Braingame/Braingame.md",
             "note":     "Braingame/Braingame - notes.md"
         },
-{
+        {
             "number":   4,
             "beta": true,
             "filename": "Vang de stippen/vang de stippen.md",
             "note":     "Vang de stippen/vang de stippen notas.md"
+        }
+        {
+        "number":   5,
+            "beta": true,
+            "filename": "Clone Wars/Clone Wars.md",
+            "note":     "Clone Wars/Clone Wars - notes.md"
         }
     ]
 }
