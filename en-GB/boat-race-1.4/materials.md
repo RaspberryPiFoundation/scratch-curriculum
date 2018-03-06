@@ -6,7 +6,6 @@ project-resources:
     type: image
     description: Boat sprite image file to be used in the project
 volunteer-resources:
-  - url: BoatRace.sb
+  - url: BoatRace-1.4.sb
     description: Downloadable completed Scratch 1.4 project
 ---
-
