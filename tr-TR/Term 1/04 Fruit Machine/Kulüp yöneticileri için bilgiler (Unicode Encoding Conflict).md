@@ -3,7 +3,7 @@
 ##(Fruit Machine)
 
 ###Tanıtım:
-Bu basit oyunda kılık değişteren 3 kukla vardır. Hepsi aynı anda aynı resmi gösterdiğinde makinayı durdurmanız lazım (meyve makinası gibi).
+Bu basit oyunda kılık değişteren 3 kukla vardır. Hepsi aynı anda aynı resmi gösterdiğinde makinayı durdurmanız gerekir (meyve makinası gibi).
 
 ###Yetenekler
 Projenin içerdiği yetenekler: 
