@@ -44,6 +44,7 @@ This step shows how to add Scratch code to your project.
 
 + You can add Scratch code to your project like this:
 
+```	
 	```blocks
 		when flag clicked
 		point in direction (120 v)
@@ -54,8 +55,9 @@ This step shows how to add Scratch code to your project.
 			if on edge, bounce
 		end
 	```
+```
 
-	You can [test](http://scratchblocks.codeclub.org.uk) your Scratch code, and there is a [guide](http://wiki.scratch.mit.edu/wiki/Block_Plugin/Syntax) to adding Scratch blocks to your project notes.
++ You can [test](https://scratchblocks.github.io) your Scratch code, and there is a [guide](http://wiki.scratch.mit.edu/wiki/Block_Plugin/Syntax) to adding Scratch blocks to your project notes.
 
 + You can also colour-code your text, to match the colour of Scratch blocks.
 
