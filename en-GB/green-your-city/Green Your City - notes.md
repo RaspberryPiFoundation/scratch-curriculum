@@ -40,7 +40,7 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 #Frequently Asked Questions
 + The simplest way to move the helicopter across the stage is to use the following code:
 
-```scratch
+```blocks
 repeat until < touching [edge v] ?>
 	move (3) steps
 end

@@ -26,7 +26,7 @@ Make sure that each child has access to a copy of these resources.
 
 #Learning Objectives
 + Events;
-+ Sequecing;
++ Sequencing;
 + Repetition;
 + Decisions;
 + Broadcasting;
